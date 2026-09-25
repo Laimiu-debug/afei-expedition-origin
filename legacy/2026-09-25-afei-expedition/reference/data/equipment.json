@@ -1,0 +1,431 @@
+{
+  "C01": {
+    "equipped": [
+      "weapons/bludgeon",
+      "armor/thick_tunic",
+      "helmets/headscarf",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      40,
+      20
+    ]
+  },
+  "C02": {
+    "equipped": [
+      "weapons/hunting_bow",
+      "armor/thick_tunic",
+      "helmets/headscarf",
+      "ammo/quiver_of_arrows"
+    ],
+    "bag": [
+      "weapons/knife"
+    ],
+    "document_armor": [
+      40,
+      20
+    ]
+  },
+  "C03": {
+    "equipped": [
+      "weapons/boar_spear",
+      "armor/padded_leather",
+      "helmets/aketon_cap",
+      "shields/wooden_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      80,
+      40
+    ]
+  },
+  "C04": {
+    "equipped": [
+      "weapons/shortsword",
+      "armor/ragged_dark_surcoat",
+      "helmets/hood",
+      "shields/wooden_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      60,
+      30
+    ]
+  },
+  "C05": {
+    "equipped": [
+      "weapons/hunting_bow",
+      "armor/thick_tunic",
+      "helmets/headscarf",
+      "ammo/quiver_of_arrows"
+    ],
+    "bag": [
+      "weapons/knife"
+    ],
+    "document_armor": [
+      35,
+      20
+    ]
+  },
+  "C06": {
+    "equipped": [
+      "weapons/boar_spear",
+      "armor/ragged_surcoat",
+      "helmets/hood",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      55,
+      25
+    ]
+  },
+  "C07": {
+    "equipped": [
+      "weapons/javelin",
+      "armor/thick_tunic",
+      "helmets/headscarf"
+    ],
+    "bag": [
+      "weapons/boar_spear"
+    ],
+    "document_armor": [
+      35,
+      20
+    ]
+  },
+  "C08": {
+    "equipped": [
+      "weapons/boar_spear",
+      "armor/blotched_gambeson",
+      "helmets/hood",
+      "shields/wooden_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      70,
+      30
+    ]
+  },
+  "C09": {
+    "equipped": [
+      "weapons/bludgeon",
+      "armor/padded_leather",
+      "helmets/aketon_cap",
+      "shields/wooden_shield",
+      "accessory/afei_drum_item"
+    ],
+    "bag": [],
+    "document_armor": [
+      80,
+      40
+    ]
+  },
+  "C10": {
+    "equipped": [
+      "weapons/boar_spear",
+      "armor/padded_surcoat",
+      "helmets/hood",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      50,
+      25
+    ]
+  },
+  "C12": {
+    "equipped": [
+      "weapons/hunting_bow",
+      "armor/padded_surcoat",
+      "helmets/headscarf",
+      "ammo/quiver_of_arrows"
+    ],
+    "bag": [
+      "weapons/knife"
+    ],
+    "document_armor": [
+      45,
+      20
+    ]
+  },
+  "C13": {
+    "equipped": [
+      "weapons/hatchet",
+      "armor/padded_leather",
+      "helmets/aketon_cap",
+      "shields/wooden_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      75,
+      35
+    ]
+  },
+  "C14": {
+    "equipped": [
+      "weapons/boar_spear",
+      "armor/ragged_dark_surcoat",
+      "helmets/hood",
+      "shields/wooden_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      60,
+      30
+    ]
+  },
+  "C15": {
+    "equipped": [
+      "weapons/javelin",
+      "armor/thick_tunic",
+      "helmets/headscarf"
+    ],
+    "bag": [
+      "weapons/knife"
+    ],
+    "document_armor": [
+      40,
+      20
+    ]
+  },
+  "C16": {
+    "equipped": [
+      "weapons/shortsword",
+      "armor/ragged_dark_surcoat",
+      "helmets/hood",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      60,
+      25
+    ]
+  },
+  "C17": {
+    "equipped": [
+      "weapons/light_crossbow",
+      "armor/padded_surcoat",
+      "helmets/hood",
+      "ammo/quiver_of_bolts"
+    ],
+    "bag": [
+      "weapons/knife"
+    ],
+    "document_armor": [
+      45,
+      25
+    ]
+  },
+  "C18": {
+    "equipped": [
+      "weapons/pitchfork",
+      "armor/ragged_surcoat",
+      "helmets/hood",
+      "accessory/afei_bear_item"
+    ],
+    "bag": [],
+    "document_armor": [
+      55,
+      25
+    ]
+  },
+  "C19": {
+    "equipped": [
+      "weapons/javelin",
+      "armor/padded_surcoat",
+      "helmets/hood",
+      "shields/buckler_shield"
+    ],
+    "bag": [
+      "weapons/knife"
+    ],
+    "document_armor": [
+      45,
+      25
+    ]
+  },
+  "C20": {
+    "equipped": [
+      "weapons/fighting_spear",
+      "armor/gambeson",
+      "helmets/aketon_cap",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      65,
+      40
+    ]
+  },
+  "C21": {
+    "equipped": [
+      "weapons/shortsword",
+      "armor/padded_surcoat",
+      "helmets/hood",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      50,
+      30
+    ]
+  },
+  "C22": {
+    "equipped": [
+      "weapons/bludgeon",
+      "armor/gambeson",
+      "helmets/aketon_cap",
+      "shields/wooden_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      65,
+      40
+    ]
+  },
+  "C23": {
+    "equipped": [
+      "weapons/boar_spear",
+      "armor/padded_surcoat",
+      "helmets/hood",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      45,
+      25
+    ]
+  },
+  "C25": {
+    "equipped": [
+      "weapons/arming_sword",
+      "armor/gambeson",
+      "helmets/full_leather_cap",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      65,
+      45
+    ]
+  },
+  "C26": {
+    "equipped": [
+      "weapons/boar_spear",
+      "armor/gambeson",
+      "helmets/aketon_cap",
+      "shields/wooden_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      65,
+      40
+    ]
+  },
+  "C27": {
+    "equipped": [
+      "weapons/billhook",
+      "armor/padded_leather",
+      "helmets/full_leather_cap"
+    ],
+    "bag": [],
+    "document_armor": [
+      75,
+      45
+    ]
+  },
+  "C28": {
+    "equipped": [
+      "weapons/shortsword",
+      "armor/padded_surcoat",
+      "helmets/hood",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      45,
+      30
+    ]
+  },
+  "C29": {
+    "equipped": [
+      "weapons/shortsword",
+      "armor/padded_surcoat",
+      "helmets/hood",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      50,
+      30
+    ]
+  },
+  "C30": {
+    "equipped": [
+      "weapons/boar_spear",
+      "armor/ragged_surcoat",
+      "helmets/aketon_cap",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      55,
+      35
+    ]
+  },
+  "C31": {
+    "equipped": [
+      "weapons/javelin",
+      "armor/padded_surcoat",
+      "helmets/hood",
+      "shields/buckler_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      50,
+      30
+    ]
+  },
+  "C32": {
+    "equipped": [
+      "weapons/pitchfork",
+      "armor/gambeson",
+      "helmets/hood"
+    ],
+    "bag": [],
+    "document_armor": [
+      65,
+      30
+    ]
+  },
+  "C33": {
+    "equipped": [
+      "weapons/hatchet",
+      "armor/padded_leather",
+      "helmets/aketon_cap",
+      "shields/wooden_shield"
+    ],
+    "bag": [],
+    "document_armor": [
+      75,
+      35
+    ]
+  },
+  "C34": {
+    "equipped": [
+      "weapons/hunting_bow",
+      "armor/padded_surcoat",
+      "helmets/headscarf",
+      "ammo/quiver_of_arrows"
+    ],
+    "bag": [
+      "weapons/knife"
+    ],
+    "document_armor": [
+      45,
+      20
+    ]
+  }
+}

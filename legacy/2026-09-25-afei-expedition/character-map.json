@@ -1,0 +1,632 @@
+{
+  "note": "当前序号仅用于对照，旧 Cxx 是独立命名空间。此表不自动改名或合并真人身份；参考图对应关系仍需视觉核对。",
+  "characters": [
+    {
+      "current_roster_number": 1,
+      "current_name": "阿飞",
+      "legacy_id": "C01",
+      "legacy_name": "阿飞",
+      "mapping_note": "旧数据可参考",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C01.png",
+      "assigned_tactical_source": "art/tactical-sprites/coherent-v2/afei_figure_C01.png",
+      "skill_ids": [
+        "wawa_call",
+        "jiahao",
+        "toad_escape",
+        "full_circle"
+      ],
+      "reference_image_candidates": [
+        "art/references/streamers/C01_afei.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 2,
+      "current_name": "王大谋",
+      "legacy_id": "C03",
+      "legacy_name": "王大谋",
+      "mapping_note": "旧数据可参考",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C03.png",
+      "assigned_tactical_source": "art/tactical-sprites/coherent-v2/afei_figure_C03.png",
+      "skill_ids": [
+        "steal_bro",
+        "borrow_strike",
+        "together_lift"
+      ],
+      "reference_image_candidates": [
+        "art/references/streamers/C03_wangdamou.jpg",
+        "art/references/streamers/C03_wangdamou_bili.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 3,
+      "current_name": "午夜抹抹茶",
+      "legacy_id": "C02",
+      "legacy_name": "抹茶",
+      "mapping_note": "旧数据可参考",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C02.png",
+      "assigned_tactical_source": "art/tactical-sprites/coherent-v2/afei_figure_C02.png",
+      "skill_ids": [
+        "scrap_parts",
+        "abacus_mark",
+        "shadow_captain"
+      ],
+      "reference_image_candidates": [
+        "art/references/streamers/C02_matcha.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 4,
+      "current_name": "小酒瓶",
+      "legacy_id": "C04",
+      "legacy_name": "小酒瓶",
+      "mapping_note": "旧数据可参考",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C04.png",
+      "assigned_tactical_source": "art/tactical-sprites/battle-style-v6/afei_figure_C04.png",
+      "skill_ids": [
+        "bottle_breakthrough",
+        "finals_moment",
+        "teammate_ball"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S06_C04_C09_BV1cWU4BaECW.jpg",
+        "art/references/streamers/C04_bottle.jpg",
+        "art/references/user-provided/C04-xiaojiuping.png"
+      ]
+    },
+    {
+      "current_roster_number": 5,
+      "current_name": "白小帅子",
+      "legacy_id": "C09",
+      "legacy_name": "白小帅子",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C09.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "small_heart",
+        "drum",
+        "guard_gate"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S06_C04_C09_BV1cWU4BaECW.jpg",
+        "art/references/streamers/C09_baixiaoshuai.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 6,
+      "current_name": "李李超欧",
+      "legacy_id": "C05",
+      "legacy_name": "李李超欧",
+      "mapping_note": "旧数据可参考",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C05.png",
+      "assigned_tactical_source": "art/tactical-sprites/battle-style-v6/afei_figure_C05.png",
+      "skill_ids": [
+        "unselectable",
+        "chaoju",
+        "ouqi"
+      ],
+      "reference_image_candidates": [
+        "art/references/streamers/C05_lili.jpg",
+        "art/references/user-provided/C05-lili.png"
+      ]
+    },
+    {
+      "current_roster_number": 7,
+      "current_name": "小月牙",
+      "legacy_id": "C07",
+      "legacy_name": "小月牙",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C07.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "supermarket",
+        "biantai",
+        "optimist"
+      ],
+      "reference_image_candidates": [
+        "art/references/streamers/C07_xiaoyueya.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 8,
+      "current_name": "余初九",
+      "legacy_id": "C06",
+      "legacy_name": "余初九",
+      "mapping_note": "旧数据可参考",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C06.png",
+      "assigned_tactical_source": "art/tactical-sprites/battle-style-v6/afei_figure_C06.png",
+      "skill_ids": [
+        "dog_bark",
+        "loyalty",
+        "guard_swap"
+      ],
+      "reference_image_candidates": [
+        "art/references/streamers/C06_yuchujiu.jpg",
+        "art/references/user-provided/C06-yuchujiu.png"
+      ]
+    },
+    {
+      "current_roster_number": 9,
+      "current_name": "小鱼贝壳",
+      "legacy_id": "C08",
+      "legacy_name": "小鱼贝壳",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C08.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "only_man",
+        "nicotine",
+        "cover_up"
+      ],
+      "reference_image_candidates": [
+        "art/references/streamers/C08_shell.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 10,
+      "current_name": "王怼怼",
+      "legacy_id": "C10",
+      "legacy_name": "王怼怼",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C10.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "fear_afei",
+        "prince_order",
+        "dui_sentence"
+      ],
+      "reference_image_candidates": [
+        "art/references/streamers/C10_wangduidui.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 11,
+      "current_name": "老蔡／川神／陈彦川",
+      "legacy_id": "C11",
+      "legacy_name": "川神",
+      "mapping_note": "仅保留旧图与背景；现行旧名册已移除，技能已转给小宁；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": false,
+      "event_portrait": "src/gfx/ui/events/afei_C11.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [],
+      "reference_image_candidates": [
+        "art/references/bilibili/S19_C11_C12_BV1cJoyBqE67.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 12,
+      "current_name": "眼子",
+      "legacy_id": null,
+      "legacy_name": null,
+      "mapping_note": "未找到独立人物数据或对应成品图",
+      "has_legacy_definition": false,
+      "event_portrait": null,
+      "assigned_tactical_source": null,
+      "skill_ids": [],
+      "reference_image_candidates": []
+    },
+    {
+      "current_roster_number": 13,
+      "current_name": "亿口甜筒／小虎",
+      "legacy_id": "C12",
+      "legacy_name": "小虎",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C12.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "scout_path",
+        "return_arrow",
+        "catch_rear"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S19_C11_C12_BV1cJoyBqE67.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 14,
+      "current_name": "小宁",
+      "legacy_id": "C32",
+      "legacy_name": "小宁",
+      "mapping_note": "有数据和技能；独立人物图缺失；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": null,
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "blue_form",
+        "steady_hand",
+        "good_card"
+      ],
+      "reference_image_candidates": []
+    },
+    {
+      "current_roster_number": 15,
+      "current_name": "小胖徐不快乐",
+      "legacy_id": "C33",
+      "legacy_name": "小胖",
+      "mapping_note": "有数据和技能；独立人物图缺失；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": null,
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "pang_anchor",
+        "pang_share",
+        "pang_breath"
+      ],
+      "reference_image_candidates": []
+    },
+    {
+      "current_roster_number": 16,
+      "current_name": "大鹅",
+      "legacy_id": "C13",
+      "legacy_name": "大鹅",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C13.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "goose_bully",
+        "gaga_charge",
+        "guard_nest"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S20_C13_BV1und5BhEsB.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 17,
+      "current_name": "蔓越莓",
+      "legacy_id": "C34",
+      "legacy_name": "蔓越莓",
+      "mapping_note": "有数据和技能；独立人物图缺失；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": null,
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "berry_eye",
+        "berry_mark",
+        "berry_reserve"
+      ],
+      "reference_image_candidates": []
+    },
+    {
+      "current_roster_number": 18,
+      "current_name": "小哈尼",
+      "legacy_id": null,
+      "legacy_name": null,
+      "mapping_note": "未找到独立人物数据或对应成品图",
+      "has_legacy_definition": false,
+      "event_portrait": null,
+      "assigned_tactical_source": null,
+      "skill_ids": [],
+      "reference_image_candidates": []
+    },
+    {
+      "current_roster_number": 19,
+      "current_name": "可可",
+      "legacy_id": "C17",
+      "legacy_name": "可可",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C17.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "own_people",
+        "pokemon",
+        "breathe_easy"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S22_C15_C17_BV1454R6iEVa.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 20,
+      "current_name": "余想",
+      "legacy_id": "C20",
+      "legacy_name": "余想",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C20.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "five_elder",
+        "long_watch",
+        "shift_arrive"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S39_C20_BV1Qntq6hEwL.jpg",
+        "art/references/bilibili/S40_C20_BV16ath6fEzW.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 21,
+      "current_name": "童猪",
+      "legacy_id": "C18",
+      "legacy_name": "童猪",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C18.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "bear_strike",
+        "know_rules",
+        "cup_signal"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S13_C18_BV1aMes6CEzW.jpg",
+        "art/references/streamers/C18_tongzhu.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 22,
+      "current_name": "美伢",
+      "legacy_id": "C21",
+      "legacy_name": "美伢",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C21.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "king_dance",
+        "read_beat",
+        "curtain_yield"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S41_C21_C22_BV1wcud6pE9h.jpg",
+        "art/references/bilibili/S59_C21_BV1hobT6EEzP.jpg",
+        "art/references/streamers/C21_meiya.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 23,
+      "current_name": "玩蛇",
+      "legacy_id": "C25",
+      "legacy_name": "玩蛇",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C25.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "snake_read",
+        "snake_trial",
+        "next_path"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S36_C25_BV1HBY16SEAV.jpg",
+        "art/references/streamers/C25_wanshe.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 24,
+      "current_name": "涂涂",
+      "legacy_id": "C16",
+      "legacy_name": "涂涂",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C16.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "return_road",
+        "leave_not_gone",
+        "one_more_night"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S21_C16_BV1Mde16wEkt.jpg",
+        "art/references/streamers/C16_tutu.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 25,
+      "current_name": "宋暖阳",
+      "legacy_id": null,
+      "legacy_name": null,
+      "mapping_note": "未找到独立人物数据或对应成品图",
+      "has_legacy_definition": false,
+      "event_portrait": null,
+      "assigned_tactical_source": null,
+      "skill_ids": [],
+      "reference_image_candidates": []
+    },
+    {
+      "current_roster_number": 26,
+      "current_name": "溺水小龟",
+      "legacy_id": null,
+      "legacy_name": null,
+      "mapping_note": "未找到独立人物数据或对应成品图",
+      "has_legacy_definition": false,
+      "event_portrait": null,
+      "assigned_tactical_source": null,
+      "skill_ids": [],
+      "reference_image_candidates": []
+    },
+    {
+      "current_roster_number": 27,
+      "current_name": "奶盖",
+      "legacy_id": "C19",
+      "legacy_name": "奶盖",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C19.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "mouth_strong",
+        "shrink_cover",
+        "abs_comeback"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S25_C19_BV1ThtN6vEa7.jpg",
+        "art/references/bilibili/S27_C19_BV1Wwt86hEhD.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 28,
+      "current_name": "小杰",
+      "legacy_id": "C14",
+      "legacy_name": "小杰",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C14.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "lock_wagon",
+        "not_fooled",
+        "spare_key"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S14_C14_BV1fGeG6HEKc.jpg",
+        "art/references/streamers/C14_xiaojie.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 29,
+      "current_name": "bula",
+      "legacy_id": "C31",
+      "legacy_name": "bula",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C31.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "purse_clear",
+        "budget_share",
+        "no_last_throw"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S49_C31_BV1AobM6ME4c.jpg",
+        "art/references/streamers/C31_bula.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 30,
+      "current_name": "苏袜",
+      "legacy_id": "C15",
+      "legacy_name": "苏袜",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C15.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "foot_point",
+        "half_step",
+        "hard_brake"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S22_C15_C17_BV1454R6iEVa.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 31,
+      "current_name": "千涵",
+      "legacy_id": "C23",
+      "legacy_name": "千涵",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C23.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "start_run",
+        "short_sprint",
+        "segment_breath"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S42_C23_BV1tQ4R6gELW.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 32,
+      "current_name": "王大芷",
+      "legacy_id": "C26",
+      "legacy_name": "芷芷",
+      "mapping_note": "旧名芷芷，身份对应待确认；禁止自动归并；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C26.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "hold_ground",
+        "hold_curtain",
+        "door_mine"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S37_C26_BV1tcbM61EyS.jpg",
+        "art/references/streamers/C26_zhizhi.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 33,
+      "current_name": "瑶瑶牙",
+      "legacy_id": "C27",
+      "legacy_name": "瑶瑶牙",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C27.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "lvbu_weapon",
+        "breach_strike",
+        "look_flag"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S38_C27_BV1w1b36VEW6.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 34,
+      "current_name": "羊咩咩",
+      "legacy_id": "C28",
+      "legacy_name": "羊咩咩",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C28.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "curve_force",
+        "line_detour",
+        "bell_lead"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S35_C28_BV1nKeg6UE7V.jpg"
+      ]
+    },
+    {
+      "current_roster_number": 35,
+      "current_name": "陈知含",
+      "legacy_id": "C22",
+      "legacy_name": "陈知含",
+      "mapping_note": "旧数据可参考；不在当前六人自定义胸像分配名单",
+      "has_legacy_definition": true,
+      "event_portrait": "src/gfx/ui/events/afei_C22.png",
+      "assigned_tactical_source": null,
+      "skill_ids": [
+        "moon_cake",
+        "remember_shield",
+        "guard_self"
+      ],
+      "reference_image_candidates": [
+        "art/references/bilibili/S41_C21_C22_BV1wcud6pE9h.jpg",
+        "art/references/bilibili/S60_C22_BV1fJ8Z6zEQh.jpg",
+        "art/references/streamers/C22_chenzhihan.jpg"
+      ]
+    }
+  ],
+  "legacy_only": [
+    {
+      "legacy_id": "C29",
+      "name": "一凹瑶",
+      "action": "保留归档，不加入当前35人名单"
+    },
+    {
+      "legacy_id": "C30",
+      "name": "罗一可",
+      "action": "保留归档，不加入当前35人名单"
+    }
+  ]
+}

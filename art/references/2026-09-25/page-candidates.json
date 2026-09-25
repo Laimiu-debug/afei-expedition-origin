@@ -1,0 +1,72 @@
+[
+  {
+    "id": "xiaoning",
+    "page": "https://www.douyu.com/9388639",
+    "status": 200,
+    "title": [
+      "女神大赛_小宁oni直播_小宁oni直播_小宁oni户外直播_小宁oni斗鱼直播"
+    ],
+    "candidates": [
+      "<img src=\"https://rpic.douyucdn.cn/asrpic/260925/9388639_src_2135.avif/dy4\" style=\"width:534px;height:300px;top:-320px;left:-554px;position:fixed\" alt=\"陪伴&amp;nbsp;天天开心9388639\" title=\"小宁oni\"/>",
+      "<img class=\"image__GNnZC avatarPic__fJ5O9\" src=\"https://apic.douyucdn.cn/upload/avatar_v3/202409/80a50359098a4f9f9928797efb8c1163_big.jpg\" width=\"50\" height=\"50\" alt=\"小宁oni\"/>"
+    ],
+    "bytes": 138875
+  },
+  {
+    "id": "xiaopang",
+    "page": "https://www.douyu.com/7300160",
+    "status": 200,
+    "title": [
+      "灿团S7相爱相杀_徐不快乐直播_徐不快乐直播_徐不快乐户外直播_徐不快乐斗鱼直播"
+    ],
+    "candidates": [
+      "<img src=\"https://rpic.douyucdn.cn/asrpic/260925/7300160_src_2135.avif/dy4\" style=\"width:534px;height:300px;top:-320px;left:-554px;position:fixed\" alt=\"祝你天天开心7300160\" title=\"徐不快乐\"/>",
+      "<img class=\"image__GNnZC avatarPic__fJ5O9\" src=\"https://apic.douyucdn.cn/upload/avatar_v3/202411/191339e07a634d9894f67067076f1283_big.jpg\" width=\"50\" height=\"50\" alt=\"徐不快乐\"/>"
+    ],
+    "bytes": 127669
+  },
+  {
+    "id": "xiaohani",
+    "page": "https://www.douyu.com/22499",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  },
+  {
+    "id": "songnuanyang",
+    "page": "https://www.douyu.com/6151194",
+    "status": 200,
+    "title": [
+      "CSTG朗团S1_宋暖阳绝不咕咕直播_宋暖阳绝不咕咕直播_宋暖阳绝不咕咕主机其他游戏直播_宋暖阳绝不咕咕斗鱼直播"
+    ],
+    "candidates": [
+      "<img src=\"https://rpic.douyucdn.cn/asrpic/260925/6151194_src_2024.avif/dy4\" style=\"width:534px;height:300px;top:-320px;left:-554px;position:fixed\" alt=\"【CsTg】1元粉丝牌+双倍钻粉节\" title=\"宋暖阳绝不咕咕\"/>",
+      "<img class=\"image__GNnZC avatarPic__fJ5O9\" src=\"https://apic.douyucdn.cn/upload/avatar_v3/202605/8738eb45219b46338cdf6e16ceb5fd97_big.jpg\" width=\"50\" height=\"50\" alt=\"宋暖阳绝不咕咕\"/>"
+    ],
+    "bytes": 129298
+  },
+  {
+    "id": "xiaogui",
+    "page": "https://www.douyu.com/9765366",
+    "status": 200,
+    "title": [
+      "溺水小龟直播_溺水小龟直播_溺水小龟主机其他游戏直播_溺水小龟斗鱼直播"
+    ],
+    "candidates": [
+      "<img src=\"https://rpic.douyucdn.cn/asrpic/260925/9765366_src_2135.avif/dy4\" style=\"width:534px;height:300px;top:-320px;left:-554px;position:fixed\" alt=\"【CSTG】祝大家中秋快乐！\" title=\"溺水小龟\"/>",
+      "<img class=\"image__GNnZC avatarPic__fJ5O9\" src=\"https://apic.douyucdn.cn/upload/avatar_v3/202512/ccb175428eb445dd8b983598e5f4a942_big.jpg\" width=\"50\" height=\"50\" alt=\"溺水小龟\"/>"
+    ],
+    "bytes": 107465
+  },
+  {
+    "id": "sylar",
+    "page": "https://www.douyu.com/9712931",
+    "status": 200,
+    "title": [
+      "刘嘉俊Sylar丨直播_刘嘉俊Sylar丨直播_刘嘉俊Sylar丨DOTA2直播_刘嘉俊Sylar丨斗鱼直播"
+    ],
+    "candidates": [
+      "<img src=\"https://rpic.douyucdn.cn/default2.jpg\" style=\"width:534px;height:300px;top:-320px;left:-554px;position:fixed\" alt=\"重庆森林999的直播间\" title=\"刘嘉俊Sylar丨\"/>",
+      "<img class=\"image__GNnZC avatarPic__fJ5O9\" src=\"https://apic.douyucdn.cn/upload/avatar_v3/202304/85d66b9168c04c6ab97b01b2ef05d77d_big.jpg\" width=\"50\" height=\"50\" alt=\"刘嘉俊Sylar丨\"/>"
+    ],
+    "bytes": 107291
+  }
+]

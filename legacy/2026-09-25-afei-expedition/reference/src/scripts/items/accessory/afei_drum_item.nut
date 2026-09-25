@@ -1,0 +1,2 @@
+this.afei_drum_item <- this.inherit("scripts/items/accessory/accessory", {function create() {this.accessory.create();this.m.ID="accessory.afei_drum";this.m.Name="腰鼓饰物";this.m.Description="伙伴随身的纪念物；技能来自本人，不随饰物转交。";this.m.Icon="loot/inventory_loot_09.png";this.m.Value=0;this.m.SlotType=this.Const.ItemSlot.Accessory;}
+});

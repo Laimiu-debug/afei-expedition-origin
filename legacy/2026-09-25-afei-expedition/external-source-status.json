@@ -1,0 +1,740 @@
+[
+  {
+    "kind": "icon",
+    "id": "wawa_call",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-0d6cfa1c-ef15-49ed-8963-0275ccddb969.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "jiahao",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-67c3178a-10fa-4f2c-86b7-b97ae7f81249.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "toad_escape",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-0eaea635-81e2-4c57-8116-1d48fe9e79e1.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "full_circle",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-3b70358f-fc91-4206-8b8a-c530bff6cd81.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "scrap_parts",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-d2276641-eec3-4363-99c9-01c692f5ddc3.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "abacus_mark",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-e38a3845-374b-41dc-ace1-d3f113db700d.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "shadow_captain",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-ce88a9a0-dba6-4613-bd05-8e67f6a52b7e.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "steal_bro",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-afd88ac6-274e-4645-bc31-8c2b06af7925.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "borrow_strike",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-a5eff2a3-b2ac-4cd4-a51f-017fb3576aa6.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "together_lift",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-15c9ee6b-3fb7-4179-aedc-31fce09e8f0d.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "bottle_breakthrough",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-56322145-a515-4eb2-af23-9edb218d48df.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "finals_moment",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-6539e457-d80a-4497-85d6-14debf92b8cd.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "teammate_ball",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-a2d026d1-e682-43f5-b008-6ff071b4066d.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "unselectable",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-89ffa52d-2e34-4fca-a021-1d110d198d6c.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "chaoju",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-b720740a-3ecd-4435-b032-34ba18317b10.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "ouqi",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-27e6c6db-b94c-4e15-95c8-0360c5f56114.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "dog_bark",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-d049515c-7160-4991-b966-ff0d9da8d2a8.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "loyalty",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-ab347d04-84d9-4f12-8d17-2d406f3364a6.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "guard_swap",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-a08c3c01-fab7-471b-8c99-ec148a0ee76c.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "supermarket",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-10b0f2de-2faa-4125-a783-5cff9aa7c0e2.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "biantai",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-156d6a9e-eaad-4aec-b8fa-7ac9a2e77232.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "optimist",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-20b4d2a7-dce1-4534-be61-a56be5c36e49.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "only_man",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-5be2f4b2-1da2-4c40-920f-cdcefb14a61f.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "nicotine",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-22ab7c16-458b-417f-b4d4-a904f92bbe45.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "cover_up",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-db958e4f-82b2-4a91-baa7-14aa30ef5916.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "small_heart",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-bbe6da16-5e9c-4b77-a4e1-80a7c2fc5006.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "drum",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-acde2b76-d5d3-4d8f-9809-6e77f385300f.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "guard_gate",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-d17f6c93-1348-4cec-95af-7718d47c1fac.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "fear_afei",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-0a66c5a8-ded4-4a7f-b826-10b6a917c94c.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "prince_order",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-0ef7ca77-1cef-41dc-8375-5066b39914b9.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "dui_sentence",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-2ae3473e-7809-4f2d-83e8-593821314e3f.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "blue_form",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-b227dd96-4278-4214-b606-addd9af3827f.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "steady_hand",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-db9e3a33-51c4-49d8-998f-af0624777d05.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "good_card",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-af6bac5f-1e14-42a2-8315-7bbaa3a5b206.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "scout_path",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-f744d19d-ff3e-4309-a727-5795834f605a.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "return_arrow",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-8427a970-fe1b-4f22-9398-59e2fc1d3f13.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "catch_rear",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-d8ef0d5b-a626-4eef-928a-58231f35289c.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "goose_bully",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-28b71a6c-dfe9-4aa2-8067-0c4c187b8dc6.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "gaga_charge",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-385bd26c-86fb-4b60-831c-1546256bca51.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "guard_nest",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-b4bc1f13-56b9-497c-a718-a0a8016bcd88.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "lock_wagon",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-a9937c69-b8a3-419d-932d-8f6930013bf5.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "not_fooled",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-7270321d-37ad-4c90-b5fb-3ac758d422b8.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "spare_key",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-787eb191-b025-4880-b2d9-d3465a371eed.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "foot_point",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-1a1d17e4-1bf5-4a94-947e-a00591541e31.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "half_step",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-168c4206-e04e-408d-85f1-2e46cd074324.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "hard_brake",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-cc6451bf-758b-404f-ba7e-ef1c821d6c37.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "return_road",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-4c98b43d-ebd8-4bd0-8ac2-a57ce97c5eb5.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "leave_not_gone",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-c2e207f6-4610-4fe5-ab58-91f07b9719af.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "one_more_night",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-c18c2735-bba9-4e10-968e-2253f46abe27.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "own_people",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-704d7713-e68a-4b54-bc3f-eea1de53bf46.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "pokemon",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-c02ca423-ba2b-4f49-bf42-8763517a1dc5.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "breathe_easy",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_m2mlOiCWSzYh9gxGZke3pnwW.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "bear_strike",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_4rlXEIGT6Q3Kla06p1L3lwpm.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "know_rules",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_u5T7nBoGIFjBAyrPTcogZtb8.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "cup_signal",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_EY8IqlLaA7VxDFI0JVP6Qox9.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "mouth_strong",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_4kVRhF01G2UZKYJuGNo1HD3o.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "shrink_cover",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_39NG5SkMBIQ6tFq5bhlYayyp.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "abs_comeback",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_JAMUGuMRyAZ2JkIZpbcDLGn8.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "five_elder",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_5umOatJtH6ANedJKlYZACAPY.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "long_watch",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_ebllIj2LEXizOscVYuS7O62j.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "shift_arrive",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_AbPfAogD5RH8CljoGQUqEJWD.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "king_dance",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_g6tit29T9zJRgnTMXTstocYx.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "read_beat",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_q6keIuAvq627JAbBvii7gFV1.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "curtain_yield",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_h9s02hYFLtzcE9cRigTwR2wO.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "moon_cake",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_NYEjIpxztsBxPI834okJoSal.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "remember_shield",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_SiRzKHgdeDtbeOPQrykvdfTR.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "guard_self",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_Ffo1gCjQuSQL3p1kLR5Udopd.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "start_run",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_MGfdPhJ5iBRWbYq8UeH5mlM7.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "short_sprint",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_FL4yvc0K2zuoTFcGrL8Du9Gv.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "segment_breath",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_zi5TdW4pXIiibw4sWWI0a5WB.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "snake_read",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_Kmj6yMwUnt4uAPOENCgOxflb.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "snake_trial",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_BTdg3Ot6iyvZc4ghtxCxFQrF.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "next_path",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_gQAjPZZbV6pX4SzmZJRDHrjs.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "hold_ground",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_tBa5kUyPYeXb6oEAVbyGdXoV.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "hold_curtain",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_vT5uUsHyheL2JZSxrk2M0kjv.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "door_mine",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_KYUxWXVCxCuc4TMEUj8n47zX.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "lvbu_weapon",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_g3OTpdVal33KH0pV3XBNQA0k.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "breach_strike",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_w02bWbULbo8Tmu4nhMSDJCd1.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "look_flag",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_ZcAjpqm6xD28qsiJY0hJGMjF.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "curve_force",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_EVjb4hMSOX6pNoz0ubtuzRAL.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "line_detour",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_PPgu2nHJmk1c14Dqf5A5GuDy.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "bell_lead",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_Z6IdNfJLmr17U3Fbjzz0eaB5.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "half_react",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_WWW4RHxBHfgqhCbXI5QQsGRV.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "catch_baton",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_W4FUrWTrDgdFIBNASq0fCSUT.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "duck_turn",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_frhIghVWtHi6l74FT5zediiE.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "two_steps",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_qyeQ7ay8sqNKbnrhhy9sAdc3.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "door_block",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_okLFnRT6YupC3l7Njxw2oZOF.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "long_run_breath",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_WVh4OsYdWyHqLRK2GDczHGeV.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "purse_clear",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_w67CptGd40mRrjlA6rdA4oO5.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "budget_share",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_TBPHpu1dKa6L1QtBcPetbEyQ.png",
+    "original_available": false
+  },
+  {
+    "kind": "icon",
+    "id": "no_last_throw",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\call_YgcsvHdAsBpxr26ki8v1E4vN.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C01",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-834e2b28-784d-4399-b9e2-f750698ceb3d.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C02",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-5f6b5b13-9dc2-42d6-b7e2-b5298e7879f4.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C03",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-0102b8be-338f-4008-801c-80bc45e2b559.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C04",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-dc572274-cdc2-4a2c-a54f-af08eaacf628.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C05",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-416c0cd3-0640-4444-a22e-00ca39e34fee.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C06",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-b3215bb6-8c64-4d00-bcf9-37c2270e5988.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C07",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-bfc22d7a-818f-4466-bc2b-4e2d04ed03ea.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C08",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-54765e5e-6400-4d38-94cf-3f8c96bf953f.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C09",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-7cd1180b-9304-4ec2-9495-a710323d8c4d.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C10",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-7024ad78-0826-44f0-9fff-ec9d399d593b.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C11",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-ea3f3c64-ed04-4bf8-acac-038a0c41be97.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C12",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-4c857728-1f81-461a-8427-39c8c38538eb.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C13",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-9ceb9bb5-ce77-499e-a6e4-333f122faa9c.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C14",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-889b27bf-dd5d-4923-a133-f31f72e1e7ca.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C15",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-07fbc255-5ef1-4617-a320-e5236ebe2445.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C16",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-a8bc77d7-eb22-434c-aeae-1a8f95d5d998.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C17",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-6a23c811-5c30-47b7-8c6a-05973ca2b4c9.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C18",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-52cf7de2-696c-4d34-83fa-1111d62ec0c2.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C19",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-37cba42b-fc81-4c7e-b392-8e55be0f9edc.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C20",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-f6056144-0160-4a67-8aa0-6afd36c676b6.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C21",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-a20c145b-dbb5-4d57-828e-fdcc4c3879b7.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C22",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-45dd1ba9-fe12-4f6f-a5d4-e2e15fff738d.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C23",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-ae07af47-a58e-4fd6-99e4-5f5044b956ed.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C25",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-bf888d14-ee63-43c1-8f39-0beec7233bbd.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C26",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-17d8c974-15cf-47ca-9095-1971388104ee.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C27",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-8b51ecb0-c964-4d0e-afcd-64ed48d530f3.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C28",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-b8f33046-9cb6-45c0-a5d9-abfe248f289a.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C29",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-6172c9d1-9e1e-403c-96a4-5f0ce27dd5df.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C30",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-45ccd3d5-c7dd-45f1-97fd-112c7fcf888c.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "C31",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-ae39fb87-75b7-4516-b7fe-76ecf6ffb154.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "scene_welcome",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-7bb13914-a4e9-4359-85a4-a6547f7c6e37.png",
+    "original_available": false
+  },
+  {
+    "kind": "portrait",
+    "id": "scene_farewell",
+    "original_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0cd33-0f6c-79c3-b04f-1fc5d6df8af1\\exec-d2e30185-de52-4c3e-98ba-919a96dce25c.png",
+    "original_available": false
+  }
+]

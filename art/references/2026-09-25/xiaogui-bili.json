@@ -1,0 +1,479 @@
+{
+  "code": 0,
+  "message": "OK",
+  "ttl": 1,
+  "data": {
+    "bvid": "BV13HjH6xEoE",
+    "aid": 116782660591159,
+    "videos": 1,
+    "tid": 17,
+    "tid_v2": 2207,
+    "tname": "",
+    "tname_v2": "",
+    "copyright": 3,
+    "pic": "http://i0.hdslb.com/bfs/archive/8727a86c5d29f5d97b2da7b500905644992ed41f.jpg",
+    "title": "【寅子】主播介绍：溺水小龟-CSTG和月下传媒合并成为新CSTG传媒-弹幕版-2026.6.20",
+    "pubdate": 1782727200,
+    "ctime": 1781962229,
+    "desc": "主播：寅子，直播间：斗鱼71415 \n主播：溺水小龟 ，直播间：9765366",
+    "desc_v2": [
+      {
+        "raw_text": "主播：寅子，直播间：斗鱼71415 \n主播：溺水小龟 ，直播间：9765366",
+        "type": 1,
+        "biz_id": 0
+      }
+    ],
+    "state": 0,
+    "duration": 300,
+    "mission_id": 4066743,
+    "rights": {
+      "bp": 0,
+      "elec": 0,
+      "download": 1,
+      "movie": 0,
+      "pay": 0,
+      "hd5": 0,
+      "no_reprint": 0,
+      "autoplay": 1,
+      "ugc_pay": 0,
+      "is_cooperation": 0,
+      "ugc_pay_preview": 0,
+      "no_background": 0,
+      "clean_mode": 0,
+      "is_stein_gate": 0,
+      "is_360": 0,
+      "no_share": 0,
+      "arc_pay": 0,
+      "free_watch": 0
+    },
+    "owner": {
+      "mid": 3546966785001781,
+      "name": "CSTG监控室",
+      "face": "https://i1.hdslb.com/bfs/face/b208df01c74187e0f3b5a4cef13e800215cd4bc4.jpg"
+    },
+    "stat": {
+      "aid": 116782660591159,
+      "view": 5808,
+      "danmaku": 0,
+      "reply": 0,
+      "favorite": 2,
+      "coin": 2,
+      "share": 0,
+      "now_rank": 0,
+      "his_rank": 0,
+      "like": 5,
+      "dislike": 0,
+      "evaluation": "",
+      "vt": 0
+    },
+    "argue_info": {
+      "argue_msg": "",
+      "argue_type": 0,
+      "argue_link": ""
+    },
+    "dynamic": "",
+    "cid": 39268516072,
+    "dimension": {
+      "width": 1920,
+      "height": 1080,
+      "rotate": 0
+    },
+    "season_id": 8373847,
+    "premiere": null,
+    "teenage_mode": 1,
+    "is_chargeable_season": false,
+    "is_story": false,
+    "is_upower_exclusive": false,
+    "is_upower_play": false,
+    "is_upower_preview": false,
+    "enable_vt": 0,
+    "vt_display": "",
+    "is_upower_exclusive_with_qa": false,
+    "is_hua_sheng": false,
+    "no_cache": false,
+    "pages": [
+      {
+        "cid": 39268516072,
+        "page": 1,
+        "from": "vupload",
+        "part": "【寅子】主播介绍：溺水小龟 -肉鸽贯口-CSTG和月下传媒合并成为新CSTG传媒-弹幕版-2026.6.20",
+        "duration": 300,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 1920,
+          "height": 1080,
+          "rotate": 0
+        },
+        "first_frame": "http://i1.hdslb.com/bfs/storyff/_00001ibp5nj96p0j72fapf4bonaydyb_firsti.jpg",
+        "ctime": 1781962229
+      }
+    ],
+    "subtitle": {
+      "allow_submit": false,
+      "list": []
+    },
+    "ugc_season": {
+      "id": 8373847,
+      "title": "溺水小龟",
+      "cover": "https://archive.biliimg.com/bfs/archive/2940a45b7cbbfc8d986f8b69d676d1bfac50efc6.jpg",
+      "mid": 3546966785001781,
+      "intro": "",
+      "sign_state": 0,
+      "attribute": 140,
+      "stat": {
+        "season_id": 8373847,
+        "view": 6923,
+        "danmaku": 0,
+        "reply": 1,
+        "fav": 2,
+        "coin": 6,
+        "share": 0,
+        "now_rank": 0,
+        "his_rank": 0,
+        "like": 22,
+        "vt": 0,
+        "vv": 0
+      },
+      "ep_count": 3,
+      "season_type": 1,
+      "is_pay_season": false,
+      "enable_vt": 0,
+      "sections": [
+        {
+          "season_id": 8373847,
+          "id": 9310502,
+          "title": "正片",
+          "type": 1,
+          "episodes": [
+            {
+              "season_id": 8373847,
+              "section_id": 9310502,
+              "id": 202956586,
+              "aid": 116771637958363,
+              "cid": 39221987614,
+              "title": "【溺水小龟】CSGO：【cstg】低血压治疗室-弹幕版-2026.6.18",
+              "attribute": 0,
+              "arc": {
+                "aid": 116771637958363,
+                "videos": 0,
+                "type_id": 0,
+                "type_name": "",
+                "copyright": 0,
+                "pic": "http://i0.hdslb.com/bfs/archive/77509212a72116137f4211ba4a6680c5a699123f.jpg",
+                "title": "【溺水小龟】CSGO：【cstg】低血压治疗室-弹幕版-2026.6.18",
+                "pubdate": 1781834400,
+                "ctime": 1781834400,
+                "desc": "",
+                "state": 0,
+                "duration": 216,
+                "rights": {
+                  "bp": 0,
+                  "elec": 0,
+                  "download": 0,
+                  "movie": 0,
+                  "pay": 0,
+                  "hd5": 0,
+                  "no_reprint": 0,
+                  "autoplay": 0,
+                  "ugc_pay": 0,
+                  "is_cooperation": 0,
+                  "ugc_pay_preview": 0,
+                  "arc_pay": 0,
+                  "free_watch": 0
+                },
+                "author": {
+                  "mid": 3546966785001781,
+                  "name": "CSTG监控室",
+                  "face": "https://i1.hdslb.com/bfs/face/b208df01c74187e0f3b5a4cef13e800215cd4bc4.jpg"
+                },
+                "stat": {
+                  "aid": 116771637958363,
+                  "view": 804,
+                  "danmaku": 0,
+                  "reply": 1,
+                  "fav": 0,
+                  "coin": 4,
+                  "share": 0,
+                  "now_rank": 0,
+                  "his_rank": 0,
+                  "like": 7,
+                  "dislike": 0,
+                  "evaluation": "",
+                  "argue_msg": "",
+                  "vt": 0,
+                  "vv": 804
+                },
+                "dynamic": "",
+                "dimension": {
+                  "width": 0,
+                  "height": 0,
+                  "rotate": 0
+                },
+                "desc_v2": null,
+                "is_chargeable_season": false,
+                "is_blooper": false,
+                "enable_vt": 0,
+                "vt_display": "",
+                "type_id_v2": 0,
+                "type_name_v2": "",
+                "is_lesson_video": 0
+              },
+              "page": {
+                "cid": 39221987614,
+                "page": 1,
+                "from": "vupload",
+                "part": "【溺水小龟】CSGO：【cstg】低血压治疗室-弹幕版-2026.6.18",
+                "duration": 216,
+                "vid": "",
+                "weblink": "",
+                "dimension": {
+                  "width": 1920,
+                  "height": 1080,
+                  "rotate": 0
+                }
+              },
+              "bvid": "BV15ija6dEbS",
+              "pages": [
+                {
+                  "cid": 39221987614,
+                  "page": 1,
+                  "from": "vupload",
+                  "part": "【溺水小龟】CSGO：【cstg】低血压治疗室-弹幕版-2026.6.18",
+                  "duration": 216,
+                  "vid": "",
+                  "weblink": "",
+                  "dimension": {
+                    "width": 1920,
+                    "height": 1080,
+                    "rotate": 0
+                  }
+                }
+              ]
+            },
+            {
+              "season_id": 8373847,
+              "section_id": 9310502,
+              "id": 203358628,
+              "aid": 116782660591159,
+              "cid": 39268516072,
+              "title": "【寅子】主播介绍：溺水小龟 -肉鸽贯口-CSTG和月下传媒合并成为新CSTG传媒-弹幕版-2026.6.20",
+              "attribute": 0,
+              "arc": {
+                "aid": 116782660591159,
+                "videos": 0,
+                "type_id": 0,
+                "type_name": "",
+                "copyright": 0,
+                "pic": "http://i0.hdslb.com/bfs/archive/8727a86c5d29f5d97b2da7b500905644992ed41f.jpg",
+                "title": "【寅子】主播介绍：溺水小龟 -肉鸽贯口-CSTG和月下传媒合并成为新CSTG传媒-弹幕版-2026.6.20",
+                "pubdate": 1782727200,
+                "ctime": 1782727200,
+                "desc": "",
+                "state": 0,
+                "duration": 300,
+                "rights": {
+                  "bp": 0,
+                  "elec": 0,
+                  "download": 0,
+                  "movie": 0,
+                  "pay": 0,
+                  "hd5": 0,
+                  "no_reprint": 0,
+                  "autoplay": 0,
+                  "ugc_pay": 0,
+                  "is_cooperation": 0,
+                  "ugc_pay_preview": 0,
+                  "arc_pay": 0,
+                  "free_watch": 0
+                },
+                "author": {
+                  "mid": 3546966785001781,
+                  "name": "CSTG监控室",
+                  "face": "https://i1.hdslb.com/bfs/face/b208df01c74187e0f3b5a4cef13e800215cd4bc4.jpg"
+                },
+                "stat": {
+                  "aid": 116782660591159,
+                  "view": 5808,
+                  "danmaku": 0,
+                  "reply": 0,
+                  "fav": 2,
+                  "coin": 2,
+                  "share": 0,
+                  "now_rank": 0,
+                  "his_rank": 0,
+                  "like": 5,
+                  "dislike": 0,
+                  "evaluation": "",
+                  "argue_msg": "",
+                  "vt": 0,
+                  "vv": 5808
+                },
+                "dynamic": "",
+                "dimension": {
+                  "width": 0,
+                  "height": 0,
+                  "rotate": 0
+                },
+                "desc_v2": null,
+                "is_chargeable_season": false,
+                "is_blooper": false,
+                "enable_vt": 0,
+                "vt_display": "",
+                "type_id_v2": 0,
+                "type_name_v2": "",
+                "is_lesson_video": 0
+              },
+              "page": {
+                "cid": 39268516072,
+                "page": 1,
+                "from": "vupload",
+                "part": "【寅子】主播介绍：溺水小龟 -肉鸽贯口-CSTG和月下传媒合并成为新CSTG传媒-弹幕版-2026.6.20",
+                "duration": 300,
+                "vid": "",
+                "weblink": "",
+                "dimension": {
+                  "width": 1920,
+                  "height": 1080,
+                  "rotate": 0
+                }
+              },
+              "bvid": "BV13HjH6xEoE",
+              "pages": [
+                {
+                  "cid": 39268516072,
+                  "page": 1,
+                  "from": "vupload",
+                  "part": "【寅子】主播介绍：溺水小龟 -肉鸽贯口-CSTG和月下传媒合并成为新CSTG传媒-弹幕版-2026.6.20",
+                  "duration": 300,
+                  "vid": "",
+                  "weblink": "",
+                  "dimension": {
+                    "width": 1920,
+                    "height": 1080,
+                    "rotate": 0
+                  }
+                }
+              ]
+            },
+            {
+              "season_id": 8373847,
+              "section_id": 9310502,
+              "id": 208281428,
+              "aid": 116907231419278,
+              "cid": 39886259103,
+              "title": "【溺水小龟】【cstg】短暂放风解解帕瘾-幻兽帕鲁.弹幕版.2026.7.12",
+              "attribute": 0,
+              "arc": {
+                "aid": 116907231419278,
+                "videos": 0,
+                "type_id": 0,
+                "type_name": "",
+                "copyright": 0,
+                "pic": "http://i1.hdslb.com/bfs/archive/5f6887bc93fe6670083a0b0f852b5ac90f67c2b9.jpg",
+                "title": "【溺水小龟】【cstg】短暂放风解解帕瘾-幻兽帕鲁.弹幕版.2026.7.12",
+                "pubdate": 1783863026,
+                "ctime": 1783863026,
+                "desc": "",
+                "state": 0,
+                "duration": 322,
+                "rights": {
+                  "bp": 0,
+                  "elec": 0,
+                  "download": 0,
+                  "movie": 0,
+                  "pay": 0,
+                  "hd5": 0,
+                  "no_reprint": 0,
+                  "autoplay": 0,
+                  "ugc_pay": 0,
+                  "is_cooperation": 0,
+                  "ugc_pay_preview": 0,
+                  "arc_pay": 0,
+                  "free_watch": 0
+                },
+                "author": {
+                  "mid": 3546966785001781,
+                  "name": "CSTG监控室",
+                  "face": "https://i1.hdslb.com/bfs/face/b208df01c74187e0f3b5a4cef13e800215cd4bc4.jpg"
+                },
+                "stat": {
+                  "aid": 116907231419278,
+                  "view": 311,
+                  "danmaku": 0,
+                  "reply": 0,
+                  "fav": 0,
+                  "coin": 0,
+                  "share": 0,
+                  "now_rank": 0,
+                  "his_rank": 0,
+                  "like": 10,
+                  "dislike": 0,
+                  "evaluation": "",
+                  "argue_msg": "",
+                  "vt": 0,
+                  "vv": 311
+                },
+                "dynamic": "",
+                "dimension": {
+                  "width": 0,
+                  "height": 0,
+                  "rotate": 0
+                },
+                "desc_v2": null,
+                "is_chargeable_season": false,
+                "is_blooper": false,
+                "enable_vt": 0,
+                "vt_display": "",
+                "type_id_v2": 0,
+                "type_name_v2": "",
+                "is_lesson_video": 0
+              },
+              "page": {
+                "cid": 39886259103,
+                "page": 1,
+                "from": "vupload",
+                "part": "【溺水小龟】【cstg】短暂放风解解帕瘾-幻兽帕鲁.弹幕版.2026.7.12",
+                "duration": 322,
+                "vid": "",
+                "weblink": "",
+                "dimension": {
+                  "width": 1280,
+                  "height": 720,
+                  "rotate": 0
+                }
+              },
+              "bvid": "BV1FqN36LEF8",
+              "pages": [
+                {
+                  "cid": 39886259103,
+                  "page": 1,
+                  "from": "vupload",
+                  "part": "【溺水小龟】【cstg】短暂放风解解帕瘾-幻兽帕鲁.弹幕版.2026.7.12",
+                  "duration": 322,
+                  "vid": "",
+                  "weblink": "",
+                  "dimension": {
+                    "width": 1280,
+                    "height": 720,
+                    "rotate": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "is_season_display": true,
+    "user_garb": {
+      "url_image_ani_cut": ""
+    },
+    "honor_reply": {},
+    "like_icon": "",
+    "need_jump_bv": false,
+    "disable_show_up_info": false,
+    "is_story_play": 1,
+    "is_view_self": false
+  }
+}

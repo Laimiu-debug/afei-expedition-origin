@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sprites>
+  <sprite id="afei_figure_C01" img="afei_figure_C01.png" offsetY="35" width="114" height="142" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C02" img="afei_figure_C02.png" offsetY="35" width="114" height="142" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C03" img="afei_figure_C03.png" offsetY="35" width="114" height="142" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C04" img="afei_figure_C04.png" offsetY="35" width="114" height="142" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C05" img="afei_figure_C05.png" offsetY="35" width="114" height="142" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C06" img="afei_figure_C06.png" offsetY="35" width="114" height="142" left="-57" right="57" top="-55" bottom="87" />
+</sprites>

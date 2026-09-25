@@ -1,0 +1,787 @@
+{
+  "code": 0,
+  "message": "OK",
+  "ttl": 1,
+  "data": {
+    "bvid": "BV1eS9CBjE2X",
+    "aid": 116483388609938,
+    "videos": 1,
+    "tid": 138,
+    "tid_v2": 2015,
+    "tname": "",
+    "tname_v2": "",
+    "copyright": 1,
+    "pic": "http://i1.hdslb.com/bfs/archive/4fc3f4a7bd1423815ea3251379ee5b8ab0f4096c.jpg",
+    "title": "小宁oni：阿飞被叫烟台陈坤是因为巴旦木P的好",
+    "pubdate": 1777395714,
+    "ctime": 1777395714,
+    "desc": "",
+    "desc_v2": null,
+    "state": 0,
+    "duration": 424,
+    "rights": {
+      "bp": 0,
+      "elec": 0,
+      "download": 1,
+      "movie": 0,
+      "pay": 0,
+      "hd5": 0,
+      "no_reprint": 0,
+      "autoplay": 1,
+      "ugc_pay": 0,
+      "is_cooperation": 0,
+      "ugc_pay_preview": 0,
+      "no_background": 0,
+      "clean_mode": 0,
+      "is_stein_gate": 0,
+      "is_360": 0,
+      "no_share": 0,
+      "arc_pay": 0,
+      "free_watch": 0
+    },
+    "owner": {
+      "mid": 289358158,
+      "name": "好兄弟山峰",
+      "face": "https://i1.hdslb.com/bfs/face/8ed8646db87521033c629b1150615912fc8472bd.jpg"
+    },
+    "stat": {
+      "aid": 116483388609938,
+      "view": 2078,
+      "danmaku": 3,
+      "reply": 1,
+      "favorite": 0,
+      "coin": 0,
+      "share": 3,
+      "now_rank": 0,
+      "his_rank": 0,
+      "like": 12,
+      "dislike": 0,
+      "evaluation": "",
+      "vt": 0
+    },
+    "argue_info": {
+      "argue_msg": "",
+      "argue_type": 0,
+      "argue_link": ""
+    },
+    "dynamic": "",
+    "cid": 37922342200,
+    "dimension": {
+      "width": 960,
+      "height": 540,
+      "rotate": 0
+    },
+    "season_id": 8004892,
+    "premiere": null,
+    "teenage_mode": 1,
+    "is_chargeable_season": false,
+    "is_story": false,
+    "is_upower_exclusive": false,
+    "is_upower_play": false,
+    "is_upower_preview": false,
+    "enable_vt": 0,
+    "vt_display": "",
+    "is_upower_exclusive_with_qa": false,
+    "is_hua_sheng": false,
+    "no_cache": false,
+    "pages": [
+      {
+        "cid": 37922342200,
+        "page": 1,
+        "from": "vupload",
+        "part": "阿飞",
+        "duration": 424,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 960,
+          "height": 540,
+          "rotate": 0
+        },
+        "first_frame": "http://i1.hdslb.com/bfs/storyff/_00002o8rzrmoipw0e2jttyqxutyylmb_firsti.jpg",
+        "ctime": 1777395714
+      }
+    ],
+    "subtitle": {
+      "allow_submit": false,
+      "list": []
+    },
+    "ugc_season": {
+      "id": 8004892,
+      "title": "小宁oni",
+      "cover": "https://archive.biliimg.com/bfs/archive/f1cf98a603c277e9fe3b70db59ab04b8837cf52a.jpg",
+      "mid": 289358158,
+      "intro": "",
+      "sign_state": 0,
+      "attribute": 140,
+      "stat": {
+        "season_id": 8004892,
+        "view": 9348,
+        "danmaku": 4,
+        "reply": 3,
+        "fav": 7,
+        "coin": 4,
+        "share": 5,
+        "now_rank": 0,
+        "his_rank": 0,
+        "like": 57,
+        "vt": 0,
+        "vv": 0
+      },
+      "ep_count": 6,
+      "season_type": 1,
+      "is_pay_season": false,
+      "enable_vt": 0,
+      "sections": [
+        {
+          "season_id": 8004892,
+          "id": 8893964,
+          "title": "正片",
+          "type": 1,
+          "episodes": [
+            {
+              "season_id": 8004892,
+              "section_id": 8893964,
+              "id": 191992951,
+              "aid": 116479747954529,
+              "cid": 37897441061,
+              "title": "小宁露背装",
+              "attribute": 0,
+              "arc": {
+                "aid": 116479747954529,
+                "videos": 0,
+                "type_id": 0,
+                "type_name": "",
+                "copyright": 0,
+                "pic": "http://i2.hdslb.com/bfs/archive/31b1fd7d37fefd67f1d18b957832355c468821a4.jpg",
+                "title": "小宁露背装",
+                "pubdate": 1777340238,
+                "ctime": 1777340238,
+                "desc": "",
+                "state": 0,
+                "duration": 881,
+                "rights": {
+                  "bp": 0,
+                  "elec": 0,
+                  "download": 0,
+                  "movie": 0,
+                  "pay": 0,
+                  "hd5": 0,
+                  "no_reprint": 0,
+                  "autoplay": 0,
+                  "ugc_pay": 0,
+                  "is_cooperation": 0,
+                  "ugc_pay_preview": 0,
+                  "arc_pay": 0,
+                  "free_watch": 0
+                },
+                "author": {
+                  "mid": 289358158,
+                  "name": "好兄弟山峰",
+                  "face": "https://i1.hdslb.com/bfs/face/8ed8646db87521033c629b1150615912fc8472bd.jpg"
+                },
+                "stat": {
+                  "aid": 116479747954529,
+                  "view": 1058,
+                  "danmaku": 0,
+                  "reply": 0,
+                  "fav": 4,
+                  "coin": 0,
+                  "share": 2,
+                  "now_rank": 0,
+                  "his_rank": 0,
+                  "like": 10,
+                  "dislike": 0,
+                  "evaluation": "",
+                  "argue_msg": "",
+                  "vt": 0,
+                  "vv": 1058
+                },
+                "dynamic": "",
+                "dimension": {
+                  "width": 0,
+                  "height": 0,
+                  "rotate": 0
+                },
+                "desc_v2": null,
+                "is_chargeable_season": false,
+                "is_blooper": false,
+                "enable_vt": 0,
+                "vt_display": "",
+                "type_id_v2": 0,
+                "type_name_v2": "",
+                "is_lesson_video": 0
+              },
+              "page": {
+                "cid": 37897441061,
+                "page": 1,
+                "from": "vupload",
+                "part": "小宁露背装",
+                "duration": 881,
+                "vid": "",
+                "weblink": "",
+                "dimension": {
+                  "width": 1280,
+                  "height": 800,
+                  "rotate": 0
+                }
+              },
+              "bvid": "BV14Z9zBsEsv",
+              "pages": [
+                {
+                  "cid": 37897441061,
+                  "page": 1,
+                  "from": "vupload",
+                  "part": "小宁露背装",
+                  "duration": 881,
+                  "vid": "",
+                  "weblink": "",
+                  "dimension": {
+                    "width": 1280,
+                    "height": 800,
+                    "rotate": 0
+                  }
+                }
+              ]
+            },
+            {
+              "season_id": 8004892,
+              "section_id": 8893964,
+              "id": 191992949,
+              "aid": 116483371833920,
+              "cid": 37922276103,
+              "title": "小宁oni：大虾除闺蜜",
+              "attribute": 0,
+              "arc": {
+                "aid": 116483371833920,
+                "videos": 0,
+                "type_id": 0,
+                "type_name": "",
+                "copyright": 0,
+                "pic": "http://i1.hdslb.com/bfs/archive/4fc3f4a7bd1423815ea3251379ee5b8ab0f4096c.jpg",
+                "title": "小宁oni：大虾除闺蜜",
+                "pubdate": 1777395358,
+                "ctime": 1777395358,
+                "desc": "",
+                "state": 0,
+                "duration": 271,
+                "rights": {
+                  "bp": 0,
+                  "elec": 0,
+                  "download": 0,
+                  "movie": 0,
+                  "pay": 0,
+                  "hd5": 0,
+                  "no_reprint": 0,
+                  "autoplay": 0,
+                  "ugc_pay": 0,
+                  "is_cooperation": 0,
+                  "ugc_pay_preview": 0,
+                  "arc_pay": 0,
+                  "free_watch": 0
+                },
+                "author": {
+                  "mid": 289358158,
+                  "name": "好兄弟山峰",
+                  "face": "https://i1.hdslb.com/bfs/face/8ed8646db87521033c629b1150615912fc8472bd.jpg"
+                },
+                "stat": {
+                  "aid": 116483371833920,
+                  "view": 1267,
+                  "danmaku": 0,
+                  "reply": 0,
+                  "fav": 0,
+                  "coin": 0,
+                  "share": 0,
+                  "now_rank": 0,
+                  "his_rank": 0,
+                  "like": 11,
+                  "dislike": 0,
+                  "evaluation": "",
+                  "argue_msg": "",
+                  "vt": 0,
+                  "vv": 1267
+                },
+                "dynamic": "",
+                "dimension": {
+                  "width": 0,
+                  "height": 0,
+                  "rotate": 0
+                },
+                "desc_v2": null,
+                "is_chargeable_season": false,
+                "is_blooper": false,
+                "enable_vt": 0,
+                "vt_display": "",
+                "type_id_v2": 0,
+                "type_name_v2": "",
+                "is_lesson_video": 0
+              },
+              "page": {
+                "cid": 37922276103,
+                "page": 1,
+                "from": "vupload",
+                "part": "小宁：大虾除闺蜜",
+                "duration": 271,
+                "vid": "",
+                "weblink": "",
+                "dimension": {
+                  "width": 960,
+                  "height": 540,
+                  "rotate": 0
+                }
+              },
+              "bvid": "BV1YD9CB1EQW",
+              "pages": [
+                {
+                  "cid": 37922276103,
+                  "page": 1,
+                  "from": "vupload",
+                  "part": "小宁：大虾除闺蜜",
+                  "duration": 271,
+                  "vid": "",
+                  "weblink": "",
+                  "dimension": {
+                    "width": 960,
+                    "height": 540,
+                    "rotate": 0
+                  }
+                }
+              ]
+            },
+            {
+              "season_id": 8004892,
+              "section_id": 8893964,
+              "id": 191992950,
+              "aid": 116483371898742,
+              "cid": 37922275661,
+              "title": "小宁oni：虚与委蛇(蛇)，询问豆包",
+              "attribute": 0,
+              "arc": {
+                "aid": 116483371898742,
+                "videos": 0,
+                "type_id": 0,
+                "type_name": "",
+                "copyright": 0,
+                "pic": "http://i1.hdslb.com/bfs/archive/4fc3f4a7bd1423815ea3251379ee5b8ab0f4096c.jpg",
+                "title": "小宁oni：虚与委蛇(蛇)，询问豆包",
+                "pubdate": 1777395459,
+                "ctime": 1777395459,
+                "desc": "",
+                "state": 0,
+                "duration": 848,
+                "rights": {
+                  "bp": 0,
+                  "elec": 0,
+                  "download": 0,
+                  "movie": 0,
+                  "pay": 0,
+                  "hd5": 0,
+                  "no_reprint": 0,
+                  "autoplay": 0,
+                  "ugc_pay": 0,
+                  "is_cooperation": 0,
+                  "ugc_pay_preview": 0,
+                  "arc_pay": 0,
+                  "free_watch": 0
+                },
+                "author": {
+                  "mid": 289358158,
+                  "name": "好兄弟山峰",
+                  "face": "https://i1.hdslb.com/bfs/face/8ed8646db87521033c629b1150615912fc8472bd.jpg"
+                },
+                "stat": {
+                  "aid": 116483371898742,
+                  "view": 1024,
+                  "danmaku": 0,
+                  "reply": 0,
+                  "fav": 1,
+                  "coin": 2,
+                  "share": 0,
+                  "now_rank": 0,
+                  "his_rank": 0,
+                  "like": 4,
+                  "dislike": 0,
+                  "evaluation": "",
+                  "argue_msg": "",
+                  "vt": 0,
+                  "vv": 1024
+                },
+                "dynamic": "",
+                "dimension": {
+                  "width": 0,
+                  "height": 0,
+                  "rotate": 0
+                },
+                "desc_v2": null,
+                "is_chargeable_season": false,
+                "is_blooper": false,
+                "enable_vt": 0,
+                "vt_display": "",
+                "type_id_v2": 0,
+                "type_name_v2": "",
+                "is_lesson_video": 0
+              },
+              "page": {
+                "cid": 37922275661,
+                "page": 1,
+                "from": "vupload",
+                "part": "小宁oni：虚与委蛇",
+                "duration": 848,
+                "vid": "",
+                "weblink": "",
+                "dimension": {
+                  "width": 960,
+                  "height": 540,
+                  "rotate": 0
+                }
+              },
+              "bvid": "BV19D9CB1ECk",
+              "pages": [
+                {
+                  "cid": 37922275661,
+                  "page": 1,
+                  "from": "vupload",
+                  "part": "小宁oni：虚与委蛇",
+                  "duration": 848,
+                  "vid": "",
+                  "weblink": "",
+                  "dimension": {
+                    "width": 960,
+                    "height": 540,
+                    "rotate": 0
+                  }
+                }
+              ]
+            },
+            {
+              "season_id": 8004892,
+              "section_id": 8893964,
+              "id": 191993067,
+              "aid": 116483388609804,
+              "cid": 37922344667,
+              "title": "小宁oni：玩游戏的哥哥好有实力（钱难挣，XXX）",
+              "attribute": 0,
+              "arc": {
+                "aid": 116483388609804,
+                "videos": 0,
+                "type_id": 0,
+                "type_name": "",
+                "copyright": 0,
+                "pic": "http://i1.hdslb.com/bfs/archive/4fc3f4a7bd1423815ea3251379ee5b8ab0f4096c.jpg",
+                "title": "小宁oni：玩游戏的哥哥好有实力（钱难挣，XXX）",
+                "pubdate": 1777395531,
+                "ctime": 1777395531,
+                "desc": "",
+                "state": 0,
+                "duration": 167,
+                "rights": {
+                  "bp": 0,
+                  "elec": 0,
+                  "download": 0,
+                  "movie": 0,
+                  "pay": 0,
+                  "hd5": 0,
+                  "no_reprint": 0,
+                  "autoplay": 0,
+                  "ugc_pay": 0,
+                  "is_cooperation": 0,
+                  "ugc_pay_preview": 0,
+                  "arc_pay": 0,
+                  "free_watch": 0
+                },
+                "author": {
+                  "mid": 289358158,
+                  "name": "好兄弟山峰",
+                  "face": "https://i1.hdslb.com/bfs/face/8ed8646db87521033c629b1150615912fc8472bd.jpg"
+                },
+                "stat": {
+                  "aid": 116483388609804,
+                  "view": 2072,
+                  "danmaku": 0,
+                  "reply": 1,
+                  "fav": 0,
+                  "coin": 0,
+                  "share": 0,
+                  "now_rank": 0,
+                  "his_rank": 0,
+                  "like": 7,
+                  "dislike": 0,
+                  "evaluation": "",
+                  "argue_msg": "",
+                  "vt": 0,
+                  "vv": 2072
+                },
+                "dynamic": "",
+                "dimension": {
+                  "width": 0,
+                  "height": 0,
+                  "rotate": 0
+                },
+                "desc_v2": null,
+                "is_chargeable_season": false,
+                "is_blooper": false,
+                "enable_vt": 0,
+                "vt_display": "",
+                "type_id_v2": 0,
+                "type_name_v2": "",
+                "is_lesson_video": 0
+              },
+              "page": {
+                "cid": 37922344667,
+                "page": 1,
+                "from": "vupload",
+                "part": "游戏",
+                "duration": 167,
+                "vid": "",
+                "weblink": "",
+                "dimension": {
+                  "width": 960,
+                  "height": 540,
+                  "rotate": 0
+                }
+              },
+              "bvid": "BV1eS9CBjESJ",
+              "pages": [
+                {
+                  "cid": 37922344667,
+                  "page": 1,
+                  "from": "vupload",
+                  "part": "游戏",
+                  "duration": 167,
+                  "vid": "",
+                  "weblink": "",
+                  "dimension": {
+                    "width": 960,
+                    "height": 540,
+                    "rotate": 0
+                  }
+                }
+              ]
+            },
+            {
+              "season_id": 8004892,
+              "section_id": 8893964,
+              "id": 191993483,
+              "aid": 116483388609938,
+              "cid": 37922342200,
+              "title": "小宁oni：阿飞被叫烟台陈坤是因为巴旦木P的好",
+              "attribute": 0,
+              "arc": {
+                "aid": 116483388609938,
+                "videos": 0,
+                "type_id": 0,
+                "type_name": "",
+                "copyright": 0,
+                "pic": "http://i1.hdslb.com/bfs/archive/4fc3f4a7bd1423815ea3251379ee5b8ab0f4096c.jpg",
+                "title": "小宁oni：阿飞被叫烟台陈坤是因为巴旦木P的好",
+                "pubdate": 1777395714,
+                "ctime": 1777395714,
+                "desc": "",
+                "state": 0,
+                "duration": 424,
+                "rights": {
+                  "bp": 0,
+                  "elec": 0,
+                  "download": 0,
+                  "movie": 0,
+                  "pay": 0,
+                  "hd5": 0,
+                  "no_reprint": 0,
+                  "autoplay": 0,
+                  "ugc_pay": 0,
+                  "is_cooperation": 0,
+                  "ugc_pay_preview": 0,
+                  "arc_pay": 0,
+                  "free_watch": 0
+                },
+                "author": {
+                  "mid": 289358158,
+                  "name": "好兄弟山峰",
+                  "face": "https://i1.hdslb.com/bfs/face/8ed8646db87521033c629b1150615912fc8472bd.jpg"
+                },
+                "stat": {
+                  "aid": 116483388609938,
+                  "view": 2078,
+                  "danmaku": 3,
+                  "reply": 1,
+                  "fav": 0,
+                  "coin": 0,
+                  "share": 3,
+                  "now_rank": 0,
+                  "his_rank": 0,
+                  "like": 12,
+                  "dislike": 0,
+                  "evaluation": "",
+                  "argue_msg": "",
+                  "vt": 0,
+                  "vv": 2078
+                },
+                "dynamic": "",
+                "dimension": {
+                  "width": 0,
+                  "height": 0,
+                  "rotate": 0
+                },
+                "desc_v2": null,
+                "is_chargeable_season": false,
+                "is_blooper": false,
+                "enable_vt": 0,
+                "vt_display": "",
+                "type_id_v2": 0,
+                "type_name_v2": "",
+                "is_lesson_video": 0
+              },
+              "page": {
+                "cid": 37922342200,
+                "page": 1,
+                "from": "vupload",
+                "part": "阿飞",
+                "duration": 424,
+                "vid": "",
+                "weblink": "",
+                "dimension": {
+                  "width": 960,
+                  "height": 540,
+                  "rotate": 0
+                }
+              },
+              "bvid": "BV1eS9CBjE2X",
+              "pages": [
+                {
+                  "cid": 37922342200,
+                  "page": 1,
+                  "from": "vupload",
+                  "part": "阿飞",
+                  "duration": 424,
+                  "vid": "",
+                  "weblink": "",
+                  "dimension": {
+                    "width": 960,
+                    "height": 540,
+                    "rotate": 0
+                  }
+                }
+              ]
+            },
+            {
+              "season_id": 8004892,
+              "section_id": 8893964,
+              "id": 191992948,
+              "aid": 116483372030894,
+              "cid": 37922343373,
+              "title": "小宁oni：寅子穿的比我弟弟还年轻",
+              "attribute": 0,
+              "arc": {
+                "aid": 116483372030894,
+                "videos": 0,
+                "type_id": 0,
+                "type_name": "",
+                "copyright": 0,
+                "pic": "http://i1.hdslb.com/bfs/archive/4fc3f4a7bd1423815ea3251379ee5b8ab0f4096c.jpg",
+                "title": "小宁oni：寅子穿的比我弟弟还年轻",
+                "pubdate": 1777395448,
+                "ctime": 1777395448,
+                "desc": "",
+                "state": 0,
+                "duration": 234,
+                "rights": {
+                  "bp": 0,
+                  "elec": 0,
+                  "download": 0,
+                  "movie": 0,
+                  "pay": 0,
+                  "hd5": 0,
+                  "no_reprint": 0,
+                  "autoplay": 0,
+                  "ugc_pay": 0,
+                  "is_cooperation": 0,
+                  "ugc_pay_preview": 0,
+                  "arc_pay": 0,
+                  "free_watch": 0
+                },
+                "author": {
+                  "mid": 289358158,
+                  "name": "好兄弟山峰",
+                  "face": "https://i1.hdslb.com/bfs/face/8ed8646db87521033c629b1150615912fc8472bd.jpg"
+                },
+                "stat": {
+                  "aid": 116483372030894,
+                  "view": 1849,
+                  "danmaku": 1,
+                  "reply": 1,
+                  "fav": 2,
+                  "coin": 2,
+                  "share": 0,
+                  "now_rank": 0,
+                  "his_rank": 0,
+                  "like": 13,
+                  "dislike": 0,
+                  "evaluation": "",
+                  "argue_msg": "",
+                  "vt": 0,
+                  "vv": 1849
+                },
+                "dynamic": "",
+                "dimension": {
+                  "width": 0,
+                  "height": 0,
+                  "rotate": 0
+                },
+                "desc_v2": null,
+                "is_chargeable_season": false,
+                "is_blooper": false,
+                "enable_vt": 0,
+                "vt_display": "",
+                "type_id_v2": 0,
+                "type_name_v2": "",
+                "is_lesson_video": 0
+              },
+              "page": {
+                "cid": 37922343373,
+                "page": 1,
+                "from": "vupload",
+                "part": "寅子",
+                "duration": 234,
+                "vid": "",
+                "weblink": "",
+                "dimension": {
+                  "width": 960,
+                  "height": 540,
+                  "rotate": 0
+                }
+              },
+              "bvid": "BV1eD9CB2EHo",
+              "pages": [
+                {
+                  "cid": 37922343373,
+                  "page": 1,
+                  "from": "vupload",
+                  "part": "寅子",
+                  "duration": 234,
+                  "vid": "",
+                  "weblink": "",
+                  "dimension": {
+                    "width": 960,
+                    "height": 540,
+                    "rotate": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "is_season_display": true,
+    "user_garb": {
+      "url_image_ani_cut": ""
+    },
+    "honor_reply": {},
+    "like_icon": "",
+    "need_jump_bv": false,
+    "disable_show_up_info": false,
+    "is_story_play": 1,
+    "is_view_self": false
+  }
+}

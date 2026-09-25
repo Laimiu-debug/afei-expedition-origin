@@ -1,0 +1,119 @@
+[
+  {
+    "id": "xiaoning",
+    "kind": "broadcast",
+    "source_page": "https://www.douyu.com/9388639",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260925/9388639_src_2135.avif/dy4",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\xiaoning-broadcast.avif",
+    "bytes": 32615,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "xiaoning",
+    "kind": "avatar",
+    "source_page": "https://www.douyu.com/9388639",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202409/80a50359098a4f9f9928797efb8c1163_big.jpg",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\xiaoning-avatar.jpg",
+    "bytes": 26601,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "xiaopang",
+    "kind": "broadcast",
+    "source_page": "https://www.douyu.com/7300160",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260925/7300160_src_2135.avif/dy4",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\xiaopang-broadcast.avif",
+    "bytes": 282199,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "xiaopang",
+    "kind": "avatar",
+    "source_page": "https://www.douyu.com/7300160",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202411/191339e07a634d9894f67067076f1283_big.jpg",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\xiaopang-avatar.jpg",
+    "bytes": 34746,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "songnuanyang",
+    "kind": "broadcast",
+    "source_page": "https://www.douyu.com/6151194",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260925/6151194_src_2024.avif/dy4",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\songnuanyang-broadcast.avif",
+    "bytes": 53889,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "songnuanyang",
+    "kind": "avatar",
+    "source_page": "https://www.douyu.com/6151194",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202605/8738eb45219b46338cdf6e16ceb5fd97_big.jpg",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\songnuanyang-avatar.jpg",
+    "bytes": 27643,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "xiaogui",
+    "kind": "broadcast",
+    "source_page": "https://www.douyu.com/9765366",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260925/9765366_src_2135.avif/dy4",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\xiaogui-broadcast.avif",
+    "bytes": 82552,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "xiaogui",
+    "kind": "avatar",
+    "source_page": "https://www.douyu.com/9765366",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202512/ccb175428eb445dd8b983598e5f4a942_big.jpg",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\xiaogui-avatar.jpg",
+    "bytes": 35390,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "sylar",
+    "kind": "avatar",
+    "source_page": "https://www.douyu.com/9712931",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202304/85d66b9168c04c6ab97b01b2ef05d77d_big.jpg",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\sylar-avatar.jpg",
+    "bytes": 111643,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "xiaohani",
+    "kind": "broadcast",
+    "source_page": "https://www.douyu.com/22499",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260925/11328146_src_2140.avif/dy4",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\xiaohani-broadcast.avif",
+    "bytes": 62979,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "xiaohani",
+    "kind": "avatar",
+    "source_page": "https://www.douyu.com/22499",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202505/22cbb76eaf6048fd808169a588ed6627_big.jpg",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\xiaohani-avatar.jpg",
+    "bytes": 33821,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "berry",
+    "kind": "broadcast",
+    "source_page": "https://www.douyu.com/11778421",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260925/11778421_src_2050.avif/dy4",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\berry-broadcast.avif",
+    "bytes": 132028,
+    "content_type": "image/jpeg"
+  },
+  {
+    "id": "berry",
+    "kind": "avatar",
+    "source_page": "https://www.douyu.com/11778421",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202503/a60a3eb4005843e683f84144b6b154b3_big.jpg",
+    "local_file": "G:\\CODE\\afei-xcpedition\\art\\references\\2026-09-25\\berry-avatar.jpg",
+    "bytes": 37047,
+    "content_type": "image/jpeg"
+  }
+]

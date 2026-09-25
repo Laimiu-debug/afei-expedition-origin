@@ -1,0 +1,90 @@
+[
+  {
+    "id": "pang_anchor",
+    "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-4ee9dd5f-cbc3-4d26-b708-2a8f17b5ec6d.png",
+    "master_file": "G:\\CODE\\afei-xcpedition\\art\\production-v1\\masters\\skills\\afei_pang_anchor.png",
+    "prompt": "Use case: precise-object-edit. Asset: a single Battle Brothers mod skill icon, pang_anchor (站得住). Input image is the existing icon style/frame to preserve, not a character portrait. Replace the central illustration with one sturdy iron-rimmed heater shield planted firmly into rough earth, two short boot silhouettes braced behind it. The shield occupies 70% of the square and is unmistakably about holding position. No anchors, lettering, faces, or secondary scenes. Keep the existing square composition, worn thin dark-bronze border, deep oxblood-red field, near-black shadow, aged gold highlights, matte hand-painted medieval game rendering. Simplify the central symbol to remain legible at the final 56x56 game size. NOT a contact sheet. No title, letters, watermark, modern UI, vivid magical glow, photorealism or glossy 3D. Produce a clean square high-resolution master for this ONE icon, with a genuinely transparent exterior outside the frame if any exterior margin exists. Do not overwrite the reference file.",
+    "tool": "built-in image_gen",
+    "status": "generated_and_visually_reviewed"
+  },
+  {
+    "id": "pang_share",
+    "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-485d4d69-fa75-4236-9169-9494afd53cf1.png",
+    "master_file": "G:\\CODE\\afei-xcpedition\\art\\production-v1\\masters\\skills\\afei_pang_share.png",
+    "prompt": "Use case: precise-object-edit. Asset: a single Battle Brothers mod skill icon, pang_share (借你半面盾). Input image is the existing icon style/frame to preserve, not a character portrait. Replace the central illustration with two overlapping shields, a large shield shifted forward to shelter a smaller shield behind and beside it. A single diagonal leather-gloved forearm supports the large shield. Read as sharing protection with an ally. Two strong silhouettes only; no crowd, text or faces. Keep the existing square composition, worn thin dark-bronze border, deep oxblood-red field, near-black shadow, aged gold highlights, matte hand-painted medieval game rendering. Simplify the central symbol to remain legible at the final 56x56 game size. NOT a contact sheet. No title, letters, watermark, modern UI, vivid magical glow, photorealism or glossy 3D. Produce a clean square high-resolution master for this ONE icon, with a genuinely transparent exterior outside the frame if any exterior margin exists. Do not overwrite the reference file.",
+    "tool": "built-in image_gen",
+    "status": "generated_and_visually_reviewed"
+  },
+  {
+    "id": "pang_breath",
+    "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-8b2b6d25-59e8-47c8-8537-845aa3b432eb.png",
+    "master_file": "G:\\CODE\\afei-xcpedition\\art\\production-v1\\masters\\skills\\afei_pang_breath.png",
+    "prompt": "Use case: precise-object-edit. Asset: a single Battle Brothers mod skill icon, pang_breath (挨过这一口). Input image is the existing icon style/frame to preserve, not a character portrait. Replace the central illustration with a dented iron shield bearing a fresh diagonal impact mark, behind it one simple pale-gold curled breath stroke rising from a tiny dark helmet profile. Read as catching one's breath after taking a hit, no blood, no magical explosion, no words. Keep the existing square composition, worn thin dark-bronze border, deep oxblood-red field, near-black shadow, aged gold highlights, matte hand-painted medieval game rendering. Simplify the central symbol to remain legible at the final 56x56 game size. NOT a contact sheet. No title, letters, watermark, modern UI, vivid magical glow, photorealism or glossy 3D. Produce a clean square high-resolution master for this ONE icon, with a genuinely transparent exterior outside the frame if any exterior margin exists. Do not overwrite the reference file.",
+    "tool": "built-in image_gen",
+    "status": "generated_and_visually_reviewed"
+  },
+  {
+    "id": "berry_eye",
+    "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-30fef3eb-9d17-4370-b634-ce7773de9ae1.png",
+    "master_file": "G:\\CODE\\afei-xcpedition\\art\\production-v1\\masters\\skills\\afei_berry_eye.png",
+    "prompt": "Use case: precise-object-edit. Asset: one Battle Brothers mod skill icon berry_eye (看清缝隙). Input image is the existing icon frame and paint style to retain. Replace the central illustration with a single gold arrowhead seen through the narrow gap between two dark overlapping enemy shields. Place one small sharply drawn eye above that gap, so the image reads as spotting an opening for a precise shot. Few bold shapes, no faces or written symbols. Preserve the square thin battered bronze frame, deep oxblood-red field, black-brown shadows, aged-gold highlights and matte hand-painted medieval game treatment. Match the existing Afei skill icon set; very clear silhouettes at final 56x56 pixels. Produce ONE clean square high-resolution master, not a sheet, no title, watermark, extra text, modern pictograms, photorealism, glossy 3D or magical explosions. Preserve real alpha only outside any exterior frame margin.",
+    "tool": "built-in image_gen",
+    "status": "generated_and_visually_reviewed"
+  },
+  {
+    "id": "berry_mark",
+    "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-722d848c-a954-469c-835f-f4ce94fd3285.png",
+    "master_file": "G:\\CODE\\afei-xcpedition\\art\\production-v1\\masters\\skills\\afei_berry_mark.png",
+    "prompt": "Use case: precise-object-edit. Asset: one Battle Brothers mod skill icon berry_mark (红线记号). Input image is the existing icon frame and paint style to retain. Replace the central illustration with a single gold-fletched arrow crossing an iron target disc, and a very clear deep-red cord tied around that target in a simple knot. Read as marking a target for the next allied shot. Use the red cord as the only bright accent; no glowing magical reticle or text. Preserve the square thin battered bronze frame, deep oxblood-red field, black-brown shadows, aged-gold highlights and matte hand-painted medieval game treatment. Match the existing Afei skill icon set; very clear silhouettes at final 56x56 pixels. Produce ONE clean square high-resolution master, not a sheet, no title, watermark, extra text, modern pictograms, photorealism, glossy 3D or magical explosions. Preserve real alpha only outside any exterior frame margin.",
+    "tool": "built-in image_gen",
+    "status": "generated_and_visually_reviewed"
+  },
+  {
+    "id": "berry_reserve",
+    "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-506846d1-c0ce-468f-bf78-76e786ad9b10.png",
+    "master_file": "G:\\CODE\\afei-xcpedition\\art\\production-v1\\masters\\skills\\afei_berry_reserve.png",
+    "prompt": "Use case: precise-object-edit. Asset: one Battle Brothers mod skill icon berry_reserve (留一支给后面). Input image is the existing icon frame and paint style to retain. Replace the central illustration with a worn dark leather quiver containing three broad gold-fletched arrows, one separate arrow deliberately held in reserve across the foreground by a leather-gloved hand. Make the quiver and single reserve arrow legible at a glance; no people or lettering. Preserve the square thin battered bronze frame, deep oxblood-red field, black-brown shadows, aged-gold highlights and matte hand-painted medieval game treatment. Match the existing Afei skill icon set; very clear silhouettes at final 56x56 pixels. Produce ONE clean square high-resolution master, not a sheet, no title, watermark, extra text, modern pictograms, photorealism, glossy 3D or magical explosions. Preserve real alpha only outside any exterior frame margin.",
+    "tool": "built-in image_gen",
+    "status": "generated_and_visually_reviewed"
+  },
+  {
+    "id": "portrait_xiaopang",
+    "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-13c67484-4fcd-4f79-a837-8cd762396751.png",
+    "master_file": "G:\\CODE\\afei-xcpedition\\art\\production-v1\\rejected-realistic\\portrait_xiaopang.png",
+    "prompt": "Create ONE production-ready transparent-background character bust sprite for a Battle Brothers medieval mercenary mod. Character: 小胖徐不快乐. Use the attached public portrait ONLY for this person's facial likeness, age presentation, hair shape and natural proportions; retain recognizability without beautifying or making a generic anime face. Remove all modern clothing and objects.\nShort softly layered chestnut brown bob with airy wispy bangs, preserve the reference woman's natural facial fullness and proportions, friendly small closed-mouth smile. Muted oxblood-brown short leather armor, small riveted shoulder strips over quilted cloth, one battered training medallion.\nArt direction: authentic Battle Brothers 2D mercenary bust illustration, thick irregular dark brown ink outlines, earthy muted colors, broad flat hand-painted shading, rough medieval manuscript/woodcut finish, slightly coarse ordinary human features. NOT anime, not glossy digital beauty art, not photorealistic, not 3D. Front-facing head, shoulders very slightly turned, eyes to viewer; enlarged head relative to squat compact torso as on a Battle Brothers tactical pawn. Exact cut: from full hair crown to lower chest; rounded U-shaped torso bottom; NO arms, hands, legs, weapons, shield, plinth, ground or scenery. Entire hair and both shoulders visible with 8 percent margin, subject centered, head about 45 percent of bust height. Square canvas, actual transparent alpha background, no checkerboard drawn, no text, no border. Strong readable silhouette suitable for downsampling to 114x142 and 220x220. Clothing and face must be readable with bold simple planes rather than fine texture. Produce exactly one standalone asset.",
+    "tool": "built-in image_gen",
+    "status": "rejected_by_user_too_realistic_do_not_use"
+  },
+  {
+    "id": "portrait_xiaohani",
+    "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-cdda1d8d-01f7-41a0-a536-398420dc9b2a.png",
+    "master_file": "G:\\CODE\\afei-xcpedition\\art\\production-v1\\rejected-realistic\\portrait_xiaohani.png",
+    "prompt": "Create ONE production-ready transparent-background character bust sprite for a Battle Brothers medieval mercenary mod. Character: 小哈尼. Use the attached public portrait ONLY for this person's facial likeness, age presentation, hair shape and natural proportions; retain recognizability without beautifying or making a generic anime face. Remove all modern clothing and objects.\nPreserve the reference woman's long chestnut hair and side fringe, distinctive eyes and lip shape. Sand-grey fitted padded cloth armor, short dark teal shawl, a simple double cord knot. Friendly but alert expression.\nArt direction: authentic Battle Brothers 2D mercenary bust illustration, thick irregular dark brown ink outlines, earthy muted colors, broad flat hand-painted shading, rough medieval manuscript/woodcut finish, slightly coarse ordinary human features. NOT anime, not glossy digital beauty art, not photorealistic, not 3D. Front-facing head, shoulders very slightly turned, eyes to viewer; enlarged head relative to squat compact torso as on a Battle Brothers tactical pawn. Exact cut: from full hair crown to lower chest; rounded U-shaped torso bottom; NO arms, hands, legs, weapons, shield, plinth, ground or scenery. Entire hair and both shoulders visible with 8 percent margin, subject centered, head about 45 percent of bust height. Square canvas, actual transparent alpha background, no checkerboard drawn, no text, no border. Strong readable silhouette suitable for downsampling to 114x142 and 220x220. Clothing and face must be readable with bold simple planes rather than fine texture. Produce exactly one standalone asset.",
+    "tool": "built-in image_gen",
+    "status": "rejected_by_user_too_realistic_do_not_use"
+  },
+  {
+    "id": "portrait_songnuanyang",
+    "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-e9b87b8d-72ad-46bc-9dbe-124d9a54bcb3.png",
+    "master_file": "G:\\CODE\\afei-xcpedition\\art\\production-v1\\rejected-realistic\\portrait_songnuanyang.png",
+    "prompt": "Create ONE production-ready transparent-background character bust sprite for a Battle Brothers medieval mercenary mod. Character: 宋暖阳. Use the attached public portrait ONLY for this person's facial likeness, age presentation, hair shape and natural proportions; retain recognizability without beautifying or making a generic anime face. Remove all modern clothing and objects.\nPreserve the reference woman's oval facial shape, relatively narrow natural eyes, updo with loose dark wisps. Muted wheat-yellow narrow wool shawl, grey-brown quilted gambeson, flat leather writing pouch with tiny folded parchment edge at upper chest. Warm restrained smile.\nArt direction: authentic Battle Brothers 2D mercenary bust illustration, thick irregular dark brown ink outlines, earthy muted colors, broad flat hand-painted shading, rough medieval manuscript/woodcut finish, slightly coarse ordinary human features. NOT anime, not glossy digital beauty art, not photorealistic, not 3D. Front-facing head, shoulders very slightly turned, eyes to viewer; enlarged head relative to squat compact torso as on a Battle Brothers tactical pawn. Exact cut: from full hair crown to lower chest; rounded U-shaped torso bottom; NO arms, hands, legs, weapons, shield, plinth, ground or scenery. Entire hair and both shoulders visible with 8 percent margin, subject centered, head about 45 percent of bust height. Square canvas, actual transparent alpha background, no checkerboard drawn, no text, no border. Strong readable silhouette suitable for downsampling to 114x142 and 220x220. Clothing and face must be readable with bold simple planes rather than fine texture. Produce exactly one standalone asset.",
+    "tool": "built-in image_gen",
+    "status": "rejected_by_user_too_realistic_do_not_use"
+  },
+  {
+    "id": "portrait_sylar",
+    "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-755f1803-29df-48ee-a18a-00c95c6cc70d.png",
+    "master_file": "G:\\CODE\\afei-xcpedition\\art\\production-v1\\rejected-realistic\\portrait_sylar.png",
+    "prompt": "Create exactly ONE transparent-background Battle Brothers character bust asset of 眼子／刘嘉俊. Reference is the ONE adult man at the right of the official poster, use his real face proportions and black fringe. Ignore all lettering. Muted grey-ochre short wool cape, dark blue quilted gambeson, asymmetric plain copper clasp. Quiet mischievous closed-mouth smile, natural eye size.\nKeep recognizable facial structure from the stated person in attached references. All clothes medieval and functional. Battle Brothers 2D tactical art: thick uneven dark brown ink contours, muted dirty earth colors, broad limited hand-painted shadow planes, weathered cloth/leather, slightly coarse ordinary human features. No anime eyes or glamour rendering, no 3D, no photorealism.\nCompact squat mercenary pawn bust, whole crown to lower chest with rounded U bottom, head 45 percent of bust height. Head front-facing, shoulders slightly turned, eyes to viewer. No visible arms/hands/legs/weapons/shields, no plinth or ground. Full hair and shoulders visible, square canvas, centered with 8 percent safe margin, true transparent alpha (never checkerboard pattern). No scenery, no title, no frame or lettering. Bold silhouette and large readable shapes suitable for 114x142 tactical export and 220x220 event portrait.",
+    "tool": "built-in image_gen",
+    "status": "rejected_by_user_too_realistic_do_not_use"
+  },
+  {
+    "id": "portrait_laocai",
+    "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-25a2b746-f26d-4bf7-b763-0daa41c4bf47.png",
+    "master_file": "G:\\CODE\\afei-xcpedition\\art\\production-v1\\rejected-realistic\\portrait_laocai.png",
+    "prompt": "Create exactly ONE transparent-background Battle Brothers character bust asset of 老蔡／川神／陈彦川. Reference is ONLY the adult man in the webcam box at the UPPER RIGHT, not any game character. Preserve his rounded face, narrow eyes, fuller cheeks, short uneven black side-parted hair and natural broad build, no added beard or glasses, no white hair. Remove headphones. Grey-blue straight-collared tunic over old chainmail, short neatly folded shoulder cape, leather pocket with a small folded map edge. Focused slightly furrowed expression.\nKeep recognizable facial structure from the stated person in attached references. All clothes medieval and functional. Battle Brothers 2D tactical art: thick uneven dark brown ink contours, muted dirty earth colors, broad limited hand-painted shadow planes, weathered cloth/leather, slightly coarse ordinary human features. No anime eyes or glamour rendering, no 3D, no photorealism.\nCompact squat mercenary pawn bust, whole crown to lower chest with rounded U bottom, head 45 percent of bust height. Head front-facing, shoulders slightly turned, eyes to viewer. No visible arms/hands/legs/weapons/shields, no plinth or ground. Full hair and shoulders visible, square canvas, centered with 8 percent safe margin, true transparent alpha (never checkerboard pattern). No scenery, no title, no frame or lettering. Bold silhouette and large readable shapes suitable for 114x142 tactical export and 220x220 event portrait.",
+    "tool": "built-in image_gen",
+    "status": "rejected_by_user_too_realistic_do_not_use"
+  }
+]

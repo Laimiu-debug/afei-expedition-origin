@@ -1,0 +1,152 @@
+<brush name="gfx/afei_busts.png" version="17">
+  <sprite id="afei_head_C01" hash="BA3506196D56C9E7" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C01.png" left="-23" right="31" top="-20" bottom="48" />
+  <sprite id="afei_hair_C01" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C01.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C01_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C01_dead.png" left="-23" right="31" top="-20" bottom="48" />
+  <sprite id="afei_hair_C01_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C01_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C02" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C02.png" left="-23" right="31" top="-20" bottom="48" />
+  <sprite id="afei_hair_C02" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C02.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C02_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C02_dead.png" left="-23" right="31" top="-20" bottom="48" />
+  <sprite id="afei_hair_C02_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C02_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C03" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C03.png" left="-23" right="31" top="-20" bottom="48" />
+  <sprite id="afei_hair_C03" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C03.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C03_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C03_dead.png" left="-23" right="31" top="-20" bottom="48" />
+  <sprite id="afei_hair_C03_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C03_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C04" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="140" height="140" img="icons\afei_head_C04.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_hair_C04" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C04.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C04_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="140" height="140" img="icons\afei_head_C04_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_hair_C04_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C04_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C09" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C09.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C09" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C09.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C09_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C09_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C09_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C09_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C11" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C11.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C11" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C11.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C11_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C11_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C11_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C11_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C12" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C12.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C12" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C12.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C12_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C12_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C12_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C12_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C14" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C14.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C14" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C14.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C14_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C14_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C14_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C14_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C18" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C18.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C18" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C18.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C18_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C18_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C18_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C18_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C06" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C06.png" left="-23" right="31" top="-20" bottom="48" />
+  <sprite id="afei_hair_C06" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C06.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C06_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C06_dead.png" left="-23" right="31" top="-20" bottom="48" />
+  <sprite id="afei_hair_C06_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C06_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C07" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C07.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C07" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C07.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C07_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C07_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C07_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C07_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C08" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C08.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C08" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C08.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C08_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C08_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C08_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C08_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C10" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C10.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C10" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C10.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C10_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C10_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C10_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C10_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C05" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C05.png" left="-23" right="31" top="-20" bottom="48" />
+  <sprite id="afei_hair_C05" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C05.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C05_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C05_dead.png" left="-23" right="31" top="-20" bottom="48" />
+  <sprite id="afei_hair_C05_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="140" img="icons\afei_hair_C05_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C13" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C13.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C13" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C13.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C13_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C13_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C13_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C13_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C15" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C15.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C15" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C15.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C15_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C15_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C15_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C15_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C16" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C16.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C16" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C16.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C16_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C16_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C16_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C16_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C17" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C17.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C17" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C17.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C17_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C17_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C17_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C17_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C19" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C19.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C19" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C19.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C19_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C19_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C19_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C19_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C20" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C20.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C20" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C20.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C20_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C20_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C20_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C20_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C21" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C21.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C21" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C21.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C21_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C21_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C21_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C21_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C22" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C22.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C22" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C22.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C22_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C22_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C22_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C22_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C23" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C23.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C23" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C23.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C23_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C23_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C23_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C23_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C25" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C25.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C25" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C25.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C25_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C25_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C25_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C25_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C26" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C26.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C26" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C26.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C26_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C26_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C26_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C26_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C27" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C27.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C27" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C27.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C27_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C27_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C27_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C27_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C28" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C28.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C28" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C28.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C28_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C28_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C28_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C28_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C29" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C29.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C29" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C29.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C29_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C29_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C29_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C29_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C30" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C30.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C30" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C30.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C30_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C30_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C30_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C30_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C31" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C31.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C31" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C31.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_head_C31_dead" hash="028394738E837749" offsetY="35" ic="FF5C7BA9" width="104" height="142" img="icons\afei_head_C31_dead.png" left="-21" right="29" top="-20" bottom="48" />
+  <sprite id="afei_hair_C31_dead" hash="D9D7DC9FAF37E052" offsetY="35" ic="FF345C7A" width="140" height="100" img="icons\afei_hair_C31_dead.png" left="-70" right="70" top="-50" bottom="90" />
+  <sprite id="afei_body_C01" offsetY="35" width="114" height="142" img="icons\afei_body_C01.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_body_C01_dead" offsetY="35" width="114" height="142" img="icons\afei_body_C01_dead.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_body_C02" offsetY="35" width="114" height="142" img="icons\afei_body_C02.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_body_C02_dead" offsetY="35" width="114" height="142" img="icons\afei_body_C02_dead.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_body_C03" offsetY="35" width="114" height="142" img="icons\afei_body_C03.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_body_C03_dead" offsetY="35" width="114" height="142" img="icons\afei_body_C03_dead.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_body_C04" offsetY="35" width="114" height="142" img="icons\afei_body_C04.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_body_C04_dead" offsetY="35" width="114" height="142" img="icons\afei_body_C04_dead.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_body_C05" offsetY="35" width="114" height="142" img="icons\afei_body_C05.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_body_C05_dead" offsetY="35" width="114" height="142" img="icons\afei_body_C05_dead.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_body_C06" offsetY="35" width="114" height="142" img="icons\afei_body_C06.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_body_C06_dead" offsetY="35" width="114" height="142" img="icons\afei_body_C06_dead.png" left="-54" right="54" top="-55" bottom="21" />
+  <sprite id="afei_figure_C01" offsetY="35" width="114" height="142" img="icons\afei_figure_C01.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C01_dead" offsetY="35" width="114" height="142" img="icons\afei_figure_C01_dead.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C02" offsetY="35" width="114" height="142" img="icons\afei_figure_C02.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C02_dead" offsetY="35" width="114" height="142" img="icons\afei_figure_C02_dead.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C03" offsetY="35" width="114" height="142" img="icons\afei_figure_C03.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C03_dead" offsetY="35" width="114" height="142" img="icons\afei_figure_C03_dead.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C04" offsetY="35" width="114" height="142" img="icons\afei_figure_C04.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C04_dead" offsetY="35" width="114" height="142" img="icons\afei_figure_C04_dead.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C05" offsetY="35" width="114" height="142" img="icons\afei_figure_C05.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C05_dead" offsetY="35" width="114" height="142" img="icons\afei_figure_C05_dead.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C06" offsetY="35" width="114" height="142" img="icons\afei_figure_C06.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C06_dead" offsetY="35" width="114" height="142" img="icons\afei_figure_C06_dead.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C01_injured" offsetY="35" width="114" height="142" img="icons\afei_figure_C01_injured.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C02_injured" offsetY="35" width="114" height="142" img="icons\afei_figure_C02_injured.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C03_injured" offsetY="35" width="114" height="142" img="icons\afei_figure_C03_injured.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C04_injured" offsetY="35" width="114" height="142" img="icons\afei_figure_C04_injured.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C05_injured" offsetY="35" width="114" height="142" img="icons\afei_figure_C05_injured.png" left="-57" right="57" top="-55" bottom="87" />
+  <sprite id="afei_figure_C06_injured" offsetY="35" width="114" height="142" img="icons\afei_figure_C06_injured.png" left="-57" right="57" top="-55" bottom="87" />
+</brush>
