@@ -1,0 +1,38 @@
+{
+  "assets": [
+    {
+      "apiUrl": "https://api.github.com/repos/Laimiu-debug/afei-expedition-origin/releases/assets/592132956",
+      "contentType": "application/octet-stream",
+      "createdAt": "2026-09-27T04:29:35Z",
+      "digest": "sha256:8446afc2d2892cca77e12af728aab1abcc6fddb75fba9aa4c01e096671bdf625",
+      "downloadCount": 0,
+      "id": "RA_kwDOUiFyHc4jSztc",
+      "label": "",
+      "name": "mod_afeix_expedition.sha256",
+      "size": 92,
+      "state": "uploaded",
+      "updatedAt": "2026-09-27T04:29:35Z",
+      "url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/download/v0.16.1/mod_afeix_expedition.sha256"
+    },
+    {
+      "apiUrl": "https://api.github.com/repos/Laimiu-debug/afei-expedition-origin/releases/assets/592132955",
+      "contentType": "application/zip",
+      "createdAt": "2026-09-27T04:29:35Z",
+      "digest": "sha256:9e20123f07536d9539c81f4629abd39a40f116f6ca0bb387b8a930c89b0dff58",
+      "downloadCount": 0,
+      "id": "RA_kwDOUiFyHc4jSztb",
+      "label": "",
+      "name": "mod_afeix_expedition.zip",
+      "size": 1934945,
+      "state": "uploaded",
+      "updatedAt": "2026-09-27T04:29:36Z",
+      "url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/download/v0.16.1/mod_afeix_expedition.zip"
+    }
+  ],
+  "isDraft": false,
+  "isPrerelease": true,
+  "publishedAt": "2026-09-27T04:29:37Z",
+  "tagName": "v0.16.1",
+  "targetCommitish": "9e65ad4dc26ec44a7287af6cd55e325aa8e4e31e",
+  "url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.16.1"
+}

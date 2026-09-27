@@ -1,0 +1,9 @@
+{
+  "release_url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.16.1",
+  "download_url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/download/v0.16.1/mod_afeix_expedition.zip",
+  "sha256": "9e20123f07536d9539c81f4629abd39a40f116f6ca0bb387b8a930c89b0dff58",
+  "size": 1934945,
+  "http_status": 200,
+  "bytes_match": true,
+  "source_commit": "9e65ad4dc26ec44a7287af6cd55e325aa8e4e31e"
+}
