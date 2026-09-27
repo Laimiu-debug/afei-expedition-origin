@@ -1,0 +1,12 @@
+[
+  {
+    "key": "wanshe",
+    "page": "https://www.douyu.com/8458376",
+    "error": "'NoneType' object has no attribute 'group'"
+  },
+  {
+    "key": "tutu",
+    "page": "https://www.douyu.com/99927",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  }
+]

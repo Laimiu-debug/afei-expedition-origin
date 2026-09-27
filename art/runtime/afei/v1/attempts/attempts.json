@@ -1,0 +1,34 @@
+{
+  "note": "未验收的返修过程记录；不列入16个画刷，不进入发行ZIP。用户转向研究其他起源后暂停继续生图。",
+  "attempts": [
+    {
+      "id": "human-head-dead-v2",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/human-head-dead.png",
+        "G:/CODE/afei-xcpedition/.cache/afei-art/vanilla-layer-audit/entity_0/entity/heads/bust_head_01_dead.png",
+        "G:/CODE/afei-xcpedition/art/runtime/afei/v1/build/preview/head-orientation-check.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Correct ONLY the corpse-head ORIENTATION in image 1 so it fits Battle Brothers' native dead hair and corpse body. Keep this exact bald human Afei face, closed eyes, blood mark, colors, simple game painting and transparent background.\nImage 2 is the actual game dead head. Its SKULL CROWN is at the LOWER LEFT of the image and its CHIN points toward the UPPER RIGHT. The forehead is lower-left of the nose; the mouth/chin are upper-right of the nose. The character is lying on its back diagonally, looking upwards with eyes closed. This orientation is crucial.\nImage 3 is an engineering comparison: left native dead head, middle native dead hair, right incorrect new human dead head. The right-hand example is rotated the wrong way. We must turn image 1 approximately NINETY DEGREES COUNTERCLOCKWISE IN THE IMAGE PLANE. Do not keep the original crown at upper left and chin at lower right. Place the crown at LOWER LEFT and the chin at UPPER RIGHT, matching image 2 exactly.\nONE complete head only, entirely bald with no hair because native dead hair will overlay its lower-left scalp, no clothes/torso/ground. Preserve the face identity and restrained native sprite finish. Uniform proportions, no perspective distortion or new expression. Match image 2's low diagonal head silhouette, with transparent margin. TRUE TRANSPARENT alpha background. No text, frame, other panels, accessories or shadows.",
+      "date": "2026-09-26",
+      "accepted": false,
+      "status": "generated_but_orientation_still_unacceptable",
+      "workspace_file": "attempts/human-head-dead-v2-unaccepted.png",
+      "source_file": "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-e0d43e76-006b-4c8a-867c-e9c6b26f89a5.png",
+      "sha256": "fdbb5983c443e4765273497829539603987675991158f59f0009f1bdd601789e"
+    },
+    {
+      "id": "toad-head-dead-v2",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/toad-head-dead.png",
+        "G:/CODE/afei-xcpedition/.cache/afei-art/vanilla-layer-audit/entity_0/entity/heads/bust_head_01_dead.png",
+        "G:/CODE/afei-xcpedition/art/runtime/afei/v1/build/preview/head-orientation-check.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Correct ONLY the corpse-head ORIENTATION in image 1 so it fits Battle Brothers' native dead hair and corpse body. Keep this exact toad Afei face, closed eyes, blood mark, colors, simple game painting and transparent background.\nImage 2 is the actual game dead head. Its SKULL CROWN is at the LOWER LEFT of the image and its CHIN points toward the UPPER RIGHT. The forehead is lower-left of the nose; the mouth/chin are upper-right of the nose. The character is lying on its back diagonally, looking upwards with eyes closed. This orientation is crucial.\nImage 3 is an engineering comparison: left native dead head, middle native dead hair, right incorrect new human dead head. The right-hand example is rotated the wrong way. We must turn image 1 approximately NINETY DEGREES COUNTERCLOCKWISE IN THE IMAGE PLANE. Do not keep the original crown at upper left and chin at lower right. Place the crown at LOWER LEFT and the chin at UPPER RIGHT, matching image 2 exactly.\nONE complete head only, no hair, no clothes/torso/ground. Preserve the face identity and restrained native sprite finish. Uniform proportions, no perspective distortion or new expression. Match image 2's low diagonal head silhouette, with transparent margin. TRUE TRANSPARENT alpha background. No text, frame, other panels, accessories or shadows.",
+      "date": "2026-09-26",
+      "accepted": false,
+      "status": "interrupted_no_output_received",
+      "workspace_file": null,
+      "source_file": null
+    }
+  ]
+}

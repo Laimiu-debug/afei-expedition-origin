@@ -1,0 +1,587 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "date": "2026-09-26",
+  "purpose": "Group A: 12 complete Battle Brothers bust style transfers; per-character edits of supplied legacy art.",
+  "records": [
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/coherent-v2/afei_figure_C03.png",
+      "features": "Short dusty purple hair, broad adult male face and square jaw, heavy stern eyebrows, dark green scarf, brown padded leather shoulders; confident strong deputy captain.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/coherent-v2/afei_figure_C03.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Short dusty purple hair, broad adult male face and square jaw, heavy stern eyebrows, dark green scarf, brown padded leather shoulders; confident strong deputy captain.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-98d1fff4-2250-4cd6-bae8-c97a3b7b3162.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/damou.png",
+      "sha256": "7560313a351cddde2169cdb9bae1e52976cc3506671386f1fb4ee66f937a5347",
+      "dimensions": [
+        1144,
+        1375
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1131,
+        1375
+      ],
+      "solid_alpha_bbox": [
+        16,
+        98,
+        1128,
+        1330
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    },
+    {
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/coherent-v2/afei_figure_C02.png",
+      "features": "Messy chestnut short hair, black rectangular spectacles, mouth open in a cheeky calculating grin, slightly pointed ears from the old fantasy design, weathered green-brown merchant leather outfit. Adult male.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/coherent-v2/afei_figure_C02.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Messy chestnut short hair, black rectangular spectacles, mouth open in a cheeky calculating grin, slightly pointed ears from the old fantasy design, weathered green-brown merchant leather outfit. Adult male.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-2451ad86-3634-41b5-a087-f2023d5306c0.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/mocha.png",
+      "sha256": "0766f294ef2d720598286a3683fe16a7859f602dc0a6b16cd8300d3f1e9a2e21",
+      "dimensions": [
+        1123,
+        1400
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        19,
+        1122,
+        1400
+      ],
+      "solid_alpha_bbox": [
+        19,
+        91,
+        1104,
+        1354
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C09.png",
+      "features": "Adult woman with dark almost-black twin braids and dusty pink hair ties, small worried yet brave expression, brick-red scarf, muted leather. Preserve a compact drum motif as a little round drum medallion on the chest, NOT a large drum or hands.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C09.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Adult woman with dark almost-black twin braids and dusty pink hair ties, small worried yet brave expression, brick-red scarf, muted leather. Preserve a compact drum motif as a little round drum medallion on the chest, NOT a large drum or hands.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-113790eb-6a17-4e1f-93a3-abed77500e65.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/shuaizi.png",
+      "sha256": "10ac891ae4d4b704987f8bc35271fbd0134f8c9513c5085bf8eab0f8eb346c4f",
+      "dimensions": [
+        1143,
+        1376
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        17,
+        1126,
+        1376
+      ],
+      "solid_alpha_bbox": [
+        28,
+        49,
+        1123,
+        1349
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    },
+    {
+      "key": "xiaoyueya",
+      "name": "小月牙",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C07.png",
+      "features": "Adult woman with dusty blue high ponytail, tiny pale-gold star hair ornament, slightly impish alert expression, muted ochre scarf and blue-brown leather clothing.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C07.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Adult woman with dusty blue high ponytail, tiny pale-gold star hair ornament, slightly impish alert expression, muted ochre scarf and blue-brown leather clothing.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-c7be70a6-bcf3-47c1-a24b-99e30874c6b7.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/xiaoyueya.png",
+      "sha256": "0d5575d95aed855631836d2ecac1527e24218e39befe68128b8b00ef143b9fde",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        43,
+        21,
+        1118,
+        1342
+      ],
+      "solid_alpha_bbox": [
+        46,
+        101,
+        1115,
+        1335
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    },
+    {
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C08.png",
+      "features": "Adult woman with soft white-grey hood, dark hair framing face, calm responsible determined expression, muted dark travel leather and a small shell-shaped clasp. Remove large shield.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C08.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Adult woman with soft white-grey hood, dark hair framing face, calm responsible determined expression, muted dark travel leather and a small shell-shaped clasp. Remove large shield.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-c88c9b3d-afa5-4457-8f37-9c35407f66b2.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/xiaoyubeike.png",
+      "sha256": "f918e202aba31f5142c7c8eb2695ed7c51120e1b595e62b064906231d21c3458",
+      "dimensions": [
+        1144,
+        1375
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        33,
+        0,
+        1112,
+        1313
+      ],
+      "solid_alpha_bbox": [
+        36,
+        115,
+        1105,
+        1309
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    },
+    {
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C10.png",
+      "features": "Adult woman with long warm brown hair, pale flower hairpin, dusty purple drape over leather shoulders, raised critical eyebrow and knowing challenging half-smile. Remove long weapon and flag.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C10.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Adult woman with long warm brown hair, pale flower hairpin, dusty purple drape over leather shoulders, raised critical eyebrow and knowing challenging half-smile. Remove long weapon and flag.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-a151b3b2-8806-4109-907a-1bfbb8e3b13e.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/wangduidui.png",
+      "sha256": "a5133eae972f190f6d0352c61438d29cccf0ddc6ab73a3c1bb26f9bace4bd8fd",
+      "dimensions": [
+        1142,
+        1377
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        19,
+        1141,
+        1359
+      ],
+      "solid_alpha_bbox": [
+        14,
+        88,
+        1130,
+        1348
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    },
+    {
+      "key": "tiantong",
+      "name": "亿口甜筒／小虎",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C12.png",
+      "features": "Adult woman with warm brown hair, round dark spectacles and restrained friendly expression, distinctive ochre tiger-striped scarf, worn medieval messenger leather. Remove long bow and quiver.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C12.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Adult woman with warm brown hair, round dark spectacles and restrained friendly expression, distinctive ochre tiger-striped scarf, worn medieval messenger leather. Remove long bow and quiver.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-fff0d6fc-9228-43fa-89d9-f63e40245eab.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/tiantong.png",
+      "sha256": "9e8906af7ac0a01d141dc9e4c9f059bbde394ee2d348d5cbb32ed330871efb0e",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        9,
+        1129,
+        1374
+      ],
+      "solid_alpha_bbox": [
+        24,
+        102,
+        1121,
+        1323
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C13.png",
+      "features": "Adult woman with long brown hair, white-grey fur collar, assertive unamused eyes, brown leather shoulders, compact white goose-head-shaped shoulder brooch with orange beak as identifying motif. Remove oversized shield and large separate goose.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C13.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Adult woman with long brown hair, white-grey fur collar, assertive unamused eyes, brown leather shoulders, compact white goose-head-shaped shoulder brooch with orange beak as identifying motif. Remove oversized shield and large separate goose.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-a16f4e6f-8fe8-4ea9-b5d3-12e1824b635c.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/dae.png",
+      "sha256": "7b42f6e3179d347b118ce15e1e405b9df2f550e2fbe0bdf1005da20193639872",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        19,
+        1132,
+        1374
+      ],
+      "solid_alpha_bbox": [
+        26,
+        73,
+        1129,
+        1337
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C17.png",
+      "features": "Adult woman with brown high ponytail tied with a brick-red ribbon, brick-red scarf, focused watchful eyes and faint dry half-smile, russet brown travel leather. Remove large crossbow and hands.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C17.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Adult woman with brown high ponytail tied with a brick-red ribbon, brick-red scarf, focused watchful eyes and faint dry half-smile, russet brown travel leather. Remove large crossbow and hands.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-baf86b5c-806a-4a20-a455-7884754fed1c.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/keke.png",
+      "sha256": "fc9e419a561c7da205bca58806613acd49532310e8863b39ee1ab8fab5a41459",
+      "dimensions": [
+        1145,
+        1374
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        25,
+        18,
+        1115,
+        1374
+      ],
+      "solid_alpha_bbox": [
+        35,
+        74,
+        1112,
+        1324
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    },
+    {
+      "key": "yuxiang",
+      "name": "余想",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C20.png",
+      "features": "Adult woman with long deep brown hair and a pale flower tucked into it, dusty plum cloak, calm steady thoughtful expression, little antique brass lantern-shaped chest clasp. Remove large handheld lantern and hands.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C20.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Adult woman with long deep brown hair and a pale flower tucked into it, dusty plum cloak, calm steady thoughtful expression, little antique brass lantern-shaped chest clasp. Remove large handheld lantern and hands. Keep this woman's face distinct: gently rounded cheeks, a small straight nose, horizontal relaxed eyebrows and a closed neutral mouth with soft corners. Her look is patient and thoughtful, NOT Afei's angular male jaw, thick slanted eyebrows or signature smirk. Retain the reference woman's gently oval facial silhouette.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-3486aed6-9dd3-4f13-aef0-88e217c03fb1.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/yuxiang.png",
+      "sha256": "be574515978475db472c9044c0ceab91df686cdc497d6eafe565142a80ce7b3b",
+      "dimensions": [
+        1127,
+        1396
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        38,
+        1127,
+        1396
+      ],
+      "first_generation": {
+        "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-fdb343df-69af-40de-8103-abf7fa0c5820.png",
+        "sha256": "6b7ed6adf7cc1aeb464245be12896879f3270d73ef16aba864193441c936795f",
+        "dimensions": [
+          1127,
+          1396
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          1113,
+          1396
+        ],
+        "archived_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/iterations/yuxiang-v01.png"
+      },
+      "repairs": [
+        {
+          "prompt": "Use case: targeted image edit / character differentiation. IMAGE 1 is the ONLY EDIT TARGET: the already finished transparent Battle Brothers bust of Yu Xiang. IMAGE 2 is the legacy identity reference, where the distinctive object is a lantern. IMAGE 3 is ONLY the official compact bust proportion reference. IMAGE 4 is ONLY the coarse painted line/color style reference; NEVER copy its face. Keep image 1's own calm adult female oval face, natural small eyes, relaxed mostly straight eyebrows, closed neutral mouth, purple travel cloak, pale flower, short chest proportions, right-facing three-quarter pose, rough dark outlines, simple flat earthy painted shading, and transparent alpha background. Make ONLY these two controlled identifying changes: (1) REPLACE the round gold flower-shaped chest clasp with an unmistakable little old brass LANTERN hung against the upper chest, under her chin and clear of her face, approximately one quarter of the face height. Draw its small handle, dark box frame and one simple muted amber glass pane. It must read as a lantern silhouette at 114px; no light rays or halo, no hands, no floating object, no extra large prop. (2) Gather the hair that falls over the viewer-left shoulder into ONE visibly chunky loose low braid resting on that shoulder, keeping the remainder of the long brown hair and pale flower. This distinguishes her from another long-haired purple-cloaked party member. Keep head and figure scale unchanged, with an intact rounded lower chest contour. Do not change her into a man or into Afei; no sharp V-shaped heavy masculine eyebrows or signature smirk. Maintain matte hand-painted Battle Brothers game-bust appearance, NOT photorealism or anime. Output one complete isolated bust as true transparent PNG, no background, labels, borders, or checkerboard.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/yuxiang.png",
+            "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C20.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+            "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+          ],
+          "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-3486aed6-9dd3-4f13-aef0-88e217c03fb1.png",
+          "reason": "Restore omitted identifying lantern and separate Yu Xiang's silhouette from Wang Duidui using one low braid.",
+          "status": "accepted_after_visual_review"
+        }
+      ],
+      "solid_alpha_bbox": [
+        16,
+        104,
+        1114,
+        1358
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    },
+    {
+      "key": "tongzhu",
+      "name": "童猪",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C18.png",
+      "features": "Adult woman with long nearly black hair, heavy straight fringe, dusty blue cloak, serious small-eyed face, small carved wooden bear head chest badge. Remove tall blue banner and spear.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C18.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Adult woman with long nearly black hair, heavy straight fringe, dusty blue cloak, serious small-eyed face, small carved wooden bear head chest badge. Remove tall blue banner and spear. Keep this woman's face distinct: a broad softly rounded face with full cheeks, short upturned nose, compact straight brows under blunt bangs, slightly pursed lips and a deadpan quizzical expression. Do not copy Afei's long angular face or smug smile. Adult, not baby-faced.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-7260b9d3-ffd6-44b3-9460-0a8c466c28ab.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/tongzhu.png",
+      "sha256": "0f51983d2a5035cd64da3713cd01fa44824e4db683027d16074f72a9f4127d7a",
+      "dimensions": [
+        1113,
+        1413
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1113,
+        1393
+      ],
+      "solid_alpha_bbox": [
+        8,
+        94,
+        1104,
+        1363
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    },
+    {
+      "key": "meiya",
+      "name": "美伢",
+      "target": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C21.png",
+      "features": "Adult woman with long dark brown hair, dusty rose medieval soft cap, confident theatrical squint and one raised brow, worn brown and wine-red travelling clothes, small ivory theatre fox-mask ornament at side of cap which must not cover her face.",
+      "references": [
+        "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C21.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+      ],
+      "prompt": "Use case: style-transfer. Create one finished transparent PNG tactical character bust for a Battle Brothers mod. INPUT ROLES: Image 1 is the ONLY character to edit and the source of this person's identity cues. Image 2 is the official Battle Brothers reference sheet for compact bust proportions, adult facial construction, three-quarter angle and readability; do NOT copy any of its faces or bare torsos. Image 3 is only a reference for coarse hand-painted color blocks, rough dark contour and understated expression; do NOT copy Afei's face, haircut, clothes or sex. Redraw the complete integrated figure from image 1 in the gritty illustrated 2D Battle Brothers visual language. Keep the specific identity anchors below. One head, own original hair, neck, shoulders and simple clothing form ONE coherent compact upper-chest bust. Full silhouette visible with comfortable transparent padding, facing the viewer's RIGHT in mild three-quarter view, near-orthographic game-token view. Oversized but adult head approximately 60 percent of bust height, short sturdy neck, compressed torso, broad shoulders roughly 1.45 times head width. End upper chest at a deliberate shallow rounded bottom contour, not a straight photograph crop. No lower body, no hands, no long weapons, no full shield, no large props protruding above the head. Big readable angular color planes, heavy slightly uneven dark brown outer line, economical interior lines, subdued earthy colors, weathered matte cloth and leather, only two or three simple shadow tones. Small expressive natural eyes with heavy lids, clear nose and jaw planes, adult proportions; NOT photorealistic, NOT 3D, NOT anime, NOT manga, NOT big glossy eyes, NOT delicate pretty portrait rendering, NOT elaborate engraving or micro-textures. Optimized to remain recognizable at roughly 108x130 pixels. Character and clothing must be opaque; true transparent alpha everywhere outside the silhouette. Absolutely no white/grey background, checkerboard pattern, vignette, glow, cast shadow, text, labels, border, or additional figures. Do not use or overlay native game head/hair/face components; draw this character's own complete head and hair as part of the single illustration. IDENTITY TO PRESERVE FROM IMAGE 1: Adult woman with long dark brown hair, dusty rose medieval soft cap, confident theatrical squint and one raised brow, worn brown and wine-red travelling clothes, small ivory theatre fox-mask ornament at side of cap which must not cover her face. Keep this woman's face distinct: elongated oval face, high thin arched brows with one lifted, long narrow nose, a small asymmetric theatrical smile, clear mature eyelids. Do not copy Afei's thick slanted brows or square jaw. Retain the reference woman's self-possessed expression.",
+      "status": "generated_and_visually_reviewed",
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0db41-b9f3-7e10-8bf5-116ccc83ae77\\exec-ff8210b7-0d89-4917-bc26-bc953de4175e.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/meiya.png",
+      "sha256": "2c4f63d9ed6d98452e36de78a9839d1e50fa74a74d5584f2c2c5570d1c986237",
+      "dimensions": [
+        1144,
+        1375
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        19,
+        1116,
+        1375
+      ],
+      "solid_alpha_bbox": [
+        54,
+        99,
+        1108,
+        1320
+      ],
+      "review": {
+        "full_bust_visible": true,
+        "own_head_and_hair_integrated": true,
+        "round_chest_base": true,
+        "no_long_weapon": true,
+        "transparent_background_verified": true,
+        "native_game_placement_verified": false
+      }
+    }
+  ],
+  "summary": {
+    "completed": 12,
+    "generation_calls": 13,
+    "targeted_repairs": 1,
+    "png_alpha_verified": 12,
+    "in_game_approval": false
+  }
+}

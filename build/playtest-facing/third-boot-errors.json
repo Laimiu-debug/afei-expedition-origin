@@ -1,0 +1,11 @@
+{
+  "log": "C:\\Users\\25647\\OneDrive\\Documents\\Battle Brothers\\log.html",
+  "sha256": "459b4b3beceb5d1fc03430001246e0d82503c2f02ecba21f4182484f4e711b79",
+  "error_rows": 2,
+  "script_error_messages": [
+    "the index 'ArmorMax' does not exist"
+  ],
+  "test_markers": [
+    "info\"> 19:35:21 SQ AFEIX_FACING_TEST: development scenario registered; Scenarios -> first entry"
+  ]
+}

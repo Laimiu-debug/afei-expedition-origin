@@ -1,0 +1,1006 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "44cabed4b32fc94a8034798c382242c95652ff89732cc516453a599c3396fd79",
+  "method": "alpha crop, uniform Lanczos resize, transparent placement only",
+  "sprites": [
+    {
+      "id": "afeix_v1_human_head",
+      "source": "sources/human-head.png",
+      "source_sha256": "5c19f084291b2c2756af12d7ecae34960f77d6a28097b0abf4b290831447805e",
+      "source_size": [
+        1135,
+        1386
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        265,
+        282,
+        883,
+        1099
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        618,
+        817
+      ],
+      "uniform_scale": 0.08090614886731391,
+      "resized_size": [
+        50,
+        66
+      ],
+      "placement": [
+        0,
+        1
+      ],
+      "output_size": [
+        50,
+        68
+      ],
+      "output": "sprites/afeix_v1_human_head.png",
+      "sha256": "6cd0817a1365e3e68e257d583658b690b2ea1887c8a21f5290a1afaf9933c23f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_human_head",
+        "img": "sprites\\afeix_v1_human_head.png",
+        "left": "-21",
+        "right": "29",
+        "top": "-20",
+        "bottom": "48",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_human_head_dead",
+      "source": "sources/human-head-dead.png",
+      "source_sha256": "0a2a0fef4a45c6f7741ab1288d56b74b457369c51b1d38560327f59b359e54b2",
+      "source_size": [
+        1275,
+        1233
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        205,
+        205,
+        1115,
+        1003
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        910,
+        798
+      ],
+      "uniform_scale": 0.06593406593406594,
+      "resized_size": [
+        60,
+        53
+      ],
+      "placement": [
+        0,
+        2
+      ],
+      "output_size": [
+        60,
+        58
+      ],
+      "output": "sprites/afeix_v1_human_head_dead.png",
+      "sha256": "3d105449b57a0c2579ea42ca5969f6b1c448f31b5843f47a5304e22f07a8a2bb",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_human_head_dead",
+        "img": "sprites\\afeix_v1_human_head_dead.png",
+        "left": "-44",
+        "right": "16",
+        "top": "-58",
+        "bottom": "0",
+        "width": "131",
+        "height": "125",
+        "offsetX": "6",
+        "offsetY": "10",
+        "f": "64F6",
+        "f1": "-15",
+        "f2": "-15"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_toad_head",
+      "source": "sources/toad-head.png",
+      "source_sha256": "28aa8d74ef69322aa6b8663da41246c5d27b6e5939b6b280829ccb6acd6a0a88",
+      "source_size": [
+        1178,
+        1335
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        173,
+        274,
+        1043,
+        1113
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        870,
+        839
+      ],
+      "uniform_scale": 0.06666666666666667,
+      "resized_size": [
+        58,
+        56
+      ],
+      "placement": [
+        0,
+        2
+      ],
+      "output_size": [
+        58,
+        60
+      ],
+      "output": "sprites/afeix_v1_toad_head.png",
+      "sha256": "1c907b19702bace3565e7d8dd64debc7316b8478086b27f1d70291e82e5214ff",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_toad_head",
+        "img": "sprites\\afeix_v1_toad_head.png",
+        "left": "-25",
+        "right": "33",
+        "top": "-20",
+        "bottom": "40",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_toad_head_dead",
+      "source": "sources/toad-head-dead.png",
+      "source_sha256": "804d75065d290fa4b82b2d7a97f72319ff7a820dfd8eb9fb47b567a06b86b534",
+      "source_size": [
+        1276,
+        1233
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        189,
+        246,
+        1124,
+        1084
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        935,
+        838
+      ],
+      "uniform_scale": 0.06417112299465241,
+      "resized_size": [
+        60,
+        54
+      ],
+      "placement": [
+        0,
+        2
+      ],
+      "output_size": [
+        60,
+        58
+      ],
+      "output": "sprites/afeix_v1_toad_head_dead.png",
+      "sha256": "80e7b183487f0436ef2f2884021ec123e5815ac0ed54f8b22c43637237310ebb",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_toad_head_dead",
+        "img": "sprites\\afeix_v1_toad_head_dead.png",
+        "left": "-44",
+        "right": "16",
+        "top": "-58",
+        "bottom": "0",
+        "width": "131",
+        "height": "125",
+        "offsetX": "6",
+        "offsetY": "10",
+        "f": "64F6",
+        "f1": "-15",
+        "f2": "-15"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_normal_body",
+      "source": "sources/normal-body.png",
+      "source_sha256": "aee49b7ba013b38a40d4d767e1c8aa7d598bef8e61a0e79c7b3b99ec8d90d1e4",
+      "source_size": [
+        1320,
+        1192
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        115,
+        290,
+        1223,
+        1069
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        1108,
+        779
+      ],
+      "uniform_scale": 0.0740072202166065,
+      "resized_size": [
+        82,
+        58
+      ],
+      "placement": [
+        0,
+        16
+      ],
+      "output_size": [
+        82,
+        74
+      ],
+      "output": "sprites/afeix_v1_normal_body.png",
+      "sha256": "c6d0a4dc8c6626beadcc0f61254bf3de20f8bcbc257e64f4e590d511a2d24d33",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_normal_body",
+        "img": "sprites\\afeix_v1_normal_body.png",
+        "left": "-39",
+        "right": "43",
+        "top": "-61",
+        "bottom": "13",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_normal_body_dead",
+      "source": "sources/normal-body-dead.png",
+      "source_sha256": "6f2fae0a3b38b57a7d4f2180e18a884a8c5db8cb60e10fab3afe3173a2d109ca",
+      "source_size": [
+        1376,
+        1143
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        227,
+        232,
+        1144,
+        927
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        917,
+        695
+      ],
+      "uniform_scale": 0.11559432933478735,
+      "resized_size": [
+        106,
+        80
+      ],
+      "placement": [
+        0,
+        4
+      ],
+      "output_size": [
+        106,
+        88
+      ],
+      "output": "sprites/afeix_v1_normal_body_dead.png",
+      "sha256": "9ebb6f135fdd9b1417bf27dd83615ae5564ed5b9c0650709778ce321b0aae62f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_normal_body_dead",
+        "img": "sprites\\afeix_v1_normal_body_dead.png",
+        "left": "-55",
+        "right": "51",
+        "top": "-50",
+        "bottom": "38",
+        "width": "131",
+        "height": "125",
+        "offsetX": "6",
+        "offsetY": "10",
+        "f": "64FE"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_normal_body_injured",
+      "source": "sources/body-injury.png",
+      "source_sha256": "95bdad005a93fa32f1106346d3e02003078d9ca24f62dae6b07e44da57d42b69",
+      "source_size": [
+        1706,
+        922
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        436,
+        337,
+        1260,
+        631
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        824,
+        294
+      ],
+      "uniform_scale": 0.08980582524271845,
+      "resized_size": [
+        74,
+        26
+      ],
+      "placement": [
+        0,
+        7
+      ],
+      "output_size": [
+        74,
+        40
+      ],
+      "output": "sprites/afeix_v1_normal_body_injured.png",
+      "sha256": "4c8f66df5f2c3a1534df3c05092579739df39e6936221d7457ce902b69bf5e5e",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_normal_body_injured",
+        "img": "sprites\\afeix_v1_normal_body_injured.png",
+        "left": "-37",
+        "right": "37",
+        "top": "-48",
+        "bottom": "-8",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": true
+    },
+    {
+      "id": "afeix_v1_toad_body",
+      "source": "sources/toad-body.png",
+      "source_sha256": "c14cdd1fd82b72ff47ce1738f067720aef34f383c12c80e91385b8bee7e3ba46",
+      "source_size": [
+        1320,
+        1192
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        121,
+        390,
+        1217,
+        1067
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        1096,
+        677
+      ],
+      "uniform_scale": 0.07481751824817519,
+      "resized_size": [
+        82,
+        51
+      ],
+      "placement": [
+        0,
+        23
+      ],
+      "output_size": [
+        82,
+        74
+      ],
+      "output": "sprites/afeix_v1_toad_body.png",
+      "sha256": "f3586072781ed2d73630bb07747273a98b831e446d929c5fae0cdbdd68712a3d",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_toad_body",
+        "img": "sprites\\afeix_v1_toad_body.png",
+        "left": "-39",
+        "right": "43",
+        "top": "-61",
+        "bottom": "13",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_toad_body_dead",
+      "source": "sources/toad-body-dead.png",
+      "source_sha256": "b93843aa60af20f804328292e926b5b3eaacc86ca4afc42f71451e89ae772e24",
+      "source_size": [
+        1376,
+        1143
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        261,
+        242,
+        1200,
+        966
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        939,
+        724
+      ],
+      "uniform_scale": 0.11288604898828541,
+      "resized_size": [
+        106,
+        82
+      ],
+      "placement": [
+        0,
+        3
+      ],
+      "output_size": [
+        106,
+        88
+      ],
+      "output": "sprites/afeix_v1_toad_body_dead.png",
+      "sha256": "9f79dfea1f42e1f8153fb4365009c03565e7a51ff791fb9c3f70ad3c6e79a7f8",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_toad_body_dead",
+        "img": "sprites\\afeix_v1_toad_body_dead.png",
+        "left": "-55",
+        "right": "51",
+        "top": "-50",
+        "bottom": "38",
+        "width": "131",
+        "height": "125",
+        "offsetX": "6",
+        "offsetY": "10",
+        "f": "64FE"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_toad_body_injured",
+      "source": "sources/body-injury.png",
+      "source_sha256": "95bdad005a93fa32f1106346d3e02003078d9ca24f62dae6b07e44da57d42b69",
+      "source_size": [
+        1706,
+        922
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        436,
+        337,
+        1260,
+        631
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        824,
+        294
+      ],
+      "uniform_scale": 0.08980582524271845,
+      "resized_size": [
+        74,
+        26
+      ],
+      "placement": [
+        0,
+        7
+      ],
+      "output_size": [
+        74,
+        40
+      ],
+      "output": "sprites/afeix_v1_toad_body_injured.png",
+      "sha256": "4c8f66df5f2c3a1534df3c05092579739df39e6936221d7457ce902b69bf5e5e",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_toad_body_injured",
+        "img": "sprites\\afeix_v1_toad_body_injured.png",
+        "left": "-37",
+        "right": "37",
+        "top": "-48",
+        "bottom": "-8",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": true
+    },
+    {
+      "id": "afeix_v1_jiahao_body",
+      "source": "sources/jiahao-body.png",
+      "source_sha256": "6c0d09d4ed859ad5f0a8ca50fe67cf7f1b089ce3f39432750f16bb5ddcc5d631",
+      "source_size": [
+        1320,
+        1192
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        104,
+        248,
+        1239,
+        1005
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        1135,
+        757
+      ],
+      "uniform_scale": 0.0722466960352423,
+      "resized_size": [
+        82,
+        55
+      ],
+      "placement": [
+        0,
+        19
+      ],
+      "output_size": [
+        82,
+        74
+      ],
+      "output": "sprites/afeix_v1_jiahao_body.png",
+      "sha256": "279d1613c3b3efaa403789eb17dc1ad9305ab0edbdb27d7a9c6dcc1e67fc01db",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_jiahao_body",
+        "img": "sprites\\afeix_v1_jiahao_body.png",
+        "left": "-39",
+        "right": "43",
+        "top": "-61",
+        "bottom": "13",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_jiahao_body_dead",
+      "source": "sources/jiahao-body-dead.png",
+      "source_sha256": "e8b65db3d4c4c4eb6bbe1e3c0290a0d6f6d5e0e17c7dc169cd3fec9cb9a64709",
+      "source_size": [
+        1376,
+        1143
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        164,
+        223,
+        1258,
+        940
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        1094,
+        717
+      ],
+      "uniform_scale": 0.09689213893967093,
+      "resized_size": [
+        106,
+        69
+      ],
+      "placement": [
+        0,
+        9
+      ],
+      "output_size": [
+        106,
+        88
+      ],
+      "output": "sprites/afeix_v1_jiahao_body_dead.png",
+      "sha256": "71cb03dff68d5951b218f181fa59a2ebeb028f80446d69d670be7ce8980dd3df",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_jiahao_body_dead",
+        "img": "sprites\\afeix_v1_jiahao_body_dead.png",
+        "left": "-55",
+        "right": "51",
+        "top": "-50",
+        "bottom": "38",
+        "width": "131",
+        "height": "125",
+        "offsetX": "6",
+        "offsetY": "10",
+        "f": "64FE"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_jiahao_body_injured",
+      "source": "sources/body-injury.png",
+      "source_sha256": "95bdad005a93fa32f1106346d3e02003078d9ca24f62dae6b07e44da57d42b69",
+      "source_size": [
+        1706,
+        922
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        436,
+        337,
+        1260,
+        631
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        824,
+        294
+      ],
+      "uniform_scale": 0.08980582524271845,
+      "resized_size": [
+        74,
+        26
+      ],
+      "placement": [
+        0,
+        7
+      ],
+      "output_size": [
+        74,
+        40
+      ],
+      "output": "sprites/afeix_v1_jiahao_body_injured.png",
+      "sha256": "4c8f66df5f2c3a1534df3c05092579739df39e6936221d7457ce902b69bf5e5e",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_jiahao_body_injured",
+        "img": "sprites\\afeix_v1_jiahao_body_injured.png",
+        "left": "-37",
+        "right": "37",
+        "top": "-48",
+        "bottom": "-8",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": true
+    },
+    {
+      "id": "afeix_v1_feidie",
+      "source": "sources/feidie.png",
+      "source_sha256": "d432fdcbc600d57f9b631cc1e7ada00d8dff094d6139fb29b68a0ff77ad82ed0",
+      "source_size": [
+        1774,
+        887
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        436,
+        243,
+        1332,
+        626
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        896,
+        383
+      ],
+      "uniform_scale": 0.03794642857142857,
+      "resized_size": [
+        34,
+        15
+      ],
+      "placement": [
+        0,
+        0
+      ],
+      "output_size": [
+        34,
+        16
+      ],
+      "output": "sprites/afeix_v1_feidie.png",
+      "sha256": "73cf1c9dfaace30d7fba79032086eef2ce19a923dc006721b4a58204e43a33f6",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_feidie",
+        "img": "sprites\\afeix_v1_feidie.png",
+        "left": "-13",
+        "right": "21",
+        "top": "62",
+        "bottom": "78",
+        "width": "104",
+        "height": "170",
+        "offsetY": "35"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_toad_head_injured_01",
+      "source": "sources/toad-head-injury-01.png",
+      "source_sha256": "0b7cb99debce3876c2687e7d5b3df429ea3fefe2102a61573414db26606731ec",
+      "source_size": [
+        1278,
+        1230
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        446,
+        430,
+        788,
+        757
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        342,
+        327
+      ],
+      "uniform_scale": 0.08187134502923976,
+      "resized_size": [
+        28,
+        27
+      ],
+      "placement": [
+        0,
+        0
+      ],
+      "output_size": [
+        28,
+        27
+      ],
+      "output": "sprites/afeix_v1_toad_head_injured_01.png",
+      "sha256": "fb8002d12d3e6357dc8f2474cdf232266b36e03f4e3d42d33ba9fd6b2deccbc8",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_toad_head_injured_01",
+        "img": "sprites\\afeix_v1_toad_head_injured_01.png",
+        "left": "-17",
+        "right": "11",
+        "top": "0",
+        "bottom": "27",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": true
+    },
+    {
+      "id": "afeix_v1_toad_head_injured_02",
+      "source": "sources/toad-head-injury-02.png",
+      "source_sha256": "fb4a9254272b2b7b6f007d3deb2664e65db26a29ff39074adb2ff74ed921c73a",
+      "source_size": [
+        1173,
+        1341
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        346,
+        400,
+        867,
+        906
+      ],
+      "alpha_threshold": 16,
+      "cropped_size": [
+        521,
+        506
+      ],
+      "uniform_scale": 0.06525911708253358,
+      "resized_size": [
+        34,
+        33
+      ],
+      "placement": [
+        0,
+        3
+      ],
+      "output_size": [
+        34,
+        39
+      ],
+      "output": "sprites/afeix_v1_toad_head_injured_02.png",
+      "sha256": "00e2db36b9c5e23ff1b218a87509354cdeee0f855ab72296554e3793143054c3",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_toad_head_injured_02",
+        "img": "sprites\\afeix_v1_toad_head_injured_02.png",
+        "left": "-16",
+        "right": "18",
+        "top": "-10",
+        "bottom": "29",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": true
+    }
+  ],
+  "roundtrip": {
+    "passed": true,
+    "sprite_count": 16,
+    "sprites": [
+      {
+        "id": "afeix_v1_human_head",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_human_head_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_toad_head",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_toad_head_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_normal_body",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_normal_body_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_normal_body_injured",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_toad_body",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_toad_body_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_toad_body_injured",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_jiahao_body",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_jiahao_body_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_jiahao_body_injured",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_feidie",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_toad_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_toad_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "brush": "package/brushes/afeix_art_v1.brush",
+    "brush_sha256": "1257c2b0e26ab313b1aaab42582a2e5d544bb3d411b761bd84c8d8ec7dbf28c2",
+    "atlas": "package/gfx/afeix_art_v1.png",
+    "atlas_sha256": "94dfc10c8451683916c0c9ea849c44ebb6dec85ae18d98e64e0a94430fece9d9",
+    "pack_log": "Loading images...\nsprites\\afeix_v1_human_head.png\nsprites\\afeix_v1_human_head_dead.png\nsprites\\afeix_v1_toad_head.png\nsprites\\afeix_v1_toad_head_dead.png\nsprites\\afeix_v1_normal_body.png\nsprites\\afeix_v1_normal_body_dead.png\nsprites\\afeix_v1_normal_body_injured.png\nsprites\\afeix_v1_toad_body.png\nsprites\\afeix_v1_toad_body_dead.png\nsprites\\afeix_v1_toad_body_injured.png\nsprites\\afeix_v1_jiahao_body.png\nsprites\\afeix_v1_jiahao_body_dead.png\nsprites\\afeix_v1_jiahao_body_injured.png\nsprites\\afeix_v1_feidie.png\nsprites\\afeix_v1_toad_head_injured_01.png\nsprites\\afeix_v1_toad_head_injured_02.png\nPacking rectangles...\nWriting gfx/afeix_art_v1.png (512x256)...\n",
+    "unpack_log": "Opening gfx/afeix_art_v1.png...\nsprites\\afeix_v1_human_head.png\nsprites\\afeix_v1_human_head_dead.png\nsprites\\afeix_v1_toad_head.png\nsprites\\afeix_v1_toad_head_dead.png\nsprites\\afeix_v1_normal_body.png\nsprites\\afeix_v1_normal_body_dead.png\nsprites\\afeix_v1_normal_body_injured.png\nsprites\\afeix_v1_toad_body.png\nsprites\\afeix_v1_toad_body_dead.png\nsprites\\afeix_v1_toad_body_injured.png\nsprites\\afeix_v1_jiahao_body.png\nsprites\\afeix_v1_jiahao_body_dead.png\nsprites\\afeix_v1_jiahao_body_injured.png\nsprites\\afeix_v1_feidie.png\nsprites\\afeix_v1_toad_head_injured_01.png\nsprites\\afeix_v1_toad_head_injured_02.png\n",
+    "roundtrip_directory": "build/roundtrip-7qthhs36"
+  },
+  "preview": "build/preview/index.html",
+  "engineering_review": {
+    "files": [
+      {
+        "path": "build/preview/layer-review-1x.png",
+        "size": [
+          1140,
+          1154
+        ],
+        "sha256": "6fddcf55882abc64e794aa2764ed351065a37e1c7ed69191f5f58d8e14485473"
+      },
+      {
+        "path": "build/preview/layer-review-2x.png",
+        "size": [
+          1670,
+          2054
+        ],
+        "sha256": "ee715e8e1219df824dfa075632a803b420097d6471210dc6002ab139a7c9791b"
+      }
+    ],
+    "in_game_screenshot": false,
+    "clipped_layer_rectangles": [],
+    "coordinates": "x=70+left; y=94-bottom; same baseline for every alive or dead layer"
+  },
+  "in_game_tested": false,
+  "official_assets_distributable": false,
+  "package": {
+    "path": "dist/mod_afeix_art_v1.zip",
+    "sha256": "8f0b8a14c5a158fabd83de21cd2fdf07d96fef290dc89d80db4beb4386e307e7",
+    "bytes": 126991,
+    "entries": [
+      "brushes/afeix_art_v1.brush",
+      "gfx/afeix_art_v1.png",
+      "scripts/!mods_preload/mod_afei_art_v1.nut",
+      "scripts/mods/afei_art_v1/appearance.nut",
+      "scripts/mods/afei_art_v1/hooks.nut",
+      "scripts/scenarios/world/afeix_art_preview_scenario.nut"
+    ],
+    "crc_passed": true,
+    "scripts_included": 4,
+    "brush_interface_contract_resolved": [
+      "afeix_v1_feidie",
+      "afeix_v1_human_head",
+      "afeix_v1_human_head_dead",
+      "afeix_v1_jiahao_body",
+      "afeix_v1_jiahao_body_dead",
+      "afeix_v1_jiahao_body_injured",
+      "afeix_v1_normal_body",
+      "afeix_v1_normal_body_dead",
+      "afeix_v1_normal_body_injured",
+      "afeix_v1_toad_body",
+      "afeix_v1_toad_body_dead",
+      "afeix_v1_toad_body_injured",
+      "afeix_v1_toad_head",
+      "afeix_v1_toad_head_dead",
+      "afeix_v1_toad_head_injured_01",
+      "afeix_v1_toad_head_injured_02"
+    ],
+    "contains_native_game_art": false
+  }
+}

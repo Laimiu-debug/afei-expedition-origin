@@ -1,0 +1,8 @@
+<brush name="gfx/afeix_gameplay_v03.png" version="17">
+  <sprite id="afeix_g03_normal_body" img="afeix_g03_normal_body.png" left="-39" right="43" top="-61" bottom="13" width="104" height="142" offsetY="35" />
+  <sprite id="afeix_g03_normal_body_dead" img="afeix_g03_normal_body_dead.png" left="-55" right="51" top="-50" bottom="38" width="131" height="125" offsetX="6" offsetY="10" f="64FE" />
+  <sprite id="afeix_g03_normal_body_injured" img="afeix_g03_normal_body_injured.png" left="-37" right="37" top="-48" bottom="-8" width="104" height="142" offsetY="35" />
+  <sprite id="afeix_g03_jiahao_body" img="afeix_g03_jiahao_body.png" left="-39" right="43" top="-61" bottom="13" width="104" height="142" offsetY="35" />
+  <sprite id="afeix_g03_jiahao_body_dead" img="afeix_g03_jiahao_body_dead.png" left="-55" right="51" top="-50" bottom="38" width="131" height="125" offsetX="6" offsetY="10" f="64FE" />
+  <sprite id="afeix_g03_jiahao_body_injured" img="afeix_g03_jiahao_body_injured.png" left="-37" right="37" top="-48" bottom="-8" width="104" height="142" offsetY="35" />
+</brush>

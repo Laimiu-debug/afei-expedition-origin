@@ -1,0 +1,112 @@
+{
+  "records": [
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "file": "art/references/2026-09-26-likeness/damou/broadcast.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/damou/face-reference.png",
+      "crop": [
+        0,
+        95,
+        440,
+        660
+      ],
+      "page": "https://www.douyu.com/9990298",
+      "image_url": "https://rpic.douyucdn.cn/asrpic/260926/9990298_src_1842.avif/dy4",
+      "evidence": "Official 王大谋QoQ room 9990298, short 11722; streamer gaming camera on LEFT, guest on right excluded.",
+      "features": "Preserve this adult man's broad rounded cheeks, short dark fluffy forward fringe (NOT purple), low flat brows, narrow eyes and small relaxed mouth. Remove headphones. Keep short dark-green scarf over brown padded leather shoulders, calm grounded expression. Do not sharpen his jaw or copy Afei face.",
+      "sha256": "03e1ca42e6301632693239c49ad9c258435f4dcd8f395d64ff518994d21ef026",
+      "status": "caption_verified_photo_selected"
+    },
+    {
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "file": "art/references/2026-09-26-likeness/mocha/official-poster.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/mocha/face-reference.png",
+      "crop": [
+        516,
+        27,
+        690,
+        261
+      ],
+      "page": "https://www.douyu.com/cms/detail/21136.shtml",
+      "image_url": "https://sta-op.douyucdn.cn/douyu-vrp-admin/2023/12/11/be63d37c6a978d7bc954baa13a0d9caf.jpg",
+      "evidence": "Official Douyu event poster explicitly labels right portrait 午夜抹抹茶 with room80432; dated2023 publicity headshot. Modern live thumbnail and old cartoon avatar rejected as face photo.",
+      "features": "Preserve adult man's longer oval cheeks with a rounded chin, short light-brown hair swept up and to the side, fine gently curved brows, narrow almond eyes, small straight nose, naturally full soft mouth. Confident almost-smile. Worn green-brown medieval merchant leather with one dark buckle; no glasses because selected photograph has none. Do not copy Afei V eyebrows or modern jacket.",
+      "sha256": "87e194ece74d446f25c5fe486463e5cceb70b410dbb32bbf264bc9b4b5ac5b81",
+      "status": "caption_verified_photo_selected"
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "file": "art/references/2026-09-26-likeness/shuaizi/broadcast.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/shuaizi/face-reference.png",
+      "crop": [
+        285,
+        60,
+        760,
+        660
+      ],
+      "page": "https://www.douyu.com/6749231",
+      "image_url": "https://rpic.douyucdn.cn/asrpic/260925/6749231_src_2054.avif/dy4",
+      "evidence": "Official 白小帅子 room6749231,51417 watermark; single centered broadcaster camera in drum/music room.",
+      "features": "Adult woman with long dark hair half-tied into a compact high knot, open forehead, soft longer oval face, gentle almond eyes and small mouth slightly parted. Replace fluffy modern headband with narrow gray cloth tie while keeping hair shape. Brick-red neck scarf, muted leather and a tiny round drum chest medallion. No invented braids, angry brows, headset or musical instrument.",
+      "sha256": "60b15b8d98f0f55e1dfe5ca1b11f66fde46735f6c40ce45ff58e16403ed24ef6",
+      "status": "caption_verified_photo_selected"
+    },
+    {
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "file": "art/references/2026-09-26-likeness/xiaoyubeike/broadcast.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/xiaoyubeike/face-reference.png",
+      "crop": [
+        366,
+        190,
+        900,
+        710
+      ],
+      "page": "https://www.douyu.com/12467917",
+      "image_url": "https://rpic.douyucdn.cn/asrpic/260925/12467917_src_1617.avif/dy4",
+      "evidence": "Official 小鱼贝壳 room12467917, foreground broadcaster on sofa; separate masked background guest excluded. Phone partly obscures chin; official profile photo secondary.",
+      "features": "Preserve adult woman's dark brown shoulder-length hair with long curtain fringe, soft oval face with round cheeks, slender nearly flat eyebrows and dark rectangular spectacles. Relaxed thoughtful eyes, small quiet mouth. Glasses simple non-glossy dark frame. Plain gray linen neck and dark olive leather vest, tiny shell clasp; NO hood over hair. Omit smartphone and sofa.",
+      "sha256": "ebf3e6c43518688d553ed99809f5a0bb2e25e08ac556c28e56564507b7aeb245",
+      "status": "caption_verified_photo_selected"
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "file": "art/references/2026-09-26-likeness/keke/broadcast.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/keke/face-reference.png",
+      "crop": [
+        610,
+        0,
+        1260,
+        660
+      ],
+      "page": "https://www.douyu.com/55588",
+      "image_url": "https://rpic.douyucdn.cn/asrpic/260924/12767534_src_2146.avif/dy4",
+      "evidence": "Official 可可or room55588 /12767534, single foreground broadcaster; no group identity inference.",
+      "features": "Adult woman with long straight BLACK hair side-parted, soft slightly broad oval face, straight dark brows, narrow almond eyes, rounded nose tip and naturally full lips with slight closed-mouth smile. Brick-red scarf and russet medieval travel leather, one small brass crescent clasp. No invented ponytail or brown dye; no cold masculine jaw.",
+      "sha256": "165c49b25102c4e52725809345ab5b1c3b48f43a019b8397d6c6b2f28f5a8b28",
+      "status": "caption_verified_photo_selected"
+    },
+    {
+      "key": "tongzhu",
+      "name": "童猪",
+      "file": "art/references/2026-09-26-likeness/tongzhu/broadcast.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/tongzhu/face-reference.png",
+      "crop": [
+        880,
+        522,
+        1120,
+        720
+      ],
+      "page": "https://www.douyu.com/945159",
+      "image_url": "https://rpic.douyucdn.cn/asrpic/260925/945159_src_0113.avif/dy4",
+      "evidence": "Official 童猪啊i room945159; own bottom-right webcam, marked童猪666/945159, not game characters. 240px crop; profile photo secondary.",
+      "features": "Adult woman with long dark hair parted near center, round black spectacles, softly rounded oval face and small narrow eyes, quiet intent closed mouth. Keep matte glasses with no glare, slim cloth collar and dusty-blue cloak, a tiny carved bear clasp. Omit headset and microphone. Do not use a long pointed chin or generic angry eyes.",
+      "sha256": "f51330a3e3aeeaa0da47e67bc8dfc6aefa87f05f6949b396bfbdcf3a32f01e16",
+      "status": "caption_verified_photo_selected"
+    }
+  ]
+}

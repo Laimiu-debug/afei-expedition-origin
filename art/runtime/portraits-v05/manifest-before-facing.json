@@ -1,0 +1,679 @@
+{
+  "schema_version": 1,
+  "atlas_name": "afeix_portraits_v04",
+  "updated": "2026-09-26",
+  "status": "photo_based_revision_with_four_explicit_likeness_gaps_pending_user_and_engine_review",
+  "geometry": {
+    "live": {
+      "left": -57,
+      "right": 57,
+      "top": -55,
+      "bottom": 87,
+      "width": 114,
+      "height": 142,
+      "offsetY": 35
+    },
+    "dead": {
+      "left": -57,
+      "right": 57,
+      "top": -71,
+      "bottom": 71,
+      "width": 114,
+      "height": 142,
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    "size": [
+      114,
+      142
+    ],
+    "fit": [
+      108,
+      124
+    ],
+    "alpha_threshold": 20,
+    "align": "bottom_center"
+  },
+  "dead_mode": "same_pixels_centred_anchor_runtime_rotation",
+  "characters": [
+    {
+      "key": "afei",
+      "name": "阿飞",
+      "forms": [
+        {
+          "form": "normal",
+          "brush": "afeix_p04_afei_normal",
+          "source": "art/runtime/portraits-v05/sources/afei_normal.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "4e791c392c534c94322f58416a119748776107808b7952d43cd9709c79c349ca",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        },
+        {
+          "form": "toad",
+          "brush": "afeix_p04_afei_toad",
+          "source": "art/character-concepts/afei/afei-toad-promoted-v01.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e0566647be9ba21b4e9e33d5de03adc29c6cab949dd644c314ccf1721828fb95",
+          "source_box": null,
+          "review_note": "本轮沿用；保留既有原创蛤蟆人形态，与真人照片无直接对应；本轮未重新生成。",
+          "source_revision": "v04_retained"
+        },
+        {
+          "form": "jiahao",
+          "brush": "afeix_p04_afei_jiahao",
+          "source": "art/runtime/portraits-v05/sources/afei_jiahao.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "6df39496a2b7b28028f93773f67d02e7625fc82074c15800bb9b0c587241c8d6",
+          "source_box": null,
+          "review_note": "沿用本轮阿飞照片校正后的脸与发型，更新嘉豪衣装；尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_damou",
+          "source": "art/runtime/portraits-v05/sources/damou.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "6b65e486bd088ab47733c63a055795df1fddf4d79487d414174d6839618960f3",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_mocha",
+          "source": "art/runtime/portraits-v05/sources/mocha.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "4f33879b26cf1ab384f1ce22e56c692d7cbe74e048ea3a7b421a000000265e8d",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "bottle",
+      "name": "小酒瓶",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_bottle",
+          "source": "art/runtime/portraits-v05/sources/bottle.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e4daddcfb0e4459ae0434f436ba1c05d38642807b35d8eacafd9998d3368f8f0",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_shuaizi",
+          "source": "art/runtime/portraits-v05/sources/shuaizi.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "64943c0e7ad842ab41be0b055bcae11a0455b133b066cc98f9a715c7e6021799",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "lili",
+      "name": "李李超欧",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_lili",
+          "source": "art/runtime/portraits-v05/sources/lili.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "4adcc8f009c126dff32657d335b455f137794aa463a6e694bbada0b150be09b7",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaoyueya",
+      "name": "小月牙",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaoyueya",
+          "source": "art/runtime/portraits-v04/sources/xiaoyueya.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "0d5575d95aed855631836d2ecac1527e24218e39befe68128b8b00ef143b9fde",
+          "source_box": null,
+          "review_note": "本轮沿用；同名房间22909未确认是名单成员，旧动画头像不能作真人照片。",
+          "source_revision": "v04_retained"
+        }
+      ],
+      "likeness_status": "awaiting_verified_photo"
+    },
+    {
+      "key": "yuchujiu",
+      "name": "余初九",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yuchujiu",
+          "source": "art/runtime/portraits-v05/sources/yuchujiu.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "1d0aab600dfea545af841757d11efc60b1acf636b5189f12b74b9f7d5a68ef55",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaoyubeike",
+          "source": "art/runtime/portraits-v05/sources/xiaoyubeike.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "c5af50d5e5473d19de59a5ff7d5b2145f2659c1382f3c3ae0a7fa0bdf25d675f",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_wangduidui",
+          "source": "art/runtime/portraits-v05/sources/wangduidui.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "85c4bcb8e13c1d32ca868fd739f4cad5ffe8238bcfedf65c75b0577ae6a1dbb8",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_laocai",
+          "source": "art/runtime/portraits-v05/sources/laocai.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "ab26a47229b4b9cdd2657a71999743dc31bebccbcbfac1df387ff87856d1d15c",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "tiantong",
+      "name": "亿口甜筒",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_tiantong",
+          "source": "art/runtime/portraits-v04/sources/tiantong.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "9e8906af7ac0a01d141dc9e4c9f059bbde394ee2d348d5cbb32ed330871efb0e",
+          "source_box": null,
+          "review_note": "本轮沿用；本人头像遮嘴，其他候选为未标位群像／礼物记录，没有足够清楚的全脸参考。",
+          "source_revision": "v04_retained"
+        }
+      ],
+      "likeness_status": "awaiting_verified_photo"
+    },
+    {
+      "key": "xiaoning",
+      "name": "小宁",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaoning",
+          "source": "art/runtime/portraits-v05/sources/xiaoning.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "70f6b1127344606c589ca456f884971751b2e85b3616d984432f17898a3275c8",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖徐不快乐",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaopangxu",
+          "source": "art/runtime/portraits-v05/sources/xiaopangxu.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "f4b08779630a9b722c4672ec67f37f77ea64d726421307bd755d8559d982563b",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_dae",
+          "source": "art/runtime/portraits-v05/sources/dae.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "42202e8173ae8b4e0c900e1080ab2bff3fb6dbf00ae54ac00182cb5756ce0887",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_manyuemei",
+          "source": "art/runtime/portraits-v05/sources/manyuemei.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "3a11f8213d1f01eb7d8620d400917bdb70446d038d7c4f660d118f9598c6bf75",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaohani",
+      "name": "小哈尼",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaohani",
+          "source": "art/runtime/portraits-v05/sources/xiaohani.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "82008b134939a5983bf95434cdd8aa903e5d4ab09cdd5eb0097c73aec1c81133",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_keke",
+          "source": "art/runtime/portraits-v05/sources/keke.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "ff15da2dd84c1771afed89fe2ae60c5f0e3d77128b4902751f131a81ad210451",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "yuxiang",
+      "name": "余想",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yuxiang",
+          "source": "art/runtime/portraits-v05/sources/yuxiang.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "68ff801e74add66d8e982bf81492fd9d13656b1e2d7c1b0dc1f14af9bac5985f",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "tongzhu",
+      "name": "童猪",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_tongzhu",
+          "source": "art/runtime/portraits-v05/sources/tongzhu.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "50fdcf4481edca148b224d64be7ed5fa648e68028c395be08f92e9872046fcdc",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "meiya",
+      "name": "美伢",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_meiya",
+          "source": "art/runtime/portraits-v04/sources/meiya.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "2c4f63d9ed6d98452e36de78a9839d1e50fa74a74d5584f2c2c5570d1c986237",
+          "source_box": null,
+          "review_note": "本轮沿用；目前仅具名舞台侧脸低清图，未取得可靠近脸；排除了同名其他主播。",
+          "source_revision": "v04_retained"
+        }
+      ],
+      "likeness_status": "awaiting_verified_photo"
+    },
+    {
+      "key": "wanshe",
+      "name": "玩蛇",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_wanshe",
+          "source": "art/runtime/portraits-v05/sources/wanshe.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "858cd36f1394badb364f8849eb2f56ee8a3b2529847549ad46e14a8305bd72f4",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "tutu",
+      "name": "涂涂",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_tutu",
+          "source": "art/runtime/portraits-v05/sources/tutu.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e956331dad7311e74a6f1488e448f5e748aad7af86f12172af2c18744ef6c0f0",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_songnuanyang",
+          "source": "art/runtime/portraits-v05/sources/songnuanyang.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "69ac02e3494e554374edc2e80b50caa9aec4c3c736309bef31bcbaa736221f85",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaogui",
+          "source": "art/runtime/portraits-v04/sources/xiaogui.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e1f889b172a960ba85cd7c4af0d44e1cd3976db240fc9d0ba22e90c94e12ab58",
+          "source_box": null,
+          "review_note": "本轮沿用；保留用户指定的原创小龟完整胸像，不借他人脸代替。",
+          "source_revision": "v04_retained"
+        }
+      ],
+      "likeness_status": "original_turtle_design"
+    },
+    {
+      "key": "naigai",
+      "name": "奶盖",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_naigai",
+          "source": "art/runtime/portraits-v05/sources/naigai.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "6c2fae9f31d5ba0a05a3163ba0cd469dfb54021459e268792ea39d0ac9f2c246",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaojie",
+      "name": "小杰",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaojie",
+          "source": "art/runtime/portraits-v05/sources/xiaojie.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e79dbcd3ccfb7a2e033991943909ad9c7afedc6990aa05e555bb80c2050177f5",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "bula",
+      "name": "bula",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_bula",
+          "source": "art/runtime/portraits-v05/sources/bula.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "0c7a07985d3924638558f62edce81729d93778e7e3fde738053e57517c74a0d9",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "suwa",
+      "name": "苏袜",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_suwa",
+          "source": "art/runtime/portraits-v05/sources/suwa.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e4f91792c10600e8cdd32948c8f18e2b924189f6b6913286f540ee1a164b8450",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "qianhan",
+      "name": "千涵",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_qianhan",
+          "source": "art/runtime/portraits-v05/sources/qianhan.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "8b6896df3ad767bb6164f80d9603df60f33030de607e7bf19e45fa08cebf1342",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_wangdazhi",
+          "source": "art/runtime/portraits-v05/sources/wangdazhi.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "2bc53c52b48a214face3737334a9f239a20132f8d90097eaaa6857127e38c3b4",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yaoyaoya",
+          "source": "art/runtime/portraits-v04/sources/yaoyaoya.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "60363f558e875bff7b9d56a8c5f222f01d5bbd3bd1019cb0b63d1b60a23e0f9e",
+          "source_box": null,
+          "review_note": "本轮沿用；旧参考群像裁切疑似取错人物，缺少姓名到位置的可靠证据。",
+          "source_revision": "v04_retained"
+        }
+      ],
+      "likeness_status": "awaiting_verified_photo"
+    },
+    {
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yangmiemie",
+          "source": "art/runtime/portraits-v05/sources/yangmiemie.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "8ed8a4e11f4174cb832d12fdbbef83c1d977ebf75a07b558d0a73a166263c084",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "chenzhihan",
+      "name": "陈知含",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_chenzhihan",
+          "source": "art/runtime/portraits-v05/sources/chenzhihan.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e748731e84a841f641aa61cf3fc9c14ebd31fec77ed43102898e75b1a216dffb",
+          "source_box": null,
+          "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+          "source_revision": "v05"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    }
+  ],
+  "source_revision": "v05",
+  "new_photo_people": 29,
+  "new_portrait_forms": 30,
+  "pending_photo_people": 4,
+  "compatibility_note": "Original afeix_p04 brush IDs and atlas filename are retained for save compatibility; selected art source revision is v05."
+}

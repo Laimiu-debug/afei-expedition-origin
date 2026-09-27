@@ -1,0 +1,488 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-26",
+  "tool": "built-in image_gen.imagegen",
+  "photo_evidence": "art/references/2026-09-26-likeness/research-group-missing.json",
+  "group": "missing",
+  "records": [
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "photo": "laocai/official-vod-20250118-face-crop.png",
+      "subject": "Depict the adult male streamer in image 1, 老蔡 / 川神, with his broad soft round face, full cheeks, short straight black hair swept to one side with a small forehead fringe, small naturally narrowed eyes and compact nose; clean-shaven. Preserve his ordinary slightly puzzled, unforced mouth, not an aristocratic sharp-jawed male hero. Remove the modern headphones and printed shirt. Clothing: muted slate-blue wool standing collar with gray shoulder cape and a plain brown fastening, compact medieval adviser bust. No scroll, map, logos or written marks. Keep the whole hair silhouette visible.",
+      "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult male streamer in image 1, 老蔡 / 川神, with his broad soft round face, full cheeks, short straight black hair swept to one side with a small forehead fringe, small naturally narrowed eyes and compact nose; clean-shaven. Preserve his ordinary slightly puzzled, unforced mouth, not an aristocratic sharp-jawed male hero. Remove the modern headphones and printed shirt. Clothing: muted slate-blue wool standing collar with gray shoulder cape and a plain brown fastening, compact medieval adviser bust. No scroll, map, logos or written marks. Keep the whole hair silhouette visible.",
+      "referenced_image_paths": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/laocai/official-vod-20250118-face-crop.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+      ],
+      "status": "selected_after_visual_alpha_and_114px_review",
+      "attempts": [
+        {
+          "attempt": 1,
+          "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult male streamer in image 1, 老蔡 / 川神, with his broad soft round face, full cheeks, short straight black hair swept to one side with a small forehead fringe, small naturally narrowed eyes and compact nose; clean-shaven. Preserve his ordinary slightly puzzled, unforced mouth, not an aristocratic sharp-jawed male hero. Remove the modern headphones and printed shirt. Clothing: muted slate-blue wool standing collar with gray shoulder cape and a plain brown fastening, compact medieval adviser bust. No scroll, map, logos or written marks. Keep the whole hair silhouette visible.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/laocai/official-vod-20250118-face-crop.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+          ],
+          "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-db842eb0-7115-42a9-bcfa-61f3be005c0e.png",
+          "archived_path": "art/runtime/portraits-v05/archive/group-missing/laocai-attempt-1.png",
+          "selected": true,
+          "review_note": "宽圆面部、短黑发、窄眼与照片相符；灰蓝衣物保留；114px清晰，原图少量面部块面纹理比bottle略多。"
+        }
+      ],
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-db842eb0-7115-42a9-bcfa-61f3be005c0e.png",
+      "saved_path": "art/runtime/portraits-v05/sources/laocai.png",
+      "source_sha256": "ab26a47229b4b9cdd2657a71999743dc31bebccbcbfac1df387ff87856d1d15c",
+      "dimensions": [
+        1125,
+        1398
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        49,
+        116,
+        1082,
+        1317
+      ],
+      "in_game_tested": false,
+      "photo_evidence": {
+        "research_record": "art/references/2026-09-26-likeness/research-group-missing.json#laocai",
+        "photo_path": "art/references/2026-09-26-likeness/laocai/official-vod-20250118-face-crop.png",
+        "photo_sha256": "cfdc456a5effdd555f85cc97045698d6c004b9e394fb2c0e3eb4d17e748ca7f4",
+        "photo_page_url": "https://vmobile.douyu.com/show/2Bj8vG3roaVvObnd",
+        "photo_image_url": "https://sta-op.douyucdn.cn/vod-cover/2025/01/18/7bddc9e78455d626bc80c1d55c2954c1.jpg",
+        "identity_evidence": [
+          {
+            "url": "https://www.bilibili.com/video/BV1f6GP6yEoH/",
+            "evidence": "标题与简介明确连写川神、陈彦川、老蔡，账号标签含叫我老陈就好了。"
+          },
+          {
+            "url": "https://vmobile.douyu.com/show/2Bj8vG3roaVvObnd",
+            "evidence": "官方录像署名叫我老陈就好了，标题含74960；同页评论使用蔡哥、陈彦川、川神称呼。"
+          },
+          {
+            "url": "https://www.bilibili.com/video/BV1r9RjBXEpA/",
+            "evidence": "页面同一团播合集含老蔡、阿飞与小胖的蓝队互动标题，仅用于活动关联。"
+          }
+        ],
+        "limitations": [
+          "主参考为2025年1月官方直播录像封面右上角镜头；发型可随时间变化。",
+          "2026年9月直播缩略图只有很小人像，作辅助；官方头像是黑白眼镜插画，不作为真人面部证据。",
+          "脸部技术裁切没有润色、生成或修脸。"
+        ]
+      },
+      "reference_roles": [
+        "Only facial identity and hairstyle, from named public source",
+        "Official Battle Brothers drawing/composition reference, never copy a face",
+        "bottle v05 shading simplification and compact crop only, never copy facial features"
+      ],
+      "review_note": "宽圆面部、短黑发、窄眼与照片相符；灰蓝衣物保留；114px清晰，原图少量面部块面纹理比bottle略多。",
+      "reviewed_large": true,
+      "reviewed_at_114x142": true,
+      "user_final_approved": false
+    },
+    {
+      "key": "xiaoning",
+      "name": "小宁",
+      "photo": "xiaoning/BV1eS9CBjE2X-cover.jpg",
+      "subject": "Image 1 shows the SAME adult woman twice; draw only ONE bust of 小宁oni. Preserve her long dark chestnut-brown hair, a near-center slightly side part with visible forehead, upper face wider than the gently tapering lower jaw, original gently curved brows and small smiling mouth. Hair falls as a few broad masses to the shoulders. Simplify photographed eye makeup into small matte eyelid marks; do not copy beauty-filter huge iris sizes. A tiny simple flower-outline earring near the visible ear is allowed. Wear a dusty teal short cowl BELOW her hair and a plain weathered brown tunic. Add one tiny playful droplet at a mouth corner as the requested game motif, not wet realism. Do not use short hair, antennae, alien ears or science-fiction clothing.",
+      "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nImage 1 shows the SAME adult woman twice; draw only ONE bust of 小宁oni. Preserve her long dark chestnut-brown hair, a near-center slightly side part with visible forehead, upper face wider than the gently tapering lower jaw, original gently curved brows and small smiling mouth. Hair falls as a few broad masses to the shoulders. Simplify photographed eye makeup into small matte eyelid marks; do not copy beauty-filter huge iris sizes. A tiny simple flower-outline earring near the visible ear is allowed. Wear a dusty teal short cowl BELOW her hair and a plain weathered brown tunic. Add one tiny playful droplet at a mouth corner as the requested game motif, not wet realism. Do not use short hair, antennae, alien ears or science-fiction clothing.",
+      "referenced_image_paths": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaoning/BV1eS9CBjE2X-cover.jpg",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+      ],
+      "status": "selected_after_visual_alpha_and_114px_review",
+      "attempts": [
+        {
+          "attempt": 1,
+          "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nImage 1 shows the SAME adult woman twice; draw only ONE bust of 小宁oni. Preserve her long dark chestnut-brown hair, a near-center slightly side part with visible forehead, upper face wider than the gently tapering lower jaw, original gently curved brows and small smiling mouth. Hair falls as a few broad masses to the shoulders. Simplify photographed eye makeup into small matte eyelid marks; do not copy beauty-filter huge iris sizes. A tiny simple flower-outline earring near the visible ear is allowed. Wear a dusty teal short cowl BELOW her hair and a plain weathered brown tunic. Add one tiny playful droplet at a mouth corner as the requested game motif, not wet realism. Do not use short hair, antennae, alien ears or science-fiction clothing.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaoning/BV1eS9CBjE2X-cover.jpg",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+          ],
+          "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-234eade2-78c6-4470-927b-234b125c96a7.png",
+          "archived_path": "art/runtime/portraits-v05/archive/group-missing/xiaoning-attempt-1.png",
+          "selected": true,
+          "review_note": "长棕发、露额偏中分、花耳饰与照片相符；补入口水游戏记号。照片滤镜对眼睛比例仍有影响；114px无写实皮肤或玻璃眼。"
+        }
+      ],
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-234eade2-78c6-4470-927b-234b125c96a7.png",
+      "saved_path": "art/runtime/portraits-v05/sources/xiaoning.png",
+      "source_sha256": "70f6b1127344606c589ca456f884971751b2e85b3616d984432f17898a3275c8",
+      "dimensions": [
+        1124,
+        1399
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        37,
+        58,
+        1097,
+        1357
+      ],
+      "in_game_tested": false,
+      "photo_evidence": {
+        "research_record": "art/references/2026-09-26-likeness/research-group-missing.json#xiaoning",
+        "photo_path": "art/references/2026-09-26-likeness/xiaoning/BV1eS9CBjE2X-cover.jpg",
+        "photo_sha256": "9ccbea19e76868a2dc59d794155010633b0d693f72a2ad4c55db3192d0cbff99",
+        "photo_page_url": "https://www.bilibili.com/video/BV1eS9CBjE2X/",
+        "photo_image_url": "http://i1.hdslb.com/bfs/archive/4fc3f4a7bd1423815ea3251379ee5b8ab0f4096c.jpg",
+        "identity_evidence": [
+          {
+            "url": "https://www.bilibili.com/video/BV1eS9CBjE2X/",
+            "evidence": "具名视频标题同时含小宁oni与阿飞；封面为两张单人照片。"
+          }
+        ],
+        "limitations": [
+          "封面为第三方具名切片所用照片，非主播直接上传的未处理原片；明显存在美颜可能，不照搬大眼滤镜。",
+          "官方头像和本次直播缩略图为背面，不能用于确认眼鼻嘴；仅支持长发轮廓。",
+          "外星人和流口水来自用户设定，不是照片医学/性格推断。"
+        ]
+      },
+      "reference_roles": [
+        "Only facial identity and hairstyle, from named public source",
+        "Official Battle Brothers drawing/composition reference, never copy a face",
+        "bottle v05 shading simplification and compact crop only, never copy facial features"
+      ],
+      "review_note": "长棕发、露额偏中分、花耳饰与照片相符；补入口水游戏记号。照片滤镜对眼睛比例仍有影响；114px无写实皮肤或玻璃眼。",
+      "reviewed_large": true,
+      "reviewed_at_114x142": true,
+      "user_final_approved": false
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖徐不快乐",
+      "photo": "xiaopangxu/avatar-20260926.jpg",
+      "subject": "Depict the adult woman 徐不快乐 from image 1. Her chief identifier is a rounded warm dark-brown chin-length bob, lightly separated thin short fringe, soft broad cheeks and a rounded jaw; preserve her cheerful slightly asymmetric smile and naturally narrow smiling eye shape. Keep this own face, not the woman from image 3. Do NOT replace her short bob with braids, ponytail or a headband. Outfit: compact brown leather shoulder vest over muted warm ochre cloth collar; plain brown fastening. Slightly offset shoulder line may suggest a dancer's playful energy, no limbs or dance props. Her nickname is NOT permission to invent an obese physique. Remove modern jewelry and the turquoise modern top.",
+      "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman 徐不快乐 from image 1. Her chief identifier is a rounded warm dark-brown chin-length bob, lightly separated thin short fringe, soft broad cheeks and a rounded jaw; preserve her cheerful slightly asymmetric smile and naturally narrow smiling eye shape. Keep this own face, not the woman from image 3. Do NOT replace her short bob with braids, ponytail or a headband. Outfit: compact brown leather shoulder vest over muted warm ochre cloth collar; plain brown fastening. Slightly offset shoulder line may suggest a dancer's playful energy, no limbs or dance props. Her nickname is NOT permission to invent an obese physique. Remove modern jewelry and the turquoise modern top.",
+      "referenced_image_paths": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaopangxu/avatar-20260926.jpg",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+      ],
+      "status": "selected_after_visual_alpha_and_114px_review",
+      "attempts": [
+        {
+          "attempt": 1,
+          "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman 徐不快乐 from image 1. Her chief identifier is a rounded warm dark-brown chin-length bob, lightly separated thin short fringe, soft broad cheeks and a rounded jaw; preserve her cheerful slightly asymmetric smile and naturally narrow smiling eye shape. Keep this own face, not the woman from image 3. Do NOT replace her short bob with braids, ponytail or a headband. Outfit: compact brown leather shoulder vest over muted warm ochre cloth collar; plain brown fastening. Slightly offset shoulder line may suggest a dancer's playful energy, no limbs or dance props. Her nickname is NOT permission to invent an obese physique. Remove modern jewelry and the turquoise modern top.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaopangxu/avatar-20260926.jpg",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+          ],
+          "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-584b2c49-7cf9-497f-aede-2469fb8492c5.png",
+          "archived_path": "art/runtime/portraits-v05/archive/group-missing/xiaopangxu-attempt-1.png",
+          "selected": true,
+          "review_note": "短棕bob和薄刘海、开朗不对称笑容保留，淘汰了无依据的辫子头带；114px与其他人可区分。"
+        }
+      ],
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-584b2c49-7cf9-497f-aede-2469fb8492c5.png",
+      "saved_path": "art/runtime/portraits-v05/sources/xiaopangxu.png",
+      "source_sha256": "f4b08779630a9b722c4672ec67f37f77ea64d726421307bd755d8559d982563b",
+      "dimensions": [
+        1124,
+        1399
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        65,
+        93,
+        1058,
+        1335
+      ],
+      "in_game_tested": false,
+      "photo_evidence": {
+        "research_record": "art/references/2026-09-26-likeness/research-group-missing.json#xiaopangxu",
+        "photo_path": "art/references/2026-09-26-likeness/xiaopangxu/avatar-20260926.jpg",
+        "photo_sha256": "5ab0b6dc924a8e358fd6bbd93e05d9d2a5ef591a2d91dc2f83f7c5c9a831f905",
+        "photo_page_url": "https://www.douyu.com/7300160",
+        "photo_image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202411/191339e07a634d9894f67067076f1283_big.jpg",
+        "identity_evidence": [
+          {
+            "url": "https://www.bilibili.com/video/BV1r9RjBXEpA/",
+            "evidence": "同页合集明确出现小胖徐不快乐称呼，并含小胖对飞哥说话、蓝队服与老蔡互动。"
+          },
+          {
+            "url": "https://yuba.douyu.com/member/OxwXrRm9GRAG/main/news",
+            "evidence": "公开主播账号名徐不快乐。"
+          },
+          {
+            "url": "https://yuba.douyu.com/feed/2776498575985675835",
+            "evidence": "国民大舅哥公开活动帖直接@徐不快乐及其账号ID，提供224团播关联。"
+          }
+        ],
+        "limitations": [
+          "选定资料为本人账号头像与9月26日官方直播单人近脸截图；镜头非常近且有滤镜，禁止照抄畸变和巨大眼睛。",
+          "姓名中的小胖不用于推断体型；不为人物增加照片没有的肥胖特征。"
+        ]
+      },
+      "reference_roles": [
+        "Only facial identity and hairstyle, from named public source",
+        "Official Battle Brothers drawing/composition reference, never copy a face",
+        "bottle v05 shading simplification and compact crop only, never copy facial features"
+      ],
+      "review_note": "短棕bob和薄刘海、开朗不对称笑容保留，淘汰了无依据的辫子头带；114px与其他人可区分。",
+      "reviewed_large": true,
+      "reviewed_at_114x142": true,
+      "user_final_approved": false
+    },
+    {
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "photo": "manyuemei/BV19G9VBFEy8-cover.jpg",
+      "subject": "Depict the adult woman 蔓越莓很甜i in image 1, using her black chin-length bob with a clear side part, hair curving toward the jaw, original fairly straight defined brows, lightly upturned outer eye shape, tapered but soft lower face and small slightly open mouth. Retain this specific short hairstyle; no braid or long ponytail. Photo's central overlay text is NOT part of her face: never reproduce letters or guess extra facial marks hidden under them. Clothing: high charcoal collar, muted cranberry-red short shoulder cape and one plain dark iron clasp. Calm assured expression, not angry V-shaped eyebrows. Fully clothed medieval attire; no whip, no sexualized costume. Render her normal eyes as small restrained marks, not huge beautified anime eyes.",
+      "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman 蔓越莓很甜i in image 1, using her black chin-length bob with a clear side part, hair curving toward the jaw, original fairly straight defined brows, lightly upturned outer eye shape, tapered but soft lower face and small slightly open mouth. Retain this specific short hairstyle; no braid or long ponytail. Photo's central overlay text is NOT part of her face: never reproduce letters or guess extra facial marks hidden under them. Clothing: high charcoal collar, muted cranberry-red short shoulder cape and one plain dark iron clasp. Calm assured expression, not angry V-shaped eyebrows. Fully clothed medieval attire; no whip, no sexualized costume. Render her normal eyes as small restrained marks, not huge beautified anime eyes.",
+      "referenced_image_paths": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/manyuemei/BV19G9VBFEy8-cover.jpg",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+      ],
+      "status": "selected_after_visual_alpha_and_114px_review",
+      "attempts": [
+        {
+          "attempt": 1,
+          "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman 蔓越莓很甜i in image 1, using her black chin-length bob with a clear side part, hair curving toward the jaw, original fairly straight defined brows, lightly upturned outer eye shape, tapered but soft lower face and small slightly open mouth. Retain this specific short hairstyle; no braid or long ponytail. Photo's central overlay text is NOT part of her face: never reproduce letters or guess extra facial marks hidden under them. Clothing: high charcoal collar, muted cranberry-red short shoulder cape and one plain dark iron clasp. Calm assured expression, not angry V-shaped eyebrows. Fully clothed medieval attire; no whip, no sexualized costume. Render her normal eyes as small restrained marks, not huge beautified anime eyes.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/manyuemei/BV19G9VBFEy8-cover.jpg",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+          ],
+          "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-de989910-f2ed-4f25-9dcb-913122b10c47.png",
+          "archived_path": "art/runtime/portraits-v05/archive/group-missing/manyuemei-attempt-1.png",
+          "selected": true,
+          "review_note": "按具名回放的黑短bob、侧分及微张嘴形改编，保留莓红披肩。未复制原照覆盖字幕；114px识别轮廓清楚。"
+        }
+      ],
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-de989910-f2ed-4f25-9dcb-913122b10c47.png",
+      "saved_path": "art/runtime/portraits-v05/sources/manyuemei.png",
+      "source_sha256": "3a11f8213d1f01eb7d8620d400917bdb70446d038d7c4f660d118f9598c6bf75",
+      "dimensions": [
+        1124,
+        1399
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        62,
+        116,
+        1072,
+        1298
+      ],
+      "in_game_tested": false,
+      "photo_evidence": {
+        "research_record": "art/references/2026-09-26-likeness/research-group-missing.json#manyuemei",
+        "photo_path": "art/references/2026-09-26-likeness/manyuemei/BV19G9VBFEy8-cover.jpg",
+        "photo_sha256": "b1fdc837501704f7b0da08b08a44d68c6d786c939b295848e3dd7e4765d5ce27",
+        "photo_page_url": "https://www.bilibili.com/video/BV19G9VBFEy8/",
+        "photo_image_url": "http://i1.hdslb.com/bfs/archive/05b99ef77dc8013a46f15af9ae250e1455b5da7b.jpg",
+        "identity_evidence": [
+          {
+            "url": "https://www.bilibili.com/video/BV19G9VBFEy8/",
+            "evidence": "具名回放标题完整使用蔓越莓很甜i，合集条目附11778421，与官方直播间一致。"
+          },
+          {
+            "url": "https://www.bilibili.com/video/BV1TponB7E12/",
+            "evidence": "明确蔓越莓参与刀二团播并分析局势；同页标阿飞C蓝队。"
+          },
+          {
+            "url": "https://yuba.douyu.com/feed/2943523075804687361",
+            "evidence": "发布在蔓越莓很甜i鱼吧的S8获胜照片，因多人未逐人标名，只作活动关联，不截脸。"
+          }
+        ],
+        "limitations": [
+          "可用单人近照为第三方回放封面，字幕穿过鼻部，不能用生成去猜字幕遮住的微小细节。",
+          "官方旧头像毛帽/猫遮脸，直播缩略图多人未标名，均不作主脸参照。",
+          "当前具体发长可能已经改变；此版本明确使用刀二时期的短发方向。"
+        ]
+      },
+      "reference_roles": [
+        "Only facial identity and hairstyle, from named public source",
+        "Official Battle Brothers drawing/composition reference, never copy a face",
+        "bottle v05 shading simplification and compact crop only, never copy facial features"
+      ],
+      "review_note": "按具名回放的黑短bob、侧分及微张嘴形改编，保留莓红披肩。未复制原照覆盖字幕；114px识别轮廓清楚。",
+      "reviewed_large": true,
+      "reviewed_at_114x142": true,
+      "user_final_approved": false
+    },
+    {
+      "key": "xiaohani",
+      "name": "小哈尼",
+      "photo": "xiaohani/2892967498041343833-photo-3.jpg",
+      "subject": "Depict the adult woman 小哈尼yo from image 1. Preserve the long dark chestnut hair with a side part and a few forehead pieces, the narrow gently tapered lower face, her own nearly straight soft brows, compact mouth and reserved expression. Do not make her bob-haired, broad square-faced or identical to image 3. Translate the face into only two broad painted shadows, absolutely no selfie-filter skin or shining lips. Clothing: muted oatmeal cloth around the shoulders, a single slate-blue scarf fold, simple brown travel tunic; hood lies down BEHIND the shoulders and never covers the identifying long hair. Fully covered functional medieval chest. Remove the photo's modern buttons, lace, watermark and pose; no hands.",
+      "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman 小哈尼yo from image 1. Preserve the long dark chestnut hair with a side part and a few forehead pieces, the narrow gently tapered lower face, her own nearly straight soft brows, compact mouth and reserved expression. Do not make her bob-haired, broad square-faced or identical to image 3. Translate the face into only two broad painted shadows, absolutely no selfie-filter skin or shining lips. Clothing: muted oatmeal cloth around the shoulders, a single slate-blue scarf fold, simple brown travel tunic; hood lies down BEHIND the shoulders and never covers the identifying long hair. Fully covered functional medieval chest. Remove the photo's modern buttons, lace, watermark and pose; no hands.",
+      "referenced_image_paths": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaohani/2892967498041343833-photo-3.jpg",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+      ],
+      "status": "selected_after_visual_alpha_and_114px_review",
+      "attempts": [
+        {
+          "attempt": 1,
+          "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman 小哈尼yo from image 1. Preserve the long dark chestnut hair with a side part and a few forehead pieces, the narrow gently tapered lower face, her own nearly straight soft brows, compact mouth and reserved expression. Do not make her bob-haired, broad square-faced or identical to image 3. Translate the face into only two broad painted shadows, absolutely no selfie-filter skin or shining lips. Clothing: muted oatmeal cloth around the shoulders, a single slate-blue scarf fold, simple brown travel tunic; hood lies down BEHIND the shoulders and never covers the identifying long hair. Fully covered functional medieval chest. Remove the photo's modern buttons, lace, watermark and pose; no hands.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaohani/2892967498041343833-photo-3.jpg",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+          ],
+          "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-ec3511f6-3c5b-45fd-9057-8c079e54f8ca.png",
+          "archived_path": "art/runtime/portraits-v05/archive/group-missing/xiaohani-attempt-1.png",
+          "selected": true,
+          "review_note": "恢复参考自拍的深棕长发与较窄下颌，去掉前版原创短bob。保留灰蓝围巾、棕色旅装，114px轮廓完整。"
+        }
+      ],
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-ec3511f6-3c5b-45fd-9057-8c079e54f8ca.png",
+      "saved_path": "art/runtime/portraits-v05/sources/xiaohani.png",
+      "source_sha256": "82008b134939a5983bf95434cdd8aa903e5d4ab09cdd5eb0097c73aec1c81133",
+      "dimensions": [
+        1124,
+        1399
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        35,
+        72,
+        1110,
+        1349
+      ],
+      "in_game_tested": false,
+      "photo_evidence": {
+        "research_record": "art/references/2026-09-26-likeness/research-group-missing.json#xiaohani",
+        "photo_path": "art/references/2026-09-26-likeness/xiaohani/2892967498041343833-photo-3.jpg",
+        "photo_sha256": "1cdc8a1fb0cfb3cf2cee59086bc31cd4e25608a9600a3d0d833b9e547ed9865d",
+        "photo_page_url": "https://yuba.douyu.com/feed/2892967498041343833",
+        "photo_image_url": "https://c-yuba.douyucdn.cn/yubavod/b/GJwkj89Lyg7Z/1e5035a4d02983541b97f9e9f825b0bf.jpeg/rs500",
+        "identity_evidence": [
+          {
+            "url": "https://yuba.douyu.com/feed/2892967498041343833",
+            "evidence": "公开鱼吧帖子由小哈尼yo发布，四张照片有同名斗鱼水印；采用其中3、4的近照。"
+          },
+          {
+            "url": "https://yuba.douyu.com/feed/3046627296921287025",
+            "evidence": "斗鱼鲨鱼刀刀发布刀区伐木训练营S2活动信息，直邀名单明确为小哈尼yo。"
+          },
+          {
+            "url": "https://www.bilibili.com/video/BV151X2BXECr/",
+            "evidence": "刀区团播2四阵营视频标题提及小哈尼，关联标签含阿飞。"
+          }
+        ],
+        "limitations": [
+          "照片来自2025年9月公开自拍，有光照/美颜与妆容影响；不用美颜后的皮肤作为游戏材质。",
+          "官方直播间短号22499映射资源房号11328146，当前页面仍明确为小哈尼yo，已记录映射。",
+          "前版短bob和蓝兜帽是原创，不应宣称真人识别；此轮应以深棕长发为主。"
+        ]
+      },
+      "reference_roles": [
+        "Only facial identity and hairstyle, from named public source",
+        "Official Battle Brothers drawing/composition reference, never copy a face",
+        "bottle v05 shading simplification and compact crop only, never copy facial features"
+      ],
+      "review_note": "恢复参考自拍的深棕长发与较窄下颌，去掉前版原创短bob。保留灰蓝围巾、棕色旅装，114px轮廓完整。",
+      "reviewed_large": true,
+      "reviewed_at_114x142": true,
+      "user_final_approved": false
+    },
+    {
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "photo": "songnuanyang/public-live-photo-4.jpg",
+      "subject": "Depict the adult woman 宋暖阳绝不咕咕 from image 1. Her own dark black hair is pulled back low, leaving the forehead visible, with one loose longer strand near the cheek; retain her gently arched brows, clearly spaced natural eyes, soft rounded narrowing jaw, compact nose and neutral closed mouth. Do not hide her identifying hairline inside a hood or replace it with short brown hair. Outfit: a short muted warm-brown padded shoulder cape, dull cream collar and three broad darker-brown feather-like spots on one shoulder as a very restrained quail nickname motif. No real bird anatomy, no beak, no feather crown, no cute baby face. Plain matte cloth; all face detail flattened to small painted marks, not skin realism.",
+      "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman 宋暖阳绝不咕咕 from image 1. Her own dark black hair is pulled back low, leaving the forehead visible, with one loose longer strand near the cheek; retain her gently arched brows, clearly spaced natural eyes, soft rounded narrowing jaw, compact nose and neutral closed mouth. Do not hide her identifying hairline inside a hood or replace it with short brown hair. Outfit: a short muted warm-brown padded shoulder cape, dull cream collar and three broad darker-brown feather-like spots on one shoulder as a very restrained quail nickname motif. No real bird anatomy, no beak, no feather crown, no cute baby face. Plain matte cloth; all face detail flattened to small painted marks, not skin realism.",
+      "referenced_image_paths": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/songnuanyang/public-live-photo-4.jpg",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+      ],
+      "status": "selected_after_visual_alpha_and_114px_review",
+      "attempts": [
+        {
+          "attempt": 1,
+          "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman 宋暖阳绝不咕咕 from image 1. Her own dark black hair is pulled back low, leaving the forehead visible, with one loose longer strand near the cheek; retain her gently arched brows, clearly spaced natural eyes, soft rounded narrowing jaw, compact nose and neutral closed mouth. Do not hide her identifying hairline inside a hood or replace it with short brown hair. Outfit: a short muted warm-brown padded shoulder cape, dull cream collar and three broad darker-brown feather-like spots on one shoulder as a very restrained quail nickname motif. No real bird anatomy, no beak, no feather crown, no cute baby face. Plain matte cloth; all face detail flattened to small painted marks, not skin realism.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/songnuanyang/public-live-photo-4.jpg",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+          ],
+          "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-fa05359e-3173-48d2-9899-e9a13fe4a415.png",
+          "archived_path": "art/runtime/portraits-v05/archive/group-missing/songnuanyang-attempt-1.png",
+          "selected": true,
+          "review_note": "按本人公开照片改为后束黑发、露额及侧边碎发，鹌鹑梗缩为肩部斑纹。眼睛仍有照片美颜影响，但已使用哑光简化画法。"
+        }
+      ],
+      "original_output_path": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd46-49db-7880-a1b1-e6936a243e85\\exec-fa05359e-3173-48d2-9899-e9a13fe4a415.png",
+      "saved_path": "art/runtime/portraits-v05/sources/songnuanyang.png",
+      "source_sha256": "69ac02e3494e554374edc2e80b50caa9aec4c3c736309bef31bcbaa736221f85",
+      "dimensions": [
+        1124,
+        1399
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        43,
+        94,
+        1076,
+        1322
+      ],
+      "in_game_tested": false,
+      "photo_evidence": {
+        "research_record": "art/references/2026-09-26-likeness/research-group-missing.json#songnuanyang",
+        "photo_path": "art/references/2026-09-26-likeness/songnuanyang/public-live-photo-4.jpg",
+        "photo_sha256": "577087297859a5987095fc0289904044684e6efdec9c8cc5093e57777061a464",
+        "photo_page_url": "https://yuba.douyu.com/feed/2967845210136093171",
+        "photo_image_url": "https://c-yuba.douyucdn.cn/yubavod/b/lOwVNqZoVw5M/51f4e2e0daf30160d68b2176ceeefce6.jpeg/rsh500",
+        "identity_evidence": [
+          {
+            "url": "https://yuba.douyu.com/feed/2967845210136093171",
+            "evidence": "公开帖子署名宋暖阳绝不咕咕，五张Live照片均有同名水印；照片4最清晰。"
+          },
+          {
+            "url": "https://www.bilibili.com/video/BV19pDkBNEdM/",
+            "evidence": "标题明确刘青松复盘的同场队友包括主播阿飞、溺水小龟、宋暖阳。"
+          }
+        ],
+        "limitations": [
+          "照片发于2025年12月，光照/美颜可能改变细节；必须把皮肤转成战场兄弟平涂阴影。",
+          "鹌鹑是用户给出的梗，不能据此给真人归因胆怯，也不应强制用兜帽遮掉本人发型。"
+        ]
+      },
+      "reference_roles": [
+        "Only facial identity and hairstyle, from named public source",
+        "Official Battle Brothers drawing/composition reference, never copy a face",
+        "bottle v05 shading simplification and compact crop only, never copy facial features"
+      ],
+      "review_note": "按本人公开照片改为后束黑发、露额及侧边碎发，鹌鹑梗缩为肩部斑纹。眼睛仍有照片美颜影响，但已使用哑光简化画法。",
+      "reviewed_large": true,
+      "reviewed_at_114x142": true,
+      "user_final_approved": false
+    }
+  ],
+  "summary": {
+    "generated": 6,
+    "selected": 6,
+    "attempts": 6,
+    "correction_rounds": 0,
+    "notes": "One original generated file per person. Technical alpha/fit previews only; no painted pixels changed using Python. Pending root full-roster style assessment and in-game/user approval."
+  }
+}

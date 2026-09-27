@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://m.douyu.com/home/index",
+    "matches": [],
+    "美伢_context": null,
+    "瑶瑶牙_context": null
+  },
+  {
+    "url": "https://www.douyu.com/g_OG/",
+    "matches": [],
+    "美伢_context": null,
+    "瑶瑶牙_context": null
+  },
+  {
+    "url": "https://www.doseeing.com/rank/gift/1440?category=5ri45oiP5YiG5Yy6",
+    "matches": [],
+    "美伢_context": null,
+    "瑶瑶牙_context": null
+  },
+  {
+    "url": "https://www.doseeing.com/watch/rank/chat/5?category=3",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  }
+]

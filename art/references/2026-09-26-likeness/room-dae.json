@@ -1,0 +1,32 @@
+{
+  "key": "dae",
+  "page": "https://www.douyu.com/9088841",
+  "title": "灿团S7相爱相杀_叫我好姑娘吧直播_叫我好姑娘吧直播_叫我好姑娘吧户外直播_叫我好姑娘吧斗鱼直播",
+  "pictures": [
+    "https://rpic.douyucdn.cn/asrpic/260926/9088841_src_1852.avif/dy4",
+    "https://apic.douyucdn.cn/upload/avatar_v3/202411/739c8424716c4af689374e03b4224963_big.jpg",
+    "https://rpic.douyucdn.cn/live-cover/coverupdate/2026/09/18/260e06047a5333967db8607a00d387dc.png/dy1",
+    "https://apic.douyucdn.cn/upload/avatar_v3/202411/739c8424716c4af689374e03b4224963_middle.jpg",
+    "https://apic.douyucdn.cn/upload/avatar_v3/202411/739c8424716c4af689374e03b4224963_small.jpg",
+    "https://apic.douyucdn.cn//common/douyu/images/dbg1.jpg",
+    "https://apic.douyucdn.cn/"
+  ],
+  "downloads": [
+    {
+      "url": "https://rpic.douyucdn.cn/asrpic/260926/9088841_src_1852.avif/dy4",
+      "file": "art\\references\\2026-09-26-likeness\\dae\\douyu-0.jpg"
+    },
+    {
+      "url": "https://apic.douyucdn.cn/upload/avatar_v3/202411/739c8424716c4af689374e03b4224963_big.jpg",
+      "file": "art\\references\\2026-09-26-likeness\\dae\\douyu-1.jpg"
+    },
+    {
+      "url": "https://rpic.douyucdn.cn/live-cover/coverupdate/2026/09/18/260e06047a5333967db8607a00d387dc.png/dy1",
+      "file": "art\\references\\2026-09-26-likeness\\dae\\douyu-2.jpg"
+    },
+    {
+      "url": "https://apic.douyucdn.cn/upload/avatar_v3/202411/739c8424716c4af689374e03b4224963_middle.jpg",
+      "file": "art\\references\\2026-09-26-likeness\\dae\\douyu-3.jpg"
+    }
+  ]
+}

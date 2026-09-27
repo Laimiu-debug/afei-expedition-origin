@@ -1,0 +1,844 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-26",
+  "scope": "Seven members previously lacking reliable likeness references",
+  "method": "Public platform profiles, direct public posts, named broadcast covers; no face recognition or private-identity lookup. Downloaded to authorized art-reference archive; all selected photos visually reviewed.",
+  "art_guardrail": "Photos specify hair silhouette and simple facial relationships only. Final art must use Battle Brothers compact complete busts, coarse black-brown contour, few muted flat shading areas, no realistic skin, no generic anime faces; retain own painted hair and hide native parts.",
+  "usable_people": 6,
+  "unresolved_people": 1,
+  "records": [
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "aliases": [
+        "川神",
+        "陈彦川",
+        "叫我老陈就好了"
+      ],
+      "features": [
+        "黑色短发，前额向一侧落下的短发束",
+        "较宽圆的脸部轮廓、饱满面颊、较窄眼裂",
+        "本段直播照片未戴眼镜，无明显胡须"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.bilibili.com/video/BV1f6GP6yEoH/",
+          "evidence": "标题与简介明确连写川神、陈彦川、老蔡，账号标签含叫我老陈就好了。"
+        },
+        {
+          "url": "https://vmobile.douyu.com/show/2Bj8vG3roaVvObnd",
+          "evidence": "官方录像署名叫我老陈就好了，标题含74960；同页评论使用蔡哥、陈彦川、川神称呼。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1r9RjBXEpA/",
+          "evidence": "页面同一团播合集含老蔡、阿飞与小胖的蓝队互动标题，仅用于活动关联。"
+        }
+      ],
+      "limitations": [
+        "主参考为2025年1月官方直播录像封面右上角镜头；发型可随时间变化。",
+        "2026年9月直播缩略图只有很小人像，作辅助；官方头像是黑白眼镜插画，不作为真人面部证据。",
+        "脸部技术裁切没有润色、生成或修脸。"
+      ],
+      "status": "reference_photos_available",
+      "official_account": {
+        "page_url": "https://www.douyu.com/74960",
+        "page_title": "叫我老陈就好了直播_叫我老陈就好了直播_叫我老陈就好了DOTA2直播_叫我老陈就好了斗鱼直播",
+        "saved_page": "art/references/2026-09-26-likeness/laocai/official-page.html",
+        "page_sha256": "a89d036e4ffc2a16f0eb61f4796a7300b9a9ea78aa7808c774bbe10b03883ee2"
+      },
+      "selected_paths": [
+        "art/references/2026-09-26-likeness/laocai/official-vod-20250118.jpg",
+        "art/references/2026-09-26-likeness/laocai/official-vod-20250118-face-crop.png"
+      ],
+      "images": [
+        {
+          "key": "laocai",
+          "page_url": "https://www.douyu.com/74960",
+          "image_url": "https://rpic.douyucdn.cn/asrpic/260926/74960_src_1836.avif/dy4",
+          "local_path": "art/references/2026-09-26-likeness/laocai/broadcast-20260926.jpg",
+          "sha256": "7acf292e4333fd3947f7ef5b0ccbdadddb4d364fb46cc2bff9577d1390b4b2c4",
+          "kind": "broadcast",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "key": "laocai",
+          "page_url": "https://www.douyu.com/74960",
+          "image_url": "https://apic.douyucdn.cn/upload/avanew/face/201709/30/10/fd53f8d5fad766e5c01a84f79be2aeff_big.jpg",
+          "local_path": "art/references/2026-09-26-likeness/laocai/avatar-20260926.jpg",
+          "sha256": "387b10e4b474e7af23c6ff8f846b90daacab7002e5dcd4e1900d728446429b49",
+          "kind": "avatar",
+          "dimensions": [
+            200,
+            201
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "page_url": "https://vmobile.douyu.com/show/2Bj8vG3roaVvObnd",
+          "image_url": "https://sta-op.douyucdn.cn/vod-cover/2025/01/18/7bddc9e78455d626bc80c1d55c2954c1.jpg",
+          "local_path": "art/references/2026-09-26-likeness/laocai/official-vod-20250118.jpg",
+          "sha256": "743ba424ccff7fb58c6a4830dcf9f5feef969db6f7254d4f1ab05356b3737b17",
+          "source_rechecked": "2026-09-26",
+          "title": "【2025-01-18 09点场】叫我老陈就好了：来这里开心就好！！ 74960",
+          "technical_crop": {
+            "path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/laocai/official-vod-20250118-face-crop.png",
+            "box_xyxy": [
+              2224,
+              210,
+              2560,
+              470
+            ],
+            "method": "Pillow crop only; no retouching"
+          },
+          "key": "laocai",
+          "dimensions": [
+            2560,
+            1440
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Selected as photo reference, not approved final game art."
+        },
+        {
+          "local_path": "art/references/2026-09-26-likeness/laocai/official-vod-20250118-face-crop.png",
+          "image_url": "https://sta-op.douyucdn.cn/vod-cover/2025/01/18/7bddc9e78455d626bc80c1d55c2954c1.jpg",
+          "page_url": "https://vmobile.douyu.com/show/2Bj8vG3roaVvObnd",
+          "dimensions": [
+            336,
+            260
+          ],
+          "sha256": "cfdc456a5effdd555f85cc97045698d6c004b9e394fb2c0e3eb4d17e748ca7f4",
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Technical crop of official VOD source only; no retouching; original retained.",
+          "crop_xyxy": [
+            2224,
+            210,
+            2560,
+            470
+          ]
+        }
+      ]
+    },
+    {
+      "key": "xiaoning",
+      "name": "小宁",
+      "aliases": [
+        "小宁oni"
+      ],
+      "features": [
+        "深棕长发，偏中分／轻侧分，前额露出，不是前版两束夸张翘发",
+        "脸型上部稍宽、下颌较窄，照片中眼睛轮廓较大",
+        "参考照片戴夸张花形轮廓耳饰，可简化成中世纪小花扣作为可选识别点"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.bilibili.com/video/BV1eS9CBjE2X/",
+          "evidence": "具名视频标题同时含小宁oni与阿飞；封面为两张单人照片。"
+        }
+      ],
+      "limitations": [
+        "封面为第三方具名切片所用照片，非主播直接上传的未处理原片；明显存在美颜可能，不照搬大眼滤镜。",
+        "官方头像和本次直播缩略图为背面，不能用于确认眼鼻嘴；仅支持长发轮廓。",
+        "外星人和流口水来自用户设定，不是照片医学/性格推断。"
+      ],
+      "status": "reference_photos_available",
+      "official_account": {
+        "page_url": "https://www.douyu.com/9388639",
+        "page_title": "女神大赛_小宁oni直播_小宁oni直播_小宁oni户外直播_小宁oni斗鱼直播",
+        "saved_page": "art/references/2026-09-26-likeness/xiaoning/official-page.html",
+        "page_sha256": "cf6a2758aa3c11e7f9b6a9890b49bc6cef49fb842b7cebfbd65e2bc42f80aa3a"
+      },
+      "selected_paths": [
+        "art/references/2026-09-26-likeness/xiaoning/BV1eS9CBjE2X-cover.jpg"
+      ],
+      "images": [
+        {
+          "key": "xiaoning",
+          "page_url": "https://www.douyu.com/9388639",
+          "image_url": "https://rpic.douyucdn.cn/asrpic/260926/9388639_src_0328.avif/dy4",
+          "local_path": "art/references/2026-09-26-likeness/xiaoning/broadcast-20260926.jpg",
+          "sha256": "dc1159eee2d659c0d0acabb1e7069b34fa318587aac955445907ffd6d2cd24fd",
+          "kind": "broadcast",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "key": "xiaoning",
+          "page_url": "https://www.douyu.com/9388639",
+          "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202409/80a50359098a4f9f9928797efb8c1163_big.jpg",
+          "local_path": "art/references/2026-09-26-likeness/xiaoning/avatar-20260926.jpg",
+          "sha256": "5b4ece6181c3d82fd8b888be154099372639a3eb287728058672bd1fa009fa0c",
+          "kind": "avatar",
+          "dimensions": [
+            200,
+            200
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "key": "xiaoning",
+          "bvid": "BV1eS9CBjE2X",
+          "page_url": "https://www.bilibili.com/video/BV1eS9CBjE2X/",
+          "title": "小宁oni：阿飞被叫烟台陈坤是因为巴旦木P的好",
+          "owner": {
+            "mid": 289358158,
+            "name": "好兄弟山峰",
+            "face": "https://i1.hdslb.com/bfs/face/8ed8646db87521033c629b1150615912fc8472bd.jpg"
+          },
+          "desc": "",
+          "image_url": "http://i1.hdslb.com/bfs/archive/4fc3f4a7bd1423815ea3251379ee5b8ab0f4096c.jpg",
+          "local_path": "art/references/2026-09-26-likeness/xiaoning/BV1eS9CBjE2X-cover.jpg",
+          "sha256": "9ccbea19e76868a2dc59d794155010633b0d693f72a2ad4c55db3192d0cbff99",
+          "code": 0,
+          "dimensions": [
+            2364,
+            1329
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Selected as photo reference, not approved final game art."
+        }
+      ]
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖徐不快乐",
+      "aliases": [
+        "徐不快乐",
+        "小胖"
+      ],
+      "features": [
+        "最明确轮廓是齐下颌短bob，薄碎刘海；账号头像呈暖棕色，近期直播呈深棕黑色",
+        "脸部轮廓偏柔和，鼻头较圆，笑容嘴角明显",
+        "前版辫子与黄色头带没有照片依据，应改掉；街舞气质可留在肩线和神态"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.bilibili.com/video/BV1r9RjBXEpA/",
+          "evidence": "同页合集明确出现小胖徐不快乐称呼，并含小胖对飞哥说话、蓝队服与老蔡互动。"
+        },
+        {
+          "url": "https://yuba.douyu.com/member/OxwXrRm9GRAG/main/news",
+          "evidence": "公开主播账号名徐不快乐。"
+        },
+        {
+          "url": "https://yuba.douyu.com/feed/2776498575985675835",
+          "evidence": "国民大舅哥公开活动帖直接@徐不快乐及其账号ID，提供224团播关联。"
+        }
+      ],
+      "limitations": [
+        "选定资料为本人账号头像与9月26日官方直播单人近脸截图；镜头非常近且有滤镜，禁止照抄畸变和巨大眼睛。",
+        "姓名中的小胖不用于推断体型；不为人物增加照片没有的肥胖特征。"
+      ],
+      "status": "reference_photos_available",
+      "official_account": {
+        "page_url": "https://www.douyu.com/7300160",
+        "page_title": "灿团S7相爱相杀_徐不快乐直播_徐不快乐直播_徐不快乐户外直播_徐不快乐斗鱼直播",
+        "saved_page": "art/references/2026-09-26-likeness/xiaopangxu/official-page.html",
+        "page_sha256": "cde1e155bb901ec977aea8cc1fce4e8d393a30541a026b1a8ecba55d1b5d3c68"
+      },
+      "selected_paths": [
+        "art/references/2026-09-26-likeness/xiaopangxu/avatar-20260926.jpg",
+        "art/references/2026-09-26-likeness/xiaopangxu/broadcast-20260926.jpg"
+      ],
+      "images": [
+        {
+          "key": "xiaopangxu",
+          "page_url": "https://www.douyu.com/7300160",
+          "image_url": "https://rpic.douyucdn.cn/asrpic/260926/7300160_src_1837.avif/dy4",
+          "local_path": "art/references/2026-09-26-likeness/xiaopangxu/broadcast-20260926.jpg",
+          "sha256": "7f296cdc69dfe0fc699ac18f34d2ed7c90323fd673ddef5d93dd8c2abff31d0a",
+          "kind": "broadcast",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Selected as photo reference, not approved final game art."
+        },
+        {
+          "key": "xiaopangxu",
+          "page_url": "https://www.douyu.com/7300160",
+          "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202411/191339e07a634d9894f67067076f1283_big.jpg",
+          "local_path": "art/references/2026-09-26-likeness/xiaopangxu/avatar-20260926.jpg",
+          "sha256": "5ab0b6dc924a8e358fd6bbd93e05d9d2a5ef591a2d91dc2f83f7c5c9a831f905",
+          "kind": "avatar",
+          "dimensions": [
+            200,
+            200
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Selected as photo reference, not approved final game art."
+        }
+      ]
+    },
+    {
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "aliases": [
+        "蔓越莓很甜i"
+      ],
+      "features": [
+        "2026年3月具名回放近景中为黑色齐颌bob，侧分刘海、两侧向内包脸",
+        "眉线较清晰，眼尾有上扬眼线，面部较窄的下半轮廓",
+        "造型可强调短黑发与克制眼线；莓红衣物与强势表情属于游戏设计选择，不是照片结论"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.bilibili.com/video/BV19G9VBFEy8/",
+          "evidence": "具名回放标题完整使用蔓越莓很甜i，合集条目附11778421，与官方直播间一致。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV1TponB7E12/",
+          "evidence": "明确蔓越莓参与刀二团播并分析局势；同页标阿飞C蓝队。"
+        },
+        {
+          "url": "https://yuba.douyu.com/feed/2943523075804687361",
+          "evidence": "发布在蔓越莓很甜i鱼吧的S8获胜照片，因多人未逐人标名，只作活动关联，不截脸。"
+        }
+      ],
+      "limitations": [
+        "可用单人近照为第三方回放封面，字幕穿过鼻部，不能用生成去猜字幕遮住的微小细节。",
+        "官方旧头像毛帽/猫遮脸，直播缩略图多人未标名，均不作主脸参照。",
+        "当前具体发长可能已经改变；此版本明确使用刀二时期的短发方向。"
+      ],
+      "status": "reference_photos_available",
+      "official_account": {
+        "page_url": "https://www.douyu.com/11778421",
+        "page_title": "灿团S7相爱相杀_蔓越莓很甜i直播_蔓越莓很甜i直播_蔓越莓很甜i户外直播_蔓越莓很甜i斗鱼直播",
+        "saved_page": "art/references/2026-09-26-likeness/manyuemei/official-page.html",
+        "page_sha256": "9b82fd60fde34c69e9293cfb9ee83af83edf19edb303563ea6a73a5059775870"
+      },
+      "selected_paths": [
+        "art/references/2026-09-26-likeness/manyuemei/BV19G9VBFEy8-cover.jpg"
+      ],
+      "images": [
+        {
+          "key": "manyuemei",
+          "page_url": "https://www.douyu.com/11778421",
+          "image_url": "https://rpic.douyucdn.cn/asrpic/260926/11778421_src_1837.avif/dy4",
+          "local_path": "art/references/2026-09-26-likeness/manyuemei/broadcast-20260926.jpg",
+          "sha256": "6c27920f5e290149237c65fb65713ff057c933d3a6957cd62e7bb53217118951",
+          "kind": "broadcast",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "key": "manyuemei",
+          "page_url": "https://www.douyu.com/11778421",
+          "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202503/a60a3eb4005843e683f84144b6b154b3_big.jpg",
+          "local_path": "art/references/2026-09-26-likeness/manyuemei/avatar-20260926.jpg",
+          "sha256": "973bd42abea3bf819a58e420501968c62a8e5e7010ea31af287e006bf2388ee8",
+          "kind": "avatar",
+          "dimensions": [
+            200,
+            200
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "key": "manyuemei",
+          "bvid": "BV19G9VBFEy8",
+          "page_url": "https://www.bilibili.com/video/BV19G9VBFEy8/",
+          "title": "蔓越莓很甜i直播回放3.22（无弹幕版）",
+          "owner": {
+            "mid": 3546659239758632,
+            "name": "三三爱搞笑阿i",
+            "face": "https://i2.hdslb.com/bfs/face/717dce69d8d28658e444a48a7ae9ebca19c99d9b.jpg"
+          },
+          "desc": "",
+          "image_url": "http://i1.hdslb.com/bfs/archive/05b99ef77dc8013a46f15af9ae250e1455b5da7b.jpg",
+          "local_path": "art/references/2026-09-26-likeness/manyuemei/BV19G9VBFEy8-cover.jpg",
+          "sha256": "b1fdc837501704f7b0da08b08a44d68c6d786c939b295848e3dd7e4765d5ce27",
+          "code": 0,
+          "dimensions": [
+            960,
+            540
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Selected as photo reference, not approved final game art."
+        },
+        {
+          "key": "manyuemei",
+          "bvid": "BV1TponB7E12",
+          "page_url": "https://www.bilibili.com/video/BV1TponB7E12/",
+          "title": "刀二团播决赛项目正式公布，蔓越莓分析各队局势，狗哥智力1拖3，眼子技巧大将【刀区户外团播第二季】",
+          "owner": {
+            "mid": 2310240,
+            "name": "绝世薯片OuO",
+            "face": "https://i0.hdslb.com/bfs/face/e45e97ce82eed5d4175b49ca0d94c14789518fd4.jpg"
+          },
+          "desc": "",
+          "image_url": "http://i1.hdslb.com/bfs/archive/0e8cbdf6effe8301337258869409042d68757c6c.jpg",
+          "local_path": "art/references/2026-09-26-likeness/manyuemei/BV1TponB7E12-cover.jpg",
+          "sha256": "c2c22bf50d247d7730b16cb2253006d54e5acec45937c71b6c6a37c04e7af6c6",
+          "code": 0,
+          "dimensions": [
+            871,
+            490
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "page_url": "https://yuba.douyu.com/feed/2943523075804687361",
+          "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/KPA3WWoQEAGD/4ddd786042d8cb6c203f3fc56bfc6629.jpeg/rsh500",
+          "local_path": "art/references/2026-09-26-likeness/manyuemei/2943523075804687361-photo-1.jpg",
+          "sha256": "64198920a2c77897ac8ef507350b4beb14533f21e82896c679df1431fd0908b7",
+          "key": "manyuemei",
+          "dimensions": [
+            750,
+            500
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        }
+      ]
+    },
+    {
+      "key": "xiaohani",
+      "name": "小哈尼",
+      "aliases": [
+        "小哈尼yo"
+      ],
+      "features": [
+        "深棕长发，偏侧分，前额有少量碎发；发梢落到胸前",
+        "较细长的下颌轮廓，直眉/轻弧眉、较显著的眼尾轮廓",
+        "照片嘴形较小且上唇弧线清楚；整体化成少量粗线，不能保留精修皮肤"
+      ],
+      "evidence": [
+        {
+          "url": "https://yuba.douyu.com/feed/2892967498041343833",
+          "evidence": "公开鱼吧帖子由小哈尼yo发布，四张照片有同名斗鱼水印；采用其中3、4的近照。"
+        },
+        {
+          "url": "https://yuba.douyu.com/feed/3046627296921287025",
+          "evidence": "斗鱼鲨鱼刀刀发布刀区伐木训练营S2活动信息，直邀名单明确为小哈尼yo。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV151X2BXECr/",
+          "evidence": "刀区团播2四阵营视频标题提及小哈尼，关联标签含阿飞。"
+        }
+      ],
+      "limitations": [
+        "照片来自2025年9月公开自拍，有光照/美颜与妆容影响；不用美颜后的皮肤作为游戏材质。",
+        "官方直播间短号22499映射资源房号11328146，当前页面仍明确为小哈尼yo，已记录映射。",
+        "前版短bob和蓝兜帽是原创，不应宣称真人识别；此轮应以深棕长发为主。"
+      ],
+      "status": "reference_photos_available",
+      "official_account": {
+        "page_url": "https://www.douyu.com/22499",
+        "page_title": "熊掌娱乐_小哈尼yo直播_小哈尼yo直播_小哈尼yo户外直播_小哈尼yo斗鱼直播",
+        "saved_page": "art/references/2026-09-26-likeness/xiaohani/official-page.html",
+        "page_sha256": "cd1c96662ecbc024be38f383c2d029eadcdf532e7a099e0865a9f517ab6ed4d3"
+      },
+      "selected_paths": [
+        "art/references/2026-09-26-likeness/xiaohani/2892967498041343833-photo-3.jpg",
+        "art/references/2026-09-26-likeness/xiaohani/2892967498041343833-photo-4.jpg",
+        "art/references/2026-09-26-likeness/xiaohani/avatar-20260926.jpg"
+      ],
+      "images": [
+        {
+          "key": "xiaohani",
+          "page_url": "https://www.douyu.com/22499",
+          "image_url": "https://rpic.douyucdn.cn/asrpic/260926/11328146_src_1837.avif/dy4",
+          "local_path": "art/references/2026-09-26-likeness/xiaohani/broadcast-20260926.jpg",
+          "sha256": "90f666912ebfda0a10ef1f72c56b1c4d386f5dd112227634f9444366d316885f",
+          "kind": "broadcast",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "key": "xiaohani",
+          "page_url": "https://www.douyu.com/22499",
+          "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202505/22cbb76eaf6048fd808169a588ed6627_big.jpg",
+          "local_path": "art/references/2026-09-26-likeness/xiaohani/avatar-20260926.jpg",
+          "sha256": "6817714a66890357ba783a9d6a81a7b88c5b64270105c050a1a809dbcacde04a",
+          "kind": "avatar",
+          "dimensions": [
+            200,
+            200
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Selected as photo reference, not approved final game art."
+        },
+        {
+          "key": "xiaohani",
+          "bvid": "BV1vPrgBREjL",
+          "page_url": "https://www.bilibili.com/video/BV1vPrgBREjL/",
+          "title": "宁波小骚骚&小哈尼，直播间不是你俩的大床房",
+          "owner": {
+            "mid": 2310240,
+            "name": "绝世薯片OuO",
+            "face": "https://i0.hdslb.com/bfs/face/e45e97ce82eed5d4175b49ca0d94c14789518fd4.jpg"
+          },
+          "desc": "",
+          "image_url": "http://i1.hdslb.com/bfs/archive/1874e5688b509fac415f5dc0f19e262067976be9.jpg",
+          "local_path": "art/references/2026-09-26-likeness/xiaohani/BV1vPrgBREjL-cover.jpg",
+          "sha256": "4038e057014d771657588de1ca9733668daf5c3377f9f0d8ce872a67728f7eee",
+          "code": 0,
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "page_url": "https://yuba.douyu.com/feed/2892967498041343833",
+          "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/GJwkj89Lyg7Z/f7277c0b5266ab00f7b259e2b7c3bdc8.jpeg/rs500",
+          "local_path": "art/references/2026-09-26-likeness/xiaohani/2892967498041343833-photo-1.jpg",
+          "sha256": "f4bb34059c77525d663e71f571a03ac373a06941c584b5abc5d7f76ee14b3578",
+          "key": "xiaohani",
+          "dimensions": [
+            500,
+            667
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "page_url": "https://yuba.douyu.com/feed/2892967498041343833",
+          "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/GJwkj89Lyg7Z/fd810a31708cbe1d25c28d8db4a12228.jpeg/rs500",
+          "local_path": "art/references/2026-09-26-likeness/xiaohani/2892967498041343833-photo-2.jpg",
+          "sha256": "be17c6a59f91bc92b4c016261fbbd0c95abe67f58ec39fc6e8ca121989a9a4de",
+          "key": "xiaohani",
+          "dimensions": [
+            500,
+            667
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "page_url": "https://yuba.douyu.com/feed/2892967498041343833",
+          "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/GJwkj89Lyg7Z/1e5035a4d02983541b97f9e9f825b0bf.jpeg/rs500",
+          "local_path": "art/references/2026-09-26-likeness/xiaohani/2892967498041343833-photo-3.jpg",
+          "sha256": "1cdc8a1fb0cfb3cf2cee59086bc31cd4e25608a9600a3d0d833b9e547ed9865d",
+          "key": "xiaohani",
+          "dimensions": [
+            500,
+            874
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Selected as photo reference, not approved final game art."
+        },
+        {
+          "page_url": "https://yuba.douyu.com/feed/2892967498041343833",
+          "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/GJwkj89Lyg7Z/3bfe4c3dfc4670685408a7d5d20a24d5.jpeg/rs500",
+          "local_path": "art/references/2026-09-26-likeness/xiaohani/2892967498041343833-photo-4.jpg",
+          "sha256": "b2d70167a7016a0798bb8c48e36401c6e1f46658167507552d607465852d7563",
+          "key": "xiaohani",
+          "dimensions": [
+            500,
+            878
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Selected as photo reference, not approved final game art."
+        }
+      ]
+    },
+    {
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "aliases": [
+        "宋暖阳绝不咕咕"
+      ],
+      "features": [
+        "黑色头发，公开近照多为后束/低扎，额前留长碎发；官方头像也是束发侧脸",
+        "眉弓柔和，眼睛轮廓清晰，下颌圆滑收窄",
+        "照片4正面清晰；可保留额头与低束发，不用兜帽挡住主要识别轮廓"
+      ],
+      "evidence": [
+        {
+          "url": "https://yuba.douyu.com/feed/2967845210136093171",
+          "evidence": "公开帖子署名宋暖阳绝不咕咕，五张Live照片均有同名水印；照片4最清晰。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV19pDkBNEdM/",
+          "evidence": "标题明确刘青松复盘的同场队友包括主播阿飞、溺水小龟、宋暖阳。"
+        }
+      ],
+      "limitations": [
+        "照片发于2025年12月，光照/美颜可能改变细节；必须把皮肤转成战场兄弟平涂阴影。",
+        "鹌鹑是用户给出的梗，不能据此给真人归因胆怯，也不应强制用兜帽遮掉本人发型。"
+      ],
+      "status": "reference_photos_available",
+      "official_account": {
+        "page_url": "https://www.douyu.com/6151194",
+        "page_title": "CSTG郎团S1_宋暖阳绝不咕咕直播_宋暖阳绝不咕咕直播_宋暖阳绝不咕咕主机其他游戏直播_宋暖阳绝不咕咕斗鱼直播",
+        "saved_page": "art/references/2026-09-26-likeness/songnuanyang/official-page.html",
+        "page_sha256": "004ef7a6bd6f37d20cf8b9872e8b8833e22e46828e01f07725eb3048ed067cc1"
+      },
+      "selected_paths": [
+        "art/references/2026-09-26-likeness/songnuanyang/public-live-photo-4.jpg",
+        "art/references/2026-09-26-likeness/songnuanyang/public-live-photo-1.jpg",
+        "art/references/2026-09-26-likeness/songnuanyang/avatar-20260926.jpg"
+      ],
+      "images": [
+        {
+          "key": "songnuanyang",
+          "page_url": "https://www.douyu.com/6151194",
+          "image_url": "https://rpic.douyucdn.cn/asrpic/260926/6151194_src_1831.avif/dy4",
+          "local_path": "art/references/2026-09-26-likeness/songnuanyang/broadcast-20260926.jpg",
+          "sha256": "b1f00a3819f5c2dab6007d19cb638537dd55ff4c77aff4dc4c8c6e3a69fbba8d",
+          "kind": "broadcast",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "key": "songnuanyang",
+          "page_url": "https://www.douyu.com/6151194",
+          "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202605/8738eb45219b46338cdf6e16ceb5fd97_big.jpg",
+          "local_path": "art/references/2026-09-26-likeness/songnuanyang/avatar-20260926.jpg",
+          "sha256": "b3d59d584f08692e61c1c4499b164f4ded76b55fec8c31770e254464077d65eb",
+          "kind": "avatar",
+          "dimensions": [
+            200,
+            200
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Selected as photo reference, not approved final game art."
+        },
+        {
+          "key": "songnuanyang",
+          "bvid": "BV19pDkBNEdM",
+          "page_url": "https://www.bilibili.com/video/BV19pDkBNEdM/",
+          "title": "刘青松太适合做教练了吧？细节复盘组排队友主播阿飞、溺水小龟、宋暖阳第一视角，他对联盟太认真了！",
+          "owner": {
+            "mid": 1271194,
+            "name": "刘青松雇的真眼",
+            "face": "https://i1.hdslb.com/bfs/face/cee097e7710ab894ebc818a184b8e60eaaa9f7a1.jpg"
+          },
+          "desc": "",
+          "image_url": "http://i1.hdslb.com/bfs/archive/d7491e2cfd03076755cd76dd83e32f848ed10fcc.jpg",
+          "local_path": "art/references/2026-09-26-likeness/songnuanyang/BV19pDkBNEdM-cover.jpg",
+          "sha256": "6db57e88f7e91b8a9f6ae2f617ff4f689575ffebb41fef651d0bdcc9397c304b",
+          "code": 0,
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "page_url": "https://yuba.douyu.com/feed/2967845210136093171",
+          "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/lOwVNqZoVw5M/df64aaaeb6749e1fc0c834089808bb43.jpeg/rs500",
+          "local_path": "art/references/2026-09-26-likeness/songnuanyang/public-live-photo-1.jpg",
+          "sha256": "32e6e1ac3d124df9abfee5b0d1e03bbdeecb073dc51b623d5c2a7fcc7ca6a1fc",
+          "published": "2025-12-12",
+          "author": "宋暖阳绝不咕咕",
+          "key": "songnuanyang",
+          "dimensions": [
+            500,
+            889
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Selected as photo reference, not approved final game art."
+        },
+        {
+          "page_url": "https://yuba.douyu.com/feed/2967845210136093171",
+          "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/lOwVNqZoVw5M/86a90217b7e5bf1d212041b6b2369045.jpeg/rsh500",
+          "local_path": "art/references/2026-09-26-likeness/songnuanyang/public-live-photo-2.jpg",
+          "sha256": "0c52a42ce14991c27e22c9f4c65dd7c6de911879225feb74773ebf9c3e6b4bc2",
+          "published": "2025-12-12",
+          "author": "宋暖阳绝不咕咕",
+          "key": "songnuanyang",
+          "dimensions": [
+            889,
+            500
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "page_url": "https://yuba.douyu.com/feed/2967845210136093171",
+          "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/lOwVNqZoVw5M/3e862240839b7a868463cb70b4c5a8b9.jpeg/rsh500",
+          "local_path": "art/references/2026-09-26-likeness/songnuanyang/public-live-photo-3.jpg",
+          "sha256": "cc08736bd7a0ff9c676ba5ade73c4d1382cd6d4712d36f9f1af90d6b6da4fb31",
+          "published": "2025-12-12",
+          "author": "宋暖阳绝不咕咕",
+          "key": "songnuanyang",
+          "dimensions": [
+            889,
+            500
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "page_url": "https://yuba.douyu.com/feed/2967845210136093171",
+          "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/lOwVNqZoVw5M/51f4e2e0daf30160d68b2176ceeefce6.jpeg/rsh500",
+          "local_path": "art/references/2026-09-26-likeness/songnuanyang/public-live-photo-4.jpg",
+          "sha256": "577087297859a5987095fc0289904044684e6efdec9c8cc5093e57777061a464",
+          "published": "2025-12-12",
+          "author": "宋暖阳绝不咕咕",
+          "key": "songnuanyang",
+          "dimensions": [
+            889,
+            500
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": true,
+          "selection_note": "Selected as photo reference, not approved final game art."
+        },
+        {
+          "page_url": "https://yuba.douyu.com/feed/2967845210136093171",
+          "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/lOwVNqZoVw5M/2620d159d6dcfb9ecffd5c1334cfd219.jpeg/rs500",
+          "local_path": "art/references/2026-09-26-likeness/songnuanyang/public-live-photo-5.jpg",
+          "sha256": "0b20a427f658dafd332ee5f3ffeb86cdcbab2631d66175d8ea86f5479240c881",
+          "published": "2025-12-12",
+          "author": "宋暖阳绝不咕咕",
+          "key": "songnuanyang",
+          "dimensions": [
+            500,
+            889
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        }
+      ]
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "aliases": [
+        "溺水孝龟"
+      ],
+      "features": [],
+      "evidence": [
+        {
+          "url": "https://www.bilibili.com/video/BV13HjH6xEoE/",
+          "evidence": "CSTG监控室具名主播介绍，简介明确直播间9765366；画面标主播未添加摄像头。"
+        },
+        {
+          "url": "https://www.bilibili.com/video/BV19pDkBNEdM/",
+          "evidence": "与阿飞、宋暖阳同场组排的具名标题。"
+        },
+        {
+          "url": "https://yuba.douyu.com/member/KPA3p0NbjR7G/main/news",
+          "evidence": "公开主页名称溺水小龟，官方直播间链接。"
+        }
+      ],
+      "limitations": [
+        "本次未获得可证实为其直播皮套的公开造型；不生成或推测真人脸。",
+        "官方头像是现成动画角色明日香图，不能当作其独有皮套造型；不拿旁边阿飞/抹茶/寅子的脸冒充小龟。",
+        "按用户此前授权，Mod可保留原创小龟化身，但必须标注原创游戏设定而非还原公开皮套。"
+      ],
+      "status": "awaiting_confirmed_public_avatar_reference",
+      "official_account": {
+        "page_url": "https://www.douyu.com/9765366",
+        "page_title": "溺水小龟直播_溺水小龟直播_溺水小龟主机其他游戏直播_溺水小龟斗鱼直播",
+        "saved_page": "art/references/2026-09-26-likeness/xiaogui/official-page.html",
+        "page_sha256": "e11059d8e12fdab3100d1fe62a6b241a01c27ac0198b6f5ee1e35994bf7c88de"
+      },
+      "selected_paths": [],
+      "images": [
+        {
+          "key": "xiaogui",
+          "page_url": "https://www.douyu.com/9765366",
+          "image_url": "https://rpic.douyucdn.cn/asrpic/260926/9765366_src_0052.avif/dy4",
+          "local_path": "art/references/2026-09-26-likeness/xiaogui/broadcast-20260926.jpg",
+          "sha256": "d8fd253b23a690d22481996de604195fcea640d02a9410bfb836907da77decbb",
+          "kind": "broadcast",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "key": "xiaogui",
+          "page_url": "https://www.douyu.com/9765366",
+          "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202512/ccb175428eb445dd8b983598e5f4a942_big.jpg",
+          "local_path": "art/references/2026-09-26-likeness/xiaogui/avatar-20260926.jpg",
+          "sha256": "b6c056e966513ef7214576e0029e9a8323e57fd738d32bd1381e859679b9e99e",
+          "kind": "avatar",
+          "dimensions": [
+            200,
+            200
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        },
+        {
+          "key": "xiaogui",
+          "bvid": "BV13HjH6xEoE",
+          "page_url": "https://www.bilibili.com/video/BV13HjH6xEoE/",
+          "title": "【寅子】主播介绍：溺水小龟-CSTG和月下传媒合并成为新CSTG传媒-弹幕版-2026.6.20",
+          "owner": {
+            "mid": 3546966785001781,
+            "name": "CSTG监控室",
+            "face": "https://i1.hdslb.com/bfs/face/b208df01c74187e0f3b5a4cef13e800215cd4bc4.jpg"
+          },
+          "desc": "主播：寅子，直播间：斗鱼71415 \n主播：溺水小龟 ，直播间：9765366",
+          "image_url": "http://i0.hdslb.com/bfs/archive/8727a86c5d29f5d97b2da7b500905644992ed41f.jpg",
+          "local_path": "art/references/2026-09-26-likeness/xiaogui/BV13HjH6xEoE-cover.jpg",
+          "sha256": "219a967715c52c02f1b461450b444eb967a95325c7352448c7aa9412f3000aeb",
+          "code": 0,
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "viewed_with_view_image": true,
+          "selected_for_likeness_reference": false,
+          "selection_note": "Context only. Not a selected face/skin reference."
+        }
+      ]
+    }
+  ]
+}

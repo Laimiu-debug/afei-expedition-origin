@@ -1,0 +1,62 @@
+[
+  {
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/577b35f31f4be83a7773369615d612cb.jpeg/rs500",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  },
+  {
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/3e31e56376a82f7de8a9d5a2653010ab.jpeg/rs500",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  },
+  {
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/253bb33ca6e89b58bed46b1977612332.jpeg/rs500",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  },
+  {
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/d94f1e376691131e2cc9fdf2c9cf29c9.jpeg/rs500",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  },
+  {
+    "page": "https://yuba.douyu.com/feed/2944074549320235682",
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/3976a0c323690579811ed6eb3670b3a7.jpeg/rs500",
+    "file": "art/references/2026-09-26-likeness/tiantong/selfie-20251110-4.jpg"
+  },
+  {
+    "page": "https://yuba.douyu.com/feed/2944074549320235682",
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/8f26ee31c6f1b9f46e3ab7a10cc71fca.jpeg/rs500",
+    "file": "art/references/2026-09-26-likeness/tiantong/selfie-20251110-5.jpg"
+  },
+  {
+    "page": "https://yuba.douyu.com/feed/2944074549320235682",
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/bd1f93aeb06066aff2d5091106f25ded.jpeg/rs500",
+    "file": "art/references/2026-09-26-likeness/tiantong/selfie-20251110-6.jpg"
+  },
+  {
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/4bfc79a37ccc1dda267b6734284aa618.jpeg/rs500",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  },
+  {
+    "page": "https://yuba.douyu.com/feed/2944074549320235682",
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/66d958e127b0e0b0bc56dc25caf8c2a5.jpeg/rs500",
+    "file": "art/references/2026-09-26-likeness/tiantong/selfie-20251110-8.jpg"
+  },
+  {
+    "page": "https://yuba.douyu.com/feed/2944074549320235682",
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/0ef66be74b90f6ffce0196164c093228.jpeg/rs500",
+    "file": "art/references/2026-09-26-likeness/tiantong/selfie-20251110-9.jpg"
+  },
+  {
+    "page": "https://yuba.douyu.com/feed/2944074549320235682",
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/bd77a006486a35e07352b772674f8717.jpeg/rs500",
+    "file": "art/references/2026-09-26-likeness/tiantong/selfie-20251110-10.jpg"
+  },
+  {
+    "page": "https://yuba.douyu.com/feed/2944074549320235682",
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/5f491c53517d37f2453a377500752e42.jpeg/rs500",
+    "file": "art/references/2026-09-26-likeness/tiantong/selfie-20251110-11.jpg"
+  },
+  {
+    "page": "https://yuba.douyu.com/feed/2944074549320235682",
+    "image_url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/2ea1734439ed567425c43ec4881127be.jpeg/rs500",
+    "file": "art/references/2026-09-26-likeness/tiantong/selfie-20251110-12.jpg"
+  }
+]

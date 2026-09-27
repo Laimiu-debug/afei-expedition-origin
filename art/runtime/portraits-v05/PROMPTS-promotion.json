@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-26",
+  "records": [
+    {
+      "key": "afei_jiahao",
+      "name": "阿飞·嘉豪",
+      "prompt": "Use case: identity-preserving costume edit for a Battle Brothers tactical bust. Image 1 is the selected NEW Afei normal portrait, the exact same man's face and hair to preserve. Image 2 is the OLD promoted costume, use clothing design ONLY, not its face or haircut. Image 3 is official Battle Brothers proportions/style reference. Keep the new Afei's longer oval face, slim nearly straight brows, narrow eyes, straight nose, hairline and short brushed-up black hair. Give him a slightly more assured asymmetric half-smile and focused eyes, not a new man. Change clothing to sturdy brown riveted leather shoulders, dark charcoal short captain mantle with muted burgundy edge and dull brass rectangular clasp like image 2. Simple few broad shadows, rough darkbrown outline, no realistic skin, no glossy eyes, no fabric microtexture. One compact head/neck/shortshoulders tactical pawn, screen RIGHT mild three-quarter, large head about60percent of whole bust height, base ends at upperchest. Keep transparent margin, opaque figure, no hands, weapons, background, text, UFO or other objects. This is a human commander promotion, a deliberate costume upgrade over image1 while matching its drawing economy. Transparent background.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/afei_normal.png",
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-jiahao-promoted-v01.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "original_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-806ca9e2-0e42-44c9-b5e5-f2b68c5edead.png",
+      "selected_source": "art/runtime/portraits-v05/sources/afei_jiahao.png",
+      "selected": true
+    }
+  ]
+}

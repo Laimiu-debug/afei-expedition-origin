@@ -1,0 +1,11 @@
+{
+  "log": "C:\\Users\\25647\\OneDrive\\Documents\\Battle Brothers\\log.html",
+  "sha256": "50413ebcf379a657aa5b6765b8581ec0db40323abeaca9b51378eb89babd56c0",
+  "error_rows": 1,
+  "script_error_messages": [
+    "the index 'doesBrushExist' does not exist"
+  ],
+  "test_markers": [
+    "info\"> 19:49:59 SQ AFEIX_FACING_TEST: development scenario registered; Scenarios -> first entry"
+  ]
+}

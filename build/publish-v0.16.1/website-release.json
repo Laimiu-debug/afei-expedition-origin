@@ -1,0 +1,24 @@
+{
+  "owner": "laimiu",
+  "version": "0.16.1",
+  "sha256": "9e20123f07536d9539c81f4629abd39a40f116f6ca0bb387b8a930c89b0dff58",
+  "notes": "修复世界地图附近有敌方队伍时 F8 名册无法打开的问题；保留安全地点管理限制。沿用十人队伍强度上限与初始资金档位。已实机验证同一旧档打开、关闭及再次打开名册。此版本为公开试玩版，完整技能与长线平衡仍待验收。",
+  "mod": {
+    "title": "阿飞远征团",
+    "summary": "三队长启程，在冒险中结识伙伴、培养成员，自由组建最多十人的出战队伍。公开试玩版。",
+    "description": "阿飞、王大谋、午夜抹抹茶带着一面黑旗上路。通过城镇契约与战斗逐渐结识伙伴，在城镇招募界面邀请达成条件的成员加入。\n\n最多40人在册，每战自选1～10人；原版人物栏仍能调整装备与站位。世界地图按F8打开黑旗名册，查看已知伙伴和委托，并在安全地点安排队伍。各成员拥有自己的技能与成长，新的相遇和隐藏内容由玩家探索。\n\n本版修复附近有敌方队伍时F8无反应的问题。通过17,387条离线行为检查，已实机验证同一旧档打开、关闭和再次打开名册。全部技能实际施放与长期平衡尚未完成完整实机验收。",
+    "category": "起源与事件",
+    "install_name": "mod_afeix_expedition.zip",
+    "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+    "original_author": "Laimiu",
+    "license": "作者授权在 BBMOD 网站分发；其他用途请联系作者。",
+    "game_version": "1.5.2.3",
+    "dlc": "目标环境：本体与官方 DLC（Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith）",
+    "mod_ids": "mod_afeix_expedition",
+    "requires": "mod_hooks",
+    "conflicts": "",
+    "save_impact": "yes",
+    "seed_impact": "unknown",
+    "compatibility_notes": "安装前先退出游戏。将 mod_afeix_expedition.zip 整包放入游戏 data 文件夹，不要解压；替换同名旧包，一次只保留一个版本。需要 Legacy Modding Script Hooks（mod_hooks）以及中文字体／汉化环境，已有工作的 Hooks 时不要重复加载副本。重新启动后，新建战役选择“阿飞远征团”；本项目已有战役可直接读档。\n存档依赖本 MOD，卸载前请备份。不保证与 Legends、Reforged 或其他改动编队、人物图层的 MOD 兼容；不要同时加载旧工程或阿飞美术测试起源。"
+  }
+}

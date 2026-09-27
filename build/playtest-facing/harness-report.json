@@ -1,0 +1,13 @@
+{
+  "package": "G:\\CODE\\afei-xcpedition\\build\\playtest-facing\\mod_afeix_facing_playtest.zip",
+  "sha256": "689ea2e179750335d40a878ddb004588f3c57a4588082d1b0b0d9aab24a47cb1",
+  "compiled_sources": 2,
+  "game_installed": false,
+  "engine_verified": false,
+  "requires": [
+    "mod_afeix_expedition.zip",
+    "Legacy Script Hooks"
+  ],
+  "production_src_modified": false,
+  "entry": "Scenarios > first entry (id 0)"
+}

@@ -1,0 +1,25 @@
+{
+  "version": 16,
+  "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "sha256": "1a541e1aa931d4ecc8e391d0c515588dd76f75eb4fc8b8b68885fb67ee1f71f3",
+  "previous_installed_sha256": "a50bbfaaa30029cdbef2b9c362bd2afa24dbaffd9dd0fc11ae110029e2eefec1",
+  "backup": "G:\\CODE\\afei-xcpedition\\dist\\archive\\v0.15\\mod_afeix_expedition.zip",
+  "backup_sha256": "4366e0c5e08cd9ab77cf640048641a5342dbc8fb632e36fe8098b84cc6d2b48e",
+  "byte_match": true,
+  "zip_crc_passed": true,
+  "changes_from_v15": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/hooks.nut",
+    "scripts/scenarios/world/afeix_expedition_scenario.nut"
+  ],
+  "behavior_assertions": 17367,
+  "existing_saves_modified": false,
+  "new_review_save_created": false,
+  "in_game_tested": false,
+  "preview_in_game_tested_partially": true,
+  "preview_sha256": "a50bbfaaa30029cdbef2b9c362bd2afa24dbaffd9dd0fc11ae110029e2eefec1",
+  "preview_scope": "normal new campaign, F8 home, settlement contract and recruit screens, battle loading and skill tooltips; stopped by user before targeted member skill execution",
+  "final_package_unverified_in_game": "starting-budget multipliers added after preview launch; offline native setup tests passed",
+  "requires_game_restart": true,
+  "installed_at": "2026-09-27T11:39:18.232019+08:00"
+}

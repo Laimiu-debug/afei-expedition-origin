@@ -1,0 +1,25 @@
+{
+  "characters": [
+    {
+      "key": "bottle",
+      "source": "art/runtime/portraits-v04/sources/bottle.png",
+      "original": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C04-master.png",
+      "source_kind": "legacy_custom",
+      "review_note": "Retained reviewed legacy complete bust: dark long hair, gold earring and black quilted collar. Original custom hair is inside this single image; no native parts."
+    },
+    {
+      "key": "lili",
+      "source": "art/runtime/portraits-v04/sources/lili.png",
+      "original": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C05-master.png",
+      "source_kind": "legacy_custom",
+      "review_note": "Retained reviewed legacy complete bust: short brown hair, ivory flower and gray tunic. Original custom hair is inside this single image; no native parts."
+    },
+    {
+      "key": "yuchujiu",
+      "source": "art/runtime/portraits-v04/sources/yuchujiu.png",
+      "original": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C06-master.png",
+      "source_kind": "legacy_custom",
+      "review_note": "Retained reviewed legacy complete bust: long brown hair, cream headband and teal collar with paw emblem. Original custom hair is inside this single image; no native parts."
+    }
+  ]
+}

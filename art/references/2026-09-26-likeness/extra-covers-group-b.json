@@ -1,0 +1,47 @@
+[
+  {
+    "key": "suwa",
+    "bvid": "BV1UQ4R6gE8h",
+    "status": "failed",
+    "error": "HTTP Error 502: Bad Gateway"
+  },
+  {
+    "key": "suwa",
+    "bvid": "BV1DG4f6pEz5",
+    "title": "哭粉集合，苏袜被弹幕串哭😭，桌子也哭坏了？",
+    "page": "https://www.bilibili.com/video/BV1DG4f6pEz5/",
+    "url": "http://i1.hdslb.com/bfs/archive/802e4a42fea4acbce84e210f869eec75972eed36.jpg",
+    "file": "art\\references\\2026-09-26-likeness\\suwa\\bilibili-close.jpg",
+    "status": "fetched"
+  },
+  {
+    "key": "qianhan",
+    "bvid": "BV1KYtN6PEhD",
+    "status": "failed",
+    "error": "HTTP Error 502: Bad Gateway"
+  },
+  {
+    "key": "naigai",
+    "bvid": "BV1dY4C6XEfe",
+    "status": "failed",
+    "error": "HTTP Error 502: Bad Gateway"
+  },
+  {
+    "key": "qianhan",
+    "bvid": "BV1c8tJ6aECo",
+    "title": "前几天千涵妆造是不是有问题？今天人人都说好看！",
+    "page": "https://www.bilibili.com/video/BV1c8tJ6aECo/",
+    "url": "http://i0.hdslb.com/bfs/archive/1f1a929d7460f1259d221f2b34b41d2070b1d8f5.jpg",
+    "file": "art\\references\\2026-09-26-likeness\\qianhan\\bilibili-style.jpg",
+    "status": "fetched"
+  },
+  {
+    "key": "qianhan",
+    "bvid": "BV1U8tz6PE6U",
+    "title": "今天是双马尾千涵，好不好看你们自己说！",
+    "page": "https://www.bilibili.com/video/BV1U8tz6PE6U/",
+    "url": "http://i2.hdslb.com/bfs/archive/d4c1ff047298e6b82c2a076ad70f241329528104.jpg",
+    "file": "art\\references\\2026-09-26-likeness\\qianhan\\bilibili-twintails.jpg",
+    "status": "fetched"
+  }
+]

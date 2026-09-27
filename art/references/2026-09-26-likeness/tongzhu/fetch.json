@@ -1,0 +1,21 @@
+{
+  "key": "tongzhu",
+  "name": "童猪",
+  "source_page": "https://www.douyu.com/945159",
+  "page_title": "斗鱼彩虹六号资格码专题活动_童猪啊i直播_童猪啊i直播_童猪啊i主机其他游戏直播_童猪啊i斗鱼直播",
+  "images": [
+    {
+      "kind": "broadcast",
+      "image_url": "https://rpic.douyucdn.cn/asrpic/260925/945159_src_0113.avif/dy4",
+      "local_file": "art/references/2026-09-26-likeness/tongzhu/broadcast.jpg",
+      "bytes": 100218
+    },
+    {
+      "kind": "avatar",
+      "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202308/2306c32f781f4a99a9a1cd084ea279fb_big.jpg",
+      "local_file": "art/references/2026-09-26-likeness/tongzhu/avatar.jpg",
+      "bytes": 35494
+    }
+  ],
+  "retrieved": "2026-09-26"
+}

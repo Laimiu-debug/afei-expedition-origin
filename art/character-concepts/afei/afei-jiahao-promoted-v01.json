@@ -1,0 +1,36 @@
+{
+  "id": "afei-jiahao-promoted-v01",
+  "created_at": "2026-09-26",
+  "tool": "built-in image_gen",
+  "asset_type": "concept_master",
+  "source_file": "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-1068abf7-2bdd-483d-bd1d-a4669a1eaa65.png",
+  "workspace_file": "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-jiahao-promoted-v01.png",
+  "reference_images": [
+    "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png",
+    "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+  ],
+  "prompt": "Use case: identity-preserve.\nAsset: ONE JIAHAO promoted commander form of Afei for a Battle Brothers mod.\n\nImage 1 is the approved starting-form visual direction and the EDIT TARGET. Keep EXACTLY the same recognizable human face, age, skin color, cropped black hair silhouette, slanted dark brows, low upper eyelids, alert eyes and roguish small closed-mouth half-smile. He must look like the same man after promotion.\nImage 2 is the official Battle Brothers native bust sheet, a style/proportion reference.\n\nChange his costume and bearing to an experienced charismatic mercenary captain whose role is to inspire and lead companions. Upright compact shoulders and a subtly raised chin, composed confidence with a trace of swagger. Keep the eyes clear and serious enough to command when needed.\nReplace the poor grey-beige starter coat with neat dark brown leather or brigandine over a muted grey underlayer. A well-kept short charcoal mantle has a small muted burgundy lining visible at its edge. A modest upright collar frames the jaw without obscuring it. One clear OLD BRASS clasp is the main ornament, at the same chest fastening position as the starting form. A few simple armor seams and muted rivets only. Convey a step up in presence through clean silhouette and organized clothing, not excessive wealth.\nSTRICTLY retain image 1's simplified graphic rendering: broad matte color planes, two or three restrained shadow values, dark brown contours, chunky hair groups, crisp simplified brows, nose and mouth. No increase in skin realism or detailed fabric texture. Native-game small-sprite readability is essential.\nKeep the same slightly elevated three-quarter camera facing viewer's RIGHT, large head and compact short shoulder/chest tactical pawn proportions, full head and both shoulders visible. Leave transparent margin around the intact lower bust.\nNo arms, hands, legs, weapons, shields, crowns, coins in the air, frog companion, flying saucer, flagpole, glowing aura, ornamental portrait background, anime beautification, photoreal skin, glossy 3D, text or frame.\nOne character only. TRUE transparent alpha background.",
+  "image_size": [
+    1127,
+    1396
+  ],
+  "image_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    28,
+    2,
+    1098,
+    1396
+  ],
+  "sha256": "884b95ada340f3b9212691a2d84ab51b491b1b5b12df1b125352eb16e143681f",
+  "status": "candidate_pending_user_review",
+  "visual_review": "沿用正常形态的短黑发、眉眼、嘴角和身份；立领、棕色皮甲、暗红披肩边和黄铜扣体现转职差异。用户尚未评价此转职图。",
+  "user_feedback": null,
+  "technical_review": "非零透明度包围盒存在贴边情况；正式裁切和分层前需检查留白。114×142 仅作为旧项目尺寸观察窗口，不是已适配的游戏资源。",
+  "in_game_tested": false,
+  "equipment_compatibility": "unverified",
+  "production_ready": false
+}

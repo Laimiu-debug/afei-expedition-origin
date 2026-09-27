@@ -1,0 +1,37 @@
+{
+  "created": "2026-09-26",
+  "images": [
+    {
+      "key": "wawa",
+      "prompt": "Use case: stylized-concept. Asset type: one small tactical RPG skill icon for a Battle Brothers mod, intended to remain legible at 56 by 56 pixels. Flat hand-inked medieval woodcut pictogram: heavy irregular near-black contour, warm ivory shapes, two or three solid shadow masses, very restrained ochre and muted brick-red accents. Coarse confident shapes rather than fine painting. Centered compact square composition with a generous transparent margin. Genuinely transparent background. No text, letters, numbers, border, frame, circular UI plate, scenery, glossy shading, photorealism, 3D, gradients, colored glow or particles. Single isolated icon, not an icon sheet. Subject: a fierce broad-jawed anthropomorphic toad head in side three-quarter view, mouth open in a loud battle cry, thick low brow and stout throat. The toad looks determined and slightly roguish, not cute. One short angular ivory sound mark next to the mouth. Simplified beige olive skin as large solid shapes, a tiny brick-red mouth interior. No neck clothing or weapon.",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "original": "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-0ecd7049-7de7-47c7-95f9-50b20de84c4a.png",
+      "saved": "sources/wawa.png"
+    },
+    {
+      "key": "haoqi",
+      "prompt": "Use case: stylized-concept. Asset type: one small tactical RPG skill icon for a Battle Brothers mod, intended to remain legible at 56 by 56 pixels. Flat hand-inked medieval woodcut pictogram: heavy irregular near-black contour, warm ivory shapes, two or three solid shadow masses, very restrained ochre and muted brick-red accents. Coarse confident shapes rather than fine painting. Centered compact square composition with a generous transparent margin. Genuinely transparent background. No text, letters, numbers, border, frame, circular UI plate, scenery, glossy shading, photorealism, 3D, gradients, colored glow or particles. Single isolated icon, not an icon sheet. Subject: a raised medieval commander's clenched fist with a short dark-red cloth cuff, beside two small simplified allied shield silhouettes. The fist is the dominant readable silhouette, expressing a leader rallying companions. Ivory fist, aged ochre highlights, dark brown outlines. At most three objects, no human portrait, no modern insignia.",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "original": "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-518449db-280c-4783-b688-02baa05a1750.png",
+      "saved": "sources/haoqi.png"
+    },
+    {
+      "key": "quanqian",
+      "prompt": "Use case: stylized-concept. Asset type: one small tactical RPG skill icon for a Battle Brothers mod, intended to remain legible at 56 by 56 pixels. Flat hand-inked medieval woodcut pictogram: heavy irregular near-black contour, warm ivory shapes, two or three solid shadow masses, very restrained ochre and muted brick-red accents. Coarse confident shapes rather than fine painting. Centered compact square composition with a generous transparent margin. Genuinely transparent background. No text, letters, numbers, border, frame, circular UI plate, scenery, glossy shading, photorealism, 3D, gradients, colored glow or particles. Single isolated icon, not an icon sheet. Subject: a squat medieval drawstring coin purse receiving three falling gold coins, a simple short hooked red arrow guiding coins INTO the purse. The purse and coins dominate, conveying earned sponsorship income after a fulfilled contract. Ochre coins, ivory cloth purse, dark brown outline. No currency symbol, no text, no magic ring, no damage burst.",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "original": "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-0822ae64-12a6-449f-bf93-0939b3eb7cbc.png",
+      "saved": "sources/quanqian.png"
+    },
+    {
+      "key": "feidie",
+      "prompt": "Use case: stylized-concept. Asset type: one small tactical RPG skill icon for a Battle Brothers mod, intended to remain legible at 56 by 56 pixels. Flat hand-inked medieval woodcut pictogram: heavy irregular near-black contour, warm ivory shapes, two or three solid shadow masses, very restrained ochre and muted brick-red accents. Coarse confident shapes rather than fine painting. Centered compact square composition with a generous transparent margin. Genuinely transparent background. No text, letters, numbers, border, frame, circular UI plate, scenery, glossy shading, photorealism, 3D, gradients, colored glow or particles. Single isolated icon, not an icon sheet. Subject: a small hammered medieval pewter flying saucer floating above a plain sturdy mercenary shield. UFO has a low bronze domed center and a broad slightly uneven rim, looks like a whimsical forged talisman. Shield is ivory with a single dark-red central stripe. Clear separate silhouettes, no beam, no stars, no spaceship scene, no futuristic machinery.",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "original": "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-9c66b499-4484-49fd-b8c9-5b05694c97b4.png",
+      "saved": "sources/feidie.png"
+    }
+  ]
+}

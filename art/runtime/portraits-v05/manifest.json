@@ -1,0 +1,2219 @@
+{
+  "schema_version": 1,
+  "atlas_name": "afeix_portraits_v04",
+  "updated": "2026-09-27",
+  "status": "user_reference_and_neck_contours_v12",
+  "geometry": {
+    "live": {
+      "left": -57,
+      "right": 57,
+      "top": -51,
+      "bottom": 91,
+      "width": 114,
+      "height": 142,
+      "offsetY": 35
+    },
+    "dead": {
+      "left": -57,
+      "right": 57,
+      "top": -71,
+      "bottom": 71,
+      "width": 114,
+      "height": 142,
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    "size": [
+      114,
+      142
+    ],
+    "fit": [
+      88,
+      100
+    ],
+    "alpha_threshold": 20,
+    "align": "bottom_center"
+  },
+  "dead_mode": "same_pixels_centred_anchor_runtime_rotation",
+  "characters": [
+    {
+      "key": "afei",
+      "name": "阿飞",
+      "forms": [
+        {
+          "form": "normal",
+          "brush": "afeix_p04_afei_normal",
+          "source": "art/runtime/portraits-v05/sources/facing/afei_normal.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "1f291f548b542473f3d66acc311ef579337199251545e3aff6aee5f330121f50",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/afei_normal.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              107
+            ],
+            [
+              35,
+              107
+            ],
+            [
+              48,
+              112
+            ],
+            [
+              57,
+              119
+            ],
+            [
+              73,
+              119
+            ],
+            [
+              85,
+              112
+            ],
+            [
+              95,
+              107
+            ],
+            [
+              114,
+              107
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        },
+        {
+          "form": "toad",
+          "brush": "afeix_p04_afei_toad",
+          "source": "art/runtime/portraits-v05/sources/facing/afei_normal.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "1f291f548b542473f3d66acc311ef579337199251545e3aff6aee5f330121f50",
+          "source_box": null,
+          "review_note": "蛤蟆立绘已停用；旧画刷只作为正常阿飞外观的兼容别名，转职玩法保留。",
+          "source_revision": "retired_alias",
+          "before_facing_source": "art/character-concepts/afei/afei-toad-promoted-v01.png",
+          "before_facing_revision": "v04_retained",
+          "pose_record": "PROMPTS-facing-a.json",
+          "retired_source": "art/runtime/portraits-v05/sources/facing/afei_toad.png",
+          "alias_of": "afeix_p04_afei_normal",
+          "head_seam": [
+            [
+              0,
+              107
+            ],
+            [
+              35,
+              107
+            ],
+            [
+              48,
+              112
+            ],
+            [
+              57,
+              119
+            ],
+            [
+              73,
+              119
+            ],
+            [
+              85,
+              112
+            ],
+            [
+              95,
+              107
+            ],
+            [
+              114,
+              107
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        },
+        {
+          "form": "jiahao",
+          "brush": "afeix_p04_afei_jiahao",
+          "source": "art/runtime/portraits-v05/sources/facing/afei_jiahao.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "96358d2401b0a9d956547ac72186901894f5648d82cceff2012343ed3b252f62",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/afei_jiahao.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              107
+            ],
+            [
+              35,
+              107
+            ],
+            [
+              48,
+              112
+            ],
+            [
+              57,
+              119
+            ],
+            [
+              73,
+              119
+            ],
+            [
+              85,
+              112
+            ],
+            [
+              95,
+              107
+            ],
+            [
+              114,
+              107
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_damou",
+          "source": "art/runtime/portraits-v05/sources/facing/damou.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "159d4a14a1744544e486bd3c10a390de0f3d599bdb37afe935b4e5fe90f8c729",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/damou.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              109
+            ],
+            [
+              35,
+              109
+            ],
+            [
+              48,
+              114
+            ],
+            [
+              57,
+              121
+            ],
+            [
+              73,
+              121
+            ],
+            [
+              85,
+              114
+            ],
+            [
+              95,
+              109
+            ],
+            [
+              114,
+              109
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_mocha",
+          "source": "art/runtime/portraits-v05/sources/facing/mocha.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "beb634bfdb0a378cac73fd71dbef4b4eeaccbb31c24d52a4bec3af4164f9f4bd",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/mocha.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              109
+            ],
+            [
+              35,
+              109
+            ],
+            [
+              48,
+              114
+            ],
+            [
+              57,
+              122
+            ],
+            [
+              73,
+              122
+            ],
+            [
+              85,
+              114
+            ],
+            [
+              95,
+              109
+            ],
+            [
+              114,
+              109
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "bottle",
+      "name": "小酒瓶",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_bottle",
+          "source": "art/runtime/portraits-v05/sources/facing/bottle.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "350773547e853fa2a6c36db74d0ed53bf1a3bbeb07df427c689183b2c5872893",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/bottle.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              107
+            ],
+            [
+              35,
+              107
+            ],
+            [
+              48,
+              112
+            ],
+            [
+              57,
+              119
+            ],
+            [
+              73,
+              119
+            ],
+            [
+              85,
+              112
+            ],
+            [
+              95,
+              107
+            ],
+            [
+              114,
+              107
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_shuaizi",
+          "source": "art/runtime/portraits-v05/sources/facing/shuaizi.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "eb7d03bb759faa9d8ac05cb6d14c863b37e60a253b4654178ade94faba948b7a",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/shuaizi.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              107
+            ],
+            [
+              35,
+              107
+            ],
+            [
+              48,
+              112
+            ],
+            [
+              57,
+              119
+            ],
+            [
+              73,
+              119
+            ],
+            [
+              85,
+              112
+            ],
+            [
+              95,
+              107
+            ],
+            [
+              114,
+              107
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "lili",
+      "name": "李李超欧",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_lili",
+          "source": "art/runtime/portraits-v05/sources/facing/lili.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "6ccd09c26eb53d119684fbcc5da43a40b0f07807ad38c4929247e6b842dbcbba",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/lili.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              109
+            ],
+            [
+              35,
+              109
+            ],
+            [
+              48,
+              114
+            ],
+            [
+              57,
+              123
+            ],
+            [
+              73,
+              123
+            ],
+            [
+              85,
+              114
+            ],
+            [
+              95,
+              109
+            ],
+            [
+              114,
+              109
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaoyueya",
+      "name": "小月牙",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaoyueya",
+          "source": "art/runtime/portraits-v05/sources/user-v12/xiaoyueya.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "10c5a2919f55a840ae9cf10287f9f4e109847a66656ee53f27099d5ade3ae681",
+          "source_box": null,
+          "review_note": "按用户照片重绘黑色长发、清秀椭圆脸与自然眉眼，替换旧蓝发造型；朝右，完整颈部。",
+          "source_revision": "user_v12",
+          "before_facing_source": "art/runtime/portraits-v04/sources/xiaoyueya.png",
+          "before_facing_revision": "v04_retained",
+          "pose_record": "PROMPTS-facing-a.json",
+          "before_user_v12_source": "art/runtime/portraits-v05/sources/facing/xiaoyueya.png",
+          "prompt_record": "PROMPTS-user-v12.json",
+          "head_seam": [
+            [
+              0,
+              108
+            ],
+            [
+              35,
+              108
+            ],
+            [
+              48,
+              113
+            ],
+            [
+              57,
+              122
+            ],
+            [
+              73,
+              122
+            ],
+            [
+              85,
+              113
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              114,
+              108
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "user_supplied_reference"
+    },
+    {
+      "key": "yuchujiu",
+      "name": "余初九",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yuchujiu",
+          "source": "art/runtime/portraits-v05/sources/facing/yuchujiu.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e1f8c0c821f1ad2b220759c6e8bc2db93c96bfa5eaf009fe30c4159e183c92cc",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/yuchujiu.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              108
+            ],
+            [
+              35,
+              108
+            ],
+            [
+              48,
+              113
+            ],
+            [
+              57,
+              120
+            ],
+            [
+              73,
+              120
+            ],
+            [
+              85,
+              113
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              114,
+              108
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaoyubeike",
+          "source": "art/runtime/portraits-v05/sources/facing/xiaoyubeike.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "2767800440cf8e1d7cb94fe58d953fccfd7e2db75d21a892804ef1e9ce6ee7f0",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/xiaoyubeike.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              109
+            ],
+            [
+              35,
+              109
+            ],
+            [
+              48,
+              114
+            ],
+            [
+              57,
+              122
+            ],
+            [
+              73,
+              122
+            ],
+            [
+              85,
+              114
+            ],
+            [
+              95,
+              109
+            ],
+            [
+              114,
+              109
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_wangduidui",
+          "source": "art/runtime/portraits-v05/sources/facing/wangduidui.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "ea24c1b3c96e5baf6e6e42887aed9a9fb55ba667132612cd26dcf98726e0c4da",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/wangduidui.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              107
+            ],
+            [
+              35,
+              107
+            ],
+            [
+              48,
+              112
+            ],
+            [
+              57,
+              123
+            ],
+            [
+              73,
+              123
+            ],
+            [
+              85,
+              112
+            ],
+            [
+              95,
+              107
+            ],
+            [
+              114,
+              107
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_laocai",
+          "source": "art/runtime/portraits-v05/sources/facing/laocai.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e443245e266897f7c036787d756acd66d598c06c1eac241d347300fad9db597b",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/laocai.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              109
+            ],
+            [
+              35,
+              109
+            ],
+            [
+              48,
+              114
+            ],
+            [
+              57,
+              120
+            ],
+            [
+              73,
+              120
+            ],
+            [
+              85,
+              114
+            ],
+            [
+              95,
+              109
+            ],
+            [
+              114,
+              109
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "tiantong",
+      "name": "亿口甜筒",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_tiantong",
+          "source": "art/runtime/portraits-v05/sources/user-v12/tiantong.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "0164b995add343b28d459bcca08fda806b590224a3bcdb9a8adf20c6d8b4fdb9",
+          "source_box": null,
+          "review_note": "按用户照片中央人物重绘浅棕短波波头、圆润脸颊和眼睛；移除旧眼镜与深色长发。",
+          "source_revision": "user_v12",
+          "before_facing_source": "art/runtime/portraits-v04/sources/tiantong.png",
+          "before_facing_revision": "v04_retained",
+          "pose_record": "PROMPTS-facing-a.json",
+          "before_user_v12_source": "art/runtime/portraits-v05/sources/facing/tiantong.png",
+          "prompt_record": "PROMPTS-user-v12.json",
+          "head_seam": [
+            [
+              0,
+              110
+            ],
+            [
+              35,
+              110
+            ],
+            [
+              48,
+              115
+            ],
+            [
+              57,
+              123
+            ],
+            [
+              73,
+              123
+            ],
+            [
+              85,
+              115
+            ],
+            [
+              95,
+              110
+            ],
+            [
+              114,
+              110
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "user_supplied_reference"
+    },
+    {
+      "key": "xiaoning",
+      "name": "小宁",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaoning",
+          "source": "art/runtime/portraits-v05/sources/facing/xiaoning.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "2e09ec5211edaaa2b3ab47aac1ed68f03276d4fbf873771d71b6a36cf23dd2e0",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/xiaoning.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              107
+            ],
+            [
+              35,
+              107
+            ],
+            [
+              48,
+              112
+            ],
+            [
+              57,
+              120
+            ],
+            [
+              73,
+              120
+            ],
+            [
+              85,
+              112
+            ],
+            [
+              95,
+              107
+            ],
+            [
+              114,
+              107
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖徐不快乐",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaopangxu",
+          "source": "art/runtime/portraits-v05/sources/facing/xiaopangxu.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "f364b5324754bea942ad4da7c66cc2f47c895a9f29b939aaec769897257c8136",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/xiaopangxu.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              108
+            ],
+            [
+              35,
+              108
+            ],
+            [
+              48,
+              113
+            ],
+            [
+              57,
+              122
+            ],
+            [
+              73,
+              122
+            ],
+            [
+              85,
+              113
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              114,
+              108
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_dae",
+          "source": "art/runtime/portraits-v05/sources/facing/dae.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "b6985bd218dd5432abc561da1d7e3859f90af6561f86b933a394e96d84b79d25",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/dae.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              108
+            ],
+            [
+              35,
+              108
+            ],
+            [
+              48,
+              113
+            ],
+            [
+              57,
+              121
+            ],
+            [
+              73,
+              121
+            ],
+            [
+              85,
+              113
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              114,
+              108
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_manyuemei",
+          "source": "art/runtime/portraits-v05/sources/facing/manyuemei.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "27417d7e29d248e44d7c645e49f7ceb3b51ceca088ca8d672b2c9bed0a12aec2",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/manyuemei.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-a.json",
+          "head_seam": [
+            [
+              0,
+              108
+            ],
+            [
+              35,
+              108
+            ],
+            [
+              48,
+              113
+            ],
+            [
+              57,
+              120
+            ],
+            [
+              73,
+              120
+            ],
+            [
+              85,
+              113
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              114,
+              108
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaohani",
+      "name": "小哈尼",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaohani",
+          "source": "art/runtime/portraits-v05/sources/facing/xiaohani.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "3ab24602d7e056ce200d80abeabca766eab10806f3edc108e143306489c388ce",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/xiaohani.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              110
+            ],
+            [
+              35,
+              110
+            ],
+            [
+              48,
+              115
+            ],
+            [
+              57,
+              122
+            ],
+            [
+              73,
+              122
+            ],
+            [
+              85,
+              115
+            ],
+            [
+              95,
+              110
+            ],
+            [
+              114,
+              110
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_keke",
+          "source": "art/runtime/portraits-v05/sources/facing/keke.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "bc4332eac882e43c31861767836e7fad306c694280a193a177f0b5947d5f5cfd",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/keke.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              109
+            ],
+            [
+              35,
+              109
+            ],
+            [
+              48,
+              114
+            ],
+            [
+              57,
+              121
+            ],
+            [
+              73,
+              121
+            ],
+            [
+              85,
+              114
+            ],
+            [
+              95,
+              109
+            ],
+            [
+              114,
+              109
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "yuxiang",
+      "name": "余想",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yuxiang",
+          "source": "art/runtime/portraits-v05/sources/facing/yuxiang.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "51805715556765c9f06daebd2301daf339a72b688e9f2245711464a428afd2e0",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/yuxiang.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              107
+            ],
+            [
+              35,
+              107
+            ],
+            [
+              48,
+              112
+            ],
+            [
+              57,
+              120
+            ],
+            [
+              73,
+              120
+            ],
+            [
+              85,
+              112
+            ],
+            [
+              95,
+              107
+            ],
+            [
+              114,
+              107
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "tongzhu",
+      "name": "童猪",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_tongzhu",
+          "source": "art/runtime/portraits-v05/sources/facing/tongzhu.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "d2a0355f68606cfbaf6d737564b3bbd5e773d6cffae4f19efb20e2e29866c586",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/tongzhu.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              108
+            ],
+            [
+              35,
+              108
+            ],
+            [
+              48,
+              113
+            ],
+            [
+              57,
+              121
+            ],
+            [
+              73,
+              121
+            ],
+            [
+              85,
+              113
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              114,
+              108
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "meiya",
+      "name": "美伢",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_meiya",
+          "source": "art/runtime/portraits-v05/sources/user-v12/meiya.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "d2ad153b2a672c0ca154bbf3629e4ebf0dd1edfc4f74efa331ebadbcec9ce603",
+          "source_box": null,
+          "review_note": "按用户照片重绘长黑发、上挑眉、大眼睛与饱满唇形；不把帽子画入基础层，保留完整下巴和颈部。",
+          "source_revision": "user_v12",
+          "before_facing_source": "art/runtime/portraits-v04/sources/meiya.png",
+          "before_facing_revision": "v04_retained",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              108
+            ],
+            [
+              35,
+              108
+            ],
+            [
+              48,
+              113
+            ],
+            [
+              57,
+              122
+            ],
+            [
+              73,
+              122
+            ],
+            [
+              85,
+              113
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              114,
+              108
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。",
+          "before_user_v12_source": "art/runtime/portraits-v05/sources/facing/meiya.png",
+          "prompt_record": "PROMPTS-meiya-v12.json"
+        }
+      ],
+      "likeness_status": "user_supplied_reference"
+    },
+    {
+      "key": "wanshe",
+      "name": "玩蛇",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_wanshe",
+          "source": "art/runtime/portraits-v05/sources/facing/wanshe.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "ad193ce44f1ce7c0afa4039c508043e9a4e1607a2c5839d157fb0dd9e6a7af83",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/wanshe.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              108
+            ],
+            [
+              35,
+              108
+            ],
+            [
+              48,
+              113
+            ],
+            [
+              57,
+              122
+            ],
+            [
+              73,
+              122
+            ],
+            [
+              85,
+              113
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              114,
+              108
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "tutu",
+      "name": "涂涂",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_tutu",
+          "source": "art/runtime/portraits-v05/sources/facing/tutu.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "49655e56bd9ad65b70f46275603aa62694b42ae55e47c1eddf37a464b0484813",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/tutu.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              109
+            ],
+            [
+              35,
+              109
+            ],
+            [
+              48,
+              114
+            ],
+            [
+              57,
+              122
+            ],
+            [
+              73,
+              122
+            ],
+            [
+              85,
+              114
+            ],
+            [
+              95,
+              109
+            ],
+            [
+              114,
+              109
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_songnuanyang",
+          "source": "art/runtime/portraits-v05/sources/facing/songnuanyang.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "def57bf4345ba4613b5022b0b8ba808d7f5fb6fa0e80a14c41a0af13250dd5ca",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/songnuanyang.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              109
+            ],
+            [
+              35,
+              109
+            ],
+            [
+              48,
+              114
+            ],
+            [
+              57,
+              121
+            ],
+            [
+              73,
+              121
+            ],
+            [
+              85,
+              114
+            ],
+            [
+              95,
+              109
+            ],
+            [
+              114,
+              109
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaogui",
+          "source": "art/runtime/portraits-v05/sources/user-v12/xiaogui.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "cd2c4d78bdb7515a3f6730c60b71fdbedd571eba01e78b609a77545454ba87e0",
+          "source_box": null,
+          "review_note": "按用户海报的大龟形象重绘圆脸、浅橄榄绿皮肤和头顶斑纹；去除老爬虫凶相，去除海报及球队元素。",
+          "source_revision": "user_v12",
+          "before_facing_source": "art/runtime/portraits-v04/sources/xiaogui.png",
+          "before_facing_revision": "v04_retained",
+          "pose_record": "PROMPTS-facing-b.json",
+          "before_user_v12_source": "art/runtime/portraits-v05/sources/facing/xiaogui.png",
+          "prompt_record": "PROMPTS-user-v12.json",
+          "head_seam": [
+            [
+              0,
+              108
+            ],
+            [
+              35,
+              108
+            ],
+            [
+              48,
+              113
+            ],
+            [
+              57,
+              123
+            ],
+            [
+              73,
+              123
+            ],
+            [
+              85,
+              113
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              114,
+              108
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "user_supplied_mascot"
+    },
+    {
+      "key": "naigai",
+      "name": "奶盖",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_naigai",
+          "source": "art/runtime/portraits-v05/sources/facing/naigai.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "b70b73981f0382c3425f046e3b2db0d21d5e0882a93d49864bf5427a1b9b530f",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/naigai.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              110
+            ],
+            [
+              35,
+              110
+            ],
+            [
+              48,
+              115
+            ],
+            [
+              57,
+              123
+            ],
+            [
+              73,
+              123
+            ],
+            [
+              85,
+              115
+            ],
+            [
+              95,
+              110
+            ],
+            [
+              114,
+              110
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaojie",
+      "name": "小杰",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaojie",
+          "source": "art/runtime/portraits-v05/sources/facing/xiaojie.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "addf03faea8908c4f87fb9fc5c87bc82df4ae473e6922cc99ee406bfe01af379",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/xiaojie.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              110
+            ],
+            [
+              35,
+              110
+            ],
+            [
+              48,
+              115
+            ],
+            [
+              57,
+              123
+            ],
+            [
+              73,
+              123
+            ],
+            [
+              85,
+              115
+            ],
+            [
+              95,
+              110
+            ],
+            [
+              114,
+              110
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "bula",
+      "name": "bula",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_bula",
+          "source": "art/runtime/portraits-v05/sources/facing/bula.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "094a9e64edb9e859008b26ff1ee6433bbba8ce3dfe623277c624ce161b036b75",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/bula.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              109
+            ],
+            [
+              35,
+              109
+            ],
+            [
+              48,
+              114
+            ],
+            [
+              57,
+              122
+            ],
+            [
+              73,
+              122
+            ],
+            [
+              85,
+              114
+            ],
+            [
+              95,
+              109
+            ],
+            [
+              114,
+              109
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "suwa",
+      "name": "苏袜",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_suwa",
+          "source": "art/runtime/portraits-v05/sources/facing/suwa.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "6b7101b6da193ab622f49a4bc6c9fc671cc405a75c9a74d2b2a272cf6bc363a8",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/suwa.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              107
+            ],
+            [
+              35,
+              107
+            ],
+            [
+              48,
+              112
+            ],
+            [
+              57,
+              120
+            ],
+            [
+              73,
+              120
+            ],
+            [
+              85,
+              112
+            ],
+            [
+              95,
+              107
+            ],
+            [
+              114,
+              107
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "qianhan",
+      "name": "千涵",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_qianhan",
+          "source": "art/runtime/portraits-v05/sources/facing/qianhan.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "fd9895036dd644e16398fb0bca8dbafb11d8bd2f0e4a730f3019bbb082f948f6",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/qianhan.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              109
+            ],
+            [
+              35,
+              109
+            ],
+            [
+              48,
+              114
+            ],
+            [
+              57,
+              121
+            ],
+            [
+              73,
+              121
+            ],
+            [
+              85,
+              114
+            ],
+            [
+              95,
+              109
+            ],
+            [
+              114,
+              109
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_wangdazhi",
+          "source": "art/runtime/portraits-v05/sources/facing/wangdazhi.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "7f4dcbf9e5e9fbf3dffd30f5f97ee6eaef74f5cebfa48f012d4ab1e6f6cc0e50",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/wangdazhi.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              107
+            ],
+            [
+              35,
+              107
+            ],
+            [
+              48,
+              112
+            ],
+            [
+              57,
+              121
+            ],
+            [
+              73,
+              121
+            ],
+            [
+              85,
+              112
+            ],
+            [
+              95,
+              107
+            ],
+            [
+              114,
+              107
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yaoyaoya",
+          "source": "art/runtime/portraits-v05/sources/user-v12/yaoyaoya.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "829a7913d4ff89a0a44a49c5d0943b7601ef4cdd4e956c6f2da72420919ae1fe",
+          "source_box": null,
+          "review_note": "按用户提供形象重绘黑长发、女性面部和健壮肩颈；短胸像保留力量感，移除旧红色马尾及武器。",
+          "source_revision": "user_v12",
+          "before_facing_source": "art/runtime/portraits-v04/sources/yaoyaoya.png",
+          "before_facing_revision": "v04_retained",
+          "pose_record": "PROMPTS-facing-b.json",
+          "before_user_v12_source": "art/runtime/portraits-v05/sources/facing/yaoyaoya.png",
+          "prompt_record": "PROMPTS-user-v12.json",
+          "head_seam": [
+            [
+              0,
+              107
+            ],
+            [
+              35,
+              107
+            ],
+            [
+              48,
+              112
+            ],
+            [
+              57,
+              118
+            ],
+            [
+              73,
+              118
+            ],
+            [
+              85,
+              112
+            ],
+            [
+              95,
+              107
+            ],
+            [
+              114,
+              107
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "user_supplied_reference"
+    },
+    {
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yangmiemie",
+          "source": "art/runtime/portraits-v05/sources/facing/yangmiemie.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "5795621990e9b6f127bbf72b4a5f42e89206a78c28259e4b851b6e2642886f96",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/yangmiemie.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              108
+            ],
+            [
+              35,
+              108
+            ],
+            [
+              48,
+              113
+            ],
+            [
+              57,
+              121
+            ],
+            [
+              73,
+              121
+            ],
+            [
+              85,
+              113
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              114,
+              108
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "chenzhihan",
+      "name": "陈知含",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_chenzhihan",
+          "source": "art/runtime/portraits-v05/sources/facing/chenzhihan.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "432c21fa1195928a5467b0ba2a731dd236ae4787bc8ad99dfef489e5b6810ae5",
+          "source_box": null,
+          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
+          "source_revision": "v05_facing",
+          "before_facing_source": "art/runtime/portraits-v05/sources/chenzhihan.png",
+          "before_facing_revision": "v05",
+          "pose_record": "PROMPTS-facing-b.json",
+          "head_seam": [
+            [
+              0,
+              109
+            ],
+            [
+              35,
+              109
+            ],
+            [
+              48,
+              114
+            ],
+            [
+              57,
+              122
+            ],
+            [
+              73,
+              122
+            ],
+            [
+              85,
+              114
+            ],
+            [
+              95,
+              109
+            ],
+            [
+              114,
+              109
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+        }
+      ],
+      "likeness_status": "public_photo_based"
+    }
+  ],
+  "source_revision": "v05",
+  "new_photo_people": 29,
+  "new_portrait_forms": 30,
+  "pending_photo_people": 4,
+  "compatibility_note": "Original afeix_p04 brush IDs and atlas filename are retained for save compatibility; selected art source revision is v05.",
+  "facing": {
+    "source_direction": "screen_right",
+    "runtime_flip": "not allied with player",
+    "selected_forms": 36,
+    "complete": true
+  },
+  "appearance_policy": {
+    "fit": [
+      88,
+      100
+    ],
+    "equipment": "native_overlays",
+    "toad": "normal_human",
+    "feidie_decoration": false,
+    "head_partition": "per_portrait_neck_contour"
+  }
+}

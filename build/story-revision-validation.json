@@ -1,0 +1,14 @@
+{
+  "active_characters": 34,
+  "removed_active_keys": [
+    "yanzi"
+  ],
+  "retained_numeric_gameplay_unchanged": true,
+  "equipment_talents_attributes_unchanged": true,
+  "chapter_thresholds_unchanged": true,
+  "encounter_prices_discounts_unchanged": true,
+  "roster_capacity": 40,
+  "combat_capacity": 10,
+  "stories_synced": true,
+  "in_game_tested": false
+}

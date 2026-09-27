@@ -1,0 +1,42 @@
+[
+  {
+    "key": "mocha",
+    "url": "https://sta-op.douyucdn.cn/douyu-vrp-admin/2023/12/11/be63d37c6a978d7bc954baa13a0d9caf.jpg",
+    "file": "art/references/2026-09-26-likeness/mocha/official-poster.jpg",
+    "size": [
+      750,
+      4222
+    ],
+    "sha256": "0a0563b8a9edde422fddcef0c49eda19b68ddde780d75e16ad5332d20574bbd6"
+  },
+  {
+    "key": "mocha",
+    "url": "https://5b0988e595225.cdn.sohucs.com/images/20180919/4357530b42fc47c8b04e61d77f73554e.png",
+    "file": "art/references/2026-09-26-likeness/mocha/2018-sohu-interview.png",
+    "size": [
+      427,
+      657
+    ],
+    "sha256": "262ec6ac4ab4fde5ecf62b115cc5ff8f13ec0167cd26a6cf70985a61af17df1e"
+  },
+  {
+    "key": "mocha",
+    "url": "https://5b0988e595225.cdn.sohucs.com/images/20180919/db18ac2f34e9492684840d8997305ed6.png",
+    "file": "art/references/2026-09-26-likeness/mocha/2018-sohu-solo.png",
+    "size": [
+      220,
+      220
+    ],
+    "sha256": "3129d65d7df9cc7490b85bfd57bed791739adc50bf06f6b9e98ccc167d256769"
+  },
+  {
+    "key": "tiantong",
+    "url": "https://c-yuba.douyucdn.cn/yubavod/b/JPw9YkOqrPw5/abd9c703ea3252dd5429e6f556aaeae2.png/rs500",
+    "file": "art/references/2026-09-26-likeness/tiantong/self-post-20250505.png",
+    "size": [
+      500,
+      635
+    ],
+    "sha256": "81211d13d5b08713d6789e751cec1cece45cd2fa7dac04640f1fc0d6d8c9e4bf"
+  }
+]

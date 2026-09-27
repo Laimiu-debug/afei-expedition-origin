@@ -1,0 +1,109 @@
+{
+  "scope": "Four root-owned photo references; technical crops only, originals retained",
+  "records": [
+    {
+      "key": "afei",
+      "name": "阿飞",
+      "file": "public-portrait.jpg",
+      "crop": [
+        325,
+        0,
+        592,
+        300
+      ],
+      "page": "https://www.cscsh.com/wh/14586.html",
+      "image_url": "https://www.cscsh.com/uploads/allimg/210909/123TMZ4-0.jpg",
+      "evidence": "Captioned streamer profile explicitly gives Afei and Douyu room 84452. Official room and verified Weibo identify the same public stage name. This dated portrait is appearance reference, not a claim of current hair.",
+      "features": [
+        "短黑发向上后梳，露出额头",
+        "较长的椭圆脸和收窄下颌",
+        "平直眉、窄而清楚的眼型",
+        "较长直鼻与较薄嘴唇，嘴角轻微不对称"
+      ],
+      "limitations": "Dated public photo; contemporary live thumbnail contains gameplay only and is rejected as a face reference.",
+      "source_file": "art/references/2026-09-26-likeness/afei/public-portrait.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/afei/face-reference.png",
+      "sha256": "d7fc195d8152140491c70810473eab29eafc79fe6e3812c69c786f0513714398",
+      "status": "caption_verified_photo_selected",
+      "observed_on": "2026-09-26"
+    },
+    {
+      "key": "bottle",
+      "name": "小酒瓶",
+      "file": "broadcast-0.jpg",
+      "crop": [
+        1052,
+        400,
+        1280,
+        715
+      ],
+      "page": "https://www.douyu.com/12029558",
+      "image_url": "https://rpic.douyucdn.cn/asrpic/260905/12029558_src_0130.avif/dy4",
+      "evidence": "Official room title 小酒瓶oo, short room 77999; inset at bottom right is the broadcaster webcam, with repeated same feed in OBS. Public Yuba profile explicitly says 224团播成员.",
+      "features": [
+        "深棕长发半扎起，前额两侧留碎发",
+        "窄长椭圆脸，下巴柔和收窄",
+        "细长弧眉与杏眼",
+        "小鼻、薄而柔和的嘴形"
+      ],
+      "limitations": "Webcam is only about 228px wide and filtered; headset omitted from medieval illustration. Older 120px glamour avatar is secondary only.",
+      "source_file": "art/references/2026-09-26-likeness/bottle/broadcast-0.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/bottle/face-reference.png",
+      "sha256": "0787c033720c43b049db3965cadb552d14e5efd43579a558da65d1c490e3daed",
+      "status": "caption_verified_photo_selected",
+      "observed_on": "2026-09-26"
+    },
+    {
+      "key": "lili",
+      "name": "李李超欧",
+      "file": "broadcast-0.jpg",
+      "crop": [
+        0,
+        0,
+        624,
+        670
+      ],
+      "page": "https://www.douyu.com/12485490",
+      "image_url": "https://rpic.douyucdn.cn/asrpic/260926/12485490_src_1832.avif/dy4",
+      "evidence": "Official 李李超欧 room; split live screenshot explicitly labels left pane 李李超欧 and right pane 奶盖Effy. Use LEFT only.",
+      "features": [
+        "黑色短发到下巴，侧分",
+        "较饱满的圆脸、短圆下巴",
+        "平缓眉形、带笑的细长眼型",
+        "圆鼻头，嘴唇较丰润"
+      ],
+      "limitations": "Close camera perspective and colored venue light can exaggerate nose/skin color; translate proportions conservatively. Old anime avatar is rejected.",
+      "source_file": "art/references/2026-09-26-likeness/lili/broadcast-0.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/lili/face-reference.png",
+      "sha256": "783f108b2d0d6a3d00e70b5c7146373dda6bec482d11fc58532aa7ac2d10cb74",
+      "status": "caption_verified_photo_selected",
+      "observed_on": "2026-09-26"
+    },
+    {
+      "key": "yuchujiu",
+      "name": "余初九",
+      "file": "broadcast-0.jpg",
+      "crop": [
+        350,
+        48,
+        915,
+        710
+      ],
+      "page": "https://www.douyu.com/8955262",
+      "image_url": "https://rpic.douyucdn.cn/asrpic/260925/8955262_src_0249.avif/dy4",
+      "evidence": "Official room title 余初九 and room watermark 9997; one centered broadcaster face. Douyu official music event article explicitly maps 余初九 to room 8955262.",
+      "features": [
+        "栗棕长发与轻薄齐刘海",
+        "小巧椭圆脸，下巴较短",
+        "圆杏眼与柔和低眉",
+        "小鼻、微开的小嘴"
+      ],
+      "limitations": "Beauty-filtered live camera; retain outline/hair and characteristic expression without copying enlarged glossy eyes. Old pink anime avatar rejected.",
+      "source_file": "art/references/2026-09-26-likeness/yuchujiu/broadcast-0.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/yuchujiu/face-reference.png",
+      "sha256": "ae835e96700fb605f6827550dad29a1374c62060c579b5f79ea4d11c8cbd65eb",
+      "status": "caption_verified_photo_selected",
+      "observed_on": "2026-09-26"
+    }
+  ]
+}

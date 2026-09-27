@@ -1,0 +1,35 @@
+{
+  "method": "Squirrel loadfile compilation and native dependency path checks",
+  "scripts": [
+    {
+      "file": "package/scripts/!mods_preload/mod_afei_art_v1.nut",
+      "sha256": "d626547ebbffef2f057f157dbb41de644cc7c81de8716e41a7efb68a4353e0ad"
+    },
+    {
+      "file": "package/scripts/mods/afei_art_v1/appearance.nut",
+      "sha256": "2390391cdd2876bfad0c293d987201d00dc1b3083058b147573fa1f5b4571132"
+    },
+    {
+      "file": "package/scripts/mods/afei_art_v1/hooks.nut",
+      "sha256": "09032d7bb765a6c1ca30dfc55f6d7b7737c383f7f13ab517dc630e4f9f3a11ea"
+    },
+    {
+      "file": "package/scripts/scenarios/world/afeix_art_preview_scenario.nut",
+      "sha256": "5f61a536c1242561953dec396faa701702b87b38ddb50120ce9567d4866bcbbf"
+    }
+  ],
+  "syntax_passed": true,
+  "log": "OK mod_afei_art_v1.nut\r\nOK appearance.nut\r\nOK hooks.nut\r\nOK afeix_art_preview_scenario.nut\r\nFAILURES=0\r\n",
+  "native_paths_verified": [
+    "scripts/skills/backgrounds/companion_1h_background.cnut",
+    "scripts/items/weapons/arming_sword.cnut",
+    "scripts/items/shields/wooden_shield.cnut",
+    "scripts/items/armor/linen_tunic.cnut",
+    "scripts/items/armor/padded_surcoat.cnut",
+    "scripts/items/armor/mail_shirt.cnut",
+    "scripts/items/helmets/nasal_helmet.cnut",
+    "scripts/items/helmets/full_helm.cnut",
+    "scripts/items/supplies/ground_grains_item.cnut"
+  ],
+  "in_game_tested": false
+}

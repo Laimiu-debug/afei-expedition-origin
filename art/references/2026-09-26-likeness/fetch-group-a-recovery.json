@@ -1,0 +1,138 @@
+[
+  {
+    "key": "damou",
+    "source_page": "https://www.douyu.com/9990298",
+    "title": [
+      "CSTG郎团S1_王大谋QoQ直播_王大谋QoQ直播_王大谋QoQ主机其他游戏直播_王大谋QoQ斗鱼直播"
+    ],
+    "images": [
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202304/1759e990ef7e4b7296cccb5daee9a56b_big.jpg",
+        "file": "art/references/2026-09-26-likeness/damou/avatar.jpg"
+      },
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260926/9990298_src_1842.avif/dy4",
+        "file": "art/references/2026-09-26-likeness/damou/broadcast.jpg"
+      }
+    ]
+  },
+  {
+    "key": "mocha",
+    "source_page": "https://www.douyu.com/80432",
+    "title": [
+      "CSTG郎团S1_午夜抹抹茶直播_午夜抹抹茶直播_午夜抹抹茶主机其他游戏直播_午夜抹抹茶斗鱼直播"
+    ],
+    "images": [
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar/face/201603/907e80665f7e2b6a223655912e583c26_big.jpg",
+        "file": "art/references/2026-09-26-likeness/mocha/avatar.jpg"
+      },
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260924/80432_src_1839.avif/dy4",
+        "file": "art/references/2026-09-26-likeness/mocha/broadcast.jpg"
+      }
+    ]
+  },
+  {
+    "key": "shuaizi",
+    "source_page": "https://www.douyu.com/6749231",
+    "title": [
+      "CSTG郎团S1_白小帅子直播_白小帅子直播_白小帅子星秀直播_白小帅子斗鱼直播"
+    ],
+    "images": [
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202301/bff131d2fbcd4cb88609973a2de7279b_big.jpg",
+        "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      },
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260925/6749231_src_2054.avif/dy4",
+        "file": "art/references/2026-09-26-likeness/shuaizi/broadcast.jpg"
+      }
+    ]
+  },
+  {
+    "key": "xiaoyueya",
+    "source_page": "https://www.douyu.com/22909",
+    "title": [
+      "小月牙121直播_小月牙121直播_小月牙121户外直播_小月牙121斗鱼直播"
+    ],
+    "images": [
+      {
+        "url": "https://apic.douyucdn.cn/upload/avanew/face/201704/17/19/0cbc12b54f1b9dd28eea8f64f487c90e_big.jpg",
+        "file": "art/references/2026-09-26-likeness/xiaoyueya/broadcast.jpg"
+      },
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/180903/22909_1252.jpg",
+        "file": "art/references/2026-09-26-likeness/xiaoyueya/broadcast.jpg"
+      }
+    ]
+  },
+  {
+    "key": "xiaoyubeike",
+    "source_page": "https://www.douyu.com/12467917",
+    "title": [
+      "CSTG郎团S1_小鱼贝壳直播_小鱼贝壳直播_小鱼贝壳户外直播_小鱼贝壳斗鱼直播"
+    ],
+    "images": [
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202509/a09887afaf3c4819b6eca76ac3cd15e0_big.jpg",
+        "file": "art/references/2026-09-26-likeness/xiaoyubeike/avatar.jpg"
+      },
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260925/12467917_src_1617.avif/dy4",
+        "file": "art/references/2026-09-26-likeness/xiaoyubeike/broadcast.jpg"
+      }
+    ]
+  },
+  {
+    "key": "tiantong",
+    "source_page": "https://www.douyu.com/12195609",
+    "title": [
+      "女神大赛_亿口甜筒直播_亿口甜筒直播_亿口甜筒户外直播_亿口甜筒斗鱼直播"
+    ],
+    "images": [
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202601/97d28343b9b742cb82ddaea5b3a22c4c_big.jpg",
+        "file": "art/references/2026-09-26-likeness/tiantong/avatar.jpg"
+      },
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260926/12195609_src_1832.avif/dy4",
+        "file": "art/references/2026-09-26-likeness/tiantong/broadcast.jpg"
+      }
+    ]
+  },
+  {
+    "key": "keke",
+    "source_page": "https://www.douyu.com/55588",
+    "title": [
+      "CSTG郎团S1_可可or直播_可可or直播_可可or户外直播_可可or斗鱼直播"
+    ],
+    "images": [
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202601/e49d64d96e0b46b0bbbc661fd8e5a99f_big.jpg",
+        "file": "art/references/2026-09-26-likeness/keke/avatar.jpg"
+      },
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260924/12767534_src_2146.avif/dy4",
+        "file": "art/references/2026-09-26-likeness/keke/broadcast.jpg"
+      }
+    ]
+  },
+  {
+    "key": "tongzhu",
+    "source_page": "https://www.douyu.com/945159",
+    "title": [
+      "斗鱼彩虹六号资格码专题活动_童猪啊i直播_童猪啊i直播_童猪啊i主机其他游戏直播_童猪啊i斗鱼直播"
+    ],
+    "images": [
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202308/2306c32f781f4a99a9a1cd084ea279fb_big.jpg",
+        "file": "art/references/2026-09-26-likeness/tongzhu/avatar.jpg"
+      },
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260925/945159_src_0113.avif/dy4",
+        "file": "art/references/2026-09-26-likeness/tongzhu/broadcast.jpg"
+      }
+    ]
+  }
+]

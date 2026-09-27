@@ -1,0 +1,31 @@
+{
+  "id": "afei-normal-roguish-v01",
+  "created_at": "2026-09-26",
+  "tool": "built-in image_gen",
+  "asset_type": "concept_master",
+  "source_file": "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-1a12ac1e-e118-49a3-8ab8-fadf3c3ada74.png",
+  "workspace_file": "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v01.png",
+  "reference_images": [
+    "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/character-masters/batch-01/C01.png",
+    "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+    "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/bust_head_01.png",
+    "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/bust_body_01.png"
+  ],
+  "prompt": "Use case: style-transfer.\nAsset: ONE revised human starting-form tactical bust for the Afei Battle Brothers mod.\n\nINPUTS:\nImage 1 is the OLD Afei human character concept to redesign. Keep the recognizable short black hair, strong slanted eyebrows, alert narrow eyes and roguishly handsome adult male identity. This is NOT the target rendering style.\nImage 2 is the official Battle Brothers bust sheet and is the PRIMARY style, proportions, camera and simplification reference.\nImages 3 and 4 are native Battle Brothers head and cloth-body sprites. Match their simple facial marks, compact pawn construction and economical material shading.\n\nEDIT:\nRebuild image 1 as a small native Battle Brothers tactical character bust, not a tall character portrait. Remove the frog on his shoulder, rear flag and flagpole, frog badges and ornate gear. Replace the costume with a plain worn grey-beige gambeson, a short charcoal cloth shoulder mantle, one plain brown leather fastening. He is a weak beginning mercenary with potential, not already a richly armored commander.\nKeep a human face. Short black hair in just a few chunky painted locks, sides shorter. Adult East Asian-inspired facial shapes, slightly broad face, strong simple brows, low upper eyelids, observant eyes. A restrained crooked CLOSED-mouth half-smile and subtly raised brow give roguish confidence. His expression should feel alert and capable of becoming serious; no broad toothy grin, no vacant clown expression. Handsomeness must come from clear shape and expression rather than realism.\nTurn the bust slightly toward viewer's RIGHT, with the slightly elevated three-quarter view of image 2. Large head above very short compact shoulders and chest. Full hair, both shoulders and bottom chest edge must be visible. No arms, hands, legs, weapons, shield or accessories beyond the simple fastening.\n\nSTYLE PRIORITY:\nMatch the actual GAME SPRITES in images 2-4: dark brown contours, mildly exaggerated adult facial features, a handful of deliberate painted shadow shapes, restrained highlights, muted warm skin, matte cloth and leather. Deliberately limit detail to what survives on a roughly 114 by 142 pixel game bust. Display enlarged for inspection, but do not add extra detail because of the large output canvas.\nDo not retain image 1's polished fantasy portrait finish. No photographic skin, pores, realistic strand-by-strand hair, dense painterly texture, cinematic lighting, smooth airbrushed face, 3D gloss, anime face or eyes, enormous shoulder armor, long torso, watercolor edges, white cutout halo or text.\n\nCOMPOSITION:\nOne intact isolated bust only, centered with clear margin around the full silhouette, TRUE TRANSPARENT ALPHA background. No scene, floor, pedestal, shadow on the ground, sheet of variants, labels, decorative frame or checkerboard drawing.\nOnly the calm roguish expression in this image. This is a design candidate, with game equipment layers to be prepared separately.",
+  "image_size": [
+    1127,
+    1395
+  ],
+  "image_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "sha256": "26149d2f47b7741fbf2af3ab71d8e9643c0b1866b9206876c77576ccf6705361",
+  "status": "intermediate_rendering_too_detailed",
+  "visual_review": "保留了短黑发、眉眼与闭嘴微笑，胸像构图和朴素衣装成立；皮肤、头发和布料纹理仍偏细，已做 v02 简化修正。透明内容包围盒触及画布下缘，此版保留为过程记录。",
+  "user_feedback": null,
+  "in_game_tested": false,
+  "equipment_compatibility": "unverified",
+  "production_ready": false
+}

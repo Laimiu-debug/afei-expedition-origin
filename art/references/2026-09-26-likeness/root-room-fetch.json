@@ -1,0 +1,43 @@
+[
+  {
+    "key": "afei",
+    "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+  },
+  {
+    "key": "bottle",
+    "url": "https://www.douyu.com/12029558",
+    "status": 200,
+    "title": [
+      "小酒瓶oo直播_小酒瓶oo直播_小酒瓶oo主机其他游戏直播_小酒瓶oo斗鱼直播"
+    ],
+    "candidates": [
+      "https://apic.douyucdn.cn//common/douyu/images/dbg3.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202502/74947de1127845029d9d0a2d733b0afd_big.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202502/74947de1127845029d9d0a2d733b0afd_middle.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202502/74947de1127845029d9d0a2d733b0afd_small.jpg",
+      "https://rpic.douyucdn.cn/asrpic/260905/12029558_src_0130.avif/dy1",
+      "https://rpic.douyucdn.cn/asrpic/260905/12029558_src_0130.avif/dy4"
+    ]
+  },
+  {
+    "key": "lili",
+    "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+  },
+  {
+    "key": "yuchujiu",
+    "url": "https://www.douyu.com/8955262",
+    "status": 200,
+    "title": [
+      "CSTG郎团S1_余初九直播_余初九直播_余初九户外直播_余初九斗鱼直播"
+    ],
+    "candidates": [
+      "https://apic.douyucdn.cn/",
+      "https://apic.douyucdn.cn//common/douyu/images/dbg2.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202508/df47e334d76441de8fa2268c4e3ae6d1_big.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202508/df47e334d76441de8fa2268c4e3ae6d1_middle.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202508/df47e334d76441de8fa2268c4e3ae6d1_small.jpg",
+      "https://rpic.douyucdn.cn/asrpic/260925/8955262_src_0249.avif/dy4",
+      "https://rpic.douyucdn.cn/live-cover/coverupdate/2026/09/25/dff4be8a596c7e006aee0d2f4b2cb529.png/dy1"
+    ]
+  }
+]

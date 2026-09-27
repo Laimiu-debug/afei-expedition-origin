@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "atlas_name": "afeix_gameplay_v03",
+  "layers": [
+    {
+      "id": "afeix_g03_normal_body",
+      "source": "art/runtime/afei/v1/sprites/afeix_v1_normal_body.png",
+      "source_sha256": "c6d0a4dc8c6626beadcc0f61254bf3de20f8bcbc257e64f4e590d511a2d24d33",
+      "output": "art/runtime/gameplay-v03/sprites/afeix_g03_normal_body.png",
+      "sha256": "c6d0a4dc8c6626beadcc0f61254bf3de20f8bcbc257e64f4e590d511a2d24d33",
+      "pixels_unchanged": true,
+      "metadata": {
+        "id": "afeix_g03_normal_body",
+        "img": "sprites\\afeix_g03_normal_body.png",
+        "left": "-39",
+        "right": "43",
+        "top": "-61",
+        "bottom": "13",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      }
+    },
+    {
+      "id": "afeix_g03_normal_body_dead",
+      "source": "art/runtime/afei/v1/sprites/afeix_v1_normal_body_dead.png",
+      "source_sha256": "9ebb6f135fdd9b1417bf27dd83615ae5564ed5b9c0650709778ce321b0aae62f",
+      "output": "art/runtime/gameplay-v03/sprites/afeix_g03_normal_body_dead.png",
+      "sha256": "9ebb6f135fdd9b1417bf27dd83615ae5564ed5b9c0650709778ce321b0aae62f",
+      "pixels_unchanged": true,
+      "metadata": {
+        "id": "afeix_g03_normal_body_dead",
+        "img": "sprites\\afeix_g03_normal_body_dead.png",
+        "left": "-55",
+        "right": "51",
+        "top": "-50",
+        "bottom": "38",
+        "width": "131",
+        "height": "125",
+        "offsetX": "6",
+        "offsetY": "10",
+        "f": "64FE"
+      }
+    },
+    {
+      "id": "afeix_g03_normal_body_injured",
+      "source": "art/runtime/afei/v1/sprites/afeix_v1_normal_body_injured.png",
+      "source_sha256": "4c8f66df5f2c3a1534df3c05092579739df39e6936221d7457ce902b69bf5e5e",
+      "output": "art/runtime/gameplay-v03/sprites/afeix_g03_normal_body_injured.png",
+      "sha256": "4c8f66df5f2c3a1534df3c05092579739df39e6936221d7457ce902b69bf5e5e",
+      "pixels_unchanged": true,
+      "metadata": {
+        "id": "afeix_g03_normal_body_injured",
+        "img": "sprites\\afeix_g03_normal_body_injured.png",
+        "left": "-37",
+        "right": "37",
+        "top": "-48",
+        "bottom": "-8",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      }
+    },
+    {
+      "id": "afeix_g03_jiahao_body",
+      "source": "art/runtime/afei/v1/sprites/afeix_v1_jiahao_body.png",
+      "source_sha256": "279d1613c3b3efaa403789eb17dc1ad9305ab0edbdb27d7a9c6dcc1e67fc01db",
+      "output": "art/runtime/gameplay-v03/sprites/afeix_g03_jiahao_body.png",
+      "sha256": "279d1613c3b3efaa403789eb17dc1ad9305ab0edbdb27d7a9c6dcc1e67fc01db",
+      "pixels_unchanged": true,
+      "metadata": {
+        "id": "afeix_g03_jiahao_body",
+        "img": "sprites\\afeix_g03_jiahao_body.png",
+        "left": "-39",
+        "right": "43",
+        "top": "-61",
+        "bottom": "13",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      }
+    },
+    {
+      "id": "afeix_g03_jiahao_body_dead",
+      "source": "art/runtime/afei/v1/sprites/afeix_v1_jiahao_body_dead.png",
+      "source_sha256": "71cb03dff68d5951b218f181fa59a2ebeb028f80446d69d670be7ce8980dd3df",
+      "output": "art/runtime/gameplay-v03/sprites/afeix_g03_jiahao_body_dead.png",
+      "sha256": "71cb03dff68d5951b218f181fa59a2ebeb028f80446d69d670be7ce8980dd3df",
+      "pixels_unchanged": true,
+      "metadata": {
+        "id": "afeix_g03_jiahao_body_dead",
+        "img": "sprites\\afeix_g03_jiahao_body_dead.png",
+        "left": "-55",
+        "right": "51",
+        "top": "-50",
+        "bottom": "38",
+        "width": "131",
+        "height": "125",
+        "offsetX": "6",
+        "offsetY": "10",
+        "f": "64FE"
+      }
+    },
+    {
+      "id": "afeix_g03_jiahao_body_injured",
+      "source": "art/runtime/afei/v1/sprites/afeix_v1_jiahao_body_injured.png",
+      "source_sha256": "4c8f66df5f2c3a1534df3c05092579739df39e6936221d7457ce902b69bf5e5e",
+      "output": "art/runtime/gameplay-v03/sprites/afeix_g03_jiahao_body_injured.png",
+      "sha256": "4c8f66df5f2c3a1534df3c05092579739df39e6936221d7457ce902b69bf5e5e",
+      "pixels_unchanged": true,
+      "metadata": {
+        "id": "afeix_g03_jiahao_body_injured",
+        "img": "sprites\\afeix_g03_jiahao_body_injured.png",
+        "left": "-37",
+        "right": "37",
+        "top": "-48",
+        "bottom": "-8",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      }
+    }
+  ],
+  "icons": [
+    {
+      "key": "wawa",
+      "source": "art/runtime/gameplay-v03/sources/wawa.png",
+      "source_sha256": "32b4049a95440bdcad17b05ca1265dd52d85b3db41042172019db9c091043111",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "alpha_crop_box": [
+        57,
+        51,
+        1183,
+        1168
+      ],
+      "uniform_scale": 0.046181172291296625,
+      "resized_size": [
+        52,
+        52
+      ],
+      "placement": [
+        2,
+        2
+      ],
+      "output_size": [
+        56,
+        56
+      ],
+      "output": "src/gfx/skills/afeix_wawa.png",
+      "sha256": "5e919d907623784d3cbf5225b011d4bc932c2fa1e4c49c18772476b291639f4f",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "disabled_icon": "same image; no synthetic grayscale variant"
+    },
+    {
+      "key": "haoqi",
+      "source": "art/runtime/gameplay-v03/sources/haoqi.png",
+      "source_sha256": "7835032916996a942beef9fec6abaa7fb9f8133c5571283dfa55b85490c2abe1",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "alpha_crop_box": [
+        21,
+        21,
+        1230,
+        1230
+      ],
+      "uniform_scale": 0.043010752688172046,
+      "resized_size": [
+        52,
+        52
+      ],
+      "placement": [
+        2,
+        2
+      ],
+      "output_size": [
+        56,
+        56
+      ],
+      "output": "src/gfx/skills/afeix_haoqi.png",
+      "sha256": "6fb564cf492de29a30147913920084765f86d742e1ec9ad1d973ffacc7a9c80e",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "disabled_icon": "same image; no synthetic grayscale variant"
+    },
+    {
+      "key": "quanqian",
+      "source": "art/runtime/gameplay-v03/sources/quanqian.png",
+      "source_sha256": "eaa8de2990dec73bce66648a4d241d0cb07da047e55f7ea5fbe90e77bfeb2921",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "alpha_crop_box": [
+        33,
+        21,
+        1192,
+        1214
+      ],
+      "uniform_scale": 0.04358759430008382,
+      "resized_size": [
+        51,
+        52
+      ],
+      "placement": [
+        2,
+        2
+      ],
+      "output_size": [
+        56,
+        56
+      ],
+      "output": "src/gfx/skills/afeix_quanqian.png",
+      "sha256": "0b61da1f0e8a342e5774e2260eab526be6f80b9057abbf96c0d03902768e3bf7",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "disabled_icon": "same image; no synthetic grayscale variant"
+    },
+    {
+      "key": "feidie",
+      "source": "art/runtime/gameplay-v03/sources/feidie.png",
+      "source_sha256": "42f1ba1ecfb898610d97fd1f1557facb26f1f1f021e33a1c9fa663718c353fe0",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "alpha_crop_box": [
+        111,
+        53,
+        1192,
+        1172
+      ],
+      "uniform_scale": 0.04647006255585344,
+      "resized_size": [
+        50,
+        52
+      ],
+      "placement": [
+        3,
+        2
+      ],
+      "output_size": [
+        56,
+        56
+      ],
+      "output": "src/gfx/skills/afeix_feidie.png",
+      "sha256": "d8999121bdf259634a217fa567587d5dc878b9db92a00a4aee6cb713d2bc649a",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "disabled_icon": "same image; no synthetic grayscale variant"
+    }
+  ],
+  "files": [
+    "brushes/afeix_gameplay_v03.brush",
+    "gfx/afeix_gameplay_v03.png",
+    "gfx/skills/afeix_wawa.png",
+    "gfx/skills/afeix_haoqi.png",
+    "gfx/skills/afeix_quanqian.png",
+    "gfx/skills/afeix_feidie.png"
+  ],
+  "missing_icon_masters": [],
+  "roundtrip": {
+    "passed": true,
+    "sprite_count": 6,
+    "sprites": [
+      {
+        "id": "afeix_g03_normal_body",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_g03_normal_body_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_g03_normal_body_injured",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_g03_jiahao_body",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_g03_jiahao_body_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_g03_jiahao_body_injured",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "brush": "package/brushes/afeix_gameplay_v03.brush",
+    "brush_sha256": "92e8c194d56c3fc4214715cac6b44207cc3377df0091dcdb95970f8609e86527",
+    "atlas": "package/gfx/afeix_gameplay_v03.png",
+    "atlas_sha256": "ac0964b49106d99cacf6e79feee4b4ec8e43f8f09e1b9ab385dee3dc67b2eb56",
+    "pack_log": "Loading images...\nsprites\\afeix_g03_normal_body.png\nsprites\\afeix_g03_normal_body_dead.png\nsprites\\afeix_g03_normal_body_injured.png\nsprites\\afeix_g03_jiahao_body.png\nsprites\\afeix_g03_jiahao_body_dead.png\nsprites\\afeix_g03_jiahao_body_injured.png\nPacking rectangles...\nWriting gfx/afeix_gameplay_v03.png (256x256)...\n",
+    "unpack_log": "Opening gfx/afeix_gameplay_v03.png...\nsprites\\afeix_g03_normal_body.png\nsprites\\afeix_g03_normal_body_dead.png\nsprites\\afeix_g03_normal_body_injured.png\nsprites\\afeix_g03_jiahao_body.png\nsprites\\afeix_g03_jiahao_body_dead.png\nsprites\\afeix_g03_jiahao_body_injured.png\n",
+    "roundtrip_directory": "build/roundtrip-2k7zpdw6"
+  },
+  "preview": "art/runtime/gameplay-v03/build/layer-review-1x.png",
+  "in_game_tested": false,
+  "status": "limited_runtime_integration_pending_in_game_visual_acceptance",
+  "used": [
+    "normal and Jiahao body/dead/injury layers",
+    "generated skill icons when present"
+  ],
+  "not_used": [
+    "v1 human live/dead heads",
+    "all v1 toad layers",
+    "retired flying saucer",
+    "v1 test scenario and script hooks"
+  ],
+  "native_fallbacks": [
+    "all head/hair/beard/face injury layers",
+    "toad route appearance",
+    "missing custom body/required death or injury brush"
+  ],
+  "limitations": [
+    "Toad neck seam and human corpse-head/hair mismatch remain unresolved; those layers are excluded.",
+    "Native helmets and armor cover the base clothing normally; no equipment is removed or hidden.",
+    "Native corpse construction tints the custom body using the native head color; in-game appearance is not accepted yet.",
+    "Disc positioning relative to status icons and roster portrait clipping still requires in-game checks.",
+    "Engine sprite serialization is not exposed by the inspected scripts; v0.2 save upgrades and save/load roundtrips remain unverified in game.",
+    "Local preview includes native references for inspection only; no native artwork enters src or the gameplay ZIP."
+  ]
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "key": "wangduidui",
+    "page": "https://www.douyu.com/9652630",
+    "title": "CSTG郎团S1_IU王怼怼直播_IU王怼怼直播_IU王怼怼户外直播_IU王怼怼斗鱼直播",
+    "pictures": [
+      "https://rpic.douyucdn.cn/asrpic/260919/9652630_src_2000.avif/dy4",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202407/2b9c80d0d5684b88befde79feeb2909d_big.jpg",
+      "https://rpic.douyucdn.cn/live-cover/coverupdate/2026/09/25/2db13cdb12a59ac6603e9056291b1fbd.png/dy1",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202407/2b9c80d0d5684b88befde79feeb2909d_middle.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202407/2b9c80d0d5684b88befde79feeb2909d_small.jpg",
+      "https://apic.douyucdn.cn//common/douyu/images/dbg3.jpg",
+      "https://apic.douyucdn.cn/"
+    ],
+    "downloads": [
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260919/9652630_src_2000.avif/dy4",
+        "file": "art\\references\\2026-09-26-likeness\\wangduidui\\douyu-0.jpg"
+      },
+      {
+        "url": "https://rpic.douyucdn.cn/live-cover/coverupdate/2026/09/25/2db13cdb12a59ac6603e9056291b1fbd.png/dy1",
+        "file": "art\\references\\2026-09-26-likeness\\wangduidui\\douyu-2.jpg"
+      },
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202407/2b9c80d0d5684b88befde79feeb2909d_middle.jpg",
+        "file": "art\\references\\2026-09-26-likeness\\wangduidui\\douyu-3.jpg"
+      }
+    ],
+    "errors": [
+      "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "page_url": "https://vmobile.douyu.com/show/2Bj8vG3roaVvObnd",
+  "image_url": "https://sta-op.douyucdn.cn/vod-cover/2025/01/18/7bddc9e78455d626bc80c1d55c2954c1.jpg",
+  "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/laocai/official-vod-20250118.jpg",
+  "sha256": "743ba424ccff7fb58c6a4830dcf9f5feef969db6f7254d4f1ab05356b3737b17",
+  "source_rechecked": "2026-09-26",
+  "title": "【2025-01-18 09点场】叫我老陈就好了：来这里开心就好！！ 74960",
+  "technical_crop": {
+    "path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/laocai/official-vod-20250118-face-crop.png",
+    "box_xyxy": [
+      2224,
+      210,
+      2560,
+      470
+    ],
+    "method": "Pillow crop only; no retouching"
+  }
+}

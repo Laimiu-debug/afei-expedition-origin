@@ -1,0 +1,206 @@
+{
+  "date": "2026-09-26",
+  "mode": "built-in image_gen",
+  "records": [
+    {
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "details": "Depict the adult woman IU王怼怼 in Image 1. Retain her current dark brown chin-to-neck-length side-parted bob with slightly outward ends, soft full cheeks and rounded jaw, gently level brows, narrow natural eyes, and small slightly open lips. Both eyes readable; do not copy the photograph's low upward camera angle, but keep her own features. Ordinary level-headed alert expression. Outfit: muted dusty-purple short cloth drape over simple brown leather shoulders with one small pale flower clasp low on the collar. Hair is the photographed short bob, NOT the old long-haired design. No modern jewelry or bag strap.",
+      "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman IU王怼怼 in Image 1. Retain her current dark brown chin-to-neck-length side-parted bob with slightly outward ends, soft full cheeks and rounded jaw, gently level brows, narrow natural eyes, and small slightly open lips. Both eyes readable; do not copy the photograph's low upward camera angle, but keep her own features. Ordinary level-headed alert expression. Outfit: muted dusty-purple short cloth drape over simple brown leather shoulders with one small pale flower clasp low on the collar. Hair is the photographed short bob, NOT the old long-haired design. No modern jewelry or bag strap.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/wangduidui/reference-crop.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+      ],
+      "status": "generated_and_visually_reviewed",
+      "workspace_file": "art/runtime/portraits-v05/sources/wangduidui.png",
+      "generated_output": "C:/Users/25647/.codex/generated_images/01a0dd45-fffa-72e3-8ad7-af136bf168c3/exec-813aa6d8-62f9-48da-ad7a-e41fc889c549.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/wangduidui.png",
+      "sha256": "85c4bcb8e13c1d32ca868fd739f4cad5ffe8238bcfedf65c75b0577ae6a1dbb8",
+      "dimensions": [
+        1124,
+        1399
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1106,
+        1399
+      ],
+      "solid_alpha_bbox": [
+        36,
+        60,
+        1096,
+        1345
+      ],
+      "transparent_fraction": 0.3808,
+      "reference_sources_document": "art/references/2026-09-26-likeness/research-a-supplement.json",
+      "in_game_tested": false,
+      "visual_review": {
+        "subject_features_translated_from_verified_photo": true,
+        "own_hair_and_complete_bust": true,
+        "compact_rounded_base": true,
+        "transparent_background_verified": true,
+        "no_modern_accessories": true,
+        "coarse_painted_planes": true,
+        "photographic_skin_removed": true,
+        "realistic_likeness_is_subjective": true
+      }
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "details": "Depict the adult woman 大鹅/叫我好姑娘吧 in Image 1. Retain her dark brown long straight hair parted near the center and pinned behind the sides, full soft cheek shape and gently rounded jaw, near-horizontal brows, elongated outer upper eyelid and natural open eyes, full lower lip and quiet slightly asymmetric smile. Keep the tiny beauty mark below the eye visible on the photograph's left only as one small ink dot if readable; do not invent freckles. Outfit: brown leather shoulders with a short muted ivory-grey collar, and a small flat ivory goose-head-shaped shoulder clasp with dull orange tip. No separate goose, no huge fur texture, no sharp angry face.",
+      "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman 大鹅/叫我好姑娘吧 in Image 1. Retain her dark brown long straight hair parted near the center and pinned behind the sides, full soft cheek shape and gently rounded jaw, near-horizontal brows, elongated outer upper eyelid and natural open eyes, full lower lip and quiet slightly asymmetric smile. Keep the tiny beauty mark below the eye visible on the photograph's left only as one small ink dot if readable; do not invent freckles. Outfit: brown leather shoulders with a short muted ivory-grey collar, and a small flat ivory goose-head-shaped shoulder clasp with dull orange tip. No separate goose, no huge fur texture, no sharp angry face.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/dae/reference-crop.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+      ],
+      "status": "generated_and_visually_reviewed",
+      "workspace_file": "art/runtime/portraits-v05/sources/dae.png",
+      "generated_output": "C:/Users/25647/.codex/generated_images/01a0dd45-fffa-72e3-8ad7-af136bf168c3/exec-eb0c60fa-e292-4ea9-a15c-b3e096133d0b.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/dae.png",
+      "sha256": "42202e8173ae8b4e0c900e1080ab2bff3fb6dbf00ae54ac00182cb5756ce0887",
+      "dimensions": [
+        1125,
+        1398
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        19,
+        1119,
+        1374
+      ],
+      "solid_alpha_bbox": [
+        42,
+        55,
+        1095,
+        1349
+      ],
+      "transparent_fraction": 0.3589,
+      "reference_sources_document": "art/references/2026-09-26-likeness/research-a-supplement.json",
+      "in_game_tested": false,
+      "visual_review": {
+        "subject_features_translated_from_verified_photo": true,
+        "own_hair_and_complete_bust": true,
+        "compact_rounded_base": true,
+        "transparent_background_verified": true,
+        "no_modern_accessories": true,
+        "coarse_painted_planes": true,
+        "photographic_skin_removed": true,
+        "realistic_likeness_is_subjective": true
+      }
+    },
+    {
+      "key": "yuxiang",
+      "name": "余想",
+      "details": "Depict the adult woman 余想的room in Image 1. Retain her slightly long oval face and soft narrowing chin, side-parted long dark brown straight hair with one voluminous swept forehead lock, gently arched brows, separated natural almond-shaped eyes, and fuller lips with a restrained asymmetric half-smile. Her face must differ from the sample: do not copy the sample's eyes, nose, jaw, hair or expression. Outfit: muted dusty-plum short mantle with a small dull brass lantern-shaped collar clasp over ordinary brown leather. No large flower or extra head accessory, no modern dress.",
+      "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman 余想的room in Image 1. Retain her slightly long oval face and soft narrowing chin, side-parted long dark brown straight hair with one voluminous swept forehead lock, gently arched brows, separated natural almond-shaped eyes, and fuller lips with a restrained asymmetric half-smile. Her face must differ from the sample: do not copy the sample's eyes, nose, jaw, hair or expression. Outfit: muted dusty-plum short mantle with a small dull brass lantern-shaped collar clasp over ordinary brown leather. No large flower or extra head accessory, no modern dress.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/yuxiang/reference-crop.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+      ],
+      "status": "generated_and_visually_reviewed",
+      "workspace_file": "art/runtime/portraits-v05/sources/yuxiang.png",
+      "generated_output": "C:/Users/25647/.codex/generated_images/01a0dd45-fffa-72e3-8ad7-af136bf168c3/exec-ffdd2b1a-8a23-4c1b-b509-625b1acca03f.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/yuxiang.png",
+      "sha256": "68ff801e74add66d8e982bf81492fd9d13656b1e2d7c1b0dc1f14af9bac5985f",
+      "dimensions": [
+        1124,
+        1399
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        19,
+        1108,
+        1375
+      ],
+      "solid_alpha_bbox": [
+        44,
+        104,
+        1098,
+        1321
+      ],
+      "transparent_fraction": 0.4248,
+      "reference_sources_document": "art/references/2026-09-26-likeness/research-a-supplement.json",
+      "in_game_tested": false,
+      "visual_review": {
+        "subject_features_translated_from_verified_photo": true,
+        "own_hair_and_complete_bust": true,
+        "compact_rounded_base": true,
+        "transparent_background_verified": true,
+        "no_modern_accessories": true,
+        "coarse_painted_planes": true,
+        "photographic_skin_removed": true,
+        "realistic_likeness_is_subjective": true
+      }
+    },
+    {
+      "key": "bula",
+      "name": "bula",
+      "details": "Depict the adult woman bulaQoQ in Image 1, using this partial profile reference faithfully. Retain her dark side-parted shoulder-length straight hair tucked behind one ordinary ear, slightly long eye shape, gently level brows, clear straight nose profile and soft cheek-to-narrow-chin outline, fuller lower lip and calm closed mouth. Keep a mild right-facing three-quarter angle close to the photograph, not a completely invented full frontal face. Outfit: muted grey-beige scarf and brown leather shoulders with one simple dull brass circular clasp. Remove the phone, earbuds and hands. Hair should have shoulder-length broad masses, not the sample's long wavy hairstyle. No quiver or extra props.",
+      "prompt": "Use case: style-transfer / identity-preserve.\nCreate ONE complete transparent tactical bust for a Battle Brothers mod. Image 1 is the named subject photograph and the ONLY source of facial identity, hairstyle and age. Image 2 is the official Battle Brothers bust sheet and is ONLY a reference for drawing technique, compact head/shoulder proportions, view and restrained detail. Do not copy any face from image 2.\nTranslate the specific recognizable person in image 1 into that native game's small hand-painted pawn style, not a generic fantasy hero. Preserve their face width/length, jaw softness, eye shape/spacing, brow shape, nose and mouth character, hairline and hair silhouette. Use ordinary human ears. Do not sharpen everyone's chin, masculinize female faces, add angry V eyebrows, or substitute a doll/anime face.\nA single attached head-neck-shoulders/short-upper-chest bust, slightly turned toward screen RIGHT with both eyes readable, large head, short neck and compact rounded shoulder base; face is the main identifying feature. No hands, arms, legs, weapons or background. The complete custom hair belongs inside this one image. Leave transparent margin around every edge.\nMatch the Battle Brothers sprites' economical slightly caricatured painted form: uneven dark brown contours, simple eye marks and a few broad cheek/nose shadows, muted warm skin, matte earth-colored cloth/leather, a handful of hair masses. Keep the actual person's natural expression. NOT polished fantasy comic art, photorealism, smooth beauty rendering, oil-paint texture, fine skin, glossy anime eyes, extreme sharp cheekbones, or modern clothing. Intended final size 114x142 pixels; draw for that size even if source output is larger. No text, labels, frame, cast shadow, backdrop, checkerboard or glow. Truly transparent background.\n\nSTRICT STYLE PASS: Face is a flat warm base with TWO large painted shadow regions only. Large deliberate brush shapes, dark uneven brown outline, simple eyelid strokes and tiny matte pupils. Nose described by ONE shadow plane, lips by one curved line. Hair in 5-8 broad clumps. Matte plain surfaces, no pores, no rim light, no delicate gradients or tiny individual hair strands. Remove 80 percent of realistic portrait rendering. Preserve the photographed person's own face proportions and relaxed/asymmetric expression, not any example character's face. Short compact torso, large attached head. Portrait must read as an old hand-drawn tactical pawn at 114x142 pixels. If a third image is provided, it demonstrates ONLY shading simplification and compact crop; NEVER copy its eyes, jaw, brows or hairstyle.\n\nSUBJECT-SPECIFIC IDENTITY AND CLOTHING:\nDepict the adult woman bulaQoQ in Image 1, using this partial profile reference faithfully. Retain her dark side-parted shoulder-length straight hair tucked behind one ordinary ear, slightly long eye shape, gently level brows, clear straight nose profile and soft cheek-to-narrow-chin outline, fuller lower lip and calm closed mouth. Keep a mild right-facing three-quarter angle close to the photograph, not a completely invented full frontal face. Outfit: muted grey-beige scarf and brown leather shoulders with one simple dull brass circular clasp. Remove the phone, earbuds and hands. Hair should have shoulder-length broad masses, not the sample's long wavy hairstyle. No quiver or extra props.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/bula/reference-crop.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png"
+      ],
+      "status": "generated_and_visually_reviewed",
+      "workspace_file": "art/runtime/portraits-v05/sources/bula.png",
+      "generated_output": "C:/Users/25647/.codex/generated_images/01a0dd45-fffa-72e3-8ad7-af136bf168c3/exec-dfd27e7d-c4f3-4513-97b9-00f77f069eb5.png",
+      "saved_path": "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bula.png",
+      "sha256": "0c7a07985d3924638558f62edce81729d93778e7e3fde738053e57517c74a0d9",
+      "dimensions": [
+        1124,
+        1399
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        5,
+        1106,
+        1381
+      ],
+      "solid_alpha_bbox": [
+        27,
+        113,
+        1099,
+        1311
+      ],
+      "transparent_fraction": 0.4001,
+      "reference_sources_document": "art/references/2026-09-26-likeness/research-group-b.json",
+      "in_game_tested": false,
+      "visual_review": {
+        "subject_features_translated_from_verified_photo": true,
+        "own_hair_and_complete_bust": true,
+        "compact_rounded_base": true,
+        "transparent_background_verified": true,
+        "no_modern_accessories": true,
+        "coarse_painted_planes": true,
+        "photographic_skin_removed": true,
+        "realistic_likeness_is_subjective": true
+      }
+    }
+  ]
+}

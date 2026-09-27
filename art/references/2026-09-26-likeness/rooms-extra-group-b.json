@@ -1,0 +1,70 @@
+[
+  {
+    "key": "yangmiemie",
+    "page": "https://www.douyu.com/6632",
+    "title": "CSTG郎团S1_羊咩咩ee直播_羊咩咩ee直播_羊咩咩ee热门游戏直播_羊咩咩ee斗鱼直播",
+    "pictures": [
+      "https://rpic.douyucdn.cn/asrpic/260925/4742942_src_2306.avif/dy4",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202509/4648648e20694917a4aa655f7f438d3b_big.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202509/4648648e20694917a4aa655f7f438d3b_middle.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202509/4648648e20694917a4aa655f7f438d3b_small.jpg",
+      "https://apic.douyucdn.cn//common/douyu/images/dbg3.jpg",
+      "https://apic.douyucdn.cn/",
+      "https://rpic.douyucdn.cn/live-cover/coverupdate/2026/09/25/7bc10897f48bf6594722edfa76cdb41c.png/dy1"
+    ],
+    "downloads": [
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260925/4742942_src_2306.avif/dy4",
+        "file": "art\\references\\2026-09-26-likeness\\yangmiemie\\douyu-0.jpg"
+      },
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202509/4648648e20694917a4aa655f7f438d3b_big.jpg",
+        "file": "art\\references\\2026-09-26-likeness\\yangmiemie\\douyu-1.jpg"
+      },
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202509/4648648e20694917a4aa655f7f438d3b_middle.jpg",
+        "file": "art\\references\\2026-09-26-likeness\\yangmiemie\\douyu-2.jpg"
+      }
+    ],
+    "errors": [
+      "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    ]
+  },
+  {
+    "key": "wangdazhi",
+    "page": "https://www.douyu.com/12831589",
+    "title": "CSTG郎团S1_芷芷QwQ直播_芷芷QwQ直播_芷芷QwQ户外直播_芷芷QwQ斗鱼直播",
+    "pictures": [
+      "https://rpic.douyucdn.cn/asrpic/260925/12831589_src_0129.avif/dy4",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202604/7c95b7306a1d405ca0a6c5e06a720584_big.jpg",
+      "https://rpic.douyucdn.cn/live-cover/coverupdate/2026/09/25/5b7426c9e2d9ce6e35f6b4665922e43e.png/dy1",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202604/7c95b7306a1d405ca0a6c5e06a720584_middle.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202604/7c95b7306a1d405ca0a6c5e06a720584_small.jpg",
+      "https://apic.douyucdn.cn//common/douyu/images/dbg3.jpg",
+      "https://apic.douyucdn.cn/"
+    ],
+    "downloads": [
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260925/12831589_src_0129.avif/dy4",
+        "file": "art\\references\\2026-09-26-likeness\\wangdazhi\\douyu-0.jpg"
+      },
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202604/7c95b7306a1d405ca0a6c5e06a720584_big.jpg",
+        "file": "art\\references\\2026-09-26-likeness\\wangdazhi\\douyu-1.jpg"
+      },
+      {
+        "url": "https://rpic.douyucdn.cn/live-cover/coverupdate/2026/09/25/5b7426c9e2d9ce6e35f6b4665922e43e.png/dy1",
+        "file": "art\\references\\2026-09-26-likeness\\wangdazhi\\douyu-2.jpg"
+      },
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202604/7c95b7306a1d405ca0a6c5e06a720584_middle.jpg",
+        "file": "art\\references\\2026-09-26-likeness\\wangdazhi\\douyu-3.jpg"
+      }
+    ]
+  },
+  {
+    "key": "tutu",
+    "page": "https://www.douyu.com/99927",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  }
+]

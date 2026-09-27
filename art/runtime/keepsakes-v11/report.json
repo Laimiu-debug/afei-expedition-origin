@@ -1,0 +1,56 @@
+[
+  {
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/items/accessory/afei_bicycle.png",
+    "output": "src/gfx/items/accessory/afeix_bicycle.png",
+    "size": [
+      70,
+      70
+    ],
+    "sha256": "7252f6aa7f6e4cbdeb6c6c2f1c62cc061f8acbca24dfbc0177445dfb25ff6621"
+  },
+  {
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/items/accessory/afei_bicycle.png",
+    "output": "src/gfx/ui/items/accessory/afeix_bicycle.png",
+    "size": [
+      70,
+      70
+    ],
+    "sha256": "7252f6aa7f6e4cbdeb6c6c2f1c62cc061f8acbca24dfbc0177445dfb25ff6621"
+  },
+  {
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/items/accessory/afei_ecig.png",
+    "output": "src/gfx/items/accessory/afeix_ecig.png",
+    "size": [
+      70,
+      70
+    ],
+    "sha256": "19bf0b61d897c434cf46c144912d45ed71c834fbe7687d0aa3c3330e76cd2e34"
+  },
+  {
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/items/accessory/afei_ecig.png",
+    "output": "src/gfx/ui/items/accessory/afeix_ecig.png",
+    "size": [
+      70,
+      70
+    ],
+    "sha256": "19bf0b61d897c434cf46c144912d45ed71c834fbe7687d0aa3c3330e76cd2e34"
+  },
+  {
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_ecig_puff.png",
+    "output": "src/gfx/skills/afeix_ecig_puff.png",
+    "size": [
+      56,
+      56
+    ],
+    "sha256": "29bdd18b0ee6977cdbb083c7174de09b1965cf51c53be801eb8df1dc2329650b"
+  },
+  {
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_ecig_puff_sw.png",
+    "output": "src/gfx/skills/afeix_ecig_puff_sw.png",
+    "size": [
+      56,
+      56
+    ],
+    "sha256": "293c2da6ac2743839813f3af4f2abf71a493e608a934506657f5ea75ccb773b9"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "log": "C:\\Users\\25647\\OneDrive\\Documents\\Battle Brothers\\log.html",
+  "sha256": "4527245e3033f226fd183bae321957f1a3950653b8035d35d0d9599e6ddda9a6",
+  "error_rows": 0,
+  "script_error_messages": [],
+  "test_markers": [
+    "info\"> 19:57:09 SQ AFEIX_FACING_TEST: development scenario registered; Scenarios -> first entry",
+    "info\"> 19:58:24 SQ AFEIX_FACING_TEST: actor=01 Afei Normal - LEFT / RIGHT brush=afeix_p04_afei_normal equipment=mail_shirt/full_helm/sword/shield disc=false",
+    "info\"> 19:58:24 SQ AFEIX_FACING_TEST: actor=02 Damou - heavy armor hidden brush=afeix_p04_damou equipment=mail_shirt/full_helm/sword/shield disc=false",
+    "info\"> 19:58:24 SQ AFEIX_FACING_TEST: actor=03 Mocha - helmet hidden brush=afeix_p04_mocha equipment=mail_shirt/full_helm/sword/shield disc=false",
+    "info\"> 19:58:24 SQ AFEIX_FACING_TEST: actor=04 Afei Toad brush=afeix_p04_afei_toad equipment=mail_shirt/full_helm/sword/shield disc=false",
+    "info\"> 19:58:24 SQ AFEIX_FACING_TEST: actor=05 Afei Jiahao brush=afeix_p04_afei_jiahao equipment=mail_shirt/full_helm/sword/shield disc=false",
+    "info\"> 19:58:24 SQ AFEIX_FACING_TEST: actor=06 Afei Feidie - UFO brush=afeix_p04_afei_jiahao equipment=mail_shirt/full_helm/sword/shield disc=true",
+    "info\"> 19:58:24 SQ AFEIX_FACING_TEST: actor=07 Bottle brush=afeix_p04_bottle equipment=mail_shirt/full_helm/sword/shield disc=false",
+    "info\"> 19:58:24 SQ AFEIX_FACING_TEST: actor=08 Keke brush=afeix_p04_keke equipment=mail_shirt/full_helm/sword/shield disc=false",
+    "info\"> 19:58:24 SQ AFEIX_FACING_TEST: actor=09 Wangdazhi brush=afeix_p04_wangdazhi equipment=mail_shirt/full_helm/sword/shield disc=false",
+    "info\"> 19:58:24 SQ AFEIX_FACING_TEST: actor=10 Native Reference brush=bust_naked_body_00 equipment=mail_shirt/full_helm/sword/shield disc=false",
+    "info\"> 19:58:24 SQ AFEIX_FACING_TEST: READY; 10 allies / 2 opponents; production art hooks active"
+  ]
+}

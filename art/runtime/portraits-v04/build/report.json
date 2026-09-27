@@ -1,0 +1,2906 @@
+{
+  "schema_version": 1,
+  "atlas_name": "afeix_portraits_v04",
+  "manifest": "art/runtime/portraits-v04/manifest.json",
+  "manifest_sha256": "deee2e2069195f6c6154f48428158c14545409661a8caaec69e7602ba6079206",
+  "named_characters": 34,
+  "required_forms": 36,
+  "exported_forms": 36,
+  "sprite_count": 72,
+  "complete": true,
+  "published_to_src": true,
+  "files": [
+    "brushes/afeix_portraits_v04.brush",
+    "gfx/afeix_portraits_v04.png"
+  ],
+  "missing": [],
+  "portraits": [
+    {
+      "key": "afei",
+      "name": "阿飞",
+      "form": "normal",
+      "brush": "afeix_p04_afei_normal",
+      "source": "art/character-concepts/afei/afei-normal-roguish-v02.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "383f8713d9620f31c76e47c86190073a42bd4f8b19d361ba0f10b9e08d3f5417",
+      "source_size": [
+        1127,
+        1396
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        34,
+        111,
+        1091,
+        1351
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        106,
+        124
+      ],
+      "uniform_scale": 0.1,
+      "placement": [
+        4,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "9bdf8228ef34c9b9103590919f357e75ddc55ed839e396bf6bd80ee210125f6b",
+      "dead_png_sha256": "9bdf8228ef34c9b9103590919f357e75ddc55ed839e396bf6bd80ee210125f6b",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_afei_normal",
+          "img": "sprites\\afeix_p04_afei_normal.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_afei_normal_dead",
+          "img": "sprites\\afeix_p04_afei_normal_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Selected existing custom concept for the complete-bust prototype; game-size group check passed; in-game review pending."
+    },
+    {
+      "key": "afei",
+      "name": "阿飞",
+      "form": "toad",
+      "brush": "afeix_p04_afei_toad",
+      "source": "art/character-concepts/afei/afei-toad-promoted-v01.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "e0566647be9ba21b4e9e33d5de03adc29c6cab949dd644c314ccf1721828fb95",
+      "source_size": [
+        1153,
+        1364
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        22,
+        222,
+        1140,
+        1274
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        102
+      ],
+      "uniform_scale": 0.09660107334525939,
+      "placement": [
+        3,
+        40
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "0d1cc1f7c67af0a405afc059d7d5c5894407cdc08f4d5e460028a4a62ee80ef8",
+      "dead_png_sha256": "0d1cc1f7c67af0a405afc059d7d5c5894407cdc08f4d5e460028a4a62ee80ef8",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_afei_toad",
+          "img": "sprites\\afeix_p04_afei_toad.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_afei_toad_dead",
+          "img": "sprites\\afeix_p04_afei_toad_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Selected existing custom concept for the complete-bust prototype; game-size group check passed; in-game review pending."
+    },
+    {
+      "key": "afei",
+      "name": "阿飞",
+      "form": "jiahao",
+      "brush": "afeix_p04_afei_jiahao",
+      "source": "art/character-concepts/afei/afei-jiahao-promoted-v01.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "884b95ada340f3b9212691a2d84ab51b491b1b5b12df1b125352eb16e143681f",
+      "source_size": [
+        1127,
+        1396
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        31,
+        110,
+        1096,
+        1355
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        106,
+        124
+      ],
+      "uniform_scale": 0.09959839357429719,
+      "placement": [
+        4,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "652699f95cc306f527b86fa7f4df951b80775d743370b88d1d35ca79791f6238",
+      "dead_png_sha256": "652699f95cc306f527b86fa7f4df951b80775d743370b88d1d35ca79791f6238",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_afei_jiahao",
+          "img": "sprites\\afeix_p04_afei_jiahao.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_afei_jiahao_dead",
+          "img": "sprites\\afeix_p04_afei_jiahao_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Selected existing custom concept for the complete-bust prototype; game-size group check passed; in-game review pending."
+    },
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "form": "default",
+      "brush": "afeix_p04_damou",
+      "source": "art/runtime/portraits-v04/sources/damou.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "7560313a351cddde2169cdb9bae1e52976cc3506671386f1fb4ee66f937a5347",
+      "source_size": [
+        1144,
+        1375
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        16,
+        97,
+        1128,
+        1331
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        120
+      ],
+      "uniform_scale": 0.09712230215827339,
+      "placement": [
+        3,
+        22
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "558ff0c4a6af9287837a3698990bb71ec6fefae03d3e1f2d2ea504c5b8fa780e",
+      "dead_png_sha256": "558ff0c4a6af9287837a3698990bb71ec6fefae03d3e1f2d2ea504c5b8fa780e",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_damou",
+          "img": "sprites\\afeix_p04_damou.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_damou_dead",
+          "img": "sprites\\afeix_p04_damou_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "form": "default",
+      "brush": "afeix_p04_mocha",
+      "source": "art/runtime/portraits-v04/sources/mocha.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "0766f294ef2d720598286a3683fe16a7859f602dc0a6b16cd8300d3f1e9a2e21",
+      "source_size": [
+        1123,
+        1400
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        18,
+        90,
+        1104,
+        1354
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        107,
+        124
+      ],
+      "uniform_scale": 0.0981012658227848,
+      "placement": [
+        3,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "1c670ae9eb674446e1fe0d8f93aa0b376929dac6eb4c73d63a2afe77cdac81c3",
+      "dead_png_sha256": "1c670ae9eb674446e1fe0d8f93aa0b376929dac6eb4c73d63a2afe77cdac81c3",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_mocha",
+          "img": "sprites\\afeix_p04_mocha.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_mocha_dead",
+          "img": "sprites\\afeix_p04_mocha_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "bottle",
+      "name": "小酒瓶",
+      "form": "default",
+      "brush": "afeix_p04_bottle",
+      "source": "art/runtime/portraits-v04/sources/bottle.png",
+      "source_kind": "legacy_custom",
+      "source_sha256": "a79d4318fed367be33a2d8bb0fd8397111665e1e7ea86d1ee249d2bff107aaa6",
+      "source_size": [
+        1123,
+        1400
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        60,
+        153,
+        1064,
+        1286
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        122
+      ],
+      "uniform_scale": 0.10756972111553785,
+      "placement": [
+        3,
+        20
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "4dd00c20cb3abf5414a18c4fef88e41af3c4193ba83b8867236caa0f50d972ce",
+      "dead_png_sha256": "4dd00c20cb3abf5414a18c4fef88e41af3c4193ba83b8867236caa0f50d972ce",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_bottle",
+          "img": "sprites\\afeix_p04_bottle.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_bottle_dead",
+          "img": "sprites\\afeix_p04_bottle_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Retained reviewed legacy complete bust: dark long hair, gold earring and black quilted collar. Original custom hair is inside this single image; no native parts."
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "form": "default",
+      "brush": "afeix_p04_shuaizi",
+      "source": "art/runtime/portraits-v04/sources/shuaizi.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "10ac891ae4d4b704987f8bc35271fbd0134f8c9513c5085bf8eab0f8eb346c4f",
+      "source_size": [
+        1143,
+        1376
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        27,
+        48,
+        1124,
+        1350
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        104,
+        124
+      ],
+      "uniform_scale": 0.09523809523809523,
+      "placement": [
+        5,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "a1ab863b71d350a59650654ea154ab9f01e42235e1b442049a003f86c1e62696",
+      "dead_png_sha256": "a1ab863b71d350a59650654ea154ab9f01e42235e1b442049a003f86c1e62696",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_shuaizi",
+          "img": "sprites\\afeix_p04_shuaizi.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_shuaizi_dead",
+          "img": "sprites\\afeix_p04_shuaizi_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "lili",
+      "name": "李李超欧",
+      "form": "default",
+      "brush": "afeix_p04_lili",
+      "source": "art/runtime/portraits-v04/sources/lili.png",
+      "source_kind": "legacy_custom",
+      "source_sha256": "e8c6cdfbd08e0a2d9d72a7c89715741ff9c0f29960097636a33d94c35bd6cca5",
+      "source_size": [
+        1123,
+        1400
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        50,
+        82,
+        1055,
+        1346
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        99,
+        124
+      ],
+      "uniform_scale": 0.0981012658227848,
+      "placement": [
+        7,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "ebec5a6c691b5905e35a986e25dbe8b93179788a2106e7a9c2a1c4cadff89a4b",
+      "dead_png_sha256": "ebec5a6c691b5905e35a986e25dbe8b93179788a2106e7a9c2a1c4cadff89a4b",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_lili",
+          "img": "sprites\\afeix_p04_lili.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_lili_dead",
+          "img": "sprites\\afeix_p04_lili_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Retained reviewed legacy complete bust: short brown hair, ivory flower and gray tunic. Original custom hair is inside this single image; no native parts."
+    },
+    {
+      "key": "xiaoyueya",
+      "name": "小月牙",
+      "form": "default",
+      "brush": "afeix_p04_xiaoyueya",
+      "source": "art/runtime/portraits-v04/sources/xiaoyueya.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "0d5575d95aed855631836d2ecac1527e24218e39befe68128b8b00ef143b9fde",
+      "source_size": [
+        1145,
+        1374
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        45,
+        100,
+        1116,
+        1336
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        107,
+        124
+      ],
+      "uniform_scale": 0.10032362459546926,
+      "placement": [
+        3,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "f74a642f2e48b664b801234c8b493f783700e3fdc81419c349f95f6280db5101",
+      "dead_png_sha256": "f74a642f2e48b664b801234c8b493f783700e3fdc81419c349f95f6280db5101",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_xiaoyueya",
+          "img": "sprites\\afeix_p04_xiaoyueya.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_xiaoyueya_dead",
+          "img": "sprites\\afeix_p04_xiaoyueya_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "yuchujiu",
+      "name": "余初九",
+      "form": "default",
+      "brush": "afeix_p04_yuchujiu",
+      "source": "art/runtime/portraits-v04/sources/yuchujiu.png",
+      "source_kind": "legacy_custom",
+      "source_sha256": "d1db8df1a0e1c8215c5409df1449638558e5c8257d2035b09a02da09befb21a7",
+      "source_size": [
+        1191,
+        1320
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        88,
+        85,
+        1034,
+        1237
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        102,
+        124
+      ],
+      "uniform_scale": 0.1076388888888889,
+      "placement": [
+        6,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "ff9497320f226a1e0b3958cb7542af488c588f0b9830ea39e1c4c61f463baafb",
+      "dead_png_sha256": "ff9497320f226a1e0b3958cb7542af488c588f0b9830ea39e1c4c61f463baafb",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_yuchujiu",
+          "img": "sprites\\afeix_p04_yuchujiu.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_yuchujiu_dead",
+          "img": "sprites\\afeix_p04_yuchujiu_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Retained reviewed legacy complete bust: long brown hair, cream headband and teal collar with paw emblem. Original custom hair is inside this single image; no native parts."
+    },
+    {
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "form": "default",
+      "brush": "afeix_p04_xiaoyubeike",
+      "source": "art/runtime/portraits-v04/sources/xiaoyubeike.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "f918e202aba31f5142c7c8eb2695ed7c51120e1b595e62b064906231d21c3458",
+      "source_size": [
+        1144,
+        1375
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        35,
+        114,
+        1106,
+        1310
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        121
+      ],
+      "uniform_scale": 0.10084033613445378,
+      "placement": [
+        3,
+        21
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "973389d46dfdbb2ba75aa5213032750435caff42d9875f650034bf8d343a0a7d",
+      "dead_png_sha256": "973389d46dfdbb2ba75aa5213032750435caff42d9875f650034bf8d343a0a7d",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_xiaoyubeike",
+          "img": "sprites\\afeix_p04_xiaoyubeike.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_xiaoyubeike_dead",
+          "img": "sprites\\afeix_p04_xiaoyubeike_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "form": "default",
+      "brush": "afeix_p04_wangduidui",
+      "source": "art/runtime/portraits-v04/sources/wangduidui.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "a5133eae972f190f6d0352c61438d29cccf0ddc6ab73a3c1bb26f9bace4bd8fd",
+      "source_size": [
+        1142,
+        1377
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        14,
+        87,
+        1130,
+        1348
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        122
+      ],
+      "uniform_scale": 0.0967741935483871,
+      "placement": [
+        3,
+        20
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "a8fc4476bdefcc60fec7f7aec253b4d0ffaefd5321d23f5b22d1e5ce8247d024",
+      "dead_png_sha256": "a8fc4476bdefcc60fec7f7aec253b4d0ffaefd5321d23f5b22d1e5ce8247d024",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_wangduidui",
+          "img": "sprites\\afeix_p04_wangduidui.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_wangduidui_dead",
+          "img": "sprites\\afeix_p04_wangduidui_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "form": "default",
+      "brush": "afeix_p04_laocai",
+      "source": "art/runtime/portraits-v04/sources/laocai.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "8c5dd1f16149c1a21ffd14761afa0cc59544e94509b9493fcb81c656663787e4",
+      "source_size": [
+        1123,
+        1401
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        39,
+        95,
+        1092,
+        1312
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        107,
+        124
+      ],
+      "uniform_scale": 0.1018898931799507,
+      "placement": [
+        3,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "fde234b4c810294ce5fb3a3e94014bc327f497deef0c5fc5622517679d5d9985",
+      "dead_png_sha256": "fde234b4c810294ce5fb3a3e94014bc327f497deef0c5fc5622517679d5d9985",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_laocai",
+          "img": "sprites\\afeix_p04_laocai.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_laocai_dead",
+          "img": "sprites\\afeix_p04_laocai_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "New complete custom male adviser bust, selected after visual review. Old C11 female bust rejected as an identity mismatch; real-person likeness not asserted. In-game review pending."
+    },
+    {
+      "key": "tiantong",
+      "name": "亿口甜筒",
+      "form": "default",
+      "brush": "afeix_p04_tiantong",
+      "source": "art/runtime/portraits-v04/sources/tiantong.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "9e8906af7ac0a01d141dc9e4c9f059bbde394ee2d348d5cbb32ed330871efb0e",
+      "source_size": [
+        1145,
+        1374
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        24,
+        101,
+        1121,
+        1324
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        120
+      ],
+      "uniform_scale": 0.09845031905195989,
+      "placement": [
+        3,
+        22
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "87f6c123b61f3ea64d335f35c0e709d252fcca7e456afd1a8adc4dd33155fd6f",
+      "dead_png_sha256": "87f6c123b61f3ea64d335f35c0e709d252fcca7e456afd1a8adc4dd33155fd6f",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_tiantong",
+          "img": "sprites\\afeix_p04_tiantong.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_tiantong_dead",
+          "img": "sprites\\afeix_p04_tiantong_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "xiaoning",
+      "name": "小宁",
+      "form": "default",
+      "brush": "afeix_p04_xiaoning",
+      "source": "art/runtime/portraits-v04/sources/xiaoning.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "55f70f4f5b173cc2c2c0ce6813401a535e184c505e37c14dd58b1625eb5f4517",
+      "source_size": [
+        1124,
+        1399
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        111,
+        83,
+        1019,
+        1289
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        93,
+        124
+      ],
+      "uniform_scale": 0.10281923714759536,
+      "placement": [
+        10,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "2ee568122c139c86e7afec19d9c0701ca69d6c61b8b2f39087a9288274b087f7",
+      "dead_png_sha256": "2ee568122c139c86e7afec19d9c0701ca69d6c61b8b2f39087a9288274b087f7",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_xiaoning",
+          "img": "sprites\\afeix_p04_xiaoning.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_xiaoning_dead",
+          "img": "sprites\\afeix_p04_xiaoning_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖徐不快乐",
+      "form": "default",
+      "brush": "afeix_p04_xiaopangxu",
+      "source": "art/runtime/portraits-v04/sources/xiaopangxu.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "528375522598d56273c5b87b00efb550b61d30ec3bbd6c05fbc860e78debcc37",
+      "source_size": [
+        1124,
+        1399
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        86,
+        142,
+        1040,
+        1275
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        104,
+        124
+      ],
+      "uniform_scale": 0.10944395410414828,
+      "placement": [
+        5,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "418202e2684db377ddf041a3307ce2ca7936db2b6121af43dfcbab8387a51389",
+      "dead_png_sha256": "418202e2684db377ddf041a3307ce2ca7936db2b6121af43dfcbab8387a51389",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_xiaopangxu",
+          "img": "sprites\\afeix_p04_xiaopangxu.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_xiaopangxu_dead",
+          "img": "sprites\\afeix_p04_xiaopangxu_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "form": "default",
+      "brush": "afeix_p04_dae",
+      "source": "art/runtime/portraits-v04/sources/dae.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "7b42f6e3179d347b118ce15e1e405b9df2f550e2fbe0bdf1005da20193639872",
+      "source_size": [
+        1145,
+        1374
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        25,
+        72,
+        1130,
+        1338
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        124
+      ],
+      "uniform_scale": 0.09773755656108597,
+      "placement": [
+        3,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "7f084360ee024137a358db4feb25308be59d850db89160c27433cebcf207ee32",
+      "dead_png_sha256": "7f084360ee024137a358db4feb25308be59d850db89160c27433cebcf207ee32",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_dae",
+          "img": "sprites\\afeix_p04_dae.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_dae_dead",
+          "img": "sprites\\afeix_p04_dae_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "form": "default",
+      "brush": "afeix_p04_manyuemei",
+      "source": "art/runtime/portraits-v04/sources/manyuemei.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "e2920d84e39810a59ebf22fa3c6ca78c6b0958a1ce7fb1a1ed411a7561e00c7a",
+      "source_size": [
+        1124,
+        1399
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        61,
+        80,
+        1067,
+        1329
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        100,
+        124
+      ],
+      "uniform_scale": 0.09927942353883107,
+      "placement": [
+        7,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "4bf5a350606c6071baae215e175d4ec42272721b8ee89728482ab3cbe9c394f8",
+      "dead_png_sha256": "4bf5a350606c6071baae215e175d4ec42272721b8ee89728482ab3cbe9c394f8",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_manyuemei",
+          "img": "sprites\\afeix_p04_manyuemei.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_manyuemei_dead",
+          "img": "sprites\\afeix_p04_manyuemei_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+    },
+    {
+      "key": "xiaohani",
+      "name": "小哈尼",
+      "form": "default",
+      "brush": "afeix_p04_xiaohani",
+      "source": "art/runtime/portraits-v04/sources/xiaohani.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "f4d0040adb853dd3b2c41e7a04202409c6f621dba829de4acf7892c6e4566660",
+      "source_size": [
+        1125,
+        1398
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        54,
+        188,
+        1069,
+        1300
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        118
+      ],
+      "uniform_scale": 0.10640394088669951,
+      "placement": [
+        3,
+        24
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "d5e4c2bba65422b3091d4bb72d1d884e777b61c068b0cd8fa7d3d93bf7962e0d",
+      "dead_png_sha256": "d5e4c2bba65422b3091d4bb72d1d884e777b61c068b0cd8fa7d3d93bf7962e0d",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_xiaohani",
+          "img": "sprites\\afeix_p04_xiaohani.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_xiaohani_dead",
+          "img": "sprites\\afeix_p04_xiaohani_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "form": "default",
+      "brush": "afeix_p04_keke",
+      "source": "art/runtime/portraits-v04/sources/keke.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "fc9e419a561c7da205bca58806613acd49532310e8863b39ee1ab8fab5a41459",
+      "source_size": [
+        1145,
+        1374
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        34,
+        73,
+        1112,
+        1325
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        107,
+        124
+      ],
+      "uniform_scale": 0.09904153354632587,
+      "placement": [
+        3,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "802a3b2e4a050c428d8538e1e6679853d84fd2d640d8671940af6d948196f55f",
+      "dead_png_sha256": "802a3b2e4a050c428d8538e1e6679853d84fd2d640d8671940af6d948196f55f",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_keke",
+          "img": "sprites\\afeix_p04_keke.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_keke_dead",
+          "img": "sprites\\afeix_p04_keke_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "yuxiang",
+      "name": "余想",
+      "form": "default",
+      "brush": "afeix_p04_yuxiang",
+      "source": "art/runtime/portraits-v04/sources/yuxiang.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "be574515978475db472c9044c0ceab91df686cdc497d6eafe565142a80ce7b3b",
+      "source_size": [
+        1127,
+        1396
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        15,
+        103,
+        1115,
+        1358
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        123
+      ],
+      "uniform_scale": 0.09818181818181818,
+      "placement": [
+        3,
+        19
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "82a30c2c36ca0eef77e5f4c8f606c2dc5cd912622941d5b5a7d82eed22348710",
+      "dead_png_sha256": "82a30c2c36ca0eef77e5f4c8f606c2dc5cd912622941d5b5a7d82eed22348710",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_yuxiang",
+          "img": "sprites\\afeix_p04_yuxiang.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_yuxiang_dead",
+          "img": "sprites\\afeix_p04_yuxiang_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "tongzhu",
+      "name": "童猪",
+      "form": "default",
+      "brush": "afeix_p04_tongzhu",
+      "source": "art/runtime/portraits-v04/sources/tongzhu.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "0f51983d2a5035cd64da3713cd01fa44824e4db683027d16074f72a9f4127d7a",
+      "source_size": [
+        1113,
+        1413
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        8,
+        93,
+        1105,
+        1364
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        107,
+        124
+      ],
+      "uniform_scale": 0.0975609756097561,
+      "placement": [
+        3,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "29e71cbfade3e3a597051573603042acd7f33952bdbed8c69634cf8abf1acc16",
+      "dead_png_sha256": "29e71cbfade3e3a597051573603042acd7f33952bdbed8c69634cf8abf1acc16",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_tongzhu",
+          "img": "sprites\\afeix_p04_tongzhu.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_tongzhu_dead",
+          "img": "sprites\\afeix_p04_tongzhu_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "meiya",
+      "name": "美伢",
+      "form": "default",
+      "brush": "afeix_p04_meiya",
+      "source": "art/runtime/portraits-v04/sources/meiya.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "2c4f63d9ed6d98452e36de78a9839d1e50fa74a74d5584f2c2c5570d1c986237",
+      "source_size": [
+        1144,
+        1375
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        53,
+        99,
+        1109,
+        1321
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        107,
+        124
+      ],
+      "uniform_scale": 0.10147299509001637,
+      "placement": [
+        3,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "fd827fb26bb1600dcef4a1c180ce522796c9f674d7430e71174145616e48bcbf",
+      "dead_png_sha256": "fd827fb26bb1600dcef4a1c180ce522796c9f674d7430e71174145616e48bcbf",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_meiya",
+          "img": "sprites\\afeix_p04_meiya.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_meiya_dead",
+          "img": "sprites\\afeix_p04_meiya_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "wanshe",
+      "name": "玩蛇",
+      "form": "default",
+      "brush": "afeix_p04_wanshe",
+      "source": "art/runtime/portraits-v04/sources/wanshe.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "5a56c4676de5088edd9ad2404532d4a5427da0bd465518ecf311a74dcb56d3a2",
+      "source_size": [
+        1183,
+        1330
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        62,
+        106,
+        1141,
+        1300
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        120
+      ],
+      "uniform_scale": 0.10009267840593142,
+      "placement": [
+        3,
+        22
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "228986711b21bf6dc88d290bfc5d30e5e80ea8bc99283faecd5e8bf2063ebe86",
+      "dead_png_sha256": "228986711b21bf6dc88d290bfc5d30e5e80ea8bc99283faecd5e8bf2063ebe86",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_wanshe",
+          "img": "sprites\\afeix_p04_wanshe.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_wanshe_dead",
+          "img": "sprites\\afeix_p04_wanshe_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "tutu",
+      "name": "涂涂",
+      "form": "default",
+      "brush": "afeix_p04_tutu",
+      "source": "art/runtime/portraits-v04/sources/tutu.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "b51c18433c0de693dd1d3de3152fdd67ddbb278ce7e7b7635fd756b647bedddb",
+      "source_size": [
+        1170,
+        1345
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        64,
+        53,
+        1105,
+        1308
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        103,
+        124
+      ],
+      "uniform_scale": 0.09880478087649402,
+      "placement": [
+        5,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "d8313a68967fd570e892e84294258e91f9c6c1835ac5055b30f060a57867c176",
+      "dead_png_sha256": "d8313a68967fd570e892e84294258e91f9c6c1835ac5055b30f060a57867c176",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_tutu",
+          "img": "sprites\\afeix_p04_tutu.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_tutu_dead",
+          "img": "sprites\\afeix_p04_tutu_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "form": "default",
+      "brush": "afeix_p04_songnuanyang",
+      "source": "art/runtime/portraits-v04/sources/songnuanyang.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "073bd67a6b81c41d490e71a56f45f37a8e7590190455086fd862043ac4a3a530",
+      "source_size": [
+        1124,
+        1399
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        85,
+        114,
+        1042,
+        1308
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        99,
+        124
+      ],
+      "uniform_scale": 0.10385259631490787,
+      "placement": [
+        7,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "820d82c5afce8421bf0a752ad1b82126a2cc9adafacb4ba8618fa0c575c376be",
+      "dead_png_sha256": "820d82c5afce8421bf0a752ad1b82126a2cc9adafacb4ba8618fa0c575c376be",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_songnuanyang",
+          "img": "sprites\\afeix_p04_songnuanyang.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_songnuanyang_dead",
+          "img": "sprites\\afeix_p04_songnuanyang_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "form": "default",
+      "brush": "afeix_p04_xiaogui",
+      "source": "art/runtime/portraits-v04/sources/xiaogui.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "e1f889b172a960ba85cd7c4af0d44e1cd3976db240fc9d0ba22e90c94e12ab58",
+      "source_size": [
+        1123,
+        1401
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        23,
+        241,
+        1097,
+        1256
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        102
+      ],
+      "uniform_scale": 0.1005586592178771,
+      "placement": [
+        3,
+        40
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "b943134531166491b802cbad64c63728082b15a52f0238e1153e8724c5589c90",
+      "dead_png_sha256": "b943134531166491b802cbad64c63728082b15a52f0238e1153e8724c5589c90",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_xiaogui",
+          "img": "sprites\\afeix_p04_xiaogui.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_xiaogui_dead",
+          "img": "sprites\\afeix_p04_xiaogui_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+    },
+    {
+      "key": "naigai",
+      "name": "奶盖",
+      "form": "default",
+      "brush": "afeix_p04_naigai",
+      "source": "art/runtime/portraits-v04/sources/naigai.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "9b411ff385b0392d252b332a3268019a4a17ba5ec9348a6515308f61d03e2a5f",
+      "source_size": [
+        1161,
+        1354
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        38,
+        54,
+        1135,
+        1338
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        106,
+        124
+      ],
+      "uniform_scale": 0.09657320872274143,
+      "placement": [
+        4,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "c9f2c7b180088c9379ab72057ed8bdb9df86364f1c031b0c684a25031b4cb5f1",
+      "dead_png_sha256": "c9f2c7b180088c9379ab72057ed8bdb9df86364f1c031b0c684a25031b4cb5f1",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_naigai",
+          "img": "sprites\\afeix_p04_naigai.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_naigai_dead",
+          "img": "sprites\\afeix_p04_naigai_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "xiaojie",
+      "name": "小杰",
+      "form": "default",
+      "brush": "afeix_p04_xiaojie",
+      "source": "art/runtime/portraits-v04/sources/xiaojie.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "2873e7d94cdcce1fd1a5c2bdf480949c1cd06fb3002be033e44f0787287083a6",
+      "source_size": [
+        1168,
+        1346
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        14,
+        21,
+        1091,
+        1300
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        104,
+        124
+      ],
+      "uniform_scale": 0.09695074276778734,
+      "placement": [
+        5,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "eff94486e429452687bfd5f3d3fe166bfd6c7dc250c55ecaa5581cadf84715ee",
+      "dead_png_sha256": "eff94486e429452687bfd5f3d3fe166bfd6c7dc250c55ecaa5581cadf84715ee",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_xiaojie",
+          "img": "sprites\\afeix_p04_xiaojie.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_xiaojie_dead",
+          "img": "sprites\\afeix_p04_xiaojie_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "bula",
+      "name": "bula",
+      "form": "default",
+      "brush": "afeix_p04_bula",
+      "source": "art/runtime/portraits-v04/sources/bula.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "7c99647d3bb9577b5090110e69e73cb3f58b57c107ca08f2d06d5a64b8432463",
+      "source_size": [
+        1170,
+        1344
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        64,
+        169,
+        1115,
+        1290
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        115
+      ],
+      "uniform_scale": 0.1027592768791627,
+      "placement": [
+        3,
+        27
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "622510b411a84fe8ffb8640464eb7ea4320d73bc79f17f69a55fde682af6c34e",
+      "dead_png_sha256": "622510b411a84fe8ffb8640464eb7ea4320d73bc79f17f69a55fde682af6c34e",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_bula",
+          "img": "sprites\\afeix_p04_bula.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_bula_dead",
+          "img": "sprites\\afeix_p04_bula_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "suwa",
+      "name": "苏袜",
+      "form": "default",
+      "brush": "afeix_p04_suwa",
+      "source": "art/runtime/portraits-v04/sources/suwa.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "8e5ae130d8892c75926815a4f3d04de044db3422eaca7b2e8ecc519db4597352",
+      "source_size": [
+        1193,
+        1319
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        48,
+        51,
+        1100,
+        1277
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        106,
+        124
+      ],
+      "uniform_scale": 0.10114192495921696,
+      "placement": [
+        4,
+        18
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "baf2c6de3b7a7ca86443dc9eb13a732a2bb13c44fedcd5be7adef99f055e0904",
+      "dead_png_sha256": "baf2c6de3b7a7ca86443dc9eb13a732a2bb13c44fedcd5be7adef99f055e0904",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_suwa",
+          "img": "sprites\\afeix_p04_suwa.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_suwa_dead",
+          "img": "sprites\\afeix_p04_suwa_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "qianhan",
+      "name": "千涵",
+      "form": "default",
+      "brush": "afeix_p04_qianhan",
+      "source": "art/runtime/portraits-v04/sources/qianhan.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "758726f0eadc915cf7a11ad97a371f72dc8871e6b7f763a5f9ca6d77259de164",
+      "source_size": [
+        1190,
+        1322
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        39,
+        108,
+        1155,
+        1255
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        111
+      ],
+      "uniform_scale": 0.0967741935483871,
+      "placement": [
+        3,
+        31
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "0dc81de12ce958320f85a756ab249adf1c502379f64c4e2f65a0fc3b51ac0d3f",
+      "dead_png_sha256": "0dc81de12ce958320f85a756ab249adf1c502379f64c4e2f65a0fc3b51ac0d3f",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_qianhan",
+          "img": "sprites\\afeix_p04_qianhan.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_qianhan_dead",
+          "img": "sprites\\afeix_p04_qianhan_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "form": "default",
+      "brush": "afeix_p04_wangdazhi",
+      "source": "art/runtime/portraits-v04/sources/wangdazhi.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "252b8026da9074d28120bcc619d1c29bbfe9dd57bd4056ecc9909d19000050fc",
+      "source_size": [
+        1169,
+        1345
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        49,
+        108,
+        1125,
+        1294
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        119
+      ],
+      "uniform_scale": 0.10037174721189591,
+      "placement": [
+        3,
+        23
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "3d05c97dd40d6a2f2a4b27db098384aca412ca31752b985dfe52d5d81474eace",
+      "dead_png_sha256": "3d05c97dd40d6a2f2a4b27db098384aca412ca31752b985dfe52d5d81474eace",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_wangdazhi",
+          "img": "sprites\\afeix_p04_wangdazhi.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_wangdazhi_dead",
+          "img": "sprites\\afeix_p04_wangdazhi_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "form": "default",
+      "brush": "afeix_p04_yaoyaoya",
+      "source": "art/runtime/portraits-v04/sources/yaoyaoya.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "60363f558e875bff7b9d56a8c5f222f01d5bbd3bd1019cb0b63d1b60a23e0f9e",
+      "source_size": [
+        1176,
+        1337
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        38,
+        97,
+        1162,
+        1252
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        111
+      ],
+      "uniform_scale": 0.09608540925266904,
+      "placement": [
+        3,
+        31
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "8ba699cad4fec22bd94bcea42f13c925eb4b4189d1abdc232f0ca5208caae192",
+      "dead_png_sha256": "8ba699cad4fec22bd94bcea42f13c925eb4b4189d1abdc232f0ca5208caae192",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_yaoyaoya",
+          "img": "sprites\\afeix_p04_yaoyaoya.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_yaoyaoya_dead",
+          "img": "sprites\\afeix_p04_yaoyaoya_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "form": "default",
+      "brush": "afeix_p04_yangmiemie",
+      "source": "art/runtime/portraits-v04/sources/yangmiemie.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "c00f87840ae047187b13544d8a357921b86a6d83fe3d9ae3e83d9d276867052d",
+      "source_size": [
+        1168,
+        1346
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        78,
+        159,
+        1068,
+        1278
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        122
+      ],
+      "uniform_scale": 0.10909090909090909,
+      "placement": [
+        3,
+        20
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "53e38724be24bdbdaa70131ce7edfd4906a30583972f5a7c797216033ace08f9",
+      "dead_png_sha256": "53e38724be24bdbdaa70131ce7edfd4906a30583972f5a7c797216033ace08f9",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_yangmiemie",
+          "img": "sprites\\afeix_p04_yangmiemie.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_yangmiemie_dead",
+          "img": "sprites\\afeix_p04_yangmiemie_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    },
+    {
+      "key": "chenzhihan",
+      "name": "陈知含",
+      "form": "default",
+      "brush": "afeix_p04_chenzhihan",
+      "source": "art/runtime/portraits-v04/sources/chenzhihan.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "02ecb9e60786ba35554ec3801f67932a59589ca97168b6ce511158a40a0161fe",
+      "source_size": [
+        1218,
+        1291
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        97,
+        96,
+        1137,
+        1231
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        108,
+        118
+      ],
+      "uniform_scale": 0.10384615384615385,
+      "placement": [
+        3,
+        24
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "59e8b69dd412acbf653f50cd24aa813fec7fa2857af9bbdcf16888382c27abc6",
+      "dead_png_sha256": "59e8b69dd412acbf653f50cd24aa813fec7fa2857af9bbdcf16888382c27abc6",
+      "dead_pixels_identical": true,
+      "dead_mode": "same_complete_bust_runtime_transform_required",
+      "metadata": [
+        {
+          "id": "afeix_p04_chenzhihan",
+          "img": "sprites\\afeix_p04_chenzhihan.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-55",
+          "bottom": "87",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_chenzhihan_dead",
+          "img": "sprites\\afeix_p04_chenzhihan_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+    }
+  ],
+  "roundtrip": {
+    "passed": true,
+    "sprite_count": 72,
+    "sprites": [
+      {
+        "id": "afeix_p04_afei_normal",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_afei_normal_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_afei_toad",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_afei_toad_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_afei_jiahao",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_afei_jiahao_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_damou",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_damou_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_mocha",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_mocha_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_bottle",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_bottle_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_shuaizi",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_shuaizi_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_lili",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_lili_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoyueya",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoyueya_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yuchujiu",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yuchujiu_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoyubeike",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoyubeike_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wangduidui",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wangduidui_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_laocai",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_laocai_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tiantong",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tiantong_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoning",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoning_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaopangxu",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaopangxu_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_dae",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_dae_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_manyuemei",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_manyuemei_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaohani",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaohani_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_keke",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_keke_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yuxiang",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yuxiang_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tongzhu",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tongzhu_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_meiya",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_meiya_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wanshe",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wanshe_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tutu",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tutu_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_songnuanyang",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_songnuanyang_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaogui",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaogui_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_naigai",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_naigai_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaojie",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaojie_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_bula",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_bula_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_suwa",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_suwa_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_qianhan",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_qianhan_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wangdazhi",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wangdazhi_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yaoyaoya",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yaoyaoya_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yangmiemie",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yangmiemie_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_chenzhihan",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_chenzhihan_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "brush": "package/brushes/afeix_portraits_v04.brush",
+    "brush_sha256": "3e6d963a10f75674263b35cc7ea9b9b196f5adef9dc415077f29c02242f33638",
+    "atlas": "package/gfx/afeix_portraits_v04.png",
+    "atlas_sha256": "491d5678883f1465a75985309ee1c8a5e83d2603affdd2eb8ac19212b6b62785",
+    "pack_log": "Loading images...\nsprites\\afeix_p04_afei_normal.png\nsprites\\afeix_p04_afei_normal_dead.png\nsprites\\afeix_p04_afei_toad.png\nsprites\\afeix_p04_afei_toad_dead.png\nsprites\\afeix_p04_afei_jiahao.png\nsprites\\afeix_p04_afei_jiahao_dead.png\nsprites\\afeix_p04_damou.png\nsprites\\afeix_p04_damou_dead.png\nsprites\\afeix_p04_mocha.png\nsprites\\afeix_p04_mocha_dead.png\nsprites\\afeix_p04_bottle.png\nsprites\\afeix_p04_bottle_dead.png\nsprites\\afeix_p04_shuaizi.png\nsprites\\afeix_p04_shuaizi_dead.png\nsprites\\afeix_p04_lili.png\nsprites\\afeix_p04_lili_dead.png\nsprites\\afeix_p04_xiaoyueya.png\nsprites\\afeix_p04_xiaoyueya_dead.png\nsprites\\afeix_p04_yuchujiu.png\nsprites\\afeix_p04_yuchujiu_dead.png\nsprites\\afeix_p04_xiaoyubeike.png\nsprites\\afeix_p04_xiaoyubeike_dead.png\nsprites\\afeix_p04_wangduidui.png\nsprites\\afeix_p04_wangduidui_dead.png\nsprites\\afeix_p04_laocai.png\nsprites\\afeix_p04_laocai_dead.png\nsprites\\afeix_p04_tiantong.png\nsprites\\afeix_p04_tiantong_dead.png\nsprites\\afeix_p04_xiaoning.png\nsprites\\afeix_p04_xiaoning_dead.png\nsprites\\afeix_p04_xiaopangxu.png\nsprites\\afeix_p04_xiaopangxu_dead.png\nsprites\\afeix_p04_dae.png\nsprites\\afeix_p04_dae_dead.png\nsprites\\afeix_p04_manyuemei.png\nsprites\\afeix_p04_manyuemei_dead.png\nsprites\\afeix_p04_xiaohani.png\nsprites\\afeix_p04_xiaohani_dead.png\nsprites\\afeix_p04_keke.png\nsprites\\afeix_p04_keke_dead.png\nsprites\\afeix_p04_yuxiang.png\nsprites\\afeix_p04_yuxiang_dead.png\nsprites\\afeix_p04_tongzhu.png\nsprites\\afeix_p04_tongzhu_dead.png\nsprites\\afeix_p04_meiya.png\nsprites\\afeix_p04_meiya_dead.png\nsprites\\afeix_p04_wanshe.png\nsprites\\afeix_p04_wanshe_dead.png\nsprites\\afeix_p04_tutu.png\nsprites\\afeix_p04_tutu_dead.png\nsprites\\afeix_p04_songnuanyang.png\nsprites\\afeix_p04_songnuanyang_dead.png\nsprites\\afeix_p04_xiaogui.png\nsprites\\afeix_p04_xiaogui_dead.png\nsprites\\afeix_p04_naigai.png\nsprites\\afeix_p04_naigai_dead.png\nsprites\\afeix_p04_xiaojie.png\nsprites\\afeix_p04_xiaojie_dead.png\nsprites\\afeix_p04_bula.png\nsprites\\afeix_p04_bula_dead.png\nsprites\\afeix_p04_suwa.png\nsprites\\afeix_p04_suwa_dead.png\nsprites\\afeix_p04_qianhan.png\nsprites\\afeix_p04_qianhan_dead.png\nsprites\\afeix_p04_wangdazhi.png\nsprites\\afeix_p04_wangdazhi_dead.png\nsprites\\afeix_p04_yaoyaoya.png\nsprites\\afeix_p04_yaoyaoya_dead.png\nsprites\\afeix_p04_yangmiemie.png\nsprites\\afeix_p04_yangmiemie_dead.png\nsprites\\afeix_p04_chenzhihan.png\nsprites\\afeix_p04_chenzhihan_dead.png\nPacking rectangles...\nWriting gfx/afeix_portraits_v04.png (2048x1024)...\n",
+    "unpack_log": "Opening gfx/afeix_portraits_v04.png...\nsprites\\afeix_p04_afei_normal.png\nsprites\\afeix_p04_afei_normal_dead.png\nsprites\\afeix_p04_afei_toad.png\nsprites\\afeix_p04_afei_toad_dead.png\nsprites\\afeix_p04_afei_jiahao.png\nsprites\\afeix_p04_afei_jiahao_dead.png\nsprites\\afeix_p04_damou.png\nsprites\\afeix_p04_damou_dead.png\nsprites\\afeix_p04_mocha.png\nsprites\\afeix_p04_mocha_dead.png\nsprites\\afeix_p04_bottle.png\nsprites\\afeix_p04_bottle_dead.png\nsprites\\afeix_p04_shuaizi.png\nsprites\\afeix_p04_shuaizi_dead.png\nsprites\\afeix_p04_lili.png\nsprites\\afeix_p04_lili_dead.png\nsprites\\afeix_p04_xiaoyueya.png\nsprites\\afeix_p04_xiaoyueya_dead.png\nsprites\\afeix_p04_yuchujiu.png\nsprites\\afeix_p04_yuchujiu_dead.png\nsprites\\afeix_p04_xiaoyubeike.png\nsprites\\afeix_p04_xiaoyubeike_dead.png\nsprites\\afeix_p04_wangduidui.png\nsprites\\afeix_p04_wangduidui_dead.png\nsprites\\afeix_p04_laocai.png\nsprites\\afeix_p04_laocai_dead.png\nsprites\\afeix_p04_tiantong.png\nsprites\\afeix_p04_tiantong_dead.png\nsprites\\afeix_p04_xiaoning.png\nsprites\\afeix_p04_xiaoning_dead.png\nsprites\\afeix_p04_xiaopangxu.png\nsprites\\afeix_p04_xiaopangxu_dead.png\nsprites\\afeix_p04_dae.png\nsprites\\afeix_p04_dae_dead.png\nsprites\\afeix_p04_manyuemei.png\nsprites\\afeix_p04_manyuemei_dead.png\nsprites\\afeix_p04_xiaohani.png\nsprites\\afeix_p04_xiaohani_dead.png\nsprites\\afeix_p04_keke.png\nsprites\\afeix_p04_keke_dead.png\nsprites\\afeix_p04_yuxiang.png\nsprites\\afeix_p04_yuxiang_dead.png\nsprites\\afeix_p04_tongzhu.png\nsprites\\afeix_p04_tongzhu_dead.png\nsprites\\afeix_p04_meiya.png\nsprites\\afeix_p04_meiya_dead.png\nsprites\\afeix_p04_wanshe.png\nsprites\\afeix_p04_wanshe_dead.png\nsprites\\afeix_p04_tutu.png\nsprites\\afeix_p04_tutu_dead.png\nsprites\\afeix_p04_songnuanyang.png\nsprites\\afeix_p04_songnuanyang_dead.png\nsprites\\afeix_p04_xiaogui.png\nsprites\\afeix_p04_xiaogui_dead.png\nsprites\\afeix_p04_naigai.png\nsprites\\afeix_p04_naigai_dead.png\nsprites\\afeix_p04_xiaojie.png\nsprites\\afeix_p04_xiaojie_dead.png\nsprites\\afeix_p04_bula.png\nsprites\\afeix_p04_bula_dead.png\nsprites\\afeix_p04_suwa.png\nsprites\\afeix_p04_suwa_dead.png\nsprites\\afeix_p04_qianhan.png\nsprites\\afeix_p04_qianhan_dead.png\nsprites\\afeix_p04_wangdazhi.png\nsprites\\afeix_p04_wangdazhi_dead.png\nsprites\\afeix_p04_yaoyaoya.png\nsprites\\afeix_p04_yaoyaoya_dead.png\nsprites\\afeix_p04_yangmiemie.png\nsprites\\afeix_p04_yangmiemie_dead.png\nsprites\\afeix_p04_chenzhihan.png\nsprites\\afeix_p04_chenzhihan_dead.png\n",
+    "temporary_files_retained": false
+  },
+  "preview": {
+    "html": "build/index.html",
+    "contact_1x": "build/contact-sheet-1x.png",
+    "contact_2x": "build/contact-sheet-2x.png",
+    "afei_forms": {
+      "file": "build/afei-forms-1x.png",
+      "placements": [
+        {
+          "form": "normal",
+          "disc_offset_y": 12,
+          "visible_gap_pixels": 6
+        },
+        {
+          "form": "toad",
+          "disc_offset_y": 0,
+          "visible_gap_pixels": 16
+        },
+        {
+          "form": "jiahao",
+          "disc_offset_y": 12,
+          "visible_gap_pixels": 6
+        }
+      ],
+      "in_game_tested": false
+    }
+  },
+  "native_art_in_atlas": false,
+  "in_game_tested": false,
+  "geometry": {
+    "live": {
+      "left": -57,
+      "right": 57,
+      "top": -55,
+      "bottom": 87,
+      "width": 114,
+      "height": 142,
+      "offsetY": 35
+    },
+    "dead": {
+      "left": -57,
+      "right": 57,
+      "top": -71,
+      "bottom": 71,
+      "width": 114,
+      "height": 142,
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    "size": [
+      114,
+      142
+    ],
+    "fit": [
+      108,
+      124
+    ],
+    "alpha_threshold": 20,
+    "align": "bottom_center"
+  },
+  "limitations": [
+    "Complete-bust costume is fixed; equipment changes remain gameplay data, not baked image edits.",
+    "The _dead brush uses identical pixels with a centred anchor; runtime transform must be checked in game.",
+    "There are no generated injury states, dismemberment drawings or native face/hair/armor pixels.",
+    "Alpha bounds and atlas roundtrip are technical checks, not an assertion of style or likeness acceptance.",
+    "Old source images may include props or earlier art direction; consult each review_note before acceptance."
+  ]
+}

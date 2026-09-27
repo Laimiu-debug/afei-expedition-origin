@@ -1,0 +1,37 @@
+{
+  "id": "afei-toad-promoted-v01",
+  "created_at": "2026-09-26",
+  "tool": "built-in image_gen",
+  "asset_type": "concept_master",
+  "source_file": "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-e286ca04-59ff-4613-ad18-b4f7dd9acdc0.png",
+  "workspace_file": "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-toad-promoted-v01.png",
+  "reference_images": [
+    "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-toad-cold-v01.png",
+    "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png",
+    "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+  ],
+  "prompt": "Use case: style-transfer.\nAsset: ONE promoted TOAD-FOLK form of Afei for a Battle Brothers mod.\n\nImage 1 is the old toad concept to improve. Its broad mouth, amphibian brow ridges and pale throat identify the character. It was judged not handsome enough.\nImage 2 is the user's APPROVED VISUAL DIRECTION for Afei: use its simple graphic face planes, dark contours, chunky shading, small amount of detail and roguish confidence as the main rendering reference.\nImage 3 is the official Battle Brothers native bust sheet: match its compact tactical pawn construction and view.\n\nRedesign image 1 into a sharper, capable-looking toad warrior, the personal-combat promotion of the same Afei. Broader angular brow ridges, narrow focused amber eyes with a little asymmetry, a wide closed mouth with one corner very subtly raised. Tighten the jaw and cheeks. The pale throat remains visible but compact, no inflated sagging bag or huge round chin. Head clearly amphibian, without human hair or a human face pasted on. His self-confidence and alert eyes relate him to image 2.\nMuted grey-olive and muddy brown skin, simple pale beige throat plane, no more than a few large toad marks. Robust compact shoulders, upright confident posture, not a giant hulking monster. A practical grey-beige padded coat, a few small dark iron shoulder plates, short neatly gathered charcoal mantle and simple brown leather fastening. Equipment slightly more capable than his starting outfit but still humble mercenary gear.\nSTRICT rendering match to image 2: flat hand-painted base colors with only two or three deliberate shadow values, dark brown outlines, a few crisp facial marks and cloak folds. Erase dense skin mottling, pores, wet shine, brush speckles and fabric noise. Preserve native-game small-sprite readability.\nMatch image 2's slightly elevated three-quarter view facing viewer's RIGHT, large head, short neck and very short shoulder-and-chest body. Both shoulders, whole head and complete lower bust silhouette visible with transparent margin. No arms, hands, legs, weapon, shield, flagpole, extra animal, background or ground.\nOne calm closed-mouth character only, genuinely transparent alpha. No photoreal frog, oil-paint portrait detail, anime eyes, toy proportions, cinematic light, glows, 3D, text or frame.",
+  "image_size": [
+    1153,
+    1364
+  ],
+  "image_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    20,
+    53,
+    1143,
+    1364
+  ],
+  "sha256": "e0566647be9ba21b4e9e33d5de03adc29c6cab949dd644c314ccf1721828fb95",
+  "status": "candidate_pending_user_review",
+  "visual_review": "眉眼和嘴线更清楚，喉部与下颌较旧稿收紧；加入小片铁护肩，保留黑披肩、棉甲、宽嘴和蛤蟆识别点。色块较旧稿简化；帅气与最终造型待用户反馈。",
+  "user_feedback": null,
+  "technical_review": "非零透明度包围盒存在贴边情况；正式裁切和分层前需检查留白。114×142 仅作为旧项目尺寸观察窗口，不是已适配的游戏资源。",
+  "in_game_tested": false,
+  "equipment_compatibility": "unverified",
+  "production_ready": false
+}

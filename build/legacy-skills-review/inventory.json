@@ -1,0 +1,4952 @@
+{
+  "date": "2026-09-27",
+  "baseline": "v0.13",
+  "status": "review_only_not_implemented",
+  "stats": {
+    "old_members": 32,
+    "skills": 97,
+    "skill_icons": 91,
+    "extra_ecig_icons": 2,
+    "current_members": 34,
+    "directly_mapped_members": 30,
+    "directly_mapped_skills": 91,
+    "directly_mapped_icons": 85,
+    "missing_icons": [
+      "pang_anchor",
+      "pang_share",
+      "pang_breath",
+      "berry_eye",
+      "berry_mark",
+      "berry_reserve"
+    ]
+  },
+  "characters": [
+    {
+      "key": "afei",
+      "legacy_id": "C01",
+      "verdict": "保留图标，按现转职重写",
+      "focus": "哇哇叫／嘉豪／蛤蟆／全力圈",
+      "note": "哇哇叫沿用现版自身强化；嘉豪的伙伴成长反馈可保留主题，但旧上限累加决心 +64、疲劳 +32，九星后应重新定上限。蛤蟆逃生可作分支候选。全力圈保留当前契约收入含义，旧回疲劳大招不能覆盖。",
+      "name": "阿飞",
+      "skill_ids": [
+        "wawa_call",
+        "jiahao",
+        "toad_escape",
+        "full_circle"
+      ],
+      "existing_icon_count": 4
+    },
+    {
+      "key": "damou",
+      "legacy_id": "C03",
+      "verdict": "部分沿用，改盾卫定位",
+      "focus": "偷大哥／大哥借我／一起抬",
+      "note": "偷大哥只给已解锁候选折扣，不绕过当前招募队列和冷却。大哥借我要求友军永久近攻更高，开局大谋已最强，早期常无目标；建议改成可稳定使用的持盾协作。一起抬保留团队站位主题，攻防数值另调。",
+      "name": "王大谋",
+      "skill_ids": [
+        "steal_bro",
+        "borrow_strike",
+        "together_lift"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "mocha",
+      "legacy_id": "C02",
+      "verdict": "优先沿用设计",
+      "focus": "地精算盘／幕后队长",
+      "note": "标记敌人、给队友节省武器疲劳很符合后排队长；地精出身依赖旧营地手动维修，应改接现有维修消耗记录后再启用。",
+      "name": "午夜抹抹茶",
+      "skill_ids": [
+        "scrap_parts",
+        "abacus_mark",
+        "shadow_captain"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "bottle",
+      "legacy_id": "C04",
+      "verdict": "优先沿用设计",
+      "focus": "瓶队突破／决赛时刻／队友给的球",
+      "note": "最贴合九星近战核心的一组。突破保留攻击后近防代价，决赛保留后程增伤与额外疲劳，接球鼓励集火配合；九星后重新校准命中增益，不能同时反复叠加。",
+      "name": "小酒瓶",
+      "skill_ids": [
+        "bottle_breakthrough",
+        "finals_moment",
+        "teammate_ball"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "shuaizi",
+      "legacy_id": "C09",
+      "verdict": "保留设计，调整号令接入",
+      "focus": "小心脏／打鼓／守门",
+      "note": "胆小但可靠的持盾风格清楚；打鼓应与现版阿飞号令统一持续时间和叠加规则，守门需要持盾及禁止移动。",
+      "name": "白小帅子",
+      "skill_ids": [
+        "small_heart",
+        "drum",
+        "guard_gate"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "lili",
+      "legacy_id": "C05",
+      "verdict": "保留形象，复杂机制后置",
+      "focus": "无法选中／超巨／欧气",
+      "note": "图标和个人梗都清晰；无法选中牵涉敌方目标选择，欧气牵涉检定重掷，不宜首批移植。先采用有明确次数上限的被动。",
+      "name": "李李超欧",
+      "skill_ids": [
+        "unselectable",
+        "chaoju",
+        "ouqi"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "xiaoyueya",
+      "legacy_id": "C07",
+      "verdict": "优先沿用设计",
+      "focus": "超市里／变态／乐天派",
+      "note": "采购、换目标、士气保护有区分度；采购折扣需要接当前原版商店并防取消交易消耗次数，不能恢复旧黑旗办理入口。",
+      "name": "小月牙",
+      "skill_ids": [
+        "supermarket",
+        "biantai",
+        "optimist"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "yuchujiu",
+      "legacy_id": "C06",
+      "verdict": "优先沿用设计",
+      "focus": "狗叫／忠诚／护团换位",
+      "note": "符合高先攻九星近战救场者。狗叫保留种族和精神免疫边界，忠诚只对当前出战核心判定；换位须检查网、眩晕、地形和双方位置。",
+      "name": "余初九",
+      "skill_ids": [
+        "dog_bark",
+        "loyalty",
+        "guard_swap"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "xiaoyubeike",
+      "legacy_id": "C08",
+      "verdict": "优先沿用主题，拦截后置",
+      "focus": "唯一的男人／尼古丁／顶上去",
+      "note": "生命九星适合顶住缺口。被动近防 +6 需结合九星和盾牌重评；尼古丁是疲劳预支，不能与阿飞电子烟回血混写；顶上去须按实际武器攻击重定向，首批可先做明确的护卫效果。",
+      "name": "小鱼贝壳",
+      "skill_ids": [
+        "only_man",
+        "nicotine",
+        "cover_up"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "wangduidui",
+      "legacy_id": "C10",
+      "verdict": "保留梗，改旧依赖",
+      "focus": "恐飞派／太子发令／怼一句",
+      "note": "旧恐飞派依赖阿飞群体哇哇叫，现版哇哇叫只强化本人，必须重写关系触发；代理发令和传递增益也须接当前出战者及效果系统。",
+      "name": "王怼怼",
+      "skill_ids": [
+        "fear_afei",
+        "prince_order",
+        "dui_sentence"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "laocai",
+      "legacy_id": null,
+      "verdict": "可回收旧组，归属待讨论",
+      "focus": "蓝旗布阵／稳一手／一张好牌",
+      "note": "归档最终版已把旧 C11 那组三个技能归给小宁 C32；建议将布阵与稳一手回收给盾卫老蔡，近战好牌也更适合他。属于归属调整提案，不能自动挪走小宁能力。",
+      "candidate_skill_ids": [
+        "blue_form",
+        "steady_hand",
+        "good_card"
+      ],
+      "name": "老蔡",
+      "skill_ids": [
+        "blue_form",
+        "steady_hand",
+        "good_card"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "tiantong",
+      "legacy_id": "C12",
+      "verdict": "优先沿用设计",
+      "focus": "探路／回头箭／接住后排",
+      "note": "保留弓手和接应后排的方向；探路需对接原版护送契约，掩护箭要验证真实射击与脱离豁免，不能复制旧任务系统。",
+      "name": "亿口甜筒",
+      "skill_ids": [
+        "scout_path",
+        "return_arrow",
+        "catch_rear"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "xiaoning",
+      "legacy_id": "C32",
+      "verdict": "需要重设个人特色",
+      "focus": "蓝旗布阵／稳一手／一张好牌",
+      "note": "现组三技是老蔡遗留的布阵近战风格，与外星人、流口水和当前弩手星位关联弱。图标仍保留，个人技能建议另围绕异常观察／干扰构思；未替用户定案。",
+      "name": "小宁",
+      "skill_ids": [
+        "blue_form",
+        "steady_hand",
+        "good_card"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "xiaopangxu",
+      "legacy_id": "C33",
+      "verdict": "保留机制，改街舞表达",
+      "focus": "站得住／借你半面盾／挨过这一口",
+      "note": "盾卫类旧机制可用，但名字缺街舞特点。建议加入节拍、步点或队形触发，使其与五名主盾卫区分；三项都缺对应旧自定义图标。",
+      "name": "小胖徐不快乐",
+      "skill_ids": [
+        "pang_anchor",
+        "pang_share",
+        "pang_breath"
+      ],
+      "existing_icon_count": 0
+    },
+    {
+      "key": "dae",
+      "legacy_id": "C13",
+      "verdict": "优先沿用，强化守位重点",
+      "focus": "鹅势欺人／嘎嘎冲／守窝",
+      "note": "守窝与鹅势欺人很适合盾卫；嘎嘎冲会离开阵线，保留为有代价的位移选择。旧守窝只给远防 +6，不能宣传成全方面减伤。",
+      "name": "大鹅",
+      "skill_ids": [
+        "goose_bully",
+        "gaga_charge",
+        "guard_nest"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "manyuemei",
+      "legacy_id": "C34",
+      "verdict": "保留远程协作骨架",
+      "focus": "看清缝隙／红线记号／留一支给后面",
+      "note": "远程集火适合现星位；红线的命名与控制目标可体现用户确认的 S 特点，但不擅自扩写真人含义。三项都缺对应旧自定义图标。",
+      "name": "蔓越莓",
+      "skill_ids": [
+        "berry_eye",
+        "berry_mark",
+        "berry_reserve"
+      ],
+      "existing_icon_count": 0
+    },
+    {
+      "key": "xiaohani",
+      "legacy_id": null,
+      "verdict": "没有对应旧技能组",
+      "focus": "待补个人特点",
+      "note": "可从未沿用角色的中性步法／配合机制取材，但不能把一凹瑶、罗一可直接当成小哈尼；先保持现有成长。",
+      "name": "小哈尼",
+      "skill_ids": [],
+      "existing_icon_count": 0
+    },
+    {
+      "key": "keke",
+      "legacy_id": "C17",
+      "verdict": "保留名称和图标，改成盾卫",
+      "focus": "自己人／保可梦／松口气",
+      "note": "旧自己人仅减少本人远程误伤，保可梦还奖励远程反击命中，与新矛盾定位不合。建议改邻接或短距护卫、保护成功后恢复疲劳，三个熟悉名字保留。",
+      "name": "可可",
+      "skill_ids": [
+        "own_people",
+        "pokemon",
+        "breathe_easy"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "yuxiang",
+      "legacy_id": "C20",
+      "verdict": "优先沿用设计",
+      "focus": "五老压阵／长轮守门／替班到了",
+      "note": "阵形、坚守、轮换十分贴合；当前长柄定位可做第二线支撑，避免直接复制主盾卫的同类叠加光环。",
+      "name": "余想",
+      "skill_ids": [
+        "five_elder",
+        "long_watch",
+        "shift_arrive"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "tongzhu",
+      "legacy_id": "C18",
+      "verdict": "优先沿用设计",
+      "focus": "小熊出击／先懂规则／敲杯为号",
+      "note": "观察敌人再干扰或支援，有完整的小循环；应共用一个有上限的观察层数，并改接新号令或独立冷却。",
+      "name": "童猪",
+      "skill_ids": [
+        "bear_strike",
+        "know_rules",
+        "cup_signal"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "meiya",
+      "legacy_id": "C21",
+      "verdict": "优先沿用设计",
+      "focus": "大王舞／看懂节拍／谢幕让位",
+      "note": "与高先攻、灵活近战相符，旧图标齐全；舞步和撤步要使用当前安全位移判定，失败不能扣费或漏掉脱离攻击。",
+      "name": "美伢",
+      "skill_ids": [
+        "king_dance",
+        "read_beat",
+        "curtain_yield"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "wanshe",
+      "legacy_id": "C25",
+      "verdict": "优先沿用设计",
+      "focus": "秦国的神／蛇形试招／下一招换个路",
+      "note": "记录对手、试招、变招的循环有辨识度；应沿用原武器单体攻击，限定疲劳优惠和削弱次数。",
+      "name": "玩蛇",
+      "skill_ids": [
+        "snake_read",
+        "snake_trial",
+        "next_path"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "tutu",
+      "legacy_id": "C16",
+      "verdict": "保留救场设计，营地重做",
+      "focus": "回头路／离席未散／再留一晚",
+      "note": "断后和共同撤步可以留下；旧磨合与闹别扭系统现版没有，营地能力只保留主题，不能写成现成可用。",
+      "name": "涂涂",
+      "skill_ids": [
+        "return_road",
+        "leave_not_gone",
+        "one_more_night"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "songnuanyang",
+      "legacy_id": null,
+      "verdict": "没有对应旧技能组",
+      "focus": "围绕鹌鹑另设计",
+      "note": "旧档没有这个成员的技能或专属图标；可设计胆小但会提醒危险的轻量被动，不从其他人强行改名冒充原作。",
+      "name": "宋暖阳",
+      "skill_ids": [],
+      "existing_icon_count": 0
+    },
+    {
+      "key": "xiaogui",
+      "legacy_id": null,
+      "verdict": "机制可借用，需新设专属",
+      "focus": "小龟盾卫／飞爹羁绊",
+      "note": "旧档没有小龟本人技能组。可借用护盾与守位代码，围绕缩壳、替飞爹扛事等方向讨论；九星核心之外的六星盾卫定位已明确，不公开未发现的六根线。",
+      "name": "溺水小龟",
+      "skill_ids": [],
+      "existing_icon_count": 0
+    },
+    {
+      "key": "naigai",
+      "legacy_id": "C19",
+      "verdict": "优先沿用设计",
+      "focus": "嘴强王者／缩进奶盖／抽象整活",
+      "note": "挑衅、防守、闪避后投掷形成独特玩法；挑衅须检查敌人是否真能攻击到奶盖，不让技能变成无风险控场。",
+      "name": "奶盖",
+      "skill_ids": [
+        "mouth_strong",
+        "shrink_cover",
+        "abs_comeback"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "xiaojie",
+      "legacy_id": "C14",
+      "verdict": "保留设计，陷阱后置",
+      "focus": "锁车／不上这个当／备用钥匙",
+      "note": "解网容易形成实用差异；陷阱涉及地块、进出战和工具支付，后续专项实现。不能与自行车行囊物品混淆。",
+      "name": "小杰",
+      "skill_ids": [
+        "lock_wagon",
+        "not_fooled",
+        "spare_key"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "bula",
+      "legacy_id": "C31",
+      "verdict": "优先沿用设计",
+      "focus": "钱袋算清／提前分好／别把最后一支乱扔",
+      "note": "预算与投掷特色完整。战前准备只给实际出战成员，交易折扣取最高而非叠加，不能靠预备队无限堆经济被动。",
+      "name": "bula",
+      "skill_ids": [
+        "purse_clear",
+        "budget_share",
+        "no_last_throw"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "suwa",
+      "legacy_id": "C15",
+      "verdict": "优先沿用设计",
+      "focus": "踩点／抢半步／急刹",
+      "note": "最适合现有先攻三星的一组；先攻变化须明确何时生效，不额外赠送行动回合或无限移动。",
+      "name": "苏袜",
+      "skill_ids": [
+        "foot_point",
+        "half_step",
+        "hard_brake"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "qianhan",
+      "legacy_id": "C23",
+      "verdict": "优先沿用设计",
+      "focus": "003号起跑／短坡冲刺／分段呼吸",
+      "note": "开场机动和分段恢复特点清楚；冲刺需先验证完整两步路径，疲劳恢复有条件且每轮有限。",
+      "name": "千涵",
+      "skill_ids": [
+        "start_run",
+        "short_sprint",
+        "segment_breath"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "wangdazhi",
+      "legacy_id": "C26",
+      "verdict": "优先沿用设计",
+      "focus": "站稳场子／撑住幕布／门口有我",
+      "note": "旧芷芷已确认对应王大芷。持盾护身后人的技能很贴合现星位；光环与其他盾卫取最高或不同类别，避免无上限堆防。",
+      "name": "王大芷",
+      "skill_ids": [
+        "hold_ground",
+        "hold_curtain",
+        "door_mine"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "yaoyaoya",
+      "legacy_id": "C27",
+      "verdict": "优先沿用，修改武器限制",
+      "focus": "奶团吕布／破口一击／回看旗子",
+      "note": "符合疲劳九星双手核心。旧主动和被动限定双手长柄，现开局伐木斧不满足；建议改支持双手近战且使用武器自身合法距离，不强行让所有双手武器打两格。",
+      "name": "瑶瑶牙",
+      "skill_ids": [
+        "lvbu_weapon",
+        "breach_strike",
+        "look_flag"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "yangmiemie",
+      "legacy_id": "C28",
+      "verdict": "优先沿用设计",
+      "focus": "弯道留力／贴线绕行／铃铛带路",
+      "note": "绕行与留下路径给伙伴形成特色。脚步标记只持续明确时段，不能通过反复进出同格刷恢复。",
+      "name": "羊咩咩",
+      "skill_ids": [
+        "curve_force",
+        "line_detour",
+        "bell_lead"
+      ],
+      "existing_icon_count": 3
+    },
+    {
+      "key": "chenzhihan",
+      "legacy_id": "C22",
+      "verdict": "优先沿用设计",
+      "focus": "月饼帮／这一盾记住了／先护住自己",
+      "note": "营地准备与记住攻击者都很适合生命／决心／近防星位；补给须收费后只给下一战，避免取消或读档重复发放。",
+      "name": "陈知含",
+      "skill_ids": [
+        "moon_cake",
+        "remember_shield",
+        "guard_self"
+      ],
+      "existing_icon_count": 3
+    }
+  ],
+  "skills": [
+    {
+      "id": "wawa_call",
+      "name": "哇哇叫",
+      "kind": "主动指挥",
+      "text": "4行动点、16疲劳、1次团队号令，自身与三格内可行动友军获得决心加成两轮。加成为6＋向下取整的（阿飞永久决心－20）÷5，最低6、最高20；永久决心只含基础、升级和一次性成长，不含装备、士气、旗帜及临时增益。它提高后续检定基础，不直接提升当前士气等级。",
+      "source": "P0156",
+      "flavor": "哇哇叫！一声又尖又亮，听着丢人，却能把附近的人叫醒。",
+      "effects": [
+        "自身与3格内可行动友军决心提升两轮；成长后范围4格",
+        "加成随阿飞永久决心增长（6–20）"
+      ],
+      "owner": "C01",
+      "owner_name": "阿飞",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": true,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 16,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_wawa_call.png",
+        "sha256": "820b4eb9a3e23ebf17140cc4670af7e6ab026523404f1e2bb2c41a0b48229f8c",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 136
+        }
+      ]
+    },
+    {
+      "id": "jiahao",
+      "name": "嘉豪",
+      "kind": "成长被动",
+      "text": "阿飞仍在名册时，每位不同命名伙伴首次完成个人成长，给予他永久决心＋4、最大疲劳＋2，最多记录16人。抹茶、大谋计入，阿飞本人的成长与普通雇员不计；单纯签约不加点。已获得的奖励不因伙伴后来离队收回，死亡后不再新增。",
+      "source": "P0158",
+      "flavor": "旗上每多一个名字，他就稳一点。告示上那两个字是他自己写的。",
+      "effects": [
+        "命名伙伴首次完成成长：永久决心＋4、最大疲劳＋2",
+        "最多记录16人；离队不收回"
+      ],
+      "owner": "C01",
+      "owner_name": "阿飞",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_jiahao.png",
+        "sha256": "da788c0237d0c9812369b6ae59a6faa6f365b26ac59e1aa4574f4862a883aac2",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": []
+    },
+    {
+      "id": "toad_escape",
+      "name": "蛤蟆",
+      "kind": "主动自保",
+      "text": "3行动点、10疲劳，每战一次。生命不高于最大值50%，或邻接至少两名敌人时，可移至相邻同高合法空地，免除此步的脱离攻击。自己须可行动且未被定身；不穿过单位、墙壁，不解除网缚，也不回复生命。",
+      "source": "P0160",
+      "flavor": "姿势难看，逃得却快。",
+      "effects": [
+        "生命≤50%或邻接≥2敌时可移至相邻同高空地",
+        "免除该步脱离攻击；每战一次"
+      ],
+      "owner": "C01",
+      "owner_name": "阿飞",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 10,
+        "target": "empty",
+        "range": 1,
+        "cooldown": 0,
+        "limit": 1
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_toad_escape.png",
+        "sha256": "2587d182ea9682baee254f2c6a4ed85b3b1bfd647332407d2b730de3c9c7f9f5",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 28
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 29
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "id": "full_circle",
+      "name": "全力圈",
+      "kind": "终局指挥",
+      "text": "满足终极觉醒后获得。4行动点、30疲劳、1次团队号令，每战一次，自身与四格内可行动友军立即恢复20点已积累疲劳，并获得决心＋20两轮。恢复前必须能支付自身30疲劳；受益者在效果到期时追加10疲劳，战斗结束或该受益者离场则清除未到期后劲。无行动点回复。",
+      "source": "P0162",
+      "flavor": "把附近的人拢回一口气。喊完了还得自己扛着。",
+      "effects": [
+        "恢复20疲劳，决心＋20两轮",
+        "到期追加10疲劳后劲；每战一次"
+      ],
+      "owner": "C01",
+      "owner_name": "阿飞",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": true,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 30,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 1
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_full_circle.png",
+        "sha256": "823c4d34caf95a2501ba2123d5ee251585c740d89030d25af7542f0b116add5e",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 32
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 137
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/world.nut",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "id": "scrap_parts",
+      "name": "地精出身",
+      "kind": "后勤被动",
+      "text": "抹茶在名册时，每累计实际消耗7点工具用于营地维修，获得1次余料减免，最多存3次。下次至少原需2工具的合法维修自动少耗1工具，并消耗一次减免；实际支付的工具才进入下一轮累计。不能修满耐久装备刷数；余料不变成背包物品。",
+      "source": "P0200",
+      "flavor": "裂了先修。省下的铁，还能再钉一回。",
+      "effects": [
+        "每耗7点工具维修攒1次余料，最多存3次",
+        "下次≥2工具的维修自动少耗1"
+      ],
+      "owner": "C02",
+      "owner_name": "抹茶",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_scrap_parts.png",
+        "sha256": "a4e66fbaafb73bbac731c8cb3aaaa6fab78ceb7409258024016083192256fc16",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": []
+    },
+    {
+      "id": "abacus_mark",
+      "name": "地精算盘",
+      "kind": "主动标记",
+      "text": "3行动点、10疲劳，给四格内一名可见敌人记账。下一次友军对该目标的单体武器攻击命中＋10，无论命中与否都耗掉标记；持续两轮，冷却两轮。抹茶同时只保留一组记账，新施放替换旧组。",
+      "source": "P0202",
+      "flavor": "在敌人身上记一笔。打中了就算收过了。",
+      "effects": [
+        "4格内标记敌人：下一次友军单体武器攻击命中＋10",
+        "觉醒后同次可选两人"
+      ],
+      "owner": "C02",
+      "owner_name": "抹茶",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 10,
+        "target": "enemy",
+        "range": 4,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_abacus_mark.png",
+        "sha256": "8fc70151ae8f01cb07520ad4477d4a7bcc776b503142f7f68c236ab56d784293",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 75
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 76
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 87
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 89
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 118
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 119
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 120
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 140
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 147
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "id": "shadow_captain",
+      "name": "幕后队长",
+      "kind": "主动指挥",
+      "text": "4行动点、15疲劳、1次团队号令。指定四格内最多两名可行动友军，其下一次武器技能的疲劳成本减少8，最低0；两轮未使用则消失。同一人只存一份费用优惠，不能优惠另一项号令。",
+      "source": "P0204",
+      "flavor": "不喊。指定两个人，让他们少花一口气。",
+      "effects": [
+        "4格内最多2名友军：下一次武器技能少耗8疲劳",
+        "消耗1次团队号令"
+      ],
+      "owner": "C02",
+      "owner_name": "抹茶",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": true,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 15,
+        "target": "ally",
+        "range": 4,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_shadow_captain.png",
+        "sha256": "104339adbdba0e234d84fab5b0c07a1a6bbb2f9a29ba8e0bc22b603a9adefbe2",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 75
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 76
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 87
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 89
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 118
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 119
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 143
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "id": "steal_bro",
+      "name": "偷大哥",
+      "kind": "招募技巧",
+      "text": "每七日可谈成一次引荐，耗时2小时。为一名已经满足招募条件的候选人保留八折签约价，最多省200克朗；只保留一个报价，签约才算成功并开始七日冷却。更换未签报价仍须重新花2小时，不能凭空转移其他队伍的人或装备。",
+      "source": "P0231",
+      "flavor": "先把价讲到八折。签了才算偷成。",
+      "effects": [
+        "每七日可谈一次引荐，耗时2小时",
+        "满足条件的候选人保留八折价，最多省200"
+      ],
+      "owner": "C03",
+      "owner_name": "王大谋",
+      "runtime": {
+        "active": false,
+        "world": true,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_steal_bro.png",
+        "sha256": "92c038ad23db86d9c3119903420c8615bbe64c69bc37a089048dc9426f8e109a",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": []
+    },
+    {
+      "id": "borrow_strike",
+      "name": "大哥借我",
+      "kind": "主动取经",
+      "text": "2行动点、8疲劳，向三格内一名永久近攻高于自己的友军借招。接下来的两次单体近战武器攻击，命中增加双方永久近攻差，最多＋10；两轮后失效，冷却三轮。加成在施放时固定，不能复制临时增益或借招结果。",
+      "source": "P0233",
+      "flavor": "大哥借我！跟近攻更高的人过一招，出手带一点他的手感。",
+      "effects": [
+        "借永久近攻差提高接下来2次近战命中；成长后3次",
+        "冷却3轮"
+      ],
+      "owner": "C03",
+      "owner_name": "王大谋",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 2,
+        "fatigue": 8,
+        "target": "ally",
+        "range": 3,
+        "cooldown": 3,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_borrow_strike.png",
+        "sha256": "6548a4eb114ca963ef5f6803d93525f21697ea791170baf5968697024f26f6d8",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 66
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 144
+        }
+      ]
+    },
+    {
+      "id": "together_lift",
+      "name": "一起抬",
+      "kind": "队形被动",
+      "text": "两格内至少有两名其他可行动友军时，近战护甲伤害＋10%，近战武器技能的疲劳成本减少2，最低0。按每次出手时的站位判断；费用优惠与其他技能取最高一份。此效果不再动态改变最大疲劳。",
+      "source": "P0235",
+      "flavor": "旁边有人一起抬，这一下就不那么沉。",
+      "effects": [
+        "护甲增伤；疲劳优惠与其他来源取最高"
+      ],
+      "owner": "C03",
+      "owner_name": "王大谋",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_together_lift.png",
+        "sha256": "9238ed818e0e9dd62ee303479813dd7a57b994e52959cb93f1d4c97b55875fb7",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 7
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 18
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "id": "bottle_breakthrough",
+      "name": "瓶队突破",
+      "kind": "主动武器技",
+      "text": "4行动点、18疲劳，使用当前单手近战武器的基础单体攻击打邻接敌人，命中＋10；按该基础攻击的伤害、护甲效率和命中部位结算。攻击后近防－5至下次自身行动开始，冷却两轮。技能费用替代该次基础攻击费用，不能套用双手武器。",
+      "source": "P0262",
+      "flavor": "往人缝里冲。门关着也一样。",
+      "effects": [
+        "基础单体近战，命中＋10",
+        "命中后近防－5至下次行动；冷却2轮"
+      ],
+      "owner": "C04",
+      "owner_name": "小酒瓶",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": true,
+        "ap": 4,
+        "fatigue": 18,
+        "target": "enemy",
+        "range": 1,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_bottle_breakthrough.png",
+        "sha256": "cebbc4855d13160dde63cd485c97096f327c65b0f158105f44de2a7ba8ace36e",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 38
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 145
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "id": "finals_moment",
+      "name": "决赛时刻",
+      "kind": "后程被动",
+      "text": "从第五轮开始，单体近战武器伤害＋10%，每次此类攻击额外积累3疲劳。只作用于实际出手，战后清除。等待本身不会增加层数，收不收残局仍由玩家判断。",
+      "source": "P0264",
+      "flavor": "第五轮了。呼吸反而稳了。",
+      "effects": [
+        "第5轮起：单体近战伤害＋10%",
+        "每次此类攻击额外＋3疲劳"
+      ],
+      "owner": "C04",
+      "owner_name": "小酒瓶",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_finals_moment.png",
+        "sha256": "3c6b1eebc347b1940376d77072ae64a5b432d972effcd7230ce0eb1120a7bf64",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 16
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 132
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "id": "teammate_ball",
+      "name": "队友给的球",
+      "kind": "配合被动",
+      "text": "每轮第一次攻击本轮已被另一名友军单体武器攻击命中的敌人时，命中＋5。按真实敌对目标记录，范围擦伤、持续伤害与友军误伤不算；每轮最多一次。",
+      "source": "P0266",
+      "flavor": "队友先碰过的，到她脚下更顺。",
+      "effects": [
+        "本轮已被友军单体武器命中的敌人：首次攻击命中＋5"
+      ],
+      "owner": "C04",
+      "owner_name": "小酒瓶",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_teammate_ball.png",
+        "sha256": "2ed2b3ea9c32cb78181c3b16d75f3762c14f31a96b15f04355afb41d86664c88",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 110
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "id": "unselectable",
+      "name": "无法选中",
+      "kind": "主动避险",
+      "text": "4行动点、20疲劳，每战一次，须没有邻接敌人。至下次自身行动开始，每当敌方选取单体技能目标，若还有另一名满足该技能全部选取条件的己方佣兵，李李从候选中排除；没有替代合法目标时正常可选。范围攻击、误射与地形伤害照常，主动攻击前解除。",
+      "source": "P0293",
+      "flavor": "灯再亮时，台上已经没有她。",
+      "effects": [
+        "若敌人射程内有其他合法友军，优先无法点选她",
+        "附加少量防御"
+      ],
+      "owner": "C05",
+      "owner_name": "李李超欧",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 20,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 1
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_unselectable.png",
+        "sha256": "a8ba876b2539e36343b22339eccf01790072f0ab9c97223374b9b662d16a34f1",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 30
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "id": "chaoju",
+      "name": "超巨",
+      "kind": "聚光被动",
+      "text": "每轮第一次对真实敌人的武器命中获得1层聚光，每轮第一次未命中失去1层；各结算一次，按先后顺序处理，最多3层。每层远攻＋3、决心＋3；所有层数战后清除。范围伤害与持续伤害不触发。",
+      "source": "P0295",
+      "flavor": "椅子往那儿一放，目光就跟着过去。",
+      "effects": [
+        "叠加聚光层数，提升表现",
+        "成长需记录两层峰值"
+      ],
+      "owner": "C05",
+      "owner_name": "李李超欧",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_chaoju.png",
+        "sha256": "16a638519463507b7b2396b3073a1b5af90a80b0253a0fec5348f558afe14947",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 60
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 135
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 182
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 163
+        }
+      ]
+    },
+    {
+      "id": "ouqi",
+      "name": "欧气",
+      "kind": "士气被动",
+      "text": "每场第一次普通士气检定失败时，自动按同一概率重掷一次，采用第二次结果。先记录本次机会已消耗，再重掷；不重掷伤害、掉落、控制抗性或死亡判定。",
+      "source": "P0297",
+      "flavor": "这一次不算。她再掷一次。",
+      "effects": [
+        "特定检定可重掷",
+        "每轮次数有限"
+      ],
+      "owner": "C05",
+      "owner_name": "李李超欧",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_ouqi.png",
+        "sha256": "4124afdadd7e75dd428cc7b3ae1bfc8d1fcef6ab9e9f96125ee1edeed82d0e44",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": []
+    },
+    {
+      "id": "dog_bark",
+      "name": "狗叫",
+      "kind": "主动干扰",
+      "text": "3行动点、12疲劳，对三格内可见的人类或绿皮敌人施加近攻－8，至该敌人下一次行动结束；冷却两轮。一次技能可影响其该次行动中的多次近战攻击。亡灵、野兽和精神干扰免疫者无效，同类削弱取最强一份。",
+      "source": "P0324",
+      "flavor": "她说只是提醒一声。河对面的人却都停了脚。",
+      "effects": [
+        "对人类/绿皮精神冲击",
+        "受免疫者无效"
+      ],
+      "owner": "C06",
+      "owner_name": "余初九",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 12,
+        "target": "enemy",
+        "range": 3,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_dog_bark.png",
+        "sha256": "29073f56d854d0bd5821ca781a9683fb8f7550afe3b776faa473e86374fba8a8",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 61
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 148
+        }
+      ]
+    },
+    {
+      "id": "loyalty",
+      "name": "忠诚",
+      "kind": "护团被动",
+      "text": "距本场护团中心两格内，余九决心＋10。中心优先为可行动的阿飞；他未出战、逃跑或失去行动能力时，切换为战前指定的代理队长。每轮中心第一次被敌方武器命中后，若余九当时在范围内，她近防＋4至轮末。没有有效中心则不触发。",
+      "source": "P0326",
+      "flavor": "嘴上说管不了。旗还在视野里，她就不退。",
+      "effects": [
+        "范围决心增益",
+        "中心受击后自身近防＋4"
+      ],
+      "owner": "C06",
+      "owner_name": "余初九",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_loyalty.png",
+        "sha256": "f07c56a5eb19ce9c340b61ea1949f70e0942371e40bd7ddbe35b75c83d7efc97",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 2
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 64
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 65
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 191
+        }
+      ]
+    },
+    {
+      "id": "guard_swap",
+      "name": "护团换位",
+      "kind": "主动救援",
+      "text": "3行动点、15疲劳，每战一次，与相邻己方佣兵交换位置，双方免除此次移动的脱离攻击。两人均须可行动、未被定身，且互换后两处地块均可合法站立。不会解除眩晕、网缚或伤势；路径不成立时不扣费。",
+      "source": "P0328",
+      "flavor": "谁让你一个人顶着？换过来。这一下她接。",
+      "effects": [
+        "与友军交换位置",
+        "双方须可移动且同高"
+      ],
+      "owner": "C06",
+      "owner_name": "余初九",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 15,
+        "target": "ally",
+        "range": 1,
+        "cooldown": 0,
+        "limit": 1
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_guard_swap.png",
+        "sha256": "2fd36cf5e0516a06a9c29287f919e479350b6148200c2ab66699d5a228b1039b",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 28
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 68
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "id": "supermarket",
+      "name": "超市里",
+      "kind": "补给技巧",
+      "text": "每个游戏日一次，主动选定商店当前确有库存的一笔食物购买，价格降低15%，最多省30克朗，成交价向上取整。同类折扣取最高值；取消交易不消耗次数，成功成交才计入当日记录。",
+      "source": "P0355",
+      "flavor": "每个铜子都花在刚好够上。",
+      "effects": [
+        "每日一次：食物购买－15%，最多省30",
+        "取消不耗次数"
+      ],
+      "owner": "C07",
+      "owner_name": "小月牙",
+      "runtime": {
+        "active": false,
+        "world": true,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_supermarket.png",
+        "sha256": "25d6e276eb926d0a31c3e779632ab6755546dbf3f9cf5df8b51cf7e09c3b9ff1",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": []
+    },
+    {
+      "id": "biantai",
+      "name": "变态",
+      "kind": "变招被动",
+      "text": "若本次远程武器攻击的目标不同于自己上一次远程武器攻击的目标，命中＋8，每轮最多触发一次。首发没有上次目标，不触发；同轮可以换目标，跨轮也保留最近目标，战后清空。记录的是尝试攻击，不要求上一次命中。",
+      "source": "P0357",
+      "flavor": "上一箭给甲，这一箭给乙。",
+      "effects": [
+        "换目标后的命中加成"
+      ],
+      "owner": "C07",
+      "owner_name": "小月牙",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_biantai.png",
+        "sha256": "3313277855f4a00e1023a5497bbab8d83e837307276ed0e37fdd988c41286dd5",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 112
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 152
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/growth.nut",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "id": "optimist",
+      "name": "乐天派",
+      "kind": "士气被动",
+      "text": "每场第一次普通士气检定失败时，消耗一次乐天派并保持检定前的士气等级。一次只取消这次下降，后续独立检定照常；不移除已经存在的逃跑、魅惑或恐惧技能状态。",
+      "source": "P0359",
+      "flavor": "士气塌下来那一下，被她接住了。",
+      "effects": [
+        "士气失败保护",
+        "每轮限次"
+      ],
+      "owner": "C07",
+      "owner_name": "小月牙",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_optimist.png",
+        "sha256": "3a6ea74ba683a3a967eca21ff39fe6a57fdc6cf18483a283b72e652267c7037b",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 40
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "id": "only_man",
+      "name": "唯一的男人",
+      "kind": "接应被动",
+      "text": "邻接一名可行动且未持盾的伙伴，或邻接自己顶上去的受护者时，小鱼近防＋6。按当前副手装备与有效守护状态判断，人数不叠加，也不要求队友先受伤。名字沿用营中绰号，技能按装备与站位结算。",
+      "source": "P0386",
+      "flavor": "没盾的人旁边。那一下她接。",
+      "effects": [
+        "依邻接保护关系提升表现"
+      ],
+      "owner": "C08",
+      "owner_name": "小鱼贝壳",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_only_man.png",
+        "sha256": "8d2bc079b0576f9528c8e76dbec205bef7e8ee0445b48e2c463a4ad7b5a3a0e7",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "id": "nicotine",
+      "name": "尼古丁",
+      "kind": "主动预支",
+      "text": "2行动点、0疲劳，每战一次，立即移除15点已积累疲劳。随后两次自身行动开始的正常疲劳恢复各减少5，最低恢复0；没有可恢复的疲劳时不可发动。未偿还部分在战斗结束清除，不产生物品。",
+      "source": "P0388",
+      "flavor": "先把气喘匀。这一口得后面还。",
+      "effects": [
+        "立即恢复疲劳（受起源每轮上限约束）",
+        "随后回合恢复惩罚"
+      ],
+      "owner": "C08",
+      "owner_name": "小鱼贝壳",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 2,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 1
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_nicotine.png",
+        "sha256": "1baa811834c9fcb0c6aa086e2c2572e7269a2f1052b75973581f8a1f1d699a55",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 31
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "id": "cover_up",
+      "name": "顶上去",
+      "kind": "主动拦截",
+      "text": "4行动点、20疲劳，持盾指定一名相邻伙伴，自己保持原地至下次行动开始。期间该伙伴首次遭受单体近战武器攻击时，若攻击者也能用同一技能合法攻击小鱼，改以小鱼为目标，用她的防御、护甲重新结算，并令该击生命伤害减少15%。每次施放仅拦一击，尝试即消耗；冷却三轮。失去邻接、受护者离场，或小鱼不能行动、失去盾、被迫移动时，守护结束。",
+      "source": "P0390",
+      "flavor": "刀来的时候，她已经站在那儿。",
+      "effects": [
+        "重定向邻接友军受到的单体近战",
+        "未命中后清理减伤标记"
+      ],
+      "owner": "C08",
+      "owner_name": "小鱼贝壳",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 20,
+        "target": "ally",
+        "range": 1,
+        "cooldown": 3,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_cover_up.png",
+        "sha256": "40bc7f865fb381a80c884e6deeaa01a615aab8255fc43a6c9a479de49627ffa1",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 27
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 69
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 151
+        }
+      ]
+    },
+    {
+      "id": "small_heart",
+      "name": "小心脏",
+      "kind": "条件被动",
+      "text": "两格内没有其她可行动友军时决心－8；持盾且邻接可行动友军时近防＋4。两种情况互斥，实时按站位判断；伙伴离场会改变条件，但不会自动触发额外士气检定。",
+      "source": "P0417",
+      "flavor": "身边没人，心会缩一下。有人时盾最稳。",
+      "effects": [
+        "独处决心惩罚；邻接持盾近防加成",
+        "觉醒后可取消惩罚"
+      ],
+      "owner": "C09",
+      "owner_name": "白小帅子",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_small_heart.png",
+        "sha256": "94eb85ac1ca6c82edf4f7860acfa1288588617555d175008eda477690954c8e5",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "id": "drum",
+      "name": "打鼓",
+      "kind": "主动指挥",
+      "text": "4行动点、16疲劳、1次团队号令，自身与三格内可行动友军获得定拍。每人下一次行动开始额外恢复8疲劳，并在该次行动结束前决心＋5；额外恢复计入该轮20点上限。跳过行动仍结算，已离场者清除，定拍不叠加。",
+      "source": "P0419",
+      "flavor": "咚、咚、咚、咚。呼吸跟着落回拍子。",
+      "effects": [
+        "3格内友军下次行动开始恢复8疲劳，并获决心＋5",
+        "消耗号令"
+      ],
+      "owner": "C09",
+      "owner_name": "白小帅子",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": true,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 16,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_drum.png",
+        "sha256": "4e12cd480933f4a40cccf27a0ff847bbf92b53808c7533b33e3aa7a1e0736a12",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 152
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 2
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 199
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 200
+        }
+      ]
+    },
+    {
+      "id": "guard_gate",
+      "name": "守门",
+      "kind": "主动守势",
+      "text": "3行动点、12疲劳，须持盾，至下次自身行动开始不能移动。期间免疫第一次强制推拉位移，但伤害和其她状态照常；本次守势中的第一次普通脱离攻击命中＋10，仍遵守原有控制区与攻击次数规则。冷却两轮。",
+      "source": "P0421",
+      "flavor": "这门今天不开。",
+      "effects": [
+        "近防＋8并定身守势",
+        "首次推拉免疫；首次脱离攻击命中＋10"
+      ],
+      "owner": "C09",
+      "owner_name": "白小帅子",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 12,
+        "target": "self",
+        "range": 0,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_guard_gate.png",
+        "sha256": "0cbe504ff1b508e798ba2535095d2620a4b152ea00ed53ddf1732eeeb5ae19a1",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 27
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "id": "fear_afei",
+      "name": "恐飞派",
+      "kind": "关系被动",
+      "text": "每战第一次成为阿飞号令的受益者，立即恢复8疲劳；本轮下一次武器攻击命中－5，轮末未攻击则清除。主动使用怼一句后也清除这次惩罚。收益计入每轮20点恢复上限，其他人的号令不能冒名触发。",
+      "source": "P0448",
+      "flavor": "团长一喊，碗端不稳。人倒是醒了。",
+      "effects": [
+        "受哇哇叫影响的命中惩罚与恢复",
+        "成长后可取消惩罚"
+      ],
+      "owner": "C10",
+      "owner_name": "王怼怼",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_fear_afei.png",
+        "sha256": "04cd0975d48fde7693e0b160ebbf669438ed4ef7e47c0659ffc1392ceaa5ee77",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "id": "prince_order",
+      "name": "太子发令",
+      "kind": "主动指挥",
+      "text": "4行动点、15疲劳、1次团队号令。仅当怼怼是战前指定的代理，且阿飞未出战、逃跑或不能行动时可用。自身与三格内可行动友军决心＋10、近防＋5，持续两轮。阿飞恢复行动只关闭新施放，已有增益正常到期。",
+      "source": "P0450",
+      "flavor": "团长不在时，这块牌子替他说话。",
+      "effects": [
+        "阿飞未能指挥时，3格内友军决心＋10、近防＋5两轮"
+      ],
+      "owner": "C10",
+      "owner_name": "王怼怼",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": true,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 15,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_prince_order.png",
+        "sha256": "a33c94bac94ce9eecfeac28ae1a5212f9d5436a49c510ee170ebdf7f49ac6cba",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 34
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 154
+        }
+      ]
+    },
+    {
+      "id": "dui_sentence",
+      "name": "怼一句",
+      "kind": "主动传令",
+      "text": "3行动点、10疲劳，冷却两轮。把自己仍有效的哇哇叫、稳一手或太子发令中的决心和近防加成，转述给三格内一名尚未收到该原始号令的可行动友军，剩余时间保持不变。每条原始号令最多转述给一人；不传递全力圈、定拍、费用优惠或位移免疫，也不消耗新号令。",
+      "source": "P0452",
+      "flavor": "没送到的话，原样补到最后一个人耳朵里。",
+      "effects": [
+        "复制部分增益效果与剩余时长"
+      ],
+      "owner": "C10",
+      "owner_name": "王怼怼",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 10,
+        "target": "ally",
+        "range": 3,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_dui_sentence.png",
+        "sha256": "239c0a4143d6b4e56f724bbc217b710028c0c47d81002c5c6131d910cbe09cf3",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 71
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 155
+        }
+      ]
+    },
+    {
+      "id": "scout_path",
+      "name": "探路",
+      "kind": "行军技巧",
+      "text": "每七日一次，花2小时调查一份已经接下的护送契约，揭示路线上的一项实际危险线索；优先揭示已存在的敌对活动，其次为难行路段。无新线索则不收费也不进入冷却。消息记查明时刻，之后变化的敌人位置不会自动更新。",
+      "source": "P0510",
+      "flavor": "出发前两小时，路上的坑她先踩一遍。",
+      "effects": [
+        "世界：调查当前护送路线（2小时）",
+        "战斗中亦有机动增益"
+      ],
+      "owner": "C12",
+      "owner_name": "小虎",
+      "runtime": {
+        "active": false,
+        "world": true,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_scout_path.png",
+        "sha256": "63e588d98513a2c040c1629e9b98120fe3fd1c33499398dcd547da3754b75fbf",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": []
+    },
+    {
+      "id": "return_arrow",
+      "name": "回头箭",
+      "kind": "站位被动",
+      "text": "本轮完成至少两格普通移动后，第一次远程武器攻击命中＋7，每轮一次。换位、被推拉和专属位移不计步数；仍支付原武器费用，不能用原地来回获得永久增益。",
+      "source": "P0512",
+      "flavor": "走两步再回头放一箭。",
+      "effects": [
+        "移动后的射击相关加成"
+      ],
+      "owner": "C12",
+      "owner_name": "小虎",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_return_arrow.png",
+        "sha256": "e5a60068932f359a2fa4e56f98270db6c94232791e037f75fec737a4f3258a4c",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 113
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 153
+        }
+      ]
+    },
+    {
+      "id": "catch_rear",
+      "name": "接住后排",
+      "kind": "主动掩护武器技",
+      "text": "4行动点、18疲劳，消耗一发弹药，须持弓。选择二至四格内可见且射线合法的敌人，以及其相邻的一名伙伴，进行一次普通弓箭攻击，生命与护甲伤害均为该次攻击的50%。无论是否命中，该伙伴下次单格移动离开此敌人控制区时，免除仅来自此敌人的脱离攻击。标记至伙伴下一次行动结束失效，冷却三轮；不解除定身。",
+      "source": "P0514",
+      "flavor": "她盯的不是敌人，是被贴住的自己人。",
+      "effects": [
+        "消耗1发弓箭；该次射击的生命和护甲伤害减半",
+        "指定敌人的脱离豁免"
+      ],
+      "owner": "C12",
+      "owner_name": "小虎",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": true,
+        "ap": 4,
+        "fatigue": 18,
+        "target": "enemy",
+        "range": 4,
+        "cooldown": 3,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_catch_rear.png",
+        "sha256": "3b65b04cda97ef8f7b5ee2f9035bd07154a8585cef1500d052d4284366e28ce0",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 16
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 18
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 37
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 39
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 60
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 62
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 75
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 76
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 125
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 159
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 192
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 130
+        }
+      ]
+    },
+    {
+      "id": "goose_bully",
+      "name": "鹅势欺人",
+      "kind": "阵形被动",
+      "text": "至少邻接一名敌人，且邻接可行动友军数量不少于邻接敌人数量时，近攻＋5、决心＋5。每次相关检定即时检查；自己、替补席和远处队友不算人数。",
+      "source": "P0541",
+      "flavor": "身后站着自己人时，嗓门能顶半面盾。",
+      "effects": [
+        "依邻敌与友军比较：近攻/决心增益"
+      ],
+      "owner": "C13",
+      "owner_name": "大鹅",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_goose_bully.png",
+        "sha256": "e0c14da92390309dc7ff52ab978dce9ba2238ebd65651280aa520275809fcc4d",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 67
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 136
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "id": "gaga_charge",
+      "name": "嘎嘎冲",
+      "kind": "主动推进武器技",
+      "text": "6行动点、22疲劳，冷却三轮。须用单手近战武器，先走到相邻同高、普通移动基础成本不高于2行动点的空格，再对邻接敌人作基础单体攻击，命中－5、护甲伤害＋10%。命中后把普通可推动人形敌人沿远离大鹅方向推一格，仅限同高合法空格；不满足推位条件则只有攻击。移动仍受控制区限制，费用已含一步与一次攻击。",
+      "source": "P0543",
+      "flavor": "侧肩一撞。不是冲人，是冲让开。",
+      "effects": [
+        "移至相邻空格后攻击邻敌：命中－5、护甲伤害＋10%",
+        "命中可推动；注意武器与地形"
+      ],
+      "owner": "C13",
+      "owner_name": "大鹅",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": true,
+        "ap": 6,
+        "fatigue": 22,
+        "target": "empty",
+        "range": 1,
+        "cooldown": 3,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_gaga_charge.png",
+        "sha256": "de67299fa71818c2eaf9f7cc2c743f542ef8cb36685639a221374b3791bc16b2",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 28
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 38
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 75
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 76
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 126
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 160
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 127
+        }
+      ]
+    },
+    {
+      "id": "guard_nest",
+      "name": "守窝",
+      "kind": "主动护卫",
+      "text": "3行动点、15疲劳，须持盾，保持原地至下次自身行动开始。自己与当前邻接友军远防＋6，离开相邻范围立即失去保护；新进入者可受益。冷却两轮，大鹅失去行动能力、放下盾或被迫离开原格则守窝结束。",
+      "source": "P0545",
+      "flavor": "窝里的东西谁也别想碰。",
+      "effects": [
+        "自身与邻接友军远防＋6"
+      ],
+      "owner": "C13",
+      "owner_name": "大鹅",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 15,
+        "target": "self",
+        "range": 0,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_guard_nest.png",
+        "sha256": "190e3fc9b2d70c289f7825fd1be97bc2983fd3083b445c62d4c3f896ba225ff0",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 27
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "id": "lock_wagon",
+      "name": "锁车",
+      "kind": "主动布置",
+      "text": "4行动点、15疲劳、2工具，在相邻合法空地布置一处绳扣，每战最多布置两次。普通可束缚人形敌人主动踏入时，绳扣消耗并令其本次行动不能继续移动，至该次行动结束解除；仍能在原地攻击。己方安全通过，推拉与传送不触发；巨兽、飞行和束缚免疫者无效，不能放在单位脚下。",
+      "source": "P0572",
+      "flavor": "过路的地方，她先给敌人系一根绊马索。",
+      "effects": [
+        "相邻空格布绳扣，消耗2工具；敌人主动踏入后停步",
+        "每战有限次数"
+      ],
+      "owner": "C14",
+      "owner_name": "小杰",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 15,
+        "target": "empty",
+        "range": 1,
+        "cooldown": 0,
+        "limit": 2
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_lock_wagon.png",
+        "sha256": "2fbfaa88ebfcfe7e2b11739869056ab795493dc892baf2d64f8c3521d077ee3c",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 36
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 108
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 163
+        }
+      ]
+    },
+    {
+      "id": "not_fooled",
+      "name": "不上这个当",
+      "kind": "抗干扰被动",
+      "text": "抵抗明确属于恐惧或魅惑的技能时，检定采用决心＋15。常规受伤、包围和同伴阵亡导致的士气检定不加；该值只改变这次抗性检定，不转为永久决心，也不保证免疫。",
+      "source": "P0574",
+      "flavor": "花言巧语到她这儿，先过一遍锁眼。",
+      "effects": [
+        "相关检定大幅加成"
+      ],
+      "owner": "C14",
+      "owner_name": "小杰",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_not_fooled.png",
+        "sha256": "98bb791f3e371fd8244d8df057664ed9e1b50858681cb72538cccb6b8571a6bb",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/native_adapters.nut",
+          "line": 374
+        }
+      ]
+    },
+    {
+      "id": "spare_key",
+      "name": "备用钥匙",
+      "kind": "主动解围",
+      "text": "3行动点、10疲劳，解除自己或相邻伙伴的一项网缚，冷却两轮。有网才可发动；不解除眩晕、敌方抓取和永久伤势。自身被网但仍能使用技能时也可自救，之后移动仍需正常成本。",
+      "source": "P0576",
+      "flavor": "队友身上的网，她一把钥匙解开。",
+      "effects": [
+        "解除友军网/蛛网",
+        "冷却与次数受限"
+      ],
+      "owner": "C14",
+      "owner_name": "小杰",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 10,
+        "target": "ally_self",
+        "range": 1,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_spare_key.png",
+        "sha256": "66bd95e70b49656a269c96977de035aad1e46f5832c05cc231c8a98b28ae9db0",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 67
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 164
+        }
+      ]
+    },
+    {
+      "id": "foot_point",
+      "name": "踩点",
+      "kind": "主动机动",
+      "text": "4行动点、12疲劳，冷却两轮，沿合法路线移动一至两格。每步须同高，地形的普通移动基础成本不高于2行动点；受控制区限制，不能越过单位。获得先攻＋15至下一次自身行动结束，成本已含移动，不再另收普通移动疲劳。",
+      "source": "P0603",
+      "flavor": "落脚之前，她先替这只脚看好位置。",
+      "effects": [
+        "短距移动并获得先攻＋15"
+      ],
+      "owner": "C15",
+      "owner_name": "苏袜",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 12,
+        "target": "empty",
+        "range": 2,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_foot_point.png",
+        "sha256": "9bd441605de10a811bb36e659187c15093acd8a0ec03623869aff3f7255f5bd7",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 28
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 165
+        }
+      ]
+    },
+    {
+      "id": "half_step",
+      "name": "抢半步",
+      "kind": "先手被动",
+      "text": "单体武器攻击时，若自己的当前有效先攻高于目标，命中＋5，每轮最多两次。比较数值包含当时装备、已积累疲劳及临时修正；相等不触发，不额外插入行动。",
+      "source": "P0605",
+      "flavor": "比别人快半步。刚好够先出手。",
+      "effects": [
+        "依先手比较的命中反应",
+        "次数有限"
+      ],
+      "owner": "C15",
+      "owner_name": "苏袜",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_half_step.png",
+        "sha256": "20b43b851d3970b7571c0207b004ef88f174133cca7c24f77f5609297907d7bb",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 114
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 154
+        }
+      ]
+    },
+    {
+      "id": "hard_brake",
+      "name": "急刹",
+      "kind": "主动守势",
+      "text": "3行动点、14疲劳，冷却三轮，至下次自身行动开始远防＋12、近防＋4；发动后本次行动不能继续主动移动。被迫移动会提前结束急刹，正常射击仍可进行，其他守势与同类防御加成按共同上限结算。",
+      "source": "P0607",
+      "flavor": "说停就停。",
+      "effects": [
+        "远防＋12、近防＋4的守势"
+      ],
+      "owner": "C15",
+      "owner_name": "苏袜",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 14,
+        "target": "self",
+        "range": 0,
+        "cooldown": 3,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_hard_brake.png",
+        "sha256": "111493e5a7aa168aead7a8c9349d105d72028d35e7f408e6d14458196d35dcc7",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 166
+        }
+      ]
+    },
+    {
+      "id": "return_road",
+      "name": "回头路",
+      "kind": "主动协同撤步",
+      "text": "4行动点、18疲劳，每战一次。自己与一名相邻、可行动且未被定身的伙伴，沿同一方向各移动一格，双方免除此步的脱离攻击，成本全部由涂涂承担。两条路线须同高且相邻可达，按两人同步离开起点后检查空位，不得碰到第三单位；不能穿墙或强制撤离战场。",
+      "source": "P0634",
+      "flavor": "两个人一起退半步，谁也不落下。",
+      "effects": [
+        "同步后撤；每战次数有限",
+        "成长后可强化"
+      ],
+      "owner": "C16",
+      "owner_name": "涂涂",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 18,
+        "target": "ally",
+        "range": 1,
+        "cooldown": 0,
+        "limit": 1
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_return_road.png",
+        "sha256": "40ffbb12d1f5a70ec49af386b6c6470325543ec3d8a89cdefbcc6889c28dc40c",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 25
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 28
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 68
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 75
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 76
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 111
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 127
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 167
+        }
+      ]
+    },
+    {
+      "id": "leave_not_gone",
+      "name": "离席未散",
+      "kind": "断后被动",
+      "text": "本场第一次有己方佣兵成功撤离后，涂涂决心＋10、近防＋5，持续两轮。只触发一次，阵亡、被抓取和暂时换位不算撤离；不会抵消本场撤退的经营与磨合代价。",
+      "source": "P0636",
+      "flavor": "有人先撤了。她断后的心反而定下来。",
+      "effects": [
+        "断后触发：决心＋10、近防＋5"
+      ],
+      "owner": "C16",
+      "owner_name": "涂涂",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_leave_not_gone.png",
+        "sha256": "a6976b5f4caba05b359917f95a7c2cbd4e67898aafe147c4fd8142160eccab8e",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "id": "one_more_night",
+      "name": "再留一晚",
+      "kind": "营地技巧",
+      "text": "每七日一次，安全扎营花6食物、4小时，磨合＋3，并清除至多两名自选成员的本起源闹别扭标签。没有标签时仍可为磨合使用。不能在追击中发动，也不治疗伤势或清除欠薪、饥饿造成的心情问题。",
+      "source": "P0638",
+      "flavor": "多留一晚。明天的力气也住出来。",
+      "effects": [
+        "世界：6食物、4小时；最多2人",
+        "磨合＋3，清除闹别扭；七日冷却"
+      ],
+      "owner": "C16",
+      "owner_name": "涂涂",
+      "runtime": {
+        "active": false,
+        "world": true,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_one_more_night.png",
+        "sha256": "1f947f0e25bdccabe73e3b426879a8e6d1f0940a09de17da04e179606f5f2b9b",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/events.nut",
+          "line": 254
+        }
+      ]
+    },
+    {
+      "id": "own_people",
+      "name": "自己人",
+      "kind": "射击被动",
+      "text": "自己的远程武器误射到友军时，该次友军生命与护甲伤害减少50%，向下取整。原来的命中结果、弹药和攻击成本不改，也不会改射中敌人。对主动指定友军的攻击无效；不能用它替代射线判断。",
+      "source": "P0665",
+      "flavor": "自己人先认清楚，弓才敢往外出。",
+      "effects": [
+        "对友军生命/护甲伤害减半"
+      ],
+      "owner": "C17",
+      "owner_name": "可可",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_own_people.png",
+        "sha256": "3f8b9519fecc73946f2cd300e4071e03f69a5bf0d0c7485f8c772ce7ad004441",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": []
+    },
+    {
+      "id": "pokemon",
+      "name": "保可梦",
+      "kind": "主动守望",
+      "text": "4行动点、16疲劳，指定四格内一名其他伙伴，远防＋8，持续两轮，冷却三轮。期间该伙伴遭单体敌方武器攻击后，记住最近那名可见攻击者；可可每轮第一次对当前记录者的远程攻击命中＋8。只保留一名受护者和一个威胁记录，目标或守望失效时记录清除。可可离场、死亡或失去行动能力时，守望整体结束。",
+      "source": "P0667",
+      "flavor": "她替你记住那个威胁。下一次箭就有去处。",
+      "effects": [
+        "赋予守望：远防等增益",
+        "本人失能则失效"
+      ],
+      "owner": "C17",
+      "owner_name": "可可",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 16,
+        "target": "ally",
+        "range": 4,
+        "cooldown": 3,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_pokemon.png",
+        "sha256": "b2ba86a244d99dbdeaed9f4cf3ca15f54a308ca5090a07df6d840665cfabab32",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 69
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 168
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 2
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 17
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 82
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 115
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 155
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 189
+        }
+      ]
+    },
+    {
+      "id": "breathe_easy",
+      "name": "松口气",
+      "kind": "守望被动",
+      "text": "保可梦仍有效时，受护者每轮第一次被敌方单体武器攻击且未被命中，可可立即恢复4疲劳。每轮一次，计入20点上限；对方主动闪避仍须按实际命中结果，友军攻击与范围技能不触发。",
+      "source": "P0669",
+      "flavor": "被护的人躲开一击，她也跟着松一口气。",
+      "effects": [
+        "闪避后恢复；与守望联动"
+      ],
+      "owner": "C17",
+      "owner_name": "可可",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_breathe_easy.png",
+        "sha256": "8a5703c3e7dad5b2c2c761eae9ca1cd6b306d0fa581855e731b62e7d74274dea",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": []
+    },
+    {
+      "id": "bear_strike",
+      "name": "小熊出击",
+      "kind": "主动干扰",
+      "text": "3行动点、12疲劳、1层看懂，冷却两轮，每战最多两次。对三格内可见的人类或绿皮敌人施加下一次武器攻击命中－10，持续两轮或攻击尝试后消耗；精神干扰免疫者无效。木熊是手中道具，不生成单位或占格。",
+      "source": "P0696",
+      "flavor": "木熊抬爪。规矩之前，先敬三分。",
+      "effects": [
+        "消耗看懂层数，降低目标命中",
+        "种族/免疫有边界"
+      ],
+      "owner": "C18",
+      "owner_name": "童猪",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 12,
+        "target": "enemy",
+        "range": 3,
+        "cooldown": 2,
+        "limit": 2
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_bear_strike.png",
+        "sha256": "4be2dfe96a1ef36ea377ad70fb3b8346a75b88335362317c9faf8e08469b0e66",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 25
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 33
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 61
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 169
+        }
+      ]
+    },
+    {
+      "id": "know_rules",
+      "name": "先懂规则",
+      "kind": "观察被动",
+      "text": "童猪可行动时，四格内可见敌人连续两次使用同一种武器攻击技能时，获得1层看懂，最多2层、每轮最多获得1层。按每个敌人分别记录最近的武器技能，命中与否均记录；非武器行为不提供层数。同一事件只计一次，离开视野期间不补记，战后清空。",
+      "source": "P0698",
+      "flavor": "同一招看她两遍，第三遍就该你赢了。",
+      "effects": [
+        "观察重复攻击叠加看懂",
+        "记录峰值供成长"
+      ],
+      "owner": "C18",
+      "owner_name": "童猪",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_know_rules.png",
+        "sha256": "d6a5777369e34715f8f1310d7d53509777ef04e74c7098bd8cba8dde55495946",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 170
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "id": "cup_signal",
+      "name": "敲杯为号",
+      "kind": "主动指挥",
+      "text": "4行动点、15疲劳、1次团队号令。指定三格内最多三名可行动友军，自选额外消耗0至2层看懂；每人的下一次武器技能或非指挥专属主动技巧少耗4＋2×所消耗层数的疲劳，最低0，两轮到期。优惠取最高一份，不减少行动点、工具和弹药，不优惠其她号令。",
+      "source": "P0700",
+      "flavor": "杯子一响，下一步都省了力气。",
+      "effects": [
+        "消耗0至2层看懂；最多3人下一次技能少耗4至8疲劳",
+        "耗号令；未确认不扣费"
+      ],
+      "owner": "C18",
+      "owner_name": "童猪",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": true,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 15,
+        "target": "ally",
+        "range": 3,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_cup_signal.png",
+        "sha256": "8edca20db4039fa3be828942f514f9870bbcb6a79fdad122e6443757e419478d",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 75
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 76
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 87
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 89
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 118
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 122
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 170
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 147
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 164
+        }
+      ]
+    },
+    {
+      "id": "mouth_strong",
+      "name": "嘴强王者",
+      "kind": "主动挑衅",
+      "text": "2行动点、8疲劳，冷却三轮。选择一名邻接、可见且不免疫精神干扰的普通人类敌人；其下一次单体近战武器攻击若能合法攻击奶盖，就必须优先选择她，至该敌人下一次行动结束失效。不强迫移动，不影响远程、范围或特殊能力；目标当前没有合法近战武器攻击时不可发动。",
+      "source": "P0727",
+      "flavor": "话先递过去。人不得不接这一招。",
+      "effects": [
+        "迫使优先攻击；需目标能打到她"
+      ],
+      "owner": "C19",
+      "owner_name": "奶盖",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 2,
+        "fatigue": 8,
+        "target": "enemy",
+        "range": 1,
+        "cooldown": 3,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_mouth_strong.png",
+        "sha256": "7b7ec7bc63a6954281ef0de494d5675e48725ddd1c54e8320f4b2e6838b19cd7",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 57
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 171
+        }
+      ]
+    },
+    {
+      "id": "shrink_cover",
+      "name": "缩进奶盖",
+      "kind": "主动守势",
+      "text": "4行动点、18疲劳，须持盾，至下次自身行动开始不能主动移动或攻击，近防＋8。期间前两次直接武器伤害结算到生命的部分减少20%，冷却三轮；持续伤害照常。失去盾、失去行动能力或被迫移动则结束，已触发的返场仍按自身期限保留。",
+      "source": "P0729",
+      "flavor": "缩进去。谁也咬不动。",
+      "effects": [
+        "持盾守势：两次减伤20%",
+        "限制攻击；耗冷却"
+      ],
+      "owner": "C19",
+      "owner_name": "奶盖",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 18,
+        "target": "self",
+        "range": 0,
+        "cooldown": 3,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_shrink_cover.png",
+        "sha256": "118f0679ad5909253c1299e2dd1ae11167bfefbbe093972a6e4e263bcd867334",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 27
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 172
+        }
+      ]
+    },
+    {
+      "id": "abs_comeback",
+      "name": "抽象整活",
+      "kind": "返场被动",
+      "text": "每轮第一次敌方单体武器攻击未命中自己，或自己在缩进奶盖期间承受此类攻击后存活，获得1层返场，最多存1层。下一次投掷武器攻击命中＋10，尝试后消耗，最迟下一轮末到期。无额外攻击或免费换武器；友军攻击不触发。",
+      "source": "P0731",
+      "flavor": "躲过的每一击，攒成下一投的准头。",
+      "effects": [
+        "闪避生成返场，强化下次投掷"
+      ],
+      "owner": "C19",
+      "owner_name": "奶盖",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_abs_comeback.png",
+        "sha256": "2d62b77e5a8f03949d9e992b3924e643f435eea66331ca94a032d70e554d7ba9",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "id": "five_elder",
+      "name": "五老压阵",
+      "kind": "阵形被动",
+      "text": "自身邻接至少两名友军时，近防＋4、决心＋6；邻接条件失去立即结束。不会向全队广播，也不增加最大生命。",
+      "source": "P0758",
+      "flavor": "站进队伍里，矛就再不晃了。",
+      "effects": [
+        "邻接≥2友军：近防＋4、决心＋6"
+      ],
+      "owner": "C20",
+      "owner_name": "余想",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_five_elder.png",
+        "sha256": "9da4b80db007d25eafb7905d82f79eb66e7212671bf179e552bfe9dc7d0caf0d",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "id": "long_watch",
+      "name": "长轮守门",
+      "kind": "主动守势",
+      "text": "4行动点、18疲劳，冷却两轮。至下次自身行动开始，近防与远防各＋8、先攻－10。期间每轮首次被单体攻击命中后恢复4疲劳；不减免该击伤害。",
+      "source": "P0760",
+      "flavor": "守得越久，根扎得越深。",
+      "effects": [
+        "守势属性与受击恢复",
+        "攻击过滤按规则"
+      ],
+      "owner": "C20",
+      "owner_name": "余想",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 18,
+        "target": "self",
+        "range": 0,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_long_watch.png",
+        "sha256": "f87dbd85865940080c4b4fe6830fcd74769507d9904661ff18d6a732938d3557",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 173
+        }
+      ]
+    },
+    {
+      "id": "shift_arrive",
+      "name": "替班到了",
+      "kind": "协作被动",
+      "text": "每轮一次：自身本次行动开始时，若仍邻接上轮没有邻接过自己的友军，恢复5疲劳。必须有真实位置变化，待机与重复读入战场不算换班。",
+      "source": "P0762",
+      "flavor": "换岗的人一到，肩才落下来。",
+      "effects": [
+        "新邻接触发恢复5"
+      ],
+      "owner": "C20",
+      "owner_name": "余想",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_shift_arrive.png",
+        "sha256": "e224fd3d1c39c67e59db1eb7e797d5fbdd0755794e3d36ad5079aaf9e1140660",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 201
+        }
+      ]
+    },
+    {
+      "id": "king_dance",
+      "name": "大王舞",
+      "kind": "主动支援",
+      "text": "4行动点、16疲劳，冷却两轮。移至相邻同高合法空地，普通脱离攻击照常触发；移动后相邻的至多两名其他友军获得先攻＋12，持续到各自下次行动结束。不改变本轮已确定的行动顺序。",
+      "source": "P0789",
+      "flavor": "她起拍，前排跟着落位。",
+      "effects": [
+        "移动至邻格；友军先攻＋12",
+        "耗冷却"
+      ],
+      "owner": "C21",
+      "owner_name": "美伢",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 16,
+        "target": "empty",
+        "range": 1,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_king_dance.png",
+        "sha256": "b172f6433575455d3908eee4e02b9dfed96014c3e86ec2c4e5523ebdea87e3f5",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 28
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 75
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 76
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 95
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 129
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 174
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 152
+        }
+      ]
+    },
+    {
+      "id": "read_beat",
+      "name": "看懂节拍",
+      "kind": "反应被动",
+      "text": "每轮一次，邻接友军对某敌人单体近战未命中后，记录该敌人。自身下次对它的单体近战命中＋6，出手即消耗；标记至本轮结束，最多一个。",
+      "source": "P0791",
+      "flavor": "谁失手了她都看见。下一拍正好补上。",
+      "effects": [
+        "友军未命中后获得标记增益"
+      ],
+      "owner": "C21",
+      "owner_name": "美伢",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_read_beat.png",
+        "sha256": "adcd907f4596136212e4480d807bcab456e0cc095a403c0524228fdbca9ab08a",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 192
+        }
+      ]
+    },
+    {
+      "id": "curtain_yield",
+      "name": "谢幕让位",
+      "kind": "主动步法",
+      "text": "2行动点、8疲劳，每轮一次。仅在本次行动已用单体近战命中后，移至相邻同高合法空地。仅免刚才受击敌人的脱离攻击，其他敌人照常；定身时不可用。",
+      "source": "P0793",
+      "flavor": "命中之后让出位置。",
+      "effects": [
+        "命中后撤步；指定敌脱离豁免"
+      ],
+      "owner": "C21",
+      "owner_name": "美伢",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 2,
+        "fatigue": 8,
+        "target": "empty",
+        "range": 1,
+        "cooldown": 1,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_curtain_yield.png",
+        "sha256": "3f73cf2957d6a8a75e535807fec176041bf733a8af01466f409efd3d391ed876",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 28
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 35
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 176
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 183
+        }
+      ]
+    },
+    {
+      "id": "moon_cake",
+      "name": "月饼帮",
+      "kind": "营地准备",
+      "text": "每72小时一次，消耗6食物与2小时。指定本人和两名在队伙伴，下场出战时前两轮决心＋6；七日未出战则失效，同一人只保留一份月饼准备。",
+      "source": "P0820",
+      "flavor": "出发前分好的那块饼，撑住前两轮的心气。",
+      "effects": [
+        "世界：6食物、2小时；最多3人含自己，下战前两轮决心＋6",
+        "7日内下场战斗增益；72小时冷却"
+      ],
+      "owner": "C22",
+      "owner_name": "陈知含",
+      "runtime": {
+        "active": false,
+        "world": true,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_moon_cake.png",
+        "sha256": "3676469bc56a5a00442e2296faa1398aecf45915217da01bbc74fd62b051d278",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/events.nut",
+          "line": 254
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/growth.nut",
+          "line": 25
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/world.nut",
+          "line": 132
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/world.nut",
+          "line": 134
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/world.nut",
+          "line": 136
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/world.nut",
+          "line": 137
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/world.nut",
+          "line": 138
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/world.nut",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "id": "remember_shield",
+      "name": "这一盾记住了",
+      "kind": "防御被动",
+      "text": "持盾时，每轮首次被单体近战命中后，至本轮结束对同一攻击者额外近防＋6。不抵消已经承受的伤害；一次只记一个攻击者。",
+      "source": "P0822",
+      "flavor": "挨过一下，她就记住了这只手有多重。",
+      "effects": [
+        "对记录攻击者额外近防"
+      ],
+      "owner": "C22",
+      "owner_name": "陈知含",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_remember_shield.png",
+        "sha256": "885ea3b2dace5175a83cd8ccf86b02c7d9481c7302422369f9783bfaa76f8d39",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 185
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "id": "guard_self",
+      "name": "先护住自己",
+      "kind": "主动守势",
+      "text": "4行动点、16疲劳，冷却两轮，须持盾。至下次自身行动开始，额外近防＋8；该期间首次受到的生命伤害减10%，先结算护甲，不提供复活或伤势免疫。",
+      "source": "P0824",
+      "flavor": "先护住自己。这句话她说给自己听。",
+      "effects": [
+        "近防＋8；守势内一次生命减伤"
+      ],
+      "owner": "C22",
+      "owner_name": "陈知含",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 16,
+        "target": "self",
+        "range": 0,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_guard_self.png",
+        "sha256": "71ff4dc3a5a984a2de8a245eaf60b74deef46900bfbf8be8aa826fee32f6be86",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 27
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 177
+        }
+      ]
+    },
+    {
+      "id": "start_run",
+      "name": "003号起跑",
+      "kind": "开场被动",
+      "text": "本人第一次行动中，第一次普通同高平地移动少消耗2疲劳，最低0；仅该次移动先攻不额外变化，无行动点优惠。",
+      "source": "P0851",
+      "flavor": "发令之前，她的脚尖已经在起点上了。",
+      "effects": [
+        "前两轮先攻＋8",
+        "首个普通移动疲劳－2"
+      ],
+      "owner": "C23",
+      "owner_name": "千涵",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_start_run.png",
+        "sha256": "1da17cc0749f6151b5e0a4e35dc09b4730e0a03ba82b80b54e3aed7fde0b0fff",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "id": "short_sprint",
+      "name": "短坡冲刺",
+      "kind": "主动步法",
+      "text": "3行动点、14疲劳，冷却三轮。沿同高合法空地最多移动两格，不能穿人，普通脱离攻击照常。落点的本次下一次单体近战命中＋8，行动结束失效。",
+      "source": "P0853",
+      "flavor": "短坡就是她的主场。两格，一击。",
+      "effects": [
+        "两步移动；命中＋8；冷却"
+      ],
+      "owner": "C23",
+      "owner_name": "千涵",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 14,
+        "target": "empty",
+        "range": 2,
+        "cooldown": 3,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_short_sprint.png",
+        "sha256": "9fce6a34ac214e5b7960ca90153ca2fb636b8b8e87cffcae7f81fd99cf1e51be",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 28
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 178
+        }
+      ]
+    },
+    {
+      "id": "segment_breath",
+      "name": "分段呼吸",
+      "kind": "恢复被动",
+      "text": "本次行动没有使用任何攻击、支援或专属主动技能，且结束时不邻接敌人，则恢复8疲劳，每轮一次。仅移动或待机可以满足，但跨多次待机仍只结算一次。",
+      "source": "P0855",
+      "flavor": "跑完一段就喘匀一段。",
+      "effects": [
+        "未攻击且不邻敌：恢复疲劳"
+      ],
+      "owner": "C23",
+      "owner_name": "千涵",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_segment_breath.png",
+        "sha256": "ca410ca41fbd32b4423aa5ae6366125bc4c6582ed1a3e0c6e037b9c6345101d6",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 207
+        }
+      ]
+    },
+    {
+      "id": "snake_read",
+      "name": "秦国的神",
+      "kind": "对手记录",
+      "text": "每轮首次被某敌人单体近战攻击后记住它，命中与否均可。下次对该敌人的单体近战命中＋6，出手即消耗；至下次自身行动结束失效，最多一个。",
+      "source": "P0882",
+      "flavor": "挨过她一记的人，下一记会更疼。她记住了。",
+      "effects": [
+        "记录攻击自己的敌人",
+        "下一次相关对抗受益"
+      ],
+      "owner": "C25",
+      "owner_name": "玩蛇",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_snake_read.png",
+        "sha256": "a045f7d6bc15576a7c27fbadcfca94bc01a8774e73ff7ae6f4ae41acaa933675",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 116
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 156
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "id": "snake_trial",
+      "name": "蛇形试招",
+      "kind": "主动武器技",
+      "text": "4行动点、16疲劳，持单手近战武器，对相邻敌人打一击，武器生命与护甲伤害各为普通攻击的80%。命中后该敌人至下次行动结束近攻－6，同一敌人每轮只能受一次。",
+      "source": "P0884",
+      "flavor": "试招不是杀招。削你三分手感，留你一条活路。",
+      "effects": [
+        "约80%伤害的攻击；敌近攻－6",
+        "成长可强化"
+      ],
+      "owner": "C25",
+      "owner_name": "玩蛇",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": true,
+        "ap": 4,
+        "fatigue": 16,
+        "target": "enemy",
+        "range": 1,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_snake_trial.png",
+        "sha256": "33a3d9b8de71f01899ffd3d9084599e087465af7823e647ac18a06963157b7b1",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 38
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 58
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 180
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "id": "next_path",
+      "name": "下一招换个路",
+      "kind": "变招被动",
+      "text": "本次行动先以普通单体近战命中A，再以蛇形试招攻击不同敌人B时，蛇形试招少消耗4疲劳。只省疲劳，不复制第一次攻击，也不增加攻击次数。",
+      "source": "P0886",
+      "flavor": "旧痕旁边总有新痕。",
+      "effects": [
+        "切换招式后减疲劳"
+      ],
+      "owner": "C25",
+      "owner_name": "玩蛇",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_next_path.png",
+        "sha256": "64941369eccf0851d00ddd518fe87f30f38dc9607ed34780f2559a1188a08f38",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 193
+        }
+      ]
+    },
+    {
+      "id": "hold_ground",
+      "name": "站稳场子",
+      "kind": "邻接被动",
+      "text": "持盾且本次行动未移动时，至下次自身行动开始，邻接的其他友军各获近防＋3；离开邻接即时结束。本人不从此技能获得防御。",
+      "source": "P0913",
+      "flavor": "她站定的那一格，全队的盾都稳一分。",
+      "effects": [
+        "邻接友军近防加成；需站定持盾"
+      ],
+      "owner": "C26",
+      "owner_name": "芷芷",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_hold_ground.png",
+        "sha256": "1edb80fdc65a689ced46285f2c22dd8cbe3040c8626e0e73e9545d1500a54895",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "id": "hold_curtain",
+      "name": "撑住幕布",
+      "kind": "主动守势",
+      "text": "4行动点、18疲劳，冷却两轮，须持盾。至下次自身行动开始，近防＋7并获得一次强制位移免疫；仅阻止一次推拉，不阻止伤害和眩晕。",
+      "source": "P0915",
+      "flavor": "风再大，她站的地方就撑得住。",
+      "effects": [
+        "守门式守势＋推拉免疫"
+      ],
+      "owner": "C26",
+      "owner_name": "芷芷",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 18,
+        "target": "self",
+        "range": 0,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_hold_curtain.png",
+        "sha256": "4cb51504ff7ee94a9ab9e8bd2aa796d069a559617b2685df8f0581603fb79a07",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 27
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 182
+        }
+      ]
+    },
+    {
+      "id": "door_mine",
+      "name": "门口有我",
+      "kind": "近战被动",
+      "text": "每轮一次，对邻接且与至少两名友军接壤的敌人进行普通单体近战时，命中＋5。只作用于该次普通攻击，不追加一次攻击。",
+      "source": "P0917",
+      "flavor": "门口有她。",
+      "effects": [
+        "围敌条件满足：首次普通攻击＋5"
+      ],
+      "owner": "C26",
+      "owner_name": "芷芷",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_door_mine.png",
+        "sha256": "bdf57ca1000544881751ece41cc0f2d1508819fb0cad8cce42b37a3ba92bb772",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 117
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 166
+        }
+      ]
+    },
+    {
+      "id": "lvbu_weapon",
+      "name": "奶团吕布",
+      "kind": "武器被动",
+      "text": "持双手长柄近战武器时，首次攻击未受本起源标记的敌人，武器生命与护甲伤害各＋10%，每名敌人每战一次。攻击尝试即记名，未命中也不能重刷。",
+      "source": "P0944",
+      "flavor": "头一回交手，她的斧头总比名声更重。",
+      "effects": [
+        "双手长柄对新敌人首次增伤"
+      ],
+      "owner": "C27",
+      "owner_name": "瑶瑶牙",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_lvbu_weapon.png",
+        "sha256": "6f8012f33a11a194cd739e04200dd4bb7ffd6525ae2f9940c6bd4a0349aaf9f9",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 133
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 159
+        }
+      ]
+    },
+    {
+      "id": "breach_strike",
+      "name": "破口一击",
+      "kind": "主动武器技",
+      "text": "6行动点、24疲劳，冷却两轮，用双手长柄武器对合法距离敌人打一击，命中－5，伤害按普通单体攻击。命中后若目标可被推移且背后同高空格合法，则推开一格；否则只结算攻击。",
+      "source": "P0946",
+      "flavor": "墙也好门也好，她只负责开。",
+      "effects": [
+        "真实攻击并可推动",
+        "命中代价与正确费用"
+      ],
+      "owner": "C27",
+      "owner_name": "瑶瑶牙",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": true,
+        "ap": 6,
+        "fatigue": 24,
+        "target": "enemy",
+        "range": 2,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_breach_strike.png",
+        "sha256": "cdbfb1cbfdc3595a9e0f0480fb63d6f399dd075003afe1177ad2597738e2cbc0",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 40
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 183
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "id": "look_flag",
+      "name": "回看旗子",
+      "kind": "站位被动",
+      "text": "本人行动结束时若三格内有当前出战团长或战前代理，且本次至少移动过一格，决心＋6至下次自身行动开始。旗手不在场则不触发。",
+      "source": "P0948",
+      "flavor": "回头看见旗，胆子就有了底。",
+      "effects": [
+        "旗手附近决心＋6",
+        "成长计数移动/行动结束"
+      ],
+      "owner": "C27",
+      "owner_name": "瑶瑶牙",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_look_flag.png",
+        "sha256": "4f5ca38a3dcd086a092231521fd8bb5a46ae6e722ab60c253162b277ce9673f7",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 208
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/growth.nut",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "id": "curve_force",
+      "name": "弯道留力",
+      "kind": "移动被动",
+      "text": "每次自身行动第二次普通同高平地移动少耗3疲劳，最低0；每轮一次。只优惠疲劳，不减少行动点，不作用于专属位移。",
+      "source": "P0975",
+      "flavor": "第二格她走得最省。力都留给弯后。",
+      "effects": [
+        "第二次平坦普通移动疲劳－3"
+      ],
+      "owner": "C28",
+      "owner_name": "羊咩咩",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_curve_force.png",
+        "sha256": "aed7fc7c466e22dcceb22c93721d809e49a81c802f154c2cfde912bb174a7054",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "id": "line_detour",
+      "name": "贴线绕行",
+      "kind": "主动步法",
+      "text": "3行动点、12疲劳，冷却两轮，沿相邻同高空地移动一格。若起点与终点都邻接同一敌人，该敌人的脱离攻击不会触发；其他敌人照常，定身不可用。",
+      "source": "P0977",
+      "flavor": "贴着弯走完，那个敌人连挥刀的机会都没有。",
+      "effects": [
+        "邻格移动；特定脱离免疫"
+      ],
+      "owner": "C28",
+      "owner_name": "羊咩咩",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 12,
+        "target": "empty",
+        "range": 1,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_line_detour.png",
+        "sha256": "dfd43d0b4c1fda84d25bebc5f998e300de4b8781ca51a0cd128ece90e5ada14d",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 28
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "id": "bell_lead",
+      "name": "铃铛带路",
+      "kind": "协作被动",
+      "text": "本人结束行动后，记下本次普通移动最后离开的合法空格。首名本轮走入该格的友军恢复3疲劳，随后清除。地格被敌人占据或本轮结束也清除，最多一处。",
+      "source": "P0979",
+      "flavor": "她过处的空格，是留给后来人的落脚点。",
+      "effects": [
+        "记录落点；友军踩入恢复3"
+      ],
+      "owner": "C28",
+      "owner_name": "羊咩咩",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_bell_lead.png",
+        "sha256": "4ac5e31a6a478adf489ae6c45b8f4d0f87e5ce260ab00f8efaadd71f8905dd66",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 210
+        }
+      ]
+    },
+    {
+      "id": "half_react",
+      "name": "反应半拍",
+      "kind": "先手被动",
+      "text": "本轮尚未待机时，第一次普通单体近战对本轮尚未行动的敌人命中＋6。若敌人已经行动则不触发，每轮一次。",
+      "source": "P1006",
+      "flavor": "比口令快半拍。那是练出来的。",
+      "effects": [
+        "待机前：对未行动敌人首次近战＋6"
+      ],
+      "owner": "C29",
+      "owner_name": "一凹瑶",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_half_react.png",
+        "sha256": "d3e243a4f8139469698516da32800d7c89c33ebd002618cf4d17b0281bec91b7",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 118
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "id": "catch_baton",
+      "name": "接住这一棒",
+      "kind": "主动协作",
+      "text": "2行动点、10疲劳，每轮一次。指定两格内一名其他友军，其本次下一次单体攻击命中＋5，至本轮结束；该友军若本轮已行动结束则不可选，同类接力不叠加。",
+      "source": "P1008",
+      "flavor": "把准头递到下一只手里，这才算一棒。",
+      "effects": [
+        "下一次单体攻击＋5",
+        "成长后射程可到3"
+      ],
+      "owner": "C29",
+      "owner_name": "一凹瑶",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 2,
+        "fatigue": 10,
+        "target": "ally",
+        "range": 2,
+        "cooldown": 1,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_catch_baton.png",
+        "sha256": "84237c51282d7cde6cd5bbb7f4b4ddac0bf45c21fd80fc52f59ac7cf51ab92db",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 70
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 186
+        }
+      ]
+    },
+    {
+      "id": "duck_turn",
+      "name": "鸭步回身",
+      "kind": "反应被动",
+      "text": "每轮首次被单体近战未命中后，获得先攻＋10至下次自身行动结束。不会立刻插入行动队列，也不自动后撤。",
+      "source": "P1010",
+      "flavor": "侧身让过这一击，位置还是她的。",
+      "effects": [
+        "未命中后先攻＋10"
+      ],
+      "owner": "C29",
+      "owner_name": "一凹瑶",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_duck_turn.png",
+        "sha256": "0a93a67ed97d4613fda76ab32455842619f272963d3377a09de21f4ddb7b7ef4",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 186
+        }
+      ]
+    },
+    {
+      "id": "two_steps",
+      "name": "脚下两步",
+      "kind": "位置被动",
+      "text": "本次行动只进行过一次普通移动且该步为同高平地时，下一次短矛普通近战命中＋5，出手消耗。额外移动和专属位移会取消。",
+      "source": "P1037",
+      "flavor": "只走一步。这一步刚好把角度让出来。",
+      "effects": [
+        "同高一步后短矛类命中＋5"
+      ],
+      "owner": "C30",
+      "owner_name": "罗一可",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_two_steps.png",
+        "sha256": "06fa6f1272e488fcf1a8f4689039aeaeb84086b786e828b9eab1e2c8e2130bef",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 119
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 158
+        }
+      ]
+    },
+    {
+      "id": "door_block",
+      "name": "门前卡位",
+      "kind": "主动技巧",
+      "text": "4行动点、15疲劳，冷却两轮，选择相邻敌人。按本人近攻＋5对其近防进行一次命中检定，不造成伤害；成功后推往由玩家预选的相邻同高空格，该格须也邻接目标原格且不更靠近施放者。不可推移者不能选。",
+      "source": "P1039",
+      "flavor": "门口那两步，是她的主场。",
+      "effects": [
+        "近攻＋5检定；成功把邻敌推至预选的同高空格"
+      ],
+      "owner": "C30",
+      "owner_name": "罗一可",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 15,
+        "target": "enemy",
+        "range": 1,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_door_block.png",
+        "sha256": "1c37afff1ca5326fad0d0921917e997e31fb17e62bb36e97e697bcd0eadd8499",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 59
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 75
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 76
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 130
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "id": "long_run_breath",
+      "name": "长跑留一口",
+      "kind": "疲劳被动",
+      "text": "当前积累疲劳不低于有效上限60%时，普通近战攻击的疲劳少2，最低0；每次都按出手前检查。只优惠疲劳，不解除体力上限。",
+      "source": "P1041",
+      "flavor": "累到六成时，她的刀反而更省力。",
+      "effects": [
+        "高疲劳时普通近战疲劳－2"
+      ],
+      "owner": "C30",
+      "owner_name": "罗一可",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_long_run_breath.png",
+        "sha256": "3c1365d441b8f02647c2e4a3d2a0d12493fae89eab1eaad5be1cee2eddb28395",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "id": "purse_clear",
+      "name": "钱袋算清",
+      "kind": "交易被动",
+      "text": "bula在常备队伍时，每日首次购买工具、药品或弹药的一笔价格降低5%，单笔最多省30克朗。与其他本起源交易折扣取最高，不影响出售、工资和招募。",
+      "source": "P1068",
+      "flavor": "每日头一笔采购，她总能砍下零头。",
+      "effects": [
+        "每日首笔相关购买－5%，最多省30"
+      ],
+      "owner": "C31",
+      "owner_name": "bula",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_purse_clear.png",
+        "sha256": "0a1ada9cbe9d900fa0bb771cde1ef3f80333b56cbf96fb30e9c32ab04cdd117c",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": []
+    },
+    {
+      "id": "budget_share",
+      "name": "提前分好",
+      "kind": "战前准备",
+      "text": "每战部署时指定本人或一名其他出战投掷手，该角色本战首次普通投掷少耗5疲劳，最低0。不赠弹药、不制造一次攻击，受益者离场则作废。",
+      "source": "P1070",
+      "flavor": "弹药分到会用的人手里，一颗都不白拿。",
+      "effects": [
+        "指定本人或其他出战投掷手",
+        "本战首次普通投掷疲劳－5"
+      ],
+      "owner": "C31",
+      "owner_name": "bula",
+      "runtime": {
+        "active": false,
+        "world": true,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_budget_share.png",
+        "sha256": "77edd32ed681636fb81971bfd294fff58e6b410a73f1bbadd25417e16969f156",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": []
+    },
+    {
+      "id": "no_last_throw",
+      "name": "别把最后一支乱扔",
+      "kind": "投掷被动",
+      "text": "本人手持投掷武器只剩1发时，该发普通投掷命中＋6；使用后正常消耗弹药。补充弹药再到1发时每战最多再次触发一次，总计两次。",
+      "source": "P1072",
+      "flavor": "最后一支她握得最稳。谁也别想让她乱扔。",
+      "effects": [
+        "弹药＝1时普通投掷命中＋6",
+        "每战最多两次"
+      ],
+      "owner": "C31",
+      "owner_name": "bula",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_no_last_throw.png",
+        "sha256": "ee98606953fc004cd5f5a30ad4f36d9c1ef4c1878bc9b1e566ac087df70faa94",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 122
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 149
+        }
+      ]
+    },
+    {
+      "id": "blue_form",
+      "name": "蓝旗布阵",
+      "kind": "开场被动",
+      "text": "第一轮开始，自身与当时邻接的可行动友军先攻＋12，持续至第一轮结束。受益者按开场位置锁定；同类开场先攻取最高值，不额外获得行动点，也不在增援入场时再触发。",
+      "source": "NEW20260924",
+      "flavor": "第一轮，谁都不许乱。",
+      "effects": [
+        "首轮：自身与开场邻接友军先攻＋12"
+      ],
+      "owner": "C32",
+      "owner_name": "小宁",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_blue_form.png",
+        "sha256": "428aff79e2fce47592e05a34bd8073cb67db552ef0522c1750bf50f30defa9d2",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "id": "steady_hand",
+      "name": "稳一手",
+      "kind": "主动指挥",
+      "text": "4行动点、18疲劳、1次团队号令。指定四格内最多四名可行动友军，近防＋6、决心＋6，持续两轮；每人另获一次强制推拉位移免疫，使用或到期后消失。攻击伤害和其她状态正常结算；不能与守门把同一次推拉重复计为两次免疫。",
+      "source": "NEW20260924",
+      "flavor": "她一抬手，前排的盾就找到位置。",
+      "effects": [
+        "最多4人：近防＋6、决心＋6两轮",
+        "各获一次推拉免疫；耗号令"
+      ],
+      "owner": "C32",
+      "owner_name": "小宁",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": true,
+        "weapon": false,
+        "ap": 4,
+        "fatigue": 18,
+        "target": "ally",
+        "range": 4,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_steady_hand.png",
+        "sha256": "2e4c661e2d427c78161ba596048e3e881bb971156d6907a154ae775408a2db23",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 75
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 76
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 87
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 118
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 119
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 157
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/rules.nut",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "id": "good_card",
+      "name": "一张好牌",
+      "kind": "配合被动",
+      "text": "同轮有两名不同队友以单体武器攻击命中同一敌人后，持有者下一次对它的单体近战攻击命中＋10，每轮一次。须在本轮完成出手；不生成额外攻击，持续伤害不计入条件。",
+      "source": "NEW20260924",
+      "flavor": "队友递来的机会，她不打第二张废牌。",
+      "effects": [
+        "两名队友同轮命中同一敌人后：下次对该敌近战命中＋10"
+      ],
+      "owner": "C32",
+      "owner_name": "小宁",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": {
+        "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_good_card.png",
+        "sha256": "4e171d82018eb4e9d285bf95b208eb2bd60ff16345868fd075da9c8575419963",
+        "size": [
+          56,
+          56
+        ],
+        "mode": "RGBA"
+      },
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 111
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 151
+        }
+      ]
+    },
+    {
+      "id": "pang_anchor",
+      "name": "站得住",
+      "kind": "持盾被动",
+      "text": "持盾且邻接至少一名可行动友军时，自身近防＋4。离开队友身边立即失效；不增加护甲或生命。",
+      "source": "NEW20260924",
+      "flavor": "有人在身旁，她就把盾边再压稳一点。",
+      "effects": [
+        "持盾且贴近队友：自身近防＋4"
+      ],
+      "owner": "C33",
+      "owner_name": "小胖",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": null,
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "id": "pang_share",
+      "name": "借你半面盾",
+      "kind": "主动护卫",
+      "text": "3行动点、12疲劳、冷却两轮。指定相邻一名可行动友军，使其近防＋4、决心＋4，持续至下轮结束；重复施放刷新持续时间，不叠加。成长后近防提升至＋6。",
+      "source": "NEW20260924",
+      "flavor": "盾不是借走，是两个人一起顶。",
+      "effects": [
+        "邻接友军获得近防与决心加成",
+        "成长后近防由＋4升至＋6"
+      ],
+      "owner": "C33",
+      "owner_name": "小胖",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 12,
+        "target": "ally",
+        "range": 1,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": null,
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 72
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 141
+        }
+      ]
+    },
+    {
+      "id": "pang_breath",
+      "name": "挨过这一口",
+      "kind": "受击被动",
+      "text": "每轮首次被单体武器攻击命中后，若仍可行动，恢复3点已积累疲劳。受黑旗每人每轮20点恢复上限约束；未命中或持续伤害不触发。",
+      "source": "NEW20260924",
+      "flavor": "她把那一口气缓过来，才肯让身后的人换位。",
+      "effects": [
+        "每轮首次被武器命中且仍可行动：恢复3疲劳"
+      ],
+      "owner": "C33",
+      "owner_name": "小胖",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": null,
+      "code_references": []
+    },
+    {
+      "id": "berry_eye",
+      "name": "看清缝隙",
+      "kind": "远攻被动",
+      "text": "对邻接至少一名友军的敌人进行普通单体远程武器攻击时，每轮首次命中检定获得远攻＋5。攻击尝试即耗掉本轮机会；不作用于范围攻击。",
+      "source": "NEW20260924",
+      "flavor": "前排挡住刀口，她看见盾沿露出的那一点空隙。",
+      "effects": [
+        "队友贴住目标时，每轮首次普通远程攻击远攻＋5"
+      ],
+      "owner": "C34",
+      "owner_name": "蔓越莓",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": null,
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 106
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "id": "berry_mark",
+      "name": "红线记号",
+      "kind": "主动标记",
+      "text": "3行动点、10疲劳、冷却两轮。标记四格内一名可见敌人，持续两轮；下一次友军单体远程武器攻击对其远攻＋8，尝试后无论命中与否清除。蔓越莓同时只能保留一个记号。",
+      "source": "NEW20260924",
+      "flavor": "她在木板上画一条红线，提醒后排往哪儿看。",
+      "effects": [
+        "标记可见敌人：下一次友军远程攻击远攻＋8"
+      ],
+      "owner": "C34",
+      "owner_name": "蔓越莓",
+      "runtime": {
+        "active": true,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 3,
+        "fatigue": 10,
+        "target": "enemy",
+        "range": 4,
+        "cooldown": 2,
+        "limit": 0
+      },
+      "icon": null,
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/actions.nut",
+          "line": 142
+        }
+      ]
+    },
+    {
+      "id": "berry_reserve",
+      "name": "留一支给后面",
+      "kind": "协作被动",
+      "text": "本人每轮首次普通远程武器攻击命中邻接友军的敌人后，恢复2点已积累疲劳。受黑旗每人每轮20点恢复上限约束；未命中不触发。",
+      "source": "NEW20260924",
+      "flavor": "最后一支箭留在弦边，下一步才不会慌。",
+      "effects": [
+        "配合前排命中时，每轮一次恢复2疲劳"
+      ],
+      "owner": "C34",
+      "owner_name": "蔓越莓",
+      "runtime": {
+        "active": false,
+        "world": false,
+        "order": false,
+        "weapon": false,
+        "ap": 0,
+        "fatigue": 0,
+        "target": "self",
+        "range": 0,
+        "cooldown": 0,
+        "limit": 0
+      },
+      "icon": null,
+      "code_references": [
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 145
+        },
+        {
+          "path": "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/combat.nut",
+          "line": 178
+        }
+      ]
+    }
+  ],
+  "extra_icons": [
+    {
+      "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_ecig_puff.png",
+      "sha256": "29bdd18b0ee6977cdbb083c7174de09b1965cf51c53be801eb8df1dc2329650b"
+    },
+    {
+      "path": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_ecig_puff_sw.png",
+      "sha256": "293c2da6ac2743839813f3af4f2abf71a493e608a934506657f5ea75ccb773b9"
+    }
+  ],
+  "source_hashes": {
+    "legacy/2026-09-25-afei-expedition/reference/data/document-v0.6.2.json": "af21587411a9e7dedfc6fb339c802aad72502d64842cea608e0f1e2f6ffe7d06",
+    "legacy/2026-09-25-afei-expedition/reference/src/scripts/mods/afei/definitions.nut": "70a8424f101a775f1ec26a03d4ba0aff3b8f971a7d807528587a6a2fc52c5344",
+    "data/legacy-skill-review.json": "6f21083bd257772615f8707ed796c4dba1bb3bcc06b3b05661b2f88bde5db938"
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "roundtrip": {
+    "passed": true,
+    "sprite_count": 6,
+    "sprites": [
+      {
+        "id": "afeix_v1_human_head",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_toad_head",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_normal_body",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_toad_body",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_jiahao_body",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_v1_feidie",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "brush": "package/brushes/afeix_art_v1.brush",
+    "brush_sha256": "94845751e22ab05c8cb42fca3800d7132ee5880d4ebb06eb8b9478638b8ecbae",
+    "atlas": "package/gfx/afeix_art_v1.png",
+    "atlas_sha256": "55a6de75b35f2a5ea86f498232064c594bc2c1c89d3ba82c2349067dd44aa86b",
+    "pack_log": "Loading images...\nsprites\\afeix_v1_human_head.png\nsprites\\afeix_v1_toad_head.png\nsprites\\afeix_v1_normal_body.png\nsprites\\afeix_v1_toad_body.png\nsprites\\afeix_v1_jiahao_body.png\nsprites\\afeix_v1_feidie.png\nPacking rectangles...\nWriting gfx/afeix_art_v1.png (256x256)...\n",
+    "unpack_log": "Opening gfx/afeix_art_v1.png...\nsprites\\afeix_v1_human_head.png\nsprites\\afeix_v1_toad_head.png\nsprites\\afeix_v1_normal_body.png\nsprites\\afeix_v1_toad_body.png\nsprites\\afeix_v1_jiahao_body.png\nsprites\\afeix_v1_feidie.png\n",
+    "roundtrip_directory": "build/roundtrip-zaxwa0po"
+  },
+  "preview": "build/preview/index.html",
+  "sprites": [
+    {
+      "id": "afeix_v1_human_head",
+      "source": "sources/human-head.png",
+      "source_sha256": "5c19f084291b2c2756af12d7ecae34960f77d6a28097b0abf4b290831447805e",
+      "source_size": [
+        1135,
+        1386
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        50,
+        36,
+        1064,
+        1346
+      ],
+      "alpha_threshold": 1,
+      "cropped_size": [
+        1014,
+        1310
+      ],
+      "uniform_scale": 0.04930966469428008,
+      "resized_size": [
+        50,
+        65
+      ],
+      "placement": [
+        0,
+        1
+      ],
+      "output_size": [
+        50,
+        68
+      ],
+      "output": "sprites/afeix_v1_human_head.png",
+      "sha256": "07b2be18ca70d7abbab4c51a3a0b1eeaba0ac1f6d8da39a08bd16b9b163d59f6",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_human_head",
+        "img": "sprites\\afeix_v1_human_head.png",
+        "left": "-21",
+        "right": "29",
+        "top": "-20",
+        "bottom": "48",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_toad_head",
+      "source": "sources/toad-head.png",
+      "source_sha256": "28aa8d74ef69322aa6b8663da41246c5d27b6e5939b6b280829ccb6acd6a0a88",
+      "source_size": [
+        1178,
+        1335
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        152,
+        158,
+        1103,
+        1247
+      ],
+      "alpha_threshold": 1,
+      "cropped_size": [
+        951,
+        1089
+      ],
+      "uniform_scale": 0.05509641873278237,
+      "resized_size": [
+        52,
+        60
+      ],
+      "placement": [
+        3,
+        0
+      ],
+      "output_size": [
+        58,
+        60
+      ],
+      "output": "sprites/afeix_v1_toad_head.png",
+      "sha256": "720e0b7009355e5bf159cc363c53da226dc7d86ecbd72e271741129ea8f194ed",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_toad_head",
+        "img": "sprites\\afeix_v1_toad_head.png",
+        "left": "-25",
+        "right": "33",
+        "top": "-12",
+        "bottom": "48",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_normal_body",
+      "source": "sources/normal-body.png",
+      "source_sha256": "aee49b7ba013b38a40d4d767e1c8aa7d598bef8e61a0e79c7b3b99ec8d90d1e4",
+      "source_size": [
+        1320,
+        1192
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        25,
+        21,
+        1244,
+        1192
+      ],
+      "alpha_threshold": 1,
+      "cropped_size": [
+        1219,
+        1171
+      ],
+      "uniform_scale": 0.0631938514090521,
+      "resized_size": [
+        77,
+        74
+      ],
+      "placement": [
+        2,
+        0
+      ],
+      "output_size": [
+        82,
+        74
+      ],
+      "output": "sprites/afeix_v1_normal_body.png",
+      "sha256": "e5a00227c41c8811b583e3f24676e941a25c0c50402dc2d5f8351ae982f55c0e",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_normal_body",
+        "img": "sprites\\afeix_v1_normal_body.png",
+        "left": "-39",
+        "right": "43",
+        "top": "-61",
+        "bottom": "13",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_toad_body",
+      "source": "sources/toad-body.png",
+      "source_sha256": "c14cdd1fd82b72ff47ce1738f067720aef34f383c12c80e91385b8bee7e3ba46",
+      "source_size": [
+        1320,
+        1192
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        0,
+        54,
+        1221,
+        1176
+      ],
+      "alpha_threshold": 1,
+      "cropped_size": [
+        1221,
+        1122
+      ],
+      "uniform_scale": 0.0659536541889483,
+      "resized_size": [
+        81,
+        74
+      ],
+      "placement": [
+        0,
+        0
+      ],
+      "output_size": [
+        82,
+        74
+      ],
+      "output": "sprites/afeix_v1_toad_body.png",
+      "sha256": "e98557bc8a985d30dc7d635bfde0c5bffe054fa4819a62f82bd5437063edd09e",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_toad_body",
+        "img": "sprites\\afeix_v1_toad_body.png",
+        "left": "-39",
+        "right": "43",
+        "top": "-61",
+        "bottom": "13",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_jiahao_body",
+      "source": "sources/jiahao-body.png",
+      "source_sha256": "6c0d09d4ed859ad5f0a8ca50fe67cf7f1b089ce3f39432750f16bb5ddcc5d631",
+      "source_size": [
+        1320,
+        1192
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        25,
+        21,
+        1241,
+        1128
+      ],
+      "alpha_threshold": 1,
+      "cropped_size": [
+        1216,
+        1107
+      ],
+      "uniform_scale": 0.06684733514001806,
+      "resized_size": [
+        81,
+        74
+      ],
+      "placement": [
+        0,
+        0
+      ],
+      "output_size": [
+        82,
+        74
+      ],
+      "output": "sprites/afeix_v1_jiahao_body.png",
+      "sha256": "978ac7e9a3c5ec852042bd6acddd3fcf277fea28c60b093f08d06b9edc2a5e59",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_jiahao_body",
+        "img": "sprites\\afeix_v1_jiahao_body.png",
+        "left": "-39",
+        "right": "43",
+        "top": "-61",
+        "bottom": "13",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": false
+    },
+    {
+      "id": "afeix_v1_feidie",
+      "source": "sources/feidie.png",
+      "source_sha256": "d432fdcbc600d57f9b631cc1e7ada00d8dff094d6139fb29b68a0ff77ad82ed0",
+      "source_size": [
+        1774,
+        887
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        434,
+        110,
+        1504,
+        756
+      ],
+      "alpha_threshold": 1,
+      "cropped_size": [
+        1070,
+        646
+      ],
+      "uniform_scale": 0.02476780185758514,
+      "resized_size": [
+        27,
+        16
+      ],
+      "placement": [
+        3,
+        0
+      ],
+      "output_size": [
+        34,
+        16
+      ],
+      "output": "sprites/afeix_v1_feidie.png",
+      "sha256": "5c386a0907a314019fd4858019e568ba3c2aca780725399e8085d10a1001e0b7",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "metadata": {
+        "id": "afeix_v1_feidie",
+        "img": "sprites\\afeix_v1_feidie.png",
+        "left": "-13",
+        "right": "21",
+        "top": "56",
+        "bottom": "72",
+        "width": "104",
+        "height": "142",
+        "offsetY": "35"
+      },
+      "overlay": false
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>阿飞 · 转职造型对照</title>
+  <style>
+    :root {
+      font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+      color: #292b27;
+      background: #eeece5;
+      line-height: 1.6;
+      font-synthesis: none;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    a { color: inherit; text-underline-offset: 3px; }
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 3px solid #987d40;
+      outline-offset: 4px;
+    }
+    main { max-width: 1480px; padding: 48px 32px 32px; margin: auto; }
+    header { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
+    .eyebrow { margin: 0 0 8px; font-size: 12px; letter-spacing: .12em; color: #777b6d; }
+    h1 { margin: 0 0 8px; font-size: clamp(27px, 3vw, 40px); font-weight: 650; letter-spacing: -.04em; line-height: 1.25; }
+    .intro { margin: 0; color: #63675d; font-size: 14px; }
+    .switcher { flex-shrink: 0; display: flex; align-items: center; gap: 10px; }
+    .switcher-label { font-size: 12px; color: #63675d; }
+    .switcher-buttons { display: flex; gap: 3px; padding: 4px; background: #deded4; border-radius: 7px; }
+    button { padding: 6px 12px; border: 0; border-radius: 4px; background: transparent; color: #63675d; cursor: pointer; font-size: 12px; }
+    button[aria-pressed="true"] { background: #fffdf6; color: #292b27; box-shadow: 0 1px 3px #27281f18; }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+    .card { background: #f9f8f2; border: 1px solid #d5d6ca; border-radius: 10px; overflow: hidden; }
+    .card-head { padding: 19px 20px 16px; }
+    .card-label { margin: 0 0 5px; font-size: 11px; letter-spacing: .07em; color: #808370; }
+    h2 { margin: 0; font-size: 23px; font-weight: 650; line-height: 1.4; }
+    .role { color: #65685d; margin: 4px 0 0; font-size: 13px; }
+    .checker {
+      --square-a: #dedfd8;
+      --square-b: #e9eae4;
+      background-color: var(--square-a);
+      background-image: conic-gradient(var(--square-b) 25%, transparent 0 50%, var(--square-b) 0 75%, transparent 0);
+      background-size: 20px 20px;
+    }
+    body[data-checker="dark"] .checker { --square-a: #343a36; --square-b: #3d443e; }
+    .art-frame { position: relative; margin: 0; width: 100%; height: clamp(250px, 25vw, 365px); display: grid; place-items: center; }
+    .art-frame a { display: flex; width: 100%; height: 100%; padding: 10px; align-items: center; justify-content: center; }
+    .art-frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .missing-note { display: none; color: #666c5e; font-size: 13px; text-align: center; padding: 24px; }
+    .art-frame.is-missing .missing-note { display: block; }
+    .art-frame.is-missing a { display: none; }
+    body[data-checker="dark"] .missing-note { color: #d8ddd2; }
+    .card-bottom { padding: 18px 20px 20px; }
+    .description { margin: 0; color: #54594d; font-size: 13px; min-height: 63px; }
+    .small-check { display: flex; align-items: center; gap: 14px; padding-top: 18px; margin-top: 15px; border-top: 1px solid #e0e1d6; }
+    .thumbnail { width: 114px; height: 142px; flex: 0 0 114px; display: flex; align-items: center; justify-content: center; border-radius: 4px; overflow: hidden; }
+    .thumbnail img { display: block; width: 114px; height: 142px; object-fit: contain; }
+    .thumbnail.is-missing img { visibility: hidden; }
+    .small-copy { color: #7b806f; font-size: 11px; }
+    .small-copy strong { display: block; margin-bottom: 5px; color: #525948; font-size: 12px; font-weight: 500; }
+    .note { margin: 24px 0; padding: 16px 18px; border-left: 3px solid #a0a78c; color: #666e5b; background: #e5e8dc; font-size: 13px; }
+    details { border-top: 1px solid #d1d4c7; padding: 18px 0 4px; }
+    summary { width: fit-content; cursor: pointer; font-size: 14px; color: #565f4d; }
+    .reference { margin: 18px 0 0; max-width: 950px; }
+    .reference img { display: block; max-width: 100%; height: auto; border: 1px solid #d1d4c7; border-radius: 5px; }
+    figcaption { margin-top: 9px; font-size: 12px; color: #7c816f; }
+    footer { margin-top: 22px; font-size: 11px; color: #808570; }
+    @media (max-width: 1100px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .art-frame { height: 360px; }
+      .description { min-height: 42px; }
+    }
+    @media (max-width: 640px) {
+      main { padding: 28px 16px 24px; }
+      header { align-items: start; flex-direction: column; gap: 18px; }
+      .grid { grid-template-columns: minmax(0, 1fr); }
+      .art-frame { height: 340px; }
+      .description { min-height: auto; }
+    }
+  </style>
+</head>
+<body data-checker="light">
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">大飞午远征团 / 人物造型讨论</p>
+        <h1>阿飞 · 转职造型对照</h1>
+        <p class="intro">同一个阿飞，不同的成长方向。一起看气质、轮廓与色块。</p>
+      </div>
+      <div class="switcher" role="group" aria-label="预览棋盘背景">
+        <span class="switcher-label">棋盘背景</span>
+        <div class="switcher-buttons">
+          <button type="button" data-theme="light" aria-pressed="true">浅色</button>
+          <button type="button" data-theme="dark" aria-pressed="false">深色</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="四种形态">
+      <article class="card">
+        <div class="card-head">
+          <p class="card-label">起点 / 已获初步认可</p>
+          <h2>正常形态</h2>
+          <p class="role">平时嘉豪，大事拎得清</p>
+        </div>
+        <figure class="art-frame checker">
+          <a href="afei-normal-roguish-v02.png" aria-label="查看正常形态原图"><img src="afei-normal-roguish-v02.png" alt="阿飞正常形态候选 v02"></a>
+          <span class="missing-note">候选图待保存</span>
+        </figure>
+        <div class="card-bottom">
+          <p class="description">短黑发、痞帅神态与朴素装备。后续形态以这张的脸和绘画方式作为比较基准。</p>
+          <div class="small-check">
+            <div class="thumbnail checker"><img src="afei-normal-roguish-v02.png" alt="" aria-hidden="true"></div>
+            <div class="small-copy"><strong>缩小后看一眼</strong>114 × 142 观察窗口<br>看五官与轮廓是否清楚</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <p class="card-label">分支转职 / 造型候选</p>
+          <h2>蛤蟆人</h2>
+          <p class="role">自己能打</p>
+        </div>
+        <figure class="art-frame checker">
+          <a href="afei-toad-promoted-v01.png" aria-label="查看蛤蟆人原图"><img src="afei-toad-promoted-v01.png" alt="阿飞蛤蟆人转职造型候选 v01"></a>
+          <span class="missing-note">候选图待保存</span>
+        </figure>
+        <div class="card-bottom">
+          <p class="description">保留蛤蟆辨识度与冷脸凶相，比较它是否够帅、够有力量感，认真时能压住场面。</p>
+          <div class="small-check">
+            <div class="thumbnail checker"><img src="afei-toad-promoted-v01.png" alt="" aria-hidden="true"></div>
+            <div class="small-copy"><strong>缩小后看一眼</strong>114 × 142 观察窗口<br>看蛤蟆特征与肩部轮廓</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <p class="card-label">分支转职 / 造型候选</p>
+          <h2>嘉豪</h2>
+          <p class="role">带人</p>
+        </div>
+        <figure class="art-frame checker">
+          <a href="afei-jiahao-promoted-v01.png" aria-label="查看嘉豪原图"><img src="afei-jiahao-promoted-v01.png" alt="阿飞嘉豪转职造型候选 v01"></a>
+          <span class="missing-note">候选图待保存</span>
+        </figure>
+        <div class="card-bottom">
+          <p class="description">从需要照应的新人，长成能鼓舞伙伴的大哥。比较是否保留痞气，又更有带队的自信。</p>
+          <div class="small-check">
+            <div class="thumbnail checker"><img src="afei-jiahao-promoted-v01.png" alt="" aria-hidden="true"></div>
+            <div class="small-copy"><strong>缩小后看一眼</strong>114 × 142 观察窗口<br>看脸部气势与服装色块</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <p class="card-label">隐藏转职 / 造型候选</p>
+          <h2>飞碟</h2>
+          <p class="role">自己能打，也能带人</p>
+        </div>
+        <figure class="art-frame checker">
+          <a href="afei-feidie-promoted-v01.png" aria-label="查看飞碟原图"><img src="afei-feidie-promoted-v01.png" alt="阿飞头顶悬浮小飞碟的隐藏转职造型候选 v01"></a>
+          <span class="missing-note">候选图待保存</span>
+        </figure>
+        <div class="card-bottom">
+          <p class="description">“飞爹”的谐音梗，落在头顶的小飞碟上。比较装饰是否一眼能认出，同时仍像队伍里的阿飞。</p>
+          <div class="small-check">
+            <div class="thumbnail checker"><img src="afei-feidie-promoted-v01.png" alt="" aria-hidden="true"></div>
+            <div class="small-copy"><strong>缩小后看一眼</strong>114 × 142 观察窗口<br>看小飞碟是否清楚、抢眼适度</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <p class="note">当前用于透明 PNG 母图的造型比较，尚未适配换装、受伤与死亡状态。飞碟图为嘉豪主体与头顶装饰的合成预览，独立装饰层尚未制作。小观察窗口只帮助判断缩小后的辨识度，不代表游戏最终规格或实机效果。</p>
+
+    <details>
+      <summary>展开《战场兄弟》官方画风参考</summary>
+      <figure class="reference">
+        <img src="../../references/battle-brothers-style/official-brothers-busts-2016.jpg" alt="战场兄弟官方人物半身像画风参考图" loading="lazy">
+        <figcaption>官方人物图，仅供画风参考。重点观察大头与紧凑上身、深色轮廓、简化阴影，以及小尺寸下的表情。</figcaption>
+      </figure>
+    </details>
+    <footer>点击大图可打开 PNG 原图 · 本页可离线查看</footer>
+  </main>
+  <script>
+    document.querySelectorAll('[data-theme]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        document.body.dataset.checker = button.dataset.theme;
+        document.querySelectorAll('[data-theme]').forEach(function (choice) {
+          choice.setAttribute('aria-pressed', String(choice === button));
+        });
+      });
+    });
+    document.querySelectorAll('.art-frame img, .thumbnail img').forEach(function (img) {
+      var frame = img.closest('.art-frame, .thumbnail');
+      function update() {
+        frame.classList.toggle('is-missing', !img.naturalWidth);
+      }
+      img.addEventListener('load', update);
+      img.addEventListener('error', update);
+      if (img.complete) update();
+    });
+  </script>
+</body>
+</html>

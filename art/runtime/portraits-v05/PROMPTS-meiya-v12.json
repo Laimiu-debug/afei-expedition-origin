@@ -1,0 +1,17 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-27",
+  "records": [
+    {
+      "key": "meiya",
+      "name": "美伢",
+      "prompt": "Use case: stylized-concept. Generate ONE transparent Battle Brothers mercenary game bust of 美伢. Image 1 is user-supplied IDENTITY reference: the single adult woman in the close-up. Image 2 is official Battle Brothers STYLE AND PROPORTION reference, not identity. Keep recognizable long straight black hair, arched dark brows, large rounded expressive dark eyes with simplified upper lashes, compact oval face and narrow chin, small nose, notably full rose-colored lips with a slightly open playful skeptical expression. The face is the identity priority; simplify it into the game's coarse hand-painted 2D look rather than reproducing skin or makeup photographically. Match official sprite style: firm brown-black contour, angular broad colored shadows, earthy muted palette, exaggerated head above short shoulders, no soft 3D lighting, no airbrushed beauty portrait, no shiny anime eyes. Face, nose, gaze, neck and chest oriented SCREEN-RIGHT in consistent three-quarter angle, no looking at viewer. Complete black hair crown, ears, entire jaw and visible intact neck joined to a simple low muted dusty-rose linen neckline and weathered brown leather shoulders. No hat or headgear painted into the base layer because actual equippable helmets overlay in game; no pink cap, no masks in hair. One short upper-chest bust with a curved oval bottom, no arms/hands, no finger, no weapons, no lettering. Head about upper 60 percent of silhouette, continuous neck and neckline middle 10 percent, cropped shoulders and chest bottom 30 percent. Readable at 88x100 game pixels; strong facial features with few purposeful strokes. Centered on truly transparent background with small margins, no floor, shadow, logos, watermark or other people. Repaint in game style, do not paste photographic pixels. Preserve full chin and neck for layered sprite export.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-user/meiya.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-91a2b002-ad01-4326-a9a4-c004fad73e6f.png",
+      "selected_source": "art/runtime/portraits-v05/sources/user-v12/meiya.png"
+    }
+  ]
+}

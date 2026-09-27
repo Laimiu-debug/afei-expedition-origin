@@ -1,0 +1,35 @@
+{
+  "id": "afei-feidie-promoted-v01",
+  "created_at": "2026-09-26",
+  "tool": "built-in image_gen",
+  "asset_type": "promotion_composite_preview",
+  "source_file": "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-bcc4c94a-c5a8-4a9a-b7fa-3fa158d9bf3c.png",
+  "workspace_file": "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-feidie-promoted-v01.png",
+  "reference_images": [
+    "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-1068abf7-2bdd-483d-bd1d-a4669a1eaa65.png"
+  ],
+  "prompt": "Use case: precise-object-edit.\nAsset: ONE complete preview of Afei's hidden FEIDIE promotion for the Battle Brothers mod.\n\nEDIT THE PROVIDED IMAGE. Preserve the entire human character exactly: same recognizable face, black hair, eyes, eyebrows, small roguish closed-mouth smile, pose, skin, charcoal mantle with muted burgundy edge, old brass clasp, brown armor, simplified drawing style and facing direction.\nThe ONLY design addition is ONE small flying saucer floating above his hair. The user specifically wants a saucer above the existing character's head. \"Feidie\" is a pun on \"Feidie / flying dad\"; do not transform the body into a vehicle.\n\nSaucer design: a compact flattened elliptical disk with a low central dome and a simple dark rim, drawn as a modest hand-painted game accessory. Muted old-steel grey with a restrained worn brass edge, dark brown outline and just two or three flat shadow planes. Same slightly elevated three-quarter perspective and light direction as the character. No polished chrome, tiny mechanical detail or sci-fi lighting.\nWidth about half to three-fifths of the character's head width. Place it centrally above the hair with a clearly visible small transparent gap. It must read as hovering, not a helmet or halo. Leave clear margin above the saucer; extend the transparent canvas upward if needed. Do not cover the hair or face and do not crop the shoulders or bottom of the bust.\nKeep the body and head visually unchanged and avoid adding texture or realism. This is a small Battle Brothers tactical bust preview enlarged, with simple matte color shapes.\nOne character and one saucer only. TRUE TRANSPARENT ALPHA. No beam, glow, sparks, magical circle, legs, hands, weapon, text, frame, ground or background.\n",
+  "image_size": [
+    1040,
+    1512
+  ],
+  "image_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    0,
+    23,
+    1040,
+    1497
+  ],
+  "sha256": "51fc0f2294cd30579f71e9984502c37a08a1e2163e00aacc1c7f28e168c04d6e",
+  "status": "candidate_pending_user_review",
+  "visual_review": "嘉豪主体与头顶小飞碟的外观合成预览，飞碟与头发间有可见间隙。生图过程中画布与主体比例略变，尚非精确的独立图层合成；未输出可单独挂载的飞碟层。",
+  "user_feedback": null,
+  "technical_review": "非零透明度包围盒存在贴边情况；正式裁切和分层前需检查留白。114×142 仅作为旧项目尺寸观察窗口，不是已适配的游戏资源。",
+  "in_game_tested": false,
+  "equipment_compatibility": "unverified",
+  "production_ready": false
+}

@@ -1,0 +1,31 @@
+{
+  "id": "afei-normal-roguish-v02",
+  "created_at": "2026-09-26",
+  "tool": "built-in image_gen",
+  "asset_type": "concept_master",
+  "source_file": "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-0ab5d6ae-77cf-4d1d-ae58-94bf1c887cfb.png",
+  "workspace_file": "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png",
+  "reference_images": [
+    "C:/Users/25647/.codex/generated_images/01a0d853-067c-7780-9659-bb36db8ef972/exec-1a12ac1e-e118-49a3-8ab8-fadf3c3ada74.png",
+    "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/bust_head_01.png",
+    "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/bust_body_01.png",
+    "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+  ],
+  "prompt": "Use case: style-transfer.\nEDIT IMAGE 1 ONLY: simplify its rendering into the original Battle Brothers in-game tactical sprite style. Preserve the same adult human Afei identity, black cropped hair silhouette, strong eyebrows, half-lidded alert eyes, small crooked CLOSED-mouth smile, grey-beige gambeson, charcoal mantle, brown fastening, camera direction and compact bust silhouette. Keep true transparency.\n\nImage 1 is the edit target. Images 2 and 3 are the actual native sprite references. Image 4 is the official native bust sheet. Their visual economy is the required result, not merely a vague influence.\n\nONE CONTROLLED CHANGE: simplify all drawing and painting to native game sprite detail.\n- Replace the target's mottled skin texture with a plain warm base and just two or three crisp, deliberately drawn shadow shapes. Each cheek is one simple painted plane, not a smooth beauty-portrait gradient.\n- Describe each eye using a dark upper lid, a small flat pale eye shape and a dark dot; no realistic wet eyes or elaborate eyelid anatomy.\n- Use a few broad graphic forms for the nose, jaw and ear. Strong, readable dark facial marks, mild native-game caricature. Keep the roguish handsome expression.\n- Hair is about five or six solid dark clumps with a few broad highlights, not many individual locks or grainy strokes.\n- The cloak has only a few major fold shadows. The gambeson has widely spaced plain seam marks. Erase fine fabric grain, scratches and decorative rendering noise.\n- Use confident dark brown outlines and restrained hand-painted fill, matching the enlarged small sprites in the official sheet. The result must read like a small game paper-doll bust enlarged, not polished standalone concept art.\n\nKeep one character, complete head and both shoulders, short torso, facing viewer's RIGHT, matching original native pawn proportions. A transparent margin surrounds it. Keep the face and costume identifiable while reducing the rendering complexity.\nNo new objects or costume changes, no frog, flag, weapon, text, background, pedestal, white edge, anime style, 3D shading, photoreal face, pixel-grid filter, stippling, speckled brush texture, or painterly canvas texture.",
+  "image_size": [
+    1127,
+    1396
+  ],
+  "image_mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "sha256": "383f8713d9620f31c76e47c86190073a42bd4f8b19d361ba0f10b9e08d3f5417",
+  "status": "user_accepts_visual_direction",
+  "visual_review": "相对 v01 明显减少皮肤与布料颗粒，将发束、眉眼、脸部与衣料阴影概括成大色块；保留短黑发、斜眉、闭嘴微笑、棉甲与黑披肩。整体仍属造型候选，原版小尺寸并排、换装与实机融合度未验收。",
+  "user_feedback": "不错 但是转职的样子呢",
+  "in_game_tested": false,
+  "equipment_compatibility": "unverified",
+  "production_ready": false
+}

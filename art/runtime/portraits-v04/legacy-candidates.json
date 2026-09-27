@@ -1,0 +1,2453 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-26",
+  "purpose": "仅作34人旧资源候选审计；未生成图片，未修改legacy或src。",
+  "roster_source": "build/characters.json",
+  "source_scope": {
+    "archive_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/original-project.zip",
+    "archive_entries": 5015,
+    "reference_art_tree_scanned": true,
+    "reference_source_gfx_scanned": true,
+    "external_originals_available_now": 0,
+    "external_originals_checked": 123
+  },
+  "summary": {
+    "active_characters": 34,
+    "identity_matched_transparent_full_bust_candidates": 27,
+    "priority_reuse_source_candidates": 4,
+    "needs_style_redraw": 23,
+    "missing_usable_source": 6,
+    "identity_invalid": 1,
+    "in_game_approved": 0
+  },
+  "exclusions": [
+    "yanzi：用户删除，不在34名单中。",
+    "旧C29一凹瑶、旧C30罗一可：仅归档，不恢复名单。",
+    "旧C11女性川神图：不匹配男性老蔡。",
+    "art/production-v1/rejected-realistic：全部拒绝回用。",
+    "32张旧事件/场景PNG虽为RGBA，实际alpha全255。",
+    "原版头发/头/身体部件不在此次整体胸像候选中。"
+  ],
+  "warnings": [
+    "旧 docs/art/legacy-asset-index.md 与旧 character-map.json 仍写35人、芷芷待确认；本表按现34人及用户已确认映射纠正。",
+    "C07等名为afei_head_Cxx的文件实际是一整个人物轮廓，并非可与原版body组合的独立头。",
+    "旧coherent-v2/source-sheet.png含半透明背景氛围，虽有alpha但不宜直接按整张透明母图裁切；单人导出PNG更可靠。",
+    "旧归档的后续修订只覆盖C01-C06；旧final总览不代表34人已齐或画风通过。"
+  ],
+  "suggested_geometry": {
+    "legacy_full_bust_canvas": [
+      114,
+      142
+    ],
+    "legacy_content_fit": [
+      108,
+      124
+    ],
+    "bottom_baseline_y": 142,
+    "notes": "需按本轮同一规格重导出；武器/盾是否保留原生装备层由root统一决定，不能把烙在旧像素内的道具当作可切换装备。"
+  },
+  "representative_images": [
+    {
+      "reason": "当前阿飞完整胸像基准，用户认可方向",
+      "path": "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png"
+    },
+    {
+      "reason": "最优先复用的小酒瓶完整母图",
+      "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C04-master.png"
+    },
+    {
+      "reason": "短发与简化轮廓的李李完整母图",
+      "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C05-master.png"
+    },
+    {
+      "reason": "长发、发箍与爪纹的余初九完整母图",
+      "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C06-master.png"
+    },
+    {
+      "reason": "旧6人一体胸像与原版、换武器对照，仅C01-C03沿用此轮；风格仍偏动画",
+      "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/reviews/coherent-C01-C06-equipment-v2.jpg"
+    },
+    {
+      "reason": "其余旧角色识别锚点总览，包含不在当前名单的一凹瑶/罗一可及不适用的旧C11，不能按行号导入",
+      "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/final-tactical-contact-sheet.jpg"
+    }
+  ],
+  "afei_route_candidates": {
+    "normal": {
+      "path": "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png",
+      "width": 1127,
+      "height": 1396,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "has_transparent_pixels": true,
+      "transparent_fraction": 0.4475,
+      "opaque_fraction": 0.00046,
+      "alpha_bbox": [
+        32,
+        24,
+        1097,
+        1370
+      ],
+      "alpha128_bbox": [
+        35,
+        112,
+        1090,
+        1351
+      ],
+      "sha256": "383f8713d9620f31c76e47c86190073a42bd4f8b19d361ba0f10b9e08d3f5417"
+    },
+    "toad": {
+      "path": "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-toad-promoted-v01.png",
+      "width": 1153,
+      "height": 1364,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "has_transparent_pixels": true,
+      "transparent_fraction": 0.478,
+      "opaque_fraction": 0.0005,
+      "alpha_bbox": [
+        20,
+        53,
+        1143,
+        1364
+      ],
+      "alpha128_bbox": [
+        23,
+        223,
+        1140,
+        1273
+      ],
+      "sha256": "e0566647be9ba21b4e9e33d5de03adc29c6cab949dd644c314ccf1721828fb95"
+    },
+    "jiahao": {
+      "path": "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-jiahao-promoted-v01.png",
+      "width": 1127,
+      "height": 1396,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "has_transparent_pixels": true,
+      "transparent_fraction": 0.43762,
+      "opaque_fraction": 0.00064,
+      "alpha_bbox": [
+        28,
+        2,
+        1098,
+        1396
+      ],
+      "alpha128_bbox": [
+        32,
+        110,
+        1095,
+        1354
+      ],
+      "sha256": "884b95ada340f3b9212691a2d84ab51b491b1b5b12df1b125352eb16e143681f"
+    },
+    "feidie_note": "优先在normal/toad/jiahao整体胸像上使用独立飞碟，不把完整飞碟概念预览当独立图层。"
+  },
+  "characters": [
+    {
+      "roster_number": 1,
+      "key": "afei",
+      "name": "阿飞",
+      "legacy_id": "C01",
+      "status": "reuse_source_candidate",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png",
+      "reuse_without_creative_redraw_candidate": true,
+      "ready_for_game": false,
+      "assessment": "已获用户“不错”的正常形态方向；完整自制头发、脸与上胸，粗轮廓和大色块较一致。仍需统一缩放留白和实机验收。",
+      "identity_notes": "短黑发、斜眉、低眼睑、痞帅闭嘴笑、黑短披肩与米灰棉衣。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png",
+        "width": 1127,
+        "height": 1396,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.4475,
+        "opaque_fraction": 0.00046,
+        "alpha_bbox": [
+          32,
+          24,
+          1097,
+          1370
+        ],
+        "alpha128_bbox": [
+          35,
+          112,
+          1090,
+          1351
+        ],
+        "sha256": "383f8713d9620f31c76e47c86190073a42bd4f8b19d361ba0f10b9e08d3f5417"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C01.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "eff7b6f3847e36acc559ff07cd88fb6d9ba58bc50faedfb835cf55a901739dea"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 2,
+      "key": "damou",
+      "name": "王大谋",
+      "legacy_id": "C03",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/coherent-v2/afei_figure_C03.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有114×142透明无武器整体胸像，可以技术接入，但五官、发色和描线仍偏动画，建议保留识别锚点重绘。",
+      "identity_notes": "旧稿紫色短发、宽下颌、绿围巾；改成更简洁粗线条的BB战士。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/coherent-v2/afei_figure_C03.png",
+        "width": 114,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.43452,
+        "opaque_fraction": 0.01446,
+        "alpha_bbox": [
+          3,
+          23,
+          111,
+          142
+        ],
+        "alpha128_bbox": [
+          3,
+          23,
+          111,
+          142
+        ],
+        "sha256": "8bdc06fab5d307cf5eb21a0fab9888f5c5c674f9c3150249964953c00b05c2e5"
+      },
+      "alternatives": [
+        {
+          "reason": "高分辨率旧人物母图，但动画式且含武器/手/道具，不能直接替代整体无道具战斗胸像。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/character-masters/batch-01/C03.png",
+            "width": 1168,
+            "height": 1346,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "has_transparent_pixels": true,
+            "transparent_fraction": 0.24541,
+            "opaque_fraction": 0.00019,
+            "alpha_bbox": [
+              0,
+              0,
+              1168,
+              1346
+            ],
+            "alpha128_bbox": [
+              2,
+              2,
+              1165,
+              1346
+            ],
+            "sha256": "951f9dc6f0c6fff83021c76bc1a1d4eca150a8c6e1ff2a20d59b4a69518a73b0"
+          }
+        }
+      ],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C03.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "93d61044376fa73bea298b80c7ea3564a12e4e8d491003b6de6beea4585da242"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 3,
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "legacy_id": "C02",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/coherent-v2/afei_figure_C02.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有114×142透明无武器整体胸像，可以技术接入，但五官、发色和描线仍偏动画，建议保留识别锚点重绘。",
+      "identity_notes": "眼镜、尖耳、橙棕短发、绿色账房服的旧改编；尖耳不是已确认真人特征或确定种族。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/coherent-v2/afei_figure_C02.png",
+        "width": 114,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.3964,
+        "opaque_fraction": 0.01476,
+        "alpha_bbox": [
+          3,
+          18,
+          110,
+          142
+        ],
+        "alpha128_bbox": [
+          3,
+          19,
+          110,
+          142
+        ],
+        "sha256": "c3278f9db20840f473f843e3a17ad33a72759747b4d0c1b8327cf5f4d52ccf15"
+      },
+      "alternatives": [
+        {
+          "reason": "高分辨率旧人物母图，但动画式且含武器/手/道具，不能直接替代整体无道具战斗胸像。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/character-masters/batch-01/C02.png",
+            "width": 1075,
+            "height": 1463,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "has_transparent_pixels": true,
+            "transparent_fraction": 0.24249,
+            "opaque_fraction": 0.00027,
+            "alpha_bbox": [
+              0,
+              3,
+              1075,
+              1463
+            ],
+            "alpha128_bbox": [
+              7,
+              10,
+              1069,
+              1453
+            ],
+            "sha256": "d6f27b18c9821e8b9dba548d52144cc35624c2cfd393ec2079835e04ea40df70"
+          }
+        }
+      ],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C02.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "efb6ab18fa8241963101ece8498f4c01a735c68b296e066ee29e87635f060f74"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 4,
+      "key": "bottle",
+      "name": "小酒瓶",
+      "legacy_id": "C04",
+      "status": "reuse_source_candidate",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C04-master.png",
+      "reuse_without_creative_redraw_candidate": true,
+      "ready_for_game": false,
+      "assessment": "后期修订的无武器完整透明胸像；更接近BB大色块与短身比例，优先作复用母图。不是已完成本轮验收。",
+      "identity_notes": "深棕长发、金色小耳坠、黑色绗缝衣。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C04-master.png",
+        "width": 1123,
+        "height": 1400,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.51397,
+        "opaque_fraction": 0.00021,
+        "alpha_bbox": [
+          0,
+          36,
+          1111,
+          1384
+        ],
+        "alpha128_bbox": [
+          61,
+          154,
+          1063,
+          1285
+        ],
+        "sha256": "a79d4318fed367be33a2d8bb0fd8397111665e1e7ea86d1ee249d2bff107aaa6"
+      },
+      "alternatives": [
+        {
+          "reason": "已格式化旧战斗sprite，可核对画布与基线；优先用上方母图重导出。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/afei_figure_C04.png",
+            "width": 114,
+            "height": 142,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "has_transparent_pixels": true,
+            "transparent_fraction": 0.42908,
+            "opaque_fraction": 0.01384,
+            "alpha_bbox": [
+              3,
+              20,
+              111,
+              142
+            ],
+            "alpha128_bbox": [
+              3,
+              20,
+              111,
+              142
+            ],
+            "sha256": "4dd00c20cb3abf5414a18c4fef88e41af3c4193ba83b8867236caa0f50d972ce"
+          }
+        }
+      ],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C04.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "623a04f661668291de1b5496130c7927c551860f20d3395ade5c36ee84fd7648"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 5,
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "legacy_id": "C09",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C09.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "黑色双辫、粉红发带、打鼓神态；鼓与手画死，需重绘去掉。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C09.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.3018,
+        "opaque_fraction": 0.01923,
+        "alpha_bbox": [
+          0,
+          10,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          12,
+          104,
+          141
+        ],
+        "sha256": "deb8614fbd21379026a6693ab7200c576769271fd6966d534d8adc0d1d098158"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C09.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "51b8283d2e9837ef3a4e6c0fe525f4865b9de878efcfd84ba5abc6224d9fce63"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 6,
+      "key": "lili",
+      "name": "李李超欧",
+      "legacy_id": "C05",
+      "status": "reuse_source_candidate",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C05-master.png",
+      "reuse_without_creative_redraw_candidate": true,
+      "ready_for_game": false,
+      "assessment": "后期修订的无武器完整透明胸像；更接近BB大色块与短身比例，优先作复用母图。不是已完成本轮验收。",
+      "identity_notes": "栗色短波波头、米白花饰、灰披衣。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C05-master.png",
+        "width": 1123,
+        "height": 1400,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.44329,
+        "opaque_fraction": 0.00023,
+        "alpha_bbox": [
+          0,
+          19,
+          1122,
+          1400
+        ],
+        "alpha128_bbox": [
+          50,
+          82,
+          1054,
+          1345
+        ],
+        "sha256": "e8c6cdfbd08e0a2d9d72a7c89715741ff9c0f29960097636a33d94c35bd6cca5"
+      },
+      "alternatives": [
+        {
+          "reason": "已格式化旧战斗sprite，可核对画布与基线；优先用上方母图重导出。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/afei_figure_C05.png",
+            "width": 114,
+            "height": 142,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "has_transparent_pixels": true,
+            "transparent_fraction": 0.44873,
+            "opaque_fraction": 0.0189,
+            "alpha_bbox": [
+              7,
+              18,
+              106,
+              142
+            ],
+            "alpha128_bbox": [
+              7,
+              18,
+              106,
+              142
+            ],
+            "sha256": "ebec5a6c691b5905e35a986e25dbe8b93179788a2106e7a9c2a1c4cadff89a4b"
+          }
+        }
+      ],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C05.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "d8111194cb6d2f479963baf47582fd7a8eb87c43c604c9172da8ef41c8f708f1"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 7,
+      "key": "xiaoyueya",
+      "name": "小月牙",
+      "legacy_id": "C07",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C07.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "旧图蓝色高马尾、星形饰物；明显动画表达，不能直接定为真人外貌。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C07.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.24275,
+        "opaque_fraction": 0.01605,
+        "alpha_bbox": [
+          1,
+          0,
+          102,
+          132
+        ],
+        "alpha128_bbox": [
+          1,
+          0,
+          102,
+          130
+        ],
+        "sha256": "70cc4924e50b8afcf5ef13ef7420d275c5a1014d1e61e4561a5b320b05e6cabe"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C07.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "50817413e13e7085485ef78b4dee9b6b90e71a6ade2b0407edbefd02c7b0c6d1"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 8,
+      "key": "yuchujiu",
+      "name": "余初九",
+      "legacy_id": "C06",
+      "status": "reuse_source_candidate",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C06-master.png",
+      "reuse_without_creative_redraw_candidate": true,
+      "ready_for_game": false,
+      "assessment": "后期修订的无武器完整透明胸像；更接近BB大色块与短身比例，优先作复用母图。不是已完成本轮验收。",
+      "identity_notes": "栗棕长发、浅色发箍、青蓝领口、爪纹衣饰；保留轮廓并简化纹理。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/C06-master.png",
+        "width": 1191,
+        "height": 1320,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.55558,
+        "opaque_fraction": 0.00033,
+        "alpha_bbox": [
+          31,
+          44,
+          1036,
+          1320
+        ],
+        "alpha128_bbox": [
+          89,
+          86,
+          1033,
+          1236
+        ],
+        "sha256": "d1db8df1a0e1c8215c5409df1449638558e5c8257d2035b09a02da09befb21a7"
+      },
+      "alternatives": [
+        {
+          "reason": "已格式化旧战斗sprite，可核对画布与基线；优先用上方母图重导出。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/battle-style-v6/afei_figure_C06.png",
+            "width": 114,
+            "height": 142,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "has_transparent_pixels": true,
+            "transparent_fraction": 0.47288,
+            "opaque_fraction": 0.01402,
+            "alpha_bbox": [
+              6,
+              18,
+              108,
+              142
+            ],
+            "alpha128_bbox": [
+              6,
+              18,
+              108,
+              142
+            ],
+            "sha256": "ff9497320f226a1e0b3958cb7542af488c588f0b9830ea39e1c4c61f463baafb"
+          }
+        }
+      ],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C06.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "fcfeb21df6ac57fd050b5eb8b850b3be2a25dc09f5a54922c46404118f8c02b0"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 9,
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "legacy_id": "C08",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C08.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "白色兜帽、贝壳盾意象；盾已画死。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C08.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.25785,
+        "opaque_fraction": 0.0172,
+        "alpha_bbox": [
+          0,
+          8,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          9,
+          104,
+          138
+        ],
+        "sha256": "414937359f7b6593e844079acde6c0d9c4bec0831dfd6790634025e50ebab67b"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C08.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "b0bdfe17df72c8dcba8b0b8df7999a5e7e0b0b5adef40449dcbc9030559df033"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 10,
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "legacy_id": "C10",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C10.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "旧图长棕发、花饰、紫色披衣与旗；旗和手已画死。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C10.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.21587,
+        "opaque_fraction": 0.01483,
+        "alpha_bbox": [
+          0,
+          8,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          2,
+          8,
+          104,
+          140
+        ],
+        "sha256": "80089d5287edd1da9cc042478386b839b64b9ecc03136c1d72c712bb332b8525"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C10.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "68c9207cc8add370f71765f821773eca3ef311863ba50b05ff20726a75c72a09"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 11,
+      "key": "laocai",
+      "name": "老蔡",
+      "legacy_id": "C11",
+      "status": "identity_invalid",
+      "best_candidate_path": null,
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "旧C11事件图/透明头图是女性川神造型，旧PROMPTS.md也明确写adult woman；不能给当前男性老蔡使用。新写实图已被用户否决。",
+      "identity_notes": "",
+      "candidate": null,
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。人物性别/造型不适合当前老蔡。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C11.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "210525490330f00231cb7355fbd9466686099105f584c3d6b43ae741315a4991"
+          }
+        },
+        {
+          "reason": "用户已明确否决写实画风；不得用作正式图或画风参考。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/art/production-v1/rejected-realistic/portrait_laocai.png",
+            "width": 1254,
+            "height": 1254,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "has_transparent_pixels": true,
+            "transparent_fraction": 0.50584,
+            "opaque_fraction": 0.00023,
+            "alpha_bbox": [
+              0,
+              9,
+              1214,
+              1254
+            ],
+            "alpha128_bbox": [
+              72,
+              45,
+              1191,
+              1210
+            ],
+            "sha256": "905c997660b2098b1b11ccd2d809d75bd0ccb8a32da1dfade79892029a1f8776"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 12,
+      "key": "tiantong",
+      "name": "亿口甜筒",
+      "legacy_id": "C12",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C12.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "眼镜、棕发、虎纹围巾的旧小虎稿。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C12.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.28453,
+        "opaque_fraction": 0.01612,
+        "alpha_bbox": [
+          0,
+          19,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          22,
+          104,
+          140
+        ],
+        "sha256": "fa59d1303dfac40814610f3b210ca0cfb8dc13dd25ecaddc941e9c552d2c36ba"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C12.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "a465e50ebd8451f7934c2fd3d3707cf1d59c21f94caf7d4eecf5e819fcbc710c"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 13,
+      "key": "xiaoning",
+      "name": "小宁",
+      "legacy_id": "C32",
+      "status": "missing_usable_source",
+      "best_candidate_path": null,
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "未找到身份对应且可用的旧完整BB胸像。",
+      "identity_notes": "用户确认外星人外号与流口水梗；旧C32只有人物数据/技能，无独立旧图。",
+      "candidate": null,
+      "alternatives": [],
+      "excluded_sources": []
+    },
+    {
+      "roster_number": 14,
+      "key": "xiaopangxu",
+      "name": "小胖徐不快乐",
+      "legacy_id": "C33",
+      "status": "missing_usable_source",
+      "best_candidate_path": null,
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "未找到身份对应且可用的旧完整BB胸像。曾生成的写实版本被用户明确否决，不可回用。",
+      "identity_notes": "用户确认街舞；不从昵称猜体型。旧C33无独立旧图，写实稿被否决。",
+      "candidate": null,
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "用户已明确否决写实画风；不得用作正式图或画风参考。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/art/production-v1/rejected-realistic/portrait_xiaopang.png",
+            "width": 1254,
+            "height": 1254,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "has_transparent_pixels": true,
+            "transparent_fraction": 0.51181,
+            "opaque_fraction": 0.00018,
+            "alpha_bbox": [
+              29,
+              19,
+              1230,
+              1254
+            ],
+            "alpha128_bbox": [
+              126,
+              28,
+              1130,
+              1225
+            ],
+            "sha256": "5adb007c324e60008c8586ae787bdd6d2766fb831659a26291a4247119e1f4f7"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 15,
+      "key": "dae",
+      "name": "大鹅",
+      "legacy_id": "C13",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C13.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "鹅主题与白毛领、棕色长发；鹅和盾均为旧构图内容。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C13.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.20599,
+        "opaque_fraction": 0.01429,
+        "alpha_bbox": [
+          0,
+          8,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          10,
+          104,
+          142
+        ],
+        "sha256": "1d79b1f5efbbfe13b550a37ee607f2c0ad13423c8be4a24ff82a8f0f098bb87f"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C13.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "ac5a1da8ae66a0073f40032162eb3fb1921f3b8834e42efa7106eb767940709e"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 16,
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "legacy_id": "C34",
+      "status": "missing_usable_source",
+      "best_candidate_path": null,
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "未找到身份对应且可用的旧完整BB胸像。",
+      "identity_notes": "用户确认S气场；用姿态与表情表达，不扩写私生活。旧C34有数据/技能，无旧人物图。",
+      "candidate": null,
+      "alternatives": [],
+      "excluded_sources": []
+    },
+    {
+      "roster_number": 17,
+      "key": "xiaohani",
+      "name": "小哈尼",
+      "legacy_id": null,
+      "status": "missing_usable_source",
+      "best_candidate_path": null,
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "未找到身份对应且可用的旧完整BB胸像。曾生成的写实版本被用户明确否决，不可回用。",
+      "identity_notes": "",
+      "candidate": null,
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "用户已明确否决写实画风；不得用作正式图或画风参考。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/art/production-v1/rejected-realistic/portrait_xiaohani.png",
+            "width": 1254,
+            "height": 1254,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "has_transparent_pixels": true,
+            "transparent_fraction": 0.45899,
+            "opaque_fraction": 0.00013,
+            "alpha_bbox": [
+              0,
+              0,
+              1234,
+              1254
+            ],
+            "alpha128_bbox": [
+              132,
+              3,
+              1141,
+              1247
+            ],
+            "sha256": "f86b45acc3bc660a707aabe7bff0d6a2e8716e5ae5a921382be252fa4eb084da"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 18,
+      "key": "keke",
+      "name": "可可",
+      "legacy_id": "C17",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C17.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "棕色马尾、红围巾、红发结；旧图弩与手已画死。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C17.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.25339,
+        "opaque_fraction": 0.01625,
+        "alpha_bbox": [
+          0,
+          10,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          11,
+          104,
+          141
+        ],
+        "sha256": "00bbd05702ca59308265a282ec2792c5fef709fee3f4c68942163402bcb5f9ed"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C17.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "5e6a95b61992fd7b0df6cb89e7bfa1999a57dea39071526495d2b0f7a1e4e3f7"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 19,
+      "key": "yuxiang",
+      "name": "余想",
+      "legacy_id": "C20",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C20.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "紫色披衣、花饰、提灯；提灯已画死。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C20.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.21052,
+        "opaque_fraction": 0.01842,
+        "alpha_bbox": [
+          0,
+          3,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          3,
+          104,
+          141
+        ],
+        "sha256": "cb804aad72c41a2a317702a2701cc8e910a7236f825a219c4ed358253b170a67"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C20.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "2d81b0da429e2686e4e82897824c4a90170b67867fd0ce1c4ca1684f99a2f7e2"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 20,
+      "key": "tongzhu",
+      "name": "童猪",
+      "legacy_id": "C18",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C18.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "深色长发、蓝色披衣、木熊徽章；旧图旗与武器已画死。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C18.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.20104,
+        "opaque_fraction": 0.02248,
+        "alpha_bbox": [
+          0,
+          2,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          2,
+          104,
+          141
+        ],
+        "sha256": "030dd064b11bca0cbc8a486340185a2402e018cf5c8c5a3b3c275e06cb40a1f2"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C18.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "aa5ff37110102dcd32606f551aff4c934b47903e98bd478cf7eb8d5cebde6b52"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 21,
+      "key": "meiya",
+      "name": "美伢",
+      "legacy_id": "C21",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C21.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "粉色帽与面具；帽应转译为中古软帽，去掉画死的手和道具。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C21.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.45382,
+        "opaque_fraction": 0.01598,
+        "alpha_bbox": [
+          0,
+          32,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          2,
+          35,
+          103,
+          142
+        ],
+        "sha256": "2ff5c320d2472bed743b8e9d2a92ba2e78a92e368c688172c8463a5cb91c1acf"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C21.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "fa7297cf498bc756a5a091e0821882aaa10810b62743f9d19b7c43dfdc61e58f"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 22,
+      "key": "wanshe",
+      "name": "玩蛇",
+      "legacy_id": "C25",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C25.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "粉色头巾、盘蛇装饰；旧图偏动画，不能当确定种族。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C25.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.51422,
+        "opaque_fraction": 0.01402,
+        "alpha_bbox": [
+          0,
+          38,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          40,
+          104,
+          140
+        ],
+        "sha256": "b8f1851391650b95388a0b61561031dff088b57b2ae3ed7c2acc5810c4672cb7"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C25.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "54a2785f8c31baed43d7ddba6bbcd10633b0767e0034930501ac8a4655cf757e"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 23,
+      "key": "tutu",
+      "name": "涂涂",
+      "legacy_id": "C16",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C16.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "深绿兜帽与毛边、旅途信卷。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C16.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.22501,
+        "opaque_fraction": 0.0191,
+        "alpha_bbox": [
+          0,
+          9,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          10,
+          103,
+          141
+        ],
+        "sha256": "9c273c0ea295def647e4c846c0236bf9bc2d53333432500bc4f76632e02e1c11"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C16.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "cbeb05f41c42c29adcfc8dbbbc9f6e1d8e4253e23f18bf6806bceaf6126b0033"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 24,
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "legacy_id": null,
+      "status": "missing_usable_source",
+      "best_candidate_path": null,
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "未找到身份对应且可用的旧完整BB胸像。曾生成的写实版本被用户明确否决，不可回用。",
+      "identity_notes": "用户确认鹌鹑梗；仅凭这条不把她强制设成鸟种族。旧写实图不采用。",
+      "candidate": null,
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "用户已明确否决写实画风；不得用作正式图或画风参考。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/art/production-v1/rejected-realistic/portrait_songnuanyang.png",
+            "width": 1254,
+            "height": 1254,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "has_transparent_pixels": true,
+            "transparent_fraction": 0.52237,
+            "opaque_fraction": 0.00011,
+            "alpha_bbox": [
+              0,
+              21,
+              1230,
+              1254
+            ],
+            "alpha128_bbox": [
+              150,
+              41,
+              1129,
+              1243
+            ],
+            "sha256": "ccf0f906762116ada4e041eca62e0e11b100d20b71d3ba01e4294f319f8d0ec3"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 25,
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "legacy_id": null,
+      "status": "missing_usable_source",
+      "best_candidate_path": null,
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "未找到身份对应且可用的旧完整BB胸像。",
+      "identity_notes": "男性皮套人，使用虚拟小龟造型，不得生成或拼接未经确认的真人面孔，不按旧“C04以后全女”规则处理。",
+      "candidate": null,
+      "alternatives": [],
+      "excluded_sources": []
+    },
+    {
+      "roster_number": 26,
+      "key": "naigai",
+      "name": "奶盖",
+      "legacy_id": "C19",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C19.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "黑色长发、白毛领与奶盖盾纹；盾已画死。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C19.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.23605,
+        "opaque_fraction": 0.01998,
+        "alpha_bbox": [
+          0,
+          0,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          3,
+          104,
+          140
+        ],
+        "sha256": "18c8b7e1fdef7a5339865301693609f085161833a362e1ba9fe0d83a7d1d1388"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C19.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "7cf18b8fc80d5446bffe4d34c19c4ea06ac917967d6d3d2cfb9971ea34d1e05d"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 27,
+      "key": "xiaojie",
+      "name": "小杰",
+      "legacy_id": "C14",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C14.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "棕色发髻、钥匙扣和锁形盾纹；盾与长枪已画死。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C14.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.2498,
+        "opaque_fraction": 0.01964,
+        "alpha_bbox": [
+          0,
+          0,
+          103,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          1,
+          103,
+          141
+        ],
+        "sha256": "d5c1986a90b888fde5c76df28936402a6057654aa9f216f8596572b460243a2c"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C14.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "3164c7fadba4101f3917f1fe869f2c36b01ad090f60289067b5579180e1e9ff2"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 28,
+      "key": "bula",
+      "name": "bula",
+      "legacy_id": "C31",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C31.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "黑色长发、金扣和灰披巾；弓箭已画死。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C31.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.45145,
+        "opaque_fraction": 0.0191,
+        "alpha_bbox": [
+          0,
+          38,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          39,
+          104,
+          140
+        ],
+        "sha256": "7a3c6acbf6cb7a65697f90dcce556728b503ec8e337042e76e0881c370544818"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C31.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "b0c63081854f619881582bf758cfc3c23a4e76b249fce5a9c3304c1b7fc4f662"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 29,
+      "key": "suwa",
+      "name": "苏袜",
+      "legacy_id": "C15",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C15.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "白色大蝴蝶结、黑短发、红围巾；武器已画死。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C15.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.29313,
+        "opaque_fraction": 0.02587,
+        "alpha_bbox": [
+          0,
+          0,
+          103,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          10,
+          103,
+          142
+        ],
+        "sha256": "8795fbb82258c6470457ca855884da893761fed085262a7e6b4f9c433f766620"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C15.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "2f2535accf1824788022d57b34ea369b6feff3dfa42ff111f6c4db28dc1b216b"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 30,
+      "key": "qianhan",
+      "name": "千涵",
+      "legacy_id": "C23",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C23.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "黑色马尾、红色领巾与束带；盾已画死。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C23.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.47738,
+        "opaque_fraction": 0.01341,
+        "alpha_bbox": [
+          0,
+          41,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          43,
+          104,
+          141
+        ],
+        "sha256": "43a75260a764d8323b795b7348eb575d6f2a83ffe55d306c54a6e9a691e12241"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C23.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "4f664880379b84fdea66d4f55100fac2dc43f988ecda349b4ed47640450cb60f"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 31,
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "legacy_id": "C26",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C26.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "旧芷芷短棕发、紫围巾；身份映射已由用户确认。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C26.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.53975,
+        "opaque_fraction": 0.01016,
+        "alpha_bbox": [
+          0,
+          41,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          7,
+          42,
+          103,
+          141
+        ],
+        "sha256": "e16ec519f10257ec5057dc2a7d1dbd51b60ebbf24e1a18c85da9388218fa9185"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C26.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "389a58cb19e2a7547c7ab417ecbc556e82e7e673bae0fadb25ba8053724af9ad"
+          }
+        }
+      ],
+      "mapping_confirmation": "本次对话：用户确认旧芷芷与王大芷是同一个人，可沿用身份映射。"
+    },
+    {
+      "roster_number": 32,
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "legacy_id": "C27",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C27.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "深色高马尾、红发结与红旗；正确旧号C27，不能拿一凹瑶C29替代。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C27.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.37222,
+        "opaque_fraction": 0.01991,
+        "alpha_bbox": [
+          0,
+          38,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          38,
+          104,
+          140
+        ],
+        "sha256": "02c8dd3efa9dc9f0b7fca988eea06af25c82b9d1bb5a72f19d8f6be62b19c338"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C27.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "2c221801d97445ed608d32074d934c3269a31924f4aa14ef5c78f42f72fb3481"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 33,
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "legacy_id": "C28",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C28.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "蓝帽、羊形肩饰；现代鸭舌帽需中古化。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C28.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.45125,
+        "opaque_fraction": 0.01571,
+        "alpha_bbox": [
+          0,
+          37,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          0,
+          39,
+          102,
+          139
+        ],
+        "sha256": "74ddb004ea4068e90d25f0cc74feee0d516617ba30dca8f2d1daed405584c313"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C28.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "e86ff40b002deef909cf163c07f3461909394fa3597c767da3e5dfa3f89dd5b5"
+          }
+        }
+      ]
+    },
+    {
+      "roster_number": 34,
+      "key": "chenzhihan",
+      "name": "陈知含",
+      "legacy_id": "C22",
+      "status": "redraw_style",
+      "best_candidate_path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C22.png",
+      "reuse_without_creative_redraw_candidate": false,
+      "ready_for_game": false,
+      "assessment": "已有透明完整旧胸像，但偏动画，且武器、盾牌或手持道具常已画死；只作为角色识别参考，需重绘为统一BB整体胸像。",
+      "identity_notes": "黑色长发、浅色发箍、月饼饰物；保持月饼母题，不复制动画大眼。",
+      "candidate": {
+        "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/art/tactical-sprites/icons/afei_head_C22.png",
+        "width": 104,
+        "height": 142,
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "has_transparent_pixels": true,
+        "transparent_fraction": 0.45504,
+        "opaque_fraction": 0.01226,
+        "alpha_bbox": [
+          0,
+          35,
+          104,
+          142
+        ],
+        "alpha128_bbox": [
+          2,
+          38,
+          104,
+          140
+        ],
+        "sha256": "3b896e33b3a188dc724e63bf1e930cbf55b26405c6042b8efaa5f3a0ca0de0d1"
+      },
+      "alternatives": [],
+      "excluded_sources": [
+        {
+          "reason": "220×220事件框成图，alpha全255；不可当透明人物sprite。",
+          "image": {
+            "path": "G:/CODE/afei-xcpedition/legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/events/afei_C22.png",
+            "width": 220,
+            "height": 220,
+            "mode": "RGBA",
+            "alpha_extrema": [
+              255,
+              255
+            ],
+            "has_transparent_pixels": false,
+            "transparent_fraction": 0.0,
+            "opaque_fraction": 1.0,
+            "alpha_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "alpha128_bbox": [
+              0,
+              0,
+              220,
+              220
+            ],
+            "sha256": "c632197244c03652d1317ffeeb76b493ea87f9f2758ffc53762928f7d2c28d1d"
+          }
+        }
+      ]
+    }
+  ]
+}

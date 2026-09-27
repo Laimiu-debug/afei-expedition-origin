@@ -1,0 +1,128 @@
+[
+  {
+    "key": "bottle_breakthrough",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_bottle_breakthrough.png",
+    "output": "src/gfx/skills/afeix_member_bottle_breakthrough.png",
+    "borrowed": false,
+    "sha256": "cebbc4855d13160dde63cd485c97096f327c65b0f158105f44de2a7ba8ace36e"
+  },
+  {
+    "key": "finals_moment",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_finals_moment.png",
+    "output": "src/gfx/skills/afeix_member_finals_moment.png",
+    "borrowed": false,
+    "sha256": "3c6b1eebc347b1940376d77072ae64a5b432d972effcd7230ce0eb1120a7bf64"
+  },
+  {
+    "key": "dog_bark",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_dog_bark.png",
+    "output": "src/gfx/skills/afeix_member_dog_bark.png",
+    "borrowed": false,
+    "sha256": "29073f56d854d0bd5821ca781a9683fb8f7550afe3b776faa473e86374fba8a8"
+  },
+  {
+    "key": "loyalty",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_loyalty.png",
+    "output": "src/gfx/skills/afeix_member_loyalty.png",
+    "borrowed": false,
+    "sha256": "f07c56a5eb19ce9c340b61ea1949f70e0942371e40bd7ddbe35b75c83d7efc97"
+  },
+  {
+    "key": "nicotine",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_nicotine.png",
+    "output": "src/gfx/skills/afeix_member_nicotine.png",
+    "borrowed": false,
+    "sha256": "1baa811834c9fcb0c6aa086e2c2572e7269a2f1052b75973581f8a1f1d699a55"
+  },
+  {
+    "key": "only_man",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_only_man.png",
+    "output": "src/gfx/skills/afeix_member_only_man.png",
+    "borrowed": false,
+    "sha256": "8d2bc079b0576f9528c8e76dbec205bef7e8ee0445b48e2c463a4ad7b5a3a0e7"
+  },
+  {
+    "key": "breach_strike",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_breach_strike.png",
+    "output": "src/gfx/skills/afeix_member_breach_strike.png",
+    "borrowed": false,
+    "sha256": "cdbfb1cbfdc3595a9e0f0480fb63d6f399dd075003afe1177ad2597738e2cbc0"
+  },
+  {
+    "key": "lvbu_weapon",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_lvbu_weapon.png",
+    "output": "src/gfx/skills/afeix_member_lvbu_weapon.png",
+    "borrowed": false,
+    "sha256": "6f8012f33a11a194cd739e04200dd4bb7ffd6525ae2f9940c6bd4a0349aaf9f9"
+  },
+  {
+    "key": "borrow_strike",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_borrow_strike.png",
+    "output": "src/gfx/skills/afeix_member_borrow_strike.png",
+    "borrowed": false,
+    "sha256": "6548a4eb114ca963ef5f6803d93525f21697ea791170baf5968697024f26f6d8"
+  },
+  {
+    "key": "together_lift",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_together_lift.png",
+    "output": "src/gfx/skills/afeix_member_together_lift.png",
+    "borrowed": false,
+    "sha256": "9238ed818e0e9dd62ee303479813dd7a57b994e52959cb93f1d4c97b55875fb7"
+  },
+  {
+    "key": "steady_hand",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_steady_hand.png",
+    "output": "src/gfx/skills/afeix_member_steady_hand.png",
+    "borrowed": false,
+    "sha256": "2e4c661e2d427c78161ba596048e3e881bb971156d6907a154ae775408a2db23"
+  },
+  {
+    "key": "blue_form",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_blue_form.png",
+    "output": "src/gfx/skills/afeix_member_blue_form.png",
+    "borrowed": false,
+    "sha256": "428aff79e2fce47592e05a34bd8073cb67db552ef0522c1750bf50f30defa9d2"
+  },
+  {
+    "key": "guard_nest",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_guard_nest.png",
+    "output": "src/gfx/skills/afeix_member_guard_nest.png",
+    "borrowed": false,
+    "sha256": "190e3fc9b2d70c289f7825fd1be97bc2983fd3083b445c62d4c3f896ba225ff0"
+  },
+  {
+    "key": "goose_bully",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_goose_bully.png",
+    "output": "src/gfx/skills/afeix_member_goose_bully.png",
+    "borrowed": false,
+    "sha256": "e0c14da92390309dc7ff52ab978dce9ba2238ebd65651280aa520275809fcc4d"
+  },
+  {
+    "key": "pokemon",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_pokemon.png",
+    "output": "src/gfx/skills/afeix_member_pokemon.png",
+    "borrowed": false,
+    "sha256": "b2ba86a244d99dbdeaed9f4cf3ca15f54a308ca5090a07df6d840665cfabab32"
+  },
+  {
+    "key": "breathe_easy",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_breathe_easy.png",
+    "output": "src/gfx/skills/afeix_member_breathe_easy.png",
+    "borrowed": false,
+    "sha256": "8a5703c3e7dad5b2c2c761eae9ca1cd6b306d0fa581855e731b62e7d74274dea"
+  },
+  {
+    "key": "turtle_shell",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_shrink_cover.png",
+    "output": "src/gfx/skills/afeix_member_turtle_shell.png",
+    "borrowed": true,
+    "sha256": "118f0679ad5909253c1299e2dd1ae11167bfefbbe093972a6e4e263bcd867334"
+  },
+  {
+    "key": "turtle_bond",
+    "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_guard_self.png",
+    "output": "src/gfx/skills/afeix_member_turtle_bond.png",
+    "borrowed": true,
+    "sha256": "71ff4dc3a5a984a2de8a245eaf60b74deef46900bfbf8be8aa826fee32f6be86"
+  }
+]

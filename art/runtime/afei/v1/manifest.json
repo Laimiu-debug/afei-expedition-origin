@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "atlas_name": "afeix_art_v1",
+  "sprites": [
+    {
+      "id": "afeix_v1_human_head",
+      "source": "sources/human-head.png",
+      "rect": {
+        "left": -21,
+        "right": 29,
+        "top": -20,
+        "bottom": 48
+      },
+      "canvas": {
+        "width": 104,
+        "height": 142,
+        "offsetY": 35
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      }
+    },
+    {
+      "id": "afeix_v1_human_head_dead",
+      "source": "sources/human-head-dead.png",
+      "rect": {
+        "left": -44,
+        "right": 16,
+        "top": -58,
+        "bottom": 0
+      },
+      "canvas": {
+        "width": 131,
+        "height": 125,
+        "offsetX": 6,
+        "offsetY": 10,
+        "f": "64F6",
+        "f1": -15,
+        "f2": -15
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      }
+    },
+    {
+      "id": "afeix_v1_toad_head",
+      "source": "sources/toad-head.png",
+      "rect": {
+        "left": -25,
+        "right": 33,
+        "top": -20,
+        "bottom": 40
+      },
+      "canvas": {
+        "width": 104,
+        "height": 142,
+        "offsetY": 35
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      }
+    },
+    {
+      "id": "afeix_v1_toad_head_dead",
+      "source": "sources/toad-head-dead.png",
+      "rect": {
+        "left": -44,
+        "right": 16,
+        "top": -58,
+        "bottom": 0
+      },
+      "canvas": {
+        "width": 131,
+        "height": 125,
+        "offsetX": 6,
+        "offsetY": 10,
+        "f": "64F6",
+        "f1": -15,
+        "f2": -15
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      }
+    },
+    {
+      "id": "afeix_v1_normal_body",
+      "source": "sources/normal-body.png",
+      "rect": {
+        "left": -39,
+        "right": 43,
+        "top": -61,
+        "bottom": 13
+      },
+      "canvas": {
+        "width": 104,
+        "height": 142,
+        "offsetY": 35
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "bottom",
+        "padding": 0
+      }
+    },
+    {
+      "id": "afeix_v1_normal_body_dead",
+      "source": "sources/normal-body-dead.png",
+      "rect": {
+        "left": -55,
+        "right": 51,
+        "top": -50,
+        "bottom": 38
+      },
+      "canvas": {
+        "width": 131,
+        "height": 125,
+        "offsetX": 6,
+        "offsetY": 10,
+        "f": "64FE"
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      }
+    },
+    {
+      "id": "afeix_v1_normal_body_injured",
+      "source": "sources/body-injury.png",
+      "rect": {
+        "left": -37,
+        "right": 37,
+        "top": -48,
+        "bottom": -8
+      },
+      "canvas": {
+        "width": 104,
+        "height": 142,
+        "offsetY": 35
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      },
+      "overlay": true
+    },
+    {
+      "id": "afeix_v1_toad_body",
+      "source": "sources/toad-body.png",
+      "rect": {
+        "left": -39,
+        "right": 43,
+        "top": -61,
+        "bottom": 13
+      },
+      "canvas": {
+        "width": 104,
+        "height": 142,
+        "offsetY": 35
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "bottom",
+        "padding": 0
+      }
+    },
+    {
+      "id": "afeix_v1_toad_body_dead",
+      "source": "sources/toad-body-dead.png",
+      "rect": {
+        "left": -55,
+        "right": 51,
+        "top": -50,
+        "bottom": 38
+      },
+      "canvas": {
+        "width": 131,
+        "height": 125,
+        "offsetX": 6,
+        "offsetY": 10,
+        "f": "64FE"
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      }
+    },
+    {
+      "id": "afeix_v1_toad_body_injured",
+      "source": "sources/body-injury.png",
+      "rect": {
+        "left": -37,
+        "right": 37,
+        "top": -48,
+        "bottom": -8
+      },
+      "canvas": {
+        "width": 104,
+        "height": 142,
+        "offsetY": 35
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      },
+      "overlay": true
+    },
+    {
+      "id": "afeix_v1_jiahao_body",
+      "source": "sources/jiahao-body.png",
+      "rect": {
+        "left": -39,
+        "right": 43,
+        "top": -61,
+        "bottom": 13
+      },
+      "canvas": {
+        "width": 104,
+        "height": 142,
+        "offsetY": 35
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "bottom",
+        "padding": 0
+      }
+    },
+    {
+      "id": "afeix_v1_jiahao_body_dead",
+      "source": "sources/jiahao-body-dead.png",
+      "rect": {
+        "left": -55,
+        "right": 51,
+        "top": -50,
+        "bottom": 38
+      },
+      "canvas": {
+        "width": 131,
+        "height": 125,
+        "offsetX": 6,
+        "offsetY": 10,
+        "f": "64FE"
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      }
+    },
+    {
+      "id": "afeix_v1_jiahao_body_injured",
+      "source": "sources/body-injury.png",
+      "rect": {
+        "left": -37,
+        "right": 37,
+        "top": -48,
+        "bottom": -8
+      },
+      "canvas": {
+        "width": 104,
+        "height": 142,
+        "offsetY": 35
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      },
+      "overlay": true
+    },
+    {
+      "id": "afeix_v1_feidie",
+      "source": "sources/feidie.png",
+      "rect": {
+        "left": -13,
+        "right": 21,
+        "top": 62,
+        "bottom": 78
+      },
+      "canvas": {
+        "width": 104,
+        "height": 170,
+        "offsetY": 35
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      }
+    },
+    {
+      "id": "afeix_v1_toad_head_injured_01",
+      "source": "sources/toad-head-injury-01.png",
+      "rect": {
+        "left": -17,
+        "right": 11,
+        "top": 0,
+        "bottom": 27
+      },
+      "canvas": {
+        "width": 104,
+        "height": 142,
+        "offsetY": 35
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      },
+      "overlay": true
+    },
+    {
+      "id": "afeix_v1_toad_head_injured_02",
+      "source": "sources/toad-head-injury-02.png",
+      "rect": {
+        "left": -16,
+        "right": 18,
+        "top": -10,
+        "bottom": 29
+      },
+      "canvas": {
+        "width": 104,
+        "height": 142,
+        "offsetY": 35
+      },
+      "fit": {
+        "crop": "alpha",
+        "alpha_threshold": 16,
+        "align_x": "center",
+        "align_y": "center",
+        "padding": 0
+      },
+      "overlay": true
+    }
+  ],
+  "notes": [
+    "Runtime art v1; source artwork created by built-in image_gen. Mechanical export only crops transparent margin, scales proportionally and positions layers.",
+    "Body injury texture intentionally shared by 3 forms. Human hair_black_02 and human injury sprites provided by base game, not redistributed.",
+    "Independent saucer; no whole-character scaling for hidden form. No gameplay class mechanics implemented."
+  ]
+}

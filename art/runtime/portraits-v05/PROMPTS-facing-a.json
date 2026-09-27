@@ -1,0 +1,702 @@
+{
+  "date": "2026-09-26",
+  "purpose": "Battle Brothers right-facing pose correction",
+  "tool": "built-in image_gen",
+  "entries": [
+    {
+      "index": 0,
+      "key": "afei",
+      "name": "阿飞",
+      "form": "normal",
+      "brush": "afeix_p04_afei_normal",
+      "source": "art/runtime/portraits-v05/sources/afei_normal.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "4e791c392c534c94322f58416a119748776107808b7952d43cd9709c79c349ca",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: ���� (normal).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/afei_normal.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/afei_normal.png",
+      "status": "generated_reviewed",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-86e8a12d-0203-47cb-a04c-ba684a6f1825.png",
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "new_source_sha256": "1f291f548b542473f3d66acc311ef579337199251545e3aff6aee5f330121f50",
+      "technical_review": {
+        "size": [
+          1188,
+          1324
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "subject_name": "阿飞",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 1,
+      "key": "afei",
+      "name": "阿飞",
+      "form": "toad",
+      "brush": "afeix_p04_afei_toad",
+      "source": "art/character-concepts/afei/afei-toad-promoted-v01.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "e0566647be9ba21b4e9e33d5de03adc29c6cab949dd644c314ccf1721828fb95",
+      "source_box": null,
+      "review_note": "本轮沿用；保留既有原创蛤蟆人形态，与真人照片无直接对应；本轮未重新生成。",
+      "source_revision": "v04_retained",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: afei (toad).\nImportant: this is an existing TOADMAN, preserve exactly its large amphibian head, broad muzzle and golden toad eyes; do not turn it into a human.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-toad-promoted-v01.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/afei_toad.png",
+      "status": "generated_reviewed",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-8bfdd446-4d47-4d61-998c-e5728d9b0789.png",
+      "new_source_sha256": "ddc4dc739c77d261c21d38a78f0c9cabd1e747c8aa6588f6198f9d8baf01c093",
+      "technical_review": {
+        "size": [
+          1122,
+          1402
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "subject_name": "阿飞",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 2,
+      "key": "afei",
+      "name": "阿飞",
+      "form": "jiahao",
+      "brush": "afeix_p04_afei_jiahao",
+      "source": "art/runtime/portraits-v05/sources/afei_jiahao.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "6df39496a2b7b28028f93773f67d02e7625fc82074c15800bb9b0c587241c8d6",
+      "source_box": null,
+      "review_note": "沿用本轮阿飞照片校正后的脸与发型，更新嘉豪衣装；尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: afei (jiahao).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/afei_jiahao.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/afei_jiahao.png",
+      "status": "generated_reviewed",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-016978bb-81b6-4d31-81b4-58d919e27026.png",
+      "new_source_sha256": "96358d2401b0a9d956547ac72186901894f5648d82cceff2012343ed3b252f62",
+      "technical_review": {
+        "size": [
+          1124,
+          1399
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "subject_name": "阿飞",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 3,
+      "key": "damou",
+      "name": "王大谋",
+      "form": "default",
+      "brush": "afeix_p04_damou",
+      "source": "art/runtime/portraits-v05/sources/damou.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "6b65e486bd088ab47733c63a055795df1fddf4d79487d414174d6839618960f3",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: ����ı (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/damou.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/damou.png",
+      "status": "generated_reviewed",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-1e49ff5a-fb8f-4ab2-af73-59e76db44a18.png",
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "new_source_sha256": "159d4a14a1744544e486bd3c10a390de0f3d599bdb37afe935b4e5fe90f8c729",
+      "technical_review": {
+        "size": [
+          1124,
+          1399
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "subject_name": "王大谋",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 4,
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "form": "default",
+      "brush": "afeix_p04_mocha",
+      "source": "art/runtime/portraits-v05/sources/mocha.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "4f33879b26cf1ab384f1ce22e56c692d7cbe74e048ea3a7b421a000000265e8d",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: mocha (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/mocha.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/mocha.png",
+      "status": "generated_reviewed",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-90af4bf7-594d-4a3e-84fe-e66f0e221650.png",
+      "new_source_sha256": "beb634bfdb0a378cac73fd71dbef4b4eeaccbb31c24d52a4bec3af4164f9f4bd",
+      "technical_review": {
+        "size": [
+          1124,
+          1399
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "subject_name": "午夜抹抹茶",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 5,
+      "key": "bottle",
+      "name": "小酒瓶",
+      "form": "default",
+      "brush": "afeix_p04_bottle",
+      "source": "art/runtime/portraits-v05/sources/bottle.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "e4daddcfb0e4459ae0434f436ba1c05d38642807b35d8eacafd9998d3368f8f0",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: bottle (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bottle.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/bottle.png",
+      "status": "generated_reviewed",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-9a11b1d9-050b-44b6-b6e1-ac17db8d85ec.png",
+      "new_source_sha256": "350773547e853fa2a6c36db74d0ed53bf1a3bbeb07df427c689183b2c5872893",
+      "technical_review": {
+        "size": [
+          1124,
+          1399
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "subject_name": "小酒瓶",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 6,
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "form": "default",
+      "brush": "afeix_p04_shuaizi",
+      "source": "art/runtime/portraits-v05/sources/shuaizi.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "64943c0e7ad842ab41be0b055bcae11a0455b133b066cc98f9a715c7e6021799",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: shuaizi (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/shuaizi.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/shuaizi.png",
+      "status": "generated_reviewed",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-d5f1a6fa-e3c1-4ac4-a031-29f7e0e10e42.png",
+      "new_source_sha256": "eb7d03bb759faa9d8ac05cb6d14c863b37e60a253b4654178ade94faba948b7a",
+      "technical_review": {
+        "size": [
+          1125,
+          1398
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "subject_name": "白小帅子",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 7,
+      "key": "lili",
+      "name": "李李超欧",
+      "form": "default",
+      "brush": "afeix_p04_lili",
+      "source": "art/runtime/portraits-v05/sources/lili.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "4adcc8f009c126dff32657d335b455f137794aa463a6e694bbada0b150be09b7",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: lili (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/lili.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/lili.png",
+      "status": "generated_reviewed",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-5a076067-12d2-442a-a464-02735839447d.png",
+      "new_source_sha256": "6ccd09c26eb53d119684fbcc5da43a40b0f07807ad38c4929247e6b842dbcbba",
+      "technical_review": {
+        "size": [
+          1124,
+          1399
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "subject_name": "李李超欧",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 8,
+      "key": "xiaoyueya",
+      "name": "小月牙",
+      "form": "default",
+      "brush": "afeix_p04_xiaoyueya",
+      "source": "art/runtime/portraits-v04/sources/xiaoyueya.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "0d5575d95aed855631836d2ecac1527e24218e39befe68128b8b00ef143b9fde",
+      "source_box": null,
+      "review_note": "本轮沿用；同名房间22909未确认是名单成员，旧动画头像不能作真人照片。",
+      "source_revision": "v04_retained",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: xiaoyueya (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/xiaoyueya.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/xiaoyueya.png",
+      "status": "generated_reviewed",
+      "subject_name": "小月牙",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-59d3a76d-db1d-4990-8ea8-50ad4f2beb1f.png",
+      "new_source_sha256": "5b88ff48686c109585c80cd38b9d4aa68fc14b2758606e9fe9f0661d07a044ae",
+      "technical_review": {
+        "size": [
+          1126,
+          1397
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed saved PNG: both pupils now point right, same direction as the nose; original blue ponytail, stars, outfit, expression and bust pose retained.",
+      "prompt_chain": [
+        {
+          "step": 1,
+          "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: xiaoyueya (default).",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/xiaoyueya.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-61397633-5ac0-4c3b-8f84-171340fe37d0.png",
+          "archived_output": "art/runtime/portraits-v05/attempts/facing-xiaoyueya-v1-gaze-back.png",
+          "sha256": "6d6a5e13fa2833fd37019e05efe922f77e61c0dc61bfd657c9877a17db83b5ec",
+          "review": "First pose correction still had the old backward-looking eyes; one targeted eye-direction correction."
+        },
+        {
+          "step": 2,
+          "prompt": "Use case: precise-object-edit. Edit this existing Battle Brothers transparent bust. The head, nose, chest and shoulders already face SCREEN RIGHT correctly. Make only one localized correction: BOTH EYES must look decisively toward SCREEN RIGHT in the same direction as the nose, not glance back left toward the viewer. Shift each dark iris/pupil toward the SCREEN-RIGHT side of its eye opening so visible eye-white is mainly to the SCREEN-LEFT of the iris. Keep small natural game eyes and the narrowed confident eyelids. Preserve absolutely everything else: face shape, mouth expression, eyebrows, blue ponytail, stars, scarf, beads, armour, thick outlines, muted hand-painted shading, proportions, exact right-facing pose, complete silhouette, transparent alpha. Do not mirror, change the head pose, add realism, or redesign.",
+          "references": [
+            "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-61397633-5ac0-4c3b-8f84-171340fe37d0.png"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-59d3a76d-db1d-4990-8ea8-50ad4f2beb1f.png",
+          "source": "art/runtime/portraits-v05/sources/facing/xiaoyueya.png",
+          "sha256": "5b88ff48686c109585c80cd38b9d4aa68fc14b2758606e9fe9f0661d07a044ae",
+          "review": "Viewed saved PNG: both pupils now point right, same direction as the nose; original blue ponytail, stars, outfit, expression and bust pose retained."
+        }
+      ],
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 9,
+      "key": "yuchujiu",
+      "name": "余初九",
+      "form": "default",
+      "brush": "afeix_p04_yuchujiu",
+      "source": "art/runtime/portraits-v05/sources/yuchujiu.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "1d0aab600dfea545af841757d11efc60b1acf636b5189f12b74b9f7d5a68ef55",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: yuchujiu (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/yuchujiu.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/yuchujiu.png",
+      "status": "generated_reviewed",
+      "subject_name": "余初九",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-bf5a6a71-f4fb-4d5b-9cf7-bcb6ac1f9015.png",
+      "new_source_sha256": "e1f8c0c821f1ad2b220759c6e8bc2db93c96bfa5eaf009fe30c4159e183c92cc",
+      "technical_review": {
+        "size": [
+          1124,
+          1399
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 10,
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "form": "default",
+      "brush": "afeix_p04_xiaoyubeike",
+      "source": "art/runtime/portraits-v05/sources/xiaoyubeike.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "c5af50d5e5473d19de59a5ff7d5b2145f2659c1382f3c3ae0a7fa0bdf25d675f",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: xiaoyubeike (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/xiaoyubeike.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/xiaoyubeike.png",
+      "status": "generated_reviewed",
+      "subject_name": "小鱼贝壳",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-37a7f295-7e3a-46a1-b608-9cd30cb5308a.png",
+      "new_source_sha256": "2767800440cf8e1d7cb94fe58d953fccfd7e2db75d21a892804ef1e9ce6ee7f0",
+      "technical_review": {
+        "size": [
+          1125,
+          1398
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 11,
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "form": "default",
+      "brush": "afeix_p04_wangduidui",
+      "source": "art/runtime/portraits-v05/sources/wangduidui.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "85c4bcb8e13c1d32ca868fd739f4cad5ffe8238bcfedf65c75b0577ae6a1dbb8",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: wangduidui (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/wangduidui.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/wangduidui.png",
+      "status": "generated_reviewed",
+      "subject_name": "王怼怼",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-5b2f4850-597b-44e9-8b2c-9a54fde1c912.png",
+      "new_source_sha256": "ea24c1b3c96e5baf6e6e42887aed9a9fb55ba667132612cd26dcf98726e0c4da",
+      "technical_review": {
+        "size": [
+          1124,
+          1399
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 12,
+      "key": "laocai",
+      "name": "老蔡",
+      "form": "default",
+      "brush": "afeix_p04_laocai",
+      "source": "art/runtime/portraits-v05/sources/laocai.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "ab26a47229b4b9cdd2657a71999743dc31bebccbcbfac1df387ff87856d1d15c",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: laocai (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/laocai.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/laocai.png",
+      "status": "generated_reviewed",
+      "subject_name": "老蔡",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-42534849-404d-4bdb-a1c2-b8afc21b6baf.png",
+      "new_source_sha256": "e443245e266897f7c036787d756acd66d598c06c1eac241d347300fad9db597b",
+      "technical_review": {
+        "size": [
+          1125,
+          1398
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 13,
+      "key": "tiantong",
+      "name": "亿口甜筒",
+      "form": "default",
+      "brush": "afeix_p04_tiantong",
+      "source": "art/runtime/portraits-v04/sources/tiantong.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "9e8906af7ac0a01d141dc9e4c9f059bbde394ee2d348d5cbb32ed330871efb0e",
+      "source_box": null,
+      "review_note": "本轮沿用；本人头像遮嘴，其他候选为未标位群像／礼物记录，没有足够清楚的全脸参考。",
+      "source_revision": "v04_retained",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: tiantong (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/tiantong.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/tiantong.png",
+      "status": "generated_reviewed",
+      "subject_name": "亿口甜筒",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-884b904c-49ba-48d5-a2ba-48a14f6dd702.png",
+      "new_source_sha256": "48cfd9c7ee6ef078516ecc780e1ea1ebb2996b102db5f544bb75dafa37955c9d",
+      "technical_review": {
+        "size": [
+          1123,
+          1400
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 14,
+      "key": "xiaoning",
+      "name": "小宁",
+      "form": "default",
+      "brush": "afeix_p04_xiaoning",
+      "source": "art/runtime/portraits-v05/sources/xiaoning.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "70f6b1127344606c589ca456f884971751b2e85b3616d984432f17898a3275c8",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: xiaoning (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/xiaoning.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/xiaoning.png",
+      "status": "generated_reviewed",
+      "subject_name": "小宁",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-0118f1a0-3803-405a-a14b-a1388eef154a.png",
+      "new_source_sha256": "2e09ec5211edaaa2b3ab47aac1ed68f03276d4fbf873771d71b6a36cf23dd2e0",
+      "technical_review": {
+        "size": [
+          1124,
+          1399
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 15,
+      "key": "xiaopangxu",
+      "name": "小胖徐不快乐",
+      "form": "default",
+      "brush": "afeix_p04_xiaopangxu",
+      "source": "art/runtime/portraits-v05/sources/xiaopangxu.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "f4b08779630a9b722c4672ec67f37f77ea64d726421307bd755d8559d982563b",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: xiaopangxu (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/xiaopangxu.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/xiaopangxu.png",
+      "status": "generated_reviewed",
+      "subject_name": "小胖徐不快乐",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-e1e9ae35-164c-43b9-b32d-e2c4853de910.png",
+      "new_source_sha256": "f364b5324754bea942ad4da7c66cc2f47c895a9f29b939aaec769897257c8136",
+      "technical_review": {
+        "size": [
+          1124,
+          1399
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 16,
+      "key": "dae",
+      "name": "大鹅",
+      "form": "default",
+      "brush": "afeix_p04_dae",
+      "source": "art/runtime/portraits-v05/sources/dae.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "42202e8173ae8b4e0c900e1080ab2bff3fb6dbf00ae54ac00182cb5756ce0887",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: dae (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/dae.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/dae.png",
+      "status": "generated_reviewed",
+      "subject_name": "大鹅",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-6cf18af4-0f1f-4e74-80ce-2266f228f540.png",
+      "new_source_sha256": "b6985bd218dd5432abc561da1d7e3859f90af6561f86b933a394e96d84b79d25",
+      "technical_review": {
+        "size": [
+          1125,
+          1398
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    },
+    {
+      "index": 17,
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "form": "default",
+      "brush": "afeix_p04_manyuemei",
+      "source": "art/runtime/portraits-v05/sources/manyuemei.png",
+      "source_kind": "generated_custom",
+      "approved_for_export": true,
+      "source_sha256": "3a11f8213d1f01eb7d8620d400917bdb70446d038d7c4f660d118f9598c6bf75",
+      "source_box": null,
+      "review_note": "按已核对的公开照片重绘，保留个人脸型与发型；仅技术选用，尚待用户与实机验收。",
+      "source_revision": "v05",
+      "prompt": "Use case: identity-preserve.\nAsset: single transparent-background Battle Brothers tactical mercenary bust. Image 1 is the exact edit target and sole identity/costume source. Image 2 is the official game sheet only for pose, proportions, and painting style, never copy a face or outfit from it.\nChange only the facing pose and slightly simplify the painting. Turn the ENTIRE bust distinctly toward SCREEN RIGHT by about 40 degrees, matching the game's right-facing fighters: head, neck, chest and BOTH shoulders rotated together, nose visibly projecting right, gaze aimed right rather than at the viewer. The screen-left shoulder is the large near shoulder; the screen-right shoulder recedes and is narrower. Both eyes still visible, but the far eye at screen right is distinctly narrower. It must read as a fighter looking to the right, not a frontal character portrait and not a complete side profile. Do not simply mirror the existing pose.\nPreserve this exact person's individual face outline, age, eye shape, eyebrows, nose, lips, expression, hairstyle and hair color, clothing, clasps and accessories. Do not beautify, masculinize, age, or swap identity. Preserve all original signature details while reconstructing their correct perspective.\nMatch Battle Brothers' compact hand-painted game token: head and a short upper chest, no arms or legs, low broad curved cut-off at the bottom, thick uneven dark brown outlines, earthy muted colors, small angular painted shadow masses, 2–3 value groups, sparse folds, clumped hair. Keep the existing simplified illustration style or simplify further, never become photorealistic. Keep normal small human eyes, not anime eyes. Clean readable silhouette at 114x142 pixels. No pores, photographic skin, glossy lighting, fine strands, canvas grain, added text, platform, scenery or framing.\nOutput exactly ONE isolated complete bust on genuinely transparent alpha with a small clear margin. Keep full top of hair and both shoulder edges.\nSubject identifier only: manyuemei (default).",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/manyuemei.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "new_source": "art/runtime/portraits-v05/sources/facing/manyuemei.png",
+      "status": "generated_reviewed",
+      "subject_name": "蔓越莓",
+      "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd6c-7651-73a3-b13d-27d44f51bf1a\\exec-8098683d-e965-4e2a-8ab7-0c7f0d31f476.png",
+      "new_source_sha256": "27417d7e29d248e44d7c645e49f7ceb3b51ceca088ca8d672b2c9bed0a12aec2",
+      "technical_review": {
+        "size": [
+          1124,
+          1399
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      "visual_review": "Viewed actual generated image: right-facing head and shoulder perspective, original facial silhouette, hair and costume retained; transparent complete bust. Candidate remains subject to in-game scale review.",
+      "visual_review_method": "Actual saved source PNG inspected individually with view_image."
+    }
+  ],
+  "completed_count": 18,
+  "imagegen_call_count": 19,
+  "status": "all_18_generated_reviewed_ready_for_parent_integration",
+  "limitations": "Pose correction only. Existing likeness uncertainty for xiaoyueya and tiantong remains. No game-engine verification performed by this art worker."
+}

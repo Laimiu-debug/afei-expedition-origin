@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.cache/
+/out.cnut
+*.cnut
+# Local game fixtures and save backups are not project source or release assets.
+build/**/native/
+build/member-skill-native/
+build/**/*.sav
+build/**/pre-test-config.cfg
+art/references/**/*.html
+art/runtime/afei/v1/build/preview/native/
+art/runtime/portraits-v05/build/pack-*/
+art/runtime/portraits-v05/build/roundtrip-*/
+art/runtime/afei/v1/build/pack-input-*/
+art/runtime/afei/v1/build/roundtrip-*/
+art/runtime/afei/v1/build/smoke-input-*/
+art/runtime/afei/v1/build/corpse-smoke-*/
+art/runtime/gameplay-v03/build/pack-*/
+art/runtime/gameplay-v03/build/roundtrip-*/
+art/runtime/portraits-v04/build/pack-*/
+art/runtime/portraits-v04/build/roundtrip-*/

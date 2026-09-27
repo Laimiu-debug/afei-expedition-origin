@@ -1,0 +1,366 @@
+{
+  "tool": "built-in image_gen",
+  "created_at": "2026-09-26",
+  "jobs": [
+    {
+      "id": "human-head",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/bust_head_01.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt": "Use case: style-transfer. Production game asset: ONE isolated BALD HEAD sprite for Afei, to layer under separate hair and helmets in Battle Brothers. Image 1 is the identity to preserve; images 2 and 3 are the actual game style and native head construction references, their art language takes priority.\nRedraw image 1's adult roguishly handsome East Asian-inspired male face into the native game style of image 2. Keep strong slanted black eyebrows, low upper eyelids, alert eyes, broad firm cheekbones, slightly asymmetrical CLOSED mouth smirk. Slightly roughen and exaggerate the nose, brow and cheek planes like image 2; not a polished young anime idol. Three-quarter slightly elevated view facing viewer RIGHT. Full BALD skull, both ears as visible in the angle, face, jaw and very short bare neck stump ONLY. Hair will be a separate sprite, so paint a COMPLETE smooth bald scalp with NO stubble/no hair/no sideburns. No shirt, cloak, shoulders, torso, armor or accessories.\nNative-style compact skull-to-face proportions; must fit a roughly 54 wide by 68 high game head slot when exported, not a tall portrait. Fine dark-brown outlines at native size, muted warm skin and a few economical painted shade planes; no near-black thick comic sticker outline, no polygonal facets, no dense brush streaks, no photographic details or pores, no airbrushed portrait, no anime eyes, no glossy lighting.\nONE head only centered, entire skull ears and neck enclosed, generous transparent margin on all sides. TRUE TRANSPARENT alpha background, no checkerboard drawing, no labels, no sheet, no cast shadow. This is a modular head layer, not a complete bust.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-058f3441-7f15-42fe-99fb-7f323de30602.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/human-head.png",
+      "size": [
+        1135,
+        1386
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        50,
+        36,
+        1064,
+        1346
+      ],
+      "sha256": "5c19f084291b2c2756af12d7ecae34960f77d6a28097b0abf4b290831447805e"
+    },
+    {
+      "id": "toad-head",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-toad-promoted-v01.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/bust_head_01.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt": "Use case: style-transfer. Production game asset: ONE isolated toad HEAD sprite for Afei's personal-combat promotion in Battle Brothers. Image 1 supplies the toad identity; images 2 and 3 supply native game rendering, compact skull size, viewpoint.\nRedesign image 1 into ONLY a compact toad head with a short narrow throat base, facing viewer RIGHT in the same slightly elevated three-quarter camera as the native head in image 2. Strong slightly angular brow ridges, low amber eyes with small black pupils, broad CLOSED mouth with a very restrained crooked smirk, firm jaw. Keep recognizable grey-olive / earthy brown skin, paler lower jaw, just 3 or 4 simple bump markings. Improve its veteran fighter presence: tighten the cheeks and throat, reduce the enormous round pale throat, no giant triangular hanging neck, no baby frog eyes. Skull should be no wider than a normal human head with hair; restrained amphibian brow ridges so human helmets can cover the crown. No pointed fins, no crown extensions.\nMatch Battle Brothers native inked hand-painted game sprite treatment from images 2-3, muted 3-4 value shading, economical narrow dark contours, understated highlights. Avoid image 1's heavy near-black sticker outline, faceted polygon-like planes and fuzzy hatching. No realistic wet amphibian skin, no slime, no cinematic or anime portrait.\nONLY the complete head and a very short neck stump; remove ALL clothes, collar, cloak, shoulder plates, straps, torso and accessories. Head stays compact enough for a native approximately 58x66 head layer. Entire outline enclosed with generous clear margin. Genuine TRANSPARENT alpha background. No other heads or states, no text, no frame, no drop shadow.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-f40a30c1-667d-4037-9f93-1a1d6111a447.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/toad-head.png",
+      "size": [
+        1178,
+        1335
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        152,
+        158,
+        1103,
+        1247
+      ],
+      "sha256": "28aa8d74ef69322aa6b8663da41246c5d27b6e5939b6b280829ccb6acd6a0a88"
+    },
+    {
+      "id": "feidie",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-feidie-promoted-v01.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt": "Use case: precise-object-edit. Production game sprite: extract and redraw ONLY the little flying saucer floating above the character in image 1, on TRUE TRANSPARENT background. Remove the entire person and everything other than the saucer. Image 2 is the native Battle Brothers game rendering reference.\nKeep the saucer's simple low oval disk, small shallow central dome, dull dark steel body and one aged brass rim, viewed slightly from above. Simplify to 3 broad readable painted values, a thin dark brown contour and tiny muted highlight. Match the native hand-painted medieval equipment look; it must remain readable at about 34x16 pixels. No polygonal faceting, heavy sticker border, intricate mechanical details, realistic chrome, lights, beam, glow, exhaust or shadow.\nONE complete independent saucer sprite centered with generous transparent padding. Do not include a head, hair, body, other props, labels or checkerboard pattern. This will be a separate head-top overlay in the game.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-c4c588c9-2189-4e28-b5fa-52752f8b521e.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/feidie.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        434,
+        110,
+        1504,
+        756
+      ],
+      "sha256": "d432fdcbc600d57f9b631cc1e7ada00d8dff094d6139fb29b68a0ff77ad82ed0"
+    },
+    {
+      "id": "normal-body",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-normal-roguish-v02.png",
+        "I:/afei-expedition/test-output/vanilla-layer-audit/entity_0/entity/bodies/bust_body_01.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt": "Use case: style-transfer. Asset: ONE modular BODY/COSTUME sprite for the normal form of Afei in Battle Brothers. Image 1 is the costume identity to adapt, image 2 is the actual native body-layer geometry and camera reference, image 3 is native game style.\nDraw ONLY the headless compact shoulder-and-chest costume. Remove the head, all facial skin, neck, hair entirely; leave the neck opening a clean transparent notch, for a separately layered game head to cover. Preserve this costume: plain grey-beige padded gambeson, simple charcoal short mantle and one plain brown fastening.\nRebuild into the body geometry of image 2: broad rounded shoulders and extremely SHORT upper chest, oval bottom cutoff, three-quarter facing viewer RIGHT, slightly overhead. Width-to-height approximately 82:74 INCLUDING shoulders/collar. Collar modest in height with natural opening that accepts a native head; do NOT include a long portrait torso or high rear collar that blocks the jaw. Center the neck opening slightly right of body center as in the actual game. No arms, hands, sleeves hanging down, legs or weapons or shield.\nUse the restrained hand-painted native Battle Brothers sprite finish: dark brown thin contours when seen at game size, a few simplified material shadow shapes, subdued highlights, muted cloth/leather/iron colors. Limit quilting to a few lines, rivets to a few large marks; no dense hatching, polygon planes, oily realistic fabrics, cinematic realism or anime card-art. The new image will be exported at only 82x74; prioritize readable silhouette.\nOne complete BODY layer only, entire shoulders and bottom fully enclosed, generous clear transparent margin, TRUE alpha TRANSPARENT background. No head or bare neck stump, no dummy mannequin, no text or other views, no glow or ground shadow.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-167bff60-0854-4c17-818d-99b90df12ae3.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/normal-body.png",
+      "size": [
+        1320,
+        1192
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        25,
+        21,
+        1244,
+        1192
+      ],
+      "sha256": "aee49b7ba013b38a40d4d767e1c8aa7d598bef8e61a0e79c7b3b99ec8d90d1e4"
+    },
+    {
+      "id": "toad-body",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-toad-promoted-v01.png",
+        "I:/afei-expedition/test-output/vanilla-layer-audit/entity_0/entity/bodies/bust_body_01.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt": "Use case: style-transfer. Asset: ONE modular BODY/COSTUME sprite for the toad form of Afei in Battle Brothers. Image 1 is the costume identity to adapt, image 2 is the actual native body-layer geometry and camera reference, image 3 is native game style.\nDraw ONLY the headless compact shoulder-and-chest costume. Remove the head, all facial skin, neck, hair entirely; leave the neck opening a clean transparent notch, for a separately layered game head to cover. Preserve this costume: grey-beige quilted gambeson, short charcoal mantle, two SMALL dull iron shoulder plates and plain brown leather fastening.\nRebuild into the body geometry of image 2: broad rounded shoulders and extremely SHORT upper chest, oval bottom cutoff, three-quarter facing viewer RIGHT, slightly overhead. Width-to-height approximately 82:74 INCLUDING shoulders/collar. Collar modest in height with natural opening that accepts a native head; do NOT include a long portrait torso or high rear collar that blocks the jaw. Center the neck opening slightly right of body center as in the actual game. No arms, hands, sleeves hanging down, legs or weapons or shield.\nUse the restrained hand-painted native Battle Brothers sprite finish: dark brown thin contours when seen at game size, a few simplified material shadow shapes, subdued highlights, muted cloth/leather/iron colors. Limit quilting to a few lines, rivets to a few large marks; no dense hatching, polygon planes, oily realistic fabrics, cinematic realism or anime card-art. The new image will be exported at only 82x74; prioritize readable silhouette.\nOne complete BODY layer only, entire shoulders and bottom fully enclosed, generous clear transparent margin, TRUE alpha TRANSPARENT background. No head or bare neck stump, no dummy mannequin, no text or other views, no glow or ground shadow.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-e8731e18-72d9-4365-b4a8-867460711156.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/toad-body.png",
+      "size": [
+        1320,
+        1192
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        54,
+        1221,
+        1176
+      ],
+      "sha256": "c14cdd1fd82b72ff47ce1738f067720aef34f383c12c80e91385b8bee7e3ba46"
+    },
+    {
+      "id": "jiahao-body",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/character-concepts/afei/afei-jiahao-promoted-v01.png",
+        "I:/afei-expedition/test-output/vanilla-layer-audit/entity_0/entity/bodies/bust_body_01.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt": "Use case: style-transfer. Asset: ONE modular BODY/COSTUME sprite for the jiahao form of Afei in Battle Brothers. Image 1 is the costume identity to adapt, image 2 is the actual native body-layer geometry and camera reference, image 3 is native game style.\nDraw ONLY the headless compact shoulder-and-chest costume. Remove the head, all facial skin, neck, hair entirely; leave the neck opening a clean transparent notch, for a separately layered game head to cover. Preserve this costume: brown simple riveted leather brigandine, upright SHORT grey collar, charcoal short mantle with a muted burgundy border and one small aged brass fastening.\nRebuild into the body geometry of image 2: broad rounded shoulders and extremely SHORT upper chest, oval bottom cutoff, three-quarter facing viewer RIGHT, slightly overhead. Width-to-height approximately 82:74 INCLUDING shoulders/collar. Collar modest in height with natural opening that accepts a native head; do NOT include a long portrait torso or high rear collar that blocks the jaw. Center the neck opening slightly right of body center as in the actual game. No arms, hands, sleeves hanging down, legs or weapons or shield.\nUse the restrained hand-painted native Battle Brothers sprite finish: dark brown thin contours when seen at game size, a few simplified material shadow shapes, subdued highlights, muted cloth/leather/iron colors. Limit quilting to a few lines, rivets to a few large marks; no dense hatching, polygon planes, oily realistic fabrics, cinematic realism or anime card-art. The new image will be exported at only 82x74; prioritize readable silhouette.\nOne complete BODY layer only, entire shoulders and bottom fully enclosed, generous clear transparent margin, TRUE alpha TRANSPARENT background. No head or bare neck stump, no dummy mannequin, no text or other views, no glow or ground shadow.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-aa727341-93fe-4c5c-8979-95c6df0592e3.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/jiahao-body.png",
+      "size": [
+        1320,
+        1192
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        25,
+        21,
+        1241,
+        1128
+      ],
+      "sha256": "6c0d09d4ed859ad5f0a8ca50fe67cf7f1b089ce3f39432750f16bb5ddcc5d631"
+    },
+    {
+      "id": "human-head-dead",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/human-head.png",
+        "I:/afei-expedition/test-output/vanilla-layer-audit/entity_0/entity/heads/bust_head_01_dead.png"
+      ],
+      "prompt": "Use case: identity-preserve. Asset: ONE DEAD HEAD sprite for a Battle Brothers game character. Image 1 is the living bald adult human Afei with strong angled brows and a broad jaw identity. Image 2 is the actual native corpse head sprite: match its lying-down position, camera direction, silhouette orientation and readable at 60x58 pixels construction.\nPaint the head from image 1 deceased, eyes CLOSED and face slack with no smile, lying on its side as image 2 with crown to the upper LEFT and chin toward lower RIGHT, seen from the same slightly overhead camera. No upright floating living head. Preserve facial identity, muted warm skin, complete bald scalp (hair will be separate), strong brows and jaw, simple hand-painted shadows and narrow dark-brown contour. A small dried blood smear on the brow is enough; no gore or exposed tissue. Completely closed eyelids, no alive amber pupils. No neck gore.\nONE head only, no body/clothes/hair/equipment. Full head enclosed with transparent margin. TRUE TRANSPARENT alpha background. Native Battle Brothers cartoon battlefield sprite style, not photo-realism, not a detailed portrait, not 3D.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-ddf01333-416f-48f9-b0fe-df8bd903a5b6.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/human-head-dead.png",
+      "size": [
+        1275,
+        1233
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        35,
+        19,
+        1223,
+        1177
+      ],
+      "sha256": "0a2a0fef4a45c6f7741ab1288d56b74b457369c51b1d38560327f59b359e54b2"
+    },
+    {
+      "id": "toad-head-dead",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/toad-head.png",
+        "I:/afei-expedition/test-output/vanilla-layer-audit/entity_0/entity/heads/bust_head_01_dead.png"
+      ],
+      "prompt": "Use case: identity-preserve. Asset: ONE DEAD HEAD sprite for a Battle Brothers game character. Image 1 is the living grey-olive toad Afei with broad closed mouth, amber eye sockets and compact throat identity. Image 2 is the actual native corpse head sprite: match its lying-down position, camera direction, silhouette orientation and readable at 60x58 pixels construction.\nPaint the head from image 1 deceased, eyes CLOSED and face slack with no smile, lying on its side as image 2 with crown to the upper LEFT and chin toward lower RIGHT, seen from the same slightly overhead camera. No upright floating living head. Preserve facial identity, muted olive-brown skin, ridged brow, broad mouth and light jaw, simple hand-painted shadows and narrow dark-brown contour. A small dried blood smear on the brow is enough; no gore or exposed tissue. Completely closed eyelids, no alive amber pupils. No neck gore.\nONE head only, no body/clothes/hair/equipment. Full head enclosed with transparent margin. TRUE TRANSPARENT alpha background. Native Battle Brothers cartoon battlefield sprite style, not photo-realism, not a detailed portrait, not 3D.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-a860d0f8-ded1-4eb7-b2f7-95892de415fb.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/toad-head-dead.png",
+      "size": [
+        1276,
+        1233
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        162,
+        20,
+        1133,
+        1177
+      ],
+      "sha256": "804d75065d290fa4b82b2d7a97f72319ff7a820dfd8eb9fb47b567a06b86b534"
+    },
+    {
+      "id": "body-injury",
+      "refs": [],
+      "prompt": "Use case: stylized-concept. Asset: ONE reusable transparent BLOOD AND SCUFF OVERLAY for a Battle Brothers tactical mercenary chest sprite. Draw ONLY a sparse small group of irregular dark dried-red blood stains and 2 rough cloth-scratch marks, arranged across a low WIDE shoulder/chest region. Left: one small diagonal slash with muted dark red short bleed. Middle-lower: a few uneven small spatters. Right: one smaller scraped smudge. Most of the layer MUST remain transparent so the game costume underneath stays visible. Marks should remain clearly readable at 74x40 pixels: chunky economical hand-painted marks, dark reddish brown fill and slightly darker inner marks, no detailed splatter spray.\nDo NOT draw any body, skin, clothes, cloth silhouette, fabric panel, armor, person or contour around a chest. No full rectangular texture. Only the isolated irregular blood/scuff marks floating on TRUE TRANSPARENT alpha. No white fill between marks. Wide compact arrangement, generous clear margin all around. Medieval Battle Brothers ink-and-paint game sprite style, no photo textures, no gore, no text.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-205b0a8c-5f42-4f9a-9b7c-88eba7750c60.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/body-injury.png",
+      "size": [
+        1706,
+        922
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        433,
+        21,
+        1269,
+        696
+      ],
+      "sha256": "95bdad005a93fa32f1106346d3e02003078d9ca24f62dae6b07e44da57d42b69"
+    },
+    {
+      "id": "normal-body-dead",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/normal-body.png",
+        "I:/afei-expedition/test-output/vanilla-layer-audit/entity_0/entity/bodies/bust_body_01_dead.png"
+      ],
+      "prompt": "Use case: identity-preserve. ONE Battle Brothers modular CORPSE BODY / fallen costume sprite. Image 1 is the live costume whose identity and colors must be preserved. Image 2 is the actual native corpse body geometry reference, and its TOP-DOWN FALLEN layout takes priority.\nRedraw image 1's grey-beige gambeson with charcoal mantle and plain brown buckle collapsed on the ground as a dead mercenary's compact upper torso, WITHOUT ANY HEAD, neck skin, hair, arms, hands, legs or equipment. Like image 2, an asymmetrical low oval mass of flattened shoulders, crumpled folds and chest viewed from above, turned so the neck opening is toward the lower LEFT side where a separate corpse head will overlap. Do NOT give it an upright symmetrical empty vest presentation: this lies flat, and should match image 2's fallen posture.\nAdd only a few torn/scuffed cloth edges and small dried dark-red stains, no exposed tissue. Keep costume colors muted and slightly duller than alive. Simple dark-brown contours and economical 3-4 painted values, matching native Battle Brothers battlefield sprites; at export it will be only 106x88 pixels. No polished portrait rendering, no heavy black sticker outline, no background or ground shadow.\nONLY one fallen body/costume layer, whole silhouette inside canvas with clear margin. TRUE TRANSPARENT alpha. No floating head, skeleton, mannequin, text or labels.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-eb8d3029-af43-4e2d-9d2c-f752ec4d641b.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/normal-body-dead.png",
+      "size": [
+        1376,
+        1143
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        137,
+        21,
+        1362,
+        1087
+      ],
+      "sha256": "6f2fae0a3b38b57a7d4f2180e18a884a8c5db8cb60e10fab3afe3173a2d109ca"
+    },
+    {
+      "id": "toad-body-dead",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/toad-body.png",
+        "I:/afei-expedition/test-output/vanilla-layer-audit/entity_0/entity/bodies/bust_body_01_dead.png"
+      ],
+      "prompt": "Use case: identity-preserve. ONE Battle Brothers modular CORPSE BODY / fallen costume sprite. Image 1 is the live costume whose identity and colors must be preserved. Image 2 is the actual native corpse body geometry reference, and its TOP-DOWN FALLEN layout takes priority.\nRedraw image 1's grey-beige quilted gambeson with charcoal mantle, small iron shoulder plates and brown straps collapsed on the ground as a dead mercenary's compact upper torso, WITHOUT ANY HEAD, neck skin, hair, arms, hands, legs or equipment. Like image 2, an asymmetrical low oval mass of flattened shoulders, crumpled folds and chest viewed from above, turned so the neck opening is toward the lower LEFT side where a separate corpse head will overlap. Do NOT give it an upright symmetrical empty vest presentation: this lies flat, and should match image 2's fallen posture.\nAdd only a few torn/scuffed cloth edges and small dried dark-red stains, no exposed tissue. Keep costume colors muted and slightly duller than alive. Simple dark-brown contours and economical 3-4 painted values, matching native Battle Brothers battlefield sprites; at export it will be only 106x88 pixels. No polished portrait rendering, no heavy black sticker outline, no background or ground shadow.\nONLY one fallen body/costume layer, whole silhouette inside canvas with clear margin. TRUE TRANSPARENT alpha. No floating head, skeleton, mannequin, text or labels.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-52f21ee9-cb82-480c-ad93-83b7cfbaeff4.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/toad-body-dead.png",
+      "size": [
+        1376,
+        1143
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        153,
+        53,
+        1260,
+        1117
+      ],
+      "sha256": "b93843aa60af20f804328292e926b5b3eaacc86ca4afc42f71451e89ae772e24"
+    },
+    {
+      "id": "jiahao-body-dead",
+      "refs": [
+        "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/jiahao-body.png",
+        "I:/afei-expedition/test-output/vanilla-layer-audit/entity_0/entity/bodies/bust_body_01_dead.png"
+      ],
+      "prompt": "Use case: identity-preserve. ONE Battle Brothers modular CORPSE BODY / fallen costume sprite. Image 1 is the live costume whose identity and colors must be preserved. Image 2 is the actual native corpse body geometry reference, and its TOP-DOWN FALLEN layout takes priority.\nRedraw image 1's brown riveted leather brigandine, short grey collar and charcoal mantle with burgundy edge collapsed on the ground as a dead mercenary's compact upper torso, WITHOUT ANY HEAD, neck skin, hair, arms, hands, legs or equipment. Like image 2, an asymmetrical low oval mass of flattened shoulders, crumpled folds and chest viewed from above, turned so the neck opening is toward the lower LEFT side where a separate corpse head will overlap. Do NOT give it an upright symmetrical empty vest presentation: this lies flat, and should match image 2's fallen posture.\nAdd only a few torn/scuffed cloth edges and small dried dark-red stains, no exposed tissue. Keep costume colors muted and slightly duller than alive. Simple dark-brown contours and economical 3-4 painted values, matching native Battle Brothers battlefield sprites; at export it will be only 106x88 pixels. No polished portrait rendering, no heavy black sticker outline, no background or ground shadow.\nONLY one fallen body/costume layer, whole silhouette inside canvas with clear margin. TRUE TRANSPARENT alpha. No floating head, skeleton, mannequin, text or labels.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-ca45e880-50cf-4798-9cae-7b64cd46d5f4.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/jiahao-body-dead.png",
+      "size": [
+        1376,
+        1143
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        63,
+        21,
+        1362,
+        1117
+      ],
+      "sha256": "e8b65db3d4c4c4eb6bbe1e3c0290a0d6f6d5e0e17c7dc169cd3fec9cb9a64709"
+    },
+    {
+      "id": "toad-head-injury-01",
+      "refs": [],
+      "prompt": "Use case: stylized-concept. ONE isolated transparent facial INJURY OVERLAY for a Battle Brothers toad warrior head, severity 1 of 2. Draw only a small irregular dark-red diagonal brow cut with one short downward blood streak, plus two tiny adjacent dried spatters. The marks have a slightly curved compact arrangement suitable for the brow and cheek of a small game head.\nThis must be ONLY blood marks and scratches. NO head, eyes, face, skin, frog, body, fabric or bounding silhouette. True TRANSPARENT alpha between and around all marks. The game paints this over an independently drawn face. Color: muted dried reddish brown and dark maroon, no bright scarlet or gloss, no exposed tissue. Native Battle Brothers hand-painted sprite, chunky simple economical marks legible when the entire overlay is 28x27 pixels. No thin noisy spray texture, no checkerboard painting, no labels. Clear transparent margin around the compact group.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-b8ad5948-4196-4e48-b21e-587ef91e8623.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/toad-head-injury-01.png",
+      "size": [
+        1278,
+        1230
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        444,
+        54,
+        1088,
+        1157
+      ],
+      "sha256": "0b7cb99debce3876c2687e7d5b3df429ea3fefe2102a61573414db26606731ec"
+    },
+    {
+      "id": "toad-head-injury-02",
+      "refs": [],
+      "prompt": "Use case: stylized-concept. ONE isolated transparent facial INJURY OVERLAY for a Battle Brothers toad warrior head, severity 2 of 2. Draw only two irregular dark-red brow and cheek scratches, a short vertical blood streak and several small dried spatters, with more marks than a light scratch but most of the area still transparent. The marks have a slightly curved compact arrangement suitable for the brow and cheek of a small game head.\nThis must be ONLY blood marks and scratches. NO head, eyes, face, skin, frog, body, fabric or bounding silhouette. True TRANSPARENT alpha between and around all marks. The game paints this over an independently drawn face. Color: muted dried reddish brown and dark maroon, no bright scarlet or gloss, no exposed tissue. Native Battle Brothers hand-painted sprite, chunky simple economical marks legible when the entire overlay is 34x39 pixels. No thin noisy spray texture, no checkerboard painting, no labels. Clear transparent margin around the compact group.",
+      "source_file": "C:\\Users\\25647\\.codex\\generated_images\\01a0d853-067c-7780-9659-bb36db8ef972\\exec-965e15bf-dc68-4a54-bd6f-c7daa1e5f8b9.png",
+      "workspace_file": "G:/CODE/afei-xcpedition/art/runtime/afei/v1/sources/toad-head-injury-02.png",
+      "size": [
+        1173,
+        1341
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        340,
+        395,
+        1055,
+        937
+      ],
+      "sha256": "fb4a9254272b2b7b6f007d3deb2664e65db26a29ff39074adb2ff74ed921c73a"
+    }
+  ]
+}

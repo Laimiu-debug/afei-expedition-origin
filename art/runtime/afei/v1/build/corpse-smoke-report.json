@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "sprite_count": 2,
+  "sprites": [
+    {
+      "id": "afeix_v1_human_head_dead",
+      "coordinates_identical": true,
+      "pixels_identical": true
+    },
+    {
+      "id": "afeix_v1_toad_head_dead",
+      "coordinates_identical": true,
+      "pixels_identical": true
+    }
+  ],
+  "brush": "package/brushes/afeix_corpse_smoke.brush",
+  "brush_sha256": "7f43b0f727edfaef9e90e127288565f39997cb043279cc887a0af30b1cee99e8",
+  "atlas": "package/gfx/afeix_corpse_smoke.png",
+  "atlas_sha256": "5387ba0166260954c08b6ff2ed1581d33b0e410c92c4bf98cbfff4d71f945195",
+  "pack_log": "Loading images...\nsprites\\afeix_v1_human_head_dead.png\nsprites\\afeix_v1_toad_head_dead.png\nPacking rectangles...\nWriting gfx/afeix_corpse_smoke.png (128x64)...\n",
+  "unpack_log": "Opening gfx/afeix_corpse_smoke.png...\nsprites\\afeix_v1_human_head_dead.png\nsprites\\afeix_v1_toad_head_dead.png\n",
+  "roundtrip_directory": "build/roundtrip-ij7s1b20"
+}

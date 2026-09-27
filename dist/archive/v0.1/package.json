@@ -1,0 +1,22 @@
+{
+  "package": "dist/mod_afeix_expedition.zip",
+  "sha256": "e07391baa2b04996ea5aca0f548b66c088b6677f2a0d438d0059f00b20c3622e",
+  "entries": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/events/events/afeix_ledger_event.nut",
+    "scripts/mods/afeix/contracts.nut",
+    "scripts/mods/afeix/core.nut",
+    "scripts/mods/afeix/formation.nut",
+    "scripts/mods/afeix/hooks.nut",
+    "scripts/mods/afeix/ledger.nut",
+    "scripts/mods/afeix/quests.nut",
+    "scripts/mods/afeix/roster.nut",
+    "scripts/scenarios/world/afeix_expedition_scenario.nut",
+    "ui/mods/afeix/formation.js"
+  ],
+  "crc_passed": true,
+  "source_bytes_match": true,
+  "contains_custom_art": false,
+  "behavior_assertions": 451,
+  "in_game_tested": false
+}

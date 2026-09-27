@@ -1,0 +1,12 @@
+{
+  "version": 15,
+  "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "sha256": "4366e0c5e08cd9ab77cf640048641a5342dbc8fb632e36fe8098b84cc6d2b48e",
+  "previous_installed_sha256": "50d87700cdcfe780b29fb6925d9f80896ec5f17e24a7dcaba2990e81d5bbc190",
+  "backup": "G:\\CODE\\afei-xcpedition\\dist\\archive\\v0.14\\mod_afeix_expedition.zip",
+  "byte_match": true,
+  "zip_crc_passed": true,
+  "save_modified": false,
+  "in_game_tested": false,
+  "installed_at": "2026-09-27T11:06:35.149717+08:00"
+}

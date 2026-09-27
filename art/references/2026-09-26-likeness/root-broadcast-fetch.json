@@ -1,0 +1,39 @@
+[
+  {
+    "key": "afei",
+    "source_page": "https://www.douyu.com/84452",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260925/84452_src_0153.avif/dy4",
+    "file": "art/references/2026-09-26-likeness/afei/broadcast-0.jpg",
+    "size": [
+      1280,
+      720
+    ],
+    "format": "JPEG"
+  },
+  {
+    "key": "bottle",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  },
+  {
+    "key": "lili",
+    "source_page": "https://www.douyu.com/12485490",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260926/12485490_src_1832.avif/dy4",
+    "file": "art/references/2026-09-26-likeness/lili/broadcast-0.jpg",
+    "size": [
+      1280,
+      720
+    ],
+    "format": "JPEG"
+  },
+  {
+    "key": "yuchujiu",
+    "source_page": "https://www.douyu.com/8955262",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260925/8955262_src_0249.avif/dy4",
+    "file": "art/references/2026-09-26-likeness/yuchujiu/broadcast-0.jpg",
+    "size": [
+      1280,
+      720
+    ],
+    "format": "JPEG"
+  }
+]

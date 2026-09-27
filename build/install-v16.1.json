@@ -1,0 +1,22 @@
+{
+  "version": "0.16.1",
+  "mod_registration_version": 17,
+  "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "sha256": "9e20123f07536d9539c81f4629abd39a40f116f6ca0bb387b8a930c89b0dff58",
+  "backup": "G:\\CODE\\afei-xcpedition\\dist\\archive\\v0.16\\mod_afeix_expedition.zip",
+  "backup_sha256": "1a541e1aa931d4ecc8e391d0c515588dd76f75eb4fc8b8b68885fb67ee1f71f3",
+  "byte_match": true,
+  "zip_crc_passed": true,
+  "changes_from_v16": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/ledger.nut"
+  ],
+  "behavior_assertions": 17387,
+  "in_game_tested": true,
+  "in_game_scope": "Same day-2 autosave: v0.16 world-map F8 failed; v0.16.1 opened ledger, closed, and reopened. No formation changes or save writes. Other feature paths not reverified.",
+  "log_snapshot": "build/playtest-facing/f8-v0.16.1.json",
+  "existing_saves_modified": false,
+  "requires_game_restart": false,
+  "game_restarted_and_verified": true,
+  "verified_at": "2026-09-27T12:03:13.724073+08:00"
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-26",
+  "purpose": "补查A组四人：照片只作内部外观参考，使用文字和账号定位人物。",
+  "counts": {
+    "members": 4,
+    "verified_photos": 3,
+    "low_resolution_candidate": 1
+  },
+  "records": [
+    {
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "斗鱼9652630页面明确IU王怼怼；官方定制封面另标同名及房间号。直播画面为单人外出自拍。",
+      "visible_features": [
+        "深棕侧分及颈短发、发尾微微外翘",
+        "眉形平缓、眼型略长",
+        "面颊柔和、下巴圆缓",
+        "嘴唇轻张、下唇略丰满"
+      ],
+      "uncertainty": "仰拍且头顶裁切；本次选择官方直播里的短发造型，不把旧长发当固定发型。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.douyu.com/9652630"
+      ],
+      "source_image_url": "https://rpic.douyucdn.cn/asrpic/260919/9652630_src_2000.avif/dy4",
+      "original_photo_file": "art/references/2026-09-26-likeness/wangduidui/douyu-0.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/wangduidui/reference-crop.png",
+      "crop_xyxy": [
+        398,
+        0,
+        1030,
+        627
+      ],
+      "original_sha256": "49648ee6787ac2d20798ef1222ea44d9bd35c2bb6d1d3cb29c1674132359b5d8",
+      "reference_sha256": "3b6b5f379712af43c9a390944e55a2ced35e0cd0da1765642465f99273e2a356",
+      "usable_for_generation": true
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "旧公开视频封面点名大鹅，直播客户端标题为叫我好姑娘吧，底部水印房间9088841；当前官方房间昵称相符，单人自拍视频明确。",
+      "visible_features": [
+        "深棕长直发，中分露额并别向耳侧",
+        "较平眉，外眼角眼线上扬",
+        "脸颊较饱满、下颌圆缓",
+        "唇线清楚、下唇较厚",
+        "照片左眼外下方及鼻旁可见小痣"
+      ],
+      "uncertainty": "略裁头顶，直播美颜会影响细节；小痣可简化一点，不凭镜像猜实际左右；与杭州LGD/冰原守卫者大鹅无关。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.bilibili.com/video/BV1und5BhEsB/",
+        "https://www.douyu.com/9088841"
+      ],
+      "source_image_url": "https://rpic.douyucdn.cn/asrpic/260926/9088841_src_1852.avif/dy4",
+      "original_photo_file": "art/references/2026-09-26-likeness/dae/douyu-0.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/dae/reference-crop.png",
+      "crop_xyxy": [
+        467,
+        0,
+        1090,
+        629
+      ],
+      "original_sha256": "0e0fea197da55b4867252658713e712020f22602c1b8d16d2ff44be111c24191",
+      "reference_sha256": "29171ee0617b1ec2e01e35fd9845af9b2e460df364291d21d36d9d106d9b1203",
+      "usable_for_generation": true
+    },
+    {
+      "key": "yuxiang",
+      "name": "余想",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "寅子官方公开动态欢迎新人余想；第三张单人官宣海报直接标注余想的room及房间7183329。",
+      "visible_features": [
+        "深棕色长直发、侧分露出前额",
+        "眉形略弯、眉尾上扬",
+        "较开阔杏眼、上眼睑清楚",
+        "脸形偏长、下巴柔和收窄",
+        "饱满唇形和不对称轻笑"
+      ],
+      "uncertainty": "500px官宣海报已修图，眼妆较浓；只保留脸型比例与发型，不复制海报修图皮肤。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://yuba.douyu.com/feed/3108687421638727101?groupId=561&origin=9"
+      ],
+      "source_image_url": "https://c-yuba.douyucdn.cn/yubavod/b/5JjALNBWgwXr/9f6c5d7753f3a74bdc254508f9a80767.png/rs500",
+      "original_photo_file": "art/references/2026-09-26-likeness/yuxiang/yuba-3.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/yuxiang/reference-crop.png",
+      "crop_xyxy": [
+        126,
+        111,
+        392,
+        457
+      ],
+      "original_sha256": "a95290a2f24316783d4481ec4183ff99e5f526f9b5e75686ec78ccf750420379",
+      "reference_sha256": "b7bfedbd8fe806a5aee71ba30e8c3bca667a1d54b394ce11442acc76f83f5fb7",
+      "usable_for_generation": true
+    },
+    {
+      "key": "meiya",
+      "name": "美伢",
+      "status": "low_resolution_stage_candidate",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "旧归档BV1hobT6EEzP封面标题直接标“才艺比拼之夜 美伢舞蹈《妲己》”，唯一前景舞者明确；当前搜索确认美伢Mya属CSTG，但公开视频页抓取失败，未取得更清楚正脸。",
+      "visible_features": [
+        "深色头发向后盘起、额前侧分长碎发",
+        "侧面鼻梁轮廓清楚",
+        "脸形偏长，露耳造型"
+      ],
+      "uncertainty": "侧脸仅124x144像素且舞台抓拍模糊；不适宜直接写细五官；没有把同名美伢大Miya592999作为她。",
+      "source_pages": [
+        "https://www.bilibili.com/video/BV1hobT6EEzP/",
+        "https://www.douyu.com/g_OG/",
+        "https://www.bilibili.com/video/BV1d3uM6gE8M/"
+      ],
+      "source_image_url": null,
+      "original_photo_file": "art/references/2026-09-26-likeness/meiya/bilibili-stage-legacy.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/meiya/stage-face-candidate.png",
+      "crop_xyxy": [
+        931,
+        340,
+        1055,
+        484
+      ],
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "usable_for_generation": false
+    }
+  ]
+}

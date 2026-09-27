@@ -1,0 +1,65 @@
+[
+  {
+    "key": "chenzhihan",
+    "page": "https://www.douyu.com/12832995",
+    "title": "CSTG郎团S1_陈知含or直播_陈知含or直播_陈知含or户外直播_陈知含or斗鱼直播",
+    "pictures": [
+      "https://rpic.douyucdn.cn/asrpic/260925/12832995_src_1833.avif/dy4",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202606/ec097b15b20c4f0db53c1084ed683e71_big.jpg",
+      "https://rpic.douyucdn.cn/live-cover/coverupdate/2026/09/25/52c9b04ee6167c6733dc1113a6ff2fbb.png/dy1",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202606/ec097b15b20c4f0db53c1084ed683e71_middle.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202606/ec097b15b20c4f0db53c1084ed683e71_small.jpg",
+      "https://apic.douyucdn.cn//common/douyu/images/dbg3.jpg",
+      "https://apic.douyucdn.cn/"
+    ],
+    "downloads": [
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260925/12832995_src_1833.avif/dy4",
+        "file": "art\\references\\2026-09-26-likeness\\chenzhihan\\douyu-0.jpg"
+      },
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202606/ec097b15b20c4f0db53c1084ed683e71_big.jpg",
+        "file": "art\\references\\2026-09-26-likeness\\chenzhihan\\douyu-1.jpg"
+      },
+      {
+        "url": "https://rpic.douyucdn.cn/live-cover/coverupdate/2026/09/25/52c9b04ee6167c6733dc1113a6ff2fbb.png/dy1",
+        "file": "art\\references\\2026-09-26-likeness\\chenzhihan\\douyu-2.jpg"
+      },
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202606/ec097b15b20c4f0db53c1084ed683e71_middle.jpg",
+        "file": "art\\references\\2026-09-26-likeness\\chenzhihan\\douyu-3.jpg"
+      }
+    ]
+  },
+  {
+    "key": "bula",
+    "page": "https://www.douyu.com/9669",
+    "title": "CSTG郎团S1_bulaQoQ直播_bulaQoQ直播_bulaQoQCS2直播_bulaQoQ斗鱼直播",
+    "pictures": [
+      "https://rpic.douyucdn.cn/asrpic/260925/10674166_src_1737.avif/dy4",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202502/aba888647c83497ebec71a2d58a3cf74_big.jpg",
+      "https://rpic.douyucdn.cn/live-cover/coverupdate/2026/09/25/baed7aaa6868d0735ab8c4a6c50f35ec.png/dy1",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202502/aba888647c83497ebec71a2d58a3cf74_middle.jpg",
+      "https://apic.douyucdn.cn/upload/avatar_v3/202502/aba888647c83497ebec71a2d58a3cf74_small.jpg",
+      "https://apic.douyucdn.cn//common/douyu/images/dbg1.jpg",
+      "https://apic.douyucdn.cn/"
+    ],
+    "downloads": [
+      {
+        "url": "https://rpic.douyucdn.cn/asrpic/260925/10674166_src_1737.avif/dy4",
+        "file": "art\\references\\2026-09-26-likeness\\bula\\douyu-0.jpg"
+      },
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202502/aba888647c83497ebec71a2d58a3cf74_big.jpg",
+        "file": "art\\references\\2026-09-26-likeness\\bula\\douyu-1.jpg"
+      },
+      {
+        "url": "https://apic.douyucdn.cn/upload/avatar_v3/202502/aba888647c83497ebec71a2d58a3cf74_middle.jpg",
+        "file": "art\\references\\2026-09-26-likeness\\bula\\douyu-3.jpg"
+      }
+    ],
+    "errors": [
+      "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    ]
+  }
+]

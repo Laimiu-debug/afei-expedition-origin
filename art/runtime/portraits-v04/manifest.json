@@ -1,0 +1,604 @@
+{
+  "schema_version": 1,
+  "atlas_name": "afeix_portraits_v04",
+  "updated": "2026-09-26",
+  "status": "all_sources_selected_and_game_size_reviewed_pending_engine_validation",
+  "geometry": {
+    "live": {
+      "left": -57,
+      "right": 57,
+      "top": -55,
+      "bottom": 87,
+      "width": 114,
+      "height": 142,
+      "offsetY": 35
+    },
+    "dead": {
+      "left": -57,
+      "right": 57,
+      "top": -71,
+      "bottom": 71,
+      "width": 114,
+      "height": 142,
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    "size": [
+      114,
+      142
+    ],
+    "fit": [
+      108,
+      124
+    ],
+    "alpha_threshold": 20,
+    "align": "bottom_center"
+  },
+  "dead_mode": "same_pixels_centred_anchor_runtime_rotation",
+  "characters": [
+    {
+      "key": "afei",
+      "name": "阿飞",
+      "forms": [
+        {
+          "form": "normal",
+          "brush": "afeix_p04_afei_normal",
+          "source": "art/character-concepts/afei/afei-normal-roguish-v02.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "383f8713d9620f31c76e47c86190073a42bd4f8b19d361ba0f10b9e08d3f5417",
+          "source_box": null,
+          "review_note": "Selected existing custom concept for the complete-bust prototype; game-size group check passed; in-game review pending."
+        },
+        {
+          "form": "toad",
+          "brush": "afeix_p04_afei_toad",
+          "source": "art/character-concepts/afei/afei-toad-promoted-v01.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e0566647be9ba21b4e9e33d5de03adc29c6cab949dd644c314ccf1721828fb95",
+          "source_box": null,
+          "review_note": "Selected existing custom concept for the complete-bust prototype; game-size group check passed; in-game review pending."
+        },
+        {
+          "form": "jiahao",
+          "brush": "afeix_p04_afei_jiahao",
+          "source": "art/character-concepts/afei/afei-jiahao-promoted-v01.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "884b95ada340f3b9212691a2d84ab51b491b1b5b12df1b125352eb16e143681f",
+          "source_box": null,
+          "review_note": "Selected existing custom concept for the complete-bust prototype; game-size group check passed; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_damou",
+          "source": "art/runtime/portraits-v04/sources/damou.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "7560313a351cddde2169cdb9bae1e52976cc3506671386f1fb4ee66f937a5347",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_mocha",
+          "source": "art/runtime/portraits-v04/sources/mocha.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "0766f294ef2d720598286a3683fe16a7859f602dc0a6b16cd8300d3f1e9a2e21",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "bottle",
+      "name": "小酒瓶",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_bottle",
+          "source": "art/runtime/portraits-v04/sources/bottle.png",
+          "source_kind": "legacy_custom",
+          "approved_for_export": true,
+          "source_sha256": "a79d4318fed367be33a2d8bb0fd8397111665e1e7ea86d1ee249d2bff107aaa6",
+          "source_box": null,
+          "review_note": "Retained reviewed legacy complete bust: dark long hair, gold earring and black quilted collar. Original custom hair is inside this single image; no native parts."
+        }
+      ]
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_shuaizi",
+          "source": "art/runtime/portraits-v04/sources/shuaizi.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "10ac891ae4d4b704987f8bc35271fbd0134f8c9513c5085bf8eab0f8eb346c4f",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "lili",
+      "name": "李李超欧",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_lili",
+          "source": "art/runtime/portraits-v04/sources/lili.png",
+          "source_kind": "legacy_custom",
+          "approved_for_export": true,
+          "source_sha256": "e8c6cdfbd08e0a2d9d72a7c89715741ff9c0f29960097636a33d94c35bd6cca5",
+          "source_box": null,
+          "review_note": "Retained reviewed legacy complete bust: short brown hair, ivory flower and gray tunic. Original custom hair is inside this single image; no native parts."
+        }
+      ]
+    },
+    {
+      "key": "xiaoyueya",
+      "name": "小月牙",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaoyueya",
+          "source": "art/runtime/portraits-v04/sources/xiaoyueya.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "0d5575d95aed855631836d2ecac1527e24218e39befe68128b8b00ef143b9fde",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "yuchujiu",
+      "name": "余初九",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yuchujiu",
+          "source": "art/runtime/portraits-v04/sources/yuchujiu.png",
+          "source_kind": "legacy_custom",
+          "approved_for_export": true,
+          "source_sha256": "d1db8df1a0e1c8215c5409df1449638558e5c8257d2035b09a02da09befb21a7",
+          "source_box": null,
+          "review_note": "Retained reviewed legacy complete bust: long brown hair, cream headband and teal collar with paw emblem. Original custom hair is inside this single image; no native parts."
+        }
+      ]
+    },
+    {
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaoyubeike",
+          "source": "art/runtime/portraits-v04/sources/xiaoyubeike.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "f918e202aba31f5142c7c8eb2695ed7c51120e1b595e62b064906231d21c3458",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_wangduidui",
+          "source": "art/runtime/portraits-v04/sources/wangduidui.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "a5133eae972f190f6d0352c61438d29cccf0ddc6ab73a3c1bb26f9bace4bd8fd",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_laocai",
+          "source": "art/runtime/portraits-v04/sources/laocai.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "8c5dd1f16149c1a21ffd14761afa0cc59544e94509b9493fcb81c656663787e4",
+          "source_box": null,
+          "review_note": "New complete custom male adviser bust, selected after visual review. Old C11 female bust rejected as an identity mismatch; real-person likeness not asserted. In-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "tiantong",
+      "name": "亿口甜筒",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_tiantong",
+          "source": "art/runtime/portraits-v04/sources/tiantong.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "9e8906af7ac0a01d141dc9e4c9f059bbde394ee2d348d5cbb32ed330871efb0e",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "xiaoning",
+      "name": "小宁",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaoning",
+          "source": "art/runtime/portraits-v04/sources/xiaoning.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "55f70f4f5b173cc2c2c0ce6813401a535e184c505e37c14dd58b1625eb5f4517",
+          "source_box": null,
+          "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖徐不快乐",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaopangxu",
+          "source": "art/runtime/portraits-v04/sources/xiaopangxu.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "528375522598d56273c5b87b00efb550b61d30ec3bbd6c05fbc860e78debcc37",
+          "source_box": null,
+          "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_dae",
+          "source": "art/runtime/portraits-v04/sources/dae.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "7b42f6e3179d347b118ce15e1e405b9df2f550e2fbe0bdf1005da20193639872",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_manyuemei",
+          "source": "art/runtime/portraits-v04/sources/manyuemei.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e2920d84e39810a59ebf22fa3c6ca78c6b0958a1ce7fb1a1ed411a7561e00c7a",
+          "source_box": null,
+          "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "xiaohani",
+      "name": "小哈尼",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaohani",
+          "source": "art/runtime/portraits-v04/sources/xiaohani.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "f4d0040adb853dd3b2c41e7a04202409c6f621dba829de4acf7892c6e4566660",
+          "source_box": null,
+          "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_keke",
+          "source": "art/runtime/portraits-v04/sources/keke.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "fc9e419a561c7da205bca58806613acd49532310e8863b39ee1ab8fab5a41459",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "yuxiang",
+      "name": "余想",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yuxiang",
+          "source": "art/runtime/portraits-v04/sources/yuxiang.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "be574515978475db472c9044c0ceab91df686cdc497d6eafe565142a80ce7b3b",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "tongzhu",
+      "name": "童猪",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_tongzhu",
+          "source": "art/runtime/portraits-v04/sources/tongzhu.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "0f51983d2a5035cd64da3713cd01fa44824e4db683027d16074f72a9f4127d7a",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "meiya",
+      "name": "美伢",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_meiya",
+          "source": "art/runtime/portraits-v04/sources/meiya.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "2c4f63d9ed6d98452e36de78a9839d1e50fa74a74d5584f2c2c5570d1c986237",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "wanshe",
+      "name": "玩蛇",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_wanshe",
+          "source": "art/runtime/portraits-v04/sources/wanshe.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "5a56c4676de5088edd9ad2404532d4a5427da0bd465518ecf311a74dcb56d3a2",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "tutu",
+      "name": "涂涂",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_tutu",
+          "source": "art/runtime/portraits-v04/sources/tutu.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "b51c18433c0de693dd1d3de3152fdd67ddbb278ce7e7b7635fd756b647bedddb",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_songnuanyang",
+          "source": "art/runtime/portraits-v04/sources/songnuanyang.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "073bd67a6b81c41d490e71a56f45f37a8e7590190455086fd862043ac4a3a530",
+          "source_box": null,
+          "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaogui",
+          "source": "art/runtime/portraits-v04/sources/xiaogui.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "e1f889b172a960ba85cd7c4af0d44e1cd3976db240fc9d0ba22e90c94e12ab58",
+          "source_box": null,
+          "review_note": "New complete custom bust; no native hair/body parts. Original provisional character design from confirmed motifs. Reviewed large and in the final 114x142 group contact sheet; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "naigai",
+      "name": "奶盖",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_naigai",
+          "source": "art/runtime/portraits-v04/sources/naigai.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "9b411ff385b0392d252b332a3268019a4a17ba5ec9348a6515308f61d03e2a5f",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "xiaojie",
+      "name": "小杰",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaojie",
+          "source": "art/runtime/portraits-v04/sources/xiaojie.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "2873e7d94cdcce1fd1a5c2bdf480949c1cd06fb3002be033e44f0787287083a6",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "bula",
+      "name": "bula",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_bula",
+          "source": "art/runtime/portraits-v04/sources/bula.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "7c99647d3bb9577b5090110e69e73cb3f58b57c107ca08f2d06d5a64b8432463",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "suwa",
+      "name": "苏袜",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_suwa",
+          "source": "art/runtime/portraits-v04/sources/suwa.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "8e5ae130d8892c75926815a4f3d04de044db3422eaca7b2e8ecc519db4597352",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "qianhan",
+      "name": "千涵",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_qianhan",
+          "source": "art/runtime/portraits-v04/sources/qianhan.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "758726f0eadc915cf7a11ad97a371f72dc8871e6b7f763a5f9ca6d77259de164",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_wangdazhi",
+          "source": "art/runtime/portraits-v04/sources/wangdazhi.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "252b8026da9074d28120bcc619d1c29bbfe9dd57bd4056ecc9909d19000050fc",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yaoyaoya",
+          "source": "art/runtime/portraits-v04/sources/yaoyaoya.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "60363f558e875bff7b9d56a8c5f222f01d5bbd3bd1019cb0b63d1b60a23e0f9e",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yangmiemie",
+          "source": "art/runtime/portraits-v04/sources/yangmiemie.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "c00f87840ae047187b13544d8a357921b86a6d83fe3d9ae3e83d9d276867052d",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    },
+    {
+      "key": "chenzhihan",
+      "name": "陈知含",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_chenzhihan",
+          "source": "art/runtime/portraits-v04/sources/chenzhihan.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "02ecb9e60786ba35554ec3801f67932a59589ca97168b6ce511158a40a0161fe",
+          "source_box": null,
+          "review_note": "Legacy identifying silhouette and colors adapted into a complete custom bust with original integrated hair. Individually reviewed and checked together at 114x142; in-game review pending."
+        }
+      ]
+    }
+  ]
+}

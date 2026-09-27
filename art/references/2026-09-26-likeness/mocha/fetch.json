@@ -1,0 +1,21 @@
+{
+  "key": "mocha",
+  "name": "午夜抹抹茶",
+  "source_page": "https://www.douyu.com/80432",
+  "page_title": "CSTG郎团S1_午夜抹抹茶直播_午夜抹抹茶直播_午夜抹抹茶主机其他游戏直播_午夜抹抹茶斗鱼直播",
+  "images": [
+    {
+      "kind": "broadcast",
+      "image_url": "https://rpic.douyucdn.cn/asrpic/260924/80432_src_1839.avif/dy4",
+      "local_file": "art/references/2026-09-26-likeness/mocha/broadcast.jpg",
+      "bytes": 145915
+    },
+    {
+      "kind": "avatar",
+      "image_url": "https://apic.douyucdn.cn/upload/avatar/face/201603/907e80665f7e2b6a223655912e583c26_big.jpg",
+      "local_file": "art/references/2026-09-26-likeness/mocha/avatar.jpg",
+      "bytes": 20380
+    }
+  ],
+  "retrieved": "2026-09-26"
+}

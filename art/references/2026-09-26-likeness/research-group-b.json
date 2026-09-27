@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-26",
+  "purpose": "角色真人外观参考；不会打包进入mod；不做面部识别，以公开文字与账号语境定位。",
+  "counts": {
+    "members": 11,
+    "verified_photos": 10,
+    "pending": 1
+  },
+  "records": [
+    {
+      "key": "wanshe",
+      "name": "玩蛇",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "单人近距离自拍直播画面；斗鱼8458376页面明确昵称玩蛇姐姐；同页头像与旧C25文件SHA256完全一致，链接到既有角色，不以脸相认。",
+      "visible_features": [
+        "深棕色头发扎成低马尾",
+        "薄而不齐的额前碎发",
+        "偏平眉与狭长眼型",
+        "下颌圆缓、嘴唇轮廓清楚"
+      ],
+      "uncertainty": "直播图头顶有裁切、视线向下；不能把旧插画的粉发箍当作真实发型。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.douyu.com/8458376"
+      ],
+      "source_image_url": "https://rpic.douyucdn.cn/asrpic/260923/8458376_src_1623.avif/dy4",
+      "reference_file": "art/references/2026-09-26-likeness/wanshe/reference-crop.png",
+      "original_photo_file": "art/references/2026-09-26-likeness/wanshe/broadcast-web.jpg",
+      "original_sha256": "c9691bc06df7ac53503eb601b8f5afc26044a85e0aef14adc739b8b34650cbf4",
+      "crop_xyxy": [
+        300,
+        0,
+        900,
+        620
+      ],
+      "reference_sha256": "3f9177419da629da591bed83c9476ef50e629594cf656b90a0ed3be46e1a739a",
+      "usable_for_generation": true
+    },
+    {
+      "key": "tutu",
+      "name": "涂涂",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "涂涂吃饱了本人鱼吧公开动态《天冷加衣》，照片水印斗鱼@涂涂吃饱了；帖子作者与已核实99927房间昵称相同。",
+      "visible_features": [
+        "深棕色长直发",
+        "稀薄碎刘海、两侧长发贴脸",
+        "偏细长眼型与平缓眉弓",
+        "上唇较薄、下唇较丰，柔和下颌"
+      ],
+      "uncertainty": "2025-12旧造型、摄影/美颜可影响脸型；发色只按照片描述。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.douyu.com/99927",
+        "https://yuba.douyu.com/feed/2965382107494433206"
+      ],
+      "source_image_url": "https://c-yuba.douyucdn.cn/yubavod/b/DrdqR0WvonAa/b5205919d8cfa11004e9a4f2093728ff.jpeg/rs500",
+      "reference_file": "art/references/2026-09-26-likeness/tutu/reference-crop.png",
+      "original_photo_file": "art/references/2026-09-26-likeness/tutu/yuba-photo-1.jpg",
+      "original_sha256": "cacf95848dc40d430e90412c1350e5a38c77b46c8de099d7494557e8851a8357",
+      "crop_xyxy": [
+        166,
+        0,
+        440,
+        282
+      ],
+      "reference_sha256": "96ce97e9ec76a8447ead048ab249926073e82ec9fb3f630d59b450457a6a3a62",
+      "usable_for_generation": true
+    },
+    {
+      "key": "naigai",
+      "name": "奶盖",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "公开B站视频标题“CSTG新主播奶盖开播”，封面大字同名；中心正面女性正接受化妆。",
+      "visible_features": [
+        "近中分黑色长直发",
+        "眉较平直、眉尾微扬",
+        "眼形横向展开",
+        "脸颊圆润但下颌逐渐收窄，唇形有厚度"
+      ],
+      "uncertainty": "旁边化妆师不是角色；原图上边缘略裁头顶，化妆滤镜不转为写实材质。",
+      "is_single_subject": false,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.bilibili.com/video/BV1ThtN6vEa7/"
+      ],
+      "source_image_url": "http://i0.hdslb.com/bfs/archive/93852ab579d0b7330fdaec16ff64f71daa02e8f5.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/naigai/reference-crop.png",
+      "original_photo_file": "art/references/2026-09-26-likeness/naigai/bilibili-cover.jpg",
+      "original_sha256": "e83cc06c6ca71769200ce1492031622a9c00402499afa09a379393a561268e71",
+      "crop_xyxy": [
+        540,
+        0,
+        1040,
+        490
+      ],
+      "reference_sha256": "a12a20717f0c7814cdf8e41d70d03d0dc40391f3ca2b9373ac1200deabeaf151",
+      "usable_for_generation": true,
+      "download_note": "2026-09-26公开API元数据验证成功；CDN返回502，照片复制自旧归档同一BV号封面，已实际检查。"
+    },
+    {
+      "key": "xiaojie",
+      "name": "小杰",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "B站标题“【阿飞与小杰】小杰想锁阿飞车”；单一近脸特写，阿飞声音/字幕背景语境；旧参考中小杰为女性，与超级小桀无关。",
+      "visible_features": [
+        "深色头发往后扎、鬓角散发",
+        "上眼睑清楚，眼型略长",
+        "较高鼻梁和收窄下颌",
+        "嘴角轻微收起、上唇较薄"
+      ],
+      "uncertainty": "特写裁去头顶与一侧脸，发型只能确认后扎；不依据近摄透视夸大鼻子。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.bilibili.com/video/BV1fGeG6HEKc/"
+      ],
+      "source_image_url": "http://i1.hdslb.com/bfs/archive/2b8362c3bf030caf0cec13ca364c483f31eb0071.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/xiaojie/reference-crop.png",
+      "original_photo_file": "art/references/2026-09-26-likeness/xiaojie/bilibili-cover.jpg",
+      "original_sha256": "6f2644c50a1cfea3ea506a83d52482df8671513b0cea93109752678d1996e70f",
+      "crop_xyxy": [
+        560,
+        0,
+        1760,
+        875
+      ],
+      "reference_sha256": "35989088a7b85a7eb5fc39d972e5bff3293d15ec61e1cbbbbf974b52b6929b95",
+      "usable_for_generation": true
+    },
+    {
+      "key": "bula",
+      "name": "bula",
+      "status": "verified_photo_limited_angle",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "bulaQoQ本人公开鱼吧动态《Bula啵啵间下周六晚上八点开头抽签名T 6件》配单人镜面自拍，左下水印@bulaQoQloo，与官方房间9669昵称及旧名称链对应。",
+      "visible_features": [
+        "黑色及肩直发、侧分露额，一侧别耳后",
+        "较平眉和狭长眼型",
+        "清楚的侧面鼻梁、圆缓鼻尖",
+        "下巴收窄但面颊有厚度",
+        "下唇较丰、唇弓清楚"
+      ],
+      "uncertainty": "2023-05旧造型、只有三分之二侧脸；耳机和手机不进入游戏；200px头像与此自拍均只作造型依据，不编正面细节。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.douyu.com/9669",
+        "https://yuba.douyu.com/feed/2261912051486047127?origin=1"
+      ],
+      "source_image_url": "https://yb-op.douyucdn.cn/bj/yuba/default/2023/05/06/202305061646592344961273004.jpg/rs500?i=41536df89cbe7356886dad8ba427220484",
+      "reference_file": "art/references/2026-09-26-likeness/bula/reference-crop.png",
+      "original_photo_file": "art/references/2026-09-26-likeness/bula/yuba-2023.jpg",
+      "original_sha256": "95d0bc84c4e9af7aec899f843cce4bf48063c4e81382c3579dc9c84a3dd3290c",
+      "crop_xyxy": [
+        38,
+        0,
+        290,
+        349
+      ],
+      "reference_sha256": "83aba7dee8ab0db24b487a24cbf5be675fb6e80666afd97408a27654cb072454",
+      "usable_for_generation": true
+    },
+    {
+      "key": "suwa",
+      "name": "苏袜",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "公开视频标题及封面“苏袜被弹幕串哭”均点名，画面唯一清晰人物。",
+      "visible_features": [
+        "深色长直发，薄碎刘海",
+        "宽矩形黑框眼镜",
+        "脸形偏长、下巴收窄",
+        "唇较饱满且唇弓明显"
+      ],
+      "uncertainty": "眼镜可作为此照造型选择，不能断言永远戴；不把哭泣充血当固有外貌。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.bilibili.com/video/BV1DG4f6pEz5/"
+      ],
+      "source_image_url": "http://i1.hdslb.com/bfs/archive/802e4a42fea4acbce84e210f869eec75972eed36.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/suwa/reference-crop.png",
+      "original_photo_file": "art/references/2026-09-26-likeness/suwa/bilibili-close.jpg",
+      "original_sha256": "19517a39767ba91ed00bab2af66f432df84248b0feb34bfe0781f2dedca2a934",
+      "crop_xyxy": [
+        325,
+        0,
+        1130,
+        704
+      ],
+      "reference_sha256": "e56a280eb2a41f47981911f98cc1af22c4a2fcce1379593042b006c56ed9b179",
+      "usable_for_generation": true
+    },
+    {
+      "key": "qianhan",
+      "name": "千涵",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "公开视频标题“今天是双马尾千涵”和封面同名字幕，唯一前景正脸；补图bilibili-style.jpg也明确千涵。",
+      "visible_features": [
+        "深棕色近中分长发扎双低马尾",
+        "两颊轮廓饱满、下巴柔和收拢",
+        "平眉、较开阔杏眼",
+        "小鼻头、较薄上唇与清楚下唇"
+      ],
+      "uncertainty": "此前三人合集封面不能独立定身份，已弃作主参考；双马尾是明确拍摄造型，可转成粗块轮廓。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.bilibili.com/video/BV1U8tz6PE6U/"
+      ],
+      "source_image_url": "http://i2.hdslb.com/bfs/archive/d4c1ff047298e6b82c2a076ad70f241329528104.jpg",
+      "reference_file": "art/references/2026-09-26-likeness/qianhan/reference-crop.png",
+      "original_photo_file": "art/references/2026-09-26-likeness/qianhan/bilibili-twintails.jpg",
+      "original_sha256": "219dfdd2549e02f5a0fff5f757837f668f4ea66a48f78951b5ed66c2749efa48",
+      "crop_xyxy": [
+        510,
+        52,
+        1240,
+        806
+      ],
+      "reference_sha256": "baecb8ab7621d23d02bfbf29252650f99709fd33a0cc32cb10668578519d0527",
+      "usable_for_generation": true
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "用户确认王大芷=芷芷；斗鱼12831589页面昵称芷芷QwQ单人自拍直播；舞台视频BV1tcbM61EyS字幕芷芷提供第二公开语境。",
+      "visible_features": [
+        "暖棕色长直发",
+        "额前薄齐刘海露出眉部",
+        "较长眼型、眉形平缓",
+        "窄下巴、饱满下唇",
+        "照片左侧眼外下方可见小痣"
+      ],
+      "uncertainty": "头顶略裁切，眼睛向下且化妆显著；小痣可简化为一点，不凭镜像猜左右。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.douyu.com/12831589"
+      ],
+      "source_image_url": "https://rpic.douyucdn.cn/asrpic/260925/12831589_src_0129.avif/dy4",
+      "reference_file": "art/references/2026-09-26-likeness/wangdazhi/reference-crop.png",
+      "original_photo_file": "art/references/2026-09-26-likeness/wangdazhi/douyu-0.jpg",
+      "original_sha256": "289a55e7daa2c17fbb853cfca41a8e9bb9d97d297da064d43ed63cd61c883db9",
+      "crop_xyxy": [
+        334,
+        0,
+        1140,
+        720
+      ],
+      "reference_sha256": "0afd013616d5e7a5ff42faed9ccb07dba4300c77e2ef93a9e4596a2d4da76f87",
+      "usable_for_generation": true
+    },
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "status": "identity_localization_pending",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "已核验公开视频BV1w1b36VEW6为瑶瑶牙和李李背靠背比较；标题称瑶瑶牙体型更大。",
+      "visible_features": [],
+      "uncertainty": "只找到群像且没有姓名箭头。旧参考板误裁右侧浅蓝矮个，按字幕身高对应应是左侧红衣高个，但这仍属语义推断。暂停画像生成，继续找单人明确姓名参考，绝不混用C29一凹瑶。",
+      "is_single_subject": false,
+      "visually_inspected": false,
+      "source_pages": [
+        "https://www.bilibili.com/video/BV1w1b36VEW6/"
+      ],
+      "source_image_url": "http://i0.hdslb.com/bfs/archive/7667f9c3c75a3652e18ae14ed45d61251c38bb63.jpg",
+      "reference_file": null,
+      "usable_for_generation": false
+    },
+    {
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "斗鱼6632房间名羊咩咩ee；画面广告写“羊咩咩942”，右侧主播摄像头位于其直播伴侣预览，实际房间4742942。",
+      "visible_features": [
+        "深棕色长直发",
+        "眉上方透空的薄刘海",
+        "眼形较长、眉尾微抬",
+        "下颌窄，微张嘴露齿"
+      ],
+      "uncertainty": "有美颜与直播摄像头缩放；旧S7名册裁切触及汉堡标签，弃用；现图足以看发型五官，但不推断身高。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.douyu.com/6632"
+      ],
+      "source_image_url": "https://rpic.douyucdn.cn/asrpic/260925/4742942_src_2306.avif/dy4",
+      "reference_file": "art/references/2026-09-26-likeness/yangmiemie/reference-crop.png",
+      "original_photo_file": "art/references/2026-09-26-likeness/yangmiemie/douyu-0.jpg",
+      "original_sha256": "8be7a8e7b018dd222947a50fed9ad6e083d7bfcd6c2e1000639aeba35c18a7ef",
+      "crop_xyxy": [
+        678,
+        165,
+        1280,
+        670
+      ],
+      "reference_sha256": "0468876118901fb7a5aa65ecbbfafc0e670f233d378cffa51e1465fe74d9a446",
+      "usable_for_generation": true
+    },
+    {
+      "key": "chenzhihan",
+      "name": "陈知含",
+      "status": "verified_photo",
+      "verified_at": "2026-09-26",
+      "identity_evidence": "斗鱼12832995页面明确陈知含or且直播标题CSTG郎团S1；画面为单人坐沙发面对手机自拍，B站封面另明确点名陈知含可交叉佐证。",
+      "visible_features": [
+        "深棕色长发偏侧分，松散低束落到一肩",
+        "薄碎刘海，鬓角留长发",
+        "眼形偏长、上眼睑平缓",
+        "脸颊较圆，鼻头小、嘴唇轻微上翘"
+      ],
+      "uncertainty": "头像为动画不得用；本图五官受直播美颜影响，使用形状关系而非写真皮肤。",
+      "is_single_subject": true,
+      "visually_inspected": true,
+      "source_pages": [
+        "https://www.douyu.com/12832995"
+      ],
+      "source_image_url": "https://rpic.douyucdn.cn/asrpic/260925/12832995_src_1833.avif/dy4",
+      "reference_file": "art/references/2026-09-26-likeness/chenzhihan/reference-crop.png",
+      "original_photo_file": "art/references/2026-09-26-likeness/chenzhihan/douyu-0.jpg",
+      "original_sha256": "0bd64f0da33263aefcc4ae07c675a5b47ab4f43faccf88aca15a1808d012b8f8",
+      "crop_xyxy": [
+        267,
+        45,
+        1000,
+        695
+      ],
+      "reference_sha256": "7f9aa27fa5c9940290b16804913ce97fa30be04332b0e5320bceb028ba9ea5b0",
+      "usable_for_generation": true
+    }
+  ]
+}

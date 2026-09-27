@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-26",
+  "version": "0.7",
+  "game_version": "1.5.2.3",
+  "package": "dist/mod_afeix_expedition.zip",
+  "package_sha256": "1c50450648a27739dcc5645c48805414773c7a77c478171a6bcbaaa49259d21f",
+  "installed_matches_release": true,
+  "archive_crc_passed": true,
+  "source_bytes_match": true,
+  "in_game_tested": true,
+  "validation_scope": "targeted origin startup and tactical rendering; not full campaign acceptance",
+  "observed": [
+    "Final package new campaign LTXXTJFFHI entered world map with 3/40 roster and 1800 crowns",
+    "Production party screen showed three captains with native equipment; F8 ledger was visible after user interaction",
+    "Independent harness battle loaded 10 allies and 2 enemies",
+    "Native armor, sword, shield and selected full helmets displayed with custom heads in correct layer order",
+    "Custom size compared beside native actors; toad alias and Feidie slot use human art without UFO",
+    "Afei attacked left opponent and retained correct appearance"
+  ],
+  "not_verified": [
+    "Live inventory unequip/re-equip was deferred when user took control",
+    "All 34 members with all helmets",
+    "Full story and promotion playthrough",
+    "Equipment-specific corpse art",
+    "Campaign save/load roundtrip"
+  ],
+  "behavior_assertions": 16233,
+  "log_reports": [
+    "build/playtest-facing/v07-layered-battle.json",
+    "build/playtest-facing/v07-battle-after-attack.json",
+    "build/playtest-facing/v07-final-review.json"
+  ],
+  "screenshots": [
+    {
+      "path": "build/playtest-equipment/screenshots/01-origin-description.png",
+      "sha256": "76fe78c9d7e9dc8b14578229ec56add52d1516c676bf0037037b1cd554e238b6"
+    },
+    {
+      "path": "build/playtest-equipment/screenshots/03-battle-equipment.png",
+      "sha256": "649d49f6a6281a6acfdf56f03b56e4735dbfe5d00729b9c8b4ef0284bf8c0b32"
+    },
+    {
+      "path": "build/playtest-equipment/screenshots/04-final-origin-world.png",
+      "sha256": "a3074e5ada75fab99001ac2e5f60cbc2e9bc8f6d4d3eb819763d59fe6f21b823"
+    }
+  ],
+  "dev_harness_installed": false,
+  "dev_harness_archive": "build/playtest-equipment/mod_afeix_facing_playtest-tested.zip",
+  "game_left_open_for_user": true,
+  "restart_unloads_already_loaded_dev_harness": true,
+  "pre_existing_autosave_unchanged": true,
+  "autosave_sha256": "dd9450ee5b0de50edbe97b415be73d1178493b8eee5269486e89ee96bec0cf65"
+}

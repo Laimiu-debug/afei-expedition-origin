@@ -1,0 +1,993 @@
+{
+  "schema_version": 1,
+  "created": "2026-09-26",
+  "method": "built-in image_gen, identity-preserving pose edit",
+  "group": "B indices18..35",
+  "records": [
+    {
+      "index": 18,
+      "key": "xiaohani",
+      "name": "小哈尼",
+      "brush": "afeix_p04_xiaohani",
+      "source": "art/runtime/portraits-v05/sources/xiaohani.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 小哈尼 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-971444d8-a331-4fbc-9bc7-586eac3212ee.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/xiaohani.png",
+      "sha256": "3ab24602d7e056ce200d80abeabca766eab10806f3edc108e143306489c388ce",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Whole head/chest/gaze face screen right, far eye narrower, nearer shoulder wider. Original face/hair/clothes preserved; transparent margins intact.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/xiaohani.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 小哈尼 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/xiaohani.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-971444d8-a331-4fbc-9bc7-586eac3212ee.png",
+          "review": "Viewed generated PNG individually. Whole head/chest/gaze face screen right, far eye narrower, nearer shoulder wider. Original face/hair/clothes preserved; transparent margins intact."
+        }
+      ],
+      "source_sha256": "82008b134939a5983bf95434cdd8aa903e5d4ab09cdd5eb0097c73aec1c81133",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1124,
+          1399
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          0,
+          9,
+          1108,
+          1399
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          38,
+          70,
+          1091,
+          1333
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 19,
+      "key": "keke",
+      "name": "可可",
+      "brush": "afeix_p04_keke",
+      "source": "art/runtime/portraits-v05/sources/keke.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 可可 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-bdd863ee-d467-4fcc-8f37-48a63716e655.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/keke.png",
+      "sha256": "bc4332eac882e43c31861767836e7fad306c694280a193a177f0b5947d5f5cfd",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Whole head/chest/gaze face screen right, far eye narrower, nearer shoulder wider. Original face/hair/clothes preserved; transparent margins intact.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/keke.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 可可 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/keke.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-bdd863ee-d467-4fcc-8f37-48a63716e655.png",
+          "review": "Viewed generated PNG individually. Whole head/chest/gaze face screen right, far eye narrower, nearer shoulder wider. Original face/hair/clothes preserved; transparent margins intact."
+        }
+      ],
+      "source_sha256": "ff15da2dd84c1771afed89fe2ae60c5f0e3d77128b4902751f131a81ad210451",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1300,
+          1210
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          184,
+          68,
+          1150,
+          1155
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          187,
+          70,
+          1131,
+          1150
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 20,
+      "key": "yuxiang",
+      "name": "余想",
+      "brush": "afeix_p04_yuxiang",
+      "source": "art/runtime/portraits-v05/sources/yuxiang.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 余想 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-ca860a83-ea4e-43b6-9a19-f0d88afbadbb.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/yuxiang.png",
+      "sha256": "51805715556765c9f06daebd2301daf339a72b688e9f2245711464a428afd2e0",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Head, chest and gaze now consistently face screen right. Character-specific face shape, hair, eyewear where present and garment details retained; silhouette and transparency intact.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/yuxiang.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 余想 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/yuxiang.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-ca860a83-ea4e-43b6-9a19-f0d88afbadbb.png",
+          "review": "Viewed generated PNG individually. Head, chest and gaze now consistently face screen right. Character-specific face shape, hair, eyewear where present and garment details retained; silhouette and transparency intact."
+        }
+      ],
+      "source_sha256": "68ff801e74add66d8e982bf81492fd9d13656b1e2d7c1b0dc1f14af9bac5985f",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1124,
+          1399
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          33,
+          0,
+          1090,
+          1375
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          43,
+          100,
+          1085,
+          1303
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 21,
+      "key": "tongzhu",
+      "name": "童猪",
+      "brush": "afeix_p04_tongzhu",
+      "source": "art/runtime/portraits-v05/sources/tongzhu.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 童猪 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-53f40313-e6af-487f-9281-6ffa40eb9bfa.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/tongzhu.png",
+      "sha256": "d2a0355f68606cfbaf6d737564b3bbd5e773d6cffae4f19efb20e2e29866c586",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Head, chest and gaze now consistently face screen right. Character-specific face shape, hair, eyewear where present and garment details retained; silhouette and transparency intact.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/tongzhu.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 童猪 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/tongzhu.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-53f40313-e6af-487f-9281-6ffa40eb9bfa.png",
+          "review": "Viewed generated PNG individually. Head, chest and gaze now consistently face screen right. Character-specific face shape, hair, eyewear where present and garment details retained; silhouette and transparency intact."
+        }
+      ],
+      "source_sha256": "50fdcf4481edca148b224d64be7ed5fa648e68028c395be08f92e9872046fcdc",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1124,
+          1399
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          27,
+          5,
+          1096,
+          1399
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          55,
+          150,
+          1075,
+          1287
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 22,
+      "key": "meiya",
+      "name": "美伢",
+      "brush": "afeix_p04_meiya",
+      "source": "art/runtime/portraits-v04/sources/meiya.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 美伢 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-90dd7dcd-9557-447e-8d91-ec85182079cc.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/meiya.png",
+      "sha256": "e3bf64052a3a3ab4207db3ccc4a2d20df9470dee8f843b37d29c2039d4bca8ed",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed repair individually. Both irises now look screen right in the direction of nose; existing face, hat, mask charm, clothing and palette preserved.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/meiya.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 美伢 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/meiya.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-d1b2f942-2f18-42eb-bff5-343af84e9c79.png",
+          "review": "Body and face now angled screen right, but eyes retain sideways glance toward screen left from the original. Needs gaze-only correction."
+        },
+        {
+          "prompt": "Use case: precise-object-edit. Image 1 is an existing transparent Battle Brothers mod pawn. Make ONE tiny correction only: move BOTH pupils/irises to look toward SCREEN RIGHT, along the direction in which her nose and face point. Her left eye on the left of the picture currently glances left; shift its brown iris to the RIGHT side within the same eyelid outline. Shift the other iris toward the RIGHT likewise, keeping both eyes coordinated and natural. The eyes must not look at the camera or toward screen left. Keep every other detail pixel-faithful in appearance: same narrow mischievous eyelids and frown, same face geometry, nose, mouth, same pink cap, fox-mask ornament, long brown hair, brown armor and pink scarf, same existing three-quarter right-facing head and torso, same overall crop/size and earth-toned hand-painted Battle Brothers style. Do not turn the head back to front, do not enlarge eyes, do not redesign or add anything. Actual transparent background, no text or border.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/facing/meiya.png"
+          ],
+          "reference_archived_as": "art/runtime/portraits-v05/sources/facing/attempts/meiya-pose-first.png",
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-90dd7dcd-9557-447e-8d91-ec85182079cc.png",
+          "review": "Viewed repair individually. Both irises now look screen right in the direction of nose; existing face, hat, mask charm, clothing and palette preserved."
+        }
+      ],
+      "source_sha256": "2c4f63d9ed6d98452e36de78a9839d1e50fa74a74d5584f2c2c5570d1c986237",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1144,
+          1375
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          56,
+          98,
+          1098,
+          1327
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          58,
+          101,
+          1086,
+          1318
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 23,
+      "key": "wanshe",
+      "name": "玩蛇",
+      "brush": "afeix_p04_wanshe",
+      "source": "art/runtime/portraits-v05/sources/wanshe.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 玩蛇 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-67e6ff23-987a-4bdd-8340-b543c9bb1455.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/wanshe.png",
+      "sha256": "ad193ce44f1ce7c0afa4039c508043e9a4e1607a2c5839d157fb0dd9e6a7af83",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Head, chest and gaze consistently face screen right. Ponytail, beauty mark, expression, snake clasp and garment retained; silhouette and transparency intact.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/wanshe.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 玩蛇 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/wanshe.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-67e6ff23-987a-4bdd-8340-b543c9bb1455.png",
+          "review": "Viewed generated PNG individually. Head, chest and gaze consistently face screen right. Ponytail, beauty mark, expression, snake clasp and garment retained; silhouette and transparency intact."
+        }
+      ],
+      "source_sha256": "858cd36f1394badb364f8849eb2f56ee8a3b2529847549ad46e14a8305bd72f4",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1312,
+          1199
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          89,
+          42,
+          1099,
+          1164
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          231,
+          45,
+          1094,
+          1153
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 24,
+      "key": "tutu",
+      "name": "涂涂",
+      "brush": "afeix_p04_tutu",
+      "source": "art/runtime/portraits-v05/sources/tutu.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 涂涂 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-92c3b58f-0a79-4132-beb5-692d39b926e8.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/tutu.png",
+      "sha256": "49655e56bd9ad65b70f46275603aa62694b42ae55e47c1eddf37a464b0484813",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Head, chest and gaze consistently face screen right; forehead, hairstyle, individual eye/mouth shape, cloak and clasp retained. Both eyes visible and far side narrower; silhouette/transparency intact.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/tutu.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 涂涂 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/tutu.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-92c3b58f-0a79-4132-beb5-692d39b926e8.png",
+          "review": "Viewed generated PNG individually. Head, chest and gaze consistently face screen right; forehead, hairstyle, individual eye/mouth shape, cloak and clasp retained. Both eyes visible and far side narrower; silhouette/transparency intact."
+        }
+      ],
+      "source_sha256": "e956331dad7311e74a6f1488e448f5e748aad7af86f12172af2c18744ef6c0f0",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1124,
+          1399
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          0,
+          107,
+          1096,
+          1375
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          41,
+          120,
+          1094,
+          1309
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 25,
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "brush": "afeix_p04_songnuanyang",
+      "source": "art/runtime/portraits-v05/sources/songnuanyang.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 宋暖阳 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-afb692c3-1e35-442a-b474-b1da8acc5651.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/songnuanyang.png",
+      "sha256": "def57bf4345ba4613b5022b0b8ba808d7f5fb6fa0e80a14c41a0af13250dd5ca",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Head, chest and gaze consistently face screen right; forehead, hairstyle, individual eye/mouth shape, cloak and clasp retained. Both eyes visible and far side narrower; silhouette/transparency intact.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/songnuanyang.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 宋暖阳 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/songnuanyang.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-afb692c3-1e35-442a-b474-b1da8acc5651.png",
+          "review": "Viewed generated PNG individually. Head, chest and gaze consistently face screen right; forehead, hairstyle, individual eye/mouth shape, cloak and clasp retained. Both eyes visible and far side narrower; silhouette/transparency intact."
+        }
+      ],
+      "source_sha256": "69ac02e3494e554374edc2e80b50caa9aec4c3c736309bef31bcbaa736221f85",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1124,
+          1399
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          0,
+          7,
+          1076,
+          1383
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          69,
+          91,
+          1050,
+          1329
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 26,
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "brush": "afeix_p04_xiaogui",
+      "source": "art/runtime/portraits-v04/sources/xiaogui.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 溺水小龟 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust. This subject is an ORIGINAL anthropomorphic turtle, not human. Keep reptile head, scales, shell, amber eyes and smiling turtle mouth exactly recognisable; never add human hair or human facial features.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-0bd17470-7073-48e4-8546-70102d869b8d.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/xiaogui.png",
+      "sha256": "db2e4b258ade55983ef5c3b9d8e2ea0320ae376e1e79031f959b93ba68f8ce1d",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Turtle head, upper shell/body and amber eyes face screen right; shell, scales, scarf, red tie and reptile identity preserved, no human face introduced.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/xiaogui.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 溺水小龟 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust. This subject is an ORIGINAL anthropomorphic turtle, not human. Keep reptile head, scales, shell, amber eyes and smiling turtle mouth exactly recognisable; never add human hair or human facial features.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/xiaogui.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-0bd17470-7073-48e4-8546-70102d869b8d.png",
+          "review": "Viewed generated PNG individually. Turtle head, upper shell/body and amber eyes face screen right; shell, scales, scarf, red tie and reptile identity preserved, no human face introduced."
+        }
+      ],
+      "source_sha256": "e1f889b172a960ba85cd7c4af0d44e1cd3976db240fc9d0ba22e90c94e12ab58",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1122,
+          1402
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          18,
+          132,
+          1082,
+          1402
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          20,
+          235,
+          1079,
+          1245
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 27,
+      "key": "naigai",
+      "name": "奶盖",
+      "brush": "afeix_p04_naigai",
+      "source": "art/runtime/portraits-v05/sources/naigai.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 奶盖 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-88ffb071-b4c8-4ac8-b20b-da3f9775334c.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/naigai.png",
+      "sha256": "b70b73981f0382c3425f046e3b2db0d21d5e0882a93d49864bf5427a1b9b530f",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Right-facing head/chest and gaze, nearer shoulder broad/far side recedes. Long straight black hair, long face, fuller lips and buttoned brown garment retained.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/naigai.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 奶盖 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/naigai.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-88ffb071-b4c8-4ac8-b20b-da3f9775334c.png",
+          "review": "Viewed generated PNG individually. Right-facing head/chest and gaze, nearer shoulder broad/far side recedes. Long straight black hair, long face, fuller lips and buttoned brown garment retained."
+        }
+      ],
+      "source_sha256": "6c2fae9f31d5ba0a05a3163ba0cd469dfb54021459e268792ea39d0ac9f2c246",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1124,
+          1399
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          32,
+          40,
+          1110,
+          1391
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          35,
+          77,
+          1087,
+          1342
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 28,
+      "key": "xiaojie",
+      "name": "小杰",
+      "brush": "afeix_p04_xiaojie",
+      "source": "art/runtime/portraits-v05/sources/xiaojie.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 小杰 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-b09c0f24-1147-4ece-a388-f35d35779cb9.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/xiaojie.png",
+      "sha256": "addf03faea8908c4f87fb9fc5c87bc82df4ae473e6922cc99ee406bfe01af379",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Right-facing head/chest/gaze, broad nearer left shoulder and receding far side. Individual face shape, hair, expression, collar, scarf and clasp retained; silhouette/transparency intact.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/xiaojie.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 小杰 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/xiaojie.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-b09c0f24-1147-4ece-a388-f35d35779cb9.png",
+          "review": "Viewed generated PNG individually. Right-facing head/chest/gaze, broad nearer left shoulder and receding far side. Individual face shape, hair, expression, collar, scarf and clasp retained; silhouette/transparency intact."
+        }
+      ],
+      "source_sha256": "e79dbcd3ccfb7a2e033991943909ad9c7afedc6990aa05e555bb80c2050177f5",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1125,
+          1398
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          81,
+          43,
+          1111,
+          1372
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          93,
+          76,
+          1020,
+          1341
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 29,
+      "key": "bula",
+      "name": "bula",
+      "brush": "afeix_p04_bula",
+      "source": "art/runtime/portraits-v05/sources/bula.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing bula Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-50c32733-dabd-4731-a43e-77df377a72a6.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/bula.png",
+      "sha256": "094a9e64edb9e859008b26ff1ee6433bbba8ce3dfe623277c624ce161b036b75",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Right-facing head/chest/gaze, broad nearer left shoulder and receding far side. Individual face shape, hair, expression, collar, scarf and clasp retained; silhouette/transparency intact.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bula.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing bula Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/bula.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-50c32733-dabd-4731-a43e-77df377a72a6.png",
+          "review": "Viewed generated PNG individually. Right-facing head/chest/gaze, broad nearer left shoulder and receding far side. Individual face shape, hair, expression, collar, scarf and clasp retained; silhouette/transparency intact."
+        }
+      ],
+      "source_sha256": "0c7a07985d3924638558f62edce81729d93778e7e3fde738053e57517c74a0d9",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1124,
+          1399
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          0,
+          40,
+          1094,
+          1379
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          30,
+          118,
+          1091,
+          1296
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 30,
+      "key": "suwa",
+      "name": "苏袜",
+      "brush": "afeix_p04_suwa",
+      "source": "art/runtime/portraits-v05/sources/suwa.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 苏袜 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-db6c8d05-ae20-42de-8755-61fcc346afd2.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/suwa.png",
+      "sha256": "6b7101b6da193ab622f49a4bc6c9fc671cc405a75c9a74d2b2a272cf6bc363a8",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Head/chest/gaze turned right with nearer left shoulder wider; retains individual face proportions, hair, eyewear where present, muted red scarf and padded outfit. No clipping or new object.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/suwa.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 苏袜 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/suwa.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-db6c8d05-ae20-42de-8755-61fcc346afd2.png",
+          "review": "Viewed generated PNG individually. Head/chest/gaze turned right with nearer left shoulder wider; retains individual face proportions, hair, eyewear where present, muted red scarf and padded outfit. No clipping or new object."
+        }
+      ],
+      "source_sha256": "e4f91792c10600e8cdd32948c8f18e2b924189f6b6913286f540ee1a164b8450",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1140,
+          1380
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          63,
+          17,
+          1126,
+          1380
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          65,
+          127,
+          1084,
+          1305
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 31,
+      "key": "qianhan",
+      "name": "千涵",
+      "brush": "afeix_p04_qianhan",
+      "source": "art/runtime/portraits-v05/sources/qianhan.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 千涵 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-f6f9ada3-44a4-4c2f-bd6c-fc9877c02276.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/qianhan.png",
+      "sha256": "fd9895036dd644e16398fb0bca8dbafb11d8bd2f0e4a730f3019bbb082f948f6",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Head/chest/gaze turned right with nearer left shoulder wider; retains individual face proportions, hair, eyewear where present, muted red scarf and padded outfit. No clipping or new object.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/qianhan.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 千涵 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/qianhan.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-f6f9ada3-44a4-4c2f-bd6c-fc9877c02276.png",
+          "review": "Viewed generated PNG individually. Head/chest/gaze turned right with nearer left shoulder wider; retains individual face proportions, hair, eyewear where present, muted red scarf and padded outfit. No clipping or new object."
+        }
+      ],
+      "source_sha256": "8b6896df3ad767bb6164f80d9603df60f33030de607e7bf19e45fa08cebf1342",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1125,
+          1398
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          52,
+          33,
+          1078,
+          1350
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          55,
+          103,
+          1076,
+          1321
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 32,
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "brush": "afeix_p04_wangdazhi",
+      "source": "art/runtime/portraits-v05/sources/wangdazhi.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 王大芷 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-26f6dafd-a39c-471e-bd95-71bc66403e6c.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/wangdazhi.png",
+      "sha256": "7f4dcbf9e5e9fbf3dffd30f5f97ee6eaef74f5cebfa48f012d4ab1e6f6cc0e50",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Head/chest/gaze now right facing. Bangs, reddish brown long hair, beauty mark, half-lidded smile and purple scarf preserved; no clipped silhouette.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/wangdazhi.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 王大芷 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/wangdazhi.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-26f6dafd-a39c-471e-bd95-71bc66403e6c.png",
+          "review": "Viewed generated PNG individually. Head/chest/gaze now right facing. Bangs, reddish brown long hair, beauty mark, half-lidded smile and purple scarf preserved; no clipped silhouette."
+        }
+      ],
+      "source_sha256": "2bc53c52b48a214face3737334a9f239a20132f8d90097eaaa6857127e38c3b4",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1124,
+          1399
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          0,
+          9,
+          1106,
+          1399
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          41,
+          86,
+          1080,
+          1350
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 33,
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "brush": "afeix_p04_yaoyaoya",
+      "source": "art/runtime/portraits-v04/sources/yaoyaoya.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 瑶瑶牙 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust. Preserve the existing battle axe/polearm and red ribbons as part of the current integrated illustration; do not add or remove weapons. Retain the original fantasy warrior identity; this edit does not claim verified real-person likeness.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-e82aa5b2-7d97-43a9-a193-4a4bd8267af2.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/yaoyaoya.png",
+      "sha256": "ffcbe3b3c77ed40502a2334f70d0fb4f3d5fd7ae0ca76a643871aaafd7592a13",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Right-facing warrior retains original face, ponytail, red ribbons, polearm and lamellar/metal shoulder. Original fantasy likeness status remains unverified; this is only a pose edit.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/yaoyaoya.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 瑶瑶牙 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust. Preserve the existing battle axe/polearm and red ribbons as part of the current integrated illustration; do not add or remove weapons. Retain the original fantasy warrior identity; this edit does not claim verified real-person likeness.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v04/sources/yaoyaoya.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-e82aa5b2-7d97-43a9-a193-4a4bd8267af2.png",
+          "review": "Viewed generated PNG individually. Right-facing warrior retains original face, ponytail, red ribbons, polearm and lamellar/metal shoulder. Original fantasy likeness status remains unverified; this is only a pose edit."
+        }
+      ],
+      "source_sha256": "60363f558e875bff7b9d56a8c5f222f01d5bbd3bd1019cb0b63d1b60a23e0f9e",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1176,
+          1337
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          43,
+          83,
+          1162,
+          1337
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          51,
+          87,
+          1160,
+          1255
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 34,
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "brush": "afeix_p04_yangmiemie",
+      "source": "art/runtime/portraits-v05/sources/yangmiemie.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 羊咩咩 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-5c5f56f5-6529-4a4d-844e-af4ac8233b73.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/yangmiemie.png",
+      "sha256": "5795621990e9b6f127bbf72b4a5f42e89206a78c28259e4b851b6e2642886f96",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Head, chest and eyes point screen right; nearer left shoulder is wider. Preserves face shape, hairstyle, expression, garment and personal clasp details; no clipping.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/yangmiemie.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 羊咩咩 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/yangmiemie.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-5c5f56f5-6529-4a4d-844e-af4ac8233b73.png",
+          "review": "Viewed generated PNG individually. Head, chest and eyes point screen right; nearer left shoulder is wider. Preserves face shape, hairstyle, expression, garment and personal clasp details; no clipping."
+        }
+      ],
+      "source_sha256": "8ed8a4e11f4174cb832d12fdbbef83c1d977ebf75a07b558d0a73a166263c084",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1124,
+          1399
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          0,
+          61,
+          1077,
+          1399
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          47,
+          116,
+          1075,
+          1295
+        ],
+        "sha256_verified": true
+      }
+    },
+    {
+      "index": 35,
+      "key": "chenzhihan",
+      "name": "陈知含",
+      "brush": "afeix_p04_chenzhihan",
+      "source": "art/runtime/portraits-v05/sources/chenzhihan.png",
+      "prompt": "Use case: identity-preserve. Edit target is image 1: existing 陈知含 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+      "generated_output": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-5a20f36f-d8b2-4013-962b-75d8ca17bd8e.png",
+      "new_source": "art/runtime/portraits-v05/sources/facing/chenzhihan.png",
+      "sha256": "432c21fa1195928a5467b0ba2a731dd236ae4787bc8ad99dfef489e5b6810ae5",
+      "status": "accepted_for_technical_export_pending_engine",
+      "visual_check": "Viewed generated PNG individually. Head, chest and eyes point screen right; nearer left shoulder is wider. Preserves face shape, hairstyle, expression, garment and personal clasp details; no clipping.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/chenzhihan.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt_chain": [
+        {
+          "prompt": "Use case: identity-preserve. Edit target is image 1: existing 陈知含 Battle Brothers mod pawn. Image 2 is the official Battle Brothers sprite reference; use its compact bust pose and painted game style only, do not copy its male faces. Change ONLY the facing pose. Rotate the whole head, chest, shoulders and eye gaze toward SCREEN RIGHT by 40 degrees, an unmistakable right-facing three-quarter tactical pawn. Both eyes remain visible but the far eye on screen right is narrower; nose points right and sits to the right of facial centre. The nearer shoulder on screen left projects wider and forward; screen-right shoulder recedes and narrows. Preserve this individual's exact face shape, facial features, expression, hair silhouette/color/parting, accessories, garment design and colors. Keep integrated head, hair, shoulders and short chest in one piece, roughly Battle Brothers proportions with compact shoulder base and no arms or legs. Thick dark brown painted contours, earthy muted palette, simple rough hand-painted flat shadow planes, readable at 114 pixels. No photorealism, no glossy/anime rendering, no extra items, text, frame or cast shadow. Actual transparent background; keep generous clear margin around whole uncut bust.",
+          "references": [
+            "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/chenzhihan.png",
+            "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+          ],
+          "generated_original": "C:\\Users\\25647\\.codex\\generated_images\\01a0dd71-b2e1-7d42-bd89-5a65aac80b5f\\exec-5a20f36f-d8b2-4013-962b-75d8ca17bd8e.png",
+          "review": "Viewed generated PNG individually. Head, chest and eyes point screen right; nearer left shoulder is wider. Preserves face shape, hairstyle, expression, garment and personal clasp details; no clipping."
+        }
+      ],
+      "source_sha256": "e748731e84a841f641aa61cf3fc9c14ebd31fec77ed43102898e75b1a216dffb",
+      "technical_check": {
+        "mode": "RGBA",
+        "size": [
+          1124,
+          1399
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "raw_alpha_bbox": [
+          0,
+          30,
+          1104,
+          1375
+        ],
+        "production_alpha_threshold": 20,
+        "production_alpha_bbox": [
+          85,
+          99,
+          1019,
+          1306
+        ],
+        "sha256_verified": true
+      }
+    }
+  ],
+  "technical_note": "All 18 output files are genuine RGBA with transparent pixels, and have uncut silhouettes with margins at the existing production alpha threshold 20. Some original generated files contain very low-alpha edge specks; the existing exporter threshold is required. No source image pixels were modified by scripts.",
+  "completed_forms": 18,
+  "imagegen_calls": 19,
+  "in_game_tested_by_this_agent": false
+}

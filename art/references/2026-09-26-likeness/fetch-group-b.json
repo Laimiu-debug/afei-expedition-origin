@@ -1,0 +1,365 @@
+[
+  {
+    "key": "naigai",
+    "page": "https://www.bilibili.com/video/BV1ThtN6vEa7/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1ThtN6vEa7",
+    "title": "CSTG新主播奶盖开播，来看看你喜不喜欢这一款",
+    "image_url": "http://i0.hdslb.com/bfs/archive/93852ab579d0b7330fdaec16ff64f71daa02e8f5.jpg",
+    "desc": "",
+    "owner": {
+      "mid": 2831536,
+      "name": "枭乜人类",
+      "face": "https://i1.hdslb.com/bfs/face/15803a321775d365e183b2f8f5bdd52f298ef236.jpg"
+    },
+    "pages": [
+      {
+        "cid": 41366719628,
+        "page": 1,
+        "from": "vupload",
+        "part": "CSTG新主播奶盖开播，来看看你喜不喜欢这一款",
+        "duration": 1802,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 1920,
+          "height": 880,
+          "rotate": 0
+        },
+        "first_frame": "http://i2.hdslb.com/bfs/storyff/_000029t99rwwb9zcu2hbryrx7mc7ggb_firsti.jpg",
+        "ctime": 1787921411
+      }
+    ],
+    "status": "fetch_failed",
+    "error": "HTTP Error 502: Bad Gateway"
+  },
+  {
+    "key": "tutu",
+    "page": "https://www.bilibili.com/video/BV1Mde16wEkt/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1Mde16wEkt",
+    "title": "涂涂离开飞团，阿飞亲自送行，又是放音乐又是搬行李，最后终于抱上了。",
+    "image_url": "http://i0.hdslb.com/bfs/archive/8f55d6c6802232919feb8bd18ba27fb774a89f03.jpg",
+    "desc": "",
+    "owner": {
+      "mid": 403094586,
+      "name": "听雨飒飒",
+      "face": "https://i0.hdslb.com/bfs/face/f9684e539c2c9c57ed591c9a9bfa0ed02b24bf5c.jpg"
+    },
+    "pages": [
+      {
+        "cid": 41995012706,
+        "page": 1,
+        "from": "vupload",
+        "part": "9月18日 (1)(5)",
+        "duration": 230,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 2542,
+          "height": 1440,
+          "rotate": 0
+        },
+        "first_frame": "http://i0.hdslb.com/bfs/storyff/_000000uzwxhh7j69e2m53wlg49ln6mb_firsti.jpg",
+        "ctime": 1789714761
+      }
+    ],
+    "local_file": "art\\references\\2026-09-26-likeness\\tutu\\bilibili-cover.jpg",
+    "status": "public_api_and_cover_fetched"
+  },
+  {
+    "key": "wanshe",
+    "page": "https://www.bilibili.com/video/BV1HBY16SEAV/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1HBY16SEAV",
+    "title": "李医生你开的什么药？玩蛇参加《飞李不可》后真不对劲了！",
+    "image_url": "http://i0.hdslb.com/bfs/archive/43dc7367b7b92ef232a7615e610696a23e008f01.jpg",
+    "desc": "-",
+    "owner": {
+      "mid": 2831536,
+      "name": "枭乜人类",
+      "face": "https://i1.hdslb.com/bfs/face/15803a321775d365e183b2f8f5bdd52f298ef236.jpg"
+    },
+    "pages": [
+      {
+        "cid": 41803186731,
+        "page": 1,
+        "from": "vupload",
+        "part": "李医生你开的什么药？玩蛇参加《飞李不可》后真不对劲了！",
+        "duration": 244,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 1920,
+          "height": 1080,
+          "rotate": 0
+        },
+        "first_frame": "http://i2.hdslb.com/bfs/storyff/_000012saa45k2i4yb2etd7t2x5w5nvb_firsti.jpg",
+        "ctime": 1789146532
+      }
+    ],
+    "status": "fetch_failed",
+    "error": "HTTP Error 502: Bad Gateway"
+  },
+  {
+    "key": "xiaojie",
+    "page": "https://www.bilibili.com/video/BV1fGeG6HEKc/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1fGeG6HEKc",
+    "title": "【阿飞与小杰】小杰想锁阿飞车，飞哥：我不上当",
+    "image_url": "http://i1.hdslb.com/bfs/archive/2b8362c3bf030caf0cec13ca364c483f31eb0071.jpg",
+    "desc": "-",
+    "owner": {
+      "mid": 92449233,
+      "name": "小心点face",
+      "face": "https://i0.hdslb.com/bfs/face/a93826a8e1d9a02311546414490c1cf7bdbfed56.jpg"
+    },
+    "pages": [
+      {
+        "cid": 41975679030,
+        "page": 1,
+        "from": "vupload",
+        "part": "【CSTG】小杰想锁阿飞车，飞哥不上当",
+        "duration": 133,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 1920,
+          "height": 1080,
+          "rotate": 0
+        },
+        "first_frame": "http://i2.hdslb.com/bfs/storyff/_000034rfwq1kpcx1x22zxpfbel91gqb_firsti.jpg",
+        "ctime": 1789648320
+      }
+    ],
+    "local_file": "art\\references\\2026-09-26-likeness\\xiaojie\\bilibili-cover.jpg",
+    "status": "public_api_and_cover_fetched"
+  },
+  {
+    "key": "suwa",
+    "page": "https://www.bilibili.com/video/BV1454R6iEVa/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1454R6iEVa",
+    "title": "可可苏袜一同离开S10.5,苏袜P2失败、可可上厕所带手机被发现开条",
+    "image_url": "http://i0.hdslb.com/bfs/archive/b95857b17ec0fafc06b4b5335eac044e932b80eb.jpg",
+    "desc": "-",
+    "owner": {
+      "mid": 2831536,
+      "name": "枭乜人类",
+      "face": "https://i1.hdslb.com/bfs/face/15803a321775d365e183b2f8f5bdd52f298ef236.jpg"
+    },
+    "pages": [
+      {
+        "cid": 41326414717,
+        "page": 1,
+        "from": "vupload",
+        "part": "可可苏袜一同离开S10.5,苏袜P2失败、可可上厕所带手机被发现开条",
+        "duration": 109,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 1920,
+          "height": 1080,
+          "rotate": 0
+        },
+        "first_frame": "http://i2.hdslb.com/bfs/storyff/_00003l56le9idzuos2dxl0kxr8xbfab_firsti.jpg",
+        "ctime": 1787829575
+      }
+    ],
+    "local_file": "art\\references\\2026-09-26-likeness\\suwa\\bilibili-cover.jpg",
+    "status": "public_api_and_cover_fetched"
+  },
+  {
+    "key": "wangdazhi",
+    "page": "https://www.bilibili.com/video/BV1tcbM61EyS/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1tcbM61EyS",
+    "title": "才艺比拼之夜芷芷登台跳舞",
+    "image_url": "http://i1.hdslb.com/bfs/archive/5e23c42756c6bdc7c91f15f8d21681fd3ff22c0e.jpg",
+    "desc": "",
+    "owner": {
+      "mid": 2831536,
+      "name": "枭乜人类",
+      "face": "https://i1.hdslb.com/bfs/face/15803a321775d365e183b2f8f5bdd52f298ef236.jpg"
+    },
+    "pages": [
+      {
+        "cid": 41671066405,
+        "page": 1,
+        "from": "vupload",
+        "part": "才艺比拼之夜芷芷登台跳舞",
+        "duration": 139,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 1920,
+          "height": 1080,
+          "rotate": 0
+        },
+        "first_frame": "http://i0.hdslb.com/bfs/storyff/_00002mq4onjswlhw32tlk4hm5ukf2jb_firsti.jpg",
+        "ctime": 1788790737
+      }
+    ],
+    "local_file": "art\\references\\2026-09-26-likeness\\wangdazhi\\bilibili-cover.jpg",
+    "status": "public_api_and_cover_fetched"
+  },
+  {
+    "key": "yaoyaoya",
+    "page": "https://www.bilibili.com/video/BV1w1b36VEW6/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1w1b36VEW6",
+    "title": "阿飞讨论足球选人，让瑶瑶牙和李李背靠背对比，瑶瑶牙的大体型把李李对比成小土豆了。",
+    "image_url": "http://i0.hdslb.com/bfs/archive/7667f9c3c75a3652e18ae14ed45d61251c38bb63.jpg",
+    "desc": "",
+    "owner": {
+      "mid": 403094586,
+      "name": "听雨飒飒",
+      "face": "https://i0.hdslb.com/bfs/face/f9684e539c2c9c57ed591c9a9bfa0ed02b24bf5c.jpg"
+    },
+    "pages": [
+      {
+        "cid": 41688173619,
+        "page": 1,
+        "from": "vupload",
+        "part": "阿飞讨论足球选人，让瑶瑶牙和李李背靠背对比，瑶瑶牙的大体型把李李对比成小土豆了。",
+        "duration": 105,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 2560,
+          "height": 1440,
+          "rotate": 0
+        },
+        "first_frame": "http://i0.hdslb.com/bfs/storyff/_00001yj68rszrve3f2mig6y6x2tkuzb_firsti.jpg",
+        "ctime": 1788850212
+      }
+    ],
+    "local_file": "art\\references\\2026-09-26-likeness\\yaoyaoya\\bilibili-cover.jpg",
+    "status": "public_api_and_cover_fetched"
+  },
+  {
+    "key": "yangmiemie",
+    "page": "https://www.bilibili.com/video/BV1nKeg6UE7V/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1nKeg6UE7V",
+    "title": "cstg飞团s0.5赛季，卡丁车比赛，阿飞当前成绩第一，李李全程，羊咩咩后续准备。",
+    "image_url": "http://i0.hdslb.com/bfs/archive/8d36e92bdd60cd4b41fba8ad91ca5aacd50ae3f1.jpg",
+    "desc": "-",
+    "owner": {
+      "mid": 3706930526685664,
+      "name": "明路之",
+      "face": "https://i1.hdslb.com/bfs/face/fd75b74146bdeeb82ebe43717153ac97af7fc0c0.jpg"
+    },
+    "pages": [
+      {
+        "cid": 41969322735,
+        "page": 1,
+        "from": "vupload",
+        "part": "cstg飞团s0.5赛季，卡丁车比赛，阿飞当前成绩第一，李李全程，羊咩咩后续准备。",
+        "duration": 468,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 1440,
+          "height": 1080,
+          "rotate": 0
+        },
+        "first_frame": "http://i0.hdslb.com/bfs/storyff/_00003exzukn85yh902351xva9h5p23b_firsti.jpg",
+        "ctime": 1789633539
+      }
+    ],
+    "local_file": "art\\references\\2026-09-26-likeness\\yangmiemie\\bilibili-cover.jpg",
+    "status": "public_api_and_cover_fetched"
+  },
+  {
+    "key": "bula",
+    "page": "https://www.bilibili.com/video/BV1AobM6ME4c/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1AobM6ME4c",
+    "title": "瑶瑶的攻略日记，满是羁绊的情感模拟PLAY：捏鼻之交小猫，bu瑶脸组合bula，10.5之交美伢，三亚前队友羊咩咩，半谈心小鱼籽",
+    "image_url": "http://i0.hdslb.com/bfs/archive/397a03f8f97f940923d2ef6af240d0f9199eabad.jpg",
+    "desc": "20260907 FPS团播D3正赛D1  \n凌晨4.00瑶女郎名单",
+    "owner": {
+      "mid": 3706970471140052,
+      "name": "醉清风wa",
+      "face": "https://i2.hdslb.com/bfs/face/82af38893df8a4acde7032218912a256fc66ef93.jpg"
+    },
+    "pages": [
+      {
+        "cid": 41677426472,
+        "page": 1,
+        "from": "vupload",
+        "part": "瑶瑶的攻略日记，恋爱模拟PLAY：捏鼻之交小猫，bu瑶脸组合bula，10.5之交美伢，三亚前队友羊咩咩，半谈心小鱼籽",
+        "duration": 1348,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 960,
+          "height": 544,
+          "rotate": 0
+        },
+        "first_frame": "http://i2.hdslb.com/bfs/storyff/_00001ip2vawbddgqq2g08vptabg8lgb_firsti.jpg",
+        "ctime": 1788813967
+      }
+    ],
+    "local_file": "art\\references\\2026-09-26-likeness\\bula\\bilibili-cover.jpg",
+    "status": "public_api_and_cover_fetched"
+  },
+  {
+    "key": "qianhan",
+    "page": "https://www.bilibili.com/video/BV1tQ4R6gELW/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1tQ4R6gELW",
+    "title": "直播间真没人样了，糕糕千涵奶盖露脸全是喊妈妈的😅",
+    "image_url": "http://i1.hdslb.com/bfs/archive/6ef4426f6b49df8d8dd42791121e8f24249331f9.jpg",
+    "desc": "",
+    "owner": {
+      "mid": 2831536,
+      "name": "枭乜人类",
+      "face": "https://i1.hdslb.com/bfs/face/15803a321775d365e183b2f8f5bdd52f298ef236.jpg"
+    },
+    "pages": [
+      {
+        "cid": 41324841668,
+        "page": 1,
+        "from": "vupload",
+        "part": "直播间真没人样了，糕糕千涵奶盖露脸全是喊妈妈的😅",
+        "duration": 1061,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 1906,
+          "height": 1080,
+          "rotate": 0
+        },
+        "first_frame": "http://i2.hdslb.com/bfs/storyff/_00003ldjd4tk54waj28xczgyw84r21b_firsti.jpg",
+        "ctime": 1787826189
+      }
+    ],
+    "local_file": "art\\references\\2026-09-26-likeness\\qianhan\\bilibili-cover.jpg",
+    "status": "public_api_and_cover_fetched"
+  },
+  {
+    "key": "chenzhihan",
+    "page": "https://www.bilibili.com/video/BV1fJ8Z6zEQh/",
+    "api": "https://api.bilibili.com/x/web-interface/view?bvid=BV1fJ8Z6zEQh",
+    "title": "已经足够努力，陈知含成为五美第一个离开S10.5，来不及悲伤，是时候回郑州整顿月饼帮了",
+    "image_url": "http://i2.hdslb.com/bfs/archive/a84a73b06c8357a9628ec477416216d56de8d78d.jpg",
+    "desc": "-",
+    "owner": {
+      "mid": 2831536,
+      "name": "枭乜人类",
+      "face": "https://i1.hdslb.com/bfs/face/15803a321775d365e183b2f8f5bdd52f298ef236.jpg"
+    },
+    "pages": [
+      {
+        "cid": 41298428294,
+        "page": 1,
+        "from": "vupload",
+        "part": "已经足够努力，陈知含成为五美第一个离开，是时候整顿月饼帮了",
+        "duration": 27,
+        "vid": "",
+        "weblink": "",
+        "dimension": {
+          "width": 1920,
+          "height": 1080,
+          "rotate": 0
+        },
+        "first_frame": "http://i0.hdslb.com/bfs/storyff/_00001ug9ev4k328wv225u0ohwgx6fkb_firsti.jpg",
+        "ctime": 1787758497
+      }
+    ],
+    "local_file": "art\\references\\2026-09-26-likeness\\chenzhihan\\bilibili-cover.jpg",
+    "status": "public_api_and_cover_fetched"
+  }
+]

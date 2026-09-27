@@ -1,0 +1,114 @@
+[
+  {
+    "key": "laocai",
+    "page_url": "https://www.douyu.com/74960",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260926/74960_src_1836.avif/dy4",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/laocai/broadcast-20260926.jpg",
+    "sha256": "7acf292e4333fd3947f7ef5b0ccbdadddb4d364fb46cc2bff9577d1390b4b2c4",
+    "kind": "broadcast"
+  },
+  {
+    "key": "laocai",
+    "page_url": "https://www.douyu.com/74960",
+    "image_url": "https://apic.douyucdn.cn/upload/avanew/face/201709/30/10/fd53f8d5fad766e5c01a84f79be2aeff_big.jpg",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/laocai/avatar-20260926.jpg",
+    "sha256": "387b10e4b474e7af23c6ff8f846b90daacab7002e5dcd4e1900d728446429b49",
+    "kind": "avatar"
+  },
+  {
+    "key": "xiaoning",
+    "page_url": "https://www.douyu.com/9388639",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260926/9388639_src_0328.avif/dy4",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaoning/broadcast-20260926.jpg",
+    "sha256": "dc1159eee2d659c0d0acabb1e7069b34fa318587aac955445907ffd6d2cd24fd",
+    "kind": "broadcast"
+  },
+  {
+    "key": "xiaoning",
+    "page_url": "https://www.douyu.com/9388639",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202409/80a50359098a4f9f9928797efb8c1163_big.jpg",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaoning/avatar-20260926.jpg",
+    "sha256": "5b4ece6181c3d82fd8b888be154099372639a3eb287728058672bd1fa009fa0c",
+    "kind": "avatar"
+  },
+  {
+    "key": "xiaopangxu",
+    "page_url": "https://www.douyu.com/7300160",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260926/7300160_src_1837.avif/dy4",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaopangxu/broadcast-20260926.jpg",
+    "sha256": "7f296cdc69dfe0fc699ac18f34d2ed7c90323fd673ddef5d93dd8c2abff31d0a",
+    "kind": "broadcast"
+  },
+  {
+    "key": "xiaopangxu",
+    "page_url": "https://www.douyu.com/7300160",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202411/191339e07a634d9894f67067076f1283_big.jpg",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaopangxu/avatar-20260926.jpg",
+    "sha256": "5ab0b6dc924a8e358fd6bbd93e05d9d2a5ef591a2d91dc2f83f7c5c9a831f905",
+    "kind": "avatar"
+  },
+  {
+    "key": "manyuemei",
+    "page_url": "https://www.douyu.com/11778421",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260926/11778421_src_1837.avif/dy4",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/manyuemei/broadcast-20260926.jpg",
+    "sha256": "6c27920f5e290149237c65fb65713ff057c933d3a6957cd62e7bb53217118951",
+    "kind": "broadcast"
+  },
+  {
+    "key": "manyuemei",
+    "page_url": "https://www.douyu.com/11778421",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202503/a60a3eb4005843e683f84144b6b154b3_big.jpg",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/manyuemei/avatar-20260926.jpg",
+    "sha256": "973bd42abea3bf819a58e420501968c62a8e5e7010ea31af287e006bf2388ee8",
+    "kind": "avatar"
+  },
+  {
+    "key": "xiaohani",
+    "page_url": "https://www.douyu.com/22499",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260926/11328146_src_1837.avif/dy4",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaohani/broadcast-20260926.jpg",
+    "sha256": "90f666912ebfda0a10ef1f72c56b1c4d386f5dd112227634f9444366d316885f",
+    "kind": "broadcast"
+  },
+  {
+    "key": "xiaohani",
+    "page_url": "https://www.douyu.com/22499",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202505/22cbb76eaf6048fd808169a588ed6627_big.jpg",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaohani/avatar-20260926.jpg",
+    "sha256": "6817714a66890357ba783a9d6a81a7b88c5b64270105c050a1a809dbcacde04a",
+    "kind": "avatar"
+  },
+  {
+    "key": "songnuanyang",
+    "page_url": "https://www.douyu.com/6151194",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260926/6151194_src_1831.avif/dy4",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/songnuanyang/broadcast-20260926.jpg",
+    "sha256": "b1f00a3819f5c2dab6007d19cb638537dd55ff4c77aff4dc4c8c6e3a69fbba8d",
+    "kind": "broadcast"
+  },
+  {
+    "key": "songnuanyang",
+    "page_url": "https://www.douyu.com/6151194",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202605/8738eb45219b46338cdf6e16ceb5fd97_big.jpg",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/songnuanyang/avatar-20260926.jpg",
+    "sha256": "b3d59d584f08692e61c1c4499b164f4ded76b55fec8c31770e254464077d65eb",
+    "kind": "avatar"
+  },
+  {
+    "key": "xiaogui",
+    "page_url": "https://www.douyu.com/9765366",
+    "image_url": "https://rpic.douyucdn.cn/asrpic/260926/9765366_src_0052.avif/dy4",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaogui/broadcast-20260926.jpg",
+    "sha256": "d8fd253b23a690d22481996de604195fcea640d02a9410bfb836907da77decbb",
+    "kind": "broadcast"
+  },
+  {
+    "key": "xiaogui",
+    "page_url": "https://www.douyu.com/9765366",
+    "image_url": "https://apic.douyucdn.cn/upload/avatar_v3/202512/ccb175428eb445dd8b983598e5f4a942_big.jpg",
+    "local_path": "G:/CODE/afei-xcpedition/art/references/2026-09-26-likeness/xiaogui/avatar-20260926.jpg",
+    "sha256": "b6c056e966513ef7214576e0029e9a8323e57fd738d32bd1381e859679b9e99e",
+    "kind": "avatar"
+  }
+]
