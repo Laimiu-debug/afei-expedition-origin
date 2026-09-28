@@ -1,0 +1,242 @@
+{
+  "version": "0.1.0-dlc",
+  "minimum_base": "0.24.0 / internal 29",
+  "base_preload_sha256": "cced2a889322176227d94d0bcfd0de09dfa8d7f4701ece3a0b8b780474e97b2d",
+  "base_package_sha256": "109dbe4d0df3c1de467d70e3853c768bea840b006631a0d6e2afaff3ccd89b8b",
+  "package_sha256": "405375d2b987060b7cf4b69cf5bb5d7eb9af6c67cc98a64f6caca7b343e9b3dc",
+  "crc_and_source_match": true,
+  "entries": [
+    "brushes/afeix_dlc_xiwen_regen.brush",
+    "gfx/afeix_dlc_xiwen_regen.png",
+    "scripts/!mods_preload/mod_afeix_dlc_xiwen_regen.nut",
+    "scripts/items/accessory/afeix_regen_item.nut",
+    "scripts/mods/afeix_dlc_xiwen_regen/content.nut",
+    "scripts/mods/afeix_dlc_xiwen_regen/hooks.nut",
+    "scripts/mods/afeix_dlc_xiwen_regen/pet.nut",
+    "scripts/skills/backgrounds/afeix_xiwen_background.nut"
+  ],
+  "art": {
+    "export": {
+      "key": "xiwen",
+      "name": "希文",
+      "form": "default",
+      "brush": "afeix_p04_xiwen",
+      "source": "dlc/xiwen-regen/art/sources/xiwen.png",
+      "source_kind": "generated_custom",
+      "source_sha256": "9d947def15c6f006add6ac8faf0e9526e6d027b5acebdf8dad33a37b966264bd",
+      "source_size": [
+        1196,
+        1315
+      ],
+      "source_box": null,
+      "alpha_crop_box": [
+        97,
+        55,
+        1096,
+        1278
+      ],
+      "alpha_threshold": 20,
+      "resized_size": [
+        82,
+        100
+      ],
+      "uniform_scale": 0.08176614881439084,
+      "placement": [
+        16,
+        42
+      ],
+      "output_size": [
+        114,
+        142
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "live_png_sha256": "67362b42ba00fdd20667927bee94c3caceb25e204f05551bcf091ff6ad0206f0",
+      "head_png_sha256": "fc3f95337a9c77c501bcb967043c81bad8607b87bf1715c856633469f809a71a",
+      "dead_png_sha256": "99156e098ead4bfb6a8d788e2f0a8c20e4e3101ade9563a58a0238ed27ce7a13",
+      "corpse_head_png_sha256": "fc3f95337a9c77c501bcb967043c81bad8607b87bf1715c856633469f809a71a",
+      "corpse_head_geometry": {
+        "left": -62,
+        "right": 52,
+        "top": -30,
+        "bottom": 112,
+        "width": 114,
+        "height": 142,
+        "offsetX": 0,
+        "offsetY": 0
+      },
+      "corpse_neck_anchor": [
+        62,
+        112
+      ],
+      "partition": "reviewed_neck_contour",
+      "head_seam": [
+        [
+          0,
+          111
+        ],
+        [
+          40,
+          111
+        ],
+        [
+          54,
+          117
+        ],
+        [
+          66,
+          123
+        ],
+        [
+          75,
+          114
+        ],
+        [
+          88,
+          111
+        ],
+        [
+          114,
+          111
+        ]
+      ],
+      "neck_guard": [
+        62,
+        112
+      ],
+      "split_reconstructs_complete_portrait": true,
+      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "metadata": [
+        {
+          "id": "afeix_p04_xiwen",
+          "img": "sprites\\afeix_p04_xiwen.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-51",
+          "bottom": "91",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_xiwen_head",
+          "img": "sprites\\afeix_p04_xiwen_head.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-51",
+          "bottom": "91",
+          "width": "114",
+          "height": "142",
+          "offsetY": "35"
+        },
+        {
+          "id": "afeix_p04_xiwen_dead",
+          "img": "sprites\\afeix_p04_xiwen_dead.png",
+          "left": "-57",
+          "right": "57",
+          "top": "-71",
+          "bottom": "71",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        },
+        {
+          "id": "afeix_p04_xiwen_corpse_head",
+          "img": "sprites\\afeix_p04_xiwen_corpse_head.png",
+          "left": "-62",
+          "right": "52",
+          "top": "-30",
+          "bottom": "112",
+          "width": "114",
+          "height": "142",
+          "offsetX": "0",
+          "offsetY": "0"
+        }
+      ],
+      "review_note": "Reference-photo likeness; intact jaw and neck; native armor and helmet overlays reviewed."
+    },
+    "roundtrip": {
+      "passed": true,
+      "sprite_count": 4,
+      "sprites": [
+        {
+          "id": "afeix_p04_xiwen",
+          "coordinates_identical": true,
+          "pixels_identical": true
+        },
+        {
+          "id": "afeix_p04_xiwen_head",
+          "coordinates_identical": true,
+          "pixels_identical": true
+        },
+        {
+          "id": "afeix_p04_xiwen_dead",
+          "coordinates_identical": true,
+          "pixels_identical": true
+        },
+        {
+          "id": "afeix_p04_xiwen_corpse_head",
+          "coordinates_identical": true,
+          "pixels_identical": true
+        }
+      ],
+      "brush": "package/brushes/afeix_dlc_xiwen_regen.brush",
+      "brush_sha256": "f5175a27fa41d4898949cbb7cc8f7324f0d934977d455fa3a3908b9cd8060382",
+      "atlas": "package/gfx/afeix_dlc_xiwen_regen.png",
+      "atlas_sha256": "2ffa48ebc339eecdca46e0c3b877a5009c5358bfb9fb21e13c2426aed67352df",
+      "pack_log": "Loading images...\nsprites\\afeix_p04_xiwen.png\nsprites\\afeix_p04_xiwen_head.png\nsprites\\afeix_p04_xiwen_dead.png\nsprites\\afeix_p04_xiwen_corpse_head.png\nPacking rectangles...\nWriting gfx/afeix_dlc_xiwen_regen.png (512x256)...\n",
+      "unpack_log": "Opening gfx/afeix_dlc_xiwen_regen.png...\nsprites\\afeix_p04_xiwen.png\nsprites\\afeix_p04_xiwen_head.png\nsprites\\afeix_p04_xiwen_dead.png\nsprites\\afeix_p04_xiwen_corpse_head.png\n"
+    }
+  },
+  "validation": {
+    "tests": [
+      {
+        "test": "test_native_recruitment",
+        "assertions": 130,
+        "log": "TESTS_PASSED=130\r\n"
+      },
+      {
+        "test": "test_roster_groups",
+        "assertions": 44,
+        "log": "TESTS_PASSED=44\r\n"
+      },
+      {
+        "test": "test_appearance",
+        "assertions": 2099,
+        "log": "ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=2099\r\n"
+      },
+      {
+        "test": "test_backgrounds",
+        "assertions": 856,
+        "log": "TESTS_PASSED=856\r\n"
+      },
+      {
+        "test": "test_endings",
+        "assertions": 202,
+        "log": "ALL_ENDING_CHECKS_PASS\r\nTESTS_PASSED=202\r\n"
+      },
+      {
+        "test": "dlc_native_background_persistence",
+        "assertions": 881,
+        "log": "TESTS_PASSED=881\r\n"
+      },
+      {
+        "test": "dlc_native_recruitment_and_start",
+        "assertions": 32,
+        "log": "TESTS_PASSED=32\r\n"
+      },
+      {
+        "test": "dlc_native_pet_lifecycle",
+        "assertions": 13,
+        "log": "TESTS_PASSED=13\r\n"
+      }
+    ],
+    "scripts_compiled": 6,
+    "base_path_collisions": [],
+    "native_equipment_paths_passed": true,
+    "in_game_tested": false
+  }
+}
