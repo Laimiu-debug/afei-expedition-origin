@@ -1,0 +1,30 @@
+{
+  "verified_at": "2026-09-29T15:13:34.195433+00:00",
+  "detail_url": "https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "download_url": "https://bbmod.site/files/b0d85f1f-88be-414e-99fd-d16017970516/download/",
+  "release_id": "b0d85f1f-88be-414e-99fd-d16017970516",
+  "version": "0.28.2",
+  "sha256": "c325681e3a89a066c02a8a727973fc397fe1281eb89cb6682a9d2fde38eeaa9c",
+  "size": 3678912,
+  "entries": 284,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200,
+    "previous_download": 200,
+    "dlc_download": 200
+  },
+  "source_bytes_match": true,
+  "dlc_version": "0.2.4",
+  "dlc_sha256_unchanged": "906e9713acf65635fe546654bc7c3a228324c5c1e48b1031896d2c0580316ba4",
+  "catalog_and_notes_match": true,
+  "download_bytes_match": true,
+  "crc_passed": true,
+  "internal_version": 52,
+  "download_content_disposition": "attachment; filename=\"mod_afeix_expedition.zip\"",
+  "previous_version": "0.27.6",
+  "previous_sha256_unchanged": "93dad4c4f7db75b552c5870bee90ad5856059d476e51b18c29e1f59fb785ed48",
+  "backup": "/srv/data/backups/afeix-pre-v0.28.2-20260929T151312866251Z.sqlite3",
+  "engine_test_evidence": "build/net-startup-20260929/engine-test.json",
+  "in_game_tested_scope": "v0.28.2 changes not tested in game; inherited net decapitation fix was tested in v0.27.6"
+}

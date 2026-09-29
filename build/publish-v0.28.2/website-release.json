@@ -36,13 +36,9 @@
     "save_impact": "yes",
     "seed_impact": "unknown",
     "compatibility_notes": "本版请新开战役。人物平衡、招募与事件按新战役验收，不承诺完整旧档迁移。\n\n安装前完全退出游戏。网站下载名为 mod_afeix_expedition.zip，直接放入游戏 data 文件夹，不要解压；替换同名旧包，并移走此前所有带版本号的本 Mod 旧包，一次只保留一份。也可将下载文件命名为 mod_afeix_expedition v0.28.2.zip。\n\n需要 Legacy Modding Script Hooks（mod_hooks）以及声明的本体与官方 DLC，新建战役选择“阿飞远征团”。希文与里根儿 DLC 0.2.4 为独立可选扩展，可继续搭配本版，无需重复安装多份 DLC。\n\n请在安全的世界地图按 F8 打开黑旗名册。招募需到白天的非敌对普通村庄或城镇，军事城堡与要塞不适用；最早开放日期不保证立即展示，也不免除其他门槛或费用。握把需等待商店自然补货。\n\n未验证与 Legends、Reforged 等大型改动队伍、属性或界面的 MOD 兼容；不要同时加载旧工程或阿飞胸像试验资源。保留 mod_fox_043 招募显示兼容。本版新增玩法通过离线检查，尚未完成实机战役验收。",
-    "mod_ids": [
-      "mod_afeix_expedition"
-    ],
-    "requires": [
-      "mod_hooks"
-    ],
-    "conflicts": [],
+    "mod_ids": "mod_afeix_expedition",
+    "requires": "mod_hooks",
+    "conflicts": "",
     "original_author": "Laimiu",
     "install_name": "mod_afeix_expedition.zip"
   },

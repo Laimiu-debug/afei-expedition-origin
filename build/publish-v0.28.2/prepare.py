@@ -21,6 +21,9 @@ validation = json.loads((root / 'build/gameplay-validation.json').read_text(enco
 assert validation['syntax_passed'] and validation['behavior_tests_passed']
 assert sum(test['assertions'] for test in validation['tests']) == 30038
 mod = {key: before['metadata'].get(key, value) for key, value in previous['mod'].items()}
+for key in ('mod_ids', 'requires', 'conflicts'):
+    if isinstance(mod[key], list):
+        mod[key] = '\n'.join(mod[key])
 mod['summary'] = 'v0.28.2 汇总招募节奏与候选轮换、老马握把穿甲与美术、普通人物四派称号更新。34 人起源，最多 12 人出战、40 人在册；独立随机来客，希文 DLC 共用队列。请新开战役。'
 mod['description'] = '''v0.28.2 累计更新：刀一前十天分批开放补员，刀二与飞团整体提前六天；常规候选首次保留四日、重逢两日，新面孔优先并照顾等待较久的回流成员。修复老马握把实际攻击穿甲，更新持握美术与价值，并加入普通人物四派随机称号。请新开战役。
 

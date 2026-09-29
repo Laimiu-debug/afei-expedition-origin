@@ -2,7 +2,7 @@
 
 阿飞主题的《战场兄弟》独立公司起源项目，目标环境为 PC 原版与官方 DLC。
 
-v0.28.2 本地更新：**候选首次停留4日、重逢2日，新面孔优先并照顾等待较久的回流成员**。同批达标按解锁日期排序，单个人物生成失败不再挡住后续候选；保留既定招募日期、独立随机来客和握把穿甲修复。[本地安装包](<dist/mod_afeix_expedition v0.28.2.zip>) · [队列规则与验证](docs/releases/v0.28.2.md)。
+v0.28.2 已发布至 BBMOD：**候选首次停留4日、重逢2日，新面孔优先并照顾等待较久的回流成员**。同批达标按解锁日期排序，单个人物生成失败不再挡住后续候选；包含网站 v0.27.6 之后的招募日期、独立随机来客、握把穿甲与美术、四派称号全部更新。30,038 条离线断言通过，公开下载与本地包及 284 个源码文件一致。[公开下载](https://bbmod.site/files/b0d85f1f-88be-414e-99fd-d16017970516/download/) · [本地安装包](<dist/mod_afeix_expedition v0.28.2.zip>) · [队列规则与验证](docs/releases/v0.28.2.md) · [发布记录](docs/releases/publication-0.28.2.md)。
 
 v0.28.1 本地修复：**老马的垂直握把70%穿甲接入实际攻击**。猛击使用70%，无额外修正时提示最多98点无视护甲；横扫保留原版低10个百分点的区别，使用60%。[本地安装包](<dist/mod_afeix_expedition v0.28.1.zip>) · [修复说明](docs/releases/v0.28.1.md)。
 
@@ -48,13 +48,13 @@ v0.24.0 名单更正（2026-09-28）：删除陈知含后共 **34 人**；宋暖
 
 文案修订：[酒馆、信件与留言](docs/playtest-tavern-text.md)。六段相遇与回应已改用具体对话，保留现有触发顺序和奖励，已随 v0.22.0 发布。
 
-公开下载：[BBMOD v0.27.6 试玩版](https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [直接下载 ZIP](https://bbmod.site/files/c6947252-4944-47ae-8a19-486a4ce4572d/download/) · [安装与更新说明](docs/releases/v0.27.6.md) · [网站发布记录](docs/releases/publication-0.27.6.md)。[GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.16.1) 暂仍为 v0.16.1。
+公开下载：[BBMOD v0.28.2 试玩版](https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [直接下载 ZIP](https://bbmod.site/files/b0d85f1f-88be-414e-99fd-d16017970516/download/) · [安装与更新说明](docs/releases/v0.28.2.md) · [网站发布记录](docs/releases/publication-0.28.2.md)。[GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.16.1) 暂仍为 v0.16.1。
 
 独立扩展：[希文与里根儿 DLC 0.2.4](https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/) · [下载 DLC .zip](https://bbmod.site/files/15448fbf-9143-4b3f-910e-945ede087581/download/)。战犬里根儿随黑旗启程，怀念在环世界动物园与飞碟共度的日子。开局在队伍仓库查看，战前给一名队员装备即可释放。需与主包一起安装并新开战役；希文第35日起满足全部门槛后进入招募队列。见[DLC 安装说明](dlc/xiwen-regen/README.md)。
 
 打包命名：后续分发压缩包均带版本号，**主包、DLC 和素材包的文件后缀统一使用小写 `.zip`**。先更新根目录 `VERSION`，再执行 `python tools/build_gameplay.py`，生成 `dist/mod_afeix_expedition v<版本>.zip` 和同名 `.sha256`；安装时将带版本号的 ZIP 直接放入游戏 `data` 目录，并移走此前的本 Mod 旧包。五款旗帜已集成，世界地图按 F8 → 战团事务 → 更换旗帜。
 
-当前本地工作区为 **v0.28.2**，BBMOD 主包仍为 **v0.27.6**。v0.28.2 优化候选轮换，保留 v0.28.1 的握把穿甲修复和 v0.28.0 的招募时间表，验证见[更新说明](docs/releases/v0.28.2.md)。v0.27.6 的网后断头崩溃已实机复现并复测至下一回合，完整战役与大地图帧耗时仍待验收。请按新建战役验收，希文与里根儿为独立可选 DLC 0.2.4。保留 v0.23.2 的解网后技能回调修复：[修复与验证](docs/playtest-0.23.2.md)。
+当前本地工作区与 BBMOD 主包均为 **v0.28.2**。v0.28.2 优化候选轮换，保留 v0.28.1 的握把穿甲修复和 v0.28.0 的招募时间表，验证见[更新说明](docs/releases/v0.28.2.md)。本版新增玩法尚未实机战役验收；v0.27.6 的网后断头崩溃曾实机复现并复测至下一回合，完整战役与大地图帧耗时仍待验收。请按新建战役验收，希文与里根儿继续使用独立可选 DLC 0.2.4。保留 v0.23.2 的解网后技能回调修复：[修复与验证](docs/playtest-0.23.2.md)。
 
 保留 v0.23.1 的招募属性显示 Mod（`mod_fox_043`）兼容修复，解决人物已解锁却不生成的问题，保留属性显示功能。当前主题招募有3个常规位置和2个独立随机来客位置；常规位置在雇佣后间隔1个游戏日补人，首次展示4日、重逢2日。普通中立村庄也能招募，入口为原版雇佣新兵的人物列表；修正空佣兵池隐藏招募入口，以及额外送信干扰普通契约供给的问题。[招募更新](docs/playtest-0.23.md) · [全部解锁条件](docs/design/recruit-unlocks.md)。
 
