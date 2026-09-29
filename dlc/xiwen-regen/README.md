@@ -1,6 +1,6 @@
 # DLC：希文与里根儿 · 0.2.4
 
-0.2.4 本地更新：里根儿介绍中的“老动物园”改为“动物园”。仓库发放与其他玩法不变，5,612 条离线断言通过；已同步本机安装，尚未发布网站或实机验收。见[本轮处理与验证](../../docs/releases/v0.27.6.md)。
+0.2.4 已发布至 BBMOD：里根儿介绍中的“老动物园”改为“动物园”。仓库发放与其他玩法不变，5,612 条离线断言通过；已同步本机安装，DLC 宠物流程尚未实机验收。见[本轮处理与验证](../../docs/releases/v0.27.6.md)和[网站发布记录](../../docs/releases/publication-dlc-xiwen-regen-0.2.4.md)。
 
 0.2.3 将战犬统一命名为「里根儿」，更新战犬、项圈、起源与相关剧情介绍，加入与飞碟在环世界动物园共度时光的回忆。已发布至 BBMOD 并同步本机安装，详见[更新与发布记录](../../docs/releases/publication-dlc-xiwen-regen-0.2.3.md)。本版需要重启游戏并新开战役，尚未实机验收。
 
@@ -26,10 +26,10 @@
 - [完整头像源图](art/sources/xiwen.png)
 - [生图提示词与参考说明](art/PROMPT.md)
 - [本地 DLC 0.2.4 包](<dist/mod_afeix_dlc_xiwen_regen v0.2.4.zip>)
-- [网站下载 DLC](https://bbmod.site/files/36246621-72ec-4be7-a96b-f3a315968188/download/) · [主包下载页](https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [网站发布记录](../../docs/releases/publication-dlc-xiwen-regen-0.2.3.md)
+- [网站下载 DLC](https://bbmod.site/files/15448fbf-9143-4b3f-910e-945ede087581/download/) · [主包下载页](https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [网站发布记录](../../docs/releases/publication-dlc-xiwen-regen-0.2.4.md)
 - [构建、测试及校验报告](report.json)
 
-DLC 加载器最低依赖阿飞远征团 **v0.26.2（内部版本 36）**及主包使用的 Legacy Modding Script Hooks；当前安装请使用修复人物背景的 **v0.27.5 或更新版**。准备试玩时，将主包 ZIP 与本 DLC ZIP 一起放入游戏 `data` 目录，保持 ZIP 原样、后缀小写 `.zip`，主包和 DLC 各只保留一个版本。DLC ZIP 只有八个新增文件，不覆盖主包文件；不能用它代替完整主包。
+DLC 加载器最低依赖阿飞远征团 **v0.26.2（内部版本 36）**及主包使用的 Legacy Modding Script Hooks；当前安装请使用修复断头崩溃的 **v0.27.6 或更新版**。准备试玩时，将主包 ZIP 与本 DLC ZIP 一起放入游戏 `data` 目录，保持 ZIP 原样、后缀小写 `.zip`，主包和 DLC 各只保留一个版本。DLC ZIP 只有八个新增文件，不覆盖主包文件；不能用它代替完整主包。
 
 起源说明中会显示「里根儿同行」。开新战役后查看队伍仓库，给一名队员装备里根儿后可在战斗中释放。希文满足全部门槛后进入合格城镇候选。DLC 存档需要继续保留本扩展及主包，以便加载新增背景和战犬物品类。
 

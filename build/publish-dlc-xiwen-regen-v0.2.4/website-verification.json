@@ -1,0 +1,26 @@
+{
+  "verified_at": "2026-09-29T10:32:30.950292+00:00",
+  "detail_url": "https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/",
+  "download_url": "https://bbmod.site/files/15448fbf-9143-4b3f-910e-945ede087581/download/",
+  "release_id": "15448fbf-9143-4b3f-910e-945ede087581",
+  "version": "0.2.4",
+  "sha256": "906e9713acf65635fe546654bc7c3a228324c5c1e48b1031896d2c0580316ba4",
+  "size": 26882,
+  "entries": 8,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200,
+    "previous_download": 200
+  },
+  "catalog_and_notes_match": true,
+  "download_bytes_match": true,
+  "crc_passed": true,
+  "internal_version": 5,
+  "download_content_disposition": "attachment; filename=\"mod_afeix_dlc_xiwen_regen.zip\"",
+  "previous_version": "0.2.3",
+  "previous_sha256_unchanged": "699715f87828a52f6679c1dc0ad09ec86ed7b2c26eb7da1ac66e4313cbdb75c3",
+  "backup": "/srv/data/backups/afeix-pre-v0.2.4-20260929T103144027651Z.sqlite3",
+  "engine_test_evidence": null,
+  "in_game_tested_scope": "DLC pet lifecycle not tested in game"
+}
