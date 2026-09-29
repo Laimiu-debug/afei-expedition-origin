@@ -1,0 +1,24 @@
+info">  18:08:50  SQ  AFEIX_NET_TEST registered; Scenarios > first entry
+info">  18:09:17  SQ  AFEIX_NET_TEST READY F7; thrower=855 victim=856 enemy=858
+debug">  18:09:17  SQ  INFO: Next round issued: 1
+debug">  18:09:17  SQ  Turn started for TEST afei
+info">  18:09:44  SQ  AFEIX_NET_TEST THROW_BEGIN
+info">  18:09:44  SQ  [AfeixExpedition] Net action begin: actives.throw_net
+info">  18:09:44  SQ  [AfeixExpedition] Net action end: actives.throw_net result=true
+info">  18:09:44  SQ  AFEIX_NET_TEST THROW_END result=true rooted=true
+info">  18:09:45  SQ  AFEIX_NET_TEST ESCAPE_BEGIN
+info">  18:09:45  SQ  [AfeixExpedition] Net action begin: actives.break_free
+info">  18:09:45  SQ  [AfeixExpedition] Net action end: actives.break_free result=false
+info">  18:09:45  SQ  AFEIX_NET_TEST ESCAPE_END result=false rooted=true
+info">  18:09:46  SQ  AFEIX_NET_TEST ATTACK_BEGIN rooted=true victim_hp=1
+info">  18:09:46  SQ  AFEIX_NET_TEST DEATH_BEGIN TEST damou fatality=1
+info">  18:09:46  SQ  AFEIX_NET_TEST DEATH_END TEST damou
+info">  18:09:46  SQ  AFEIX_NET_TEST ATTACK_END result=true victim_alive=false
+info">  18:09:48  SQ  AFEIX_NET_TEST POST_ATTACK alive=false dying=true combat_active=true
+info">  18:09:48  SQ  AFEIX_NET_TEST NEXT_TURN_REQUESTED
+debug">  18:10:08  SQ  Turn started for TEST mocha
+debug">  18:10:16  SQ  Turn started for NETTED HEADSHOT TEST ENEMY
+info">  18:10:17  SQ  [AfeixExpedition] Net action begin: actives.break_free
+info">  18:10:17  SQ  [AfeixExpedition] Net action end: actives.break_free result=true
+debug">  18:10:18  SQ  INFO: Next round issued: 2
+debug">  18:10:18  SQ  Turn started for TEST afei

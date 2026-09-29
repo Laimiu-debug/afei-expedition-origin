@@ -297,6 +297,7 @@ def validate(sq, game):
                        'scripts/skills/skill.cnut',
                        'scripts/skills/skill_container.cnut',
                        'scripts/skills/actives/break_free_skill.cnut',
+                       'scripts/skills/actives/throw_net.cnut',
                        'scripts/skills/effects/net_effect.cnut',
                        'scripts/ai/tactical/behaviors/ai_break_free.cnut',
                        'scripts/skills/backgrounds/character_background.cnut',

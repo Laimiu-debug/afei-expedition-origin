@@ -958,7 +958,7 @@
   "scripts": [
     {
       "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
-      "sha256": "0435175f9a8a19a9b8f0858aec1aaf885450e61307c8f1e80c3ebd6ad803bffb"
+      "sha256": "d8ee0718a5afe0f94bf21d0798a3a97db1ac1cde96c70d03ec4dd87a69b15ad2"
     },
     {
       "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
@@ -998,7 +998,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/art_hooks.nut",
-      "sha256": "7a72ef3fa6ee5a4c02d0cd011148613a1171bf60451c9b47c7f5f677f173c6b3"
+      "sha256": "b1b5bad37bfbe5588e107e4a42d25fbec2afca42e420b9d1b81de5d63c035c84"
     },
     {
       "path": "src/scripts/mods/afeix/background_data.nut",
@@ -1146,7 +1146,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/member_catalog_hooks.nut",
-      "sha256": "aebc366cf4032270cc4bf018cb8d63b282831439a919b23925fb01f261dd8bc8"
+      "sha256": "7d5979f8d6c7f9edd61fe33caeedef491e2b00004a0896299e7a84d250dacd34"
     },
     {
       "path": "src/scripts/mods/afeix/member_skill_hooks.nut",
@@ -1206,7 +1206,7 @@
     },
     {
       "path": "src/scripts/scenarios/world/afeix_expedition_scenario.nut",
-      "sha256": "721be927d1b5c70f577b2b4049c8ee074b672c1aa09a2ef072d3b619a13387b7"
+      "sha256": "7c77ceeb71da7688057b535469b4d65085a62451e25f8536dcfb3f4ad04d3908"
     },
     {
       "path": "src/scripts/skills/actives/afeix_catalog_active.nut",
@@ -1615,8 +1615,8 @@
   "tests": [
     {
       "file": "tests/gameplay/test_appearance.nut",
-      "assertions": 2107,
-      "log": "ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=2107\r\n"
+      "assertions": 2763,
+      "log": "ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=2763\r\n"
     },
     {
       "file": "tests/gameplay/test_backgrounds.nut",
@@ -1715,8 +1715,8 @@
     },
     {
       "file": "tests/gameplay/test_native_break_free.nut",
-      "assertions": 115,
-      "log": "TESTS_PASSED=115\r\n"
+      "assertions": 195,
+      "log": "TESTS_PASSED=195\r\n"
     },
     {
       "file": "tests/gameplay/test_native_contract_supply.nut",
@@ -1792,6 +1792,11 @@
       "file": "tests/gameplay/test_starting_budget.nut",
       "assertions": 27,
       "log": "TESTS_PASSED=27\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_startup_pathfinding.nut",
+      "assertions": 154,
+      "log": "TESTS_PASSED=154\r\n"
     },
     {
       "file": "tests/gameplay/test_story_progress.nut",

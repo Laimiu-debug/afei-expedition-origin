@@ -136,6 +136,10 @@ local makeBrother = function(key = "afei", zombie = false) {
             if (!app.HideHair && this.sprites.hair.HasBrush) layers.append(this.sprites.hair.brush + "_dead");
             if (app.HelmetCorpse != "") layers.append(app.HelmetCorpse);
             this.flyingHeads = layers;
+            if (tile != null && fatality == "decapitated") {
+                check(layers.len() > 0, "native spawnHeadEffect must never receive an empty layer list");
+                foreach (brush in layers) check(::doesBrushExist(brush), "decapitation uses an existing native brush: " + brush);
+            }
             this.onUpdateInjuryLayer();
             if (fatality == "throw") throw "native_death_error";
             local all = {}, originalID = this.id;
@@ -264,7 +268,7 @@ try {
         local items = dead.getItems(), tileItems = tile.Properties.get("Items");
         check(dead.onDeath("killer", "skill", tile, fatality) == "death_result" && dead.deathCalls == 1
             && dead.lastArgs[0] == "killer" && dead.lastArgs[1] == "skill" && dead.lastArgs[2] == tile && dead.lastArgs[3] == fatality, "death dispatcher preserves original args and single native invocation: " + fatality);
-        check(dead.flyingHeads.len() == (fatality == "decapitated" ? 1 : 0), "only native helmet remains in decapitation: " + fatality);
+        check(dead.flyingHeads.len() == (fatality == "decapitated" ? 4 : 0), "decapitation retains native head and equipment layers: " + fatality);
         local hasCustom = fatality == "normal" || fatality == "unconscious";
         check(tile.cleared.len() == 0 && tile.details[0].brush == "old-corpse" && tile.details[1].brush == "fire-effect"
             && tile.details[2].brush == "bust_native_body_dead" && tile.details[3].brush == "native_armor_dead", "native body armor and pre-existing ground details retained: " + fatality);
@@ -272,7 +276,7 @@ try {
             && tile.details[5].brush == "native_helmet_dead", "custom head rendered above body below helmet: " + fatality);
         else foreach (detail in tile.details) check(detail.brush != "afeix_p04_xiaogui_corpse_head", "fatality cannot regrow a head: " + fatality);
         local corpse = tile.Properties.get("Corpse");
-        check(corpse.Custom.Body == "afeix_p04_xiaogui", "corpse preserves resurrection identity");
+        check(corpse.Custom.Body == (fatality == "decapitated" ? "bust_native_body" : "afeix_p04_xiaogui"), "resurrectable corpse preserves portrait identity; decapitation remains native");
         check(corpse.Items == items && corpse.Armor == 140 && tile.Properties.get("Items") == tileItems
             && corpse.IsResurrectable == (fatality == "normal") && corpse.IsConsumable == (fatality != "unconscious"), "native drop corpse and fatality data are preserved: " + fatality);
         local stub = casualties.top();
@@ -289,9 +293,24 @@ try {
                 && revived.sprites.head.brush == "afeix_p04_xiaogui_head" && !revived.sprites.hair.Visible, "native resurrection retains items and XP while custom head survives");
             revived.onUpdateInjuryLayer(); check(revived.injuryCalls == 0, "revived portrait hides native zombie injury parts");
             local again = makeTile(); revived.onDeath("killer", "skill", again, "decapitated");
-            check(revived.flyingHeads.len() == 1 && again.details[2].brush == "bust_native_body_dead"
-                && again.Properties.get("Corpse").Items == revived.getItems(), "resurrected member dies again without native head or altered items");
+            check(revived.flyingHeads.len() > 0 && again.details[2].brush == "bust_native_body_dead"
+                && again.Properties.get("Corpse").Items == revived.getItems(), "resurrected member decapitates with valid head layers and unchanged items");
         }
+    }
+    // Live reproduction: netted enemy failed to break free, then decapitated an
+    // unhelmeted member. The old portrait masks passed [] to spawnHeadEffect.
+    foreach (key in A.CharacterOrder) foreach (zombie in [false, true]) {
+        local dead = makeBrother(key, zombie), floor = makeTile();
+        if (zombie) dead.onResurrected({ Custom = { Body = "bust_native_body" }, Items = dead.getItems() });
+        else dead.onInit();
+        local app = dead.getItems().getAppearance(); app.HelmetCorpse = "";
+        dead.sprites.hair.resetBrush(); dead.sprites.beard.resetBrush(); dead.sprites.beard_top.resetBrush();
+        local items = dead.getItems();
+        dead.onDeath("netted_enemy", "slash", floor, "decapitated");
+        check(dead.flyingHeads.len() == 1 && dead.flyingHeads[0] == "native_head_dead",
+            key + " unhelmeted bald decapitation still has a valid head layer");
+        check(dead.getItems() == items && dead.deathCalls == 1 && !A.isCharacterArtSuspended(dead),
+            key + " decapitation preserves items and releases art suspension");
     }
     currentRoute = "normal";
     foreach (nativeFlip in [false, true]) {

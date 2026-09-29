@@ -136,7 +136,7 @@ def main():
 
     packages = [
         (ROOT / base['package'], ROOT / 'src', base['sha256'], base['entries']),
-        (ROOT / 'dlc/xiwen-regen/dist/mod_afeix_dlc_xiwen_regen v0.2.2.zip',
+        (ROOT / 'dlc/xiwen-regen/dist/mod_afeix_dlc_xiwen_regen v0.2.4.zip',
          ROOT / 'dlc/xiwen-regen/src', dlc['package_sha256'], dlc['entries']),
     ]
     checked = []

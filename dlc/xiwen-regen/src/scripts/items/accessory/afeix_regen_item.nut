@@ -4,11 +4,11 @@ this.afeix_regen_item <- this.inherit("scripts/items/accessory/wardog_item", {
     function create() {
         this.wardog_item.create();
         this.m.ID = "accessory.afeix_regen";
-        this.m.Name = "里根";
-        this.m.Description = "阿飞的狗里根。从黑旗启程的第一天起，它就陪在阿飞身边。开局若阿飞的饰品栏已被电子烟等物品占用，里根会在队伍仓库等候。战前给一名队员装备里根，战斗中可放到相邻空地；存活时会在战后回来。请照看好它，里根也会在战斗中阵亡。";
+        this.m.Name = "里根儿";
+        this.m.Description = "阿飞的战犬里根儿。赶路时爱绕着队伍撒欢，歇脚时总要挨着阿飞的靴子趴下。平日里一块肉干就能哄得尾巴打转，真有人冲向阿飞，它却比谁都先露出牙。他很怀念在环世界动物园中与飞碟一起度过的日子，一步一步，不忘来时路。";
     },
     function getName() { return this.isUnleashed() ? this.m.Name + "的项圈" : this.m.Name; },
     function getDescription() {
-        return this.isUnleashed() ? "里根已经进入战场。这是它留下的项圈；它活着回来时，会重新回到同行者身边。" : this.m.Description;
+        return this.isUnleashed() ? "里根儿已经冲进战场，留下这条磨得发亮的旧项圈。铜扣上还有几道牙印，前头正传来它熟悉的犬吠。阿飞把绳头攥在手里，等那个爱蹭裤脚的小家伙回来。" : this.m.Description;
     }
 });

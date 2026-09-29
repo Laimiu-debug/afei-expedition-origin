@@ -48,7 +48,12 @@ local hookPortraitActor = function(o) {
     local onDeath = ::mods_getMember(o, "onDeath");
     overrideArtMember(o, "onDeath", function(killer, skill, tile, fatalityType) {
         local A = ::AfeixExpedition, brush = A.characterPortraitBrush(this);
-        if (brush == null || !A.hasPortraitArt(this, brush) || !A.hasCorpseHeadArt(brush)) {
+        // Native decapitation always calls spawnHeadEffect. Hiding every face,
+        // hair and beard layer leaves an empty array on helmetless members and
+        // corrupts the native effect (the crash can surface later in loot drop).
+        // Restore the native head for this fatality before entering onDeath.
+        if (fatalityType == ::Const.FatalityType.Decapitated || brush == null
+            || !A.hasPortraitArt(this, brush) || !A.hasCorpseHeadArt(brush)) {
             if (brush == null) return onDeath.bindenv(this)(killer, skill, tile, fatalityType);
             local depth = "afeixArtSuspendDepth" in this.m ? this.m.afeixArtSuspendDepth : 0;
             this.m.afeixArtSuspendDepth <- depth + 1;

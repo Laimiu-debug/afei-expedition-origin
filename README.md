@@ -2,6 +2,8 @@
 
 阿飞主题的《战场兄弟》独立公司起源项目，目标环境为 PC 原版与官方 DLC。
 
+v0.27.6 本地修复版：实机复现并修复“被网敌人挣脱失败后，断头击杀未戴头盔伙伴导致崩溃”；修复后死亡、掉落、AI 解网和第 2 回合均正常。减少开局出生点重复寻路，配套 DLC 0.2.4 将里根儿介绍中的“老动物园”改为“动物园”。主包 29,739 条、DLC 5,612 条离线断言通过；大地图停顿尚无实机耗时对照。[处理与验证](docs/releases/v0.27.6.md)。
+
 v0.27.5 已发布至 BBMOD：修复清理随机特质时误删人物背景，恢复背景图标、身份介绍与正常背景工资计算。固定特质和表格数值保持既定设置，**请替换主包并新开战役**。[主包下载](https://bbmod.site/files/553f6536-30b0-4671-938b-ce134c2a91dd/download/) · [更新说明](docs/releases/v0.27.5.md)。
 
 v0.27.4 已发布至 BBMOD：**老马的垂直握把**按指定固定为84～120伤害、70%穿甲、235%破甲、52破盾；保留单体追加削甲30和曹飞派领袖化身介绍。包含网站 v0.25.0 之后的人物平衡、特质、招募、技能与事件更新，**请新开战役**。[主包下载](https://bbmod.site/files/1fb0335a-8c51-4ca1-aa96-edc206bc1ec9/download/) · [本地包](<dist/mod_afeix_expedition v0.27.4.ZIP>) · [更新说明](docs/releases/v0.27.4.md)。
@@ -34,11 +36,11 @@ v0.24.0 名单更正（2026-09-28）：删除陈知含后共 **34 人**；宋暖
 
 公开下载：[BBMOD v0.27.5 试玩版](https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [直接下载 ZIP](https://bbmod.site/files/553f6536-30b0-4671-938b-ce134c2a91dd/download/) · [安装与更新说明](docs/releases/v0.27.5.md) · [网站发布记录](docs/releases/publication-0.27.5.md)。[GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.16.1) 暂仍为 v0.16.1。
 
-独立扩展：[希文与里根 DLC 0.2.2](https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/) · [下载 DLC .zip](https://bbmod.site/files/fdc0cfa3-878f-4058-8425-c610b9fcb6dd/download/)。修复电子烟占饰品栏导致里根漏发：保留电子烟，里根开局放入队伍仓库，战前给一名队员装备即可释放。需与主包一起安装并新开战役；希文第35日起满足全部门槛后进入招募队列。见[DLC 安装说明](dlc/xiwen-regen/README.md)。
+独立扩展：[希文与里根儿 DLC 0.2.3](https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/) · [下载 DLC .zip](https://bbmod.site/files/36246621-72ec-4be7-a96b-f3a315968188/download/)。战犬里根儿随黑旗启程，怀念在环世界动物园与飞碟共度的日子。开局在队伍仓库查看，战前给一名队员装备即可释放。需与主包一起安装并新开战役；希文第35日起满足全部门槛后进入招募队列。见[DLC 安装说明](dlc/xiwen-regen/README.md)。
 
 打包命名：后续分发压缩包均带版本号，**主包、DLC 和素材包的文件后缀统一使用小写 `.zip`**。先更新根目录 `VERSION`，再执行 `python tools/build_gameplay.py`，生成 `dist/mod_afeix_expedition v<版本>.zip` 和同名 `.sha256`；安装时将带版本号的 ZIP 直接放入游戏 `data` 目录，并移走此前的本 Mod 旧包。五款旗帜已集成，世界地图按 F8 → 战团事务 → 更换旗帜。
 
-当前本地工作区与 BBMOD 主包均为 **v0.27.5**。28,849 条离线断言通过，公开下载包与本地版本号包逐字节一致；网站下载名仍为固定的 `mod_afeix_expedition.zip`。本版请新开战役，不承诺旧存档迁移；本轮完整战役流程尚待实机验收。希文与里根为独立可选 DLC，本次仅发布主包。保留 v0.23.2 的解网后技能回调修复：[修复与验证](docs/playtest-0.23.2.md)。
+当前本地工作区为 **v0.27.6**，BBMOD 主包仍为 **v0.27.5**。本地版 29,739 条离线断言通过；网后断头崩溃已实机复现并复测至下一回合，完整战役与大地图帧耗时仍待验收。请按新建战役验收，希文与里根为独立可选 DLC。保留 v0.23.2 的解网后技能回调修复：[修复与验证](docs/playtest-0.23.2.md)。
 
 保留 v0.23.1 的招募属性显示 Mod（`mod_fox_043`）兼容修复，解决人物已解锁却不生成的问题，保留属性显示功能。主题招募最多同时出现 3 人，每个位置在雇佣后间隔 1 个游戏日补人。普通中立村庄也能招募，入口为原版雇佣新兵的人物列表；修正空佣兵池隐藏招募入口，以及额外送信干扰普通契约供给的问题。[招募更新](docs/playtest-0.23.md) · [全部解锁条件](docs/design/recruit-unlocks.md)。
 

@@ -83,7 +83,7 @@ local wrapped={m={Description="base"},function create(){this.m.Description="base
 ::mods_hookExactClass=function(path,callback){callback(wrapped);};
 dofile("src/scripts/mods/afeix_dlc_xiwen_regen/hooks.nut");
 wrapped.create();
-expect(wrapped.m.Description.find("仓库")!=null && wrapped.m.Description.find("饰品")!=null, "origin explains stash placement and equipment");
+expect(wrapped.m.Description.find("里根儿同行")!=null, "origin introduces companion by current name");
 resetPet(); A.ensureStoryItems(); count=dogCount;
 expect(wrapped.onSpawnAssets()==17 && spawnCalls==1 && stash.items.len()==1, "startup wrapper returns base result and grants stashed dog");
 wrapped.onSpawnAssets();

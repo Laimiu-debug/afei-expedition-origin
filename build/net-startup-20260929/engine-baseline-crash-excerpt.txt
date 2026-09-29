@@ -1,0 +1,12 @@
+info">  17:49:58  SQ  AFEIX_NET_TEST registered; Scenarios > first entry
+info">  17:53:03  SQ  AFEIX_NET_TEST READY F7; thrower=950 victim=951 enemy=953
+debug">  17:53:03  SQ  INFO: Next round issued: 1
+debug">  17:53:03  SQ  Turn started for TEST afei
+info">  17:53:48  SQ  AFEIX_NET_TEST THROW_BEGIN
+info">  17:53:48  SQ  AFEIX_NET_TEST THROW_END result=true rooted=true
+info">  17:53:49  SQ  AFEIX_NET_TEST ESCAPE_BEGIN
+info">  17:53:49  SQ  AFEIX_NET_TEST ESCAPE_END result=false rooted=true
+info">  17:53:50  SQ  AFEIX_NET_TEST ATTACK_BEGIN rooted=true victim_hp=1
+info">  17:53:50  SQ  AFEIX_NET_TEST DEATH_BEGIN TEST damou fatality=1
+critical">  17:53:50  Core  A critical exception occured.
+critical">  17:53:50  Core  Script Stacktrace:      Function:  unknown -> NATIVE : -1    Function:  drop -> scripts/items/item.nut : 297    Function:  dropLoot -> scripts/entity/tactical/actor.nut : 1511    Function:  onDeath -> scripts/entity/tactical/human.nut : 400    Function:  onDeath -> scripts/entity/tactical/player.nut : 798    Function:    -> scripts/mods/afeix/art_hooks.nut : 66    Function:    -> scripts/!mods_preload/mod_afeix_net_playtest.nut : 30    Function:  kill -> scripts/entity/tactical/actor.nut : 3024    Function:  kill -> scripts/entity/tactical/player.nut : 607    Function:  onDamageReceived -> scripts/entity/tactical/actor.nut : 1346    Function:    -> scripts/mods/afeix/ideas_hooks.nut : 53    Function:  onDamageReceived -> scripts/entity/tactical/human.nut : 734    Function:  onScheduledTargetHit -> scripts/skills/skill.nut : 1504    Function:  attackEntity -> scripts/skills/skill.nut : 1228    Function:    -> scripts/mods/afeix/member_catalog_hooks.nut : 85    Function:  headshot -> scripts/scenarios/tactical/scenario_afeix_net_playtest.nut : 49    Function:    -> scripts/scenarios/tactical/scenario_afeix_net_playtest.nut : 43

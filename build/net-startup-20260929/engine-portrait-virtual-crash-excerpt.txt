@@ -1,0 +1,43 @@
+info">  18:03:22  SQ  AFEIX_NET_TEST registered; Scenarios > first entry
+info">  18:03:54  SQ  AFEIX_NET_TEST READY F7; thrower=861 victim=862 enemy=864
+debug">  18:03:54  SQ  INFO: Next round issued: 1
+debug">  18:03:54  SQ  Turn started for TEST afei
+info">  18:04:12  SQ  AFEIX_NET_TEST NATIVE_CONTROL
+info">  18:04:12  SQ  AFEIX_NET_TEST THROW_BEGIN
+info">  18:04:12  SQ  AFEIX_NET_TEST THROW_END result=true rooted=true
+info">  18:04:13  SQ  AFEIX_NET_TEST ESCAPE_BEGIN
+info">  18:04:13  SQ  AFEIX_NET_TEST ESCAPE_END result=false rooted=true
+info">  18:04:14  SQ  AFEIX_NET_TEST ATTACK_BEGIN rooted=true victim_hp=1
+info">  18:04:14  SQ  AFEIX_NET_TEST DEATH_BEGIN TEST damou fatality=1
+info">  18:04:14  SQ  AFEIX_NET_TEST ITEM_DROP begin item=weapon.arming_sword tile=698912328
+info">  18:04:14  SQ  AFEIX_NET_TEST ITEM_DROP player_checked
+info">  18:04:14  SQ  AFEIX_NET_TEST ITEM_DROP dropped_checked
+info">  18:04:14  SQ  AFEIX_NET_TEST ITEM_DROP unequip_begin
+info">  18:04:14  SQ  AFEIX_NET_TEST ITEM_DROP unequip_end
+info">  18:04:14  SQ  AFEIX_NET_TEST ITEM_DROP push_begin
+info">  18:04:14  SQ  AFEIX_NET_TEST ITEM_DROP containing_begin
+info">  18:04:14  SQ  AFEIX_NET_TEST ITEM_DROP ondrop_begin
+info">  18:04:14  SQ  AFEIX_NET_TEST ITEM_DROP end
+info">  18:04:14  SQ  AFEIX_NET_TEST DEATH_END TEST damou
+info">  18:04:14  SQ  AFEIX_NET_TEST ATTACK_END result=true victim_alive=false
+info">  18:04:15  SQ  AFEIX_NET_TEST POST_ATTACK alive=false dying=true combat_active=true
+info">  18:04:15  SQ  AFEIX_NET_TEST NEXT_TURN_REQUESTED
+debug">  18:04:37  SQ  Turn started for TEST mocha
+info">  18:05:30  SQ  AFEIX_NET_TEST READY F7; thrower=1940 victim=1941 enemy=1943
+debug">  18:05:30  SQ  INFO: Next round issued: 1
+debug">  18:05:30  SQ  Turn started for TEST afei
+info">  18:05:45  SQ  AFEIX_NET_TEST THROW_BEGIN
+info">  18:05:45  SQ  AFEIX_NET_TEST THROW_END result=true rooted=true
+info">  18:05:46  SQ  AFEIX_NET_TEST ESCAPE_BEGIN
+info">  18:05:46  SQ  AFEIX_NET_TEST ESCAPE_END result=false rooted=true
+info">  18:05:47  SQ  AFEIX_NET_TEST ATTACK_BEGIN rooted=true victim_hp=1
+info">  18:05:47  SQ  AFEIX_NET_TEST DEATH_BEGIN TEST damou fatality=1
+info">  18:05:47  SQ  AFEIX_NET_TEST ITEM_DROP begin item=weapon.arming_sword tile=705931320
+info">  18:05:47  SQ  AFEIX_NET_TEST ITEM_DROP player_checked
+info">  18:05:47  SQ  AFEIX_NET_TEST ITEM_DROP dropped_checked
+info">  18:05:47  SQ  AFEIX_NET_TEST ITEM_DROP unequip_begin
+info">  18:05:47  SQ  AFEIX_NET_TEST ITEM_DROP unequip_end
+info">  18:05:47  SQ  AFEIX_NET_TEST ITEM_DROP push_begin
+info">  18:05:47  SQ  AFEIX_NET_TEST ITEM_DROP containing_begin
+critical">  18:05:48  Core  A critical exception occured.
+critical">  18:05:48  Core  Script Stacktrace:      Function:  unknown -> NATIVE : -1    Function:    -> scripts/!mods_preload/mod_afeix_net_playtest.nut : 77    Function:  dropLoot -> scripts/entity/tactical/actor.nut : 1511    Function:  onDeath -> scripts/entity/tactical/human.nut : 400    Function:  onDeath -> scripts/entity/tactical/player.nut : 798    Function:    -> scripts/mods/afeix/art_hooks.nut : 66    Function:    -> scripts/!mods_preload/mod_afeix_net_playtest.nut : 30    Function:  kill -> scripts/entity/tactical/actor.nut : 3024    Function:  kill -> scripts/entity/tactical/player.nut : 607    Function:  onDamageReceived -> scripts/entity/tactical/actor.nut : 1346    Function:    -> scripts/mods/afeix/ideas_hooks.nut : 53    Function:  onDamageReceived -> scripts/entity/tactical/human.nut : 734    Function:  onScheduledTargetHit -> scripts/skills/skill.nut : 1504    Function:  attackEntity -> scripts/skills/skill.nut : 1228    Function:    -> scripts/mods/afeix/member_catalog_hooks.nut : 85    Function:  headshot -> scripts/scenarios/tactical/scenario_afeix_net_playtest.nut : 50    Function:    -> scripts/scenarios/tactical/scenario_afeix_net_playtest.nut : 44

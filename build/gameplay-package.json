@@ -1,6 +1,6 @@
 {
-  "package": "dist/mod_afeix_expedition v0.27.5.zip",
-  "sha256": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83",
+  "package": "dist/mod_afeix_expedition v0.27.6.zip",
+  "sha256": "93dad4c4f7db75b552c5870bee90ad5856059d476e51b18c29e1f59fb785ed48",
   "entries": [
     "brushes/afeix_banner_v25.brush",
     "brushes/afeix_gameplay_v03.brush",
@@ -455,14 +455,16 @@
   "portrait_characters": 34,
   "portrait_forms": 36,
   "member_skill_art_report": "art/runtime/member-skills-v15/report.json",
-  "version": "0.27.5",
-  "install_name": "mod_afeix_expedition v0.27.5.zip",
+  "version": "0.27.6",
+  "install_name": "mod_afeix_expedition v0.27.6.zip",
   "members_with_skills": 33,
   "member_skills": 99,
   "new_member_skills_this_version": 3,
-  "behavior_assertions": 28849,
-  "in_game_tested": false,
+  "behavior_assertions": 29739,
+  "in_game_tested": true,
   "named_characters": 34,
   "roster_capacity": 40,
-  "combat_capacity": 12
+  "combat_capacity": 12,
+  "in_game_test_scope": "Standalone net / failed escape / unhelmeted Damou decapitation / loot / native AI escape / round 2; campaign load and performance not timed",
+  "in_game_test_evidence": "build/net-startup-20260929/engine-test.json"
 }

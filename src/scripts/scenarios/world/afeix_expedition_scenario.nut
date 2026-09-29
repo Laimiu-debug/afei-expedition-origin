@@ -57,7 +57,7 @@ this.afeix_expedition_scenario <- this.inherit("scripts/scenarios/world/starting
         foreach (town in candidates)
         {
             local center = town.getTile();
-            local shortest = 9000;
+            local tiles = [];
             for (local x = this.Math.max(2, center.SquareCoords.X - 4); x <= this.Math.min(this.Const.World.Settings.SizeX - 2, center.SquareCoords.X + 4); x++)
             {
                 for (local y = this.Math.max(2, center.SquareCoords.Y - 4); y <= this.Math.min(this.Const.World.Settings.SizeY - 2, center.SquareCoords.Y + 4); y++)
@@ -65,13 +65,18 @@ this.afeix_expedition_scenario <- this.inherit("scripts/scenarios/world/starting
                     if (!this.World.isValidTileSquare(x, y)) continue;
                     local tile = this.World.getTileSquare(x, y);
                     if (tile.Type == this.Const.World.TerrainType.Ocean || tile.Type == this.Const.World.TerrainType.Shore || tile.IsOccupied || tile.getDistanceTo(center) <= 1) continue;
-                    local path = this.World.getNavigator().findPath(tile, center, nav, 0);
-                    if (!path.isEmpty() && path.getSize() < shortest)
-                    {
-                        spawnTile = tile;
-                        shortest = path.getSize();
-                    }
+                    tiles.push({ Tile = tile, Distance = tile.getDistanceTo(center) });
                 }
+            }
+            // Try nearby tiles first, stopping at the first reachable one.
+            // The old full 9x9 scan ran pathfinding even after finding a spawn.
+            tiles.sort(function(a, b) { return a.Distance <=> b.Distance; });
+            foreach (candidate in tiles)
+            {
+                local path = this.World.getNavigator().findPath(candidate.Tile, center, nav, 0);
+                if (path.isEmpty()) continue;
+                spawnTile = candidate.Tile;
+                break;
             }
             if (spawnTile != null) { village = town; break; }
         }

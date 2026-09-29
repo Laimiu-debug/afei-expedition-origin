@@ -1,0 +1,40 @@
+{
+  "game": "Battle Brothers 1.5.2.3",
+  "date": "2026-09-29",
+  "baseline_version": "0.27.5",
+  "fixed_version": "0.27.6",
+  "fixed_package_sha256": "93dad4c4f7db75b552c5870bee90ad5856059d476e51b18c29e1f59fb785ed48",
+  "cases": [
+    {
+      "name": "Portrait member without helmet, real time scheduling",
+      "result": "critical crash after DEATH_BEGIN during item.drop",
+      "log": "engine-baseline-crash-excerpt.txt"
+    },
+    {
+      "name": "Same portrait victim, virtual time scheduling",
+      "result": "same critical crash; item instrumentation reached IsContainingItems",
+      "log": "engine-portrait-virtual-crash-excerpt.txt"
+    },
+    {
+      "name": "Native portrait control, virtual time scheduling",
+      "result": "death and loot returned, manually advanced to Mocha",
+      "log": "engine-native-control-excerpt.txt"
+    },
+    {
+      "name": "Fixed portrait member without helmet, native item.drop restored",
+      "result": "net applied, break free failed, decapitation and loot completed, native AI escaped and round 2 started",
+      "log": "engine-fixed-excerpt.txt"
+    }
+  ],
+  "fixed_error_count": 0,
+  "fixed_ui_warning": "one failed procedural thumbnail request for removed victim",
+  "limits": [
+    "Scenario sets high stats and guaranteed failed escape / decapitation chance, uses native skills outside the attacker turn; native AI resumes afterward.",
+    "The reported original campaign save and a complete campaign battle were not replayed.",
+    "World-map startup optimization verified by offline navigation counts, not engine frame timing.",
+    "DLC pet lifecycle was not exercised in this scenario."
+  ],
+  "screenshot": "engine-fixed-round2.png",
+  "excerpt": "engine-fixed-excerpt.txt",
+  "harness_source": "tests/engine/net_headshot/src"
+}

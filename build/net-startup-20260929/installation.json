@@ -1,0 +1,16 @@
+[
+  {
+    "source": "dist\\mod_afeix_expedition v0.27.6.zip",
+    "installed": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+    "sha256": "93dad4c4f7db75b552c5870bee90ad5856059d476e51b18c29e1f59fb785ed48",
+    "backup": "build\\net-startup-20260929\\before-mod_afeix_expedition.zip",
+    "backup_sha256": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83"
+  },
+  {
+    "source": "dlc\\xiwen-regen\\dist\\mod_afeix_dlc_xiwen_regen v0.2.4.zip",
+    "installed": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_dlc_xiwen_regen.zip",
+    "sha256": "906e9713acf65635fe546654bc7c3a228324c5c1e48b1031896d2c0580316ba4",
+    "backup": "build\\net-startup-20260929\\before-mod_afeix_dlc_xiwen_regen.zip",
+    "backup_sha256": "699715f87828a52f6679c1dc0ad09ec86ed7b2c26eb7da1ac66e4313cbdb75c3"
+  }
+]

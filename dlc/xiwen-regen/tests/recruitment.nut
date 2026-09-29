@@ -70,7 +70,7 @@ inventory.getItemAtSlot <- function(index) { return slot; };
 inventory.equip = function(item) { if (!equipOK) return false; slot = item; return true; };
 local originalNew = ::new;
 ::new = function(path) {
-    if (path == "scripts/items/accessory/afeix_regen_item") { dogCount++; return {path=path,name="里根"}; }
+    if (path == "scripts/items/accessory/afeix_regen_item") { dogCount++; return {path=path,name="里根儿"}; }
     return originalNew(path);
 };
 local occupied = {name="another mod's accessory"}; slot = occupied;
@@ -78,7 +78,7 @@ expect(!A.giveStartingRegen() && slot == occupied && dogCount == 0, "occupied ac
 slot = null; equipOK = false;
 expect(!A.giveStartingRegen() && !A.get("dlc_regen_granted",false), "failed equip does not consume entitlement");
 equipOK = true;
-expect(A.giveStartingRegen() && slot.name == "里根", "pet equips directly on Afei");
+expect(A.giveStartingRegen() && slot.name == "里根儿", "pet equips directly on Afei");
 local count = dogCount, dog = slot, saved = clone ::World.Flags.values;
 expect(!A.giveStartingRegen() && dogCount == count && slot == dog, "repeat grant produces no second dog");
 slot = null; ::World.Flags.values = clone saved;
@@ -91,8 +91,8 @@ player.add(afei);
 local spawnCalls = 0;
 local scenario = {m={Description="base"},function create(){this.m.Description="base";},function onSpawnAssets(){spawnCalls++;return 17;}};
 capturedScenario(scenario); scenario.create();
-expect(scenario.m.Description.find("里根") != null, "origin selection explains starting companion");
-expect(scenario.onSpawnAssets() == 17 && spawnCalls == 1 && slot.name == "里根", "spawn hook preserves base and grants dog");
+expect(scenario.m.Description.find("里根儿") != null, "origin selection explains starting companion");
+expect(scenario.onSpawnAssets() == 17 && spawnCalls == 1 && slot.name == "里根儿", "spawn hook preserves base and grants dog");
 scenario.onSpawnAssets();
 expect(dogCount == count + 1, "repeat lifecycle callback never duplicates companion");
 print("TESTS_PASSED=" + checks + "\n");

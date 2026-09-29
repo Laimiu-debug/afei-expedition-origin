@@ -48,7 +48,7 @@ A.catalogAfterSkill <- function(s,result){
     // Only the captain's two orders can trigger this companion reaction.
     if(!result||["actives.afeix_haoqi","actives.afeix_feidie"].find(s.getID())==null)return;
     local container=s.getContainer();
-    if(container==null)return;
+    if(container==null||("isNull" in container&&container.isNull()))return;
     local a=container.getActor();
     if(a==null||!a.isAlive()||!a.isPlacedOnMap()||this.characterId(a)!="afei")return;
     foreach(b in this.memberAllies(a,3))if(this.catalogHas(b,"fear_afei")&&!this.catalogGet(b,"fear_used")){
@@ -62,6 +62,22 @@ local wrapOnce=function(o,name,make){
     local current=::mods_getMember(o,name);if(current in wrapped)return;
     local replacement=make(current);wrapped[replacement]<-true;::mods_override(o,name,replacement);
 };
+// Keep a small, identifiable trace for disposable net actions. A missing end
+// marker distinguishes a native action failure from a later AI/animation stall.
+local traceNetUse=function(original){return function(tile,free=false){
+    local id=this.getID();
+    if(["actives.throw_net","actives.break_free"].find(id)==null)return original.bindenv(this)(tile,free);
+    ::logInfo("[AfeixExpedition] Net action begin: "+id);
+    try{
+        local result=original.bindenv(this)(tile,free);
+        // No container access here: a successful action can already be detached.
+        ::logInfo("[AfeixExpedition] Net action end: "+id+" result="+result);
+        return result;
+    }catch(error){
+        ::logError("[AfeixExpedition] Net action failed: "+id+" / "+error);
+        throw error;
+    }
+};};
 ::mods_hookBaseClass("skills/skill",function(o){
     wrapOnce(o,"onVerifyTarget",function(original){return function(origin,tile){
         return original.bindenv(this)(origin,tile)&&::AfeixExpedition.catalogTargetAllowed(this,origin,tile);
@@ -73,7 +89,7 @@ local wrapOnce=function(o,name,make){
         if(A.catalogSingle(this)&&!this.isRanged()&&A.catalogHas(a,"next_path")&&A.catalogGet(a,"next_path_ready"))cut=::Math.max(cut,4);
         return ::Math.max(::Math.ceil(cost*0.5).tointeger(),cost-cut);
     };});
-    wrapOnce(o,"use",function(original){return function(tile,free=false){
+    wrapOnce(o,"use",function(original){return traceNetUse(function(tile,free=false){
         local A=::AfeixExpedition;
         if(!A.isOrigin()||!::Tactical.isActive())return original.bindenv(this)(tile,free);
         if(!this.isUsable()||(!free&&!this.isAffordable()))return false;
@@ -84,7 +100,7 @@ local wrapOnce=function(o,name,make){
             A.catalogSet(this.getContainer().getActor(),"grip_paid",A.catalogGet(this.getContainer().getActor(),"attempt_serial"));
         local result=original.bindenv(this)(target,free);
         A.catalogAfterSkill(this,result);return result;
-    };});
+    });});
 });
 ::mods_hookExactClass("entity/tactical/actor",function(o){
     local start=o.onTurnStart;
