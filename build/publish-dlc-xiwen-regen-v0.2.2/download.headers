@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: private, no-store
+Content-Disposition: attachment; filename="mod_afeix_dlc_xiwen_regen.zip"
+Content-Length: 26805
+Content-Type: application/zip
+Date: Tue, 29 Sep 2026 09:03:58 GMT
+Etag: "6abb7eea-68b5"
+Last-Modified: Tue, 29 Sep 2026 09:03:38 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=31536000
+X-Checksum-Sha256: 465300550acb13352caebf3fd34f2f987c2cab49f0a1ae0f3119e824f7ba2bc1
+X-Content-Type-Options: nosniff
+X-Vercel-Cache: MISS
+X-Vercel-Id: sin1::n5k6s-1790672638691-26d4f4548c07
+

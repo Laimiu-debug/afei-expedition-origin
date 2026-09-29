@@ -1,0 +1,96 @@
+Traceback (most recent call last):
+  File "G:\CODE\afei-xcpedition\dlc\xiwen-regen\build.py", line 217, in <module>
+    main()
+  File "G:\CODE\afei-xcpedition\dlc\xiwen-regen\build.py", line 190, in main
+    validation = verify(base, kit, args.game.resolve(), scratch)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\CODE\afei-xcpedition\dlc\xiwen-regen\build.py", line 163, in verify
+    test('dlc_real_origin_with_electronic_cigarette', 'start.nut')
+  File "G:\CODE\afei-xcpedition\dlc\xiwen-regen\build.py", line 113, in test
+    output = run([kit / 'sq.exe', path], sandbox)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\CODE\afei-xcpedition\dlc\xiwen-regen\build.py", line 32, in run
+    raise RuntimeError(output)
+RuntimeError: [Afei Xiwen/Regen DLC] Starting pet was not equipped; check Afei's accessory slot.
+
+
+
+AN ERROR HAS OCCURED [FAIL real startup retains electronic cigarette and grants Regen to stash]
+
+
+
+CALLSTACK
+
+*FUNCTION [check()] start.nut line [2]
+
+*FUNCTION [unknown()] start.nut line [3]
+
+*FUNCTION [main()] start.nut line [102]
+
+
+
+LOCALS
+
+[message] "real startup retains electronic cigarette and grants Regen to stash"
+
+[ok] true
+
+[this] TABLE
+
+[checks] 2
+
+[message] "real startup retains electronic cigarette and grants Regen to stash"
+
+[ok] true
+
+[this] TABLE
+
+[dog] NULL
+
+[ecig] TABLE
+
+[afei] TABLE
+
+[formationUpdates] 1
+
+[foodUpdates] 1
+
+[failEquip] true
+
+[dogCount] 0
+
+[originalNew] CLOSURE
+
+[scenario] TABLE
+
+[reset] CLOSURE
+
+[A] TABLE
+
+[stash] TABLE
+
+[brothers] ARRAY
+
+[failTrait] false
+
+[failRemove] false
+
+[failAdd] false
+
+[failCreate] false
+
+[origin] false
+
+[tactical] false
+
+[round] 1
+
+[expect] CLOSURE
+
+[checks] 2
+
+[vargv] ARRAY
+
+[this] TABLE
+
+

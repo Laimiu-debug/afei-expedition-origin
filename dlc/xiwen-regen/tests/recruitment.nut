@@ -59,7 +59,11 @@ reset(); origin = false; hire.queryHireInformation();
 expect(townRosters[1].getSize() == 0, "other origins get no DLC recruits");
 origin = true;
 
-// One-time pet grant, including a blocked slot and equip failure.
+// One-time pet grant with no stash space. Real startup with the electronic
+// cigarette and a usable stash is exercised separately by start.nut.
+::World.Assets.getStash <- function() {
+    return {function getNumberOfEmptySlots(){return 0;},function add(item){return null;}};
+};
 ::Const.ItemSlot <- {Accessory=5};
 local afei = A.findCharacter("afei"), inventory = afei.getItems(), dogCount = 0, slot = null, equipOK = true;
 inventory.getItemAtSlot <- function(index) { return slot; };

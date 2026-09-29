@@ -1,9 +1,9 @@
 {
-  "version": "0.2.1-dlc",
+  "version": "0.2.2-dlc",
   "minimum_base": "0.26.2 / internal 36",
   "base_preload_sha256": "0435175f9a8a19a9b8f0858aec1aaf885450e61307c8f1e80c3ebd6ad803bffb",
   "base_package_sha256": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83",
-  "package_sha256": "e6da8d4a66b5774dd7c76481d38b8e770fa07456cf0247f3658987fd198e211a",
+  "package_sha256": "465300550acb13352caebf3fd34f2f987c2cab49f0a1ae0f3119e824f7ba2bc1",
   "crc_and_source_match": true,
   "entries": [
     "brushes/afeix_dlc_xiwen_regen.brush",
@@ -227,6 +227,11 @@
         "test": "dlc_native_recruitment_and_start",
         "assertions": 41,
         "log": "TESTS_PASSED=41\r\n"
+      },
+      {
+        "test": "dlc_real_origin_with_electronic_cigarette",
+        "assertions": 25,
+        "log": "TESTS_PASSED=25\r\n"
       },
       {
         "test": "dlc_native_pet_lifecycle",

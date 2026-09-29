@@ -136,7 +136,7 @@ def main():
 
     packages = [
         (ROOT / base['package'], ROOT / 'src', base['sha256'], base['entries']),
-        (ROOT / 'dlc/xiwen-regen/dist/mod_afeix_dlc_xiwen_regen v0.2.1.zip',
+        (ROOT / 'dlc/xiwen-regen/dist/mod_afeix_dlc_xiwen_regen v0.2.2.zip',
          ROOT / 'dlc/xiwen-regen/src', dlc['package_sha256'], dlc['entries']),
     ]
     checked = []
@@ -199,7 +199,7 @@ def main():
     prior = ROOT / 'dist/mod_afeix_expedition v0.25.2.ZIP'
     assert digest(prior) == (ROOT / 'dist/mod_afeix_expedition v0.25.2.sha256').read_text().split()[0]
     report = {
-        'version': base['version'], 'dlc_version': '0.2.1',
+        'version': base['version'], 'dlc_version': dlc['version'].removesuffix('-dlc'),
         'approved_workbook_sha256': source['workbook_sha256'],
         'unchanged_approved_inputs': unchanged,
         'approved_workbook_and_proposal_amendments': amendments,

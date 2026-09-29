@@ -34,7 +34,7 @@ v0.24.0 名单更正（2026-09-28）：删除陈知含后共 **34 人**；宋暖
 
 公开下载：[BBMOD v0.27.5 试玩版](https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [直接下载 ZIP](https://bbmod.site/files/553f6536-30b0-4671-938b-ce134c2a91dd/download/) · [安装与更新说明](docs/releases/v0.27.5.md) · [网站发布记录](docs/releases/publication-0.27.5.md)。[GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.16.1) 暂仍为 v0.16.1。
 
-独立扩展：[希文与里根 DLC 0.2.1](https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/) · [下载 DLC .zip](https://bbmod.site/files/3c5c209a-08ea-4cff-9bda-fe6623b9a8ab/download/)。需与主包一起安装并新开战役；里根开局装备在阿飞饰品栏，希文第35日起满足全部门槛后进入招募队列。见[DLC 安装说明](dlc/xiwen-regen/README.md)。
+独立扩展：[希文与里根 DLC 0.2.2](https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/) · [下载 DLC .zip](https://bbmod.site/files/fdc0cfa3-878f-4058-8425-c610b9fcb6dd/download/)。修复电子烟占饰品栏导致里根漏发：保留电子烟，里根开局放入队伍仓库，战前给一名队员装备即可释放。需与主包一起安装并新开战役；希文第35日起满足全部门槛后进入招募队列。见[DLC 安装说明](dlc/xiwen-regen/README.md)。
 
 打包命名：后续分发压缩包均带版本号，**主包、DLC 和素材包的文件后缀统一使用小写 `.zip`**。先更新根目录 `VERSION`，再执行 `python tools/build_gameplay.py`，生成 `dist/mod_afeix_expedition v<版本>.zip` 和同名 `.sha256`；安装时将带版本号的 ZIP 直接放入游戏 `data` 目录，并移走此前的本 Mod 旧包。五款旗帜已集成，世界地图按 F8 → 战团事务 → 更换旗帜。
 

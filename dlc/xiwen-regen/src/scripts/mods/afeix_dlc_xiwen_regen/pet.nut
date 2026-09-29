@@ -6,10 +6,13 @@ A.giveStartingRegen <- function() {
     local afei = this.findCharacter("afei");
     if (afei == null) return false;
     local items = afei.getItems();
-    // Preserve an accessory granted by another add-on; keep the grant retryable.
-    if (items.getItemAtSlot(::Const.ItemSlot.Accessory) != null) return false;
+    // The base origin equips Afei's electronic cigarette before this callback.
+    // Keep equipped items and deliver the dog to the shared stash instead.
+    local equip = items.getItemAtSlot(::Const.ItemSlot.Accessory) == null;
+    local stash = ::World.Assets.getStash();
+    if (!equip && stash.getNumberOfEmptySlots() == 0) return false;
     local dog = ::new("scripts/items/accessory/afeix_regen_item");
-    if (!items.equip(dog)) return false;
+    if (!(equip && items.equip(dog)) && stash.add(dog) == null) return false;
     this.set("dlc_regen_granted", true);
     return true;
 };

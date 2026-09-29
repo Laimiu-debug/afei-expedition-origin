@@ -1,0 +1,29 @@
+{
+  "verified_at": "2026-09-29T09:04:25.373310+00:00",
+  "detail_url": "https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/",
+  "download_url": "https://bbmod.site/files/fdc0cfa3-878f-4058-8425-c610b9fcb6dd/download/",
+  "release_id": "fdc0cfa3-878f-4058-8425-c610b9fcb6dd",
+  "version": "0.2.2",
+  "sha256": "465300550acb13352caebf3fd34f2f987c2cab49f0a1ae0f3119e824f7ba2bc1",
+  "size": 26805,
+  "entries": 8,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200,
+    "main_download": 200,
+    "previous_dlc": 200
+  },
+  "previous_dlc_unchanged": true,
+  "catalog_and_notes_match": true,
+  "dependency_ids_match": true,
+  "main_work_unchanged": true,
+  "download_bytes_match": true,
+  "crc_passed": true,
+  "lowercase_zip_filename": true,
+  "download_content_disposition": "attachment; filename=\"mod_afeix_dlc_xiwen_regen.zip\"",
+  "main_version": "0.27.5",
+  "main_sha256_unchanged": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83",
+  "backup": "/srv/data/backups/afeix-pre-v0.2.2-20260929T090338222288Z.sqlite3",
+  "in_game_tested": false
+}

@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: private, no-store
+Content-Disposition: attachment; filename="mod_afeix_expedition.zip"
+Content-Length: 3674323
+Content-Type: application/zip
+Date: Tue, 29 Sep 2026 09:03:58 GMT
+Etag: "6abb75e9-3810d3"
+Last-Modified: Tue, 29 Sep 2026 08:25:13 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=31536000
+X-Checksum-Sha256: 27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83
+X-Content-Type-Options: nosniff
+X-Vercel-Cache: MISS
+X-Vercel-Id: sin1::276w9-1790672638693-39aa9dbdef32
+

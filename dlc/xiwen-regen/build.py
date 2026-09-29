@@ -154,6 +154,13 @@ def verify(base, kit, game, scratch):
     setup = source.split(marker)[0]
     (sandbox / 'recruitment.nut').write_text(setup + '\n' + (DLC / 'tests/recruitment.nut').read_text(encoding='utf-8'), encoding='utf-8')
     test('dlc_native_recruitment_and_start', 'recruitment.nut')
+    keepsakes = (sandbox / 'tests/gameplay/test_keepsakes.nut').read_text(encoding='utf-8')
+    marker = 'reset();A.ensureStoryItems();local afei='
+    if keepsakes.count(marker) != 1:
+        raise ValueError('Keepsake fixture setup changed; review the startup adapter')
+    (sandbox / 'start.nut').write_text(keepsakes.split(marker)[0] + '\n' +
+                                     (DLC / 'tests/start.nut').read_text(encoding='utf-8'), encoding='utf-8')
+    test('dlc_real_origin_with_electronic_cigarette', 'start.nut')
     shutil.copy2(DLC / 'tests/pet.nut', sandbox / 'pet.nut')
     test('dlc_native_pet_lifecycle', 'pet.nut')
     # A compiler can exit zero on a Squirrel error, so also check its output.
@@ -184,7 +191,7 @@ def main():
     files = sorted(p for p in (DLC / 'src').rglob('*') if p.is_file())
     if any(p.suffix not in {'.nut', '.png', '.brush'} for p in files):
         raise ValueError('Unexpected package file type')
-    destination = DLC / 'dist/mod_afeix_dlc_xiwen_regen v0.2.1.zip'
+    destination = DLC / 'dist/mod_afeix_dlc_xiwen_regen v0.2.2.zip'
     destination.parent.mkdir(exist_ok=True)
     with ZipFile(destination, 'w', compression=ZIP_DEFLATED) as archive:
         for p in files:
@@ -194,7 +201,7 @@ def main():
     with ZipFile(destination) as archive:
         if archive.testzip() or any(archive.read(p.relative_to(DLC / 'src').as_posix()) != p.read_bytes() for p in files):
             raise ValueError('DLC ZIP validation failed')
-    report = {'version': '0.2.1-dlc', 'minimum_base': '0.26.2 / internal 36',
+    report = {'version': '0.2.2-dlc', 'minimum_base': '0.26.2 / internal 36',
               'base_preload_sha256': sha(preload),
               'base_package_sha256': sha(base / ('dist/mod_afeix_expedition v'+(base/'VERSION').read_text().strip()+'.zip')),
               'package_sha256': sha(destination), 'crc_and_source_match': True,
