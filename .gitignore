@@ -20,3 +20,15 @@ art/runtime/gameplay-v03/build/pack-*/
 art/runtime/gameplay-v03/build/roundtrip-*/
 art/runtime/portraits-v04/build/pack-*/
 art/runtime/portraits-v04/build/roundtrip-*/
+# Reproducible art scratch space and local publication/installation copies.
+art/runtime/ideas-v19/build/roundtrip-*/
+build/**/installed-before-*.zip
+build/**/before-mod_*.zip
+build/**/removed-installed-*.zip
+build/publish-*/*.zip
+build/publish-*/*.headers
+build/publish-*/*.response
+build/publish-*/remote-stage.txt
+build/publish-*/website-detail.html
+build/net-startup-20260929/pre-existing.patch
+build/net-startup-20260929/before-game-log.html

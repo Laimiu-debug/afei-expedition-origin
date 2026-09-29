@@ -49,6 +49,9 @@ local A=::AfeixExpedition;A.isOrigin=function(){return origin;};A.syncCharacterF
 // This suite isolates FIFO/native payment with its original eligibility schedule;
 // all V2 day/AND boundaries are covered by test_discovery and test_balance_v26.
 dofile("src/scripts/mods/afeix/discovery.nut");
+// Preserve this legacy payment/slot fixture; production visitor lanes and the
+// current AND gates have their own integrated pacing suite.
+A.RandomRecruitKeys=[];A.RandomRecruits={};A.RecruitOfferCount=3;
 A.balanceTraits=function(bro,fresh=false){};
 A.ensureStoryItems=function(){}; // inventory migration is exercised by test_keepsakes.nut
 ::inherit <- function(path,child){return child;};

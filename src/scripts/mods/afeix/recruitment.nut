@@ -1,8 +1,26 @@
-// Persistent FIFO eligibility, three independent offers in vanilla hiring.
+// Three regular offers plus independent, persistent random visitor offers.
 local A = ::AfeixExpedition;
 A.RecruitIntervalDays <- 1;
 A.RecruitOfferCount <- 3;
 A.RecruitOfferDays <- 4;
+A.RecruitReturnOfferDays <- 2;
+A.RecruitReturnPriorityDays <- 6;
+A.RecruitNewBurst <- 2;
+A.RecruitRegularOfferCount <- 3;
+A.RandomRecruitKeys <- [];
+A.RandomRecruits <- {};
+A.configureRecruitment <- function(rules) {
+    this.RecruitRegularOfferCount = rules.regular_slots;
+    this.RecruitIntervalDays = rules.hire_cooldown_days;
+    this.RecruitOfferDays = rules.regular_offer_days;
+    this.RecruitReturnOfferDays = rules.return_offer_days;
+    this.RecruitReturnPriorityDays = rules.return_priority_days;
+    this.RecruitNewBurst = rules.max_new_before_return;
+    this.RandomRecruitKeys = rules.random_order;
+    this.RandomRecruits = rules.random_visitors;
+    this.RecruitOfferCount = this.RecruitRegularOfferCount + this.RandomRecruitKeys.len();
+};
+A.isRandomRecruit <- function(key) { return key in this.RandomRecruits; };
 // Old saves can keep invitations/discounts, but F8 and taverns never hire now.
 A.recruit = function(key) { return this.result(false, "请在城镇招募界面雇佣伙伴。"); };
 A.resolveEncounter = function(key, choice) { return this.result(false, "请在城镇招募界面与伙伴见面。"); };
@@ -54,28 +72,73 @@ A.visitRecruitTown <- function(town) {
     }
     return true;
 };
-A.queueRecruit <- function(key) {
+A.queueRecruit <- function(key, queuedAt = null) {
     if (!(key in this.Characters) || this.Characters[key].isCaptain) return;
     local order = this.get("recruit_queue_serial") + 1;
     this.set("recruit_queue_serial", order);
     this.set("recruit_order_" + key, order);
+    this.set("recruit_queued_at_" + key, queuedAt == null ? this.worldNow() : queuedAt);
 };
 A.updateRecruitEligibility <- function() {
     if (!this.isOrigin()) return;
-    local metrics = this.discoveryMetrics();
+    local metrics = this.discoveryMetrics(), pending = [];
     foreach (key in this.CharacterOrder) {
-        if (this.Characters[key].isCaptain || this.recruitGone(key) || this.get("recruit_order_" + key) > 0) continue;
+        if (this.isRandomRecruit(key)) {
+            if (!this.recruitGone(key) && (this.isCharacterKnown(key) || this.get("recruit_order_" + key) > 0
+                || this.canMeetCharacter(key, metrics))) this.set("random_recruit_eligible_" + key, true);
+            continue;
+        }
+        if (this.Characters[key].isCaptain || this.recruitGone(key)) continue;
+        if (this.get("recruit_order_" + key) > 0) {
+            // Old scalar queues have no waiting timestamp. Initialize once;
+            // repeated visits and loading must not reset a pending return's age.
+            if (this.get("recruit_queued_at_" + key, -1) < 0) this.set("recruit_queued_at_" + key, this.worldNow());
+            continue;
+        }
         // Existing invitations survive the change of entry point.
-        if (this.isCharacterKnown(key) || this.canMeetCharacter(key, metrics)) this.queueRecruit(key);
+        if (this.isCharacterKnown(key) || this.canMeetCharacter(key, metrics)) {
+            local days = key in this.EncounterRequirements && "days" in this.EncounterRequirements[key] ? this.EncounterRequirements[key].days : 1;
+            pending.push({ key = key, day = days, index = pending.len() });
+        }
     }
+    // A late first town visit can unlock many people together. Use their planned
+    // dates, with the roster order as tie-breaker; preserve existing queue orders.
+    pending.sort(function(a, b) { return a.day == b.day ? a.index - b.index : a.day - b.day; });
+    foreach (entry in pending) this.queueRecruit(entry.key);
 };
-A.nextQueuedRecruit <- function() {
-    local best = null, order = 2147483647;
+A.nextQueuedRecruit <- function(excluded = null) {
+    local fresh = null, returning = null, overdue = null;
+    local freshOrder = 2147483647, returnOrder = 2147483647, overdueOrder = 2147483647;
     foreach (key in this.CharacterOrder) {
         local value = this.get("recruit_order_" + key);
-        if (value > 0 && value < order && !this.recruitGone(key) && this.recruitOfferSlot(key) < 0) { best = key; order = value; }
+        if (this.isRandomRecruit(key) || value <= 0 || this.recruitGone(key) || this.recruitOfferSlot(key) >= 0
+            || (excluded != null && key in excluded)) continue;
+        if (!this.isCharacterKnown(key)) {
+            if (value < freshOrder) { fresh = key; freshOrder = value; }
+        } else {
+            if (value < returnOrder) { returning = key; returnOrder = value; }
+            local queuedAt = this.get("recruit_queued_at_" + key, this.worldNow());
+            if (this.worldNow() - queuedAt >= this.daysInSeconds(this.RecruitReturnPriorityDays) && value < overdueOrder) {
+                overdue = key; overdueOrder = value;
+            }
+        }
     }
-    return best;
+    // New faces lead, but an aged return gets a turn after two successful new
+    // introductions. Only actual displays count, never reads or failed builds.
+    if (fresh != null && (overdue == null || this.get("recruit_new_streak") < this.RecruitNewBurst)) return fresh;
+    return overdue != null ? overdue : returning;
+};
+A.randomRecruitReady <- function(key) {
+    if (this.recruitGone(key) || this.recruitOfferSlot(key) >= 0 || !this.get("random_recruit_eligible_" + key, false)) return false;
+    local day = ::World.getTime().Days.tointeger(), prefix = "random_recruit_" + key + "_", rules = this.RandomRecruits[key];
+    if (this.get(prefix + "day", -1) != day) {
+        local misses = this.get(prefix + "misses");
+        local success = misses >= rules.pity_attempts - 1 || ::Math.rand(1, 100) <= rules.chance;
+        // Save before actor construction: retries and town changes reuse today's outcome.
+        this.set(prefix + "day", day); this.set(prefix + "success", success);
+        if (!success) this.set(prefix + "misses", misses + 1);
+    }
+    return this.get(prefix + "success", false);
 };
 A.candidateInRoster <- function(roster, key) {
     if (roster == null) return null;
@@ -97,26 +160,44 @@ A.ensureTownRecruit <- function(town) {
     this.updateRecruitEligibility();
     local now = this.worldNow();
     local targetRoster = ::World.getRoster(town.getID());
-    // Retire every expired offer before filling vacancies, keeping FIFO order.
+    // Retire expired offers before filling vacancies. Visitors roll again instead
+    // of joining the regular queue; legacy visitors keep their current slot until expiry.
     for (local i = 0; i < this.RecruitOfferCount; i++) {
         local slot = this.getRecruitSlot(i);
         if (slot.key == "" || (!this.recruitGone(slot.key) && now < slot.expires)) continue;
         local oldRoster = slot.town == 0 ? null : ::World.getRoster(slot.town);
         local bro = this.candidateInRoster(oldRoster, slot.key);
         if (bro != null) oldRoster.remove(bro);
-        if (!this.recruitGone(slot.key)) this.queueRecruit(slot.key);
+        if (!this.recruitGone(slot.key) && !this.isRandomRecruit(slot.key)) this.queueRecruit(slot.key, slot.expires);
         slot.key = ""; slot.town = 0; slot.expires = 0;
         this.saveRecruitSlot(i, slot);
     }
+    local failed = {};
     for (local i = 0; i < this.RecruitOfferCount; i++) {
         local slot = this.getRecruitSlot(i), bro = null;
         if (slot.key == "") {
             if (now < slot.ready) continue;
-            local key = this.nextQueuedRecruit();
+            local randomSlot = i >= this.RecruitRegularOfferCount;
+            local key = randomSlot ? this.RandomRecruitKeys[i - this.RecruitRegularOfferCount] : this.nextQueuedRecruit(failed);
             if (key == null) continue;
+            if (randomSlot && !this.randomRecruitReady(key)) continue;
             bro = this.createHireCandidate(key, targetRoster);
-            if (bro == null) break; // retain entitlement and avoid retrying the same failure three times
-            slot.key = key; slot.expires = now + this.daysInSeconds(this.RecruitOfferDays);
+            if (!randomSlot) {
+                // One malformed candidate must not block every ordinary slot.
+                // Keep its place and try each other queued identity once per query.
+                while (bro == null) {
+                    failed[key] <- true;
+                    key = this.nextQueuedRecruit(failed);
+                    if (key == null) break;
+                    bro = this.createHireCandidate(key, targetRoster);
+                }
+            }
+            if (bro == null) continue;
+            local duration = randomSlot ? this.RandomRecruits[key].offer_days
+                : (this.get("native_recruit_" + key, false) ? this.RecruitReturnOfferDays : this.RecruitOfferDays);
+            slot.key = key; slot.expires = now + this.daysInSeconds(duration);
+            if (randomSlot) this.set("random_recruit_" + key + "_misses", 0);
+            else this.set("recruit_new_streak", this.isCharacterKnown(key) ? 0 : ::Math.min(this.RecruitNewBurst, this.get("recruit_new_streak") + 1));
         } else {
             local oldRoster = slot.town == 0 ? null : ::World.getRoster(slot.town);
             bro = this.candidateInRoster(oldRoster, slot.key);

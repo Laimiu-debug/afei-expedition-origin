@@ -9,5 +9,13 @@
     "art/references/2026-09-27-liu-qingsong/crisp-fpx-2020.jpg",
     "art/references/2026-09-27-liu-qingsong/crisp-fpx-2019.jpg"
   ],
-  "note": "An earlier generic recruit portrait was superseded by the user's NPC and photo-reference correction and is not shipped."
+  "note": "An earlier generic recruit portrait was superseded by the user's NPC and photo-reference correction and is not shipped.",
+  "weapon_orientation_v0279": {
+    "date": "2026-09-29",
+    "tool": "image_gen (built-in)",
+    "input": "sources/laoma-grip.png",
+    "output": "sources/laoma-grip-facing-right.png",
+    "transparent_background": true,
+    "prompt": "Use case: precise-object-edit. Edit target: the attached existing game weapon artwork. Perform one exact horizontal mirror/reflection of the complete weapon, so the metal horse head and muzzle point RIGHT instead of left. This is an orientation correction, not a redesign. Preserve the identical horse rearing on the frog/toad, bronze/silver/gold materials, leather grip and strap, proportions, silhouette, outlines, shading and all ornamental details. Keep the handle vertical downward and the full weapon uncropped with a little clear margin, centered in portrait format. Mirror the whole weapon together, including the frog and wrist strap. Isolated item sprite on genuinely transparent background, no background glow or gradient, no text, no extra objects. Do not rotate the weapon, do not change its shape or perspective. The muzzle MUST point to the right."
+  }
 }

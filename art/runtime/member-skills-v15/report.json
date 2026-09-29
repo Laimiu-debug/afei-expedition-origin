@@ -349,7 +349,7 @@
     "output": "src/gfx/skills/afeix_member_signal_delay.png",
     "borrowed": false,
     "generated": true,
-    "sha256": "53f7414561c7b251cc53b826b4b2de6be8f0dc082160b642c841a6d45aa103f4"
+    "sha256": "d6b80f91afc692a923636d736f22739a818954735229bbe7566652d886f35d71"
   },
   {
     "key": "pang_share",
@@ -421,7 +421,7 @@
     "output": "src/gfx/skills/afeix_member_companion.png",
     "borrowed": false,
     "generated": true,
-    "sha256": "1bae71e9e262a7891da7bf7e0804b7e05f190acf7ad2fae4213d0c2fc461d5d7"
+    "sha256": "0b4c7ac1ebf6980f4187a51b6a5461c81c93940cb0ea92426b3d37d59ecbca09"
   },
   {
     "key": "spare_breath",
@@ -429,7 +429,7 @@
     "output": "src/gfx/skills/afeix_member_spare_breath.png",
     "borrowed": false,
     "generated": true,
-    "sha256": "5d560016fb842a26c769f12095d34b72c04b2b1f6f6bbc4a0f7941c8fbe20f61"
+    "sha256": "ea66e5c7d0cf5c716dc2a8af5a210514b689d586ec44caf9849cf2e5f407e450"
   },
   {
     "key": "own_people",

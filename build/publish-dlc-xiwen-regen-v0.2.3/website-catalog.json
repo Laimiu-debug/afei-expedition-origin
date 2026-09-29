@@ -1,0 +1,45 @@
+{
+  "id": "247b829d-8aa8-4898-a6dd-8b933c9ff1e9",
+  "release_id": "36246621-72ec-4be7-a96b-f3a315968188",
+  "version": "0.2.3",
+  "file_name": "mod_afeix_dlc_xiwen_regen.zip",
+  "sha256": "699715f87828a52f6679c1dc0ad09ec86ed7b2c26eb7da1ac66e4313cbdb75c3",
+  "size": 26884,
+  "published_at": "2026-09-29T09:16:48.160800+00:00",
+  "notes": "DLC 0.2.3：战犬里根儿。\n\n- 统一更新物品、战场实体、项圈、起源介绍与希文剧情中的称呼。\n- 重写战犬及项圈介绍，加入这段回忆：“他很怀念在环世界老动物园中与飞碟一起度过的日子，一步一步，不忘来时路。”\n- 原有开局发放、战犬数值、释放与战后返回规则保持不变。\n\n5,612项离线相关检查、六个脚本编译和八个包文件校验通过，尚未实机验收。退出游戏后更新DLC并新开战役，主包使用v0.27.5或更新版。",
+  "metadata": {
+    "title": "阿飞远征团 DLC：希文与里根儿",
+    "summary": "战犬里根儿随黑旗启程，希文第35日起满足条件后可招募。独立可选扩展，需与阿飞远征团主包一起安装，并新开战役。",
+    "description": "希文与里根儿是“阿飞远征团”的独立可选扩展，必须与主包一起安装，推荐主包v0.27.5或更新版。\n\n【战犬里根儿】\n阿飞的战犬里根儿。赶路时爱绕着队伍撒欢，歇脚时总要挨着阿飞的靴子趴下。平日里一块肉干就能哄得尾巴打转，真有人冲向阿飞，它却比谁都先露出牙。他很怀念在环世界老动物园中与飞碟一起度过的日子，一步一步，不忘来时路。\n\n新建“阿飞远征团”战役后，在队伍仓库查看里根儿。战前给任一队员装备到饰品栏，战斗中使用释放战犬技能，将他放到相邻空地，再由原版AI行动。放出后饰品显示“里根儿的项圈”，存活时战后返回。\n\n里根儿不需要购买或招募，不占佣兵名额，也不另加工资。沿用原版战犬外观、数值和生死规则；出售、遗失或阵亡后不会重新配发。请新开战役，旧战役不自动补发。\n\n【希文】\n第35日起，同时满足参战历史最高值至少14、非送信付费履约至少5、不同合格城镇至少6、历史最高等级至少5后，进入主包三个候选位的招募队列。第35日为最早入池时间，不保证当天轮到；补级上限2级、基础报价590克朗，最终报价受城镇倍率影响。\n\n希文持短剑与小圆盾、穿轻装，携带仅本人装备时决心+20的圆圆化妆镜。固定特质为聪慧、健步如飞；7级从《识隙札记》《同行守则》《长路笔记》中三选一，11级精通，不占普通专长点。包含独立头像、背景、成长及结局文本。\n\n0.2.3统一更新战犬、项圈和相关剧情中的名字，并重写同行与物品介绍。通过5,612项离线相关检查、六个脚本编译及八个包文件校验，尚未实机验收。\n\n主包页面：https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "category": "起源与事件",
+    "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+    "license": "作者授权在 BBMOD 网站分发；其他用途请联系作者。",
+    "game_version": "1.5.2.3",
+    "dlc": "目标环境：本体与官方 DLC（Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith）",
+    "save_impact": "yes",
+    "seed_impact": "unknown",
+    "compatibility_notes": "完全退出游戏后更新DLC，重新启动并新建“阿飞远征团”战役。主包使用v0.27.5或更新版，并安装Legacy Modding Script Hooks（mod_hooks）与所需中文字体／汉化环境。\n\n主包和DLC各保留一个版本，两份.zip同时放入data，不要解压。DLC下载名为mod_afeix_dlc_xiwen_regen.zip，后缀小写；本扩展不能代替主包。\n\n开局在队伍仓库查看里根儿，战前装备到一名队员的饰品栏，战斗中即可释放。里根儿售出、遗失或阵亡后不补发。每次更新按新战役验收，旧战役不自动配发战犬。\n\n存档需要持续保留主包与本DLC。尚未实机验收。\n\n主包页面：https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "mod_ids": [
+      "mod_afeix_dlc_xiwen_regen"
+    ],
+    "requires": [
+      "mod_afeix_expedition",
+      "mod_hooks"
+    ],
+    "conflicts": [],
+    "uploader": "laimiu",
+    "original_author": "Laimiu",
+    "author": "Laimiu"
+  },
+  "inspection": {
+    "sha256": "699715f87828a52f6679c1dc0ad09ec86ed7b2c26eb7da1ac66e4313cbdb75c3",
+    "size": 26884,
+    "entry_count": 8,
+    "uncompressed_size": 30484,
+    "script_count": 6,
+    "method": "archive_structure_and_crc",
+    "game_tested": false
+  },
+  "download_path": "/files/36246621-72ec-4be7-a96b-f3a315968188/download/",
+  "page_path": "/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/"
+}

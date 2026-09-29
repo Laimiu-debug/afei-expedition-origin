@@ -23,6 +23,7 @@ A.applyBalanceDefinition <- function(key) {
     }
 };
 foreach(key in A.CharacterOrder)A.applyBalanceDefinition(key);
+if ("recruitment" in A.BalanceV26) A.configureRecruitment(A.BalanceV26.recruitment);
 A.TalentRevision=3;
 A.RebalancedTalentKeys=[];
 foreach(key,p in A.BalanceV26.people)A.RebalancedTalentKeys.push(key);

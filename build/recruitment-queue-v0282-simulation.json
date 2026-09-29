@@ -1,0 +1,29 @@
+{
+  "scenario": "days 1-160, every day query a qualifying town, all non-day gates already met, no purchases; repetition gap is between starts of appearances, not guaranteed for arbitrary travel",
+  "results": {
+    "0.28.0": {
+      "regular_people_seen": 29,
+      "max_first_delay_days": 1,
+      "max_repeat_gap_days": 39,
+      "max_repeat_gap_after_day60": 39,
+      "appearance_count": 120,
+      "first_batch_on_day60": [
+        "bottle",
+        "shuaizi",
+        "lili"
+      ]
+    },
+    "0.28.2": {
+      "regular_people_seen": 29,
+      "max_first_delay_days": 1,
+      "max_repeat_gap_days": 30,
+      "max_repeat_gap_after_day60": 20,
+      "appearance_count": 209,
+      "first_batch_on_day60": [
+        "shuaizi",
+        "bottle",
+        "xiaoyueya"
+      ]
+    }
+  }
+}

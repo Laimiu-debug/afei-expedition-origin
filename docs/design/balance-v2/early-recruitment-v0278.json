@@ -1,0 +1,45 @@
+{
+  "version": "0.27.8",
+  "changes": {
+    "bottle": {
+      "before": {
+        "day": 12,
+        "battles": 6,
+        "contracts": 3,
+        "towns": 3,
+        "highest_level": 3,
+        "service_fee": 900,
+        "suggested_price": 1350
+      },
+      "after": {
+        "day": 5,
+        "battles": 2,
+        "contracts": 1,
+        "towns": 2,
+        "highest_level": 2,
+        "service_fee": 400,
+        "suggested_price": 850
+      }
+    },
+    "lili": {
+      "before": {
+        "day": 5,
+        "battles": 2,
+        "contracts": 1,
+        "towns": 2,
+        "highest_level": 2
+      },
+      "after": {
+        "day": 12,
+        "battles": 4,
+        "contracts": 2,
+        "towns": 3,
+        "highest_level": 3
+      }
+    }
+  },
+  "before_proposal_sha256": "0fa52782ea084f059a63b7fb6be9b2ce2aa1edf1e0acc9e6cb4fc61d460cac13",
+  "before_workbook_sha256": "132ea33d0bf8992e70d617e1100ebe57b50e0f8d10893c0a77df621beb13f240",
+  "proposal_sha256": "18f504a59bb7bd29d7b7aa1d453faac2a7a2fd56c0f8a7f02b5a6758261bb56c",
+  "workbook_sha256": "c08ab8274d15c43f3706867db014d5c488098af77b51203716eabdaa933cc4bf"
+}

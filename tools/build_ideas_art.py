@@ -9,6 +9,11 @@ from build_afei_art import pack_and_verify
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / 'art/runtime/ideas-v19'
 ATLAS = 'afeix_ideas_v19'
+# Enlarge the equipped quad by 1.5 around the handle at (0, -35), keeping
+# offsetY=35 so that point stays at the native weapon attachment. Source pixels
+# and inventory exports remain unchanged; both native weapon states share it.
+GRIP_META = {'left': -97.5, 'right': 37.5, 'top': -71, 'bottom': 88,
+             'width': 195, 'height': 213, 'offsetY': 35}
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -55,8 +60,10 @@ def build_art():
         identity='icon_afeix_laoma_grip'+suffix
         grip.save(pack/'sprites'/(identity+'.png'))
         grip.save(BASE/'sprites'/(identity+'.png'))
-        attrs.append({'id':identity,'img':'sprites\\'+identity+'.png','left':'-65','right':'25','top':'-59','bottom':'47','width':'130','height':'142','offsetY':'35'})
+        attrs.append({'id':identity,'img':'sprites\\'+identity+'.png',
+                      **{key: str(value) for key, value in GRIP_META.items()}})
     report={'manifest_sha256':sha(BASE/'manifest.json'),'exports':records,
+            'equipped_scale':1.5,'equipped_pivot':{'x':0,'y':-35},'equipped_metadata':GRIP_META,
             'roundtrip':pack_and_verify(BASE,ATLAS,pack,attrs,ROOT/'.cache/afei-art/bbros-modkit-v9/bin/bbrusher.exe')}
     files=[ROOT/'src'/r['path'] for r in records]
     for relative in ('brushes/'+ATLAS+'.brush','gfx/'+ATLAS+'.png'):
@@ -83,7 +90,7 @@ def validate_art():
     atlas=verify_custom_atlas(BASE,ATLAS,report,ids)
     for identity in ids:
         verify_sprite(atlas['sprites'][identity],BASE/'pack/sprites'/(identity+'.png'),
-                      {'left':-65,'right':25,'top':-59,'bottom':47,'width':130,'height':142,'offsetY':35})
+                      GRIP_META)
     return {'passed':True,'files':len(expected)+2,'brushes':2,'npc_only':True}
 
 if __name__=='__main__':

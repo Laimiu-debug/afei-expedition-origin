@@ -1,7 +1,7 @@
 {
   "grip": {
-    "source": "sources/laoma-grip.png",
-    "sha256": "cc7c3ee2c4cb5aac4fdc57e6786aa17c78b7f207faf79402cc990de78d19d2c1",
+    "source": "sources/laoma-grip-facing-right.png",
+    "sha256": "a4eaf7e182643d312ac12c7c316aba061b0ccc11e602ae9af8d276ea2da7329c",
     "reviewed": true
   },
   "liu": {

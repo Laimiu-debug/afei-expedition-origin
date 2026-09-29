@@ -1,0 +1,88 @@
+{
+  "version": "0.28.2",
+  "internal_version": 52,
+  "schema": 8,
+  "recruitment": {
+    "totalSlots": 5,
+    "hireCooldownDays": 1,
+    "returnPriorityDays": 6,
+    "regularSlots": 3,
+    "returnOfferDays": 2,
+    "randomVisitors": {
+      "xiaogui": {
+        "pity_attempts": 5,
+        "offer_days": 2,
+        "chance": 25
+      },
+      "songnuanyang": {
+        "pity_attempts": 5,
+        "offer_days": 2,
+        "chance": 35
+      }
+    },
+    "maxNewBeforeReturn": 2,
+    "regularOfferDays": 4
+  },
+  "behavior_assertions": 30038,
+  "queue_assertions": 125,
+  "pacing_assertions": 104,
+  "scripts_compiled": 123,
+  "all_character_balance_inputs_unchanged": true,
+  "approved_schedule_and_random_rules_unchanged": true,
+  "workbook_unchanged": true,
+  "workbook_sha256": "cc2c8c99bb660cdb493d544fac2464a4d4af59f9cf3ecbd69dec7bbf69c1dfd0",
+  "dlc": {
+    "version": "0.2.4",
+    "package": "dlc/xiwen-regen/dist/mod_afeix_dlc_xiwen_regen v0.2.4.zip",
+    "sha256": "906e9713acf65635fe546654bc7c3a228324c5c1e48b1031896d2c0580316ba4",
+    "entries": 8,
+    "source_bytes_match": true,
+    "shares_regular_queue": true,
+    "day35_order_checked": true,
+    "new_and_return_priority_checked": true,
+    "native_hiring_checked": true
+  },
+  "simulation": {
+    "scenario": "days 1-160, every day query a qualifying town, all non-day gates already met, no purchases; repetition gap is between starts of appearances, not guaranteed for arbitrary travel",
+    "results": {
+      "0.28.0": {
+        "regular_people_seen": 29,
+        "max_first_delay_days": 1,
+        "max_repeat_gap_days": 39,
+        "max_repeat_gap_after_day60": 39,
+        "appearance_count": 120,
+        "first_batch_on_day60": [
+          "bottle",
+          "shuaizi",
+          "lili"
+        ]
+      },
+      "0.28.2": {
+        "regular_people_seen": 29,
+        "max_first_delay_days": 1,
+        "max_repeat_gap_days": 30,
+        "max_repeat_gap_after_day60": 20,
+        "appearance_count": 209,
+        "first_batch_on_day60": [
+          "shuaizi",
+          "bottle",
+          "xiaoyueya"
+        ]
+      }
+    }
+  },
+  "package": "dist/mod_afeix_expedition v0.28.2.zip",
+  "package_sha256": "c325681e3a89a066c02a8a727973fc397fe1281eb89cb6682a9d2fde38eeaa9c",
+  "package_entries": 284,
+  "crc_passed": true,
+  "source_bytes_match": true,
+  "changed_entries_from_v0281": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/balance_v26_data.nut",
+    "scripts/mods/afeix/recruitment.nut"
+  ],
+  "grip_penetration_fix_preserved": true,
+  "in_game_tested": false,
+  "installed": false,
+  "published": false
+}

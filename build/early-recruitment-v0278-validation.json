@@ -1,0 +1,43 @@
+{
+  "version": "0.27.8",
+  "requirements": {
+    "bottle": {
+      "days": 5,
+      "battles": 2,
+      "jobs": 1,
+      "towns": 2,
+      "level": 2
+    },
+    "lili": {
+      "days": 12,
+      "battles": 4,
+      "jobs": 2,
+      "towns": 3,
+      "level": 3
+    }
+  },
+  "prices": {
+    "bottle": 850,
+    "lili": 460
+  },
+  "unrelated_character_fields_unchanged": true,
+  "behavior_assertions": 29792,
+  "source_and_zip_bytes_match": true,
+  "zip_crc_passed": true,
+  "package_files_changed_from_v0277": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/balance_v26_data.nut"
+  ],
+  "workbook": {
+    "authored_changed_cells": 13,
+    "unchanged_formulas": true,
+    "preserved_sheets": 16,
+    "preserved_charts": 35,
+    "preserved_images": 177,
+    "changed_archive_entries": [
+      "xl/worksheets/sheet1.xml",
+      "xl/worksheets/sheet2.xml"
+    ]
+  },
+  "in_game_tested": false
+}

@@ -1,0 +1,60 @@
+{
+  "version": "0.27.10",
+  "passed": true,
+  "build_method": "Validated v0.27.9 package plus weapon brush and preload version only; concurrent recruitment edits excluded.",
+  "source_package": "dist/mod_afeix_expedition v0.27.9.zip",
+  "source_package_sha256": "a2faa1307e85cc81d3678e65165ca9b16abe4b362a27b71ed4508e3a3a19f7ad",
+  "package": "dist/mod_afeix_expedition v0.27.10.zip",
+  "package_sha256": "9a052a27a8c02b0e909ae4c11832c78ebe86f1f672a779544bc86a16b43433d7",
+  "package_entries": 284,
+  "crc_passed": true,
+  "changed_entries_from_v0279": [
+    "brushes/afeix_ideas_v19.brush",
+    "scripts/!mods_preload/mod_afeix_expedition.nut"
+  ],
+  "equipped_scale": 1.5,
+  "scale_pivot": [
+    0,
+    -35
+  ],
+  "display_rect": [
+    135,
+    159
+  ],
+  "brush_metadata": {
+    "id": "icon_afeix_laoma_grip",
+    "img": "sprites\\icon_afeix_laoma_grip.png",
+    "left": "-97.5",
+    "right": "37.5",
+    "top": "-71",
+    "bottom": "88",
+    "width": "195",
+    "height": "213",
+    "offsetY": "35"
+  },
+  "grip_attachment_preserved": true,
+  "brush_rect_inside_canvas": true,
+  "normal_and_bloodied_validated": true,
+  "source_and_inventory_pixels_unchanged": true,
+  "price_and_gameplay_unchanged": true,
+  "art_validation": {
+    "passed": true,
+    "files": 7,
+    "brushes": 2,
+    "npc_only": true
+  },
+  "syntax_scripts": 123,
+  "syntax_passed": true,
+  "tests": [
+    {
+      "file": "test_native_grip_weapon.nut",
+      "assertions": 17
+    },
+    {
+      "file": "test_native_grip_shops.nut",
+      "assertions": 17
+    }
+  ],
+  "behavior_assertions": 34,
+  "in_game_tested": false
+}

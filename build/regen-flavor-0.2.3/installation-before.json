@@ -1,0 +1,34 @@
+{
+  "packages": {
+    "mod_afeix_dlc_xiwen_regen.zip": "465300550acb13352caebf3fd34f2f987c2cab49f0a1ae0f3119e824f7ba2bc1",
+    "mod_afeix_expedition.zip": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83",
+    "mod_bbmod_item_inspector.zip": "d868dcb95bce8b0ba78c5b3b64c7f83cc27382a253d48193d8d657b3bb0a2bfd",
+    "mod_bbmod_zhcn.zip": "fbe640c05cb41e9851b0648a4226a66abd95c4f4294f50097f21d7c7c767bbeb",
+    "mod_fox_008.zip": "1a703d4e1f342b9491e62e9c91c3c7dd46fe7aaf950035a642ea3cfad982860d",
+    "mod_fox_037.zip": "41442adbf323b03beddbe9dc2fa19f0c812797da9f0e41159c951e96f27abd99",
+    "mod_fox_043.zip": "af1b0910165e25c60699c3acff2720306404a02838e1c5a444c463f43cca44b2",
+    "mod_fox_quickly_swap_items.zip": "03c0c547d8ea734d5dff665257e6d8e6e2336f298f741c447236dc359bb97219",
+    "zzzz_bbmod_preload.zip": "2d6c3e23f4bac04ee860b72b92414323c053ed997e13d93f5dd25b879590e819"
+  },
+  "receipt": {
+    "mods": {
+      "mod_afeix_expedition.zip": {
+        "origin": "https://bbmod.site",
+        "id": "d64a00f6-1d60-4d8d-8d9b-de055fc0b748",
+        "version": "0.27.5",
+        "sha256": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83"
+      },
+      "mod_afeix_dlc_xiwen_regen.zip": {
+        "origin": "https://bbmod.site",
+        "id": "247b829d-8aa8-4898-a6dd-8b933c9ff1e9",
+        "version": "0.2.2",
+        "sha256": "465300550acb13352caebf3fd34f2f987c2cab49f0a1ae0f3119e824f7ba2bc1"
+      }
+    }
+  },
+  "preload_entries": {
+    "preload/on_running.txt": "0e565580f57e00f3fc727e1c316a0ca603983cf1bea240430e4bf19a0958f38a",
+    "preload/on_start.txt": "9cd270e677073574335786cf267ae0041bd264899eb03deb1906416597d095fa",
+    "BBMOD_PRELOAD_MERGE.txt": "0a808e2c5a7da78ed37d1979a3b377e85e7b90dc7d675b9d08a973dff3a11482"
+  }
+}

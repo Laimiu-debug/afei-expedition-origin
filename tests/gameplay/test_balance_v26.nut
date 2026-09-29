@@ -60,6 +60,15 @@ foreach(key,p in A.BalanceV26.people)eq(p.level_bonus_per_level[1],0,"no roster 
 ::day<-1;::highest<-11;
 ::World<-{getTime=function(){return {Days=::day};},Assets={money=10000,getMoney=function(){return this.money;},addMoney=function(n){this.money+=n;}}};
 A.discoveryMetrics=function(){return {level=::highest};};A.catalogWorldHas=function(key){return false;};
+// Early access changes the service price, not equipment, wages or late catchup.
+::day=3;::highest=2;
+eq(A.recruitPrice("bottle"),850,"Bottle affordable base quote on first eligible day");
+eq(A.Characters.bottle.wage,16,"Bottle normal daily wage retained");
+eq(A.BalanceV26.people.bottle.equipment_value,750,"Bottle original starting equipment retained");
+::day=6;::highest=2;
+eq(A.recruitPrice("lili"),460,"Lili delayed opening retains original base quote");
+eq(A.balanceJoinLevel("lili"),1,"Lili remains an early phase recruit");
+::highest=11;
 foreach(pair in [["bottle",1],["xiwen",2],["xiaojie",4],["yaoyaoya",5]]){
  foreach(d in [35,60,150]){::day=d;eq(A.balanceJoinLevel(pair[0]),pair[1],"member phase cap survives late hiring");}
 }

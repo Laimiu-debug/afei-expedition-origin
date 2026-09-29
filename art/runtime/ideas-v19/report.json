@@ -1,9 +1,9 @@
 {
-  "manifest_sha256": "6a0d399bd5542c5700adc566ba412c426173d2bf9fafe0ce1df4b485d1b7a614",
+  "manifest_sha256": "7057c670d96306dbda3b1a93c948bf8d046129826e0601cc3d298ff76b8e8a87",
   "exports": [
     {
       "path": "gfx/ui/items/weapons/afeix_laoma_grip.png",
-      "sha256": "30aa3c6622b4c737ea7f2cf0199fed36de8ab933e7367745fbe507af8d7334f5",
+      "sha256": "4e1c5580a7f040143f206f580314c2586e9a62d942579c8ff7dbbea64c3a6672",
       "size": [
         70,
         140
@@ -11,7 +11,7 @@
     },
     {
       "path": "gfx/ui/items/weapons/afeix_laoma_grip_70x70.png",
-      "sha256": "53429570f9f120f913714b19a385da1103914a71f39b1c3cd7388187c574173f",
+      "sha256": "0ffb087877eed37261f7d4429892828cdec122b9c6ca9045026f4d94fb768af6",
       "size": [
         70,
         70
@@ -19,7 +19,7 @@
     },
     {
       "path": "gfx/items/weapons/afeix_laoma_grip.png",
-      "sha256": "30aa3c6622b4c737ea7f2cf0199fed36de8ab933e7367745fbe507af8d7334f5",
+      "sha256": "4e1c5580a7f040143f206f580314c2586e9a62d942579c8ff7dbbea64c3a6672",
       "size": [
         70,
         140
@@ -27,7 +27,7 @@
     },
     {
       "path": "gfx/items/weapons/afeix_laoma_grip_70x70.png",
-      "sha256": "53429570f9f120f913714b19a385da1103914a71f39b1c3cd7388187c574173f",
+      "sha256": "0ffb087877eed37261f7d4429892828cdec122b9c6ca9045026f4d94fb768af6",
       "size": [
         70,
         70
@@ -35,13 +35,27 @@
     },
     {
       "path": "gfx/ui/events/afeix_liu_qingsong.png",
-      "sha256": "2f2dac7c961f903c2d2602bf1b98e3e9343e2c726e1aea2f3bbdb4565fec761c",
+      "sha256": "c03f6e9933904a69df04b4c7532e867a8b31fa039b31fc49fe1a55f469eca5df",
       "size": [
         210,
         210
       ]
     }
   ],
+  "equipped_scale": 1.5,
+  "equipped_pivot": {
+    "x": 0,
+    "y": -35
+  },
+  "equipped_metadata": {
+    "left": -97.5,
+    "right": 37.5,
+    "top": -71,
+    "bottom": 88,
+    "width": 195,
+    "height": 213,
+    "offsetY": 35
+  },
   "roundtrip": {
     "passed": true,
     "sprite_count": 2,
@@ -58,11 +72,11 @@
       }
     ],
     "brush": "package/brushes/afeix_ideas_v19.brush",
-    "brush_sha256": "c41774f66538400c466a405e95f6a501d2e415149917049c77371973fb0b6322",
+    "brush_sha256": "3c43b0581aeeb8cdbd7335cb246e2c4f7625e125ffb6ba95e0ed000bdb24fc19",
     "atlas": "package/gfx/afeix_ideas_v19.png",
-    "atlas_sha256": "27635956724f84b53921ff8224688c272190e4bf21c95b3477891e17f7612ba7",
+    "atlas_sha256": "4875a92cac7f07199d29654e6492fa272ef374d6c38b565e188acd5009add5c5",
     "pack_log": "Loading images...\nsprites\\icon_afeix_laoma_grip.png\nsprites\\icon_afeix_laoma_grip_bloodied.png\nPacking rectangles...\nWriting gfx/afeix_ideas_v19.png (256x128)...\n",
     "unpack_log": "Opening gfx/afeix_ideas_v19.png...\nsprites\\icon_afeix_laoma_grip.png\nsprites\\icon_afeix_laoma_grip_bloodied.png\n",
-    "roundtrip_directory": "build/roundtrip-7k9qe7a3"
+    "roundtrip_directory": "build/roundtrip-fhlj80xe"
   }
 }

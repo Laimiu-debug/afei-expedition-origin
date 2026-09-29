@@ -1,0 +1,15 @@
+STARTUP_PATH_QUERIES=72
+
+AN ERROR HAS OCCURED [FAIL open terrain needs only one path query]
+
+CALLSTACK
+*FUNCTION [check()] G:\CODE\afei-xcpedition\build\net-startup-20260929\startup-before-test.nut line [4]
+*FUNCTION [main()] G:\CODE\afei-xcpedition\build\net-startup-20260929\startup-before-test.nut line [45]
+
+LOCALS
+[message] "open terrain needs only one path query"
+[value] true
+[this] TABLE
+[scenario] TABLE
+[vargv] ARRAY
+[this] TABLE

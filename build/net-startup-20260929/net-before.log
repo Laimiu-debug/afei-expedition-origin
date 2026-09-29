@@ -1,0 +1,22 @@
+
+AN ERROR HAS OCCURED [the index 'getActor' does not exist]
+
+CALLSTACK
+*FUNCTION [unknown()] build/net-startup-20260929/net-before.nut line [52]
+*FUNCTION [main()] G:\CODE\afei-xcpedition\build\net-startup-20260929\net-before-test.nut line [134]
+
+LOCALS
+[container] INSTANCE
+[result] true
+[s] TABLE
+[this] TABLE
+[order] TABLE
+[container] INSTANCE
+[@INDEX@] 1
+[id] "actives.afeix_haoqi"
+[@INDEX@] 0
+[escape] TABLE
+[enemy] TABLE
+[A] TABLE
+[vargv] ARRAY
+[this] TABLE

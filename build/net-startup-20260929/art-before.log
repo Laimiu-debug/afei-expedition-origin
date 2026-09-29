@@ -1,0 +1,25 @@
+FAIL decapitation retains native head and equipment layers: decapitated
+
+AN ERROR HAS OCCURED [FAIL decapitation retains native head and equipment layers: decapitated]
+
+CALLSTACK
+*FUNCTION [main()] build\net-startup-20260929\art-before-test.nut line [371]
+
+LOCALS
+[error] "FAIL decapitation retains native head and equipment layers: decapitated"
+[makeBrother] CLOSURE
+[makeTile] CLOSURE
+[makeSprite] CLOSURE
+[status] ARRAY
+[parts] ARRAY
+[nextID] 48
+[casualties] ARRAY
+[callbacks] TABLE
+[A] TABLE
+[check] CLOSURE
+[baseRoute] "jiahao"
+[currentRoute] "feidie"
+[currentOrigin] true
+[passed] 1986
+[vargv] ARRAY
+[this] TABLE

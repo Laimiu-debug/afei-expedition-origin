@@ -1,0 +1,531 @@
+{
+  "version": "0.27.9",
+  "passed": true,
+  "base_value": 28888,
+  "combat_values_unchanged": true,
+  "recruitment_v0278_unchanged": true,
+  "brush_geometry_unchanged": true,
+  "art_source": "art/runtime/ideas-v19/sources/laoma-grip-facing-right.png",
+  "art_source_sha256": "a4eaf7e182643d312ac12c7c316aba061b0ccc11e602ae9af8d276ea2da7329c",
+  "art_source_size": [
+    1024,
+    1536
+  ],
+  "art_source_alpha_range": [
+    0,
+    254
+  ],
+  "orientation_review": "Source muzzle faces right; rotated equipped sprite faces upper-right. Native actor mirroring retained.",
+  "normal_and_bloodied_match": true,
+  "scripts": [
+    {
+      "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
+      "sha256": "b86e55228defe3f5c79159bb4339fc4bd7ae0e08007495c5fd00b48bf789bb7f"
+    },
+    {
+      "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
+      "sha256": "0e393e3262e071dce9c5f050e55601cee1c50b0317cef31e97397464c9c4fb18"
+    },
+    {
+      "path": "src/scripts/events/events/afeix_discovery_event.nut",
+      "sha256": "fc37456c5521102ee59dddebdc969e8bee5dbe3218055bd99bff277edf39c11e"
+    },
+    {
+      "path": "src/scripts/events/events/afeix_factions_event.nut",
+      "sha256": "ccaa1e5d1e3bf36226be6e68b4f7f817e0917d67f722c0f07b0836052eb11f2a"
+    },
+    {
+      "path": "src/scripts/events/events/afeix_ledger_event.nut",
+      "sha256": "0e8396a5b59f9065a0de4bd8522cb5f94fc22ec110e0fb39d6bfa7c82f318f1f"
+    },
+    {
+      "path": "src/scripts/items/accessories/xiwen_round_mirror.nut",
+      "sha256": "b541ed1347509d2400e1fd38d3a7ebfdaf6ffb977eacbb54d3e2abafa8eaca91"
+    },
+    {
+      "path": "src/scripts/items/accessory/afeix_ecig_item.nut",
+      "sha256": "db461d2f4738e7f3e3cc5cd2c8ef66de6235e631784d5e2830438888c78699fd"
+    },
+    {
+      "path": "src/scripts/items/misc/afeix_bicycle_item.nut",
+      "sha256": "0ac97e0f0202cc761d249b4a748f2b41609d94cb33b44ee3819011bc64430d1d"
+    },
+    {
+      "path": "src/scripts/items/weapons/afeix_laoma_grip.nut",
+      "sha256": "aeea73552c7a7920e000e434ac05480c68cc9bd6df763640b15c37c73e63dbb3"
+    },
+    {
+      "path": "src/scripts/mods/afeix/appearance.nut",
+      "sha256": "91c17f776dd77e9ba1d12515604a7ccd661f420ea97e0b3cb2319ce3fc7b89fd"
+    },
+    {
+      "path": "src/scripts/mods/afeix/art_hooks.nut",
+      "sha256": "b1b5bad37bfbe5588e107e4a42d25fbec2afca42e420b9d1b81de5d63c035c84"
+    },
+    {
+      "path": "src/scripts/mods/afeix/background_data.nut",
+      "sha256": "b8720d1d512e027b089681c2512c5376b2617ceb2dd82a30f4d42aa5a072c711"
+    },
+    {
+      "path": "src/scripts/mods/afeix/background_hooks.nut",
+      "sha256": "2aae265fc370e6dea05fccc0b6005e9ebc77ea6b3d7eff117adf89c8a16ef081"
+    },
+    {
+      "path": "src/scripts/mods/afeix/backgrounds.nut",
+      "sha256": "8378374a89bc92e01403b220b7ff4da0e036c25b7efc8be8d8bfbcf479f1372f"
+    },
+    {
+      "path": "src/scripts/mods/afeix/balance_v26.nut",
+      "sha256": "059a464d1f703241edfb6903df92e2c2b89cda28c23f27a1604fb6400c0f84b4"
+    },
+    {
+      "path": "src/scripts/mods/afeix/balance_v26_combat.nut",
+      "sha256": "c9507d46ae7603f41548414e2cbe8520f38be60dc85c2ac820c17419c07e0fbc"
+    },
+    {
+      "path": "src/scripts/mods/afeix/balance_v26_data.nut",
+      "sha256": "5cfe589eff37555d723e03bc0f1c810d335519f6b633187f74f3ee026606c1e5"
+    },
+    {
+      "path": "src/scripts/mods/afeix/balance_v26_hooks.nut",
+      "sha256": "05aa38d068ed1a67437049656aeaa97c79102fba686d3289b80181646e959ab7"
+    },
+    {
+      "path": "src/scripts/mods/afeix/banner_hooks.nut",
+      "sha256": "3c81d310bc59bdfa255bba5a4a52c511211f2a54536d63d9d97f3637c8ebf9ca"
+    },
+    {
+      "path": "src/scripts/mods/afeix/barber_hooks.nut",
+      "sha256": "30753bee321bf59cbf35cef6a1dd28901276e0e676d9c4600a75c9bfb9321b59"
+    },
+    {
+      "path": "src/scripts/mods/afeix/blue_stories.nut",
+      "sha256": "f3f3aec0218cbe5fd048d84d426b177fd7ccc63223957fe68c1a77fe61727b13"
+    },
+    {
+      "path": "src/scripts/mods/afeix/blue_story_data.nut",
+      "sha256": "139a6a4ec233b300cda5680cda20df3199f0c5ef5bc9e850aba5da70d3a37bc2"
+    },
+    {
+      "path": "src/scripts/mods/afeix/characters.nut",
+      "sha256": "ebf9a2bcfd6f82f6bce00de3bff190a4b79767072fdcfe8a3a1442be3fae5bd3"
+    },
+    {
+      "path": "src/scripts/mods/afeix/company_appearance_hooks.nut",
+      "sha256": "6f2157bc4883e8f45aa5fdac33e6d1847e55b85b35a8be8f03b3fd61260ecf83"
+    },
+    {
+      "path": "src/scripts/mods/afeix/contracts.nut",
+      "sha256": "a19c454c04acf833d657fdf6bdbe5162c74f811001ac24d6e750a7bd36461573"
+    },
+    {
+      "path": "src/scripts/mods/afeix/core.nut",
+      "sha256": "16d9cc81f9e65a26a809f3fb0f9f7d7e5a18acc9c3e734dd4794cb4ff362385f"
+    },
+    {
+      "path": "src/scripts/mods/afeix/discovery.nut",
+      "sha256": "21bf1ee9f2cb12e81349ac338c65cda4f0eb71a4ebced2ead8a0f81abb73f9c7"
+    },
+    {
+      "path": "src/scripts/mods/afeix/economy.nut",
+      "sha256": "1980aebfbc194cd319ea77a718d649f0e9158d337327756acdad05a14e65e897"
+    },
+    {
+      "path": "src/scripts/mods/afeix/encounters.nut",
+      "sha256": "a970f237b9b63c2ed5dde207b0578461b7f5d8464dfc365de2f2ca820ede7272"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ending_data.nut",
+      "sha256": "a2aca23514634f55c4564b6c22d3dd0c724e413d8161f06c3201a37f168caf49"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ending_hooks.nut",
+      "sha256": "c40767a7bb8711d7e8d90d10d17ded1ee52ca41374f56071812d8480c3a2f525"
+    },
+    {
+      "path": "src/scripts/mods/afeix/endings.nut",
+      "sha256": "2981daa97f4f6788a1a2802920370880785cfc1f02ef3653a72189738cf2cada"
+    },
+    {
+      "path": "src/scripts/mods/afeix/formation.nut",
+      "sha256": "af329bb5f3bdc6d12d53bd6575a7e761880c4cd54825d6066dba20a7d6bc30a2"
+    },
+    {
+      "path": "src/scripts/mods/afeix/hooks.nut",
+      "sha256": "b36542db95b5af2b89887ff58efca0747b070e33a3dc1d5c8466df4705f50a0c"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_chronicles.nut",
+      "sha256": "6eb5321e4a6b9472df4268076a8cf65e8c3229db1c9010ddd83d774ce470a30b"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_combat.nut",
+      "sha256": "99c7ab8439c63dbc24742c1cbdd2f22eee786fa6f68c259892d8681c03d7015a"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_core.nut",
+      "sha256": "bcf96159dc03446f7fc2723014cd77ff045d457886cfd334a7576eb669872a06"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_events.nut",
+      "sha256": "999f474cfe14596273a3b5c14f240604cc28b7f3b363774d78c9885139214931"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_hooks.nut",
+      "sha256": "d8898099e6c2c821029ba6d6b2938157ad17bb60c4e131e40d758ea5dcef2a5f"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_random.nut",
+      "sha256": "54eeeee33ad7355635d3e8b967080f9bea85721784c6bc098d208aee80039f69"
+    },
+    {
+      "path": "src/scripts/mods/afeix/keepsakes.nut",
+      "sha256": "fb57d61ea17dc9124887291821a0bb4284e3e1a76f8fa1e81eade290a9b54267"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ledger.nut",
+      "sha256": "c23cc818cd1b6b16d7d352f56b70226d471316e91b5e7e943ab788c9e5157639"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog.nut",
+      "sha256": "126c56244521bf5f406db1424f6912ffb3d9294dbad31b18dc0c73bd807d22a9"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog_combat.nut",
+      "sha256": "706074cefef2a3e244e93372b433e391d59576ba2b49faf86bc635136cf7076b"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog_data.nut",
+      "sha256": "d07cd6ba1a73927d10c831f326c81328426a0becd008855ef59aa6aade7cdc71"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog_economy.nut",
+      "sha256": "e1cb8ffb388ceced780d5cabef681707880420f55ef790a52fe46f7b28601019"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog_economy_hooks.nut",
+      "sha256": "c727a40e4eae7f33052792fbfc1218e078f71c5dab6a866e1cac1ac1cee22a8d"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog_hooks.nut",
+      "sha256": "7d5979f8d6c7f9edd61fe33caeedef491e2b00004a0896299e7a84d250dacd34"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_skill_hooks.nut",
+      "sha256": "47b479c009e527e72a8ef7ea0ff256ef85f49456f2caf07afa1db13d243cde0d"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_skills.nut",
+      "sha256": "7d7deae132591c374c8f15105a8a3d32ea10702dc9a0e2594ba0069efb507c1d"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_training.nut",
+      "sha256": "004bc551bb052bc04a9a887db5a7897ee0b884afd64b9f66ccfa119c9ea07ac2"
+    },
+    {
+      "path": "src/scripts/mods/afeix/promotion_ledger.nut",
+      "sha256": "44f56a8857092bd248cecc308c0797f31d282364ceb2a0b08458c513f3e60bab"
+    },
+    {
+      "path": "src/scripts/mods/afeix/promotions.nut",
+      "sha256": "197ae8e581f17e0ab7f7229df3dfaa8c19933f5b9f48cde34d16daa3ac2a59a0"
+    },
+    {
+      "path": "src/scripts/mods/afeix/quests.nut",
+      "sha256": "6d2ad1965d22e6900cea697af012f6eb644d39b992b08ba25b5d318083c2fc9d"
+    },
+    {
+      "path": "src/scripts/mods/afeix/recruitment.nut",
+      "sha256": "096d56f116d3a48771092093353ddcb949171a6b8118e17cdcb195a810d95aaf"
+    },
+    {
+      "path": "src/scripts/mods/afeix/roster.nut",
+      "sha256": "0b430530652a144c65beda08e4e5ce4a838f5e59916dc97c7e4b9827177f2876"
+    },
+    {
+      "path": "src/scripts/mods/afeix/story_ledger.nut",
+      "sha256": "e61dc81ed9c90b4401dc81c776e78aa217381e03bf5d68bad8be9b46b86559a4"
+    },
+    {
+      "path": "src/scripts/mods/afeix/story_progress.nut",
+      "sha256": "b9ea9edd7839e00138f304a850443cb2e57d5113f3cac556986f3e508ec19ae7"
+    },
+    {
+      "path": "src/scripts/mods/afeix/supporter_title_hooks.nut",
+      "sha256": "dfee2f64029e2b1ee2d77eeab55161e4b0354916b5c99a8bd1a8ddb9a5d5545a"
+    },
+    {
+      "path": "src/scripts/mods/afeix/talents.nut",
+      "sha256": "35b5a515c346221b1367ba6fb05c53559ef48e254a5543e3fd66ae8eab77cab6"
+    },
+    {
+      "path": "src/scripts/mods/afeix/turtle_secret.nut",
+      "sha256": "66baff96807b1ef62e5cf6832e971415273c2d23b5cdacb338579743e2b0ca49"
+    },
+    {
+      "path": "src/scripts/mods/afeix/world_art.nut",
+      "sha256": "8c76c5a6396c77342aec355e1f52ccff4e013fd708e387a25d8991a6517137e8"
+    },
+    {
+      "path": "src/scripts/mods/afeix/world_art_hooks.nut",
+      "sha256": "3916bd6ac0200c6f0222fc3db3cb5aabfcf5ae7593e17b1660c0c6a93df699b6"
+    },
+    {
+      "path": "src/scripts/scenarios/world/afeix_expedition_scenario.nut",
+      "sha256": "7c77ceeb71da7688057b535469b4d65085a62451e25f8536dcfb3f4ad04d3908"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_catalog_active.nut",
+      "sha256": "9acb6e343c8e281ee0c4e853307bfe00d4ff179596da354e6bffaf3608f7686b"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_ecig_puff.nut",
+      "sha256": "dbe7db7f85dc4223a835324e720c9624cdc14bb14cd43fe807f89efab99f7254"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_feidie.nut",
+      "sha256": "06f9a8b9853c9aa661f9d97ab85ad6221e7197dfc810e2ef9293bc2060809e6e"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_haoqi.nut",
+      "sha256": "8c3263bd0853ea5d3bed64365091b559851c5f22746cefd2fb1e464986e4851a"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_member_active.nut",
+      "sha256": "428618496d61d13b1695c067455053bc26886993de79b622230283e92013789c"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_promotion_active.nut",
+      "sha256": "394c86bf8ced148473ff74c59e80a67741e2dd41a2257dfa9ce76705b5592657"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_wawa.nut",
+      "sha256": "6a7fafeacfed230b4cd9de127e0d8806ff137f5003ad7a8f4af1d144572d52e2"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_afei_background.nut",
+      "sha256": "5ab6dd58fea8470adc70d81b5859febf68b391d95259c950d28f48d567b4713e"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_bottle_background.nut",
+      "sha256": "7b24ab172c661ede95c9e1d4c2974899db4370cc7a878984cf18a94dab513539"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_bula_background.nut",
+      "sha256": "6391a0a162b3f685d9d396691b36a5eaa97cfea71eada44adc6b2c93c3c27706"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_dae_background.nut",
+      "sha256": "cac25b6f5ee3be70adfa446e8bd583a4f24864e623db240c994556c238267593"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_damou_background.nut",
+      "sha256": "839ba39afdc1f22298a8b2453827e16875ea5b3cc51b5de1bd1096b8cfb8d719"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_keke_background.nut",
+      "sha256": "a4000c99b885f445ba606c2e386880d2c0d4b599697e6f11dbdfbf5ee0abb0ff"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_laocai_background.nut",
+      "sha256": "4020e3b6d9ac8d37d6aa2edb47264649e91882c498de6e7bac4cd347efde007b"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_lili_background.nut",
+      "sha256": "b8f7cb760d75267116b7654115866f1be6c1745868e98d4e0de0f98a45c75eb8"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_manyuemei_background.nut",
+      "sha256": "e810e766a38025ef99812e097ddd3fad8c5b7970dfc59756b0bb9ff7564012e3"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_meiya_background.nut",
+      "sha256": "7479cc0e40119979b13abe160b156aeac8f61c370edc90efd51074f5b68c721d"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_mocha_background.nut",
+      "sha256": "c4fe53960a88207f0ad7d575fb0546b0dff8d335fc1445b1d2af7e696221cd94"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_naigai_background.nut",
+      "sha256": "c22312b7bb045827a328615ded06f76bb7a0642ff422f77825ab058bcd1ad4c1"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_qianhan_background.nut",
+      "sha256": "4e66d52465c5d61d6d4d88207d8b04a1f415437ddb0997a0a139c79c14ab866c"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_shuaizi_background.nut",
+      "sha256": "a723c556314079f9a2924c8c61d5cef489bfb6837edaf2b9190be8eb7244ebfc"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_songnuanyang_background.nut",
+      "sha256": "aa0a9cf2b685dca792c13062d260c51ff313a764420e32d67f89925eec52b196"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_suwa_background.nut",
+      "sha256": "2b6f8766d557fc86df28f4e5ee89a783ae06aacccae1a14eedb1dfbae2c16ba9"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_tiantong_background.nut",
+      "sha256": "fd3fe2d90ba6bfda488be16a4aba9b7987cfde3ee11cf011b213112f8c7fb576"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_tongzhu_background.nut",
+      "sha256": "b8d8874d09ceff9a4fbbf7ccb73d2729afb9968c8a1baa0377274b0308c44a87"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_tutu_background.nut",
+      "sha256": "93758fcf7578a6549064bcef811fcafc3c130166053d22fb80038aae06ef72a7"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_wangdazhi_background.nut",
+      "sha256": "b2ca45025715e2762c640a9c58565cdbe90fa9548eb652e52b1679041b109b0a"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_wangduidui_background.nut",
+      "sha256": "3eccbe9fcd6449301ec72edbc7af19a4e35ef07f959319a8d3c0fab26ec41318"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_wanshe_background.nut",
+      "sha256": "4e7011a42b924a3538a54629252528ae836c5534abb5c0fcacd74d03997ef02e"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaogui_background.nut",
+      "sha256": "e30de155434e4e5da1b033525ad6cd543aa65314cd424ce443719b5131d7d96a"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaohani_background.nut",
+      "sha256": "a058b94a603dcaecb897cd55785bb8225dc2890041a372b14313150fe6ae3b86"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaojie_background.nut",
+      "sha256": "bd1ed6fd75010b089d1b76da3f92890c1e4a1761719e00b00ab4b1bbf44d3e26"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaoning_background.nut",
+      "sha256": "4daf816b4e26ea217bdc6902db125e62fd3fa9865f4124a0827173683829f7a4"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaopangxu_background.nut",
+      "sha256": "fb80ec371bbed65e45ce1bb81013999d5890d732c244abe2be900473dd1fb57a"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaoyubeike_background.nut",
+      "sha256": "aa6a613a8068b335129d641cd7512d369cd7ccf583f418886422e90f8c5e6c87"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaoyueya_background.nut",
+      "sha256": "d9d9addf4c7697c334df5391c42cbdddedb867ba84a9af2bb7039351e1475fce"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_yangmiemie_background.nut",
+      "sha256": "5455f49e81ffc342a2ef4962db51b6fd4e4cf4d8242ff80c227270875e3814ae"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_yanzi_background.nut",
+      "sha256": "11f899452fe2beaa24f55504778da78609649eea9037f648b1ee37dbcc0a01fa"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_yaoyaoya_background.nut",
+      "sha256": "8f8bb3cedd167bc4b6c336ed15b16871a2d853990411128bc1cdf82f34b9c282"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_yuchujiu_background.nut",
+      "sha256": "83f404719f9c6b1e9b4ce1dcaf23c23759132d136e58b305d61209634d04bc6d"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_yuxiang_background.nut",
+      "sha256": "ad67d1bc1b7b1733f9f4b6e9f7d690ebe3d858f26abfc2e391c163e69ab2ec7b"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_cao_bleeding.nut",
+      "sha256": "a18cc8c48775870893d76146b795760c32c86dbc1c48e0479030585f29842930"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_cao_courage.nut",
+      "sha256": "912b4aa86e2c4f3b0db8edf37b565a1a92fb4ff0ec726576bc29d77c74ef446c"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_catalog_effect.nut",
+      "sha256": "af9ab2a61114699cf5b8b7403d4e6c640eed3f0ef93201fa087e3fa2fb248225"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_feidie_effect.nut",
+      "sha256": "ea34954d3934e2ddcfacea8ea95ea86d36e7fdd8eaa83b9e2a47f1514d6c7b65"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_feidie_guard_effect.nut",
+      "sha256": "7278ddc8fc19b69fa8c11e39203c4f9df62cddd9c07352b567757187f1a4daa1"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_haoqi_effect.nut",
+      "sha256": "e678a85afa9713a553ebca35de3ed9ebcc884a0515ee1474e7c5aba7973fe336"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_member_effect.nut",
+      "sha256": "9c5991aef8ae9b15104eb9b1889d9e8cbbadbf44846a723bf08a2905638e82cc"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_promotion_effect.nut",
+      "sha256": "ef8dd390a8dd72ca5a070694e0d3923a87792cf04a5191f2ae2a4a2063b382ba"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_turtle_awakening.nut",
+      "sha256": "4e7d8d67e168ca6c71b59f308965090d85db41ed33dd933751d89a79048f98c6"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_wawa_effect.nut",
+      "sha256": "4129eadac93501dabf2a72b7daa4f9a7489e63add662a758cf279fada109f88c"
+    },
+    {
+      "path": "src/scripts/skills/special/afeix_combat_memory.nut",
+      "sha256": "6dd9f01a1d6ebb33dba3ac068a0325679428fe11f8d40de5ad415cda3de45e0c"
+    },
+    {
+      "path": "src/scripts/skills/special/afeix_grip_breaker.nut",
+      "sha256": "16e94313831ded989f0f3d5a31d40fd0d06c0a37320aac9a3137d5eae0d21c0f"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_catalog_passive.nut",
+      "sha256": "16c6439797e2af3072932101fbafe634a85bea47ff88404c24b2274697e631c1"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_endurance.nut",
+      "sha256": "e24376c577c8e268dc8a0f255b35a91cca44c0e3de43b6236fa42507c529c5ae"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_member_passive.nut",
+      "sha256": "e28d66a330b1f7c39bd46b8acd2052d5f390bbaf9665cf9955622af5f6e51e06"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_personal_trait.nut",
+      "sha256": "3c613a9107150abb0dbfd3cdfab11afbbba22a0c001eb9e334a50c94a237f77d"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_promotion_trait.nut",
+      "sha256": "d26612b49b6155530c918fe5f0c47077fa0a17b077b8a3c539dc8396eacb378b"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_turtle_body.nut",
+      "sha256": "1502f7841039515a47d3a735df5d0c32e5be7d9ceb1bc556daaea6a3218e521a"
+    }
+  ],
+  "behavior_assertions": 29792,
+  "package": "dist/mod_afeix_expedition v0.27.9.zip",
+  "package_sha256": "a2faa1307e85cc81d3678e65165ca9b16abe4b362a27b71ed4508e3a3a19f7ad",
+  "package_entries": 284,
+  "crc_passed": true,
+  "source_bytes_match": true,
+  "changed_entries_from_v0278": [
+    "gfx/afeix_ideas_v19.png",
+    "gfx/items/weapons/afeix_laoma_grip.png",
+    "gfx/items/weapons/afeix_laoma_grip_70x70.png",
+    "gfx/ui/items/weapons/afeix_laoma_grip.png",
+    "gfx/ui/items/weapons/afeix_laoma_grip_70x70.png",
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/items/weapons/afeix_laoma_grip.nut"
+  ],
+  "in_game_tested": false,
+  "published": false
+}

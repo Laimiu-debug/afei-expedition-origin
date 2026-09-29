@@ -1,0 +1,73 @@
+"""Prepare the reviewed v0.28.2 package and cumulative BBMOD release metadata."""
+from pathlib import Path
+from zipfile import ZipFile
+import hashlib
+import json
+import shutil
+
+stage = Path(__file__).resolve().parent
+root = stage.parents[1]
+before = json.loads((stage / 'website-before.json').read_text(encoding='utf-8'))
+previous = json.loads((root / 'build/publish-v0.27.6/website-release.json').read_text(encoding='utf-8'))
+version = (root / 'VERSION').read_text(encoding='utf-8').strip()
+assert version == '0.28.2'
+package = root / f'dist/mod_afeix_expedition v{version}.zip'
+with ZipFile(package) as archive:
+    source = {p.relative_to(root / 'src').as_posix(): p for p in (root / 'src').rglob('*') if p.is_file()}
+    assert set(archive.namelist()) == set(source)
+    assert archive.testzip() is None
+    assert all(archive.read(name) == path.read_bytes() for name, path in source.items())
+validation = json.loads((root / 'build/gameplay-validation.json').read_text(encoding='utf-8'))
+assert validation['syntax_passed'] and validation['behavior_tests_passed']
+assert sum(test['assertions'] for test in validation['tests']) == 30038
+mod = {key: before['metadata'].get(key, value) for key, value in previous['mod'].items()}
+mod['summary'] = 'v0.28.2 汇总招募节奏与候选轮换、老马握把穿甲与美术、普通人物四派称号更新。34 人起源，最多 12 人出战、40 人在册；独立随机来客，希文 DLC 共用队列。请新开战役。'
+mod['description'] = '''v0.28.2 累计更新：刀一前十天分批开放补员，刀二与飞团整体提前六天；常规候选首次保留四日、重逢两日，新面孔优先并照顾等待较久的回流成员。修复老马握把实际攻击穿甲，更新持握美术与价值，并加入普通人物四派随机称号。请新开战役。
+
+阿飞、王大谋、午夜抹抹茶带着一面黑旗上路。主包共 34 人，最多 40 人在册，每战自选 1～12 人。世界地图按 F8 打开黑旗名册，查看伙伴、委托与旅途故事；原版人物栏可调整装备、站位和待命。33 名伙伴各有 7 级专属技能三选一、11 级自动精通，共 99 项技能选项；阿飞使用独立晋升路线。
+
+刀一七名后续成员最早开放：白小帅子第 2 日、小酒瓶第 3 日、小月牙第 4 日、余初九第 5 日、李李超欧第 6 日、小鱼贝壳第 8 日、王怼怼第 10 日。刀二第 12～26 日、飞团第 28～54 日陆续开放。天数是最早资格，还需同时满足参战、有效契约、不同聚落和等级门槛，并在合格聚落支付报价。小酒瓶一级基准价 850、李李超欧 460 克朗；实际报价受补级与城镇修正影响。
+
+普通队列有三个候选位置。同批达标按规划解锁日期排序；首次展示四个完整游戏日，重逢两日，新面孔优先。有人回流等待满六日时，每成功展示两位新人，下一次空位优先照顾等待较久的回流成员。没人首次等待时，各位置正常轮换。生成失败保留队次并继续尝试其他人，成功雇佣后该位置冷却一个完整游戏日。换城、反复查看和读档不会刷新既有结果。
+
+宋暖阳与溺水小龟各有独立随机来客位置，不挤占普通队列，最多同时五名主题候选。宋暖阳第 16 日起且满足 6 战、2 份有效契约、4 座不同合格聚落、历史最高 3 级后，每个有效抽取日 35%；小龟从第 1 日进入合格聚落起，每个有效抽取日 25%。两人各自连续四次失败后第五次必出，展示两日；每天到合格聚落查看最多抽一次，没查看的日期不补抽。成功雇佣、阵亡或永久离队后不会重复生成。
+
+老马的垂直握把基础伤害 84～120、护甲伤害效率 235%、破盾 52、基础价值 28,888 克朗。无额外修正时，猛击伤害 104～140、实际穿甲 70%；横扫伤害 84～120、实际穿甲 60%，保留原版两技能相差十个百分点的规则。单体命中额外削甲 30。马头朝向角色前方，普通与染血持握显示放大 50%。友好集市与武器店自然补货各有 5% 概率出现，同店已有库存时不重复新增，反复开关商店不重抽。
+
+阿飞起源中新生成且没有称号的普通人物，随机冠名保飞派、倒飞派、儿飞派或曹飞派，各 25%；已有称号及专属人物称号保留。沿用 V2 总表中的人物属性、星位星级、固定特质、装备、技能、事件和经济配置，以及个人成长、四派相遇、随机事件、战团结局与专属人物美术。
+
+保留人物背景与工资修复、黑旗名册研习和 11 级精通读取修复、人物界面 F8 冲突修复，以及大名册滚动和拖拽编队修复。战团事务支持五款蛤蟆旗帜、切回建团所选旗帜、隐藏或显示全队头盔外观。保留 mod_fox_043 招募属性显示兼容、野心结算、解网后技能回调及网后断头崩溃修复，减少开局重复寻路。
+
+本页面提供主包。希文与里根儿为独立可选 DLC 0.2.4，现有 DLC 包可继续搭配本版。希文与主包共用候选队列，首次四日、重逢两日；仍需第 35 日、14 战、5 份有效契约、6 座合格聚落、历史最高 5 级，同批达标按解锁日排序，达到第 35 日不代表立即出现。
+
+公开开发试玩版，按新建战役验收，不承诺完整旧档迁移。本次通过 123 个脚本编译、30,038 条离线行为断言、原版资源引用和 JavaScript 检查；284 个包内文件与源码逐字节一致，ZIP CRC 通过。本版招募节奏、队列和握把修复尚未实机战役验收；v0.27.6 的网后断头修复曾在独立战场复现并复测至下一回合，不能视为本版完整战役验收。大地图帧耗时与此前食尸鬼战斗闪退仍待确认。'''
+mod['compatibility_notes'] = '''本版请新开战役。人物平衡、招募与事件按新战役验收，不承诺完整旧档迁移。
+
+安装前完全退出游戏。网站下载名为 mod_afeix_expedition.zip，直接放入游戏 data 文件夹，不要解压；替换同名旧包，并移走此前所有带版本号的本 Mod 旧包，一次只保留一份。也可将下载文件命名为 mod_afeix_expedition v0.28.2.zip。
+
+需要 Legacy Modding Script Hooks（mod_hooks）以及声明的本体与官方 DLC，新建战役选择“阿飞远征团”。希文与里根儿 DLC 0.2.4 为独立可选扩展，可继续搭配本版，无需重复安装多份 DLC。
+
+请在安全的世界地图按 F8 打开黑旗名册。招募需到白天的非敌对普通村庄或城镇，军事城堡与要塞不适用；最早开放日期不保证立即展示，也不免除其他门槛或费用。握把需等待商店自然补货。
+
+未验证与 Legends、Reforged 等大型改动队伍、属性或界面的 MOD 兼容；不要同时加载旧工程或阿飞胸像试验资源。保留 mod_fox_043 招募显示兼容。本版新增玩法通过离线检查，尚未完成实机战役验收。'''
+notes = '''v0.28.2（包含网站 v0.27.6 之后的全部主包更新）
+
+1. 前期补员：刀一七名后续伙伴第 2～10 日分批开放；刀二、飞团整体提前六日。仍需同时满足战斗、有效契约、聚落、等级门槛和报价。宋暖阳第 16 日起、小龟全流程随机相遇，各有独立位置与第五次有效抽取保底。
+2. 候选轮换：首次保留四日、重逢两日；同批达标按解锁日期排序，新面孔优先，等待满六日的回流成员获得轮换保护。单个人物生成失败不阻塞其他候选。希文 DLC 使用相同队列和优先规则。
+3. 老马握把：实际猛击穿甲 70%、横扫 60%，修复此前说明与实际技能结算不一致；基础价值 28,888 克朗，马头朝向角色前方，普通／染血持握显示放大 50%。保留基础伤害 84～120、235% 破甲、52 破盾与单体追加削甲 30。
+4. 四派称号：新生成且无称号的普通人物随机获得保飞派／倒飞派／儿飞派／曹飞派称号，各 25%；已有和专属称号保留。
+5. 保留 v0.27.6 的网后断头崩溃、人物背景、F8、研习和编队修复，以及既有人物平衡、故事与美术。主包 34 人，最多 12 人出战、40 人在册；可选 DLC 仍为 0.2.4。
+
+验证：123 个 Squirrel 脚本编译、30,038 条离线断言、原版资源与 JavaScript 检查通过；284 个包内文件与源码一致，CRC 通过。包含 125 条候选队列检查和 104 条招募节奏检查。尚未完成本版实机战役验收。
+
+请完全退出游戏，主包与可选 DLC 各只保留一份 ZIP，并新开战役。'''
+spec = dict(owner=before['owner'], expected_mod_id=before['id'], expected_metadata=before['metadata'],
+            mod=mod, version=version, package_filename=package.name,
+            sha256=hashlib.sha256(package.read_bytes()).hexdigest(), notes=notes)
+(stage / 'website-release.json').write_text(json.dumps(spec, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+shutil.copy2(package, stage / package.name)
+shutil.copy2(root / 'tools/publish_bbmod_release.py', stage / 'publish_bbmod_release.py')
+publish_script = (root / 'build/publish-v0.27.6/publish.py').read_text(encoding='utf-8')
+publish_script = publish_script.replace('afeix-0276', 'afeix-0282').replace('0.27.6', version)
+(stage / 'publish.py').write_text(publish_script, encoding='utf-8')
+print(json.dumps(dict(version=version, sha256=spec['sha256'], entries=len(source), size=package.stat().st_size)))

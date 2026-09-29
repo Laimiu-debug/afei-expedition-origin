@@ -1,0 +1,53 @@
+{
+  "version": "0.28.2",
+  "before_recruitment": {
+    "regular_slots": 3,
+    "regular_offer_days": 4,
+    "hire_cooldown_days": 1,
+    "random_order": [
+      "songnuanyang",
+      "xiaogui"
+    ],
+    "random_visitors": {
+      "songnuanyang": {
+        "chance": 35,
+        "pity_attempts": 5,
+        "offer_days": 2
+      },
+      "xiaogui": {
+        "chance": 25,
+        "pity_attempts": 5,
+        "offer_days": 2
+      }
+    }
+  },
+  "recruitment": {
+    "regular_slots": 3,
+    "regular_offer_days": 4,
+    "return_offer_days": 2,
+    "return_priority_days": 6,
+    "max_new_before_return": 2,
+    "hire_cooldown_days": 1,
+    "random_order": [
+      "songnuanyang",
+      "xiaogui"
+    ],
+    "random_visitors": {
+      "songnuanyang": {
+        "chance": 35,
+        "pity_attempts": 5,
+        "offer_days": 2
+      },
+      "xiaogui": {
+        "chance": 25,
+        "pity_attempts": 5,
+        "offer_days": 2
+      }
+    }
+  },
+  "people_unchanged": true,
+  "dlc_shared_priority": true,
+  "proposal_sha256": "8ab3159c5003fbc79dc14fdd9108480dafa0ceae869339e777fff977a4ab9552",
+  "workbook_sha256": "cc2c8c99bb660cdb493d544fac2464a4d4af59f9cf3ecbd69dec7bbf69c1dfd0",
+  "validation": "build/recruitment-queue-v0282-validation.json"
+}

@@ -3430,193 +3430,229 @@
         0.23,
         0.2
       ],
-      "all_eligible_day": 60,
+      "all_eligible_day": 54,
       "people": [
         {
           "key": "afei",
           "name": "阿飞",
-          "eligible_day": 0
+          "eligible_day": 0,
+          "random_visitor": false
         },
         {
           "key": "damou",
           "name": "王大谋",
-          "eligible_day": 0
+          "eligible_day": 0,
+          "random_visitor": false
         },
         {
           "key": "mocha",
           "name": "午夜抹抹茶",
-          "eligible_day": 0
+          "eligible_day": 0,
+          "random_visitor": false
         },
         {
           "key": "bottle",
           "name": "小酒瓶",
-          "eligible_day": 12
+          "eligible_day": 5,
+          "random_visitor": false
         },
         {
           "key": "shuaizi",
           "name": "白小帅子",
-          "eligible_day": 5
+          "eligible_day": 5,
+          "random_visitor": false
         },
         {
           "key": "lili",
           "name": "李李超欧",
-          "eligible_day": 5
+          "eligible_day": 9,
+          "random_visitor": false
         },
         {
           "key": "xiaoyueya",
           "name": "小月牙",
-          "eligible_day": 9
+          "eligible_day": 5,
+          "random_visitor": false
         },
         {
           "key": "yuchujiu",
           "name": "余初九",
-          "eligible_day": 10
+          "eligible_day": 5,
+          "random_visitor": false
         },
         {
           "key": "xiaoyubeike",
           "name": "小鱼贝壳",
-          "eligible_day": 14
+          "eligible_day": 9,
+          "random_visitor": false
         },
         {
           "key": "wangduidui",
           "name": "王怼怼",
-          "eligible_day": 16
+          "eligible_day": 10,
+          "random_visitor": false
         },
         {
           "key": "laocai",
           "name": "老蔡",
-          "eligible_day": 20
+          "eligible_day": 14,
+          "random_visitor": false
         },
         {
           "key": "yanzi",
           "name": "眼子",
-          "eligible_day": 18
+          "eligible_day": 12,
+          "random_visitor": false
         },
         {
           "key": "tiantong",
           "name": "小虎",
-          "eligible_day": 22
+          "eligible_day": 16,
+          "random_visitor": false
         },
         {
           "key": "xiaoning",
           "name": "小宁",
-          "eligible_day": 26
+          "eligible_day": 20,
+          "random_visitor": false
         },
         {
           "key": "xiaopangxu",
           "name": "小胖",
-          "eligible_day": 28
+          "eligible_day": 22,
+          "random_visitor": false
         },
         {
           "key": "dae",
           "name": "大鹅",
-          "eligible_day": 24
+          "eligible_day": 18,
+          "random_visitor": false
         },
         {
           "key": "manyuemei",
           "name": "蔓越莓",
-          "eligible_day": 32
+          "eligible_day": 26,
+          "random_visitor": false
         },
         {
           "key": "xiaohani",
           "name": "罗一可",
-          "eligible_day": 30
+          "eligible_day": 24,
+          "random_visitor": false
         },
         {
           "key": "keke",
           "name": "可可",
-          "eligible_day": 34
+          "eligible_day": 28,
+          "random_visitor": false
         },
         {
           "key": "yuxiang",
           "name": "余想",
-          "eligible_day": 36
+          "eligible_day": 30,
+          "random_visitor": false
         },
         {
           "key": "tongzhu",
           "name": "童猪",
-          "eligible_day": 38
+          "eligible_day": 32,
+          "random_visitor": false
         },
         {
           "key": "meiya",
           "name": "美伢",
-          "eligible_day": 40
+          "eligible_day": 34,
+          "random_visitor": false
         },
         {
           "key": "wanshe",
           "name": "玩蛇",
-          "eligible_day": 42
+          "eligible_day": 36,
+          "random_visitor": false
         },
         {
           "key": "tutu",
           "name": "涂涂",
-          "eligible_day": 44
+          "eligible_day": 38,
+          "random_visitor": false
         },
         {
           "key": "naigai",
           "name": "奶盖",
-          "eligible_day": 45
+          "eligible_day": 39,
+          "random_visitor": false
         },
         {
           "key": "xiaojie",
           "name": "小杰",
-          "eligible_day": 48
+          "eligible_day": 42,
+          "random_visitor": false
         },
         {
           "key": "bula",
           "name": "bula",
-          "eligible_day": 50
+          "eligible_day": 44,
+          "random_visitor": false
         },
         {
           "key": "suwa",
           "name": "苏袜",
-          "eligible_day": 52
+          "eligible_day": 46,
+          "random_visitor": false
         },
         {
           "key": "qianhan",
           "name": "千涵",
-          "eligible_day": 54
+          "eligible_day": 48,
+          "random_visitor": false
         },
         {
           "key": "wangdazhi",
           "name": "王大芷",
-          "eligible_day": 56
+          "eligible_day": 50,
+          "random_visitor": false
         },
         {
           "key": "yaoyaoya",
           "name": "瑶瑶牙",
-          "eligible_day": 60
+          "eligible_day": 54,
+          "random_visitor": false
         },
         {
           "key": "yangmiemie",
           "name": "羊咩咩",
-          "eligible_day": 58
+          "eligible_day": 52,
+          "random_visitor": false
         },
         {
           "key": "songnuanyang",
           "name": "宋暖阳",
-          "eligible_day": 28
+          "eligible_day": 16,
+          "random_visitor": true
         },
         {
           "key": "xiaogui",
           "name": "溺水小龟",
-          "eligible_day": 46
+          "eligible_day": 1,
+          "random_visitor": true
         },
         {
           "key": "xiwen",
           "name": "希文",
-          "eligible_day": 35
+          "eligible_day": 35,
+          "random_visitor": false
         }
       ],
       "eligible_counts": {
-        "10": 7,
-        "20": 12,
-        "30": 18,
-        "45": 27,
+        "10": 11,
+        "20": 17,
+        "30": 22,
+        "45": 30,
         "60": 35,
         "90": 35,
         "120": 35
-      }
+      },
+      "scope": "只计算最低资格；不含候选排队、随机抽取、保底或实际经济。"
     },
     {
       "profile": "常规推进",
@@ -3626,193 +3662,229 @@
         0.16,
         0.1111111111111111
       ],
-      "all_eligible_day": 63,
+      "all_eligible_day": 54,
       "people": [
         {
           "key": "afei",
           "name": "阿飞",
-          "eligible_day": 0
+          "eligible_day": 0,
+          "random_visitor": false
         },
         {
           "key": "damou",
           "name": "王大谋",
-          "eligible_day": 0
+          "eligible_day": 0,
+          "random_visitor": false
         },
         {
           "key": "mocha",
           "name": "午夜抹抹茶",
-          "eligible_day": 0
+          "eligible_day": 0,
+          "random_visitor": false
         },
         {
           "key": "bottle",
           "name": "小酒瓶",
-          "eligible_day": 18
+          "eligible_day": 9,
+          "random_visitor": false
         },
         {
           "key": "shuaizi",
           "name": "白小帅子",
-          "eligible_day": 7
+          "eligible_day": 7,
+          "random_visitor": false
         },
         {
           "key": "lili",
           "name": "李李超欧",
-          "eligible_day": 9
+          "eligible_day": 13,
+          "random_visitor": false
         },
         {
           "key": "xiaoyueya",
           "name": "小月牙",
-          "eligible_day": 13
+          "eligible_day": 9,
+          "random_visitor": false
         },
         {
           "key": "yuchujiu",
           "name": "余初九",
-          "eligible_day": 13
+          "eligible_day": 9,
+          "random_visitor": false
         },
         {
           "key": "xiaoyubeike",
           "name": "小鱼贝壳",
-          "eligible_day": 18
+          "eligible_day": 13,
+          "random_visitor": false
         },
         {
           "key": "wangduidui",
           "name": "王怼怼",
-          "eligible_day": 19
+          "eligible_day": 18,
+          "random_visitor": false
         },
         {
           "key": "laocai",
           "name": "老蔡",
-          "eligible_day": 27
+          "eligible_day": 18,
+          "random_visitor": false
         },
         {
           "key": "yanzi",
           "name": "眼子",
-          "eligible_day": 19
+          "eligible_day": 18,
+          "random_visitor": false
         },
         {
           "key": "tiantong",
           "name": "小虎",
-          "eligible_day": 27
+          "eligible_day": 19,
+          "random_visitor": false
         },
         {
           "key": "xiaoning",
           "name": "小宁",
-          "eligible_day": 27
+          "eligible_day": 27,
+          "random_visitor": false
         },
         {
           "key": "xiaopangxu",
           "name": "小胖",
-          "eligible_day": 28
+          "eligible_day": 27,
+          "random_visitor": false
         },
         {
           "key": "dae",
           "name": "大鹅",
-          "eligible_day": 27
+          "eligible_day": 19,
+          "random_visitor": false
         },
         {
           "key": "manyuemei",
           "name": "蔓越莓",
-          "eligible_day": 36
+          "eligible_day": 27,
+          "random_visitor": false
         },
         {
           "key": "xiaohani",
           "name": "罗一可",
-          "eligible_day": 36
+          "eligible_day": 27,
+          "random_visitor": false
         },
         {
           "key": "keke",
           "name": "可可",
-          "eligible_day": 36
+          "eligible_day": 28,
+          "random_visitor": false
         },
         {
           "key": "yuxiang",
           "name": "余想",
-          "eligible_day": 36
+          "eligible_day": 36,
+          "random_visitor": false
         },
         {
           "key": "tongzhu",
           "name": "童猪",
-          "eligible_day": 38
+          "eligible_day": 36,
+          "random_visitor": false
         },
         {
           "key": "meiya",
           "name": "美伢",
-          "eligible_day": 45
+          "eligible_day": 36,
+          "random_visitor": false
         },
         {
           "key": "wanshe",
           "name": "玩蛇",
-          "eligible_day": 45
+          "eligible_day": 36,
+          "random_visitor": false
         },
         {
           "key": "tutu",
           "name": "涂涂",
-          "eligible_day": 45
+          "eligible_day": 38,
+          "random_visitor": false
         },
         {
           "key": "naigai",
           "name": "奶盖",
-          "eligible_day": 45
+          "eligible_day": 39,
+          "random_visitor": false
         },
         {
           "key": "xiaojie",
           "name": "小杰",
-          "eligible_day": 48
+          "eligible_day": 45,
+          "random_visitor": false
         },
         {
           "key": "bula",
           "name": "bula",
-          "eligible_day": 54
+          "eligible_day": 45,
+          "random_visitor": false
         },
         {
           "key": "suwa",
           "name": "苏袜",
-          "eligible_day": 54
+          "eligible_day": 46,
+          "random_visitor": false
         },
         {
           "key": "qianhan",
           "name": "千涵",
-          "eligible_day": 54
+          "eligible_day": 48,
+          "random_visitor": false
         },
         {
           "key": "wangdazhi",
           "name": "王大芷",
-          "eligible_day": 56
+          "eligible_day": 54,
+          "random_visitor": false
         },
         {
           "key": "yaoyaoya",
           "name": "瑶瑶牙",
-          "eligible_day": 63
+          "eligible_day": 54,
+          "random_visitor": false
         },
         {
           "key": "yangmiemie",
           "name": "羊咩咩",
-          "eligible_day": 58
+          "eligible_day": 54,
+          "random_visitor": false
         },
         {
           "key": "songnuanyang",
           "name": "宋暖阳",
-          "eligible_day": 28
+          "eligible_day": 19,
+          "random_visitor": true
         },
         {
           "key": "xiaogui",
           "name": "溺水小龟",
-          "eligible_day": 46
+          "eligible_day": 1,
+          "random_visitor": true
         },
         {
           "key": "xiwen",
           "name": "希文",
-          "eligible_day": 36
+          "eligible_day": 36,
+          "random_visitor": false
         }
       ],
       "eligible_counts": {
-        "10": 5,
-        "20": 11,
-        "30": 17,
-        "45": 27,
-        "60": 34,
+        "10": 8,
+        "20": 16,
+        "30": 21,
+        "45": 30,
+        "60": 35,
         "90": 35,
         "120": 35
-      }
+      },
+      "scope": "只计算最低资格；不含候选排队、随机抽取、保底或实际经济。"
     },
     {
       "profile": "谨慎推进",
@@ -3822,193 +3894,229 @@
         0.1,
         0.07142857142857142
       ],
-      "all_eligible_day": 98,
+      "all_eligible_day": 84,
       "people": [
         {
           "key": "afei",
           "name": "阿飞",
-          "eligible_day": 0
+          "eligible_day": 0,
+          "random_visitor": false
         },
         {
           "key": "damou",
           "name": "王大谋",
-          "eligible_day": 0
+          "eligible_day": 0,
+          "random_visitor": false
         },
         {
           "key": "mocha",
           "name": "午夜抹抹茶",
-          "eligible_day": 0
+          "eligible_day": 0,
+          "random_visitor": false
         },
         {
           "key": "bottle",
           "name": "小酒瓶",
-          "eligible_day": 28
+          "eligible_day": 14,
+          "random_visitor": false
         },
         {
           "key": "shuaizi",
           "name": "白小帅子",
-          "eligible_day": 10
+          "eligible_day": 10,
+          "random_visitor": false
         },
         {
           "key": "lili",
           "name": "李李超欧",
-          "eligible_day": 14
+          "eligible_day": 20,
+          "random_visitor": false
         },
         {
           "key": "xiaoyueya",
           "name": "小月牙",
-          "eligible_day": 20
+          "eligible_day": 14,
+          "random_visitor": false
         },
         {
           "key": "yuchujiu",
           "name": "余初九",
-          "eligible_day": 20
+          "eligible_day": 14,
+          "random_visitor": false
         },
         {
           "key": "xiaoyubeike",
           "name": "小鱼贝壳",
-          "eligible_day": 28
+          "eligible_day": 20,
+          "random_visitor": false
         },
         {
           "key": "wangduidui",
           "name": "王怼怼",
-          "eligible_day": 30
+          "eligible_day": 28,
+          "random_visitor": false
         },
         {
           "key": "laocai",
           "name": "老蔡",
-          "eligible_day": 42
+          "eligible_day": 28,
+          "random_visitor": false
         },
         {
           "key": "yanzi",
           "name": "眼子",
-          "eligible_day": 30
+          "eligible_day": 28,
+          "random_visitor": false
         },
         {
           "key": "tiantong",
           "name": "小虎",
-          "eligible_day": 42
+          "eligible_day": 30,
+          "random_visitor": false
         },
         {
           "key": "xiaoning",
           "name": "小宁",
-          "eligible_day": 42
+          "eligible_day": 42,
+          "random_visitor": false
         },
         {
           "key": "xiaopangxu",
           "name": "小胖",
-          "eligible_day": 42
+          "eligible_day": 42,
+          "random_visitor": false
         },
         {
           "key": "dae",
           "name": "大鹅",
-          "eligible_day": 42
+          "eligible_day": 30,
+          "random_visitor": false
         },
         {
           "key": "manyuemei",
           "name": "蔓越莓",
-          "eligible_day": 56
+          "eligible_day": 42,
+          "random_visitor": false
         },
         {
           "key": "xiaohani",
           "name": "罗一可",
-          "eligible_day": 56
+          "eligible_day": 42,
+          "random_visitor": false
         },
         {
           "key": "keke",
           "name": "可可",
-          "eligible_day": 56
+          "eligible_day": 42,
+          "random_visitor": false
         },
         {
           "key": "yuxiang",
           "name": "余想",
-          "eligible_day": 56
+          "eligible_day": 56,
+          "random_visitor": false
         },
         {
           "key": "tongzhu",
           "name": "童猪",
-          "eligible_day": 56
+          "eligible_day": 56,
+          "random_visitor": false
         },
         {
           "key": "meiya",
           "name": "美伢",
-          "eligible_day": 70
+          "eligible_day": 56,
+          "random_visitor": false
         },
         {
           "key": "wanshe",
           "name": "玩蛇",
-          "eligible_day": 70
+          "eligible_day": 56,
+          "random_visitor": false
         },
         {
           "key": "tutu",
           "name": "涂涂",
-          "eligible_day": 70
+          "eligible_day": 56,
+          "random_visitor": false
         },
         {
           "key": "naigai",
           "name": "奶盖",
-          "eligible_day": 70
+          "eligible_day": 56,
+          "random_visitor": false
         },
         {
           "key": "xiaojie",
           "name": "小杰",
-          "eligible_day": 70
+          "eligible_day": 70,
+          "random_visitor": false
         },
         {
           "key": "bula",
           "name": "bula",
-          "eligible_day": 84
+          "eligible_day": 70,
+          "random_visitor": false
         },
         {
           "key": "suwa",
           "name": "苏袜",
-          "eligible_day": 84
+          "eligible_day": 70,
+          "random_visitor": false
         },
         {
           "key": "qianhan",
           "name": "千涵",
-          "eligible_day": 84
+          "eligible_day": 70,
+          "random_visitor": false
         },
         {
           "key": "wangdazhi",
           "name": "王大芷",
-          "eligible_day": 84
+          "eligible_day": 84,
+          "random_visitor": false
         },
         {
           "key": "yaoyaoya",
           "name": "瑶瑶牙",
-          "eligible_day": 98
+          "eligible_day": 84,
+          "random_visitor": false
         },
         {
           "key": "yangmiemie",
           "name": "羊咩咩",
-          "eligible_day": 84
+          "eligible_day": 84,
+          "random_visitor": false
         },
         {
           "key": "songnuanyang",
           "name": "宋暖阳",
-          "eligible_day": 42
+          "eligible_day": 30,
+          "random_visitor": true
         },
         {
           "key": "xiaogui",
           "name": "溺水小龟",
-          "eligible_day": 70
+          "eligible_day": 1,
+          "random_visitor": true
         },
         {
           "key": "xiwen",
           "name": "希文",
-          "eligible_day": 56
+          "eligible_day": 56,
+          "random_visitor": false
         }
       ],
       "eligible_counts": {
-        "10": 4,
-        "20": 7,
-        "30": 11,
-        "45": 17,
-        "60": 23,
-        "90": 34,
+        "10": 5,
+        "20": 10,
+        "30": 16,
+        "45": 21,
+        "60": 28,
+        "90": 35,
         "120": 35
-      }
+      },
+      "scope": "只计算最低资格；不含候选排队、随机抽取、保底或实际经济。"
     }
   ],
   "economy": [

@@ -1,0 +1,462 @@
+{
+  "version": "0.28.0",
+  "changes": {
+    "bottle": {
+      "before": {
+        "day": 5,
+        "battles": 2
+      },
+      "after": {
+        "day": 3,
+        "battles": 1
+      }
+    },
+    "lili": {
+      "before": {
+        "day": 12,
+        "battles": 4,
+        "contracts": 2,
+        "highest_level": 3
+      },
+      "after": {
+        "day": 6,
+        "battles": 2,
+        "contracts": 1,
+        "highest_level": 2
+      }
+    },
+    "xiaoyueya": {
+      "before": {
+        "day": 7,
+        "battles": 2,
+        "towns": 3
+      },
+      "after": {
+        "day": 4,
+        "battles": 1,
+        "towns": 2
+      }
+    },
+    "yuchujiu": {
+      "before": {
+        "day": 10,
+        "battles": 4,
+        "towns": 3
+      },
+      "after": {
+        "day": 5,
+        "battles": 2,
+        "towns": 2
+      }
+    },
+    "xiaoyubeike": {
+      "before": {
+        "day": 14,
+        "battles": 6,
+        "highest_level": 3
+      },
+      "after": {
+        "day": 8,
+        "battles": 3,
+        "highest_level": 2
+      }
+    },
+    "wangduidui": {
+      "before": {
+        "day": 16,
+        "battles": 6,
+        "contracts": 3,
+        "towns": 4
+      },
+      "after": {
+        "day": 10,
+        "battles": 4,
+        "contracts": 2,
+        "towns": 3
+      }
+    },
+    "laocai": {
+      "before": {
+        "day": 20,
+        "battles": 8,
+        "contracts": 3,
+        "towns": 4,
+        "highest_level": 4
+      },
+      "after": {
+        "day": 14,
+        "battles": 6,
+        "contracts": 2,
+        "towns": 3,
+        "highest_level": 3
+      }
+    },
+    "yanzi": {
+      "before": {
+        "day": 18,
+        "battles": 7,
+        "contracts": 3,
+        "towns": 4
+      },
+      "after": {
+        "day": 12,
+        "battles": 4,
+        "contracts": 2,
+        "towns": 3
+      }
+    },
+    "tiantong": {
+      "before": {
+        "day": 22,
+        "battles": 8,
+        "contracts": 4,
+        "towns": 5,
+        "highest_level": 4
+      },
+      "after": {
+        "day": 16,
+        "battles": 6,
+        "contracts": 3,
+        "towns": 4,
+        "highest_level": 3
+      }
+    },
+    "xiaoning": {
+      "before": {
+        "day": 26,
+        "battles": 10,
+        "contracts": 4,
+        "towns": 5
+      },
+      "after": {
+        "day": 20,
+        "battles": 8,
+        "contracts": 3,
+        "towns": 4
+      }
+    },
+    "xiaopangxu": {
+      "before": {
+        "day": 28,
+        "battles": 11
+      },
+      "after": {
+        "day": 22,
+        "battles": 8
+      }
+    },
+    "dae": {
+      "before": {
+        "day": 24,
+        "battles": 10,
+        "contracts": 4,
+        "towns": 5,
+        "highest_level": 4
+      },
+      "after": {
+        "day": 18,
+        "battles": 7,
+        "contracts": 3,
+        "towns": 4,
+        "highest_level": 3
+      }
+    },
+    "manyuemei": {
+      "before": {
+        "day": 32,
+        "battles": 13,
+        "contracts": 5,
+        "towns": 6,
+        "highest_level": 5
+      },
+      "after": {
+        "day": 26,
+        "battles": 10,
+        "contracts": 4,
+        "towns": 5,
+        "highest_level": 4
+      }
+    },
+    "xiaohani": {
+      "before": {
+        "day": 30,
+        "battles": 12,
+        "towns": 6,
+        "highest_level": 5
+      },
+      "after": {
+        "day": 24,
+        "battles": 10,
+        "towns": 5,
+        "highest_level": 4
+      }
+    },
+    "keke": {
+      "before": {
+        "day": 34,
+        "battles": 14,
+        "contracts": 5,
+        "towns": 6,
+        "highest_level": 5
+      },
+      "after": {
+        "day": 28,
+        "battles": 11,
+        "contracts": 4,
+        "towns": 5,
+        "highest_level": 4
+      }
+    },
+    "yuxiang": {
+      "before": {
+        "day": 36,
+        "battles": 15,
+        "contracts": 5
+      },
+      "after": {
+        "day": 30,
+        "battles": 12,
+        "contracts": 4
+      }
+    },
+    "tongzhu": {
+      "before": {
+        "day": 38,
+        "battles": 16,
+        "contracts": 6
+      },
+      "after": {
+        "day": 32,
+        "battles": 13,
+        "contracts": 5
+      }
+    },
+    "meiya": {
+      "before": {
+        "day": 40,
+        "battles": 16,
+        "contracts": 6,
+        "towns": 7,
+        "highest_level": 6
+      },
+      "after": {
+        "day": 34,
+        "battles": 14,
+        "contracts": 5,
+        "towns": 6,
+        "highest_level": 5
+      }
+    },
+    "wanshe": {
+      "before": {
+        "day": 42,
+        "battles": 18,
+        "contracts": 6,
+        "towns": 7,
+        "highest_level": 6
+      },
+      "after": {
+        "day": 36,
+        "battles": 15,
+        "contracts": 5,
+        "towns": 6,
+        "highest_level": 5
+      }
+    },
+    "tutu": {
+      "before": {
+        "day": 44,
+        "battles": 18,
+        "contracts": 7,
+        "towns": 7,
+        "highest_level": 6
+      },
+      "after": {
+        "day": 38,
+        "battles": 16,
+        "contracts": 6,
+        "towns": 6,
+        "highest_level": 5
+      }
+    },
+    "naigai": {
+      "before": {
+        "day": 45,
+        "battles": 19,
+        "contracts": 7,
+        "towns": 7,
+        "highest_level": 6
+      },
+      "after": {
+        "day": 39,
+        "battles": 16,
+        "contracts": 6,
+        "towns": 6,
+        "highest_level": 5
+      }
+    },
+    "xiaojie": {
+      "before": {
+        "day": 48,
+        "battles": 20,
+        "contracts": 7
+      },
+      "after": {
+        "day": 42,
+        "battles": 18,
+        "contracts": 6
+      }
+    },
+    "bula": {
+      "before": {
+        "day": 50,
+        "battles": 21,
+        "contracts": 8,
+        "towns": 8,
+        "highest_level": 7
+      },
+      "after": {
+        "day": 44,
+        "battles": 18,
+        "contracts": 7,
+        "towns": 7,
+        "highest_level": 6
+      }
+    },
+    "suwa": {
+      "before": {
+        "day": 52,
+        "battles": 22,
+        "contracts": 8,
+        "towns": 8,
+        "highest_level": 7
+      },
+      "after": {
+        "day": 46,
+        "battles": 20,
+        "contracts": 7,
+        "towns": 7,
+        "highest_level": 6
+      }
+    },
+    "qianhan": {
+      "before": {
+        "day": 54,
+        "battles": 23,
+        "contracts": 8,
+        "towns": 8,
+        "highest_level": 7
+      },
+      "after": {
+        "day": 48,
+        "battles": 20,
+        "contracts": 7,
+        "towns": 7,
+        "highest_level": 6
+      }
+    },
+    "wangdazhi": {
+      "before": {
+        "day": 56,
+        "battles": 24,
+        "contracts": 9
+      },
+      "after": {
+        "day": 50,
+        "battles": 21,
+        "contracts": 8
+      }
+    },
+    "yaoyaoya": {
+      "before": {
+        "day": 60,
+        "battles": 26,
+        "contracts": 9,
+        "highest_level": 8
+      },
+      "after": {
+        "day": 54,
+        "battles": 23,
+        "contracts": 8,
+        "highest_level": 7
+      }
+    },
+    "yangmiemie": {
+      "before": {
+        "day": 58,
+        "battles": 25,
+        "contracts": 9
+      },
+      "after": {
+        "day": 52,
+        "battles": 22,
+        "contracts": 8
+      }
+    },
+    "songnuanyang": {
+      "before": {
+        "day": 28,
+        "battles": 11,
+        "contracts": 4,
+        "towns": 5,
+        "highest_level": 4,
+        "join_level": 2,
+        "suggested_price": 1120
+      },
+      "after": {
+        "day": 16,
+        "battles": 6,
+        "contracts": 2,
+        "towns": 4,
+        "highest_level": 3,
+        "join_level": 5,
+        "suggested_price": 1960
+      }
+    },
+    "xiaogui": {
+      "before": {
+        "day": 46,
+        "battles": 20,
+        "contracts": 7,
+        "towns": 7,
+        "highest_level": 6,
+        "join_level": 4,
+        "suggested_price": 1490
+      },
+      "after": {
+        "day": 1,
+        "battles": 0,
+        "contracts": 0,
+        "towns": 1,
+        "highest_level": 1,
+        "join_level": 5,
+        "suggested_price": 1830
+      }
+    }
+  },
+  "random_rules": {
+    "regular_slots": 3,
+    "regular_offer_days": 4,
+    "hire_cooldown_days": 1,
+    "random_order": [
+      "songnuanyang",
+      "xiaogui"
+    ],
+    "random_visitors": {
+      "songnuanyang": {
+        "chance": 35,
+        "pity_attempts": 5,
+        "offer_days": 2
+      },
+      "xiaogui": {
+        "chance": 25,
+        "pity_attempts": 5,
+        "offer_days": 2
+      }
+    }
+  },
+  "before_proposal_sha256": "18f504a59bb7bd29d7b7aa1d453faac2a7a2fd56c0f8a7f02b5a6758261bb56c",
+  "proposal_sha256": "0abccc4a151ef2aa437471dd7966dc3256817b40a9f3ac7f24924b249033b3c3",
+  "before_workbook_sha256": "c08ab8274d15c43f3706867db014d5c488098af77b51203716eabdaa933cc4bf",
+  "workbook_sha256": "cc2c8c99bb660cdb493d544fac2464a4d4af59f9cf3ecbd69dec7bbf69c1dfd0"
+}

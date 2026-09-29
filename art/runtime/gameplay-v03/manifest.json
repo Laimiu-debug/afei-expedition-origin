@@ -313,7 +313,7 @@
     "atlas_sha256": "ac0964b49106d99cacf6e79feee4b4ec8e43f8f09e1b9ab385dee3dc67b2eb56",
     "pack_log": "Loading images...\nsprites\\afeix_g03_normal_body.png\nsprites\\afeix_g03_normal_body_dead.png\nsprites\\afeix_g03_normal_body_injured.png\nsprites\\afeix_g03_jiahao_body.png\nsprites\\afeix_g03_jiahao_body_dead.png\nsprites\\afeix_g03_jiahao_body_injured.png\nPacking rectangles...\nWriting gfx/afeix_gameplay_v03.png (256x256)...\n",
     "unpack_log": "Opening gfx/afeix_gameplay_v03.png...\nsprites\\afeix_g03_normal_body.png\nsprites\\afeix_g03_normal_body_dead.png\nsprites\\afeix_g03_normal_body_injured.png\nsprites\\afeix_g03_jiahao_body.png\nsprites\\afeix_g03_jiahao_body_dead.png\nsprites\\afeix_g03_jiahao_body_injured.png\n",
-    "roundtrip_directory": "build/roundtrip-90ptk2ix"
+    "roundtrip_directory": "build/roundtrip-0dvujzdy"
   },
   "preview": "art/runtime/gameplay-v03/build/layer-review-1x.png",
   "in_game_tested": false,

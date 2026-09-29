@@ -46,6 +46,26 @@ foreach(key,requirement in A.EncounterRequirements){
     expect(!A.isCharacterKnown(key),"eligibility checks do not discover "+key);
 }
 A.TavernTown=51;
+// Early progression uses the production V2 override, not discovery.nut's legacy
+// fallback requirements. Bottle becomes available at the first paid outing;
+// Lili waits for the second stage without requiring Bottle to be hired.
+local firstTrip={days=3,jobs=1,battles=1,towns=2,level=2,types=1,companions=3};
+expect(A.canMeetCharacter("bottle",firstTrip),"day3 ordinary progress unlocks Bottle");
+expect(!A.canMeetCharacter("lili",firstTrip),"Lili waits for day6 exploration");
+local beforeBottle=clone firstTrip;beforeBottle.days=2;
+expect(!A.canMeetCharacter("bottle",beforeBottle),"Bottle waits until day3");
+foreach(field in ["jobs","battles","towns","level"]){
+    local incomplete=clone firstTrip;incomplete[field]--;
+    expect(!A.canMeetCharacter("bottle",incomplete),"Bottle date cannot bypass "+field);
+}
+local secondTrip={days=6,jobs=1,battles=2,towns=3,level=2,types=1,companions=3};
+expect(A.canMeetCharacter("lili",secondTrip),"day6 attainable progress unlocks Lili without extra members or contract types");
+local beforeLili=clone secondTrip;beforeLili.days=5;
+expect(!A.canMeetCharacter("lili",beforeLili),"Lili waits until day6 even after other milestones");
+foreach(field in ["jobs","battles","towns","level"]){
+    local incomplete=clone secondTrip;incomplete[field]--;
+    expect(!A.canMeetCharacter("lili",incomplete),"Lili date cannot bypass "+field);
+}
 expect(A.prepareTavernMeeting()=="tavern" && A.get("tavern_towns")==1,"initial inn visit records location but no free recruit");
 A.set("paid_contracts",1);
 expect(A.prepareTavernMeeting()=="tavern" && !A.isCharacterKnown("bottle"),"tavern does not bypass native hiring queue");

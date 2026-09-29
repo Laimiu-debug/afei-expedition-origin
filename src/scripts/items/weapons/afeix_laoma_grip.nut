@@ -10,10 +10,13 @@ this.afeix_laoma_grip <- this.inherit("scripts/items/weapons/two_handed_hammer",
         this.m.IconLarge = "weapons/afeix_laoma_grip.png";
         this.m.Icon = "weapons/afeix_laoma_grip_70x70.png";
         this.m.ArmamentIcon = "icon_afeix_laoma_grip";
-        this.m.Value = 12000;
+        this.m.Value = 28888;
         this.m.Condition = 100.0; this.m.ConditionMax = 100.0;
         this.m.RegularDamage = 84; this.m.RegularDamageMax = 120;
-        this.m.ArmorDamageMult = 2.35; this.m.DirectDamageMult = 0.7;
+        this.m.ArmorDamageMult = 2.35;
+        // Weapon DirectDamageMult is display-only; attacks consume DirectDamageAdd.
+        // Keep native Smite/Shatter bases (50%/40%) and add 20 percentage points.
+        this.m.DirectDamageMult = 0.5; this.m.DirectDamageAdd = 0.2;
         this.m.ShieldDamage = 52;
         this.m.StaminaModifier = -18;
     },
