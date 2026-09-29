@@ -1,0 +1,34 @@
+ 30           RESUME                   0
+
+ 31           LOAD_CONST               1 ('BBMOD-Download/1')
+              LOAD_CONST               2 ('identity')
+              LOAD_CONST               3 (('User-Agent', 'Accept-Encoding'))
+              BUILD_CONST_KEY_MAP      2
+              STORE_FAST               2 (headers)
+
+ 32           LOAD_FAST                1 (offset)
+              TO_BOOL
+              POP_JUMP_IF_FALSE        9 (to L1)
+
+ 33           LOAD_CONST               4 ('bytes=')
+              LOAD_FAST                1 (offset)
+              FORMAT_SIMPLE
+              LOAD_CONST               5 ('-')
+              BUILD_STRING             3
+              LOAD_FAST                2 (headers)
+              LOAD_CONST               6 ('Range')
+              STORE_SUBSCR
+
+ 34   L1:     LOAD_GLOBAL              1 (build_opener + NULL)
+              LOAD_GLOBAL              3 (NoRedirect + NULL)
+              CALL                     0
+              CALL                     1
+              LOAD_ATTR                5 (open + NULL|self)
+              LOAD_GLOBAL              7 (Request + NULL)
+              LOAD_FAST_LOAD_FAST      2 (url, headers)
+              LOAD_CONST               7 (('headers',))
+              CALL_KW                  2
+              LOAD_GLOBAL              8 (IDLE_TIMEOUT)
+              LOAD_CONST               8 (('timeout',))
+              CALL_KW                  2
+              RETURN_VALUE

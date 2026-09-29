@@ -1,0 +1,3 @@
+<brush name="gfx/afeix_world_v22.png" version="17">
+  <sprite id="afeix_world_afei" img="afeix_world_afei.png" left="-17" right="23" top="-39" bottom="7" width="68" height="106" offsetY="20" />
+</brush>

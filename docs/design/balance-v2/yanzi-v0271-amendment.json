@@ -1,0 +1,1594 @@
+{
+  "reason": "User requested Yanzi rear polearm/throwing hybrid; confirmed Loyal and Team Player only",
+  "yanzi": {
+    "attrs": [
+      60,
+      110,
+      48,
+      90,
+      55,
+      50,
+      6,
+      4
+    ],
+    "stars": {
+      "MeleeSkill": 2,
+      "RangedSkill": 2
+    },
+    "allocation": [
+      6,
+      0,
+      2,
+      0,
+      10,
+      10,
+      2,
+      0
+    ],
+    "fixed_traits": [
+      "loyal",
+      "teamplayer"
+    ]
+  },
+  "before_workbook_sha256": "5f36f7f00c58809be8e925a61bb608dc546f3240fa659ed373660a22b0eeef9e",
+  "workbook_sha256": "d7e4a48cb1bf6974c5c4734f7f3b8d79676b8b88e4e43028b779ce58f6837c96",
+  "before_proposal_sha256": "5bc31d5e7e742b5572332661a286d3a2d22311c3528f07cc64c1ccce55377036",
+  "proposal_sha256": "2777d6802a651fdf63daf64e2cd9d99aa58041109bd55b27622039a72d124f3f",
+  "before_trait_design_sha256": "5ad0c59ea6627473eab24412faab14d849a14ae6c42ffb35a7af9d1c333cd98e",
+  "trait_design_sha256": "6dc3a84be731d5897c87935ee9052c1a0626b947c0581ca4c479c795b846b26f",
+  "authored_cells": [
+    {
+      "sheet": "属性成长",
+      "cell": "D94",
+      "value": 60,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E94",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F94",
+      "value": 6,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D95",
+      "value": 110,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E95",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F95",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D96",
+      "value": 48,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E96",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F96",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D97",
+      "value": 90,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E97",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F97",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D98",
+      "value": 55,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E98",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F98",
+      "value": 10,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D99",
+      "value": 50,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E99",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F99",
+      "value": 10,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D100",
+      "value": 6,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E100",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F100",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D101",
+      "value": 4,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E101",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F101",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "D17",
+      "value": "后排多功能长柄投掷手",
+      "formula": false
+    },
+    {
+      "sheet": "成长总览",
+      "cell": "B17",
+      "value": "后排多功能长柄投掷手",
+      "formula": false
+    },
+    {
+      "sheet": "成长总览",
+      "cell": "N17",
+      "value": "没有防御星，贴身承压弱；双攻占20次选点，生命和决心仍需余下点数；快速换手不消除整轮疲劳，连续投掷与狂战需管理",
+      "formula": false
+    },
+    {
+      "sheet": "装备明细",
+      "cell": "K17",
+      "value": "投掷武器与长柄换手，轻甲控负重；决斗者仅空副手投掷/单手攻击生效，不给双手长柄增伤；盾牌作备用，持盾时不算决斗收益",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "C17",
+      "value": "忠诚",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "D17",
+      "value": "团队协作",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "E17",
+      "value": "忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率；团队协作：攻击同阵营目标时近攻/远攻倍率×0.5，减少误伤；不是全队增伤",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "F17",
+      "value": "历史汇总：暂无特质票；本次按作者选择，不计入旧样本",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "H17",
+      "value": "作者按所附介绍指定：后排柄投；忠诚+团队协作，不采用跛足（2026-09-29）；历史反馈样本保持原记录",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "I17",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "J17",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "K17",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "L17",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "M17",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "N17",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "O17",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "P17",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "B17",
+      "value": "Militia 民兵",
+      "formula": false
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "C17",
+      "value": "=55.0+'属性成长'!F94*'属性成长'!L94",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "D17",
+      "value": "=99.0+'属性成长'!F95*'属性成长'!L95",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "E17",
+      "value": "=39.0+'属性成长'!F96*'属性成长'!L96",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "F17",
+      "value": "=105.0+'属性成长'!F97*'属性成长'!L97",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "G17",
+      "value": "=57.0+'属性成长'!F98*'属性成长'!L98",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "H17",
+      "value": "=42.5+'属性成长'!F99*'属性成长'!L99",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "I17",
+      "value": "=4.5+'属性成长'!F100*'属性成长'!L100",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "J17",
+      "value": "=4.5+'属性成长'!F101*'属性成长'!L101",
+      "formula": true
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "A3",
+      "value": "55为7名重甲候选的壮实后目标；按11级培养均值计算。眼子改柄投、小杰改轻甲，两行仅作误穿重甲对照，不参与达标判断。",
+      "formula": false
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "M9",
+      "value": "柄投不适用",
+      "formula": false
+    },
+    {
+      "sheet": "总览",
+      "cell": "A3",
+      "value": "2026-09-29 / v0.27.1；眼子后排柄投，近攻/远攻各2星，忠诚+团队协作；新战役实装基准。",
+      "formula": false
+    },
+    {
+      "sheet": "来源说明",
+      "cell": "C15",
+      "value": "v0.27.1新战役实装基准；修改输入后须重新编译Mod。",
+      "formula": false
+    }
+  ],
+  "authored_trait_images": [
+    {
+      "key": "cocky",
+      "row": 5,
+      "col": 2,
+      "sha256": "7a5a117e7db81210a4e6ec810f365ac93e782c37d5aae158e4d356e38de95a9d"
+    },
+    {
+      "key": "bright",
+      "row": 5,
+      "col": 3,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "strong",
+      "row": 6,
+      "col": 2,
+      "sha256": "03481031b06690fdb4e568ad99287811da3e07c235c27065944b92cf5b2b4eb1"
+    },
+    {
+      "key": "tough",
+      "row": 6,
+      "col": 3,
+      "sha256": "9ba467ea1c2bcbf707e0f79407a185a8260cacd46479a922949e3c7ea4600b2b"
+    },
+    {
+      "key": "bright",
+      "row": 7,
+      "col": 2,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "ailing",
+      "row": 7,
+      "col": 3,
+      "sha256": "ff9fd77df078f54858bbd854887c8d5bc2fe2242895d6720e04d92813ff9e603"
+    },
+    {
+      "key": "sure_footing",
+      "row": 8,
+      "col": 2,
+      "sha256": "091b944bc20aa500955df1008412ac0cbf5a0011d913af3f986f8d6446294298"
+    },
+    {
+      "key": "determined",
+      "row": 8,
+      "col": 3,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "bright",
+      "row": 9,
+      "col": 2,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "insecure",
+      "row": 9,
+      "col": 3,
+      "sha256": "ac7f061bb237b8d02e47eeb43419d176378732be1898829d6e6f6df67a6a85d5"
+    },
+    {
+      "key": "lucky",
+      "row": 10,
+      "col": 2,
+      "sha256": "7ab7b316c97041f178c543873350bb36309393f1a933dfa5d05e2354d2f19313"
+    },
+    {
+      "key": "optimist",
+      "row": 10,
+      "col": 3,
+      "sha256": "8fed3c397586c11f0a702848366508efebe15fc39d5596cf97d28080b9addcac"
+    },
+    {
+      "key": "gluttonous",
+      "row": 11,
+      "col": 2,
+      "sha256": "6f0085f761c64dd95feb17ffdd00b1064ddbfaec6d731ebffb098f8f361e8e50"
+    },
+    {
+      "key": "optimist",
+      "row": 11,
+      "col": 3,
+      "sha256": "8fed3c397586c11f0a702848366508efebe15fc39d5596cf97d28080b9addcac"
+    },
+    {
+      "key": "loyal",
+      "row": 12,
+      "col": 2,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "hesitant",
+      "row": 12,
+      "col": 3,
+      "sha256": "fe4d234dbc55e9b8829b0114ad75136dbc436922ab5e6712c3fb7eea85a75c9b"
+    },
+    {
+      "key": "determined",
+      "row": 13,
+      "col": 2,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "loyal",
+      "row": 13,
+      "col": 3,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "brave",
+      "row": 14,
+      "col": 2,
+      "sha256": "567f7dda3296acf70c4fe7d55671ac1fd3fec5c642cef73c807c836b41fc8fe1"
+    },
+    {
+      "key": "loyal",
+      "row": 14,
+      "col": 3,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "cocky",
+      "row": 15,
+      "col": 2,
+      "sha256": "7a5a117e7db81210a4e6ec810f365ac93e782c37d5aae158e4d356e38de95a9d"
+    },
+    {
+      "key": "drunkard",
+      "row": 15,
+      "col": 3,
+      "sha256": "2a63df1502cacba96bccfb644eb6d9f7c8a36f5744a08abdfd4c04fd241a5ef1"
+    },
+    {
+      "key": "loyal",
+      "row": 16,
+      "col": 2,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "teamplayer",
+      "row": 16,
+      "col": 3,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "eagle_eyes",
+      "row": 17,
+      "col": 2,
+      "sha256": "5c90064e931e787ccde9b9fd317a5eb65227cae4582e26c17c46a568258559eb"
+    },
+    {
+      "key": "optimist",
+      "row": 17,
+      "col": 3,
+      "sha256": "8fed3c397586c11f0a702848366508efebe15fc39d5596cf97d28080b9addcac"
+    },
+    {
+      "key": "eagle_eyes",
+      "row": 18,
+      "col": 2,
+      "sha256": "5c90064e931e787ccde9b9fd317a5eb65227cae4582e26c17c46a568258559eb"
+    },
+    {
+      "key": "determined",
+      "row": 18,
+      "col": 3,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "strong",
+      "row": 19,
+      "col": 2,
+      "sha256": "03481031b06690fdb4e568ad99287811da3e07c235c27065944b92cf5b2b4eb1"
+    },
+    {
+      "key": "iron_jaw",
+      "row": 19,
+      "col": 3,
+      "sha256": "03be0f9e2c7802476bd4ee5c2dc1a4b1c64f0d9f325d72e332b0136d1b9b46d3"
+    },
+    {
+      "key": "swift",
+      "row": 20,
+      "col": 2,
+      "sha256": "1323c68a699cc75333034cef7f9b3499456534c3824e3e1994718267a0667dd9"
+    },
+    {
+      "key": "eagle_eyes",
+      "row": 20,
+      "col": 3,
+      "sha256": "5c90064e931e787ccde9b9fd317a5eb65227cae4582e26c17c46a568258559eb"
+    },
+    {
+      "key": "eagle_eyes",
+      "row": 21,
+      "col": 2,
+      "sha256": "5c90064e931e787ccde9b9fd317a5eb65227cae4582e26c17c46a568258559eb"
+    },
+    {
+      "key": "teamplayer",
+      "row": 21,
+      "col": 3,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "athletic",
+      "row": 22,
+      "col": 2,
+      "sha256": "c8b04e27157539a670f774cc95017285b76073bb456bd75e5d38d9dbf6c12ae0"
+    },
+    {
+      "key": "teamplayer",
+      "row": 22,
+      "col": 3,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "fat",
+      "row": 23,
+      "col": 2,
+      "sha256": "aad027430ce4715bc3762233ddd7b491cfbd3d70f2a0d8f06d3e2cfb493f7b37"
+    },
+    {
+      "key": "huge",
+      "row": 23,
+      "col": 3,
+      "sha256": "ce3a7b407ee525735cf4d10bf065f788117748cb42bf5c58e7368a7e7a7b3ad8"
+    },
+    {
+      "key": "determined",
+      "row": 24,
+      "col": 2,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "iron_lungs",
+      "row": 24,
+      "col": 3,
+      "sha256": "2b46e01e131a5daa930463a35aafbb8912e263c01cfd992d8e7bcc6a26421a9a"
+    },
+    {
+      "key": "bright",
+      "row": 25,
+      "col": 2,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "loyal",
+      "row": 25,
+      "col": 3,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "fearless",
+      "row": 26,
+      "col": 2,
+      "sha256": "aa3ebc43dd3b3b41ddaf0c8e261e9a92e80e4705994e7040e10d107879d21bf6"
+    },
+    {
+      "key": "teamplayer",
+      "row": 26,
+      "col": 3,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "dexterous",
+      "row": 27,
+      "col": 2,
+      "sha256": "58c96127b7ecb808ac550fd48101aad97b94a967dd3404baf3b1d12a02470d9a"
+    },
+    {
+      "key": "cocky",
+      "row": 27,
+      "col": 3,
+      "sha256": "7a5a117e7db81210a4e6ec810f365ac93e782c37d5aae158e4d356e38de95a9d"
+    },
+    {
+      "key": "brave",
+      "row": 28,
+      "col": 2,
+      "sha256": "567f7dda3296acf70c4fe7d55671ac1fd3fec5c642cef73c807c836b41fc8fe1"
+    },
+    {
+      "key": "teamplayer",
+      "row": 28,
+      "col": 3,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "cocky",
+      "row": 29,
+      "col": 2,
+      "sha256": "7a5a117e7db81210a4e6ec810f365ac93e782c37d5aae158e4d356e38de95a9d"
+    },
+    {
+      "key": "night_owl",
+      "row": 29,
+      "col": 3,
+      "sha256": "e0cbe94311c5888284903d0c209288970e22ae0c50aee7588e27f4b44ab359f1"
+    },
+    {
+      "key": "tough",
+      "row": 30,
+      "col": 2,
+      "sha256": "9ba467ea1c2bcbf707e0f79407a185a8260cacd46479a922949e3c7ea4600b2b"
+    },
+    {
+      "key": "pessimist",
+      "row": 30,
+      "col": 3,
+      "sha256": "6e0aab62b130ceffd0b11315a150689c33b5f79b449251f94db44121c9f588b5"
+    },
+    {
+      "key": "teamplayer",
+      "row": 31,
+      "col": 2,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "lucky",
+      "row": 31,
+      "col": 3,
+      "sha256": "7ab7b316c97041f178c543873350bb36309393f1a933dfa5d05e2354d2f19313"
+    },
+    {
+      "key": "swift",
+      "row": 32,
+      "col": 2,
+      "sha256": "1323c68a699cc75333034cef7f9b3499456534c3824e3e1994718267a0667dd9"
+    },
+    {
+      "key": "athletic",
+      "row": 32,
+      "col": 3,
+      "sha256": "c8b04e27157539a670f774cc95017285b76073bb456bd75e5d38d9dbf6c12ae0"
+    },
+    {
+      "key": "determined",
+      "row": 33,
+      "col": 2,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "athletic",
+      "row": 33,
+      "col": 3,
+      "sha256": "c8b04e27157539a670f774cc95017285b76073bb456bd75e5d38d9dbf6c12ae0"
+    },
+    {
+      "key": "sure_footing",
+      "row": 34,
+      "col": 2,
+      "sha256": "091b944bc20aa500955df1008412ac0cbf5a0011d913af3f986f8d6446294298"
+    },
+    {
+      "key": "loyal",
+      "row": 34,
+      "col": 3,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "strong",
+      "row": 35,
+      "col": 2,
+      "sha256": "03481031b06690fdb4e568ad99287811da3e07c235c27065944b92cf5b2b4eb1"
+    },
+    {
+      "key": "brute",
+      "row": 35,
+      "col": 3,
+      "sha256": "e4249e40f85b47ea98e9f35a64cd6576e09781135b0db38e08721676ef783e78"
+    },
+    {
+      "key": "teamplayer",
+      "row": 36,
+      "col": 2,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "survivor",
+      "row": 36,
+      "col": 3,
+      "sha256": "c822b0dea6c6c55d987da351c51d9151cdb9b5188d0950adc2cd2f793e34eee1"
+    },
+    {
+      "key": "bright",
+      "row": 37,
+      "col": 2,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "determined",
+      "row": 37,
+      "col": 3,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "fat",
+      "row": 38,
+      "col": 2,
+      "sha256": "aad027430ce4715bc3762233ddd7b491cfbd3d70f2a0d8f06d3e2cfb493f7b37"
+    },
+    {
+      "key": "loyal",
+      "row": 38,
+      "col": 3,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "bright",
+      "row": 39,
+      "col": 2,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "athletic",
+      "row": 39,
+      "col": 3,
+      "sha256": "c8b04e27157539a670f774cc95017285b76073bb456bd75e5d38d9dbf6c12ae0"
+    }
+  ],
+  "workbook_audit": {
+    "changed_cells": [
+      {
+        "sheet": 1,
+        "cell": "A3",
+        "before": [
+          "",
+          "2026-09-29 / v0.27.0；小杰改为150血轻甲长柄构筑，三人名称同步；新战役实装基准。"
+        ],
+        "after": [
+          "",
+          "2026-09-29 / v0.27.1；眼子后排柄投，近攻/远攻各2星，忠诚+团队协作；新战役实装基准。"
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "D17",
+        "before": [
+          "",
+          "剑盾反制游击"
+        ],
+        "after": [
+          "",
+          "后排多功能长柄投掷手"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F94",
+        "before": [
+          "",
+          4.0
+        ],
+        "after": [
+          "",
+          6.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA99",
+        "before": [
+          "M99",
+          38.0
+        ],
+        "after": [
+          "M99",
+          90.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "L96",
+        "before": [
+          "K96+E96*0.5",
+          3.5
+        ],
+        "after": [
+          "K96+E96*0.5",
+          3.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "L98",
+        "before": [
+          "K98+E98*0.5",
+          2.5
+        ],
+        "after": [
+          "K98+E98*0.5",
+          3.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D97",
+        "before": [
+          "",
+          98.0
+        ],
+        "after": [
+          "",
+          90.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M96",
+        "before": [
+          "D96+J96+F96*L96+N96",
+          57.0
+        ],
+        "after": [
+          "D96+J96+F96*L96+N96",
+          56.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M94",
+        "before": [
+          "D94+J94+F94*L94+N94",
+          72.0
+        ],
+        "after": [
+          "D94+J94+F94*L94+N94",
+          78.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA97",
+        "before": [
+          "M96",
+          57.0
+        ],
+        "after": [
+          "M96",
+          56.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M95",
+        "before": [
+          "D95+J95+F95*L95+N95",
+          122.0
+        ],
+        "after": [
+          "D95+J95+F95*L95+N95",
+          110.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F100",
+        "before": [
+          "",
+          10.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "L99",
+        "before": [
+          "K99+E99*0.5",
+          3.0
+        ],
+        "after": [
+          "K99+E99*0.5",
+          4.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M99",
+        "before": [
+          "D99+J99+F99*L99+N99",
+          38.0
+        ],
+        "after": [
+          "D99+J99+F99*L99+N99",
+          90.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "E99",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z99",
+        "before": [
+          "D99",
+          38.0
+        ],
+        "after": [
+          "D99",
+          50.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA95",
+        "before": [
+          "M94",
+          72.0
+        ],
+        "after": [
+          "M94",
+          78.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "E100",
+        "before": [
+          "",
+          1.0
+        ],
+        "after": [
+          "",
+          0.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M100",
+        "before": [
+          "D100+J100+F100*L100+N100",
+          33.0
+        ],
+        "after": [
+          "D100+J100+F100*L100+N100",
+          12.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D99",
+        "before": [
+          "",
+          38.0
+        ],
+        "after": [
+          "",
+          50.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D98",
+        "before": [
+          "",
+          60.0
+        ],
+        "after": [
+          "",
+          55.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "E96",
+        "before": [
+          "",
+          1.0
+        ],
+        "after": [
+          "",
+          0.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "L100",
+        "before": [
+          "K100+E100*0.5",
+          2.5
+        ],
+        "after": [
+          "K100+E100*0.5",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA100",
+        "before": [
+          "M100",
+          33.0
+        ],
+        "after": [
+          "M100",
+          12.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA96",
+        "before": [
+          "M95",
+          122.0
+        ],
+        "after": [
+          "M95",
+          110.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F99",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          10.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F95",
+        "before": [
+          "",
+          4.0
+        ],
+        "after": [
+          "",
+          0.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z98",
+        "before": [
+          "D98",
+          60.0
+        ],
+        "after": [
+          "D98",
+          55.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "E98",
+        "before": [
+          "",
+          1.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M97",
+        "before": [
+          "D97+J97+F97*L97+N97",
+          98.0
+        ],
+        "after": [
+          "D97+J97+F97*L97+N97",
+          90.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "C17",
+        "before": [
+          "'属性成长'!M94",
+          72.0
+        ],
+        "after": [
+          "'属性成长'!M94",
+          78.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "I17",
+        "before": [
+          "'属性成长'!M100",
+          33.0
+        ],
+        "after": [
+          "'属性成长'!M100",
+          12.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "B17",
+        "before": [
+          "",
+          "剑盾反制游击"
+        ],
+        "after": [
+          "",
+          "后排多功能长柄投掷手"
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "P17",
+        "before": [
+          "E17+O17",
+          57.0
+        ],
+        "after": [
+          "E17+O17",
+          56.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "N17",
+        "before": [
+          "",
+          "不要把近防、生命、决心同时让位给输出；破甲弱时换武器"
+        ],
+        "after": [
+          "",
+          "没有防御星，贴身承压弱；双攻占20次选点，生命和决心仍需余下点数；快速换手不消除整轮疲劳，连续投掷与狂战需管理"
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "D17",
+        "before": [
+          "'属性成长'!M95",
+          122.0
+        ],
+        "after": [
+          "'属性成长'!M95",
+          110.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "H17",
+        "before": [
+          "'属性成长'!M99",
+          38.0
+        ],
+        "after": [
+          "'属性成长'!M99",
+          90.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "E17",
+        "before": [
+          "'属性成长'!M96",
+          57.0
+        ],
+        "after": [
+          "'属性成长'!M96",
+          56.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "F17",
+        "before": [
+          "'属性成长'!M97",
+          98.0
+        ],
+        "after": [
+          "'属性成长'!M97",
+          90.0
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "K17",
+        "before": [
+          "",
+          "单手剑/锤决斗，或双手锤低耗；轻装决斗与重甲低耗分开点；重甲低耗按320身甲/300头甲压力装核算，壮实减轻甲盔负重，包内武器仍计负重"
+        ],
+        "after": [
+          "",
+          "投掷武器与长柄换手，轻甲控负重；决斗者仅空副手投掷/单手攻击生效，不给双手长柄增伤；盾牌作备用，持盾时不算决斗收益"
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "C17",
+        "before": [
+          "55+'属性成长'!F94*'属性成长'!L94",
+          67.0
+        ],
+        "after": [
+          "55.0+'属性成长'!F94*'属性成长'!L94",
+          73.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "I17",
+        "before": [
+          "4.5+'属性成长'!F100*'属性成长'!L100",
+          29.5
+        ],
+        "after": [
+          "4.5+'属性成长'!F100*'属性成长'!L100",
+          8.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "O17",
+        "before": [
+          "'成长总览'!G17-G17",
+          3.0
+        ],
+        "after": [
+          "'成长总览'!G17-G17",
+          -2.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "G17",
+        "before": [
+          "57+'属性成长'!F98*'属性成长'!L98",
+          82.0
+        ],
+        "after": [
+          "57.0+'属性成长'!F98*'属性成长'!L98",
+          87.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "P17",
+        "before": [
+          "'成长总览'!H17-H17",
+          -4.5
+        ],
+        "after": [
+          "'成长总览'!H17-H17",
+          7.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "N17",
+        "before": [
+          "'成长总览'!F17-F17",
+          -7.0
+        ],
+        "after": [
+          "'成长总览'!F17-F17",
+          -15.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "D17",
+        "before": [
+          "99+'属性成长'!F95*'属性成长'!L95",
+          111.0
+        ],
+        "after": [
+          "99.0+'属性成长'!F95*'属性成长'!L95",
+          99.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "H17",
+        "before": [
+          "42.5+'属性成长'!F99*'属性成长'!L99",
+          42.5
+        ],
+        "after": [
+          "42.5+'属性成长'!F99*'属性成长'!L99",
+          82.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "E17",
+        "before": [
+          "39+'属性成长'!F96*'属性成长'!L96",
+          46.0
+        ],
+        "after": [
+          "39.0+'属性成长'!F96*'属性成长'!L96",
+          45.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "F17",
+        "before": [
+          "105+'属性成长'!F97*'属性成长'!L97",
+          105.0
+        ],
+        "after": [
+          "105.0+'属性成长'!F97*'属性成长'!L97",
+          105.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "H9",
+        "before": [
+          "INT(C9-SUM(D9:G9))",
+          37.0
+        ],
+        "after": [
+          "INT(C9-SUM(D9:G9))",
+          25.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "A3",
+        "before": [
+          "",
+          "55为8名重甲候选的壮实后目标；按11级培养均值计算。小杰已改轻甲，保留该行仅作误穿重甲对照，不参与达标判断。"
+        ],
+        "after": [
+          "",
+          "55为7名重甲候选的壮实后目标；按11级培养均值计算。眼子改柄投、小杰改轻甲，两行仅作误穿重甲对照，不参与达标判断。"
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "C9",
+        "before": [
+          "'成长总览'!D17",
+          122.0
+        ],
+        "after": [
+          "'成长总览'!D17",
+          110.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "M9",
+        "before": [
+          "IF(K9>=L9,\"达到\",\"不足\")",
+          "达到"
+        ],
+        "after": [
+          "",
+          "柄投不适用"
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "K9",
+        "before": [
+          "INT(C9-I9-J9-F9-G9)",
+          55.0
+        ],
+        "after": [
+          "INT(C9-I9-J9-F9-G9)",
+          43.0
+        ]
+      },
+      {
+        "sheet": 15,
+        "cell": "C15",
+        "before": [
+          "",
+          "v0.27.0新战役实装基准；修改输入后须重新编译Mod。"
+        ],
+        "after": [
+          "",
+          "v0.27.1新战役实装基准；修改输入后须重新编译Mod。"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "Z17",
+        "before": [
+          "'属性成长'!D99-N17",
+          38.0
+        ],
+        "after": [
+          "'属性成长'!D99-N17",
+          50.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "AA17",
+        "before": [
+          "'属性成长'!D100-O17",
+          1.0
+        ],
+        "after": [
+          "'属性成长'!D100-O17",
+          6.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "O17",
+        "before": [
+          "",
+          5.0
+        ],
+        "after": [
+          "",
+          0.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "M17",
+        "before": [
+          "",
+          5.0
+        ],
+        "after": [
+          "",
+          0.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "D17",
+        "before": [
+          "",
+          "灵巧"
+        ],
+        "after": [
+          "",
+          "团队协作"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "X17",
+        "before": [
+          "'属性成长'!D97-L17",
+          98.0
+        ],
+        "after": [
+          "'属性成长'!D97-L17",
+          90.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "C17",
+        "before": [
+          "",
+          "步伐稳健"
+        ],
+        "after": [
+          "",
+          "忠诚"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "H17",
+        "before": [
+          "",
+          "设计补全，暂无投票支持"
+        ],
+        "after": [
+          "",
+          "作者按所附介绍指定：后排柄投；忠诚+团队协作，不采用跛足（2026-09-29）；历史反馈样本保持原记录"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "E17",
+        "before": [
+          "",
+          "步伐稳健：近防+5；灵巧：近攻+5"
+        ],
+        "after": [
+          "",
+          "忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率；团队协作：攻击同阵营目标时近攻/远攻倍率×0.5，减少误伤；不是全队增伤"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "F17",
+        "before": [
+          "",
+          "暂无特质票，按V2定位补全"
+        ],
+        "after": [
+          "",
+          "历史汇总：暂无特质票；本次按作者选择，不计入旧样本"
+        ]
+      }
+    ],
+    "formula_changes_match_authorized_cells": true,
+    "styles_tables_validation_preserved": true,
+    "visible_images": 177,
+    "trait_icons_replaced": 2,
+    "radars_preserved": 35,
+    "artifact_recalculation_and_visual_review": true,
+    "ranged_skill_input_recalculation_passed": true,
+    "radar_caches_recalculated": true,
+    "image_preview_renderer_omits_images": true,
+    "image_relationships_anchors_and_native_bytes_verified": true,
+    "excel_desktop_recalculation": false
+  }
+}

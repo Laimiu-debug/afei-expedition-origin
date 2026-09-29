@@ -1,0 +1,50 @@
+[
+  {
+    "source": "docs/design/balance-v2/icons/yanzi_watch.png",
+    "source_sha256": "c3f10e1346907dd35b17ff771e87761688062fa224009230413c8bc74e0e0971",
+    "output": "src/gfx/skills/afeix_member_yanzi_watch.png",
+    "sha256": "caca4da149719b3fc61063dd1e67e6b1a1a4ac8caf91b6c8fb21c024d2814241"
+  },
+  {
+    "source": "docs/design/balance-v2/icons/yanzi_cover.png",
+    "source_sha256": "8f1bd76b3253d69f01819be3400ae7d2dfb8bd0ecdee963234ad6c0afb1efd97",
+    "output": "src/gfx/skills/afeix_member_yanzi_cover.png",
+    "sha256": "17cfd5a4b1d61fc0b86e41ee7d999ba328da2877e2f1acedc2d6895c86d9108a"
+  },
+  {
+    "source": "docs/design/balance-v2/icons/yanzi_reply.png",
+    "source_sha256": "eec43e82b6d833fa277921b3cf8c3926ea9d2e7405e631944556423d8c10131d",
+    "output": "src/gfx/skills/afeix_member_yanzi_reply.png",
+    "sha256": "0536d85f1d97b681f6d1d22147dd6513c6261dc2992d553182a341999d6ae75d"
+  },
+  {
+    "source": "docs/design/balance-v2/icons/xiwen_read.png",
+    "source_sha256": "20d5dde0ca749067ec2f1ec124131bf3e60489d3195b5c13bf2a1f89250f255a",
+    "output": "src/gfx/skills/afeix_member_xiwen_read.png",
+    "sha256": "688300e02541fa192482c588351834d6578bc4429660c1041d10f6ef3e5fe626"
+  },
+  {
+    "source": "docs/design/balance-v2/icons/xiwen_cover.png",
+    "source_sha256": "d6fe4437e42578cb6f822882ba235cd63a5e114ba90d3b6c34dfd0d255875f05",
+    "output": "src/gfx/skills/afeix_member_xiwen_cover.png",
+    "sha256": "340c1f46689e058fc19f45a8b1fcb0320972efaf4bf6e58e66785d7a788ce86b"
+  },
+  {
+    "source": "docs/design/balance-v2/icons/xiwen_travel.png",
+    "source_sha256": "d1575da03969ec2461d3b3da50d47076dfdb1bf80d069388c77fedb963967a25",
+    "output": "src/gfx/skills/afeix_member_xiwen_travel.png",
+    "sha256": "047991d823b1397fd6fb631c7032baf31d9f8b7cfbcf524035d6463a91be00d0"
+  },
+  {
+    "source": "art/runtime/balance-v26/sources/xiwen-round-mirror.png",
+    "source_sha256": "037c2cc8305ae63c5c600b02249075072f9152d2690178956d605e1d4abdd2a4",
+    "output": "src/gfx/items/accessory/xiwen_round_mirror.png",
+    "sha256": "2dba48aa279559291566497da3fc3716911f0090d4e095b7cb5212fb20fdb20d"
+  },
+  {
+    "source": "art/runtime/balance-v26/sources/xiwen-round-mirror.png",
+    "source_sha256": "037c2cc8305ae63c5c600b02249075072f9152d2690178956d605e1d4abdd2a4",
+    "output": "src/gfx/ui/items/accessory/xiwen_round_mirror.png",
+    "sha256": "2dba48aa279559291566497da3fc3716911f0090d4e095b7cb5212fb20fdb20d"
+  }
+]

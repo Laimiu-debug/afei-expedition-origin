@@ -1,0 +1,4 @@
+<brush name="gfx/afeix_ideas_v19.png" version="17">
+  <sprite id="icon_afeix_laoma_grip" offsetY="35" width="130" height="142" img="sprites\icon_afeix_laoma_grip.png" left="-65" right="25" top="-59" bottom="47" />
+  <sprite id="icon_afeix_laoma_grip_bloodied" offsetY="35" width="130" height="142" img="sprites\icon_afeix_laoma_grip_bloodied.png" left="-65" right="25" top="-59" bottom="47" />
+</brush>

@@ -1,0 +1,25 @@
+{
+  "package": "dist/mod_afeix_expedition v0.25.2.ZIP",
+  "sha256": "2f4a403d60afd7723950f2f6d81aa8216d0a1a9f471cf69afa1b904eac0fa077",
+  "entries": 267,
+  "crc_passed": true,
+  "all_source_bytes_match": true,
+  "formation_browser_assertions": 82,
+  "behavior_assertions": 25926,
+  "test_groups": 41,
+  "squirrel_scripts": 114,
+  "f8_character_screen_guard_present": true,
+  "f8_regression": {
+    "file": "tests/gameplay/test_native_ledger_ui.nut",
+    "assertions": 73,
+    "log": "TESTS_PASSED=73\r\n"
+  },
+  "verified_packaged_sources": {
+    "scripts/mods/afeix/ledger.nut": "c23cc818cd1b6b16d7d352f56b70226d471316e91b5e7e943ab788c9e5157639",
+    "scripts/mods/afeix/hooks.nut": "b36542db95b5af2b89887ff58efca0747b070e33a3dc1d5c8466df4705f50a0c",
+    "ui/mods/afeix/formation.js": "8b9305fd7869794264530f0971fbad08f11760675f07f651643acb69252dcd77"
+  },
+  "in_game_tested": false,
+  "installed_to_game": false,
+  "published": false
+}

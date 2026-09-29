@@ -4,10 +4,10 @@ this.afeix_feidie <- this.inherit("scripts/skills/actives/afeix_promotion_active
         this.afeix_promotion_active.create();
         this.m.ID = "actives.afeix_feidie";
         this.m.Name = "飞爹在此";
-        this.m.Description = "花费 60 克朗，2 格内本方可操控角色（含阿飞）近战与远程命中 +8、决心 +8；阿飞另获所受伤害减少 10%。持续至各自第二次回合开始。";
-        this.m.Icon = this.m.IconDisabled = "skills/afeix_feidie.png";
+        this.m.Description = "花20克朗，2格内最多3名队员（含自己）双攻+5、决心+5至各自下次回合结束；自己近防-3至下次回合开始。每战2次、冷却4轮。";
+        this.m.Icon = this.m.IconDisabled = "skills/afeix_feidie.png"; this.m.IconMini = this.m.Icon;
         this.m.Route = "feidie";
-        this.m.GoldCost = 60;
+        this.m.GoldCost = 20;
         this.m.Radius = 2;
     }
 });

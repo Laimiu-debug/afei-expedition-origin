@@ -33,10 +33,10 @@ A.storyLedgerPage <- function(event, page) {
         return screen;
     }
     if (kind == "growth") {
-        screen.Text = "旅途旧事\n\n纸上只记着你们已经走过的路。有些话还没说完，可以在歇脚时继续聊。";
+        screen.Text = "旅途旧事\n\n这里可以重看已经发生的故事，也可以继续之前没聊完的话题。";
         if (A.knownGrowth().len() > 0) screen.Options.push(A.ledgerNav("营火旁的交谈", "member_growth"));
         if (A.promotionKnown() || A.feidieKnown()) screen.Options.push(A.ledgerNav("阿飞的抉择", "promotion"));
-        if (A.knownRoots().len() > 0) screen.Options.push(A.ledgerNav("收到的信与便笺", "roots:0"));
+        if (A.knownRoots().len() > 0) screen.Options.push(A.ledgerNav("信件与留言", "roots:0"));
         if (A.bicycleKnown()) screen.Options.push(A.ledgerNav("那晚的旧车", "bicycle"));
         screen.Options.push(A.ledgerNav("返回黑旗名册", "home"));
     } else if (kind == "member_growth" && (parts.len() == 1 || !(parts[1] in A.Characters))) {
@@ -71,26 +71,27 @@ A.storyLedgerPage <- function(event, page) {
         screen.Options.push(A.ledgerNav("返回旧事", "growth"));
     } else if (kind == "roots" && (parts.len() < 2 || !(parts[1] in A.RootStories))) {
         local ids = A.knownRoots(), window = A.ledgerWindow(ids.len(), parts.len() > 1 ? A.storyPageNumber(parts[1]) : 0);
-        screen.Text = "收到的信与便笺\n\n把已经听过的话收好，空白的纸页留给以后。";
+        screen.Text = "信件与留言\n\n点名字查看对方说过的话。标着‘待回应’的，还可以选择回应并领取补给。";
         for (local i = 0; i < window.count; i++) {
             local id = ids[window.offset + i];
-            screen.Options.push(A.ledgerNav(A.RootStories[id].name + (A.rootStatus(id) == "done" ? " · 已回信" : " · 待回信"), "roots:" + id));
+            screen.Options.push(A.ledgerNav(A.RootStories[id].name + (A.rootStatus(id) == "done" ? " · 已回应" : " · 待回应"), "roots:" + id));
         }
         if (window.more) screen.Options.push(A.ledgerNav(window.next == 0 ? "回到第一页" : "下一页", "roots:" + window.next));
         screen.Options.push(A.ledgerNav("返回旧事", "growth"));
     } else if (kind == "roots") {
         local id = parts[1], data = A.RootStories[id], state = A.rootStatus(id);
-        screen.Text = data.name + " · " + data.title + "\n\n" + data.opening + "\n\n" + data.followup;
+        screen.Text = data.name + " · " + data.title + "\n\n" + data.opening;
         if (state == "opened") {
+            screen.Text += "\n\n" + data.followup + "\n\n选择一种回应，领取对应补给。每条记录只能选一次，也可以稍后再选。";
             foreach (index, choice in data.choices) {
-                screen.Text += "\n\n" + choice.label + "：" + A.storyRewardText(choice.reward) + "。";
+                screen.Text += "\n\n" + choice.label + "\n获得：" + A.storyRewardText(choice.reward) + "。";
                 screen.Options.push(A.storyRootChoice(id, index));
             }
         } else if (state == "done") {
             local index = A.get("root_choice_" + id, -1);
-            if (index >= 0 && index < 2) screen.Text += "\n\n已回信：" + data.choices[index].outcome;
+            if (index >= 0 && index < 2) screen.Text += "\n\n已选：" + data.choices[index].label + "\n" + data.choices[index].outcome + "\n已领取：" + A.storyRewardText(data.choices[index].reward) + "。";
         }
-        screen.Options.push(A.ledgerNav("收好这封信", "roots:0"));
+        screen.Options.push(A.ledgerNav("返回信件与留言", "roots:0"));
     } else if (kind == "bicycle_release_confirm") {
         local info = A.bicycleInventoryInfo();
         screen.Text = "确认放手\n\n小酒瓶将永久离开本起源名册，不再重新招募。她的成长与身份记录保留，现有 " + info.count + " 件装备将逐件原物放入公共行囊，至少需要相同数量的空位；目前空位 " + info.empty + " 个。满仓或转移失败时取消本次离队，不出售、不丢弃装备。\n\n确认后先读回忆，再决定保留旧车还是推下山坡；两条纪念方向都有不同的温和特长，毁车不是唯一正确答案。";

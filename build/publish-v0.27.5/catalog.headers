@@ -1,0 +1,18 @@
+HTTP/2 200 
+cache-control: private, no-store
+content-security-policy: default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+content-type: application/json
+cross-origin-opener-policy: same-origin
+date: Tue, 29 Sep 2026 08:26:07 GMT
+permissions-policy: camera=(), microphone=(), geolocation=()
+referrer-policy: same-origin
+server: Vercel
+strict-transport-security: max-age=31536000
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding
+vary: Cookie
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-vercel-cache: MISS
+x-vercel-id: sin1::fq7gv-1790670367032-fcac76e6f676
+

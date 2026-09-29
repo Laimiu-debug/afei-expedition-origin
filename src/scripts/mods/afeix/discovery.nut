@@ -5,6 +5,7 @@ A.EncounterRequirements <- {
     lili = { jobs = 1, towns = 2 }, xiaoyueya = { towns = 3 },
     yuchujiu = { battles = 3 }, xiaoyubeike = { level = 2, towns = 2 },
     wangduidui = { jobs = 2, types = 2 }, laocai = { battles = 4, level = 3 },
+    yanzi = { jobs = 2, towns = 3 },
     tiantong = { towns = 4 }, xiaoning = { towns = 4, level = 2 },
     xiaopangxu = { battles = 3, level = 3 }, dae = { jobs = 3, types = 2 },
     manyuemei = { battles = 5, level = 3 }, xiaohani = { towns = 4, companions = 5 },
@@ -16,7 +17,6 @@ A.EncounterRequirements <- {
     bula = { towns = 6, companions = 7 }, suwa = { jobs = 5, battles = 6 },
     qianhan = { level = 5, jobs = 4 }, wangdazhi = { battles = 9, companions = 7 },
     yaoyaoya = { towns = 7, types = 3 }, yangmiemie = { jobs = 6, level = 5 },
-    chenzhihan = { battles = 10, companions = 8 }
 };
 A.TavernTown <- 0;
 A.isCharacterKnown <- function(key) {
@@ -76,6 +76,11 @@ A.prepareTavernMeeting <- function() {
 A.growthKnown <- function(key) { return this.get("growth_seen_" + key, false) || this.get("growth_done_" + key, false); };
 A.promotionKnown <- function() { return this.get("promotion_discovered", false) || this.route() != "normal"; };
 A.feidieKnown <- function() { return this.get("feidie_discovered", false) || this.get("promotion_seen_feidie", false); };
+A.canDiscoverFeidie <- function() {
+    local bro = this.findCharacter("afei");
+    return this.storyAlive(bro) && bro.getLevel() >= 9 && this.personalBattles(bro) >= 12
+        && this.get("growth_done_afei", false) && this.rootsUnlocked();
+};
 A.bicycleKnown <- function() { return this.get("bicycle_discovered", false) || this.get("bicycle_state") > 0; };
 A.rootKnown <- function(id) { return this.get("root_triggered_" + id, false) || this.get("root_done_" + id, false); };
 A.knownRoots <- function() {
@@ -92,13 +97,13 @@ A.nextDiscovery <- function(inTavern = false) {
     foreach (key in this.CharacterOrder)
         if (this.growthStatus(key) == "ready" && !this.growthKnown(key)) return "member_growth:" + key;
     local afei = this.findCharacter("afei");
-    if (this.storyAlive(afei) && !this.promotionKnown() && afei.getLevel() >= 5
-        && this.personalBattles(afei) >= 3 && this.get("growth_done_afei", false)) return "promotion";
+    if (this.storyAlive(afei) && !this.promotionKnown() && afei.getLevel() >= 7
+        && this.personalBattles(afei) >= 6 && this.get("growth_done_afei", false)) return "promotion";
     foreach (id in this.RootOrder) {
         if (this.rootStatus(id) != "ready" || this.rootKnown(id)) continue;
         if (this.RootStories[id].member != "" || inTavern) return "roots:" + id;
     }
-    if (this.storyAlive(afei) && this.rootsUnlocked() && !this.feidieKnown()) return "promotion:feidie";
+    if (this.canDiscoverFeidie() && !this.feidieKnown()) return "promotion:feidie";
     if (this.bicycleStatus() == "ready" && !this.bicycleKnown() && this.currentTown() != null) return "bicycle";
     return null;
 };
@@ -109,10 +114,10 @@ A.revealDiscovery <- function(page) {
         this.set("growth_seen_" + parts[1], true); return true;
     }
     if (parts[0] == "roots" && parts.len() > 1) return this.triggerRoot(parts[1]).ok;
-    if (page == "promotion:feidie" && this.rootsUnlocked()) { this.set("feidie_discovered", true); return true; }
+    if (page == "promotion:feidie" && this.canDiscoverFeidie()) { this.set("feidie_discovered", true); return true; }
     if (page == "promotion") {
         local bro = this.findCharacter("afei");
-        if (this.storyAlive(bro) && bro.getLevel() >= 5 && this.personalBattles(bro) >= 3 && this.get("growth_done_afei", false)) {
+        if (this.storyAlive(bro) && bro.getLevel() >= 7 && this.personalBattles(bro) >= 6 && this.get("growth_done_afei", false)) {
             this.set("promotion_discovered", true); return true;
         }
     }

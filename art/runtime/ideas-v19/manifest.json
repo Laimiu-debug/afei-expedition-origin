@@ -1,0 +1,12 @@
+{
+  "grip": {
+    "source": "sources/laoma-grip.png",
+    "sha256": "cc7c3ee2c4cb5aac4fdc57e6786aa17c78b7f207faf79402cc990de78d19d2c1",
+    "reviewed": true
+  },
+  "liu": {
+    "source": "sources/liu-qingsong.png",
+    "sha256": "f1661452cb175e15135f040d2735fe4ea65892e57e67dc82342f85af9e10a747",
+    "reviewed": true
+  }
+}

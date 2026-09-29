@@ -19,7 +19,7 @@ local A = ::AfeixExpedition, callbacks = {}, casualties = [], nextID = 10;
     object[key] = value;
 };
 dofile("src/scripts/mods/afeix/art_hooks.nut");
-::Const <- { Tactical = { DetailFlag = { Corpse = 4 } }, Combat = { HumanCorpseOffset = { X = 0, Y = -12 } }, CorpsePart = ["part0", "part1"] };
+::Const <- { Tactical = { DetailFlag = { Corpse = 4 } }, FatalityType = { None = "normal", Decapitated = "decapitated", Smashed = "smashed", Devoured = "devoured", Unconscious = "unconscious", Kraken = "kraken" }, Combat = { HumanCorpseOffset = { X = 0, Y = -12 } }, CorpsePart = ["part0", "part1"] };
 ::Tactical <- { function getCasualtyRoster() { return { function getAll() { return casualties; } }; } };
 // These helpers belong to the engine root, not to actor instances. An actor-local
 // fake previously allowed production to call APIs absent on live entity tables.
@@ -57,7 +57,7 @@ local makeTile = function() {
         },
         function spawnDetail(brush, flag, flip, unused = false, offset = null) {
             local sprite = { brush = brush, flag = flag, flip = flip, offset = offset,
-                Color = null, Saturation = 1.0, Rotation = 0, Scale = 1.0 };
+                Color = null, Saturation = 1.0, Rotation = 0, Scale = 1.0, function setBrightness(v) { this.Brightness <- v; } };
             this.details.append(sprite); return sprite;
         }
     };
@@ -66,8 +66,8 @@ local makeBrother = function(key = "afei", zombie = false) {
     local flags = { afeix_character = key }, available = ::artAvailableBrushes, sprites = {};
     foreach (id in A.CharacterOrder) {
         if (id == "afei") foreach (form in ["normal", "toad", "jiahao"]) {
-            foreach (suffix in ["", "_head", "_dead"]) available["afeix_p04_afei_" + form + suffix] <- true;
-        } else { foreach (suffix in ["", "_head", "_dead"]) available["afeix_p04_" + id + suffix] <- true; }
+            foreach (suffix in ["", "_head", "_dead", "_corpse_head"]) available["afeix_p04_afei_" + form + suffix] <- true;
+        } else { foreach (suffix in ["", "_head", "_dead", "_corpse_head"]) available["afeix_p04_" + id + suffix] <- true; }
     }
     available.afeix_g03_feidie <- true;
     foreach (name in parts) sprites[name] <- makeSprite(name, available);
@@ -96,7 +96,8 @@ local makeBrother = function(key = "afei", zombie = false) {
             this.sprites.head.Visible = !appearance.HideHead;
             this.sprites.hair.Visible = !appearance.HideHair;
             this.sprites.beard.Visible = !appearance.HideBeard;
-            this.sprites.helmet.Visible = true; this.sprites.armor.Visible = true;
+            this.sprites.helmet.Visible = !this.m.IsHidingHelmet; this.sprites.helmet_damage.Visible = !this.m.IsHidingHelmet;
+            this.sprites.armor.Visible = true;
             if (setDirty) this.setDirty(true);
             return "appearance_result";
         },
@@ -145,15 +146,22 @@ local makeBrother = function(key = "afei", zombie = false) {
                 function getSprite(name) { return this.sprites[name]; }, function addSprite(name) { this.sprites[name] <- makeSprite(name, available); return this.sprites[name]; },
                 function setSpriteOffset(name, value) { this.offset = value; }
             };
+            all.body.brush = this.sprites.body.brush + "_dead";
+            foreach (name in ["head", "hair", "beard", "beard_top", "helmet"]) all[name].Visible = false;
+            all.armor.brush = app.CorpseArmor;
             casualties.append(stub);
             if (tile != null) {
                 tile.spawnDetail(this.sprites.body.brush + "_dead", 4, false);
-                tile.spawnDetail("native_smashed_head", 4, false);
-                tile.Properties.set("Corpse", { Custom = { Body = this.sprites.body.brush, Face = this.sprites.head.brush },
-                    Items = items, IsResurrectable = fatality == "normal", IsConsumable = fatality != "unconscious", Armor = 140 });
+                tile.spawnDetail(app.CorpseArmor, 4, this.m.IsCorpseFlipped);
+                if (fatality == "smashed") tile.spawnDetail("native_smashed_head", 4, false);
+                tile.Properties.set("Corpse", this.generateCorpse(tile, fatality, killer));
             }
             this.m.IsAlive = false; this.m.IsDying = true;
             return "death_result";
+        },
+        function generateCorpse(tile, fatality, killer) {
+            return { Custom = { Body = this.sprites.body.brush, Face = this.sprites.head.brush },
+                Items = items, IsResurrectable = fatality == "normal", IsConsumable = fatality != "unconscious", Armor = 140 };
         },
         function onResurrected(info) {
             this.loadedItems = info.Items;
@@ -164,11 +172,11 @@ local makeBrother = function(key = "afei", zombie = false) {
     // Native methods returned through inherit may carry a bound prototype env.
     // Force that distinction: call/acall alone must not satisfy these fixtures.
     foreach (method in ["setDirty", "onAppearanceChanged", "onFactionChanged", "onUpdateInjuryLayer",
-        "onDeath", "onResurrected", "onInit", "onDeserialize", "onCombatFinished", "onSerialize"])
+        "generateCorpse", "onDeath", "onResurrected", "onInit", "onDeserialize", "onCombatFinished", "onSerialize"])
         bro[method] = bro[method].bindenv({ prototypeOnly = true });
     // Model the raw native inherit structure seen by Legacy Hooks before new()
     // flattens methods. These callbacks are not own members of player/zombie_player.
-    local actorBase = {}, inherited = ["setDirty", "onAppearanceChanged", "onFactionChanged"];
+    local actorBase = {}, inherited = ["generateCorpse", "setDirty", "onAppearanceChanged", "onFactionChanged"];
     if (zombie) inherited.extend(["onUpdateInjuryLayer", "onDeath", "onResurrected"]);
     foreach (method in inherited) { actorBase[method] <- bro[method]; delete bro[method]; }
     local originalMethods = clone actorBase;
@@ -256,15 +264,21 @@ try {
         local items = dead.getItems(), tileItems = tile.Properties.get("Items");
         check(dead.onDeath("killer", "skill", tile, fatality) == "death_result" && dead.deathCalls == 1
             && dead.lastArgs[0] == "killer" && dead.lastArgs[1] == "skill" && dead.lastArgs[2] == tile && dead.lastArgs[3] == fatality, "death dispatcher preserves original args and single native invocation: " + fatality);
-        check(dead.flyingHeads.len() == 0, "native detached-head effect receives no original head parts: " + fatality);
-        check(tile.details.len() == 2 && tile.details[0].brush == "fire-effect" && tile.details[1].brush == "afeix_p04_xiaogui_dead"
-            && tile.details[1].Rotation == -90 && tile.details[1].Color == "#ffffff", "corpse is one rotated complete image with tactical effect retained: " + fatality);
+        check(dead.flyingHeads.len() == (fatality == "decapitated" ? 1 : 0), "only native helmet remains in decapitation: " + fatality);
+        local hasCustom = fatality == "normal" || fatality == "unconscious";
+        check(tile.cleared.len() == 0 && tile.details[0].brush == "old-corpse" && tile.details[1].brush == "fire-effect"
+            && tile.details[2].brush == "bust_native_body_dead" && tile.details[3].brush == "native_armor_dead", "native body armor and pre-existing ground details retained: " + fatality);
+        if (hasCustom) check(tile.details[4].brush == "afeix_p04_xiaogui_corpse_head" && tile.details[4].Rotation == 140
+            && tile.details[5].brush == "native_helmet_dead", "custom head rendered above body below helmet: " + fatality);
+        else foreach (detail in tile.details) check(detail.brush != "afeix_p04_xiaogui_corpse_head", "fatality cannot regrow a head: " + fatality);
         local corpse = tile.Properties.get("Corpse");
+        check(corpse.Custom.Body == "afeix_p04_xiaogui", "corpse preserves resurrection identity");
         check(corpse.Items == items && corpse.Armor == 140 && tile.Properties.get("Items") == tileItems
             && corpse.IsResurrectable == (fatality == "normal") && corpse.IsConsumable == (fatality != "unconscious"), "native drop corpse and fatality data are preserved: " + fatality);
         local stub = casualties.top();
-        check(stub.sprites.body.brush == "afeix_p04_xiaogui_dead" && stub.sprites.body.Rotation == -90
-            && !stub.sprites.head.Visible && !stub.sprites.hair.Visible && !stub.sprites.stuff_0.Visible, "casualty portrait does not reconstruct native head: " + fatality);
+        check(stub.sprites.body.brush == "bust_native_body_dead" && stub.sprites.armor.Visible
+            && stub.sprites.head.Visible == hasCustom && !stub.sprites.hair.Visible, "casualty keeps equipped native body and appropriate head: " + fatality);
+        if(hasCustom) check(stub.sprites.head.brush == "afeix_p04_xiaogui_corpse_head", "casualty receives custom identity");
         check(dead.getItems().getAppearance().HelmetCorpse == "native_helmet_dead" && !dead.getItems().getAppearance().HideCorpseHead, "death-only appearance fields restored: " + fatality);
         if (fatality == "unconscious") check(dead.onCombatFinished() == "combat_result" && dead.sprites.body.Visible
             && dead.sprites.body.brush == "afeix_p04_xiaogui" && dead.sprites.head.Visible, "unconscious survivor returns to its full portrait");
@@ -275,7 +289,7 @@ try {
                 && revived.sprites.head.brush == "afeix_p04_xiaogui_head" && !revived.sprites.hair.Visible, "native resurrection retains items and XP while custom head survives");
             revived.onUpdateInjuryLayer(); check(revived.injuryCalls == 0, "revived portrait hides native zombie injury parts");
             local again = makeTile(); revived.onDeath("killer", "skill", again, "decapitated");
-            check(revived.flyingHeads.len() == 0 && again.details[1].brush == "afeix_p04_xiaogui_dead"
+            check(revived.flyingHeads.len() == 1 && again.details[2].brush == "bust_native_body_dead"
                 && again.Properties.get("Corpse").Items == revived.getItems(), "resurrected member dies again without native head or altered items");
         }
     }
@@ -284,7 +298,7 @@ try {
         local fallen = makeBrother("bottle"), floor = makeTile(); fallen.onInit();
         fallen.m.IsCorpseFlipped = nativeFlip;
         fallen.onDeath("killer", "skill", floor, "normal");
-        check(floor.details[1].flip == nativeFlip, "corpse retains either native randomized facing");
+        check(floor.details[4].flip == nativeFlip && floor.details[4].Rotation == (nativeFlip ? -140 : 140), "corpse retains either native randomized facing");
     }
     local missing = makeBrother("damou"); missing.onInit(); missing.available.afeix_p04_damou_dead = false;
     missing.onUpdateInjuryLayer();
@@ -305,12 +319,34 @@ try {
     check(A.ensureCharacterArtLayer(member) == null && member.added == 0, "even explicit decoration helper cannot add a disc to another member");
     local noTile = makeBrother("bottle"); noTile.onInit();
     check(noTile.onDeath("killer", "skill", null, "normal") == "death_result"
-        && casualties.top().sprites.body.brush == "afeix_p04_bottle_dead", "unplaced death still gives a complete casualty portrait");
+        && casualties.top().sprites.body.brush == "bust_native_body_dead" && casualties.top().sprites.head.brush == "afeix_p04_bottle_corpse_head", "unplaced death still gives a complete casualty portrait");
     local missingDeath = makeBrother("damou"); missingDeath.onInit(); missingDeath.available.afeix_p04_damou_dead = false;
     local fallbackTile = makeTile(); missingDeath.onDeath("killer", "skill", fallbackTile, "normal");
     check(missingDeath.sprites.body.brush == "bust_native_body" && fallbackTile.cleared.len() == 0, "missing corpse brush restores native body before native death rather than crashing");
-    local limitedSprite = { Color = null, Saturation = 1.0, Scale = 1.0 };
-    A.stylePortraitCorpse(limitedSprite, ordinary);
-    check(limitedSprite.Color == "#ffffff" && limitedSprite.Scale == 0.72, "unsupported rotation cannot abort death visual replacement");
+    local unplaced = makeBrother("keke"); unplaced.onInit();
+    local saved = A.beginPortraitDeath(unplaced, "normal");
+    local unplacedInfo = unplaced.generateCorpse(null, "normal", null);
+    A.endPortraitDeath(unplaced, saved);
+    check(unplacedInfo.Custom.Body == "afeix_p04_keke", "unplaced corpse preserves identity before entering native resurrection queue");
+    local missingHead = makeBrother("damou"); missingHead.onInit(); missingHead.available.afeix_p04_damou_corpse_head = false;
+    local missingTile = makeTile(); missingHead.onDeath("killer", "skill", missingTile, "normal");
+    check(missingHead.sprites.body.brush == "bust_native_body" && missingTile.cleared.len() == 0, "missing new corpse resource uses native fallback");
+    // Compose the new preference hook with the actual portrait wrappers.
+    local helmetBro = makeBrother("keke"); helmetBro.onInit();
+    local helmetFlags = {}, oldGet = A.get;
+    ::World <- {Flags={has=function(k){return k in helmetFlags;}},
+        State={getCombatStartTime=function(){return 0;},getPlayer=function(){return {};}}};
+    ::Tactical.isActive <- function(){return false;};
+    A.roster <- function(){return [helmetBro];};
+    A.get = function(k,fallback=0){return k=="hide_helmets"?(k in helmetFlags?helmetFlags[k]:fallback):oldGet(k,fallback);};
+    A.set <- function(k,v){helmetFlags[k]<-v;helmetFlags["afeix_"+k]<-v;return v;};
+    A.result <- function(ok,text){return {ok=ok,text=text};};
+    dofile("src/scripts/mods/afeix/company_appearance_hooks.nut");
+    callbacks["entity/tactical/player"](helmetBro);
+    helmetBro.getItems().getAppearance().HideHead=true;
+    check(A.toggleCompanyHelmets().ok&&!helmetBro.sprites.helmet.Visible&&!helmetBro.sprites.helmet_damage.Visible,"preference hides native helmet over actual portrait");
+    check(helmetBro.sprites.head.Visible&&helmetBro.sprites.head.brush=="afeix_p04_keke_head"&&!helmetBro.sprites.hair.Visible,"closed helmet removal reveals custom head without native hair");
+    check(helmetBro.onDeserialize({})=="load_result"&&!helmetBro.sprites.helmet.Visible&&helmetBro.sprites.head.Visible,"both portrait and preference survive actor load");
+    check(A.toggleCompanyHelmets().ok&&helmetBro.sprites.helmet.Visible&&!helmetBro.sprites.head.Visible,"showing closed helmet reapplies normal custom head occlusion");
     print("ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\nTESTS_PASSED=" + passed + "\n");
 } catch (error) { print(error + "\n"); if ("exit" in getroottable()) exit(1); throw error; }

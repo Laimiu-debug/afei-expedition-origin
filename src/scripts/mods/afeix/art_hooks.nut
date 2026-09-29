@@ -12,6 +12,14 @@ local overrideArtMember = function(object, method, replacement) {
     ::mods_override(object, method, replacement);
 };
 local hookPortraitActor = function(o) {
+    local generateCorpse = ::mods_getMember(o, "generateCorpse");
+    overrideArtMember(o, "generateCorpse", function(tile, fatality, killer) {
+        local corpse = generateCorpse.bindenv(this)(tile, fatality, killer);
+        // This covers placed, delayed resurrection and unplaced corpses alike.
+        if ("afeixDeathVisual" in this.m && this.m.afeixDeathVisual && corpse != null && corpse.Custom != null)
+            corpse.Custom.Body = this.m.afeixDeathPortrait;
+        return corpse;
+    });
     local setDirty = ::mods_getMember(o, "setDirty");
     overrideArtMember(o, "setDirty", function(value) {
         ::AfeixExpedition.hideOriginalPortraitParts(this);
@@ -40,19 +48,27 @@ local hookPortraitActor = function(o) {
     local onDeath = ::mods_getMember(o, "onDeath");
     overrideArtMember(o, "onDeath", function(killer, skill, tile, fatalityType) {
         local A = ::AfeixExpedition, brush = A.characterPortraitBrush(this);
-        if (brush == null || !A.hasPortraitArt(this, brush)) {
-            if (brush != null && "afeixPortraitActive" in this.m && this.m.afeixPortraitActive) A.suspendCharacterArt(this);
-            return onDeath.bindenv(this)(killer, skill, tile, fatalityType);
+        if (brush == null || !A.hasPortraitArt(this, brush) || !A.hasCorpseHeadArt(brush)) {
+            if (brush == null) return onDeath.bindenv(this)(killer, skill, tile, fatalityType);
+            local depth = "afeixArtSuspendDepth" in this.m ? this.m.afeixArtSuspendDepth : 0;
+            this.m.afeixArtSuspendDepth <- depth + 1;
+            local result = null;
+            try {
+                A.suspendCharacterArt(this);
+                result = onDeath.bindenv(this)(killer, skill, tile, fatalityType);
+            } catch (error) { this.m.afeixArtSuspendDepth = depth; throw error; }
+            this.m.afeixArtSuspendDepth = depth;
+            return result;
         }
         local depth = "afeixArtSuspendDepth" in this.m ? this.m.afeixArtSuspendDepth : 0;
         this.m.afeixArtSuspendDepth <- depth + 1;
-        local saved = A.beginPortraitDeath(this), result = null;
+        local saved = A.beginPortraitDeath(this, fatalityType), result = null;
         try { result = onDeath.bindenv(this)(killer, skill, tile, fatalityType); }
         catch (error) {
             A.endPortraitDeath(this, saved); this.m.afeixArtSuspendDepth = depth; throw error;
         }
         A.endPortraitDeath(this, saved); this.m.afeixArtSuspendDepth = depth;
-        A.replacePortraitCorpse(this, tile, brush); return result;
+        A.replacePortraitCorpse(this, tile, brush, fatalityType); return result;
     });
 };
 ::mods_hookExactClass("entity/tactical/player", function(o) {

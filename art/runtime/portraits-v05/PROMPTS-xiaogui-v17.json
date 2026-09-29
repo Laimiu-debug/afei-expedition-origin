@@ -1,0 +1,40 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-27",
+  "status": "selected_after_offline_visual_review",
+  "user_refinement": "蝴蝶结一定要有；颜色更明亮，整体更可爱。",
+  "records": [
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "prompt": "Use case: stylized-concept / identity-preserve.\nAsset type: ONE finished transparent Battle Brothers game bust of the turtle mascot character 溺水小龟 (Xiaogui), based on two user-supplied mascot reference images.\nInputs: Image 1 is CHARACTER DESIGN reference: cheerful round green turtle with small pink bow, yellow segmented plastron and expressive friendly face. Image 2 is CHARACTER DESIGN reference: light-green round head, olive crown spots, soft cheeks and pink paw-shaped cheek mark. Use these two to correct the existing likeness. Image 3 is the EXISTING GAME BUST to improve: keep its screen-right three-quarter pose, compact isolated head-and-short-shoulders crop, visible short neck, brown medieval leather shoulder straps and small shell rim behind shoulders. Image 4 is the official Battle Brothers STYLE reference only.\nPrimary request: make the mascot closer to the references: a compact rounded turtle head with soft full cheeks, short shallow muzzle and two tiny nostrils, clean round chin; eliminate the old long bulbous projecting duck-like beak and long reptile neck. Bright fresh pale apple-green skin with a warm mint tint, soft medium leaf-green irregular crown spots, large friendly dark brown eyes with one simple highlight each, gentle lifted brows, relaxed cheerful small open smile with a tiny pink tongue. Both eyes open and looking screen right. Warm subtle cheek blush, one small simple soft-pink paw mark on the visible near cheek. Not a realistic wrinkly reptile, not angry or elderly.\nUSER'S LATEST PRIORITY: the PINK BOW MUST BE PRESENT AND CLEARLY VISIBLE. Draw one charming candy-pink fabric bow centered at the front/top of the crown, about 30 percent of the head width, with two rounded softly folded loops and a rounded knot. Keep it compact against the crown so it can later be covered by equipped helmets, but do NOT miniaturize, hide, desaturate or omit the bow. Friendly and cute, not sombre. Retain a few visible olive crown spots. No headset, microphone, gaming chair, controller, keyboard, computer or streamer props.\nBody: light warm creamy-yellow segmented turtle chest/plastron at the neckline, simple light honey-tan leather shoulder harness adapted from the existing bust, a subtle medium fresh green shell rim behind the shoulders. Short intact green neck visibly joins the full rounded jaw to the low collar. Both shoulders compact, no arms/hands. No soccer jersey, logo, sponsor, lettering or sports insignia.\nStyle: hand-painted medieval tactical game sprite fitting Battle Brothers alongside the existing busts. Clean medium warm-brown outer contour, broad economical hand-painted shadow shapes, limited light/shadow tones, light honey-tan leather. USER REQUESTS MUCH LIGHTER COLORS AND MORE CUTENESS: predominantly luminous pale apple-green, creamy yellow and soft candy pink; use soft green shading on green skin. Bright softly lit cheek and crown planes, rounded welcoming shapes and joyful expression. Only use small restrained shadow areas for depth; avoid dirty brown skin shadows, olive-drab complexion, desaturated mustard, heavy dark vignette or gloomy muddy palette. Keep the mascot's rounded charm and readable color while avoiding neon acid green, shiny plastic, 3D rendering, glossy airbrush, oversized anime sparkle eyes, sticker outline or flat emoji graphics. Small-size readability matters: the final visible character is only at most 88x100 game pixels.\nComposition: a single coherent 3/4 bust, head/nose/gaze/neck/chest all turned toward SCREEN RIGHT. Head roughly upper 60 percent of silhouette, intact short neck in middle 10 percent, curved cropped shoulders/chest bottom 30 percent. No straight-on face, no looking at viewer, no winking. Entire crown, small bow and shoulders comfortably inside frame with small clear transparent margins. Maintain game-compatible head scale; do not draw a whole-body baby turtle.\nOutput: genuinely transparent RGBA background, ONE final source image, not a grid or comparison. No text, borders, sticker-white rim, scene, ground, cast shadow, watermark or other characters.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-xiaogui/01-streamer-mascot-expressions.jpg",
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-xiaogui/02-spotted-turtle-mascot.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/user-v12/xiaogui.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "selected_source": "art/runtime/portraits-v05/sources/user-v17/xiaogui.png",
+      "generated_original": "C:/Users/25647/.codex/generated_images/01a0e182-4f3d-7eb2-ac38-307dc7d2ee97/exec-8e7078b7-7afc-4698-9baa-11a6844c3681.png",
+      "source_sha256": "ea47d8b87dcbd4358e6e75c8613d870ed0aa76f22b7b77787b0d5ecfc8a03157",
+      "review": {
+        "comparison": "build/playtest-xiaogui/comparison.png",
+        "mascot_references": 2,
+        "user_required_pink_bow": true,
+        "lighter_palette": true,
+        "source_pixels_edited_after_generation": false,
+        "transparent_rgba": true,
+        "game_size_reviewed": true,
+        "equipment_reviewed": [
+          "armor",
+          "open_helmet",
+          "closed_helmet"
+        ],
+        "equipment_limitations": [
+          "Native helmets cover the crown and bow; part of the broad turtle face remains exposed beyond the right edge of the closed helmet."
+        ],
+        "in_game_tested": false
+      }
+    }
+  ]
+}

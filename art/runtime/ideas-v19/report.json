@@ -1,0 +1,68 @@
+{
+  "manifest_sha256": "6a0d399bd5542c5700adc566ba412c426173d2bf9fafe0ce1df4b485d1b7a614",
+  "exports": [
+    {
+      "path": "gfx/ui/items/weapons/afeix_laoma_grip.png",
+      "sha256": "30aa3c6622b4c737ea7f2cf0199fed36de8ab933e7367745fbe507af8d7334f5",
+      "size": [
+        70,
+        140
+      ]
+    },
+    {
+      "path": "gfx/ui/items/weapons/afeix_laoma_grip_70x70.png",
+      "sha256": "53429570f9f120f913714b19a385da1103914a71f39b1c3cd7388187c574173f",
+      "size": [
+        70,
+        70
+      ]
+    },
+    {
+      "path": "gfx/items/weapons/afeix_laoma_grip.png",
+      "sha256": "30aa3c6622b4c737ea7f2cf0199fed36de8ab933e7367745fbe507af8d7334f5",
+      "size": [
+        70,
+        140
+      ]
+    },
+    {
+      "path": "gfx/items/weapons/afeix_laoma_grip_70x70.png",
+      "sha256": "53429570f9f120f913714b19a385da1103914a71f39b1c3cd7388187c574173f",
+      "size": [
+        70,
+        70
+      ]
+    },
+    {
+      "path": "gfx/ui/events/afeix_liu_qingsong.png",
+      "sha256": "2f2dac7c961f903c2d2602bf1b98e3e9343e2c726e1aea2f3bbdb4565fec761c",
+      "size": [
+        210,
+        210
+      ]
+    }
+  ],
+  "roundtrip": {
+    "passed": true,
+    "sprite_count": 2,
+    "sprites": [
+      {
+        "id": "icon_afeix_laoma_grip",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "icon_afeix_laoma_grip_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "brush": "package/brushes/afeix_ideas_v19.brush",
+    "brush_sha256": "c41774f66538400c466a405e95f6a501d2e415149917049c77371973fb0b6322",
+    "atlas": "package/gfx/afeix_ideas_v19.png",
+    "atlas_sha256": "27635956724f84b53921ff8224688c272190e4bf21c95b3477891e17f7612ba7",
+    "pack_log": "Loading images...\nsprites\\icon_afeix_laoma_grip.png\nsprites\\icon_afeix_laoma_grip_bloodied.png\nPacking rectangles...\nWriting gfx/afeix_ideas_v19.png (256x128)...\n",
+    "unpack_log": "Opening gfx/afeix_ideas_v19.png...\nsprites\\icon_afeix_laoma_grip.png\nsprites\\icon_afeix_laoma_grip_bloodied.png\n",
+    "roundtrip_directory": "build/roundtrip-7k9qe7a3"
+  }
+}

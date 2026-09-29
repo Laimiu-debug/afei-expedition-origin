@@ -1,0 +1,754 @@
+{
+  "date": "2026-09-29",
+  "icons": [
+    {
+      "key": "borrow_strike",
+      "name": "大哥借我",
+      "path": "src/gfx/skills/afeix_member_borrow_strike.png",
+      "status": "current_legacy",
+      "sha256": "6548a4eb114ca963ef5f6803d93525f21697ea791170baf5968697024f26f6d8"
+    },
+    {
+      "key": "together_lift",
+      "name": "一起抬",
+      "path": "src/gfx/skills/afeix_member_together_lift.png",
+      "status": "current_legacy",
+      "sha256": "9238ed818e0e9dd62ee303479813dd7a57b994e52959cb93f1d4c97b55875fb7"
+    },
+    {
+      "key": "steal_bro",
+      "name": "偷大哥",
+      "path": "src/gfx/skills/afeix_member_steal_bro.png",
+      "status": "current_legacy",
+      "sha256": "92c038ad23db86d9c3119903420c8615bbe64c69bc37a089048dc9426f8e109a"
+    },
+    {
+      "key": "scrap_parts",
+      "name": "地精出身",
+      "path": "src/gfx/skills/afeix_member_scrap_parts.png",
+      "status": "current_legacy",
+      "sha256": "a4e66fbaafb73bbac731c8cb3aaaa6fab78ceb7409258024016083192256fc16"
+    },
+    {
+      "key": "abacus_mark",
+      "name": "地精算盘",
+      "path": "src/gfx/skills/afeix_member_abacus_mark.png",
+      "status": "current_legacy",
+      "sha256": "8fc70151ae8f01cb07520ad4477d4a7bcc776b503142f7f68c236ab56d784293"
+    },
+    {
+      "key": "shadow_captain",
+      "name": "幕后队长",
+      "path": "src/gfx/skills/afeix_member_shadow_captain.png",
+      "status": "current_legacy",
+      "sha256": "104339adbdba0e234d84fab5b0c07a1a6bbb2f9a29ba8e0bc22b603a9adefbe2"
+    },
+    {
+      "key": "bottle_breakthrough",
+      "name": "瓶队突破",
+      "path": "src/gfx/skills/afeix_member_bottle_breakthrough.png",
+      "status": "current_legacy",
+      "sha256": "cebbc4855d13160dde63cd485c97096f327c65b0f158105f44de2a7ba8ace36e"
+    },
+    {
+      "key": "finals_moment",
+      "name": "决赛时刻",
+      "path": "src/gfx/skills/afeix_member_finals_moment.png",
+      "status": "current_legacy",
+      "sha256": "3c6b1eebc347b1940376d77072ae64a5b432d972effcd7230ce0eb1120a7bf64"
+    },
+    {
+      "key": "teammate_ball",
+      "name": "队友给的球",
+      "path": "src/gfx/skills/afeix_member_teammate_ball.png",
+      "status": "current_legacy",
+      "sha256": "2ed2b3ea9c32cb78181c3b16d75f3762c14f31a96b15f04355afb41d86664c88"
+    },
+    {
+      "key": "drum",
+      "name": "打鼓",
+      "path": "src/gfx/skills/afeix_member_drum.png",
+      "status": "current_legacy",
+      "sha256": "4e12cd480933f4a40cccf27a0ff847bbf92b53808c7533b33e3aa7a1e0736a12"
+    },
+    {
+      "key": "small_heart",
+      "name": "小心脏",
+      "path": "src/gfx/skills/afeix_member_small_heart.png",
+      "status": "current_legacy",
+      "sha256": "94eb85ac1ca6c82edf4f7860acfa1288588617555d175008eda477690954c8e5"
+    },
+    {
+      "key": "guard_gate",
+      "name": "守门",
+      "path": "src/gfx/skills/afeix_member_guard_gate.png",
+      "status": "current_legacy",
+      "sha256": "0cbe504ff1b508e798ba2535095d2620a4b152ea00ed53ddf1732eeeb5ae19a1"
+    },
+    {
+      "key": "unselectable",
+      "name": "无法选中",
+      "path": "src/gfx/skills/afeix_member_unselectable.png",
+      "status": "current_legacy",
+      "sha256": "a8ba876b2539e36343b22339eccf01790072f0ab9c97223374b9b662d16a34f1"
+    },
+    {
+      "key": "chaoju",
+      "name": "超巨",
+      "path": "src/gfx/skills/afeix_member_chaoju.png",
+      "status": "current_legacy",
+      "sha256": "16a638519463507b7b2396b3073a1b5af90a80b0253a0fec5348f558afe14947"
+    },
+    {
+      "key": "ouqi",
+      "name": "欧气",
+      "path": "src/gfx/skills/afeix_member_ouqi.png",
+      "status": "current_legacy",
+      "sha256": "4124afdadd7e75dd428cc7b3ae1bfc8d1fcef6ab9e9f96125ee1edeed82d0e44"
+    },
+    {
+      "key": "supermarket",
+      "name": "超市里",
+      "path": "src/gfx/skills/afeix_member_supermarket.png",
+      "status": "current_legacy",
+      "sha256": "25d6e276eb926d0a31c3e779632ab6755546dbf3f9cf5df8b51cf7e09c3b9ff1"
+    },
+    {
+      "key": "biantai",
+      "name": "变态",
+      "path": "src/gfx/skills/afeix_member_biantai.png",
+      "status": "current_legacy",
+      "sha256": "3313277855f4a00e1023a5497bbab8d83e837307276ed0e37fdd988c41286dd5"
+    },
+    {
+      "key": "optimist",
+      "name": "乐天派",
+      "path": "src/gfx/skills/afeix_member_optimist.png",
+      "status": "current_legacy",
+      "sha256": "3a6ea74ba683a3a967eca21ff39fe6a57fdc6cf18483a283b72e652267c7037b"
+    },
+    {
+      "key": "dog_bark",
+      "name": "狗叫",
+      "path": "src/gfx/skills/afeix_member_dog_bark.png",
+      "status": "current_legacy",
+      "sha256": "29073f56d854d0bd5821ca781a9683fb8f7550afe3b776faa473e86374fba8a8"
+    },
+    {
+      "key": "loyalty",
+      "name": "忠诚",
+      "path": "src/gfx/skills/afeix_member_loyalty.png",
+      "status": "current_legacy",
+      "sha256": "f07c56a5eb19ce9c340b61ea1949f70e0942371e40bd7ddbe35b75c83d7efc97"
+    },
+    {
+      "key": "guard_swap",
+      "name": "护团换位",
+      "path": "src/gfx/skills/afeix_member_guard_swap.png",
+      "status": "current_legacy",
+      "sha256": "2fd36cf5e0516a06a9c29287f919e479350b6148200c2ab66699d5a228b1039b"
+    },
+    {
+      "key": "nicotine",
+      "name": "尼古丁",
+      "path": "src/gfx/skills/afeix_member_nicotine.png",
+      "status": "current_legacy",
+      "sha256": "1baa811834c9fcb0c6aa086e2c2572e7269a2f1052b75973581f8a1f1d699a55"
+    },
+    {
+      "key": "only_man",
+      "name": "唯一的男人",
+      "path": "src/gfx/skills/afeix_member_only_man.png",
+      "status": "current_legacy",
+      "sha256": "8d2bc079b0576f9528c8e76dbec205bef7e8ee0445b48e2c463a4ad7b5a3a0e7"
+    },
+    {
+      "key": "cover_up",
+      "name": "顶上去",
+      "path": "src/gfx/skills/afeix_member_cover_up.png",
+      "status": "current_legacy",
+      "sha256": "40bc7f865fb381a80c884e6deeaa01a615aab8255fc43a6c9a479de49627ffa1"
+    },
+    {
+      "key": "prince_order",
+      "name": "太子发令",
+      "path": "src/gfx/skills/afeix_member_prince_order.png",
+      "status": "current_legacy",
+      "sha256": "a33c94bac94ce9eecfeac28ae1a5212f9d5436a49c510ee170ebdf7f49ac6cba"
+    },
+    {
+      "key": "fear_afei",
+      "name": "恐飞派",
+      "path": "src/gfx/skills/afeix_member_fear_afei.png",
+      "status": "current_legacy",
+      "sha256": "04cd0975d48fde7693e0b160ebbf669438ed4ef7e47c0659ffc1392ceaa5ee77"
+    },
+    {
+      "key": "dui_sentence",
+      "name": "怼一句",
+      "path": "src/gfx/skills/afeix_member_dui_sentence.png",
+      "status": "current_legacy",
+      "sha256": "239c0a4143d6b4e56f724bbc217b710028c0c47d81002c5c6131d910cbe09cf3"
+    },
+    {
+      "key": "steady_hand",
+      "name": "稳一手",
+      "path": "src/gfx/skills/afeix_member_steady_hand.png",
+      "status": "current_legacy",
+      "sha256": "2e4c661e2d427c78161ba596048e3e881bb971156d6907a154ae775408a2db23"
+    },
+    {
+      "key": "blue_form",
+      "name": "蓝旗布阵",
+      "path": "src/gfx/skills/afeix_member_blue_form.png",
+      "status": "current_legacy",
+      "sha256": "428aff79e2fce47592e05a34bd8073cb67db552ef0522c1750bf50f30defa9d2"
+    },
+    {
+      "key": "good_card",
+      "name": "一张好牌",
+      "path": "src/gfx/skills/afeix_member_good_card.png",
+      "status": "current_legacy",
+      "sha256": "4e171d82018eb4e9d285bf95b208eb2bd60ff16345868fd075da9c8575419963"
+    },
+    {
+      "key": "yanzi_watch",
+      "name": "看准再出手",
+      "path": "docs/design/balance-v2/icons/yanzi_watch.png",
+      "status": "proposal_only_generated",
+      "sha256": "c3f10e1346907dd35b17ff771e87761688062fa224009230413c8bc74e0e0971"
+    },
+    {
+      "key": "yanzi_cover",
+      "name": "侧身接线",
+      "path": "docs/design/balance-v2/icons/yanzi_cover.png",
+      "status": "proposal_only_generated",
+      "sha256": "8f1bd76b3253d69f01819be3400ae7d2dfb8bd0ecdee963234ad6c0afb1efd97"
+    },
+    {
+      "key": "yanzi_reply",
+      "name": "留一手",
+      "path": "docs/design/balance-v2/icons/yanzi_reply.png",
+      "status": "proposal_only_generated",
+      "sha256": "eec43e82b6d833fa277921b3cf8c3926ea9d2e7405e631944556423d8c10131d"
+    },
+    {
+      "key": "catch_rear",
+      "name": "接住后排",
+      "path": "src/gfx/skills/afeix_member_catch_rear.png",
+      "status": "current_legacy",
+      "sha256": "3b65b04cda97ef8f7b5ee2f9035bd07154a8585cef1500d052d4284366e28ce0"
+    },
+    {
+      "key": "return_arrow",
+      "name": "回头箭",
+      "path": "src/gfx/skills/afeix_member_return_arrow.png",
+      "status": "current_legacy",
+      "sha256": "e5a60068932f359a2fa4e56f98270db6c94232791e037f75fec737a4f3258a4c"
+    },
+    {
+      "key": "scout_path",
+      "name": "探路",
+      "path": "src/gfx/skills/afeix_member_scout_path.png",
+      "status": "current_legacy",
+      "sha256": "63e588d98513a2c040c1629e9b98120fe3fd1c33499398dcd547da3754b75fbf"
+    },
+    {
+      "key": "drool",
+      "name": "流口水",
+      "path": "src/gfx/skills/afeix_member_drool.png",
+      "status": "current_generated",
+      "sha256": "2460690d25942122863968f9138a81435a4216bfed040924f96eed530813a27c"
+    },
+    {
+      "key": "alien_eye",
+      "name": "外星人的观察",
+      "path": "src/gfx/skills/afeix_member_alien_eye.png",
+      "status": "current_generated",
+      "sha256": "4403c731c57a023eebd90d89ec50a548c8da732de8bb095d96b2ec65fb8c23e4"
+    },
+    {
+      "key": "signal_delay",
+      "name": "信号延迟",
+      "path": "src/gfx/skills/afeix_member_signal_delay.png",
+      "status": "current_generated",
+      "sha256": "53f7414561c7b251cc53b826b4b2de6be8f0dc082160b642c841a6d45aa103f4"
+    },
+    {
+      "key": "pang_share",
+      "name": "借你半面盾",
+      "path": "src/gfx/skills/afeix_member_pang_share.png",
+      "status": "current_generated",
+      "sha256": "9ab52d55a8d7a676ab8816d1414cd9fc38c0bee5ff382f3e86d2900ac7fefc0b"
+    },
+    {
+      "key": "pang_anchor",
+      "name": "踩稳节拍",
+      "path": "src/gfx/skills/afeix_member_pang_anchor.png",
+      "status": "current_generated",
+      "sha256": "04033e06c16c6c8d7abb1f49a8c73f4a6e5a3eeb75181613b0d1ee04a15fb095"
+    },
+    {
+      "key": "pang_breath",
+      "name": "挨过这一拍",
+      "path": "src/gfx/skills/afeix_member_pang_breath.png",
+      "status": "current_generated",
+      "sha256": "19275db856f706c457d473716d40fd94da8d092048aeb5aa801ae5ab0cf8664a"
+    },
+    {
+      "key": "guard_nest",
+      "name": "守窝",
+      "path": "src/gfx/skills/afeix_member_guard_nest.png",
+      "status": "current_legacy",
+      "sha256": "190e3fc9b2d70c289f7825fd1be97bc2983fd3083b445c62d4c3f896ba225ff0"
+    },
+    {
+      "key": "goose_bully",
+      "name": "鹅势欺人",
+      "path": "src/gfx/skills/afeix_member_goose_bully.png",
+      "status": "current_legacy",
+      "sha256": "e0c14da92390309dc7ff52ab978dce9ba2238ebd65651280aa520275809fcc4d"
+    },
+    {
+      "key": "gaga_charge",
+      "name": "嘎嘎冲",
+      "path": "src/gfx/skills/afeix_member_gaga_charge.png",
+      "status": "current_legacy",
+      "sha256": "de67299fa71818c2eaf9f7cc2c743f542ef8cb36685639a221374b3791bc16b2"
+    },
+    {
+      "key": "berry_mark",
+      "name": "红线记号",
+      "path": "src/gfx/skills/afeix_member_berry_mark.png",
+      "status": "current_generated",
+      "sha256": "dbda2aadb7e82abeade32819660d34749baba3d9d489f387a0869ed68f817d07"
+    },
+    {
+      "key": "berry_eye",
+      "name": "看清缝隙",
+      "path": "src/gfx/skills/afeix_member_berry_eye.png",
+      "status": "current_generated",
+      "sha256": "89d95ffc3cecbd6169c9bff03468e409f4d5740c4d166fb6763e63da44498450"
+    },
+    {
+      "key": "berry_reserve",
+      "name": "留一支给后面",
+      "path": "src/gfx/skills/afeix_member_berry_reserve.png",
+      "status": "current_generated",
+      "sha256": "adc7b88662e26b9d16deb1b949cc7e22685061b0b36cbf484b80296fa4b6d3a1"
+    },
+    {
+      "key": "gentle_note",
+      "name": "轻声提醒",
+      "path": "src/gfx/skills/afeix_member_gentle_note.png",
+      "status": "current_generated",
+      "sha256": "89ecb7810a115654a16399ee5999824d990122e6c871f8a7a361b34b80c2ea3f"
+    },
+    {
+      "key": "companion",
+      "name": "有人同行",
+      "path": "src/gfx/skills/afeix_member_companion.png",
+      "status": "current_generated",
+      "sha256": "1bae71e9e262a7891da7bf7e0804b7e05f190acf7ad2fae4213d0c2fc461d5d7"
+    },
+    {
+      "key": "spare_breath",
+      "name": "留口气",
+      "path": "src/gfx/skills/afeix_member_spare_breath.png",
+      "status": "current_generated",
+      "sha256": "5d560016fb842a26c769f12095d34b72c04b2b1f6f6bbc4a0f7941c8fbe20f61"
+    },
+    {
+      "key": "pokemon",
+      "name": "保可梦",
+      "path": "src/gfx/skills/afeix_member_pokemon.png",
+      "status": "current_legacy",
+      "sha256": "b2ba86a244d99dbdeaed9f4cf3ca15f54a308ca5090a07df6d840665cfabab32"
+    },
+    {
+      "key": "breathe_easy",
+      "name": "松口气",
+      "path": "src/gfx/skills/afeix_member_breathe_easy.png",
+      "status": "current_legacy",
+      "sha256": "8a5703c3e7dad5b2c2c761eae9ca1cd6b306d0fa581855e731b62e7d74274dea"
+    },
+    {
+      "key": "own_people",
+      "name": "自己人",
+      "path": "src/gfx/skills/afeix_member_own_people.png",
+      "status": "current_legacy",
+      "sha256": "3f8b9519fecc73946f2cd300e4071e03f69a5bf0d0c7485f8c772ce7ad004441"
+    },
+    {
+      "key": "long_watch",
+      "name": "长轮守门",
+      "path": "src/gfx/skills/afeix_member_long_watch.png",
+      "status": "current_legacy",
+      "sha256": "f87dbd85865940080c4b4fe6830fcd74769507d9904661ff18d6a732938d3557"
+    },
+    {
+      "key": "five_elder",
+      "name": "五老压阵",
+      "path": "src/gfx/skills/afeix_member_five_elder.png",
+      "status": "current_legacy",
+      "sha256": "9da4b80db007d25eafb7905d82f79eb66e7212671bf179e552bfe9dc7d0caf0d"
+    },
+    {
+      "key": "shift_arrive",
+      "name": "替班到了",
+      "path": "src/gfx/skills/afeix_member_shift_arrive.png",
+      "status": "current_legacy",
+      "sha256": "e224fd3d1c39c67e59db1eb7e797d5fbdd0755794e3d36ad5079aaf9e1140660"
+    },
+    {
+      "key": "bear_strike",
+      "name": "小熊出击",
+      "path": "src/gfx/skills/afeix_member_bear_strike.png",
+      "status": "current_legacy",
+      "sha256": "4be2dfe96a1ef36ea377ad70fb3b8346a75b88335362317c9faf8e08469b0e66"
+    },
+    {
+      "key": "know_rules",
+      "name": "先懂规则",
+      "path": "src/gfx/skills/afeix_member_know_rules.png",
+      "status": "current_legacy",
+      "sha256": "d6a5777369e34715f8f1310d7d53509777ef04e74c7098bd8cba8dde55495946"
+    },
+    {
+      "key": "cup_signal",
+      "name": "敲杯为号",
+      "path": "src/gfx/skills/afeix_member_cup_signal.png",
+      "status": "current_legacy",
+      "sha256": "8edca20db4039fa3be828942f514f9870bbcb6a79fdad122e6443757e419478d"
+    },
+    {
+      "key": "king_dance",
+      "name": "大王舞",
+      "path": "src/gfx/skills/afeix_member_king_dance.png",
+      "status": "current_legacy",
+      "sha256": "b172f6433575455d3908eee4e02b9dfed96014c3e86ec2c4e5523ebdea87e3f5"
+    },
+    {
+      "key": "read_beat",
+      "name": "看懂节拍",
+      "path": "src/gfx/skills/afeix_member_read_beat.png",
+      "status": "current_legacy",
+      "sha256": "adcd907f4596136212e4480d807bcab456e0cc095a403c0524228fdbca9ab08a"
+    },
+    {
+      "key": "curtain_yield",
+      "name": "谢幕让位",
+      "path": "src/gfx/skills/afeix_member_curtain_yield.png",
+      "status": "current_legacy",
+      "sha256": "3f73cf2957d6a8a75e535807fec176041bf733a8af01466f409efd3d391ed876"
+    },
+    {
+      "key": "snake_trial",
+      "name": "蛇形试招",
+      "path": "src/gfx/skills/afeix_member_snake_trial.png",
+      "status": "current_legacy",
+      "sha256": "33a3d9b8de71f01899ffd3d9084599e087465af7823e647ac18a06963157b7b1"
+    },
+    {
+      "key": "snake_read",
+      "name": "秦国的神",
+      "path": "src/gfx/skills/afeix_member_snake_read.png",
+      "status": "current_legacy",
+      "sha256": "a045f7d6bc15576a7c27fbadcfca94bc01a8774e73ff7ae6f4ae41acaa933675"
+    },
+    {
+      "key": "next_path",
+      "name": "下一招换个路",
+      "path": "src/gfx/skills/afeix_member_next_path.png",
+      "status": "current_legacy",
+      "sha256": "64941369eccf0851d00ddd518fe87f30f38dc9607ed34780f2559a1188a08f38"
+    },
+    {
+      "key": "return_road",
+      "name": "回头路",
+      "path": "src/gfx/skills/afeix_member_return_road.png",
+      "status": "current_legacy",
+      "sha256": "40ffbb12d1f5a70ec49af386b6c6470325543ec3d8a89cdefbcc6889c28dc40c"
+    },
+    {
+      "key": "leave_not_gone",
+      "name": "离席未散",
+      "path": "src/gfx/skills/afeix_member_leave_not_gone.png",
+      "status": "current_legacy",
+      "sha256": "a6976b5f4caba05b359917f95a7c2cbd4e67898aafe147c4fd8142160eccab8e"
+    },
+    {
+      "key": "one_more_night",
+      "name": "再留一晚",
+      "path": "src/gfx/skills/afeix_member_one_more_night.png",
+      "status": "current_legacy",
+      "sha256": "1f947f0e25bdccabe73e3b426879a8e6d1f0940a09de17da04e179606f5f2b9b"
+    },
+    {
+      "key": "mouth_strong",
+      "name": "嘴强王者",
+      "path": "src/gfx/skills/afeix_member_mouth_strong.png",
+      "status": "current_legacy",
+      "sha256": "7b7ec7bc63a6954281ef0de494d5675e48725ddd1c54e8320f4b2e6838b19cd7"
+    },
+    {
+      "key": "shrink_cover",
+      "name": "缩进奶盖",
+      "path": "src/gfx/skills/afeix_member_shrink_cover.png",
+      "status": "current_legacy",
+      "sha256": "118f0679ad5909253c1299e2dd1ae11167bfefbbe093972a6e4e263bcd867334"
+    },
+    {
+      "key": "abs_comeback",
+      "name": "抽象整活",
+      "path": "src/gfx/skills/afeix_member_abs_comeback.png",
+      "status": "current_legacy",
+      "sha256": "2d62b77e5a8f03949d9e992b3924e643f435eea66331ca94a032d70e554d7ba9"
+    },
+    {
+      "key": "spare_key",
+      "name": "备用钥匙",
+      "path": "src/gfx/skills/afeix_member_spare_key.png",
+      "status": "current_legacy",
+      "sha256": "66bd95e70b49656a269c96977de035aad1e46f5832c05cc231c8a98b28ae9db0"
+    },
+    {
+      "key": "not_fooled",
+      "name": "不上这个当",
+      "path": "src/gfx/skills/afeix_member_not_fooled.png",
+      "status": "current_legacy",
+      "sha256": "98bb791f3e371fd8244d8df057664ed9e1b50858681cb72538cccb6b8571a6bb"
+    },
+    {
+      "key": "lock_wagon",
+      "name": "锁车",
+      "path": "src/gfx/skills/afeix_member_lock_wagon.png",
+      "status": "current_legacy",
+      "sha256": "2fbfaa88ebfcfe7e2b11739869056ab795493dc892baf2d64f8c3521d077ee3c"
+    },
+    {
+      "key": "budget_share",
+      "name": "提前分好",
+      "path": "src/gfx/skills/afeix_member_budget_share.png",
+      "status": "current_legacy",
+      "sha256": "77edd32ed681636fb81971bfd294fff58e6b410a73f1bbadd25417e16969f156"
+    },
+    {
+      "key": "purse_clear",
+      "name": "钱袋算清",
+      "path": "src/gfx/skills/afeix_member_purse_clear.png",
+      "status": "current_legacy",
+      "sha256": "0a1ada9cbe9d900fa0bb771cde1ef3f80333b56cbf96fb30e9c32ab04cdd117c"
+    },
+    {
+      "key": "no_last_throw",
+      "name": "别把最后一支乱扔",
+      "path": "src/gfx/skills/afeix_member_no_last_throw.png",
+      "status": "current_legacy",
+      "sha256": "ee98606953fc004cd5f5a30ad4f36d9c1ef4c1878bc9b1e566ac087df70faa94"
+    },
+    {
+      "key": "foot_point",
+      "name": "踩点",
+      "path": "src/gfx/skills/afeix_member_foot_point.png",
+      "status": "current_legacy",
+      "sha256": "9bd441605de10a811bb36e659187c15093acd8a0ec03623869aff3f7255f5bd7"
+    },
+    {
+      "key": "half_step",
+      "name": "抢半步",
+      "path": "src/gfx/skills/afeix_member_half_step.png",
+      "status": "current_legacy",
+      "sha256": "20b43b851d3970b7571c0207b004ef88f174133cca7c24f77f5609297907d7bb"
+    },
+    {
+      "key": "hard_brake",
+      "name": "急刹",
+      "path": "src/gfx/skills/afeix_member_hard_brake.png",
+      "status": "current_legacy",
+      "sha256": "111493e5a7aa168aead7a8c9349d105d72028d35e7f408e6d14458196d35dcc7"
+    },
+    {
+      "key": "short_sprint",
+      "name": "短坡冲刺",
+      "path": "src/gfx/skills/afeix_member_short_sprint.png",
+      "status": "current_legacy",
+      "sha256": "9fce6a34ac214e5b7960ca90153ca2fb636b8b8e87cffcae7f81fd99cf1e51be"
+    },
+    {
+      "key": "start_run",
+      "name": "003号起跑",
+      "path": "src/gfx/skills/afeix_member_start_run.png",
+      "status": "current_legacy",
+      "sha256": "1da17cc0749f6151b5e0a4e35dc09b4730e0a03ba82b80b54e3aed7fde0b0fff"
+    },
+    {
+      "key": "segment_breath",
+      "name": "分段呼吸",
+      "path": "src/gfx/skills/afeix_member_segment_breath.png",
+      "status": "current_legacy",
+      "sha256": "ca410ca41fbd32b4423aa5ae6366125bc4c6582ed1a3e0c6e037b9c6345101d6"
+    },
+    {
+      "key": "hold_curtain",
+      "name": "撑住幕布",
+      "path": "src/gfx/skills/afeix_member_hold_curtain.png",
+      "status": "current_legacy",
+      "sha256": "4cb51504ff7ee94a9ab9e8bd2aa796d069a559617b2685df8f0581603fb79a07"
+    },
+    {
+      "key": "hold_ground",
+      "name": "站稳场子",
+      "path": "src/gfx/skills/afeix_member_hold_ground.png",
+      "status": "current_legacy",
+      "sha256": "1edb80fdc65a689ced46285f2c22dd8cbe3040c8626e0e73e9545d1500a54895"
+    },
+    {
+      "key": "door_mine",
+      "name": "门口有我",
+      "path": "src/gfx/skills/afeix_member_door_mine.png",
+      "status": "current_legacy",
+      "sha256": "bdf57ca1000544881751ece41cc0f2d1508819fb0cad8cce42b37a3ba92bb772"
+    },
+    {
+      "key": "breach_strike",
+      "name": "破口一击",
+      "path": "src/gfx/skills/afeix_member_breach_strike.png",
+      "status": "current_legacy",
+      "sha256": "cdbfb1cbfdc3595a9e0f0480fb63d6f399dd075003afe1177ad2597738e2cbc0"
+    },
+    {
+      "key": "lvbu_weapon",
+      "name": "奶团吕布",
+      "path": "src/gfx/skills/afeix_member_lvbu_weapon.png",
+      "status": "current_legacy",
+      "sha256": "6f8012f33a11a194cd739e04200dd4bb7ffd6525ae2f9940c6bd4a0349aaf9f9"
+    },
+    {
+      "key": "look_flag",
+      "name": "回看旗子",
+      "path": "src/gfx/skills/afeix_member_look_flag.png",
+      "status": "current_generated",
+      "sha256": "a2ce8cfeb0bb931ffe7507acbd50b58fc413e7ba4af3fffb26a66212f4485a2b"
+    },
+    {
+      "key": "line_detour",
+      "name": "贴线绕行",
+      "path": "src/gfx/skills/afeix_member_line_detour.png",
+      "status": "current_legacy",
+      "sha256": "dfd43d0b4c1fda84d25bebc5f998e300de4b8781ca51a0cd128ece90e5ada14d"
+    },
+    {
+      "key": "curve_force",
+      "name": "弯道留力",
+      "path": "src/gfx/skills/afeix_member_curve_force.png",
+      "status": "current_legacy",
+      "sha256": "aed7fc7c466e22dcceb22c93721d809e49a81c802f154c2cfde912bb174a7054"
+    },
+    {
+      "key": "bell_lead",
+      "name": "铃铛带路",
+      "path": "src/gfx/skills/afeix_member_bell_lead.png",
+      "status": "current_legacy",
+      "sha256": "4ac5e31a6a478adf489ae6c45b8f4d0f87e5ce260ab00f8efaadd71f8905dd66"
+    },
+    {
+      "key": "quail_hide",
+      "name": "鹌鹑缩头",
+      "path": "src/gfx/skills/afeix_member_quail_hide.png",
+      "status": "current_generated",
+      "sha256": "7ec81d25196093061676533873e688d0ae04a345665b58f5ec354857e0a1fa2c"
+    },
+    {
+      "key": "quail_alarm",
+      "name": "鹌鹑报信",
+      "path": "src/gfx/skills/afeix_member_quail_alarm.png",
+      "status": "current_generated",
+      "sha256": "ed869439dc5ae664d184156fa46261d48c483ca6ac607a106a5d64059fc9da58"
+    },
+    {
+      "key": "quail_courage",
+      "name": "跟着胆大的人",
+      "path": "src/gfx/skills/afeix_member_quail_courage.png",
+      "status": "current_generated",
+      "sha256": "ecdb74457c0010d6485e22054119018874bd1cc6ecc64bdb1bd859d2ffed8d08"
+    },
+    {
+      "key": "turtle_shell",
+      "name": "缩壳",
+      "path": "src/gfx/skills/afeix_member_turtle_shell.png",
+      "status": "current_generated",
+      "sha256": "9a0cd990b4820f4e821df83c0032052596b8f147d38715c1bac5173d93bf23a7"
+    },
+    {
+      "key": "turtle_bond",
+      "name": "飞爹后援",
+      "path": "src/gfx/skills/afeix_member_turtle_bond.png",
+      "status": "current_generated",
+      "sha256": "9c13b47da105877da4e586d9689d6ff1c83c99134bb3cc478e765ff7aef4319d"
+    },
+    {
+      "key": "turtle_cover",
+      "name": "小龟护壳",
+      "path": "src/gfx/skills/afeix_member_turtle_cover.png",
+      "status": "current_generated",
+      "sha256": "6d7b4e98433855ae59fb5e53d017e39e46e05d4e77c19c24a2df1d7b2bd60993"
+    },
+    {
+      "key": "xiwen_read",
+      "name": "看清破绽",
+      "path": "docs/design/balance-v2/icons/xiwen_read.png",
+      "status": "proposal_native_placeholder",
+      "sha256": "20d5dde0ca749067ec2f1ec124131bf3e60489d3195b5c13bf2a1f89250f255a"
+    },
+    {
+      "key": "xiwen_cover",
+      "name": "同行照应",
+      "path": "docs/design/balance-v2/icons/xiwen_cover.png",
+      "status": "proposal_native_placeholder",
+      "sha256": "d6fe4437e42578cb6f822882ba235cd63a5e114ba90d3b6c34dfd0d255875f05"
+    },
+    {
+      "key": "xiwen_travel",
+      "name": "行路留力",
+      "path": "docs/design/balance-v2/icons/xiwen_travel.png",
+      "status": "proposal_native_placeholder",
+      "sha256": "d1575da03969ec2461d3b3da50d47076dfdb1bf80d069388c77fedb963967a25"
+    },
+    {
+      "key": "wawa",
+      "name": "哇哇叫",
+      "path": "src/gfx/skills/afeix_wawa.png",
+      "status": "current",
+      "sha256": "5e919d907623784d3cbf5225b011d4bc932c2fa1e4c49c18772476b291639f4f"
+    },
+    {
+      "key": "haoqi",
+      "name": "豪气冲天",
+      "path": "src/gfx/skills/afeix_haoqi.png",
+      "status": "current",
+      "sha256": "6fb564cf492de29a30147913920084765f86d742e1ec9ad1d973ffacc7a9c80e"
+    },
+    {
+      "key": "feidie",
+      "name": "飞爹在此",
+      "path": "src/gfx/skills/afeix_feidie.png",
+      "status": "current",
+      "sha256": "d8999121bdf259634a217fa567587d5dc878b9db92a00a4aee6cb713d2bc649a"
+    },
+    {
+      "key": "ecig_puff",
+      "name": "抽一口",
+      "path": "src/gfx/skills/afeix_ecig_puff.png",
+      "status": "current",
+      "sha256": "29bdd18b0ee6977cdbb083c7174de09b1965cf51c53be801eb8df1dc2329650b"
+    },
+    {
+      "key": "unleash_wardog",
+      "name": "释放里根",
+      "path": "docs/design/balance-v2/icons/unleash_wardog.png",
+      "status": "native_active_83",
+      "sha256": "3ae1e4883c0db381feb29dc0f664a04135eee71c425e0a245ba33bf89d95a307"
+    }
+  ]
+}

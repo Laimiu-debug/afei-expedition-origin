@@ -1,0 +1,16 @@
+HTTP/2 200 
+accept-ranges: bytes
+cache-control: private, no-store
+content-disposition: attachment; filename="mod_afeix_dlc_xiwen_regen.zip"
+content-type: application/zip
+date: Tue, 29 Sep 2026 08:40:53 GMT
+etag: "6abb7979-67c8"
+last-modified: Tue, 29 Sep 2026 08:40:25 GMT
+server: Vercel
+strict-transport-security: max-age=31536000
+x-checksum-sha256: e6da8d4a66b5774dd7c76481d38b8e770fa07456cf0247f3658987fd198e211a
+x-content-type-options: nosniff
+x-vercel-cache: MISS
+x-vercel-id: sin1::5wvdl-1790671253187-57403a7a86ab
+content-length: 26568
+

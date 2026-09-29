@@ -5,7 +5,7 @@ local expect = function(ok, message) { checks++; check(ok, message); };
 ::AfeixExpedition <- {
     Brothers = [], Deployed = [1, 2, 3], Applied = 0, Manage = true, Origin = true, CombatMax = 10,
     RecruitState = {}, Characters = {}, CharacterOrder = [], Chapters = [], Progress = 1,
-    RetiredCharacters = { yanzi = { wage = 12, description = "旧存档队员" } },
+    RetiredCharacters = {},
     EncounterCalls = [], HireCalls = [], Discounts = {}, EncounterFail = false, Known = {}, Tavern = true, TavernTown = 0,
     function roster() { return this.Brothers; },
     function deployedIds() { return clone this.Deployed; },
@@ -43,15 +43,9 @@ local expect = function(ok, message) { checks++; check(ok, message); };
     }
 };
 local A = ::AfeixExpedition;
-local thresholds = [1, 3, 6, 9, 12];
-for (local i = 0; i < 5; i++) A.Chapters.push({ id = i + 1, name = "旅途篇章" + (i + 1), required = thresholds[i] });
-local fixtureChapters = [
-    ["afei", "damou", "mocha", "bottle", "shuaizi", "lili", "xiaoyueya", "yuchujiu", "xiaoyubeike", "wangduidui"],
-    ["laocai", "tiantong", "xiaoning", "xiaopangxu", "dae", "manyuemei", "xiaohani"],
-    ["keke", "yuxiang", "tongzhu", "meiya", "wanshe", "tutu"],
-    ["songnuanyang", "xiaogui", "naigai"],
-    ["xiaojie", "bula", "suwa", "qianhan", "wangdazhi", "yaoyaoya", "yangmiemie", "chenzhihan"]
-];
+local thresholds = [1, 3, 6, 9];
+for (local i = 0; i < 4; i++) A.Chapters.push({ id = i + 1, name = "旅途篇章" + (i + 1), required = thresholds[i] });
+local fixtureChapters = [["afei", "damou", "mocha", "bottle", "shuaizi", "lili", "xiaoyueya", "yuchujiu", "xiaoyubeike", "wangduidui"], ["laocai", "yanzi", "tiantong", "xiaoning", "xiaopangxu", "dae", "manyuemei", "xiaohani"], ["keke", "yuxiang", "tongzhu", "meiya", "wanshe", "tutu", "naigai", "xiaojie", "bula", "suwa", "qianhan", "wangdazhi", "yaoyaoya", "yangmiemie"], ["songnuanyang", "xiaogui"]];
 foreach (chapterIndex, keys in fixtureChapters) foreach (key in keys) {
     local i = A.CharacterOrder.len();
     A.CharacterOrder.push(key);
@@ -137,8 +131,8 @@ foreach(key in A.CharacterOrder) {
     expect(A.ledgerPage(e,"encounter:"+key).Text.find(A.Characters[key].encounterText)==null,"direct unknown encounter cannot leak prose "+key);
     A.Known[key] <- true; A.RecruitState[key]="encounter";
 }
-for(local offset=0;offset<34;offset+=4) {
-    local members=A.ledgerPage(e,"recruits:"+offset), count=::Math.min(4,34-offset);
+for(local offset=0;offset<A.CharacterOrder.len();offset+=4) {
+    local members=A.ledgerPage(e,"recruits:"+offset), count=::Math.min(4,A.CharacterOrder.len()-offset);
     expect(members.Options.len()<=6,"known member pagination fits");
     for(local i=0;i<count;i++)expect(members.Options[i].getResult(e)=="recruit:"+A.CharacterOrder[offset+i],"row captures distinct known member");
 }
@@ -172,6 +166,7 @@ expect(e.m.Selected.len() == 0 && e.m.Notice == "" && e.m.AutoPage == "home", "c
         TownOpens = 0,
         function getPlayer() { return {}; },
         function getCombatStartTime() { return 0; },
+        function isInCharacterScreen() { return false; },
         function showEventScreenFromTown(event) { this.TownOpens++; }
     },
     Events = {

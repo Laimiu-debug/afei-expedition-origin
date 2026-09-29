@@ -19,6 +19,6 @@ this.afeix_catalog_active <- this.inherit("scripts/skills/actives/afeix_member_a
     function onAnySkillUsed(s,target,p){
         if(s==null||s!=this.m.ExecutingNative)return;
         if(this.m.Key=="snake_trial"){p.DamageRegularMult*=0.8;p.DamageArmorMult*=0.8;}
-        if(this.m.Key=="gaga_charge"){p.MeleeSkill-=5;p.DamageArmorMult*=1.2;}
+        if(this.m.Key=="gaga_charge"){p.MeleeSkill-=5;p.DamageArmorMult*=1.30;}
     }
 });

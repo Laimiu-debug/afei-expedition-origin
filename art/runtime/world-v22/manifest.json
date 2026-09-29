@@ -1,0 +1,12 @@
+{
+  "source": "sources/afei-map.png",
+  "source_sha256": "e5ad6dec3c41cf82dda5f376f1f272ab58ec4fac21fcf6e60c6e16bf99927d84",
+  "reviewed": true,
+  "source_kind": "generated_custom",
+  "role": "world player party icon",
+  "facing": "right",
+  "export_size": [
+    40,
+    46
+  ]
+}

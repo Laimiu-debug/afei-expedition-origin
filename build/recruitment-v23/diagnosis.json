@@ -1,0 +1,23 @@
+{
+  "log": "C:\\Users\\25647\\OneDrive\\Documents\\Battle Brothers\\log.html",
+  "log_modified_at": "2026-09-28T07:41:49.011526+08:00",
+  "observed_contracts": [
+    "contract added: 取得遗物",
+    "contract added: 护送商队",
+    "contract added: 寻找地点",
+    "contract added: 猎杀野兽",
+    "contract added: 清剿墓地",
+    "contract added: 重建工程",
+    "contract added: 驱逐强盗",
+    "contract added: 寻回失物",
+    "contract added: 驱逐游牧民",
+    "contract added: 武装送信",
+    "contract added: 奴隶起义",
+    "contract added: 沿途送信"
+  ],
+  "confirmed_code_issues": [
+    "empty native hire pool hides crowd before old query-only spawning",
+    "supplementary letter consumed native faction capacity and reset supply timer"
+  ],
+  "user_save_specific_cause_verified": false
+}

@@ -1,0 +1,25 @@
+{
+  "verified_at": "2026-09-28T16:00:01.248234+00:00",
+  "detail_url": "https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "download_url": "https://bbmod.site/files/97d51f33-c65c-42fd-96e3-df3c047cfbb1/download/",
+  "release_id": "97d51f33-c65c-42fd-96e3-df3c047cfbb1",
+  "version": "0.25.0",
+  "sha256": "ac879d85fd23d1a7164eecc733094354e5a086f63b72b78bf6f349e3e9fb2677",
+  "size": 3590155,
+  "entries": 266,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200,
+    "previous_download": 200
+  },
+  "catalog_and_notes_match": true,
+  "download_bytes_match": true,
+  "crc_passed": true,
+  "five_banners_included": true,
+  "download_content_disposition": "attachment; filename=\"mod_afeix_expedition.zip\"",
+  "previous_version": "0.24.0",
+  "previous_sha256_unchanged": "109dbe4d0df3c1de467d70e3853c768bea840b006631a0d6e2afaff3ccd89b8b",
+  "backup": "/srv/data/backups/afeix-pre-v0.25.0-20260928T153008882093Z.sqlite3",
+  "in_game_tested": false
+}

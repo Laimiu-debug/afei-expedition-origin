@@ -1,0 +1,540 @@
+{
+  "size": [
+    3600,
+    4500
+  ],
+  "character_count": 34,
+  "date": "2026-09-28",
+  "method": "Deterministic layout from current approved source portraits; proportional resizing only; no repainting.",
+  "groups": [
+    {
+      "name": "刀一黑队",
+      "count": 10
+    },
+    {
+      "name": "刀二蓝队",
+      "count": 8
+    },
+    {
+      "name": "0.5DFW猪团",
+      "count": 14
+    },
+    {
+      "name": "旅途来客",
+      "count": 2
+    }
+  ],
+  "manifest_sha256": "f590eb06a03c7bfc9d2e4a557c1456051c96882e2efc0b07e27ebc56da521fd7",
+  "characters": [
+    {
+      "index": 1,
+      "key": "afei",
+      "name": "阿飞",
+      "group": "刀一黑队",
+      "form": "normal",
+      "source": "art/runtime/portraits-v05/sources/facing/afei_normal.png",
+      "sha256": "1f291f548b542473f3d66acc311ef579337199251545e3aff6aee5f330121f50",
+      "portrait_bounds": [
+        230,
+        702,
+        570,
+        1106
+      ]
+    },
+    {
+      "index": 2,
+      "key": "damou",
+      "name": "王大谋",
+      "group": "刀一黑队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/damou.png",
+      "sha256": "159d4a14a1744544e486bd3c10a390de0f3d599bdb37afe935b4e5fe90f8c729",
+      "portrait_bounds": [
+        792,
+        702,
+        1127,
+        1106
+      ]
+    },
+    {
+      "index": 3,
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "group": "刀一黑队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/mocha.png",
+      "sha256": "beb634bfdb0a378cac73fd71dbef4b4eeaccbb31c24d52a4bec3af4164f9f4bd",
+      "portrait_bounds": [
+        1344,
+        702,
+        1696,
+        1106
+      ]
+    },
+    {
+      "index": 4,
+      "key": "bottle",
+      "name": "小酒瓶",
+      "group": "刀一黑队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/bottle.png",
+      "sha256": "350773547e853fa2a6c36db74d0ed53bf1a3bbeb07df427c689183b2c5872893",
+      "portrait_bounds": [
+        1919,
+        702,
+        2241,
+        1106
+      ]
+    },
+    {
+      "index": 5,
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "group": "刀一黑队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/shuaizi.png",
+      "sha256": "eb7d03bb759faa9d8ac05cb6d14c863b37e60a253b4654178ade94faba948b7a",
+      "portrait_bounds": [
+        2473,
+        702,
+        2807,
+        1106
+      ]
+    },
+    {
+      "index": 6,
+      "key": "lili",
+      "name": "李李超欧",
+      "group": "刀一黑队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/user-v18/lili.png",
+      "sha256": "181ad42c05cc78892753e0b4bc37ea25e8c5a0130015ec0bad9b43c3c24d1ea9",
+      "portrait_bounds": [
+        3048,
+        702,
+        3352,
+        1106
+      ]
+    },
+    {
+      "index": 7,
+      "key": "xiaoyueya",
+      "name": "小月牙",
+      "group": "刀一黑队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/user-v12/xiaoyueya.png",
+      "sha256": "10c5a2919f55a840ae9cf10287f9f4e109847a66656ee53f27099d5ade3ae681",
+      "portrait_bounds": [
+        222,
+        1259,
+        579,
+        1663
+      ]
+    },
+    {
+      "index": 8,
+      "key": "yuchujiu",
+      "name": "余初九",
+      "group": "刀一黑队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/yuchujiu.png",
+      "sha256": "e1f8c0c821f1ad2b220759c6e8bc2db93c96bfa5eaf009fe30c4159e183c92cc",
+      "portrait_bounds": [
+        794,
+        1259,
+        1126,
+        1663
+      ]
+    },
+    {
+      "index": 9,
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "group": "刀一黑队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/xiaoyubeike.png",
+      "sha256": "2767800440cf8e1d7cb94fe58d953fccfd7e2db75d21a892804ef1e9ce6ee7f0",
+      "portrait_bounds": [
+        1350,
+        1259,
+        1691,
+        1663
+      ]
+    },
+    {
+      "index": 10,
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "group": "刀一黑队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/wangduidui.png",
+      "sha256": "ea24c1b3c96e5baf6e6e42887aed9a9fb55ba667132612cd26dcf98726e0c4da",
+      "portrait_bounds": [
+        1921,
+        1259,
+        2239,
+        1663
+      ]
+    },
+    {
+      "index": 11,
+      "key": "laocai",
+      "name": "老蔡",
+      "group": "刀二蓝队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/laocai.png",
+      "sha256": "e443245e266897f7c036787d756acd66d598c06c1eac241d347300fad9db597b",
+      "portrait_bounds": [
+        2470,
+        1259,
+        2811,
+        1663
+      ]
+    },
+    {
+      "index": 12,
+      "key": "yanzi",
+      "name": "眼子哥",
+      "group": "刀二蓝队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/blue-team-v24/yanzi.png",
+      "sha256": "d400d587157b2329e41770b412ccd12b0bbdb051f12eacf0024489f2b8ef459b",
+      "portrait_bounds": [
+        3041,
+        1259,
+        3359,
+        1663
+      ]
+    },
+    {
+      "index": 13,
+      "key": "tiantong",
+      "name": "亿口甜筒",
+      "group": "刀二蓝队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/user-v12/tiantong.png",
+      "sha256": "0164b995add343b28d459bcca08fda806b590224a3bcdb9a8adf20c6d8b4fdb9",
+      "portrait_bounds": [
+        240,
+        1816,
+        559,
+        2220
+      ]
+    },
+    {
+      "index": 14,
+      "key": "xiaoning",
+      "name": "小宁",
+      "group": "刀二蓝队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/xiaoning.png",
+      "sha256": "2e09ec5211edaaa2b3ab47aac1ed68f03276d4fbf873771d71b6a36cf23dd2e0",
+      "portrait_bounds": [
+        794,
+        1816,
+        1127,
+        2220
+      ]
+    },
+    {
+      "index": 15,
+      "key": "xiaopangxu",
+      "name": "小胖徐不快乐",
+      "group": "刀二蓝队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/xiaopangxu.png",
+      "sha256": "f364b5324754bea942ad4da7c66cc2f47c895a9f29b939aaec769897257c8136",
+      "portrait_bounds": [
+        1366,
+        1816,
+        1673,
+        2220
+      ]
+    },
+    {
+      "index": 16,
+      "key": "dae",
+      "name": "大鹅",
+      "group": "刀二蓝队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/dae.png",
+      "sha256": "b6985bd218dd5432abc561da1d7e3859f90af6561f86b933a394e96d84b79d25",
+      "portrait_bounds": [
+        1914,
+        1816,
+        2245,
+        2220
+      ]
+    },
+    {
+      "index": 17,
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "group": "刀二蓝队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/manyuemei.png",
+      "sha256": "27417d7e29d248e44d7c645e49f7ceb3b51ceca088ca8d672b2c9bed0a12aec2",
+      "portrait_bounds": [
+        2468,
+        1816,
+        2812,
+        2220
+      ]
+    },
+    {
+      "index": 18,
+      "key": "xiaohani",
+      "name": "罗一可",
+      "group": "刀二蓝队",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/blue-team-v24/luoyike.png",
+      "sha256": "dbdddc1ca7c19771318fe1df7bd8ff9249791d8410ab80b89f1c3f342ee1e6c0",
+      "portrait_bounds": [
+        3034,
+        1816,
+        3367,
+        2220
+      ]
+    },
+    {
+      "index": 19,
+      "key": "keke",
+      "name": "可可",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/user-v17/keke-photo-v2.png",
+      "sha256": "dd3c2ec863aba882e61b2e03a5926c64c971ab8d76bedfb249177fbd25973e1b",
+      "portrait_bounds": [
+        230,
+        2373,
+        571,
+        2777
+      ]
+    },
+    {
+      "index": 20,
+      "key": "yuxiang",
+      "name": "余想",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/yuxiang.png",
+      "sha256": "51805715556765c9f06daebd2301daf339a72b688e9f2245711464a428afd2e0",
+      "portrait_bounds": [
+        785,
+        2373,
+        1135,
+        2777
+      ]
+    },
+    {
+      "index": 21,
+      "key": "tongzhu",
+      "name": "童猪",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/tongzhu.png",
+      "sha256": "d2a0355f68606cfbaf6d737564b3bbd5e773d6cffae4f19efb20e2e29866c586",
+      "portrait_bounds": [
+        1339,
+        2373,
+        1701,
+        2777
+      ]
+    },
+    {
+      "index": 22,
+      "key": "meiya",
+      "name": "美伢",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/user-v17/meiya.png",
+      "sha256": "072cd373b42e05f1d3e87600c1db488328958e8d1e44fcead00c0aaadcc5afc0",
+      "portrait_bounds": [
+        1896,
+        2373,
+        2264,
+        2777
+      ]
+    },
+    {
+      "index": 23,
+      "key": "wanshe",
+      "name": "玩蛇",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/wanshe.png",
+      "sha256": "ad193ce44f1ce7c0afa4039c508043e9a4e1607a2c5839d157fb0dd9e6a7af83",
+      "portrait_bounds": [
+        2482,
+        2373,
+        2797,
+        2777
+      ]
+    },
+    {
+      "index": 24,
+      "key": "tutu",
+      "name": "涂涂",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/tutu.png",
+      "sha256": "49655e56bd9ad65b70f46275603aa62694b42ae55e47c1eddf37a464b0484813",
+      "portrait_bounds": [
+        3021,
+        2373,
+        3379,
+        2777
+      ]
+    },
+    {
+      "index": 25,
+      "key": "naigai",
+      "name": "奶盖",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/user-v18/naigai.png",
+      "sha256": "6e5e371558394c4b61cff3f859fd3ee94c4d1ba4eeaab78c3a4dbbb6719c15bf",
+      "portrait_bounds": [
+        248,
+        2930,
+        552,
+        3334
+      ]
+    },
+    {
+      "index": 26,
+      "key": "xiaojie",
+      "name": "小杰",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/xiaojie.png",
+      "sha256": "addf03faea8908c4f87fb9fc5c87bc82df4ae473e6922cc99ee406bfe01af379",
+      "portrait_bounds": [
+        812,
+        2930,
+        1108,
+        3334
+      ]
+    },
+    {
+      "index": 27,
+      "key": "bula",
+      "name": "bula",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/bula.png",
+      "sha256": "094a9e64edb9e859008b26ff1ee6433bbba8ce3dfe623277c624ce161b036b75",
+      "portrait_bounds": [
+        1338,
+        2930,
+        1702,
+        3334
+      ]
+    },
+    {
+      "index": 28,
+      "key": "suwa",
+      "name": "苏袜",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/suwa.png",
+      "sha256": "6b7101b6da193ab622f49a4bc6c9fc671cc405a75c9a74d2b2a272cf6bc363a8",
+      "portrait_bounds": [
+        1906,
+        2930,
+        2255,
+        3334
+      ]
+    },
+    {
+      "index": 29,
+      "key": "qianhan",
+      "name": "千涵",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/qianhan.png",
+      "sha256": "fd9895036dd644e16398fb0bca8dbafb11d8bd2f0e4a730f3019bbb082f948f6",
+      "portrait_bounds": [
+        2470,
+        2930,
+        2809,
+        3334
+      ]
+    },
+    {
+      "index": 30,
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/wangdazhi.png",
+      "sha256": "7f4dcbf9e5e9fbf3dffd30f5f97ee6eaef74f5cebfa48f012d4ab1e6f6cc0e50",
+      "portrait_bounds": [
+        3034,
+        2930,
+        3366,
+        3334
+      ]
+    },
+    {
+      "index": 31,
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/user-v23/yaoyaoya.png",
+      "sha256": "36d401d588ec39cc1f48a0643370685554b1745cb75cb6412ef262f711569ccb",
+      "portrait_bounds": [
+        782,
+        3487,
+        1139,
+        3891
+      ]
+    },
+    {
+      "index": 32,
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "group": "0.5DFW猪团",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/yangmiemie.png",
+      "sha256": "5795621990e9b6f127bbf72b4a5f42e89206a78c28259e4b851b6e2642886f96",
+      "portrait_bounds": [
+        1344,
+        3487,
+        1696,
+        3891
+      ]
+    },
+    {
+      "index": 33,
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "group": "旅途来客",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/facing/songnuanyang.png",
+      "sha256": "def57bf4345ba4613b5022b0b8ba808d7f5fb6fa0e80a14c41a0af13250dd5ca",
+      "portrait_bounds": [
+        1920,
+        3487,
+        2240,
+        3891
+      ]
+    },
+    {
+      "index": 34,
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "group": "旅途来客",
+      "form": "default",
+      "source": "art/runtime/portraits-v05/sources/user-v17/xiaogui.png",
+      "sha256": "ea47d8b87dcbd4358e6e75c8613d870ed0aa76f22b7b77787b0d5ecfc8a03157",
+      "portrait_bounds": [
+        2472,
+        3487,
+        2809,
+        3891
+      ]
+    }
+  ]
+}

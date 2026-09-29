@@ -3,7 +3,7 @@ this.afeix_catalog_effect <- this.inherit("scripts/skills/skill",{
     function create(){this.m.ID="effects.afeix_catalog_pending";this.m.Type=this.Const.SkillType.StatusEffect;this.m.IsActive=false;this.m.IsStacking=false;this.m.IsSerialized=true;this.m.IsRemovedAfterBattle=true;},
     function configure(key,source=null){
         local A=::AfeixExpedition,d=A.MemberSkillDefs[key],e=A.CatalogEffects[key];
-        this.m.Key=key;this.m.ID="effects.afeix_catalog_"+key;this.m.Name=d.name;this.m.Description=d.text;this.m.Icon="skills/afeix_member_"+key+".png";
+        this.m.Key=key;this.m.ID="effects.afeix_catalog_"+key;this.m.Name=d.name;this.m.Description=d.text;this.m.Icon="skills/afeix_member_"+key+".png"; this.m.IconMini = this.m.Icon;
         this.m.Source=source==null?0:source.getID();this.m.SourceTile=source==null?0:source.getTile().ID;
         this.m.SourceTurn=source==null?0:A.catalogGet(source,"turn_serial");this.m.SourceMove=source==null?0:A.catalogGet(source,"move_serial");
         this.m.Turns="turns" in e?e.turns:1;this.m.Charges="charges" in e?e.charges:1;
@@ -15,13 +15,14 @@ this.afeix_catalog_effect <- this.inherit("scripts/skills/skill",{
         local A=::AfeixExpedition;
         if(!A.isOrigin()||!::Tactical.isActive()||this.m.Consumed||this.m.Turns<=0||this.m.Charges<=0)return false;
         if(this.m.UntilRound>0&&A.memberRound()>=this.m.UntilRound)return false;
+        if(this.m.Key=="abacus_mark"){local s=this.source();if(s==null||A.catalogGet(s,"turn_serial")>=this.m.SourceTurn+2)return false;}
         local d=this.definition(),s=this.source(),t=this.getContainer().getActor();
         if(("anchor" in d&&d.anchor)||("tether" in d&&d.tether)||("shield" in A.MemberSkillDefs[this.m.Key]&&A.MemberSkillDefs[this.m.Key].shield)){
             local broken=!A.memberPlayer(s)||!s.isAlliedWith(t)||!t.isPlacedOnMap();
             if(!broken&&A.MemberSkillDefs[this.m.Key].shield&&!A.memberShield(s))broken=true;
             if(!broken&&(this.m.Key=="cover_up"||("tether" in d&&d.tether)))if(s.getTile().getDistanceTo(t.getTile())>1)broken=true;
             if(!broken&&"anchor" in d&&d.anchor)if(s.getTile().ID!=this.m.SourceTile||A.catalogGet(s,"move_serial")!=this.m.SourceMove)broken=true;
-            if(!broken&&this.m.Key=="cover_up"&&A.catalogGet(s,"turn_serial")!=this.m.SourceTurn)broken=true;
+            if(!broken&&(this.m.Key=="cover_up"||this.m.Key=="xiwen_cover")&&A.catalogGet(s,"turn_serial")!=this.m.SourceTurn)broken=true;
             if(broken){this.m.Consumed=true;return false;}
         }
         return true;
@@ -32,7 +33,7 @@ this.afeix_catalog_effect <- this.inherit("scripts/skills/skill",{
         local d=this.definition(),map={MeleeDefense="md",RangedDefense="rd",Bravery="br"};
         if(!(field in map)||!(map[field] in d))return 0;
         local n=d[map[field]];
-        if(this.m.Key=="pang_share"&&field=="MeleeDefense"&&::AfeixExpedition.get("growth_done_xiaopangxu",false))n=6;
+        if(this.m.Key=="xiwen_cover"&&field=="RangedDefense"&&::AfeixExpedition.trainingRank(this.source(),"xiwen_cover")>=2)n=8;
         return n;
     },
     function onUpdate(p){
@@ -58,13 +59,14 @@ this.afeix_catalog_effect <- this.inherit("scripts/skills/skill",{
         if(!this.valid()){this.removeSelf();return;}
         if("recover" in d&&!this.m.Started)::AfeixExpedition.catalogRecover(this.getContainer().getActor(),d.recover);
         this.m.Started=true;
-        if("start" in d&&d.start&&this.m.Key!="cover_up")this.removeSelf();
+        if("start" in d&&d.start&&this.m.Key!="cover_up"&&this.m.Key!="xiwen_cover")this.removeSelf();
     },
     function onTurnEnd(){
         local d=this.definition();
+        if(this.m.Key=="abacus_mark")return;
         if("mark" in d)return; // Marks expire by global rounds, not the victim's turns.
         if("recover" in d){if(this.m.Started)this.removeSelf();return;}
-        if(!("start" in d)&&--this.m.Turns<=0)this.removeSelf();
+        if(!("start" in d)&&this.m.Started&&--this.m.Turns<=0)this.removeSelf();
     },
     function onNewRound(){if(!this.valid())this.removeSelf();},
     function onSerialize(out){

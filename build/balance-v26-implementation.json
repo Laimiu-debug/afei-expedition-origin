@@ -1,0 +1,159 @@
+{
+  "version": "0.27.5",
+  "dlc_version": "0.2.1",
+  "approved_workbook_sha256": "132ea33d0bf8992e70d617e1100ebe57b50e0f8d10893c0a77df621beb13f240",
+  "unchanged_approved_inputs": [
+    "docs/design/balance-v2/current-roster.json"
+  ],
+  "approved_workbook_and_proposal_amendments": [
+    "docs/design/balance-v2/全人物数值与招募总表.xlsx",
+    "docs/design/balance-v2/proposal.json"
+  ],
+  "current_display_names": {
+    "tiantong": "小虎",
+    "yanzi": "眼子",
+    "xiaopangxu": "小胖"
+  },
+  "xiaojie_build": {
+    "attrs": [
+      80,
+      88,
+      44,
+      96,
+      60,
+      32,
+      7,
+      2
+    ],
+    "stars": {
+      "Hitpoints": 2,
+      "MeleeSkill": 2,
+      "MeleeDefense": 2
+    },
+    "allocation": [
+      10,
+      0,
+      0,
+      0,
+      10,
+      0,
+      10,
+      0
+    ]
+  },
+  "yanzi_build": {
+    "attrs": [
+      60,
+      110,
+      48,
+      90,
+      55,
+      50,
+      6,
+      4
+    ],
+    "stars": {
+      "MeleeSkill": 2,
+      "RangedSkill": 2
+    },
+    "allocation": [
+      6,
+      0,
+      2,
+      0,
+      10,
+      10,
+      2,
+      0
+    ],
+    "fixed_traits": [
+      "loyal",
+      "teamplayer"
+    ]
+  },
+  "songnuanyang_build": {
+    "attrs": [
+      63,
+      104,
+      50,
+      108,
+      55,
+      36,
+      6,
+      5
+    ],
+    "stars": {
+      "Initiative": 3,
+      "MeleeSkill": 2,
+      "MeleeDefense": 2
+    },
+    "allocation": [
+      0,
+      4,
+      0,
+      6,
+      10,
+      0,
+      10,
+      0
+    ],
+    "fixed_traits": [
+      "quick",
+      "ailing"
+    ]
+  },
+  "current_trait_assignments": {
+    "bottle": [
+      "sure_footing",
+      "determined"
+    ],
+    "keke": [
+      "fat",
+      "huge"
+    ],
+    "yuchujiu": [
+      "loyal",
+      "hesitant"
+    ],
+    "xiaoyueya": [
+      "gluttonous",
+      "optimist"
+    ],
+    "yanzi": [
+      "loyal",
+      "teamplayer"
+    ],
+    "songnuanyang": [
+      "quick",
+      "ailing"
+    ]
+  },
+  "base_people": 34,
+  "combined_people": 35,
+  "fixed_traits": 70,
+  "base_skill_choices": 99,
+  "combined_skill_choices": 102,
+  "base_assertions": 28849,
+  "dlc_assertions_including_related_base_regressions": 5587,
+  "packages": [
+    {
+      "path": "dist/mod_afeix_expedition v0.27.5.zip",
+      "sha256": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83",
+      "files": 283
+    },
+    {
+      "path": "dlc/xiwen-regen/dist/mod_afeix_dlc_xiwen_regen v0.2.1.zip",
+      "sha256": "e6da8d4a66b5774dd7c76481d38b8e770fa07456cf0247f3658987fd198e211a",
+      "files": 8
+    }
+  ],
+  "validation_script_hashes_match": true,
+  "zip_crc_and_source_match": true,
+  "dlc_matches_final_base": true,
+  "v0_25_2_archive_sha256_unchanged": "2f4a403d60afd7723950f2f6d81aa8216d0a1a9f471cf69afa1b904eac0fa077",
+  "in_game_tested": false,
+  "real_player_save_tested": false,
+  "installed_to_game": false,
+  "published": false,
+  "acceptance_scope": "New campaigns; native-script regressions independently verify requested trait arithmetic, Fat stamina, Huge damage, Gluttonous food, and Determined combat morale. Broader roster tests retain audited delta stand-ins."
+}

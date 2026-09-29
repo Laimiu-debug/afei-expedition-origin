@@ -17,7 +17,7 @@ A.routeName <- function(value) {
 };
 A.circleRate <- function() {
     local value = this.route();
-    return value == "jiahao" ? 0.15 : (value == "feidie" ? 0.10 : 0.0);
+    return value == "jiahao" ? 0.08 : (value == "feidie" ? 0.05 : 0.0);
 };
 A.promotionBattles <- function(bro) { return bro.getLifetimeStats().Battles; };
 A.promotionCost <- function(target) {
@@ -31,13 +31,15 @@ A.promotionCheck <- function(target) {
     if (bro == null || !bro.isAlive()) return this.result(false, "阿飞不在队伍中，无法办理转职。");
     if (target == this.route()) return this.result(false, "阿飞已经走在这条路上。");
     if (target == "feidie" && !this.rootsUnlocked()) return this.result(false, "六根的开篇尚未全部触发，飞碟路线仍未开放。");
+    if (target == "feidie" && (bro.getLevel()<9 || this.promotionBattles(bro)<12 || !this.get("growth_done_afei",false))) return this.result(false,"飞碟需要9级、亲自参战12次并完成个人成长与六根开篇。");
     local cost = this.promotionCost(target);
     if (cost > 0) {
+        if (::World.getTime().Days < this.get("promotion_last_day",-100)+7) return this.result(false,"重修间隔须满7日。");
         if (bro.getLevel() < 9 || this.progressCount() < 12)
             return this.result(false, "重修需要阿飞达到 9 级，并累计完成 12 份履约。");
     } else if (target != "feidie") {
-        if (bro.getLevel() < 5 || this.promotionBattles(bro) < 3 || !this.get("growth_done_afei", false))
-            return this.result(false, "首次转职需要阿飞达到 5 级、亲自参加 3 场战斗，并完成自己的成长选择。");
+        if (bro.getLevel() < 7 || this.promotionBattles(bro) < 6 || !this.get("growth_done_afei", false))
+            return this.result(false, "首次转职需要阿飞达到 7 级、亲自参加 6 场战斗，并完成自己的成长选择。");
     }
     if (::World.Assets.getMoney() < cost) return this.result(false, "重修需要 " + cost + " 克朗，目前资金不足。");
     return this.result(true, cost == 0 ? "本次转职免费。" : "本次重修花费 " + cost + " 克朗。");
@@ -54,7 +56,7 @@ A.syncPromotion <- function(bro, prepared = null) {
     // Keep the retained active instance: its serialized per-battle use must survive loading.
     skills.update();
     if ("syncCharacterArt" in this) this.syncCharacterArt(bro);
-    if (route != "normal" && "applyTalentProfile" in this) this.applyTalentProfile(bro, this.PromotionTalents);
+    // Routes do not change stars or reroll pending attribute rows.
 };
 A.promote <- function(target) {
     if (!this.canManage() || this.currentTown() == null) return this.result(false, "请到安全的友好城镇附近办理转职或重修。");
@@ -101,8 +103,9 @@ A.promote <- function(target) {
         return this.result(false, "转职未能完成，原路线与克朗均已保留。");
     }
     if (cost > 0) ::World.Assets.addMoney(-cost);
+    this.set("promotion_last_day",::World.getTime().Days);
     this.refreshAssets();
-    return this.result(true, "阿飞选择了" + this.routeName(target) + "路线。" + (cost > 0 ? "重修花费 " + cost + " 克朗。" : "本次转职免费。") + "近战命中、近战防御与决心各为三星。已有加点、等级、装备与伤势继续保留。");
+    return this.result(true, "阿飞选择了" + this.routeName(target) + "路线。" + (cost > 0 ? "重修花费 " + cost + " 克朗。" : "本次转职免费。") + "转职不改变天赋星数。已有加点、等级、装备与伤势继续保留。");
 };
 
 // Only the player's own living characters are eligible; allied auxiliaries,

@@ -1,0 +1,3859 @@
+{
+  "checks": [
+    {
+      "name": "8背景128个属性端点与Wiki一致",
+      "passed": true
+    },
+    {
+      "name": "全部成员技能ID不重复且各有3项",
+      "passed": true
+    },
+    {
+      "name": "阿飞11级裸疲劳上限120以上，尚未扣装备",
+      "passed": true
+    },
+    {
+      "name": "希文决心区分本体21与镜子20；剧情分支一后24/44，饰品未混入裸值",
+      "passed": true
+    },
+    {
+      "name": "全员固定两特质",
+      "passed": true
+    },
+    {
+      "name": "固定特质无原版互斥冲突",
+      "passed": true
+    },
+    {
+      "name": "特质反推基础加回后严格等于V2八维，无重复加算",
+      "passed": true
+    },
+    {
+      "name": "修订技能精通费用同步",
+      "passed": true
+    },
+    {
+      "name": "11级历史最高可达到所有规划补级上限",
+      "passed": true
+    },
+    {
+      "name": "补级不越过7级技能解锁",
+      "passed": true
+    },
+    {
+      "name": "站定可支付费用时哇哇叫六种AP/命中情景均有进攻收益",
+      "passed": true
+    },
+    {
+      "name": "四条同回合攻击序列恢复可执行性",
+      "passed": true
+    },
+    {
+      "name": "破甲爆发与常驻在长短窗口保留交换关系",
+      "passed": true
+    },
+    {
+      "name": "6位可走双手重甲者在普通320/300压力装下带壮实均留55以上可用疲劳",
+      "passed": true
+    },
+    {
+      "name": "小杰不点疲劳，普通生命近攻近防培养达150巨像生命、90近攻和37裸近防",
+      "passed": true
+    },
+    {
+      "name": "眼子双攻2星，后排柄投培养达85近攻/90远攻；忠诚和团队协作，无跛足",
+      "passed": true
+    },
+    {
+      "name": "宋暖阳先攻3星双近2星，快速只算一次；30次培养剧情前先攻141，分支一后66血116疲劳54决心85近攻36近防",
+      "passed": true
+    },
+    {
+      "name": "负重取整及包内半负重有本机脚本依据",
+      "passed": true
+    },
+    {
+      "name": "低于招式费用的可用疲劳不能由每轮恢复弥补",
+      "passed": true
+    },
+    {
+      "name": "标准12疲劳低耗攻击静止时可持续",
+      "passed": true
+    },
+    {
+      "name": "24组承伤模型均未达到300次截断",
+      "passed": true
+    }
+  ],
+  "baseline_comparison": [
+    {
+      "key": "afei",
+      "name": "阿飞",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        64.0,
+        117.0,
+        43.0,
+        105.0,
+        87.0,
+        42.5,
+        34.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        69.0,
+        124.0,
+        48.0,
+        90.0,
+        80.0,
+        24.0,
+        33.0,
+        2.0
+      ],
+      "delta": [
+        5.0,
+        7.0,
+        5.0,
+        -15.0,
+        -7.0,
+        -18.5,
+        -1.5,
+        -2.5
+      ]
+    },
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "background": "hedge_knight",
+      "background_name": "Hedge Knight 流浪骑士",
+      "native_midpoint": [
+        67.5,
+        107.5,
+        41.5,
+        94.5,
+        62.5,
+        37.0,
+        8.0,
+        2.5
+      ],
+      "native_level11_same_selected_stars": [
+        91.5,
+        125.0,
+        69.5,
+        94.5,
+        62.5,
+        37.0,
+        43.0,
+        2.5
+      ],
+      "mod_level11_with_story": [
+        83.0,
+        120.5,
+        76.0,
+        96.0,
+        56.0,
+        32.0,
+        43.0,
+        2.0
+      ],
+      "delta": [
+        -8.5,
+        -4.5,
+        6.5,
+        1.5,
+        -6.5,
+        -5.0,
+        0.0,
+        -0.5
+      ]
+    },
+    {
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "background": "hunter",
+      "background_name": "Hunter 猎人",
+      "native_midpoint": [
+        55.0,
+        101.0,
+        37.5,
+        107.5,
+        52.0,
+        55.5,
+        2.5,
+        4.0
+      ],
+      "native_level11_same_selected_stars": [
+        76.0,
+        115.0,
+        55.0,
+        107.5,
+        52.0,
+        95.5,
+        2.5,
+        16.0
+      ],
+      "mod_level11_with_story": [
+        74.0,
+        116.0,
+        62.5,
+        100.0,
+        50.0,
+        92.0,
+        3.0,
+        17.0
+      ],
+      "delta": [
+        -2.0,
+        1.0,
+        7.5,
+        -7.5,
+        -2.0,
+        -3.5,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "key": "bottle",
+      "name": "小酒瓶",
+      "background": "hedge_knight",
+      "background_name": "Hedge Knight 流浪骑士",
+      "native_midpoint": [
+        67.5,
+        107.5,
+        41.5,
+        94.5,
+        62.5,
+        37.0,
+        8.0,
+        2.5
+      ],
+      "native_level11_same_selected_stars": [
+        79.5,
+        125.5,
+        47.5,
+        94.5,
+        97.5,
+        37.0,
+        43.0,
+        2.5
+      ],
+      "mod_level11_with_story": [
+        76.0,
+        127.0,
+        54.0,
+        93.0,
+        98.0,
+        26.0,
+        38.0,
+        2.0
+      ],
+      "delta": [
+        -3.5,
+        1.5,
+        6.5,
+        -1.5,
+        0.5,
+        -11.0,
+        -5.0,
+        -0.5
+      ]
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "background": "hedge_knight",
+      "background_name": "Hedge Knight 流浪骑士",
+      "native_midpoint": [
+        67.5,
+        107.5,
+        41.5,
+        94.5,
+        62.5,
+        37.0,
+        8.0,
+        2.5
+      ],
+      "native_level11_same_selected_stars": [
+        95.5,
+        122.5,
+        66.0,
+        94.5,
+        62.5,
+        37.0,
+        38.0,
+        2.5
+      ],
+      "mod_level11_with_story": [
+        93.0,
+        117.0,
+        69.5,
+        96.0,
+        54.0,
+        30.0,
+        40.0,
+        3.0
+      ],
+      "delta": [
+        -2.5,
+        -5.5,
+        3.5,
+        1.5,
+        -8.5,
+        -7.0,
+        2.0,
+        0.5
+      ]
+    },
+    {
+      "key": "lili",
+      "name": "李李超欧",
+      "background": "hunter",
+      "background_name": "Hunter 猎人",
+      "native_midpoint": [
+        55.0,
+        101.0,
+        37.5,
+        107.5,
+        52.0,
+        55.5,
+        2.5,
+        4.0
+      ],
+      "native_level11_same_selected_stars": [
+        76.0,
+        113.0,
+        55.0,
+        107.5,
+        52.0,
+        95.5,
+        2.5,
+        16.0
+      ],
+      "mod_level11_with_story": [
+        73.0,
+        107.0,
+        55.5,
+        119.0,
+        46.0,
+        96.0,
+        1.0,
+        17.0
+      ],
+      "delta": [
+        -3.0,
+        -6.0,
+        0.5,
+        11.5,
+        -6.0,
+        0.5,
+        -1.5,
+        1.0
+      ]
+    },
+    {
+      "key": "xiaoyueya",
+      "name": "小月牙",
+      "background": "hunter",
+      "background_name": "Hunter 猎人",
+      "native_midpoint": [
+        55.0,
+        101.0,
+        37.5,
+        107.5,
+        52.0,
+        55.5,
+        2.5,
+        4.0
+      ],
+      "native_level11_same_selected_stars": [
+        79.5,
+        110.0,
+        49.5,
+        107.5,
+        52.0,
+        95.5,
+        14.5,
+        4.0
+      ],
+      "mod_level11_with_story": [
+        78.5,
+        108.0,
+        48.0,
+        119.0,
+        49.0,
+        93.0,
+        15.0,
+        5.0
+      ],
+      "delta": [
+        -1.0,
+        -2.0,
+        -1.5,
+        11.5,
+        -3.0,
+        -2.5,
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "key": "yuchujiu",
+      "name": "余初九",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        70.0,
+        99.0,
+        48.0,
+        115.0,
+        87.0,
+        42.5,
+        29.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        71.0,
+        99.0,
+        58.0,
+        127.0,
+        85.0,
+        36.0,
+        32.0,
+        5.0
+      ],
+      "delta": [
+        1.0,
+        0.0,
+        10.0,
+        12.0,
+        -2.0,
+        -6.5,
+        2.5,
+        0.5
+      ]
+    },
+    {
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "background": "farmhand",
+      "background_name": "Farmhand 农场帮工",
+      "native_midpoint": [
+        66.0,
+        110.0,
+        32.5,
+        105.0,
+        52.0,
+        37.0,
+        2.5,
+        2.5
+      ],
+      "native_level11_same_selected_stars": [
+        82.0,
+        122.0,
+        38.5,
+        105.0,
+        82.0,
+        37.0,
+        27.5,
+        2.5
+      ],
+      "mod_level11_with_story": [
+        84.0,
+        123.0,
+        46.0,
+        87.0,
+        85.0,
+        30.0,
+        30.0,
+        0.0
+      ],
+      "delta": [
+        2.0,
+        1.0,
+        7.5,
+        -18.0,
+        3.0,
+        -7.0,
+        2.5,
+        -2.5
+      ]
+    },
+    {
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "background": "squire",
+      "background_name": "Squire 骑士侍从",
+      "native_midpoint": [
+        55.0,
+        101.0,
+        47.0,
+        105.0,
+        58.0,
+        44.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        83.0,
+        113.0,
+        87.0,
+        105.0,
+        74.0,
+        44.5,
+        4.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        83.0,
+        110.0,
+        100.0,
+        106.0,
+        68.0,
+        35.0,
+        4.0,
+        3.0
+      ],
+      "delta": [
+        0.0,
+        -3.0,
+        13.0,
+        1.0,
+        -6.0,
+        -9.5,
+        -0.5,
+        -1.5
+      ]
+    },
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "background": "hedge_knight",
+      "background_name": "Hedge Knight 流浪骑士",
+      "native_midpoint": [
+        67.5,
+        107.5,
+        41.5,
+        94.5,
+        62.5,
+        37.0,
+        8.0,
+        2.5
+      ],
+      "native_level11_same_selected_stars": [
+        95.5,
+        122.5,
+        69.5,
+        94.5,
+        62.5,
+        37.0,
+        43.0,
+        2.5
+      ],
+      "mod_level11_with_story": [
+        87.0,
+        119.0,
+        82.0,
+        92.0,
+        58.0,
+        32.0,
+        44.0,
+        3.0
+      ],
+      "delta": [
+        -8.5,
+        -3.5,
+        12.5,
+        -2.5,
+        -4.5,
+        -5.0,
+        1.0,
+        0.5
+      ]
+    },
+    {
+      "key": "yanzi",
+      "name": "眼子",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        73.0,
+        99.0,
+        45.0,
+        105.0,
+        87.0,
+        82.5,
+        8.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        78.0,
+        110.0,
+        56.0,
+        90.0,
+        85.0,
+        90.0,
+        12.0,
+        4.0
+      ],
+      "delta": [
+        5.0,
+        11.0,
+        11.0,
+        -15.0,
+        -2.0,
+        7.5,
+        3.5,
+        -0.5
+      ]
+    },
+    {
+      "key": "tiantong",
+      "name": "小虎",
+      "background": "hunter",
+      "background_name": "Hunter 猎人",
+      "native_midpoint": [
+        55.0,
+        101.0,
+        37.5,
+        107.5,
+        52.0,
+        55.5,
+        2.5,
+        4.0
+      ],
+      "native_level11_same_selected_stars": [
+        76.0,
+        113.0,
+        55.0,
+        107.5,
+        52.0,
+        95.5,
+        2.5,
+        16.0
+      ],
+      "mod_level11_with_story": [
+        75.0,
+        110.0,
+        63.5,
+        107.0,
+        47.0,
+        98.0,
+        2.0,
+        17.0
+      ],
+      "delta": [
+        -1.0,
+        -3.0,
+        8.5,
+        -0.5,
+        -5.0,
+        2.5,
+        -0.5,
+        1.0
+      ]
+    },
+    {
+      "key": "xiaoning",
+      "name": "小宁",
+      "background": "hunter",
+      "background_name": "Hunter 猎人",
+      "native_midpoint": [
+        55.0,
+        101.0,
+        37.5,
+        107.5,
+        52.0,
+        55.5,
+        2.5,
+        4.0
+      ],
+      "native_level11_same_selected_stars": [
+        79.5,
+        113.0,
+        52.5,
+        107.5,
+        52.0,
+        95.5,
+        2.5,
+        18.0
+      ],
+      "mod_level11_with_story": [
+        76.5,
+        107.0,
+        55.0,
+        104.0,
+        45.0,
+        99.0,
+        2.0,
+        20.0
+      ],
+      "delta": [
+        -3.0,
+        -6.0,
+        2.5,
+        -3.5,
+        -7.0,
+        3.5,
+        -0.5,
+        2.0
+      ]
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖",
+      "background": "hedge_knight",
+      "background_name": "Hedge Knight 流浪骑士",
+      "native_midpoint": [
+        67.5,
+        107.5,
+        41.5,
+        94.5,
+        62.5,
+        37.0,
+        8.0,
+        2.5
+      ],
+      "native_level11_same_selected_stars": [
+        95.5,
+        127.5,
+        62.5,
+        94.5,
+        62.5,
+        37.0,
+        38.0,
+        2.5
+      ],
+      "mod_level11_with_story": [
+        94.0,
+        132.0,
+        63.0,
+        93.0,
+        57.0,
+        30.0,
+        37.0,
+        1.0
+      ],
+      "delta": [
+        -1.5,
+        4.5,
+        0.5,
+        -1.5,
+        -5.5,
+        -7.0,
+        -1.0,
+        -1.5
+      ]
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "background": "hedge_knight",
+      "background_name": "Hedge Knight 流浪骑士",
+      "native_midpoint": [
+        67.5,
+        107.5,
+        41.5,
+        94.5,
+        62.5,
+        37.0,
+        8.0,
+        2.5
+      ],
+      "native_level11_same_selected_stars": [
+        95.5,
+        122.5,
+        69.5,
+        94.5,
+        62.5,
+        37.0,
+        43.0,
+        2.5
+      ],
+      "mod_level11_with_story": [
+        92.0,
+        117.0,
+        78.0,
+        90.0,
+        54.0,
+        31.0,
+        46.0,
+        2.0
+      ],
+      "delta": [
+        -3.5,
+        -5.5,
+        8.5,
+        -4.5,
+        -8.5,
+        -6.0,
+        3.0,
+        -0.5
+      ]
+    },
+    {
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "background": "hunter",
+      "background_name": "Hunter 猎人",
+      "native_midpoint": [
+        55.0,
+        101.0,
+        37.5,
+        107.5,
+        52.0,
+        55.5,
+        2.5,
+        4.0
+      ],
+      "native_level11_same_selected_stars": [
+        76.0,
+        110.0,
+        51.5,
+        107.5,
+        52.0,
+        95.5,
+        14.5,
+        4.0
+      ],
+      "mod_level11_with_story": [
+        73.0,
+        107.0,
+        62.0,
+        120.0,
+        46.0,
+        96.0,
+        14.0,
+        6.0
+      ],
+      "delta": [
+        -3.0,
+        -3.0,
+        10.5,
+        12.5,
+        -6.0,
+        0.5,
+        -0.5,
+        2.0
+      ]
+    },
+    {
+      "key": "xiaohani",
+      "name": "罗一可",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        70.0,
+        99.0,
+        48.0,
+        115.0,
+        82.0,
+        42.5,
+        29.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        70.0,
+        106.0,
+        52.0,
+        133.0,
+        83.0,
+        38.0,
+        30.0,
+        4.0
+      ],
+      "delta": [
+        0.0,
+        7.0,
+        4.0,
+        18.0,
+        1.0,
+        -4.5,
+        0.5,
+        -0.5
+      ]
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "background": "hedge_knight",
+      "background_name": "Hedge Knight 流浪骑士",
+      "native_midpoint": [
+        67.5,
+        107.5,
+        41.5,
+        94.5,
+        62.5,
+        37.0,
+        8.0,
+        2.5
+      ],
+      "native_level11_same_selected_stars": [
+        91.5,
+        125.0,
+        69.5,
+        94.5,
+        62.5,
+        37.0,
+        43.0,
+        2.5
+      ],
+      "mod_level11_with_story": [
+        81.0,
+        121.5,
+        82.0,
+        100.0,
+        51.0,
+        47.0,
+        41.0,
+        5.0
+      ],
+      "delta": [
+        -10.5,
+        -3.5,
+        12.5,
+        5.5,
+        -11.5,
+        10.0,
+        -2.0,
+        2.5
+      ]
+    },
+    {
+      "key": "yuxiang",
+      "name": "余想",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        79.0,
+        113.0,
+        60.0,
+        105.0,
+        87.0,
+        42.5,
+        8.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        86.0,
+        127.0,
+        67.0,
+        94.0,
+        89.0,
+        31.0,
+        11.0,
+        2.0
+      ],
+      "delta": [
+        7.0,
+        14.0,
+        7.0,
+        -11.0,
+        2.0,
+        -11.5,
+        2.5,
+        -2.5
+      ]
+    },
+    {
+      "key": "tongzhu",
+      "name": "童猪",
+      "background": "squire",
+      "background_name": "Squire 骑士侍从",
+      "native_midpoint": [
+        55.0,
+        101.0,
+        47.0,
+        105.0,
+        58.0,
+        44.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        83.0,
+        113.0,
+        87.0,
+        105.0,
+        78.0,
+        44.5,
+        4.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        91.0,
+        110.0,
+        98.0,
+        102.0,
+        73.0,
+        35.0,
+        4.0,
+        3.0
+      ],
+      "delta": [
+        8.0,
+        -3.0,
+        11.0,
+        -3.0,
+        -5.0,
+        -9.5,
+        -0.5,
+        -1.5
+      ]
+    },
+    {
+      "key": "meiya",
+      "name": "美伢",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        70.0,
+        99.0,
+        48.0,
+        115.0,
+        82.0,
+        42.5,
+        24.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        73.0,
+        105.0,
+        52.0,
+        133.0,
+        86.0,
+        33.0,
+        26.0,
+        3.0
+      ],
+      "delta": [
+        3.0,
+        6.0,
+        4.0,
+        18.0,
+        4.0,
+        -9.5,
+        1.5,
+        -1.5
+      ]
+    },
+    {
+      "key": "wanshe",
+      "name": "玩蛇",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        67.0,
+        111.0,
+        45.0,
+        105.0,
+        87.0,
+        42.5,
+        29.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        69.0,
+        122.0,
+        48.0,
+        107.0,
+        92.0,
+        31.0,
+        30.0,
+        3.0
+      ],
+      "delta": [
+        2.0,
+        11.0,
+        3.0,
+        2.0,
+        5.0,
+        -11.5,
+        0.5,
+        -1.5
+      ]
+    },
+    {
+      "key": "tutu",
+      "name": "涂涂",
+      "background": "squire",
+      "background_name": "Squire 骑士侍从",
+      "native_midpoint": [
+        55.0,
+        101.0,
+        47.0,
+        105.0,
+        58.0,
+        44.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        83.0,
+        115.0,
+        87.0,
+        105.0,
+        74.0,
+        44.5,
+        4.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        85.0,
+        118.0,
+        101.0,
+        100.0,
+        67.0,
+        36.0,
+        4.0,
+        3.0
+      ],
+      "delta": [
+        2.0,
+        3.0,
+        14.0,
+        -5.0,
+        -7.0,
+        -8.5,
+        -0.5,
+        -1.5
+      ]
+    },
+    {
+      "key": "naigai",
+      "name": "奶盖",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        79.5,
+        108.0,
+        51.0,
+        105.0,
+        57.0,
+        63.5,
+        34.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        85.5,
+        111.0,
+        55.0,
+        104.0,
+        51.0,
+        70.0,
+        36.0,
+        3.0
+      ],
+      "delta": [
+        6.0,
+        3.0,
+        4.0,
+        -1.0,
+        -6.0,
+        6.5,
+        1.5,
+        -1.5
+      ]
+    },
+    {
+      "key": "xiaojie",
+      "name": "小杰",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        95.0,
+        99.0,
+        39.0,
+        105.0,
+        87.0,
+        42.5,
+        34.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        120.0,
+        88.0,
+        47.0,
+        99.0,
+        90.0,
+        32.0,
+        37.0,
+        2.0
+      ],
+      "delta": [
+        25.0,
+        -11.0,
+        8.0,
+        -6.0,
+        3.0,
+        -10.5,
+        2.5,
+        -2.5
+      ]
+    },
+    {
+      "key": "bula",
+      "name": "bula",
+      "background": "hunter",
+      "background_name": "Hunter 猎人",
+      "native_midpoint": [
+        55.0,
+        101.0,
+        37.5,
+        107.5,
+        52.0,
+        55.5,
+        2.5,
+        4.0
+      ],
+      "native_level11_same_selected_stars": [
+        79.5,
+        110.0,
+        51.5,
+        107.5,
+        52.0,
+        95.5,
+        14.5,
+        4.0
+      ],
+      "mod_level11_with_story": [
+        81.5,
+        112.0,
+        63.0,
+        102.0,
+        48.0,
+        93.0,
+        17.0,
+        5.0
+      ],
+      "delta": [
+        2.0,
+        2.0,
+        11.5,
+        -5.5,
+        -4.0,
+        -2.5,
+        2.5,
+        1.0
+      ]
+    },
+    {
+      "key": "suwa",
+      "name": "苏袜",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        70.0,
+        99.0,
+        48.0,
+        116.0,
+        82.0,
+        42.5,
+        24.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        69.0,
+        102.0,
+        50.0,
+        143.0,
+        81.0,
+        42.0,
+        24.0,
+        5.0
+      ],
+      "delta": [
+        -1.0,
+        3.0,
+        2.0,
+        27.0,
+        -1.0,
+        -0.5,
+        -0.5,
+        0.5
+      ]
+    },
+    {
+      "key": "qianhan",
+      "name": "千涵",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        67.0,
+        113.0,
+        45.0,
+        105.0,
+        87.0,
+        42.5,
+        29.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        72.0,
+        122.0,
+        50.0,
+        114.0,
+        92.0,
+        32.0,
+        31.0,
+        3.0
+      ],
+      "delta": [
+        5.0,
+        9.0,
+        5.0,
+        9.0,
+        5.0,
+        -10.5,
+        1.5,
+        -1.5
+      ]
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "background": "hedge_knight",
+      "background_name": "Hedge Knight 流浪骑士",
+      "native_midpoint": [
+        67.5,
+        107.5,
+        41.5,
+        94.5,
+        62.5,
+        37.0,
+        8.0,
+        2.5
+      ],
+      "native_level11_same_selected_stars": [
+        91.5,
+        125.0,
+        66.0,
+        94.5,
+        62.5,
+        37.0,
+        38.0,
+        2.5
+      ],
+      "mod_level11_with_story": [
+        87.0,
+        125.5,
+        76.5,
+        97.0,
+        55.0,
+        30.0,
+        38.0,
+        3.0
+      ],
+      "delta": [
+        -4.5,
+        0.5,
+        10.5,
+        2.5,
+        -7.5,
+        -7.0,
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "background": "farmhand",
+      "background_name": "Farmhand 农场帮工",
+      "native_midpoint": [
+        66.0,
+        110.0,
+        32.5,
+        105.0,
+        52.0,
+        37.0,
+        2.5,
+        2.5
+      ],
+      "native_level11_same_selected_stars": [
+        78.0,
+        126.0,
+        38.5,
+        105.0,
+        82.0,
+        37.0,
+        27.5,
+        2.5
+      ],
+      "mod_level11_with_story": [
+        76.0,
+        129.0,
+        48.0,
+        84.0,
+        94.0,
+        28.0,
+        29.0,
+        0.0
+      ],
+      "delta": [
+        -2.0,
+        3.0,
+        9.5,
+        -21.0,
+        12.0,
+        -9.0,
+        1.5,
+        -2.5
+      ]
+    },
+    {
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        87.0,
+        111.0,
+        60.0,
+        105.0,
+        82.0,
+        42.5,
+        8.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        98.0,
+        117.0,
+        66.0,
+        105.0,
+        81.0,
+        35.0,
+        9.0,
+        5.0
+      ],
+      "delta": [
+        11.0,
+        6.0,
+        6.0,
+        0.0,
+        -1.0,
+        -7.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        55.0,
+        111.0,
+        39.0,
+        138.0,
+        87.0,
+        42.5,
+        34.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        66.0,
+        116.0,
+        54.0,
+        141.0,
+        85.0,
+        36.0,
+        36.0,
+        5.0
+      ],
+      "delta": [
+        11.0,
+        5.0,
+        15.0,
+        3.0,
+        -2.0,
+        -6.5,
+        1.5,
+        0.5
+      ]
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "background": "hedge_knight",
+      "background_name": "Hedge Knight 流浪骑士",
+      "native_midpoint": [
+        67.5,
+        107.5,
+        41.5,
+        94.5,
+        62.5,
+        37.0,
+        8.0,
+        2.5
+      ],
+      "native_level11_same_selected_stars": [
+        91.5,
+        125.0,
+        69.5,
+        94.5,
+        62.5,
+        37.0,
+        43.0,
+        2.5
+      ],
+      "mod_level11_with_story": [
+        78.0,
+        125.5,
+        73.0,
+        93.0,
+        49.0,
+        40.0,
+        38.0,
+        5.0
+      ],
+      "delta": [
+        -13.5,
+        0.5,
+        3.5,
+        -1.5,
+        -13.5,
+        3.0,
+        -5.0,
+        2.5
+      ]
+    },
+    {
+      "key": "xiwen",
+      "name": "希文",
+      "background": "militia",
+      "background_name": "Militia 民兵",
+      "native_midpoint": [
+        55.0,
+        99.0,
+        39.0,
+        105.0,
+        57.0,
+        42.5,
+        4.5,
+        4.5
+      ],
+      "native_level11_same_selected_stars": [
+        76.0,
+        108.0,
+        39.0,
+        105.0,
+        87.0,
+        42.5,
+        29.5,
+        4.5
+      ],
+      "mod_level11_with_story": [
+        73.0,
+        106.0,
+        24.0,
+        111.0,
+        81.0,
+        36.0,
+        30.0,
+        3.0
+      ],
+      "delta": [
+        -3.0,
+        -2.0,
+        -15.0,
+        6.0,
+        -6.0,
+        -6.5,
+        0.5,
+        -1.5
+      ]
+    }
+  ],
+  "action_opportunity": [
+    {
+      "skill": "哇哇叫",
+      "base_hit": 0.35,
+      "weapon_ap": 4,
+      "baseline": 0.7,
+      "v1": 0.3655,
+      "v2": 0.86,
+      "v2_gain": 0.22857142857142865,
+      "limits": "本回合站定、无击杀返AP、无疲劳限制；未折算近防-5风险；每战2次"
+    },
+    {
+      "skill": "哇哇叫",
+      "base_hit": 0.35,
+      "weapon_ap": 6,
+      "baseline": 0.35,
+      "v1": 0.3655,
+      "v2": 0.43,
+      "v2_gain": 0.22857142857142865,
+      "limits": "本回合站定、无击杀返AP、无疲劳限制；未折算近防-5风险；每战2次"
+    },
+    {
+      "skill": "哇哇叫",
+      "base_hit": 0.65,
+      "weapon_ap": 4,
+      "baseline": 1.3,
+      "v1": 0.6204999999999999,
+      "v2": 1.46,
+      "v2_gain": 0.12307692307692308,
+      "limits": "本回合站定、无击杀返AP、无疲劳限制；未折算近防-5风险；每战2次"
+    },
+    {
+      "skill": "哇哇叫",
+      "base_hit": 0.65,
+      "weapon_ap": 6,
+      "baseline": 0.65,
+      "v1": 0.6204999999999999,
+      "v2": 0.73,
+      "v2_gain": 0.12307692307692308,
+      "limits": "本回合站定、无击杀返AP、无疲劳限制；未折算近防-5风险；每战2次"
+    },
+    {
+      "skill": "哇哇叫",
+      "base_hit": 0.9,
+      "weapon_ap": 4,
+      "baseline": 1.8,
+      "v1": 0.8075,
+      "v2": 1.9,
+      "v2_gain": 0.05555555555555558,
+      "limits": "本回合站定、无击杀返AP、无疲劳限制；未折算近防-5风险；每战2次"
+    },
+    {
+      "skill": "哇哇叫",
+      "base_hit": 0.9,
+      "weapon_ap": 6,
+      "baseline": 0.9,
+      "v1": 0.8075,
+      "v2": 0.95,
+      "v2_gain": 0.05555555555555558,
+      "limits": "本回合站定、无击杀返AP、无疲劳限制；未折算近防-5风险；每战2次"
+    }
+  ],
+  "ap_sequences": [
+    {
+      "skill": "账房标记",
+      "sequence": "弩射击3+装填4+标记",
+      "v1_ap": 10,
+      "v2_ap": 9
+    },
+    {
+      "skill": "莓果标记",
+      "sequence": "两次投掷4+4+标记",
+      "v1_ap": 10,
+      "v2_ap": 9
+    },
+    {
+      "skill": "哇哇叫",
+      "sequence": "单手攻击4+4+号令",
+      "v1_ap": 11,
+      "v2_ap": 9
+    },
+    {
+      "skill": "豪气冲天/飞爹在此",
+      "sequence": "双手攻击6+号令",
+      "v1_ap": 10,
+      "v2_ap": 9
+    }
+  ],
+  "breach_window": {
+    "base_hit": 0.65,
+    "v1_armor_per_attempt": 0.72,
+    "passive_armor_per_attempt": 0.7150000000000001,
+    "v2_armor_per_attempt": 0.8775000000000001,
+    "v2_over_passive_single": 0.2272727272727273,
+    "v2_4_attacks_average_multiplier": 1.175,
+    "v2_8_attacks_average_multiplier": 1.0875,
+    "passive_average_multiplier": 1.1,
+    "note": "普通武器甲伤作为1，尚未扣疲劳、剩甲上限和击杀收益；两次主动之间必须满足CD3"
+  },
+  "heavy_fatigue": [
+    {
+      "key": "afei",
+      "name": "阿飞",
+      "raw_fatigue": 124.0,
+      "body_fatigue": 42,
+      "head_fatigue": 20,
+      "weapon_fatigue": 18,
+      "bag_fatigue": 5,
+      "without_brawny": 39,
+      "with_brawny": 57,
+      "recommended_buffer": 55,
+      "passes_buffer": true
+    },
+    {
+      "key": "bottle",
+      "name": "小酒瓶",
+      "raw_fatigue": 127.0,
+      "body_fatigue": 42,
+      "head_fatigue": 20,
+      "weapon_fatigue": 18,
+      "bag_fatigue": 5,
+      "without_brawny": 42,
+      "with_brawny": 60,
+      "recommended_buffer": 55,
+      "passes_buffer": true
+    },
+    {
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "raw_fatigue": 123.0,
+      "body_fatigue": 42,
+      "head_fatigue": 20,
+      "weapon_fatigue": 18,
+      "bag_fatigue": 5,
+      "without_brawny": 38,
+      "with_brawny": 56,
+      "recommended_buffer": 55,
+      "passes_buffer": true
+    },
+    {
+      "key": "wanshe",
+      "name": "玩蛇",
+      "raw_fatigue": 122.0,
+      "body_fatigue": 42,
+      "head_fatigue": 20,
+      "weapon_fatigue": 18,
+      "bag_fatigue": 5,
+      "without_brawny": 37,
+      "with_brawny": 55,
+      "recommended_buffer": 55,
+      "passes_buffer": true
+    },
+    {
+      "key": "qianhan",
+      "name": "千涵",
+      "raw_fatigue": 122.0,
+      "body_fatigue": 42,
+      "head_fatigue": 20,
+      "weapon_fatigue": 18,
+      "bag_fatigue": 5,
+      "without_brawny": 37,
+      "with_brawny": 55,
+      "recommended_buffer": 55,
+      "passes_buffer": true
+    },
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "raw_fatigue": 129.0,
+      "body_fatigue": 42,
+      "head_fatigue": 20,
+      "weapon_fatigue": 18,
+      "bag_fatigue": 5,
+      "without_brawny": 44,
+      "with_brawny": 62,
+      "recommended_buffer": 55,
+      "passes_buffer": true
+    }
+  ],
+  "fatigue_cycles": [
+    {
+      "capacity": 9,
+      "attack_cost": 12,
+      "incoming_per_round": 0,
+      "attacks_in_8_rounds": 0,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 2,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 3,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 5,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 7,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        }
+      ]
+    },
+    {
+      "capacity": 9,
+      "attack_cost": 12,
+      "incoming_per_round": 5,
+      "attacks_in_8_rounds": 0,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 2,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 3,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 5,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 7,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        }
+      ]
+    },
+    {
+      "capacity": 9,
+      "attack_cost": 12,
+      "incoming_per_round": 10,
+      "attacks_in_8_rounds": 0,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 2,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 3,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 5,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 7,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        }
+      ]
+    },
+    {
+      "capacity": 9,
+      "attack_cost": 20,
+      "incoming_per_round": 0,
+      "attacks_in_8_rounds": 0,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 2,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 3,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 5,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 7,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        }
+      ]
+    },
+    {
+      "capacity": 9,
+      "attack_cost": 20,
+      "incoming_per_round": 5,
+      "attacks_in_8_rounds": 0,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 2,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 3,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 5,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 7,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        }
+      ]
+    },
+    {
+      "capacity": 9,
+      "attack_cost": 20,
+      "incoming_per_round": 10,
+      "attacks_in_8_rounds": 0,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 2,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 3,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 5,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 7,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 9
+        }
+      ]
+    },
+    {
+      "capacity": 14,
+      "attack_cost": 12,
+      "incoming_per_round": 0,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        }
+      ]
+    },
+    {
+      "capacity": 14,
+      "attack_cost": 12,
+      "incoming_per_round": 5,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        }
+      ]
+    },
+    {
+      "capacity": 14,
+      "attack_cost": 12,
+      "incoming_per_round": 10,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 14
+        }
+      ]
+    },
+    {
+      "capacity": 14,
+      "attack_cost": 20,
+      "incoming_per_round": 0,
+      "attacks_in_8_rounds": 0,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 2,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 3,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 5,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 7,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 0
+        }
+      ]
+    },
+    {
+      "capacity": 14,
+      "attack_cost": 20,
+      "incoming_per_round": 5,
+      "attacks_in_8_rounds": 0,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 2,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 3,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 5,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 7,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 5
+        }
+      ]
+    },
+    {
+      "capacity": 14,
+      "attack_cost": 20,
+      "incoming_per_round": 10,
+      "attacks_in_8_rounds": 0,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 0,
+          "fatigue_after_enemy": 10
+        },
+        {
+          "turn": 2,
+          "attacks": 0,
+          "fatigue_after_enemy": 10
+        },
+        {
+          "turn": 3,
+          "attacks": 0,
+          "fatigue_after_enemy": 10
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 10
+        },
+        {
+          "turn": 5,
+          "attacks": 0,
+          "fatigue_after_enemy": 10
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 10
+        },
+        {
+          "turn": 7,
+          "attacks": 0,
+          "fatigue_after_enemy": 10
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 10
+        }
+      ]
+    },
+    {
+      "capacity": 25,
+      "attack_cost": 12,
+      "incoming_per_round": 0,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        }
+      ]
+    },
+    {
+      "capacity": 25,
+      "attack_cost": 12,
+      "incoming_per_round": 5,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 17
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 19
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 21
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 23
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        }
+      ]
+    },
+    {
+      "capacity": 25,
+      "attack_cost": 12,
+      "incoming_per_round": 10,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 22
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        }
+      ]
+    },
+    {
+      "capacity": 25,
+      "attack_cost": 20,
+      "incoming_per_round": 0,
+      "attacks_in_8_rounds": 6,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 20
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 3,
+          "attacks": 0,
+          "fatigue_after_enemy": 10
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 20
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 10
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 20
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        }
+      ]
+    },
+    {
+      "capacity": 25,
+      "attack_cost": 20,
+      "incoming_per_round": 5,
+      "attacks_in_8_rounds": 4,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 2,
+          "attacks": 0,
+          "fatigue_after_enemy": 15
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 15
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 15
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 15
+        }
+      ]
+    },
+    {
+      "capacity": 25,
+      "attack_cost": 20,
+      "incoming_per_round": 10,
+      "attacks_in_8_rounds": 4,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 2,
+          "attacks": 0,
+          "fatigue_after_enemy": 20
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 20
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 20
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 20
+        }
+      ]
+    },
+    {
+      "capacity": 40,
+      "attack_cost": 12,
+      "incoming_per_round": 0,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        }
+      ]
+    },
+    {
+      "capacity": 40,
+      "attack_cost": 12,
+      "incoming_per_round": 5,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 17
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 19
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 21
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 23
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 27
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 29
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 31
+        }
+      ]
+    },
+    {
+      "capacity": 40,
+      "attack_cost": 12,
+      "incoming_per_round": 10,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 22
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 29
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 36
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        }
+      ]
+    },
+    {
+      "capacity": 40,
+      "attack_cost": 20,
+      "incoming_per_round": 0,
+      "attacks_in_8_rounds": 7,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 20
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 30
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 35
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 30
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 35
+        }
+      ]
+    },
+    {
+      "capacity": 40,
+      "attack_cost": 20,
+      "incoming_per_round": 5,
+      "attacks_in_8_rounds": 5,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 35
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 30
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 30
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 30
+        }
+      ]
+    },
+    {
+      "capacity": 40,
+      "attack_cost": 20,
+      "incoming_per_round": 10,
+      "attacks_in_8_rounds": 5,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 30
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 3,
+          "attacks": 0,
+          "fatigue_after_enemy": 35
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 5,
+          "attacks": 0,
+          "fatigue_after_enemy": 35
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 7,
+          "attacks": 0,
+          "fatigue_after_enemy": 35
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        }
+      ]
+    },
+    {
+      "capacity": 55,
+      "attack_cost": 12,
+      "incoming_per_round": 0,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 12
+        }
+      ]
+    },
+    {
+      "capacity": 55,
+      "attack_cost": 12,
+      "incoming_per_round": 5,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 17
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 19
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 21
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 23
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 27
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 29
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 31
+        }
+      ]
+    },
+    {
+      "capacity": 55,
+      "attack_cost": 12,
+      "incoming_per_round": 10,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 22
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 29
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 36
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 43
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 50
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 55
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 55
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 55
+        }
+      ]
+    },
+    {
+      "capacity": 55,
+      "attack_cost": 20,
+      "incoming_per_round": 0,
+      "attacks_in_8_rounds": 8,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 20
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 30
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 35
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 40
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 45
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 50
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 55
+        }
+      ]
+    },
+    {
+      "capacity": 55,
+      "attack_cost": 20,
+      "incoming_per_round": 5,
+      "attacks_in_8_rounds": 6,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 25
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 35
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 45
+        },
+        {
+          "turn": 4,
+          "attacks": 1,
+          "fatigue_after_enemy": 55
+        },
+        {
+          "turn": 5,
+          "attacks": 0,
+          "fatigue_after_enemy": 45
+        },
+        {
+          "turn": 6,
+          "attacks": 1,
+          "fatigue_after_enemy": 55
+        },
+        {
+          "turn": 7,
+          "attacks": 0,
+          "fatigue_after_enemy": 45
+        },
+        {
+          "turn": 8,
+          "attacks": 1,
+          "fatigue_after_enemy": 55
+        }
+      ]
+    },
+    {
+      "capacity": 55,
+      "attack_cost": 20,
+      "incoming_per_round": 10,
+      "attacks_in_8_rounds": 5,
+      "trace": [
+        {
+          "turn": 1,
+          "attacks": 1,
+          "fatigue_after_enemy": 30
+        },
+        {
+          "turn": 2,
+          "attacks": 1,
+          "fatigue_after_enemy": 45
+        },
+        {
+          "turn": 3,
+          "attacks": 1,
+          "fatigue_after_enemy": 55
+        },
+        {
+          "turn": 4,
+          "attacks": 0,
+          "fatigue_after_enemy": 50
+        },
+        {
+          "turn": 5,
+          "attacks": 1,
+          "fatigue_after_enemy": 55
+        },
+        {
+          "turn": 6,
+          "attacks": 0,
+          "fatigue_after_enemy": 50
+        },
+        {
+          "turn": 7,
+          "attacks": 1,
+          "fatigue_after_enemy": 55
+        },
+        {
+          "turn": 8,
+          "attacks": 0,
+          "fatigue_after_enemy": 50
+        }
+      ]
+    }
+  ],
+  "tank_stress": [
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "weapon": "武装剑普砍",
+      "hit_chance": 0.39125,
+      "hp_with_colossus": 103,
+      "mean_attempts": 28.75125,
+      "se": 0.1118233851962289,
+      "ci95": [
+        28.53207616501539,
+        28.970423834984608
+      ],
+      "median": 28.0,
+      "p90": 38,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "weapon": "双手锤单体",
+      "hit_chance": 0.29125,
+      "hp_with_colossus": 103,
+      "mean_attempts": 13.72325,
+      "se": 0.09219566079454247,
+      "ci95": [
+        13.542546504842697,
+        13.903953495157303
+      ],
+      "median": 13.0,
+      "p90": 22,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "weapon": "远程高穿透压力",
+      "hit_chance": 0.6425,
+      "hp_with_colossus": 103,
+      "mean_attempts": 9.23025,
+      "se": 0.03705943988913249,
+      "ci95": [
+        9.1576134978173,
+        9.3028865021827
+      ],
+      "median": 9.0,
+      "p90": 12,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "weapon": "武装剑普砍",
+      "hit_chance": 0.40625,
+      "hp_with_colossus": 116,
+      "mean_attempts": 30.3245,
+      "se": 0.11231074464778887,
+      "ci95": [
+        30.104370940490334,
+        30.544629059509667
+      ],
+      "median": 30.0,
+      "p90": 40,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "weapon": "双手锤单体",
+      "hit_chance": 0.30625,
+      "hp_with_colossus": 116,
+      "mean_attempts": 14.45525,
+      "se": 0.09394788933686968,
+      "ci95": [
+        14.271112136899735,
+        14.639387863100264
+      ],
+      "median": 14.0,
+      "p90": 22,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "weapon": "远程高穿透压力",
+      "hit_chance": 0.6325,
+      "hp_with_colossus": 116,
+      "mean_attempts": 10.463,
+      "se": 0.04136224678211661,
+      "ci95": [
+        10.38192999630705,
+        10.544070003692948
+      ],
+      "median": 10.0,
+      "p90": 14,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "weapon": "武装剑普砍",
+      "hit_chance": 0.38625,
+      "hp_with_colossus": 108,
+      "mean_attempts": 30.71275,
+      "se": 0.11789575569831985,
+      "ci95": [
+        30.481674318831292,
+        30.943825681168708
+      ],
+      "median": 30.0,
+      "p90": 41,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "weapon": "双手锤单体",
+      "hit_chance": 0.28625,
+      "hp_with_colossus": 108,
+      "mean_attempts": 14.367,
+      "se": 0.09560328313890028,
+      "ci95": [
+        14.179617565047757,
+        14.554382434952245
+      ],
+      "median": 13.0,
+      "p90": 23,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "weapon": "远程高穿透压力",
+      "hit_chance": 0.6325,
+      "hp_with_colossus": 108,
+      "mean_attempts": 9.80875,
+      "se": 0.039519726866185385,
+      "ci95": [
+        9.731291335342277,
+        9.886208664657723
+      ],
+      "median": 9.0,
+      "p90": 13,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖",
+      "weapon": "武装剑普砍",
+      "hit_chance": 0.42125,
+      "hp_with_colossus": 117,
+      "mean_attempts": 29.26425,
+      "se": 0.10424105253513803,
+      "ci95": [
+        29.05993753703113,
+        29.468562462968872
+      ],
+      "median": 29.0,
+      "p90": 38,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖",
+      "weapon": "双手锤单体",
+      "hit_chance": 0.32125,
+      "hp_with_colossus": 117,
+      "mean_attempts": 13.91375,
+      "se": 0.09024889999530515,
+      "ci95": [
+        13.736862156009202,
+        14.090637843990798
+      ],
+      "median": 13.0,
+      "p90": 22,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖",
+      "weapon": "远程高穿透压力",
+      "hit_chance": 0.6525,
+      "hp_with_colossus": 117,
+      "mean_attempts": 10.2185,
+      "se": 0.03869998526763194,
+      "ci95": [
+        10.142648028875442,
+        10.29435197112456
+      ],
+      "median": 10.0,
+      "p90": 13,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "weapon": "武装剑普砍",
+      "hit_chance": 0.37625,
+      "hp_with_colossus": 115,
+      "mean_attempts": 32.7355,
+      "se": 0.12408055421170301,
+      "ci95": [
+        32.49230211374506,
+        32.97869788625494
+      ],
+      "median": 32.0,
+      "p90": 43,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "weapon": "双手锤单体",
+      "hit_chance": 0.27625,
+      "hp_with_colossus": 115,
+      "mean_attempts": 15.83575,
+      "se": 0.10418928369119361,
+      "ci95": [
+        15.631539003965262,
+        16.03996099603474
+      ],
+      "median": 15.0,
+      "p90": 25,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "weapon": "远程高穿透压力",
+      "hit_chance": 0.6425,
+      "hp_with_colossus": 115,
+      "mean_attempts": 10.24775,
+      "se": 0.03940470361570761,
+      "ci95": [
+        10.170516780913212,
+        10.324983219086787
+      ],
+      "median": 10.0,
+      "p90": 13,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "weapon": "武装剑普砍",
+      "hit_chance": 0.40125,
+      "hp_with_colossus": 101,
+      "mean_attempts": 27.86075,
+      "se": 0.10823651715242098,
+      "ci95": [
+        27.648606426381253,
+        28.072893573618746
+      ],
+      "median": 27.0,
+      "p90": 37,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "weapon": "双手锤单体",
+      "hit_chance": 0.30125,
+      "hp_with_colossus": 101,
+      "mean_attempts": 13.12725,
+      "se": 0.08657085530143448,
+      "ci95": [
+        12.957571123609188,
+        13.296928876390812
+      ],
+      "median": 12.0,
+      "p90": 20,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "weapon": "远程高穿透压力",
+      "hit_chance": 0.6125,
+      "hp_with_colossus": 101,
+      "mean_attempts": 9.552,
+      "se": 0.039167365505356086,
+      "ci95": [
+        9.475231963609502,
+        9.628768036390497
+      ],
+      "median": 9.0,
+      "p90": 13,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "weapon": "武装剑普砍",
+      "hit_chance": 0.41625,
+      "hp_with_colossus": 108,
+      "mean_attempts": 28.466,
+      "se": 0.106470864612122,
+      "ci95": [
+        28.257317105360244,
+        28.67468289463976
+      ],
+      "median": 28.0,
+      "p90": 37,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "weapon": "双手锤单体",
+      "hit_chance": 0.31625,
+      "hp_with_colossus": 108,
+      "mean_attempts": 13.0105,
+      "se": 0.08537883123881426,
+      "ci95": [
+        12.843157490771924,
+        13.177842509228077
+      ],
+      "median": 12.0,
+      "p90": 20,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "weapon": "远程高穿透压力",
+      "hit_chance": 0.6325,
+      "hp_with_colossus": 108,
+      "mean_attempts": 9.80875,
+      "se": 0.039519726866185385,
+      "ci95": [
+        9.731291335342277,
+        9.886208664657723
+      ],
+      "median": 9.0,
+      "p90": 13,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "weapon": "武装剑普砍",
+      "hit_chance": 0.39125,
+      "hp_with_colossus": 97,
+      "mean_attempts": 31.7015,
+      "se": 0.1155170354704057,
+      "ci95": [
+        31.475086610478005,
+        31.927913389521994
+      ],
+      "median": 31.0,
+      "p90": 41,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "weapon": "双手锤单体",
+      "hit_chance": 0.29125,
+      "hp_with_colossus": 97,
+      "mean_attempts": 15.6395,
+      "se": 0.10099534619222869,
+      "ci95": [
+        15.441549121463233,
+        15.837450878536767
+      ],
+      "median": 15.0,
+      "p90": 24,
+      "trials": 4000,
+      "censored": 0
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "weapon": "远程高穿透压力",
+      "hit_chance": 0.5625,
+      "hp_with_colossus": 97,
+      "mean_attempts": 12.617,
+      "se": 0.051607834600456134,
+      "ci95": [
+        12.515848644183107,
+        12.718151355816895
+      ],
+      "median": 12.0,
+      "p90": 17,
+      "trials": 4000,
+      "censored": 0
+    }
+  ],
+  "tank_assumptions": {
+    "seed": 9292026,
+    "trials_each": 4000,
+    "enemy_attack": 85,
+    "armor": [
+      95,
+      105
+    ],
+    "turtle_helmet": 0,
+    "nimble": 0.4,
+    "shield_defense": 18.75,
+    "all_steel_brow": true,
+    "limits": "被动木盾+盾专，未开盾墙；全部有钢头（小龟免费，其余占专长但未补偿）；不含任何技能三选一、士气伤势、攻击者疲劳、反击、破盾、地形和DOT。高穿透为人工压力参数，非某敌人实际技能。伤害尝试数不是存活率或回合数。"
+  },
+  "catchup": [
+    {
+      "key": "xiaojie",
+      "name": "小杰",
+      "v1_level": 3,
+      "v2_level": 4,
+      "v1_xp_to_7": 4500,
+      "v2_xp_to_7": 4000,
+      "v1_price": 1140,
+      "v2_price": 1430
+    },
+    {
+      "key": "bula",
+      "name": "bula",
+      "v1_level": 3,
+      "v2_level": 4,
+      "v1_xp_to_7": 4500,
+      "v2_xp_to_7": 4000,
+      "v1_price": 1240,
+      "v2_price": 1530
+    },
+    {
+      "key": "suwa",
+      "name": "苏袜",
+      "v1_level": 3,
+      "v2_level": 4,
+      "v1_xp_to_7": 4500,
+      "v2_xp_to_7": 4000,
+      "v1_price": 1500,
+      "v2_price": 1790
+    },
+    {
+      "key": "qianhan",
+      "name": "千涵",
+      "v1_level": 3,
+      "v2_level": 4,
+      "v1_xp_to_7": 4500,
+      "v2_xp_to_7": 4000,
+      "v1_price": 1680,
+      "v2_price": 1970
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "v1_level": 3,
+      "v2_level": 5,
+      "v1_xp_to_7": 4500,
+      "v2_xp_to_7": 3000,
+      "v1_price": 1300,
+      "v2_price": 1920
+    },
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "v1_level": 3,
+      "v2_level": 5,
+      "v1_xp_to_7": 4500,
+      "v2_xp_to_7": 3000,
+      "v1_price": 1540,
+      "v2_price": 2160
+    },
+    {
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "v1_level": 3,
+      "v2_level": 5,
+      "v1_xp_to_7": 4500,
+      "v2_xp_to_7": 3000,
+      "v1_price": 1270,
+      "v2_price": 1890
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "v1_level": 3,
+      "v2_level": 4,
+      "v1_xp_to_7": 4500,
+      "v2_xp_to_7": 4000,
+      "v1_price": 1210,
+      "v2_price": 1490
+    },
+    {
+      "key": "xiwen",
+      "name": "希文",
+      "v1_level": 1,
+      "v2_level": 2,
+      "v1_xp_to_7": 5000,
+      "v2_xp_to_7": 4800,
+      "v1_price": 280,
+      "v2_price": 590
+    }
+  ],
+  "economy_delta": [
+    {
+      "team": "起步6人",
+      "v2_daily": 294.3,
+      "reserve7": 1010.1000000000001
+    },
+    {
+      "team": "成形12人",
+      "v2_daily": 641.7449700000001,
+      "reserve7": 2742.2147900000004
+    },
+    {
+      "team": "终局12+4轮换",
+      "v2_daily": 1199.4358563018004,
+      "reserve7": 5596.050994112604
+    },
+    {
+      "team": "35人满级收藏",
+      "v2_daily": 2067.590364584901,
+      "reserve7": 10973.132552094306
+    }
+  ]
+}

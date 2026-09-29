@@ -1,0 +1,22 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-29",
+  "scope": "V2 proposal-only icons; not installed in game",
+  "prompts": [
+    {
+      "key": "yanzi_watch",
+      "name": "看准再出手",
+      "prompt": "Use case: stylized-concept. Asset type: one square skill icon for a gritty medieval tactical mercenary RPG, matching dark hand-painted Battle Brothers-style inventory art. Subject: a focused human eye above a steady upright steel sword point, measured waiting and precision, clear readable silhouette. Aged dark bronze thin square frame with worn corners. Dark oxblood red textured interior. Warm ivory and muted metal highlights, strong black-brown contours, hand-painted shading, compact single motif readable at 56px. Centered square composition, nearly filling the icon. No words, letters, numbers, watermark, gradients outside the frame, bright magical glow, photorealism, modern objects or extra panels. Render ONE icon only. Skill semantic reference: 看准再出手."
+    },
+    {
+      "key": "yanzi_cover",
+      "name": "侧身接线",
+      "prompt": "Use case: stylized-concept. Asset type: one square skill icon for a gritty medieval tactical mercenary RPG, matching dark hand-painted Battle Brothers-style inventory art. Subject: two overlapping weathered wooden round shields angled to the side, one large foreground shield and one smaller behind, a single arrow deflecting away, protection against ranged attacks. Aged dark bronze thin square frame with worn corners. Dark oxblood red textured interior. Warm ivory and muted metal highlights, strong black-brown contours, hand-painted shading, compact single motif readable at 56px. Centered square composition, nearly filling the icon. No words, letters, numbers, watermark, gradients outside the frame, bright magical glow, photorealism, modern objects or extra panels. Render ONE icon only. Skill semantic reference: 侧身接线."
+    },
+    {
+      "key": "yanzi_reply",
+      "name": "留一手",
+      "prompt": "Use case: stylized-concept. Asset type: one square skill icon for a gritty medieval tactical mercenary RPG, matching dark hand-painted Battle Brothers-style inventory art. Subject: a leather gauntlet holding a short sword in reserve low to one side, one missed enemy blade passing above, a poised return strike without motion blur. Aged dark bronze thin square frame with worn corners. Dark oxblood red textured interior. Warm ivory and muted metal highlights, strong black-brown contours, hand-painted shading, compact single motif readable at 56px. Centered square composition, nearly filling the icon. No words, letters, numbers, watermark, gradients outside the frame, bright magical glow, photorealism, modern objects or extra panels. Render ONE icon only. Skill semantic reference: 留一手."
+    }
+  ]
+}

@@ -21,7 +21,7 @@ A.characterStatus <- function(_key)
     if (this.get("dead_" + _key, false)) return "dead";
     if (this.get("departed_" + _key, false) || this.get("ever_" + _key, false)) return "departed";
     if (this.get("native_recruit_" + _key, false))
-        return this.get("recruit_offer_key", "") == _key ? "available" : "waiting";
+        return "recruitOfferSlot" in this && this.recruitOfferSlot(_key) >= 0 ? "available" : "waiting";
     if (this.isRecruitUnlocked(_key)) return "available";
     return !this.Characters[_key].isCaptain && this.isCharacterKnown(_key) ? "encounter" : "locked";
 };
@@ -34,14 +34,55 @@ A.restoreCharacterMetadata <- function(_bro)
     local key = this.characterId(_bro);
     if (key == "") return;
     local data = key in this.Characters ? this.Characters[key] : this.RetiredCharacters[key];
+    // Keep the saved slot/skill/portrait keys when correcting the blue-team roster.
+    // Only replace the old default name; player-chosen names remain intact.
+    if (key == "xiaohani" && "getName" in _bro && _bro.getName() == "小哈尼")
+        _bro.setName(data.name);
+    if (key == "yanzi" && "getName" in _bro && _bro.getName() == "眼子")
+        _bro.setName(data.name);
     local background = _bro.getBackground();
-    background.m.DailyCost = data.wage;
-    background.m.RawDescription = data.description;
-    background.buildDescription(true);
+    if ("syncCharacterBackground" in this && key in this.Characters) this.syncCharacterBackground(_bro);
+    else {
+        background.m.DailyCost = data.wage;
+        background.m.RawDescription = data.description;
+        background.buildDescription(true);
+    }
+    local rebalanced = false;
+    // Subtract only the old starting advantage once; retain all earned level-ups.
+    if (key == "damou" && !_bro.getFlags().has("afeix_damou_balance_v17") && !_bro.getFlags().has("afeix_balance_v18")) {
+        local fields=["Hitpoints","Stamina","Bravery","Initiative","MeleeSkill","RangedSkill","MeleeDefense","RangedDefense"];
+        local old=[62,106,49,105,66,37,10,5], p=_bro.getBaseProperties();
+        foreach(i,field in fields) p[field] += this.CharacterBasesV17.damou[i]-old[i];
+        _bro.getFlags().set("afeix_damou_balance_v17",true);
+        rebalanced = true;
+    }
+    // Apply only the change in starting values, including town candidates. Earned
+    // upgrades, story bonuses and promotion bonuses stay on the existing actor.
+    if (key in this.Characters && !_bro.getFlags().has("afeix_balance_v18")) {
+        local fields=["Hitpoints","Stamina","Bravery","Initiative","MeleeSkill","RangedSkill","MeleeDefense","RangedDefense"];
+        // Reactivated members absent from v0.17 retain their saved attributes.
+        if (key in this.CharacterBasesV17) {
+            local old=this.CharacterBasesV17[key], p=_bro.getBaseProperties();
+            foreach(i,field in fields) p[field] += ("BalanceV26" in this && key in this.BalanceV26.people ? this.BalanceV26.people[key].old_attrs[i] : data.attrs[i])-old[i];
+            rebalanced = true;
+        }
+        _bro.getFlags().set("afeix_balance_v18",true);
+    }
+    if("BalanceV26" in this && key in this.BalanceV26.people && !_bro.getFlags().has("afeix_balance_v26"))rebalanced=true;
     if ("syncCharacterFeatures" in this) this.syncCharacterFeatures(_bro);
-    if (_bro.getFlags().has("afeix_candidate") && _bro.getFlags().get("afeix_candidate"))
-        _bro.m.HiringCost <- this.recruitPrice(key);
+    // Existing offers keep their legacy quote throughout their remaining lifetime.
+    local flags=_bro.getFlags();
+    if("BalanceV26" in this && key in this.BalanceV26.people && flags.has("afeix_candidate") && flags.get("afeix_candidate") && !flags.has("afeix_v26_quote")) {
+        local oldPrice=::Math.max(0,this.BalanceV26.people[key].old_hire_cost-this.get("hire_discount_"+key,0));
+        flags.set("afeix_v26_quote",oldPrice-this.catalogRecruitDiscount(oldPrice));
+        _bro.m.HiringCost<-flags.get("afeix_v26_quote");
+    }
+    if(flags.has("afeix_candidate")&&flags.get("afeix_candidate")&&flags.has("afeix_v26_quote"))
+        _bro.m.HiringCost<-flags.has("afeix_v26_new_offer")?this.recruitPrice(key):flags.get("afeix_v26_quote");
     _bro.getSkills().update();
+    // Clamp only excess current health, after native traits/perks rebuild the real cap.
+    if (rebalanced && "getHitpoints" in _bro && _bro.getHitpoints()>_bro.getHitpointsMax())
+        _bro.setHitpoints(_bro.getHitpointsMax());
 };
 
 A.makeCharacter <- function(_key, _place = 255, _hireRoster = null)
@@ -58,7 +99,7 @@ A.makeCharacter <- function(_key, _place = 255, _hireRoster = null)
     try
     {
         bro = roster.create("scripts/entity/tactical/player");
-        bro.setStartValuesEx([data.background], false);
+        bro.setStartValuesEx(["characterBackgroundPath" in this ? this.characterBackgroundPath(_key) : data.background], false);
         bro.getItems().clear();
         bro.setName(data.name);
         bro.setTitle(data.title);
@@ -68,6 +109,7 @@ A.makeCharacter <- function(_key, _place = 255, _hireRoster = null)
         bro.getBackground().buildDescription(true);
         bro.getBackground().m.DailyCost = data.wage;
         bro.getBackground().m.DailyCostMult = 1.0;
+        if ("syncCharacterBackground" in this) this.syncCharacterBackground(bro);
         local properties = bro.getBaseProperties();
         local fields = ["Hitpoints", "Stamina", "Bravery", "Initiative", "MeleeSkill", "RangedSkill", "MeleeDefense", "RangedDefense"];
         foreach (index, field in fields) properties[field] = data.attrs[index];
@@ -79,6 +121,13 @@ A.makeCharacter <- function(_key, _place = 255, _hireRoster = null)
         bro.m.Level = 1;
         bro.m.XP = ::Const.LevelXP[0];
         bro.m.LevelUps = 0;
+        // Native backgrounds may roll level 2 before our explicit level-1 setup.
+        bro.m.PerkPoints = 0;
+        bro.m.PerkPointsSpent = 0;
+        if (_key == "damou") bro.getFlags().set("afeix_damou_balance_v17",true);
+        bro.getFlags().set("afeix_balance_v18",true);
+        if ("balanceTraits" in this) this.balanceTraits(bro,true);
+        if ("balanceCatchup" in this) this.balanceCatchup(bro,_key);
         bro.m.HireTime = ::Time.getVirtualTimeF();
         bro.fillAttributeLevelUpValues(::Const.XP.MaxLevelWithPerkpoints - 1);
         foreach (path in data.equipment) bro.getItems().equip(::new("scripts/items/" + path));
@@ -93,6 +142,8 @@ A.makeCharacter <- function(_key, _place = 255, _hireRoster = null)
         } else {
             bro.getFlags().set("afeix_candidate", true);
             bro.m.HiringCost <- this.recruitPrice(_key);
+            bro.getFlags().set("afeix_v26_quote",bro.m.HiringCost);
+            bro.getFlags().set("afeix_v26_new_offer",true);
         }
     }
     catch (error)

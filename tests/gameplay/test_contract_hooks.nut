@@ -5,7 +5,8 @@
 // failure and exits, and only a complete run emits TESTS_PASSED.
 seterrorhandler(function(error) {});
 ::contractTestState <- { origin=true, failFinish=false, keepActive=false, finishIncome=0, moneyFactor=1.0 };
-::World <- {
+::circleDay<-1;
+::World <- {getTime=function(){return {Days=::circleDay};},
     Flags={ values={}, has=function(k){return k in this.values;}, get=function(k){return this.values[k];}, set=function(k,v){this.values[k]<-v;} },
     State={},
     Assets={
@@ -207,35 +208,35 @@ function runContractChecks(){
 
     // New sponsorship code runs through the same production payment hooks.
     ::Math <- { min=function(a,b){return a<b?a:b;}, max=function(a,b){return a>b?a:b;}, floor=function(v){return ::floor(v);} };
-    ::circleTest <- { rate=0.15, present=true, alive=true };
+    ::circleTest <- { rate=0.08, present=true, alive=true };
     A.circleRate <- function(){return ::circleTest.rate;};
     A.findCharacter <- function(key){return ::circleTest.present ? {isAlive=function(){return ::circleTest.alive;}} : null;};
     dofile("src/scripts/mods/afeix/economy.nut");
     reset();c=contract(201);c.onCombatVictory(7);payAndFinish(c,1000);
-    require(::World.Assets.getMoney()==1150 && A.get("circle_paid_201")==150,"won_paid_contract_awards_fifteen_percent");
-    require(A.get("contract_received_201")==1000 && A.get("circle_total")==150 && A.PaymentContext==null,"sponsorship_never_sponsors_itself_or_leaks_context");
+    require(::World.Assets.getMoney()==1080 && A.get("circle_paid_201")==80,"won_paid_contract_awards_eight_percent");
+    require(A.get("contract_received_201")==1000 && A.get("circle_total")==80 && A.PaymentContext==null,"sponsorship_never_sponsors_itself_or_leaks_context");
     A.tryRecordPaidContract(201);A.finishContractPayment(201,false);
-    require(::World.Assets.getMoney()==1150 && A.get("paid_contracts")==1,"reopening_and_replaying_completion_cannot_duplicate_income");
-    ::circleTest.rate=0.10;A.tryRecordPaidContract(201);
-    require(::World.Assets.getMoney()==1150 && A.get("circle_rate_201")==0.15,"retraining_does_not_reprice_settled_sponsorship");
+    require(::World.Assets.getMoney()==1080 && A.get("paid_contracts")==1,"reopening_and_replaying_completion_cannot_duplicate_income");
+    ::circleTest.rate=0.05;A.tryRecordPaidContract(201);
+    require(::World.Assets.getMoney()==1080 && A.get("circle_rate_201")==0.08,"retraining_does_not_reprice_settled_sponsorship");
 
-    reset();::circleTest.rate=0.15;c=contract(202);c.onCombatVictory(8);
+    reset();::circleTest.rate=0.08;c=contract(202);c.onCombatVictory(8);
     c.actions.processInput<-function(option){::World.Assets.addMoney(100);};c.processInput(0);
     require(::World.Assets.getMoney()==100 && A.get("circle_paid_202")==0,"advance_without_completion_has_no_sponsorship");
     ::testContractManager.finishActiveContract(false);
     c.actions.processInput=function(option){::World.Assets.addMoney(300);};c.processInput(0);
-    require(::World.Assets.getMoney()==460 && A.get("contract_received_202")==400 && A.get("circle_paid_202")==60,"split_final_reward_adds_only_the_unpaid_difference");
+    require(::World.Assets.getMoney()==432 && A.get("contract_received_202")==400 && A.get("circle_paid_202")==32,"split_final_reward_adds_only_the_unpaid_difference");
     dofile("src/scripts/mods/afeix/economy.nut");A.tryRecordPaidContract(202);
-    require(::World.Assets.getMoney()==460,"reload_retains_paid_entitlement");
+    require(::World.Assets.getMoney()==432,"reload_retains_paid_entitlement");
 
     reset();c=contract(203);c.onCombatVictory(9);payAndFinish(c,10000);
-    require(::World.Assets.getMoney()==10300 && A.get("circle_paid_203")==300,"per_contract_cap_limits_large_rewards");
+    require(::World.Assets.getMoney()==10120 && A.get("circle_paid_203")==120,"per_contract_cap_limits_large_rewards");
     c.actions.processInput=function(option){::World.Assets.addMoney(1000);};c.processInput(0);
-    require(::World.Assets.getMoney()==11300 && A.get("circle_paid_203")==300,"extra_payment_does_not_reset_contract_cap");
+    require(::World.Assets.getMoney()==11120 && A.get("circle_paid_203")==120,"extra_payment_does_not_reset_contract_cap");
 
-    reset();::circleTest.rate=0.10;c=contract(204);c.onCombatVictory(10);payAndFinish(c,555);
-    require(::World.Assets.getMoney()==610 && A.get("circle_paid_204")==55,"feidie_rate_rounds_down_to_whole_crowns");
-    reset();::circleTest.rate=0.15;c=contract(205);payAndFinish(c,1000);
+    reset();::circleTest.rate=0.05;c=contract(204);c.onCombatVictory(10);payAndFinish(c,555);
+    require(::World.Assets.getMoney()==582 && A.get("circle_paid_204")==27,"feidie_rate_rounds_down_to_whole_crowns");
+    reset();::circleTest.rate=0.08;c=contract(205);payAndFinish(c,1000);
     require(::World.Assets.getMoney()==1000 && A.get("circle_rate_205")==0,"peaceful_contract_has_no_battle_sponsorship");
     c.onCombatVictory(11);A.tryRecordPaidContract(205);
     require(::World.Assets.getMoney()==1000,"post_completion_victory_cannot_reopen_eligibility");
@@ -244,7 +245,7 @@ function runContractChecks(){
     c.actions.processInput<-function(option){::World.Assets.addMoney(200);::testContractManager.finishActiveContract(true);};c.processInput(0);
     require(::World.Assets.getMoney()==200 && A.get("circle_paid_206")==0 && A.get("paid_contracts")==0,"cancelled_contract_never_gains_sponsorship");
     reset();c=contract(207);c.onCombatVictory(13);::circleTest.rate=0.0;::testContractManager.finishActiveContract(false);
-    ::circleTest.rate=0.15;c.actions.processInput<-function(option){::World.Assets.addMoney(1000);};c.processInput(0);
+    ::circleTest.rate=0.08;c.actions.processInput<-function(option){::World.Assets.addMoney(1000);};c.processInput(0);
     require(::World.Assets.getMoney()==1000 && A.get("circle_rate_207")==0.0,"late_payment_cannot_gain_new_route_after_completion");
 
     reset();::circleTest.alive=false;c=contract(208);c.onCombatVictory(14);payAndFinish(c,1000);
@@ -268,6 +269,13 @@ function runContractChecks(){
     c=contract(305);c.getType <- function(){return "contract.escort_caravan";};payAndFinish(c,500);
     require(A.get("qualified_contracts")==3 && A.get("qualified_types")==2,"qualified_count_and_distinct_types_have_separate_accounting");
     A.tryRecordPaidContract(305);require(A.get("qualified_contracts")==3 && A.get("qualified_types")==2,"repeated_completion_cannot_inflate_either_unlock_metric");
+    reset();::circleDay=1;::circleTest.rate=0.08;
+    for(local i=0;i<4;i++){c=contract(401+i);c.onCombatVictory(1);payAndFinish(c,10000);}
+    require(::World.Assets.getMoney()==40360&&A.get("v26_circle_day_1")==360,"rolling_week_cap_and_no_duplicate_payout");
+    ::circleDay=8;A.tryRecordPaidContract(404);require(::World.Assets.getMoney()==40360,"old_capped_receipt_cannot_be_claimed_next_week");
+    c=contract(405);c.onCombatVictory(1);payAndFinish(c,10000);require(A.get("v26_circle_day_8")==120,"new_contract_receives_fresh_week_budget");
+    ::circleTest.rate=0.05;for(local i=0;i<2;i++){c=contract(406+i);c.onCombatVictory(1);payAndFinish(c,10000);}
+    require(A.get("v26_circle_day_8")==240,"retraining_shares_weekly_history");
     print("TESTS_PASSED="+::contractChecksPassed+"\n");
 }
 try{runContractChecks();}

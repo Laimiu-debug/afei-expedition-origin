@@ -1,0 +1,8 @@
+{
+  "created": "2026-09-27",
+  "tool": "built-in image_gen",
+  "target": "keke",
+  "reference": "art/runtime/portraits-v05/sources/facing/keke.png",
+  "output": "art/runtime/portraits-v05/sources/user-v17/keke.png",
+  "constraints": "保留脸型、五官与深棕长发、红褐围巾。修为战场兄弟手绘厚轮廓、低饱和赭色、紧凑头肩比例。朝屏幕右，保留完整下颌与短颈，透明背景。"
+}

@@ -1,0 +1,40 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-28",
+  "status": "selected_after_offline_visual_review",
+  "user_request": "瑶瑶牙的图片换上穿衣服的",
+  "records": [
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "prompt": "Use case: identity-preserve. Asset type: transparent hand-painted game portrait for the existing Battle Brothers mod. Input image 1 is the EDIT TARGET: the current portrait of 瑶瑶牙. Change ONLY her clothing: replace the strapless wrapped bandeau and exposed shoulders/upper chest with a simple modest medieval cream linen tunic with a closed high round neckline at the base of her neck and sleeves fully covering both shoulders and all visible upper arms. Subtle ochre seam/edge details may match the old strap, keep clothing simple and practical. Her chest, cleavage, collarbone area, shoulders and upper arms must all be covered in opaque cloth; only her face and neck remain exposed. Preserve the exact face, likeness, gaze to viewer-right, long flowing black hair, expression, skin tone, pose, head-to-body scale, head location, bust silhouette, framing, brushwork, outline thickness, palette, and lighting of the source image. Keep the neck and jaw fully intact and clearly separated from clothing. Isolated bust with the same rounded lower edge, no arms or hands added beyond the existing crop, no props, no jewelry, no armor, no text, no watermark. Preserve a genuinely transparent alpha background with clean edges. Output one edited portrait, closely aligned to the original.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/user-v12/yaoyaoya.png"
+      ],
+      "selected_source": "art/runtime/portraits-v05/sources/user-v23/yaoyaoya.png",
+      "generated_original": "C:/Users/25647/.codex/generated_images/01a0e73d-c031-7ba3-92a1-cff44b554d01/exec-95cc1bd4-9b91-4fce-bf8f-f50715a84e12.png",
+      "source_sha256": "36d401d588ec39cc1f48a0643370685554b1745cb75cb6412ef262f711569ccb",
+      "review": {
+        "comparison": "build/playtest-yaoyaoya/comparison.png",
+        "transparent_rgba": true,
+        "source_pixels_edited_after_generation": false,
+        "game_size_reviewed": true,
+        "game_canvas": [
+          114,
+          142
+        ],
+        "visible_size": [
+          88,
+          99
+        ],
+        "covered_shoulders_and_chest": true,
+        "equipment_reviewed": [
+          "armor",
+          "open_helmet",
+          "closed_helmet"
+        ],
+        "in_game_tested": false
+      }
+    }
+  ]
+}

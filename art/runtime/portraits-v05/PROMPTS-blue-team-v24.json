@@ -1,0 +1,31 @@
+{
+  "tool": "image_gen.imagegen",
+  "date": "2026-09-28",
+  "transparent_background": true,
+  "records": [
+    {
+      "key": "xiaohani",
+      "name": "罗一可",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-28-blue-team/luoyike-user.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt": "Use case: stylized-concept / identity-preserve. Asset type: one finished transparent head-and-short-shoulders bust for a Battle Brothers mod, readable as 88x100 painted pixels within a 114x142 game frame. Follow reference 1 for the person's identity only. Reference 2 is official Battle Brothers STYLE AND PROPORTION guidance only; do not copy its people, bare torsos or assets. Make original painted artwork with a large head, narrow very short fully clothed shoulders, economical dark brown outlines, broad 3-4 tone planar shadows, muted natural skin, earthy medieval fabrics. No photographic skin detail, airbrushed beauty, anime eyes, 3D render, polished gradients, modern clothes, logos or text. Full hair crown and rounded bottom visible with margins. Face, nose, gaze, neck and chest consistently three-quarter toward SCREEN RIGHT; both eyes visible, eyes look right not at viewer. Keep the entire chin and an intact short bare neck clearly above the low clothing collar; head occupies about 70% of visible silhouette height, upper chest only bottom 20%. No arms, hands, weapons, background scene, ground shadow, border, labels or watermark. Genuinely transparent RGBA background, a single complete bust asset.\nCharacter: 罗一可 (Luoyike), the adult East Asian woman in the user's photograph, reference 1, which is the ONLY identity ground truth. Preserve her long straight chestnut-brown hair, off-center part with delicate wispy diagonal curtain fringe across her forehead, naturally wide dark almond eyes, gently curved brows, small straight nose, soft oval face with gently full cheeks and a small tapered chin, delicate natural lips. Keep likeness and expressive bright attentive eyes, but simplify the photographic detail into a painted game sprite. Closed relaxed lips with a hint of a smile, no exaggerated teeth or open mouth. The user calls her 'hamster': express this very subtly through soft cheeks and alert resourceful expression; do not inflate cheeks or replace her face with an animal. She remains human, with NO animal ears, muzzle, whiskers, fur, teeth, headband or mascot. Medieval outfit inspired by her photo: muted plum-burgundy scarf with just one simple ochre woven stripe, low enough to expose full lower jaw and short neck, dark brown padded shoulder vest, small rounded grain-pouch flap on her chest strap. No school crest or modern uniform, no branded costume. Hair falls behind the compact shoulders, not below the short rounded bust bottom. Genuinely transparent RGBA.",
+      "generated_original": "C:/Users/25647/.codex/generated_images/01a0e72b-fd93-7953-983b-9f4b33075dd2/exec-d7ae00fc-b4a0-4562-8dc8-e4bf18980906.png",
+      "selected_source": "art/runtime/portraits-v05/sources/blue-team-v24/luoyike.png",
+      "identity_basis": "用户本轮提供照片；仓鼠为用户确认梗，仅保留人类软面颊和警觉神态。"
+    },
+    {
+      "key": "yanzi",
+      "name": "眼子哥",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-25/sylar-huya-2019.jpg",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "prompt": "Use case: stylized-concept / identity-preserve. Asset type: one finished transparent head-and-short-shoulders bust for a Battle Brothers mod, readable as 88x100 painted pixels within a 114x142 game frame. Follow reference 1 for the person's identity only. Reference 2 is official Battle Brothers STYLE AND PROPORTION guidance only; do not copy its people, bare torsos or assets. Make original painted artwork with a large head, narrow very short fully clothed shoulders, economical dark brown outlines, broad 3-4 tone planar shadows, muted natural skin, earthy medieval fabrics. No photographic skin detail, airbrushed beauty, anime eyes, 3D render, polished gradients, modern clothes, logos or text. Full hair crown and rounded bottom visible with margins. Face, nose, gaze, neck and chest consistently three-quarter toward SCREEN RIGHT; both eyes visible, eyes look right not at viewer. Keep the entire chin and an intact short bare neck clearly above the low clothing collar; head occupies about 70% of visible silhouette height, upper chest only bottom 20%. No arms, hands, weapons, background scene, ground shadow, border, labels or watermark. Genuinely transparent RGBA background, a single complete bust asset.\nCharacter: 眼子哥 (Yanzi / Sylar), the adult East Asian man on the RIGHT of reference 1, the yellow/black gaming promotional poster. Follow his recognizable proportions: slim oval face with fuller upper cheeks, gently tapered chin, straight medium brows, narrow relaxed dark eyes with soft lower lids, small straight nose, restrained slightly wry closed smile. Preserve his dense short black hair with an uneven side-swept fringe across the forehead and compact sideburns; clean-shaven, no beard or mustache, no eyewear. Adapt the earlier photograph into a mature but youthful adult, do not age into an elderly veteran. Medieval outfit: low slate-blue cloth collar below a visible short neck, charcoal padded jerkin with a simple diagonally crossing brown leather strap and plain small brass clasp. No paper/prop covering face or neck. His expression is attentive and dryly amused, not arrogant or stern. Large tactical-game head and short shoulders, not realistic half-body portrait.",
+      "generated_original": "C:/Users/25647/.codex/generated_images/01a0e72b-fd93-7953-983b-9f4b33075dd2/exec-b8c1566b-9e1b-42db-a6ad-9811e484fecd.png",
+      "selected_source": "art/runtime/portraits-v05/sources/blue-team-v24/yanzi.png",
+      "identity_basis": "仓库既有 Sylar 活动海报，右侧人物，仅用其五官与发型，不是新提供近照。"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-"""Build the optional DLC against a read-only v0.24+ base checkout.
+"""Build the optional DLC against a read-only v0.26+ base checkout.
 
 All scratch files live in this branch's .cache. Never install, publish, or change
 the supplied base workspace. Native code is decoded locally for tests only.
@@ -166,7 +166,7 @@ def verify(base, kit, game, scratch):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--base', type=Path, required=True, help='Read-only current base mod checkout (v0.24+)')
+    parser.add_argument('--base', type=Path, required=True, help='Read-only current base mod checkout (v0.26+)')
     parser.add_argument('--kit', type=Path, help='Local bbros-modkit-v9/bin; defaults to --base/.cache/afei-art/...')
     parser.add_argument('--game', type=Path, default=Path('F:/SteamLibrary/steamapps/common/Battle Brothers'))
     args = parser.parse_args()
@@ -174,8 +174,8 @@ def main():
     kit = (args.kit or base / '.cache/afei-art/bbros-modkit-v9/bin').resolve()
     preload = base / 'src/scripts/!mods_preload/mod_afeix_expedition.nut'
     version = re.search(r'Version\s*=\s*(\d+)', preload.read_text(encoding='utf-8'))
-    if not version or int(version[1]) < 29:
-        raise ValueError('This DLC needs the current v0.24+ base, not the older committed main snapshot.')
+    if not version or int(version[1]) < 36:
+        raise ValueError('This DLC needs the current v0.26+ base, not the older committed main snapshot.')
     cache = ROOT / '.cache'
     cache.mkdir(exist_ok=True)
     scratch = Path(tempfile.mkdtemp(prefix='xiwen-regen-', dir=cache))
@@ -184,7 +184,7 @@ def main():
     files = sorted(p for p in (DLC / 'src').rglob('*') if p.is_file())
     if any(p.suffix not in {'.nut', '.png', '.brush'} for p in files):
         raise ValueError('Unexpected package file type')
-    destination = DLC / 'dist/mod_afeix_dlc_xiwen_regen.zip'
+    destination = DLC / 'dist/mod_afeix_dlc_xiwen_regen v0.2.1.zip'
     destination.parent.mkdir(exist_ok=True)
     with ZipFile(destination, 'w', compression=ZIP_DEFLATED) as archive:
         for p in files:
@@ -194,9 +194,9 @@ def main():
     with ZipFile(destination) as archive:
         if archive.testzip() or any(archive.read(p.relative_to(DLC / 'src').as_posix()) != p.read_bytes() for p in files):
             raise ValueError('DLC ZIP validation failed')
-    report = {'version': '0.1.0-dlc', 'minimum_base': '0.24.0 / internal 29',
+    report = {'version': '0.2.1-dlc', 'minimum_base': '0.26.2 / internal 36',
               'base_preload_sha256': sha(preload),
-              'base_package_sha256': sha(base / 'dist/mod_afeix_expedition.zip'),
+              'base_package_sha256': sha(base / ('dist/mod_afeix_expedition v'+(base/'VERSION').read_text().strip()+'.zip')),
               'package_sha256': sha(destination), 'crc_and_source_match': True,
               'entries': [p.relative_to(DLC / 'src').as_posix() for p in files],
               'art': art, 'validation': validation}

@@ -2,7 +2,7 @@
 
 Alpha-bound cropping, uniform resizing, placement and reviewed neck contours are used.
 The _dead brush keeps the complete resized portrait with a centred anchor;
-runtime rotation is a sprite transform, not a newly drawn corpse pose.
+The corpse-head alias preserves current head pixels with a separate runtime pivot.
 """
 from __future__ import annotations
 
@@ -58,7 +58,7 @@ def read_manifest(path: Path = MANIFEST) -> tuple[dict, list[dict], list[dict]]:
     roster = json.loads((ROOT / "data/character-stories.json").read_text(encoding="utf-8"))["characters"]
     people = data.get("characters", [])
     if [(p.get("key"), p.get("name")) for p in people] != [(p["key"], p["name"]) for p in roster]:
-        raise ValueError("Portrait manifest must match all 34 current character keys, names and ordering")
+        raise ValueError("Portrait manifest must match all current character keys, names and ordering")
     if len(people) != 34:
         raise ValueError("Expected the current 34-person roster")
     expected_geometry = {"live": LIVE_RECT, "dead": DEAD_RECT, "size": [114, 142], "fit": [88, 100],
@@ -168,8 +168,15 @@ def export_portrait(entry: dict, destination: Path) -> tuple[list[dict], dict]:
     live.save(output)
     head_output = destination / f"{entry['brush']}_head.png"
     head.save(head_output)
+    # Same reviewed pixels, anatomical neck pivot for the runtime corpse head. This is
+    # an atlas alias, not a repainted or pre-rotated portrait.
+    corpse_head = destination / f"{entry['brush']}_corpse_head.png"
+    shutil.copyfile(head_output, corpse_head)
+    cx, cy = entry['neck_guard']
+    corpse_geometry = {'left': -cx, 'right': 114-cx, 'top': cy-142, 'bottom': cy,
+                       'width': 114, 'height': 142, 'offsetX': 0, 'offsetY': 0}
     attrs = []
-    for suffix, geometry in (("", LIVE_RECT), ("_head", LIVE_RECT), ("_dead", DEAD_RECT)):
+    for suffix, geometry in (("", LIVE_RECT), ("_head", LIVE_RECT), ("_dead", DEAD_RECT), ("_corpse_head", corpse_geometry)):
         identity = entry["brush"] + suffix
         attrs.append({"id": identity, "img": "sprites\\" + identity + ".png",
                       **{k: str(v) for k, v in geometry.items()}})
@@ -180,9 +187,11 @@ def export_portrait(entry: dict, destination: Path) -> tuple[list[dict], dict]:
         "alpha_threshold": 20, "resized_size": list(size), "uniform_scale": scale, "placement": list(placement),
         "output_size": [114, 142], "alpha_extrema": list(live.getchannel("A").getextrema()),
         "live_png_sha256": sha(output), "head_png_sha256": sha(head_output), "dead_png_sha256": sha(dead),
+        "corpse_head_png_sha256": sha(corpse_head), "corpse_head_geometry": corpse_geometry,
+        "corpse_neck_anchor": [cx, cy],
         "partition": "reviewed_neck_contour", "head_seam": entry['head_seam'],
         "neck_guard": entry['neck_guard'], "split_reconstructs_complete_portrait": True,
-        "dead_mode": "same_complete_bust_runtime_transform_required", "metadata": attrs,
+        "dead_mode": "native_equipped_body_with_pivoted_custom_head", "metadata": attrs,
         "review_note": entry.get("review_note", ""),
     }
     return attrs, report
@@ -215,14 +224,22 @@ def make_review(records: list[dict]) -> dict:
         label = html.escape(record["name"] + " / " + record["form"])
         note = html.escape(record["review_note"])
         cards.append(f'<article><h2>{label}</h2><div class="samples"><div class="stage"><img src="../sprites/{key}.png" alt="{label}"></div><div class="stage light"><img src="../sprites/{key}.png" alt="{label}"></div></div><code>{key}</code><p>{note}</p></article>')
-    document = '''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>34 人整体胸像检查</title>
+    document = '''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>34 人专属胸像检查</title>
 <style>body{background:#201e19;color:#eee5d2;font:15px/1.55 system-ui,"Microsoft YaHei",sans-serif;margin:24px}h1{font-size:24px}h2{font-size:16px;margin:0 0 10px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}article{background:#302b24;padding:14px;border:1px solid #665642;border-radius:7px}.samples{display:flex;gap:12px}.stage{width:114px;height:142px;background:#454137;flex-shrink:0}.stage.light{background:#d2c5ae}.stage img{width:114px;height:142px}.large .samples{height:290px}.large .stage{transform:scale(2);transform-origin:left top;margin-right:114px}.large .samples .light{display:none}code{font-size:11px;overflow-wrap:anywhere}p{color:#c6b89d}.note{max-width:950px}button{padding:7px 12px;margin-bottom:18px}</style>
-<h1>整体胸像 · 原尺寸技术检查</h1><p class="note">所有人物使用同一 114×142 槽，内容最多 88×100、底部对齐。浅深背景检查透明边缘；切换 2× 仅放大显示。倒地图复用同一像素，需要运行时整体倾倒；不是新绘尸体姿势。格式验收不能代替画风、装备显示、尸体及存读档的实机验收。</p><button onclick="document.body.classList.toggle('large')">切换 1× / 2×</button><div class="grid">''' + "\n".join(cards) + "</div></html>\n"
+<h1>整体胸像 · 原尺寸技术检查</h1><p class="note">所有人物使用同一 114×142 槽，内容最多 88×100、底部对齐。浅深背景检查透明边缘；切换 2× 仅放大显示。此页展示兼容胸像；v0.21 战死改用原版躯干与装备，叠加独立支点的专属头部。没有重绘闭眼表情。格式验收不能代替画风、装备显示、尸体及存读档的实机验收。</p><button onclick="document.body.classList.toggle('large')">切换 1× / 2×</button><div class="grid">''' + "\n".join(cards) + "</div></html>\n"
     (BASE / "build/index.html").write_text(document, encoding="utf-8")
     output = {"html": "build/index.html", "contact_1x": "build/contact-sheet-1x.png", "contact_2x": "build/contact-sheet-2x.png"}
     if all((BASE / 'sprites' / f'afeix_p04_afei_{form}.png').is_file() for form in ('normal', 'toad', 'jiahao')):
         output['afei_forms'] = make_afei_review()
     return output
+
+
+def copy_changed(source, destination):
+    # Windows image previews may memory-map existing sprites. Identical output
+    # needs no overwrite; changed artwork still uses the normal checked copy.
+    if Path(destination).is_file() and Path(source).read_bytes() == Path(destination).read_bytes():
+        return str(destination)
+    return shutil.copy2(source, destination)
 
 
 def build_art(*, require_complete: bool = True, publish_to_src: bool = True,
@@ -251,17 +268,18 @@ def build_art(*, require_complete: bool = True, publish_to_src: bool = True,
         roundtrip["temporary_files_retained"] = False
         # Only after every source and the atlas roundtrip pass, expose review outputs.
         for folder in ("sprites", "package/brushes", "package/gfx"):
-            shutil.copytree(stage / folder, BASE / folder, dirs_exist_ok=True)
+            shutil.copytree(stage / folder, BASE / folder, dirs_exist_ok=True, copy_function=copy_changed)
     published = []
     if publish_to_src:
         for relative in (f"brushes/{ATLAS}.brush", f"gfx/{ATLAS}.png"):
             target = ROOT / "src" / relative
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(BASE / "package" / relative, target)
+            copy_changed(BASE / "package" / relative, target)
             published.append(target)
     report = {
         "schema_version": 1, "atlas_name": ATLAS, "manifest": MANIFEST.relative_to(ROOT).as_posix(),
-        "manifest_sha256": sha(MANIFEST), "named_characters": 34, "required_forms": 36,
+        "manifest_sha256": sha(MANIFEST), "named_characters": len(manifest["characters"]), "required_forms": 36,
+        "native_portrait_characters": [p["key"] for p in manifest["characters"] if p.get("portrait_mode") == "native"],
         "exported_forms": len(records), "sprite_count": len(attrs), "complete": not missing,
         "published_to_src": publish_to_src, "files": [p.relative_to(ROOT / "src").as_posix() for p in published],
         "missing": missing, "portraits": records, "roundtrip": roundtrip,
@@ -269,7 +287,7 @@ def build_art(*, require_complete: bool = True, publish_to_src: bool = True,
         "geometry": manifest["geometry"],
         "limitations": [
             "Custom busts fit 88x100; native armor, helmets, weapon and shield sprites overlay the base.",
-            "Body and head reconstruct the complete portrait; _dead retains that complete image with a centred anchor.",
+            "Body/head reconstruct the portrait; _dead is retained for compatibility and _corpse_head reuses exact head pixels with an anatomical neck pivot.",
             "There are no generated injury states, dismemberment drawings or native face/hair/armor pixels.",
             "Alpha bounds and atlas roundtrip are technical checks, not an assertion of style or likeness acceptance.",
             "Old source images may include props or earlier art direction; consult each review_note before acceptance.",
@@ -295,7 +313,7 @@ def main() -> None:
     _, report = build_art(require_complete=not args.allow_incomplete,
                           publish_to_src=not (args.allow_incomplete or args.no_publish), bbrusher=args.bbrusher)
     print(f"PORTRAIT_ART_EXPORTED={report['exported_forms']}/36; sprites={report['sprite_count']}; published={report['published_to_src']}")
-    print("Atlas pixels and coordinates roundtrip verified. Runtime corpse transform and in-game acceptance remain unverified.")
+    print("Atlas pixels and coordinates roundtrip verified. Corpse head pivots packed; in-game acceptance remains unverified.")
 
 
 if __name__ == "__main__":

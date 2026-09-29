@@ -4,18 +4,26 @@ from zipfile import ZipFile, ZIP_DEFLATED, ZipInfo
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 import sys
 from check_gameplay import validate
 from render_member_catalog import render_catalog
 from apply_character_stories import apply_stories
+from build_backgrounds import build_backgrounds
+from build_endings import build_endings
+from build_blue_team_stories import build as build_blue_team_stories
 from build_gameplay_art import build_art
 from build_portrait_art import build_art as build_portrait_art
 from render_portrait_prompts import render_prompts
 from build_keepsake_art import build_art as build_keepsake_art
 from build_member_skill_art import build_art as build_member_skill_art
+from build_ideas_art import build_art as build_ideas_art
+from build_world_art import build_art as build_world_art
+from build_banner_art import build_art as build_banner_art
 from render_member_skills import render as render_member_skills
 from render_skill_expansion import render as render_skill_expansion
+from render_encounter_dialogues import render as render_encounter_dialogues
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -25,8 +33,16 @@ def main():
     parser.add_argument('--sq', type=Path, default=ROOT / '.cache/afei-art/bbros-modkit-v9/bin/sq.exe')
     parser.add_argument('--game', type=Path, default=Path('F:/SteamLibrary/steamapps/common/Battle Brothers'))
     args = parser.parse_args()
+    version = (ROOT / 'VERSION').read_text(encoding='utf-8').strip()
+    if not re.fullmatch(r'\d+\.\d+\.\d+', version):
+        raise ValueError('VERSION must contain a release version such as 0.25.0')
+    from render_balance_v26 import render as render_balance
+    render_balance()
     render_skill_expansion()
     apply_stories()
+    build_backgrounds()
+    build_endings()
+    build_blue_team_stories()
     subprocess.run([sys.executable, str(ROOT / 'tools/render_member_growth.py')], check=True)
     art_files, art_report = build_art()
     portrait_files, portrait_report = build_portrait_art()
@@ -34,7 +50,13 @@ def main():
     art_files.extend(portrait_files)
     art_files.extend(build_keepsake_art())
     art_files.extend(build_member_skill_art())
+    art_files.extend(build_ideas_art())
+    art_files.extend(build_world_art())
+    art_files.extend(build_banner_art())
+    from build_balance_v26_art import build_art as build_balance_art
+    art_files.extend(build_balance_art())
     validation = validate(args.sq.resolve(), args.game.resolve())
+    render_encounter_dialogues()
     render_member_skills()
     render_catalog(json.loads((ROOT / 'build/characters.json').read_text(encoding='utf-8')))
     subprocess.run([sys.executable, str(ROOT / 'tools/render_character_stats.py')], check=True, stdout=subprocess.DEVNULL)
@@ -43,7 +65,8 @@ def main():
         raise ValueError('Unexpected file type in gameplay package')
     if any(p.suffix in {'.png', '.brush'} and p not in art_files for p in files):
         raise ValueError('Only reviewed custom art may enter the gameplay package')
-    destination = ROOT / 'dist/mod_afeix_expedition.zip'
+    # Distribution filenames must use lowercase .zip for recipients' loaders.
+    destination = ROOT / f'dist/mod_afeix_expedition v{version}.zip'
     destination.parent.mkdir(exist_ok=True)
     with ZipFile(destination, 'w', compression=ZIP_DEFLATED) as z:
         for path in files:
@@ -66,13 +89,15 @@ def main():
         'portrait_characters': portrait_report['named_characters'],
         'portrait_forms': portrait_report['exported_forms'],
         'member_skill_art_report': 'art/runtime/member-skills-v15/report.json',
-        'version': '0.16.1', 'members_with_skills': 33, 'member_skills': 99,
-        'new_member_skills_this_version': 0,
+        'version': version, 'install_name': destination.name,
+        'members_with_skills': 33, 'member_skills': 99,
+        'new_member_skills_this_version': 3,
         'behavior_assertions': sum(t['assertions'] for t in validation['tests']), 'in_game_tested': False,
         'named_characters': validation['named_characters'], 'roster_capacity': validation['roster_capacity'],
         'combat_capacity': validation['combat_capacity'],
     }
     (ROOT / 'build/gameplay-package.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    destination.with_suffix('.sha256').write_text(f"{report['sha256']}  {destination.name}\n", encoding='utf-8')
     print(f'Built {destination} ({len(files)} files). Static and isolated behavior checks passed; no in-game validation.')
 
 

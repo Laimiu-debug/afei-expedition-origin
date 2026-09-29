@@ -1,0 +1,11 @@
+{
+  "version": "0.17.0",
+  "installed": "F:/SteamLibrary/steamapps/common/Battle Brothers/data/mod_afeix_expedition.zip",
+  "sha256": "abf59bfecc56effe6efbf2d1001f78ede3f84423cef38b6f4729801c47fd4f46",
+  "source": "dist/mod_afeix_expedition.zip",
+  "backup": "dist/archive/v0.16.1/mod_afeix_expedition.zip",
+  "behavior_assertions": 19589,
+  "in_game_tested": false,
+  "github_release_updated": false,
+  "website_updated": false
+}

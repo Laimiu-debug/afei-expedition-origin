@@ -12,9 +12,11 @@ def nut(value):
 
 def render():
     data=json.loads((ROOT/'data/member-skill-expansion.json').read_text(encoding='utf-8'))
-    assert len(data['groups'])==33 and all(len(v)==3 for v in data['groups'].values())
-    assert len({k for v in data['groups'].values() for k in v})==99
-    assert len(data['skills'])==81
+    current={p['key'] for p in json.loads((ROOT/'data/character-stories.json').read_text(encoding='utf-8'))['characters']}
+    assert set(data['groups']) <= current
+    assert len(data['groups'])==32 and all(len(v)==3 for v in data['groups'].values())
+    assert len({k for v in data['groups'].values() for k in v})==96
+    assert len(data['skills'])==78
     for k,d in data['skills'].items():
         assert k in data['groups'][d['owner']]
         assert d['growth']==(data['groups'][d['owner']].index(k)==2)

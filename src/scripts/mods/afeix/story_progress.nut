@@ -264,6 +264,30 @@ A.MemberGrowth <- {
             }
         ]
     },
+    yanzi = {
+        title = "把自己的话说完",
+        scene = "营火旁又有人争起明天谁守前排，眼子刚讲完笑话，争执却仍在原处。他把盾放在两人之间，决定这回也说清自己的安排：可以练习顶住压力把立场说完，也可以练习辨清两侧动静，再帮同伴换位。",
+        choices = [
+            {
+                label = "把自己的立场说清，持盾站稳",
+                outcome = "他没有替所有人答应，只说清自己愿意负责哪一段。第二天练盾时，他也更肯守住那一步。",
+                traitName = "说清立场",
+                bonuses = {
+                    Bravery = 2,
+                    MeleeDefense = 2
+                }
+            },
+            {
+                label = "先辨两侧动静，再协调换位",
+                outcome = "他把争论变成一轮轮换位练习，先看清谁需要空隙，再开口提醒。",
+                traitName = "看清再接话",
+                bonuses = {
+                    Initiative = 3,
+                    RangedDefense = 2
+                }
+            }
+        ]
+    },
     tiantong = {
         title = "最后一张回执",
         scene = "小虎把旧信袋倒过来，一张没用上的回执落在桌边。它提醒她，承诺也会遇到今天确实送不到的时候。她可以把核对目标练得更仔细，也能把回头确认队尾的那一步练得更稳，信袋不必替她决定。",
@@ -314,7 +338,7 @@ A.MemberGrowth <- {
     },
     xiaopangxu = {
         title = "负重里的第四拍",
-        scene = "小胖徐按四拍转身，重一点的甲让最后一步没落在粉线上。旁边有人拿嘉豪步伐打趣，她把笑得最响的那个也拉进空地：那就别只会说。她能重新找更快的落脚点，也能收掉花样，把第四拍站稳。",
+        scene = "小胖按四拍转身，重一点的甲让最后一步没落在粉线上。旁边有人拿嘉豪步伐打趣，她把笑得最响的那个也拉进空地：那就别只会说。她能重新找更快的落脚点，也能收掉花样，把第四拍站稳。",
         choices = [
             {
                 label = "保留卡拍的锋利，重练第一步和收势",
@@ -385,22 +409,22 @@ A.MemberGrowth <- {
         ]
     },
     xiaohani = {
-        title = "地图上的自己的路",
-        scene = "【原创看海支线】小哈尼把旧海图摊在营火旁，第一次给自己写下一段具体的路程。她不想再把目标留在别人的以后，也知道眼前本事还得练。今晚可以练赶路仍保留的余力，也可以练遇到岔口时敢于说清自己的选择。",
+        title = "够用的一袋，自己的那份",
+        scene = "罗一可把行囊抖开，干饼、栗子和备用布条堆了一小片。阿飞打趣说仓鼠快把家背来了，她想追着反驳，肩带却先勒得她停下。真正上路之后，储备太多和什么都没留一样麻烦。她决定练习轻装分装，让自己总留着下一程的力气；也可以先把私用与共用的份额说清，遇事不再为了让人高兴就把自己的那一袋全递出去。",
         choices = [
             {
-                label = "把想走的路分成几段，先练持久的脚力",
-                outcome = "她把图折回去，愿望还在，但不再需要一口气走完才能算开始。",
-                traitName = "向海的余力",
+                label = "按路程分装，留下够走下一段的体力",
+                outcome = "她把重复的东西放回车上，只带够用的一袋。再出发时仍有储备，却终于不用被自己的粮仓拖着走。",
+                traitName = "小袋长路",
                 bonuses = {
                     Stamina = 5,
                     Initiative = 2
                 }
             },
             {
-                label = "把自己的条件说完整，不拿含糊换位置",
-                outcome = "这份原创旅途约定里，她终于给自己的目的地留了名字。",
-                traitName = "下一站我来说",
+                label = "先说清自己的份额，稳稳守住该站的位置",
+                outcome = "她把两根结绳系成不同的样子：想分给同伴的就拿出来，留给自己的也不用藏着解释。下一次有人靠近，她能先站稳，再好好说话。",
+                traitName = "有主的小粮仓",
                 bonuses = {
                     Bravery = 4,
                     MeleeDefense = 2
@@ -547,54 +571,6 @@ A.MemberGrowth <- {
                 bonuses = {
                     Stamina = 5,
                     Initiative = 2
-                }
-            }
-        ]
-    },
-    songnuanyang = {
-        title = "鹌鹑探头那一句",
-        scene = "宋暖阳把战报结尾留空，有人说这里总得来两句凯歌。她先缩了一下脖子，又探头问对方是否真想替所有人写答案。这个小动作让营地笑起来，也让她得决定，是把问题问到底，还是先把自己看见的细处记准。",
-        choices = [
-            {
-                label = "把那句问题问完整，再决定落笔",
-                outcome = "鹌鹑还是会缩一下，却没再把真正想说的话一起缩回去。",
-                traitName = "鹌鹑敢开口",
-                bonuses = {
-                    Bravery = 4,
-                    Hitpoints = 3
-                }
-            },
-            {
-                label = "先观察再记，把空白留给还不知道的事",
-                outcome = "纸上的字少了些，细节反而更清楚。她不必替别人补一个漂亮结尾。",
-                traitName = "鹌鹑看得细",
-                bonuses = {
-                    RangedDefense = 3,
-                    Initiative = 3
-                }
-            }
-        ]
-    },
-    xiaogui = {
-        title = "这场先听我复盘",
-        scene = "小龟把记下的三次交锋叠成一份想给飞爹看的战报，先挑出的竟是没打好的那一下。他从皮套化身后面小声念出自己判断慢了，没有等别人替他找借口。如今他可以练快一步看见空位，也可以练出错之后不急着乱动。",
-        choices = [
-            {
-                label = "把看见空位后的那一步练快",
-                outcome = "小龟终于把自己的思路讲完，战报末尾写上了由他自己决定的下一步。",
-                traitName = "给飞爹看自己的路",
-                bonuses = {
-                    Initiative = 5,
-                    RangedSkill = 2
-                }
-            },
-            {
-                label = "把失手后的站位守住，再找下一次机会",
-                outcome = "他没有把一场失误说成全完了，复盘纸上也多了一条由自己画出的后路。",
-                traitName = "壳后也能站稳",
-                bonuses = {
-                    MeleeDefense = 2,
-                    RangedDefense = 3
                 }
             }
         ]
@@ -787,26 +763,50 @@ A.MemberGrowth <- {
             }
         ]
     },
-    chenzhihan = {
-        title = "月饼帮这面盾归自己",
-        scene = "陈知含把月饼分完，这次先留下了自己的那份。轮到说想练什么，她指向那面曾替自己挡过一下的盾，没再只说都可以。她可以专门练把自己护住，也可以练开口告诉伙伴自己正要做什么。",
+    songnuanyang = {
+        title = "鹌鹑探头那一句",
+        scene = "宋暖阳把战报结尾留空，有人说这里总得来两句凯歌。她先缩了一下脖子，又探头问对方是否真想替所有人写答案。这个小动作让营地笑起来，也让她得决定，是把问题问到底，还是先把自己看见的细处记准。",
         choices = [
             {
-                label = "先护稳自己，再去接下一面盾",
-                outcome = "她把这一盾写进练习簿，记的是自己看清后作出的判断。",
-                traitName = "自己的这一盾",
+                label = "把那句问题问完整，再决定落笔",
+                outcome = "鹌鹑还是会缩一下，却没再把真正想说的话一起缩回去。",
+                traitName = "鹌鹑敢开口",
                 bonuses = {
-                    MeleeDefense = 3,
+                    Bravery = 4,
                     Hitpoints = 3
                 }
             },
             {
-                label = "把想学与需要的配合明确说出来",
-                outcome = "月饼帮仍很热闹，这回她的声音也在里面，不用总等别人来问。",
-                traitName = "月饼先留自己",
+                label = "先观察再记，把空白留给还不知道的事",
+                outcome = "纸上的字少了些，细节反而更清楚。她不必替别人补一个漂亮结尾。",
+                traitName = "鹌鹑看得细",
                 bonuses = {
-                    Bravery = 4,
-                    Stamina = 3
+                    RangedDefense = 3,
+                    Initiative = 3
+                }
+            }
+        ]
+    },
+    xiaogui = {
+        title = "这场先听我复盘",
+        scene = "小龟把记下的三次交锋叠成一份想给飞爹看的战报，先挑出的竟是没打好的那一下。他从皮套化身后面小声念出自己判断慢了，没有等别人替他找借口。如今他可以练快一步看见空位，也可以练出错之后不急着乱动。",
+        choices = [
+            {
+                label = "把看见空位后的那一步练快",
+                outcome = "小龟终于把自己的思路讲完，战报末尾写上了由他自己决定的下一步。",
+                traitName = "给飞爹看自己的路",
+                bonuses = {
+                    Initiative = 5,
+                    RangedSkill = 2
+                }
+            },
+            {
+                label = "把失手后的站位守住，再找下一次机会",
+                outcome = "他没有把一场失误说成全完了，复盘纸上也多了一条由自己画出的后路。",
+                traitName = "壳后也能站稳",
+                bonuses = {
+                    MeleeDefense = 2,
+                    RangedDefense = 3
                 }
             }
         ]
@@ -897,56 +897,56 @@ A.RootOrder <- ["er_xiaoyuan", "er_haman", "er_sige", "er_keke", "er_xiaogui", "
 A.RootStories <- {
     er_xiaoyuan = {
         name = "小原大人", required = 3, member = "", title = "飞爹先听我说完",
-        opening = "城镇酒馆里，小原大人把一页写满问题的纸放在阿飞面前。纸上没有请团长表演威风，只问队员想自己试一次时，他能不能把话听完。阿飞才要说我当然会带，小原就敲了敲第二行：不是问你会什么，是问你愿意让谁试。小原把纸留在了黑旗名册里。",
-        followup = "开篇已经听过。小原留下两种回信办法：写一件团长肯亲自承认的不足，或写一个愿意交给伙伴自己试的安排。它们都不能替别人保证结果。",
+        opening = "酒馆里，小原大人朝阿飞招手：‘飞爹，坐这儿。问你个事，队员说前面可能有埋伏，你怎么办？’\n\n‘那当然是我带头——’\n\n‘你看，我话还没说完。’\n\n阿飞端起酒杯，假装刚才只是口渴。小原把一张纸推过来：‘带队也得听劝。拿不准就说拿不准，别人有办法，也让人讲完。’\n\n阿飞把纸折好：‘行，这次你先说。’",
+        followup = "小原临走前留了地址，让阿飞下次写信说说，队里有没有谁提过一个比团长更好的主意。阿飞摊开纸，想了想该怎么写。",
         choices = [
-            { label = "回信谈自己的不足", outcome = "小原回信说，愿意把话说实已经是一次开始，随信附上少量旅费。", reward = { kind = "money", amount = 40 } },
-            { label = "回信谈交给伙伴的决定", outcome = "小原送来几件维护器材，希望下一次尝试有足够准备。", reward = { kind = "tools", amount = 4 } }
+            { label = "‘我有时候没听完，就急着下令。这个得改。’", outcome = "小原回信：‘知道就好，下次可别又抢话。’信里还夹着一点旅费。阿飞把钱收好，没给自己找借口。", reward = { kind = "money", amount = 40 } },
+            { label = "‘下回先让大家说说办法，再决定怎么做。’", outcome = "小原托人带来一包修理工具，附了张字条：‘听主意的时候，也听听谁的装备该修了。’阿飞把工具送去了辎重车。", reward = { kind = "tools", amount = 4 } }
         ]
     },
     er_haman = {
-        name = "哈曼卡恩", required = 6, member = "", title = "旗号大，承诺也得落地",
-        opening = "哈曼卡恩在城镇约见阿飞，指着那面过分气派的旗，问名字写大之后，做不到的话还算不算数。阿飞笑说飞爹当然撑得住，对方却让他把最不敢打包票的一件事说出来。谈话没有分胜负，只把一句承诺从排场里抽出来，留给阿飞自己掂量。",
-        followup = "哈曼留下的问题还在：承诺遇到变化时，是先明确哪里不能做，还是先提出仍能做到的替案？两封不同的回信都值得认真写。",
+        name = "哈曼卡恩", required = 6, member = "", title = "先别说包赢",
+        opening = "哈曼卡恩在酒馆拦住阿飞：‘听说你又跟人讲，跟着飞爹走，肯定没事？’\n\n阿飞拍了拍胸口：‘我这当团长的，总得让大家放心。’\n\n‘那碰上打不过的呢？药不够了呢？’\n\n阿飞的手停在胸口。哈曼把空酒杯推到一边：‘想让大家放心，就把准备说清楚。哪些仗能接，受伤了怎么办。光说包赢，伤口可不会自己好。’",
+        followup = "回到住处，阿飞准备给哈曼写信。这回不写豪言壮语，先把自己能做的事说清楚。",
         choices = [
-            { label = "明确写出承诺的边界", outcome = "哈曼认可这份清楚的说明，寄来一小包医疗补给。", reward = { kind = "medicine", amount = 3 } },
-            { label = "写出自己愿承担的替案", outcome = "哈曼的回信很短：那就按说清的去试。随信附了少量旅费。", reward = { kind = "money", amount = 40 } }
+            { label = "‘打不过就撤，我不能保证每场都赢。’", outcome = "哈曼寄来一小包药，回信写着：‘这句比包赢管用。药带上，该撤的时候别逞强。’", reward = { kind = "medicine", amount = 3 } },
+            { label = "‘出发前查好补给，有人受伤就先安排休息。’", outcome = "哈曼的信里夹着一点旅费：‘就照你说的办。买补给，别拿去换一面更大的旗。’阿飞看了一眼旗杆，默默收起了钱。", reward = { kind = "money", amount = 40 } }
         ]
     },
     er_sige = {
         name = "四哥", required = 9, member = "", title = "第四张凳子留给谁",
-        opening = "四哥在酒馆留了四张凳子，三张给开局的队长，第四张先空着。阿飞问是不是该让大哥来坐，他说也可以留给那个还没敢开口的人。儿飞派的称呼被他说得像一句寻常玩笑：飞爹，不就是愿意等下一句的人吗？阿飞没有立刻坐下，把空凳往桌边拉近了些。",
-        followup = "四哥请阿飞回信讲讲那张空凳：让新人先说，还是由老队员先把难处讲出来？无需真有某个人同场，也不规定谁必须跟队。",
+        opening = "四哥在酒馆订了一张桌子，旁边摆着四张凳子：‘你、大谋、抹茶，一人一张。’\n\n阿飞指着最后一张：‘这张等哪位大哥？’\n\n‘留给有话想说的队员。每回商量事情，总不能就你们三个讲。’\n\n‘那他们倒是说啊。’\n\n四哥笑了：‘你一坐下就开始吹，人家插得上嘴吗？’阿飞摸摸鼻子，把空凳往桌边拉近了一点。",
+        followup = "四哥让阿飞以后写信，说说大家坐下来都聊了些什么。阿飞想了两个开头，决定先写一个。",
         choices = [
-            { label = "让新人先讲自己想试什么", outcome = "四哥让人带来一小批弹药，信上写着先准备，再让本人试。", reward = { kind = "ammo", amount = 12 } },
-            { label = "由队长先说出自己的难处", outcome = "四哥回信附上少量旅费，笑说这回桌边总算不只有好听的话。", reward = { kind = "money", amount = 40 } }
+            { label = "‘下次先问新人，哪里没听懂，哪里想试试。’", outcome = "四哥托人送来一小包弹药：‘有人想练就给他练。你在旁边看着，别一上来就把活抢了。’", reward = { kind = "ammo", amount = 12 } },
+            { label = "‘我先说说自己犯过的错，省得大家不敢开口。’", outcome = "四哥寄来一点旅费，信上写着：‘行，下次喝酒就听这个。你那几场大胜，我们都会背了。’", reward = { kind = "money", amount = 40 } }
         ]
     },
     er_keke = {
-        name = "可可", required = 0, member = "keke", title = "保可梦也要听见一句实话",
-        opening = "可可留给黑旗一张便笺：自己人三个字，不该意味着谁永远替谁挡下所有事。她在下面写了个问题，阿飞若真想做飞爹，能不能先承认也有拿不准的时候？纸上没有要他变弱，只给彼此留了说不的一小块空白。她即使已经不在队，这段留过的话也仍能被读到。",
-        followup = "这张便笺已经读过。回信可以认真回应那句拿不准，也可以写下今后询问同伴意见的方式；她的真实去留不会因此被改变。",
+        name = "可可", required = 0, member = "keke", title = "有事就直说",
+        opening = "整理名册时，阿飞翻到可可以前留下的一张便笺，边上画着一个小球。\n\n‘飞爹，你有事就直说，别每次都先拍胸口。累了就歇，不会就问。还有，喊我帮忙之前，先问问我手上的事忙完没有。’\n\n阿飞刚想嘀咕一句‘都是自己人’，往下一看，正好还有一行：‘自己人也得问。’\n\n他把话咽了回去，找了支笔。",
+        followup = "便笺夹在可可留下的补给单里。阿飞准备在背面写几句话，把她的提醒记住。",
         choices = [
-            { label = "承认一次拿不准的判断", outcome = "便笺的后页留有一份早已备好的小额旅费，这是伙伴留下的一次支持。", reward = { kind = "money", amount = 35 } },
-            { label = "约定先问本人愿意承担什么", outcome = "名册里附着的医疗补给记入公共储备，只领这一次。", reward = { kind = "medicine", amount = 2 } }
+            { label = "‘我也有拿不准的时候，以后不硬装。’", outcome = "阿飞写完，在旁边加了一句‘真不装’。补给单里还夹着可可留下的零钱，他数好后收进了队伍的钱袋。", reward = { kind = "money", amount = 35 } },
+            { label = "‘下回请你帮忙，先问你有没有空。’", outcome = "阿飞把这句话写在便笺背面，又按单子找出可可留下的药，放进队伍的药箱。", reward = { kind = "medicine", amount = 2 } }
         ]
     },
     er_xiaogui = {
-        name = "溺水小龟", required = 0, member = "xiaogui", title = "这份战报想给飞爹看",
-        opening = "小龟在留给阿飞的纸上画了自己的小龟化身，旁边写着想拿一场给飞爹看。他没有要求包赢，只想等自己作过判断以后，有个人肯听他从第一步讲起。阿飞读到最后才发现，那句想被看见的愿望，比一句厉害更难回答。纸可以留下，开篇不需要小龟此刻同场。",
-        followup = "把战报读完之后，阿飞可以回信先问他的判断，也可以写明愿意认真复盘失手的地方。这里不安排真实比赛或凭空改动任何战绩。",
+        name = "溺水小龟", required = 0, member = "xiaogui", title = "飞爹，帮我看看这几步",
+        opening = "小龟以前留了一份战报，纸角画着自己的圆脑袋。阿飞翻开，发现上面认真画了敌人站在哪儿、自己又走了哪几步。\n\n最后一行写着：‘飞爹，帮我看看。我这一下是不是冲早了？别光夸我壳硬。’\n\n阿飞提笔写了个‘猛’，看见那句提醒，又把字划掉。他把地图铺平，重新从第一步看起。",
+        followup = "战报后面还有空白。阿飞准备留下自己的看法，再把小龟预留的补给收好。",
         choices = [
-            { label = "先问你当时为什么这样选", outcome = "这段回应记进名册，随战报预留的一小批弹药转入公共储备。", reward = { kind = "ammo", amount = 10 } },
-            { label = "约定失手那一段也一起看", outcome = "预留的修整器材记入公共储备，留给以后真实走过的路。", reward = { kind = "tools", amount = 3 } }
+            { label = "‘先说说，你当时为什么往这边走？’", outcome = "阿飞圈出那一步，在旁边写了个问号。这次他没急着下结论。收起战报时，他把小龟预留的一包弹药放进了辎重车。", reward = { kind = "ammo", amount = 10 } },
+            { label = "‘这里再等队友两步，就不用自己硬扛。’", outcome = "阿飞在图上补了两道箭头，把跟进的位置标清楚，又收好了小龟留下的修理工具。", reward = { kind = "tools", amount = 3 } }
         ]
     },
     er_yuchujiu = {
         name = "余初九", required = 0, member = "yuchujiu", title = "叫你飞爹，也能叫你停",
-        opening = "初九留下的纸条开头就写了一个停，阿飞仿佛又听见那声响亮的提醒。下一行却很认真：认你这面旗，不代表每句话都只能点头。她愿意在讲清理由后跟他再走一步，也希望他愿意被自己叫停。忠诚和反问同时留在这张纸上，阿飞把它折好，放回贴身的口袋。",
-        followup = "阿飞可以回应那声停，或写下双方讲清风险后怎样再一起作决定。回信不要求她重返队伍，也不修改阵亡或离队记录。",
+        opening = "初九留下的纸条上，一个‘停’字占了半页。阿飞展开时，仿佛又听见她在身后大喊。\n\n下面写着：‘飞爹，我喊你停的时候，你先停一下。前面可能有埋伏，也可能只是你跑太快，大家跟不上。等我把原因说完，你再决定追不追。’\n\n阿飞把纸翻过来，想写‘团长心里有数’，想了想，又把笔收住了。",
+        followup = "阿飞把纸条压平，准备在背面写下以后该怎么办。旁边还放着初九以前留下的一点补给。",
         choices = [
-            { label = "答应先听清叫停的理由", outcome = "纸条夹着的小额旅费记入公共钱袋，这份支持只收一次。", reward = { kind = "money", amount = 35 } },
-            { label = "约定说清风险后一起承担", outcome = "名册附记的一点医疗补给记入公共储备，后续仍按各人的真实状态继续。", reward = { kind = "medicine", amount = 2 } }
+            { label = "‘听见你喊，我先停下来。’", outcome = "阿飞写完，又补上一句：‘喊大声点，别让我装没听见。’他把纸条折好，连同初九留下的零钱一起收进队伍的钱袋。", reward = { kind = "money", amount = 35 } },
+            { label = "‘先看清前面有什么，再商量追不追。’", outcome = "阿飞在纸上添了一条：‘追之前先点人数。’随后他把初九留下的药收好，放到了大家容易找到的地方。", reward = { kind = "medicine", amount = 2 } }
         ]
     }
 };
@@ -964,14 +964,14 @@ A.rootsUnlocked <- function() {
     return true;
 };
 A.triggerRoot <- function(id) {
-    if (!this.isOrigin() || typeof id != "string" || !(id in this.RootStories)) return this.result(false, "没有这条六根线索。");
-    if (!this.canManage()) return this.result(false, "请在友好城镇或安全扎营处阅读线索。");
+    if (!this.isOrigin() || typeof id != "string" || !(id in this.RootStories)) return this.result(false, "没有找到这段交谈记录。");
+    if (!this.canManage()) return this.result(false, "请到友好城镇或安全扎营后再看。");
     local data = this.RootStories[id];
-    if (data.member == "" && this.currentTown() == null) return this.result(false, "这位水友代表是城镇联系人，请到友好城镇会面。");
-    if (this.rootStatus(id) == "locked") return this.result(false, "这条开篇线索尚未出现。");
+    if (data.member == "" && this.currentTown() == null) return this.result(false, "对方在城镇里，请到友好城镇见面。");
+    if (this.rootStatus(id) == "locked") return this.result(false, "还没有收到对方的消息。");
     // Triggering the opening is deliberately independent of completing its follow-up.
     this.set("root_triggered_" + id, true);
-    return this.result(true, data.opening + "\n\n这段话已收进名册，可以稍后再回信。");
+    return this.result(true, data.opening + "\n\n已记入名册，可以稍后再回应。");
 };
 A.storyRewardText <- function(reward) {
     local labels = { money = "克朗", tools = "工具", medicine = "药品", ammo = "弹药" };
@@ -992,12 +992,12 @@ A.grantStoryReward <- function(reward) {
 };
 A.resolveRoot <- function(id, choice) {
     if (!this.isOrigin() || typeof id != "string" || !(id in this.RootStories) || typeof choice != "integer" || choice < 0 || choice >= 2)
-        return this.result(false, "没有这项六根后续选择。");
-    if (!this.canManage()) return this.result(false, "请到安全地点再回信。");
-    if (this.rootStatus(id) != "opened") return this.result(false, "请先触发这条开篇；已结算的回信不能重复领奖。");
+        return this.result(false, "没有这个选项，请返回后重新选择。");
+    if (!this.canManage()) return this.result(false, "请到安全地点再回应。");
+    if (this.rootStatus(id) != "opened") return this.result(false, "请先读完对方的话；已经领取的补给不能再领。");
     local data = this.RootStories[id].choices[choice];
     try { this.grantStoryReward(data.reward); }
-    catch (error) { ::logError("[AfeixExpedition] Root reward failed: " + error); return this.result(false, "公共储备容量不足或补给未能完整登记，本次回信未结算。请腾出容量后再领取。"); }
+    catch (error) { ::logError("[AfeixExpedition] Root reward failed: " + error); return this.result(false, "补给没能全部收下，可能是储备已满。这次还没领取，可以腾出空余后重试。"); }
     this.set("root_choice_" + id, choice);
     this.set("root_done_" + id, true);
     this.refreshAssets();

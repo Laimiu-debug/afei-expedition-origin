@@ -107,16 +107,20 @@ def render_prompts():
     """Publish v05 photo provenance plus the complete v06 facing-edit chains."""
     base = ROOT / 'art/runtime/portraits-v05'
     manifest = read(base / 'manifest.json')
-    pending = [p['name'] for p in manifest['characters'] if p.get('likeness_status') == 'awaiting_verified_photo']
+    native = [p['name'] for p in manifest['characters'] if p.get('portrait_mode') == 'native']
+    pending = [p['name'] for p in manifest['characters'] if p.get('likeness_status') in
+               {'awaiting_verified_photo', 'placeholder_pending_luoyike_reference'}]
     forms = [form for person in manifest['characters'] for form in person['forms']]
     facing_count = sum(form.get('source_revision') == 'v05_facing' for form in forms)
     lines = ['# 朝右战斗胸像：实际生图提示词与 v0.12 接入规则', '',
-             'v0.12 使用用户提供的五张参考图，以内置 ImageGen 重绘小月牙、溺水小龟、亿口甜筒、瑶瑶牙和美伢。全员取消固定 y=102 横切，改用逐人颈部轮廓分层；其余成员保留既有源图，游戏尺寸、装备叠加和旧存档画刷 ID 不变。', '',
+             'v0.12 使用用户提供的五张参考图，以内置 ImageGen 重绘小月牙、溺水小龟、小虎、瑶瑶牙和美伢。全员取消固定 y=102 横切，改用逐人颈部轮廓分层；其余成员保留既有源图，游戏尺寸、装备叠加和旧存档画刷 ID 不变。', '',
              'v0.7 没有重新生图：将现有源图等比缩到最大 88×100，放入 114×142 槽，在颈部拆成身体和头部，恢复原版武器、盾牌、护甲与头盔叠加。蛤蟆原画和头顶飞碟停用，转职玩法保留。下文保留真实生成历史，不把后续技术处理写成新的生图调用。', '',
+             'v0.19 新增小龟禁戴头盔、厚壳与天生钢头；刘青松仅为照片参考的相遇 NPC，没有加入本战斗胸像图集。新事件头像与红装提示词见 [本轮实际提示词](../../art/runtime/ideas-v19/PROMPTS.json)，规则见 [v0.19](../playtest-0.19.md)。', '',
              '照片只负责本人脸型、眉眼、发际线和发型；画法参考《战场兄弟》官方胸像。源图使用少量宽阴影、粗轮廓、低饱和衣物和短肩大头比例，最终按 114×142 输出。', '',
              f'当前映射中 {facing_count}/{len(forms)} 幅采用 v0.6 朝右姿态修订。头部、胸肩和视线共同朝画面右侧，保留原有个人特征与衣装；每人仍使用包含自绘头发、脸和衣服的一张透明胸像。下面逐次保留实际调用、参考输入、原始输出及局部返修，不能把提示词记录当作实机通过证明。', '',
              ('待核对本人照片：' + '、'.join(pending) + '。这些成员的姿态修订基于既有游戏设计，不补足真人资料。' if pending else '此前缺参考的四位人类成员本轮已收到用户指定图片；图片仅作美术依据，不声称已核验其来源。') + '小龟使用用户指定吉祥物。蛤蟆立绘与头顶飞碟已于 v0.7 停用，转职玩法保留。', '',
              '姿态修订前的选择见 [manifest-before-facing.json](manifest-before-facing.json)，原始源图继续保留；`afeix_p04_*` 画刷与 `afeix_portraits_v04` 图集名称不变。参考照片与官方画风样本不打入游戏包。', '',
+             ('当前使用原版人物外观、专属头像待补：' + '、'.join(native) + '。' if native else '当前 34 名成员均有专属胸像；罗一可按本轮用户照片重绘，眼子按仓库既有 Sylar 海报绘制。'), '',
              '## 来源与选择', '', '|成员／形态|本轮处理|源图|', '|---|---|---|']
     for person in manifest['characters']:
         for form in person['forms']:
@@ -141,16 +145,37 @@ def render_prompts():
             if form.get('source_revision') == 'retired_alias':
                 lines += ['不再使用蛤蟆原图；复用上面的正常阿飞源图，旧画刷 ID 仅用于存档兼容。', '']
                 continue
-            if form.get('source_revision') == 'user_v12':
+            if form.get('source_revision') == 'blue_team_v24':
                 filename = form['prompt_record']
                 record = next(r for r in read(base / filename)['records'] if r['key'] == person['key'])
+                lines += ['### 蓝队个人头像 · 内置 ImageGen', '', record['identity_basis'], '',
+                          '完整记录：['+filename+']('+filename+')', '', '参考输入：', '']
+                lines += ['- `'+ref+'`' for ref in record['references']]
+                lines += ['', '生成器输出：`'+record['generated_original']+'`', '', '```text', record['prompt'], '```', '',
+                          '颈部分界：`'+json.dumps(form['head_seam'])+'`。源图只作等比缩放和互补分层。', '']
+                count += 1
+                continue
+            if form.get('source_revision') in ('user_v12', 'user_v17', 'user_v18', 'user_v23'):
+                filename = form['prompt_record']
+                record = next(r for r in read(base / filename)['records'] if r['key'] == person['key'])
+                previous_source = form.get('before_user_v23_source') or form.get('before_user_v18_source') or form.get('before_user_v17_source') or form['before_user_v12_source']
                 lines += ['### 用户参考重绘 · 内置 ImageGen', '',
-                          '旧图：`'+form['before_user_v12_source']+'`',
+                          '旧图：`'+previous_source+'`',
                           '完整记录：['+filename+']('+filename+')', '', '参考输入：', '']
                 lines += ['- `'+ref+'`' for ref in record['references']]
                 lines += ['', '生成器输出：`'+record['generated_original']+'`', '',
                           '```text', record['prompt'], '```', '',
                           '颈部分界：`'+json.dumps(form['head_seam'])+'`。原图只作等比缩放和无损分层。', '']
+                count += 1
+                continue
+            if form.get('source_revision') == 'v17_identity_style_proportion':
+                filename = form['pose_record']
+                record = read(base / filename)
+                lines += ['### 保留长相，修画风与比例 · 内置 ImageGen', '',
+                          '参考旧稿：`'+record['reference']+'`',
+                          '生成记录：['+filename+']('+filename+')', '',
+                          '提示词约束整理：', '', '```text', record['constraints'], '```', '',
+                          '颈部分界：`'+json.dumps(form['head_seam'])+'`；保留原版装备叠加。', '']
                 count += 1
                 continue
             if form.get('source_revision') == 'v05_facing':

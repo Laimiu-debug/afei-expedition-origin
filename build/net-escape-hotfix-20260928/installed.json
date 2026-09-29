@@ -1,0 +1,11 @@
+{
+  "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "sha256": "3a521049f570f3a40318582d4a6d612f7199ac9504a345278aed427c1ba94a86",
+  "matches_dist": true,
+  "previous_installed_sha256": "0cc0b6bacc8eddf0321d690da5ca1a666e52c1df55ec631545ad96d3650fd0d8",
+  "changed_entries": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/member_catalog_hooks.nut"
+  ],
+  "in_game_tested": false
+}

@@ -18,8 +18,8 @@ this.afeix_ecig_item <- this.inherit("scripts/items/accessory/accessory", {
             { id = 1, type = "title", text = this.getName() },
             { id = 2, type = "description", text = this.getDescription() },
             { id = 3, type = "image", image = this.getIcon() },
-            { id = 10, type = "text", icon = "ui/icons/health.png", text = "抽一口：恢复最多 20 生命；消耗 3 行动点、5 疲劳。" },
-            { id = 11, type = "text", icon = "ui/icons/special.png", text = "仅阿飞可用，每回合一次，不消耗物品。装卸不会重置使用次数。" },
+            { id = 10, type = "text", icon = "ui/icons/health.png", text = "抽一口：恢复最多 15 生命；消耗 4 行动点、10 疲劳。" },
+            { id = 11, type = "text", icon = "ui/icons/special.png", text = "仅阿飞可用，每战两次，冷却2轮，不消耗物品。装卸不会重置使用次数。" },
             { id = 12, type = "text", icon = "ui/icons/warning.png", text = "占用饰品栏；只恢复生命，不修复护甲或治愈伤势。" }
         ];
     },

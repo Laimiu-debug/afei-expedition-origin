@@ -1,0 +1,14 @@
+{
+  "installed": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "sha256": "1e860c7fb58245ad3671357dccd5e828529d43d3dd7dc674ef83017d19ca9d53",
+  "updated_sprites": [
+    "afeix_p04_lili",
+    "afeix_p04_lili_dead",
+    "afeix_p04_lili_head"
+  ],
+  "preserves_existing_gameplay": true,
+  "preserves_other_installed_portraits": true,
+  "validation": "build/playtest-lili/validation.json",
+  "backup": "dist/archive/before-lili-20260927/installed-mod_afeix_expedition.zip",
+  "in_game_tested": false
+}

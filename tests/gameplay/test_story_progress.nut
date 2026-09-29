@@ -17,7 +17,7 @@ function flags() {
     failSkill = false, failRemove = false, removeThrowsAfter = false, serial = 0, itemSerial = 0, formations = 0, rewardThrows = false };
 ::inherit <- function(path, object) {
     check(path == "scripts/skills/traits/character_trait", "personal trait inherits native trait");
-    object.m = { ID = "", Name = "", Icon = "", Description = "", Titles = [], Excluded = [], Owner = null };
+    object.m = { ID = "", Name = "", Icon = "", IconMini = "", Description = "", Titles = [], Excluded = [], Owner = null };
     object.character_trait <- { create = function() {} };
     object.getContainer <- function() { return this.m.Owner; };
     object.getID <- function() { return this.m.ID; };
@@ -275,6 +275,29 @@ function runStoryTests() {
     }
     resetStory();A.set("paid_contracts",9);A.triggerRoot("er_xiaoyuan");::storyState.tactical=true;before=stock();
     check(!A.resolveRoot("er_xiaoyuan",0).ok&&same(before,stock()),"unsafe root follow-up blocked");
+
+    // Walk discovery and the actual ledger choices from a trained level-7 Bottle.
+    // Training alone does not answer her personal-growth conversation.
+    resetStory();local captain=makeBrother("afei",7,9),trainedBottle=makeBrother("bottle",7,7);
+    trainedBottle.getFlags().set("afeix_training_choice","bottle_breakthrough");
+    check(A.bicycleStatus()=="locked"&&!A.revealDiscovery("bicycle"),"learned skill does not replace Bottle growth");
+    local conversation={m={Notice="",Selected=[],FormationPage=0}};
+    foreach(key in ["afei","bottle"]){
+        local page="member_growth:"+key;
+        check(A.nextDiscovery()==page&&A.revealDiscovery(page),key+" growth scheduled before farewell");
+        check(A.storyLedgerPage(conversation,page).Options[0].getResult(conversation)==page&&A.get("growth_done_"+key,false),key+" completes growth through ledger");
+    }
+    check(A.bicycleStatus()=="ready"&&!A.bicycleKnown(),"farewell becomes eligible after conversation");
+    check(A.nextDiscovery()=="promotion"&&A.revealDiscovery("promotion"),"earlier eligible story delivered first");
+    ::storyState.town=false;::storyState.camping=true;
+    check(A.nextDiscovery()==null&&!A.revealDiscovery("bicycle"),"safe wilderness camp does not start town farewell");
+    ::storyState.town=true;
+    check(A.nextDiscovery()=="bicycle"&&A.revealDiscovery("bicycle"),"friendly town discovers farewell after prior stories");
+    check(A.nextDiscovery()==null&&A.bicycleKnown(),"discovered farewell stays in records instead of firing again");
+    local farewell=A.storyLedgerPage(conversation,"bicycle");
+    check(farewell.Options[1].getResult(conversation)=="bicycle_release_confirm"&&A.findCharacter("bottle")==trainedBottle,"farewell preview never removes Bottle");
+    local confirm=A.storyLedgerPage(conversation,"bicycle_release_confirm");
+    check(confirm.Options[0].getResult(conversation)=="bicycle"&&A.bicycleStatus()=="memory"&&A.findCharacter("bottle")==null,"confirmed ledger departure completes");
 
     local pair=prepareFarewell();
     check(A.bicycleStatus()=="ready","bicycle level seven and bottle growth ready");

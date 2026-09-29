@@ -1,0 +1,22 @@
+{
+  "target": "keke",
+  "source": "art/runtime/portraits-v05/sources/user-v17/keke-photo-v2.png",
+  "source_sha256": "dd3c2ec863aba882e61b2e03a5926c64c971ab8d76bedfb249177fbd25973e1b",
+  "previous_source_preserved": true,
+  "meiya_new_source_preserved": true,
+  "reviewed_candidate_matches_exported_sprites": true,
+  "art_validation_passed": true,
+  "portrait_forms": 36,
+  "portrait_brushes": 108,
+  "package_crc_passed": true,
+  "package_matches_all_source_files": true,
+  "full_build_passed": true,
+  "behavior_assertions": 19589,
+  "test_groups": 24,
+  "package_sha256": "71808e47d5ce1cd9482ba089982501cfe0a344d830c1695febcd03afcf1a76af",
+  "game_size": [
+    114,
+    142
+  ],
+  "in_game_tested": false
+}

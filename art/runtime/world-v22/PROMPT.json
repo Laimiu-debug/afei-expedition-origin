@@ -1,0 +1,10 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: identity-preserve. Asset type: one transparent Battle Brothers world-map party bust sprite. Image 1 is the existing Afei character identity and clothing reference; image 2 is ONLY the native world-map sprite scale/silhouette/style reference, do not copy its character or hood. Create Afei as a compact three-quarter bust facing screen RIGHT for a 40 by 46 pixel game icon. Retain exactly his short swept-up black hair, clean-shaven East Asian angular face, thick brows, charcoal short shoulder cape with small brass buckle, beige quilted cloth collar. Simplify facial planes and clothing into readable hand-painted dark outlined shapes suitable for extreme downscaling. Slightly elevated camera like native map miniature, cropped below chest, all hair and both shoulders inside frame. Same recognizable man, no helmet, no hood, no flags, no weapons, no legs, no pedestal, no ground, no shadow outside silhouette, no scenery, no text, no border. Transparent background with real alpha, centered single isolated bust with narrow clear margins. Serious calm expression, muted earthy browns charcoal and warm skin, understated contrast like the game.",
+  "reference_images": [
+    "art/runtime/portraits-v05/sources/facing/afei_normal.png",
+    ".cache/world-afei-v22/native/unpacked/world_entity/party/figure_player_01.png"
+  ],
+  "generated_file": "sources/afei-map.png",
+  "native_reference_packaged": false
+}

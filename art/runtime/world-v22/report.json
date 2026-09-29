@@ -1,0 +1,32 @@
+{
+  "manifest_sha256": "3e197263f3152e81c0ef10dbbbbc5ede3cfe69d3faca7b63960aa013e9577e0d",
+  "sprite_sha256": "b98bf0f9a9783deef6a2c04a0ee79344a34442df8ed78ad6790298afa2a8b028",
+  "geometry": {
+    "left": -17,
+    "right": 23,
+    "top": -39,
+    "bottom": 7,
+    "width": 68,
+    "height": 106,
+    "offsetY": 20
+  },
+  "roundtrip": {
+    "passed": true,
+    "sprite_count": 1,
+    "sprites": [
+      {
+        "id": "afeix_world_afei",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "brush": "package/brushes/afeix_world_v22.brush",
+    "brush_sha256": "a48a90cfd809b0c25d789a458a3b3988ba988965682d0d08be670b3b367edd45",
+    "atlas": "package/gfx/afeix_world_v22.png",
+    "atlas_sha256": "0ffb5c8d771448b1f5e69ece06678f360a9e58f30c7145f110b02d45b9999993",
+    "pack_log": "Loading images...\nsprites\\afeix_world_afei.png\nPacking rectangles...\nWriting gfx/afeix_world_v22.png (64x64)...\n",
+    "unpack_log": "Opening gfx/afeix_world_v22.png...\nsprites\\afeix_world_afei.png\n"
+  },
+  "native_art_packaged": false,
+  "in_game_tested": false
+}

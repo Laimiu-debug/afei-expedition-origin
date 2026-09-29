@@ -1,0 +1,34 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-27",
+  "status": "selected_after_offline_visual_review",
+  "records": [
+    {
+      "key": "keke",
+      "name": "可可",
+      "prompt": "Use case: identity-preserve / stylized-concept.\nAsset type: one finished transparent Battle Brothers character bust sprite, 可可 (Keke).\nInput roles: Images 1 and 2 are the user's photographs of the SAME woman and are the identity ground truth. Image 1 is the primary front-face proportion and hairstyle reference: rounded soft cheeks, compact rounded oval face, wispy brow-length fringe, dark brown hair tied into two low tails. Image 2 provides a second angle for her eyes, nose, mouth and natural expression. Image 3 is the CURRENT GAME ASSET to replace: keep its brown leather medieval shoulder garment, muted brick-red scarf, small plain crescent-shaped brass fastener, compact bust framing, screen-right pose, and crisp painted sprite treatment. Its long angular face, sharp aggressive eyebrows and loose long hair are inaccurate and MUST NOT be preserved. Image 4 is official Battle Brothers sprite STYLE AND PROPORTION reference only, not identity.\nPrimary request: redraw Keke so that she is recognizable from the two photos. Use a softly rounded compact oval face, fuller natural cheeks, gentle small rounded chin, short-to-medium midface, small understated nose, expressive dark almond eyes of natural moderate size, gentle nearly straight softly curved brows, small natural rose mouth with a full but restrained lower lip. Calm attentive, softly confident expression with relaxed closed lips, not stern or seductive, no duck lips. Avoid elongated angular jaw, high carved cheekbones, sharp frowning eyebrows and mature weathered face from the old illustration. Do not invent moles, freckles, makeup or jewelry.\nHair: dark chestnut brown, softly parted above a wispy fringe with short separated locks across forehead at brow height, gentle loose cheek-framing strands, two compact low ponytails tied behind ears as in photo 1; simple dark ties, no bright ribbons. Hair should read as fringe plus low twin tails when tiny, not loose waist-length hair, no braids and no hat.\nStyle: Battle Brothers hand-painted medieval tactical game sprite. Strong economical dark brown contour, broad slightly angular 3-4 tone shadows, warm muted natural skin, earthy cloth and leather. Simplified planar paintwork and feature marks legible at 88x100 visible pixels. Keep recognizability without photographic skin detail or airbrushed beauty portrait. No anime/chibi/doll eyes, no 3D render, no shiny makeup, no cute sticker style.\nComposition: one fully clothed head-and-short-shoulders bust. Face, nose, gaze, neck and chest turned consistently three-quarter toward SCREEN RIGHT; both eyes visible, gaze right rather than looking at viewer. Large game head around upper 60 percent of silhouette, entire lower jaw and intact short neck visible above a low red scarf, short narrow shoulders in lower 30 percent. Scarf must stay below the jaw and not hide the chin. Compact curved oval bottom; no arms, hands, weapons or full body. Complete hair crown and shoulders inside canvas with small margins.\nOutput: genuinely transparent RGBA background; a single asset with no text, labels, streamer overlays, watermark, frame, scene, ground, cast shadow or comparison sheet. Identity follows photos; game costume and facing follow image 3.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-keke/01-front-bangs-twin-tails.png",
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-keke/02-three-quarter.png",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/user-v17/keke.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "selected_source": "art/runtime/portraits-v05/sources/user-v17/keke-photo-v2.png",
+      "generated_original": "C:/Users/25647/.codex/generated_images/01a0e182-4f3d-7eb2-ac38-307dc7d2ee97/exec-8b397020-aa1a-4fb6-aa04-f024fcb66cf6.png",
+      "source_sha256": "dd3c2ec863aba882e61b2e03a5926c64c971ab8d76bedfb249177fbd25973e1b",
+      "review": {
+        "comparison": "build/playtest-keke/comparison.png",
+        "identity_references": 2,
+        "source_pixels_edited_after_generation": false,
+        "transparent_rgba": true,
+        "game_size_reviewed": true,
+        "equipment_reviewed": [
+          "armor",
+          "open_helmet",
+          "closed_helmet"
+        ],
+        "in_game_tested": false
+      }
+    }
+  ]
+}

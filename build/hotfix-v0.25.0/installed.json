@@ -1,0 +1,9 @@
+{
+  "version": "0.25.0",
+  "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "sha256": "22b9a4262da66ccbabdf5efc76e72bf1b5ce6ab16de7bfebb3e434a1e11c762f",
+  "matches_workspace": true,
+  "backups": "build/hotfix-v0.25.0/backups",
+  "in_game_tested": false,
+  "ghoul_crash_fixed": false
+}

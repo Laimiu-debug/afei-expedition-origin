@@ -1,0 +1,11 @@
+{
+  "version": "0.21.0",
+  "package": "G:\\CODE\\afei-xcpedition\\dist\\mod_afeix_expedition.zip",
+  "installed": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "backup": "G:\\CODE\\afei-xcpedition\\build\\corpses-endings-v21\\baseline-20260927-215523\\installed.zip",
+  "sha256": "0cf14f25d8f36058450c9fdafd12611c563e6076a57e58accc76234afcdeb8bb",
+  "installed_matches_package": true,
+  "offline_checks_passed": true,
+  "in_game_tested": false,
+  "corpse_pose": "supine; reviewed neck anchor; crown away from torso; rotation 140 degrees, mirrored -140"
+}

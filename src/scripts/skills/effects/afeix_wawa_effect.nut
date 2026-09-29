@@ -4,9 +4,9 @@ this.afeix_wawa_effect <- this.inherit("scripts/skills/effects/afeix_promotion_e
         this.afeix_promotion_effect.create();
         this.m.ID = "effects.afeix_wawa";
         this.m.Name = "哇哇叫";
-        this.m.Icon = "skills/afeix_wawa.png";
-        this.m.Description = "近战命中 +12，所受伤害减少 20%；持续至阿飞第二次回合开始。";
-        this.m.Melee = 12;
-        this.m.Incoming = 0.80;
+        this.m.Icon = "skills/afeix_wawa.png"; this.m.IconMini = this.m.Icon;
+        this.m.Description = "近战命中+8、近防-5，至阿飞下次回合开始。";
+        this.m.Melee = 8;
+        this.m.Incoming = 1.0;
     }
 });

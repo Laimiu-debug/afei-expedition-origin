@@ -1,0 +1,17 @@
+{
+  "version": "0.23.1",
+  "internal_version": 27,
+  "installed_at": "2026-09-28T07:59:02.616338+08:00",
+  "installed": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "sha256": "0cc0b6bacc8eddf0321d690da5ca1a666e52c1df55ec631545ad96d3650fd0d8",
+  "backup": "G:\\CODE\\afei-xcpedition\\build\\recruitment-v23\\compat-baseline-20260928-075619\\installed-mod.zip",
+  "behavior_assertions": 22112,
+  "test_suites": 32,
+  "display_mod_preserved": true,
+  "save_preserved": true,
+  "in_game_tested": false,
+  "website_updated": true,
+  "website_version": "0.23.1",
+  "website_release_id": "27400e31-07a7-4b67-834d-1f8d9c60d64e",
+  "website_url": "https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/"
+}

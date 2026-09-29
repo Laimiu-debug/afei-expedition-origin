@@ -1,0 +1,25 @@
+{
+  "verified_at": "2026-09-28T10:11:44.316982+00:00",
+  "detail_url": "https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "download_url": "https://bbmod.site/files/d04a3fd4-2005-4061-b3f8-0b129f3298c2/download/",
+  "release_id": "d04a3fd4-2005-4061-b3f8-0b129f3298c2",
+  "version": "0.24.0",
+  "sha256": "109dbe4d0df3c1de467d70e3853c768bea840b006631a0d6e2afaff3ccd89b8b",
+  "size": 2230474,
+  "entries": 233,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200,
+    "previous_download": 200
+  },
+  "catalog_and_notes_match": true,
+  "download_bytes_match": true,
+  "crc_passed": true,
+  "contains_blue_stories": true,
+  "removed_character_absent": true,
+  "previous_version": "0.23.2",
+  "previous_sha256_unchanged": "3a521049f570f3a40318582d4a6d612f7199ac9504a345278aed427c1ba94a86",
+  "backup": "/srv/data/backups/afeix-pre-v0.24.0-20260928T101006152771Z.sqlite3",
+  "in_game_tested": false
+}

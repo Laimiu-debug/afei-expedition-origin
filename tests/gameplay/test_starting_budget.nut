@@ -4,7 +4,7 @@
 ::inherit <- function(path,members){return members;};
 ::removeFromBeginningOfText <- function(prefix,text){return text;};
 ::created <- [];::items <- [];::storyItems <- 0;
-::AfeixExpedition <- {Schema=8,RosterMax=40,CombatMax=10,set=function(...) {},
+::AfeixExpedition <- {Schema=8,RosterMax=40,CombatMax=12,set=function(...) {},
     makeCharacter=function(key,slot){::created.push({key=key,slot=slot});return {};},
     ensureStoryItems=function(){::storyItems++;},enforceFormation=function(){}};
 ::new <- function(path){return {amount=0,setAmount=function(n){this.amount=n;}};};

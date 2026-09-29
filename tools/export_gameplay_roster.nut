@@ -34,5 +34,12 @@ function json(value) {
     return result+(kind=="array" ? "]" : "}");
 }
 local A=::AfeixExpedition, characters=[];
-foreach(key in A.CharacterOrder) { local data=clone A.Characters[key]; data.key <- key; characters.push(data); }
-print("ROSTER_JSON_BEGIN\n"+json({version=A.Version,schema=A.Schema,rosterMax=A.RosterMax,combatMax=A.CombatMax,chapters=A.Chapters,encounterRequirements=A.EncounterRequirements,characters=characters,promotionTalents=A.PromotionTalents,memberSkills=A.MemberSkills,memberSkillDefs=A.MemberSkillDefs})+"\nROSTER_JSON_END\n");
+foreach(key in A.CharacterOrder) {
+    local data=clone A.Characters[key]; data.key <- key;
+    data.baseBackground <- data.background;
+    data.background = A.characterBackgroundPath(key);
+    data.backgroundName <- A.CharacterBackgrounds[key].name;
+    data.backgroundDescription <- A.CharacterBackgrounds[key].description;
+    characters.push(data);
+}
+print("ROSTER_JSON_BEGIN\n"+json({version=A.Version,schema=A.Schema,rosterMax=A.RosterMax,combatMax=A.CombatMax,chapters=A.Chapters,encounterRequirements=A.EncounterRequirements,characters=characters,promotionTalents=A.PromotionTalents,memberSkills=A.MemberSkills,memberSkillDefs=A.MemberSkillDefs,ideaScenes=A.IdeaScenes,chronicles=A.Chronicles})+"\nROSTER_JSON_END\n");

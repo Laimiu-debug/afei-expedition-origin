@@ -159,11 +159,6 @@
       "line_detour",
       "curve_force",
       "bell_lead"
-    ],
-    "chenzhihan": [
-      "guard_self",
-      "remember_shield",
-      "moon_cake"
     ]
   },
   "skills": {
@@ -179,7 +174,7 @@
     "abacus_mark": {
       "owner": "mocha",
       "name": "地精算盘",
-      "text": "标记 4 格内可见敌人两轮；下一次己方单体武器攻击命中 +10，尝试后消耗。同一人只保留一个标记。",
+      "text": "标记 4 格内可见敌人两轮；下一次己方单体武器攻击命中 +10，尝试后消耗。同一人只保留一个标记。 同次攻击的标记与临时命中加成合计最多 +10；负面命中效果另行扣除。",
       "active": true,
       "extended": true,
       "icon": "abacus_mark",
@@ -492,7 +487,7 @@
     "pang_share": {
       "owner": "xiaopangxu",
       "name": "借你半面盾",
-      "text": "给相邻队员近防 +4、决心 +4，至其第二次回合结束。完成个人成长后近防变为 +6。",
+      "text": "给相邻队员近防 +4、决心 +4，至其第二次回合结束。11 级精通后近防变为 +6。",
       "active": true,
       "extended": true,
       "icon": "borrow_strike",
@@ -544,7 +539,7 @@
     "berry_mark": {
       "owner": "manyuemei",
       "name": "红线记号",
-      "text": "给 4 格内可见敌人留下红线；下一次己方单体远程武器命中 +8，尝试后消耗，最多持续两轮。自己只保留一个红线记号。",
+      "text": "给 4 格内可见敌人留下红线；下一次己方单体远程武器命中 +8，尝试后消耗，最多持续两轮。自己只保留一个红线记号。 同次攻击的标记与临时命中加成合计最多 +10；负面命中效果另行扣除。",
       "active": true,
       "extended": true,
       "icon": "abacus_mark",
@@ -658,7 +653,7 @@
     "bear_strike": {
       "owner": "tongzhu",
       "name": "小熊出击",
-      "text": "消耗一层看懂，干扰 3 格内人类或绿皮的下一次单体武器命中 -10；尝试后消耗，最多持续至其第二次回合结束。每战最多两次。",
+      "text": "干扰 3 格内人类或绿皮的下一次单体武器命中 -10；尝试后消耗，最多持续至其第二次回合结束。每战最多两次。",
       "active": true,
       "extended": true,
       "icon": "bear_strike",
@@ -676,7 +671,7 @@
     "know_rules": {
       "owner": "tongzhu",
       "name": "先懂规则",
-      "text": "4 格内可见敌人连续两次使用同一武器技能时，获得一层看懂；最多两层，每轮最多一层，战后清零。",
+      "text": "4 格内可见敌人连续两次使用同一武器技能时，获得一层看懂，每层使自身近战命中 +3；最多两层，每轮最多一层，战后清零。",
       "active": false,
       "extended": true,
       "icon": "know_rules",
@@ -685,7 +680,7 @@
     "cup_signal": {
       "owner": "tongzhu",
       "name": "敲杯为号",
-      "text": "给自己与 3 格内队员下一次单体武器技能减免 4 疲劳；自动消耗最多两层看懂，每层再减 2，最低 0。两次回合结束后过期；优惠取最高。",
+      "text": "给自己与 3 格内队员下一次单体武器技能减免 4 疲劳，最低 0。两次回合结束后过期；优惠取最高。",
       "active": true,
       "extended": true,
       "icon": "cup_signal",
@@ -771,7 +766,7 @@
     "next_path": {
       "owner": "wanshe",
       "name": "下一招换个路",
-      "text": "本次行动以普通单体近战命中后，下一次蛇形试招少耗 4 疲劳；发动后清除，不赠送攻击。",
+      "text": "每轮一次，普通单体近战命中后，为本次行动内下一次普通单体近战减免 4 疲劳；命中或落空都消耗优惠，不赠送攻击。",
       "active": false,
       "extended": true,
       "icon": "next_path",
@@ -1032,7 +1027,7 @@
     "short_sprint": {
       "owner": "qianhan",
       "name": "短坡冲刺",
-      "text": "安全冲至相邻同高空地，免脱离攻击；本次下一次单体近战命中 +8，至当前行动结束失效。当前版本只移动一步。",
+      "text": "安全冲至相邻同高空地，免脱离攻击；本次下一次单体近战命中 +8，至当前行动结束失效。当前版本只移动一步。 同次攻击的标记与临时命中加成合计最多 +10；负面命中效果另行扣除。",
       "active": true,
       "extended": true,
       "icon": "short_sprint",
@@ -1141,49 +1136,6 @@
       "active": false,
       "extended": true,
       "icon": "bell_lead",
-      "growth": true
-    },
-    "guard_self": {
-      "owner": "chenzhihan",
-      "name": "先护住自己",
-      "text": "持盾自保：近防 +8，受到的直接武器生命伤害减少 10%，至自己下次回合开始。护甲照常结算。",
-      "active": true,
-      "extended": true,
-      "icon": "guard_self",
-      "mode": "buff",
-      "ap": 4,
-      "fatigue": 16,
-      "cd": 2,
-      "target": "self",
-      "range": 0,
-      "shield": true,
-      "once": false,
-      "growth": false
-    },
-    "remember_shield": {
-      "owner": "chenzhihan",
-      "name": "这一盾记住了",
-      "text": "持盾时，每轮首次承受敌方单体近战伤害后记住攻击者，本轮再被同一人攻击时近防 +6。",
-      "active": false,
-      "extended": true,
-      "icon": "remember_shield",
-      "growth": false
-    },
-    "moon_cake": {
-      "owner": "chenzhihan",
-      "name": "月饼帮",
-      "text": "把准备好的月饼分给自己与 2 格内伙伴：决心 +6，持续至各自第二次回合结束；每战一次。当前版本以战斗准备能力呈现，不消耗世界地图食物。",
-      "active": true,
-      "extended": true,
-      "icon": "moon_cake",
-      "mode": "team",
-      "ap": 4,
-      "fatigue": 14,
-      "cd": 0,
-      "target": "self",
-      "range": 2,
-      "shield": false,
-      "once": true,
       "growth": true
     }
   },
@@ -1317,15 +1269,6 @@
     "look_flag": {
       "br": 6,
       "start": true
-    },
-    "guard_self": {
-      "md": 8,
-      "regular": 0.9,
-      "start": true
-    },
-    "moon_cake": {
-      "br": 6,
-      "turns": 2
     }
   },
   "adaptations": [
@@ -1334,7 +1277,7 @@
     "顶上去采用有条件的单次近战攻击拦截：护卫必须持盾、守位且仍是攻击者合法目标。无法选中只在敌人另有合法单体目标时生效，不提供无敌。",
     "欧气使用原版至少 20% 士气重掷属性；乐天派改为每战一次、回合开始时从动摇或崩溃恢复一级，不能解除逃跑。守门与撑帘使用持续期间的原版推拉免疫。",
     "锁住车架改为消耗工具的相邻束缚，不制作地格陷阱；接后排改为远防与疲劳支援，不赠射击；侦路眼提供战场视野，不生成世界路线情报。",
-    "月饼改为每战一次的队伍决心支援；铃声带路改为回合末恢复邻接队员疲劳；再住一晚和未走的人分别体现休息与掩护伤员。小酒瓶队友给的球、老蔡好牌、小龟护卫等已补齐第三项。",
-    "小宁按外星人、流口水重写；小哈尼和宋暖阳补上温和支援与鹌鹑防守组。小龟保留小龟身份与阿飞羁绊。少数新技能使用借用图标。"
+    "小宁按外星人、流口水重写；罗一可和宋暖阳补上温和支援与鹌鹑防守组。小龟保留小龟身份与阿飞羁绊。少数新技能使用借用图标。",
+    "v0.17：每人 7 级只选一项，11 级精通；松口气、下一路、看懂规则、熊掌与杯子信号拆除互相依赖，均可独立使用。"
   ]
 }

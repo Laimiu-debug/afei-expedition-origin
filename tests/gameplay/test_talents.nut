@@ -10,13 +10,16 @@ local expect=function(v,label){checks++;if(!v)throw "FAIL "+label;};
 ::talentOrigin <- true;
 A.isOrigin=function(){return ::talentOrigin;};
 A.syncPersonalGrowth=function(bro){};
+A.syncBalance=function(bro){}; // Dedicated base/trait migration suite.
 A.syncMemberSkills=function(bro){}; // Exercised with native skill base in test_member_skills.nut.
 A.syncPromotion=function(bro){};
 A.syncCharacterArt=function(bro){};
+A.syncIdeasCharacter=function(bro){}; // Intrinsic turtle mechanics have a dedicated suite.
 function talentActor(key,stars,count=10) {
-    local flags={values={afeix_character=key},has=function(k){return k in this.values;},get=function(k){return this.values[k];},set=function(k,v){this.values[k]<-v;}};
+    // Starting-stat migration is covered by test_roster; isolate talent queue changes here.
+    local flags={values={afeix_character=key,afeix_damou_balance_v17=true,afeix_balance_v18=true},has=function(k){return k in this.values;},get=function(k){return this.values[k];},set=function(k,v){this.values[k]<-v;}};
     return addTalentFixture({level=1,props={Hitpoints=83,MeleeSkill=77},hp=22,xp=999,gear=["mail"],perks=["gifted"],
-        background={m={DailyCost=1,RawDescription=""},buildDescription=function(_){}},
+        background={m={DailyCost=1,RawDescription="",Name="",BackgroundDescription="",Description=""},getID=function(){return "background.afeix_"+key;},buildDescription=function(_){}},
         getFlags=function(){return flags;},getLevel=function(){return this.level;},
         getBackground=function(){return this.background;},getSkills=function(){return {update=function(){}};}
     },stars,count);
@@ -34,12 +37,12 @@ foreach(key,profile in old) {
         total+=stars;
         expect(bro.talents[::Const.Attributes[field=="Stamina"?"Fatigue":field]]==stars,"metadata restore applies "+key+" / "+field);
     }
-    local core=["bottle","yuchujiu","xiaoyubeike","yaoyaoya"].find(key)!=null;
-    expect(total==(core?9:6),"correct star budget "+key);
-    expect(bro.talents[6]==3 && (core?bro.talents[4]==3:bro.talents[2]==2),"core or shield essential talents "+key);
+    local reduced=["yuchujiu","xiaoyubeike","yaoyaoya"].find(key)!=null;
+    expect(total==(reduced?5:(key=="bottle"?9:6)),"correct star budget "+key);
+    expect(reduced?(bro.talents[4]==2&&bro.talents[6]==1):(bro.talents[6]==3&&(key=="bottle"?bro.talents[4]==3:bro.talents[2]==2)),"reduced offense defense or retained specialist talents "+key);
     foreach(i,prior in before.talents) if(prior==bro.talents[i])
         expect(equalTalentData(before.attributes[i],bro.m.Attributes[i]),"unchanged attribute rolls preserved "+key);
-    expect(bro.m.Attributes[6][0]>=3 && bro.m.Attributes[6][0]<=4,"next actual defense upgrade has three-star value "+key);
+    expect(bro.m.Attributes[6][0]>=(reduced?2:3) && bro.m.Attributes[6][0]<=(reduced?3:4),"next defense upgrade matches current stars "+key);
     expect(bro.props==props && bro.props.Hitpoints==83 && bro.props.MeleeSkill==77 && bro.hp==22 && bro.xp==999 && bro.gear==gear && bro.perks[0]=="gifted","no earned points or possessions reset "+key);
     local snapshot=A.captureTalentState(bro), rolls=::talentRng.calls;
     A.restoreCharacterMetadata(bro); A.syncRosterTalents(bro);
@@ -51,11 +54,11 @@ foreach(key in A.CharacterOrder) if(!(key in old)) {
     expect(equalTalentData(before.talents,bro.talents) && equalTalentData(before.attributes,bro.m.Attributes) && ::talentRng.calls==rolls,"other members including normal Afei untouched "+key);
 }
 local candidate=talentActor("bottle",old.bottle);
-candidate.getFlags().set("afeix_candidate",true);
+candidate.getFlags().set("afeix_candidate",true);candidate.getFlags().set("afeix_v26_quote",220);
 A.recruitPrice=function(key){return 220;};
 A.restoreCharacterMetadata(candidate);
 expect(candidate.talents[4]==3 && candidate.m.HiringCost==220,"old town hire candidate migrates without recruitment");
-foreach(key in ["bottle","yanzi",""]) {
+foreach(key in ["bottle","chenzhihan",""]) {
     local bro=talentActor(key,{MeleeSkill=1}), before=A.captureTalentState(bro);
     ::talentOrigin=false; A.syncRosterTalents(bro); ::talentOrigin=true;
     if(key!="bottle") A.syncRosterTalents(bro);
@@ -78,5 +81,35 @@ foreach(failure in ["roll","dirty"]) {
     try{A.syncRosterTalents(bro);}catch(e){threw=true;}
     expect(threw && equalTalentData(before.talents,bro.talents) && equalTalentData(before.attributes,bro.m.Attributes) && !bro.getFlags().has("afeix_talent_revision"),"migration failure is atomic "+failure);
     A.syncRosterTalents(bro);expect(bro.talents[4]==3,"failed migration is retryable "+failure);
+}
+// Saves that already applied revision 1 must downgrade nine stars too. Pending
+// ordinary upgrades change; earned stats and queued veteran +1 entries survive.
+foreach(key,third in {yuchujiu="Initiative",xiaoyubeike="Hitpoints",yaoyaoya="Stamina"}) {
+    local nine={MeleeSkill=3,MeleeDefense=3};nine[third]<-3;
+    local bro=talentActor(key,nine,5);bro.level=12;bro.m.LevelUps=3;
+    bro.getFlags().set("afeix_talent_revision",1);
+    foreach(row in bro.m.Attributes)foreach(i,v in row)row[i]=i<2?4:1;
+    local before=A.captureTalentState(bro),props=clone bro.props;
+    A.restoreCharacterMetadata(bro);
+    expect(bro.getFlags().get("afeix_talent_revision")==3,"revision one saves migrate again "+key);
+    expect(bro.talents[4]==2&&bro.talents[6]==1&&bro.talents[::Const.Attributes[third=="Stamina"?"Fatigue":third]]==2,"nine to five stars "+key);
+    foreach(i,row in bro.m.Attributes){
+        if(before.talents[i]==bro.talents[i])expect(equalTalentData(before.attributes[i],row),"unchanged queue preserved "+key+" / "+i);
+        else {
+            local range=::Const.AttributesLevelUp[i];
+            for(local j=0;j<2;j++)expect(row[j]>=range.Min+bro.talents[i]&&row[j]<=range.Max,"pending rolls use downgraded range "+key);
+        }
+        for(local j=2;j<row.len();j++)expect(row[j]==1,"veteran queue unaffected by downgrade "+key);
+    }
+    expect(bro.props.Hitpoints==props.Hitpoints&&bro.props.MeleeSkill==props.MeleeSkill&&bro.hp==22&&bro.xp==999&&bro.level==12&&bro.m.LevelUps==3,"downgrade keeps earned growth and health "+key);
+    local stable=A.captureTalentState(bro),calls=::talentRng.calls;
+    A.restoreCharacterMetadata(bro);
+    expect(::talentRng.calls==calls&&equalTalentData(stable.attributes,bro.m.Attributes),"downgrade only rerolls once "+key);
+}
+// Revision bump must not reroll the unchanged nine-star/defensive specialists.
+foreach(key in ["bottle","damou","laocai","dae","keke","xiaogui"]) {
+    local bro=talentActor(key,A.Characters[key].stars),before=A.captureTalentState(bro),calls=::talentRng.calls;
+    bro.getFlags().set("afeix_talent_revision",1);A.syncRosterTalents(bro);
+    expect(::talentRng.calls==calls&&equalTalentData(before.attributes,bro.m.Attributes)&&equalTalentData(before.talents,bro.talents),"unchanged revision one profile never rerolls "+key);
 }
 print("TESTS_PASSED="+checks+"\n");

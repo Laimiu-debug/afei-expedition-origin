@@ -1,0 +1,9 @@
+{
+  "version": "0.27.4",
+  "download_http_status": 200,
+  "sha256": "125c7284a03ca706d413ac9e5c4cfe180602183e401eb2f1db8fd04678be87df",
+  "size": 3674260,
+  "download_bytes_match": true,
+  "dns_resolution": "server-verified public IPv4 216.198.79.1; local DNS timed out",
+  "tls_hostname_verified": true
+}

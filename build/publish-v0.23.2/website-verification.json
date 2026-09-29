@@ -1,0 +1,13 @@
+{
+  "detail_url": "https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "download_url": "https://bbmod.site/files/eb67fe28-797c-45d9-af1d-139fa0fb916c/download/",
+  "http_status": 200,
+  "version": "0.23.2",
+  "release_id": "eb67fe28-797c-45d9-af1d-139fa0fb916c",
+  "sha256": "3a521049f570f3a40318582d4a6d612f7199ac9504a345278aed427c1ba94a86",
+  "size": 2253379,
+  "bytes_match": true,
+  "crc_passed": true,
+  "catalog_and_notes_match": true,
+  "previous_version_download_unchanged": true
+}

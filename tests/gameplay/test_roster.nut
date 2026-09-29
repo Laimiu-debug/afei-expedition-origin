@@ -33,7 +33,7 @@ function makeBrother() {
         addToBag=function(item) { this.bag.push(item); }
     };
     return {
-        id=++::testState.serial, m={ Level=1, XP=0, LevelUps=0, HireTime=0 }, name="", title="", place=255, hitpoints=0,
+        id=++::testState.serial, m={ Level=1, XP=0, LevelUps=0, PerkPoints=0, PerkPointsSpent=0, HireTime=0 }, name="", title="", place=255, hitpoints=0,
         getID=function() { return this.id; },
         getFlags=function() { return flags; },
         getBaseProperties=function() { return properties; },
@@ -42,11 +42,13 @@ function makeBrother() {
         getItems=function() { return items; },
         getSkills=function() { return {update=function(){}}; },
         getHitpointsMax=function() { return properties.Hitpoints; },
+        getHitpoints=function() { return this.hitpoints; },
         getPlaceInFormation=function() { return this.place; },
         setHitpoints=function(n) { this.hitpoints=n; },
         fillAttributeLevelUpValues=function(n) {},
-        setStartValuesEx=function(backgrounds, traits) {},
+        setStartValuesEx=function(backgrounds, traits) {this.m.Level=2;this.m.PerkPoints=1;this.m.LevelUps=1;},
         setName=function(n) { this.name=n; },
+        getName=function() { return this.name; },
         setTitle=function(n) { this.title=n; },
         setPlaceInFormation=function(n) { this.place=n; }
     };
@@ -80,7 +82,7 @@ function makeBrother() {
         isCamping=function() { return ::testState.camping; }, updateFormation=function() {}
     }
 };
-::AfeixExpedition <- { RosterMax=40, CombatMax=10, Schema=2 };
+::AfeixExpedition <- { RosterMax=40, CombatMax=12, Schema=2 };
 dofile("src/scripts/mods/afeix/core.nut");
 dofile("src/scripts/mods/afeix/characters.nut");
 dofile("src/scripts/mods/afeix/quests.nut");
@@ -180,10 +182,10 @@ function runRosterChecks() {
     // functions. UI has its own tests; this checks money and saved state here.
     reset();
     require(A.CharacterOrder.len()==34 && A.Characters.len()==34,"exactly_thirty_four_unique_theme_characters");
-    require(A.CharacterOrder.find("yanzi")==null && !("yanzi" in A.Characters),"retired_identity_is_absent_from_active_recruitment_data");
+    require(A.CharacterOrder.find("yanzi")!=null && A.Characters.yanzi.name=="眼子" && A.Characters.yanzi.aliases.find("刘佳俊")!=null,"yanzi_returns_with_confirmed_name_and_alias");
     local secondChapterCount=0;
     foreach(key in A.CharacterOrder) if(A.Characters[key].chapter==2) secondChapterCount++;
-    require(secondChapterCount==7,"second_chapter_has_seven_active_members");
+    require(secondChapterCount==8,"second_chapter_has_eight_active_members");
     foreach(key in ["afei","damou","mocha"]) A.makeCharacter(key);
     local hired=3;
     foreach(chapter in A.Chapters) {
@@ -223,7 +225,7 @@ function runRosterChecks() {
 
     // Failure cases keep the new per-person invitation state and money intact.
     reset(); A.set("paid_contracts",12);
-    local key="chenzhihan", choices=A.Characters[key].encounterChoices; A.set("met_"+key,true);
+    local key="yangmiemie", choices=A.Characters[key].encounterChoices; A.set("met_"+key,true);
     local paidChoice=choices[0].cost>0 ? 0 : 1;
     ::World.Assets.money=choices[paidChoice].cost-1;
     local beforeMoney=::World.Assets.money;
@@ -264,10 +266,9 @@ function runRosterChecks() {
     require(A.findCharacter("bottle")==oldBottle && oldBottle.m.XP==1234 && oldBottle.m.Level==5 && oldBottle.hitpoints==17 && oldBottle.getItems()==oldItems && oldBottle.getBackground().m.DailyCostMult==0.8,"progress_migration_does_not_recreate_or_reset_existing_actor");
     require(A.characterStatus("lili")=="locked" && A.characterStatus("laocai")=="locked","old_work_count_does_not_discover_whole_groups");
 
-    // A removed recruitment entry is still a real saved actor. Recover only
-    // its legacy wage/description, without recreating it or clearing its gear.
+    // Returning a retired member preserves the real saved actor and equipment.
     reset(); A.set("paid_contracts",12);
-    require("yanzi" in A.RetiredCharacters && A.RetiredCharacters.yanzi.wage==12,"retired_metadata_keeps_original_yanzi_base_wage");
+    require(!("yanzi" in A.RetiredCharacters) && A.Characters.yanzi.wage==12,"restored_member_keeps_original_yanzi_base_wage");
     local retired=::testRoster.create("scripts/entity/tactical/player");
     retired.getFlags().set("afeix_character","yanzi");
     retired.getFlags().set("afeix_schema",2);
@@ -287,16 +288,65 @@ function runRosterChecks() {
     require(::World.State.onDeserialize(true)=="native-world-loaded","retired_actor_uses_the_normal_late_load_path");
     require(::testRoster.brothers.len()==1 && A.findCharacter("yanzi")==retired && retired.getID()==retiredId,"loading_retired_actor_preserves_same_entity_without_a_clone");
     require(retired.getBackground().m.DailyCost==12 && retired.getBackground().m.DailyCostMult==0.75,"retired_wage_restores_base_without_resetting_saved_multiplier");
-    require(retired.getBackground().m.RawDescription==A.RetiredCharacters.yanzi.description && retired.getBackground().rendered==A.RetiredCharacters.yanzi.description,"retired_background_uses_legacy_description_instead_of_active_catalog");
+    require(retired.getBackground().m.RawDescription==A.Characters.yanzi.description && retired.getBackground().rendered==A.Characters.yanzi.description,"returning_member_receives_current_description");
     require(retired.name=="眼子（旧存档改名）" && retired.title=="原有头衔" && retired.m.Level==9 && retired.m.XP==4321 && retired.m.LevelUps==2 && retired.m.HireTime==27.0,"retired_actor_preserves_name_title_and_growth");
     require(retired.hitpoints==19 && retired.place==32 && retired.getBaseProperties().Hitpoints==71 && retired.getBaseProperties().MeleeSkill==73 && retired.getTalents()[0]==1,"retired_actor_preserves_health_reserve_slot_attributes_and_talents");
     require(retired.getItems()==retiredItems && retiredItems.equipped.len()==1 && retiredItems.equipped[0]==savedWeapon && retiredItems.bag.len()==1 && retiredItems.bag[0]==savedBag,"retired_actor_preserves_equipped_and_bag_item_objects");
-    require(A.characterStatus("yanzi")=="locked" && !A.isRecruitUnlocked("yanzi"),"retired_actor_cannot_unlock_a_new_invitation_even_with_old_flags");
-    require(A.makeCharacter("yanzi")==null && !A.recruit("yanzi").ok && !A.resolveEncounter("yanzi",0).ok && ::World.Assets.money==retiredMoney && ::testRoster.brothers.len()==1,"retired_recruitment_and_encounter_calls_neither_charge_nor_create");
+    require(A.characterStatus("yanzi")=="recruited","returning_actor_is_recognized_as_recruited");
+    require(A.makeCharacter("yanzi")==retired && !A.recruit("yanzi").ok && !A.resolveEncounter("yanzi",0).ok && ::World.Assets.money==retiredMoney && ::testRoster.brothers.len()==1,"returning_member_neither_duplicated_nor_charged");
+    retired.setName("眼子");::World.State.onDeserialize(true);
+    require(retired.name=="眼子" && retired.getBaseProperties().Hitpoints==71,"old_default_name_updates_without_resetting_stats");
     ::testRoster.remove(retired); A.set("dead_yanzi",true);
     require(A.findCharacter("yanzi")==null && A.makeCharacter("yanzi")==null && !A.recruit("yanzi").ok,"retired_deceased_actor_is_not_recreated");
     ::World.Flags.values={};
-    require(A.characterStatus("yanzi")=="locked" && A.makeCharacter("yanzi")==null && !A.resolveEncounter("yanzi",0).ok,"new_campaign_cannot_generate_retired_character_without_any_flags");
+    A.set("departed_yanzi",true);
+    require(A.characterStatus("yanzi")=="departed" && A.makeCharacter("yanzi")==null,"returning_member_does_not_revive_a_departed_actor");
+    ::World.Flags.values={};
+    require(A.characterStatus("yanzi")=="locked" && !A.recruit("yanzi").ok && !A.resolveEncounter("yanzi",0).ok,"new_campaign_still_requires_discovery_before_recruitment");
+    ::testRoster.brothers=[];::World.Flags.values={};::testState.origin=true;
+    local corrected=A.makeCharacter("xiaohani");
+    require(corrected.name=="罗一可","blue_team_slot_recruits_luoyike");
+    corrected.setName("小哈尼");corrected.m.Level=7;corrected.m.XP=1234;
+    A.set("growth_xiaohani",1);
+    ::World.State.onDeserialize(true);
+    require(corrected.name=="罗一可" && A.findCharacter("xiaohani")==corrected,"old_default_name_corrected_on_world_load_without_replacing_actor");
+    require(corrected.m.Level==7 && corrected.m.XP==1234 && A.get("growth_xiaohani",0)==1,"roster_correction_preserves_progress");
+    corrected.setName("自定义伙伴名");
+    ::World.State.onDeserialize(true);
+    require(corrected.name=="自定义伙伴名","roster_correction_preserves_player_chosen_name");
+    ::testRoster.brothers=[];::World.Flags.values={};
+    local balanced=A.makeCharacter("damou");
+    require(balanced.m.Level==1 && balanced.m.PerkPoints==0 && balanced.m.PerkPointsSpent==0 && balanced.m.LevelUps==0,"background_level_two_cannot_leave_a_free_perk");
+    local bp=balanced.getBaseProperties();
+    require(bp.MeleeSkill==55 && bp.MeleeDefense==4 && bp.Hitpoints==55,"new_damou_reduced_start");
+    A.restoreCharacterMetadata(balanced);require(bp.MeleeSkill==55,"new_damou_not_deducted_twice");
+    delete balanced.getFlags().values.afeix_damou_balance_v17;
+    delete balanced.getFlags().values.afeix_balance_v18;
+    bp.Hitpoints=72;bp.Stamina=112;bp.Bravery=55;bp.Initiative=110;bp.MeleeSkill=76;bp.RangedSkill=39;bp.MeleeDefense=18;bp.RangedDefense=7;
+    balanced.m.Level=5;balanced.m.XP=500;balanced.m.PerkPoints=2;balanced.m.PerkPointsSpent=3;
+    balanced.hitpoints=72;
+    A.restoreCharacterMetadata(balanced);A.restoreCharacterMetadata(balanced);
+    require(bp.Hitpoints==65 && bp.Stamina==102 && bp.Bravery==47 && bp.Initiative==102 && bp.MeleeSkill==65 && bp.RangedSkill==35 && bp.MeleeDefense==12 && bp.RangedDefense==4,"legacy_damou_crosses_both_balance_revisions_once");
+    require(balanced.hitpoints==65,"reduced_max_health_clamps_current_health");
+    require(balanced.m.Level==5 && balanced.m.XP==500 && balanced.m.PerkPoints==2 && balanced.m.PerkPointsSpent==3,"legacy_growth_and_spent_perks_preserved");
+    // v0.17 saves and new v0.18 hires, including a persisted town candidate.
+    local fields=["Hitpoints","Stamina","Bravery","Initiative","MeleeSkill","RangedSkill","MeleeDefense","RangedDefense"];
+    local earned=[9,12,6,8,18,7,10,5];
+    foreach(key in A.CharacterOrder) {
+        reset();local b=A.makeCharacter(key), p=b.getBaseProperties(), d=A.Characters[key];
+        A.restoreCharacterMetadata(b);
+        foreach(i,field in fields)require(p[field]==d.attrs[i],"new_hire_keeps_new_base_"+key+"_"+field);
+        delete b.getFlags().values.afeix_balance_v18;
+        local baseline=key in A.CharacterBasesV17 ? A.CharacterBasesV17[key] : d.attrs;
+        foreach(i,field in fields)p[field]=baseline[i]+earned[i];
+        b.hitpoints=19;b.m.Level=8;b.m.XP=2345;b.m.PerkPoints=2;b.m.PerkPointsSpent=5;
+        if(key=="songnuanyang")b.getFlags().set("afeix_candidate",true);
+        local items=b.getItems(),talents=b.getTalents();
+        A.restoreCharacterMetadata(b);A.restoreCharacterMetadata(b);
+        foreach(i,field in fields)require(p[field]==d.attrs[i]+earned[i],"earned_attributes_preserved_after_repeated_load_"+key+"_"+field);
+        require(b.hitpoints==19&&b.m.Level==8&&b.m.XP==2345&&b.m.PerkPoints==2&&b.m.PerkPointsSpent==5&&b.getItems()==items&&b.getTalents()==talents,"migration_preserves_progress_and_never_heals_"+key);
+        require(b.getFlags().get("afeix_balance_v18"),"migration_marked_"+key);
+    }
     print("ALL_ROSTER_BEHAVIOR_CHECKS_PASS\n");
     print("TESTS_PASSED=" + ::rosterTestsPassed + "\n");
 }

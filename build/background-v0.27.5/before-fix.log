@@ -1,0 +1,49 @@
+
+AN ERROR HAS OCCURED [FAIL afei background survives trait cleanup and native UI query]
+
+CALLSTACK
+*FUNCTION [unknown()] tests/gameplay/test_backgrounds.nut line [4]
+*FUNCTION [main()] tests/gameplay/test_backgrounds.nut line [87]
+
+LOCALS
+[checks] 26
+[label] "afei background survives trait cleanup and native UI query"
+[ok] true
+[this] TABLE
+[visible] ARRAY
+[icon] "ui/backgrounds/background_36.png"
+[description] "他替自己的招募旗写下“嘉豪”，却连举稳盾牌都还费劲。凭一张敢开口的嘴和几位愿意帮忙的伙伴，他把临时搭伙喊成了远征团。现在，旗底的每一个名字都在等他把话兑现。
+
+阿飞是远征团的三位开局队长之一。黑旗上的嘉豪二字很气派，旗底这位团长的本事却还没跟上，盾一沉就容易哇哇叫。他喜欢别人把目光投过来，衣领歪了也要先整一下；碰到真要拿队友冒险的决定，笑意却收得比谁都快。大谋能替他顶住前排，抹茶能替他算清账，可“这些人为什么跟你走”终究得由他回答。他想成为大哥，也想亲眼看见自己带来的人越走越稳。眼下，他还在起点。"
+[personalTrait] TABLE
+[randomTrait] TABLE
+[p] TABLE
+[starting] TABLE
+[recruit] TABLE
+[text] "他替自己的招募旗写下“嘉豪”，却连举稳盾牌都还费劲。凭一张敢开口的嘴和几位愿意帮忙的伙伴，他把临时搭伙喊成了远征团。现在，旗底的每一个名字都在等他把话兑现。
+
+阿飞是远征团的三位开局队长之一。黑旗上的嘉豪二字很气派，旗底这位团长的本事却还没跟上，盾一沉就容易哇哇叫。他喜欢别人把目光投过来，衣领歪了也要先整一下；碰到真要拿队友冒险的决定，笑意却收得比谁都快。大谋能替他顶住前排，抹茶能替他算清账，可“这些人为什么跟你走”终究得由他回答。他想成为大哥，也想亲眼看见自己带来的人越走越稳。眼下，他还在起点。
+
+此后，阿飞接受了达库尔的信仰，成为皈依者。信仰改变了，来到黑旗之前的经历并未消失，与伙伴的约定和未完成的个人旅程仍将继续。"
+[converted] TABLE
+[saved] TABLE
+[bg] TABLE
+[items] TABLE
+[props] TABLE
+[flags] TABLE
+[actual] TABLE
+[expected] TABLE
+[personal] TABLE
+[path] "scripts/skills/backgrounds/afeix_afei_background"
+[native] TABLE
+[nativePath] "scripts/skills/backgrounds/daytaler_background"
+[bro] TABLE
+[data] TABLE
+[key] "afei"
+[@INDEX@] 0
+[nativeNew] CLOSURE
+[check] CLOSURE
+[checks] 26
+[A] TABLE
+[vargv] ARRAY
+[this] TABLE

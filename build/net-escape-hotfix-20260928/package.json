@@ -1,0 +1,14 @@
+{
+  "version": "0.23.2",
+  "bytes": 2253379,
+  "entries": 234,
+  "sha256": "3a521049f570f3a40318582d4a6d612f7199ac9504a345278aed427c1ba94a86",
+  "behavior_assertions": 22227,
+  "changed_package_files": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/member_catalog_hooks.nut"
+  ],
+  "method": "Full check_gameplay validation, then deterministic ZIP of src; art rebuild failed while writing existing preview PNG, existing art passed full validation",
+  "native_test": "tests/gameplay/test_native_break_free.nut",
+  "in_game_tested": false
+}

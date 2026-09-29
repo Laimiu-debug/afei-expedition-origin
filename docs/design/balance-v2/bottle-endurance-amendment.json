@@ -1,0 +1,81 @@
+{
+  "changed_cells": [
+    {
+      "sheet": 3,
+      "cell": "M31",
+      "before": 97.0,
+      "after": 127.0
+    },
+    {
+      "sheet": 3,
+      "cell": "AA32",
+      "before": 97.0,
+      "after": 127.0
+    },
+    {
+      "sheet": 3,
+      "cell": "N31",
+      "before": 0.0,
+      "after": 30.0
+    },
+    {
+      "sheet": 4,
+      "cell": "D9",
+      "before": 97.0,
+      "after": 127.0
+    },
+    {
+      "sheet": 10,
+      "cell": "L9",
+      "before": -10.5,
+      "after": 19.5
+    },
+    {
+      "sheet": 13,
+      "cell": "H7",
+      "before": 12.0,
+      "after": 42.0
+    },
+    {
+      "sheet": 13,
+      "cell": "C7",
+      "before": 97.0,
+      "after": 127.0
+    },
+    {
+      "sheet": 13,
+      "cell": "K7",
+      "before": 30.0,
+      "after": 60.0
+    },
+    {
+      "sheet": 16,
+      "cell": "T9",
+      "before": 0.0,
+      "after": 30.0
+    },
+    {
+      "sheet": 16,
+      "cell": "Q9",
+      "before": 0.0,
+      "after": 3.0
+    }
+  ],
+  "all_formulas_preserved": true,
+  "styles_tables_validation_preserved": true,
+  "images_preserved": 177,
+  "radars_preserved": 35,
+  "bottle_radar_cache": 127,
+  "artifact_recalculation_and_visual_review": true,
+  "excel_desktop_recalculation": false,
+  "version": "0.26.1",
+  "request": "小酒瓶疲劳也改到120以上；沿用11级裸疲劳口径",
+  "member": "bottle",
+  "base_stamina": 97,
+  "per_level": 3,
+  "bonus_level_cap": 11,
+  "level11_bare_stamina": 127,
+  "before_workbook_sha256": "4e507618259ca1a28ce5cb31cd341fdbd1a2b61c870cdec780720cd72eb431a8",
+  "workbook_sha256": "7ac85eda90a9af0932735ef25857bd35a3aad77cd69a6ab1d5cf4f7773be8388",
+  "proposal_sha256": "d10046f019ae2bf1f2c6a491868e9c91f0bf280042f7fcab6dfce10c8d5a2305"
+}

@@ -4,7 +4,7 @@ this.afeix_expedition_scenario <- this.inherit("scripts/scenarios/world/starting
     {
         this.m.ID = "scenario.afeix_expedition";
         this.m.Name = "阿飞远征团";
-        this.m.Description = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]阿飞、王大谋、午夜抹抹茶带着一面黑旗上路。大谋扛住前阵，抹茶照应后排；眼下还不成气候的阿飞，要在一次次战斗中学会带人。[/p][p][color=#bcad8c]三人启程：[/color]在战斗与旅行中结识各有本领的伙伴，前往城镇招募同行者。[/p][p][color=#bcad8c]十人出战：[/color]从队伍中自由挑选阵容。世界地图按 F8 打开黑旗名册。[/p]";
+        this.m.Description = "[p=c][img]gfx/ui/events/event_80.png[/img][/p][p]阿飞、王大谋、午夜抹抹茶带着一面黑旗上路。大谋扛住前阵，抹茶照应后排；眼下还不成气候的阿飞，要在一次次战斗中学会带人。[/p][p][color=#bcad8c]三人启程：[/color]在战斗与旅行中结识各有本领的伙伴，前往城镇招募同行者。[/p][p][color=#bcad8c]十二人出战：[/color]从队伍中自由挑选阵容。世界地图按 F8 打开黑旗名册。[/p]";
         this.m.Difficulty = 2;
         this.m.Order = 87;
         this.m.IsFixedLook = false;
@@ -15,7 +15,7 @@ this.afeix_expedition_scenario <- this.inherit("scripts/scenarios/world/starting
         this.World.Assets.m.BrothersMax = ::AfeixExpedition.RosterMax;
         this.World.Assets.m.BrothersMaxInCombat = ::AfeixExpedition.CombatMax;
         // Vanilla counts the strongest brothers, including reserves. Cap that
-        // pool at the same ten seats this origin can actually deploy.
+        // pool at the same twelve seats this origin can actually deploy.
         this.World.Assets.m.BrothersScaleMax = ::AfeixExpedition.CombatMax;
     },
     function onSpawnAssets()

@@ -1,0 +1,27 @@
+{
+  "version": "0.25.2",
+  "verified_at": "2026-09-29T10:40:44.832333+08:00",
+  "issue": "F8 over the town character screen inserts a non-cancellable event above its close backstep",
+  "reproduction_before_fix": "test_native_ledger_ui.nut failed: F8 in character screen still permits C/Escape/close button, town=true",
+  "native_ui_regression": {
+    "file": "tests/gameplay/test_native_ledger_ui.nut",
+    "assertions": 73,
+    "log": "TESTS_PASSED=73\r\n"
+  },
+  "syntax_passed": true,
+  "script_count": 114,
+  "behavior_tests_passed": true,
+  "test_groups": 41,
+  "assertions": 25926,
+  "package": "dist/mod_afeix_expedition v0.25.2.ZIP",
+  "sha256": "2670d257f91dedff914b4790b3273bf68c7c62550054e6b13343445e94ab3908",
+  "entries": 267,
+  "crc_passed": true,
+  "source_bytes_match": true,
+  "installed": false,
+  "published": false,
+  "in_game_tested": false,
+  "installed_package_sha256": "ac879d85fd23d1a7164eecc733094354e5a086f63b72b78bf6f349e3e9fb2677",
+  "existing_local_log": "2026-09-29 00:17:14 local session; no script errors; not evidence of the reported stuck session",
+  "limits": "Uses native Squirrel UI lifecycle and key/menu handling with simulated drawing and async callbacks; existing stuck process requires restart."
+}

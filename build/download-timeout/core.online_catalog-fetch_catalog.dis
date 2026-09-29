@@ -1,0 +1,108 @@
+  81            RESUME                   0
+
+  82            BUILD_LIST               0
+                STORE_FAST               1 (parts)
+                LOAD_CONST               1 (0)
+                STORE_FAST               2 (total)
+                LOAD_GLOBAL              0 (time)
+                LOAD_ATTR                2 (monotonic)
+                PUSH_NULL
+                CALL                     0
+                STORE_FAST               3 (started)
+
+  83            LOAD_GLOBAL              5 (_request + NULL)
+                LOAD_GLOBAL              7 (site_origin + NULL)
+                LOAD_FAST                0 (origin)
+                CALL                     1
+                LOAD_CONST               2 ('/api/v1/catalog/')
+                BINARY_OP                0 (+)
+                CALL                     1
+                BEFORE_WITH
+        L1:     STORE_FAST               4 (response)
+
+  84            LOAD_FAST                4 (response)
+                LOAD_ATTR                9 (read1 + NULL|self)
+                LOAD_CONST               3 (131072)
+                CALL                     1
+                COPY                     1
+                STORE_FAST               5 (block)
+                TO_BOOL
+                POP_JUMP_IF_FALSE      102 (to L6)
+
+  85    L2:     LOAD_FAST                2 (total)
+                LOAD_GLOBAL             11 (len + NULL)
+                LOAD_FAST                5 (block)
+                CALL                     1
+                BINARY_OP               13 (+=)
+                STORE_FAST               2 (total)
+
+  86            LOAD_FAST                2 (total)
+                LOAD_CONST               4 (4194304)
+                COMPARE_OP             148 (bool(>))
+                POP_JUMP_IF_TRUE        28 (to L3)
+                LOAD_GLOBAL              0 (time)
+                LOAD_ATTR                2 (monotonic)
+                PUSH_NULL
+                CALL                     0
+                LOAD_FAST                3 (started)
+                BINARY_OP               10 (-)
+                LOAD_CONST               5 (30)
+                COMPARE_OP             148 (bool(>))
+                POP_JUMP_IF_FALSE       11 (to L4)
+
+  87    L3:     LOAD_GLOBAL             13 (ValueError + NULL)
+                LOAD_CONST               6 ('目录数据过大或读取超时。')
+                CALL                     1
+                RAISE_VARARGS            1
+
+  88    L4:     LOAD_FAST                1 (parts)
+                LOAD_ATTR               15 (append + NULL|self)
+                LOAD_FAST                5 (block)
+                CALL                     1
+                POP_TOP
+
+  84            LOAD_FAST                4 (response)
+                LOAD_ATTR                9 (read1 + NULL|self)
+                LOAD_CONST               3 (131072)
+                CALL                     1
+                COPY                     1
+                STORE_FAST               5 (block)
+                TO_BOOL
+                POP_JUMP_IF_FALSE        2 (to L6)
+        L5:     JUMP_BACKWARD          102 (to L2)
+
+  83    L6:     LOAD_CONST               0 (None)
+                LOAD_CONST               0 (None)
+                LOAD_CONST               0 (None)
+                CALL                     2
+                POP_TOP
+
+  89    L7:     LOAD_GLOBAL             17 (parse_catalog + NULL)
+                LOAD_GLOBAL             18 (json)
+                LOAD_ATTR               20 (loads)
+                PUSH_NULL
+                LOAD_CONST               7 (b'')
+                LOAD_ATTR               23 (join + NULL|self)
+                LOAD_FAST                1 (parts)
+                CALL                     1
+                CALL                     1
+                CALL                     1
+                RETURN_VALUE
+
+  83    L8:     PUSH_EXC_INFO
+                WITH_EXCEPT_START
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L9)
+                RERAISE                  2
+        L9:     POP_TOP
+       L10:     POP_EXCEPT
+                POP_TOP
+                POP_TOP
+                JUMP_BACKWARD_NO_INTERRUPT 60 (to L7)
+
+  --   L11:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+ExceptionTable:
+  L1 to L5 -> L8 [1] lasti
+  L8 to L10 -> L11 [3] lasti

@@ -1,0 +1,45 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-27",
+  "status": "selected_after_offline_visual_review",
+  "user_request": "按用户附图更新李李；短棕发、足球发卡；不保留弓箭手装备；必须实际接入游戏。",
+  "records": [
+    {
+      "key": "lili",
+      "name": "李李超欧",
+      "prompt": "Use case: style-transfer / identity-preserve.\nAsset type: PRODUCTION transparent Battle Brothers tactical game pawn for 李李超欧, not an illustration, poster or concept sheet.\nInput roles:\nImage 1 is ONLY the user-chosen facial identity, short chestnut bob hairstyle, gentle smile and BLACK-AND-WHITE SOCCER BALL HAIR CLIP design; keep these distinctive traits. Its realistic rendering, front-facing pose and long torso are NOT suitable for the game and must be changed.\nImage 2 is ONLY the official game's economical hand-painted rendering and compact pawn proportions. Never copy its male faces, beard or bare chest.\nImage 3 is ONLY the existing sprite's crop and equipment-compatible shoulder/head silhouette reference. Do NOT copy the old black hair, flower accessory or face.\n\nCreate ONE connected head-neck-shoulders bust with actual transparent alpha background. Turn the entire head, chest, shoulders AND eye gaze clearly toward SCREEN RIGHT by about 35 degrees: right-facing three-quarter view, both eyes visible, far eye smaller, nose displaced rightward. No head tilt.\nPreserve the identity from image 1: adult young woman with soft oval face, warm brown almond eyes, gentle eyebrows, small rounded nose, natural lightly smiling closed lips, chestnut short chin-length bob with loose fringe. Hair in 6 to 8 broad angular masses. Add ONE readable round black-and-ivory soccer-ball hair clip at the SCREEN LEFT temple, within the hair silhouette, about one fifth of the head width; clear black pentagon markings, a flat wearable ornament. No flower hairclip.\nStrict GAME PROPORTIONS: large head accounts for approximately 70 percent of total nontransparent bust height; very short but complete connected neck; narrow compact sloping shoulders and a shallow curved chest base. The full head and neck above the collar are readable. The bottom portion is only a small shoulder-and-collar pedestal, NOT a full upper-body illustration. Rounded bust base, no cut jaw or floating head. The character will be uniformly reduced to at most 88 x 100 visible pixels in a 114 x 142 sprite. Design every mark for THAT size. Head must fit inside standard game helmet footprint.\nOutfit: simple low-collared muted beige medieval cloth tunic, subtle brown neckline with two simple cord strokes, no bulky collar or scarf. NO bow, arrows, quiver, weapons, armor, bags, diagonal straps, flower brooch or jewelry. Equipment will be overlaid by the game.\nSTRICT PAINT STYLE: economical matte hand-drawn Battle Brothers pawn. Thick dark-brown irregular silhouette contour. Flat warm skin base plus TWO or THREE large shadow planes at most. Eyes simplified to small painted eyelid strokes and dark brown pupils, no glossy eyeballs or many highlights. Nose indicated by one simple shadow plane. Lips one soft short line. Hair broad shaded clumps, no fine individual strands. Cloth 3 broad color blocks, no textile grain, no embroidery details or realistic wrinkles. Remove all photographic/rendered-skin texture, avoid realistic glamour portrait and anime. Keep the user's recognizable proportions and friendly expression while strongly simplifying.\nONE sprite only, centered with transparent margin around all edges. Actual transparent background, no white rectangle, no checkerboard baked in, no cast shadow, glow, border, watermark, text, panels, hands, arms or legs. Complete uncut hair, clip, jaw, neck and compact shoulder base.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/character-concepts/lili/lili-football-plain-v01.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/facing/lili.png"
+      ],
+      "selected_source": "art/runtime/portraits-v05/sources/user-v18/lili.png",
+      "generated_original": "C:/Users/25647/.codex/generated_images/01a0e1aa-5e78-74d0-a826-eb755a8f575e/exec-954d485e-3f97-4bb6-ae60-78df086b9f84.png",
+      "review": {
+        "comparison": "build/playtest-lili/comparison.png",
+        "transparent_rgba": true,
+        "source_pixels_edited_after_generation": false,
+        "game_size_reviewed": true,
+        "game_canvas": [
+          114,
+          142
+        ],
+        "visible_size": [
+          75,
+          100
+        ],
+        "soccer_clip_readable_at_game_size": true,
+        "equipment_reviewed": [
+          "armor",
+          "open_helmet",
+          "closed_helmet"
+        ],
+        "equipment_limitations": [
+          "Helmets naturally cover the soccer clip; short hair remains visible around helmet edges."
+        ],
+        "in_game_tested": false
+      },
+      "source_sha256": "181ad42c05cc78892753e0b4bc37ea25e8c5a0130015ec0bad9b43c3c24d1ea9"
+    }
+  ]
+}

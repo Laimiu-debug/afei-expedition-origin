@@ -24,7 +24,7 @@ local makeBro=function(key){return {
 foreach(key in ["afei","damou","mocha"]){brothers.push(makeBro(key));A.set("ever_"+key,true);}
 local event={m={Notice="",Selected=[],FormationPage=0}};
 local freshHome=A.ledgerPage(event,"home"), freshMembers=A.ledgerPage(event,"recruits");
-expect(freshHome.Options.len()==4 && freshMembers.Options.len()==4,"only basic controls and three captains on fresh start");
+expect(freshHome.Options.len()==5 && freshMembers.Options.len()==4,"basic controls, training and three captains on fresh start");
 foreach(page in ["home","quest","recruits","growth","roots:0","promotion","promotion:feidie","bicycle","bicycle_release_confirm"]){
     local screen=A.ledgerPage(event,page), text=screen.Text;
     foreach(option in screen.Options)text+=option.Text;
@@ -37,7 +37,7 @@ foreach(key in A.CharacterOrder)if(!A.Characters[key].isCaptain){
 }
 expect(A.EncounterRequirements.len()==31,"all 31 recruits have independent conditions");
 foreach(key,requirement in A.EncounterRequirements){
-    local metrics={jobs=99,types=9,battles=99,level=11,towns=99,companions=34};
+    local metrics={days=999,jobs=99,types=9,battles=99,level=11,towns=99,companions=34};
     expect(A.canMeetCharacter(key,metrics),"reachable condition "+key);
     foreach(field,threshold in requirement){
         local low=clone metrics;low[field]=threshold-1;
@@ -49,7 +49,7 @@ A.TavernTown=51;
 expect(A.prepareTavernMeeting()=="tavern" && A.get("tavern_towns")==1,"initial inn visit records location but no free recruit");
 A.set("paid_contracts",1);
 expect(A.prepareTavernMeeting()=="tavern" && !A.isCharacterKnown("bottle"),"tavern does not bypass native hiring queue");
-A.set("paid_contracts",9);brothers[0].level=5;brothers[0].battles=9;
+A.set("paid_contracts",9);brothers[0].level=7;brothers[0].battles=9;
 local before=A.knownMembers().len();A.prepareTavernMeeting();
 expect(A.knownMembers().len()==before,"same town/day cannot reroll more members");
 day++;A.prepareTavernMeeting();expect(A.knownMembers().len()==before,"waiting in tavern cannot generate people");
@@ -80,6 +80,11 @@ local letters=A.ledgerPage(event,"roots:0");expect(letters.Options.len()==2&&let
 A.set("paid_contracts",9);foreach(key in ["keke","xiaogui","yuchujiu"])A.set("ever_"+key,true);
 foreach(id in A.RootOrder)A.revealDiscovery("roots:"+id);
 expect(A.rootsUnlocked()&&!A.feidieKnown(),"six independent openings qualify, then await their own reveal");
+expect(!A.revealDiscovery("promotion:feidie"),"roots alone cannot reveal hidden promotion");
+brothers[0].level=9;brothers[0].battles=11;
+expect(!A.revealDiscovery("promotion:feidie"),"hidden reveal needs twelve personal battles");
+brothers[0].battles=12;A.set("growth_done_afei",false);
+expect(!A.revealDiscovery("promotion:feidie"),"hidden reveal needs personal growth");A.set("growth_done_afei",true);
 expect(A.nextDiscovery()=="promotion:feidie"&&A.revealDiscovery("promotion:feidie")&&A.feidieKnown(),"hidden route discovered after actual openings");
 safe=false;expect(A.nextDiscovery()==null&&!A.revealDiscovery("bicycle"),"unsafe state cannot trigger stories");safe=true;
 origin=false;expect(!A.canMeetCharacter("lili")&&A.nextDiscovery()==null,"other origins unaffected");origin=true;

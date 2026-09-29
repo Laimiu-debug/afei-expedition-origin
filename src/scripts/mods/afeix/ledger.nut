@@ -61,10 +61,13 @@ A.ledgerPage <- function(event, page) {
     local kind = parts[0];
     local extension = "storyLedgerPage" in A ? A.storyLedgerPage(event, page) : null;
     if (extension == null && "promotionLedgerPage" in A) extension = A.promotionLedgerPage(event, page);
+    if (extension == null && "trainingLedgerPage" in A) extension = A.trainingLedgerPage(event, page);
+    if (extension == null && "ideasLedgerPage" in A) extension = A.ideasLedgerPage(event, page);
+    if (extension == null && "bannerLedgerPage" in A) extension = A.bannerLedgerPage(event, page);
     if (extension != null) {
         screen = extension;
     } else if (kind == "home") {
-        screen.Text = "黑旗名册\n\n同行 " + A.roster().len() + " 人；当前出战 " + A.deployedIds().len() + " / 10 人。\n\n这里记着接下的委托和已经认识的伙伴。新的相遇要在路上寻找，也可以去城镇酒馆坐坐。原版人物栏仍可调整站位、装备和待命安排。\n世界地图按 F8 可重新打开名册。";
+        screen.Text = "黑旗名册\n\n同行 " + A.roster().len() + " 人；当前出战 " + A.deployedIds().len() + " / " + A.CombatMax + " 人。\n\n这里可以查看委托、伙伴和旅途中的故事。想找新伙伴，请看城镇招募栏；去酒馆可以遇见熟人、聊聊近况。人物栏可以调整站位、装备和待命安排。\n世界地图按 F8 可重新打开名册。";
         if (!A.canManage()) screen.Text += "\n\n现在可以查看记录；招募和确认编队，请到友好城镇附近或安全扎营处。";
         screen.Options.push(A.ledgerNav("查看委托记录", "quest"));
         screen.Options.push(A.ledgerNav("已经认识的伙伴", "recruits"));
@@ -74,7 +77,10 @@ A.ledgerPage <- function(event, page) {
             e.m.Notice = "";
             return "formation:0";
         }));
-        if (A.hasStoryRecords()) screen.Options.push(A.ledgerNav("翻看旅途旧事", "growth"));
+        if ("bannerLedgerPage" in A) screen.Options.push(A.ledgerNav("战团事务（技能／旗帜）", "company"));
+        else if ("trainingLedgerPage" in A) screen.Options.push(A.ledgerNav("研习专属技能", "training"));
+        if (A.hasStoryRecords() || ("hasIdeaRecords" in A && A.hasIdeaRecords()))
+            screen.Options.push(A.ledgerNav("翻看旅途旧事", "hasIdeaRecords" in A && A.hasIdeaRecords()?"journey_index":"growth"));
         screen.Options.push(A.ledgerOption("合上名册，继续上路", function(e) { return 0; }));
     } else if (kind == "quest" || kind == "quest_cancel") {
         screen.Text = "委托记录\n\n" + A.questSummary();
@@ -87,8 +93,8 @@ A.ledgerPage <- function(event, page) {
         }
         local offset = parts.len() > 1 ? A.storyPageNumber(parts[1]) : 0;
         local window = A.ledgerWindow(members.len(), offset);
-        screen.Text = kind == "tavern" ? "酒馆里的熟面孔\n\n找个空位坐下，听对方把话说完。" : "已经认识的伙伴\n\n名字只在相遇后写进名册。";
-        if (members.len() == 0) screen.Text += "\n\n此刻没有等待交谈的人。";
+        screen.Text = kind == "tavern" ? "酒馆里的熟面孔\n\n这里可以查看已认识的伙伴。想雇人加入队伍，请打开城镇招募栏。" : "已经认识的伙伴\n\n点名字查看介绍、招募地点和当前状态。";
+        if (members.len() == 0) screen.Text += kind == "tavern" ? "\n\n暂时没有新的消息，先喝一杯吧。" : "\n\n还没有认识的伙伴。";
         for (local i = 0; i < window.count; i++) {
             local key = members[window.offset + i];
             screen.Options.push(A.ledgerNav(A.Characters[key].name + " · " + A.ledgerStatus(A.characterStatus(key)), "recruit:" + key));
@@ -125,7 +131,7 @@ A.ledgerPage <- function(event, page) {
         local window = A.ledgerWindow(brothers.len(), offset);
         event.m.FormationPage = window.offset;
         local stay = "formation:" + window.offset;
-        screen.Text = "选择出战成员\n\n已选 " + event.m.Selected.len() + " / 10 人。点名字可选择或取消；核对并确认前，现有阵容不会改变。\n\n原版人物栏仍能调整站位和装备。";
+        screen.Text = "选择出战成员\n\n已选 " + event.m.Selected.len() + " / " + A.CombatMax + " 人。点名字可选择或取消；核对并确认前，现有阵容不会改变。\n\n原版人物栏仍能调整站位和装备。";
         if (brothers.len() == 0) screen.Text += "\n\n名册里已经没有同行成员。";
         for (local i = 0; i < window.count; i++) {
             local bro = brothers[window.offset + i];
@@ -137,7 +143,7 @@ A.ledgerPage <- function(event, page) {
         if (window.more) screen.Options.push(A.ledgerNav(window.next == 0 ? "回到第一页" : "下一页", "formation:" + window.next));
         screen.Options.push(A.ledgerNav("核对名单／返回", "formation_review"));
     } else if (kind == "formation_review") {
-        screen.Text = "核对出战名单\n\n已选 " + event.m.Selected.len() + " / 10 人：";
+        screen.Text = "核对出战名单\n\n已选 " + event.m.Selected.len() + " / " + A.CombatMax + " 人：";
         local found = 0;
         foreach (bro in A.roster()) {
             if (event.m.Selected.find(bro.getID()) == null) continue;
@@ -168,7 +174,7 @@ A.ledgerPage <- function(event, page) {
     if (event.m.Notice != "") screen.Text += "\n\n" + event.m.Notice;
     // Six is the native event window's usable button limit; never silently drop an action.
     if (screen.Options.len() > 6) throw "Afeix ledger page exceeds six options: " + page;
-    screen.Text = "[img]gfx/ui/events/event_80.png[/img]" + screen.Text;
+    if (kind != "banners") screen.Text = "[img]gfx/ui/events/event_80.png[/img]" + screen.Text;
     return screen;
 };
 
@@ -185,6 +191,11 @@ A.openLedger <- function(page = "home", tavernTown = 0) {
     if (("State" in ::Tactical) && ::Tactical.State != null) return this.ledgerBlocked("tactical state still active");
     if (("LoadingScreen" in getroottable()) && ::LoadingScreen != null
         && (::LoadingScreen.isVisible() || ::LoadingScreen.isAnimating())) return this.ledgerBlocked("loading screen");
+    // Opening characters from town only hides its dialogs: the town itself
+    // stays visible. Never put a non-cancellable event above the character
+    // backstep; native C/Escape would then try to pop that event and get stuck.
+    // The native predicate also covers animation and character popup dialogs.
+    if (state.isInCharacterScreen()) return this.ledgerBlocked("character screen busy");
     if (state.m.EventScreen == null || state.m.EventScreen.isVisible() || state.m.EventScreen.isAnimating()) return this.ledgerBlocked("event screen busy");
     local event = ::World.Events.getEvent("event.afeix_ledger");
     if (event == null) return this.ledgerBlocked("ledger event missing");

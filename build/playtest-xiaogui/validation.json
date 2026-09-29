@@ -1,0 +1,27 @@
+{
+  "target": "xiaogui",
+  "source": "art/runtime/portraits-v05/sources/user-v17/xiaogui.png",
+  "source_sha256": "ea47d8b87dcbd4358e6e75c8613d870ed0aa76f22b7b77787b0d5ecfc8a03157",
+  "previous_source_preserved": true,
+  "meiya_and_keke_new_sources_preserved": true,
+  "reviewed_candidate_matches_exported_sprites": true,
+  "art_validation_passed": true,
+  "portrait_forms": 36,
+  "portrait_brushes": 108,
+  "pink_bow_visible_at_game_size": true,
+  "lighter_palette_reviewed": true,
+  "package_crc_passed": true,
+  "package_matches_all_source_files": true,
+  "full_build_passed": true,
+  "behavior_assertions": 20224,
+  "test_groups": 24,
+  "package_sha256": "4596da7f4be3b8bf8a93ceb0e283a4ac94f178d94bbb6609e4237be18e85b22e",
+  "game_size": [
+    114,
+    142
+  ],
+  "in_game_tested": false,
+  "known_visual_limits": [
+    "Native helmets occlude the crown and pink bow; broad turtle face remains visible beyond the right edge of the closed helmet in offline composition."
+  ]
+}

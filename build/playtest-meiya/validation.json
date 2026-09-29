@@ -1,0 +1,21 @@
+{
+  "target": "meiya",
+  "source": "art/runtime/portraits-v05/sources/user-v17/meiya.png",
+  "source_sha256": "072cd373b42e05f1d3e87600c1db488328958e8d1e44fcead00c0aaadcc5afc0",
+  "previous_source_preserved": true,
+  "reviewed_candidate_matches_exported_sprites": true,
+  "art_validation_passed": true,
+  "portrait_forms": 36,
+  "portrait_brushes": 108,
+  "package_art_matches_source": true,
+  "package_crc_passed": true,
+  "full_build_passed_at_build_time": true,
+  "behavior_assertions_at_build_time": 19589,
+  "workspace_files_updated_after_package_build": [],
+  "game_size": [
+    114,
+    142
+  ],
+  "in_game_tested": false,
+  "scope_note": "Meiya source, portrait mapping and prompt records are this task scope. Other ongoing workspace edits are preserved; the local ZIP may lag subsequent changes."
+}

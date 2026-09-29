@@ -43,9 +43,11 @@ A.refreshAssets <- function() {
 };
 A.syncCharacterFeatures <- function(bro) {
     if (!this.isOrigin() || bro == null) return;
+    if ("syncBalance" in this) this.syncBalance(bro);
     if ("syncRosterTalents" in this) this.syncRosterTalents(bro);
     if ("syncPersonalGrowth" in this) this.syncPersonalGrowth(bro);
     if ("syncMemberSkills" in this) this.syncMemberSkills(bro);
     if ("syncPromotion" in this) this.syncPromotion(bro);
     if ("syncCharacterArt" in this) this.syncCharacterArt(bro);
+    if ("syncIdeasCharacter" in this) this.syncIdeasCharacter(bro);
 };

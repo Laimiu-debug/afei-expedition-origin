@@ -1,5 +1,5 @@
 {
-  "combatMax": 10,
+  "combatMax": 12,
   "chapters": [
     {
       "name": "刀一黑队",
@@ -12,27 +12,23 @@
       "required": 3
     },
     {
-      "name": "九月联动",
+      "name": "0.5DFW猪团",
       "id": 3,
       "required": 6
     },
     {
-      "name": "0.5 飞团",
+      "name": "旅途来客",
       "id": 4,
       "required": 9
-    },
-    {
-      "name": "旅途来客",
-      "id": 5,
-      "required": 12
     }
   ],
   "characters": [
     {
+      "backgroundDescription": "他替自己的招募旗写下“嘉豪”，却连举稳盾牌都还费劲。凭一张敢开口的嘴和几位愿意帮忙的伙伴，他把临时搭伙喊成了远征团。现在，旗底的每一个名字都在等他把话兑现。",
       "stars": {
         "MeleeSkill": 2,
-        "Stamina": 1,
-        "Bravery": 2
+        "Bravery": 2,
+        "MeleeDefense": 2
       },
       "encounterTitle": null,
       "name": "阿飞",
@@ -40,32 +36,37 @@
       "encounterText": null,
       "key": "afei",
       "description": "阿飞是远征团的三位开局队长之一。黑旗上的嘉豪二字很气派，旗底这位团长的本事却还没跟上，盾一沉就容易哇哇叫。他喜欢别人把目光投过来，衣领歪了也要先整一下；碰到真要拿队友冒险的决定，笑意却收得比谁都快。大谋能替他顶住前排，抹茶能替他算清账，可“这些人为什么跟你走”终究得由他回答。他想成为大哥，也想亲眼看见自己带来的人越走越稳。眼下，他还在起点。",
-      "bag": [],
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "黑旗发起人",
+      "baseBackground": "daytaler_background",
       "wage": 8,
       "equipment": [
-        "weapons/bludgeon",
-        "armor/thick_tunic",
-        "helmets/headscarf",
-        "shields/buckler_shield"
+        "weapons/militia_spear",
+        "armor/padded_surcoat",
+        "helmets/hood",
+        "shields/wooden_shield"
       ],
       "isCaptain": true,
       "hireCost": 0,
       "title": "队长",
       "chapter": 1,
-      "background": "daytaler_background",
+      "background": "afeix_afei_background",
       "role": "前期薄弱，保留后续成长空间",
       "attrs": [
+        60,
+        106,
+        42,
+        90,
         48,
-        92,
-        30,
-        95,
-        43,
-        32,
-        1,
-        0
+        24,
+        3,
+        2
       ]
     },
     {
+      "backgroundDescription": "他在练武场与护送队之间讨过生活，走到哪里都想向高手借一招，顺便请人换面旗。遇见还站不稳的阿飞后，他把自己的盾放在最前面，嘴上嫌弃，脚下没有先走。",
       "stars": {
         "MeleeDefense": 3,
         "Stamina": 1,
@@ -77,10 +78,14 @@
       "encounterText": null,
       "key": "damou",
       "description": "王大谋是三位开局队长里先能把前排撑住的人。他认识的大哥很多，看见好枪法还会再认识一个，问完招式就顺势问人家愿不愿意换面旗。偷大哥是营里的玩笑，他倒并不觉得多请一位高手有什么丢人。真正站到队伍前面时，最先举起的仍是他自己的盾。阿飞尚且底气不足，他会当面嫌弃，也会留下来陪着练；抹茶追问新增的工钱，他会讨价还价，却不会装作没听见。",
-      "bag": [],
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "游历盾师",
+      "baseBackground": "militia_background",
       "wage": 15,
       "equipment": [
-        "weapons/boar_spear",
+        "weapons/militia_spear",
         "armor/padded_leather",
         "helmets/aketon_cap",
         "shields/wooden_shield"
@@ -89,23 +94,25 @@
       "hireCost": 0,
       "title": "队长",
       "chapter": 1,
-      "background": "militia_background",
+      "background": "afeix_damou_background",
       "role": "开局强势的前排盾卫，近防与决心成长",
       "attrs": [
-        62,
-        106,
-        49,
-        105,
-        66,
-        37,
-        10,
-        5
+        59,
+        100,
+        48,
+        96,
+        56,
+        32,
+        6,
+        2
       ]
     },
     {
+      "backgroundDescription": "他替短途队伍记过粮钱与欠账，一把旧算盘比漂亮保证更有说服力。黑旗的三位队长里，他把别人的豪言拆成一天一天能付清的开销，也得学着把自己的担当写进账里。",
       "stars": {
         "Bravery": 1,
-        "RangedSkill": 1
+        "RangedSkill": 2,
+        "Stamina": 1
       },
       "encounterTitle": null,
       "name": "午夜抹抹茶",
@@ -116,34 +123,37 @@
       "bag": [
         "weapons/knife"
       ],
+      "backgroundName": "随军账房",
+      "baseBackground": "poacher_background",
       "wage": 10,
       "equipment": [
-        "weapons/hunting_bow",
-        "armor/thick_tunic",
-        "helmets/headscarf",
-        "ammo/quiver_of_arrows"
+        "weapons/light_crossbow",
+        "ammo/quiver_of_bolts",
+        "armor/padded_surcoat",
+        "helmets/hood"
       ],
       "isCaptain": true,
       "hireCost": 0,
       "title": "队长",
       "chapter": 1,
-      "background": "poacher_background",
+      "background": "afeix_mocha_background",
       "role": "普通水平的后排帮手",
       "attrs": [
-        55,
-        100,
-        43,
-        102,
-        52,
         53,
-        4,
-        3
+        98,
+        43,
+        100,
+        50,
+        52,
+        3,
+        5
       ]
     },
     {
+      "backgroundDescription": "她在集镇球场练出看缺口与接来球的本领，喜欢突破，也记得是谁肯把球交到自己手里。“蛤妈”是伙伴叫出来的亲近，属于她自己的胜负心却从未交给别人保管。",
       "stars": {
         "MeleeSkill": 3,
-        "Bravery": 3,
+        "Stamina": 3,
         "MeleeDefense": 3
       },
       "encounterTitle": "这回先接住",
@@ -165,34 +175,40 @@
       "encounterText": "小酒瓶把旧球停在鞋尖前。阿飞刚夸完一句瓶队突破，球便轻轻滚向他脚下，他下意识让了半步。她看看球，又看看这个自称会带人的团长，笑问以后也准备这样给队友让路吗。旁边靠着待修的旧车，她手里还攥着一截沾油的布，修理铺留下的报价压在车铃下面，等他把话接下去。",
       "key": "bottle",
       "description": "小酒瓶是队员，阿飞喊人往前冲时，她往往已经看见了那个能挤过去的缺口。瓶队喜欢决赛，也喜欢有人肯把球交过来，却不乐意只当一句“你最强”后面的那个名字。蛤妈这外号落到她身上，是因为这个嗓门很大的团长确实还需要有人推一把。她能催他接球，也能看出他什么时候是在硬撑；自己想赢的事，同样不会因此让给他。提到那辆旧自行车，她先看的通常是链条，不是阿飞又讲了什么道理。",
-      "bag": [],
-      "wage": 10,
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "球场突击手",
+      "baseBackground": "daytaler_background",
+      "wage": 16,
       "equipment": [
         "weapons/shortsword",
-        "armor/ragged_dark_surcoat",
-        "helmets/hood",
+        "armor/padded_leather",
+        "helmets/aketon_cap",
         "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 220,
+      "hireCost": 1350,
       "title": "蛤妈",
       "chapter": 1,
-      "background": "daytaler_background",
+      "background": "afeix_bottle_background",
       "role": "九星核心：近攻、近防与决心；帮助阿飞成长",
       "attrs": [
-        56,
-        100,
-        44,
-        101,
-        57,
-        38,
-        5,
-        3
+        64,
+        109,
+        48,
+        90,
+        60,
+        26,
+        3,
+        2
       ]
     },
     {
+      "backgroundDescription": "她替临时营地敲集合鼓、记出入的人，四声鼓点比喊话更让她安心。响动仍会吓她一跳，但等人真的要撤回来，她总能想起哪条路还得留着。",
       "stars": {
         "MeleeDefense": 2,
+        "Hitpoints": 1,
         "Bravery": 1
       },
       "encounterTitle": "请等第四下",
@@ -214,32 +230,39 @@
       "encounterText": "白小帅子把鼓槌横在门闩上，刚数到第三下，阿飞就抢着接了一声好。她的手一抖，抬头盯着他，连旁边等着交班的人都憋住笑。鼓带的裂口用旧绳勉强系着，修补的报价已经说好，她却还没点头。眼下让她犹豫的还有另一个问题：跟这位团长走，以后究竟谁肯把第四下听完。",
       "key": "shuaizi",
       "description": "白小帅子不太会装胆大。热闹一起来，她会先确认门闩、盾带和旁边有没有同伴，嘴里的慢一点有时还带着急气。但要真从这道门过去，最后仍得听她数拍。四声鼓比十句保证有用，她连阿飞也不肯随便放行。小酒瓶往前找缺口，她更在意那条回来的路还在不在；这并不妨碍她嫌瓶队跑得太快。请她守住一个位置之前，最好把信号讲清楚，她会记得比发令的人还牢。",
-      "bag": [],
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "营门鼓手",
+      "baseBackground": "militia_background",
       "wage": 9,
       "equipment": [
-        "weapons/shortsword",
+        "weapons/militia_spear",
         "armor/padded_surcoat",
+        "helmets/hood",
         "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 200,
+      "hireCost": 410,
       "title": "远征团队员",
       "chapter": 1,
-      "background": "militia_background",
+      "background": "afeix_shuaizi_background",
       "role": "可培养的持盾前排",
       "attrs": [
-        58,
-        101,
+        62,
+        102,
         45,
-        100,
-        55,
-        35,
+        96,
+        54,
+        30,
         7,
-        4
+        3
       ]
     },
     {
+      "backgroundDescription": "她随流动演出展示箭术，知道什么时候站到灯下，什么时候换个位置让观众重新找她。高背椅和“超巨”的称呼是排场，能不能再赢一轮，仍得看她亲手射出的箭。",
       "stars": {
+        "Bravery": 1,
         "RangedSkill": 2,
         "Initiative": 1
       },
@@ -265,32 +288,37 @@
       "bag": [
         "weapons/knife"
       ],
-      "wage": 10,
+      "backgroundName": "巡演射手",
+      "baseBackground": "poacher_background",
+      "wage": 12,
       "equipment": [
         "weapons/short_bow",
         "ammo/quiver_of_arrows",
-        "armor/thick_tunic"
+        "armor/padded_surcoat",
+        "helmets/hood"
       ],
       "isCaptain": false,
-      "hireCost": 260,
+      "hireCost": 460,
       "title": "远征团队员",
       "chapter": 1,
-      "background": "poacher_background",
+      "background": "afeix_lili_background",
       "role": "弓箭与先手成长",
       "attrs": [
-        51,
-        96,
+        52,
+        95,
         38,
-        115,
-        49,
-        51,
-        3,
+        116,
+        46,
+        53,
+        1,
         5
       ]
     },
     {
+      "backgroundDescription": "她守过一张什么都能摆的杂货桌，断木条、旧扣子与卖不出去的零件都舍不得扔。东西到了她手里总能换一种用途，只是伙伴有时得先问清这回试验要花多少钱。",
       "stars": {
-        "RangedSkill": 1,
+        "Hitpoints": 1,
+        "RangedSkill": 2,
         "Initiative": 2
       },
       "encounterTitle": "欢迎光临超市里",
@@ -313,36 +341,40 @@
       "key": "xiaoyueya",
       "description": "小月牙能把两块木板叫成超市，也能把一截断绳说成还差一点就够。她的主意常比解释快，前一句还在谈土豆，后一句已经拿木杆比划起棚顶。失败到了她手里，总得再被问一次还有没有别的用途。抹茶不肯盲信她的报价，她就兴致勃勃地逐样讲；阿飞觉得这人很有气氛，她却更关心黑旗行囊里有没有准备丢掉的铜扣。愿意招她同行的人，大概得习惯每天听到一声先别扔。",
       "bag": [
+        "weapons/javelin",
         "weapons/knife"
       ],
+      "backgroundName": "杂货改造匠",
+      "baseBackground": "daytaler_background",
       "wage": 9,
       "equipment": [
         "weapons/javelin",
-        "shields/buckler_shield",
-        "armor/thick_tunic"
+        "armor/padded_surcoat",
+        "helmets/hood"
       ],
       "isCaptain": false,
-      "hireCost": 240,
+      "hireCost": 470,
       "title": "远征团队员",
       "chapter": 1,
-      "background": "daytaler_background",
+      "background": "afeix_xiaoyueya_background",
       "role": "投掷与灵活换位倾向",
       "attrs": [
-        52,
+        54,
         99,
         36,
-        117,
-        48,
-        47,
-        4,
-        6
+        115,
+        49,
+        51,
+        3,
+        5
       ]
     },
     {
+      "backgroundDescription": "她跟着行路队伍盯过岔路和队尾，记人头比记战利品熟。提醒常喊得像吵架，可越是自己人，她越不肯让一句“差不多”混过去。",
       "stars": {
-        "MeleeSkill": 3,
-        "MeleeDefense": 3,
-        "Initiative": 3
+        "MeleeSkill": 2,
+        "MeleeDefense": 1,
+        "Initiative": 2
       },
       "encounterTitle": "听见就回一声",
       "name": "余初九",
@@ -366,35 +398,37 @@
       "bag": [
         "weapons/knife"
       ],
-      "wage": 10,
+      "backgroundName": "巡队哨手",
+      "baseBackground": "poacher_background",
+      "wage": 11,
       "equipment": [
-        "weapons/throwing_axe",
-        "shields/buckler_shield",
-        "armor/thick_tunic",
+        "weapons/shortsword",
+        "armor/padded_surcoat",
         "helmets/hood"
       ],
       "isCaptain": false,
-      "hireCost": 280,
+      "hireCost": 540,
       "title": "远征团队员",
       "chapter": 1,
-      "background": "poacher_background",
-      "role": "九星核心：近攻、近防与先攻；灵活近战",
+      "background": "afeix_yuchujiu_background",
+      "role": "近攻与先攻二星、近防一星；灵活近战",
       "attrs": [
-        53,
-        98,
-        46,
-        118,
-        50,
-        46,
+        56,
+        99,
+        45,
+        117,
+        55,
+        36,
         5,
-        7
+        5
       ]
     },
     {
+      "backgroundDescription": "栈桥拥挤、货队进退不得时，她习惯先举盾把空位顶住，再说剩下的事。“唯一的男人”被她当作担当的玩笑，硬撑借来的那口气却总要有人接班才能还。",
       "stars": {
-        "MeleeSkill": 3,
-        "Hitpoints": 3,
-        "MeleeDefense": 3
+        "MeleeSkill": 2,
+        "Hitpoints": 2,
+        "MeleeDefense": 1
       },
       "encounterTitle": "空着的那一步",
       "name": "小鱼贝壳",
@@ -415,33 +449,40 @@
       "encounterText": "桥头两面旧盾摆在地上，小鱼贝壳用脚点了点外侧那一面。阿飞刚叫她一声可靠大哥，她便问这个称呼能不能替旁边再站一个人。桥上眼下没有争斗，只有松掉的扶绳和等人认领的修补账。她想听的不是一段保证，而是这位团长准备把自己放在哪个位置。等他说清，才轮到谈邀请。",
       "key": "xiaoyubeike",
       "description": "小鱼贝壳说话短，动作往往比话还快。栈桥外侧没人，她先把盾立过去；旁边有人握不住带子，她看一眼就知道。营里若用唯一的男人来夸她，她会把这句玩笑扔回去，问谁愿意下一次也顶上来。她能撑住一阵，却不会把喘气装成没事，那口先借来的劲总得慢慢还。她挑同伴不太听宏愿，主要看自己停下来换气时，旁边那个人会不会主动补上空位。阿飞也在这个考察范围里。",
-      "bag": [],
-      "wage": 11,
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "栈桥护卫",
+      "baseBackground": "daytaler_background",
+      "wage": 12,
       "equipment": [
-        "weapons/bludgeon",
-        "shields/wooden_shield",
-        "armor/padded_surcoat"
+        "weapons/pickaxe",
+        "armor/padded_leather",
+        "helmets/aketon_cap",
+        "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 300,
+      "hireCost": 620,
       "title": "远征团队员",
       "chapter": 1,
-      "background": "daytaler_background",
-      "role": "九星核心：近攻、近防与生命；耐打的近战主力",
+      "background": "afeix_xiaoyubeike_background",
+      "role": "近攻与生命二星、近防一星；耐打的近战队员",
       "attrs": [
-        64,
-        107,
+        65,
+        106,
         40,
-        91,
-        53,
-        34,
-        6,
-        2
+        87,
+        55,
+        30,
+        5,
+        0
       ]
     },
     {
+      "backgroundDescription": "她替集镇核对过集合口信，最常问的是去哪里、做什么、谁接应。别人拿歪王冠喊她“太子”，她却把那三个问题刻在牌子背面，准备继续问到团长把话讲清。",
       "stars": {
         "Bravery": 2,
+        "Hitpoints": 1,
         "Initiative": 1
       },
       "encounterTitle": "太子不接糊涂口信",
@@ -463,31 +504,36 @@
       "encounterText": "王怼怼把传令牌翻到背面，那里写着三个问题。阿飞刚把集合点说出两个版本，她已经停住脚步；旁人递来一顶歪王冠起哄，她随手挂上椅背，继续等那个答案。旧口信留下的凭据核对费还没人认领，她不急着接新活，只想看看黑旗这位团长是肯把话说全，还是准备再叫得响一点。",
       "key": "wangduidui",
       "description": "王怼怼可能先被阿飞的嗓门吓一跳，再当着所有人的面把他问住。去哪儿、带什么、到地方等谁，这几个问题她不嫌重复，嫌的是每次都要靠自己猜。恐飞派与太子都是围绕这副反差闹起来的绰号，她却更看重手里那块能把话传清的牌子。给她一顶王冠，她会先找地方挂起来；给她一句确切的安排，她反而不怎么磨蹭。团长若想少听她怼一句，最好先把上一句说完整。",
-      "bag": [],
-      "wage": 10,
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "口信核验员",
+      "baseBackground": "militia_background",
+      "wage": 12,
       "equipment": [
-        "weapons/militia_spear",
-        "shields/buckler_shield",
-        "armor/thick_tunic"
+        "weapons/pitchfork",
+        "armor/padded_leather",
+        "helmets/aketon_cap"
       ],
       "isCaptain": false,
-      "hireCost": 280,
+      "hireCost": 510,
       "title": "远征团队员",
       "chapter": 1,
-      "background": "militia_background",
+      "background": "afeix_wangduidui_background",
       "role": "决心与先攻较均衡",
       "attrs": [
-        54,
-        100,
-        47,
-        111,
-        54,
-        38,
-        5,
-        4
+        55,
+        98,
+        55,
+        106,
+        52,
+        35,
+        4,
+        3
       ]
     },
     {
+      "backgroundDescription": "他受雇替行路队伍摆地图、排接应，桌上的木旗总会给坏消息留一格。最难说服他的从来不是冒险，而是计划里人人有位置，出了问题却找不到谁负责。",
       "stars": {
         "MeleeDefense": 3,
         "Hitpoints": 1,
@@ -513,39 +559,101 @@
       "key": "laocai",
       "description": "老蔡谈加入时，先从桌上收起四枚木旗。他能把一条路拆成前进、接应和退回来的几种走法，讲到最坏的情况也不提高嗓门。阿飞嫌他想得太多，他就抽走一块代表桥梁的木块，让那个漂亮计划自己露出缺口。不过，最后留在险处的木旗背面写的是他自己的名字。他带着普通长柄武器上路，仍需在真实交锋里证明纸上的安排。队友可以指出图画错了，前提是把自己看见的那段路说明白。",
       "bag": [
-        "weapons/warfork"
+        "weapons/knife"
       ],
-      "wage": 14,
+      "backgroundName": "护队参谋",
+      "baseBackground": "militia_background",
+      "wage": 16,
       "equipment": [
-        "weapons/boar_spear",
-        "shields/wooden_shield",
-        "armor/padded_surcoat",
-        "helmets/aketon_cap"
+        "weapons/militia_spear",
+        "armor/padded_leather",
+        "helmets/aketon_cap",
+        "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 440,
+      "hireCost": 750,
       "title": "远征团队员",
       "chapter": 2,
-      "background": "militia_background",
+      "background": "afeix_laocai_background",
       "role": "稳健前排盾卫，近防、决心与生命成长",
       "attrs": [
-        57,
-        103,
-        50,
-        100,
-        60,
-        39,
-        6,
-        4
+        59,
+        104,
+        51,
+        92,
+        58,
+        32,
+        7,
+        3
       ]
     },
     {
+      "backgroundDescription": "他曾在几支佣兵队之间转交口信、核对交接。争执时擅长先让人放下棍子，却不肯用笑话抹掉少了的货和没说完的话。旁人渐渐习惯把难事都递给他，如今他也开始把自己的时辰和应得的那份写进清单。",
       "stars": {
-        "Bravery": 1,
+        "MeleeSkill": 2,
         "RangedSkill": 2
       },
+      "role": "后排多功能长柄投掷手",
+      "aliases": [
+        "刘佳俊",
+        "眼子"
+      ],
+      "name": "眼子",
+      "encounterChoices": [
+        {
+          "hireDiscount": 0,
+          "label": "帮双方核对交接数量，把责任说清",
+          "outcome": "账目对上以后，眼子才继续说笑。他认可远征团愿意把难听的话也讲明白。",
+          "cost": 0
+        },
+        {
+          "hireDiscount": 90,
+          "label": "支付第三方复核账目的费用",
+          "outcome": "双方接受了复核。眼子省下本打算自己出的调解开支，招募时愿意少收一些。",
+          "cost": 60
+        }
+      ],
+      "encounterText": "两名雇工为交接的损失争执，眼子先用一句玩笑让双方放下手里的棍子。等桌边安静，他却没有把责任混过去，而是请双方逐项说出看见的事。",
+      "key": "yanzi",
+      "description": "刘佳俊，大家叫他眼子。他善于把僵住的场面重新谈下去，也愿意在条件不合适时表明立场。等大家笑过，他会把那句真正难说的话继续讲完。",
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "营地调解人",
+      "baseBackground": "militia_background",
+      "wage": 12,
+      "attrs": [
+        60,
+        110,
+        48,
+        90,
+        55,
+        50,
+        6,
+        4
+      ],
+      "isCaptain": false,
+      "hireCost": 700,
+      "title": "远征团队员",
+      "equipment": [
+        "weapons/shortsword",
+        "armor/padded_leather",
+        "helmets/aketon_cap",
+        "shields/wooden_shield"
+      ],
+      "background": "afeix_yanzi_background",
+      "chapter": 2,
+      "encounterTitle": "玩笑说完以后"
+    },
+    {
+      "backgroundDescription": "她背过驿站的蓝旗信袋，封口检查了还要看回执是谁签的。大家叫她“小虎”，她更在意别人别把跑得快和真正送到混为一谈。",
+      "stars": {
+        "Bravery": 1,
+        "RangedSkill": 2,
+        "Initiative": 1
+      },
       "encounterTitle": "盖好印也不算送到",
-      "name": "亿口甜筒",
+      "name": "小虎",
       "encounterChoices": [
         {
           "hireDiscount": 0,
@@ -560,37 +668,42 @@
           "cost": 50
         }
       ],
-      "encounterText": "亿口甜筒面前放着一张盖好印的空回执，袋底的信却还没有新地址。掌柜催她先领钱，她把回执压在桌上，问阿飞愿不愿意先听清这件未完成的事。她想找个能容许核实去向的队伍；若有人分担驿站查档费，加入时的报价也可以重新谈。",
+      "encounterText": "小虎面前放着一张盖好印的空回执，袋底的信却还没有新地址。掌柜催她先领钱，她把回执压在桌上，问阿飞愿不愿意先听清这件未完成的事。她想找个能容许核实去向的队伍；若有人分担驿站查档费，加入时的报价也可以重新谈。",
       "key": "tiantong",
       "description": "大家喊她小虎，她答应时已经把信袋的封口检查了一遍。袋底那封皱信，是她还没答应算完的事。驿站愿意给钱，掌柜甚至把回执提前盖好，她却只问东西究竟落在谁手里。阿飞听久了有些头大，也记住了她分得很清的两个词：快，和到。她带普通弓箭同行，走出一段还会看看队尾。要她临时改变约定，可以商量；要她把没交清的事说成已经办妥，她会把那张纸重新推回来。",
       "bag": [
         "weapons/knife"
       ],
-      "wage": 11,
+      "backgroundName": "蓝旗信使",
+      "baseBackground": "poacher_background",
+      "wage": 14,
       "equipment": [
         "weapons/hunting_bow",
         "ammo/quiver_of_arrows",
-        "armor/thick_tunic"
+        "armor/padded_leather",
+        "helmets/aketon_cap"
       ],
       "isCaptain": false,
-      "hireCost": 340,
+      "hireCost": 950,
       "title": "远征团队员",
       "chapter": 2,
-      "background": "poacher_background",
+      "background": "afeix_tiantong_background",
       "role": "稳定弓手与决心成长",
       "attrs": [
-        52,
-        97,
-        45,
-        109,
-        48,
+        54,
+        98,
+        44,
+        107,
+        47,
         55,
-        3,
-        6
+        2,
+        5
       ]
     },
     {
+      "backgroundDescription": "她靠替旅人画路图挣过盘缠，只是图上的河像面饼，漏掉的一角常得由本人补讲。别人喊她“外星人”，她想入神时顾不上擦嘴角；偶尔绕错，偶尔也真能发现没人想到的路。",
       "stars": {
+        "Hitpoints": 1,
         "RangedSkill": 2,
         "RangedDefense": 1
       },
@@ -616,78 +729,89 @@
       "bag": [
         "weapons/knife"
       ],
-      "wage": 12,
+      "backgroundName": "怪图向导",
+      "baseBackground": "poacher_background",
+      "wage": 18,
       "equipment": [
         "weapons/light_crossbow",
         "ammo/quiver_of_bolts",
-        "armor/padded_surcoat"
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet"
       ],
       "isCaptain": false,
-      "hireCost": 390,
+      "hireCost": 1280,
       "title": "远征团队员",
       "chapter": 2,
-      "background": "poacher_background",
+      "background": "afeix_xiaoning_background",
       "role": "远攻与远防偏好的弩手",
       "attrs": [
-        51,
+        52,
         95,
-        41,
-        104,
-        50,
-        58,
-        4,
-        8
+        40,
+        101,
+        45,
+        56,
+        2,
+        6
       ]
     },
     {
+      "backgroundDescription": "她在街边空地跟着鼓点练卡拍与转身，倒下的桶也能接成下一拍。把盾举起来后，重心又得重新找；阿飞的嘉豪步伐正好给了她一个不肯认输的练习对象。",
       "stars": {
-        "MeleeDefense": 1,
-        "Stamina": 2
+        "MeleeDefense": 2,
+        "Stamina": 2,
+        "Hitpoints": 1
       },
       "encounterTitle": "那只桶正好倒在第四拍",
-      "name": "小胖徐不快乐",
+      "name": "小胖",
       "encounterChoices": [
         {
           "hireDiscount": 0,
           "label": "跟着节拍再试一次，谈原价邀请",
-          "outcome": "阿飞这回在桶边收住脚，小胖徐笑着敲了第四拍。她愿意按原报价加入，约好以后有鼓声时再比谁先乱步。",
+          "outcome": "阿飞这回在桶边收住脚，小胖笑着敲了第四拍。她愿意按原报价加入，约好以后有鼓声时再比谁先乱步。",
           "cost": 0
         },
         {
           "hireDiscount": 100,
           "label": "分担练习场地与地板修整费",
-          "outcome": "场租和地板修整费结清，小胖徐下调招募报价。她把空桶摆回角落，给阿飞留出一块不容易撞上的地方。",
+          "outcome": "场租和地板修整费结清，小胖下调招募报价。她把空桶摆回角落，给阿飞留出一块不容易撞上的地方。",
           "cost": 70
         }
       ],
-      "encounterText": "白小帅子的鼓声从酒馆角落传来，小胖徐刚转半圈，阿飞的嘉豪步伐就撞倒了空桶。她把那声响接进下一拍，让笑得最响的团长再试一次。掌柜随后送来清单：腾场的租费和磨损木板的修整费还没结。黑旗要邀她同行，可以先聊聊这套步子，也可以替她结下这笔开销。",
+      "encounterText": "白小帅子的鼓声从酒馆角落传来，小胖刚转半圈，阿飞的嘉豪步伐就撞倒了空桶。她把那声响接进下一拍，让笑得最响的团长再试一次。掌柜随后送来清单：腾场的租费和磨损木板的修整费还没结。黑旗要邀她同行，可以先聊聊这套步子，也可以替她结下这笔开销。",
       "key": "xiaopangxu",
-      "description": "小胖徐听见节拍，脚下就先有了回应。她的街舞讲究卡拍和转身，空桶倒地的声音也能被顺手接进下一拍。阿飞曾拿嘉豪步伐跟她比划，白小帅子负责敲鼓，旁边的人负责笑；可真举起盾牌，她自己也会被重量带歪。她不急着藏住失误，总要把那一步拆开，再踩一次。对她来说，热闹和练本事可以在同一块地上发生。哪天鼓点停了还听见门口有人磨鞋底，多半是她还没满意。",
-      "bag": [],
-      "wage": 12,
+      "description": "小胖听见节拍，脚下就先有了回应。她的街舞讲究卡拍和转身，空桶倒地的声音也能被顺手接进下一拍。阿飞曾拿嘉豪步伐跟她比划，白小帅子负责敲鼓，旁边的人负责笑；可真举起盾牌，她自己也会被重量带歪。她不急着藏住失误，总要把那一步拆开，再踩一次。对她来说，热闹和练本事可以在同一块地上发生。哪天鼓点停了还听见门口有人磨鞋底，多半是她还没满意。",
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "街头舞者",
+      "baseBackground": "militia_background",
+      "wage": 14,
       "equipment": [
         "weapons/hand_axe",
-        "shields/wooden_shield",
-        "armor/padded_surcoat"
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet",
+        "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 400,
+      "hireCost": 1510,
       "title": "远征团队员",
       "chapter": 2,
-      "background": "militia_background",
+      "background": "afeix_xiaopangxu_background",
       "role": "耐力与近防偏好的盾斧配置",
       "attrs": [
-        62,
-        110,
+        66,
+        112,
         42,
-        92,
-        57,
-        33,
-        8,
-        3
+        88,
+        55,
+        30,
+        7,
+        1
       ]
     },
     {
+      "backgroundDescription": "她替临时营地看过门口和座位，一顶帽子就足够替去打水的同伴占住凳子。她敢喊敢冲，真正放不下的却是那块约好让自己人回来的地方。",
       "stars": {
         "MeleeDefense": 3,
         "Hitpoints": 1,
@@ -712,33 +836,39 @@
       "encounterText": "长凳上只有一顶帽子，大鹅却坚持那儿有人。阿飞刚想逗她，外出打水的同伴就挤到门边，她把挡路的椅子拨开，先让人坐下。现在她问黑旗招人后算不算自己人：可以先把营地里的规矩讲清，也可以分担她离开旧营位前尚未结清的席位与茶水账。",
       "key": "dae",
       "description": "有人，这两个字能被大鹅喊得整间酒馆都听见。凳上明明只有一顶帽子，她却能把去打水的同伴说得像正坐在面前。身后是自己人，她就有了十足的底气；有人挤过来，她也不急着把边界让掉。阿飞若只看见她敢冲，很容易跟着起哄，等她突然转身先让同伴进门，才发现她一直记着谁还没回来。她带着长矛和木盾上路，嗓门替不了真正的防守；想守住那一小块属于大家的地方，还得有人和她一起站。",
-      "bag": [],
-      "wage": 11,
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "营地守位人",
+      "baseBackground": "militia_background",
+      "wage": 13,
       "equipment": [
         "weapons/militia_spear",
-        "shields/wooden_shield",
-        "armor/padded_surcoat",
-        "helmets/hood"
+        "armor/padded_leather",
+        "helmets/aketon_cap",
+        "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 370,
+      "hireCost": 670,
       "title": "远征团队员",
       "chapter": 2,
-      "background": "militia_background",
+      "background": "afeix_dae_background",
       "role": "守位前排盾卫，近防、决心与生命成长",
       "attrs": [
-        61,
-        103,
-        46,
-        94,
-        55,
-        35,
-        9,
-        3
+        64,
+        102,
+        48,
+        90,
+        54,
+        31,
+        8,
+        2
       ]
     },
     {
+      "backgroundDescription": "她替演练队排过位置，红线一拉，谁站哪边、谁先说话就要讲清楚。轻弩与短句是她维持秩序的办法，被指出漏看一处时，她也愿意当场改线。",
       "stars": {
+        "Bravery": 1,
         "RangedSkill": 2,
         "Initiative": 2
       },
@@ -762,80 +892,90 @@
       "key": "manyuemei",
       "description": "蔓越莓把红线往桌上一拉，阿飞就知道这次没法靠热闹混过去。停、坐下、再说一遍，她的句子短，留给别人抢话的缝也小。她喜欢把混乱的局面攥回自己的节奏里，尤其不耐烦一个问题还没答完，对方又开始讲漂亮话。不过，那枚被她漏看的木片让大谋点出来时，她照样当场更正。强势不必靠装作永远正确来维持。她拿着一把轻弩，箭袋上也系着一截红线，提醒同伴先看清彼此的位置；阿飞想要她服气，得拿出同样清楚的决定。",
       "bag": [
+        "weapons/javelin",
         "weapons/knife"
       ],
-      "wage": 12,
+      "backgroundName": "红线督战员",
+      "baseBackground": "poacher_background",
+      "wage": 15,
       "equipment": [
-        "weapons/light_crossbow",
-        "ammo/quiver_of_bolts",
-        "armor/thick_tunic"
+        "weapons/javelin",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet"
       ],
       "isCaptain": false,
-      "hireCost": 410,
+      "hireCost": 1220,
       "title": "远征团队员",
       "chapter": 2,
-      "background": "poacher_background",
+      "background": "afeix_manyuemei_background",
       "role": "远攻与先攻兼顾",
       "attrs": [
-        50,
-        99,
+        52,
+        98,
         44,
-        116,
-        47,
+        117,
+        46,
         56,
-        4,
-        7
-      ]
-    },
-    {
-      "stars": {
-        "MeleeSkill": 1,
-        "Initiative": 2
-      },
-      "encounterTitle": "下一站叫什么",
-      "name": "小哈尼",
-      "encounterChoices": [
-        {
-          "hireDiscount": 0,
-          "label": "只谈眼下能兑现的雇用条件，按原价邀请",
-          "outcome": "这次谈话没有把一个以后说成已经定好的旅程。小哈尼愿意按原报价加入，关于海边的想法仍留给往后商量。",
-          "cost": 0
-        },
-        {
-          "hireDiscount": 60,
-          "label": "分担沿途路账查阅费，换取招募优惠",
-          "outcome": "查阅路账的费用得到支持，她相应降低招募报价。关于去海边的想法，双方约定留到往后再谈，她把自己的地图仔细收好。",
-          "cost": 40
-        }
-      ],
-      "encounterText": "小哈尼正把旧海图折进行囊，几个招工人都向她保证以后会去海边。阿飞才开口讲远征团的将来，她就问眼下要去哪里。她愿意接活攒旅费，但不想先答应一整年。两人可以先说清当前的雇用条件，也可以由黑旗分担她向地图铺查阅沿途路账的费用。",
-      "key": "xiaohani",
-      "description": "小哈尼把旧海图折得很小，谈报酬时也会放在桌边。招工的人爱用以后来劝她，阿飞更擅长把以后说得热闹，她却总能把话问回眼下要去的那一站。她并非非走最快的路不可，也知道旅费得一份份挣；只是不愿一季接着一季，到头来还没开始自己的行程。她带一把普通弯刀来谈加入，希望把这段同行的条件说清楚。名声可以慢慢有，目标也可以重新考虑，至少这张属于她自己的地图，不用先替别人收起来。",
-      "bag": [],
-      "wage": 10,
-      "equipment": [
-        "weapons/falchion",
-        "shields/buckler_shield",
-        "armor/thick_tunic"
-      ],
-      "isCaptain": false,
-      "hireCost": 330,
-      "title": "远征团队员",
-      "chapter": 2,
-      "background": "daytaler_background",
-      "role": "近攻与先攻偏好的轻装配置",
-      "attrs": [
-        53,
-        102,
-        39,
-        119,
-        54,
-        43,
-        5,
+        2,
         6
       ]
     },
     {
+      "backgroundDescription": "她带着几只小布袋沿商路做护送，挣来的钱、够用的干粮和舍不得丢的扣子各有去处。别人笑称仓鼠，她先护好自己那份，再考虑愿意分出多少。储备是上路的底气，她还在寻找自己愿意留下的屋檐。",
+      "stars": {
+        "MeleeSkill": 1,
+        "MeleeDefense": 1,
+        "Initiative": 2
+      },
+      "encounterTitle": "仓鼠的第三只口袋",
+      "name": "罗一可",
+      "encounterChoices": [
+        {
+          "hireDiscount": 0,
+          "label": "说清伙食与工钱，按原价邀请她同行",
+          "outcome": "罗一可把说好的那份另系一根结。她愿意按原价加入，最后那半张饼仍留给自己；阿飞想尝，得先开口问。",
+          "cost": 0
+        },
+        {
+          "hireDiscount": 60,
+          "label": "出钱补好漏粮的袋口，换取招募优惠",
+          "outcome": "袋口补好，罗一可不必再沿路捡掉出的栗子。她应下招募折扣，把省下的路费装回小袋，顺手分给阿飞一颗完整的。",
+          "cost": 40
+        }
+      ],
+      "encounterText": "驿站桌边，罗一可刚从第三只口袋里摸出半张干饼。阿飞问她准备过冬吗，她把饼收回去：先过今晚。商贩兜售的大粮囊被她放回架上，她不想把准备变成背不动的负担。听见黑旗要雇护送的人，她拿起弯刀，先问工钱和伙食。你可以按正常条件谈清她自己的那份，也可以分担眼前修补袋口的费用，换取招募折扣。",
+      "key": "xiaohani",
+      "description": "罗一可的衣袋总比别人鼓一点，里面有干饼、栗子，也有一时舍不得扔的扣子。阿飞叫她仓鼠，她不急着反驳，只先摸清哪一袋还够下一程。她带普通弯刀做护送，攒下的路费另系一个结。藏够吃的能让她安心，后来想要的却不只是一堆储备：她要一个自己能决定留下或出发的地方。",
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "随行藏粮人",
+      "baseBackground": "daytaler_background",
+      "wage": 11,
+      "equipment": [
+        "weapons/falchion",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet"
+      ],
+      "isCaptain": false,
+      "hireCost": 1050,
+      "title": "远征团队员",
+      "chapter": 2,
+      "background": "afeix_xiaohani_background",
+      "role": "近攻与先攻偏好的轻装配置",
+      "attrs": [
+        55,
+        101,
+        43,
+        121,
+        58,
+        38,
+        5,
+        4
+      ]
+    },
+    {
+      "backgroundDescription": "她在往来商旅的落脚处帮人认朋友、腾位置，也习惯看一眼落在侧后的同伴。“自己人”从来不是随口的招呼，但她也不想让这三个字变成什么都由她兜着的理由。",
       "stars": {
         "MeleeDefense": 3,
         "Stamina": 1,
@@ -863,34 +1003,38 @@
       "bag": [
         "weapons/knife"
       ],
-      "wage": 13,
+      "backgroundName": "结伴守望者",
+      "baseBackground": "poacher_background",
+      "wage": 14,
       "equipment": [
-        "weapons/boar_spear",
-        "shields/wooden_shield",
-        "armor/padded_surcoat"
+        "weapons/militia_spear",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet",
+        "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 420,
+      "hireCost": 1060,
       "title": "远征团队员",
       "chapter": 3,
-      "background": "poacher_background",
+      "background": "afeix_keke_background",
       "role": "鼓舞同伴的前排盾卫，近防与决心成长",
       "attrs": [
-        55,
-        100,
-        48,
-        103,
+        57,
+        104,
         52,
-        54,
+        100,
+        51,
+        44,
         6,
-        6
+        5
       ]
     },
     {
+      "backgroundDescription": "她守过长时间的门岗，长矛立得稳，交班的人来没来却记得更清楚。“五老压阵”听起来很有分量，她最想追问的仍是下一班到底谁到场。",
       "stars": {
-        "MeleeDefense": 1,
+        "MeleeSkill": 2,
         "Stamina": 1,
-        "Bravery": 2
+        "Bravery": 1
       },
       "encounterTitle": "空着的替班栏",
       "name": "余想",
@@ -914,33 +1058,37 @@
       "bag": [
         "weapons/knife"
       ],
-      "wage": 12,
+      "backgroundName": "轮值长枪卫",
+      "baseBackground": "militia_background",
+      "wage": 14,
       "equipment": [
-        "weapons/pitchfork",
-        "armor/padded_surcoat",
-        "helmets/hood"
+        "weapons/warfork",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet"
       ],
       "isCaptain": false,
-      "hireCost": 400,
+      "hireCost": 1150,
       "title": "远征团队员",
       "chapter": 3,
-      "background": "militia_background",
+      "background": "afeix_yuxiang_background",
       "role": "长柄武器与持续站位",
       "attrs": [
-        59,
+        62,
         108,
-        49,
-        97,
-        58,
-        35,
-        7,
-        4
+        46,
+        94,
+        59,
+        31,
+        5,
+        2
       ]
     },
     {
+      "backgroundDescription": "她带着一只木熊主持过桌边游戏，越是几位互不服气的人坐在一起，她越有兴致。她喜欢让人猜错后的热闹，但不允许输家悄悄改掉已经发生的那一步。",
       "stars": {
         "Bravery": 2,
-        "Hitpoints": 1
+        "Hitpoints": 1,
+        "MeleeSkill": 1
       },
       "encounterTitle": "再讲一遍，还是先认输",
       "name": "童猪",
@@ -961,35 +1109,40 @@
       "encounterText": "抹茶和大谋还在争刚才哪一步开始算错，童猪把小熊翻过来，请他们看底下的规则。掌柜另摆来一张场地费单。她愿意考虑黑旗的邀请：保留原价，也可由黑旗分担列明的场租换取招募优惠。付钱只解决场地，桌上输掉的那一局谁也别想删。",
       "key": "tongzhu",
       "description": "童猪能把一只木熊摆出审判官的威严，又在别人自信猜错时笑得险些忘记敲杯。她喜欢热闹，尤其喜欢把几位互不服气的人拉到同一张桌边。小熊出击之前先懂规则，听起来是提醒，也带一点等你出糗的坏心眼。她接受质疑玩法，不接受输掉以后偷偷修改已经发生的那一步。黑旗有三位格外适合坐上游戏桌的队长。至于要不要同行，她既看待遇，也想知道下一次会是谁第一个抢答。",
-      "bag": [],
-      "wage": 10,
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "木熊游戏主持",
+      "baseBackground": "daytaler_background",
+      "wage": 12,
       "equipment": [
-        "weapons/wooden_stick",
-        "shields/buckler_shield",
-        "armor/thick_tunic"
+        "weapons/warfork",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet"
       ],
       "isCaptain": false,
-      "hireCost": 320,
+      "hireCost": 1070,
       "title": "远征团队员",
       "chapter": 3,
-      "background": "daytaler_background",
+      "background": "afeix_tongzhu_background",
       "role": "生命与决心较有潜力",
       "attrs": [
-        58,
+        60,
         98,
-        50,
-        107,
-        51,
-        40,
-        5,
-        4
+        54,
+        102,
+        53,
+        35,
+        4,
+        3
       ]
     },
     {
+      "backgroundDescription": "她在宴厅与临时舞台领过舞，记得每一拍，也记得哪块板会绊脚。“大王舞”要把主角托起来，她却知道再响的名号也得在该让路时让出位置。",
       "stars": {
         "MeleeSkill": 1,
         "Stamina": 1,
-        "Initiative": 1
+        "Initiative": 2
       },
       "encounterTitle": "请团长走过这两把椅子",
       "name": "美伢",
@@ -1013,31 +1166,36 @@
       "bag": [
         "weapons/knife"
       ],
-      "wage": 12,
+      "backgroundName": "巡演领舞",
+      "baseBackground": "militia_background",
+      "wage": 14,
       "equipment": [
-        "weapons/warfork",
-        "armor/padded_surcoat"
+        "weapons/falchion",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet"
       ],
       "isCaptain": false,
-      "hireCost": 430,
+      "hireCost": 1230,
       "title": "远征团队员",
       "chapter": 3,
-      "background": "militia_background",
+      "background": "afeix_meiya_background",
       "role": "近攻、耐力与先攻均衡",
       "attrs": [
-        56,
-        105,
-        45,
-        112,
         58,
-        39,
+        105,
+        43,
+        119,
+        59,
+        33,
         6,
-        4
+        3
       ]
     },
     {
+      "backgroundDescription": "她走过各处练武场，给招式起大名字，再用木桩上的蛇形痕迹一遍遍验脚步。“秦国的神”是醒目的招牌，她仍愿意为了一个站不稳的细节和别人争到天黑。",
       "stars": {
         "MeleeSkill": 2,
+        "MeleeDefense": 1,
         "Initiative": 1
       },
       "encounterTitle": "先别讲，把脚放这里",
@@ -1059,34 +1217,41 @@
       "encounterText": "玩蛇与大谋把两只桶搬来搬去，各执一套试招的理由。看场人递来追加场租，两人这才发现旁观者已经换了一拨。黑旗可以原价留下邀请，也能按列明费用分担场租，换取较低招募报价。玩蛇只问大谋一句：真同行以后，这个还接着试不试？",
       "key": "wanshe",
       "description": "玩蛇给招式起的名字很响，检验招式时却喜欢问一个很小的问题：你是从哪一步开始站不住的？木桩上的蛇痕记着反复改过的路线，秦国的神是招牌，也是别人等着看笑话的理由。她并不准备因此闭嘴，更想找些敢拿不同办法来碰一碰的人。大谋的省力办法让她不服，又确实值得再试；阿飞能安静数清次数时，也算有用。她对黑旗的兴趣，就从这场还没分出谁更懂的争论开始。",
-      "bag": [],
-      "wage": 12,
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "蛇步试招客",
+      "baseBackground": "militia_background",
+      "wage": 15,
       "equipment": [
-        "weapons/shortsword",
-        "shields/buckler_shield",
-        "armor/thick_tunic"
+        "weapons/falchion",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet",
+        "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 420,
+      "hireCost": 1370,
       "title": "远征团队员",
       "chapter": 3,
-      "background": "militia_background",
+      "background": "afeix_wanshe_background",
       "role": "近攻与先攻偏好的单手剑配置",
       "attrs": [
-        54,
-        102,
-        41,
-        114,
+        57,
+        110,
+        42,
+        105,
         59,
-        36,
-        7,
-        5
+        31,
+        5,
+        3
       ]
     },
     {
+      "backgroundDescription": "她带着曲子和下一站的打算走过不少营火，唱完有时就走，有时又多听完一个笑话。她愿意同行，也要保有说明自己为何留下、何时告别的自由。",
       "stars": {
         "Bravery": 2,
-        "Stamina": 1
+        "Stamina": 1,
+        "Hitpoints": 1
       },
       "encounterTitle": "这一段，先写清楚",
       "name": "涂涂",
@@ -1110,132 +1275,37 @@
       "bag": [
         "weapons/knife"
       ],
-      "wage": 10,
+      "backgroundName": "行旅歌者",
+      "baseBackground": "daytaler_background",
+      "wage": 12,
       "equipment": [
-        "weapons/lute",
-        "armor/thick_tunic"
+        "weapons/warfork",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet"
       ],
       "isCaptain": false,
-      "hireCost": 310,
+      "hireCost": 1010,
       "title": "远征团队员",
       "chapter": 3,
-      "background": "daytaler_background",
+      "background": "afeix_tutu_background",
       "role": "决心与耐力偏好的轻装起步",
       "attrs": [
-        52,
-        104,
-        52,
-        106,
-        50,
-        42,
-        4,
-        5
-      ]
-    },
-    {
-      "stars": {
-        "MeleeSkill": 1,
-        "Hitpoints": 1,
-        "Bravery": 1
-      },
-      "encounterTitle": "所向无敌，从哪一场写起",
-      "name": "宋暖阳",
-      "encounterChoices": [
-        {
-          "hireDiscount": 0,
-          "label": "邀请记录沿途真事，保留原价",
-          "outcome": "宋暖阳接受留下原价邀请，准备再听听黑旗的故事。阿飞指着乱草稿说这里全是真事，鹌鹑的笔终于动了动。",
-          "cost": 0
-        },
-        {
-          "hireDiscount": 60,
-          "label": "补贴纸墨开支，商定招募优惠",
-          "outcome": "纸墨开支按约补贴，宋暖阳相应降低招募报价。那张凯旋告示仍旧翻着面，黑旗并没有顺手买下一首赞歌。",
-          "cost": 40
-        }
-      ],
-      "encounterText": "雇主留下半份纸墨钱便离开，宋暖阳把那张假凯旋告示翻了面。黑旗的邀请听来还算有趣：至少这三个人没把争吵藏好。原价招募可以谈；若黑旗按列明费用补贴纸墨开支，报价也可降低。摊外锣响，鹌鹑收颈又探头，等三位队长说打算。",
-      "key": "songnuanyang",
-      "description": "被叫作鹌鹑的宋暖阳，听到响动时偶尔收一下颈，片刻后又会探头把问题问完。告示摊上可以听见许多凯旋，真正值得落笔的却不总是最响亮的那份。黑旗眼下没有多少漂亮战绩，倒有不少值得继续听下去的争执。若同行，宋暖阳想保留那些不好归类的片段：有人嘴硬，有人走开，也有人被一句认真回答留住。故事未必每次都能有漂亮结尾，但这份不确定，正是跟上去看看的理由。",
-      "bag": [],
-      "wage": 10,
-      "equipment": [
-        "weapons/militia_spear",
-        "shields/buckler_shield",
-        "armor/thick_tunic"
-      ],
-      "isCaptain": false,
-      "hireCost": 320,
-      "title": "远征团队员",
-      "chapter": 4,
-      "background": "daytaler_background",
-      "role": "生命、近攻与决心均衡",
-      "attrs": [
         57,
-        101,
-        46,
         104,
-        52,
-        39,
+        56,
+        100,
+        51,
+        36,
         4,
-        4
+        3
       ]
     },
     {
-      "stars": {
-        "MeleeDefense": 3,
-        "Stamina": 1,
-        "Bravery": 2
-      },
-      "encounterTitle": "飞爹先坐观众席",
-      "name": "溺水小龟",
-      "encounterChoices": [
-        {
-          "hireDiscount": 0,
-          "label": "支持他独立试一场，原价邀约",
-          "outcome": "阿飞把手收回，答应有机会认真看他的比试。小龟接受原价邀约，随即又盯回自己的路线；结果得等他自己走出来。",
-          "cost": 0
-        },
-        {
-          "hireDiscount": 80,
-          "label": "分担参赛开支，议定招募优惠",
-          "outcome": "参赛开支按约分担，小龟相应降低招募报价。他笑着给飞爹指了指观众的位置，资助可不包含代他下棋。",
-          "cost": 50
-        }
-      ],
-      "encounterText": "小龟把阿飞的手轻轻挡在棋盘外，请他先当观众，再当教练。他想报名一场自己的比试，列明的参赛开支还没结清。黑旗可以原价留下邀请，也能分担这笔费用，换取较低招募报价。小龟都愿意考虑，但棋子仍由他自己决定怎么走。",
-      "key": "xiaogui",
-      "description": "溺水小龟坐上木箱才够得着棋盘，却一定要把写着自己名字的牌子摆到最显眼处。他叫飞爹时带着亲近，也藏着一点较劲：既然大哥有值得讲的战绩，他也想拿出属于自己的那一场。阿飞的关注会让他高兴，可手伸到棋盘上代走一步就不行。小龟愿意听意见，更希望意见能留给自己作决定的余地。若加入黑旗，他要的不是永远被带着走，而是有朝一日能把牌推到阿飞面前，说这一局请你坐下来看看。",
-      "bag": [
-        "weapons/javelin"
-      ],
-      "wage": 11,
-      "equipment": [
-        "weapons/boar_spear",
-        "shields/wooden_shield",
-        "armor/thick_tunic"
-      ],
-      "isCaptain": false,
-      "hireCost": 350,
-      "title": "远征团队员",
-      "chapter": 4,
-      "background": "daytaler_background",
-      "role": "前排盾卫，近防与决心成长；保留投掷副手",
-      "attrs": [
-        55,
-        106,
-        45,
-        103,
-        50,
-        46,
-        6,
-        9
-      ]
-    },
-    {
+      "backgroundDescription": "她在练武场边讲过许多必胜的办法，真拿起盾时却常被第一下震得退回去。躲在盾后仍要解释两句的嘴强王者，至少每次丢完脸还肯把盾捡回来。",
       "stars": {
         "MeleeDefense": 2,
-        "RangedSkill": 1
+        "RangedSkill": 1,
+        "Hitpoints": 1
       },
       "encounterTitle": "盾后面还有一句",
       "name": "奶盖",
@@ -1257,35 +1327,41 @@
       "key": "naigai",
       "description": "奶盖说起胜负，仿佛全天下的教官都该先排队听她讲完。真正把盾拿到手上，话却可能比手快上三拍。嘴强王者一缩进奶盖，仍会从盾后补出半篇解释，抽象整活让尴尬很难安静落地。她不想只当队伍的笑料，也不肯因为一次出糗就从台上消失。阿飞对这种嘴硬并不陌生，笑完也愿意把招募纸继续留着。她究竟有没有下一步本事尚待再看，至少本王考虑考虑这句，已经被她讲得像真的一样。",
       "bag": [
+        "weapons/javelin",
         "weapons/knife"
       ],
-      "wage": 9,
+      "backgroundName": "街头论武客",
+      "baseBackground": "daytaler_background",
+      "wage": 11,
       "equipment": [
-        "weapons/throwing_axe",
-        "shields/buckler_shield",
-        "armor/thick_tunic"
+        "weapons/javelin",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet",
+        "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 280,
+      "hireCost": 1030,
       "title": "远征团队员",
-      "chapter": 4,
-      "background": "daytaler_background",
+      "chapter": 3,
+      "background": "afeix_naigai_background",
       "role": "近防与投掷有潜力的新手",
       "attrs": [
-        54,
-        99,
-        35,
-        110,
-        48,
-        44,
-        4,
+        61,
+        102,
+        38,
+        104,
+        51,
+        49,
+        6,
         3
       ]
     },
     {
+      "backgroundDescription": "她替货车与仓门管过钥匙，听到“大家都认识”反而会再检查一遍锁。备用钥匙放在哪里，她记得比任何口头保证都清楚；信任也得有人把交接做完。",
       "stars": {
-        "Stamina": 2,
-        "Hitpoints": 1
+        "MeleeSkill": 2,
+        "Hitpoints": 2,
+        "MeleeDefense": 2
       },
       "encounterTitle": "未来团长，现在哪位担保",
       "name": "小杰",
@@ -1306,35 +1382,41 @@
       "encounterText": "小杰终于查清绳钩借给了谁，正和抹茶讨论怎样不必每次都由她开锁。锁匠已经列好补配备用钥匙的费用。黑旗可以原价留下招募邀请，也可分担这笔开支，换取较低报价。她把账单摆正，强调讨论的是分工，别顺手把她全部钥匙要走。",
       "key": "xiaojie",
       "description": "小杰喜欢把锁扣听到清楚的一声响，再转身办下一件事。她对大概会还、大家都认识这类担保尤其不买账，认真起来连空箱子的锁也不肯先卸。锁车是办法，不上这个当是口头的决心；备用钥匙却让她开始考虑，规矩能不能让自己少跑几趟。她与抹茶谈借据时很有兴致，谈到借而不还的熟人又马上板起脸。若加入黑旗，她想减少的不是热闹，而是热闹散后人人指向别处的那笔糊涂账。",
-      "bag": [],
-      "wage": 10,
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "车锁看守",
+      "baseBackground": "daytaler_background",
+      "wage": 12,
       "equipment": [
         "weapons/pickaxe",
-        "shields/buckler_shield",
-        "armor/thick_tunic"
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet",
+        "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 320,
+      "hireCost": 1430,
       "title": "远征团队员",
-      "chapter": 5,
-      "background": "daytaler_background",
-      "role": "耐力与生命偏好的近战配置",
+      "chapter": 3,
+      "background": "afeix_xiaojie_background",
+      "role": "血牛轻甲长柄与解网工具位",
       "attrs": [
+        80,
+        88,
+        44,
+        96,
         60,
-        109,
-        41,
-        99,
-        53,
-        37,
-        5,
-        4
+        32,
+        7,
+        2
       ]
     },
     {
+      "backgroundDescription": "她能在小舞台上让钱袋看起来凭空鼓起，散场后却会把里面到底剩多少数得分明。她既懂吸引目光，也懂预算最后要落到真正使用物资的人手上。",
       "stars": {
         "Bravery": 1,
-        "Hitpoints": 1,
-        "RangedDefense": 1
+        "RangedSkill": 2,
+        "Hitpoints": 1
       },
       "encounterTitle": "这枚铜片付不了粮钱",
       "name": "bula",
@@ -1355,32 +1437,39 @@
       "encounterText": "bula 把戏法道具币拨到一边，桌上还有列明的道具布料费用未结。她愿意听黑旗的采买打算，原价邀约可以保留；若黑旗分担这笔演出开支，她也会降低招募报价。阿飞摸了摸那枚薄铜片，终于明白台上消失的钱和台下缺的钱是两回事。",
       "key": "bula",
       "description": "bula 很清楚一只钱袋怎样显得鼓，也清楚热闹散场后里面究竟剩多少。她配合戏法时能让观众笑，摊账时也能笑着把对方不想听的数字报完。抹茶会问账能不能平，她会继续问买回来的东西是否有人用得顺。好看的计划并不令她反感，她只是讨厌账单出现时，众人忽然都把目光挪开。黑旗若想请她照看公用开支，就得让采买的决定同样公开，别等袋底见空才想起谁最会算。",
-      "bag": [],
-      "wage": 10,
+      "bag": [
+        "weapons/javelin",
+        "weapons/knife"
+      ],
+      "backgroundName": "钱袋戏法师",
+      "baseBackground": "daytaler_background",
+      "wage": 11,
       "equipment": [
-        "weapons/bludgeon",
-        "shields/wooden_shield",
-        "armor/thick_tunic"
+        "weapons/javelin",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet"
       ],
       "isCaptain": false,
-      "hireCost": 330,
+      "hireCost": 1530,
       "title": "远征团队员",
-      "chapter": 5,
-      "background": "daytaler_background",
+      "chapter": 3,
+      "background": "afeix_bula_background",
       "role": "生命、决心与远防均衡",
       "attrs": [
-        56,
+        57,
+        103,
+        45,
         102,
-        47,
-        101,
-        51,
-        42,
-        5,
-        6
+        48,
+        53,
+        3,
+        5
       ]
     },
     {
+      "backgroundDescription": "她替旅队探过路口与转角，习惯早出半步，先看清别人还没走到的地方。她画在地上的急刹记号很准确，难的是让后面的人也看懂这一条路。",
       "stars": {
+        "MeleeSkill": 1,
         "Stamina": 1,
         "Initiative": 3
       },
@@ -1406,32 +1495,36 @@
       "bag": [
         "weapons/knife"
       ],
-      "wage": 11,
+      "backgroundName": "踩点斥候",
+      "baseBackground": "poacher_background",
+      "wage": 14,
       "equipment": [
-        "weapons/javelin",
-        "shields/buckler_shield",
-        "armor/thick_tunic"
+        "weapons/falchion",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet"
       ],
       "isCaptain": false,
-      "hireCost": 370,
+      "hireCost": 1790,
       "title": "远征团队员",
-      "chapter": 5,
-      "background": "poacher_background",
+      "chapter": 3,
+      "background": "afeix_suwa_background",
       "role": "高先攻与耐力倾向",
       "attrs": [
-        51,
-        105,
-        40,
-        124,
-        51,
-        48,
-        5,
-        7
+        54,
+        102,
+        41,
+        126,
+        56,
+        42,
+        4,
+        5
       ]
     },
     {
+      "backgroundDescription": "她在短坡赛与跑腿差事之间攒经验，把一条长路拆成几次呼吸，003 号木牌擦得比谁都认真。别人把她夸成传奇，她会先纠正，再去把眼前这一段跑完。",
       "stars": {
         "MeleeSkill": 2,
+        "Stamina": 1,
         "MeleeDefense": 1
       },
       "encounterTitle": "别替003写得太快",
@@ -1453,31 +1546,37 @@
       "encounterText": "千涵又把003木牌擦了一遍，指着练习纸说明下一段想练到哪里。场边木桩与标距绳需要租用，费用已列明。黑旗可原价留下邀请，让她自己安排这笔，也可分担练习场具的开支换取招募优惠。她期待的是继续进步，不急着把编号变成传奇称号。",
       "key": "qianhan",
       "description": "千涵把003号木牌擦得很亮，哪怕知道它只是排队顺序，也舍不得让编号蒙灰。她会认真练习，认真比较谁先跑过那段坡，也会因别人夸得太远而着急解释。短坡冲刺需要留力，分段呼吸则让她把很长的目标拆成一段一段。她想证明自己，并不满足于永远当一个值得鼓励的新手；只是传奇要怎么写，得等自己真的做完。黑旗若肯给这份较劲留出位置，下一程便值得考虑。",
-      "bag": [],
-      "wage": 11,
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "坡道跑手",
+      "baseBackground": "militia_background",
+      "wage": 14,
       "equipment": [
-        "weapons/militia_spear",
-        "shields/wooden_shield",
-        "armor/thick_tunic"
+        "weapons/boar_spear",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet",
+        "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 350,
+      "hireCost": 1970,
       "title": "远征团队员",
-      "chapter": 5,
-      "background": "militia_background",
+      "chapter": 3,
+      "background": "afeix_qianhan_background",
       "role": "近攻与近防偏好的长矛与盾牌配置",
       "attrs": [
-        55,
-        103,
-        43,
-        106,
-        55,
-        38,
+        60,
+        108,
+        44,
+        111,
+        59,
+        32,
         6,
-        4
+        3
       ]
     },
     {
+      "backgroundDescription": "她给流动演出撑过幕布、顶过架脚，场面一乱，大家总先喊“芷芷”。写着自己名字的节目纸被折得很整齐，她记得救过多少次场，也记得自己的登场还排在后面。",
       "stars": {
         "MeleeDefense": 2,
         "Stamina": 1,
@@ -1502,35 +1601,41 @@
       "encounterText": "王大芷终于放开幕布架脚，却发现自己的登场已被排到散席以后。她正在和掌事商量下一场，手边还压着裂口幕布的修补账单。黑旗可以原价留下邀请，也可按列明费用分担修补，换取招募优惠。她请三位队长先听打算，别又只问谁来撑架子。",
       "key": "wangdazhi",
       "description": "旁人有时叫王大芷，有时仍顺口喊芷芷，她应声之前往往已经看见哪根架子在晃。她懂得撑住幕布、摆稳架脚、把门口留给该过去的人；事情一乱，别人便自然向她招手。站稳场子是本事，也容易让她自己的登场被一推再推。那张写着名字的纸条，她其实记得比谁都清楚。若考虑黑旗，她可以谈护场的责任，也想谈自己打算做的事，不能换一面旗以后，又成为永远腾不出手的那个人。",
-      "bag": [],
-      "wage": 12,
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "搭台护场人",
+      "baseBackground": "militia_background",
+      "wage": 14,
       "equipment": [
-        "weapons/wooden_flail",
-        "shields/wooden_shield",
-        "armor/padded_surcoat"
+        "weapons/militia_spear",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet",
+        "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 400,
+      "hireCost": 1920,
       "title": "远征团队员",
-      "chapter": 5,
-      "background": "militia_background",
+      "chapter": 3,
+      "background": "afeix_wangdazhi_background",
       "role": "近防、耐力和决心偏好的持盾起步",
       "attrs": [
-        58,
-        106,
+        63,
+        108,
         48,
-        98,
-        54,
-        35,
+        94,
+        55,
+        30,
         8,
-        5
+        3
       ]
     },
     {
+      "backgroundDescription": "她拿长柄兵器打过公开演武，围观者喊“奶团吕布”，留下来的报名纸却常把单挑写得比别的事都大。她喜欢赢，也想决定这一击究竟替谁打开道路。",
       "stars": {
-        "MeleeSkill": 3,
-        "Stamina": 3,
-        "MeleeDefense": 3
+        "MeleeSkill": 2,
+        "Stamina": 2,
+        "MeleeDefense": 1
       },
       "encounterTitle": "先把委托写在名号上面",
       "name": "瑶瑶牙",
@@ -1554,33 +1659,37 @@
       "bag": [
         "weapons/knife"
       ],
-      "wage": 13,
+      "backgroundName": "演武破阵手",
+      "baseBackground": "militia_background",
+      "wage": 16,
       "equipment": [
         "weapons/woodcutters_axe",
-        "armor/padded_surcoat",
-        "helmets/aketon_cap"
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet"
       ],
       "isCaptain": false,
-      "hireCost": 450,
+      "hireCost": 2160,
       "title": "远征团队员",
-      "chapter": 5,
-      "background": "militia_background",
-      "role": "九星核心：近攻、近防与疲劳；双手斧起步",
+      "chapter": 3,
+      "background": "afeix_yaoyaoya_background",
+      "role": "近攻与疲劳二星、近防一星；双手斧起步",
       "attrs": [
-        63,
-        111,
-        44,
-        90,
+        64,
+        113,
+        42,
+        84,
         60,
-        32,
-        5,
-        2
+        28,
+        4,
+        0
       ]
     },
     {
+      "backgroundDescription": "她推着挂小铃的轻车送过包裹，听一声颤响就知道哪边绳结松了。直路上愿意追，到了弯前却肯留力；送得快值得夸，完整交到人手里才算做完。",
       "stars": {
         "Bravery": 1,
-        "Hitpoints": 2
+        "Hitpoints": 2,
+        "MeleeSkill": 1
       },
       "encounterTitle": "计时牌旁的碎封蜡",
       "name": "羊咩咩",
@@ -1601,321 +1710,1350 @@
       "encounterText": "羊咩咩还在请掌事把完好的封蜡算进交付，轴边小铃又响出一点不稳。她打算请车匠校正轮轴，开支已列明。黑旗可以原价留下邀请，也可分担这笔检修费用，换取较低招募报价。至于哪段路能追、哪处弯该松，仍得听她把车况说清。",
       "key": "yangmiemie",
       "description": "羊咩咩的轻车轴边挂着小铃，听起来像装饰，实际是她判断车况的一道提醒。直路不必处处争第一，弯后有没有余力、包裹还整不整齐，同样算本事。她也会盯着前车较劲，只是脚下先松半分，手里的方向仍不能乱。掌事若只看抵达次序，她就把碎封蜡摆到计时牌旁。黑旗想请她同行，她希望这支队伍能听完车况再谈速度。快慢都能争，已经答应送到的东西可不能在争论里消失。",
-      "bag": [],
-      "wage": 10,
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "铃车快递员",
+      "baseBackground": "daytaler_background",
+      "wage": 12,
       "equipment": [
-        "weapons/militia_spear",
-        "shields/buckler_shield",
-        "armor/padded_surcoat"
+        "weapons/warfork",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet"
       ],
       "isCaptain": false,
-      "hireCost": 340,
+      "hireCost": 1890,
       "title": "远征团队员",
-      "chapter": 5,
-      "background": "daytaler_background",
+      "chapter": 3,
+      "background": "afeix_yangmiemie_background",
       "role": "生命与决心偏好的稳健配置",
       "attrs": [
-        61,
+        66,
+        105,
+        45,
+        101,
+        56,
+        35,
+        5,
+        3
+      ]
+    },
+    {
+      "backgroundDescription": "她在集市替人记过行程与见闻，带着鹌鹑纹兜帽，响声一大先缩一下，再探头把问题问完。她的纸上留着许多没有赢的那一天，也不肯替别人补一个虚假的漂亮结尾。",
+      "stars": {
+        "MeleeSkill": 2,
+        "MeleeDefense": 2,
+        "Initiative": 3
+      },
+      "encounterTitle": "所向无敌，从哪一场写起",
+      "name": "宋暖阳",
+      "encounterChoices": [
+        {
+          "hireDiscount": 0,
+          "label": "邀请记录沿途真事，保留原价",
+          "outcome": "宋暖阳接受留下原价邀请，准备再听听黑旗的故事。阿飞指着乱草稿说这里全是真事，鹌鹑的笔终于动了动。",
+          "cost": 0
+        },
+        {
+          "hireDiscount": 60,
+          "label": "补贴纸墨开支，商定招募优惠",
+          "outcome": "纸墨开支按约补贴，宋暖阳相应降低招募报价。那张凯旋告示仍旧翻着面，黑旗并没有顺手买下一首赞歌。",
+          "cost": 40
+        }
+      ],
+      "encounterText": "雇主留下半份纸墨钱便离开，宋暖阳把那张假凯旋告示翻了面。黑旗的邀请听来还算有趣：至少这三个人没把争吵藏好。原价招募可以谈；若黑旗按列明费用补贴纸墨开支，报价也可降低。摊外锣响，鹌鹑收颈又探头，等三位队长说打算。",
+      "key": "songnuanyang",
+      "description": "被叫作鹌鹑的宋暖阳，听到响动时偶尔收一下颈，片刻后又会探头把问题问完。告示摊上可以听见许多凯旋，真正值得落笔的却不总是最响亮的那份。黑旗眼下没有多少漂亮战绩，倒有不少值得继续听下去的争执。若同行，宋暖阳想保留那些不好归类的片段：有人嘴硬，有人走开，也有人被一句认真回答留住。故事未必每次都能有漂亮结尾，但这份不确定，正是跟上去看看的理由。",
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "鹌鹑记事员",
+      "baseBackground": "daytaler_background",
+      "wage": 12,
+      "equipment": [
+        "weapons/falchion",
+        "armor/leather_lamellar",
+        "helmets/nasal_helmet",
+        "shields/wooden_shield"
+      ],
+      "isCaptain": false,
+      "hireCost": 1120,
+      "title": "远征团队员",
+      "chapter": 4,
+      "background": "afeix_songnuanyang_background",
+      "role": "高先攻轻甲刺剑手",
+      "attrs": [
+        63,
         104,
-        46,
-        100,
-        52,
-        40,
+        50,
+        108,
+        55,
+        36,
         6,
         5
       ]
     },
     {
+      "backgroundDescription": "他顶着难塞进头盔的大脑袋，背壳先把气势撑足，写着自己名字的小牌却还在等一场像样的战绩。叫阿飞“飞爹”很亲近，他更想亲手把证明摆到飞爹面前。 壳上几道旧纹像沉在水底的星，他很少提起。",
       "stars": {
-        "MeleeDefense": 1,
-        "Hitpoints": 1,
+        "MeleeDefense": 3,
+        "Stamina": 1,
         "Bravery": 2
       },
-      "encounterTitle": "先把我的名字写上",
-      "name": "陈知含",
+      "encounterTitle": "飞爹先坐观众席",
+      "name": "溺水小龟",
       "encounterChoices": [
         {
           "hireDiscount": 0,
-          "label": "认真考虑她的岗位，原价邀约",
-          "outcome": "陈知含接受原价邀约，把想学盾的愿望写进条件。她又确认了一遍自己的那份饼还在，才接着和三位队长聊下去。",
+          "label": "支持他独立试一场，原价邀约",
+          "outcome": "阿飞把手收回，答应有机会认真看他的比试。小龟接受原价邀约，随即又盯回自己的路线；结果得等他自己走出来。",
           "cost": 0
         },
         {
-          "hireDiscount": 60,
-          "label": "分担练习护腕费用，议低招募价",
-          "outcome": "护腕准备费用按约分担，陈知含相应降低招募报价。她把条件收好，很高兴这次被认真讨论的是自己想做的事。",
-          "cost": 40
+          "hireDiscount": 80,
+          "label": "分担参赛开支，议定招募优惠",
+          "outcome": "参赛开支按约分担，小龟相应降低招募报价。他笑着给飞爹指了指观众的位置，资助可不包含代他下棋。",
+          "cost": 50
         }
       ],
-      "encounterText": "陈知含把自己那份饼放好，主动提出想学盾。她已看中过一副练习用的护腕，摊主把修补与租用的费用列在木牌上。黑旗可以原价留下邀请，认真考虑她想要的岗位；也能分担这笔准备开支换取招募优惠。她终于问的是自己的打算，没有先说大家都行。",
-      "key": "chenzhihan",
-      "description": "陈知含记得谁还没分到饼，也会把自己那份完整地摆在名字旁。月饼帮可以坐得热闹，坐下的人却不必永远只负责分食。她想学盾，想知道自己怎样挡住下一下，想把上一次看漏的脚步真正记住。谈到这里，她比谈帮忙更有兴致，只是旁人不一定问过。她愿意考虑一支互相照应的队伍，前提是照应里也有她自己。招募纸上除了日薪，还得留出一行她亲口说的愿望。",
-      "bag": [],
-      "wage": 9,
+      "encounterText": "小龟把阿飞的手轻轻挡在棋盘外，请他先当观众，再当教练。他想报名一场自己的比试，列明的参赛开支还没结清。黑旗可以原价留下邀请，也能分担这笔费用，换取较低招募报价。小龟都愿意考虑，但棋子仍由他自己决定怎么走。",
+      "key": "xiaogui",
+      "description": "溺水小龟坐上木箱才够得着棋盘，却一定要把写着自己名字的牌子摆到最显眼处。他叫飞爹时带着亲近，也藏着一点较劲：既然大哥有值得讲的战绩，他也想拿出属于自己的那一场。阿飞的关注会让他高兴，可手伸到棋盘上代走一步就不行。小龟愿意听意见，更希望意见能留给自己作决定的余地。若加入黑旗，他要的不是永远被带着走，而是有朝一日能把牌推到阿飞面前，说这一局请你坐下来看看。 夜里擦壳时，几道旧纹偶尔泛起深水似的暗光；他总说自己走得慢，却从没把身后的脚步声听丢。",
+      "bag": [
+        "weapons/knife"
+      ],
+      "backgroundName": "背壳小将",
+      "baseBackground": "daytaler_background",
+      "wage": 16,
       "equipment": [
-        "weapons/shortsword",
-        "shields/buckler_shield",
-        "armor/thick_tunic"
+        "weapons/militia_spear",
+        "armor/leather_lamellar",
+        "shields/wooden_shield"
       ],
       "isCaptain": false,
-      "hireCost": 300,
+      "hireCost": 1490,
       "title": "远征团队员",
-      "chapter": 5,
-      "background": "daytaler_background",
-      "role": "生命、近防与决心均衡的新兵",
+      "chapter": 4,
+      "background": "afeix_xiaogui_background",
+      "role": "前排盾卫，近防与决心成长；保留投掷副手",
       "attrs": [
-        57,
-        100,
+        54,
+        108,
         45,
-        105,
-        50,
-        37,
-        6,
-        4
+        88,
+        49,
+        38,
+        3,
+        5
       ]
     }
   ],
   "schema": 8,
   "encounterRequirements": {
     "xiaogui": {
-      "companions": 6,
-      "battles": 7
+      "towns": 7,
+      "jobs": 7,
+      "level": 6,
+      "battles": 20,
+      "days": 46
     },
     "xiaohani": {
-      "towns": 4,
-      "companions": 5
+      "towns": 6,
+      "jobs": 4,
+      "level": 5,
+      "battles": 12,
+      "days": 30
     },
     "keke": {
-      "jobs": 3,
-      "companions": 5
+      "towns": 6,
+      "jobs": 5,
+      "level": 5,
+      "battles": 14,
+      "days": 34
     },
     "naigai": {
+      "towns": 7,
+      "jobs": 7,
+      "level": 6,
+      "battles": 19,
+      "days": 45
+    },
+    "yanzi": {
+      "towns": 4,
+      "jobs": 3,
+      "level": 3,
+      "battles": 7,
+      "days": 18
+    },
+    "wanshe": {
+      "towns": 7,
+      "jobs": 6,
+      "level": 6,
+      "battles": 18,
+      "days": 42
+    },
+    "dae": {
+      "towns": 5,
+      "jobs": 4,
+      "level": 4,
+      "battles": 10,
+      "days": 24
+    },
+    "yangmiemie": {
+      "towns": 8,
+      "jobs": 9,
+      "level": 7,
+      "battles": 25,
+      "days": 58
+    },
+    "yaoyaoya": {
+      "towns": 8,
+      "jobs": 9,
+      "level": 8,
+      "battles": 26,
+      "days": 60
+    },
+    "wangdazhi": {
+      "towns": 8,
+      "jobs": 9,
+      "level": 7,
+      "battles": 24,
+      "days": 56
+    },
+    "bula": {
+      "towns": 8,
+      "jobs": 8,
+      "level": 7,
+      "battles": 21,
+      "days": 50
+    },
+    "qianhan": {
+      "towns": 8,
+      "jobs": 8,
+      "level": 7,
+      "battles": 23,
+      "days": 54
+    },
+    "suwa": {
+      "towns": 8,
+      "jobs": 8,
+      "level": 7,
+      "battles": 22,
+      "days": 52
+    },
+    "xiaoyubeike": {
+      "towns": 3,
+      "jobs": 2,
+      "level": 3,
+      "battles": 6,
+      "days": 14
+    },
+    "shuaizi": {
+      "towns": 2,
+      "jobs": 0,
+      "level": 1,
+      "battles": 0,
+      "days": 2
+    },
+    "meiya": {
+      "towns": 7,
+      "jobs": 6,
+      "level": 6,
+      "battles": 16,
+      "days": 40
+    },
+    "laocai": {
+      "towns": 4,
+      "jobs": 3,
+      "level": 4,
+      "battles": 8,
+      "days": 20
+    },
+    "manyuemei": {
+      "towns": 6,
       "jobs": 5,
-      "types": 3
+      "level": 5,
+      "battles": 13,
+      "days": 32
+    },
+    "xiaojie": {
+      "towns": 7,
+      "jobs": 7,
+      "level": 6,
+      "battles": 20,
+      "days": 48
+    },
+    "yuchujiu": {
+      "towns": 3,
+      "jobs": 1,
+      "level": 2,
+      "battles": 4,
+      "days": 10
+    },
+    "bottle": {
+      "towns": 3,
+      "jobs": 3,
+      "level": 3,
+      "battles": 6,
+      "days": 12
     },
     "songnuanyang": {
       "towns": 5,
-      "battles": 4
-    },
-    "wanshe": {
-      "level": 4,
-      "battles": 5
-    },
-    "dae": {
-      "jobs": 3,
-      "types": 2
-    },
-    "yangmiemie": {
-      "jobs": 6,
-      "level": 5
-    },
-    "chenzhihan": {
-      "companions": 8,
-      "battles": 10
-    },
-    "wangdazhi": {
-      "companions": 7,
-      "battles": 9
-    },
-    "bula": {
-      "towns": 6,
-      "companions": 7
-    },
-    "yaoyaoya": {
-      "towns": 7,
-      "types": 3
-    },
-    "qianhan": {
       "jobs": 4,
-      "level": 5
-    },
-    "xiaoyubeike": {
-      "towns": 2,
-      "level": 2
-    },
-    "shuaizi": {
-      "towns": 2
-    },
-    "meiya": {
-      "towns": 5,
-      "companions": 6
-    },
-    "laocai": {
-      "level": 3,
-      "battles": 4
-    },
-    "manyuemei": {
-      "level": 3,
-      "battles": 5
-    },
-    "suwa": {
-      "jobs": 5,
-      "battles": 6
-    },
-    "yuchujiu": {
-      "battles": 3
-    },
-    "bottle": {
-      "battles": 1
-    },
-    "xiaojie": {
-      "level": 5,
-      "battles": 8
+      "level": 4,
+      "battles": 11,
+      "days": 28
     },
     "xiaoyueya": {
-      "towns": 3
+      "towns": 3,
+      "jobs": 1,
+      "level": 2,
+      "battles": 2,
+      "days": 7
     },
     "tutu": {
-      "jobs": 4,
-      "level": 4
+      "towns": 7,
+      "jobs": 7,
+      "level": 6,
+      "battles": 18,
+      "days": 44
     },
     "tongzhu": {
-      "jobs": 4,
-      "types": 3
+      "towns": 6,
+      "jobs": 6,
+      "level": 5,
+      "battles": 16,
+      "days": 38
     },
     "yuxiang": {
-      "towns": 3,
-      "battles": 6
+      "towns": 6,
+      "jobs": 5,
+      "level": 5,
+      "battles": 15,
+      "days": 36
     },
     "xiaoning": {
-      "towns": 4,
-      "level": 2
+      "towns": 5,
+      "jobs": 4,
+      "level": 4,
+      "battles": 10,
+      "days": 26
     },
     "lili": {
+      "towns": 2,
       "jobs": 1,
-      "towns": 2
+      "level": 2,
+      "battles": 2,
+      "days": 5
     },
     "xiaopangxu": {
-      "level": 3,
-      "battles": 3
+      "towns": 5,
+      "jobs": 4,
+      "level": 4,
+      "battles": 11,
+      "days": 28
     },
     "tiantong": {
-      "towns": 4
+      "towns": 5,
+      "jobs": 4,
+      "level": 4,
+      "battles": 8,
+      "days": 22
     },
     "wangduidui": {
-      "jobs": 2,
-      "types": 2
+      "towns": 4,
+      "jobs": 3,
+      "level": 3,
+      "battles": 6,
+      "days": 16
+    }
+  },
+  "ideaScenes": {
+    "er_blanket": {
+      "text": "儿飞派来探营，把能找到的软垫全堆到了阿飞身下。团长一坐，整个人高了半截。\n\n‘这样像不像大哥？’\n\n旁边有人抱着自己的铺盖：‘像。就是大哥的左扶手原来是我的枕头。’\n\n阿飞再往下看，右边还露着一双没地方放的脚。送垫子的人挠挠头：附近行脚商倒还有铺盖，只是这回得花钱。",
+      "effects": [
+        {
+          "money": -30,
+          "mood": [
+            {
+              "who": "all",
+              "delta": 0.25
+            }
+          ]
+        },
+        {
+          "mood": [
+            {
+              "who": [
+                "afei"
+              ],
+              "delta": 0.25
+            }
+          ]
+        },
+        {}
+      ],
+      "outcomes": [
+        "新铺盖分了下去，阿飞亲自试着躺平，确定没人再拿腿给团长当扶手。\n\n来探营的人想替他留一层软垫，他拍了拍旁边的空地：‘留这个。下回来了能坐着说话。’",
+        "垫子一层层还回去，阿飞终于回到正常高度。他拿掌心压了压草铺，忽然笑起来。\n\n‘这就对了。明早站起来，才显得我长高。’刚才抱铺盖的人给他把歪掉的那角理平，没有拆穿。",
+        "营里照原先的位置重新铺好。阿飞负责念名字，送垫子的人负责归还，忙得像在发装备。\n\n最后剩下的那只枕头，果然属于一直没能插上话的人。今晚总算每个人都找到了自己的位置。"
+      ],
+      "choices": [
+        "添些铺盖，大家都睡舒服点。（克朗 -30；全队心情 +0.25）",
+        "把借来的还回去，我这层草就挺好。（阿飞心情 +0.25）",
+        "各领各的，照原来的安排休息。（无数值变化）"
+      ],
+      "weight": 6,
+      "days": 8,
+      "title": "飞爹的床位，大家的脚位",
+      "random": {
+        "place": "safe",
+        "members": [
+          "afei"
+        ],
+        "minimum": 3
+      }
+    },
+    "mocha_receipt": {
+      "text": "午夜抹抹茶把最近一张店铺收据摊在柜上，用指尖按住两行。\n\n‘这里收了凳子钱。这里，又收了坐下的钱。’\n\n掌柜说第二项是服务。抹茶看着那张一直没人扶过的凳子，拨了一下算盘：‘它自己服务自己？’\n\n掌柜终于认账，愿意退回多收的三十五克朗。抹茶没急着接，先看了看你。",
+      "effects": [
+        {
+          "money": 35
+        },
+        {
+          "mood": [
+            {
+              "who": [
+                "mocha"
+              ],
+              "delta": 0.5
+            }
+          ]
+        },
+        {}
+      ],
+      "outcomes": [
+        "三十五克朗一枚不少回到公款里。抹茶把新收据折好，连同旧的收进账本。\n\n掌柜问旧的留着干什么。他答：‘万一下次还要向凳子收呼吸钱，我好认得笔迹。’",
+        "掌柜另开一张清楚的单子，写上给苦工们的歇脚茶水。抹茶把受赠人数也一一对过，才点头收起算盘。\n\n‘查账的人不用写太大。’他说完，又把那一行往亮处挪了挪。",
+        "抹茶盯着掌柜把重复收费的那行划掉，确认新单子上的数总算能对上。\n\n走出店门，他回头看了一眼凳子：‘便宜你了，今天没让你出来作证。’"
+      ],
+      "choices": [
+        "钱拿回来，这次听算盘的。（克朗 +35）",
+        "用这笔抵给歇脚的苦工，写清是谁查的账。（抹茶心情 +0.5）",
+        "请他更正账目就好，咱们走。（放弃退款）"
+      ],
+      "weight": 5,
+      "days": 9,
+      "title": "账能平，凳子不能算两遍",
+      "random": {
+        "place": "town",
+        "members": [
+          "mocha"
+        ],
+        "minimum": 2
+      }
+    },
+    "dao": {
+      "outcomes": [
+        "你们没停，对方立刻宣布这是无言以对。一个队员回头瞪他，他又宣布这是恼羞成怒。\n\n车轮转过路口，队伍里终于有人闷闷地说：‘他那张嘴，比咱们出战人数还满。’没人笑得出来，但至少已经听不见了。",
+        "你们从阵线讲到补给，从补给讲到最后一击。对方听得很认真，每隔一会儿就在纸上添一个‘急’字。\n\n等队伍重新上路，大家才发现整场辩论唯一学会新东西的是桌下那条狗：有人提高嗓门，它就跟着叫。"
+      ],
+      "title": "战报没看，结论已有",
+      "weight": 10,
+      "text": "路边支着一张桌子，牌上写着‘倒飞点评，分文不取’。\n\n你们还没走近，主讲的人已经拍下结论：‘飞队的问题，我昨晚就说了！’一个队员问他看过战报没有，对方把桌上空白的纸一翻：‘看了还怎么客观？’\n\n队里有人已经开始撸袖子。旁边负责收拾行李的赶紧提醒：‘别争，他连咱们还嘴的标题都写好了。’你探头一看：黑旗急了。",
+      "choices": [
+        "走，他连咱们明天输什么都编好了。（全队心情 -0.5）",
+        "给我腾个位置，今天把这账辩明白。（全队心情 -0.75）"
+      ],
+      "days": 7
+    },
+    "xiaoyueya_salvage": {
+      "text": "小月牙在一辆旧货车边停下来，已经把三根铁条、两只铜扣和一截说不清用处的东西排成了货架。\n\n‘看，新分店。’\n\n车主说这些零碎可以白拿，旁边另一包好零件得付二十克朗。小月牙两手一合：‘赠品和进货都有了，就差开张。’\n\n她看见你盯着那截奇怪的东西，立刻补充：‘这个先别问，问了就只能按废铁算。’",
+      "effects": [
+        {
+          "tools": 3
+        },
+        {
+          "tools": 5,
+          "money": -20
+        },
+        {}
+      ],
+      "outcomes": [
+        "可用的零碎收进工具袋。小月牙举着那截神秘东西追了两步，最终还是承认暂时不知道它该接在哪儿。\n\n车主在后面挥手：‘知道了回来告诉我！’看样子它已经神秘了很久。",
+        "付清钱后，小月牙把买来的和白拿的分开点好，凑成五份工具。她还想给袋子写上分店名字，被提醒这是公用库房。\n\n她想了想，写成了：超市大客户。",
+        "小月牙把零件摆回原处，最后替那三根铁条排得齐齐整整。\n\n你问这又是在干什么。她拍拍手：‘不开店也得给同行留个好印象。’车主看着自己的废料堆，第一次觉得该挂块招牌。"
+      ],
+      "choices": [
+        "只拿能用的，别把货架也搬走。（工具 +3）",
+        "再买那包好零件，回营一起整理。（克朗 -20；工具 +5）",
+        "今天不停业，今天直接不营业。（无数值变化）"
+      ],
+      "weight": 5,
+      "days": 9,
+      "title": "先别扔，我超市还没关",
+      "random": {
+        "place": "road",
+        "members": [
+          "xiaoyueya"
+        ],
+        "minimum": 2
+      }
+    },
+    "reply": {
+      "outcomes": [
+        "战报被稳稳压在桌上，对方挑了半天，终于指出一个字写得不好。\n\n‘这个认。’你们回答得痛快，转身就走。\n\n走出老远，还有人念叨：‘上次被他说得全队都不好，今天只剩一个字。进步挺大。’",
+        "车队经过时，对方连着换了三块牌，最后一块举反了。\n\n谁也没再停下来纠正他。队尾的人回头看了一眼，笑得差点踩进车辙：‘他今天唯一没准备好的，就是咱们不接话。’"
+      ],
+      "title": "今日点评：不方便点评",
+      "weight": 30,
+      "text": "路边还是那张桌子，还是那块‘分文不取’的牌子。这次胜战的消息比你们先到，主讲的人已经把另一块小牌翻了出来：今日不谈胜负，只谈过程。\n\n战报递到他手边，他又翻了一块：过程尚待考证。\n\n队里有人盯着桌底，终于忍不住问：‘你到底带了多少块牌？’\n\n对方下意识用脚挡住一个麻袋。",
+      "choices": [
+        "把战报放这儿，请他连背面也读读。（原被影响者心情 +0.25）",
+        "别耽误人家换牌子，咱们走。（原被影响者心情 +0.25）"
+      ],
+      "days": 0
+    },
+    "xiaoning_map": {
+      "text": "小宁在公用地图上画了个圆，又在圆里添两笔。老蔡看了很久，问哪条是河。\n\n‘饼边上那条。’\n\n‘我们从哪儿过？’\n\n‘没咬过的地方。’\n\n老蔡把自己的木旗摆到图上：‘好。现在假定我完全没吃过这张地图。’路边恰好有个认路的车夫，二十克朗就肯替你们把这一段标清。",
+      "effects": [
+        {
+          "mood": [
+            {
+              "who": [
+                "xiaoning",
+                "laocai"
+              ],
+              "delta": 0.25
+            }
+          ]
+        },
+        {
+          "money": -20,
+          "mood": [
+            {
+              "who": "all",
+              "delta": 0.25
+            }
+          ]
+        },
+        {}
+      ],
+      "outcomes": [
+        "小宁从第一笔慢慢解释，老蔡把‘饼边’改成河，把‘焦的地方’改成树林。\n\n最后还剩一个小点。小宁看了一会儿，默默用袖口擦掉：那个真的只是口水。两个人同时松了口气。",
+        "车夫先问你们饿不饿，然后才接过笔。他把能确认的路口一一标清，老蔡逐项核对，小宁负责解释自己原先画的是什么。\n\n全队围过来看完，总算不用靠想象一张饼来理解下一段路。",
+        "老蔡把新图夹回本子，仍按先前确认的路安排前后队。小宁没争辩，只在页角补了一行小字：图例尚未烤熟。\n\n这回大家都看懂了。"
+      ],
+      "choices": [
+        "让小宁逐处讲，老蔡来补图例。（两人心情 +0.25）",
+        "请车夫核清路口，再给全队讲一遍。（克朗 -20；全队心情 +0.25）",
+        "收起新图，先沿已经确认的路走。（无数值变化）"
+      ],
+      "weight": 5,
+      "days": 8,
+      "title": "这张饼上，河往哪儿流",
+      "random": {
+        "place": "road",
+        "members": [
+          "xiaoning",
+          "laocai"
+        ],
+        "minimum": 2
+      }
+    },
+    "hurt": {
+      "outcomes": [
+        "阿飞松开披风，终于没再说‘我自己来’。旁边的人接过去，抖了抖上面的土，叠好放在干燥的地方。\n\n药碰到伤口时，他还是吸了一大口气。递水的人没笑，只把杯子又向前送了一点。",
+        "临时屏风支起来以后，里面立刻传出一声压得不太成功的惨叫。\n\n外头有人故意把水盆碰得叮当响，另一个人很配合：‘什么动静？没听见。’\n\n阿飞缓过那口气，隔着布帘小声说了句谢谢。这次没有人学他。"
+      ],
+      "title": "飞碟返厂，嘴还没坏",
+      "weight": 100,
+      "text": "阿飞刚坐下，就把披风往伤口上又拉了一截：‘小问题，飞碟落地蹭了点漆。’\n\n药箱被推到他面前。儿飞派几个人谁也没接话，视线齐齐落在那块已经洇红的布上。\n\n阿飞停了一下，小声补充：‘……可能不止底漆。’\n\n有人终于把水递过来，动作很轻，语气一点也不轻：‘飞爹，嘴我们都检查过了，没坏。现在能不能让我们看看别的地方？’\n\n本次战后在册儿飞派已因担忧心情 -0.5；阅读不会再次扣除。",
+      "choices": [
+        "行，今天听你们的。披风帮我拿着。",
+        "先帮我挡一下，包扎时叫出声怪没面子。"
+      ],
+      "days": 0
+    },
+    "cao_chorus": {
+      "text": "曹飞派这回带来了三句新口号。第一句喊阿飞，第二句喊飞队，第三句太长，喊到一半有人先换了两口气。\n\n阿飞听得起劲，手已经习惯性抬起来。旁边的人悄悄把桌子搬走，留给他一团空气。\n\n‘今天练嗓子。’领喊的人赶紧解释，‘手掌休息。要是不想练，附近的热茶摊也能坐一会儿。’",
+      "effects": [
+        {
+          "mood": [
+            {
+              "who": "all",
+              "delta": 0.25
+            }
+          ]
+        },
+        {
+          "money": -25,
+          "mood": [
+            {
+              "who": "all",
+              "delta": 0.5
+            }
+          ]
+        },
+        {}
+      ],
+      "outcomes": [
+        "两句口号终于喊齐了。阿飞举起手，所有人都紧张了一下；他只是打着拍子，让最后排也跟上。\n\n散场时大家心里挺热乎，桌子也完整地搬了回来。这回没有人需要领纱布。",
+        "热茶沿着队伍传了一圈。阿飞把那句最长的口号念给大家听，念到第三个转折，自己也笑场了。\n\n你们给它起了新名字：曹飞派换气练习。茶钱结清时，营里的人还在拿它互相逗乐。",
+        "来人把写着口号的布条卷好，声音也跟着放轻。阿飞目送他们走远，才发现自己的手还举在半空。\n\n他顺势挠了挠头，假装刚才一直是在干这件事。"
+      ],
+      "choices": [
+        "删掉第三句，剩下的大家一起喊。（全队心情 +0.25）",
+        "给大家买茶，吹牛也得润嗓子。（克朗 -25；全队心情 +0.5）",
+        "今晚留点安静，明天还有路。（无数值变化）"
+      ],
+      "weight": 5,
+      "days": 10,
+      "title": "口号喊齐，桌子撤离",
+      "random": {
+        "place": "safe",
+        "members": [
+          "afei"
+        ],
+        "minimum": 3
+      }
+    },
+    "cao": {
+      "outcomes": [
+        "阿飞把伤手藏到披风后，换另一只手指向营外。所有人都下意识握紧了兵器。\n\n抹茶把账本合上：‘好，记住现在这个劲。到时候你们负责勇，阿飞负责别往新绷带上签名。’\n\n热血保留 24 小时；须阿飞亲自出战，鼓舞和流血才在那场战斗启用。",
+        "绷带绕了两圈，阿飞就开始指挥：‘别绑得像我输了。’\n\n抹茶在结头上打了个挺精神的结：‘放心，账上写的是获胜准备费。’\n\n阿飞满意地把手举起来，下一轮掌声刚起，他立刻把手收回了桌底。",
+        "你们给伤口压上干净布，顺便把那几个准备再喊一轮的人劝离了桌边。\n\n阿飞仍想补一句狠话，抹茶已经把桌子转了个方向：‘下次拍这边，没毛刺。’\n\n众人散去，今晚最完整地保留下来的，是那张桌子。"
+      ],
+      "title": "掌声很响，手也很响",
+      "weight": 8,
+      "text": "曹飞派把营里的气氛炒得滚烫。\n\n‘阿飞往前一站，对面先少三分胆！’\n\n阿飞站起来。\n\n‘阿飞往桌上一拍，铁甲也得开条缝！’\n\n阿飞一掌拍下去。桌子没开缝，手先开了。前排看得热血上涌，后排已经在擦兵器，只有抹茶盯着桌上的血：‘先说好，气氛可以免费，纱布得入账。’\n\n接受后保留 24 小时。阿飞下一次实际出战时，事件当时在册且同场者决心 +20，持续两个自身回合；阿飞同时获得两次基础 5 点流血。待命者不受益，资格随该战消耗。",
+      "choices": [
+        "这点血算彩头，下一仗我先上！（全队鼓舞；阿飞流血）",
+        "都别鼓掌了，谁来给我缠两圈？（药品 -2；阿飞心情 +0.25）",
+        "气势留心里，手先拿布捂着。（不获得状态）"
+      ],
+      "days": 10
+    },
+    "shuaizi_rhythm": {
+      "text": "白小帅子敲了四声，小胖踩着拍子转身，靴底在地上划出半个利落的圈。\n\n围观的人刚想鼓掌，帅子急忙抬手：‘等一下！她落地还占一拍！’\n\n果然，最后那只脚晃了一下，稳稳站住。小胖喘匀气，认真要求再来一次。有人提议买壶热饮当休息场，至少能让围观的人先把手占住。",
+      "effects": [
+        {
+          "money": -20,
+          "mood": [
+            {
+              "who": "all",
+              "delta": 0.5
+            }
+          ]
+        },
+        {
+          "mood": [
+            {
+              "who": [
+                "shuaizi",
+                "xiaopangxu"
+              ],
+              "delta": 0.25
+            }
+          ]
+        },
+        {}
+      ],
+      "outcomes": [
+        "杯子分了一圈，喝彩的人也终于懂得等最后一拍。小胖这次站得很稳，帅子的第四声落下，掌声才一起响起来。\n\n有人举杯问能不能再来一段。两个人对视一下，先痛痛快快喝了口热的。",
+        "你们把最容易抢的那一拍拆开数。帅子敲一下，小胖踩一下，再把整段接回来。\n\n结束时没有很大的动静，两个人却同时点了头。收鼓的人说，这一遍比刚才那轮掌声管用。",
+        "鼓皮盖好，鞋底的泥也拍干净。小胖临走又比了一下那个转身，帅子没出声，只用四根手指替她数完。\n\n最后一只脚落稳，她们才各自去收行李。"
+      ],
+      "choices": [
+        "请大家喝一轮，给这段留个完整的场。（克朗 -20；全队心情 +0.5）",
+        "帮她们数拍，练到两个人都满意。（帅子、小胖心情 +0.25）",
+        "今晚先收鼓，留点精神赶路。（无数值变化）"
+      ],
+      "weight": 5,
+      "days": 8,
+      "title": "先别鼓掌，她还没落地",
+      "random": {
+        "place": "safe",
+        "members": [
+          "shuaizi",
+          "xiaopangxu"
+        ],
+        "minimum": 2
+      }
+    },
+    "grip": {
+      "outcomes": [
+        "试敲声不算清脆，试甲架上的铁皮却很诚实地瘪了进去。铁匠看了一眼，决定不争论它到底算什么。\n\n阿飞郑重地把握把收好。抹茶在收据背面写下备注：名称按配件登记，维修按事故处理。",
+        "掌柜想了一会儿，指向窗外一座废弃的攻城器。\n\n阿飞顺着看过去，抹茶已经把他拽回来：‘看可以，别问能不能分期。’\n\n最后大家达成一致：它叫握把不妨碍它是双手锤，花的钱也不会因此只算配件价。"
+      ],
+      "title": "这配件怎么占两个手",
+      "weight": 40,
+      "text": "包裹拆开，先露出一匹马，再露出马脚下的蛤蟆，最后才轮到那根长得很有分量的握把。\n\n阿飞捧着它看了半天：‘这东西往哪儿装？’\n\n抹茶核对收据：‘掌柜说，往手上装。’\n\n‘哪只手？’\n\n‘两只。他还说稳定性特别好，挨过一下的人，基本都不再晃了。’\n\n铁匠把试甲架往院中一推，自己先往旁边挪了两步。",
+      "choices": [
+        "给它起个正经用法：垂直，开甲。",
+        "问掌柜，握把都这样，本体得多大？"
+      ],
+      "days": 0
+    },
+    "gift": {
+      "outcomes": [
+        "补给总算稳稳当当地装进了行囊。后勤把待领那一行划掉，特地晃了晃药包：完好的。\n\n有人提议今晚先吃口粮，立刻被提醒：那是安排晚饭，不是又一种腾空间的办法。",
+        "后勤把补给收回去，在纸上加了一笔：心意仍在，空间仍欠。\n\n你们答应明天再来。他点点头，又把装着补给的箱子锁好了，显然很了解这支队伍看见空位时的反应。"
+      ],
+      "title": "心意到了，行囊还没到",
+      "weight": 50,
+      "text": "后勤把那份暂存的补给又搬了出来，旁边摆着上次没装下它的行囊。\n\n‘当时谁说再挤挤的？’\n\n没人承认。\n\n‘口粮能挤，药瓶也能挤。挤完以后，这两样就得用勺子一起吃。’\n\n你们互相看了看。这一次，腾个正经空位似乎更能表达对援助的尊重。",
+      "choices": [
+        "空位留好了，别让口粮替咱们受挤。",
+        "再替我们收一天，先把那堆破烂理完。"
+      ],
+      "days": 0
+    },
+    "songnuanyang_notes": {
+      "text": "宋暖阳把新写的旅途小记念给阿飞听。前两句是天气，第三句写团长搬箱子时被自己的披风绊了一下。\n\n阿飞清清嗓子：‘这段有没有更适合传出去的版本？’\n\n宋暖阳把笔停在纸边：‘后面还有你爬起来继续搬。要一起删吗？’\n\n阿飞没立刻回答。营火边的人已经坐近了，显然对两个版本都很感兴趣。",
+      "effects": [
+        {
+          "mood": [
+            {
+              "who": "all",
+              "delta": 0.25
+            }
+          ]
+        },
+        {
+          "mood": [
+            {
+              "who": [
+                "afei",
+                "songnuanyang"
+              ],
+              "delta": 0.5
+            }
+          ]
+        },
+        {}
+      ],
+      "outcomes": [
+        "笑声在绊倒那句起来，到重新搬箱子时慢慢轻了。有人补充，自己当时也扶着另一头，手还被压红了一块。\n\n宋暖阳把漏掉的名字添上。阿飞看着一页挤挤挨挨的人名，觉得这篇比只写团长更像你们这支队伍。",
+        "阿飞从那声‘哇’讲起，讲到谁先扶箱子，又是谁替他把披风拎起来。他本想把自己说得从容一点，说到一半却自己笑了。\n\n宋暖阳没催，等他讲完才落笔。阿飞凑过去看：‘那个笑，也记上。’",
+        "宋暖阳合起本子，没有替故事再换一个更响亮的结尾。阿飞往旁边坐了一点，让出能烤到火的位置。\n\n过了一会儿，他还是轻声问：‘我继续搬那句，写得怎么样？’"
+      ],
+      "choices": [
+        "都念出来。人没摔散，箱子也搬到了。（全队心情 +0.25）",
+        "先请阿飞把后半段讲完，你再记。（两人心情 +0.5）",
+        "留作私下的小记，今晚先收起来。（无数值变化）"
+      ],
+      "weight": 5,
+      "days": 10,
+      "title": "英雄事迹，先核对一下",
+      "random": {
+        "place": "safe",
+        "members": [
+          "afei",
+          "songnuanyang"
+        ],
+        "minimum": 3
+      }
+    },
+    "xiaogui_board": {
+      "text": "溺水小龟坐上木箱，在棋盘前把自己的名牌摆正。阿飞站在旁边，刚看两步，手就伸过来了。\n\n‘你这个应该——’\n\n小龟抱住棋盘：‘飞爹，你坐哪边？’\n\n阿飞说自己只负责指导。小龟指着两边的空凳：‘那得另外给你画第三边。’旁边的人已经开始替他找炭笔。",
+      "effects": [
+        {
+          "mood": [
+            {
+              "who": [
+                "xiaogui"
+              ],
+              "delta": 0.5
+            },
+            {
+              "who": [
+                "afei"
+              ],
+              "delta": -0.25
+            }
+          ]
+        },
+        {
+          "mood": [
+            {
+              "who": [
+                "afei",
+                "xiaogui"
+              ],
+              "delta": 0.25
+            }
+          ]
+        },
+        {}
+      ],
+      "outcomes": [
+        "小龟终于落下自己想走的那步，输赢都认。他把名牌摆得更正了些。\n\n阿飞在背后憋得转了两圈，最后只挤出一句‘我早看到了’。旁边立刻有人递来一只杯子，让他的手也有事情做。",
+        "阿飞坐下以后，才发现轮到自己走时，旁边的建议格外多。小龟学着他的口气：‘你这个应该——’说到一半，自己先笑了。\n\n两个人约定谁落子谁作主，名牌一左一右摆好，这次总算只有两边。",
+        "棋子各归各盒，小龟自己把名牌收起来。阿飞还想留一句最后指导，被盒盖咔哒一声截住。\n\n‘下回坐下再说。’小龟拍了拍空凳。阿飞点头，这个邀请倒听得很清楚。"
+      ],
+      "choices": [
+        "请阿飞把手收回去，让小龟自己下。（小龟心情 +0.5；阿飞 -0.25）",
+        "另开一盘，阿飞坐下当对手。（两人心情 +0.25）",
+        "先收棋盘，留到两人都有空再下。（无数值变化）"
+      ],
+      "weight": 5,
+      "days": 9,
+      "title": "飞爹观棋，请收回第三只手",
+      "random": {
+        "place": "safe",
+        "members": [
+          "afei",
+          "xiaogui"
+        ],
+        "minimum": 2
+      }
+    },
+    "bao": {
+      "outcomes": [
+        "后勤把补给一项项收好。送货人盯着那口锅，直到最后一双手从车边离开，才松了口气。\n\n有人咬了一口面包，说今天的装备确实不错。送货人立刻把锅往身后挪了半步。",
+        "对方看了看你们的行囊，点点头，把药包重新压稳。\n\n临走时他还不忘叮嘱：‘要是路上碰见倒飞派，锅是我的，别替我送人。’你们答应得很快，这回连锅的责任也分清了。"
+      ],
+      "title": "保飞可以，保锅不行",
+      "weight": 12,
+      "text": "一辆小推车挡在路边，上面摆着面包和药包，旁边还立着一口黑锅。旗子很醒目：保飞后勤。\n\n送货的人抢先解释：‘吃的送飞队，药也送飞队。锅不送。’\n\n有人问为什么，他拍了拍锅沿：‘上回有人说全怪装备不好，差点把我这口煮汤的也算进去。’说完又把面包往你们这边推了推：‘拿着吧。嘴硬归嘴硬，别饿着打。’",
+      "choices": [
+        "面包药品收下，锅你自己看牢。（食物 25、药品 4；全队心情 +0.25）",
+        "这回够吃，先送给前面缺粮的人。（不领取）"
+      ],
+      "days": 6
+    },
+    "er": {
+      "outcomes": [
+        "阿飞本想亲自主持分粮，刚喊完‘按顺序’，自己手里先被塞了一份。\n\n‘飞爹，您排第一个。’\n\n他低头吃了两口，才想起来该说谢谢。那几个等着听的人笑得比刚才还开心，连‘不许学我说话’也照单全收了。",
+        "来人还想再塞，阿飞把篮子轻轻推回去：‘你们先把自己那顿吃好，我这里不是收贡品的。’\n\n对方终于把篮子提稳，却仍不肯服输：‘行，那下回您少吼两声，算替我们省饭。’阿飞张了张嘴，决定这句先不接。"
+      ],
+      "title": "飞爹，请先张嘴",
+      "weight": 12,
+      "text": "‘飞爹！’\n\n阿飞循声回头，挺胸，收腹，把刚到嘴边的一口气重新酝酿成威严：‘都来了？今天我给你们讲——’\n\n一篮口粮已经送到他面前。来人又把药包往旁边一放：‘讲可以，先吃。上回您空着肚子吼半天，我们一直分不清哪声是军令，哪声是胃。’\n\n阿飞看了一圈，发现大家对分辨军令这件事，意见出奇地一致。",
+      "choices": [
+        "先给大家分。我这叫开饭前训话。（食物 25、药品 3；儿飞派心情 +0.25）",
+        "今天真够了，别把自己也喂穷了。（不领取）"
+      ],
+      "days": 6
+    },
+    "recover": {
+      "outcomes": [
+        "阿飞宣布完，顺手提起一件行李，没再急着把整辆车都包到自己身上。\n\n旁边的人替他托住另一头：‘正常营业可以，别刚开门就把招牌砸了。’\n\n这回他笑着骂了一句，众人也终于放心地笑出了声。",
+        "大家先是一愣，接着有人赶紧把碗端来，生怕团长反悔。\n\n阿飞吃了两口，还是没忍住：‘那个绳结——’\n\n对面立刻替他把碗添满。阿飞看着满满一碗饭，忽然觉得，今天少说两句也不亏。"
+      ],
+      "title": "好消息，扩音器修好了",
+      "weight": 100,
+      "text": "营地刚亮，熟悉的声音就从车边传来：‘绳子谁系的？这么慢，太阳都要下山了！’\n\n有人抬头看了看刚升起的太阳，又看了看已经能叉腰挑毛病的阿飞，忍不住笑起来。\n\n‘修好了。’\n\n‘哪儿？’\n\n‘最费人耳朵的那一块。’\n\n阿飞听见了，张嘴准备训两句，却发现那几张前几天一直绷着的脸，总算松了下来。",
+      "choices": [
+        "都听清了吧？飞爹今天正常营业。（原担忧者心情 +0.25）",
+        "先吃饭，今天不拿嗓门催你们。（原担忧者心情 +0.25）"
+      ],
+      "days": 0
+    },
+    "bao_spares": {
+      "text": "保飞派的小车又来了。车把上挂着两只袋子，一只装零件，一只装药包，正中贴着：每队一份。\n\n来人见你们往车底看，先把双手一摊：‘锅在家。今天保的是螺丝和膝盖。’\n\n他拿起一根歪钉：‘别嫌小，上回整辆车就差这么一根。你们当时喊了八个人抬，喊得挺有气势。’",
+      "effects": [
+        {
+          "tools": 4
+        },
+        {
+          "medicine": 2
+        },
+        {}
+      ],
+      "outcomes": [
+        "四份工具点清入库。送货人特意把钉子举到眼前：‘先量孔，再敲。别敲不进去就开动员会。’\n\n负责修车的人接过袋子，郑重保证，今天尽量不征召整个前排。",
+        "药包检查妥当，进了公共储备。来人又问谁负责抬车，你们互相指了一圈。\n\n他叹口气：‘行，看来上回大家都很有担当，就是没带工具。’",
+        "两只袋子重新系好，小车继续往前走。临走前，对方在名单上记了个小勾。\n\n有人问勾代表什么。他说：‘今天没把两个袋子一起拿走。值得记录。’"
+      ],
+      "choices": [
+        "拿零件。八个人还有别的活。（工具 +4）",
+        "拿药包。上回抬车的膝盖还记得。（药品 +2）",
+        "这次够用，给后面的车队留着。（不领取）"
+      ],
+      "weight": 6,
+      "days": 8,
+      "title": "保飞后勤，这回不带锅",
+      "random": {
+        "place": "either",
+        "members": [],
+        "minimum": 3
+      }
+    },
+    "dao_sign": {
+      "text": "岔路口多了块新牌：飞队请走此路。箭头指着一片羊圈。\n\n挂着倒飞派布条的人抱臂站在旁边：‘路线建议，免费提供。’你们换个方向，他就把牌转过来。\n\n队尾有人问他到底想让谁进羊圈。那人答得很快：‘谁急谁进。’羊叫了一声，他连忙补充：‘不包括这位。’",
+      "effects": [
+        {
+          "mood": [
+            {
+              "who": "all",
+              "delta": -0.25
+            }
+          ]
+        },
+        {
+          "mood": [
+            {
+              "who": "all",
+              "delta": -0.5
+            }
+          ]
+        },
+        {
+          "money": -10,
+          "mood": [
+            {
+              "who": "all",
+              "delta": -0.1
+            }
+          ]
+        }
+      ],
+      "outcomes": [
+        "你们绕过牌子，沿旧路标继续走。背后立刻传来一句‘不敢接受建议’。\n\n大家一路没接茬，只是看见下一个羊圈时，不约而同走远了些。羊也挺冤的。",
+        "解释进行到第三遍，对方已经把‘路线建议’改成了‘辩论现场’。羊挤在栅栏边，倒是听得很齐。\n\n你们最终还是走了原来的路。脚下没绕远，心里堵了一大圈。",
+        "附近小贩收了十克朗，把炭笔交给你。新字写得端正，羊站在后面，像是验收过了。\n\n举牌人准备再说两句，你们指指‘谢绝参观’，已经迈开了脚。大家仍有些扫兴，好歹最后一句留给了羊。"
+      ],
+      "choices": [
+        "认准原来的路标，走。（全队心情 -0.25）",
+        "站住，把这块牌的道理讲清楚。（全队心情 -0.5）",
+        "买支炭笔，替羊写一句谢绝参观。（克朗 -10；全队心情 -0.1）"
+      ],
+      "weight": 6,
+      "days": 8,
+      "title": "此路不通，除非飞队不走",
+      "random": {
+        "place": "road",
+        "members": [],
+        "minimum": 3
+      }
     }
   },
   "rosterMax": 40,
+  "chronicles": {
+    "er_sige": {
+      "choices": [
+        "行，先让饼出来，再让话出来。（阿飞心情 +0.25）",
+        "坐近点，今天不用隔着团长的靴子说。（阿飞心情 +0.25）"
+      ],
+      "text": "四哥那张空凳的旧事又被翻出来。营火边正好四张凳子，阿飞坐了一张，行李占了一张，他的脚还很自然地搭着半张。\n\n读到信里‘给还没开口的人留个位’，他低头看了看自己的靴子。\n\n片刻后，行李落地，脚也落地。阿飞拍拍空凳：‘坐。今天先听你说。’\n\n对方第一句话是：‘您刚才把烤饼挡住了。’",
+      "title": "第四张凳子，不放团长的脚",
+      "outcomes": [
+        "饼传到手里，大家终于坐成了一个像样的圈。有人提意见，有人补一句，阿飞想讲的话反而越攒越少。\n\n写给四哥的记录里，他郑重添了一条：那张凳子很好用，前提是上面没有脚。",
+        "凳子往火边挪，阿飞把膝盖收进去一点。原本只准备说两句的人，最后把整段难处都讲完了。\n\n阿飞没急着下结论，先递过去半张饼。剩下的话，看来还得再坐一会儿。"
+      ]
+    },
+    "yanzi_signatures": {
+      "place": "town",
+      "text": "眼子在酒馆被两位旧相识堵住。一个要他替车队协调东门的通行，一个要他同一天去西桥给货物作证。两人都说：‘你上次不是点头了吗？’\n\n‘我那是听见了，不是把自己劈成两半。’他笑了一句，桌边也笑，手里的两张纸却仍推着不收。\n\n阿飞习惯性替他接话：‘眼哥办法多——’\n\n‘办法多也没有第二双腿。’眼子把两张纸摊开，没有让团长再替自己答应。东门的安排可以提前核对，西桥的见证却必须本人到场；倘若任一处耽搁，两个熟人都只会记得他点过头。\n\n他把自己的名字写在第三张纸上，先列能去的时辰和不能代签的事项。接下来，可以把两件事分成先后明确的两份小委托，也可以只接自己愿意担保的一件。",
+      "battles": 5,
+      "owner": "yanzi",
+      "title": "两张纸不能叠成一个答应",
+      "outcomes": [
+        "眼子在东门那张纸上加了截止时辰，又在西桥那张纸上写明迟到就另找见证。两位熟人没有都高兴，却终于知道自己得到的是哪一份答应。\n\n回营路上，阿飞问他怎么还把酬劳写了进去。他说：‘不写，人家就以为我天生长在酒馆门口，随叫随到。’这回他没拿玩笑把那行价钱划掉。",
+        "西桥那张纸留下，东门那张由眼子亲自送回去。他没说改天一定补上，只把确实能联系到的另一位中间人写给对方。\n\n旧相识走时有些不快，他也没有立刻追出去哄。阿飞陪他坐了一会儿，他才把盾从椅背取下来：‘一件说清的事，总比两件都等着我赔笑强。’"
+      ],
+      "level": 4,
+      "previous": "",
+      "choices": [
+        "把时辰、边界和酬劳逐项写开，两件事按先后谈。（眼子心情 +0.25）",
+        "只接亲自到场的一件，把另一件明确退回去。（眼子心情 +0.25）"
+      ]
+    },
+    "route_toad": {
+      "choices": [
+        "我负责开口子，也得给你们留条跟上的路。（阿飞心情 +0.25）",
+        "先定个信号，总不能只听我哇哇叫。（阿飞心情 +0.25）"
+      ],
+      "text": "阿飞正在复述自己怎么打开那道缺口，讲到兴起，连地上的石子都被摆成了敌阵。\n\n一个跟上来的队员把另一颗石子放到他背后：‘您冲到这儿的时候，我们在这儿。’\n\n阿飞看看两颗隔得有点远的石子，嘴里的第三遍‘然后我一下’忽然没接上。\n\n他把代表自己的那颗推回一点：‘那下回呢？’",
+      "title": "冲得最响，回头别最晚",
+      "outcomes": [
+        "几颗石子重新摆过，阿飞那一下还是很威风，只是现在后面跟得上人了。\n\n他讲完以后，照旧问刚才帅不帅。有人说帅，末了又补一句：‘留路那步尤其帅。’这句夸得他比前面几句都受用。",
+        "你们约好一个短促、明确的跟进信号。阿飞演练一遍，旁边立刻有人指出：这个听起来像刚才夹到手。\n\n于是又换了一个。等大家终于能分清军令与团长的个人感受，天已经暗了一点，阿飞却觉得这工夫花得值。"
+      ]
+    },
+    "bottle_after": {
+      "choices": [
+        "把这句也记下，省得以后又只会讲道理。（阿飞心情 +0.25）",
+        "先帮大家抬行李，话等上路再说。（阿飞心情 +0.25）"
+      ],
+      "text": "营里有人试了一下小铃铛，阿飞下意识回过头，话已经到了嘴边：‘瓶队，你看——’\n\n后半句没说出来。\n\n他站了一会儿，低头看了看早已洗净的手，忽然又想起那句‘别用道理扶’。当时自己还嫌她拆台，现在倒把每个字都记得很清楚。\n\n身后有人问什么时候出发。路还是那条路，今天得由他自己回答。",
+      "title": "这回，没人替你扶车",
+      "outcomes": [
+        "名册里多了一行很短的话。阿飞没有写得很漂亮，还在旁边画了一个不像车轮的圆。\n\n看了半天，他自己笑了一下，把本子收好。那段日子没回来，可这回他记得先把手伸出去。",
+        "阿飞没站上高处喊准备，先弯腰托住箱子的另一头。对面的队员愣了一下，赶紧一起用力。\n\n箱子稳稳上车，队伍开始挪动。阿飞走在旁边，想说的那句话终于换成了：‘这边我扶着。’"
+      ]
+    },
+    "liu_reply": {
+      "choices": [
+        "先把挨打的地方讲明白，再补一句夸的。（全队心情 +0.25）",
+        "叫大家坐近点，有问题一起挨批。（全队心情 +0.25）"
+      ],
+      "text": "再遇刘青松，阿飞把战报摊得很平，特意让‘胜’字朝着对方。\n\n刘青松看了一眼：‘赢了，不错。’\n\n阿飞还等着下句。\n\n‘夸完了。这个位置，为什么没人跟？’\n\n他点中了阿飞原本打算用酒杯压住的那一段。阿飞把杯子挪开，挪了两回，索性一口喝了，把空杯倒扣到桌边。\n\n‘行，今天你讲。但刚才那个不错，等会儿能不能当着大家再说一遍？’",
+      "title": "夸奖限量，复盘管够",
+      "outcomes": [
+        "刘青松把那几步拆开讲，阿飞一边点头，一边往旁边腾出空白。等战报上画满箭头，他抬眼提醒：‘到那句了。’\n\n刘青松憋着笑，把‘打得不错’又说了一遍。门边听了半天的人终于笑出声：飞爹这回没白挨批，也没漏领夸奖。",
+        "凳子一张张挪过来，大家先抢着说自己没听清哪声令，后来连谁把路让窄了也认了。\n\n阿飞居然记得最认真。刘青松合上战报时，他问：‘明白了，下回怎么少挨这些？’\n\n‘先照你刚记的做。’这次，桌边每个人都听见了。"
+      ]
+    },
+    "liu": {
+      "choices": [
+        "先照顾脸，毕竟还得靠它撑场面。（药品 +4）",
+        "先修盾，争取让脸早日退居二线。（工具 +6）"
+      ],
+      "text": "酒馆角落有人抬了抬手：‘飞爹，这儿。’\n\n阿飞看清是刘青松，领口都挺直了三分。对方先把一包药、一捆工具摆上桌，再打量了一眼阿飞的盾。\n\n‘都说你扛得住。’\n\n‘那是。’\n\n‘盾也这么想？’\n\n阿飞把盾上那道凹痕悄悄转向墙。刘青松没拆穿，只把东西推近：‘挑一份。我还赶路，不跟你出征。下次脸和盾分工明确点，别总互相代班。’",
+      "title": "传奇儿飞派，也查维修账",
+      "outcomes": [
+        "刘青松把药递过来：‘行，保护一下咱们飞爹最贵的地方。’\n\n阿飞正要得意，对方又补一句：‘主要是修起来费嘴。让你歇一会儿，得劝半天。’\n\n阿飞把药仔细收好，终于没还嘴，只问他路上带够吃的没有。",
+        "工具落在桌上，发出很扎实的一声。阿飞拍拍盾：‘听见没有，你要升职了。’\n\n刘青松笑着起身：‘它一直在干活。你以后记得让它站前面。’\n\n送人到门口时，阿飞真把盾往前挪了挪。这一次没人催。"
+      ]
+    },
+    "bottle_daily": {
+      "choices": [
+        "今天我当车架，你指挥。（两人心情 +0.25）",
+        "要不我来装？……你先别松手。（两人心情 +0.25）"
+      ],
+      "text": "小酒瓶蹲在旧车旁，把松掉的链条一点点往回挂。阿飞站在旁边，正讲到当团长得会带人。\n\n她没抬头：‘说得挺好，先带我把这边扶住。’\n\n阿飞伸手扶车，还想继续讲，车轮忽然转了一下，他立刻‘哇’了一声。\n\n小酒瓶这才抬眼：‘很好，人还醒着。扶稳，别用道理扶。’",
+      "title": "带人之前，先扶好车",
+      "outcomes": [
+        "阿飞扶得很认真，连夸自己的话都暂时腾不出嘴说。链条终于扣回去，小酒瓶轻轻摇了一下车铃。\n\n‘行，这回带得不错。’\n\n阿飞正想接话，她又指指另一边：‘还有这儿。’他叹口气，手却已经换好了位置。",
+        "两人换了个位置。阿飞把链条挂回去一半，又掉了；小酒瓶笑着提醒他慢点，没伸手抢。\n\n第三次终于稳稳卡住，阿飞转了转轮子，得意地抬头。她递来擦手的布：‘知道了，飞队维修部今天开张。’"
+      ]
+    },
+    "er_yuchujiu": {
+      "choices": [
+        "先把我叫住，面子回头再补。（阿飞心情 +0.25）",
+        "停可以，停下以后咱们把下一步讲清。（阿飞心情 +0.25）"
+      ],
+      "text": "初九那张写着‘停’的旧纸条，总在阿飞翻名册时最先露出来。他怀疑是折得太厚，展开一看，只不过那个字写得实在太大。\n\n阿飞试着在背面添一条团长规矩：叫停时请注意场合。写到一半，他又想起真有危险时，哪来工夫挑个好听的说法。\n\n笔尖在纸上悬了片刻。",
+      "title": "停字很大，面子先放小",
+      "outcomes": [
+        "那条新规矩被划掉，改成：喊大声点，别让我装没听见。\n\n阿飞看着‘装’字，自己先笑了。他把纸条折回原样，那个大大的停字仍露在外面，这回倒不用再往里塞了。",
+        "背面多了一个箭头，箭头后留着足够两个人写字的空白。\n\n阿飞把纸压平，觉得这样挺好：谁先看见危险谁先喊，等停稳了，再一起商量往哪边走。飞爹的称呼还在，也不妨碍有人拉他一把。"
+      ]
+    },
+    "yanzi_own_name": {
+      "place": "safe",
+      "text": "营火旁来了一封回信。西桥的交接总算完成，对方夸眼子会说话，末尾顺手请他再替一桩说不清的损失‘圆一圆’。两份清单差了一个货箱，没有见证人敢认。\n\n眼子读完，先在空白处写了句笑话，写到一半又停下来。\n\n‘我要是说大家都有难处，他们大概都会高兴。’\n\n阿飞问：‘那箱子呢？’\n\n‘箱子不会因为我说得好听，就自己长回来。’他把纸翻过来，重新誊清见过和没见过的部分。自己当时提前离开了半刻，这一段也照实写上，没有放进别人都疏忽的套话里。\n\n信写好以后，他才承认另一件事：比起永远被临时叫来救场，他想做一个能自己挑事情、也能为自己的名字负责的人。退下以后，可以守一张固定的调解桌，也可以继续走动，只给亲眼见过的交接作证。",
+      "battles": 8,
+      "outcomes": [
+        "眼子在回信末尾写下自己的名字，也写明那半刻的空缺。他愿意补做核对，却不再替一个未查明的箱子编造下落。\n\n火快熄时，他给阿飞画了将来的桌子：两边坐争执的人，中间摆证据，桌后有他自己的椅子。‘再来找我，先敲门。’他笑着补上一句，正面的落款没有再被涂掉。",
+        "眼子把见证范围写清，主动留了回信地址。将来还要上路，也不意味着落完款就让人找不到。\n\n他把那句没写完的笑话抄到纸背，正面只留下事实、空缺和自己的名字。阿飞问下一站去哪，他把地图拉近：‘这回先听我的。你负责看看，哪段路又被旗挡住了。’"
+      ],
+      "owner": "yanzi",
+      "choices": [
+        "退下后摆一张固定的调解桌，把各人的话和证据都留下。（眼子心情 +0.25）",
+        "退下后继续走路，只为亲眼见过的交接落款。（眼子心情 +0.25）"
+      ],
+      "title": "玩笑写在背面，名字留在正面",
+      "winsAfterPrevious": 2,
+      "level": 7,
+      "previous": "yanzi_signatures",
+      "priorText": [
+        "他找出上次分开的两份委托，照着其中的时辰补全回信。纸上划定的范围，既约束别人，也约束落款的自己。",
+        "他把上次退回委托的便条压在信旁。拒绝一件办不到的事之后，这次留下的承诺更不能靠一句圆场混过去。"
+      ]
+    },
+    "route_feidie": {
+      "choices": [
+        "降落，开饭，地图铺这边。（阿飞心情 +0.25）",
+        "先准许大家提意见，包括凳子的意见。（阿飞心情 +0.25）"
+      ],
+      "text": "阿飞踩上凳子，准备发表一段配得上‘飞爹’称呼的讲话。底下的人仰头看着他，他很满意。\n\n‘大家有什么想问的？’\n\n一只手举起来：‘您踩的是我等会儿吃饭的凳子吗？’\n\n第二只手：‘明天从哪条路走？’\n\n阿飞望望脚下，又望望地图，忽然觉得先处理第二个问题，或许还能挽回第一个问题的气势。",
+      "title": "飞爹降落，请勿占用饭桌",
+      "outcomes": [
+        "阿飞把凳面擦干净，自己先坐到旁边，拿几粒豆子摆出明天的路线。\n\n有人把代表山口的那粒吃了，他只好又添一粒。讲到最后，大家既知道了往哪走，也知道了为什么要等补给——因为地图上的后勤已经被吃掉两回了。",
+        "意见比阿飞想的多：路太绕、盾带该换、上次的军令没听清，还有凳面确实得擦。\n\n他一条条听完，没有因为有人喊了飞爹就跳过哪条。最后自己补上一条：下次讲话，就在地上。"
+      ]
+    },
+    "er_haman": {
+      "choices": [
+        "别润色了，没做到的照实写。（阿飞心情 +0.25）",
+        "把包赢改成三件真能办的事。（阿飞心情 +0.25）"
+      ],
+      "text": "哈曼的回信把一句‘下次包赢’圈了出来，旁边只写了三个字：谁担保？\n\n阿飞先写‘我’，想了想又添上‘尽量’。这下成了‘我尽量担保’，连他自己看着都觉得靠不住。\n\n桌边压着旧契约，做成的、没做成的都在。阿飞把那面写得很气派的旗挪开一些，免得它老挡着纸。",
+      "title": "包赢这两个字，先赊着",
+      "outcomes": [
+        "阿飞把解释写完，才发现最难看的那一行并没有把整封信毁掉。相反，后面的打算终于有地方落笔了。\n\n封信时，他特意没拿‘路上太忙’当理由。那句平时最好用，今天最好不用。",
+        "纸上最后留下三件事：先点清人数，先说明信号，有人没听懂就再讲一遍。\n\n阿飞读完，觉得少了点威风，于是在落款处把名字写得很大。事情没再夸口，排场姑且从这里找补。"
+      ]
+    },
+    "er_xiaogui": {
+      "choices": [
+        "壳替你扛过了，这步棋咱们再看看。（阿飞心情 +0.25）",
+        "头盔的事怪铁匠，判断的事认真聊。（阿飞心情 +0.25）"
+      ],
+      "text": "小龟的旧战报边上画着一个头盔，头盔下面是一个明显更大的圆脑袋。批注写得很严肃：不是头的问题，是头盔格局小了。\n\n阿飞看得笑出声，翻到背面，却发现那里认真记着一次没判断好的进退。纸上预留的评语位置空着，像是在等一句比‘壳真硬’更有用的话。\n\n他提笔写了个‘猛’，看看，又划掉了。",
+      "title": "头盔格局小，战报不能小",
+      "outcomes": [
+        "阿飞沿着战报上的路线重新画了两步，旁边写：这里晚一点出手，后面就不用硬吃。\n\n最后他还是没忍住，在那顶小头盔旁添了四个字：建议扩建。可真正留在评语栏里的，总算是一条能用的提醒。",
+        "他把当时能看见的敌人和猜到的敌人分开圈出来，发现最要紧的，恰好是中间没写清的那一步。\n\n阿飞补了一个问号，没有急着代答。至于铁匠，他在旁边替人留了一句公道话：工钱不能按头围算。"
+      ]
+    },
+    "er_xiaoyuan": {
+      "choices": [
+        "把‘其实已经想到’划掉，这句算他的。（阿飞心情 +0.25）",
+        "换人先讲，我今天试试不抢答。（阿飞心情 +0.25）"
+      ],
+      "text": "小原的信里又夹着一张问题纸。这回最上头写着：团长听完别人一句话，打一个勾。\n\n阿飞提笔，先给自己打了三个。随后看见底下那行小字：自己跟自己说的不算。\n\n他盯着那三个勾看了很久，最终把纸转过来，在背面认真写起最近一次被队员提醒的经过。写到‘我当时其实已经想到了’，笔又停了。",
+      "title": "飞爹今日，忍住没抢答",
+      "outcomes": [
+        "那句话被划掉以后，整段经历短了一半，反倒好懂了。阿飞看着剩下几行字，给真正提出主意的人添上姓名。\n\n最后他还是在纸角给自己画了一个小勾：这次总该算忍住了。",
+        "阿飞把笔放到桌子对面，自己端着水等。讲到一半，他几次张嘴，最后都变成喝水。\n\n听完以后他只问了一个问题，居然正好问到点上。纸上的第一个勾，这回是别人替他画的。"
+      ]
+    },
+    "route_jiahao": {
+      "choices": [
+        "名字记他的。人是我带来的，这也够吹了。（阿飞心情 +0.25）",
+        "给他找张凳子，我站旁边替他扶旗。（阿飞心情 +0.25）"
+      ],
+      "text": "有人来问最后那一击是谁打的。阿飞下意识整了整领口，向那面大旗挪了半步。\n\n真正出手的队员正站在他背后，恰好被挡得严严实实。阿飞回头一看，咳了一声，又往旁边挪了半步。\n\n来人仍看不见。\n\n阿飞低头看了看披风，干脆连人带披风往旁边让开：‘来，今天你站这儿。’",
+      "title": "旗够大，别挡着别人",
+      "outcomes": [
+        "对方把名字记下时，阿飞果然还是补了那句‘我带来的’，但谁也没嫌他多嘴。\n\n被夸的人讲得有些拘谨，他就在旁边把事情一段段接起来。这次那张名册上多了另一个醒目的名字，阿飞看得很满意。",
+        "凳子摆好，旗子也扶稳了。阿飞站在旁边，忽然发现不用抢着说话，也能听到不少让人高兴的事。\n\n风把旗角吹到他脸上，他伸手拨开，小声嘀咕：‘回头还是得改改这尺寸。’旗前的人终于笑得自然了。"
+      ]
+    },
+    "luoyike_home": {
+      "place": "town",
+      "text": "城镇粮店换了掌事，门边那间带小窗的空仓正在招租。罗一可站在窗下，已经把靠墙的架子、晒粮的竹筛和一张窄床都比画了一遍。阿飞凑过来：‘怎么，仓鼠准备当仓主了？’\n\n她没否认，从内袋拿出一张自己攒钱的清单。‘散伙以后，不是今天。我还答应走完这一程。’\n\n窗外正好经过一辆卖热饼的小车。车上也有层层抽屉，雨篷一撑，就是能跟着人走的屋檐。罗一可追着看了半条街，又回头看看那扇窗。\n\n她原先总觉得安稳就得把东西藏够，现在却要决定，自己想留在哪儿，还是想带着够用的东西继续走。阿飞把团里的账本合上，没替她算哪一种赚得多。\n\n‘这回你选，’他说，‘我帮你把要准备的东西记全。’",
+      "battles": 8,
+      "outcomes": [
+        "罗一可在清单最上面画了一扇窗，窗沿上又添了两只晒栗子的竹筛。她没有当场租房，只向掌事认真问完租期和漏雨的地方。\n\n‘门口可以坐人，里边得给我留一张床。’她把纸折回内袋，背起行囊跟上队伍。以后的小粮铺已有了模样，眼前这一程也仍是她自己愿意走的。",
+        "罗一可追上卖饼人，先请教车篷怎么绑，回来时画纸上多了两只结实的轮子。她仍想要自己的屋檐，只是这回屋檐可以随着心意换一条街。\n\n阿飞问以后会不会给黑旗送饼。她说：‘顺路就来，不顺路你们来找我。’清单里多了修轴、补篷和几处愿意再去的城镇，行囊没有因此变重。"
+      ],
+      "owner": "xiaohani",
+      "choices": [
+        "把带窗的小屋记下来，退下时办一个能招待朋友的小粮铺。（罗一可心情 +0.25）",
+        "先学会修车和补篷，退下时带着小粮仓继续走。（罗一可心情 +0.25）"
+      ],
+      "title": "小粮仓要门牌，还是轮子",
+      "winsAfterPrevious": 2,
+      "level": 7,
+      "previous": "luoyike_cache",
+      "priorText": [
+        "她先画了一个只属于自己的小格子。那次雨后的整理，让她知道留给自己并不是亏欠谁。",
+        "她先画了两层架子，一层自己的，一层可以招待来往的人。那次分清结绳的经历，让这幅图终于像她想住的地方。"
+      ]
+    },
+    "er_keke": {
+      "choices": [
+        "先问愿不愿意，球盖又不是军令。（阿飞心情 +0.25）",
+        "那我负责把理由说好，不能光喊自己人。（阿飞心情 +0.25）"
+      ],
+      "text": "可可那张便笺又从名册里滑出来，旁边还画着个圆圆的球。阿飞一边看一边念：‘自己人嘛，我一招手——’\n\n下一行恰好写着：也可以说不。\n\n他的手停在半空，最后变成挠头。那个小小的圆球被画得很神气，阿飞看了半天，觉得它简直像在等一句说得过去的请求。",
+      "title": "保可梦，今天拒绝出球",
+      "outcomes": [
+        "阿飞在便笺背后写下‘你愿意吗’，原本顺手要补的‘肯定愿意吧’也被划掉了。\n\n写完再看，那个圆球仿佛顺眼了不少。他把纸收回名册，决定以后先听答案，别忙着替人开盖。",
+        "他把‘自己人帮一下’拆成了要做什么、哪里危险、能得到什么，又把最后一项改得更实在。\n\n纸写满了，事情倒没那么难开口了。阿飞小声嘀咕：‘这球还挺难哄。’这回却没有不耐烦。"
+      ]
+    },
+    "luoyike_cache": {
+      "place": "safe",
+      "text": "一场阵雨刚停，罗一可把四只小布袋排在火边。栗子、干饼、针线，还有一袋只装了三枚扣子。阿飞数到第四袋，忍不住问：‘你到底藏了几个粮仓？’\n\n‘昨天还是五个。’她把最潮的那只翻过来，倒出几块不能吃的饼。\n\n阿飞笑不出来了。罗一可倒没怪谁，只拿树枝在地上画出车轮、篷布和自己铺位的位置。她把东西藏得太散，连自己也忘了哪袋在漏雨的边上。\n\n‘我不想每回饿了，都先问别人剩没剩。’她说，‘但也不能一边存着，一边偷偷坏掉。’\n\n她有两种办法：给自己的储备划一个干燥的小格，日常检查；或者多做一层可共用的架子，把私人物件另系一根结绳。她没有打开最后那袋烤栗子，那是今晚留给自己的。",
+      "battles": 5,
+      "owner": "xiaohani",
+      "title": "仓鼠把粮袋藏在哪儿",
+      "outcomes": [
+        "罗一可给木格垫了干草，把各袋按取用先后排好。阿飞想顺手加一只大锁，她摇头：‘锁能防嘴馋，防不了忘记。’\n\n她把检查日期画成四个小圆点，自己先抹掉一个。晚上最后那袋栗子打开时，她往阿飞掌心放了一颗。‘这一颗是请你的，其余是我留的。’",
+        "架子被分成两层，大家公用的干粮放上面，罗一可的结绳挂在下面。有人问这样还算不算仓鼠，她鼓着脸想了一会儿：‘有门牌的仓鼠。’\n\n她主动留下检查雨布的记号，却没有把自己的那份一并交出去。等大家明白哪袋可以取、哪袋要先问，她才放心地坐下来剥栗子。"
+      ],
+      "level": 4,
+      "previous": "",
+      "choices": [
+        "先留好你自己的干燥小格，再按日检查。（罗一可心情 +0.25）",
+        "把共用架和私人物件分清，大家轮着看雨布。（罗一可心情 +0.25）"
+      ]
+    }
+  },
   "memberSkillDefs": {
     "lvbu_weapon": {
-      "name": "奶团吕布",
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "text": "使用双手近战武器时，近战武器攻击的护甲伤害 +10%。包括双手斧、剑、锤和长柄；不赋予额外射程。",
+      "range": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "yaoyaoya",
+      "key": "lvbu_weapon",
+      "ap": 0,
+      "name": "奶团吕布",
+      "cd": 0,
+      "fatigue": 0,
       "active": false
     },
     "chaoju": {
-      "owner": "lili",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "chaoju",
+      "ap": 0,
+      "text": "单体远程武器每轮首次命中+1聚光、首次落空-1，最多2层；每层远攻+3、决心+3。战后清零，计入Mod命中+10总上限。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "lili",
+      "key": "chaoju",
+      "range": 0,
       "name": "超巨",
-      "text": "单体武器每轮首次命中获得一层聚光，每轮首次落空失去一层；最多三层，每层远攻 +3、决心 +3，战后清零。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "long_watch": {
       "mode": "buff",
+      "target": "self",
+      "cd": 3,
+      "key": "long_watch",
+      "range": 0,
       "growth": false,
       "icon": "long_watch",
-      "once": false,
-      "text": "至自己下次回合开始，近防与远防各 +8、先攻 -10；期间每轮首次受到敌方直接武器伤害后恢复 4 疲劳。",
-      "range": 0,
+      "mastery_fatigue": 14,
+      "text": "至自己下次回合开始，近防/远防+8、先攻-10；期间首次受到敌方直接武器伤害恢复4疲劳。无相邻敌人时也可用，不产生额外回合。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "self",
+      "uses_per_battle": null,
       "owner": "yuxiang",
-      "fatigue": 18,
-      "ap": 4,
+      "fatigue": 16,
+      "once": false,
       "name": "长轮守门",
-      "cd": 2,
+      "ap": 3,
       "extended": true,
       "active": true
     },
     "read_beat": {
-      "owner": "meiya",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "read_beat",
-      "name": "看懂节拍",
+      "ap": 0,
       "text": "相邻队员单体近战落空时记住敌人；本轮下一次攻击该敌人近战命中 +6，每轮一次。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "meiya",
+      "key": "read_beat",
+      "range": 0,
+      "name": "看懂节拍",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "guard_swap": {
       "mode": "swap",
+      "limit": 2,
+      "target": "ally",
+      "cd": 3,
+      "key": "guard_swap",
+      "range": 1,
       "growth": true,
       "icon": "guard_swap",
-      "once": true,
-      "text": "与相邻同高、可行动的己方队员换位，免脱离攻击。双方不得定身、眩晕、不可移动或免疫换位。",
-      "range": 1,
+      "mastery_fatigue": 17,
+      "text": "与相邻同高、可行动己方队员交换位置，免脱离攻击；双方都不能处于网缚、眩晕、不可移动或换位免疫。每战最多2次，移动本身不赠送攻击。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "ally",
+      "uses_per_battle": 2,
       "owner": "yuchujiu",
-      "fatigue": 15,
-      "ap": 3,
+      "fatigue": 20,
+      "once": false,
       "name": "护团换位",
-      "cd": 0,
+      "ap": 3,
       "extended": true,
       "active": true
     },
     "gaga_charge": {
       "mode": "weapon",
+      "v1_cd": 2,
+      "v1_fatigue": 20,
+      "target": "weapon",
+      "cd": 2,
+      "range": 1,
+      "key": "gaga_charge",
+      "mastery_fatigue": 14,
+      "v1_ap": 4,
       "growth": true,
       "icon": "gaga_charge",
-      "once": false,
-      "text": "用单手近战武器对相邻敌人猛击，命中 -5、护甲伤害 +20%。当前版本原地出手，不附带冲锋位移或击退。",
-      "range": 1,
+      "v1_text": "单手近战普通单体招式，命中-5、护甲伤害×1.20；不移动不击退、不额外攻击。伤害沿用所持武器，不能模拟双手技能。",
+      "text": "单手近战普通单体招式，命中-5、护甲伤害×1.30；不移动不击退、不额外攻击。血伤不提高，伤害沿用所持武器，不能模拟双手技能。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "weapon",
+      "uses_per_battle": null,
       "owner": "dae",
-      "fatigue": 20,
-      "ap": 4,
+      "fatigue": 16,
+      "once": false,
       "name": "嘎嘎冲",
-      "cd": 3,
+      "ap": 4,
       "extended": true,
       "active": true
     },
     "guard_nest": {
-      "text": "持盾守住原位，自己与使用时相邻的队员远程防御 +6，直到大鹅下次回合开始。离开原位、失去盾牌或行动能力时失效；队友离开相邻位置时不受益。",
+      "once": false,
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "mastery_fatigue": 12,
+      "key": "guard_nest",
+      "text": "持盾守原位，自己与最多两名相邻队员远防+8，至大鹅下次回合开始。大鹅移动/失盾/无法行动，或队友不再相邻时失效。",
+      "owner": "dae",
       "shield": true,
-      "fatigue": 15,
+      "uses_per_battle": null,
+      "fatigue": 14,
       "target": "self",
       "ap": 3,
       "name": "守窝",
       "cd": 2,
-      "range": 0,
+      "range": 1,
       "active": true
     },
     "steal_bro": {
-      "owner": "damou",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "steal_bro",
+      "ap": 0,
+      "text": "本人在册且存活时，已解锁主题人物的服务费八折，最多省200克朗，每7日一次。装备与补级费不打折；仅成功雇佣消费机会；不能改变解锁与候选冷却。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "damou",
+      "key": "steal_bro",
+      "range": 0,
       "name": "偷大哥",
-      "text": "大谋在队时，已解锁主题成员的招募费用八折，最多省 200；每 7 日一次，仅成功雇佣消耗机会，不改变成员解锁和刷新间隔。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "shift_arrive": {
-      "owner": "yuxiang",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "shift_arrive",
+      "ap": 0,
+      "text": "自己回合开始时若出现一名此前回合开始时不相邻的可行动队员，恢复4疲劳；首轮只记录。每轮一次，每战最多16，重复来回不突破上限。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "yuxiang",
+      "key": "shift_arrive",
+      "range": 1,
       "name": "替班到了",
-      "text": "自己回合开始时，若有一名上次回合开始时不相邻的可行动队员，恢复 5 疲劳。第一回合仅记录，不恢复；每轮一次。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "budget_share": {
       "mode": "buff",
+      "limit": 3,
+      "target": "ally_self",
+      "cd": 2,
+      "key": "budget_share",
+      "range": 3,
       "growth": false,
       "icon": "budget_share",
-      "once": true,
-      "text": "给 3 格内自己或一名队员的下一次投掷武器技能减免 5 疲劳，最低 0，两次回合结束后失效。每战一次，不赠弹药。",
-      "range": 3,
+      "mastery_fatigue": 9,
+      "text": "指定自己或3格内一名队员，下一次投掷少耗6疲劳，两次目标回合结束后到期；最低消耗原值50%向上取整。每战3次，不赠送弹药。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "ally_self",
+      "uses_per_battle": 3,
       "owner": "bula",
-      "fatigue": 5,
-      "ap": 2,
+      "fatigue": 10,
+      "once": false,
       "name": "提前分好",
-      "cd": 0,
+      "ap": 3,
       "extended": true,
       "active": true
     },
@@ -1923,14 +3061,18 @@
       "mode": "snare",
       "limit": 2,
       "target": "enemy",
-      "cd": 2,
+      "cd": 3,
+      "key": "lock_wagon",
+      "once": false,
       "growth": true,
       "icon": "lock_wagon",
-      "text": "消耗 2 工具，对相邻可束缚人形敌人施加绳扣，使其不能移动至下次回合结束，仍可攻击。每战两次；本版直接施放，不在空地埋隐藏陷阱。",
+      "mastery_fatigue": 16,
+      "text": "消耗2工具，命中检定为自身近攻+10对近防，成功使相邻可束缚人形敌人不能移动至目标下次回合结束；仍可攻击/施法。每战2次，无隐藏地雷，不影响束缚免疫者。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "once": false,
+      "uses_per_battle": 2,
       "owner": "xiaojie",
-      "fatigue": 15,
+      "fatigue": 18,
       "range": 1,
       "name": "锁车",
       "ap": 4,
@@ -1938,54 +3080,87 @@
       "active": true
     },
     "snake_read": {
-      "owner": "wanshe",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "snake_read",
-      "name": "秦国的神",
+      "ap": 0,
       "text": "每轮首次受到敌方单体近战攻击后记住攻击者；对它的下一次单体近战命中 +6，至自己下次回合结束失效。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "wanshe",
+      "key": "snake_read",
+      "range": 0,
+      "name": "秦国的神",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "berry_eye": {
-      "owner": "manyuemei",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "snake_read",
-      "name": "看清缝隙",
+      "ap": 0,
       "text": "攻击与己方队员相邻的敌人时，每轮首次单体远程命中 +5。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "manyuemei",
+      "key": "berry_eye",
+      "range": 0,
+      "name": "看清缝隙",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "king_dance": {
       "mode": "step",
+      "limit": 2,
+      "target": "empty",
+      "cd": 2,
+      "key": "king_dance",
+      "range": 1,
       "growth": false,
       "icon": "king_dance",
-      "once": false,
-      "text": "安全移动至相邻同高空地，免脱离攻击；落点相邻队员先攻 +12，至各自下次回合结束。当前版本为一步舞位。",
-      "range": 1,
+      "mastery_fatigue": 17,
+      "text": "移到相邻同高可通行空格，免脱离攻击；落点最多两名相邻队员先攻+10至各自下次回合结束。定身不能用，每战2次。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "empty",
+      "uses_per_battle": 2,
       "owner": "meiya",
       "fatigue": 20,
-      "ap": 4,
+      "once": false,
       "name": "大王舞",
-      "cd": 2,
+      "ap": 3,
       "extended": true,
       "active": true
     },
     "steady_hand": {
-      "text": "持盾鼓励自己与当前相邻的可行动队员：近战防御 +6、决心 +6，分别持续至受益者下次回合开始。护卫类临时加成只取最高值。",
+      "once": false,
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "mastery_fatigue": 16,
+      "key": "steady_hand",
+      "text": "必须持盾，对自己和最多两名相邻可行动队员：近防+6、决心+6，至各自下次回合开始。选择后固定受益者，临时护卫近防取高。",
+      "owner": "laocai",
       "shield": true,
+      "uses_per_battle": null,
       "fatigue": 18,
       "target": "self",
       "ap": 4,
       "name": "稳一手",
       "cd": 3,
-      "range": 0,
+      "range": 1,
       "active": true
     },
     "bottle_breakthrough": {
+      "once": false,
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "mastery_fatigue": 16,
+      "key": "bottle_breakthrough",
       "text": "以单手近战武器的普通单体招式攻击，命中 +10；攻击后近战防御 -5，直到自己下次回合开始。命中或落空都会进入冷却。",
+      "owner": "bottle",
       "shield": false,
+      "uses_per_battle": null,
       "fatigue": 18,
       "target": "weapon",
       "ap": 4,
@@ -1994,456 +3169,761 @@
       "range": 1,
       "active": true
     },
-    "moon_cake": {
-      "mode": "team",
-      "growth": true,
-      "icon": "moon_cake",
-      "once": true,
-      "text": "把准备好的月饼分给自己与 2 格内伙伴：决心 +6，持续至各自第二次回合结束；每战一次。当前版本以战斗准备能力呈现，不消耗世界地图食物。",
-      "range": 2,
-      "shield": false,
-      "target": "self",
-      "owner": "chenzhihan",
-      "fatigue": 14,
-      "ap": 4,
-      "name": "月饼帮",
-      "cd": 0,
-      "extended": true,
-      "active": true
-    },
     "next_path": {
-      "owner": "wanshe",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "next_path",
+      "ap": 0,
+      "text": "每轮一次，普通单体近战命中后，为本次行动内下一次普通单体近战减免 4 疲劳；命中或落空都消耗优惠，不赠送攻击。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "wanshe",
+      "key": "next_path",
+      "range": 0,
       "name": "下一招换个路",
-      "text": "本次行动以普通单体近战命中后，下一次蛇形试招少耗 4 疲劳；发动后清除，不赠送攻击。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "shadow_captain": {
       "mode": "buff",
+      "v1_cd": 2,
+      "v1_fatigue": 12,
+      "target": "ally",
+      "cd": 2,
+      "range": 3,
+      "key": "shadow_captain",
+      "mastery_fatigue": 7,
+      "v1_ap": 3,
       "growth": true,
       "icon": "shadow_captain",
-      "once": false,
-      "text": "3 格内一名其他队员，下一次单体武器技能少耗 8 疲劳，最低 0；其两次回合结束后到期。优惠取最高一份。",
-      "range": 3,
+      "v1_text": "一名其他队员的下一次单体武器攻击少耗8疲劳，两次目标回合结束后到期；最低仍耗原消耗的50%向上取整。减耗取最高，优惠不返还AP。",
+      "text": "一名其他队员的下一次单体武器攻击少耗8疲劳，两次目标回合结束后到期；最低仍耗原消耗的50%向上取整。减耗取最高，优惠不返还AP。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "ally",
+      "uses_per_battle": null,
       "owner": "mocha",
-      "fatigue": 15,
-      "ap": 4,
+      "fatigue": 8,
+      "once": false,
       "name": "幕后队长",
-      "cd": 3,
+      "ap": 2,
       "extended": true,
       "active": true
     },
     "scout_path": {
-      "owner": "tiantong",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "scout_path",
+      "ap": 0,
+      "text": "自身视野+1、前两轮先攻+10；不生成世界地图路线，不增加弹药、射程或夜视。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "tiantong",
+      "key": "scout_path",
+      "range": 0,
       "name": "探路",
-      "text": "侦察经验使战场视野 +1；第一轮先攻 +10。当前版本不在世界地图生成路线情报或任务。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "spare_key": {
       "mode": "unnet",
+      "limit": 2,
+      "target": "ally_self",
+      "cd": 2,
+      "key": "spare_key",
+      "range": 1,
       "growth": false,
       "icon": "spare_key",
-      "once": false,
-      "text": "解除自己或相邻队员的一项普通网或加固网；无网不可使用。不解除眩晕、抓取、藤蔓和伤势。",
-      "range": 1,
+      "mastery_fatigue": 12,
+      "text": "解除自己或相邻队员的一项普通网/加固网，每战2次；不能解除藤蔓、抓取、眩晕、伤势。必须先存在合法网，失败不收费。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "ally_self",
+      "uses_per_battle": 2,
       "owner": "xiaojie",
-      "fatigue": 10,
-      "ap": 3,
+      "fatigue": 14,
+      "once": false,
       "name": "备用钥匙",
-      "cd": 2,
+      "ap": 4,
       "extended": true,
       "active": true
     },
     "return_arrow": {
-      "owner": "tiantong",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "return_arrow",
+      "ap": 0,
+      "text": "本次行动实际普通移动至少一格后，首次单体远程命中+5，每轮一次；专属位移、换位不计。付移动AP后能否开弓须按原武器核算。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "tiantong",
+      "key": "return_arrow",
+      "range": 0,
       "name": "回头箭",
-      "text": "本轮实际走过至少两格普通移动后，首次单体远程武器命中 +7。专属位移和换位不计步数。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "good_card": {
-      "owner": "laocai",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "good_card",
+      "ap": 0,
+      "text": "某敌人本轮被两名不同队员的单体武器命中后，自己下一次单体近战攻击它时命中+8，每轮一次，尝试即消耗。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "laocai",
+      "key": "good_card",
+      "range": 0,
       "name": "一张好牌",
-      "text": "同一轮已有两名不同队员以单体武器命中过某敌人后，对它的下一次单体近战命中 +10，每轮一次。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "turtle_shell": {
-      "text": "持盾缩入防线，受到的伤害减少 20%，直到自己下次回合开始。期间不能使用武器技能；移动、失盾或失去行动能力会解除保护。",
+      "once": false,
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "mastery_fatigue": 17,
+      "key": "turtle_shell",
+      "text": "持盾，直接武器总伤害×0.80至自己下次回合开始；不能主动移动或使用武器技能。失盾/移动/无法行动即结束；不减流血、毒、灼烧。",
+      "owner": "xiaogui",
       "shield": true,
-      "fatigue": 14,
+      "uses_per_battle": null,
+      "fatigue": 20,
       "target": "self",
-      "ap": 3,
+      "ap": 4,
       "name": "缩壳",
       "cd": 2,
       "range": 0,
       "active": true
     },
     "biantai": {
-      "owner": "xiaoyueya",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "biantai",
+      "ap": 0,
+      "text": "单体远程武器切换到与上次不同的敌人时命中+6，每轮一次。首次射击不触发；落空也更新目标。计入全Mod+10总上限。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "xiaoyueya",
+      "key": "biantai",
+      "range": 0,
       "name": "变态",
-      "text": "单体远程武器攻击切换到与上次不同的敌人时，命中 +8，每轮一次。首次射击不触发；落空也记录目标。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "snake_trial": {
       "mode": "weapon",
+      "target": "weapon",
+      "cd": 1,
+      "key": "snake_trial",
+      "range": 1,
       "growth": false,
       "icon": "snake_trial",
-      "once": false,
-      "text": "单手近战武器试招：生命与护甲伤害均为普通招式的 80%；命中后使敌人近攻 -6 至其下次回合结束。每轮一次。",
-      "range": 1,
+      "mastery_fatigue": 12,
+      "text": "单手近战普通单体招式，生命/护甲伤害×0.80；命中后目标近攻-6至其下次回合结束。每轮一次，不能加额外普攻，免疫限制沿用普通属性减益规则。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "weapon",
+      "uses_per_battle": null,
       "owner": "wanshe",
-      "fatigue": 16,
-      "ap": 4,
+      "fatigue": 14,
+      "once": false,
       "name": "蛇形试招",
-      "cd": 1,
+      "ap": 4,
       "extended": true,
       "active": true
     },
     "guard_gate": {
       "mode": "buff",
+      "target": "self",
+      "cd": 2,
+      "key": "guard_gate",
+      "range": 0,
       "growth": true,
       "icon": "guard_gate",
-      "once": false,
-      "text": "持盾守门至自己下次回合开始：不能主动移动，近防 +4，并免疫期间的推拉位移。伤害与眩晕照常。",
-      "range": 0,
+      "mastery_fatigue": 11,
+      "text": "必须持盾，近防+6、免疫推拉，到自己下次回合开始；禁止主动移动。眩晕、网缚、伤害照常；失盾或被强制移动立即终止。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": true,
-      "target": "self",
+      "uses_per_battle": null,
       "owner": "shuaizi",
       "fatigue": 12,
-      "ap": 3,
+      "once": false,
       "name": "守门",
-      "cd": 2,
+      "ap": 3,
       "extended": true,
       "active": true
     },
     "breathe_easy": {
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "text": "可可持盾，相邻队员躲过敌方单体武器攻击后，可可恢复4疲劳。每轮一次、每战最多20；队友越多不增加上限。",
+      "range": 1,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "keke",
+      "key": "breathe_easy",
+      "ap": 0,
       "name": "松口气",
-      "text": "保可梦仍生效时，被保护队员躲过敌方武器攻击，可可消除 4 疲劳。每轮最多一次，每战最多消除 20。",
+      "cd": 0,
+      "fatigue": 0,
       "active": false
     },
     "no_last_throw": {
-      "owner": "bula",
+      "limit": 3,
+      "name": "别把最后一支乱扔",
+      "cd": 0,
+      "key": "no_last_throw",
       "growth": true,
       "icon": "no_last_throw",
-      "name": "别把最后一支乱扔",
-      "text": "投掷武器只剩最后一发时，普通投掷命中 +6；每战最多两次。弹药仍正常消耗。",
+      "text": "投掷武器剩余≤2发时，普通投掷命中+6，每战最多3次；命中/落空均耗次数和弹药，切包不能重置。",
+      "mastery_fatigue": 0,
+      "uses_per_battle": 3,
+      "fatigue": 0,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "ap": 0,
+      "owner": "bula",
+      "range": 0,
       "extended": true,
       "active": false
     },
     "only_man": {
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "text": "至少一名未持盾的可行动己方队员与自己相邻时，受攻击时近防+5。人数不叠加；与其他Mod常驻条件近防共享+6上限。",
+      "range": 1,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "xiaoyubeike",
+      "key": "only_man",
+      "ap": 0,
       "name": "唯一的男人",
-      "text": "与至少一名可行动、未持盾的己方队员相邻时，被攻击时近战防御 +6。不随队员数量叠加。",
+      "cd": 0,
+      "fatigue": 0,
       "active": false
     },
     "fear_afei": {
-      "owner": "wangduidui",
+      "v1_cd": 0,
+      "v1_fatigue": 0,
+      "name": "恐飞派",
+      "cd": 0,
+      "key": "fear_afei",
+      "v1_ap": 0,
       "growth": false,
       "icon": "fear_afei",
-      "name": "恐飞派",
-      "text": "每战首次在 3 格内亲眼见到阿飞使用豪气冲天或飞碟号令时，恢复 8 疲劳；本轮下一次单体武器命中 -5。使用怼一句可提前清除惩罚。",
+      "v1_text": "每战首次在3格内看到阿飞施放豪气冲天/飞爹在此，自己恢复8疲劳、下一次单体武器命中-5。若本战阿飞未上场，则第一回合开始改为恢复4疲劳；不能同时领两份。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "wangduidui",
+      "range": 3,
+      "ap": 0,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "text": "每战首次在3格内看到阿飞施放豪气冲天/飞爹在此，自己恢复8疲劳、下一次单体武器命中-5。若本战阿飞未上场，则在首次自身回合开始的基础恢复结算后、剩余疲劳仍至少4时恢复4；本战仅一次，两种触发互斥。",
       "extended": true,
       "active": false
     },
     "cover_up": {
       "mode": "cover",
+      "limit": 2,
+      "target": "ally",
+      "cd": 3,
+      "key": "cover_up",
+      "range": 1,
       "growth": true,
       "icon": "cover_up",
-      "once": false,
-      "text": "持盾守住原位保护相邻队员，直到自己下次回合开始。下一次敌方单体近战攻击若也能合法攻击自己，则转由自己承受，伤害减少 15%；落空也消耗保护。",
-      "range": 1,
+      "mastery_fatigue": 16,
+      "text": "持盾守原位，直到自己下次回合开始。下一次针对相邻队员的敌方单体近战，若原攻击者也可合法攻击自己，则改由自己承受且总武器伤害×0.85；落空也消耗。每战最多2次。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": true,
-      "target": "ally",
+      "uses_per_battle": 2,
       "owner": "xiaoyubeike",
-      "fatigue": 20,
-      "ap": 4,
+      "fatigue": 18,
+      "once": false,
       "name": "顶上去",
-      "cd": 3,
+      "ap": 4,
       "extended": true,
       "active": true
     },
     "companion": {
-      "owner": "xiaohani",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "loyalty",
+      "ap": 0,
+      "text": "与可行动队员相距≤2格时，自己决心+6、先攻+5。没有人数加成，不对队友传播。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "xiaohani",
+      "key": "companion",
+      "range": 2,
       "name": "有人同行",
-      "text": "与可行动队员相距不超过 2 格时，决心 +6。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "teammate_ball": {
-      "owner": "bottle",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "teammate_ball",
-      "name": "队友给的球",
+      "ap": 0,
       "text": "每轮首次攻击本轮已被其他队员单体武器命中的敌人时，命中 +5；尝试后消耗，不适用于范围攻击。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "bottle",
+      "key": "teammate_ball",
+      "range": 0,
+      "name": "队友给的球",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "signal_delay": {
-      "owner": "xiaoning",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "return_arrow",
+      "ap": 0,
+      "text": "每轮首次单体远程落空后，下次单体远程命中+8，尝试后消耗，最迟下轮结束清零；不允许反复故意射空累积。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "xiaoning",
+      "key": "signal_delay",
+      "range": 0,
       "name": "信号延迟",
-      "text": "每轮首次单体远程攻击落空后，下一次单体远程命中 +8，最迟下轮结束清除。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "dui_sentence": {
       "mode": "buff",
+      "v1_cd": 2,
+      "v1_fatigue": 12,
+      "target": "ally",
+      "cd": 2,
+      "range": 3,
+      "key": "dui_sentence",
+      "mastery_fatigue": 9,
+      "v1_ap": 3,
       "growth": true,
       "icon": "dui_sentence",
-      "once": false,
-      "text": "鼓励 3 格内一名其他队员，近防 +4、决心 +6，持续至其下次回合结束；同时清除自己恐飞派的命中惩罚。",
-      "range": 3,
+      "v1_text": "一名其他队员近防+4、决心+6至其下次回合结束，同时清除自身恐飞派命中惩罚。临时近防取高。",
+      "text": "一名其他队员近防+4、决心+6至其下次回合结束。临时近防取高。此分支不再承诺清除互斥分支“恐飞派”的自身惩罚。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "ally",
+      "uses_per_battle": null,
       "owner": "wangduidui",
       "fatigue": 10,
-      "ap": 3,
+      "once": false,
       "name": "怼一句",
-      "cd": 2,
+      "ap": 2,
       "extended": true,
       "active": true
     },
     "turtle_cover": {
       "mode": "buff",
+      "target": "ally",
+      "cd": 2,
+      "key": "turtle_cover",
+      "range": 1,
       "growth": true,
       "icon": "pokemon",
-      "once": false,
-      "text": "持盾保护相邻队员：近防 +5、远防 +5，至其第二次回合结束。效果要求小龟仍持盾、可行动并保持相邻。",
-      "range": 1,
+      "mastery_fatigue": 12,
+      "text": "持盾保护相邻一名队员，近防/远防+5至其下次回合结束；须保持相邻、持盾、可行动，同类保护取高。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": true,
-      "target": "ally",
+      "uses_per_battle": null,
       "owner": "xiaogui",
-      "fatigue": 16,
-      "ap": 4,
+      "fatigue": 14,
+      "once": false,
       "name": "小龟护壳",
-      "cd": 3,
+      "ap": 3,
       "extended": true,
       "active": true
     },
     "blue_form": {
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "text": "战斗第一轮开始时，自己与最多两名相邻可行动队员先攻+12；自己前两轮决心+5。第一轮先攻只作用一次，增援不补发。",
+      "range": 1,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "laocai",
+      "key": "blue_form",
+      "ap": 0,
       "name": "蓝旗布阵",
-      "text": "第一轮开始时，自己与当时相邻的可行动队员先攻 +12，仅持续第一轮，不影响后续援军。重复布阵不叠加。",
+      "cd": 0,
+      "fatigue": 0,
       "active": false
     },
     "breach_strike": {
-      "text": "以双手近战武器的普通单体招式攻击，命中 -5、护甲伤害 +20%。沿用武器自身射程和特殊伤害。当前版本不附带击退。",
-      "shield": false,
-      "fatigue": 24,
+      "limit": 2,
+      "v1_cd": 2,
+      "v1_fatigue": 24,
       "target": "weapon",
+      "cd": 3,
+      "key": "breach_strike",
+      "v1_ap": 6,
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "once": false,
+      "v1_text": "以当前双手近战武器的普通单体招式攻击，命中-5、护甲伤害×1.20，沿用武器实际射程（长柄允许2格）。不附带击退、不触发握把额外40破甲、不加免费攻击。",
+      "owner": "yaoyaoya",
+      "shield": false,
+      "uses_per_battle": 2,
+      "fatigue": 20,
+      "mastery_fatigue": 17,
       "ap": 6,
-      "name": "破口一击",
-      "cd": 2,
+      "text": "每战2次，以当前双手近战武器的普通单体招式攻击，护甲伤害×1.35，不降低命中；沿用武器实际射程（长柄允许2格）与血伤。不附带击退、不触发握把追加破甲、不加免费攻击。属于破甲爆发，长战持续收益仍与“奶团吕布”竞争。",
       "range": 1,
+      "name": "破口一击",
       "active": true
     },
     "return_road": {
       "mode": "swap",
+      "limit": 2,
+      "target": "ally",
+      "cd": 3,
+      "key": "return_road",
+      "range": 1,
       "growth": false,
       "icon": "return_road",
-      "once": true,
-      "text": "与相邻同高且可行动的队员安全换位，免脱离攻击；双方不得定身。当前版本采用原版换位，不同时平移两人。",
-      "range": 1,
+      "mastery_fatigue": 17,
+      "text": "与相邻同高且可行动队员交换位置，免脱离攻击；双方不能网缚/眩晕/不可移动/换位免疫。每战2次，不在空地留下增益。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "ally",
+      "uses_per_battle": 2,
       "owner": "tutu",
-      "fatigue": 18,
-      "ap": 4,
+      "fatigue": 20,
+      "once": false,
       "name": "回头路",
-      "cd": 0,
+      "ap": 3,
       "extended": true,
       "active": true
     },
-    "hold_ground": {
-      "owner": "wangdazhi",
+    "yanzi_watch": {
+      "mode": "buff",
+      "name": "看准再出手",
+      "cd": 0,
+      "key": "yanzi_watch",
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "ap": 0,
       "growth": false,
+      "text": "本次行动尚未移动时，首次单体近战命中+5；尝试消耗，计入Mod命中+10总上限。无额外射程。",
+      "target": "self",
+      "shield": false,
+      "uses_per_battle": null,
+      "owner": "yanzi",
+      "once": false,
+      "range": 0,
+      "mastery_fatigue": 0,
+      "fatigue": 0,
+      "extended": true,
+      "active": false
+    },
+    "hold_ground": {
+      "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "hold_ground",
+      "ap": 0,
+      "text": "自己持盾且本次行动未移动，相邻最多两名其他可行动隊员受攻击时近防+3；同类站位保护取高，不给自己。被移动后到下次回合才重置。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "wangdazhi",
+      "key": "hold_ground",
+      "range": 1,
       "name": "站稳场子",
-      "text": "持盾且本次行动未移动时，相邻其他队员被攻击时获得近防 +3；同类站位保护只取最高，不给自己加成。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "ouqi": {
-      "owner": "lili",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "ouqi",
+      "ap": 0,
+      "text": "士气检定失败时获得至少25%的原版重掷机会，与其他重掷来源取高。不重掷命中、伤害、招募或掉落；不是免疫恐惧。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "lili",
+      "key": "ouqi",
+      "range": 0,
       "name": "欧气",
-      "text": "士气检定获得至少 20% 的原版重掷机会；与其他重掷来源取较高值。不重掷命中、伤害和掉落。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "unselectable": {
       "mode": "buff",
+      "limit": 2,
+      "target": "self",
+      "cd": 3,
+      "key": "unselectable",
+      "range": 0,
       "growth": false,
       "icon": "unselectable",
-      "once": true,
-      "text": "没有相邻敌人时使用；至自己下次回合开始，敌方单体攻击若有另一名合法队员目标，就不能选中自己。没有替代目标时仍可被攻击。主动攻击会解除；范围攻击不受影响。",
-      "range": 0,
+      "mastery_fatigue": 14,
+      "text": "无相邻敌人才可用：自身远防+20，至下次回合开始。主动攻击或移动即解除。敌人仍能选中且范围攻击照常。每战最多2次。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "self",
+      "uses_per_battle": 2,
       "owner": "lili",
-      "fatigue": 20,
-      "ap": 4,
+      "fatigue": 16,
+      "once": false,
       "name": "无法选中",
-      "cd": 0,
+      "ap": 3,
       "extended": true,
       "active": true
     },
     "curtain_yield": {
       "mode": "step",
+      "limit": 2,
+      "target": "empty",
+      "cd": 2,
+      "key": "curtain_yield",
+      "range": 1,
       "growth": true,
       "icon": "curtain_yield",
-      "once": false,
-      "text": "本次行动已单体近战命中过敌人后，可安全撤至相邻同高空地，免脱离攻击。每轮一次，定身时不可用。",
-      "range": 1,
+      "mastery_fatigue": 14,
+      "text": "本次行动已用单体近战命中过敌人后，撤至相邻同高空格，免脱离攻击。定身不能用，每战2次，不能返还AP或触发再攻击。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "empty",
+      "uses_per_battle": 2,
       "owner": "meiya",
-      "fatigue": 12,
-      "ap": 2,
+      "fatigue": 16,
+      "once": false,
       "name": "谢幕让位",
-      "cd": 1,
+      "ap": 3,
       "extended": true,
       "active": true
     },
-    "guard_self": {
+    "yanzi_reply": {
       "mode": "buff",
-      "growth": false,
-      "icon": "guard_self",
-      "once": false,
-      "text": "持盾自保：近防 +8，受到的直接武器生命伤害减少 10%，至自己下次回合开始。护甲照常结算。",
-      "range": 0,
-      "shield": true,
+      "name": "留一手",
+      "cd": 0,
+      "key": "yanzi_reply",
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "ap": 0,
+      "growth": true,
+      "text": "每轮首次躲过敌方单体近战攻击后，本次或下一次自己行动的第一次单体近战命中+6，最迟下次回合结束清除。不会触发免费反击。",
       "target": "self",
-      "owner": "chenzhihan",
-      "fatigue": 16,
-      "ap": 4,
-      "name": "先护住自己",
-      "cd": 2,
+      "shield": false,
+      "uses_per_battle": null,
+      "owner": "yanzi",
+      "once": false,
+      "range": 0,
+      "mastery_fatigue": 0,
+      "fatigue": 0,
       "extended": true,
-      "active": true
+      "active": false
     },
     "catch_rear": {
       "mode": "buff",
+      "target": "ally",
+      "cd": 2,
+      "key": "catch_rear",
+      "range": 3,
       "growth": false,
       "icon": "catch_rear",
-      "once": false,
-      "text": "掩护 3 格内一名其他队员：远防 +8；其下一次回合开始额外恢复 4 疲劳，效果持续至该回合结束。本版不额外射箭或消耗弹药。",
-      "range": 3,
+      "mastery_fatigue": 11,
+      "text": "一名其他队员远防+10，下一次回合开始额外恢复4疲劳，至该回合结束。没有额外射击，不消耗弹药。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "ally",
+      "uses_per_battle": null,
       "owner": "tiantong",
-      "fatigue": 16,
-      "ap": 4,
+      "fatigue": 12,
+      "once": false,
       "name": "接住后排",
-      "cd": 3,
+      "ap": 3,
+      "extended": true,
+      "active": true
+    },
+    "yanzi_cover": {
+      "mode": "buff",
+      "name": "侧身接线",
+      "cd": 2,
+      "key": "yanzi_cover",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "ap": 3,
+      "growth": false,
+      "text": "必须持盾，为自己与一名相邻可行动队员提供远防+8，至各自下次回合开始；失盾立即结束。临时远防取最高，不获得近防。",
+      "target": "ally",
+      "shield": true,
+      "uses_per_battle": null,
+      "owner": "yanzi",
+      "once": false,
+      "range": 1,
+      "mastery_fatigue": 12,
+      "fatigue": 14,
+      "extended": true,
+      "active": true
+    },
+    "hard_brake": {
+      "mode": "buff",
+      "target": "self",
+      "cd": 2,
+      "key": "hard_brake",
+      "range": 0,
+      "growth": true,
+      "icon": "hard_brake",
+      "mastery_fatigue": 12,
+      "text": "远防+12、近防+4至自己下次回合开始；禁止主动移动，仍能攻击，被迫移动即结束。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "shield": false,
+      "uses_per_battle": null,
+      "owner": "suwa",
+      "fatigue": 14,
+      "once": false,
+      "name": "急刹",
+      "ap": 3,
       "extended": true,
       "active": true
     },
     "alien_eye": {
-      "owner": "xiaoning",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "abacus_mark",
-      "name": "外星人的观察",
-      "text": "本次行动尚未移动时，单体远程武器命中 +6；移动后失效。",
-      "extended": true,
-      "active": false
-    },
-    "berry_reserve": {
-      "owner": "manyuemei",
-      "growth": true,
-      "icon": "no_last_throw",
-      "name": "留一支给后面",
-      "text": "每轮首次以单体远程武器命中与队员相邻的敌人后，恢复 2 疲劳。",
-      "extended": true,
-      "active": false
-    },
-    "drool": {
-      "mode": "buff",
-      "growth": false,
-      "icon": "bear_strike",
-      "once": false,
-      "text": "干扰 3 格内可见人类或绿皮：先攻 -20、远攻 -5，至目标下次回合结束；免疫恐惧者不受影响。",
-      "range": 3,
-      "shield": false,
-      "target": "enemy",
+      "ap": 0,
+      "text": "本次行动尚未移动时单体远程命中+5，普通/技能/强制移动均使本次行动失效。与其他Mod命中加成合计≤10。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
       "owner": "xiaoning",
-      "fatigue": 10,
-      "ap": 3,
-      "name": "流口水",
-      "cd": 2,
+      "key": "alien_eye",
+      "range": 0,
+      "name": "外星人的观察",
+      "cd": 0,
       "extended": true,
-      "active": true
+      "active": false
     },
     "turtle_bond": {
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "text": "持盾且可行动阿飞在3格内，自身决心+8、每回合额外恢复2疲劳。阿飞在预备队/死亡/失去行动能力时无效，纳入额外恢复上限。",
+      "range": 3,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "xiaogui",
+      "key": "turtle_bond",
+      "ap": 0,
       "name": "飞爹后援",
-      "text": "持盾且与可行动的阿飞相距不超过 3 格时，决心 +8，每回合疲劳恢复量 +2。阿飞在预备队时无效。",
+      "cd": 0,
+      "fatigue": 0,
       "active": false
     },
     "abacus_mark": {
       "mode": "mark",
+      "v1_cd": 2,
+      "v1_fatigue": 12,
+      "target": "enemy",
+      "cd": 2,
+      "range": 4,
+      "key": "abacus_mark",
+      "mastery_fatigue": 7,
+      "v1_ap": 3,
       "growth": false,
       "icon": "abacus_mark",
-      "once": false,
-      "text": "标记 4 格内可见敌人两轮；下一次己方单体武器攻击命中 +10，尝试后消耗。同一人只保留一个标记。",
-      "range": 4,
+      "v1_text": "标记一个可见敌人，下一次己方单体武器攻击命中+10，尝试后耗尽，两次施术者回合开始后到期。一人仅一个标记；与全部Mod命中加成合计≤10。",
+      "text": "标记一个可见敌人，下一次己方单体武器攻击命中+10，尝试后耗尽，两次施术者回合开始后到期。一人仅一个标记；与全部Mod命中加成合计≤10。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "enemy",
+      "uses_per_battle": null,
       "owner": "mocha",
-      "fatigue": 10,
-      "ap": 3,
+      "fatigue": 8,
+      "once": false,
       "name": "地精算盘",
-      "cd": 2,
+      "ap": 2,
       "extended": true,
       "active": true
     },
     "pang_share": {
       "mode": "buff",
+      "target": "ally",
+      "cd": 2,
+      "key": "pang_share",
+      "range": 1,
       "growth": false,
       "icon": "borrow_strike",
-      "once": false,
-      "text": "给相邻队员近防 +4、决心 +4，至其第二次回合结束。完成个人成长后近防变为 +6。",
-      "range": 1,
+      "mastery_fatigue": 11,
+      "text": "持盾给一名相邻队员近防+4、决心+4，至其下次回合结束；失盾或断开相邻立即结束。11级仅减少疲劳，不再额外把近防叠到+6。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "ally",
+      "uses_per_battle": null,
       "owner": "xiaopangxu",
       "fatigue": 12,
-      "ap": 3,
+      "once": false,
       "name": "借你半面盾",
-      "cd": 2,
+      "ap": 3,
       "extended": true,
       "active": true
+    },
+    "berry_reserve": {
+      "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "icon": "no_last_throw",
+      "ap": 0,
+      "text": "每轮首次单体远程命中与队员相邻的敌人后恢复3疲劳；一次攻击只结算一次，不按受击目标数倍增。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "manyuemei",
+      "key": "berry_reserve",
+      "range": 0,
+      "name": "留一支给后面",
+      "cd": 0,
+      "extended": true,
+      "active": false
+    },
+    "nicotine": {
+      "limit": 1,
+      "target": "self",
+      "cd": 0,
+      "key": "nicotine",
+      "mastery": "11级：尼古丁当场恢复18，透支仍为两次各5",
+      "text": "每战一次，立即消除 15 点累积疲劳；随后两次自己回合开始时，疲劳恢复量各减少 5。疲劳为零时不能使用。此技能不回复生命。",
+      "shield": false,
+      "mastery_fatigue": 0,
+      "uses_per_battle": 1,
+      "owner": "xiaoyubeike",
+      "range": 0,
+      "once": false,
+      "name": "尼古丁",
+      "ap": 2,
+      "fatigue": 0,
+      "active": true
+    },
+    "finals_moment": {
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "text": "从第 5 轮起，近战武器攻击伤害 +10%，每次近战武器技能额外消耗 3 疲劳。",
+      "range": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "bottle",
+      "key": "finals_moment",
+      "ap": 0,
+      "name": "决赛时刻",
+      "cd": 0,
+      "fatigue": 0,
+      "active": false
     },
     "bear_strike": {
       "mode": "buff",
       "limit": 2,
       "target": "enemy",
       "cd": 2,
+      "key": "bear_strike",
+      "once": false,
       "growth": false,
       "icon": "bear_strike",
-      "text": "消耗一层看懂，干扰 3 格内人类或绿皮的下一次单体武器命中 -10；尝试后消耗，最多持续至其第二次回合结束。每战最多两次。",
+      "mastery_fatigue": 11,
+      "text": "3格内人类/绿皮下一次单体武器命中-10，尝试消耗，至第二次目标回合结束到期。每战2次；免疫恐惧者不受影响。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "once": false,
+      "uses_per_battle": 2,
       "owner": "tongzhu",
       "fatigue": 12,
       "range": 3,
@@ -2452,136 +3932,168 @@
       "extended": true,
       "active": true
     },
-    "nicotine": {
-      "text": "每战一次，立即消除 15 点累积疲劳；随后两次自己回合开始时，疲劳恢复量各减少 5。疲劳为零时不能使用。此技能不回复生命。",
-      "shield": false,
-      "fatigue": 0,
-      "target": "self",
-      "ap": 2,
-      "name": "尼古丁",
-      "cd": 0,
-      "range": 0,
-      "active": true
-    },
     "know_rules": {
-      "owner": "tongzhu",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "know_rules",
+      "ap": 0,
+      "text": "4 格内可见敌人连续两次使用同一武器技能时，获得一层看懂，每层使自身近战命中 +3；最多两层，每轮最多一层，战后清零。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "tongzhu",
+      "key": "know_rules",
+      "range": 0,
       "name": "先懂规则",
-      "text": "4 格内可见敌人连续两次使用同一武器技能时，获得一层看懂；最多两层，每轮最多一层，战后清零。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "cup_signal": {
       "mode": "team",
+      "v1_cd": 3,
+      "v1_fatigue": 18,
+      "target": "self",
+      "cd": 3,
+      "range": 2,
+      "key": "cup_signal",
+      "mastery_fatigue": 9,
+      "v1_ap": 4,
       "growth": true,
       "icon": "cup_signal",
-      "once": false,
-      "text": "给自己与 3 格内队员下一次单体武器技能减免 4 疲劳；自动消耗最多两层看懂，每层再减 2，最低 0。两次回合结束后过期；优惠取最高。",
-      "range": 3,
+      "v1_text": "选择2格内最多3名己方队员（含自己），各下一次单体武器少耗4疲劳，两次目标回合结束后到期；最低仍耗原消耗50%向上取整，同类优惠取高。",
+      "text": "选择2格内最多3名己方队员（含自己），各下一次单体武器少耗4疲劳，两次目标回合结束后到期；最低仍耗原消耗50%向上取整，同类优惠取高。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "self",
+      "uses_per_battle": null,
       "owner": "tongzhu",
-      "fatigue": 15,
-      "ap": 4,
+      "fatigue": 10,
+      "once": false,
       "name": "敲杯为号",
-      "cd": 3,
+      "ap": 3,
+      "extended": true,
+      "active": true
+    },
+    "hold_curtain": {
+      "mode": "buff",
+      "target": "self",
+      "cd": 2,
+      "key": "hold_curtain",
+      "range": 0,
+      "growth": false,
+      "icon": "hold_curtain",
+      "mastery_fatigue": 14,
+      "text": "持盾，近防+7，免疫推拉至自己下次回合开始；伤害/网缚/眩晕照常，失盾立即结束。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "shield": true,
+      "uses_per_battle": null,
+      "owner": "wangdazhi",
+      "fatigue": 16,
+      "once": false,
+      "name": "撑住幕布",
+      "ap": 3,
       "extended": true,
       "active": true
     },
     "leave_not_gone": {
-      "owner": "tutu",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "leave_not_gone",
-      "name": "离席未散",
+      "ap": 0,
       "text": "相邻可行动队员生命不超过一半时，决心 +10、被攻击时近防 +5。现版以掩护伤员体现断后，不监听撤退。",
-      "extended": true,
-      "active": false
-    },
-    "five_elder": {
-      "owner": "yuxiang",
-      "growth": false,
-      "icon": "five_elder",
-      "name": "五老压阵",
-      "text": "与至少两名可行动队员相邻时，被攻击时近防 +4，决心 +6。",
-      "extended": true,
-      "active": false
-    },
-    "hold_curtain": {
-      "mode": "buff",
-      "growth": false,
-      "icon": "hold_curtain",
-      "once": false,
-      "text": "持盾稳住幕布：近防 +7，免疫推拉位移，至自己下次回合开始。伤害、网缚和眩晕照常。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "tutu",
+      "key": "leave_not_gone",
       "range": 0,
-      "shield": true,
-      "target": "self",
-      "owner": "wangdazhi",
-      "fatigue": 18,
-      "ap": 4,
-      "name": "撑住幕布",
-      "cd": 2,
+      "name": "离席未散",
+      "cd": 0,
       "extended": true,
-      "active": true
+      "active": false
     },
     "pokemon": {
-      "text": "持盾照应一名相邻队员：近战防御 +4、远程防御 +8，持续到其第二次回合结束。双方须保持相邻且可可可行动并持盾。护卫类临时加成只取最高值。",
+      "once": false,
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "mastery_fatigue": 11,
+      "key": "pokemon",
+      "text": "持盾保护一名相邻队员：近防+4、远防+8至其下次回合结束；可可须保持可行动、持盾且相邻。护卫近防取高。",
+      "owner": "keke",
       "shield": true,
-      "fatigue": 16,
+      "uses_per_battle": null,
+      "fatigue": 12,
       "target": "ally",
-      "ap": 4,
+      "ap": 3,
       "name": "保可梦",
-      "cd": 3,
+      "cd": 2,
       "range": 1,
       "active": true
     },
-    "one_more_night": {
-      "owner": "tutu",
-      "growth": true,
-      "icon": "one_more_night",
-      "name": "再留一晚",
-      "text": "自己回合结束时，若本次行动只移动或等待且没有相邻敌人，恢复 6 疲劳，每轮一次。旧磨合／闹别扭系统不再使用。",
-      "extended": true,
-      "active": false
-    },
     "quail_alarm": {
-      "owner": "songnuanyang",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "scout_path",
+      "ap": 0,
+      "text": "前两轮自身先攻+15、视野+1；后续失效，不向全队广播。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "songnuanyang",
+      "key": "quail_alarm",
+      "range": 0,
       "name": "鹌鹑报信",
-      "text": "开场第一轮自己先攻 +15、视野 +1；后续轮次不再生效。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "prince_order": {
       "mode": "team",
+      "limit": 2,
+      "target": "self",
+      "cd": 4,
+      "key": "prince_order",
+      "range": 2,
       "growth": false,
       "icon": "prince_order",
-      "once": false,
-      "text": "阿飞未出战或无法行动时，为自己与 3 格内队员提供近防 +5、决心 +10，持续到受益者第二次回合结束。阿飞恢复后不可再次发令。",
-      "range": 3,
+      "mastery_fatigue": 17,
+      "text": "阿飞未出战或不能行动时，选择2格内最多3名己方角色（含自己），近防+4、决心+8至受益者下次回合结束。每战最多2次；阿飞恢复后不能再发动。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "self",
+      "uses_per_battle": 2,
       "owner": "wangduidui",
-      "fatigue": 15,
-      "ap": 4,
+      "fatigue": 20,
+      "once": false,
       "name": "太子发令",
-      "cd": 3,
+      "ap": 4,
       "extended": true,
       "active": true
     },
     "own_people": {
-      "owner": "keke",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "own_people",
-      "name": "自己人",
+      "ap": 0,
       "text": "持盾保护自己人：与至少一名生命不超过一半的可行动队员相邻时，被攻击时近防 +4、决心 +6。现版不提供远程误伤减免。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "keke",
+      "key": "own_people",
+      "range": 0,
+      "name": "自己人",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "borrow_strike": {
-      "text": "持盾与一名相邻队员互相掩护：双方近战防御各 +5，分别持续至自己下次回合开始。护卫类临时近防只取最高值。",
+      "once": false,
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "mastery_fatigue": 11,
+      "key": "borrow_strike",
+      "text": "持盾与一名相邻可行动队员互护，双方近防+5，至各自下次回合开始。临时护卫近防取最高，不相加。",
+      "owner": "damou",
       "shield": true,
+      "uses_per_battle": null,
       "fatigue": 12,
       "target": "ally",
       "ap": 3,
@@ -2592,182 +4104,281 @@
     },
     "drum": {
       "mode": "team",
+      "target": "ally_self",
+      "cd": 3,
+      "key": "drum",
+      "range": 2,
       "growth": false,
       "icon": "drum",
-      "once": false,
-      "text": "自己和 3 格内队员下一次回合开始额外恢复 8 疲劳，并获得决心 +5 至该回合结束。",
-      "range": 3,
+      "mastery_fatigue": 17,
+      "text": "指定自己或2格内队员为中心，选择最多3名2格内可行动己方角色（可含自身）：下次回合开始恢复6疲劳，决心+5至该回合结束。禁止扩大到12人，援军不追补。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "self",
+      "uses_per_battle": null,
       "owner": "shuaizi",
-      "fatigue": 16,
-      "ap": 4,
+      "fatigue": 20,
+      "once": false,
       "name": "打鼓",
-      "cd": 3,
+      "ap": 4,
       "extended": true,
       "active": true
     },
     "shrink_cover": {
       "mode": "buff",
+      "target": "self",
+      "cd": 2,
+      "key": "shrink_cover",
+      "range": 0,
       "growth": false,
       "icon": "shrink_cover",
-      "once": false,
-      "text": "持盾缩进防线，近防 +8，承受直接武器的生命伤害减少 20%，至自己下次回合开始；不能主动移动或使用武器技能。失盾、被移动或无法行动会解除。",
-      "range": 0,
+      "mastery_fatigue": 17,
+      "text": "持盾，近防+8，直接武器生命伤害×0.80至自己下次回合开始；禁止主动移动/武器技能。失盾/被移动/无法行动即结束，持续伤害照常。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": true,
-      "target": "self",
+      "uses_per_battle": null,
       "owner": "naigai",
-      "fatigue": 18,
-      "ap": 4,
+      "fatigue": 20,
+      "once": false,
       "name": "缩进奶盖",
-      "cd": 3,
+      "ap": 4,
       "extended": true,
       "active": true
     },
     "gentle_note": {
       "mode": "buff",
+      "target": "ally",
+      "cd": 2,
+      "key": "gentle_note",
+      "range": 2,
       "growth": false,
       "icon": "catch_baton",
-      "once": false,
-      "text": "照应 2 格内一名其他队员，近防 +3、决心 +8，至其下次回合结束。",
-      "range": 2,
+      "mastery_fatigue": 11,
+      "text": "一名其他队员近防+3、决心+8至其下次回合结束。与其他护卫临时近防取高；不治疗不复活。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "ally",
+      "uses_per_battle": null,
       "owner": "xiaohani",
-      "fatigue": 10,
-      "ap": 3,
+      "fatigue": 12,
+      "once": false,
       "name": "轻声提醒",
-      "cd": 2,
+      "ap": 3,
       "extended": true,
       "active": true
     },
-    "foot_point": {
-      "mode": "step",
-      "growth": false,
-      "icon": "foot_point",
-      "once": false,
-      "text": "安全移动至相邻同高空地，免脱离攻击；先攻 +15 至自己下次回合结束。当前版本采用一步踩点。",
-      "range": 1,
-      "shield": false,
-      "target": "empty",
-      "owner": "suwa",
-      "fatigue": 18,
-      "ap": 4,
-      "name": "踩点",
-      "cd": 2,
+    "one_more_night": {
+      "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "icon": "one_more_night",
+      "ap": 0,
+      "text": "仅普通移动或等待且无相邻敌人，回合结束恢复8疲劳，每轮一次。无额外宿营免工资或免费世界地图恢复。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "tutu",
+      "key": "one_more_night",
+      "range": 0,
+      "name": "再留一晚",
+      "cd": 0,
       "extended": true,
-      "active": true
+      "active": false
     },
     "look_flag": {
-      "owner": "yaoyaoya",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "loyalty",
+      "ap": 0,
+      "text": "本次行动普通移动后，结束时距可行动队长≤3格，获得决心+8至下次自己回合开始；三队长只取一个来源。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "yaoyaoya",
+      "key": "look_flag",
+      "range": 3,
       "name": "回看旗子",
-      "text": "本次行动曾移动且结束时距可行动队长不超过 3 格，获得决心 +6，持续至自己下次回合开始。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "scrap_parts": {
-      "owner": "mocha",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "scrap_parts",
+      "ap": 0,
+      "text": "本人在册且存活时，原版维修每实际消耗7工具返1，每日最多3。只记录外部维修支出，返还不再作为消耗；不按预备队人数复制。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "mocha",
+      "key": "scrap_parts",
+      "range": 0,
       "name": "地精出身",
-      "text": "抹茶在队时，原版行军或扎营维修每累计实际消耗 7 工具，返还 1 工具；每日最多返还 3。技能和交易消耗不计入，返还不重复累计。",
+      "cd": 0,
+      "extended": true,
+      "active": false
+    },
+    "door_mine": {
+      "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "icon": "door_mine",
+      "ap": 0,
+      "text": "对与至少两名己方队员相邻的敌人，单体近战命中 +5，每轮一次。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "wangdazhi",
+      "key": "door_mine",
+      "range": 0,
+      "name": "门口有我",
+      "cd": 0,
+      "extended": true,
+      "active": false
+    },
+    "small_heart": {
+      "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "icon": "small_heart",
+      "ap": 0,
+      "text": "2 格内没有可行动队员时决心 -8；持盾且与队员相邻时，被攻击时近防 +4。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "shuaizi",
+      "key": "small_heart",
+      "range": 0,
+      "name": "小心脏",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "abs_comeback": {
-      "owner": "naigai",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "abs_comeback",
+      "ap": 0,
+      "text": "每轮首次躲过敌方单体武器攻击，记一层返场；下一次投掷命中+8，尝试消耗，最迟下轮结束到期。不要求同时拥有缩进奶盖，三选一不会形成不可达联动。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "naigai",
+      "key": "abs_comeback",
+      "range": 0,
       "name": "抽象整活",
-      "text": "每轮首次被敌方单体武器攻击落空，或缩进奶盖期间受直接武器伤害后存活，获得一层返场；下一次投掷命中 +10，最迟下轮结束失效。",
-      "extended": true,
-      "active": false
-    },
-    "pang_breath": {
-      "owner": "xiaopangxu",
-      "growth": true,
-      "icon": "breathe_easy",
-      "name": "挨过这一拍",
-      "text": "每轮首次承受敌方直接武器攻击并存活后恢复 3 疲劳；持续伤害不触发。",
-      "extended": true,
-      "active": false
-    },
-    "quail_courage": {
-      "owner": "songnuanyang",
-      "growth": true,
-      "icon": "teammate_ball",
-      "name": "跟着胆大的人",
-      "text": "每轮首次攻击本轮已被其他队员单体武器命中的敌人时，命中 +5。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "bell_lead": {
-      "owner": "yangmiemie",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "bell_lead",
+      "ap": 0,
+      "text": "自己回合结束，为一名相邻可行动且疲劳最高的其他队员恢复3疲劳，每轮一次。相同疲劳按实体ID排序，不能选择自身或累加多份铃铛。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "yangmiemie",
+      "key": "bell_lead",
+      "range": 1,
       "name": "铃铛带路",
-      "text": "自己回合结束时，为一名相邻且可行动的疲劳最高队员恢复 3 疲劳，每轮一次。本版不在地格留下标记。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
-    "half_step": {
-      "owner": "suwa",
-      "growth": false,
-      "icon": "half_step",
-      "name": "抢半步",
-      "text": "自身当前有效先攻高于目标时，单体武器命中 +5，每轮最多两次；相等不触发。",
+    "pang_breath": {
+      "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "icon": "breathe_easy",
+      "ap": 0,
+      "text": "每轮首次受到敌方直接武器攻击并存活后恢复3疲劳；零伤害命中也算一次，闪避与持续伤害不触发。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "xiaopangxu",
+      "key": "pang_breath",
+      "range": 0,
+      "name": "挨过这一拍",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "optimist": {
-      "owner": "xiaoyueya",
+      "limit": 1,
+      "name": "乐天派",
+      "cd": 0,
+      "key": "optimist",
       "growth": true,
       "icon": "optimist",
-      "name": "乐天派",
-      "text": "每战一次：自己回合开始时，若处于动摇或崩溃，恢复一级士气。不能解除逃跑、魅惑或眩晕。",
+      "text": "每战一次，自己回合开始时若处于动摇/崩溃，恢复一级士气并消除4疲劳。不能解除逃跑、魅惑、眩晕；不升到自信。",
+      "mastery_fatigue": 0,
+      "uses_per_battle": 1,
+      "fatigue": 0,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "ap": 0,
+      "owner": "xiaoyueya",
+      "range": 0,
       "extended": true,
       "active": false
     },
     "start_run": {
-      "owner": "qianhan",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "start_run",
+      "ap": 0,
+      "text": "每轮首次普通移动完成后恢复2疲劳，前4轮有效，每战最多8；技能位移/换位/推拉不计，不回AP。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "qianhan",
+      "key": "start_run",
+      "range": 0,
       "name": "003号起跑",
-      "text": "本场首次普通移动完成后恢复 2 疲劳；专属位移、换位和推拉不触发。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
-    "line_detour": {
-      "mode": "step",
-      "growth": false,
-      "icon": "line_detour",
-      "once": false,
-      "text": "安全绕至相邻同高空地，免脱离攻击；定身时不能发动。当前版本为明确的一步撤位。",
-      "range": 1,
-      "shield": false,
-      "target": "empty",
-      "owner": "yangmiemie",
-      "fatigue": 18,
-      "ap": 3,
-      "name": "贴线绕行",
-      "cd": 2,
+    "quail_courage": {
+      "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "icon": "teammate_ball",
+      "ap": 0,
+      "text": "每轮首次攻击本轮已被其他队员单体武器命中的敌人时，命中 +5。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "songnuanyang",
+      "key": "quail_courage",
+      "range": 0,
+      "name": "跟着胆大的人",
+      "cd": 0,
       "extended": true,
-      "active": true
+      "active": false
     },
     "supermarket": {
-      "owner": "xiaoyueya",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "supermarket",
+      "ap": 0,
+      "text": "本人在册存活时，每日首笔城镇食物购买优惠15%，最多省30克朗；取消/失败不消耗。不能靠拆单多次获得，出售无加成。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "xiaoyueya",
+      "key": "supermarket",
+      "range": 0,
       "name": "超市里",
-      "text": "小月牙在队时，每日首次在城镇商店成功购买食物享受 15% 折扣，最多省 30 克朗。取消、买不起及无空位不消耗机会；不影响出售。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "dog_bark": {
+      "once": false,
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "mastery_fatigue": 11,
+      "key": "dog_bark",
       "text": "干扰 3 格内可见的人类或绿皮，使其近战命中 -8，直到目标下次回合结束。不影响亡灵、野兽及免疫恐惧的敌人。同名效果不叠加。",
+      "owner": "yuchujiu",
       "shield": false,
+      "uses_per_battle": null,
       "fatigue": 12,
       "target": "enemy",
       "ap": 3,
@@ -2777,188 +4388,336 @@
       "active": true
     },
     "pang_anchor": {
-      "owner": "xiaopangxu",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "hold_ground",
-      "name": "踩稳节拍",
+      "ap": 0,
       "text": "按稳街舞的步点：持盾且与可行动队员相邻时，被攻击时近防 +4。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "xiaopangxu",
+      "key": "pang_anchor",
+      "range": 0,
+      "name": "踩稳节拍",
+      "cd": 0,
+      "extended": true,
+      "active": false
+    },
+    "line_detour": {
+      "mode": "step",
+      "limit": 2,
+      "target": "empty",
+      "cd": 2,
+      "key": "line_detour",
+      "range": 1,
+      "growth": false,
+      "icon": "line_detour",
+      "mastery_fatigue": 16,
+      "text": "撤到相邻同高可通行空格，免脱离攻击，每战2次；定身/不可移动不能用，不返还AP。与其他移动技共享每回合一次专属位移限制。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "shield": false,
+      "uses_per_battle": 2,
+      "owner": "yangmiemie",
+      "fatigue": 18,
+      "once": false,
+      "name": "贴线绕行",
+      "ap": 3,
+      "extended": true,
+      "active": true
+    },
+    "half_step": {
+      "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "icon": "half_step",
+      "ap": 0,
+      "text": "自己当前有效先攻高于目标时单体武器命中+5，每轮首次攻击有效。使用受装备/已积疲劳影响的先攻，相等无加成。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "suwa",
+      "key": "half_step",
+      "range": 0,
+      "name": "抢半步",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "short_sprint": {
       "mode": "step",
+      "limit": 2,
+      "target": "empty",
+      "cd": 2,
+      "key": "short_sprint",
+      "range": 1,
       "growth": false,
       "icon": "short_sprint",
-      "once": false,
-      "text": "安全冲至相邻同高空地，免脱离攻击；本次下一次单体近战命中 +8，至当前行动结束失效。当前版本只移动一步。",
-      "range": 1,
+      "mastery_fatigue": 17,
+      "text": "移到相邻同高可通行空格，免脱离攻击，本次行动下一次单体近战命中+8，尝试耗尽；每战2次。禁止返AP、追加攻击和跨高差。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "empty",
+      "uses_per_battle": 2,
       "owner": "qianhan",
-      "fatigue": 18,
-      "ap": 3,
+      "fatigue": 20,
+      "once": false,
       "name": "短坡冲刺",
-      "cd": 3,
+      "ap": 3,
       "extended": true,
       "active": true
     },
-    "small_heart": {
-      "owner": "shuaizi",
-      "growth": false,
-      "icon": "small_heart",
-      "name": "小心脏",
-      "text": "2 格内没有可行动队员时决心 -8；持盾且与队员相邻时，被攻击时近防 +4。",
-      "extended": true,
-      "active": false
-    },
-    "door_mine": {
-      "owner": "wangdazhi",
-      "growth": true,
-      "icon": "door_mine",
-      "name": "门口有我",
-      "text": "对与至少两名己方队员相邻的敌人，单体近战命中 +5，每轮一次。",
-      "extended": true,
-      "active": false
-    },
     "segment_breath": {
-      "owner": "qianhan",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "segment_breath",
+      "ap": 0,
+      "text": "本次行动仅普通移动或等待且结束时无相邻敌人，恢复8疲劳，每轮一次。归入全Mod每轮8点额外恢复上限。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "qianhan",
+      "key": "segment_breath",
+      "range": 0,
       "name": "分段呼吸",
-      "text": "本次行动只普通移动或等待，结束时没有相邻敌人，则恢复 8 疲劳，每轮一次。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "purse_clear": {
-      "owner": "bula",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "purse_clear",
+      "ap": 0,
+      "text": "本人在册存活，每日首次成功购买工具/药品/弹药优惠5%，最多30克朗；不加出售价格，不影响招募，不与同类购买优惠连乘。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "bula",
+      "key": "purse_clear",
+      "range": 0,
       "name": "钱袋算清",
-      "text": "bula 在队时，每日首次从城镇商店购买工具、药品或弹药享受 5% 折扣，最多省 30 克朗。只在成功购买时消耗，不影响出售和招募。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "curve_force": {
-      "owner": "yangmiemie",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "curve_force",
-      "name": "弯道留力",
+      "ap": 0,
       "text": "每轮第二次普通移动完成后恢复 3 疲劳；不会返还行动点，专属位移不计入。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "yangmiemie",
+      "key": "curve_force",
+      "range": 0,
+      "name": "弯道留力",
+      "cd": 0,
       "extended": true,
       "active": false
     },
-    "hard_brake": {
-      "mode": "buff",
-      "growth": true,
-      "icon": "hard_brake",
-      "once": false,
-      "text": "远防 +12、近防 +4，至自己下次回合开始；期间不能主动移动，仍可攻击。被迫移动会解除。",
-      "range": 0,
+    "foot_point": {
+      "mode": "step",
+      "limit": 2,
+      "target": "empty",
+      "cd": 2,
+      "key": "foot_point",
+      "range": 1,
+      "growth": false,
+      "icon": "foot_point",
+      "mastery_fatigue": 16,
+      "text": "移到相邻同高可通行空格，免脱离攻击，自身先攻+12至下次回合结束；每战2次。定身/不可移动时不能用。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "self",
+      "uses_per_battle": 2,
       "owner": "suwa",
-      "fatigue": 14,
+      "fatigue": 18,
+      "once": false,
+      "name": "踩点",
       "ap": 3,
-      "name": "急刹",
-      "cd": 3,
       "extended": true,
       "active": true
     },
     "spare_breath": {
-      "owner": "xiaohani",
       "growth": true,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "segment_breath",
+      "ap": 0,
+      "text": "本次行动没有使用主动技能且没有相邻敌人，回合结束恢复6疲劳，每轮一次。不可同时获得主动攻击收益。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "xiaohani",
+      "key": "spare_breath",
+      "range": 0,
       "name": "留口气",
-      "text": "自己回合结束时，若本次行动没有使用主动技能且没有相邻敌人，恢复 4 疲劳，每轮一次。",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "quail_hide": {
       "mode": "buff",
+      "target": "self",
+      "cd": 2,
+      "key": "quail_hide",
+      "range": 0,
       "growth": false,
       "icon": "shrink_cover",
-      "once": false,
+      "mastery_fatigue": 11,
       "text": "缩在掩体后：远防 +12、近防 +3，至自己下次回合开始；期间不能主动移动。",
-      "range": 0,
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "self",
+      "uses_per_battle": null,
       "owner": "songnuanyang",
       "fatigue": 12,
-      "ap": 3,
+      "once": false,
       "name": "鹌鹑缩头",
+      "ap": 3,
+      "extended": true,
+      "active": true
+    },
+    "drool": {
+      "mode": "buff",
+      "target": "enemy",
       "cd": 2,
+      "key": "drool",
+      "range": 3,
+      "growth": false,
+      "icon": "bear_strike",
+      "mastery_fatigue": 11,
+      "text": "3格内可见人类/绿皮先攻-20、远攻-8至目标下次回合结束。免疫恐惧者、亡灵、野兽无效；同名取高，不能降低AP。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
+      "shield": false,
+      "uses_per_battle": null,
+      "owner": "xiaoning",
+      "fatigue": 12,
+      "once": false,
+      "name": "流口水",
+      "ap": 3,
       "extended": true,
       "active": true
     },
     "berry_mark": {
       "mode": "mark",
+      "limit": 3,
+      "v1_cd": 2,
+      "v1_fatigue": 10,
+      "target": "enemy",
+      "cd": 2,
+      "range": 4,
+      "key": "berry_mark",
+      "mastery_fatigue": 7,
+      "v1_ap": 2,
       "growth": false,
       "icon": "abacus_mark",
-      "once": false,
-      "text": "给 4 格内可见敌人留下红线；下一次己方单体远程武器命中 +8，尝试后消耗，最多持续两轮。自己只保留一个红线记号。",
-      "range": 4,
+      "v1_text": "标记一个4格内可见敌人，下一次己方单体远程命中+8，尝试消耗，最多持续两轮；每位施术者只保留一个，命中加成总上限+10。",
+      "text": "标记一个4格内可见敌人，下一次己方单体远程命中+8，尝试消耗，最多持续两轮；每战3次，每位施术者只保留一个。命中加成总上限+10，95%封顶仍有效。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "enemy",
+      "uses_per_battle": 3,
       "owner": "manyuemei",
-      "fatigue": 10,
-      "ap": 3,
+      "fatigue": 8,
+      "once": false,
       "name": "红线记号",
-      "cd": 2,
+      "ap": 1,
       "extended": true,
       "active": true
     },
     "goose_bully": {
-      "name": "鹅势欺人",
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "text": "至少与一名敌人相邻，且相邻的其他可行动队员数不少于相邻敌人数时，决心 +5、近战武器命中 +5。",
+      "range": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "dae",
+      "key": "goose_bully",
+      "ap": 0,
+      "name": "鹅势欺人",
+      "cd": 0,
+      "fatigue": 0,
       "active": false
     },
     "together_lift": {
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "text": "持盾且2格内至少两名其他可行动队员：自身决心+8、近战破甲+10%。队友离开立即失效，不按人数叠乘。",
+      "range": 2,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "damou",
+      "key": "together_lift",
+      "ap": 0,
       "name": "一起抬",
-      "text": "持盾且 2 格内有至少两名其他可行动队员时，决心 +8，近战武器攻击的护甲伤害 +10%。",
-      "active": false
-    },
-    "finals_moment": {
-      "name": "决赛时刻",
-      "text": "从第 5 轮起，近战武器攻击伤害 +10%，每次近战武器技能额外消耗 3 疲劳。瓶队突破同样适用。",
+      "cd": 0,
+      "fatigue": 0,
       "active": false
     },
     "not_fooled": {
-      "owner": "xiaojie",
       "growth": false,
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "icon": "not_fooled",
-      "name": "不上这个当",
+      "ap": 0,
       "text": "面对带恐惧／魅惑标签的士气检定，额外决心 +15；常规受伤、包围和同伴阵亡检定不加成。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "xiaojie",
+      "key": "not_fooled",
+      "range": 0,
+      "name": "不上这个当",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "loyalty": {
-      "name": "忠诚",
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
       "text": "与可行动的阿飞相距不超过 2 格时，决心 +10。阿飞未出战或失去行动能力时，依次由王大谋、午夜抹抹茶代任。",
+      "range": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "yuchujiu",
+      "key": "loyalty",
+      "ap": 0,
+      "name": "忠诚",
+      "cd": 0,
+      "fatigue": 0,
       "active": false
     },
-    "remember_shield": {
-      "owner": "chenzhihan",
+    "five_elder": {
       "growth": false,
-      "icon": "remember_shield",
-      "name": "这一盾记住了",
-      "text": "持盾时，每轮首次承受敌方单体近战伤害后记住攻击者，本轮再被同一人攻击时近防 +6。",
+      "mastery": "11级：自身每回合额外恢复1疲劳，纳入全Mod额外恢复上限",
+      "icon": "five_elder",
+      "ap": 0,
+      "text": "与至少两名可行动队员相邻时，被攻击时近防 +4，决心 +6。",
+      "fatigue": 0,
+      "mastery_fatigue": 0,
+      "uses_per_battle": null,
+      "owner": "yuxiang",
+      "key": "five_elder",
+      "range": 0,
+      "name": "五老压阵",
+      "cd": 0,
       "extended": true,
       "active": false
     },
     "mouth_strong": {
       "mode": "taunt",
+      "limit": 2,
+      "target": "enemy",
+      "cd": 2,
+      "key": "mouth_strong",
+      "range": 1,
       "growth": false,
       "icon": "mouth_strong",
-      "once": false,
-      "text": "挑衅相邻且能用近战攻击自己的普通人类，采用原版嘲讽，使其按自身战术优先攻击奶盖。恐惧免疫者无效，不强制移动。",
-      "range": 1,
+      "mastery_fatigue": 13,
+      "text": "嘲讽相邻且可合法近战攻击自己的普通人类，使用原版嘲讽AI优先级；每战2次。恐惧免疫者无效，不强制移动，不保证对方一定攻击。",
+      "mastery": "11级：疲劳成本减少15%，向下取整减免，至少减1；AP/冷却/每战次数不变",
       "shield": false,
-      "target": "enemy",
+      "uses_per_battle": 2,
       "owner": "naigai",
-      "fatigue": 8,
-      "ap": 2,
+      "fatigue": 15,
+      "once": false,
       "name": "嘴强王者",
-      "cd": 3,
+      "ap": 4,
       "extended": true,
       "active": true
     }
@@ -2989,25 +4748,20 @@
       "goose_bully",
       "gaga_charge"
     ],
-    "chenzhihan": [
-      "guard_self",
-      "remember_shield",
-      "moon_cake"
-    ],
     "wangdazhi": [
       "hold_curtain",
       "hold_ground",
       "door_mine"
     ],
-    "xiaoyubeike": [
-      "nicotine",
-      "only_man",
-      "cover_up"
+    "tongzhu": [
+      "bear_strike",
+      "know_rules",
+      "cup_signal"
     ],
-    "meiya": [
-      "king_dance",
-      "read_beat",
-      "curtain_yield"
+    "yangmiemie": [
+      "line_detour",
+      "curve_force",
+      "bell_lead"
     ],
     "manyuemei": [
       "berry_mark",
@@ -3019,10 +4773,10 @@
       "loyalty",
       "guard_swap"
     ],
-    "yuxiang": [
-      "long_watch",
-      "five_elder",
-      "shift_arrive"
+    "bottle": [
+      "bottle_breakthrough",
+      "finals_moment",
+      "teammate_ball"
     ],
     "xiaoyueya": [
       "supermarket",
@@ -3089,20 +4843,25 @@
       "blue_form",
       "good_card"
     ],
+    "yanzi": [
+      "yanzi_watch",
+      "yanzi_cover",
+      "yanzi_reply"
+    ],
+    "xiaoyubeike": [
+      "nicotine",
+      "only_man",
+      "cover_up"
+    ],
+    "yuxiang": [
+      "long_watch",
+      "five_elder",
+      "shift_arrive"
+    ],
     "qianhan": [
       "short_sprint",
       "start_run",
       "segment_breath"
-    ],
-    "bottle": [
-      "bottle_breakthrough",
-      "finals_moment",
-      "teammate_ball"
-    ],
-    "yangmiemie": [
-      "line_detour",
-      "curve_force",
-      "bell_lead"
     ],
     "xiaoning": [
       "drool",
@@ -3114,10 +4873,10 @@
       "chaoju",
       "ouqi"
     ],
-    "tongzhu": [
-      "bear_strike",
-      "know_rules",
-      "cup_signal"
+    "meiya": [
+      "king_dance",
+      "read_beat",
+      "curtain_yield"
     ],
     "tiantong": [
       "catch_rear",
@@ -3130,7 +4889,7 @@
       "dui_sentence"
     ]
   },
-  "version": 17,
+  "version": 44,
   "promotionTalents": {
     "MeleeSkill": 3,
     "Bravery": 3,

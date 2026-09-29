@@ -1,6 +1,6 @@
 // Talent changes affect vanilla's pre-rolled level-up queue, not earned stats.
 local A = ::AfeixExpedition;
-A.TalentRevision <- 1;
+A.TalentRevision <- 2;
 A.RebalancedTalentKeys <- ["bottle", "yuchujiu", "xiaoyubeike", "yaoyaoya", "damou", "laocai", "dae", "keke", "xiaogui"];
 // Shared across all promotions: retraining cannot accumulate stars or reroll.
 A.PromotionTalents <- { MeleeSkill = 3, MeleeDefense = 3, Bravery = 3 };

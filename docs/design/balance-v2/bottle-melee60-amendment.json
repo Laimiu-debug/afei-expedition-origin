@@ -1,0 +1,146 @@
+{
+  "reason": "User requested Bottle initial MeleeSkill 53 to 60; other gameplay parameters unchanged",
+  "before_workbook_sha256": "5441fb1bfdd7f439c2fcf1e16688bce1248652f0953c6fc4851e6024f244aca1",
+  "workbook_sha256": "30a879eae8346bd4f91ecc5c0a7bc8e891428fc2d5fa13ffc1ae6ca461fafbb3",
+  "before_proposal_sha256": "4b051b1ea31e8ae0ff883d1da8725978c7ba46e8e619ac35a612061138d3077c",
+  "proposal_sha256": "191115cc591e3b3c5117a2f73db65a2878c777f464c5d7ec9dec68e614ffd7d4",
+  "authored_cells": [
+    {
+      "sheet": "属性成长",
+      "cell": "D34",
+      "value": 60,
+      "formula": false
+    },
+    {
+      "sheet": "总览",
+      "cell": "A3",
+      "value": "2026-09-29 V2.2 / v0.26.3；新战役实装基准。重甲缓冲55、阿飞和小酒瓶取消逐级耐力，希文第35日起。",
+      "formula": false
+    },
+    {
+      "sheet": "来源说明",
+      "cell": "C15",
+      "value": "v0.26.3新战役实装基准；修改输入后须重新编译Mod。",
+      "formula": false
+    }
+  ],
+  "workbook_audit": {
+    "changed_cells": [
+      {
+        "sheet": 1,
+        "cell": "A3",
+        "before": [
+          "",
+          "2026-09-29 V2.2 / v0.26.2；新战役实装基准。重甲缓冲55、阿飞和小酒瓶取消逐级耐力，希文第35日起。"
+        ],
+        "after": [
+          "",
+          "2026-09-29 V2.2 / v0.26.3；新战役实装基准。重甲缓冲55、阿飞和小酒瓶取消逐级耐力，希文第35日起。"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D34",
+        "before": [
+          "",
+          53.0
+        ],
+        "after": [
+          "",
+          60.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA34",
+        "before": [
+          "M34",
+          91.0
+        ],
+        "after": [
+          "M34",
+          98.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M34",
+        "before": [
+          "D34+J34+F34*L34+N34",
+          91.0
+        ],
+        "after": [
+          "D34+J34+F34*L34+N34",
+          98.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z34",
+        "before": [
+          "D34",
+          53.0
+        ],
+        "after": [
+          "D34",
+          60.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "G9",
+        "before": [
+          "'属性成长'!M34",
+          91.0
+        ],
+        "after": [
+          "'属性成长'!M34",
+          98.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "O9",
+        "before": [
+          "'成长总览'!G9-G9",
+          -6.5
+        ],
+        "after": [
+          "'成长总览'!G9-G9",
+          0.5
+        ]
+      },
+      {
+        "sheet": 15,
+        "cell": "C15",
+        "before": [
+          "",
+          "v0.26.2新战役实装基准；修改输入后须重新编译Mod。"
+        ],
+        "after": [
+          "",
+          "v0.26.3新战役实装基准；修改输入后须重新编译Mod。"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "Y9",
+        "before": [
+          "'属性成长'!D34-M9",
+          53.0
+        ],
+        "after": [
+          "'属性成长'!D34-M9",
+          60.0
+        ]
+      }
+    ],
+    "all_formulas_preserved": true,
+    "styles_tables_validation_preserved": true,
+    "images_preserved": 177,
+    "radars_preserved": 35,
+    "radar_caches_recalculated": true,
+    "artifact_recalculation_and_visual_review": true,
+    "excel_desktop_recalculation": false
+  }
+}

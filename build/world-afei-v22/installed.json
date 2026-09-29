@@ -1,0 +1,10 @@
+{
+  "version": "0.22.0",
+  "sha256": "5bb5c7d4bee9e7d4c5acad4a5b63d06f4492eccee969c3892e5158894345e93f",
+  "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "backup": "G:\\CODE\\afei-xcpedition\\build\\world-afei-v22\\baseline-20260927-221011\\installed.zip",
+  "package_source_bytes_match": true,
+  "installed_bytes_match": true,
+  "behavior_assertions": 22057,
+  "in_game_tested": false
+}

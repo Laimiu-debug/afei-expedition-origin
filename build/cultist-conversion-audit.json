@@ -1,0 +1,165 @@
+{
+  "version": "0.27.3",
+  "source": "scripts/events/events/cultist_vs_uneducated_event.cnut",
+  "native_sha256": "568642f1decf79eb364cc4a59e5f85ce66cf3101342ea5eaaab1bb7f5532ae90",
+  "assertions": 227,
+  "members": 35,
+  "eligible_without_additional_traits": [
+    {
+      "key": "damou",
+      "name": "王大谋"
+    },
+    {
+      "key": "bottle",
+      "name": "小酒瓶"
+    },
+    {
+      "key": "lili",
+      "name": "李李超欧"
+    },
+    {
+      "key": "xiaoyueya",
+      "name": "小月牙"
+    },
+    {
+      "key": "yuchujiu",
+      "name": "余初九"
+    },
+    {
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳"
+    },
+    {
+      "key": "wangduidui",
+      "name": "王怼怼"
+    },
+    {
+      "key": "laocai",
+      "name": "老蔡"
+    },
+    {
+      "key": "yanzi",
+      "name": "眼子"
+    },
+    {
+      "key": "tiantong",
+      "name": "小虎"
+    },
+    {
+      "key": "xiaoning",
+      "name": "小宁"
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖"
+    },
+    {
+      "key": "dae",
+      "name": "大鹅"
+    },
+    {
+      "key": "manyuemei",
+      "name": "蔓越莓"
+    },
+    {
+      "key": "xiaohani",
+      "name": "罗一可"
+    },
+    {
+      "key": "keke",
+      "name": "可可"
+    },
+    {
+      "key": "yuxiang",
+      "name": "余想"
+    },
+    {
+      "key": "meiya",
+      "name": "美伢"
+    },
+    {
+      "key": "wanshe",
+      "name": "玩蛇"
+    },
+    {
+      "key": "tutu",
+      "name": "涂涂"
+    },
+    {
+      "key": "naigai",
+      "name": "奶盖"
+    },
+    {
+      "key": "xiaojie",
+      "name": "小杰"
+    },
+    {
+      "key": "bula",
+      "name": "bula"
+    },
+    {
+      "key": "suwa",
+      "name": "苏袜"
+    },
+    {
+      "key": "qianhan",
+      "name": "千涵"
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷"
+    },
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙"
+    },
+    {
+      "key": "yangmiemie",
+      "name": "羊咩咩"
+    },
+    {
+      "key": "songnuanyang",
+      "name": "宋暖阳"
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟"
+    }
+  ],
+  "blocked_by_bright": [
+    {
+      "key": "afei",
+      "name": "阿飞"
+    },
+    {
+      "key": "mocha",
+      "name": "午夜抹抹茶"
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子"
+    },
+    {
+      "key": "tongzhu",
+      "name": "童猪"
+    },
+    {
+      "key": "xiwen",
+      "name": "希文"
+    }
+  ],
+  "requires_at_least_four_roster_members": true,
+  "requires_cultist_or_converted_preacher": true,
+  "existing_named_roster_has_preacher": false,
+  "native_event_cooldown_days": 30,
+  "single_preacher_score": 5,
+  "brain_damage_exception_verified": true,
+  "non_noble_dumb_exception_verified": true,
+  "special_and_player_character_flags_exclude": true,
+  "native_player_sets_special_or_player_character_flag": false,
+  "native_conversion_acceptance_executed": true,
+  "converted_captain_test": "damou",
+  "level_attributes_equipment_traits_progress_preserved": true,
+  "portrait_hook_dispatched": true,
+  "in_game_tested": false
+}

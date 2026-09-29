@@ -1,0 +1,11 @@
+{
+  "version": "0.19.1",
+  "installed_at": "2026-09-27T16:48:31.0072437+08:00",
+  "source": "G:\\CODE\\afei-xcpedition\\dist\\mod_afeix_expedition.zip",
+  "destination": "F:/SteamLibrary/steamapps/common/Battle Brothers/data/mod_afeix_expedition.zip",
+  "backup": "G:\\CODE\\afei-xcpedition\\build\\ideas-v19\\dialogue-baseline\\installed-before-v19-1-20260927-164830.zip",
+  "sha256": "5DD788AF43FC3AB4B6BE4EA4C4CC01836FD342E91AF67C1759F306336B32DD72",
+  "source_matches": true,
+  "retained_intervening_portrait_update": true,
+  "in_game_tested": false
+}

@@ -14,7 +14,7 @@ this.afeix_member_effect <- this.inherit("scripts/skills/skill", {
         if (kind == "nicotine_debt") { this.m.Name = "透支的气息"; this.m.Description = "随后两次自己回合开始时，疲劳恢复量各减少 5。"; icon = "nicotine"; }
         else if (kind == "breakthrough_exposed") { this.m.Name = "突破后的空门"; this.m.Description = "近战防御 -5，直到自己下次回合开始。"; icon = "bottle_breakthrough"; }
         else { this.m.Name = A.MemberSkillDefs[kind].name; this.m.Description = A.MemberSkillDefs[kind].text; }
-        this.m.Icon = "skills/afeix_member_" + icon + ".png";
+        this.m.Icon = "skills/afeix_member_" + icon + ".png"; this.m.IconMini = this.m.Icon;
         this.m.Source = source == null ? 0 : source.getID();
         this.m.SourceTile = source == null ? 0 : source.getTile().ID;
         this.m.SourceTurn = 0;
@@ -27,7 +27,7 @@ this.afeix_member_effect <- this.inherit("scripts/skills/skill", {
         if (this.m.Kind == "blue_form") return A.memberRound() == 1;
         if (["guard_nest", "pokemon", "turtle_shell"].find(this.m.Kind) == null) return true;
         local s = this.source(), target = this.getContainer().getActor();
-        if (!A.memberPlayer(s) || !A.memberShield(s) || !target.isPlacedOnMap() || !target.isAlliedWith(s) || target.getTile().getDistanceTo(s.getTile()) > 1) return false;
+        if (!A.memberPlayer(s) || !A.memberShield(s) || !target.isPlacedOnMap() || !target.isAlliedWith(s) || target.getTile().getDistanceTo(s.getTile()) > 1) {this.m.Turns=0;return false;}
         if (this.m.Kind == "pokemon") return true;
         if (s.getTile().ID != this.m.SourceTile) return false;
         if (this.m.Kind == "guard_nest") {
@@ -43,7 +43,7 @@ this.afeix_member_effect <- this.inherit("scripts/skills/skill", {
     function bonus(field) {
         if (this.m.Kind == "borrow_strike") return field == "MeleeDefense" ? 5 : 0;
         if (this.m.Kind == "steady_hand") return field == "MeleeDefense" || field == "Bravery" ? 6 : 0;
-        if (this.m.Kind == "guard_nest") return field == "RangedDefense" ? 6 : 0;
+        if (this.m.Kind == "guard_nest") return field == "RangedDefense" ? 8 : 0;
         if (this.m.Kind == "pokemon") return field == "MeleeDefense" ? 4 : (field == "RangedDefense" ? 8 : 0);
         return 0;
     },
@@ -70,7 +70,7 @@ this.afeix_member_effect <- this.inherit("scripts/skills/skill", {
         else if (kind == "dog_bark") properties.MeleeSkill -= 8;
         else if (kind == "breakthrough_exposed") properties.MeleeDefense -= 5;
         else if (kind == "blue_form") properties.Initiative += 12;
-        else if (kind == "turtle_shell") properties.IsAbleToUseWeaponSkills = false;
+        else if (kind == "turtle_shell") {properties.IsAbleToUseWeaponSkills = false;properties.IsRooted=true;}
         else this.applyGuard(properties, ["Bravery"]);
     },
     function onBeingAttacked(attacker, skill, properties) {
@@ -78,12 +78,7 @@ this.afeix_member_effect <- this.inherit("scripts/skills/skill", {
         this.applyGuard(properties, ["MeleeDefense", "RangedDefense"]);
     },
     function onBeforeDamageReceived(attacker, skill, hitInfo, properties) {
-        if (this.m.Kind == "turtle_shell" && this.valid()) properties.DamageReceivedTotalMult *= 0.8;
-    },
-    function onMissed(attacker, skill) {
-        if (this.m.Kind != "pokemon" || !this.valid() || attacker == null || skill == null || !skill.isAttack() || !skill.m.IsWeaponSkill || attacker.isAlliedWith(this.getContainer().getActor())) return;
-        local source = this.source(), passive = source.getSkills().getSkillByID("trait.afeix_member_breathe_easy");
-        if (passive != null) passive.onProtectedMiss();
+        if (this.m.Kind == "turtle_shell" && this.valid() && skill!=null && skill.m.IsWeaponSkill) properties.DamageReceivedTotalMult *= 0.8;
     },
     function onTurnStart() {
         if (["nicotine_debt", "breakthrough_exposed", "borrow_strike", "steady_hand", "turtle_shell"].find(this.m.Kind) != null && --this.m.Turns <= 0) this.removeSelf();

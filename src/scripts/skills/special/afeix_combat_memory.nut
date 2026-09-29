@@ -15,7 +15,8 @@ this.afeix_combat_memory <- this.inherit("scripts/skills/skill",{
     function onBeingAttacked(attacker,s,p){
         local A=::AfeixExpedition,a=this.getContainer().getActor();
         if(!A.isOrigin()||!::Tactical.isActive()||!A.memberPlayer(a))return;
-        foreach(b in A.memberAllies(a,1))if(A.catalogHas(b,"hold_ground")&&A.memberShield(b)&&!A.catalogGet(b,"turn_moved")){p.MeleeDefense+=3;break;}
+        p.MeleeDefense-=A.balanceCoverPenalty(a);
+        foreach(b in A.memberAllies(a,1))if(A.catalogHas(b,"hold_ground")&&A.memberShield(b)&&!A.catalogGet(b,"turn_moved")){local recipients=A.balanceTargets(b,b,1,3);if(recipients.find(a)!=null){A.balanceDefense(p,3);break;}}
     },
     function onTurnEnd(){::AfeixExpedition.catalogTurnEnd(this.getContainer().getActor());},
     function onSerialize(out){this.skill.onSerialize(out);out.writeU16(this.m.State.len());foreach(k,v in this.m.State){out.writeString(k);out.writeI32(v);}},

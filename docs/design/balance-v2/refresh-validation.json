@@ -1,0 +1,30 @@
+{
+  "characters": 35,
+  "skills": 102,
+  "fixed_traits": 70,
+  "radar_charts": 35,
+  "embedded_icons": 177,
+  "afei_fatigue11": 124,
+  "xiwen_price": 470,
+  "xiwen_allocation": 30,
+  "xiwen_resolve": {
+    "base": 21,
+    "mirror": 20,
+    "level1_equipped": 41,
+    "level11_bare": 24,
+    "level11_equipped": 44,
+    "unequip_recalculation_passed": true
+  },
+  "current_skills": 96,
+  "website_numeric_scores_used": false,
+  "original_cells_verified": 5921,
+  "embedded_image_bytes_and_rows_verified": 177,
+  "cached_formula_errors": 0,
+  "chart_cached_points": 420,
+  "chart_anchors_verified": 35,
+  "trait_base_reconciliation_checks": 280,
+  "afei_heavy_fatigue_without_brawny": 39,
+  "afei_heavy_fatigue_with_brawny": 57,
+  "desktop_excel_verification": "not repeated; previous COM server startup unavailable (80080005)",
+  "visual_verification": "Artifact Tool layout reviewed; its preview omits bitmap drawings. Saved XLSX image bytes, rows, sizes and chart bindings independently verified."
+}

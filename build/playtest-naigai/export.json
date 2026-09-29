@@ -1,0 +1,119 @@
+{
+  "key": "naigai",
+  "name": "奶盖",
+  "form": "default",
+  "brush": "afeix_p04_naigai",
+  "source": "art/runtime/portraits-v05/sources/user-v18/naigai.png",
+  "source_kind": "generated_custom",
+  "source_sha256": "6e5e371558394c4b61cff3f859fd3ee94c4d1ba4eeaab78c3a4dbbb6719c15bf",
+  "source_size": [
+    1190,
+    1322
+  ],
+  "source_box": null,
+  "alpha_crop_box": [
+    157,
+    79,
+    1056,
+    1273
+  ],
+  "alpha_threshold": 20,
+  "resized_size": [
+    75,
+    100
+  ],
+  "uniform_scale": 0.08375209380234507,
+  "placement": [
+    19,
+    42
+  ],
+  "output_size": [
+    114,
+    142
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "live_png_sha256": "278fd64c87500c2ae1dfa1a3a4e264d4f033629205000a68d22fc6e578cf473a",
+  "head_png_sha256": "a5203c8ea9496298b8e95fb9f8d59cc1fa11a46c42f4b31aeb7ddfe44bc2cedf",
+  "dead_png_sha256": "a150acacfaab01839cb97433251f812c3258c30b8b945ac02849f16940043c02",
+  "partition": "reviewed_neck_contour",
+  "head_seam": [
+    [
+      0,
+      110
+    ],
+    [
+      35,
+      110
+    ],
+    [
+      48,
+      115
+    ],
+    [
+      57,
+      123
+    ],
+    [
+      73,
+      123
+    ],
+    [
+      85,
+      115
+    ],
+    [
+      95,
+      110
+    ],
+    [
+      114,
+      110
+    ]
+  ],
+  "neck_guard": [
+    68,
+    110
+  ],
+  "split_reconstructs_complete_portrait": true,
+  "dead_mode": "same_complete_bust_runtime_transform_required",
+  "metadata": [
+    {
+      "id": "afeix_p04_naigai",
+      "img": "sprites\\afeix_p04_naigai.png",
+      "left": "-57",
+      "right": "57",
+      "top": "-51",
+      "bottom": "91",
+      "width": "114",
+      "height": "142",
+      "offsetY": "35"
+    },
+    {
+      "id": "afeix_p04_naigai_head",
+      "img": "sprites\\afeix_p04_naigai_head.png",
+      "left": "-57",
+      "right": "57",
+      "top": "-51",
+      "bottom": "91",
+      "width": "114",
+      "height": "142",
+      "offsetY": "35"
+    },
+    {
+      "id": "afeix_p04_naigai_dead",
+      "img": "sprites\\afeix_p04_naigai_dead.png",
+      "left": "-57",
+      "right": "57",
+      "top": "-71",
+      "bottom": "71",
+      "width": "114",
+      "height": "142",
+      "offsetX": "0",
+      "offsetY": "0"
+    }
+  ],
+  "review_note": "按四张用户照片重绘黑色短发与自然眉眼；朝右，透明底，完整下颌和颈部。"
+}

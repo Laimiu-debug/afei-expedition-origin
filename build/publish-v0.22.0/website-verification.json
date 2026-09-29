@@ -1,0 +1,13 @@
+{
+  "detail_url": "https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "download_url": "https://bbmod.site/files/ca83a7d7-c51d-4957-9fee-7ef7c14c7b1e/download/",
+  "http_status": 200,
+  "version": "0.22.0",
+  "release_id": "ca83a7d7-c51d-4957-9fee-7ef7c14c7b1e",
+  "sha256": "5bb5c7d4bee9e7d4c5acad4a5b63d06f4492eccee969c3892e5158894345e93f",
+  "size": 2252081,
+  "bytes_match": true,
+  "crc_passed": true,
+  "catalog_and_notes_match": true,
+  "content_disposition": "attachment; filename=\"mod_afeix_expedition.zip\""
+}

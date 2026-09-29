@@ -1,0 +1,462 @@
+{
+  "scripts/config/character.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "1517b6df18391acb7dfc2e6f40e104b778545d1c30db2f9dd97b6e1d0bd44bf1",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__config__character.nut"
+  },
+  "scripts/config/tactical.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "aa41df1e631d4667cff19223f174f2861338cccedc88f6e88798043c77109be7",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__config__tactical.nut"
+  },
+  "scripts/config/tactical_attack_effects.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "85df58cdd832a36924066f2c7847214adc9b62b61395c3d6cabb2b982aae03fd",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__config__tactical_attack_effects.nut"
+  },
+  "scripts/config/tactical_entity_common.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "bb23dbe26fda5632c791941df70d84545b5121ffead9b5de2524b7f3b89867d2",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__config__tactical_entity_common.nut"
+  },
+  "scripts/config/tactical_particles.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "6a9bacb82924badef54f8a4365d7a3ef3acb1de1a69cc027b537e7d3a2dc9404",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__config__tactical_particles.nut"
+  },
+  "scripts/config/tactical_skill_particles.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "929e41bbdcffb086ba05752c6fe36fe2f7cd48550bd38a5fde4c6e033ab41a1e",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__config__tactical_skill_particles.nut"
+  },
+  "scripts/entity/tactical/actor.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "0edaa65cf3a1a798e32be290e3e1954167d6e78edc2323a1d1861687f518cef0",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__entity__tactical__actor.nut"
+  },
+  "scripts/entity/tactical/player.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "b96ffd0a01842bf1c2c03574451f19b424a104cf9b3562a7a068cc66c8fb4f1f",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__entity__tactical__player.nut"
+  },
+  "scripts/entity/world/party.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "7e82b49052f0855e204d7997e5518c3de3b6ae4e4fea536e4caddfe3eb1d4c3e",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__entity__world__party.nut"
+  },
+  "scripts/items/ammo/quiver_of_arrows.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "132cc4802422ca384a1be28de28039698402bc9a98ffcbe9dfe23464c0f04486",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__ammo__quiver_of_arrows.nut"
+  },
+  "scripts/items/ammo/quiver_of_bolts.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "4e9b3a9b7617305e3cc870d6327ab614e20d1180c8ec55a6a4f9d1884d452022",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__ammo__quiver_of_bolts.nut"
+  },
+  "scripts/items/armor/leather_lamellar.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "9dd757ee5ca2befa38f2571f8e31de9f262fcc9a3e41e99fb5770810d5503b12",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__armor__leather_lamellar.nut"
+  },
+  "scripts/items/armor/mail_hauberk.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "69bc4cd8d27349292b92203e63d308c292121b58e3e6f94a96572dfb1897edb1",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__armor__mail_hauberk.nut"
+  },
+  "scripts/items/armor/mail_shirt.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "52f4d9e8af0fe67302d99fe2a8722a50cae2832e2b5dce5299fc2690f8ca291d",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__armor__mail_shirt.nut"
+  },
+  "scripts/items/armor/padded_leather.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "032e115a32b94fe70ab67721cbc0108cd765a6539bce2a1990d3234885527045",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__armor__padded_leather.nut"
+  },
+  "scripts/items/armor/padded_surcoat.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "9d4d5d1c5a8a95d0cedbd698427b1fb1f3986681a8bcf469ee821eedf2f37d59",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__armor__padded_surcoat.nut"
+  },
+  "scripts/items/armor/ragged_dark_surcoat.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "f3edb12b1bde99c57049b5cafb77eadd32d99926c7d30085dfae4a3b47fe3e0b",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__armor__ragged_dark_surcoat.nut"
+  },
+  "scripts/items/armor/thick_tunic.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "8466fda5c36ac0a1965038bfa3690baefc097854279cba53e3793a50266d91a3",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__armor__thick_tunic.nut"
+  },
+  "scripts/items/helmets/aketon_cap.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "968a8233f8b31b6ac1a88ce2a27f0ac63646c01ae1b2ca695a2f4f0667af0b84",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__helmets__aketon_cap.nut"
+  },
+  "scripts/items/helmets/headscarf.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "d3dc9bb9b880a52801aa09f86258afa92737516fdc0df03bfba7ad3d637258a0",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__helmets__headscarf.nut"
+  },
+  "scripts/items/helmets/hood.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "2f0e940015476dedbbf099ca6534060dac457a276270656cbb7318a0793df184",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__helmets__hood.nut"
+  },
+  "scripts/items/helmets/nasal_helmet.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "81aaa2be30854b8f3badc9c89c90b07caf5ae898d68d627d0d4cac926d394e9d",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__helmets__nasal_helmet.nut"
+  },
+  "scripts/items/helmets/sallet_helmet.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "f3b7ec585ac5e138d35a49eb3eb4cb5c1b40b77a547b9f0eb50f21df7a3c3b28",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__helmets__sallet_helmet.nut"
+  },
+  "scripts/items/item.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "8f71085d06e11d5c22772939bc07a16156cfb4a663471a00a9e51cd863ccdbcf",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__item.nut"
+  },
+  "scripts/items/shields/buckler_shield.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "e7a9f09878acd34bae27c8a54ba1259c87da54e3d816501399525723134eef23",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__shields__buckler_shield.nut"
+  },
+  "scripts/items/shields/kite_shield.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "71f389545b8e058fdf67130f28866710ebb9f08f488c3dabb0193c9850662705",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__shields__kite_shield.nut"
+  },
+  "scripts/items/shields/wooden_shield.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "c03dd02fd64c851c628a9ff4d81d420af98fb6f01be702be21f435399ce7b88b",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__shields__wooden_shield.nut"
+  },
+  "scripts/items/weapons/arming_sword.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "b6c3dc1e49f308130e3137465d8ebaba66045c1c77ca4f665e6c47a9bc23e0e3",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__arming_sword.nut"
+  },
+  "scripts/items/weapons/billhook.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "04df1ce0ef3652f8fe4ff9e21831785a4411387ff16922ea476c1b3cd7773462",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__billhook.nut"
+  },
+  "scripts/items/weapons/bludgeon.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "be343c6c381293e3968a6a76feb47ce4586b846d644ec4ad8897b0e0d701b976",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__bludgeon.nut"
+  },
+  "scripts/items/weapons/boar_spear.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "5160d8fc8b6a6f0008db96256bd8460a8c623d1910acbd1cc0f1a59539bad2d1",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__boar_spear.nut"
+  },
+  "scripts/items/weapons/dagger.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "47949687aff6d71f2f218896fbb9a6dc4010ea444cd7bf67dc65554760403136",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__dagger.nut"
+  },
+  "scripts/items/weapons/falchion.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "5f0924636e3f19e7fb4efd94766e9d2c628471862cde3531cc3ca13e9c7ce9be",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__falchion.nut"
+  },
+  "scripts/items/weapons/flail.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "732655a968bfd09917315c301435c200b06687e7af9f2c7d3e08b33a3fff4cfa",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__flail.nut"
+  },
+  "scripts/items/weapons/greatsword.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "b06ff1a36128ce4d0275cff4431b78fe88918b145e563e0da76dddc8e8072cd4",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__greatsword.nut"
+  },
+  "scripts/items/weapons/hand_axe.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "bdc354b72a0de111f844a6b4732ddb866c773fde347e275f01381524bad931f0",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__hand_axe.nut"
+  },
+  "scripts/items/weapons/hunting_bow.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "40450d6a2889b424165237e23c725182bbbc43158e1ddcbe73388f0eb74d9b75",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__hunting_bow.nut"
+  },
+  "scripts/items/weapons/javelin.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "8ed06f5b0c503360c37fe6a722a708dac36a2c9f9ff6974b486a250bfe571e33",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__javelin.nut"
+  },
+  "scripts/items/weapons/knife.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "ab49942768001f9a827964f4ee26a76d092bab6a135237df9e9e4425004f6f60",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__knife.nut"
+  },
+  "scripts/items/weapons/light_crossbow.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "9949fa96474b3997fc190f44eef279bbe892ec8dcd86a0882c29e186b1a63ed7",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__light_crossbow.nut"
+  },
+  "scripts/items/weapons/lute.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "d4da7711d94e5e365e1058eaaae0a5afe59eaa733238b9ad6369aecb14e40b4d",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__lute.nut"
+  },
+  "scripts/items/weapons/militia_spear.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "139136d09bccdc5fca6ff4cb50cd04ee2559cdcef2a358d8faa0995f3d69142e",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__militia_spear.nut"
+  },
+  "scripts/items/weapons/pickaxe.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "2a4ed078df26fee36b6f51a5cffe1415032c1f6068092b6f17dc83bd57129b15",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__pickaxe.nut"
+  },
+  "scripts/items/weapons/pike.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "3b30fb5ead989a06a0b6eba429c6bddd6376eb4475d3d4353a6a37cc54ed547d",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__pike.nut"
+  },
+  "scripts/items/weapons/pitchfork.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "3b96f85d02c44e84ef99a9ae1419c6d868f94b36151a94d0909acfcf4d7ca168",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__pitchfork.nut"
+  },
+  "scripts/items/weapons/shortsword.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "dbaa93f0f918a9160c973fe501ec037656a7deaf753f0a3edf426982f3d2cb0d",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__shortsword.nut"
+  },
+  "scripts/items/weapons/short_bow.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "d605f2ac10e82ebc36b00ff92a8c13cc3fb4d01123e8a53a9e88c0c0a5bb673e",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__short_bow.nut"
+  },
+  "scripts/items/weapons/throwing_axe.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "b53ffadce063441865efe8439dbd173a11af56a92c6baee1cc21a689773a9c83",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__throwing_axe.nut"
+  },
+  "scripts/items/weapons/two_handed_hammer.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "7cb80b2d34da998667dfee1eedb054e1b907567158dde3176460ae6df2d46854",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__two_handed_hammer.nut"
+  },
+  "scripts/items/weapons/warfork.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "bea0e818c04c48fc1e53bf62192e75ac28a00c55a6a2ae25258bb8afa388b1ab",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__warfork.nut"
+  },
+  "scripts/items/weapons/woodcutters_axe.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "bd37fb08d68d178b17780e48766343411cd918b1f6d47122d79b37122befcab0",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__woodcutters_axe.nut"
+  },
+  "scripts/items/weapons/wooden_flail.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "954498b9e2dfd22499a436f75cec01a39866fdcfb725eb3eff5feb885b490672",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__wooden_flail.nut"
+  },
+  "scripts/items/weapons/wooden_stick.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "bdb7db29f5db45662facd0de1b18a790cd8f3645ed850df1a44808da26054b3e",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__items__weapons__wooden_stick.nut"
+  },
+  "scripts/skills/actives/aimed_shot.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "27a676099df0c6a959fde116e3f3971a8029723aa7a131a0f0fee4d7e41d57f8",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__aimed_shot.nut"
+  },
+  "scripts/skills/actives/censer_strike.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "dd02136fc9cafb8bab9d58ba05b10e8999a2794c66ac8790050ac0c877edc70d",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__censer_strike.nut"
+  },
+  "scripts/skills/actives/ghost_overhead_strike.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "2fcdaefa4a8f9a182c69f7171dabc6597829e655157d149d826c9db30af61467",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__ghost_overhead_strike.nut"
+  },
+  "scripts/skills/actives/golem_thrust_skill.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "fb32a883939253bc3164ca3d2c51b275e0431b56940d135e314aa7b5bc4d8e33",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__golem_thrust_skill.nut"
+  },
+  "scripts/skills/actives/overhead_strike.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "d650410d78be6f10ed8e2b1409586fa6f0d0e5c62389bf9d0f639f289619b211",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__overhead_strike.nut"
+  },
+  "scripts/skills/actives/quick_shot.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "f0efca1113de551f18af0caa215f5547b35b6baadfa66350f8c7d0c583ef57f1",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__quick_shot.nut"
+  },
+  "scripts/skills/actives/rally_the_troops.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "795a0060aa469eb179954979e53fe40a7f7fbba3a871d44ab7ba08923bb980e0",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__rally_the_troops.nut"
+  },
+  "scripts/skills/actives/reload_bolt.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "32b90b40c2280fcf51c59fb5313a87a2ebdb9da7b2222f8c28b9acbbb27e38d8",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__reload_bolt.nut"
+  },
+  "scripts/skills/actives/shieldwall.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "ca34db4d84ffd146cbca1d7b2636af42e644ca398271d506015ffef683d5f051",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__shieldwall.nut"
+  },
+  "scripts/skills/actives/shoot_bolt.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "27d9f4edf1159dbba80eed01f9b4452c83a848b9e7312ec2c0091a2c100fb9b1",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__shoot_bolt.nut"
+  },
+  "scripts/skills/actives/shoot_stake.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "f37a557438a4114528b9e8102a0746b82bffbb1303cbfc860c883a30eef18510",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__shoot_stake.nut"
+  },
+  "scripts/skills/actives/slash.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "b55797d2821be494f7476b1faad5060cbe92e2ef07fbd1102fb551d265620790",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__slash.nut"
+  },
+  "scripts/skills/actives/smite_skill.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "cae9284d702d8032bc77d600758db0d8ab0dca121af4df49b27139b2cbcda933",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__smite_skill.nut"
+  },
+  "scripts/skills/actives/split_man.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "9b42fee0a2b7f34e4902ca844940b7f720cc6aa75739935308dae2d66bbe08a3",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__split_man.nut"
+  },
+  "scripts/skills/actives/strike_down_skill.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "c28321d3c9e4e6f9a14f4ae8210be5f205c8bb0eb53234aacc2d987e9fc491b5",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__strike_down_skill.nut"
+  },
+  "scripts/skills/actives/strike_skill.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "c7bb26b55c18dba3a2e8a4026c80237bbaf0bc8649b0edcd6bb5b1b1d422763b",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__strike_skill.nut"
+  },
+  "scripts/skills/actives/throw_axe.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "d22d01951430535e698f06f0c346f4281d91524f5b08bf0a157aae3f9e766305",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__throw_axe.nut"
+  },
+  "scripts/skills/actives/throw_javelin.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "b2c4928651c0b9bf191f30322a91ecc94d129a924f69088f4a93437e6c50ce37",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__throw_javelin.nut"
+  },
+  "scripts/skills/actives/thrust.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "12412ce89717aaec369991e041274525a37586152810bdc69685c997e9dcca89",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__actives__thrust.nut"
+  },
+  "scripts/skills/backgrounds/character_background.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "9ec2f085fcd3cf4cf29d542ecf56150b1443eda80f074144de1e4f08273aa72b",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__backgrounds__character_background.nut"
+  },
+  "scripts/skills/perks/perk_battle_forged.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "ad8614d8ab8b76cde3d664cf16a4aa2be9c830f3b8a66adadddf0d00b5d0d5aa",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_battle_forged.nut"
+  },
+  "scripts/skills/perks/perk_berserk.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "1a2417159122a252e10b564c77bd0cc566dcb27a0fa74c570f05b75e009b6e0f",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_berserk.nut"
+  },
+  "scripts/skills/perks/perk_colossus.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "b26cfd0e517b9a6cf7240db1b1d4d15cf462448e95a7541c284d7a7ddec1a234",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_colossus.nut"
+  },
+  "scripts/skills/perks/perk_dodge.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "d18c85dcc819cbbcff4193163c2e888375ec69853d051a63053849b7dfb267fc",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_dodge.nut"
+  },
+  "scripts/skills/perks/perk_duelist.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "d7ff73a5eacb48990f8c499c9bf3b7e6f7a9f02d0782c203c2041ba61b605047",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_duelist.nut"
+  },
+  "scripts/skills/perks/perk_fearsome.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "7567f6aa4b90718657f1ba34f53547704866a577b81b6ea4230b940178610b74",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_fearsome.nut"
+  },
+  "scripts/skills/perks/perk_footwork.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "6757c559a8b30ea1ff37fde7cf62c8aaf9ad7c1f75cffc87b410e091b6d4164c",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_footwork.nut"
+  },
+  "scripts/skills/perks/perk_gifted.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "e4858e80d90b2eb684069a032962a04fee4c6090ff3f2262baf723e43e4fb2ab",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_gifted.nut"
+  },
+  "scripts/skills/perks/perk_mastery_hammer.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "b87d24eac0b151a25f44e60167927926b8f6a0bb3012e7f2f5d7085ca629311d",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_mastery_hammer.nut"
+  },
+  "scripts/skills/perks/perk_mastery_polearm.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "67dfac48d4924cd8126c06a12873880db0996d2f36e75e1e579fe013ee605274",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_mastery_polearm.nut"
+  },
+  "scripts/skills/perks/perk_mastery_spear.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "c4959e3325335eb6ff9f6531c435d2f5a8313dbcefe418155967ab1ef02ae6f7",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_mastery_spear.nut"
+  },
+  "scripts/skills/perks/perk_mastery_throwing.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "5b7647b079b57b7f09ba1a0ea8f896df78c0302664f0c01f34b7f0eabc595923",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_mastery_throwing.nut"
+  },
+  "scripts/skills/perks/perk_nimble.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "9687d7260bcff23b5c77f881fb58ee26d28a4b69c6f1020dd059dc449fff4a7c",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_nimble.nut"
+  },
+  "scripts/skills/perks/perk_pathfinder.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "220158c386ec7cd5ec828dbae5760fd42f1cb92af4c4ad52560ffa3b798d0111",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_pathfinder.nut"
+  },
+  "scripts/skills/perks/perk_recover.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "b043b9a3c0c6c028a502f27868a18dca6d0cd389c3f5ec3949e914f74404b57d",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_recover.nut"
+  },
+  "scripts/skills/perks/perk_rotation.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "28700d4cd77baa66220ea2fda6f1710f3abcba17df2595d18874f02b7808a2a1",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_rotation.nut"
+  },
+  "scripts/skills/perks/perk_shield_expert.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "814e0ead5bb74ed69e78795c1aecbcbe68dd94e3dc44d50e5352af22e5ed4ee0",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_shield_expert.nut"
+  },
+  "scripts/skills/perks/perk_underdog.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "457b7f5c0c3a498d8e271a234a493d65c5b4debe75cdeafe2720bfdc1b417ba8",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__perks__perk_underdog.nut"
+  },
+  "scripts/skills/skill.cnut": {
+    "archive": "data_001.dat",
+    "sha256": "8f39ff7ae8e03e53cc7bfd5f1f63679ddaedc77cb7fa38e690ca1f26ac426477",
+    "local": "G:\\CODE\\afei-xcpedition\\.cache\\balance-v1\\scripts__skills__skill.nut"
+  }
+}

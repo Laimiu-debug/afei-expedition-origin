@@ -20,7 +20,7 @@ A.recruitPrice=function(key){local price=originalRecruitPrice.bindenv(this)(key)
 local originalHired=A.onNativeHired;
 A.onNativeHired=function(bro){
     local key=this.characterId(bro),before=key!=""&&this.isOrigin()?this.get("ever_"+key,false):true;
-    local discounted=key!=""&&key in this.Characters&&this.catalogRecruitDiscount(originalRecruitPrice.bindenv(this)(key))>0;
+    local discounted=key!=""&&key in this.Characters&&this.catalogRecruitDiscount("BalanceV26" in this&&key in this.BalanceV26.people?::Math.max(0,this.BalanceV26.people[key].service_fee-this.get("hire_discount_"+key,0)):originalRecruitPrice.bindenv(this)(key))>0;
     local result=originalHired.bindenv(this)(bro);
     if(!before&&discounted&&this.findCharacter(key)==bro&&this.get("ever_"+key,false))this.set("steal_bro_day",this.catalogDay());
     return result;

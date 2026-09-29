@@ -24,7 +24,7 @@ local now=0.0, serial=100;
 }}};
 local money=0,reputation=0,relation=0,origin=true,at=null,entered=null,hud=null,shows=0,active=null,offers=[],events=false;
 local towns=[];
-local faction={function getID(){return 7;},function getRandomCharacter(){return {function getID(){return 70;}};},
+local faction={m={LastContractTime=0},function getID(){return 7;},function getRandomCharacter(){return {function getID(){return 70;}};},
     function getSettlements(){return towns;},function addPlayerRelation(amount,why){relation+=amount;}};
 function makeTown(id,route){return {
     alive=true,friendly=true,selection={Visible=false},

@@ -1,0 +1,12 @@
+{
+  "version": "0.20.0",
+  "installed_at": "2026-09-27T17:04:36.5358682+08:00",
+  "source": "G:\\CODE\\afei-xcpedition\\dist\\mod_afeix_expedition.zip",
+  "destination": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "backup": "G:\\CODE\\afei-xcpedition\\build\\random-events-v20\\installed-backups\\before-v0.20.0-20260927-170436-510.zip",
+  "previous_sha256": "5dd788af43fc3ab4b6be4ea4c4cc01836fd342e91af67c1759f306336b32dd72",
+  "sha256": "29971ed32faa1d6f9d1d8eeb77afbcb887fe0a2cdbff000964967cf31b0249cb",
+  "source_matches": true,
+  "in_game_tested": false,
+  "game_process_running": false
+}

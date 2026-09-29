@@ -1,0 +1,14 @@
+{
+  "installed": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "sha256": "13331c3aadbc06a6ed9e2812814a9124aa52b79bb33f007da0dff8bb5ab2169f",
+  "updated_sprites": [
+    "afeix_p04_naigai",
+    "afeix_p04_naigai_dead",
+    "afeix_p04_naigai_head"
+  ],
+  "preserves_existing_gameplay": true,
+  "preserves_other_installed_portraits": true,
+  "validation": "build/playtest-naigai/validation.json",
+  "backup": "dist/archive/before-naigai-20260927/installed-0bd2fc4d63da.zip",
+  "in_game_tested": false
+}

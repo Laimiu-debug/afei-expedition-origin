@@ -1,6 +1,7 @@
-// Persistent FIFO eligibility, one featured recruit at a time in vanilla hiring.
+// Persistent FIFO eligibility, three independent offers in vanilla hiring.
 local A = ::AfeixExpedition;
-A.RecruitIntervalDays <- 3;
+A.RecruitIntervalDays <- 1;
+A.RecruitOfferCount <- 3;
 A.RecruitOfferDays <- 4;
 // Old saves can keep invitations/discounts, but F8 and taverns never hire now.
 A.recruit = function(key) { return this.result(false, "请在城镇招募界面雇佣伙伴。"); };
@@ -12,8 +13,38 @@ A.createHireCandidate <- function(key, roster) {
     return null;
 };
 A.recruitGone <- function(key) {
-    return this.findCharacter(key) != null || this.get("ever_" + key, false)
+    return !(key in this.Characters) || this.findCharacter(key) != null || this.get("ever_" + key, false)
         || this.get("dead_" + key, false) || this.get("departed_" + key, false);
+};
+A.getRecruitSlot <- function(index) {
+    local prefix = "recruit_slot_" + index + "_";
+    return { key = this.get(prefix + "key", ""), town = this.get(prefix + "town"),
+        expires = this.get(prefix + "until"), ready = this.get(prefix + "next") };
+};
+A.saveRecruitSlot <- function(index, slot) {
+    local prefix = "recruit_slot_" + index + "_";
+    this.set(prefix + "key", slot.key); this.set(prefix + "town", slot.town);
+    this.set(prefix + "until", slot.expires); this.set(prefix + "next", slot.ready);
+};
+A.migrateRecruitSlots <- function() {
+    if (this.get("recruit_slots_v1", false)) return;
+    // Preserve the original actor and offer lifetime. Convert the old three-day
+    // hire cooldown to one day, measured from the original hire, not this load.
+    local oldReady = this.get("recruit_next_time");
+    local slot = { key = this.get("recruit_offer_key", ""), town = this.get("recruit_offer_town"),
+        expires = this.get("recruit_offer_until"),
+        ready = oldReady > 0 ? ::Math.max(0, oldReady - this.daysInSeconds(2)) : 0 };
+    this.saveRecruitSlot(0, slot);
+    this.set("recruit_offer_key", ""); this.set("recruit_offer_town", 0);
+    this.set("recruit_offer_until", 0); this.set("recruit_next_time", 0);
+    this.set("recruit_slots_v1", true);
+};
+A.recruitOfferSlot <- function(key) {
+    if (key == "") return -1;
+    for (local i = 0; i < this.RecruitOfferCount; i++)
+        if (this.getRecruitSlot(i).key == key) return i;
+    // Ledger reads can precede the completed world-load migration.
+    return !this.get("recruit_slots_v1", false) && this.get("recruit_offer_key", "") == key ? 0 : -1;
 };
 A.visitRecruitTown <- function(town) {
     if (!this.isOrigin() || town == null || !town.isAlive() || town.isMilitary() || !town.isAlliedWithPlayer()) return false;
@@ -24,6 +55,7 @@ A.visitRecruitTown <- function(town) {
     return true;
 };
 A.queueRecruit <- function(key) {
+    if (!(key in this.Characters) || this.Characters[key].isCaptain) return;
     local order = this.get("recruit_queue_serial") + 1;
     this.set("recruit_queue_serial", order);
     this.set("recruit_order_" + key, order);
@@ -41,7 +73,7 @@ A.nextQueuedRecruit <- function() {
     local best = null, order = 2147483647;
     foreach (key in this.CharacterOrder) {
         local value = this.get("recruit_order_" + key);
-        if (value > 0 && value < order && !this.recruitGone(key)) { best = key; order = value; }
+        if (value > 0 && value < order && !this.recruitGone(key) && this.recruitOfferSlot(key) < 0) { best = key; order = value; }
     }
     return best;
 };
@@ -51,46 +83,57 @@ A.candidateInRoster <- function(roster, key) {
     return null;
 };
 A.restoreHireCandidate <- function() {
-    local key = this.get("recruit_offer_key", ""), townID = this.get("recruit_offer_town");
-    if (key == "" || townID == 0) return;
-    local bro = this.candidateInRoster(::World.getRoster(townID), key);
-    if (bro != null) this.restoreCharacterMetadata(bro);
+    this.migrateRecruitSlots();
+    for (local i = 0; i < this.RecruitOfferCount; i++) {
+        local slot = this.getRecruitSlot(i);
+        if (slot.key == "" || slot.town == 0) continue;
+        local bro = this.candidateInRoster(::World.getRoster(slot.town), slot.key);
+        if (bro != null) this.restoreCharacterMetadata(bro);
+    }
 };
 A.ensureTownRecruit <- function(town) {
     if (!this.visitRecruitTown(town)) return;
+    this.migrateRecruitSlots();
     this.updateRecruitEligibility();
-    local now = this.worldNow(), key = this.get("recruit_offer_key", "");
-    local oldTownID = this.get("recruit_offer_town"), oldRoster = null, bro = null;
-    if (oldTownID != 0) oldRoster = ::World.getRoster(oldTownID);
-    if (key != "") bro = this.candidateInRoster(oldRoster, key);
-    if (key != "" && (this.recruitGone(key) || now >= this.get("recruit_offer_until"))) {
-        if (bro != null) oldRoster.remove(bro);
-        if (!this.recruitGone(key)) this.queueRecruit(key); // missed offers go to the back, never vanish
-        this.set("recruit_offer_key", ""); this.set("recruit_offer_town", 0);
-        key = ""; bro = null;
-    }
+    local now = this.worldNow();
     local targetRoster = ::World.getRoster(town.getID());
-    if (key == "") {
-        if (now < this.get("recruit_next_time")) return;
-        key = this.nextQueuedRecruit();
-        if (key == null) return;
-        bro = this.createHireCandidate(key, targetRoster);
-        if (bro == null) return; // do not consume the queue/cooldown on failed creation
-        this.set("recruit_offer_key", key);
-        this.set("recruit_offer_until", now + this.daysInSeconds(this.RecruitOfferDays));
-        this.set("recruit_next_time", now + this.daysInSeconds(this.RecruitIntervalDays));
-    } else if (bro == null) {
-        // A destroyed town can remove its hiring roster. The saved entitlement remains.
-        bro = this.createHireCandidate(key, targetRoster);
-        if (bro == null) return;
-    } else if (oldTownID != town.getID()) {
-        targetRoster.add(bro); oldRoster.remove(bro);
+    // Retire every expired offer before filling vacancies, keeping FIFO order.
+    for (local i = 0; i < this.RecruitOfferCount; i++) {
+        local slot = this.getRecruitSlot(i);
+        if (slot.key == "" || (!this.recruitGone(slot.key) && now < slot.expires)) continue;
+        local oldRoster = slot.town == 0 ? null : ::World.getRoster(slot.town);
+        local bro = this.candidateInRoster(oldRoster, slot.key);
+        if (bro != null) oldRoster.remove(bro);
+        if (!this.recruitGone(slot.key)) this.queueRecruit(slot.key);
+        slot.key = ""; slot.town = 0; slot.expires = 0;
+        this.saveRecruitSlot(i, slot);
     }
-    this.set("recruit_offer_town", town.getID());
-    this.set("native_recruit_" + key, true);
-    this.set("met_" + key, true);
-    this.set("met_town_" + key, town.getNameOnly());
-    this.restoreCharacterMetadata(bro);
+    for (local i = 0; i < this.RecruitOfferCount; i++) {
+        local slot = this.getRecruitSlot(i), bro = null;
+        if (slot.key == "") {
+            if (now < slot.ready) continue;
+            local key = this.nextQueuedRecruit();
+            if (key == null) continue;
+            bro = this.createHireCandidate(key, targetRoster);
+            if (bro == null) break; // retain entitlement and avoid retrying the same failure three times
+            slot.key = key; slot.expires = now + this.daysInSeconds(this.RecruitOfferDays);
+        } else {
+            local oldRoster = slot.town == 0 ? null : ::World.getRoster(slot.town);
+            bro = this.candidateInRoster(oldRoster, slot.key);
+            if (bro == null) {
+                // A destroyed town can remove its roster; entitlement and timer survive.
+                bro = this.createHireCandidate(slot.key, targetRoster);
+                if (bro == null) continue;
+            } else if (slot.town != town.getID()) {
+                targetRoster.add(bro); oldRoster.remove(bro);
+            }
+        }
+        slot.town = town.getID(); this.saveRecruitSlot(i, slot);
+        this.set("native_recruit_" + slot.key, true);
+        this.set("met_" + slot.key, true);
+        this.set("met_town_" + slot.key, town.getNameOnly());
+        this.restoreCharacterMetadata(bro);
+    }
 };
 A.onNativeHired <- function(bro) {
     if (!this.isOrigin()) return;
@@ -98,9 +141,11 @@ A.onNativeHired <- function(bro) {
     if (key == "" || this.findCharacter(key) != bro) return;
     this.set("ever_" + key, true); this.set("met_" + key, true);
     bro.getFlags().set("afeix_candidate", false);
-    if (this.get("recruit_offer_key", "") == key) {
-        this.set("recruit_offer_key", ""); this.set("recruit_offer_town", 0);
-        this.set("recruit_next_time", this.worldNow() + this.daysInSeconds(this.RecruitIntervalDays));
+    this.migrateRecruitSlots();
+    local index = this.recruitOfferSlot(key);
+    if (index >= 0) {
+        this.saveRecruitSlot(index, { key = "", town = 0, expires = 0,
+            ready = this.worldNow() + this.daysInSeconds(this.RecruitIntervalDays) });
     }
     this.enforceFormation();
     this.updateRecruitEligibility();

@@ -17,6 +17,7 @@
            EventScreen={visible=false,animating=false,isVisible=function(){return this.visible;},isAnimating=function(){return this.animating;}},
            WorldTownScreen={isVisible=function(){return false;}}},
         getPlayer=function(){return this.player;},getCombatStartTime=function(){return this.combatStart;},
+        isInCharacterScreen=function(){return false;},
         getMenuStack=function(){return this.m.MenuStack;},isCampingAllowed=function(){return true;},
         showEventScreen=function(event){::shown++;return ::worldAllows;}}
 };

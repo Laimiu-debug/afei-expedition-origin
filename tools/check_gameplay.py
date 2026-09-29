@@ -86,6 +86,9 @@ def validate_custom_art():
     from build_portrait_art import read_manifest, LIVE_RECT, DEAD_RECT, BASE
     from build_keepsake_art import validate_icons
     from build_member_skill_art import validate_icons as validate_member_icons
+    from build_ideas_art import validate_art as validate_ideas_art
+    from build_world_art import validate_art as validate_world_art
+    from build_banner_art import validate_art as validate_banner_art
 
     portrait_base = BASE
     manifest_path = portrait_base / 'manifest.json'
@@ -98,14 +101,15 @@ def validate_custom_art():
             or report.get('manifest') != manifest_path.relative_to(ROOT).as_posix()
             or report.get('manifest_sha256') != file_hash(manifest_path) or report.get('complete') is not True
             or report.get('published_to_src') is not True or report.get('named_characters') != 34
-            or report.get('required_forms') != 36 or report.get('exported_forms') != 36 or report.get('sprite_count') != 108
+            or report.get('native_portrait_characters') != []
+            or report.get('required_forms') != 36 or report.get('exported_forms') != 36 or report.get('sprite_count') != 144
             or report.get('files') != expected_files or report.get('missing')):
         raise ValueError('Portrait build report is incomplete, unpublished or stale for the current manifest')
     records = report.get('portraits', [])
     by_brush = {record['brush']: record for record in records}
     if len(records) != 36 or set(by_brush) != {entry['brush'] for entry in ready}:
         raise ValueError('Portrait report does not cover the 36 required visual forms')
-    expected_ids = {entry['brush'] + suffix for entry in ready for suffix in ('', '_head', '_dead')}
+    expected_ids = {entry['brush'] + suffix for entry in ready for suffix in ('', '_head', '_dead', '_corpse_head')}
     portrait = verify_custom_atlas(portrait_base, 'afeix_portraits_v04', report, expected_ids)
     for entry in ready:
         record = by_brush[entry['brush']]
@@ -120,6 +124,15 @@ def validate_custom_art():
             if not exported.is_file() or record.get(field) != file_hash(exported):
                 raise ValueError(f'Portrait export fingerprint differs: {identity}')
             verify_sprite(portrait['sprites'][identity], exported, geometry)
+        corpse_head = portrait_base / 'sprites' / (entry['brush'] + '_corpse_head.png')
+        if file_hash(corpse_head) != record['head_png_sha256'] or record['corpse_head_png_sha256'] != file_hash(corpse_head):
+            raise ValueError('Corpse head must preserve the current reviewed head pixels')
+        cx, cy = entry['neck_guard']
+        expected_pivot = {'left': -cx, 'right': 114-cx, 'top': cy-142, 'bottom': cy,
+                          'width': 114, 'height': 142, 'offsetX': 0, 'offsetY': 0}
+        if record.get('corpse_neck_anchor') != [cx, cy] or record['corpse_head_geometry'] != expected_pivot:
+            raise ValueError('Corpse head must attach at the reviewed neck, not the alpha centre')
+        verify_sprite(portrait['sprites'][entry['brush'] + '_corpse_head'], corpse_head, record['corpse_head_geometry'])
         with Image.open(portrait_base / 'sprites' / (entry['brush'] + '.png')) as body, Image.open(portrait_base / 'sprites' / (entry['brush'] + '_head.png')) as head, Image.open(portrait_base / 'sprites' / (entry['brush'] + '_dead.png')) as full:
             if Image.alpha_composite(body.convert('RGBA'), head.convert('RGBA')).tobytes() != full.convert('RGBA').tobytes():
                 raise ValueError(f"Body/head partition lost pixels: {entry['brush']}")
@@ -149,11 +162,16 @@ def validate_custom_art():
                     or image.getchannel('A').getextrema()[0] != 0 or image.getchannel('A').getextrema()[1] == 0):
                 raise ValueError(f"Skill icon format/alpha differs: {icon['key']}")
         small['files'][exported.relative_to(ROOT / 'src').as_posix()] = icon['sha256']
+    from build_balance_v26_art import validate_art as validate_balance_art
+    balance_art=validate_balance_art()
     keepsakes = validate_icons()
     return {'passed': True, 'method': 'manifest source hashes + build fingerprints + unpack actual src atlases + compare pixels/anchors',
-            'keepsake_icons': keepsakes,
+            'keepsake_icons': keepsakes, 'balance_v26_art': balance_art,
             'member_skill_icons': validate_member_icons(),
-            'portrait_forms': 36, 'portrait_brushes': 108, 'retired_disc_absent': True, 'skill_icons': 4,
+            'ideas_art': validate_ideas_art(),
+            'world_art': validate_world_art(),
+            'banner_art': validate_banner_art(),
+            'portrait_forms': 36, 'portrait_brushes': 144, 'retired_disc_absent': True, 'skill_icons': 4,
             'files': {**portrait['files'], **small['files']}}
 
 
@@ -202,12 +220,13 @@ def validate(sq, game):
         raise ValueError('Playable roster must match all 34 names in the approved production list, in order')
     if len({c['key'] for c in characters}) != 34 or sum(c['isCaptain'] for c in characters) != 3:
         raise ValueError('Duplicate character identity or incorrect captain count')
-    if any(c['key'] == 'yanzi' for c in characters):
-        raise ValueError('Retired character yanzi must not appear in the active recruitment catalog')
+    native = [c['key'] for c in characters if c.get('nativePortrait')]
+    if native:
+        raise ValueError('All current named members must use their reviewed custom portraits')
     if set(roster['encounterRequirements']) != {c['key'] for c in characters if not c['isCaptain']}:
         raise ValueError('Every recruit must have independent hidden encounter conditions')
-    if roster['rosterMax'] != 40 or roster['combatMax'] != 10:
-        raise ValueError('Capacity must remain forty on the roster and ten in battle')
+    if roster['rosterMax'] != 40 or roster['combatMax'] != 12:
+        raise ValueError('Capacity must remain forty on the roster and twelve in battle')
     for character in characters:
         if len(character['attrs']) != 8 or not all(isinstance(n, int) and n >= 0 for n in character['attrs']):
             raise ValueError(f"Invalid attributes: {character['key']}")
@@ -244,7 +263,9 @@ def validate(sq, game):
             references.add(reference)
         for background in re.findall(r'background\s*=\s*"([a-z0-9_]+)"', source):
             references.add('scripts/skills/backgrounds/' + background + '.cnut')
-        for item in re.findall(r'"((?:weapons|armor|helmets|shields|ammo|accessory)/[a-z0-9_/]+)"', source):
+        # A concatenated icon prefix is not a complete item script path.
+        # Custom banner exports validate the expanded PNG names separately.
+        for item in re.findall(r'"((?:weapons|armor|helmets|shields|ammo|accessory)/[a-z0-9_/]+)"(?!\s*\+)', source):
             references.add('scripts/items/' + item + '.cnut')
         for target in re.findall(r'mods_hook(?:ExactClass|NewObject|BaseClass)\("([a-z0-9_/]+)"', source):
             references.add('scripts/' + target + '.cnut')
@@ -267,22 +288,71 @@ def validate(sq, game):
     kit = ROOT / '.cache/afei-art/bbros-modkit-v9/bin'
     with ZipFile(game / 'data/data_001.dat') as archive:
         for source in ['scripts/contracts/contract.cnut',
+                       'scripts/contracts/contract_manager.cnut',
+                       'scripts/factions/faction.cnut',
+                       'scripts/factions/settlement_faction.cnut',
+                       'scripts/factions/city_state_faction.cnut',
+                       'scripts/entity/world/settlements/buildings/crowd_building.cnut',
+                       'scripts/ui/screens/world/world_town_screen.cnut',
                        'scripts/skills/skill.cnut',
+                       'scripts/skills/skill_container.cnut',
+                       'scripts/skills/actives/break_free_skill.cnut',
+                       'scripts/skills/effects/net_effect.cnut',
+                       'scripts/ai/tactical/behaviors/ai_break_free.cnut',
+                       'scripts/skills/backgrounds/character_background.cnut',
+                       'scripts/skills/backgrounds/daytaler_background.cnut',
+                       'scripts/skills/backgrounds/militia_background.cnut',
+                       'scripts/skills/backgrounds/poacher_background.cnut',
+                       'scripts/skills/backgrounds/converted_cultist_background.cnut',
+                       'scripts/skills/traits/character_trait.cnut',
+                       'scripts/skills/perks/perk_steel_brow.cnut',
+                       'scripts/skills/effects/bleeding_effect.cnut',
                        'scripts/entity/world/player_party.cnut',
                        'scripts/states/world/asset_manager.cnut',
                        'scripts/events/event_manager.cnut',
+                       'scripts/states/world_state.cnut',
+                       'scripts/ui/global/menu_stack.cnut',
+                       'scripts/ui/screens/character/character_screen.cnut',
+                       'scripts/events/event.cnut',
+                       'scripts/events/events/cultist_vs_uneducated_event.cnut',
+                       'scripts/tools/weak_table_ref.cnut',
+                       'scripts/ambitions/ambition.cnut',
+                       'scripts/ambitions/ambition_manager.cnut',
+                       'scripts/ambitions/ambitions/contracts_ambition.cnut',
+                       'scripts/entity/world/party.cnut',
+                       'scripts/entity/world/settlements/buildings/building.cnut',
+                       'scripts/entity/world/settlements/buildings/weaponsmith_building.cnut',
+                       'scripts/entity/world/settlements/buildings/marketplace_building.cnut',
+                       'scripts/items/tools/player_banner.cnut',
+                       'scripts/entity/tactical/actor.cnut',
                        'scripts/skills/actives/chop.cnut',
                        'scripts/skills/actives/split_man.cnut',
                        'scripts/skills/actives/rotation.cnut',
                        'scripts/skills/actives/taunt.cnut',
                        'scripts/items/item.cnut',
+                       'scripts/items/weapons/weapon.cnut',
+                       'scripts/items/weapons/two_handed_hammer.cnut',
+                       'scripts/skills/actives/split_shield.cnut',
                        'scripts/ui/screens/world/modules/world_town_screen/town_shop_dialog_module.cnut',
-                       'scripts/ui/screens/world/modules/world_town_screen/town_hire_dialog_module.cnut']:
+                       'scripts/ui/screens/world/modules/world_town_screen/town_barber_dialog_module.cnut',
+                       'scripts/ui/screens/world/modules/world_town_screen/town_hire_dialog_module.cnut'] + [
+                       'scripts/skills/traits/' + key + '_trait.cnut'
+                       for key in ['fat','huge','gluttonous','determined','sure_footing','loyal','hesitant','optimist','teamplayer','quick','ailing']]:
             bytecode = native_dir / Path(source).name
             bytecode.write_bytes(archive.read(source))
             subprocess.run([str(kit / 'bbsq.exe'), '-d', str(bytecode)], check=True, capture_output=True)
             decoded = subprocess.run([str(kit / 'nutcracker.exe'), str(bytecode)], check=True, capture_output=True)
             bytecode.with_suffix('.nut').write_bytes(decoded.stdout)
+    # Exercise the user's installed recruitment display override, without
+    # redistributing that third-party source in the project or gameplay ZIP.
+    compat = game / 'data/mod_fox_043.zip'
+    compat_fixture = native_dir / 'alternative_hire.nut'
+    if compat.exists():
+        with ZipFile(compat) as archive:
+            compat_fixture.write_bytes(b'::AFEIX_InstalledRecruitDisplay <- true;\n' +
+                archive.read('scripts/!mods_preload/mod_sr_alternative_standard.nut'))
+    else:
+        compat_fixture.write_text('::AFEIX_InstalledRecruitDisplay <- false;\n', encoding='utf-8')
     tests = []
     for path in sorted((ROOT / 'tests/gameplay').glob('test_*.nut')):
         log = run_sq(sq, path, 'TESTS_PASSED=')
@@ -316,7 +386,7 @@ def validate(sq, game):
         'scripts': [{'path': p.relative_to(ROOT).as_posix(), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in scripts],
         'ui_scripts': [{'path': p.relative_to(ROOT).as_posix(), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in js_paths],
         'resource_references': sorted(references), 'tests': tests, 'syntax_log': syntax_log,
-        'limits': ['No game was launched', 'Native save/load and screen rendering require in-game checks', 'Ten-person enemy balance is not validated'],
+        'limits': ['No game was launched', 'Native save/load and screen rendering require in-game checks', 'Twelve-person enemy balance is not validated'],
     }
     out = ROOT / 'build/gameplay-validation.json'
     out.parent.mkdir(exist_ok=True)

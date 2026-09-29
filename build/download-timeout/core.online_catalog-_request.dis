@@ -1,0 +1,19 @@
+ 38           RESUME                   0
+
+ 39           LOAD_GLOBAL              1 (build_opener + NULL)
+              LOAD_GLOBAL              3 (NoRedirect + NULL)
+              CALL                     0
+              CALL                     1
+              LOAD_ATTR                5 (open + NULL|self)
+              LOAD_GLOBAL              7 (Request + NULL)
+              LOAD_FAST                0 (url)
+              LOAD_CONST               1 ('BBMOD-Catalog/1')
+              LOAD_CONST               2 ('identity')
+              LOAD_CONST               3 (('User-Agent', 'Accept-Encoding'))
+              BUILD_CONST_KEY_MAP      2
+              LOAD_CONST               4 (('headers',))
+              CALL_KW                  2
+              LOAD_CONST               5 (12)
+              LOAD_CONST               6 (('timeout',))
+              CALL_KW                  2
+              RETURN_VALUE

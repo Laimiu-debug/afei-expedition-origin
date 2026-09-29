@@ -1,0 +1,65 @@
+{
+  "version": "0.27.4",
+  "combined_members": 35,
+  "combined_skill_choices": 102,
+  "fixed_traits": 70,
+  "runtime_field_checks": 1119,
+  "personal_growth_choices": 70,
+  "recruitment_AND_gates": 160,
+  "workbook_compiler_checks": "attributes/stars/30-pick allocations/both story bonus arrays/equipment and bag names/armor/load/value/wages/fees/all gates/traits/skills/mastery/routes/heavy target",
+  "sheets": {
+    "总览": "overview of current inputs",
+    "招募节奏": "runtime AND gates and pricing; FIFO native recruitment tests",
+    "属性成长": "runtime base/stars/story rewards; player-controlled allocation model",
+    "成长总览": "derived projection, not forced level11 grants",
+    "装备明细": "all 35 runtime equipment/bags; endgame replacement suggestions remain player choices",
+    "技能选择": "102 runtime definitions and combat tests",
+    "队长与事件": "routes, bicycle, e-cigarette, Cao event, mirror and Regen regression tests",
+    "经济模型": "planning costs include native Gluttonous extra daily food; runtime wages and capped contract payouts tested",
+    "伤害与概率": "native-formula models and actual finite armor damage rule",
+    "原版标杆": "historical native comparison model",
+    "改动清单": "version notes",
+    "技能机会成本": "AP and fatigue scenario model",
+    "重甲疲劳": "55 after Brawny; 6 heavy candidates pass; Xiaojie Nimble, Yanzi hybrid and Song fencer rows explicitly excluded",
+    "现行对照": "pre-implementation history deliberately retained",
+    "来源说明": "provenance and shared controls",
+    "人物特质": "70 fixed traits; inverse base arithmetic independently checked with native scripts for four requested members and Xiaogui"
+  },
+  "in_game_tested": false,
+  "final_workbook_sha256": "132ea33d0bf8992e70d617e1100ebe57b50e0f8d10893c0a77df621beb13f240",
+  "dedicated_level_bonuses": 0,
+  "bottle_stars": {
+    "MeleeSkill": 3,
+    "Stamina": 3,
+    "MeleeDefense": 3
+  },
+  "bottle_initial_melee": 60,
+  "native_trait_assertions": 85,
+  "hidden_combat_state_assertions": 33,
+  "xiaojie_11_colossus_hp": 150,
+  "yanzi_11_attack": {
+    "melee": 85,
+    "ranged": 90
+  },
+  "songnuanyang_11_with_story": [
+    66.0,
+    116.0,
+    54.0,
+    141.0,
+    85.0,
+    36.0,
+    36.0,
+    5.0
+  ],
+  "native_conversion_assertions": 227,
+  "laoma_grip": {
+    "damage": [
+      84,
+      120
+    ],
+    "penetration": 0.7,
+    "armor_multiplier": 2.35,
+    "shield_damage": 52,
+    "extra_armor_loss_cap": 30
+  }
+}

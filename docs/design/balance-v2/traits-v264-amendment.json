@@ -1,0 +1,1393 @@
+{
+  "reason": "User requested four fixed-trait pairs; preserve displayed base stats and correct native Fat stamina arithmetic, including Xiaogui",
+  "fixed_traits": {
+    "bottle": [
+      "sure_footing",
+      "determined"
+    ],
+    "keke": [
+      "fat",
+      "huge"
+    ],
+    "yuchujiu": [
+      "loyal",
+      "hesitant"
+    ],
+    "xiaoyueya": [
+      "gluttonous",
+      "optimist"
+    ]
+  },
+  "native_fat_delta": [
+    10,
+    -10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "before_workbook_sha256": "30a879eae8346bd4f91ecc5c0a7bc8e891428fc2d5fa13ffc1ae6ca461fafbb3",
+  "workbook_sha256": "be9ba708ac3c79d613f187acab7eb25098f49d319afc8ea6c0749d547f3d2d04",
+  "before_proposal_sha256": "191115cc591e3b3c5117a2f73db65a2878c777f464c5d7ec9dec68e614ffd7d4",
+  "proposal_sha256": "9e2b428c195f174a3a01eaa53faf99ccc5dcd27fdcfe385fd7447c267f08325f",
+  "before_trait_design_sha256": "945eab8f062cfc98973adee84aad83fd2e90e7145d14f61fdf0bff1c3d26569e",
+  "trait_design_sha256": "de7a89feb45aad31f91478ce7cf2e089a5d95a5bbc7f1e5210f1a73c40de7766",
+  "authored_cells": [
+    {
+      "sheet": "人物特质",
+      "cell": "C9",
+      "value": "步伐稳健",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "D9",
+      "value": "坚定",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "E9",
+      "value": "步伐稳健：近防+5；坚定：心情至少中立时，以自信士气开战；不永久增加八维",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "F9",
+      "value": "步伐稳健 2票；坚定 0票\n3份含特质反馈 / 5份人物反馈",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "H9",
+      "value": "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "I9",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "J9",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "K9",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "L9",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "M9",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "N9",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "O9",
+      "value": 5,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "P9",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "C12",
+      "value": "贪吃",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "D12",
+      "value": "乐观",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "E12",
+      "value": "贪吃：每天额外消耗1单位食物；断粮时更容易离队（原版判定）；乐观：正向士气检查决心+5；坏心情消退更快",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "F12",
+      "value": "贪吃 0票；乐观 0票\n0份含特质反馈 / 1份人物反馈",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "H12",
+      "value": "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "I12",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "J12",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "K12",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "L12",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "M12",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "N12",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "O12",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "P12",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "C13",
+      "value": "忠诚",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "D13",
+      "value": "犹豫",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "E13",
+      "value": "忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率；犹豫：先攻-10",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "F13",
+      "value": "忠诚 0票；犹豫 1票\n1份含特质反馈 / 1份人物反馈",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "H13",
+      "value": "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "I13",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "J13",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "K13",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "L13",
+      "value": -10,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "M13",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "N13",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "O13",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "P13",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "C24",
+      "value": "肥胖",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "D24",
+      "value": "巨大",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "E24",
+      "value": "肥胖：生命+10、疲劳上限-10；巨大：近战伤害×1.10；近防-5、远防-5",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "F24",
+      "value": "肥胖 1票；巨大 0票\n1份含特质反馈 / 1份人物反馈",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "H24",
+      "value": "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "I24",
+      "value": 10,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "J24",
+      "value": -10,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "K24",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "L24",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "M24",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "N24",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "O24",
+      "value": -5,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "P24",
+      "value": -5,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "C39",
+      "value": "肥胖",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "D39",
+      "value": "忠诚",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "E39",
+      "value": "肥胖：生命+10、疲劳上限-10；忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "I39",
+      "value": 10,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "J39",
+      "value": -10,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "K39",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "L39",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "M39",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "N39",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "O39",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "P39",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "经济模型",
+      "cell": "G5",
+      "value": "基础食物/人日",
+      "formula": false
+    },
+    {
+      "sheet": "经济模型",
+      "cell": "A3",
+      "value": "黄色为基础预算；食品支出另计贪吃每人每日+1食物，价格可改。具体名单含预备队；工资引用人物日薪。",
+      "formula": false
+    },
+    {
+      "sheet": "经济模型",
+      "cell": "I6",
+      "value": "=(B6*G6+COUNTIFS('人物特质'!C6:D6,\"贪吃\")+COUNTIFS('人物特质'!C7:D7,\"贪吃\")+COUNTIFS('人物特质'!C8:D8,\"贪吃\")+COUNTIFS('人物特质'!C10:D10,\"贪吃\")+COUNTIFS('人物特质'!C11:D11,\"贪吃\")+COUNTIFS('人物特质'!C12:D12,\"贪吃\"))*H6",
+      "formula": true
+    },
+    {
+      "sheet": "经济模型",
+      "cell": "I7",
+      "value": "=(B7*G7+COUNTIFS('人物特质'!C6:D6,\"贪吃\")+COUNTIFS('人物特质'!C7:D7,\"贪吃\")+COUNTIFS('人物特质'!C8:D8,\"贪吃\")+COUNTIFS('人物特质'!C9:D9,\"贪吃\")+COUNTIFS('人物特质'!C10:D10,\"贪吃\")+COUNTIFS('人物特质'!C11:D11,\"贪吃\")+COUNTIFS('人物特质'!C13:D13,\"贪吃\")+COUNTIFS('人物特质'!C14:D14,\"贪吃\")+COUNTIFS('人物特质'!C15:D15,\"贪吃\")+COUNTIFS('人物特质'!C16:D16,\"贪吃\")+COUNTIFS('人物特质'!C17:D17,\"贪吃\")+COUNTIFS('人物特质'!C18:D18,\"贪吃\"))*H7",
+      "formula": true
+    },
+    {
+      "sheet": "经济模型",
+      "cell": "I8",
+      "value": "=(B8*G8+COUNTIFS('人物特质'!C6:D6,\"贪吃\")+COUNTIFS('人物特质'!C7:D7,\"贪吃\")+COUNTIFS('人物特质'!C8:D8,\"贪吃\")+COUNTIFS('人物特质'!C9:D9,\"贪吃\")+COUNTIFS('人物特质'!C11:D11,\"贪吃\")+COUNTIFS('人物特质'!C19:D19,\"贪吃\")+COUNTIFS('人物特质'!C22:D22,\"贪吃\")+COUNTIFS('人物特质'!C13:D13,\"贪吃\")+COUNTIFS('人物特质'!C24:D24,\"贪吃\")+COUNTIFS('人物特质'!C25:D25,\"贪吃\")+COUNTIFS('人物特质'!C29:D29,\"贪吃\")+COUNTIFS('人物特质'!C28:D28,\"贪吃\")+COUNTIFS('人物特质'!C36:D36,\"贪吃\")+COUNTIFS('人物特质'!C39:D39,\"贪吃\")+COUNTIFS('人物特质'!C31:D31,\"贪吃\")+COUNTIFS('人物特质'!C33:D33,\"贪吃\"))*H8",
+      "formula": true
+    },
+    {
+      "sheet": "经济模型",
+      "cell": "I9",
+      "value": "=(B9*G9+COUNTIFS('人物特质'!C6:D6,\"贪吃\")+COUNTIFS('人物特质'!C7:D7,\"贪吃\")+COUNTIFS('人物特质'!C8:D8,\"贪吃\")+COUNTIFS('人物特质'!C9:D9,\"贪吃\")+COUNTIFS('人物特质'!C10:D10,\"贪吃\")+COUNTIFS('人物特质'!C11:D11,\"贪吃\")+COUNTIFS('人物特质'!C12:D12,\"贪吃\")+COUNTIFS('人物特质'!C13:D13,\"贪吃\")+COUNTIFS('人物特质'!C14:D14,\"贪吃\")+COUNTIFS('人物特质'!C15:D15,\"贪吃\")+COUNTIFS('人物特质'!C16:D16,\"贪吃\")+COUNTIFS('人物特质'!C17:D17,\"贪吃\")+COUNTIFS('人物特质'!C18:D18,\"贪吃\")+COUNTIFS('人物特质'!C19:D19,\"贪吃\")+COUNTIFS('人物特质'!C20:D20,\"贪吃\")+COUNTIFS('人物特质'!C21:D21,\"贪吃\")+COUNTIFS('人物特质'!C22:D22,\"贪吃\")+COUNTIFS('人物特质'!C23:D23,\"贪吃\")+COUNTIFS('人物特质'!C24:D24,\"贪吃\")+COUNTIFS('人物特质'!C25:D25,\"贪吃\")+COUNTIFS('人物特质'!C26:D26,\"贪吃\")+COUNTIFS('人物特质'!C27:D27,\"贪吃\")+COUNTIFS('人物特质'!C28:D28,\"贪吃\")+COUNTIFS('人物特质'!C29:D29,\"贪吃\")+COUNTIFS('人物特质'!C30:D30,\"贪吃\")+COUNTIFS('人物特质'!C31:D31,\"贪吃\")+COUNTIFS('人物特质'!C32:D32,\"贪吃\")+COUNTIFS('人物特质'!C33:D33,\"贪吃\")+COUNTIFS('人物特质'!C34:D34,\"贪吃\")+COUNTIFS('人物特质'!C35:D35,\"贪吃\")+COUNTIFS('人物特质'!C36:D36,\"贪吃\")+COUNTIFS('人物特质'!C37:D37,\"贪吃\")+COUNTIFS('人物特质'!C38:D38,\"贪吃\")+COUNTIFS('人物特质'!C39:D39,\"贪吃\")+COUNTIFS('人物特质'!C40:D40,\"贪吃\"))*H9",
+      "formula": true
+    },
+    {
+      "sheet": "总览",
+      "cell": "A3",
+      "value": "2026-09-29 V2.2 / v0.26.4；新战役实装基准。重甲缓冲55、阿飞和小酒瓶取消逐级耐力，希文第35日起。",
+      "formula": false
+    },
+    {
+      "sheet": "来源说明",
+      "cell": "C15",
+      "value": "v0.26.4新战役实装基准；修改输入后须重新编译Mod。",
+      "formula": false
+    }
+  ],
+  "authored_trait_images": [
+    {
+      "key": "cocky",
+      "row": 5,
+      "col": 2,
+      "sha256": "7a5a117e7db81210a4e6ec810f365ac93e782c37d5aae158e4d356e38de95a9d"
+    },
+    {
+      "key": "bright",
+      "row": 5,
+      "col": 3,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "strong",
+      "row": 6,
+      "col": 2,
+      "sha256": "03481031b06690fdb4e568ad99287811da3e07c235c27065944b92cf5b2b4eb1"
+    },
+    {
+      "key": "tough",
+      "row": 6,
+      "col": 3,
+      "sha256": "9ba467ea1c2bcbf707e0f79407a185a8260cacd46479a922949e3c7ea4600b2b"
+    },
+    {
+      "key": "bright",
+      "row": 7,
+      "col": 2,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "ailing",
+      "row": 7,
+      "col": 3,
+      "sha256": "ff9fd77df078f54858bbd854887c8d5bc2fe2242895d6720e04d92813ff9e603"
+    },
+    {
+      "key": "sure_footing",
+      "row": 8,
+      "col": 2,
+      "sha256": "091b944bc20aa500955df1008412ac0cbf5a0011d913af3f986f8d6446294298"
+    },
+    {
+      "key": "determined",
+      "row": 8,
+      "col": 3,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "bright",
+      "row": 9,
+      "col": 2,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "insecure",
+      "row": 9,
+      "col": 3,
+      "sha256": "ac7f061bb237b8d02e47eeb43419d176378732be1898829d6e6f6df67a6a85d5"
+    },
+    {
+      "key": "lucky",
+      "row": 10,
+      "col": 2,
+      "sha256": "7ab7b316c97041f178c543873350bb36309393f1a933dfa5d05e2354d2f19313"
+    },
+    {
+      "key": "optimist",
+      "row": 10,
+      "col": 3,
+      "sha256": "8fed3c397586c11f0a702848366508efebe15fc39d5596cf97d28080b9addcac"
+    },
+    {
+      "key": "gluttonous",
+      "row": 11,
+      "col": 2,
+      "sha256": "6f0085f761c64dd95feb17ffdd00b1064ddbfaec6d731ebffb098f8f361e8e50"
+    },
+    {
+      "key": "optimist",
+      "row": 11,
+      "col": 3,
+      "sha256": "8fed3c397586c11f0a702848366508efebe15fc39d5596cf97d28080b9addcac"
+    },
+    {
+      "key": "loyal",
+      "row": 12,
+      "col": 2,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "hesitant",
+      "row": 12,
+      "col": 3,
+      "sha256": "fe4d234dbc55e9b8829b0114ad75136dbc436922ab5e6712c3fb7eea85a75c9b"
+    },
+    {
+      "key": "determined",
+      "row": 13,
+      "col": 2,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "loyal",
+      "row": 13,
+      "col": 3,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "brave",
+      "row": 14,
+      "col": 2,
+      "sha256": "567f7dda3296acf70c4fe7d55671ac1fd3fec5c642cef73c807c836b41fc8fe1"
+    },
+    {
+      "key": "loyal",
+      "row": 14,
+      "col": 3,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "cocky",
+      "row": 15,
+      "col": 2,
+      "sha256": "7a5a117e7db81210a4e6ec810f365ac93e782c37d5aae158e4d356e38de95a9d"
+    },
+    {
+      "key": "drunkard",
+      "row": 15,
+      "col": 3,
+      "sha256": "2a63df1502cacba96bccfb644eb6d9f7c8a36f5744a08abdfd4c04fd241a5ef1"
+    },
+    {
+      "key": "sure_footing",
+      "row": 16,
+      "col": 2,
+      "sha256": "091b944bc20aa500955df1008412ac0cbf5a0011d913af3f986f8d6446294298"
+    },
+    {
+      "key": "dexterous",
+      "row": 16,
+      "col": 3,
+      "sha256": "58c96127b7ecb808ac550fd48101aad97b94a967dd3404baf3b1d12a02470d9a"
+    },
+    {
+      "key": "eagle_eyes",
+      "row": 17,
+      "col": 2,
+      "sha256": "5c90064e931e787ccde9b9fd317a5eb65227cae4582e26c17c46a568258559eb"
+    },
+    {
+      "key": "optimist",
+      "row": 17,
+      "col": 3,
+      "sha256": "8fed3c397586c11f0a702848366508efebe15fc39d5596cf97d28080b9addcac"
+    },
+    {
+      "key": "eagle_eyes",
+      "row": 18,
+      "col": 2,
+      "sha256": "5c90064e931e787ccde9b9fd317a5eb65227cae4582e26c17c46a568258559eb"
+    },
+    {
+      "key": "determined",
+      "row": 18,
+      "col": 3,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "strong",
+      "row": 19,
+      "col": 2,
+      "sha256": "03481031b06690fdb4e568ad99287811da3e07c235c27065944b92cf5b2b4eb1"
+    },
+    {
+      "key": "iron_jaw",
+      "row": 19,
+      "col": 3,
+      "sha256": "03be0f9e2c7802476bd4ee5c2dc1a4b1c64f0d9f325d72e332b0136d1b9b46d3"
+    },
+    {
+      "key": "swift",
+      "row": 20,
+      "col": 2,
+      "sha256": "1323c68a699cc75333034cef7f9b3499456534c3824e3e1994718267a0667dd9"
+    },
+    {
+      "key": "eagle_eyes",
+      "row": 20,
+      "col": 3,
+      "sha256": "5c90064e931e787ccde9b9fd317a5eb65227cae4582e26c17c46a568258559eb"
+    },
+    {
+      "key": "eagle_eyes",
+      "row": 21,
+      "col": 2,
+      "sha256": "5c90064e931e787ccde9b9fd317a5eb65227cae4582e26c17c46a568258559eb"
+    },
+    {
+      "key": "teamplayer",
+      "row": 21,
+      "col": 3,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "athletic",
+      "row": 22,
+      "col": 2,
+      "sha256": "c8b04e27157539a670f774cc95017285b76073bb456bd75e5d38d9dbf6c12ae0"
+    },
+    {
+      "key": "teamplayer",
+      "row": 22,
+      "col": 3,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "fat",
+      "row": 23,
+      "col": 2,
+      "sha256": "aad027430ce4715bc3762233ddd7b491cfbd3d70f2a0d8f06d3e2cfb493f7b37"
+    },
+    {
+      "key": "huge",
+      "row": 23,
+      "col": 3,
+      "sha256": "ce3a7b407ee525735cf4d10bf065f788117748cb42bf5c58e7368a7e7a7b3ad8"
+    },
+    {
+      "key": "determined",
+      "row": 24,
+      "col": 2,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "iron_lungs",
+      "row": 24,
+      "col": 3,
+      "sha256": "2b46e01e131a5daa930463a35aafbb8912e263c01cfd992d8e7bcc6a26421a9a"
+    },
+    {
+      "key": "bright",
+      "row": 25,
+      "col": 2,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "loyal",
+      "row": 25,
+      "col": 3,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "fearless",
+      "row": 26,
+      "col": 2,
+      "sha256": "aa3ebc43dd3b3b41ddaf0c8e261e9a92e80e4705994e7040e10d107879d21bf6"
+    },
+    {
+      "key": "teamplayer",
+      "row": 26,
+      "col": 3,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "dexterous",
+      "row": 27,
+      "col": 2,
+      "sha256": "58c96127b7ecb808ac550fd48101aad97b94a967dd3404baf3b1d12a02470d9a"
+    },
+    {
+      "key": "cocky",
+      "row": 27,
+      "col": 3,
+      "sha256": "7a5a117e7db81210a4e6ec810f365ac93e782c37d5aae158e4d356e38de95a9d"
+    },
+    {
+      "key": "brave",
+      "row": 28,
+      "col": 2,
+      "sha256": "567f7dda3296acf70c4fe7d55671ac1fd3fec5c642cef73c807c836b41fc8fe1"
+    },
+    {
+      "key": "teamplayer",
+      "row": 28,
+      "col": 3,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "cocky",
+      "row": 29,
+      "col": 2,
+      "sha256": "7a5a117e7db81210a4e6ec810f365ac93e782c37d5aae158e4d356e38de95a9d"
+    },
+    {
+      "key": "night_owl",
+      "row": 29,
+      "col": 3,
+      "sha256": "e0cbe94311c5888284903d0c209288970e22ae0c50aee7588e27f4b44ab359f1"
+    },
+    {
+      "key": "tough",
+      "row": 30,
+      "col": 2,
+      "sha256": "9ba467ea1c2bcbf707e0f79407a185a8260cacd46479a922949e3c7ea4600b2b"
+    },
+    {
+      "key": "pessimist",
+      "row": 30,
+      "col": 3,
+      "sha256": "6e0aab62b130ceffd0b11315a150689c33b5f79b449251f94db44121c9f588b5"
+    },
+    {
+      "key": "teamplayer",
+      "row": 31,
+      "col": 2,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "lucky",
+      "row": 31,
+      "col": 3,
+      "sha256": "7ab7b316c97041f178c543873350bb36309393f1a933dfa5d05e2354d2f19313"
+    },
+    {
+      "key": "swift",
+      "row": 32,
+      "col": 2,
+      "sha256": "1323c68a699cc75333034cef7f9b3499456534c3824e3e1994718267a0667dd9"
+    },
+    {
+      "key": "athletic",
+      "row": 32,
+      "col": 3,
+      "sha256": "c8b04e27157539a670f774cc95017285b76073bb456bd75e5d38d9dbf6c12ae0"
+    },
+    {
+      "key": "determined",
+      "row": 33,
+      "col": 2,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "athletic",
+      "row": 33,
+      "col": 3,
+      "sha256": "c8b04e27157539a670f774cc95017285b76073bb456bd75e5d38d9dbf6c12ae0"
+    },
+    {
+      "key": "sure_footing",
+      "row": 34,
+      "col": 2,
+      "sha256": "091b944bc20aa500955df1008412ac0cbf5a0011d913af3f986f8d6446294298"
+    },
+    {
+      "key": "loyal",
+      "row": 34,
+      "col": 3,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "strong",
+      "row": 35,
+      "col": 2,
+      "sha256": "03481031b06690fdb4e568ad99287811da3e07c235c27065944b92cf5b2b4eb1"
+    },
+    {
+      "key": "brute",
+      "row": 35,
+      "col": 3,
+      "sha256": "e4249e40f85b47ea98e9f35a64cd6576e09781135b0db38e08721676ef783e78"
+    },
+    {
+      "key": "teamplayer",
+      "row": 36,
+      "col": 2,
+      "sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86"
+    },
+    {
+      "key": "survivor",
+      "row": 36,
+      "col": 3,
+      "sha256": "c822b0dea6c6c55d987da351c51d9151cdb9b5188d0950adc2cd2f793e34eee1"
+    },
+    {
+      "key": "bright",
+      "row": 37,
+      "col": 2,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "determined",
+      "row": 37,
+      "col": 3,
+      "sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df"
+    },
+    {
+      "key": "fat",
+      "row": 38,
+      "col": 2,
+      "sha256": "aad027430ce4715bc3762233ddd7b491cfbd3d70f2a0d8f06d3e2cfb493f7b37"
+    },
+    {
+      "key": "loyal",
+      "row": 38,
+      "col": 3,
+      "sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3"
+    },
+    {
+      "key": "bright",
+      "row": 39,
+      "col": 2,
+      "sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596"
+    },
+    {
+      "key": "athletic",
+      "row": 39,
+      "col": 3,
+      "sha256": "c8b04e27157539a670f774cc95017285b76073bb456bd75e5d38d9dbf6c12ae0"
+    }
+  ],
+  "workbook_audit": {
+    "changed_cells": [
+      {
+        "sheet": 1,
+        "cell": "A3",
+        "before": [
+          "",
+          "2026-09-29 V2.2 / v0.26.3；新战役实装基准。重甲缓冲55、阿飞和小酒瓶取消逐级耐力，希文第35日起。"
+        ],
+        "after": [
+          "",
+          "2026-09-29 V2.2 / v0.26.4；新战役实装基准。重甲缓冲55、阿飞和小酒瓶取消逐级耐力，希文第35日起。"
+        ]
+      },
+      {
+        "sheet": 1,
+        "cell": "B12",
+        "before": [
+          "'经济模型'!O9",
+          2064.590364584901
+        ],
+        "after": [
+          "'经济模型'!O9",
+          2067.590364584901
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "I6",
+        "before": [
+          "B6*G6*H6",
+          36.0
+        ],
+        "after": [
+          "(B6*G6+COUNTIFS('人物特质'!C6:D6,\"贪吃\")+COUNTIFS('人物特质'!C7:D7,\"贪吃\")+COUNTIFS('人物特质'!C8:D8,\"贪吃\")+COUNTIFS('人物特质'!C10:D10,\"贪吃\")+COUNTIFS('人物特质'!C11:D11,\"贪吃\")+COUNTIFS('人物特质'!C12:D12,\"贪吃\"))*H6",
+          39.0
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "I7",
+        "before": [
+          "B7*G7*H7",
+          72.0
+        ],
+        "after": [
+          "(B7*G7+COUNTIFS('人物特质'!C6:D6,\"贪吃\")+COUNTIFS('人物特质'!C7:D7,\"贪吃\")+COUNTIFS('人物特质'!C8:D8,\"贪吃\")+COUNTIFS('人物特质'!C9:D9,\"贪吃\")+COUNTIFS('人物特质'!C10:D10,\"贪吃\")+COUNTIFS('人物特质'!C11:D11,\"贪吃\")+COUNTIFS('人物特质'!C13:D13,\"贪吃\")+COUNTIFS('人物特质'!C14:D14,\"贪吃\")+COUNTIFS('人物特质'!C15:D15,\"贪吃\")+COUNTIFS('人物特质'!C16:D16,\"贪吃\")+COUNTIFS('人物特质'!C17:D17,\"贪吃\")+COUNTIFS('人物特质'!C18:D18,\"贪吃\"))*H7",
+          72.0
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "P9",
+        "before": [
+          "M9*7",
+          10952.132552094306
+        ],
+        "after": [
+          "M9*7",
+          10973.132552094306
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "P6",
+        "before": [
+          "M6*7",
+          989.1000000000001
+        ],
+        "after": [
+          "M6*7",
+          1010.1000000000001
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "G5",
+        "before": [
+          "",
+          "食物量/人日"
+        ],
+        "after": [
+          "",
+          "基础食物/人日"
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "I8",
+        "before": [
+          "B8*G8*H8",
+          96.0
+        ],
+        "after": [
+          "(B8*G8+COUNTIFS('人物特质'!C6:D6,\"贪吃\")+COUNTIFS('人物特质'!C7:D7,\"贪吃\")+COUNTIFS('人物特质'!C8:D8,\"贪吃\")+COUNTIFS('人物特质'!C9:D9,\"贪吃\")+COUNTIFS('人物特质'!C11:D11,\"贪吃\")+COUNTIFS('人物特质'!C19:D19,\"贪吃\")+COUNTIFS('人物特质'!C22:D22,\"贪吃\")+COUNTIFS('人物特质'!C13:D13,\"贪吃\")+COUNTIFS('人物特质'!C24:D24,\"贪吃\")+COUNTIFS('人物特质'!C25:D25,\"贪吃\")+COUNTIFS('人物特质'!C29:D29,\"贪吃\")+COUNTIFS('人物特质'!C28:D28,\"贪吃\")+COUNTIFS('人物特质'!C36:D36,\"贪吃\")+COUNTIFS('人物特质'!C39:D39,\"贪吃\")+COUNTIFS('人物特质'!C31:D31,\"贪吃\")+COUNTIFS('人物特质'!C33:D33,\"贪吃\"))*H8",
+          96.0
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "M9",
+        "before": [
+          "F9+I9+J9+K9+L9",
+          1564.590364584901
+        ],
+        "after": [
+          "F9+I9+J9+K9+L9",
+          1567.590364584901
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "A3",
+        "before": [
+          "",
+          "黄色为可编辑预算；人数固定对应所列名单，工资引用成员日薪。收入按实际净入账；包括预备队。"
+        ],
+        "after": [
+          "",
+          "黄色为基础预算；食品支出另计贪吃每人每日+1食物，价格可改。具体名单含预备队；工资引用人物日薪。"
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "I9",
+        "before": [
+          "B9*G9*H9",
+          210.0
+        ],
+        "after": [
+          "(B9*G9+COUNTIFS('人物特质'!C6:D6,\"贪吃\")+COUNTIFS('人物特质'!C7:D7,\"贪吃\")+COUNTIFS('人物特质'!C8:D8,\"贪吃\")+COUNTIFS('人物特质'!C9:D9,\"贪吃\")+COUNTIFS('人物特质'!C10:D10,\"贪吃\")+COUNTIFS('人物特质'!C11:D11,\"贪吃\")+COUNTIFS('人物特质'!C12:D12,\"贪吃\")+COUNTIFS('人物特质'!C13:D13,\"贪吃\")+COUNTIFS('人物特质'!C14:D14,\"贪吃\")+COUNTIFS('人物特质'!C15:D15,\"贪吃\")+COUNTIFS('人物特质'!C16:D16,\"贪吃\")+COUNTIFS('人物特质'!C17:D17,\"贪吃\")+COUNTIFS('人物特质'!C18:D18,\"贪吃\")+COUNTIFS('人物特质'!C19:D19,\"贪吃\")+COUNTIFS('人物特质'!C20:D20,\"贪吃\")+COUNTIFS('人物特质'!C21:D21,\"贪吃\")+COUNTIFS('人物特质'!C22:D22,\"贪吃\")+COUNTIFS('人物特质'!C23:D23,\"贪吃\")+COUNTIFS('人物特质'!C24:D24,\"贪吃\")+COUNTIFS('人物特质'!C25:D25,\"贪吃\")+COUNTIFS('人物特质'!C26:D26,\"贪吃\")+COUNTIFS('人物特质'!C27:D27,\"贪吃\")+COUNTIFS('人物特质'!C28:D28,\"贪吃\")+COUNTIFS('人物特质'!C29:D29,\"贪吃\")+COUNTIFS('人物特质'!C30:D30,\"贪吃\")+COUNTIFS('人物特质'!C31:D31,\"贪吃\")+COUNTIFS('人物特质'!C32:D32,\"贪吃\")+COUNTIFS('人物特质'!C33:D33,\"贪吃\")+COUNTIFS('人物特质'!C34:D34,\"贪吃\")+COUNTIFS('人物特质'!C35:D35,\"贪吃\")+COUNTIFS('人物特质'!C36:D36,\"贪吃\")+COUNTIFS('人物特质'!C37:D37,\"贪吃\")+COUNTIFS('人物特质'!C38:D38,\"贪吃\")+COUNTIFS('人物特质'!C39:D39,\"贪吃\")+COUNTIFS('人物特质'!C40:D40,\"贪吃\"))*H9",
+          213.0
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "M6",
+        "before": [
+          "F6+I6+J6+K6+L6",
+          141.3
+        ],
+        "after": [
+          "F6+I6+J6+K6+L6",
+          144.3
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "O6",
+        "before": [
+          "M6+N6",
+          291.3
+        ],
+        "after": [
+          "M6+N6",
+          294.3
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "O9",
+        "before": [
+          "M9+N9",
+          2064.590364584901
+        ],
+        "after": [
+          "M9+N9",
+          2067.590364584901
+        ]
+      },
+      {
+        "sheet": 15,
+        "cell": "C15",
+        "before": [
+          "",
+          "v0.26.3新战役实装基准；修改输入后须重新编译Mod。"
+        ],
+        "after": [
+          "",
+          "v0.26.4新战役实装基准；修改输入后须重新编译Mod。"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "C12",
+        "before": [
+          "",
+          "团队协作"
+        ],
+        "after": [
+          "",
+          "贪吃"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "D9",
+        "before": [
+          "",
+          "铁肺"
+        ],
+        "after": [
+          "",
+          "坚定"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "AA24",
+        "before": [
+          "'属性成长'!D156-O24",
+          6.0
+        ],
+        "after": [
+          "'属性成长'!D156-O24",
+          11.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "D24",
+        "before": [
+          "",
+          "忠诚"
+        ],
+        "after": [
+          "",
+          "巨大"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "J24",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          -10.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "V24",
+        "before": [
+          "'属性成长'!D151-J24",
+          104.0
+        ],
+        "after": [
+          "'属性成长'!D151-J24",
+          114.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "D12",
+        "before": [
+          "",
+          "健步如飞"
+        ],
+        "after": [
+          "",
+          "乐观"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "H12",
+        "before": [
+          "",
+          "设计补全，暂无投票支持"
+        ],
+        "after": [
+          "",
+          "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "O24",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          -5.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "E9",
+        "before": [
+          "",
+          "步伐稳健：近防+5；铁肺：每回合疲劳恢复+3"
+        ],
+        "after": [
+          "",
+          "步伐稳健：近防+5；坚定：心情至少中立时，以自信士气开战；不永久增加八维"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "F12",
+        "before": [
+          "",
+          "暂无特质票，按V2定位补全"
+        ],
+        "after": [
+          "",
+          "贪吃 0票；乐观 0票\n0份含特质反馈 / 1份人物反馈"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "V39",
+        "before": [
+          "'属性成长'!D271-J39",
+          108.0
+        ],
+        "after": [
+          "'属性成长'!D271-J39",
+          118.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "H24",
+        "before": [
+          "",
+          "参考1份含特质反馈；按角色定位选取，非票数自动采纳"
+        ],
+        "after": [
+          "",
+          "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "AB24",
+        "before": [
+          "'属性成长'!D157-P24",
+          5.0
+        ],
+        "after": [
+          "'属性成长'!D157-P24",
+          10.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "C24",
+        "before": [
+          "",
+          "强健"
+        ],
+        "after": [
+          "",
+          "肥胖"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "E12",
+        "before": [
+          "",
+          "团队协作：攻击同阵营目标时近攻/远攻倍率×0.5，减少误伤；不是全队增伤；健步如飞：每格移动疲劳成本-2；仍受实际技能最低成本约束"
+        ],
+        "after": [
+          "",
+          "贪吃：每天额外消耗1单位食物；断粮时更容易离队（原版判定）；乐观：正向士气检查决心+5；坏心情消退更快"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "E13",
+        "before": [
+          "",
+          "幸存者：可存活的倒地判定倍率×2.72；斩首等必死情况不因此复活；犹豫：先攻-10"
+        ],
+        "after": [
+          "",
+          "忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率；犹豫：先攻-10"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "F13",
+        "before": [
+          "",
+          "幸存者 1票；犹豫 1票\n1份含特质反馈 / 1份人物反馈"
+        ],
+        "after": [
+          "",
+          "忠诚 0票；犹豫 1票\n1份含特质反馈 / 1份人物反馈"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "E24",
+        "before": [
+          "",
+          "强健：生命+10；忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率"
+        ],
+        "after": [
+          "",
+          "肥胖：生命+10、疲劳上限-10；巨大：近战伤害×1.10；近防-5、远防-5"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "F9",
+        "before": [
+          "",
+          "步伐稳健 2票；铁肺 1票\n3份含特质反馈 / 5份人物反馈"
+        ],
+        "after": [
+          "",
+          "步伐稳健 2票；坚定 0票\n3份含特质反馈 / 5份人物反馈"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "H9",
+        "before": [
+          "",
+          "参考3份含特质反馈；按角色定位选取，非票数自动采纳"
+        ],
+        "after": [
+          "",
+          "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "P24",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          -5.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "C13",
+        "before": [
+          "",
+          "幸存者"
+        ],
+        "after": [
+          "",
+          "忠诚"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "F24",
+        "before": [
+          "",
+          "强健 1票；忠诚 1票\n1份含特质反馈 / 1份人物反馈"
+        ],
+        "after": [
+          "",
+          "肥胖 1票；巨大 0票\n1份含特质反馈 / 1份人物反馈"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "J39",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          -10.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "H13",
+        "before": [
+          "",
+          "参考1份含特质反馈；按角色定位选取，非票数自动采纳"
+        ],
+        "after": [
+          "",
+          "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖"
+        ]
+      }
+    ],
+    "formula_changes_limited_to_gluttonous_food": true,
+    "styles_tables_validation_preserved": true,
+    "visible_images": 177,
+    "trait_icons_replaced": 6,
+    "radars_preserved": 35,
+    "artifact_recalculation_and_visual_review": true,
+    "food_trait_toggle_recalculation_passed": true,
+    "image_preview_renderer_omits_images": true,
+    "image_relationships_anchors_and_native_bytes_verified": true,
+    "excel_desktop_recalculation": false
+  }
+}

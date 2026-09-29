@@ -1,0 +1,146 @@
+{
+  "key": "yaoyaoya",
+  "name": "瑶瑶牙",
+  "form": "default",
+  "brush": "afeix_p04_yaoyaoya",
+  "source": "art/runtime/portraits-v05/sources/user-v23/yaoyaoya.png",
+  "source_kind": "generated_custom",
+  "source_sha256": "36d401d588ec39cc1f48a0643370685554b1745cb75cb6412ef262f711569ccb",
+  "source_size": [
+    1199,
+    1312
+  ],
+  "source_box": null,
+  "alpha_crop_box": [
+    85,
+    84,
+    1115,
+    1248
+  ],
+  "alpha_threshold": 20,
+  "resized_size": [
+    88,
+    99
+  ],
+  "uniform_scale": 0.0854368932038835,
+  "placement": [
+    13,
+    43
+  ],
+  "output_size": [
+    114,
+    142
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "live_png_sha256": "16069a0f318abb69eee06f1356ec09c6ca6cdd186a29f5e74f29b38551223fa8",
+  "head_png_sha256": "162127251165933d6164005fc6f39512104aa9e7f898de551df094323028327d",
+  "dead_png_sha256": "8ff3b5463ac203726876ee593d6ae69227988b4a961f1f50161e0b386a935a01",
+  "corpse_head_png_sha256": "162127251165933d6164005fc6f39512104aa9e7f898de551df094323028327d",
+  "corpse_head_geometry": {
+    "left": -68,
+    "right": 46,
+    "top": -32,
+    "bottom": 110,
+    "width": 114,
+    "height": 142,
+    "offsetX": 0,
+    "offsetY": 0
+  },
+  "corpse_neck_anchor": [
+    68,
+    110
+  ],
+  "partition": "reviewed_neck_contour",
+  "head_seam": [
+    [
+      0,
+      107
+    ],
+    [
+      35,
+      107
+    ],
+    [
+      48,
+      112
+    ],
+    [
+      57,
+      118
+    ],
+    [
+      73,
+      118
+    ],
+    [
+      85,
+      112
+    ],
+    [
+      95,
+      107
+    ],
+    [
+      114,
+      107
+    ]
+  ],
+  "neck_guard": [
+    68,
+    110
+  ],
+  "split_reconstructs_complete_portrait": true,
+  "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+  "metadata": [
+    {
+      "id": "afeix_p04_yaoyaoya",
+      "img": "sprites\\afeix_p04_yaoyaoya.png",
+      "left": "-57",
+      "right": "57",
+      "top": "-51",
+      "bottom": "91",
+      "width": "114",
+      "height": "142",
+      "offsetY": "35"
+    },
+    {
+      "id": "afeix_p04_yaoyaoya_head",
+      "img": "sprites\\afeix_p04_yaoyaoya_head.png",
+      "left": "-57",
+      "right": "57",
+      "top": "-51",
+      "bottom": "91",
+      "width": "114",
+      "height": "142",
+      "offsetY": "35"
+    },
+    {
+      "id": "afeix_p04_yaoyaoya_dead",
+      "img": "sprites\\afeix_p04_yaoyaoya_dead.png",
+      "left": "-57",
+      "right": "57",
+      "top": "-71",
+      "bottom": "71",
+      "width": "114",
+      "height": "142",
+      "offsetX": "0",
+      "offsetY": "0"
+    },
+    {
+      "id": "afeix_p04_yaoyaoya_corpse_head",
+      "img": "sprites\\afeix_p04_yaoyaoya_corpse_head.png",
+      "left": "-68",
+      "right": "46",
+      "top": "-32",
+      "bottom": "110",
+      "width": "114",
+      "height": "142",
+      "offsetX": "0",
+      "offsetY": "0"
+    }
+  ],
+  "review_note": "保留面容、黑长发与朝右姿态，改为遮肩遮胸的米白色素衣。"
+}

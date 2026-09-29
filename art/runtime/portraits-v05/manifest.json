@@ -34,7 +34,7 @@
     "alpha_threshold": 20,
     "align": "bottom_center"
   },
-  "dead_mode": "same_pixels_centred_anchor_runtime_rotation",
+  "dead_mode": "native_equipped_body_with_pivoted_custom_head",
   "characters": [
     {
       "key": "afei",
@@ -451,13 +451,13 @@
         {
           "form": "default",
           "brush": "afeix_p04_lili",
-          "source": "art/runtime/portraits-v05/sources/facing/lili.png",
+          "source": "art/runtime/portraits-v05/sources/user-v18/lili.png",
           "source_kind": "generated_custom",
           "approved_for_export": true,
-          "source_sha256": "6ccd09c26eb53d119684fbcc5da43a40b0f07807ad38c4929247e6b842dbcbba",
+          "source_sha256": "181ad42c05cc78892753e0b4bc37ea25e8c5a0130015ec0bad9b43c3c24d1ea9",
           "source_box": null,
-          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
-          "source_revision": "v05_facing",
+          "review_note": "按用户指定李李参考重绘短棕发、温和眉眼与足球发卡；简洁素装，无固定弓箭。透明朝右胸像，已检查原尺寸及原版装备叠加，未实机验收。",
+          "source_revision": "user_v18",
           "before_facing_source": "art/runtime/portraits-v05/sources/lili.png",
           "before_facing_revision": "v05",
           "pose_record": "PROMPTS-facing-a.json",
@@ -499,10 +499,12 @@
             68,
             110
           ],
-          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+          "neck_review": "沿用逐人颈部折线；本轮已在新图原尺寸检查完整下颌、短颈与护甲衔接。头身合成逐像素还原完整图。",
+          "before_user_v18_source": "art/runtime/portraits-v05/sources/facing/lili.png",
+          "prompt_record": "PROMPTS-lili-v18.json"
         }
       ],
-      "likeness_status": "public_photo_based"
+      "likeness_status": "user_provided_character_reference"
     },
     {
       "key": "xiaoyueya",
@@ -807,8 +809,66 @@
       "likeness_status": "public_photo_based"
     },
     {
+      "key": "yanzi",
+      "name": "眼子",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_yanzi",
+          "source": "art/runtime/portraits-v05/sources/blue-team-v24/yanzi.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "d400d587157b2329e41770b412ccd12b0bbdb051f12eacf0024489f2b8ef459b",
+          "source_box": null,
+          "source_revision": "blue_team_v24",
+          "prompt_record": "PROMPTS-blue-team-v24.json",
+          "review_note": "内置 ImageGen 按仓库 Sylar 活动海报右侧人物绘制，黑短发与本人五官，短肩剑盾旅装。",
+          "head_seam": [
+            [
+              0,
+              110
+            ],
+            [
+              35,
+              110
+            ],
+            [
+              48,
+              121
+            ],
+            [
+              66,
+              122
+            ],
+            [
+              78,
+              120
+            ],
+            [
+              87,
+              112
+            ],
+            [
+              100,
+              110
+            ],
+            [
+              114,
+              110
+            ]
+          ],
+          "neck_guard": [
+            63,
+            115
+          ],
+          "neck_review": "游戏尺寸下逐人检查下颌与颈部，身体与头部互补分层；原生护甲、头盔继续叠加。"
+        }
+      ],
+      "likeness_status": "archived_photo_reference"
+    },
+    {
       "key": "tiantong",
-      "name": "亿口甜筒",
+      "name": "小虎",
       "forms": [
         {
           "form": "default",
@@ -930,7 +990,7 @@
     },
     {
       "key": "xiaopangxu",
-      "name": "小胖徐不快乐",
+      "name": "小胖",
       "forms": [
         {
           "form": "default",
@@ -1110,21 +1170,19 @@
     },
     {
       "key": "xiaohani",
-      "name": "小哈尼",
+      "name": "罗一可",
       "forms": [
         {
           "form": "default",
           "brush": "afeix_p04_xiaohani",
-          "source": "art/runtime/portraits-v05/sources/facing/xiaohani.png",
+          "source": "art/runtime/portraits-v05/sources/blue-team-v24/luoyike.png",
           "source_kind": "generated_custom",
           "approved_for_export": true,
-          "source_sha256": "3ab24602d7e056ce200d80abeabca766eab10806f3edc108e143306489c388ce",
+          "source_sha256": "dbdddc1ca7c19771318fe1df7bd8ff9249791d8410ab80b89f1c3f342ee1e6c0",
           "source_box": null,
-          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
-          "source_revision": "v05_facing",
-          "before_facing_source": "art/runtime/portraits-v05/sources/xiaohani.png",
-          "before_facing_revision": "v05",
-          "pose_record": "PROMPTS-facing-b.json",
+          "source_revision": "blue_team_v24",
+          "prompt_record": "PROMPTS-blue-team-v24.json",
+          "review_note": "内置 ImageGen 按用户罗一可照片绘制，人类长发、侧刘海与软面颊，梅紫围巾和小粮袋。",
           "head_seam": [
             [
               0,
@@ -1136,19 +1194,19 @@
             ],
             [
               48,
-              115
+              114
             ],
             [
               57,
-              122
+              118
             ],
             [
               73,
-              122
+              118
             ],
             [
               85,
-              115
+              114
             ],
             [
               95,
@@ -1163,10 +1221,10 @@
             68,
             110
           ],
-          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+          "neck_review": "游戏尺寸下逐人检查下颌与颈部，身体与头部互补分层；原生护甲、头盔继续叠加。"
         }
       ],
-      "likeness_status": "public_photo_based"
+      "likeness_status": "user_photo_reference"
     },
     {
       "key": "keke",
@@ -1175,16 +1233,16 @@
         {
           "form": "default",
           "brush": "afeix_p04_keke",
-          "source": "art/runtime/portraits-v05/sources/facing/keke.png",
+          "source": "art/runtime/portraits-v05/sources/user-v17/keke-photo-v2.png",
           "source_kind": "generated_custom",
           "approved_for_export": true,
-          "source_sha256": "bc4332eac882e43c31861767836e7fad306c694280a193a177f0b5947d5f5cfd",
+          "source_sha256": "dd3c2ec863aba882e61b2e03a5926c64c971ab8d76bedfb249177fbd25973e1b",
           "source_box": null,
-          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
-          "source_revision": "v05_facing",
+          "review_note": "根据用户提供的两张可可照片重绘圆润紧凑脸型、柔和眉眼、小巧鼻唇、薄刘海与低双马尾；保留红褐围巾、棕皮肩衣、月形搭扣、朝右姿态和完整下颌短颈。已检查游戏尺寸及装备叠加，尚未实机验收。",
+          "source_revision": "user_v17",
           "before_facing_source": "art/runtime/portraits-v05/sources/keke.png",
           "before_facing_revision": "v05",
-          "pose_record": "PROMPTS-facing-b.json",
+          "pose_record": "PROMPTS-v17-keke.json",
           "head_seam": [
             [
               0,
@@ -1223,10 +1281,13 @@
             68,
             110
           ],
-          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+          "neck_review": "2026-09-27：按两张照片重绘后的源图复核原颈部折线，保留完整下颌和短颈；身体与头层无损重组。素装、护甲及两类头盔已做离线对照。",
+          "before_user_v17_source": "art/runtime/portraits-v05/sources/user-v17/keke.png",
+          "before_user_v17_sha256": "729d89cd441487391bb306faf72f3a0be3ab59aa016d4eb4cb2a0cf463057e56",
+          "prompt_record": "PROMPTS-keke-photos-v17.json"
         }
       ],
-      "likeness_status": "public_photo_based"
+      "likeness_status": "user_supplied_reference"
     },
     {
       "key": "yuxiang",
@@ -1355,13 +1416,13 @@
         {
           "form": "default",
           "brush": "afeix_p04_meiya",
-          "source": "art/runtime/portraits-v05/sources/user-v12/meiya.png",
+          "source": "art/runtime/portraits-v05/sources/user-v17/meiya.png",
           "source_kind": "generated_custom",
           "approved_for_export": true,
-          "source_sha256": "d2ad153b2a672c0ca154bbf3629e4ebf0dd1edfc4f74efa331ebadbcec9ce603",
+          "source_sha256": "072cd373b42e05f1d3e87600c1db488328958e8d1e44fcead00c0aaadcc5afc0",
           "source_box": null,
-          "review_note": "按用户照片重绘长黑发、上挑眉、大眼睛与饱满唇形；不把帽子画入基础层，保留完整下巴和颈部。",
-          "source_revision": "user_v12",
+          "review_note": "根据用户提供的四张美伢正侧面照片校准长椭圆脸、细弧眉、自然杏眼、鼻形与轻微笑意；收敛旧稿粗眉和噘嘴。保留近中分长黑发、朝右姿态、棕皮肩衣和完整下颌颈部；不将帽子画入基础层。",
+          "source_revision": "user_v17",
           "before_facing_source": "art/runtime/portraits-v04/sources/meiya.png",
           "before_facing_revision": "v04_retained",
           "pose_record": "PROMPTS-facing-b.json",
@@ -1403,9 +1464,11 @@
             68,
             110
           ],
-          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。",
+          "neck_review": "2026-09-27：已按新源图复核原颈部折线；完整下颌及颈部在头层，身体与头层无损重组。素装、护甲、开面盔和全罩盔做离线对照；尚未实机验收。",
           "before_user_v12_source": "art/runtime/portraits-v05/sources/facing/meiya.png",
-          "prompt_record": "PROMPTS-meiya-v12.json"
+          "prompt_record": "PROMPTS-meiya-v17.json",
+          "before_user_v17_source": "art/runtime/portraits-v05/sources/user-v12/meiya.png",
+          "before_user_v17_sha256": "d2ad153b2a672c0ca154bbf3629e4ebf0dd1edfc4f74efa331ebadbcec9ce603"
         }
       ],
       "likeness_status": "user_supplied_reference"
@@ -1531,141 +1594,19 @@
       "likeness_status": "public_photo_based"
     },
     {
-      "key": "songnuanyang",
-      "name": "宋暖阳",
-      "forms": [
-        {
-          "form": "default",
-          "brush": "afeix_p04_songnuanyang",
-          "source": "art/runtime/portraits-v05/sources/facing/songnuanyang.png",
-          "source_kind": "generated_custom",
-          "approved_for_export": true,
-          "source_sha256": "def57bf4345ba4613b5022b0b8ba808d7f5fb6fa0e80a14c41a0af13250dd5ca",
-          "source_box": null,
-          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
-          "source_revision": "v05_facing",
-          "before_facing_source": "art/runtime/portraits-v05/sources/songnuanyang.png",
-          "before_facing_revision": "v05",
-          "pose_record": "PROMPTS-facing-b.json",
-          "head_seam": [
-            [
-              0,
-              109
-            ],
-            [
-              35,
-              109
-            ],
-            [
-              48,
-              114
-            ],
-            [
-              57,
-              121
-            ],
-            [
-              73,
-              121
-            ],
-            [
-              85,
-              114
-            ],
-            [
-              95,
-              109
-            ],
-            [
-              114,
-              109
-            ]
-          ],
-          "neck_guard": [
-            68,
-            110
-          ],
-          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
-        }
-      ],
-      "likeness_status": "public_photo_based"
-    },
-    {
-      "key": "xiaogui",
-      "name": "溺水小龟",
-      "forms": [
-        {
-          "form": "default",
-          "brush": "afeix_p04_xiaogui",
-          "source": "art/runtime/portraits-v05/sources/user-v12/xiaogui.png",
-          "source_kind": "generated_custom",
-          "approved_for_export": true,
-          "source_sha256": "cd2c4d78bdb7515a3f6730c60b71fdbedd571eba01e78b609a77545454ba87e0",
-          "source_box": null,
-          "review_note": "按用户海报的大龟形象重绘圆脸、浅橄榄绿皮肤和头顶斑纹；去除老爬虫凶相，去除海报及球队元素。",
-          "source_revision": "user_v12",
-          "before_facing_source": "art/runtime/portraits-v04/sources/xiaogui.png",
-          "before_facing_revision": "v04_retained",
-          "pose_record": "PROMPTS-facing-b.json",
-          "before_user_v12_source": "art/runtime/portraits-v05/sources/facing/xiaogui.png",
-          "prompt_record": "PROMPTS-user-v12.json",
-          "head_seam": [
-            [
-              0,
-              108
-            ],
-            [
-              35,
-              108
-            ],
-            [
-              48,
-              113
-            ],
-            [
-              57,
-              123
-            ],
-            [
-              73,
-              123
-            ],
-            [
-              85,
-              113
-            ],
-            [
-              95,
-              108
-            ],
-            [
-              114,
-              108
-            ]
-          ],
-          "neck_guard": [
-            68,
-            110
-          ],
-          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
-        }
-      ],
-      "likeness_status": "user_supplied_mascot"
-    },
-    {
       "key": "naigai",
       "name": "奶盖",
       "forms": [
         {
           "form": "default",
           "brush": "afeix_p04_naigai",
-          "source": "art/runtime/portraits-v05/sources/facing/naigai.png",
+          "source": "art/runtime/portraits-v05/sources/user-v18/naigai.png",
           "source_kind": "generated_custom",
           "approved_for_export": true,
-          "source_sha256": "b70b73981f0382c3425f046e3b2db0d21d5e0882a93d49864bf5427a1b9b530f",
+          "source_sha256": "6e5e371558394c4b61cff3f859fd3ee94c4d1ba4eeaab78c3a4dbbb6719c15bf",
           "source_box": null,
-          "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
-          "source_revision": "v05_facing",
+          "review_note": "按四张用户照片校正奶盖的齐下巴黑色短发、柔和脸型与眉眼唇形；保留棕色短披肩。透明朝右胸像，已检查原尺寸及原版装备叠加，未实机验收。",
+          "source_revision": "user_v18",
           "before_facing_source": "art/runtime/portraits-v05/sources/naigai.png",
           "before_facing_revision": "v05",
           "pose_record": "PROMPTS-facing-b.json",
@@ -1707,10 +1648,12 @@
             68,
             110
           ],
-          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+          "neck_review": "沿用逐人颈部折线；本轮已在新图原尺寸检查完整下颌、短颈与护甲衔接。头身合成逐像素还原完整图。",
+          "before_user_v18_source": "art/runtime/portraits-v05/sources/facing/naigai.png",
+          "prompt_record": "PROMPTS-naigai-v18.json"
         }
       ],
-      "likeness_status": "public_photo_based"
+      "likeness_status": "user_provided_photo_reference"
     },
     {
       "key": "xiaojie",
@@ -2019,18 +1962,18 @@
         {
           "form": "default",
           "brush": "afeix_p04_yaoyaoya",
-          "source": "art/runtime/portraits-v05/sources/user-v12/yaoyaoya.png",
+          "source": "art/runtime/portraits-v05/sources/user-v23/yaoyaoya.png",
           "source_kind": "generated_custom",
           "approved_for_export": true,
-          "source_sha256": "829a7913d4ff89a0a44a49c5d0943b7601ef4cdd4e956c6f2da72420919ae1fe",
+          "source_sha256": "36d401d588ec39cc1f48a0643370685554b1745cb75cb6412ef262f711569ccb",
           "source_box": null,
-          "review_note": "按用户提供形象重绘黑长发、女性面部和健壮肩颈；短胸像保留力量感，移除旧红色马尾及武器。",
-          "source_revision": "user_v12",
+          "review_note": "按用户要求将露肩裹胸改为遮住双肩、胸口和上臂的米白色素衣；保留黑长发、面容、朝右姿态及原画风。",
+          "source_revision": "user_v23",
           "before_facing_source": "art/runtime/portraits-v04/sources/yaoyaoya.png",
           "before_facing_revision": "v04_retained",
           "pose_record": "PROMPTS-facing-b.json",
           "before_user_v12_source": "art/runtime/portraits-v05/sources/facing/yaoyaoya.png",
-          "prompt_record": "PROMPTS-user-v12.json",
+          "prompt_record": "PROMPTS-yaoyaoya-v23.json",
           "head_seam": [
             [
               0,
@@ -2069,7 +2012,8 @@
             68,
             110
           ],
-          "neck_review": "v0.12：分界下移至完整下巴以下，中央颈部延伸至衣领；保持原图像素和原版装备叠加。"
+          "neck_review": "2026-09-28：沿用原颈部分界与支点，完整保留下颌和颈部；素装、护甲、开面盔及全罩盔离线合成检查通过，未实机验收。",
+          "before_user_v23_source": "art/runtime/portraits-v05/sources/user-v12/yaoyaoya.png"
         }
       ],
       "likeness_status": "user_supplied_reference"
@@ -2135,20 +2079,20 @@
       "likeness_status": "public_photo_based"
     },
     {
-      "key": "chenzhihan",
-      "name": "陈知含",
+      "key": "songnuanyang",
+      "name": "宋暖阳",
       "forms": [
         {
           "form": "default",
-          "brush": "afeix_p04_chenzhihan",
-          "source": "art/runtime/portraits-v05/sources/facing/chenzhihan.png",
+          "brush": "afeix_p04_songnuanyang",
+          "source": "art/runtime/portraits-v05/sources/facing/songnuanyang.png",
           "source_kind": "generated_custom",
           "approved_for_export": true,
-          "source_sha256": "432c21fa1195928a5467b0ba2a731dd236ae4787bc8ad99dfef489e5b6810ae5",
+          "source_sha256": "def57bf4345ba4613b5022b0b8ba808d7f5fb6fa0e80a14c41a0af13250dd5ca",
           "source_box": null,
           "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。",
           "source_revision": "v05_facing",
-          "before_facing_source": "art/runtime/portraits-v05/sources/chenzhihan.png",
+          "before_facing_source": "art/runtime/portraits-v05/sources/songnuanyang.png",
           "before_facing_revision": "v05",
           "pose_record": "PROMPTS-facing-b.json",
           "head_seam": [
@@ -2166,11 +2110,11 @@
             ],
             [
               57,
-              122
+              121
             ],
             [
               73,
-              122
+              121
             ],
             [
               85,
@@ -2193,6 +2137,70 @@
         }
       ],
       "likeness_status": "public_photo_based"
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "forms": [
+        {
+          "form": "default",
+          "brush": "afeix_p04_xiaogui",
+          "source": "art/runtime/portraits-v05/sources/user-v17/xiaogui.png",
+          "source_kind": "generated_custom",
+          "approved_for_export": true,
+          "source_sha256": "ea47d8b87dcbd4358e6e75c8613d870ed0aa76f22b7b77787b0d5ecfc8a03157",
+          "source_box": null,
+          "review_note": "按两张用户吉祥物图及明确要求重绘：保留醒目亮粉蝴蝶结，提亮浅苹果绿皮肤和奶黄色腹甲，圆脸笑容、绿色斑纹、粉色爪印。朝右，保留龟壳和皮带；不加入直播设备与球队元素。蝴蝶结在游戏尺寸可辨认；全罩头盔右缘仍有龟脸外露，尚未实机验收。",
+          "source_revision": "user_v17",
+          "before_facing_source": "art/runtime/portraits-v04/sources/xiaogui.png",
+          "before_facing_revision": "v04_retained",
+          "pose_record": "PROMPTS-facing-b.json",
+          "before_user_v12_source": "art/runtime/portraits-v05/sources/facing/xiaogui.png",
+          "prompt_record": "PROMPTS-xiaogui-v17.json",
+          "head_seam": [
+            [
+              0,
+              108
+            ],
+            [
+              35,
+              108
+            ],
+            [
+              48,
+              113
+            ],
+            [
+              57,
+              123
+            ],
+            [
+              73,
+              123
+            ],
+            [
+              85,
+              113
+            ],
+            [
+              95,
+              108
+            ],
+            [
+              114,
+              108
+            ]
+          ],
+          "neck_guard": [
+            68,
+            110
+          ],
+          "neck_review": "2026-09-27：按新图复核原颈部折线，完整下颌及短颈保留；身体与头层无损重组。素装、穿甲和两类头盔已做离线对照；头盔遮挡与宽龟脸外露仍需实机复核。",
+          "before_user_v17_source": "art/runtime/portraits-v05/sources/user-v12/xiaogui.png",
+          "before_user_v17_sha256": "cd2c4d78bdb7515a3f6730c60b71fdbedd571eba01e78b609a77545454ba87e0"
+        }
+      ],
+      "likeness_status": "user_supplied_mascot"
     }
   ],
   "source_revision": "v05",

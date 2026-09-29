@@ -1,0 +1,3536 @@
+{
+  "reason": "User approved heavy fatigue target55, six-member stat allocation, zero dedicated level bonuses for Afei and Bottle, Bottle resolve3stars moved to stamina, Xiwen day35 and unlock improvements, new campaigns only",
+  "before_workbook_sha256": "7ac85eda90a9af0932735ef25857bd35a3aad77cd69a6ab1d5cf4f7773be8388",
+  "workbook_sha256": "5441fb1bfdd7f439c2fcf1e16688bce1248652f0953c6fc4851e6024f244aca1",
+  "before_proposal_sha256": "d10046f019ae2bf1f2c6a491868e9c91f0bf280042f7fcab6dfce10c8d5a2305",
+  "proposal_sha256": "4b051b1ea31e8ae0ff883d1da8725978c7ba46e8e619ac35a612061138d3077c",
+  "authored_cells": [
+    {
+      "sheet": "属性成长",
+      "cell": "D6",
+      "value": 60,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D7",
+      "value": 106,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D8",
+      "value": 42,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D9",
+      "value": 90,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D11",
+      "value": 24,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F6",
+      "value": 3,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F7",
+      "value": 6,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F8",
+      "value": 1,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E31",
+      "value": 3,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E32",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D30",
+      "value": 64,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D31",
+      "value": 109,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D32",
+      "value": 48,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D33",
+      "value": 90,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D35",
+      "value": 26,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F30",
+      "value": 4,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F31",
+      "value": 4,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F32",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D95",
+      "value": 110,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D97",
+      "value": 98,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F94",
+      "value": 4,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F95",
+      "value": 4,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F96",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D183",
+      "value": 110,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D185",
+      "value": 105,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F182",
+      "value": 4,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F183",
+      "value": 4,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F184",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D231",
+      "value": 108,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D233",
+      "value": 111,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F230",
+      "value": 4,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F231",
+      "value": 4,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F232",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D263",
+      "value": 110,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D265",
+      "value": 104,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F262",
+      "value": 4,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F263",
+      "value": 4,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F264",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "Q6",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "Q9",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "E40",
+      "value": 35,
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "F40",
+      "value": 14,
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "G40",
+      "value": 5,
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "H40",
+      "value": 6,
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "I40",
+      "value": 5,
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "J40",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "来源说明",
+      "cell": "B21",
+      "value": 55,
+      "formula": false
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "L6",
+      "value": "='来源说明'!$B$21",
+      "formula": true
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "L7",
+      "value": "='来源说明'!$B$21",
+      "formula": true
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "L8",
+      "value": "='来源说明'!$B$21",
+      "formula": true
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "L9",
+      "value": "='来源说明'!$B$21",
+      "formula": true
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "L10",
+      "value": "='来源说明'!$B$21",
+      "formula": true
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "L11",
+      "value": "='来源说明'!$B$21",
+      "formula": true
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "L12",
+      "value": "='来源说明'!$B$21",
+      "formula": true
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "L13",
+      "value": "='来源说明'!$B$21",
+      "formula": true
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "L14",
+      "value": "='来源说明'!$B$21",
+      "formula": true
+    },
+    {
+      "sheet": "总览",
+      "cell": "A3",
+      "value": "2026-09-29 V2.2 / v0.26.2；新战役实装基准。重甲缓冲55、阿飞和小酒瓶取消逐级耐力，希文第35日起。",
+      "formula": false
+    },
+    {
+      "sheet": "总览",
+      "cell": "A20",
+      "value": "阿飞疲劳培养",
+      "formula": false
+    },
+    {
+      "sheet": "总览",
+      "cell": "B20",
+      "value": "106基础 + 6次普通疲劳成长",
+      "formula": false
+    },
+    {
+      "sheet": "总览",
+      "cell": "C20",
+      "value": "11级均值124；取消每级额外+3，生命3次、疲劳6次、决心1次、近攻近防各10次。",
+      "formula": false
+    },
+    {
+      "sheet": "总览",
+      "cell": "B21",
+      "value": "第35日起；2级590克朗",
+      "formula": false
+    },
+    {
+      "sheet": "总览",
+      "cell": "C21",
+      "value": "14战/5履约/6城/历史最高5级；进入候选队列，一级日薪9；不保证当天出现。",
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "A3",
+      "value": "门槛须全部满足；希文第35日起、14战、5履约、6城、历史最高5级入池，补级上限2。报价含装备，城镇修正前。",
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "D40",
+      "value": "中期轻装剑盾与走位支援",
+      "formula": false
+    },
+    {
+      "sheet": "成长总览",
+      "cell": "B40",
+      "value": "中期轻装剑盾与走位支援",
+      "formula": false
+    },
+    {
+      "sheet": "队长与事件",
+      "cell": "A3",
+      "value": "新战役实装基准；路线互斥，永久属性独立于临时命中+10预算。个人成长、路线、自行车分别记账。",
+      "formula": false
+    },
+    {
+      "sheet": "队长与事件",
+      "cell": "H14",
+      "value": "本体21+镜20=41；默认剧情后24+20=44。饰品可卸下，已实装。",
+      "formula": false
+    },
+    {
+      "sheet": "队长与事件",
+      "cell": "G14",
+      "value": "随希文招募赠送一件；计价0、负重0。2级总价590，镜子不加价。",
+      "formula": false
+    },
+    {
+      "sheet": "改动清单",
+      "cell": "E59",
+      "value": "124（正常培养均值）",
+      "formula": false
+    },
+    {
+      "sheet": "改动清单",
+      "cell": "F59",
+      "value": "取消额外逐级耐力；基础疲劳106，30项培养中分6次疲劳，生命与决心分配相应减少。",
+      "formula": false
+    },
+    {
+      "sheet": "改动清单",
+      "cell": "E60",
+      "value": "第35日起，2级590克朗；7级三选一、11级精通",
+      "formula": false
+    },
+    {
+      "sheet": "改动清单",
+      "cell": "F60",
+      "value": "中期轻装剑盾支援：14战/5履约/6城/历史最高5级；成长仍需本人3级3战。",
+      "formula": false
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "A3",
+      "value": "55为壮实后目标；按11级培养均值计算。身甲42、头盔20、武器18、包内5，壮实后负重67；不保证连续爆发。",
+      "formula": false
+    },
+    {
+      "sheet": "来源说明",
+      "cell": "C15",
+      "value": "v0.26.2新战役实装基准；修改输入后须重新编译Mod。",
+      "formula": false
+    },
+    {
+      "sheet": "来源说明",
+      "cell": "C21",
+      "value": "用户指定55；普通320/300重甲压力装，壮实后对照；培养均值不等于每次随机成长的保底。",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "A1",
+      "value": "35人固定特质与额外耐力",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "A3",
+      "value": "每人固定2项，剧情二选一另列。八维已含固定特质；阿飞和小酒瓶均取消额外等级加成，疲劳通过基础值与普通升级培养。",
+      "formula": false
+    },
+    {
+      "sheet": "现行对照",
+      "cell": "A3",
+      "value": "历史对照：保留V2实装前源码快照；当前v0.26.2参数见属性成长、招募节奏、技能选择和人物特质。",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "L36",
+      "value": "实装前无此技能；现已按本行V2参数接入。",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "L37",
+      "value": "实装前无此技能；现已按本行V2参数接入。",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "L38",
+      "value": "实装前无此技能；现已按本行V2参数接入。",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "L105",
+      "value": "实装前无此技能；现已按本行V2参数接入。",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "L106",
+      "value": "实装前无此技能；现已按本行V2参数接入。",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "L107",
+      "value": "实装前无此技能；现已按本行V2参数接入。",
+      "formula": false
+    }
+  ],
+  "workbook_audit": {
+    "changed_cells": [
+      {
+        "sheet": 1,
+        "cell": "B21",
+        "before": [
+          "",
+          "第6日起；470克朗；日薪9"
+        ],
+        "after": [
+          "",
+          "第35日起；2级590克朗"
+        ]
+      },
+      {
+        "sheet": 1,
+        "cell": "B10",
+        "before": [
+          "SUM('招募节奏'!P6:P40)",
+          36180.0
+        ],
+        "after": [
+          "SUM('招募节奏'!P6:P40)",
+          36300.0
+        ]
+      },
+      {
+        "sheet": 1,
+        "cell": "C21",
+        "before": [
+          "",
+          "3战/1履约/2城/最高2级；1级入队，7级三选一，11级精通。"
+        ],
+        "after": [
+          "",
+          "14战/5履约/6城/历史最高5级；进入候选队列，一级日薪9；不保证当天出现。"
+        ]
+      },
+      {
+        "sheet": 1,
+        "cell": "A3",
+        "before": [
+          "",
+          "2026-09-29 V2.1；16张表。新增固定特质、希文招募/技能、阿飞11级裸疲劳124。设计尚未实装。"
+        ],
+        "after": [
+          "",
+          "2026-09-29 V2.2 / v0.26.2；新战役实装基准。重甲缓冲55、阿飞和小酒瓶取消逐级耐力，希文第35日起。"
+        ]
+      },
+      {
+        "sheet": 1,
+        "cell": "B20",
+        "before": [
+          "",
+          "2～11级每级+3"
+        ],
+        "after": [
+          "",
+          "106基础 + 6次普通疲劳成长"
+        ]
+      },
+      {
+        "sheet": 1,
+        "cell": "A20",
+        "before": [
+          "",
+          "阿飞远征耐力"
+        ],
+        "after": [
+          "",
+          "阿飞疲劳培养"
+        ]
+      },
+      {
+        "sheet": 1,
+        "cell": "C20",
+        "before": [
+          "",
+          "11级累计+30，裸疲劳124；装备负重另扣，不占用30项培养。"
+        ],
+        "after": [
+          "",
+          "11级均值124；取消每级额外+3，生命3次、疲劳6次、决心1次、近攻近防各10次。"
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "L40",
+        "before": [
+          "MAX(1,MIN(J40,1+INT((K40-2)/2)))",
+          1.0
+        ],
+        "after": [
+          "MAX(1,MIN(J40,1+INT((K40-2)/2)))",
+          2.0
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "A3",
+        "before": [
+          "",
+          "所有门槛同时满足；希文第6日起、3战、1履约、2城、历史最高2级可招，规划1级。报价含装备，城镇修正前。"
+        ],
+        "after": [
+          "",
+          "门槛须全部满足；希文第35日起、14战、5履约、6城、历史最高5级入池，补级上限2。报价含装备，城镇修正前。"
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "I40",
+        "before": [
+          "",
+          2.0
+        ],
+        "after": [
+          "",
+          5.0
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "H40",
+        "before": [
+          "",
+          2.0
+        ],
+        "after": [
+          "",
+          6.0
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "G40",
+        "before": [
+          "",
+          1.0
+        ],
+        "after": [
+          "",
+          5.0
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "P40",
+        "before": [
+          "IF(Q40=1,0,ROUNDUP((M40+O40*'来源说明'!$B$6+'来源说明'!$B$7*(L40-1)^1.5)/10,0)*10)",
+          470.0
+        ],
+        "after": [
+          "IF(Q40=1,0,ROUNDUP((M40+O40*'来源说明'!$B$6+'来源说明'!$B$7*(L40-1)^1.5)/10,0)*10)",
+          590.0
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "F40",
+        "before": [
+          "",
+          3.0
+        ],
+        "after": [
+          "",
+          14.0
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "D40",
+        "before": [
+          "",
+          "早期轻装剑盾与走位支援"
+        ],
+        "after": [
+          "",
+          "中期轻装剑盾与走位支援"
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "J40",
+        "before": [
+          "",
+          1.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "E40",
+        "before": [
+          "",
+          6.0
+        ],
+        "after": [
+          "",
+          35.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "E31",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          3.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "N7",
+        "before": [
+          "'人物特质'!T6",
+          30.0
+        ],
+        "after": [
+          "'人物特质'!T6",
+          0.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M6",
+        "before": [
+          "D6+J6+F6*L6+N6",
+          70.0
+        ],
+        "after": [
+          "D6+J6+F6*L6+N6",
+          69.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA231",
+        "before": [
+          "M230",
+          78.0
+        ],
+        "after": [
+          "M230",
+          72.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F31",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          4.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA263",
+        "before": [
+          "M262",
+          85.0
+        ],
+        "after": [
+          "M262",
+          78.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "L31",
+        "before": [
+          "K31+E31*0.5",
+          3.0
+        ],
+        "after": [
+          "K31+E31*0.5",
+          4.5
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D33",
+        "before": [
+          "",
+          102.0
+        ],
+        "after": [
+          "",
+          90.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA185",
+        "before": [
+          "M184",
+          54.0
+        ],
+        "after": [
+          "M184",
+          48.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D31",
+        "before": [
+          "",
+          97.0
+        ],
+        "after": [
+          "",
+          109.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F231",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          4.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F230",
+        "before": [
+          "",
+          6.0
+        ],
+        "after": [
+          "",
+          4.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z11",
+        "before": [
+          "D11",
+          32.0
+        ],
+        "after": [
+          "D11",
+          24.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F6",
+        "before": [
+          "",
+          6.0
+        ],
+        "after": [
+          "",
+          3.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D95",
+        "before": [
+          "",
+          104.0
+        ],
+        "after": [
+          "",
+          110.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D9",
+        "before": [
+          "",
+          100.0
+        ],
+        "after": [
+          "",
+          90.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D265",
+        "before": [
+          "",
+          110.0
+        ],
+        "after": [
+          "",
+          104.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA264",
+        "before": [
+          "M263",
+          104.0
+        ],
+        "after": [
+          "M263",
+          122.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F182",
+        "before": [
+          "",
+          6.0
+        ],
+        "after": [
+          "",
+          4.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M232",
+        "before": [
+          "D232+J232+F232*L232+N232",
+          56.0
+        ],
+        "after": [
+          "D232+J232+F232*L232+N232",
+          50.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D7",
+        "before": [
+          "",
+          94.0
+        ],
+        "after": [
+          "",
+          106.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "L32",
+        "before": [
+          "K32+E32*0.5",
+          4.5
+        ],
+        "after": [
+          "K32+E32*0.5",
+          3.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M262",
+        "before": [
+          "D262+J262+F262*L262+N262",
+          85.0
+        ],
+        "after": [
+          "D262+J262+F262*L262+N262",
+          78.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA35",
+        "before": [
+          "M35",
+          34.0
+        ],
+        "after": [
+          "M35",
+          26.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M32",
+        "before": [
+          "D32+J32+F32*L32+N32",
+          62.0
+        ],
+        "after": [
+          "D32+J32+F32*L32+N32",
+          54.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D97",
+        "before": [
+          "",
+          104.0
+        ],
+        "after": [
+          "",
+          98.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F264",
+        "before": [
+          "",
+          4.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z7",
+        "before": [
+          "D6",
+          52.0
+        ],
+        "after": [
+          "D6",
+          60.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M30",
+        "before": [
+          "D30+J30+F30*L30+N30",
+          74.0
+        ],
+        "after": [
+          "D30+J30+F30*L30+N30",
+          76.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA233",
+        "before": [
+          "M232",
+          56.0
+        ],
+        "after": [
+          "M232",
+          50.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D30",
+        "before": [
+          "",
+          56.0
+        ],
+        "after": [
+          "",
+          64.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M11",
+        "before": [
+          "D11+J11+F11*L11+N11",
+          32.0
+        ],
+        "after": [
+          "D11+J11+F11*L11+N11",
+          24.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F184",
+        "before": [
+          "",
+          4.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z31",
+        "before": [
+          "D30",
+          56.0
+        ],
+        "after": [
+          "D30",
+          64.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M8",
+        "before": [
+          "D8+J8+F8*L8+N8",
+          56.0
+        ],
+        "after": [
+          "D8+J8+F8*L8+N8",
+          48.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M233",
+        "before": [
+          "D233+J233+F233*L233+N233",
+          116.0
+        ],
+        "after": [
+          "D233+J233+F233*L233+N233",
+          114.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA265",
+        "before": [
+          "M264",
+          67.0
+        ],
+        "after": [
+          "M264",
+          60.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M9",
+        "before": [
+          "D9+J9+F9*L9+N9",
+          100.0
+        ],
+        "after": [
+          "D9+J9+F9*L9+N9",
+          90.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA184",
+        "before": [
+          "M183",
+          100.0
+        ],
+        "after": [
+          "M183",
+          122.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA95",
+        "before": [
+          "M94",
+          78.0
+        ],
+        "after": [
+          "M94",
+          72.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z184",
+        "before": [
+          "D183",
+          100.0
+        ],
+        "after": [
+          "D183",
+          110.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D233",
+        "before": [
+          "",
+          113.0
+        ],
+        "after": [
+          "",
+          111.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "E32",
+        "before": [
+          "",
+          3.0
+        ],
+        "after": [
+          "",
+          0.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA31",
+        "before": [
+          "M30",
+          74.0
+        ],
+        "after": [
+          "M30",
+          76.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M231",
+        "before": [
+          "D231+J231+F231*L231+N231",
+          106.0
+        ],
+        "after": [
+          "D231+J231+F231*L231+N231",
+          122.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M182",
+        "before": [
+          "D182+J182+F182*L182+N182",
+          75.0
+        ],
+        "after": [
+          "D182+J182+F182*L182+N182",
+          69.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D11",
+        "before": [
+          "",
+          32.0
+        ],
+        "after": [
+          "",
+          24.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA33",
+        "before": [
+          "M32",
+          62.0
+        ],
+        "after": [
+          "M32",
+          54.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z264",
+        "before": [
+          "D263",
+          104.0
+        ],
+        "after": [
+          "D263",
+          110.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M184",
+        "before": [
+          "D184+J184+F184*L184+N184",
+          54.0
+        ],
+        "after": [
+          "D184+J184+F184*L184+N184",
+          48.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D6",
+        "before": [
+          "",
+          52.0
+        ],
+        "after": [
+          "",
+          60.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA96",
+        "before": [
+          "M95",
+          104.0
+        ],
+        "after": [
+          "M95",
+          122.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F232",
+        "before": [
+          "",
+          4.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M230",
+        "before": [
+          "D230+J230+F230*L230+N230",
+          78.0
+        ],
+        "after": [
+          "D230+J230+F230*L230+N230",
+          72.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F183",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          4.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F32",
+        "before": [
+          "",
+          4.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D32",
+        "before": [
+          "",
+          44.0
+        ],
+        "after": [
+          "",
+          48.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M96",
+        "before": [
+          "D96+J96+F96*L96+N96",
+          64.0
+        ],
+        "after": [
+          "D96+J96+F96*L96+N96",
+          57.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D35",
+        "before": [
+          "",
+          34.0
+        ],
+        "after": [
+          "",
+          26.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "N31",
+        "before": [
+          "'人物特质'!T9",
+          30.0
+        ],
+        "after": [
+          "'人物特质'!T9",
+          0.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA11",
+        "before": [
+          "M11",
+          32.0
+        ],
+        "after": [
+          "M11",
+          24.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M94",
+        "before": [
+          "D94+J94+F94*L94+N94",
+          78.0
+        ],
+        "after": [
+          "D94+J94+F94*L94+N94",
+          72.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M97",
+        "before": [
+          "D97+J97+F97*L97+N97",
+          104.0
+        ],
+        "after": [
+          "D97+J97+F97*L97+N97",
+          98.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D263",
+        "before": [
+          "",
+          104.0
+        ],
+        "after": [
+          "",
+          110.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z232",
+        "before": [
+          "D231",
+          106.0
+        ],
+        "after": [
+          "D231",
+          108.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA97",
+        "before": [
+          "M96",
+          64.0
+        ],
+        "after": [
+          "M96",
+          57.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z96",
+        "before": [
+          "D95",
+          104.0
+        ],
+        "after": [
+          "D95",
+          110.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M264",
+        "before": [
+          "D264+J264+F264*L264+N264",
+          67.0
+        ],
+        "after": [
+          "D264+J264+F264*L264+N264",
+          60.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F263",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          4.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA232",
+        "before": [
+          "M231",
+          106.0
+        ],
+        "after": [
+          "M231",
+          122.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F7",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          6.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F30",
+        "before": [
+          "",
+          6.0
+        ],
+        "after": [
+          "",
+          4.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D183",
+        "before": [
+          "",
+          100.0
+        ],
+        "after": [
+          "",
+          110.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M265",
+        "before": [
+          "D265+J265+F265*L265+N265",
+          110.0
+        ],
+        "after": [
+          "D265+J265+F265*L265+N265",
+          104.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D231",
+        "before": [
+          "",
+          106.0
+        ],
+        "after": [
+          "",
+          108.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D185",
+        "before": [
+          "",
+          115.0
+        ],
+        "after": [
+          "",
+          105.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M95",
+        "before": [
+          "D95+J95+F95*L95+N95",
+          104.0
+        ],
+        "after": [
+          "D95+J95+F95*L95+N95",
+          122.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M183",
+        "before": [
+          "D183+J183+F183*L183+N183",
+          100.0
+        ],
+        "after": [
+          "D183+J183+F183*L183+N183",
+          122.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F95",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          4.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z9",
+        "before": [
+          "D8",
+          38.0
+        ],
+        "after": [
+          "D8",
+          42.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F96",
+        "before": [
+          "",
+          4.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA9",
+        "before": [
+          "M8",
+          56.0
+        ],
+        "after": [
+          "M8",
+          48.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z8",
+        "before": [
+          "D7",
+          94.0
+        ],
+        "after": [
+          "D7",
+          106.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA183",
+        "before": [
+          "M182",
+          75.0
+        ],
+        "after": [
+          "M182",
+          69.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z35",
+        "before": [
+          "D35",
+          34.0
+        ],
+        "after": [
+          "D35",
+          26.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z32",
+        "before": [
+          "D31",
+          97.0
+        ],
+        "after": [
+          "D31",
+          109.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z33",
+        "before": [
+          "D32",
+          44.0
+        ],
+        "after": [
+          "D32",
+          48.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F8",
+        "before": [
+          "",
+          4.0
+        ],
+        "after": [
+          "",
+          1.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M185",
+        "before": [
+          "D185+J185+F185*L185+N185",
+          117.0
+        ],
+        "after": [
+          "D185+J185+F185*L185+N185",
+          107.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA7",
+        "before": [
+          "M6",
+          70.0
+        ],
+        "after": [
+          "M6",
+          69.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M263",
+        "before": [
+          "D263+J263+F263*L263+N263",
+          104.0
+        ],
+        "after": [
+          "D263+J263+F263*L263+N263",
+          122.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F94",
+        "before": [
+          "",
+          6.0
+        ],
+        "after": [
+          "",
+          4.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M33",
+        "before": [
+          "D33+J33+F33*L33+N33",
+          105.0
+        ],
+        "after": [
+          "D33+J33+F33*L33+N33",
+          93.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D8",
+        "before": [
+          "",
+          38.0
+        ],
+        "after": [
+          "",
+          42.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M35",
+        "before": [
+          "D35+J35+F35*L35+N35",
+          34.0
+        ],
+        "after": [
+          "D35+J35+F35*L35+N35",
+          26.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F262",
+        "before": [
+          "",
+          6.0
+        ],
+        "after": [
+          "",
+          4.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "H6",
+        "before": [
+          "'属性成长'!M11",
+          32.0
+        ],
+        "after": [
+          "'属性成长'!M11",
+          24.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "F28",
+        "before": [
+          "'属性成长'!M185",
+          117.0
+        ],
+        "after": [
+          "'属性成长'!M185",
+          107.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "C9",
+        "before": [
+          "'属性成长'!M30",
+          74.0
+        ],
+        "after": [
+          "'属性成长'!M30",
+          76.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "E28",
+        "before": [
+          "'属性成长'!M184",
+          54.0
+        ],
+        "after": [
+          "'属性成长'!M184",
+          48.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "P28",
+        "before": [
+          "E28+O28",
+          54.0
+        ],
+        "after": [
+          "E28+O28",
+          48.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "P9",
+        "before": [
+          "E9+O9",
+          62.0
+        ],
+        "after": [
+          "E9+O9",
+          54.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "C17",
+        "before": [
+          "'属性成长'!M94",
+          78.0
+        ],
+        "after": [
+          "'属性成长'!M94",
+          72.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "H9",
+        "before": [
+          "'属性成长'!M35",
+          34.0
+        ],
+        "after": [
+          "'属性成长'!M35",
+          26.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "D17",
+        "before": [
+          "'属性成长'!M95",
+          104.0
+        ],
+        "after": [
+          "'属性成长'!M95",
+          122.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "C38",
+        "before": [
+          "'属性成长'!M262",
+          85.0
+        ],
+        "after": [
+          "'属性成长'!M262",
+          78.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "C28",
+        "before": [
+          "'属性成长'!M182",
+          75.0
+        ],
+        "after": [
+          "'属性成长'!M182",
+          69.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "E6",
+        "before": [
+          "'属性成长'!M8",
+          56.0
+        ],
+        "after": [
+          "'属性成长'!M8",
+          48.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "P34",
+        "before": [
+          "E34+O34",
+          56.0
+        ],
+        "after": [
+          "E34+O34",
+          50.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "E9",
+        "before": [
+          "'属性成长'!M32",
+          62.0
+        ],
+        "after": [
+          "'属性成长'!M32",
+          54.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "E17",
+        "before": [
+          "'属性成长'!M96",
+          64.0
+        ],
+        "after": [
+          "'属性成长'!M96",
+          57.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "D28",
+        "before": [
+          "'属性成长'!M183",
+          100.0
+        ],
+        "after": [
+          "'属性成长'!M183",
+          122.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "F38",
+        "before": [
+          "'属性成长'!M265",
+          110.0
+        ],
+        "after": [
+          "'属性成长'!M265",
+          104.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "B40",
+        "before": [
+          "",
+          "早期轻装剑盾与走位支援"
+        ],
+        "after": [
+          "",
+          "中期轻装剑盾与走位支援"
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "D34",
+        "before": [
+          "'属性成长'!M231",
+          106.0
+        ],
+        "after": [
+          "'属性成长'!M231",
+          122.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "F34",
+        "before": [
+          "'属性成长'!M233",
+          116.0
+        ],
+        "after": [
+          "'属性成长'!M233",
+          114.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "P17",
+        "before": [
+          "E17+O17",
+          64.0
+        ],
+        "after": [
+          "E17+O17",
+          57.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "E34",
+        "before": [
+          "'属性成长'!M232",
+          56.0
+        ],
+        "after": [
+          "'属性成长'!M232",
+          50.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "D38",
+        "before": [
+          "'属性成长'!M263",
+          104.0
+        ],
+        "after": [
+          "'属性成长'!M263",
+          122.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "C6",
+        "before": [
+          "'属性成长'!M6",
+          70.0
+        ],
+        "after": [
+          "'属性成长'!M6",
+          69.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "P38",
+        "before": [
+          "E38+O38",
+          67.0
+        ],
+        "after": [
+          "E38+O38",
+          60.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "F17",
+        "before": [
+          "'属性成长'!M97",
+          104.0
+        ],
+        "after": [
+          "'属性成长'!M97",
+          98.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "F6",
+        "before": [
+          "'属性成长'!M9",
+          100.0
+        ],
+        "after": [
+          "'属性成长'!M9",
+          90.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "E38",
+        "before": [
+          "'属性成长'!M264",
+          67.0
+        ],
+        "after": [
+          "'属性成长'!M264",
+          60.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "C34",
+        "before": [
+          "'属性成长'!M230",
+          78.0
+        ],
+        "after": [
+          "'属性成长'!M230",
+          72.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "F9",
+        "before": [
+          "'属性成长'!M33",
+          105.0
+        ],
+        "after": [
+          "'属性成长'!M33",
+          93.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "P6",
+        "before": [
+          "E6+O6",
+          56.0
+        ],
+        "after": [
+          "E6+O6",
+          48.0
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "N6",
+        "before": [
+          "'属性成长'!D8+M6",
+          38.0
+        ],
+        "after": [
+          "'属性成长'!D8+M6",
+          42.0
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "N9",
+        "before": [
+          "'属性成长'!D32+M9",
+          44.0
+        ],
+        "after": [
+          "'属性成长'!D32+M9",
+          48.0
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "I34",
+        "before": [
+          "'属性成长'!D231-G34-H34",
+          73.0
+        ],
+        "after": [
+          "'属性成长'!D231-G34-H34",
+          75.0
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "I28",
+        "before": [
+          "'属性成长'!D183-G28-H28",
+          69.0
+        ],
+        "after": [
+          "'属性成长'!D183-G28-H28",
+          79.0
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "I6",
+        "before": [
+          "'属性成长'!D7-G6-H6",
+          74.0
+        ],
+        "after": [
+          "'属性成长'!D7-G6-H6",
+          86.0
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "I17",
+        "before": [
+          "'属性成长'!D95-G17-H17",
+          81.0
+        ],
+        "after": [
+          "'属性成长'!D95-G17-H17",
+          87.0
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "I9",
+        "before": [
+          "'属性成长'!D31-G9-H9",
+          74.0
+        ],
+        "after": [
+          "'属性成长'!D31-G9-H9",
+          86.0
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "I38",
+        "before": [
+          "'属性成长'!D263-G38-H38",
+          73.0
+        ],
+        "after": [
+          "'属性成长'!D263-G38-H38",
+          79.0
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "L106",
+        "before": [
+          "",
+          "V2设计新增；当前游戏未实装。"
+        ],
+        "after": [
+          "",
+          "实装前无此技能；现已按本行V2参数接入。"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "L37",
+        "before": [
+          "",
+          "V2设计新增；当前游戏未实装。"
+        ],
+        "after": [
+          "",
+          "实装前无此技能；现已按本行V2参数接入。"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "L105",
+        "before": [
+          "",
+          "V2设计新增；当前游戏未实装。"
+        ],
+        "after": [
+          "",
+          "实装前无此技能；现已按本行V2参数接入。"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "L107",
+        "before": [
+          "",
+          "V2设计新增；当前游戏未实装。"
+        ],
+        "after": [
+          "",
+          "实装前无此技能；现已按本行V2参数接入。"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "L38",
+        "before": [
+          "",
+          "V2设计新增；当前游戏未实装。"
+        ],
+        "after": [
+          "",
+          "实装前无此技能；现已按本行V2参数接入。"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "L36",
+        "before": [
+          "",
+          "V2设计新增；当前游戏未实装。"
+        ],
+        "after": [
+          "",
+          "实装前无此技能；现已按本行V2参数接入。"
+        ]
+      },
+      {
+        "sheet": 7,
+        "cell": "A3",
+        "before": [
+          "",
+          "路线互斥；人物成长、路线、自行车分别记账。下表全部为提案口径或明确标出的现行保留项。"
+        ],
+        "after": [
+          "",
+          "新战役实装基准；路线互斥，永久属性独立于临时命中+10预算。个人成长、路线、自行车分别记账。"
+        ]
+      },
+      {
+        "sheet": 7,
+        "cell": "H14",
+        "before": [
+          "",
+          "一级本体21+镜20=41；默认剧情后本体24+镜20=44。尚未实装。"
+        ],
+        "after": [
+          "",
+          "本体21+镜20=41；默认剧情后24+20=44。饰品可卸下，已实装。"
+        ]
+      },
+      {
+        "sheet": 7,
+        "cell": "G14",
+        "before": [
+          "",
+          "随希文招募赠送一件；计价0、负重0，不改变470报价。"
+        ],
+        "after": [
+          "",
+          "随希文招募赠送一件；计价0、负重0。2级总价590，镜子不加价。"
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "K6",
+        "before": [
+          "'成长总览'!C6-C6",
+          -3.0
+        ],
+        "after": [
+          "'成长总览'!C6-C6",
+          5.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "N6",
+        "before": [
+          "'成长总览'!F6-F6",
+          -5.0
+        ],
+        "after": [
+          "'成长总览'!F6-F6",
+          -15.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "N28",
+        "before": [
+          "'成长总览'!F28-F28",
+          12.0
+        ],
+        "after": [
+          "'成长总览'!F28-F28",
+          2.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "N17",
+        "before": [
+          "'成长总览'!F17-F17",
+          -1.0
+        ],
+        "after": [
+          "'成长总览'!F17-F17",
+          -7.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "C9",
+        "before": [
+          "67.5+'属性成长'!F30*'属性成长'!L30",
+          85.5
+        ],
+        "after": [
+          "67.5+'属性成长'!F30*'属性成长'!L30",
+          79.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "L28",
+        "before": [
+          "'成长总览'!D28-D28",
+          1.0
+        ],
+        "after": [
+          "'成长总览'!D28-D28",
+          11.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "E28",
+        "before": [
+          "39+'属性成长'!F184*'属性成长'!L184",
+          51.0
+        ],
+        "after": [
+          "39+'属性成长'!F184*'属性成长'!L184",
+          45.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "M6",
+        "before": [
+          "'成长总览'!E6-E6",
+          1.0
+        ],
+        "after": [
+          "'成长总览'!E6-E6",
+          5.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "P9",
+        "before": [
+          "'成长总览'!H9-H9",
+          -3.0
+        ],
+        "after": [
+          "'成长总览'!H9-H9",
+          -11.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "N9",
+        "before": [
+          "'成长总览'!F9-F9",
+          10.5
+        ],
+        "after": [
+          "'成长总览'!F9-F9",
+          -1.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "C17",
+        "before": [
+          "55+'属性成长'!F94*'属性成长'!L94",
+          73.0
+        ],
+        "after": [
+          "55+'属性成长'!F94*'属性成长'!L94",
+          67.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "L6",
+        "before": [
+          "'成长总览'!D6-D6",
+          25.0
+        ],
+        "after": [
+          "'成长总览'!D6-D6",
+          7.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "D17",
+        "before": [
+          "99+'属性成长'!F95*'属性成长'!L95",
+          99.0
+        ],
+        "after": [
+          "99+'属性成长'!F95*'属性成长'!L95",
+          111.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "C38",
+        "before": [
+          "55+'属性成长'!F262*'属性成长'!L262",
+          76.0
+        ],
+        "after": [
+          "55+'属性成长'!F262*'属性成长'!L262",
+          69.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "K9",
+        "before": [
+          "'成长总览'!C9-C9",
+          -11.5
+        ],
+        "after": [
+          "'成长总览'!C9-C9",
+          -3.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "C28",
+        "before": [
+          "55+'属性成长'!F182*'属性成长'!L182",
+          73.0
+        ],
+        "after": [
+          "55+'属性成长'!F182*'属性成长'!L182",
+          67.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "N38",
+        "before": [
+          "'成长总览'!F38-F38",
+          5.0
+        ],
+        "after": [
+          "'成长总览'!F38-F38",
+          -1.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "L34",
+        "before": [
+          "'成长总览'!D34-D34",
+          7.0
+        ],
+        "after": [
+          "'成长总览'!D34-D34",
+          9.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "E6",
+        "before": [
+          "39+'属性成长'!F8*'属性成长'!L8",
+          55.0
+        ],
+        "after": [
+          "39+'属性成长'!F8*'属性成长'!L8",
+          43.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "E9",
+        "before": [
+          "41.5+'属性成长'!F32*'属性成长'!L32",
+          59.5
+        ],
+        "after": [
+          "41.5+'属性成长'!F32*'属性成长'!L32",
+          47.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "E17",
+        "before": [
+          "39+'属性成长'!F96*'属性成长'!L96",
+          53.0
+        ],
+        "after": [
+          "39+'属性成长'!F96*'属性成长'!L96",
+          46.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "M9",
+        "before": [
+          "'成长总览'!E9-E9",
+          2.5
+        ],
+        "after": [
+          "'成长总览'!E9-E9",
+          6.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "D6",
+        "before": [
+          "99+'属性成长'!F7*'属性成长'!L7",
+          99.0
+        ],
+        "after": [
+          "99+'属性成长'!F7*'属性成长'!L7",
+          117.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "D28",
+        "before": [
+          "99+'属性成长'!F183*'属性成长'!L183",
+          99.0
+        ],
+        "after": [
+          "99+'属性成长'!F183*'属性成长'!L183",
+          111.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "D34",
+        "before": [
+          "99+'属性成长'!F231*'属性成长'!L231",
+          99.0
+        ],
+        "after": [
+          "99+'属性成长'!F231*'属性成长'!L231",
+          113.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "N34",
+        "before": [
+          "'成长总览'!F34-F34",
+          11.0
+        ],
+        "after": [
+          "'成长总览'!F34-F34",
+          9.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "L38",
+        "before": [
+          "'成长总览'!D38-D38",
+          5.0
+        ],
+        "after": [
+          "'成长总览'!D38-D38",
+          11.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "E34",
+        "before": [
+          "39+'属性成长'!F232*'属性成长'!L232",
+          51.0
+        ],
+        "after": [
+          "39+'属性成长'!F232*'属性成长'!L232",
+          45.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "D38",
+        "before": [
+          "99+'属性成长'!F263*'属性成长'!L263",
+          99.0
+        ],
+        "after": [
+          "99+'属性成长'!F263*'属性成长'!L263",
+          111.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "L9",
+        "before": [
+          "'成长总览'!D9-D9",
+          19.5
+        ],
+        "after": [
+          "'成长总览'!D9-D9",
+          1.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "C6",
+        "before": [
+          "55+'属性成长'!F6*'属性成长'!L6",
+          73.0
+        ],
+        "after": [
+          "55+'属性成长'!F6*'属性成长'!L6",
+          64.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "L17",
+        "before": [
+          "'成长总览'!D17-D17",
+          5.0
+        ],
+        "after": [
+          "'成长总览'!D17-D17",
+          11.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "E38",
+        "before": [
+          "39+'属性成长'!F264*'属性成长'!L264",
+          53.0
+        ],
+        "after": [
+          "39+'属性成长'!F264*'属性成长'!L264",
+          46.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "C34",
+        "before": [
+          "55+'属性成长'!F230*'属性成长'!L230",
+          73.0
+        ],
+        "after": [
+          "55+'属性成长'!F230*'属性成长'!L230",
+          67.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "P6",
+        "before": [
+          "'成长总览'!H6-H6",
+          -10.5
+        ],
+        "after": [
+          "'成长总览'!H6-H6",
+          -18.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "D9",
+        "before": [
+          "107.5+'属性成长'!F31*'属性成长'!L31",
+          107.5
+        ],
+        "after": [
+          "107.5+'属性成长'!F31*'属性成长'!L31",
+          125.5
+        ]
+      },
+      {
+        "sheet": 11,
+        "cell": "F60",
+        "before": [
+          "",
+          "补齐早期可招的轻装剑盾支援位"
+        ],
+        "after": [
+          "",
+          "中期轻装剑盾支援：14战/5履约/6城/历史最高5级；成长仍需本人3级3战。"
+        ]
+      },
+      {
+        "sheet": 11,
+        "cell": "E60",
+        "before": [
+          "",
+          "第6日、470克朗；7级三选一、11级精通"
+        ],
+        "after": [
+          "",
+          "第35日起，2级590克朗；7级三选一、11级精通"
+        ]
+      },
+      {
+        "sheet": 11,
+        "cell": "F59",
+        "before": [
+          "",
+          "队长远征耐力每级+3，上限累计30；不挤占既有生命/攻击/防御选点"
+        ],
+        "after": [
+          "",
+          "取消额外逐级耐力；基础疲劳106，30项培养中分6次疲劳，生命与决心分配相应减少。"
+        ]
+      },
+      {
+        "sheet": 11,
+        "cell": "E59",
+        "before": [
+          "",
+          "124"
+        ],
+        "after": [
+          "",
+          "124（正常培养均值）"
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "L9",
+        "before": [
+          "",
+          25.0
+        ],
+        "after": [
+          "'来源说明'!$B$21",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "K14",
+        "before": [
+          "INT(C14-I14-J14-F14-G14)",
+          37.0
+        ],
+        "after": [
+          "INT(C14-I14-J14-F14-G14)",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "K12",
+        "before": [
+          "INT(C12-I12-J12-F12-G12)",
+          39.0
+        ],
+        "after": [
+          "INT(C12-I12-J12-F12-G12)",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "H10",
+        "before": [
+          "INT(C10-SUM(D10:G10))",
+          15.0
+        ],
+        "after": [
+          "INT(C10-SUM(D10:G10))",
+          37.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "C12",
+        "before": [
+          "'成长总览'!D34",
+          106.0
+        ],
+        "after": [
+          "'成长总览'!D34",
+          122.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "H14",
+        "before": [
+          "INT(C14-SUM(D14:G14))",
+          19.0
+        ],
+        "after": [
+          "INT(C14-SUM(D14:G14))",
+          37.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "L10",
+        "before": [
+          "",
+          25.0
+        ],
+        "after": [
+          "'来源说明'!$B$21",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "C10",
+        "before": [
+          "'成长总览'!D28",
+          100.0
+        ],
+        "after": [
+          "'成长总览'!D28",
+          122.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "L7",
+        "before": [
+          "",
+          25.0
+        ],
+        "after": [
+          "'来源说明'!$B$21",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "L11",
+        "before": [
+          "",
+          25.0
+        ],
+        "after": [
+          "'来源说明'!$B$21",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "L6",
+        "before": [
+          "",
+          25.0
+        ],
+        "after": [
+          "'来源说明'!$B$21",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "H9",
+        "before": [
+          "INT(C9-SUM(D9:G9))",
+          19.0
+        ],
+        "after": [
+          "INT(C9-SUM(D9:G9))",
+          37.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "H12",
+        "before": [
+          "INT(C12-SUM(D12:G12))",
+          21.0
+        ],
+        "after": [
+          "INT(C12-SUM(D12:G12))",
+          37.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "C9",
+        "before": [
+          "'成长总览'!D17",
+          104.0
+        ],
+        "after": [
+          "'成长总览'!D17",
+          122.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "A3",
+        "before": [
+          "",
+          "正数填写负重；壮实身甲向下取负数整、头盔向上取整。包内负重输入已减半。缓冲目标不保证连续爆发。"
+        ],
+        "after": [
+          "",
+          "55为壮实后目标；按11级培养均值计算。身甲42、头盔20、武器18、包内5，壮实后负重67；不保证连续爆发。"
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "L8",
+        "before": [
+          "",
+          25.0
+        ],
+        "after": [
+          "'来源说明'!$B$21",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "L14",
+        "before": [
+          "",
+          25.0
+        ],
+        "after": [
+          "'来源说明'!$B$21",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "K9",
+        "before": [
+          "INT(C9-I9-J9-F9-G9)",
+          37.0
+        ],
+        "after": [
+          "INT(C9-I9-J9-F9-G9)",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "C14",
+        "before": [
+          "'成长总览'!D38",
+          104.0
+        ],
+        "after": [
+          "'成长总览'!D38",
+          122.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "K10",
+        "before": [
+          "INT(C10-I10-J10-F10-G10)",
+          33.0
+        ],
+        "after": [
+          "INT(C10-I10-J10-F10-G10)",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "L12",
+        "before": [
+          "",
+          25.0
+        ],
+        "after": [
+          "'来源说明'!$B$21",
+          55.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "L13",
+        "before": [
+          "",
+          25.0
+        ],
+        "after": [
+          "'来源说明'!$B$21",
+          55.0
+        ]
+      },
+      {
+        "sheet": 14,
+        "cell": "A3",
+        "before": [
+          "",
+          "2026-09-29入口导出，内部版本33。希文当前总价280、走过1城可遇见；V2设计报价与门槛见“招募节奏”。"
+        ],
+        "after": [
+          "",
+          "历史对照：保留V2实装前源码快照；当前v0.26.2参数见属性成长、招募节奏、技能选择和人物特质。"
+        ]
+      },
+      {
+        "sheet": 15,
+        "cell": "C15",
+        "before": [
+          "",
+          "设计未实装；输入修改不自动回写JSON或Mod"
+        ],
+        "after": [
+          "",
+          "v0.26.2新战役实装基准；修改输入后须重新编译Mod。"
+        ]
+      },
+      {
+        "sheet": 15,
+        "cell": "B21",
+        "before": [
+          "",
+          25.0
+        ],
+        "after": [
+          "",
+          55.0
+        ]
+      },
+      {
+        "sheet": 15,
+        "cell": "C21",
+        "before": [
+          "",
+          "本稿工作目标，非官方阈值；额外受击与走位仍消耗疲劳"
+        ],
+        "after": [
+          "",
+          "用户指定55；普通320/300重甲压力装，壮实后对照；培养均值不等于每次随机成长的保底。"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "W9",
+        "before": [
+          "'属性成长'!D32-K9",
+          44.0
+        ],
+        "after": [
+          "'属性成长'!D32-K9",
+          48.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "V38",
+        "before": [
+          "'属性成长'!D263-J38",
+          104.0
+        ],
+        "after": [
+          "'属性成长'!D263-J38",
+          110.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "X6",
+        "before": [
+          "'属性成长'!D9-L6",
+          100.0
+        ],
+        "after": [
+          "'属性成长'!D9-L6",
+          90.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "U9",
+        "before": [
+          "'属性成长'!D30-I9",
+          56.0
+        ],
+        "after": [
+          "'属性成长'!D30-I9",
+          64.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "X38",
+        "before": [
+          "'属性成长'!D265-L38",
+          110.0
+        ],
+        "after": [
+          "'属性成长'!D265-L38",
+          104.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "Z9",
+        "before": [
+          "'属性成长'!D35-N9",
+          34.0
+        ],
+        "after": [
+          "'属性成长'!D35-N9",
+          26.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "T6",
+        "before": [
+          "Q6*S6",
+          30.0
+        ],
+        "after": [
+          "Q6*S6",
+          0.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "U6",
+        "before": [
+          "'属性成长'!D6-I6",
+          52.0
+        ],
+        "after": [
+          "'属性成长'!D6-I6",
+          60.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "T9",
+        "before": [
+          "Q9*S9",
+          30.0
+        ],
+        "after": [
+          "Q9*S9",
+          0.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "V34",
+        "before": [
+          "'属性成长'!D231-J34",
+          106.0
+        ],
+        "after": [
+          "'属性成长'!D231-J34",
+          108.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "A3",
+        "before": [
+          "",
+          "每人固定2项，剧情二选一另列。特质八维已含在原表；右侧反推实装基础。反馈仅供设计，未实装。"
+        ],
+        "after": [
+          "",
+          "每人固定2项，剧情二选一另列。八维已含固定特质；阿飞和小酒瓶均取消额外等级加成，疲劳通过基础值与普通升级培养。"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "A1",
+        "before": [
+          "",
+          "35人固定特质与队长耐力"
+        ],
+        "after": [
+          "",
+          "35人固定特质与额外耐力"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "Q9",
+        "before": [
+          "",
+          3.0
+        ],
+        "after": [
+          "",
+          0.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "X9",
+        "before": [
+          "'属性成长'!D33-L9",
+          102.0
+        ],
+        "after": [
+          "'属性成长'!D33-L9",
+          90.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "X28",
+        "before": [
+          "'属性成长'!D185-L28",
+          115.0
+        ],
+        "after": [
+          "'属性成长'!D185-L28",
+          105.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "Q6",
+        "before": [
+          "",
+          3.0
+        ],
+        "after": [
+          "",
+          0.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "W6",
+        "before": [
+          "'属性成长'!D8-K6",
+          33.0
+        ],
+        "after": [
+          "'属性成长'!D8-K6",
+          37.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "X17",
+        "before": [
+          "'属性成长'!D97-L17",
+          104.0
+        ],
+        "after": [
+          "'属性成长'!D97-L17",
+          98.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "Z6",
+        "before": [
+          "'属性成长'!D11-N6",
+          32.0
+        ],
+        "after": [
+          "'属性成长'!D11-N6",
+          24.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "V6",
+        "before": [
+          "'属性成长'!D7-J6",
+          94.0
+        ],
+        "after": [
+          "'属性成长'!D7-J6",
+          106.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "V9",
+        "before": [
+          "'属性成长'!D31-J9",
+          97.0
+        ],
+        "after": [
+          "'属性成长'!D31-J9",
+          109.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "V28",
+        "before": [
+          "'属性成长'!D183-J28",
+          100.0
+        ],
+        "after": [
+          "'属性成长'!D183-J28",
+          110.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "V17",
+        "before": [
+          "'属性成长'!D95-J17",
+          104.0
+        ],
+        "after": [
+          "'属性成长'!D95-J17",
+          110.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "X34",
+        "before": [
+          "'属性成长'!D233-L34",
+          113.0
+        ],
+        "after": [
+          "'属性成长'!D233-L34",
+          111.0
+        ]
+      }
+    ],
+    "formulas_preserved_except_nine_target_links": true,
+    "styles_tables_validation_preserved": true,
+    "images_preserved": 177,
+    "radars_preserved": 35,
+    "radar_caches_recalculated": true,
+    "artifact_recalculation_and_visual_review": true,
+    "excel_desktop_recalculation": false
+  }
+}

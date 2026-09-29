@@ -1,0 +1,48 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-27",
+  "status": "selected_after_offline_visual_review",
+  "user_request": "依据用户提供的四张奶盖照片优化游戏立绘，并更新游戏资源。",
+  "records": [
+    {
+      "key": "naigai",
+      "name": "奶盖",
+      "prompt": "Use case: identity-preserve / style-transfer.\nAsset type: ONE PRODUCTION transparent Battle Brothers tactical game pawn bust for the character 奶盖 (Naigai).\nInput roles:\nImages 1 through 4 are user-provided photographs of the SAME adult woman and are the ONLY source for her facial identity and hair. Image 1 primarily establishes facial profile, eye/nose/lip proportions and the blunt black bob; image 3 adds her natural soft smile; images 2 and 4 confirm the rounded jaw, forehead and hairstyle in less close-up views. Do not reproduce the photos' clothing, poses, necklaces, hands, bags or backgrounds.\nImage 5 is ONLY the official Battle Brothers hand-painted sprite technique and compact large-head proportions; never copy any male face.\nThe existing game design wears a brown short cape with a cream inner collar and small round brass clasp; retain that outfit as described. Replace the previous long-haired design with the photographed person's actual short bob and facial identity.\n\nProduce one large-head, short-neck, compact-shoulder medieval game bust on genuinely TRANSPARENT RGBA. Head, chest, shoulders and eye gaze all turn about 35 to 40 degrees toward SCREEN RIGHT. Both eyes visible, far eye narrower, nose points to screen right. No looking back over a shoulder, no head tilt, no frontal or screen-left pose.\nNaigai's identifying features from photos: soft slightly rounded oval face, gentle full cheeks and a small rounded tapering jaw, light warm natural skin, clear dark almond eyes with lightly defined eyelids, naturally nearly straight fine dark eyebrows with a subtle arch, a compact straight nose with softly rounded tip, softly full muted pink lips and a restrained friendly smile. Keep her particular eye spacing and unsharpened jaw, do not substitute a generic doll or beauty-filter face.\nMost important hairstyle correction: SHORT BLACK BOB ending at the jaw/upper neck, slightly off-center part exposing most of the forehead, broad swept front section, one or two separated face-framing locks, gently rounded volume, dark charcoal highlights. Clean blunt slightly irregular ends as in all four photos. Hair must end ABOVE the shoulders, no long hair over chest, no ponytail, no bangs covering the entire forehead. No hair ornament.\nOutfit: retain the existing modest muted warm-brown compact shoulder cape over a low cream collar, small round matte brass clasp at upper chest. Only a shallow shoulder-and-collar base. No modern clothing, no necklace, no armor, weapons, quiver, props or additional accessories; native equipment will be layered by the game.\nGAME SCALE: whole visible silhouette must read when reduced to at most 88 x 100 pixels inside the game's 114 x 142 slot. Head including hair roughly upper 65-70 percent of silhouette, short complete neck, shallow sloping shoulders and rounded short bust base. No long torso or full upper-body portrait. Preserve complete uncut jaw and neck. Hair not excessively wide so standard helmets fit.\nSTRICT RENDERING: original Battle Brothers economical matte hand-painted pawn style. Thick uneven dark-brown outer contour, a small number of broad deliberate shadow planes, warm flat base skin with just two or three cheek/nose shadows, painted eyelid strokes and small dark pupils, simple lip line, hair in 6-8 broad masses. Muted earthy cloth with a few broad folds. Strong readable silhouette and simplified face. No photographic texture, skin pores, delicate individual hair strands, textile weave, smooth glamour rendering, glossy anime eyes, 3D render, oversized baby features or sharp harsh cheekbones. Capture her specific photographed identity through proportions and silhouette.\nOutput exactly one isolated connected head-neck-shoulder pawn, entire hair and shoulders inside frame with transparent margin, truly transparent background not a white rectangle or baked checkerboard. No text, labels, comparison panels, border, cast shadow, watermark, hands, arms, legs or scenery.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-naigai/01-bob-closeup.png",
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-naigai/02-beach.png",
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-naigai/03-smile.png",
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-naigai/04-street.png",
+        "G:/CODE/afei-xcpedition/art/references/battle-brothers-style/official-brothers-busts-2016.jpg"
+      ],
+      "selected_source": "art/runtime/portraits-v05/sources/user-v18/naigai.png",
+      "generated_original": "C:/Users/25647/.codex/generated_images/01a0e1aa-5e78-74d0-a826-eb755a8f575e/exec-22bedfcf-8e05-4bcf-a8cb-546b4aa87f77.png",
+      "review": {
+        "comparison": "build/playtest-naigai/comparison.png",
+        "transparent_rgba": true,
+        "source_pixels_edited_after_generation": false,
+        "game_size_reviewed": true,
+        "game_canvas": [
+          114,
+          142
+        ],
+        "visible_size": [
+          75,
+          100
+        ],
+        "user_photos": 4,
+        "short_black_bob_reviewed": true,
+        "equipment_reviewed": [
+          "armor",
+          "open_helmet",
+          "closed_helmet"
+        ],
+        "equipment_limitations": [
+          "Native helmets cover the crown; short black hair remains visible at the sides."
+        ],
+        "in_game_tested": false
+      },
+      "source_sha256": "6e5e371558394c4b61cff3f859fd3ee94c4d1ba4eeaab78c3a4dbbb6719c15bf"
+    }
+  ]
+}

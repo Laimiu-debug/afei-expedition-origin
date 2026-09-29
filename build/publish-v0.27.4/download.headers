@@ -1,0 +1,16 @@
+HTTP/2 200 
+accept-ranges: bytes
+cache-control: private, no-store
+content-disposition: attachment; filename="mod_afeix_expedition.zip"
+content-type: application/zip
+date: Tue, 29 Sep 2026 08:04:34 GMT
+etag: "6abb708a-381094"
+last-modified: Tue, 29 Sep 2026 08:02:18 GMT
+server: Vercel
+strict-transport-security: max-age=31536000
+x-checksum-sha256: 125c7284a03ca706d413ac9e5c4cfe180602183e401eb2f1db8fd04678be87df
+x-content-type-options: nosniff
+x-vercel-cache: MISS
+x-vercel-id: sin1::2hn8m-1790669074101-7b0643579fca
+content-length: 3674260
+

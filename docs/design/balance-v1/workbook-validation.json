@@ -1,0 +1,27 @@
+{
+  "status": "公式、输入重算、导出XML及文档完整性检查通过",
+  "sheets": 11,
+  "price_checks": 34,
+  "growth_cells_checked": 272,
+  "economy_checks": 4,
+  "input_recalculation_checks": 3,
+  "rendered_sheets": [
+    "总览",
+    "招募节奏",
+    "属性成长",
+    "成长总览",
+    "装备明细",
+    "技能选择",
+    "队长与事件",
+    "经济模型",
+    "伤害与概率",
+    "现行对照",
+    "来源说明"
+  ],
+  "exported_formula_cells": 1430,
+  "cached_excel_errors": 0,
+  "runtime_source_hashes_unchanged": true,
+  "local_document_links_valid": true,
+  "character_sections": 34,
+  "skill_route_sections": 102
+}

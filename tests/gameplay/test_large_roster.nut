@@ -13,7 +13,7 @@ local members = [], origin = true, safe = true;
     }; } },
     function getPlayerRoster() { return { function getAll() { return members; } }; }
 };
-::AfeixExpedition <- { CombatMax = 10, RosterMax = 40 };
+::AfeixExpedition <- { CombatMax = 12, RosterMax = 40 };
 dofile("src/scripts/mods/afeix/core.nut");
 dofile("src/scripts/mods/afeix/formation.nut");
 local A = ::AfeixExpedition;
@@ -63,7 +63,7 @@ local verifyCompany = function(before, count, context) {
 };
 try {
     foreach (size in [35, 40]) {
-        for (local count = 1; count <= 10; count++) {
+        for (local count = 1; count <= 12; count++) {
             members = [];
             for (local i = 0; i < size; i++) members.push(makeBrother(i + 1, 255));
             local before = snapshot(), selected = [];
@@ -84,7 +84,7 @@ try {
             local stable = snapshot();
             A.enforceFormation(); A.formation();
             foreach (bro in members) check(bro.place == stable[bro.id].place, context + " refresh preserves exact position");
-            foreach (invalid in [[], [size, size], [99999], [1,2,3,4,5,6,7,8,9,10,11]]) {
+            foreach (invalid in [[], [size, size], [99999], [1,2,3,4,5,6,7,8,9,10,11,12,13]]) {
                 check(!A.applyFormation(invalid).ok, context + " invalid selection rejected");
                 foreach (bro in members) check(bro.place == stable[bro.id].place, context + " invalid selection leaves company unchanged");
             }
@@ -122,7 +122,7 @@ try {
     for (local i = 20; i < 40; i++) members.push(makeBrother(i + 1, 255));
     local all = snapshot();
     A.enforceFormation();
-    verifyCompany(all, 10, "old twenty with twenty new unplaced hires");
+    verifyCompany(all, 12, "old twenty with twenty new unplaced hires");
     check(members[0].place == old[1].place, "old selected veteran keeps original battle position");
     for (local i = 1; i < 20; i++) check(members[i].place >= 18, "old standby veteran is not automatically redeployed");
     print("ALL_LARGE_ROSTER_CHECKS_PASS\nTESTS_PASSED=" + passed + "\n");

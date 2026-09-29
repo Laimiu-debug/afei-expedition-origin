@@ -14,7 +14,7 @@ this.afeix_member_active <- this.inherit("scripts/skills/skill", {
         this.m.Key = key;
         this.m.ID = "actives.afeix_member_" + key;
         this.m.Name = d.name; this.m.Description = d.text;
-        this.m.Icon = "skills/afeix_member_" + key + ".png";
+        this.m.Icon = "skills/afeix_member_" + key + ".png"; this.m.IconMini = this.m.Icon;
         this.m.IconDisabled = this.m.Icon;
         this.m.ActionPointCost = d.ap; this.m.FatigueCost = d.fatigue;
         this.m.IsTargeted = d.target != "self";
@@ -23,9 +23,12 @@ this.afeix_member_active <- this.inherit("scripts/skills/skill", {
         this.m.MinRange = this.m.IsTargeted ? 1 : 0;
         this.m.MaxRange = d.range;
     },
+    function getDescription() { return ::AfeixExpedition.trainingDescription(this.getContainer()==null?null:this.getContainer().getActor(),this.m.Key); },
     function nativeAttack() { return ::AfeixExpedition.memberBasicAttack(this.getContainer().getActor(), this.m.Key == "breach_strike"); },
     function onAfterUpdate(properties) {
-        if (this.m.Key == "" || !this.m.IsAttack) return;
+        if (this.m.Key == "") return;
+        this.m.FatigueCost = ::AfeixExpedition.trainingFatigue(this.getContainer().getActor(),this.m.Key);
+        if (!this.m.IsAttack) return;
         local s = this.nativeAttack();
         this.m.MinRange = s == null ? 1 : s.m.MinRange;
         this.m.MaxRange = s == null ? 1 : s.getMaxRange();
@@ -55,8 +58,9 @@ this.afeix_member_active <- this.inherit("scripts/skills/skill", {
         local A = ::AfeixExpedition;
         if (this.m.Key == "" || !A.isOrigin() || !::Tactical.isActive() || !this.skill.isUsable()) return false;
         local actor = this.getContainer().getActor(), d = A.MemberSkillDefs[this.m.Key];
-        if (!A.memberPlayer(actor) || A.memberRound() < this.m.ReadyRound || (this.m.Key == "nicotine" && (this.m.Used || actor.getFatigue() <= 0))) return false;
+        if (!A.catalogLearned(actor,this.m.Key) || !A.memberPlayer(actor) || A.memberRound() < this.m.ReadyRound || (this.m.Key == "nicotine" && (this.m.Used || actor.getFatigue() <= 0))) return false;
         if (d.shield && !A.memberShield(actor)) return false;
+        if ("limit" in d && A.catalogGet(actor,"uses_"+this.m.Key)>=d.limit) return false;
         return !this.m.IsAttack || this.nativeAttack() != null;
     },
     function onVerifyTarget(origin, tile) {
@@ -78,6 +82,11 @@ this.afeix_member_active <- this.inherit("scripts/skills/skill", {
         tip.push({ id=20, type="text", icon="ui/icons/special.png", text=d.cd > 0 ? "冷却 " + d.cd + " 轮（第 R 轮使用，第 R+" + d.cd + " 轮可再用）。" : "每场战斗一次。" });
         local spent=this.m.Used&&(this.m.Key=="nicotine"||("once" in d&&d.once));
         if (remaining > 0 || spent) tip.push({ id=21, type="text", icon="ui/icons/special.png", text=spent ? "本场已经使用。" : "还需等待 " + remaining + " 轮。" });
+        if(::Tactical.isActive()&&(("mode" in d&&d.mode=="team")||["steady_hand","guard_nest"].find(this.m.Key)!=null)){
+            local a=this.getContainer().getActor(),names="";
+            foreach(b in A.balanceTargets(a,a,d.range)){if(names!="")names+="、";names+=b.getName();}
+            tip.push({id=22,type="text",icon="ui/icons/special.png",text="以自身为中心的受益者："+names+"。最多3人；按自身优先、距中心近、疲劳高、人物顺序选择。鼓声改选中心时按相同规则重新选人。"});
+        }
         if (this.m.IsAttack && this.nativeAttack() != null) foreach (entry in this.nativePreview("getTooltip", [])) if (entry.id >= 4) {
             local copy = clone entry; copy.id += 100; tip.push(copy);
         }
@@ -89,6 +98,7 @@ this.afeix_member_active <- this.inherit("scripts/skills/skill", {
         local A = ::AfeixExpedition, key = this.m.Key, d = A.MemberSkillDefs[key];
         this.m.ReadyRound = A.memberRound() + d.cd;
         this.m.Used = true;
+        A.catalogSet(user,"uses_"+key,A.catalogGet(user,"uses_"+key)+1);
         if (d.target == "weapon") {
             local s = this.nativeAttack();
             this.m.ExecutingNative = s;
@@ -98,24 +108,24 @@ this.afeix_member_active <- this.inherit("scripts/skills/skill", {
             if (key == "bottle_breakthrough" && user.isAlive() && !user.isDying()) A.memberEffect(user, "breakthrough_exposed");
             // A native miss returns false, but is still a completed, paid attack.
         } else if (key == "nicotine") {
-            user.setFatigue(::Math.max(0, user.getFatigue() - 15));
+            user.setFatigue(::Math.max(0, user.getFatigue() - (A.trainingRank(user,key)>=2?18:15)));
             A.memberEffect(user, "nicotine_debt", null, 2);
         } else if (key == "dog_bark") A.memberEffect(tile.getEntity(), "dog_bark");
         else if (key == "borrow_strike") {
             A.memberEffect(user, key); A.memberEffect(tile.getEntity(), key);
-        } else if (key == "pokemon") A.memberEffect(tile.getEntity(), key, user, 2);
+        } else if (key == "pokemon") A.memberEffect(tile.getEntity(), key, user, 1);
         else if (key == "turtle_shell") A.memberEffect(user, key, user);
         else {
             A.memberEffect(user, key, key == "guard_nest" ? user : null);
-            foreach (ally in A.memberAllies(user, 1)) A.memberEffect(ally, key, key == "guard_nest" ? user : null);
+            foreach (ally in A.balanceTargets(user,user,1,3)) if(ally!=user) A.memberEffect(ally, key, key == "guard_nest" ? user : null);
         }
         user.getSkills().update();
         return true;
     },
     function onAnySkillUsed(s, target, properties) {
         if (s != this.m.ExecutingNative || s == null) return;
-        if (this.m.Key == "bottle_breakthrough") properties.MeleeSkill += 10;
-        else { properties.MeleeSkill -= 5; properties.DamageArmorMult *= 1.2; }
+        if (this.m.Key == "bottle_breakthrough") ::AfeixExpedition.balanceHit(properties,"MeleeSkill",10);
+        else { properties.DamageArmorMult *= 1.35; }
     },
     function onTurnStart() { ++this.m.Turns; },
     function reset() { this.m.ReadyRound = 0; this.m.Used = false; this.m.Turns = 0; this.m.ExecutingNative = null; },

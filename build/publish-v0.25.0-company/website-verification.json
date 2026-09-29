@@ -1,0 +1,29 @@
+{
+  "verified_at": "2026-09-28T16:38:34.652170+00:00",
+  "detail_url": "https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "download_url": "https://bbmod.site/files/7c1f8aed-e3f0-4ca3-9051-3487ca0cc870/download/",
+  "release_id": "7c1f8aed-e3f0-4ca3-9051-3487ca0cc870",
+  "version": "0.25.0",
+  "sha256": "b176802e479d93fa3ee90cc322c6f42477eea53b57158cd81cba96cc084ff257",
+  "size": 3591927,
+  "entries": 267,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200,
+    "previous_download": 200,
+    "original_025_download": 200
+  },
+  "catalog_and_notes_match": true,
+  "download_bytes_match": true,
+  "crc_passed": true,
+  "five_banners_included": true,
+  "download_content_disposition": "attachment; filename=\"mod_afeix_expedition.zip\"",
+  "previous_version": "0.24.0",
+  "previous_sha256_unchanged": "109dbe4d0df3c1de467d70e3853c768bea840b006631a0d6e2afaff3ccd89b8b",
+  "original_025_sha256_unchanged": "ac879d85fd23d1a7164eecc733094354e5a086f63b72b78bf6f349e3e9fb2677",
+  "company_appearance_included": true,
+  "native_banner_choice_included": true,
+  "backup": "/srv/data/backups/afeix-pre-v0.25.0-20260928T163502203171Z.sqlite3",
+  "in_game_tested": false
+}

@@ -1,0 +1,39 @@
+{
+  "version": "0.27.4",
+  "damage": [
+    84,
+    120
+  ],
+  "penetration": 0.7,
+  "armor_multiplier": 2.35,
+  "shield_damage": 52,
+  "extra_armor_loss_cap": 30,
+  "native_weapon_assertions": 17,
+  "native_sources": [
+    {
+      "path": "scripts/items/weapons/named/named_weapon.cnut",
+      "sha256": "377628229c1cf1471cf1e18165c8d963cd7e946034f85b313f6d7a3ccd0e98aa"
+    },
+    {
+      "path": "scripts/items/weapons/named/named_two_handed_hammer.cnut",
+      "sha256": "ba019f3e3b6efdd8f31e16ed5a9f812009779652202c8511fcc08eb1f3b83b5f"
+    },
+    {
+      "path": "scripts/skills/actives/split_shield.cnut",
+      "sha256": "462e55292f03b2e9237ca0f887d5be2bfe136611a08f5fdf5b77e9758ca62e7e"
+    },
+    {
+      "path": "scripts/items/weapons/weapon.cnut",
+      "sha256": "22f3d01b40e83ba5896ef146f4c641a604a391a68c52aabc289546a7e9c69c8c"
+    }
+  ],
+  "native_split_shield_damage_verified": 52,
+  "tooltip_percent": 235,
+  "combat_multiplier_not_rounded": true,
+  "changed_package_files": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/items/weapons/afeix_laoma_grip.nut"
+  ],
+  "previous_archive_and_workbook_preserved": true,
+  "sha256": "125c7284a03ca706d413ac9e5c4cfe180602183e401eb2f1db8fd04678be87df"
+}

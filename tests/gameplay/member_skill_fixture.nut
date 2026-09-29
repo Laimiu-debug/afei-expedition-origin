@@ -1,8 +1,8 @@
 // Use the installed game's real skill.use, costs, range checks and persistence.
 // Only engine visuals and attack resolution are replaced; this is not an engine run.
-::Const <- { SkillType={None=0,Active=1,StatusEffect=2,Trait=4,Terrain=8,Special=16}, SkillOrder={Any=0,OffensiveTargeted=1,NonTargeted=2},
+::Const <- { SkillType={None=0,Active=1,StatusEffect=2,Trait=4,Terrain=8,Special=16}, SkillOrder={Any=0,OffensiveTargeted=1,NonTargeted=2,Trait=100},
     Faction={Player=1}, MoraleState={Fleeing=0,Breaking=1,Wavering=2,Steady=4}, MoraleCheckType={MentalAttack=0}, ProjectileType={None=0}, SkillCounter=0,
-    ItemSlot={Mainhand=0,Offhand=1}, Items={WeaponType={Throwing=1},ItemType={Shield=1,MeleeWeapon=2,OneHanded=4,TwoHanded=8,Food=16}},
+    ItemSlot={Mainhand=0,Offhand=1,Body=2,Head=3,Accessory=4}, Items={WeaponType={Throwing=1},ItemType={Shield=1,MeleeWeapon=2,OneHanded=4,TwoHanded=8,Food=16}},
     EntityType={OrcYoung=10,GoblinFighter=11}, Injury={CuttingBody=[],CuttingHead=[]},
     Combat={WeaponSpecFatigueMult=0.75}, BodyPart={Body=0,Head=1},
     Tactical={AttackEffectChop=0,AttackEffectBash=0,HitInfo={DamageRegular=0,DamageArmor=0,DamageDirect=0,BodyPart=0,BodyDamageMult=1.0,FatalityChanceMult=1.0}}
@@ -29,6 +29,8 @@ dofile("src/scripts/!mods_preload/mod_afeix_expedition.nut");
 ::AfeixExpedition.set=function(k,v){::state.flags[k]<-v;return v;};
 ::AfeixExpedition.characterId=function(a){return a.key;};
 ::AfeixExpedition.syncRosterTalents=function(a){};
+::productionSyncBalance <- ::AfeixExpedition.syncBalance;
+::AfeixExpedition.syncBalance=function(a){}; // V2 base/traits covered separately by test_balance_v26.nut.
 ::AfeixExpedition.syncPersonalGrowth=function(a){};
 ::AfeixExpedition.syncPromotion=function(a){};
 ::AfeixExpedition.syncCharacterArt=function(a){};
@@ -38,7 +40,7 @@ dofile(".cache/afei-art/native-contract-fixture/skill.nut");
 function loadDefinition(path) {
     if(path in ::definitions)return ::definitions[path];
     local pieces=split(path,"/"),name=pieces[pieces.len()-1];
-    if(["chop","split_man","rotation","taunt"].find(name)!=null)dofile(".cache/afei-art/native-contract-fixture/"+name+".nut");
+    if(["chop","split_man","rotation","taunt","character_trait"].find(name)!=null)dofile(".cache/afei-art/native-contract-fixture/"+name+".nut");
     else dofile("src/"+path+".nut");
     ::definitions[path]<-getroottable()[name];return ::definitions[path];
 }
@@ -66,6 +68,14 @@ function properties() {return {MeleeSkill=60,RangedSkill=50,MeleeDefense=10,Rang
     IsImmuneToFearAndPanic=false,IsSpecializedInAxes=false,DamageArmorMult=1.0,MeleeDamageMult=1.0,
     DamageReceivedTotalMult=1.0,DamageRegularMin=40,DamageRegularMax=40,DamageRegularMult=1.0,DamageTotalMult=1.0,
     DamageDirectMult=1.0,DamageDirectAdd=0.0,DamageDirectMeleeAdd=0.0,DamageAgainstMult=[1.0,1.5]};}
+function useLegacySkillFixture() {
+    // Effect-only regression cases intentionally equip combinations. Production gating
+    // is exercised without this override in test_member_training.nut.
+    ::AfeixExpedition.catalogLearned=function(a,key){
+        if(!this.isOrigin()||a==null)return false;
+        local d=this.MemberSkillDefs[key];return !("growth" in d)||!d.growth||this.get("growth_done_"+d.owner,false);
+    };
+}
 function makeActor(key,pos=0,faction=1) {
     local a={key=key,id=++::state.serial,pos=pos,faction=faction,alive=true,dying=false,placed=true,controlled=true,
         human=true,type=0,morale=4,ap=9,fatigue=0,fatigueMax=100,weapon=null,shield=null,props=properties(),baseProps=properties(),received=[],hp=100,
@@ -80,11 +90,13 @@ function makeActor(key,pos=0,faction=1) {
         getSkills=function(){return this.skills;},getItems=function(){return this.items;},getTile=function(){return this.tile;},
         onDamageReceived=function(user,s,hit){this.received.push(clone hit);}
     };
+    a.level<-1;a.flags<-{values={},has=function(k){return k in this.values;},get=function(k){return this.values[k];},set=function(k,v){this.values[k]<-v;}};
+    a.getLevel<-function(){return this.level;};a.getBaseProperties<-function(){return this.baseProps;};a.getFlags<-function(){return this.flags;};
     a.tile<-{owner=a,ID=100+a.id,Level=0,Pos={X=pos,Y=0},IsOccupiedByActor=true,IsEmpty=false,IsVisibleForEntity=true,IsVisibleForPlayer=true,
         getEntity=function(){return this.owner;},getDistanceTo=function(t){return abs(this.owner.pos-t.owner.pos);},
         hasNextTile=function(i){return i<this.owner.neighbors.len();},getNextTile=function(i){return this.owner.neighbors[i].tile;}};
     a.neighbors<-[];
-    a.items<-{actor=a,getItemAtSlot=function(slot){return slot==0?this.actor.weapon:this.actor.shield;}};
+    a.items<-{actor=a,getItemAtSlot=function(slot){return slot==0?this.actor.weapon:(slot==1?this.actor.shield:null);}};
     a.skills<-{actor=a,m={Skills=[]},busy=false,
         getActor=function(){return this.actor;},
         getSkillByID=function(id){foreach(s in this.m.Skills)if(!s.isGarbage()&&s.getID()==id)return s;return null;},
@@ -125,8 +137,9 @@ function effect(a,key){return a.skills.getSkillByID("effects.afeix_member_"+key)
 function roundtrip(s,path) {
     local io={data=[],i=0,getMetaData=function(){return {getVersion=function(){return 99;}};},
         writeBool=function(v){this.data.push(v);},readBool=function(){return this.data[this.i++];},
-        readU8=function(){return this.data[this.i++];},writeI32=function(v){this.data.push(v);},readI32=function(){return this.data[this.i++];},
+        readU8=function(){return this.data[this.i++];},writeU8=function(v){this.data.push(v);},writeI32=function(v){this.data.push(v);},readI32=function(){return this.data[this.i++];},
         writeU16=function(v){this.data.push(v);},readU16=function(){return this.data[this.i++];},
+        writeF32=function(v){this.data.push(v);},readF32=function(){return this.data[this.i++];},
         writeString=function(v){this.data.push(v);},readString=function(){return this.data[this.i++];}};
     s.onSerialize(io);local result=::new(path);result.onDeserialize(io);if(io.i!=io.data.len())throw "serialization left unread data";return result;
 }

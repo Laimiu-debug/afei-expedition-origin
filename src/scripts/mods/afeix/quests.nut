@@ -1,11 +1,10 @@
 local A = ::AfeixExpedition;
-// Historical source groups retained only for old development catalogs; never unlock gameplay.
+// User-confirmed content groups; grouping does not unlock recruits or change their conditions.
 A.Chapters <- [
     { id = 1, name = "刀一黑队", required = 1 },
     { id = 2, name = "刀二蓝队", required = 3 },
-    { id = 3, name = "九月联动", required = 6 },
-    { id = 4, name = "0.5 飞团", required = 9 },
-    { id = 5, name = "旅途来客", required = 12 }
+    { id = 3, name = "0.5DFW猪团", required = 6 },
+    { id = 4, name = "旅途来客", required = 9 }
 ];
 A.completedDeliveries <- function() {
     // v0.1 stored only the single finished delivery, not a total. Credit it once.
@@ -87,6 +86,29 @@ A.findDeliveryTown <- function(home) {
     local route = this.findDeliveryRoute(home);
     return route == null ? null : route.town;
 };
+A.registerTownLetter <- function(faction, contract) {
+    // Native addContract resets ordinary contract supply. Our extra letter
+    // must not postpone the employer's normal jobs.
+    local previous = faction.m.LastContractTime, result = null, failure = null;
+    try { result = ::World.Contracts.addContract(contract); } catch (error) { failure = error; }
+    faction.m.LastContractTime = previous;
+    if (failure != null) throw failure;
+    return result;
+};
+A.withNativeContractSupply <- function(faction, callback) {
+    if (!this.isOrigin()) return callback.bindenv(faction)();
+    local original = faction.m.Contracts, nativeContracts = [];
+    foreach (contract in original)
+        if (contract.getType() != "contract.afeix_letter") nativeContracts.push(contract);
+    // Retain registration for display, payment and saving. Only the native
+    // readiness check excludes our supplementary letter from the offer limit.
+    faction.m.Contracts = nativeContracts;
+    local result = null, failure = null;
+    try { result = callback.bindenv(faction)(); } catch (error) { failure = error; }
+    faction.m.Contracts = original;
+    if (failure != null) throw failure;
+    return result;
+};
 A.ensureTownLetter <- function(town) {
     if (!this.isOrigin() || town == null || !town.isAlive() || town.isMilitary() || !town.isAlliedWithPlayer()) return;
     this.migrateProgress();
@@ -108,7 +130,7 @@ A.ensureTownLetter <- function(town) {
     c.setHome(town);
     c.setOrigin(town);
     c.setup(route.town, route.tiles);
-    ::World.Contracts.addContract(c);
+    this.registerTownLetter(faction, c);
 };
 // The contract adapter supplies a successful terminal state and observed money received.
 // Contract IDs are native persistent IDs; an old completion cannot unlock or count twice.

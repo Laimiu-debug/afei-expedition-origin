@@ -1,9 +1,9 @@
 {
-  "version": "0.1.0-dlc",
-  "minimum_base": "0.24.0 / internal 29",
-  "base_preload_sha256": "cced2a889322176227d94d0bcfd0de09dfa8d7f4701ece3a0b8b780474e97b2d",
-  "base_package_sha256": "109dbe4d0df3c1de467d70e3853c768bea840b006631a0d6e2afaff3ccd89b8b",
-  "package_sha256": "405375d2b987060b7cf4b69cf5bb5d7eb9af6c67cc98a64f6caca7b343e9b3dc",
+  "version": "0.2.1-dlc",
+  "minimum_base": "0.26.2 / internal 36",
+  "base_preload_sha256": "0435175f9a8a19a9b8f0858aec1aaf885450e61307c8f1e80c3ebd6ad803bffb",
+  "base_package_sha256": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83",
+  "package_sha256": "e6da8d4a66b5774dd7c76481d38b8e770fa07456cf0247f3658987fd198e211a",
   "crc_and_source_match": true,
   "entries": [
     "brushes/afeix_dlc_xiwen_regen.brush",
@@ -200,18 +200,18 @@
       },
       {
         "test": "test_roster_groups",
-        "assertions": 44,
-        "log": "TESTS_PASSED=44\r\n"
+        "assertions": 46,
+        "log": "TESTS_PASSED=46\r\n"
       },
       {
         "test": "test_appearance",
-        "assertions": 2099,
-        "log": "ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=2099\r\n"
+        "assertions": 2107,
+        "log": "ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=2107\r\n"
       },
       {
         "test": "test_backgrounds",
-        "assertions": 856,
-        "log": "TESTS_PASSED=856\r\n"
+        "assertions": 1502,
+        "log": "TESTS_PASSED=1502\r\n"
       },
       {
         "test": "test_endings",
@@ -220,13 +220,13 @@
       },
       {
         "test": "dlc_native_background_persistence",
-        "assertions": 881,
-        "log": "TESTS_PASSED=881\r\n"
+        "assertions": 1546,
+        "log": "TESTS_PASSED=1546\r\n"
       },
       {
         "test": "dlc_native_recruitment_and_start",
-        "assertions": 32,
-        "log": "TESTS_PASSED=32\r\n"
+        "assertions": 41,
+        "log": "TESTS_PASSED=41\r\n"
       },
       {
         "test": "dlc_native_pet_lifecycle",

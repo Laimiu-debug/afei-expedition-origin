@@ -1,0 +1,2235 @@
+{
+  "status": "已实装至v0.27.2；35人固定两特质，新战役口径；实机效果仍待验收",
+  "accounting": "表列一级八维已含固定原版特质；实装基础=表列值-固定特质加减；剧情成长另算。阿飞与小酒瓶均无专属等级耐力加成；非八维机制沿用原版，不伪造折算属性。",
+  "definitions": {
+    "ailing": {
+      "id": "trait.ailing",
+      "name": "体弱多病",
+      "effect": "中毒效果多持续1回合",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "tough",
+        "iron_jaw",
+        "survivor",
+        "strong",
+        "athletic",
+        "iron_lungs",
+        "lucky",
+        "clubfooted"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/ailing.png",
+      "icon_sha256": "ff9fd77df078f54858bbd854887c8d5bc2fe2242895d6720e04d92813ff9e603",
+      "native_path": "scripts/skills/traits/ailing_trait.cnut",
+      "native_sha256": "609fb697321e252e2c9339916a7a3edc67230bd25f7f55e97479ecdf38cb5fb0"
+    },
+    "athletic": {
+      "id": "trait.athletic",
+      "name": "健步如飞",
+      "effect": "每格移动疲劳成本-2；仍受实际技能最低成本约束",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "asthmatic",
+        "clubfooted",
+        "fat",
+        "gluttonous",
+        "ailing"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/athletic.png",
+      "icon_sha256": "c8b04e27157539a670f774cc95017285b76073bb456bd75e5d38d9dbf6c12ae0",
+      "native_path": "scripts/skills/traits/athletic_trait.cnut",
+      "native_sha256": "53b8dae82a0e6f9d59e64ce765204f72097a242ac8ab7846367cc6802d6ee6ce"
+    },
+    "brave": {
+      "id": "trait.brave",
+      "name": "勇敢",
+      "effect": "决心+5",
+      "delta": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "weasel",
+        "insecure",
+        "craven",
+        "hesitant",
+        "dastard",
+        "fainthearted",
+        "fearless",
+        "paranoid",
+        "fear_beasts",
+        "fear_undead",
+        "fear_greenskins"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/brave.png",
+      "icon_sha256": "567f7dda3296acf70c4fe7d55671ac1fd3fec5c642cef73c807c836b41fc8fe1",
+      "native_path": "scripts/skills/traits/brave_trait.cnut",
+      "native_sha256": "d5e7dbf0878a5cd226e26ecdf6e08b159528aeed2db0d992e4ceec5c9559a10e"
+    },
+    "bright": {
+      "id": "trait.bright",
+      "name": "聪慧",
+      "effect": "经验获取×1.10",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "dumb"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/bright.png",
+      "icon_sha256": "bab65d2d8b2f081851f10420ee00290b54ac847ee4af4e2d0c33abe8fc336596",
+      "native_path": "scripts/skills/traits/bright_trait.cnut",
+      "native_sha256": "847f79640160ae5b9c58365140d2e0c9befb4523beaf4d1396abe57744cd152b"
+    },
+    "brute": {
+      "id": "trait.brute",
+      "name": "蛮力",
+      "effect": "近攻-5；近战命中头部的伤害倍率额外+0.15",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        -5,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "tiny",
+        "fragile",
+        "insecure",
+        "hesitant"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/brute.png",
+      "icon_sha256": "e4249e40f85b47ea98e9f35a64cd6576e09781135b0db38e08721676ef783e78",
+      "native_path": "scripts/skills/traits/brute_trait.cnut",
+      "native_sha256": "83dde3df55dd049a20187b41a6abaa57807f76e498669d01b57a133128a5ba1f"
+    },
+    "cocky": {
+      "id": "trait.cocky",
+      "name": "自负",
+      "effect": "决心+5、近防-5、远防-5",
+      "delta": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        -5,
+        -5
+      ],
+      "excluded": [
+        "weasel",
+        "hesitant",
+        "pessimist",
+        "dastard",
+        "insecure",
+        "craven",
+        "fainthearted",
+        "paranoid",
+        "fear_beasts",
+        "fear_undead",
+        "fear_greenskins",
+        "teamplayer"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/cocky.png",
+      "icon_sha256": "7a5a117e7db81210a4e6ec810f365ac93e782c37d5aae158e4d356e38de95a9d",
+      "native_path": "scripts/skills/traits/cocky_trait.cnut",
+      "native_sha256": "08aabab5cdbb5812ffdffd2871b1b662d88325bd4b0e52d4910536c1cf2cbf52"
+    },
+    "determined": {
+      "id": "trait.determined",
+      "name": "坚定",
+      "effect": "心情至少中立时，以自信士气开战；不永久增加八维",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "weasel",
+        "dastard",
+        "insecure",
+        "fainthearted",
+        "craven",
+        "paranoid",
+        "fear_beasts",
+        "fear_undead",
+        "fear_greenskins"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/determined.png",
+      "icon_sha256": "16cd28e180c69b163bf3e9c21b236b112723d18097e35583a2103aef7ac477df",
+      "native_path": "scripts/skills/traits/determined_trait.cnut",
+      "native_sha256": "3681e690579b671385bce53fcc6b052b6d463a94f6ae24254040e0c7dc0933f5"
+    },
+    "dexterous": {
+      "id": "trait.dexterous",
+      "name": "灵巧",
+      "effect": "近攻+5",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "clumsy"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/dexterous.png",
+      "icon_sha256": "58c96127b7ecb808ac550fd48101aad97b94a967dd3404baf3b1d12a02470d9a",
+      "native_path": "scripts/skills/traits/dexterous_trait.cnut",
+      "native_sha256": "dfa4b6382db3cd1e6d6d9326ac0b97935694202557e4e1b933620df2d5c51424"
+    },
+    "drunkard": {
+      "id": "trait.drunkard",
+      "name": "酒鬼",
+      "effect": "伤害×1.10；决心+5、近攻-5、远攻-10；保留原版相关事件风险",
+      "delta": [
+        0,
+        0,
+        5,
+        0,
+        -5,
+        -10,
+        0,
+        0
+      ],
+      "excluded": [
+        "teamplayer"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/drunkard.png",
+      "icon_sha256": "2a63df1502cacba96bccfb644eb6d9f7c8a36f5744a08abdfd4c04fd241a5ef1",
+      "native_path": "scripts/skills/traits/drunkard_trait.cnut",
+      "native_sha256": "a04facaae99274ddf00c07df0d201765f365424edaddc6f0058433dab93f7e15"
+    },
+    "eagle_eyes": {
+      "id": "trait.eagle_eyes",
+      "name": "鹰眼",
+      "effect": "视野+1",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "short_sighted",
+        "night_blind"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/eagle_eyes.png",
+      "icon_sha256": "5c90064e931e787ccde9b9fd317a5eb65227cae4582e26c17c46a568258559eb",
+      "native_path": "scripts/skills/traits/eagle_eyes_trait.cnut",
+      "native_sha256": "7e5565fb295fc3025509950d029b707eb34ca2c5a21db052401afd44aa490dcd"
+    },
+    "fat": {
+      "id": "trait.fat",
+      "name": "肥胖",
+      "effect": "生命+10、疲劳上限-10",
+      "delta": [
+        10,
+        -10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "athletic",
+        "swift",
+        "quick",
+        "strong",
+        "spartan",
+        "swift",
+        "iron_lungs"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/fat.png",
+      "icon_sha256": "aad027430ce4715bc3762233ddd7b491cfbd3d70f2a0d8f06d3e2cfb493f7b37",
+      "native_path": "scripts/skills/traits/fat_trait.cnut",
+      "native_sha256": "bdf38c30ca357d24bc384aafb02ba0a11c7e1e8549b124604ddc0c07f7d3bab5"
+    },
+    "fearless": {
+      "id": "trait.fearless",
+      "name": "无畏",
+      "effect": "决心+10",
+      "delta": [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "weasel",
+        "insecure",
+        "craven",
+        "hesitant",
+        "dastard",
+        "fainthearted",
+        "brave",
+        "superstitious",
+        "paranoid",
+        "fear_beasts",
+        "fear_undead",
+        "fear_greenskins"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/fearless.png",
+      "icon_sha256": "aa3ebc43dd3b3b41ddaf0c8e261e9a92e80e4705994e7040e10d107879d21bf6",
+      "native_path": "scripts/skills/traits/fearless_trait.cnut",
+      "native_sha256": "527e2e81a0eae3ca1442f388536c2cca7e8015259ff03e8b02badc6e4fedb5e5"
+    },
+    "hesitant": {
+      "id": "trait.hesitant",
+      "name": "犹豫",
+      "effect": "先攻-10",
+      "delta": [
+        0,
+        0,
+        0,
+        -10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "fearless",
+        "brave",
+        "deathwish",
+        "cocky",
+        "quick",
+        "brute",
+        "bloodthirsty",
+        "impatient"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/hesitant.png",
+      "icon_sha256": "fe4d234dbc55e9b8829b0114ad75136dbc436922ab5e6712c3fb7eea85a75c9b",
+      "native_path": "scripts/skills/traits/hesitant_trait.cnut",
+      "native_sha256": "3aedc6a8ad7d653cad9ff764c4b73143b122c514963b224f4ae227fe1c0f63d7"
+    },
+    "insecure": {
+      "id": "trait.insecure",
+      "name": "缺乏自信",
+      "effect": "无法获得自信士气",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "fearless",
+        "brave",
+        "optimist",
+        "irrational",
+        "determined",
+        "sure_footing",
+        "cocky",
+        "brute",
+        "bloodthirsty"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/insecure.png",
+      "icon_sha256": "ac7f061bb237b8d02e47eeb43419d176378732be1898829d6e6f6df67a6a85d5",
+      "native_path": "scripts/skills/traits/insecure_trait.cnut",
+      "native_sha256": "ef4162584dcc4c13dcb3d5f7c0143bd85072b3a5e32ddd0b2e8d2a13135fa2ef"
+    },
+    "iron_jaw": {
+      "id": "trait.iron_jaw",
+      "name": "铁下巴",
+      "effect": "受伤阈值×1.25",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "fragile",
+        "fainthearted",
+        "bleeder",
+        "tiny",
+        "ailing"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/iron_jaw.png",
+      "icon_sha256": "03be0f9e2c7802476bd4ee5c2dc1a4b1c64f0d9f325d72e332b0136d1b9b46d3",
+      "native_path": "scripts/skills/traits/iron_jaw_trait.cnut",
+      "native_sha256": "c4659b6f15985853ddbebca3b8fd65e9e788688717cea78426bbfa8f186b76fa"
+    },
+    "iron_lungs": {
+      "id": "trait.iron_lungs",
+      "name": "铁肺",
+      "effect": "每回合疲劳恢复+3",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "asthmatic",
+        "fat",
+        "gluttonous",
+        "ailing"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/iron_lungs.png",
+      "icon_sha256": "2b46e01e131a5daa930463a35aafbb8912e263c01cfd992d8e7bcc6a26421a9a",
+      "native_path": "scripts/skills/traits/iron_lungs_trait.cnut",
+      "native_sha256": "96c6dfeafecb8049348e7fcf24ba1fe6e753a152307b05390c5713260d819b5e"
+    },
+    "loyal": {
+      "id": "trait.loyal",
+      "name": "忠诚",
+      "effect": "较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "disloyal",
+        "craven",
+        "fainthearted",
+        "dastard"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/loyal.png",
+      "icon_sha256": "b858e1b06636018511006e05efaef79852740194158120cb99a18e640cd69cb3",
+      "native_path": "scripts/skills/traits/loyal_trait.cnut",
+      "native_sha256": "a145b881e7894a2e355474f13542693de9d9062d94528b76375df837b98f40e1"
+    },
+    "lucky": {
+      "id": "trait.lucky",
+      "name": "幸运",
+      "effect": "10%机会要求攻击者连续通过两次命中判定；不是固定10%闪避",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "pessimist",
+        "clumsy",
+        "ailing",
+        "clubfooted"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/lucky.png",
+      "icon_sha256": "7ab7b316c97041f178c543873350bb36309393f1a933dfa5d05e2354d2f19313",
+      "native_path": "scripts/skills/traits/lucky_trait.cnut",
+      "native_sha256": "72cf234f8bc240aeae5184e9bb65f51e2d7b09903f5097b2fff854b61b15b738"
+    },
+    "night_owl": {
+      "id": "trait.night_owl",
+      "name": "夜猫子",
+      "effect": "夜间视野+1",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "short_sighted",
+        "night_blind"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/night_owl.png",
+      "icon_sha256": "e0cbe94311c5888284903d0c209288970e22ae0c50aee7588e27f4b44ab359f1",
+      "native_path": "scripts/skills/traits/night_owl_trait.cnut",
+      "native_sha256": "3ea0cce518e2026c4b871266cfffc0630af1c0ba7c3715c812b5f6c7fc72f73b"
+    },
+    "optimist": {
+      "id": "trait.optimist",
+      "name": "乐观",
+      "effect": "正向士气检查决心+5；坏心情消退更快",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "weasel",
+        "pessimist",
+        "irrational",
+        "insecure",
+        "dastard",
+        "paranoid"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/optimist.png",
+      "icon_sha256": "8fed3c397586c11f0a702848366508efebe15fc39d5596cf97d28080b9addcac",
+      "native_path": "scripts/skills/traits/optimist_trait.cnut",
+      "native_sha256": "d3ca6418dff063093be6415b599f05ade7e4d8fa945001f94b995a00812d6628"
+    },
+    "pessimist": {
+      "id": "trait.pessimist",
+      "name": "悲观",
+      "effect": "负向士气检查决心-5；好心情消退更快",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "optimist",
+        "irrational",
+        "cocky",
+        "determined",
+        "survivor"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/pessimist.png",
+      "icon_sha256": "6e0aab62b130ceffd0b11315a150689c33b5f79b449251f94db44121c9f588b5",
+      "native_path": "scripts/skills/traits/pessimist_trait.cnut",
+      "native_sha256": "4f128fd8cefacf49fcea30d2eb641674120e93c2c89fa351e68562310238022e"
+    },
+    "strong": {
+      "id": "trait.strong",
+      "name": "强壮",
+      "effect": "疲劳上限+10",
+      "delta": [
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "tiny",
+        "fragile",
+        "fat",
+        "ailing"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/strong.png",
+      "icon_sha256": "03481031b06690fdb4e568ad99287811da3e07c235c27065944b92cf5b2b4eb1",
+      "native_path": "scripts/skills/traits/strong_trait.cnut",
+      "native_sha256": "6ff1350131009c182df614c7a49bfa87d546b78024411f6c5b2a5ca96a74c85f"
+    },
+    "sure_footing": {
+      "id": "trait.sure_footing",
+      "name": "步伐稳健",
+      "effect": "近防+5",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "excluded": [
+        "clumsy",
+        "insecure"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/sure_footing.png",
+      "icon_sha256": "091b944bc20aa500955df1008412ac0cbf5a0011d913af3f986f8d6446294298",
+      "native_path": "scripts/skills/traits/sure_footing_trait.cnut",
+      "native_sha256": "7b76ae3321a2e867823bf18c836cae676543e47207c069992d3ce5f22730125f"
+    },
+    "survivor": {
+      "id": "trait.survivor",
+      "name": "幸存者",
+      "effect": "可存活的倒地判定倍率×2.72；斩首等必死情况不因此复活",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "bleeder",
+        "pessimist",
+        "deathwish",
+        "ailing"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/survivor.png",
+      "icon_sha256": "c822b0dea6c6c55d987da351c51d9151cdb9b5188d0950adc2cd2f793e34eee1",
+      "native_path": "scripts/skills/traits/survivor_trait.cnut",
+      "native_sha256": "1fc6292d0418b09717437e0c488f2b3b3bb905d12278df12d6fc57244eb2d391"
+    },
+    "swift": {
+      "id": "trait.swift",
+      "name": "敏捷",
+      "effect": "远防+5（Swift；与Quick先攻+10区分）",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "excluded": [
+        "clumsy",
+        "fat",
+        "clubfooted"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/swift.png",
+      "icon_sha256": "1323c68a699cc75333034cef7f9b3499456534c3824e3e1994718267a0667dd9",
+      "native_path": "scripts/skills/traits/swift_trait.cnut",
+      "native_sha256": "6698ddad5aff1203cb3348774cfcd398fe1831dc1c975497fe481df47f56922f"
+    },
+    "teamplayer": {
+      "id": "trait.teamplayer",
+      "name": "团队协作",
+      "effect": "攻击同阵营目标时近攻/远攻倍率×0.5，减少误伤；不是全队增伤",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "cocky",
+        "bloodthirsty",
+        "drunkard",
+        "dumb",
+        "impatient"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/teamplayer.png",
+      "icon_sha256": "c66be4a5e2b366d721ad2ed8ef8996fcc7a2db1531b830be9342ce6ae0692b86",
+      "native_path": "scripts/skills/traits/teamplayer_trait.cnut",
+      "native_sha256": "3304b30c0bcacb10c32df4cbba832f79b6da306f23649b725d9715ffc2b3c883"
+    },
+    "tough": {
+      "id": "trait.tough",
+      "name": "强健",
+      "effect": "生命+10",
+      "delta": [
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "tiny",
+        "fragile",
+        "bleeder",
+        "ailing"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/tough.png",
+      "icon_sha256": "9ba467ea1c2bcbf707e0f79407a185a8260cacd46479a922949e3c7ea4600b2b",
+      "native_path": "scripts/skills/traits/tough_trait.cnut",
+      "native_sha256": "5efe995b7d53ea8af4bd8092979119d9c503a6f3578e22da0e6ef5f53e5123b7"
+    },
+    "gluttonous": {
+      "id": "trait.gluttonous",
+      "name": "贪吃",
+      "effect": "每天额外消耗1单位食物；断粮时更容易离队（原版判定）",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "athletic",
+        "iron_lungs",
+        "spartan",
+        "fragile"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/gluttonous.png",
+      "icon_sha256": "6f0085f761c64dd95feb17ffdd00b1064ddbfaec6d731ebffb098f8f361e8e50",
+      "native_path": "scripts/skills/traits/gluttonous_trait.cnut",
+      "native_sha256": "edc19ca90aaaafe554f5561a06fb3f82cf3022a5f1fd968741b9aecb8f41db7c"
+    },
+    "huge": {
+      "id": "trait.huge",
+      "name": "巨大",
+      "effect": "近战伤害×1.10；近防-5、远防-5",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -5,
+        -5
+      ],
+      "excluded": [
+        "tiny",
+        "quick",
+        "fragile"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/huge.png",
+      "icon_sha256": "ce3a7b407ee525735cf4d10bf065f788117748cb42bf5c58e7368a7e7a7b3ad8",
+      "native_path": "scripts/skills/traits/huge_trait.cnut",
+      "native_sha256": "781dbe61466223ea80c936a11c5837d753dfdd0dda8c5f9de8db9bc7a4db9ea5"
+    },
+    "quick": {
+      "id": "trait.quick",
+      "name": "快速",
+      "effect": "先攻+10",
+      "delta": [
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "excluded": [
+        "huge",
+        "hesitant",
+        "clubfooted"
+      ],
+      "icon": "docs/design/balance-v2/icons/traits/quick.png",
+      "icon_sha256": "e0bc1f27b9e06ae4bdb9387be95543d597b502274a58cb43cf75f56497f74892",
+      "native_path": "scripts/skills/traits/quick_trait.cnut",
+      "native_sha256": "3aabb04fb9c9d9ba445589b3b472c64556ecd214361331f2b4cdc4929c29b0b3"
+    }
+  },
+  "people": [
+    {
+      "key": "afei",
+      "name": "阿飞",
+      "traits": [
+        "cocky",
+        "bright"
+      ],
+      "delta": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        -5,
+        -5
+      ],
+      "responses": 29,
+      "trait_respondents": 25,
+      "selected_votes": [
+        16,
+        6
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.cocky",
+          "name": "自负",
+          "votes": 16
+        },
+        {
+          "id": "trait.bright",
+          "name": "聪慧",
+          "votes": 6
+        },
+        {
+          "id": "trait.eagle_eyes",
+          "name": "鹰眼",
+          "votes": 5
+        },
+        {
+          "id": "trait.fragile",
+          "name": "脆弱",
+          "votes": 5
+        },
+        {
+          "id": "trait.optimist",
+          "name": "乐观",
+          "votes": 5
+        },
+        {
+          "id": "trait.short_sighted",
+          "name": "近视",
+          "votes": 5
+        }
+      ],
+      "reason": "参考25份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "自负：决心+5、近防-5、远防-5；聪慧：经验获取×1.10",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "traits": [
+        "strong",
+        "tough"
+      ],
+      "delta": [
+        10,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 4,
+      "trait_respondents": 4,
+      "selected_votes": [
+        3,
+        2
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.strong",
+          "name": "强壮",
+          "votes": 3
+        },
+        {
+          "id": "trait.tough",
+          "name": "强健",
+          "votes": 2
+        },
+        {
+          "id": "trait.brute",
+          "name": "蛮力",
+          "votes": 1
+        },
+        {
+          "id": "trait.greedy",
+          "name": "贪婪",
+          "votes": 1
+        },
+        {
+          "id": "trait.huge",
+          "name": "高大",
+          "votes": 1
+        },
+        {
+          "id": "trait.loyal",
+          "name": "忠诚",
+          "votes": 1
+        },
+        {
+          "id": "trait.sure_footing",
+          "name": "步伐稳健",
+          "votes": 1
+        },
+        {
+          "id": "trait.weasel",
+          "name": "滑头",
+          "votes": 1
+        }
+      ],
+      "reason": "参考4份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "强壮：疲劳上限+10；强健：生命+10",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "traits": [
+        "bright",
+        "ailing"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 3,
+      "trait_respondents": 3,
+      "selected_votes": [
+        2,
+        2
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.ailing",
+          "name": "体弱多病",
+          "votes": 2
+        },
+        {
+          "id": "trait.bright",
+          "name": "聪慧",
+          "votes": 2
+        },
+        {
+          "id": "trait.brute",
+          "name": "蛮力",
+          "votes": 1
+        },
+        {
+          "id": "trait.deathwish",
+          "name": "视死如归",
+          "votes": 1
+        },
+        {
+          "id": "trait.determined",
+          "name": "坚定",
+          "votes": 1
+        },
+        {
+          "id": "trait.dumb",
+          "name": "迟钝",
+          "votes": 1
+        },
+        {
+          "id": "trait.fragile",
+          "name": "脆弱",
+          "votes": 1
+        },
+        {
+          "id": "trait.hate_greenskins",
+          "name": "憎恨绿皮",
+          "votes": 1
+        },
+        {
+          "id": "trait.optimist",
+          "name": "乐观",
+          "votes": 1
+        },
+        {
+          "id": "trait.short_sighted",
+          "name": "近视",
+          "votes": 1
+        },
+        {
+          "id": "trait.teamplayer",
+          "name": "团队协作",
+          "votes": 1
+        },
+        {
+          "id": "trait.weasel",
+          "name": "滑头",
+          "votes": 1
+        }
+      ],
+      "reason": "参考3份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "聪慧：经验获取×1.10；体弱多病：中毒效果多持续1回合",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "bottle",
+      "name": "小酒瓶",
+      "traits": [
+        "sure_footing",
+        "determined"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "responses": 5,
+      "trait_respondents": 3,
+      "selected_votes": [
+        2,
+        0
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.sure_footing",
+          "name": "步伐稳健",
+          "votes": 2
+        },
+        {
+          "id": "trait.tough",
+          "name": "强健",
+          "votes": 2
+        },
+        {
+          "id": "trait.cocky",
+          "name": "自负",
+          "votes": 1
+        },
+        {
+          "id": "trait.dexterous",
+          "name": "灵巧",
+          "votes": 1
+        },
+        {
+          "id": "trait.fat",
+          "name": "肥胖",
+          "votes": 1
+        },
+        {
+          "id": "trait.iron_lungs",
+          "name": "铁肺",
+          "votes": 1
+        },
+        {
+          "id": "trait.quick",
+          "name": "敏捷",
+          "votes": 1
+        },
+        {
+          "id": "trait.teamplayer",
+          "name": "团队协作",
+          "votes": 1
+        }
+      ],
+      "reason": "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖",
+      "effects": "步伐稳健：近防+5；坚定：心情至少中立时，以自信士气开战；不永久增加八维",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "traits": [
+        "bright",
+        "insecure"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 1,
+      "trait_respondents": 1,
+      "selected_votes": [
+        1,
+        1
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.ailing",
+          "name": "体弱多病",
+          "votes": 1
+        },
+        {
+          "id": "trait.bright",
+          "name": "聪慧",
+          "votes": 1
+        },
+        {
+          "id": "trait.insecure",
+          "name": "缺乏自信",
+          "votes": 1
+        }
+      ],
+      "reason": "参考1份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "聪慧：经验获取×1.10；缺乏自信：无法获得自信士气",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "lili",
+      "name": "李李超欧",
+      "traits": [
+        "lucky",
+        "optimist"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 2,
+      "trait_respondents": 1,
+      "selected_votes": [
+        1,
+        1
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.fearless",
+          "name": "无畏",
+          "votes": 1
+        },
+        {
+          "id": "trait.lucky",
+          "name": "幸运",
+          "votes": 1
+        },
+        {
+          "id": "trait.optimist",
+          "name": "乐观",
+          "votes": 1
+        },
+        {
+          "id": "trait.strong",
+          "name": "强壮",
+          "votes": 1
+        }
+      ],
+      "reason": "参考1份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "幸运：10%机会要求攻击者连续通过两次命中判定；不是固定10%闪避；乐观：正向士气检查决心+5；坏心情消退更快",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "xiaoyueya",
+      "name": "小月牙",
+      "traits": [
+        "gluttonous",
+        "optimist"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 1,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖",
+      "effects": "贪吃：每天额外消耗1单位食物；断粮时更容易离队（原版判定）；乐观：正向士气检查决心+5；坏心情消退更快",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "yuchujiu",
+      "name": "余初九",
+      "traits": [
+        "loyal",
+        "hesitant"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        -10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 1,
+      "trait_respondents": 1,
+      "selected_votes": [
+        0,
+        1
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.dastard",
+          "name": "胆小鬼",
+          "votes": 1
+        },
+        {
+          "id": "trait.dexterous",
+          "name": "灵巧",
+          "votes": 1
+        },
+        {
+          "id": "trait.hesitant",
+          "name": "犹豫",
+          "votes": 1
+        },
+        {
+          "id": "trait.lucky",
+          "name": "幸运",
+          "votes": 1
+        },
+        {
+          "id": "trait.survivor",
+          "name": "幸存者",
+          "votes": 1
+        }
+      ],
+      "reason": "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖",
+      "effects": "忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率；犹豫：先攻-10",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "traits": [
+        "determined",
+        "loyal"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 1,
+      "trait_respondents": 1,
+      "selected_votes": [
+        1,
+        1
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.determined",
+          "name": "坚定",
+          "votes": 1
+        },
+        {
+          "id": "trait.loyal",
+          "name": "忠诚",
+          "votes": 1
+        },
+        {
+          "id": "trait.tiny",
+          "name": "矮小",
+          "votes": 1
+        }
+      ],
+      "reason": "参考1份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "坚定：心情至少中立时，以自信士气开战；不永久增加八维；忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "traits": [
+        "brave",
+        "loyal"
+      ],
+      "delta": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "勇敢：决心+5；忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "traits": [
+        "cocky",
+        "drunkard"
+      ],
+      "delta": [
+        0,
+        0,
+        10,
+        0,
+        -5,
+        -10,
+        -5,
+        -5
+      ],
+      "responses": 1,
+      "trait_respondents": 1,
+      "selected_votes": [
+        1,
+        1
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.cocky",
+          "name": "自负",
+          "votes": 1
+        },
+        {
+          "id": "trait.drunkard",
+          "name": "酒鬼",
+          "votes": 1
+        },
+        {
+          "id": "trait.optimist",
+          "name": "乐观",
+          "votes": 1
+        }
+      ],
+      "reason": "参考1份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "自负：决心+5、近防-5、远防-5；酒鬼：伤害×1.10；决心+5、近攻-5、远攻-10；保留原版相关事件风险",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "yanzi",
+      "name": "眼子",
+      "traits": [
+        "loyal",
+        "teamplayer"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 1,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "作者按所附介绍指定：后排柄投；忠诚+团队协作，不采用跛足（2026-09-29）；历史反馈样本保持原记录",
+      "effects": "忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率；团队协作：攻击同阵营目标时近攻/远攻倍率×0.5，减少误伤；不是全队增伤",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "tiantong",
+      "name": "小虎",
+      "traits": [
+        "eagle_eyes",
+        "optimist"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "鹰眼：视野+1；乐观：正向士气检查决心+5；坏心情消退更快",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "xiaoning",
+      "name": "小宁",
+      "traits": [
+        "eagle_eyes",
+        "determined"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "鹰眼：视野+1；坚定：心情至少中立时，以自信士气开战；不永久增加八维",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖",
+      "traits": [
+        "strong",
+        "iron_jaw"
+      ],
+      "delta": [
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "强壮：疲劳上限+10；铁下巴：受伤阈值×1.25",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "traits": [
+        "swift",
+        "eagle_eyes"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "敏捷：远防+5（Swift；与Quick先攻+10区分）；鹰眼：视野+1",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "traits": [
+        "eagle_eyes",
+        "teamplayer"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "鹰眼：视野+1；团队协作：攻击同阵营目标时近攻/远攻倍率×0.5，减少误伤；不是全队增伤",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "xiaohani",
+      "name": "罗一可",
+      "traits": [
+        "athletic",
+        "teamplayer"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "健步如飞：每格移动疲劳成本-2；仍受实际技能最低成本约束；团队协作：攻击同阵营目标时近攻/远攻倍率×0.5，减少误伤；不是全队增伤",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "traits": [
+        "fat",
+        "huge"
+      ],
+      "delta": [
+        10,
+        -10,
+        0,
+        0,
+        0,
+        0,
+        -5,
+        -5
+      ],
+      "responses": 1,
+      "trait_respondents": 1,
+      "selected_votes": [
+        1,
+        0
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.clumsy",
+          "name": "笨拙",
+          "votes": 1
+        },
+        {
+          "id": "trait.fat",
+          "name": "肥胖",
+          "votes": 1
+        },
+        {
+          "id": "trait.loyal",
+          "name": "忠诚",
+          "votes": 1
+        },
+        {
+          "id": "trait.optimist",
+          "name": "乐观",
+          "votes": 1
+        },
+        {
+          "id": "trait.teamplayer",
+          "name": "团队协作",
+          "votes": 1
+        },
+        {
+          "id": "trait.tough",
+          "name": "强健",
+          "votes": 1
+        }
+      ],
+      "reason": "作者指定组合（2026-09-29）；历史反馈只作对照，不据票数覆盖",
+      "effects": "肥胖：生命+10、疲劳上限-10；巨大：近战伤害×1.10；近防-5、远防-5",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "yuxiang",
+      "name": "余想",
+      "traits": [
+        "determined",
+        "iron_lungs"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "坚定：心情至少中立时，以自信士气开战；不永久增加八维；铁肺：每回合疲劳恢复+3",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "tongzhu",
+      "name": "童猪",
+      "traits": [
+        "bright",
+        "loyal"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 1,
+      "trait_respondents": 1,
+      "selected_votes": [
+        1,
+        1
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.asthmatic",
+          "name": "哮喘",
+          "votes": 1
+        },
+        {
+          "id": "trait.bright",
+          "name": "聪慧",
+          "votes": 1
+        },
+        {
+          "id": "trait.eagle_eyes",
+          "name": "鹰眼",
+          "votes": 1
+        },
+        {
+          "id": "trait.gluttonous",
+          "name": "贪食",
+          "votes": 1
+        },
+        {
+          "id": "trait.loyal",
+          "name": "忠诚",
+          "votes": 1
+        },
+        {
+          "id": "trait.teamplayer",
+          "name": "团队协作",
+          "votes": 1
+        }
+      ],
+      "reason": "参考1份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "聪慧：经验获取×1.10；忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "meiya",
+      "name": "美伢",
+      "traits": [
+        "fearless",
+        "teamplayer"
+      ],
+      "delta": [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 1,
+      "trait_respondents": 1,
+      "selected_votes": [
+        1,
+        1
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.determined",
+          "name": "坚定",
+          "votes": 1
+        },
+        {
+          "id": "trait.fearless",
+          "name": "无畏",
+          "votes": 1
+        },
+        {
+          "id": "trait.teamplayer",
+          "name": "团队协作",
+          "votes": 1
+        }
+      ],
+      "reason": "参考1份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "无畏：决心+10；团队协作：攻击同阵营目标时近攻/远攻倍率×0.5，减少误伤；不是全队增伤",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "wanshe",
+      "name": "玩蛇",
+      "traits": [
+        "dexterous",
+        "cocky"
+      ],
+      "delta": [
+        0,
+        0,
+        5,
+        0,
+        5,
+        0,
+        -5,
+        -5
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "灵巧：近攻+5；自负：决心+5、近防-5、远防-5",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "tutu",
+      "name": "涂涂",
+      "traits": [
+        "brave",
+        "teamplayer"
+      ],
+      "delta": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "勇敢：决心+5；团队协作：攻击同阵营目标时近攻/远攻倍率×0.5，减少误伤；不是全队增伤",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "naigai",
+      "name": "奶盖",
+      "traits": [
+        "cocky",
+        "night_owl"
+      ],
+      "delta": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        -5,
+        -5
+      ],
+      "responses": 2,
+      "trait_respondents": 2,
+      "selected_votes": [
+        1,
+        1
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.ailing",
+          "name": "体弱多病",
+          "votes": 1
+        },
+        {
+          "id": "trait.bright",
+          "name": "聪慧",
+          "votes": 1
+        },
+        {
+          "id": "trait.cocky",
+          "name": "自负",
+          "votes": 1
+        },
+        {
+          "id": "trait.night_owl",
+          "name": "夜猫子",
+          "votes": 1
+        },
+        {
+          "id": "trait.superstitious",
+          "name": "迷信",
+          "votes": 1
+        }
+      ],
+      "reason": "参考2份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "自负：决心+5、近防-5、远防-5；夜猫子：夜间视野+1",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "xiaojie",
+      "name": "小杰",
+      "traits": [
+        "tough",
+        "pessimist"
+      ],
+      "delta": [
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 2,
+      "trait_respondents": 1,
+      "selected_votes": [
+        1,
+        1
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.pessimist",
+          "name": "悲观",
+          "votes": 1
+        },
+        {
+          "id": "trait.tough",
+          "name": "强健",
+          "votes": 1
+        }
+      ],
+      "reason": "参考1份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "强健：生命+10；悲观：负向士气检查决心-5；好心情消退更快",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "bula",
+      "name": "bula",
+      "traits": [
+        "teamplayer",
+        "lucky"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 1,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "团队协作：攻击同阵营目标时近攻/远攻倍率×0.5，减少误伤；不是全队增伤；幸运：10%机会要求攻击者连续通过两次命中判定；不是固定10%闪避",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "suwa",
+      "name": "苏袜",
+      "traits": [
+        "swift",
+        "athletic"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      "responses": 1,
+      "trait_respondents": 1,
+      "selected_votes": [
+        1,
+        1
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.athletic",
+          "name": "健步如飞",
+          "votes": 1
+        },
+        {
+          "id": "trait.bright",
+          "name": "聪慧",
+          "votes": 1
+        },
+        {
+          "id": "trait.lucky",
+          "name": "幸运",
+          "votes": 1
+        },
+        {
+          "id": "trait.sure_footing",
+          "name": "步伐稳健",
+          "votes": 1
+        },
+        {
+          "id": "trait.swift",
+          "name": "敏捷",
+          "votes": 1
+        },
+        {
+          "id": "trait.tiny",
+          "name": "矮小",
+          "votes": 1
+        }
+      ],
+      "reason": "参考1份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "敏捷：远防+5（Swift；与Quick先攻+10区分）；健步如飞：每格移动疲劳成本-2；仍受实际技能最低成本约束",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "qianhan",
+      "name": "千涵",
+      "traits": [
+        "determined",
+        "athletic"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "坚定：心情至少中立时，以自信士气开战；不永久增加八维；健步如飞：每格移动疲劳成本-2；仍受实际技能最低成本约束",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "traits": [
+        "sure_footing",
+        "loyal"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "步伐稳健：近防+5；忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "traits": [
+        "strong",
+        "brute"
+      ],
+      "delta": [
+        0,
+        10,
+        0,
+        0,
+        -5,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "强壮：疲劳上限+10；蛮力：近攻-5；近战命中头部的伤害倍率额外+0.15",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "traits": [
+        "teamplayer",
+        "survivor"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "团队协作：攻击同阵营目标时近攻/远攻倍率×0.5，减少误伤；不是全队增伤；幸存者：可存活的倒地判定倍率×2.72；斩首等必死情况不因此复活",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "traits": [
+        "quick",
+        "ailing"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 1,
+      "trait_respondents": 1,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.bright",
+          "name": "聪慧",
+          "votes": 1
+        },
+        {
+          "id": "trait.determined",
+          "name": "坚定",
+          "votes": 1
+        }
+      ],
+      "reason": "作者按所附介绍指定高先攻刺剑：快速（先攻+10）+体弱多病；保留历史反馈样本记录（2026-09-29）",
+      "effects": "快速：先攻+10；体弱多病：中毒效果多持续1回合",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "traits": [
+        "fat",
+        "loyal"
+      ],
+      "delta": [
+        10,
+        -10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 6,
+      "trait_respondents": 5,
+      "selected_votes": [
+        5,
+        5
+      ],
+      "top3_including_ties": [
+        {
+          "id": "trait.fat",
+          "name": "肥胖",
+          "votes": 5
+        },
+        {
+          "id": "trait.loyal",
+          "name": "忠诚",
+          "votes": 5
+        },
+        {
+          "id": "trait.ailing",
+          "name": "体弱多病",
+          "votes": 2
+        }
+      ],
+      "reason": "参考5份含特质反馈；按角色定位选取，非票数自动采纳",
+      "effects": "肥胖：生命+10、疲劳上限-10；忠诚：较不容易因缺钱、缺粮离队；沿用原版忠诚事件判定，不编造固定概率",
+      "level_fatigue_per_level": 0
+    },
+    {
+      "key": "xiwen",
+      "name": "希文",
+      "traits": [
+        "bright",
+        "athletic"
+      ],
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "responses": 0,
+      "trait_respondents": 0,
+      "selected_votes": [
+        0,
+        0
+      ],
+      "top3_including_ties": [],
+      "reason": "设计补全，暂无投票支持",
+      "effects": "聪慧：经验获取×1.10；健步如飞：每格移动疲劳成本-2；仍受实际技能最低成本约束",
+      "level_fatigue_per_level": 0
+    }
+  ],
+  "xiwen_icon_sources": [
+    {
+      "key": "xiwen_read",
+      "source": "scripts/skills/actives/riposte.cnut",
+      "icon": "skills/active_33.png",
+      "sha256": "eeca45998c40d558a6e16bf49972d1ffb3ffa0a77857351290a37fb915fa5fd0",
+      "status": "原版图标暂用；V2技能未实装"
+    },
+    {
+      "key": "xiwen_cover",
+      "source": "scripts/skills/actives/shieldwall.cnut",
+      "icon": "skills/active_15.png",
+      "sha256": "ca34db4d84ffd146cbca1d7b2636af42e644ca398271d506015ffef683d5f051",
+      "status": "原版图标暂用；V2技能未实装"
+    },
+    {
+      "key": "xiwen_travel",
+      "source": "scripts/skills/perks/perk_pathfinder.cnut",
+      "icon": "ui/perks/perk_23.png",
+      "sha256": "220158c386ec7cd5ec828dbae5760fd42f1cb92af4c4ad52560ffa3b798d0111",
+      "status": "原版图标暂用；V2技能未实装"
+    }
+  ]
+}

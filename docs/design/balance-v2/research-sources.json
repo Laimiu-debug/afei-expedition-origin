@@ -1,0 +1,280 @@
+{
+  "books": [
+    {
+      "slug": "treasury",
+      "title": "游戏数值百宝书：成为优秀的数值策划",
+      "source": "C:\\Users\\25647\\OneDrive\\Desktop\\游戏数值百宝书成为优秀的数值策划 (袁兆阳) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+      "sha256": "513e4b52f804fc07eb97640f263fb0634517cef45c03efefad207bcaee64cb94",
+      "spine_count": 57,
+      "extracted_chars": 168237,
+      "scope": "全文可解析，按章节定位阅读重点内容；不把文本提取等同于逐字通读。图表未全部逐图复核。"
+    },
+    {
+      "slug": "balance",
+      "title": "平衡掌控者——游戏数值战斗设计",
+      "source": "C:\\Users\\25647\\OneDrive\\Desktop\\平衡掌控者——游戏数值战斗设计 (似水无痕 [似水无痕]) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+      "sha256": "ee43bb05ed45e3aca73a013aa0d43a3e80d14067549c300796e54732e6d669f3",
+      "spine_count": 13,
+      "extracted_chars": 133615,
+      "scope": "全文可解析，按章节定位阅读重点内容；不把文本提取等同于逐字通读。图表未全部逐图复核。"
+    }
+  ],
+  "wiki": [
+    {
+      "url": "https://bbmod.site/wiki/about/?lang=zh",
+      "sha256": "d4124bf1e2d449ff5da2b5734afa94d021224c8955ac32159d9b586642fcb131",
+      "revision": null,
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Attributes/?lang=bi",
+      "sha256": "2a868770242b19b9dd2aa9f771c979cb96f4b4151b719fad5df5ca1ee597c9f9",
+      "revision": "46459",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Battle_Forged/?lang=bi",
+      "sha256": "e19c163737aa4f63cfdf5e55c4f4864b4fb8cfdbde082862aede1199a8d5d7a0",
+      "revision": "39685",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Brawler_(Background)/?lang=bi",
+      "sha256": "13ac086f99661452008716d61990246d0ce6221303b0e43a93a88318dd798cb5",
+      "revision": "41806",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Character_Backgrounds/?lang=bi",
+      "sha256": "420183055b1840ea4eb1552483e4a07e2d579269a629ba10f814392743ce188d",
+      "revision": "40607",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Combat_Mechanics/?lang=bi",
+      "sha256": "216794acf683b4d7234bb10a6d6d95869e7c6f87c396697fd8e84a5f592ac7b6",
+      "revision": "46260",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Farmhand_(Background)/?lang=bi",
+      "sha256": "f6307e747391d47a416b2ea6658d9302e823ab1eb9054d572223f53f97af786d",
+      "revision": "38126",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Game_Mechanics/?lang=bi",
+      "sha256": "b8e1473829a2ff609b7ebc0814269d6cf1e4b8756e2f9ac6e2d00547f62a5f22",
+      "revision": "41840",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Hedge_Knight_(Background)/?lang=bi",
+      "sha256": "25bda5afb21ed260cd01304e3d8ff0059d05f1316d0e7f139752762516627a7d",
+      "revision": "46609",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Hunter_(Background)/?lang=bi",
+      "sha256": "528cc431708c586c9c35d43239122eecaee2326c38257ebf7a59eb19487eb83a",
+      "revision": "38137",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/",
+      "sha256": "f4ef63399efde24b01d99c21e9aa5ec262f886386bfd25c3377b965f130e0af8",
+      "revision": null,
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Indomitable/?lang=bi",
+      "sha256": "b926c1b69cc961891affe2ce7ae0ec2563a39191e2b79ce7686acfeaa7d3d13f",
+      "revision": "44523",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Indomitable_(25_fatigue)/?lang=bi",
+      "sha256": "dc9ff3de2e3cf025ad1714c582cb1412f7d286ae6f55f76e5137d38242190bbe",
+      "revision": "44524",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Level_and_Experience/?lang=bi",
+      "sha256": "87722b47ddcb84927d2d32aa0a652e9367128440e3a603829c96bf4e7231c50d",
+      "revision": "45640",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Melee_Weapons/?lang=bi",
+      "sha256": "55cdb030632ecda595880ccecb28fc4b35bd9d93d093f6bbde800225406ab61f",
+      "revision": "42074",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Named_Two-Handed_Hammer/?lang=bi",
+      "sha256": "86cefd8e8b3204b5e807a77420043452ddf6d7e71016ca21c39a4cf2ddcf2f09",
+      "revision": "43460",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Nimble/?lang=bi",
+      "sha256": "00fb0394967441e300436b09f35ca8a3b7999b1c432b9348648315d87f786c4f",
+      "revision": "39686",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Perks/?lang=bi",
+      "sha256": "0167db3175a2bc5faa1cbcf6390746578ab3046e8c84f0b87bd56b000b253e6f",
+      "revision": "46389",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Recover/?lang=bi",
+      "sha256": "2921910678346b58c557c739f89697d3dce33ae4e712c906be7bbec4b3265ca1",
+      "revision": "44511",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Recover_(0_fatigue)/?lang=bi",
+      "sha256": "d4bc81ec2807314c7dc5fe40a6581294a4dfc88d9dfcbc7c7566b26d198452a7",
+      "revision": "44519",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Shields/?lang=bi",
+      "sha256": "1b43a3bf1220a7be4f11945ef9e128d75bbddab36ad696d92cce2b9e5cda3644",
+      "revision": "41705",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Talents/?lang=bi",
+      "sha256": "fb5e275c5ac65a6300246fa0413a0660a64079bbc3f7b3d847554ce1566fdc5e",
+      "revision": "41857",
+      "snapshot": "2026-09-18"
+    },
+    {
+      "url": "https://bbmod.site/wiki/read/Two-Handed_Hammer/?lang=bi",
+      "sha256": "ca67b4d5adf0d3c1f6611c0e5a383a185cfd2991dae5c1e8527b13d12b51d0d0",
+      "revision": "37180",
+      "snapshot": "2026-09-18"
+    }
+  ],
+  "wiki_native_attribute_endpoint_checks": 128,
+  "extra_native": [
+    {
+      "path": "scripts/skills/backgrounds/brawler_background.cnut",
+      "archive": "data_001.dat",
+      "sha256": "fb0829865262c96f291be689df32bec0ce2ffcd6aa889d587833fa771c43c5e7"
+    },
+    {
+      "path": "scripts/skills/backgrounds/farmhand_background.cnut",
+      "archive": "data_001.dat",
+      "sha256": "71a8f191b8d94e717fab480ea20fed1ba6df9297095683be262b7bd1a811f8df"
+    },
+    {
+      "path": "scripts/skills/backgrounds/hunter_background.cnut",
+      "archive": "data_001.dat",
+      "sha256": "4f78ac6bc78d7473184eb5d822e6ce3a62e2d02e88bd3f833ef2bdb963e69b0b"
+    },
+    {
+      "path": "scripts/skills/backgrounds/hedge_knight_background.cnut",
+      "archive": "data_001.dat",
+      "sha256": "88c633faf4243b22f0ad40aec801fff2d13135836740124aca088d0551ce1503"
+    },
+    {
+      "path": "scripts/skills/backgrounds/sellsword_background.cnut",
+      "archive": "data_001.dat",
+      "sha256": "f89c0cd45fec76424c38db333bcaa93d738765116d220dff2d7b24d5011f5fad"
+    },
+    {
+      "path": "scripts/skills/backgrounds/poacher_background.cnut",
+      "archive": "data_001.dat",
+      "sha256": "c7a400ed10a112f55cac601975538e70f5caf1ebadc4f6a7126b7e8daeec610a"
+    },
+    {
+      "path": "scripts/skills/backgrounds/militia_background.cnut",
+      "archive": "data_001.dat",
+      "sha256": "1f121c078d0b05480c70c48ec2031e4b75a8e2d1f14b31275a3c1c89ec172069"
+    },
+    {
+      "path": "scripts/skills/backgrounds/squire_background.cnut",
+      "archive": "data_001.dat",
+      "sha256": "520a96ad7fd58af7355d04348740d62704ca3105638356bc89aa0764d69b1e38"
+    },
+    {
+      "path": "scripts/items/armor/coat_of_plates.cnut",
+      "archive": "data_001.dat",
+      "sha256": "6bc82a4519af98d64e4474608f6d0caf085dedc4e66b824eae5159fbf82c8b1c"
+    },
+    {
+      "path": "scripts/items/armor/leather_lamellar.cnut",
+      "archive": "data_001.dat",
+      "sha256": "9dd757ee5ca2befa38f2571f8e31de9f262fcc9a3e41e99fb5770810d5503b12"
+    },
+    {
+      "path": "scripts/items/helmets/full_helm.cnut",
+      "archive": "data_001.dat",
+      "sha256": "cd71763723482f030ac8d690584c466cf303f0be7b2a7883f5c8a0acf362b9c0"
+    },
+    {
+      "path": "scripts/items/helmets/nasal_helmet.cnut",
+      "archive": "data_001.dat",
+      "sha256": "81aaa2be30854b8f3badc9c89c90b07caf5ae898d68d627d0d4cac926d394e9d"
+    },
+    {
+      "path": "scripts/items/weapons/named/named_two_handed_hammer.cnut",
+      "archive": "data_001.dat",
+      "sha256": "ba019f3e3b6efdd8f31e16ed5a9f812009779652202c8511fcc08eb1f3b83b5f"
+    },
+    {
+      "path": "scripts/entity/world/party.cnut",
+      "archive": "data_001.dat",
+      "sha256": "7e82b49052f0855e204d7997e5518c3de3b6ae4e4fea536e4caddfe3eb1d4c3e"
+    },
+    {
+      "path": "scripts/states/world/asset_manager.cnut",
+      "archive": "data_001.dat",
+      "sha256": "0ec2f87315dcca24a6347b81be4d6f97e1d76b2f3f4e0450a0a2c4f4039b76a5"
+    },
+    {
+      "path": "scripts/config/character.cnut",
+      "archive": "data_001.dat",
+      "sha256": "1517b6df18391acb7dfc2e6f40e104b778545d1c30db2f9dd97b6e1d0bd44bf1"
+    },
+    {
+      "path": "scripts/skills/perks/perk_brawny.cnut",
+      "archive": "data_001.dat",
+      "sha256": "c1ff5cf822ffab1888c2a3a6d4f8e990ae5997561dcf545c8b1533fc3d7515fb"
+    },
+    {
+      "path": "scripts/items/item_container.cnut",
+      "archive": "data_001.dat",
+      "sha256": "e3e351ba735b3fc36d2a656b60154db83c7ebab58f3502f6007c096b41bf442e"
+    },
+    {
+      "path": "scripts/items/armor/armor.cnut",
+      "archive": "data_001.dat",
+      "sha256": "fe1f7dceed44c7fa5beafbedd366cf514f8b9ae1f777fa0e97285e5a1a130024"
+    },
+    {
+      "path": "scripts/items/helmets/helmet.cnut",
+      "archive": "data_001.dat",
+      "sha256": "77588ed39a9124682f45372356f3b0b1ad8f42e1a6f5958362ac60ff4ec2faa5"
+    },
+    {
+      "path": "scripts/items/weapons/weapon.cnut",
+      "archive": "data_001.dat",
+      "sha256": "22f3d01b40e83ba5896ef146f4c641a604a391a68c52aabc289546a7e9c69c8c"
+    },
+    {
+      "path": "scripts/skills/skill_container.cnut",
+      "archive": "data_001.dat",
+      "sha256": "caf9ee38dc5fe886c1254f7917c26ac455517ef35ef568ecddc046d96112ff3c"
+    },
+    {
+      "path": "scripts/skills/special/bag_fatigue.cnut",
+      "archive": "data_001.dat",
+      "sha256": "d4ea17003e4fded8d0d46d105093225bfbdd806dfd6a4ad5ecfc930853b44cc2"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+HTTP/2 200 
+cache-control: private, no-store
+content-security-policy: default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+content-type: text/html; charset=utf-8
+cross-origin-opener-policy: same-origin
+date: Tue, 29 Sep 2026 08:25:41 GMT
+permissions-policy: camera=(), microphone=(), geolocation=()
+referrer-policy: same-origin
+server: Vercel
+set-cookie: bbmod_csrftoken=UF8C7W08GbLMo5zXuRG7tPEHyjo7ZUkB; expires=Tue, 28 Sep 2027 08:25:41 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure
+strict-transport-security: max-age=31536000
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding
+vary: Cookie
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-vercel-cache: MISS
+x-vercel-id: sin1::vkx9h-1790670341034-67a00b1c299e
+

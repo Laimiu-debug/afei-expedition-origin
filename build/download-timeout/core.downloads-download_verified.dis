@@ -1,0 +1,574 @@
+  53            RESUME                   0
+
+  59            LOAD_CONST               1 (0)
+                LOAD_GLOBAL              0 (hashlib)
+                LOAD_ATTR                2 (sha256)
+                PUSH_NULL
+                CALL                     0
+                LOAD_CONST               2 (0.0)
+                STORE_FAST_STORE_FAST  135 (reported, digest)
+                STORE_FAST               6 (count)
+
+  60            LOAD_FAST                1 (destination)
+                LOAD_ATTR                5 (open + NULL|self)
+                LOAD_CONST               3 ('wb')
+                CALL                     1
+                BEFORE_WITH
+        L1:     STORE_FAST               9 (output)
+
+  61            LOAD_GLOBAL              7 (range + NULL)
+                LOAD_GLOBAL              8 (MAX_RETRIES)
+                LOAD_CONST               4 (1)
+                BINARY_OP                0 (+)
+                CALL                     1
+                GET_ITER
+        L2:     EXTENDED_ARG             2
+                FOR_ITER               671 (to L31)
+                STORE_FAST              10 (attempt)
+
+  62            LOAD_GLOBAL             11 (_check_cancel + NULL)
+                LOAD_FAST                4 (cancelled)
+                CALL                     1
+                POP_TOP
+
+  63    L3:     NOP
+
+  64            NOP
+
+  65    L4:     LOAD_GLOBAL             13 (_request + NULL)
+                LOAD_FAST               10 (attempt)
+                TO_BOOL
+                POP_JUMP_IF_FALSE       11 (to L5)
+                LOAD_GLOBAL             15 (fallback_url + NULL)
+                LOAD_FAST                0 (url)
+                CALL                     1
+                JUMP_FORWARD             1 (to L6)
+        L5:     LOAD_FAST                0 (url)
+        L6:     LOAD_FAST                6 (count)
+                CALL                     2
+                STORE_FAST              11 (response)
+
+  73    L7:     LOAD_FAST               11 (response)
+                BEFORE_WITH
+        L8:     POP_TOP
+
+  74            LOAD_GLOBAL             11 (_check_cancel + NULL)
+                LOAD_FAST                4 (cancelled)
+                CALL                     1
+                POP_TOP
+
+  75            LOAD_FAST               11 (response)
+                LOAD_ATTR               32 (headers)
+                LOAD_ATTR               35 (get + NULL|self)
+                LOAD_CONST               9 ('Content-Encoding')
+                LOAD_CONST              10 ('identity')
+                CALL                     2
+                LOAD_ATTR               37 (lower + NULL|self)
+                CALL                     0
+                LOAD_CONST              10 ('identity')
+                COMPARE_OP             119 (bool(!=))
+                POP_JUMP_IF_FALSE       11 (to L9)
+
+  76            LOAD_GLOBAL             23 (ValueError + NULL)
+                LOAD_CONST              11 ('下载响应编码无效。')
+                CALL                     1
+                RAISE_VARARGS            1
+
+  77    L9:     LOAD_FAST               11 (response)
+                LOAD_ATTR               38 (status)
+                STORE_FAST              13 (status)
+
+  78            LOAD_FAST               13 (status)
+                LOAD_CONST              12 (206)
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_FALSE      116 (to L12)
+
+  79            LOAD_GLOBAL             40 (re)
+                LOAD_ATTR               42 (fullmatch)
+                PUSH_NULL
+                LOAD_CONST              13 ('bytes (\\d+)-(\\d+)/(\\d+)')
+                LOAD_FAST               11 (response)
+                LOAD_ATTR               32 (headers)
+                LOAD_ATTR               35 (get + NULL|self)
+                LOAD_CONST              14 ('Content-Range')
+                LOAD_CONST              15 ('')
+                CALL                     2
+                CALL                     2
+                STORE_FAST              14 (match)
+
+  80            LOAD_FAST               14 (match)
+                TO_BOOL
+                POP_JUMP_IF_FALSE       48 (to L10)
+                LOAD_GLOBAL             45 (tuple + NULL)
+                LOAD_GLOBAL             47 (map + NULL)
+                LOAD_GLOBAL             48 (int)
+                LOAD_FAST               14 (match)
+                LOAD_ATTR               51 (groups + NULL|self)
+                CALL                     0
+                CALL                     2
+                CALL                     1
+                LOAD_FAST_LOAD_FAST     98 (count, size)
+                LOAD_CONST               4 (1)
+                BINARY_OP               10 (-)
+                LOAD_FAST                2 (size)
+                BUILD_TUPLE              3
+                COMPARE_OP             119 (bool(!=))
+                POP_JUMP_IF_FALSE       11 (to L11)
+
+  81   L10:     LOAD_GLOBAL             23 (ValueError + NULL)
+                LOAD_CONST              16 ('网站返回了错误的续传位置，已停止下载。')
+                CALL                     1
+                RAISE_VARARGS            1
+
+  80   L11:     JUMP_FORWARD            77 (to L14)
+
+  82   L12:     LOAD_FAST               13 (status)
+                LOAD_CONST              17 (200)
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_FALSE       56 (to L13)
+
+  84            LOAD_FAST                9 (output)
+                LOAD_ATTR               53 (seek + NULL|self)
+                LOAD_CONST               1 (0)
+                CALL                     1
+                POP_TOP
+
+  85            LOAD_FAST                9 (output)
+                LOAD_ATTR               55 (truncate + NULL|self)
+                CALL                     0
+                POP_TOP
+
+  86            LOAD_CONST               1 (0)
+                LOAD_GLOBAL              0 (hashlib)
+                LOAD_ATTR                2 (sha256)
+                PUSH_NULL
+                CALL                     0
+                STORE_FAST_STORE_FAST  118 (digest, count)
+                JUMP_FORWARD            15 (to L14)
+
+  88   L13:     LOAD_GLOBAL             23 (ValueError + NULL)
+                LOAD_CONST              18 ('下载响应无效（HTTP ')
+                LOAD_FAST               13 (status)
+                FORMAT_SIMPLE
+                LOAD_CONST              19 ('）。')
+                BUILD_STRING             3
+                CALL                     1
+                RAISE_VARARGS            1
+
+  89   L14:     LOAD_FAST               11 (response)
+                LOAD_ATTR               32 (headers)
+                LOAD_ATTR               35 (get + NULL|self)
+                LOAD_CONST              20 ('Content-Length')
+                CALL                     1
+                STORE_FAST              15 (length)
+
+  90            LOAD_FAST               15 (length)
+                POP_JUMP_IF_NONE        49 (to L16)
+                LOAD_FAST               15 (length)
+                LOAD_ATTR               57 (isdigit + NULL|self)
+                CALL                     0
+                TO_BOOL
+                POP_JUMP_IF_FALSE       17 (to L15)
+                LOAD_GLOBAL             49 (int + NULL)
+                LOAD_FAST               15 (length)
+                CALL                     1
+                LOAD_FAST_LOAD_FAST     38 (size, count)
+                BINARY_OP               10 (-)
+                COMPARE_OP             119 (bool(!=))
+                POP_JUMP_IF_FALSE       11 (to L16)
+
+  91   L15:     LOAD_GLOBAL             23 (ValueError + NULL)
+                LOAD_CONST              21 ('下载大小与目录不一致。')
+                CALL                     1
+                RAISE_VARARGS            1
+
+  92   L16:     NOP
+
+  93   L17:     LOAD_GLOBAL             11 (_check_cancel + NULL)
+                LOAD_FAST                4 (cancelled)
+                CALL                     1
+                POP_TOP
+
+  94   L18:     NOP
+
+  95   L19:     LOAD_FAST               11 (response)
+                LOAD_ATTR               59 (read1 + NULL|self)
+                LOAD_CONST              22 (131072)
+                CALL                     1
+                STORE_FAST              16 (block)
+
+  98   L20:     LOAD_FAST               16 (block)
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L21)
+
+  99            JUMP_FORWARD           159 (to L25)
+
+ 100   L21:     LOAD_GLOBAL             11 (_check_cancel + NULL)
+                LOAD_FAST                4 (cancelled)
+                CALL                     1
+                POP_TOP
+
+ 101            LOAD_FAST                6 (count)
+                LOAD_GLOBAL             61 (len + NULL)
+                LOAD_FAST               16 (block)
+                CALL                     1
+                BINARY_OP                0 (+)
+                LOAD_FAST                2 (size)
+                COMPARE_OP             148 (bool(>))
+                POP_JUMP_IF_FALSE       11 (to L22)
+
+ 102            LOAD_GLOBAL             23 (ValueError + NULL)
+                LOAD_CONST              21 ('下载大小与目录不一致。')
+                CALL                     1
+                RAISE_VARARGS            1
+
+ 103   L22:     LOAD_FAST                9 (output)
+                LOAD_ATTR               63 (write + NULL|self)
+                LOAD_FAST               16 (block)
+                CALL                     1
+                POP_TOP
+
+ 104            LOAD_FAST                7 (digest)
+                LOAD_ATTR               65 (update + NULL|self)
+                LOAD_FAST               16 (block)
+                CALL                     1
+                POP_TOP
+
+ 105            LOAD_FAST                6 (count)
+                LOAD_GLOBAL             61 (len + NULL)
+                LOAD_FAST               16 (block)
+                CALL                     1
+                BINARY_OP               13 (+=)
+                STORE_FAST               6 (count)
+
+ 106            LOAD_GLOBAL             66 (time)
+                LOAD_ATTR               68 (monotonic)
+                PUSH_NULL
+                CALL                     0
+                STORE_FAST              17 (now)
+
+ 107            LOAD_FAST               17 (now)
+                LOAD_FAST                8 (reported)
+                BINARY_OP               10 (-)
+                LOAD_CONST              23 (0.2)
+                COMPARE_OP             188 (bool(>=))
+                POP_JUMP_IF_TRUE         5 (to L23)
+                LOAD_FAST_LOAD_FAST     98 (count, size)
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_FALSE       34 (to L24)
+
+ 108   L23:     LOAD_FAST                5 (progress)
+                PUSH_NULL
+                LOAD_CONST              24 ('正在下载：')
+                LOAD_FAST                6 (count)
+                LOAD_CONST              25 (1048576)
+                BINARY_OP               11 (/)
+                LOAD_CONST              26 ('.1f')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              27 (' / ')
+                LOAD_FAST                2 (size)
+                LOAD_CONST              25 (1048576)
+                BINARY_OP               11 (/)
+                LOAD_CONST              26 ('.1f')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              28 (' MB（')
+                LOAD_FAST                6 (count)
+                LOAD_CONST              29 (100)
+                BINARY_OP                5 (*)
+                LOAD_FAST                2 (size)
+                BINARY_OP                2 (//)
+                FORMAT_SIMPLE
+                LOAD_CONST              30 ('%）')
+                BUILD_STRING             7
+                CALL                     1
+                POP_TOP
+
+ 109            LOAD_FAST               17 (now)
+                STORE_FAST               8 (reported)
+
+  92   L24:     JUMP_BACKWARD          196 (to L17)
+
+ 110   L25:     LOAD_FAST_LOAD_FAST     98 (count, size)
+                COMPARE_OP             119 (bool(!=))
+                POP_JUMP_IF_FALSE        6 (to L26)
+
+ 111            LOAD_GLOBAL             24 (InterruptedDownload)
+                RAISE_VARARGS            1
+
+ 112   L26:     LOAD_FAST                7 (digest)
+                LOAD_ATTR               71 (hexdigest + NULL|self)
+                CALL                     0
+                LOAD_FAST                3 (sha256)
+                COMPARE_OP             119 (bool(!=))
+                POP_JUMP_IF_FALSE       11 (to L27)
+
+ 113            LOAD_GLOBAL             23 (ValueError + NULL)
+                LOAD_CONST              31 ('下载校验失败，文件未安装。请刷新目录后重试。')
+                CALL                     1
+                RAISE_VARARGS            1
+
+ 114   L27:     LOAD_FAST                5 (progress)
+                PUSH_NULL
+                LOAD_CONST              32 ('下载完成，正在校验压缩包…')
+                CALL                     1
+                POP_TOP
+
+ 115            NOP
+
+  73   L28:     LOAD_CONST               8 (None)
+                LOAD_CONST               8 (None)
+                LOAD_CONST               8 (None)
+                CALL                     2
+                POP_TOP
+       L29:     POP_TOP
+
+  60   L30:     LOAD_CONST               8 (None)
+                LOAD_CONST               8 (None)
+                LOAD_CONST               8 (None)
+                CALL                     2
+                POP_TOP
+                RETURN_CONST             8 (None)
+
+  61   L31:     END_FOR
+                POP_TOP
+
+  60   L32:     LOAD_CONST               8 (None)
+                LOAD_CONST               8 (None)
+                LOAD_CONST               8 (None)
+                CALL                     2
+                POP_TOP
+                RETURN_CONST             8 (None)
+
+  --   L33:     PUSH_EXC_INFO
+
+  66            LOAD_GLOBAL             16 (HTTPError)
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE       70 (to L37)
+                STORE_FAST              12 (error)
+
+  67   L34:     LOAD_FAST               12 (error)
+                LOAD_ATTR               19 (close + NULL|self)
+                CALL                     0
+                POP_TOP
+
+  68            LOAD_FAST               12 (error)
+                LOAD_ATTR               20 (code)
+                LOAD_CONST               5 (frozenset({504, 429, 500, 502, 503, 408}))
+                CONTAINS_OP              1
+                POP_JUMP_IF_FALSE       26 (to L35)
+
+  69            LOAD_GLOBAL             23 (ValueError + NULL)
+                LOAD_CONST               6 ('网站拒绝下载（HTTP ')
+                LOAD_FAST               12 (error)
+                LOAD_ATTR               20 (code)
+                FORMAT_SIMPLE
+                LOAD_CONST               7 ('），请刷新目录后重试。')
+                BUILD_STRING             3
+                CALL                     1
+                LOAD_FAST               12 (error)
+                RAISE_VARARGS            2
+
+  70   L35:     LOAD_GLOBAL             24 (InterruptedDownload)
+                LOAD_FAST               12 (error)
+                RAISE_VARARGS            2
+
+  --   L36:     LOAD_CONST               8 (None)
+                STORE_FAST              12 (error)
+                DELETE_FAST             12 (error)
+                RERAISE                  1
+
+  71   L37:     LOAD_GLOBAL             26 (OSError)
+                LOAD_GLOBAL             28 (URLError)
+                LOAD_GLOBAL             30 (HTTPException)
+                BUILD_TUPLE              3
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE       12 (to L40)
+                STORE_FAST              12 (error)
+
+  72   L38:     LOAD_GLOBAL             24 (InterruptedDownload)
+                LOAD_FAST               12 (error)
+                RAISE_VARARGS            2
+
+  --   L39:     LOAD_CONST               8 (None)
+                STORE_FAST              12 (error)
+                DELETE_FAST             12 (error)
+                RERAISE                  1
+
+  71   L40:     RERAISE                  0
+
+  --   L41:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+       L42:     PUSH_EXC_INFO
+
+  96            LOAD_GLOBAL             26 (OSError)
+                LOAD_GLOBAL             30 (HTTPException)
+                BUILD_TUPLE              2
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE       12 (to L45)
+                STORE_FAST              12 (error)
+
+  97   L43:     LOAD_GLOBAL             24 (InterruptedDownload)
+                LOAD_FAST               12 (error)
+                RAISE_VARARGS            2
+
+  --   L44:     LOAD_CONST               8 (None)
+                STORE_FAST              12 (error)
+                DELETE_FAST             12 (error)
+                RERAISE                  1
+
+  96   L45:     RERAISE                  0
+
+  --   L46:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+
+  73   L47:     PUSH_EXC_INFO
+                WITH_EXCEPT_START
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L48)
+                RERAISE                  2
+       L48:     POP_TOP
+       L49:     POP_EXCEPT
+                POP_TOP
+                POP_TOP
+       L50:     EXTENDED_ARG             3
+                JUMP_BACKWARD          846 (to L2)
+
+  --   L51:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+       L52:     PUSH_EXC_INFO
+
+ 116            LOAD_GLOBAL             24 (InterruptedDownload)
+                CHECK_EXC_MATCH
+                POP_JUMP_IF_FALSE      127 (to L59)
+                STORE_FAST              12 (error)
+
+ 117   L53:     LOAD_GLOBAL             11 (_check_cancel + NULL)
+                LOAD_FAST                4 (cancelled)
+                CALL                     1
+                POP_TOP
+
+ 118            LOAD_FAST               10 (attempt)
+                LOAD_GLOBAL              8 (MAX_RETRIES)
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_FALSE       12 (to L54)
+
+ 119            LOAD_GLOBAL             23 (ValueError + NULL)
+                LOAD_CONST              33 ('下载连接多次中断或超时，请检查网络后重试；本机 MOD 未更改。')
+                CALL                     1
+                LOAD_FAST               12 (error)
+                RAISE_VARARGS            2
+
+ 120   L54:     LOAD_FAST               10 (attempt)
+                LOAD_CONST               1 (0)
+                COMPARE_OP              88 (bool(==))
+                POP_JUMP_IF_FALSE       17 (to L55)
+                LOAD_GLOBAL             15 (fallback_url + NULL)
+                LOAD_FAST                0 (url)
+                CALL                     1
+                LOAD_FAST                0 (url)
+                COMPARE_OP             119 (bool(!=))
+                POP_JUMP_IF_FALSE        2 (to L55)
+                LOAD_CONST              34 ('切换备用直连，')
+                JUMP_FORWARD             1 (to L56)
+       L55:     LOAD_CONST              15 ('')
+       L56:     STORE_FAST              18 (route)
+
+ 121            LOAD_FAST                5 (progress)
+                PUSH_NULL
+                LOAD_CONST              35 ('连接中断，')
+                LOAD_FAST               18 (route)
+                FORMAT_SIMPLE
+                LOAD_CONST              36 ('正在重试 / 续传（')
+                LOAD_FAST               10 (attempt)
+                LOAD_CONST               4 (1)
+                BINARY_OP                0 (+)
+                FORMAT_SIMPLE
+                LOAD_CONST              37 ('/')
+                LOAD_GLOBAL              8 (MAX_RETRIES)
+                FORMAT_SIMPLE
+                LOAD_CONST              38 ('，已下载 ')
+                LOAD_FAST                6 (count)
+                LOAD_CONST              25 (1048576)
+                BINARY_OP               11 (/)
+                LOAD_CONST              26 ('.1f')
+                FORMAT_WITH_SPEC
+                LOAD_CONST              39 (' MB）…')
+                BUILD_STRING             9
+                CALL                     1
+                POP_TOP
+
+ 122            LOAD_GLOBAL             73 (_pause + NULL)
+                LOAD_GLOBAL             75 (min + NULL)
+                LOAD_CONST              40 (2)
+                LOAD_FAST               10 (attempt)
+                BINARY_OP                8 (**)
+                LOAD_CONST              41 (4)
+                CALL                     2
+                LOAD_FAST                4 (cancelled)
+                CALL                     2
+                POP_TOP
+       L57:     POP_EXCEPT
+                LOAD_CONST               8 (None)
+                STORE_FAST              12 (error)
+                DELETE_FAST             12 (error)
+                EXTENDED_ARG             3
+                JUMP_BACKWARD          981 (to L2)
+
+  --   L58:     LOAD_CONST               8 (None)
+                STORE_FAST              12 (error)
+                DELETE_FAST             12 (error)
+                RERAISE                  1
+
+ 116   L59:     RERAISE                  0
+
+  --   L60:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+
+  60   L61:     PUSH_EXC_INFO
+                WITH_EXCEPT_START
+                TO_BOOL
+                POP_JUMP_IF_TRUE         1 (to L62)
+                RERAISE                  2
+       L62:     POP_TOP
+       L63:     POP_EXCEPT
+                POP_TOP
+                POP_TOP
+                RETURN_CONST             8 (None)
+
+  --   L64:     COPY                     3
+                POP_EXCEPT
+                RERAISE                  1
+ExceptionTable:
+  L1 to L3 -> L61 [1] lasti
+  L4 to L7 -> L33 [2]
+  L7 to L8 -> L52 [2]
+  L8 to L18 -> L47 [3] lasti
+  L19 to L20 -> L42 [3]
+  L20 to L28 -> L47 [3] lasti
+  L28 to L29 -> L52 [2]
+  L29 to L30 -> L61 [1] lasti
+  L31 to L32 -> L61 [1] lasti
+  L33 to L34 -> L41 [3] lasti
+  L34 to L36 -> L36 [3] lasti
+  L36 to L38 -> L41 [3] lasti
+  L38 to L39 -> L39 [3] lasti
+  L39 to L41 -> L41 [3] lasti
+  L41 to L42 -> L52 [2]
+  L42 to L43 -> L46 [4] lasti
+  L43 to L44 -> L44 [4] lasti
+  L44 to L46 -> L46 [4] lasti
+  L46 to L47 -> L47 [3] lasti
+  L47 to L49 -> L51 [5] lasti
+  L49 to L50 -> L52 [2]
+  L50 to L51 -> L61 [1] lasti
+  L51 to L52 -> L52 [2]
+  L52 to L53 -> L60 [3] lasti
+  L53 to L57 -> L58 [3] lasti
+  L57 to L58 -> L61 [1] lasti
+  L58 to L60 -> L60 [3] lasti
+  L60 to L61 -> L61 [1] lasti
+  L61 to L63 -> L64 [3] lasti

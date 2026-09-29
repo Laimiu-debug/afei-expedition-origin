@@ -3,8 +3,7 @@ A.CatalogContext <- null;
 A.CatalogMoving <- false;
 A.catalogLearned <- function(a,key) {
     if (!this.isOrigin() || a==null) return false;
-    local d=this.MemberSkillDefs[key];
-    return !("growth" in d) || !d.growth || this.get("growth_done_"+d.owner,false);
+    return this.trainingRank(a,key)>0;
 };
 A.catalogHas <- function(a,key) {
     if (!this.isOrigin() || a==null || !(key in this.MemberSkillDefs) || !this.catalogLearned(a,key)) return false;
@@ -22,7 +21,7 @@ A.catalogOnce <- function(a,key) { if(this.catalogGet(a,key,-1)==this.memberRoun
 A.catalogRecover <- function(a,amount) {
     if(!this.memberPlayer(a))return 0;
     if(this.catalogGet(a,"recover_round",-1)!=this.memberRound()){this.catalogSet(a,"recover_round",this.memberRound());this.catalogSet(a,"recover_amount",0);}
-    local n=::Math.max(0,::Math.min(amount,::Math.min(a.getFatigue(),20-this.catalogGet(a,"recover_amount"))));
+    local n=::Math.max(0,::Math.min(amount,::Math.min(a.getFatigue(),8-this.catalogGet(a,"recover_amount"))));
     a.setFatigue(a.getFatigue()-n);this.catalogSet(a,"recover_amount",this.catalogGet(a,"recover_amount")+n);a.getSkills().update();return n;
 };
 A.catalogEnemies <- function(a) {
@@ -36,7 +35,11 @@ A.catalogEnemies <- function(a) {
 };
 A.catalogNearbyPlayers <- function(target,radius){
     local list=[];
-    foreach(a in ::Tactical.Entities.getInstancesOfFaction(::Const.Faction.Player))if(a!=target&&this.memberPlayer(a)&&a.getTile().getDistanceTo(target.getTile())<=radius)list.push(a);
+    // Native damage resolution can remove a killed target before onTargetHit.
+    // getTile() on that entity throws inside the engine, rather than returning null.
+    if(target==null||!target.isPlacedOnMap())return list;
+    local tile=target.getTile();
+    foreach(a in ::Tactical.Entities.getInstancesOfFaction(::Const.Faction.Player))if(a!=target&&this.memberPlayer(a)&&a.getTile().getDistanceTo(tile)<=radius)list.push(a);
     return list;
 };
 A.catalogThrowing <- function(a) {
@@ -73,7 +76,8 @@ A.catalogGuard <- function(effect,properties,fields) {
         foreach(s in target.getSkills().m.Skills)if(!s.isGarbage()&&"CatalogEffect" in s.m&&s.valid()){
             local n=s.bonus(field);if(n>amount){amount=n;best=s;}
         }
-        if(best==effect)properties[field]+=amount-prior;
+        if(field=="MeleeDefense")amount=::Math.min(8,amount);
+        if(best==effect)properties[field]+=::Math.max(0,amount-prior);
     }
 };
 A.catalogDiscount <- function(a,s) {
@@ -115,10 +119,9 @@ A.catalogActiveAllowed <- function(skill) {
     local a=skill.getContainer().getActor(),key=skill.m.Key,d=this.MemberSkillDefs[key];
     if(!this.catalogLearned(a,key)||(d.once&&skill.m.Used))return false;
     if("limit" in d&&this.catalogGet(a,"uses_"+key)>=d.limit)return false;
-    if(d.mode=="step"||d.mode=="swap")if(!this.catalogMovable(a))return false;
+    if(d.mode=="step"||d.mode=="swap")if(!this.catalogMovable(a)||this.catalogGet(a,"special_move_turn",-1)==this.catalogGet(a,"turn_serial"))return false;
     if(d.mode=="snare"&&::World.Assets.getArmorParts()<2)return false;
     if(key=="unselectable"&&this.catalogEnemies(a).len()>0)return false;
-    if(key=="bear_strike"&&this.catalogGet(a,"insight")<1)return false;
     if(key=="curtain_yield"&&!this.catalogGet(a,"turn_melee_hit"))return false;
     if(key=="prince_order"){
         foreach(b in ::Tactical.Entities.getInstancesOfFaction(::Const.Faction.Player))if(this.characterId(b)=="afei"&&this.memberPlayer(b))return false;
@@ -128,6 +131,7 @@ A.catalogActiveAllowed <- function(skill) {
 A.catalogAction <- function(skill,user,tile) {
     local key=skill.m.Key,d=this.MemberSkillDefs[key];
     this.catalogSet(user,"turn_used",1);
+    if(d.mode=="step"||d.mode=="swap")this.catalogSet(user,"special_move_turn",this.catalogGet(user,"turn_serial"));
     this.catalogSet(user,"uses_"+key,this.catalogGet(user,"uses_"+key)+1);
     if(d.mode=="weapon"){
         local native=this.memberBasicAttack(user,false);skill.m.ExecutingNative=native;
@@ -148,29 +152,31 @@ A.catalogAction <- function(skill,user,tile) {
         this.catalogSet(user,"turn_moved",1);
         if(key=="king_dance"){
             // Teleport animations can finish later; use the chosen destination.
-            foreach(b in ::Tactical.Entities.getInstancesOfFaction(::Const.Faction.Player))
-                if(b!=user&&this.memberPlayer(b)&&b.getTile().getDistanceTo(tile)<=1)this.catalogEffect(b,key,user);
+            local allies=[];
+            foreach(b in ::Tactical.Entities.getInstancesOfFaction(::Const.Faction.Player))if(b!=user&&this.memberPlayer(b)&&b.getTile().getDistanceTo(tile)<=1)allies.push(b);
+            allies.sort(function(a,b){if(a==b)return 0;if(a.getFatigue()!=b.getFatigue())return a.getFatigue()>b.getFatigue()?-1:1;return a.getID()<b.getID()?-1:1;});
+            for(local i=0;i<::Math.min(2,allies.len());i++)this.catalogEffect(allies[i],key,user);
         }
         else if(key in this.CatalogEffects)this.catalogEffect(user,key,user);
     } else if(d.mode=="taunt") this.catalogVirtual(user,"scripts/skills/actives/taunt").onUse(user,tile);
     else if(d.mode=="unnet"){local t=tile.getEntity();t.getSkills().removeAllByID(this.catalogNet(t));t.getSkills().update();}
-    else if(d.mode=="snare"){::World.Assets.addArmorParts(-2);this.catalogEffect(tile.getEntity(),key,user);}
+    else if(d.mode=="snare"){::World.Assets.addArmorParts(-2);local target=tile.getEntity(),chance=::Math.max(5,::Math.min(95,user.getCurrentProperties().MeleeSkill+10-target.getCurrentProperties().MeleeDefense));if(::Math.rand(1,100)<=chance)this.catalogEffect(target,key,user);}
     else if(d.mode=="mark"){
         local previous=this.catalogGet(user,"mark_"+key),old=previous==0 ? null : ::Tactical.getEntityByID(previous);
         if(old!=null)this.catalogRemove(old,key);
-        local e=this.catalogEffect(tile.getEntity(),key,user);e.m.UntilRound=this.memberRound()+2;
+        local e=this.catalogEffect(tile.getEntity(),key,user);e.m.UntilRound=key=="abacus_mark"?0:this.memberRound()+2;
         this.catalogSet(user,"mark_"+key,tile.getEntity().getID());
     } else if(d.mode=="cover"){
         local e=this.catalogEffect(tile.getEntity(),key,user);
         e.m.SourceTurn=this.catalogGet(user,"turn_serial");
     } else {
-        local targets=d.mode=="team"?this.memberAllies(user,d.range):[];
-        if(d.mode=="team"||d.target=="self")targets.push(user);else targets.push(tile.getEntity());
-        local insight=key=="cup_signal"?::Math.min(2,this.catalogGet(user,"insight")):0;
-        if(key=="cup_signal")this.catalogSet(user,"insight",this.catalogGet(user,"insight")-insight);
-        if(key=="bear_strike")this.catalogSet(user,"insight",this.catalogGet(user,"insight")-1);
+        local center=tile!=null&&tile.IsOccupiedByActor?tile.getEntity():user;
+        local targets=d.mode=="team"?this.balanceTargets(user,key=="drum"?center:user,d.range):[];
+        if(d.mode!="team"){if(d.target=="self")targets.push(user);else targets.push(tile.getEntity());}
+        if(key=="yanzi_cover")targets.push(user);
+        local insight=0;
         foreach(b in targets){local e=this.catalogEffect(b,key,user);if(key=="cup_signal")e.m.Bonus=insight*2;b.getSkills().update();}
-        if(key=="dui_sentence")this.catalogSet(user,"fear_penalty",0);
+
     }
     user.getSkills().update();
     return true;

@@ -1,0 +1,35 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-27",
+  "status": "selected_after_offline_visual_review",
+  "records": [
+    {
+      "key": "meiya",
+      "name": "美伢",
+      "prompt": "Use case: identity-preserve / stylized-concept.\nAsset type: ONE updated transparent character bust sprite for the Battle Brothers mod character 美伢 (Meiya), recognizable from four user-supplied photographs.\nInput roles: Images 1-4 are IDENTITY reference photographs of the SAME adult woman, to be synthesized across front and side views. Image 4 (front view) anchors facial proportions; images 1 and 3 clarify her nose, jaw and profile; image 2 supports eyes and relaxed mouth. Image 5 is the EXISTING GAME ASSET to improve: preserve its screen-right three-quarter facing, compact single bust framing, simple brown leather shoulder garment and dusty rose linen neckline, but correct its exaggerated face using the photographs.\nPrimary request: repaint the existing asset with a more faithful, natural likeness. Refined elongated oval face with gently tapering small chin, soft cheek planes, slim straight nose with compact rounded tip, medium-thin gently curved natural dark eyebrows (not thick severe angular eyebrows), expressive dark almond eyes with restrained upper lash line (not huge doll eyes), naturally defined muted rose lips with visible cupid's bow and a relaxed subtle friendly almost-smile. Lips should be smaller and less protruding than the old illustration; no duck-lip pout, no exaggerated open mouth, no angry or suspicious expression. Use the photographs rather than inheriting the inaccurate features of the old art. Long very dark brown-black hair, near-centre part, softly flowing broad locks framing the face and resting behind the shoulders, modest crown volume. No invented moles or freckles.\nStyle: clearly a hand-painted low-resolution medieval game sprite, matching Battle Brothers: firm dark brown outer contour, broad economical shadow shapes and restrained painterly shading, muted warm earthy palette, simplified purposeful feature marks legible after reduction to 88x100 visible pixels. Not photorealistic, not anime, not glamour illustration. Keep likeness without airbrushed beauty lighting.\nComposition: head, nose, gaze, shoulders and chest consistently turned three-quarter toward SCREEN RIGHT; gaze slightly to screen right, not directly at viewer. Exaggerated game head occupying roughly 60 percent of total silhouette height; full jaw and intact short neck; narrow rounded shoulder/chest base in bottom 30 percent. Match the old asset's body crop and scale. Entire crown and both shoulders inside canvas with small transparent margins. One isolated bust only, no hands/arms, weapons, headgear, necklace, accessories, text, UI overlays, watermarks, background, ground or cast shadow. The photos' hats are NOT part of the base sprite because game helmets overlay it. Modest fully clothed linen and leather shoulders.\nOutput: actual transparent RGBA background, preserve alpha; one finished source asset, not a comparison sheet or grid.",
+      "references": [
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-meiya/01-side-closeup.jpg",
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-meiya/02-hat-closeup.jpg",
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-meiya/03-side-smile.jpg",
+        "G:/CODE/afei-xcpedition/art/references/2026-09-27-meiya/04-front-long-hair.jpg",
+        "G:/CODE/afei-xcpedition/art/runtime/portraits-v05/sources/user-v12/meiya.png"
+      ],
+      "selected_source": "art/runtime/portraits-v05/sources/user-v17/meiya.png",
+      "generated_original": "C:/Users/25647/.codex/generated_images/01a0e182-4f3d-7eb2-ac38-307dc7d2ee97/exec-6e00b4ff-8923-448e-b969-e5c742e8e518.png",
+      "source_sha256": "072cd373b42e05f1d3e87600c1db488328958e8d1e44fcead00c0aaadcc5afc0",
+      "review": {
+        "comparison": "build/playtest-meiya/comparison.png",
+        "identity_references": 4,
+        "source_pixels_edited_after_generation": false,
+        "transparent_rgba": true,
+        "game_size_reviewed": true,
+        "equipment_reviewed": [
+          "armor",
+          "open_helmet",
+          "closed_helmet"
+        ],
+        "in_game_tested": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "key": "lili",
+  "name": "李李超欧",
+  "form": "default",
+  "brush": "afeix_p04_lili",
+  "source": "art/runtime/portraits-v05/sources/user-v18/lili.png",
+  "source_kind": "generated_custom",
+  "source_sha256": "181ad42c05cc78892753e0b4bc37ea25e8c5a0130015ec0bad9b43c3c24d1ea9",
+  "source_size": [
+    1190,
+    1322
+  ],
+  "source_box": null,
+  "alpha_crop_box": [
+    164,
+    107,
+    1043,
+    1277
+  ],
+  "alpha_threshold": 20,
+  "resized_size": [
+    75,
+    100
+  ],
+  "uniform_scale": 0.08547008547008547,
+  "placement": [
+    19,
+    42
+  ],
+  "output_size": [
+    114,
+    142
+  ],
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "live_png_sha256": "6e8e77aad4d4da7767eb29b58bf6642895f1fbb18fc3481b727cb14ce89b190f",
+  "head_png_sha256": "0d77408f2d16a2ef0e7e5a7aea5e2362593f2953a3171a094e50d01327a03e42",
+  "dead_png_sha256": "f53657ee0dfb9457a0c7513f539a0de264fe486a68a8c16cdab97f0884d38cbb",
+  "partition": "reviewed_neck_contour",
+  "head_seam": [
+    [
+      0,
+      109
+    ],
+    [
+      35,
+      109
+    ],
+    [
+      48,
+      114
+    ],
+    [
+      57,
+      123
+    ],
+    [
+      73,
+      123
+    ],
+    [
+      85,
+      114
+    ],
+    [
+      95,
+      109
+    ],
+    [
+      114,
+      109
+    ]
+  ],
+  "neck_guard": [
+    68,
+    110
+  ],
+  "split_reconstructs_complete_portrait": true,
+  "dead_mode": "same_complete_bust_runtime_transform_required",
+  "metadata": [
+    {
+      "id": "afeix_p04_lili",
+      "img": "sprites\\afeix_p04_lili.png",
+      "left": "-57",
+      "right": "57",
+      "top": "-51",
+      "bottom": "91",
+      "width": "114",
+      "height": "142",
+      "offsetY": "35"
+    },
+    {
+      "id": "afeix_p04_lili_head",
+      "img": "sprites\\afeix_p04_lili_head.png",
+      "left": "-57",
+      "right": "57",
+      "top": "-51",
+      "bottom": "91",
+      "width": "114",
+      "height": "142",
+      "offsetY": "35"
+    },
+    {
+      "id": "afeix_p04_lili_dead",
+      "img": "sprites\\afeix_p04_lili_dead.png",
+      "left": "-57",
+      "right": "57",
+      "top": "-71",
+      "bottom": "71",
+      "width": "114",
+      "height": "142",
+      "offsetX": "0",
+      "offsetY": "0"
+    }
+  ],
+  "review_note": "用户参考短棕发、足球发卡与素装；朝右，透明底，完整下颌和颈部。"
+}

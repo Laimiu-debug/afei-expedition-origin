@@ -31,8 +31,8 @@
         local result = onEnter.bindenv(this)();
         if (result) {
             local A = ::AfeixExpedition;
-            A.visitRecruitTown(this);
-            A.updateRecruitEligibility();
+            // Prepare before the native crowd building hides an empty roster.
+            A.ensureTownRecruit(this);
             A.ensureTownLetter(this);
             A.ensureStoryItems();
         }
@@ -41,6 +41,30 @@
     local updateRoster = o.updateRoster;
     o.updateRoster = function(force = false) {
         return ::AfeixExpedition.withProtectedCandidates(this, updateRoster, force);
+    };
+});
+
+foreach (path in ["factions/settlement_faction", "factions/city_state_faction"]) {
+    ::mods_hookExactClass(path, function(o) {
+        local isReadyForContract = o.isReadyForContract;
+        o.isReadyForContract = function() {
+            return ::AfeixExpedition.withNativeContractSupply(this, isReadyForContract);
+        };
+    });
+}
+
+// Recruit-display mods can replace queryHireInformation on the live module.
+// Prepare at the screen's entry point too, before calling whichever converter
+// is installed. world_town_screen is a native bare table, so use NewObject.
+::mods_hookNewObject("ui/screens/world/world_town_screen", function(o) {
+    local showHireDialog = o.showHireDialog;
+    o.showHireDialog = function() {
+        local A = ::AfeixExpedition;
+        if (A.isOrigin() && this.m.JSHandle != null && this.isVisible()) {
+            local hire = this.getHireDialogModule();
+            if (hire != null) A.ensureTownRecruit(::World.getEntityByID(hire.m.RosterID));
+        }
+        return showHireDialog.bindenv(this)();
     };
 });
 

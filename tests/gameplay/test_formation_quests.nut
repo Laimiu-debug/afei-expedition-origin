@@ -26,7 +26,7 @@ local flags = {}, members = [], origin = true, safe = true, money = 100, current
         }; }
     }; }
 };
-::AfeixExpedition <- { CombatMax = 10, RosterMax = 40, Schema = 2 };
+::AfeixExpedition <- { CombatMax = 12, RosterMax = 40, Schema = 2 };
 dofile("src/scripts/mods/afeix/core.nut");
 dofile("src/scripts/mods/afeix/formation.nut");
 dofile("src/scripts/mods/afeix/characters.nut");
@@ -44,7 +44,7 @@ local bro = function(id, place) { return {
 }; };
 for (local i = 0; i < 20; i++) members.push(bro(i + 1, i < 12 ? i : 18 + i - 12));
 A.enforceFormation();
-check(A.deployedIds().len() == 10, "old twelve-person formation must become ten");
+check(A.deployedIds().len() == 12, "twelve-person formation is preserved");
 local first = members[0];
 check(A.applyFormation([1]).ok, "one member may deploy with nineteen reserves");
 check(A.deployedIds().len() == 1, "manual short formation is preserved");
@@ -57,7 +57,7 @@ local before = members[0].getPlaceInFormation();
 check(!A.applyFormation([]).ok && members[0].getPlaceInFormation() == before, "empty selection is atomic rejection");
 check(!A.applyFormation([1,1]).ok, "duplicate selection rejected");
 check(!A.applyFormation([999]).ok, "departed actor ID rejected");
-check(!A.applyFormation([1,2,3,4,5,6,7,8,9,10,11]).ok, "eleven-person selection rejected");
+check(!A.applyFormation([1,2,3,4,5,6,7,8,9,10,11,12,13]).ok, "thirteen-person selection rejected");
 check(A.deployedIds().len() == 1, "all rejected selections left formation intact");
 safe = false;
 check(!A.applyFormation([2,3]).ok && A.deployedIds()[0] == 1, "unsafe switch rejected");

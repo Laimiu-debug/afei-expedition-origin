@@ -1,0 +1,12 @@
+{
+  "generator": "built-in image_gen",
+  "reviewed_sources": {
+    "docs/design/balance-v2/icons/yanzi_cover.png": "8f1bd76b3253d69f01819be3400ae7d2dfb8bd0ecdee963234ad6c0afb1efd97",
+    "docs/design/balance-v2/icons/yanzi_reply.png": "eec43e82b6d833fa277921b3cf8c3926ea9d2e7405e631944556423d8c10131d",
+    "docs/design/balance-v2/icons/yanzi_watch.png": "c3f10e1346907dd35b17ff771e87761688062fa224009230413c8bc74e0e0971",
+    "docs/design/balance-v2/icons/xiwen_cover.png": "d6fe4437e42578cb6f822882ba235cd63a5e114ba90d3b6c34dfd0d255875f05",
+    "docs/design/balance-v2/icons/xiwen_read.png": "20d5dde0ca749067ec2f1ec124131bf3e60489d3195b5c13bf2a1f89250f255a",
+    "docs/design/balance-v2/icons/xiwen_travel.png": "d1575da03969ec2461d3b3da50d47076dfdb1bf80d069388c77fedb963967a25",
+    "art/runtime/balance-v26/sources/xiwen-round-mirror.png": "037c2cc8305ae63c5c600b02249075072f9152d2690178956d605e1d4abdd2a4"
+  }
+}

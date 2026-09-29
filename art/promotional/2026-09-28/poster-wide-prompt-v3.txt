@@ -1,0 +1,31 @@
+Use case: style-transfer / compositing
+Asset type: revised landscape 16:9 promotional poster for 阿飞起源.
+Edit target: Image 1, the previous wide poster.
+Identity reference only: Image 2, Afei's approved game portrait. Do NOT copy its chibi/game-avatar drawing style or oversized head proportions.
+
+USER'S CRITICAL CORRECTIONS:
+1. The poster currently looks like a wall of little game portrait heads, and those heads are visually incongruous. Repaint the people as believable, proportionate, fully embodied adventurers inhabiting ONE physical scene. This requires a major repaint of faces, anatomy, staging and rendering, not a filter on the existing face collage.
+2. Replace the TREE EMBLEMS on the flags with a TOAD-HEAD EMBLEM (蛤蟆头). Every clearly visible banner must use the new toad-head insignia.
+
+NEW FIGURE AND SCENE DIRECTION:
+Mature cinematic fantasy illustration with natural adult anatomy: seven-to-eight-head body proportions, normal-sized heads, coherent necks and shoulders, realistic eyes and faces, grounded cloth and armor. Textured painterly realism, like sophisticated Western fantasy RPG concept art, with warm Chinese facial identity. Absolutely NO anime faces, doll-like heads, chibi, bobbleheads, bust sprites, pasted-in portrait cutouts or uniformly front-facing head rows.
+Afei is the single leading figure, upright in the near foreground, shown from mid-thigh up with a normal head-to-body ratio, confidently holding his sword downwards. Translate his black swept-up hair, eyebrows, face structure, charcoal cloak and pale quilted tunic into the new coherent painterly style; preserve his identity without transplanting the cartoon portrait. He appears only ONCE.
+Around him, a smaller number of clearly staged leading companions have visible torsos, arms, equipment, and natural stances on the same rocky ground. The black-haired green-scarf captain and swept light-brown-haired captain are closest. Other existing companions are receding whole adventurer figures in staggered ranks along the path, with shoulders, bodies, cloaks and legs as appropriate to perspective. Some are turned or partly occluded. Do NOT force every one of the 34 faces to be displayed or equally legible: depth, credible anatomy and a unified expedition scene are more important than portrait completeness. These are the existing crew in Image 1, no new named characters. Preserve familiar hair, glasses and costume colors where visible. No Liu Qingsong. No duplicate Afei.
+The small green turtle companion with a pink bow may remain discreetly at the lower edge, but render it in the SAME physically lit, textured painterly language as the scene, with a grounded turtle-like body and believable surface detail. It must not look like a flat cute sticker or disproportionately large mascot.
+
+TOAD STANDARD DESIGN:
+On the main large wind-torn crimson banner on the left, put one large, bold pale-gold heraldic TOAD HEAD: frontal broad squat head, raised heavy-lidded eyes, wide closed mouth, stout cheek silhouette and a few simple wart marks. Distinctly a toad, not a tree, turtle, dragon, pig, skull, full-bodied frog or cute mascot portrait. Stylish, stern, slightly roguish medieval military heraldry; clean 2D embroidery/paint that follows cloth folds, no glowing logo. Repeat the SAME toad-head symbol on the other legible crimson banner(s) on the right. No tree insignia anywhere.
+
+KEEP:
+Horizontal widescreen composition, approximately 16:9. Dramatic dark storm clouds, amber sunset breaking through, a distant medieval fortified city, rugged expedition terrain, coherent wind in cloaks and flags, atmospheric dust, strong warm rim lighting with cool shadow detail. Main hero and sword silhouette remain striking, but the whole party should feel assembled in real space. Leave ample sky for title; no ornate border.
+Text, EXACTLY these existing three elements:
+"阿飞起源"
+"《战场兄弟》主题 MOD"
+"共赴远征"
+Beautiful legible gold/ivory Chinese title lettering; no text overlapping faces. No additional writing, QR code, date, watermark or credits.
+
+FINAL CHECK:
+The visible faces are repainted into one adult, naturally proportioned illustrative language.
+The image reads as a heroic group physically standing on an expedition road, not a contact sheet or a heap of game avatars.
+The red military flags visibly bear a TOAD HEAD instead of a white tree.
+Produce one complete, polished new landscape poster.

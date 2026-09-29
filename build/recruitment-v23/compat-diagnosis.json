@@ -1,0 +1,100 @@
+{
+  "save": "C:\\Users\\25647\\OneDrive\\Documents\\Battle Brothers\\savegames\\autosave.sav",
+  "save_sha256": "5226d8037f4298883a56fa1f558c7fb43334d607399e9e902d18d3708a654df5",
+  "save_modified_at": "2026-09-27T21:38:12.344548+08:00",
+  "method": "Read-only bounded tag records validated against native tag_collection serialization; original save unchanged",
+  "flags": [
+    {
+      "offset": 2498771,
+      "name": "afeix_journey_battles",
+      "type": 0,
+      "value": 2
+    },
+    {
+      "offset": 2498824,
+      "name": "afeix_qualified_contracts",
+      "type": 0,
+      "value": 3
+    },
+    {
+      "offset": 2498856,
+      "name": "afeix_recruit_queue_serial",
+      "type": 0,
+      "value": 4
+    },
+    {
+      "offset": 2499093,
+      "name": "afeix_visited_recruit_town_17727",
+      "type": 2,
+      "value": true
+    },
+    {
+      "offset": 2499379,
+      "name": "afeix_recruit_order_xiaoyubeike",
+      "type": 0,
+      "value": 4
+    },
+    {
+      "offset": 2499446,
+      "name": "afeix_ever_mocha",
+      "type": 2,
+      "value": true
+    },
+    {
+      "offset": 2499548,
+      "name": "afeix_recruit_order_bottle",
+      "type": 0,
+      "value": 3
+    },
+    {
+      "offset": 2499641,
+      "name": "afeix_recruit_towns",
+      "type": 0,
+      "value": 2
+    },
+    {
+      "offset": 2499723,
+      "name": "afeix_visited_recruit_town_17713",
+      "type": 2,
+      "value": true
+    },
+    {
+      "offset": 2499854,
+      "name": "afeix_recruit_order_shuaizi",
+      "type": 0,
+      "value": 1
+    },
+    {
+      "offset": 2499888,
+      "name": "afeix_journey_level",
+      "type": 0,
+      "value": 2
+    },
+    {
+      "offset": 2499914,
+      "name": "afeix_recruit_order_lili",
+      "type": 0,
+      "value": 2
+    },
+    {
+      "offset": 2500002,
+      "name": "afeix_ever_afei",
+      "type": 2,
+      "value": true
+    },
+    {
+      "offset": 2500021,
+      "name": "afeix_ever_damou",
+      "type": 2,
+      "value": true
+    }
+  ],
+  "conflicting_mod": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_fox_043.zip",
+  "conflicting_mod_sha256": "af1b0910165e25c60699c3acff2720306404a02838e1c5a444c463f43cca44b2",
+  "conflicting_script": "scripts/!mods_preload/mod_sr_alternative_standard.nut",
+  "conflicting_script_sha256": "cbe4f2e3de499a23ca9f62be03abd147294da2ecad718ccd0efce5f542812b25",
+  "cause": "NewObjectOnce replaces queryHireInformation without calling previous function, bypassing Afei candidate generation",
+  "reproduction": "Native town screen plus installed override: four queued, zero offered; wrapped screen entry: three offered, native hire succeeds, one-day refill works",
+  "individual_display_conversion_stubbed": true,
+  "native_game_run": false
+}

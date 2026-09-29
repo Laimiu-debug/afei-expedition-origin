@@ -1,0 +1,91 @@
+"""Export reviewed generated art by alpha crop, uniform scale and rotation only."""
+from pathlib import Path
+from PIL import Image
+import hashlib
+import json
+import shutil
+from build_afei_art import pack_and_verify
+
+ROOT = Path(__file__).resolve().parents[1]
+BASE = ROOT / 'art/runtime/ideas-v19'
+ATLAS = 'afeix_ideas_v19'
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def source(key):
+    manifest = json.loads((BASE / 'manifest.json').read_text(encoding='utf-8'))
+    entry = manifest[key]
+    path = BASE / entry['source']
+    assert entry['reviewed'] and sha(path) == entry['sha256']
+    image = Image.open(path).convert('RGBA')
+    assert image.getchannel('A').getextrema()[0] == 0
+    # Generated files can contain irrelevant RGB behind zero-alpha pixels.
+    # Crop by alpha, never color-key or repaint the artwork.
+    box = image.getchannel('A').point(lambda a: 255 if a >= 20 else 0).getbbox()
+    return image.crop(box)
+
+def fit(image, size, padding=3):
+    out = Image.new('RGBA', size)
+    image = image.copy()
+    image.thumbnail((size[0]-padding*2, size[1]-padding*2), Image.Resampling.LANCZOS)
+    out.alpha_composite(image, ((size[0]-image.width)//2, (size[1]-image.height)//2))
+    return out
+
+def exports():
+    grip = source('grip')
+    for folder in ('gfx/ui/items/weapons', 'gfx/items/weapons'):
+        yield folder+'/afeix_laoma_grip.png', fit(grip, (70, 140))
+        yield folder+'/afeix_laoma_grip_70x70.png', fit(grip.rotate(35, expand=True, resample=Image.Resampling.BICUBIC), (70, 70))
+    yield 'gfx/ui/events/afeix_liu_qingsong.png', fit(source('liu'), (210, 210), 2)
+
+def build_art():
+    BASE.mkdir(parents=True, exist_ok=True)
+    records=[]
+    for relative, image in exports():
+        path=ROOT/'src'/relative; path.parent.mkdir(parents=True, exist_ok=True); image.save(path)
+        records.append({'path':relative,'sha256':sha(path),'size':list(image.size)})
+    pack=BASE/'pack'; (pack/'sprites').mkdir(parents=True, exist_ok=True)
+    (BASE/'sprites').mkdir(exist_ok=True)
+    (BASE/'build').mkdir(exist_ok=True)
+    grip=fit(source('grip').rotate(42,expand=True,resample=Image.Resampling.BICUBIC),(90,106),2)
+    attrs=[]
+    for suffix in ('','_bloodied'):
+        # No invented blood overlay: same reviewed weapon art in both native states.
+        identity='icon_afeix_laoma_grip'+suffix
+        grip.save(pack/'sprites'/(identity+'.png'))
+        grip.save(BASE/'sprites'/(identity+'.png'))
+        attrs.append({'id':identity,'img':'sprites\\'+identity+'.png','left':'-65','right':'25','top':'-59','bottom':'47','width':'130','height':'142','offsetY':'35'})
+    report={'manifest_sha256':sha(BASE/'manifest.json'),'exports':records,
+            'roundtrip':pack_and_verify(BASE,ATLAS,pack,attrs,ROOT/'.cache/afei-art/bbros-modkit-v9/bin/bbrusher.exe')}
+    files=[ROOT/'src'/r['path'] for r in records]
+    for relative in ('brushes/'+ATLAS+'.brush','gfx/'+ATLAS+'.png'):
+        path=ROOT/'src'/relative;path.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(BASE/'package'/relative,path);files.append(path)
+    (BASE/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    # Neutral checkerboard contact sheet is a review aid, not shipped art.
+    preview=Image.new('RGBA',(630,230),'#b7ae98')
+    for i,im in enumerate([fit(source('liu'),(210,210)),fit(source('grip'),(150,210)),grip]):preview.alpha_composite(im,(i*210,10))
+    preview.convert('RGB').save(BASE/'preview.png')
+    return files
+
+def validate_art():
+    from check_gameplay import verify_custom_atlas, verify_sprite
+    report=json.loads((BASE/'report.json').read_text(encoding='utf-8'))
+    assert report['manifest_sha256']==sha(BASE/'manifest.json')
+    expected=dict(exports())
+    assert set(expected)=={r['path'] for r in report['exports']}
+    for record in report['exports']:
+        path=ROOT/'src'/record['path']
+        assert sha(path)==record['sha256']
+        with Image.open(path) as image:
+            assert image.size==expected[record['path']].size and image.tobytes()==expected[record['path']].tobytes()
+    ids={'icon_afeix_laoma_grip','icon_afeix_laoma_grip_bloodied'}
+    atlas=verify_custom_atlas(BASE,ATLAS,report,ids)
+    for identity in ids:
+        verify_sprite(atlas['sprites'][identity],BASE/'pack/sprites'/(identity+'.png'),
+                      {'left':-65,'right':25,'top':-59,'bottom':47,'width':130,'height':142,'offsetY':35})
+    return {'passed':True,'files':len(expected)+2,'brushes':2,'npc_only':True}
+
+if __name__=='__main__':
+    build_art()
+    print(validate_art())

@@ -4,10 +4,11 @@ this.afeix_feidie_effect <- this.inherit("scripts/skills/effects/afeix_promotion
         this.afeix_promotion_effect.create();
         this.m.ID = "effects.afeix_feidie";
         this.m.Name = "飞爹在此";
-        this.m.Icon = "skills/afeix_feidie.png";
-        this.m.Description = "近战与远程命中 +8，决心 +8；持续至该角色第二次回合开始。";
-        this.m.Melee = 8;
-        this.m.Ranged = 8;
-        this.m.BraveryBonus = 8;
+        this.m.Icon = "skills/afeix_feidie.png"; this.m.IconMini = this.m.Icon;
+        this.m.Description = "双攻+5、决心+5，至下次回合结束。";
+        this.m.Melee = 5;
+        this.m.Ranged = 5;
+        this.m.BraveryBonus = 5;
+        this.m.TurnsLeft = 2;
     }
 });

@@ -1,0 +1,2118 @@
+{
+  "reason": "User requested Xiaojie health-focused Nimble build and three display-name changes; turtle hint stays implicit",
+  "display_names": {
+    "tiantong": "小虎",
+    "yanzi": "眼子",
+    "xiaopangxu": "小胖"
+  },
+  "xiaojie": {
+    "attrs": [
+      80,
+      88,
+      44,
+      96,
+      60,
+      32,
+      7,
+      2
+    ],
+    "stars": {
+      "Hitpoints": 2,
+      "MeleeSkill": 2,
+      "MeleeDefense": 2
+    },
+    "allocation": [
+      10,
+      0,
+      0,
+      0,
+      10,
+      0,
+      10,
+      0
+    ]
+  },
+  "before_trait_design_sha256": "de7a89feb45aad31f91478ce7cf2e089a5d95a5bbc7f1e5210f1a73c40de7766",
+  "trait_design_sha256": "5ad0c59ea6627473eab24412faab14d849a14ae6c42ffb35a7af9d1c333cd98e",
+  "before_workbook_sha256": "be9ba708ac3c79d613f187acab7eb25098f49d319afc8ea6c0749d547f3d2d04",
+  "workbook_sha256": "5f36f7f00c58809be8e925a61bb608dc546f3240fa659ed373660a22b0eeef9e",
+  "before_proposal_sha256": "9e2b428c195f174a3a01eaa53faf99ccc5dcd27fdcfe385fd7447c267f08325f",
+  "proposal_sha256": "5bc31d5e7e742b5572332661a286d3a2d22311c3528f07cc64c1ccce55377036",
+  "authored_cells": [
+    {
+      "sheet": "招募节奏",
+      "cell": "A17",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "A18",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "A20",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A94",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A95",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A96",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A97",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A98",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A99",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A100",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A101",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A102",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A103",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A104",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A105",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A106",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A107",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A108",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A109",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A118",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A119",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A120",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A121",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A122",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A123",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A124",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "A125",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "成长总览",
+      "cell": "A17",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "成长总览",
+      "cell": "A18",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "成长总览",
+      "cell": "A20",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "装备明细",
+      "cell": "A17",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "装备明细",
+      "cell": "A18",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "装备明细",
+      "cell": "A20",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "A3",
+      "value": "102项三选一：96项现行图标，眼子3项提案图、希文3项暂用原版图。7级选择1项，11级仅强化已选分支。",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "A36",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "A37",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "A38",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "A39",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "A40",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "A41",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "A45",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "A46",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "技能选择",
+      "cell": "A47",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "经济模型",
+      "cell": "Q7",
+      "value": "阿飞、王大谋、午夜抹抹茶、小酒瓶、白小帅子、李李超欧、余初九、小鱼贝壳、王怼怼、老蔡、眼子、小虎",
+      "formula": false
+    },
+    {
+      "sheet": "经济模型",
+      "cell": "Q9",
+      "value": "阿飞、王大谋、午夜抹抹茶、小酒瓶、白小帅子、李李超欧、小月牙、余初九、小鱼贝壳、王怼怼、老蔡、眼子、小虎、小宁、小胖、大鹅、蔓越莓、罗一可、可可、余想、童猪、美伢、玩蛇、涂涂、奶盖、小杰、bula、苏袜、千涵、王大芷、瑶瑶牙、羊咩咩、宋暖阳、溺水小龟、希文",
+      "formula": false
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "A17",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "A18",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "A20",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "改动清单",
+      "cell": "B13",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "改动清单",
+      "cell": "B14",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "改动清单",
+      "cell": "B15",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "改动清单",
+      "cell": "B16",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "A9",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "A17",
+      "value": "眼子",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "A18",
+      "value": "小虎",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "A20",
+      "value": "小胖",
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D206",
+      "value": 80,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E206",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F206",
+      "value": 10,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D207",
+      "value": 88,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E207",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F207",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D208",
+      "value": 44,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E208",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F208",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D209",
+      "value": 96,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E209",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F209",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D210",
+      "value": 60,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E210",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F210",
+      "value": 10,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D211",
+      "value": 32,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E211",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F211",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D212",
+      "value": 7,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E212",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F212",
+      "value": 10,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "D213",
+      "value": 2,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "E213",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "属性成长",
+      "cell": "F213",
+      "value": 0,
+      "formula": false
+    },
+    {
+      "sheet": "招募节奏",
+      "cell": "D31",
+      "value": "血牛轻甲长柄与解网工具位",
+      "formula": false
+    },
+    {
+      "sheet": "成长总览",
+      "cell": "B31",
+      "value": "血牛轻甲长柄与解网工具位",
+      "formula": false
+    },
+    {
+      "sheet": "成长总览",
+      "cell": "N31",
+      "value": "近战血牛轻甲，疲劳不加点仍需管理连续爆发；独狼与相邻队友支援冲突，轮换后未必生效；伤口、流血及控制仍危险",
+      "formula": false
+    },
+    {
+      "sheet": "装备明细",
+      "cell": "K31",
+      "value": "长柄主武器+包内双手副武器，轻甲约130耐久为终局目标；甲盔总原始负重优先≤15，名甲未入手时用普通轻甲过渡，招募不赠送终局甲",
+      "formula": false
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "B31",
+      "value": "Militia 民兵",
+      "formula": false
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "C31",
+      "value": "=55.0+'属性成长'!F206*'属性成长'!L206",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "D31",
+      "value": "=99.0+'属性成长'!F207*'属性成长'!L207",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "E31",
+      "value": "=39.0+'属性成长'!F208*'属性成长'!L208",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "F31",
+      "value": "=105.0+'属性成长'!F209*'属性成长'!L209",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "G31",
+      "value": "=57.0+'属性成长'!F210*'属性成长'!L210",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "H31",
+      "value": "=42.5+'属性成长'!F211*'属性成长'!L211",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "I31",
+      "value": "=4.5+'属性成长'!F212*'属性成长'!L212",
+      "formula": true
+    },
+    {
+      "sheet": "原版标杆",
+      "cell": "J31",
+      "value": "=4.5+'属性成长'!F213*'属性成长'!L213",
+      "formula": true
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "A3",
+      "value": "55为8名重甲候选的壮实后目标；按11级培养均值计算。小杰已改轻甲，保留该行仅作误穿重甲对照，不参与达标判断。",
+      "formula": false
+    },
+    {
+      "sheet": "重甲疲劳",
+      "cell": "M11",
+      "value": "轻甲不适用",
+      "formula": false
+    },
+    {
+      "sheet": "总览",
+      "cell": "A3",
+      "value": "2026-09-29 / v0.27.0；小杰改为150血轻甲长柄构筑，三人名称同步；新战役实装基准。",
+      "formula": false
+    },
+    {
+      "sheet": "来源说明",
+      "cell": "C15",
+      "value": "v0.27.0新战役实装基准；修改输入后须重新编译Mod。",
+      "formula": false
+    },
+    {
+      "sheet": "人物特质",
+      "cell": "H39",
+      "value": "参考5份含特质反馈；按角色定位选取，非票数自动采纳；壳上旧纹如深水暗光，脚步慢却总留意身后。",
+      "formula": false
+    }
+  ],
+  "workbook_audit": {
+    "changed_cells": [
+      {
+        "sheet": 1,
+        "cell": "A3",
+        "before": [
+          "",
+          "2026-09-29 V2.2 / v0.26.4；新战役实装基准。重甲缓冲55、阿飞和小酒瓶取消逐级耐力，希文第35日起。"
+        ],
+        "after": [
+          "",
+          "2026-09-29 / v0.27.0；小杰改为150血轻甲长柄构筑，三人名称同步；新战役实装基准。"
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "A18",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "A20",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "D31",
+        "before": [
+          "",
+          "解网与近战工具位"
+        ],
+        "after": [
+          "",
+          "血牛轻甲长柄与解网工具位"
+        ]
+      },
+      {
+        "sheet": 2,
+        "cell": "A17",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A97",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A108",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z210",
+        "before": [
+          "D210",
+          56.0
+        ],
+        "after": [
+          "D210",
+          60.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A98",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "L212",
+        "before": [
+          "K212+E212*0.5",
+          2.0
+        ],
+        "after": [
+          "K212+E212*0.5",
+          3.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A95",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M210",
+        "before": [
+          "D210+J210+F210*L210+N210",
+          81.0
+        ],
+        "after": [
+          "D210+J210+F210*L210+N210",
+          90.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A121",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A94",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA210",
+        "before": [
+          "M210",
+          81.0
+        ],
+        "after": [
+          "M210",
+          90.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "L210",
+        "before": [
+          "K210+E210*0.5",
+          2.5
+        ],
+        "after": [
+          "K210+E210*0.5",
+          3.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A100",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A125",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z212",
+        "before": [
+          "D212",
+          5.0
+        ],
+        "after": [
+          "D212",
+          7.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M207",
+        "before": [
+          "D207+J207+F207*L207+N207",
+          126.0
+        ],
+        "after": [
+          "D207+J207+F207*L207+N207",
+          88.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D212",
+        "before": [
+          "",
+          5.0
+        ],
+        "after": [
+          "",
+          7.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA208",
+        "before": [
+          "M207",
+          126.0
+        ],
+        "after": [
+          "M207",
+          88.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "E206",
+        "before": [
+          "",
+          1.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "L207",
+        "before": [
+          "K207+E207*0.5",
+          4.0
+        ],
+        "after": [
+          "K207+E207*0.5",
+          3.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A124",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z208",
+        "before": [
+          "D207",
+          110.0
+        ],
+        "after": [
+          "D207",
+          88.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A109",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D206",
+        "before": [
+          "",
+          64.0
+        ],
+        "after": [
+          "",
+          80.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A107",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A122",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A99",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A105",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M206",
+        "before": [
+          "D206+J206+F206*L206+N206",
+          78.0
+        ],
+        "after": [
+          "D206+J206+F206*L206+N206",
+          120.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F207",
+        "before": [
+          "",
+          4.0
+        ],
+        "after": [
+          "",
+          0.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A104",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A103",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M212",
+        "before": [
+          "D212+J212+F212*L212+N212",
+          25.0
+        ],
+        "after": [
+          "D212+J212+F212*L212+N212",
+          37.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A96",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "E210",
+        "before": [
+          "",
+          1.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A102",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "E207",
+        "before": [
+          "",
+          2.0
+        ],
+        "after": [
+          "",
+          0.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA207",
+        "before": [
+          "M206",
+          78.0
+        ],
+        "after": [
+          "M206",
+          120.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "M208",
+        "before": [
+          "D208+J208+F208*L208+N208",
+          53.0
+        ],
+        "after": [
+          "D208+J208+F208*L208+N208",
+          47.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA212",
+        "before": [
+          "M212",
+          25.0
+        ],
+        "after": [
+          "M212",
+          37.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A101",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "AA209",
+        "before": [
+          "M208",
+          53.0
+        ],
+        "after": [
+          "M208",
+          47.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A123",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "E212",
+        "before": [
+          "",
+          0.0
+        ],
+        "after": [
+          "",
+          2.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A120",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D207",
+        "before": [
+          "",
+          110.0
+        ],
+        "after": [
+          "",
+          88.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "Z207",
+        "before": [
+          "D206",
+          64.0
+        ],
+        "after": [
+          "D206",
+          80.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A119",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "D210",
+        "before": [
+          "",
+          56.0
+        ],
+        "after": [
+          "",
+          60.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F206",
+        "before": [
+          "",
+          4.0
+        ],
+        "after": [
+          "",
+          10.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A106",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "A118",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "L206",
+        "before": [
+          "K206+E206*0.5",
+          3.5
+        ],
+        "after": [
+          "K206+E206*0.5",
+          4.0
+        ]
+      },
+      {
+        "sheet": 3,
+        "cell": "F208",
+        "before": [
+          "",
+          2.0
+        ],
+        "after": [
+          "",
+          0.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "A18",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "A20",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "G31",
+        "before": [
+          "'属性成长'!M210",
+          81.0
+        ],
+        "after": [
+          "'属性成长'!M210",
+          90.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "E31",
+        "before": [
+          "'属性成长'!M208",
+          53.0
+        ],
+        "after": [
+          "'属性成长'!M208",
+          47.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "D31",
+        "before": [
+          "'属性成长'!M207",
+          126.0
+        ],
+        "after": [
+          "'属性成长'!M207",
+          88.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "A17",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "B31",
+        "before": [
+          "",
+          "解网与近战工具位"
+        ],
+        "after": [
+          "",
+          "血牛轻甲长柄与解网工具位"
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "N31",
+        "before": [
+          "",
+          "高穿透与包围危险；狂战爆发需另投疲劳并替换天赋"
+        ],
+        "after": [
+          "",
+          "近战血牛轻甲，疲劳不加点仍需管理连续爆发；独狼与相邻队友支援冲突，轮换后未必生效；伤口、流血及控制仍危险"
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "I31",
+        "before": [
+          "'属性成长'!M212",
+          25.0
+        ],
+        "after": [
+          "'属性成长'!M212",
+          37.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "C31",
+        "before": [
+          "'属性成长'!M206",
+          78.0
+        ],
+        "after": [
+          "'属性成长'!M206",
+          120.0
+        ]
+      },
+      {
+        "sheet": 4,
+        "cell": "P31",
+        "before": [
+          "E31+O31",
+          53.0
+        ],
+        "after": [
+          "E31+O31",
+          47.0
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "A18",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "A20",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "K31",
+        "before": [
+          "",
+          "双手锤/斧+包内二格武器；轻装决斗与重甲低耗分开点；重甲低耗按320身甲/300头甲压力装核算，壮实减轻甲盔负重，包内武器仍计负重"
+        ],
+        "after": [
+          "",
+          "长柄主武器+包内双手副武器，轻甲约130耐久为终局目标；甲盔总原始负重优先≤15，名甲未入手时用普通轻甲过渡，招募不赠送终局甲"
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "A17",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 5,
+        "cell": "I31",
+        "before": [
+          "'属性成长'!D207-G31-H31",
+          75.0
+        ],
+        "after": [
+          "'属性成长'!D207-G31-H31",
+          53.0
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "A3",
+        "before": [
+          "",
+          "102项三选一：96项现行图标，眼子哥3项提案图、希文3项暂用原版图。7级选择1项，11级仅强化已选分支。"
+        ],
+        "after": [
+          "",
+          "102项三选一：96项现行图标，眼子3项提案图、希文3项暂用原版图。7级选择1项，11级仅强化已选分支。"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "A45",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "A47",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "A41",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "A46",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "A39",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "A37",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "A36",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "A40",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 6,
+        "cell": "A38",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "Q9",
+        "before": [
+          "",
+          "阿飞、王大谋、午夜抹抹茶、小酒瓶、白小帅子、李李超欧、小月牙、余初九、小鱼贝壳、王怼怼、老蔡、眼子哥、亿口甜筒、小宁、小胖徐不快乐、大鹅、蔓越莓、罗一可、可可、余想、童猪、美伢、玩蛇、涂涂、奶盖、小杰、bula、苏袜、千涵、王大芷、瑶瑶牙、羊咩咩、宋暖阳、溺水小龟、希文"
+        ],
+        "after": [
+          "",
+          "阿飞、王大谋、午夜抹抹茶、小酒瓶、白小帅子、李李超欧、小月牙、余初九、小鱼贝壳、王怼怼、老蔡、眼子、小虎、小宁、小胖、大鹅、蔓越莓、罗一可、可可、余想、童猪、美伢、玩蛇、涂涂、奶盖、小杰、bula、苏袜、千涵、王大芷、瑶瑶牙、羊咩咩、宋暖阳、溺水小龟、希文"
+        ]
+      },
+      {
+        "sheet": 8,
+        "cell": "Q7",
+        "before": [
+          "",
+          "阿飞、王大谋、午夜抹抹茶、小酒瓶、白小帅子、李李超欧、余初九、小鱼贝壳、王怼怼、老蔡、眼子哥、亿口甜筒"
+        ],
+        "after": [
+          "",
+          "阿飞、王大谋、午夜抹抹茶、小酒瓶、白小帅子、李李超欧、余初九、小鱼贝壳、王怼怼、老蔡、眼子、小虎"
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "A18",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "A20",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "G31",
+        "before": [
+          "52+'属性成长'!F210*'属性成长'!L210",
+          77.0
+        ],
+        "after": [
+          "57.0+'属性成长'!F210*'属性成长'!L210",
+          87.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "M31",
+        "before": [
+          "'成长总览'!E31-E31",
+          14.5
+        ],
+        "after": [
+          "'成长总览'!E31-E31",
+          8.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "E31",
+        "before": [
+          "32.5+'属性成长'!F208*'属性成长'!L208",
+          38.5
+        ],
+        "after": [
+          "39.0+'属性成长'!F208*'属性成长'!L208",
+          39.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "H31",
+        "before": [
+          "37+'属性成长'!F211*'属性成长'!L211",
+          37.0
+        ],
+        "after": [
+          "42.5+'属性成长'!F211*'属性成长'!L211",
+          42.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "D31",
+        "before": [
+          "110+'属性成长'!F207*'属性成长'!L207",
+          126.0
+        ],
+        "after": [
+          "99.0+'属性成长'!F207*'属性成长'!L207",
+          99.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "K31",
+        "before": [
+          "'成长总览'!C31-C31",
+          -2.0
+        ],
+        "after": [
+          "'成长总览'!C31-C31",
+          25.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "A17",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "B31",
+        "before": [
+          "",
+          "Farmhand 农场帮工"
+        ],
+        "after": [
+          "",
+          "Militia 民兵"
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "I31",
+        "before": [
+          "2.5+'属性成长'!F212*'属性成长'!L212",
+          22.5
+        ],
+        "after": [
+          "4.5+'属性成长'!F212*'属性成长'!L212",
+          34.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "L31",
+        "before": [
+          "'成长总览'!D31-D31",
+          0.0
+        ],
+        "after": [
+          "'成长总览'!D31-D31",
+          -11.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "C31",
+        "before": [
+          "66+'属性成长'!F206*'属性成长'!L206",
+          80.0
+        ],
+        "after": [
+          "55.0+'属性成长'!F206*'属性成长'!L206",
+          95.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "P31",
+        "before": [
+          "'成长总览'!H31-H31",
+          -5.0
+        ],
+        "after": [
+          "'成长总览'!H31-H31",
+          -10.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "F31",
+        "before": [
+          "105+'属性成长'!F209*'属性成长'!L209",
+          105.0
+        ],
+        "after": [
+          "105.0+'属性成长'!F209*'属性成长'!L209",
+          105.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "O31",
+        "before": [
+          "'成长总览'!G31-G31",
+          4.0
+        ],
+        "after": [
+          "'成长总览'!G31-G31",
+          3.0
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "R31",
+        "before": [
+          "'成长总览'!J31-J31",
+          -0.5
+        ],
+        "after": [
+          "'成长总览'!J31-J31",
+          -2.5
+        ]
+      },
+      {
+        "sheet": 10,
+        "cell": "J31",
+        "before": [
+          "2.5+'属性成长'!F213*'属性成长'!L213",
+          2.5
+        ],
+        "after": [
+          "4.5+'属性成长'!F213*'属性成长'!L213",
+          4.5
+        ]
+      },
+      {
+        "sheet": 11,
+        "cell": "B14",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 11,
+        "cell": "B13",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 11,
+        "cell": "B15",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 11,
+        "cell": "B16",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "M11",
+        "before": [
+          "IF(K11>=L11,\"达到\",\"不足\")",
+          "达到"
+        ],
+        "after": [
+          "",
+          "轻甲不适用"
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "C11",
+        "before": [
+          "'成长总览'!D31",
+          126.0
+        ],
+        "after": [
+          "'成长总览'!D31",
+          88.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "A3",
+        "before": [
+          "",
+          "55为壮实后目标；按11级培养均值计算。身甲42、头盔20、武器18、包内5，壮实后负重67；不保证连续爆发。"
+        ],
+        "after": [
+          "",
+          "55为8名重甲候选的壮实后目标；按11级培养均值计算。小杰已改轻甲，保留该行仅作误穿重甲对照，不参与达标判断。"
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "K11",
+        "before": [
+          "INT(C11-I11-J11-F11-G11)",
+          59.0
+        ],
+        "after": [
+          "INT(C11-I11-J11-F11-G11)",
+          21.0
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "A9",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 13,
+        "cell": "H11",
+        "before": [
+          "INT(C11-SUM(D11:G11))",
+          41.0
+        ],
+        "after": [
+          "INT(C11-SUM(D11:G11))",
+          3.0
+        ]
+      },
+      {
+        "sheet": 15,
+        "cell": "C15",
+        "before": [
+          "",
+          "v0.26.4新战役实装基准；修改输入后须重新编译Mod。"
+        ],
+        "after": [
+          "",
+          "v0.27.0新战役实装基准；修改输入后须重新编译Mod。"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "A18",
+        "before": [
+          "",
+          "亿口甜筒"
+        ],
+        "after": [
+          "",
+          "小虎"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "A17",
+        "before": [
+          "",
+          "眼子哥"
+        ],
+        "after": [
+          "",
+          "眼子"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "Y31",
+        "before": [
+          "'属性成长'!D210-M31",
+          56.0
+        ],
+        "after": [
+          "'属性成长'!D210-M31",
+          60.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "AA31",
+        "before": [
+          "'属性成长'!D212-O31",
+          5.0
+        ],
+        "after": [
+          "'属性成长'!D212-O31",
+          7.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "A20",
+        "before": [
+          "",
+          "小胖徐不快乐"
+        ],
+        "after": [
+          "",
+          "小胖"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "U31",
+        "before": [
+          "'属性成长'!D206-I31",
+          54.0
+        ],
+        "after": [
+          "'属性成长'!D206-I31",
+          70.0
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "H39",
+        "before": [
+          "",
+          "参考5份含特质反馈；按角色定位选取，非票数自动采纳"
+        ],
+        "after": [
+          "",
+          "参考5份含特质反馈；按角色定位选取，非票数自动采纳；壳上旧纹如深水暗光，脚步慢却总留意身后。"
+        ]
+      },
+      {
+        "sheet": 16,
+        "cell": "V31",
+        "before": [
+          "'属性成长'!D207-J31",
+          110.0
+        ],
+        "after": [
+          "'属性成长'!D207-J31",
+          88.0
+        ]
+      }
+    ],
+    "formula_changes_match_authorized_cells": true,
+    "styles_tables_validation_preserved": true,
+    "images_preserved": 177,
+    "radars_preserved": 35,
+    "radar_caches_recalculated": true,
+    "artifact_recalculation_and_visual_review": true,
+    "excel_desktop_recalculation": false
+  }
+}

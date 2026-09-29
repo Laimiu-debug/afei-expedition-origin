@@ -4,7 +4,7 @@ this.afeix_personal_trait <- this.inherit("scripts/skills/traits/character_trait
         this.character_trait.create();
         this.m.ID = "trait.afeix_personal";
         this.m.Name = "伙伴的这一程";
-        this.m.Icon = "ui/traits/trait_icon_37.png";
+        this.m.Icon = "ui/traits/trait_icon_37.png"; this.m.IconMini = this.m.Icon;
         this.m.Description = "个人成长与共同走过的路，记录在黑旗名册中。";
         this.m.Titles = [];
         this.m.Excluded = [];

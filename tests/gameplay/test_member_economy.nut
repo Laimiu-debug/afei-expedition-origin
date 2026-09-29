@@ -1,4 +1,5 @@
 dofile("tests/gameplay/member_skill_fixture.nut");
+useLegacySkillFixture();
 ::checks <- 0;
 function check(v,label){if(!v)throw "FAIL "+label;::checks++;}
 function eq(a,b,label){check(a==b,label+" expected="+b+" actual="+a);}
@@ -69,6 +70,7 @@ manager.update(-7.0);eq(::World.Assets.tools,before+1,"replenishment no refund")
 // Hire quote is reusable; only successful newly hired theme member commits it.
 eq(A.catalogRecruitDiscount(1000),200,"hire cap");eq(A.catalogRecruitDiscount(100),20,"hire percent");
 local candidate=makeActor("xiaojie");candidate.getFlags<-function(){return {set=function(k,v){}};};
+A.discoveryMetrics=function(){return {level=11};};
 local quoted=A.recruitPrice("xiaojie");check(quoted<A.Characters.xiaojie.hireCost,"hire quote cheaper");
 check(!("steal_bro_day" in ::state.flags),"quote not spent");A.onNativeHired(candidate);eq(A.get("steal_bro_day"),12,"successful hire commits");
 eq(A.catalogRecruitDiscount(100),0,"seven day gate");::day=18;eq(A.catalogRecruitDiscount(100),0,"day six blocked");

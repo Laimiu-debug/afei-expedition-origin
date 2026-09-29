@@ -1,5 +1,7 @@
 # 旧项目美术与人物对应索引
 
+> 2026-09-28 名单更正：罗一可已替换蓝队误列的小哈尼，详见[现行制作名单](../design/character-roster.md)。下文保留当时的映射与评估；罗一可旧项目 C30 技能和美术尚未因本次名单更正自动接入。
+
 来源：`I:/afei-expedition`；归档日期：2026-09-25。素材副本位于 [旧项目参考目录](../../legacy/2026-09-25-afei-expedition/reference/)。完整原样快照、哈希清单与范围见[归档说明](../../legacy/2026-09-25-afei-expedition/README.md)。
 
 **历史索引：**下表保留归档时的 35 人编号；当前制作名单已移除眼子，共 34 人。最新逐人选图见 [v0.4 审阅清单](../../art/runtime/portraits-v04/legacy-candidates.json)及[当前映射](../../art/runtime/portraits-v04/manifest.json)，不可据旧表自动接入。

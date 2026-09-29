@@ -1,0 +1,22 @@
+{
+  "packages": {
+    "mod_afeix_expedition.zip": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83",
+    "mod_bbmod_item_inspector.zip": "d868dcb95bce8b0ba78c5b3b64c7f83cc27382a253d48193d8d657b3bb0a2bfd",
+    "mod_bbmod_zhcn.zip": "fbe640c05cb41e9851b0648a4226a66abd95c4f4294f50097f21d7c7c767bbeb",
+    "mod_fox_008.zip": "1a703d4e1f342b9491e62e9c91c3c7dd46fe7aaf950035a642ea3cfad982860d",
+    "mod_fox_037.zip": "41442adbf323b03beddbe9dc2fa19f0c812797da9f0e41159c951e96f27abd99",
+    "mod_fox_043.zip": "af1b0910165e25c60699c3acff2720306404a02838e1c5a444c463f43cca44b2",
+    "mod_fox_quickly_swap_items.zip": "03c0c547d8ea734d5dff665257e6d8e6e2336f298f741c447236dc359bb97219",
+    "zzzz_bbmod_preload.zip": "2355e44776b4b7f0c682e3d98c19973d23f5d6d1356e65460faf9f01c9e89bfe"
+  },
+  "receipt": {
+    "mods": {
+      "mod_afeix_expedition.zip": {
+        "origin": "https://bbmod.site",
+        "id": "d64a00f6-1d60-4d8d-8d9b-de055fc0b748",
+        "version": "0.27.5",
+        "sha256": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83"
+      }
+    }
+  }
+}

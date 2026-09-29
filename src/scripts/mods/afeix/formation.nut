@@ -14,7 +14,7 @@ A.planFormation <- function(brothers, selected = null) {
     foreach (bro in brothers) byId[bro.getID()] <- bro;
     if (selected != null) {
         if (selected.len() < 1 || selected.len() > this.CombatMax)
-            return { ok = false, text = "请选择 1 到 10 名出战成员。", plan = [] };
+            return { ok = false, text = "请选择 1 到 " + this.CombatMax + " 名出战成员。", plan = [] };
         foreach (id in selected) {
             if (!(id in byId)) return { ok = false, text = "名单已变化，请重新打开编队。", plan = [] };
             if (id in seen) return { ok = false, text = "同一成员不能重复占位。", plan = [] };

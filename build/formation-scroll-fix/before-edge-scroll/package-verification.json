@@ -1,0 +1,14 @@
+{
+  "package": "dist/mod_afeix_expedition v0.25.2.ZIP",
+  "sha256": "2670d257f91dedff914b4790b3273bf68c7c62550054e6b13343445e94ab3908",
+  "entries": 267,
+  "crc_passed": true,
+  "all_source_bytes_match": true,
+  "formation_browser_assertions": 56,
+  "behavior_assertions": 25926,
+  "test_groups": 41,
+  "squirrel_scripts": 114,
+  "in_game_tested": false,
+  "installed_to_game": false,
+  "published": false
+}

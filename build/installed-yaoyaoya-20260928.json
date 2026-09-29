@@ -1,0 +1,15 @@
+{
+  "installed": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "sha256": "806514706162341c0e409f9edebce057067e9c87bd34ba891dffe251e5269854",
+  "updated_sprites": [
+    "afeix_p04_yaoyaoya",
+    "afeix_p04_yaoyaoya_corpse_head",
+    "afeix_p04_yaoyaoya_dead",
+    "afeix_p04_yaoyaoya_head"
+  ],
+  "preserves_existing_gameplay": true,
+  "preserves_other_installed_portraits": true,
+  "validation": "build/playtest-yaoyaoya/validation.json",
+  "backup": "dist/archive/before-yaoyaoya-20260928/installed-3a521049f570.zip",
+  "in_game_tested": false
+}

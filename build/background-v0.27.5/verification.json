@@ -1,0 +1,18 @@
+{
+  "version": "0.27.5",
+  "sha256": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83",
+  "reproduced_before_fix": true,
+  "cause": "Fresh trait cleanup matched the Trait bit on native Background | Trait skills.",
+  "fix": "Remove only ordinary Trait skills, preserving backgrounds and personal traits.",
+  "background_regression_assertions": 1502,
+  "main_assertions": 28849,
+  "dlc_related_assertions": 5587,
+  "changed_package_files": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/balance_v26.nut"
+  ],
+  "workbook_sha256_unchanged": "132ea33d0bf8992e70d617e1100ebe57b50e0f8d10893c0a77df621beb13f240",
+  "dlc_archive_unchanged": true,
+  "new_campaigns_only": true,
+  "in_game_tested": false
+}

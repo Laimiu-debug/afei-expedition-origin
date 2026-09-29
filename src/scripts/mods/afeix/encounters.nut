@@ -15,7 +15,7 @@ A.recruitHint <- function(key) {
     if (status == "dead") return "已经阵亡，邀请无法重新领取。";
     if (status == "departed") return "已经永久离队，不再生成同一位伙伴。";
     if (!this.isCharacterKnown(key)) return "这里还没有留下记录。";
-    if (this.get("recruit_offer_key", "") == key) return "可在城镇的招募界面与这位伙伴谈同行。费用以招募界面为准。";
+    if ("recruitOfferSlot" in this && this.recruitOfferSlot(key) >= 0) return "可在城镇的招募界面与这位伙伴谈同行。费用以招募界面为准。";
     return "还记得这位伙伴。继续旅行，日后可以在城镇招募界面再见。";
 };
 

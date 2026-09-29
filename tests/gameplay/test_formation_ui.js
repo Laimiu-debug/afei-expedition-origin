@@ -4,7 +4,7 @@ const assert = require('assert');
 let passed = 0;
 function check(value, message) { assert.ok(value, message); passed++; }
 class Element {
-    constructor() { this.values = {}; this.styles = { 'overflow-y': 'visible' }; this.children = []; this.removed = false; }
+    constructor() { this.values = {}; this.styles = { 'overflow-y': 'visible' }; this.children = []; this.removed = false; this.handlers = {}; this.scroll = 0; }
     data(key, value) { if (arguments.length === 1) return this.values[key]; this.values[key] = value; return this; }
     css(key, value) { if (arguments.length === 1) return this.styles[key]; this.styles[key] = value; return this; }
     append(child) { this.children.push(child); return this; }
@@ -14,7 +14,12 @@ class Element {
     removeClass() { return this; }
     appendTo(parent) { parent.append(this); return this; }
     detach() { return this; }
+    off(namespace) { Object.keys(this.handlers).filter(key => key.indexOf(namespace) >= 0).forEach(key => delete this.handlers[key]); return this; }
+    on(events, fn) { events.split(' ').forEach(event => { this.handlers[event] = fn; }); return this; }
+    outerHeight() { return 82; }
+    scrollTop(value) { if (value === undefined) return this.scroll; this.scroll = Math.max(0, Math.min(322, value)); return this; }
 }
+global.document = { onwheel: null };
 global.$ = function (value) { return value instanceof Element ? value : new Element(); };
 global.CharacterScreenDatasourceIdentifier = { InventoryMode: { Stash: 'stash', Ground: 'ground' } };
 global.CharacterScreenBrothersListModule = function () {};
@@ -41,7 +46,7 @@ const screen = new CharacterScreenBrothersListModule();
 screen.mSlots = Array.from({ length: 27 }, (_, i) => new Element().data('idx', i).data('child', null));
 screen.mListScrollContainer = new Element();
 screen.mDataSource = { getInventoryMode: () => mode };
-screen.mNumActiveMax = 10;
+screen.mNumActiveMax = 12;
 screen.swaps = [];
 screen.swapSlots = function (from, to) { this.swaps.push([from, to]); };
 const board = Array(38).fill(null);
@@ -52,6 +57,23 @@ check(screen.mSlots.length === 38, 'enlarged backend formation creates enough UI
 check(screen.mSlots.filter(s => s.data('child')).length === 20, 'all twenty members remain visible');
 check(screen.mNumActive === 1, 'nineteen reserves do not count as active');
 check(screen.mListScrollContainer.css('overflow-y') === 'auto', 'reserve rows can scroll');
+function wheelOn(targetScreen, properties) {
+    let prevented = false, stopped = false;
+    const fn = targetScreen.mListScrollContainer.handlers['wheel.afeixFormation'] ||
+        targetScreen.mListScrollContainer.handlers['mousewheel.afeixFormation'];
+    fn({ originalEvent: properties, preventDefault() { prevented = true; }, stopPropagation() { stopped = true; } });
+    return prevented && stopped;
+}
+check(wheelOn(screen, { deltaY: 120 }) && screen.mListScrollContainer.scrollTop() === 41, 'one wheel notch moves half a row and suppresses default page jump');
+check(wheelOn(screen, { deltaY: -1 }) && screen.mListScrollContainer.scrollTop() === 0, 'reverse wheel uses the same small step');
+check(!wheelOn(screen, { deltaY: 0, deltaX: 120 }) && screen.mListScrollContainer.scrollTop() === 0, 'horizontal wheel leaves the roster alone');
+check(!wheelOn(screen, { deltaY: 120, ctrlKey: true }), 'zoom gesture is not treated as roster scrolling');
+delete document.onwheel;
+screen.onBrothersListLoaded(screen.mDataSource, board);
+check(wheelOn(screen, { wheelDelta: -120 }) && screen.mListScrollContainer.scrollTop() === 41, 'legacy game mousewheel uses half a row');
+document.onwheel = null;
+screen.onBrothersListLoaded(screen.mDataSource, board);
+check(Object.keys(screen.mListScrollContainer.handlers).length === 1, 'refresh does not stack wheel handlers');
 for (let i = 27; i < 38; i++) {
     check(screen.mSlots[i].data('idx') === i && typeof screen.mSlots[i].onDrop === 'function', 'each extra slot has its own index and handler');
 }
@@ -70,13 +92,14 @@ const extra = screen.mSlots[37];
 screen.onBrothersListLoaded(screen.mDataSource, Array(27).fill(null));
 check(screen.mSlots.length === 27 && extra.removed, 'another origin returns to native slot count');
 check(screen.mListScrollContainer.css('overflow-y') === 'visible', 'another origin gets original overflow style');
+check(screen.mListScrollContainer.scrollTop() === 0 && Object.keys(screen.mListScrollContainer.handlers).length === 0, 'another origin resets scroll and removes custom wheel events');
 screen.onBrothersListLoaded(screen.mDataSource, null);
 check(screen.mSlots.length === 27, 'empty tactical roster remains safe');
 
 // The backend keeps 18 battle positions and allocates one reserve position per
 // company member. Exercise every allowed deployed count with the full cast and
 // with all five ordinary-mercenary spaces filled, not just the old 20-person cap.
-const battleOrder = [3, 4, 5, 2, 6, 12, 13, 14, 11, 15];
+const battleOrder = [3, 4, 5, 2, 6, 12, 13, 14, 11, 15, 1, 7];
 function makeBoard(size, deployed) {
     const result = Array(18 + size).fill(null);
     for (let i = 0; i < size; i++) {
@@ -89,7 +112,7 @@ function makeScreen() {
     result.mSlots = Array.from({ length: 27 }, (_, i) => new Element().data('idx', i).data('child', null));
     result.mListScrollContainer = new Element();
     result.mDataSource = { getInventoryMode: () => mode };
-    result.mNumActiveMax = 10;
+    result.mNumActiveMax = 12;
     result.swaps = [];
     result.swapSlots = function (from, to) {
         const a = this.mSlots[from].data('child'), b = this.mSlots[to].data('child');
@@ -112,7 +135,7 @@ function idsIn(targetScreen) {
     return targetScreen.mSlots.map(s => s.data('child')).filter(Boolean).map(b => b.id).sort((a, b) => a - b);
 }
 for (const size of [35, 40]) {
-    for (let deployed = 1; deployed <= 10; deployed++) {
+    for (let deployed = 1; deployed <= 12; deployed++) {
         const large = makeScreen(), positions = makeBoard(size, deployed);
         const expected = Array.from({ length: size }, (_, i) => i + 1);
         large.onBrothersListLoaded(large.mDataSource, positions);
@@ -168,7 +191,7 @@ check(latePatched.mSlots.length === 27 && latePatched.mListScrollContainer.css('
 // only a tiny DOM/data-source stub, to verify the unchanged battle-slot limit.
 const nativeSource = '.cache/afei-art/gameplay-audit/character_screen_brothers_list_module.js';
 if (fs.existsSync(nativeSource)) {
-    const context = vm.createContext({ $, CharacterScreenDatasourceIdentifier, console });
+    const context = vm.createContext({ $, CharacterScreenDatasourceIdentifier, console, document });
     vm.runInContext(fs.readFileSync(nativeSource, 'utf8'), context);
     const nativeProto = context.CharacterScreenBrothersListModule.prototype;
     nativeProto.onBrothersListLoaded = function (source, brothers) {
@@ -182,7 +205,7 @@ if (fs.existsSync(nativeSource)) {
     vm.runInContext(fs.readFileSync('src/ui/mods/afeix/formation.js', 'utf8'), context);
     const nativeScreen = Object.create(nativeProto), updates = [], swaps = [];
     nativeScreen.mListScrollContainer = new Element();
-    nativeScreen.mNumActiveMax = 10;
+    nativeScreen.mNumActiveMax = 12;
     nativeScreen.mDataSource = {
         getInventoryMode: () => 'stash',
         swapBrothers: (from, to) => swaps.push([from, to]),
@@ -193,14 +216,14 @@ if (fs.existsSync(nativeSource)) {
     nativeScreen.updateBlockedSlots = function () {};
     nativeScreen.updateRosterLabel = function () {};
     nativeScreen.createBrotherSlots(nativeScreen.mListScrollContainer);
-    nativeScreen.onBrothersListLoaded(nativeScreen.mDataSource, makeBoard(40, 10));
-    check(dropOn(nativeScreen, 47, 17) === false && nativeScreen.mNumActive === 10 && swaps.length === 0, 'native battle handler still blocks an eleventh member from far reserve');
-    dropOn(nativeScreen, 47, 3);
-    check(nativeScreen.mSlots[3].data('child').data('ID') === 40 && nativeScreen.mNumActive === 10, 'native occupied battle swap accepts far reserve at full capacity');
-    check(updates.some(([id, place]) => id === 1 && place === 47), 'native swap reports extended reserve index to backend');
-    check(dropOn(nativeScreen, 3, 57) === true && nativeScreen.mNumActive === 9, 'native swapSlots supports dropping an active member into slot 57');
+    nativeScreen.onBrothersListLoaded(nativeScreen.mDataSource, makeBoard(40, 12));
+    check(dropOn(nativeScreen, 45, 17) === false && nativeScreen.mNumActive === 12 && swaps.length === 0, 'native battle handler still blocks a thirteenth member from far reserve');
+    dropOn(nativeScreen, 45, 3);
+    check(nativeScreen.mSlots[3].data('child').data('ID') === 40 && nativeScreen.mNumActive === 12, 'native occupied battle swap accepts far reserve at full capacity');
+    check(updates.some(([id, place]) => id === 1 && place === 45), 'native swap reports extended reserve index to backend');
+    check(dropOn(nativeScreen, 3, 57) === true && nativeScreen.mNumActive === 11, 'native swapSlots supports dropping an active member into slot 57');
     dropOn(nativeScreen, 57, 17);
-    check(nativeScreen.mSlots[17].data('child').data('ID') === 40 && nativeScreen.mNumActive === 10, 'native handler restores a tenth active from slot 57');
+    check(nativeScreen.mSlots[17].data('child').data('ID') === 40 && nativeScreen.mNumActive === 12, 'native handler restores a twelfth active from slot 57');
     const nativeIds = nativeScreen.mSlots.map(s => s.data('child')).filter(Boolean).map(b => b.data('ID'));
     check(nativeIds.length === 40 && new Set(nativeIds).size === 40, 'native drag flow preserves all forty entities');
     console.log('NATIVE_UI_DROP_CHECKS_PASSED');
