@@ -4901,7 +4901,7 @@
     "Bravery": 3,
     "MeleeDefense": 3
   },
-  "version": 61,
+  "version": 62,
   "recruitment": {
     "totalSlots": 5,
     "hireCooldownDays": 1,

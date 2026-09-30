@@ -958,7 +958,7 @@
   "scripts": [
     {
       "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
-      "sha256": "f3f95eeb427827515ebb0c4b7acdd5080a3c6897afa29f45607cff7d53b607b7"
+      "sha256": "511a068eccb3f569e185706f77a246a5f19cbd4bd3d6de674e0c29078e3b8daa"
     },
     {
       "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
@@ -1450,7 +1450,7 @@
     },
     {
       "path": "src/scripts/skills/traits/afeix_turtle_body.nut",
-      "sha256": "1502f7841039515a47d3a735df5d0c32e5be7d9ceb1bc556daaea6a3218e521a"
+      "sha256": "b3349db12d0cf1d6b5f84a18e57201302ec228e559fbd53cacfcf45583cae1ae"
     }
   ],
   "ui_scripts": [

@@ -1,0 +1,18 @@
+{
+  "version": "0.28.12",
+  "prior_version": "0.28.11",
+  "changed_package_entries": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/skills/traits/afeix_turtle_body.nut"
+  ],
+  "only_requested_tooltip_and_version_changed": true,
+  "tooltip_old_save_text_removed": true,
+  "behavior_assertions": 33484,
+  "in_game_tested": false,
+  "published": true,
+  "website_release_id": "b6ab75df-1515-4a08-a7d3-887a7c9ff85f",
+  "installed": false,
+  "public_download_byte_comparison": true,
+  "public_archive_downloaded_at_origin": true,
+  "local_public_archive_saved": false
+}

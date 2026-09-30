@@ -1,0 +1,18 @@
+{
+  "http_status": 200,
+  "sha256": "4c07029b35b5e7a2d6a3e4da77db6d52445ec296df0be3e05671a6e81454bdd2",
+  "size": 4505869,
+  "entries": 287,
+  "crc_passed": true,
+  "entry_set_match": true,
+  "source_bytes_match": true,
+  "tooltip_old_save_text_removed": true,
+  "version": "0.28.12",
+  "release_id": "b6ab75df-1515-4a08-a7d3-887a7c9ff85f",
+  "download_url": "https://bbmod.site/files/b6ab75df-1515-4a08-a7d3-887a7c9ff85f/download/",
+  "confirmed_at": "2026-09-30T08:03:53.287950+00:00",
+  "in_game_tested": false,
+  "public_archive_downloaded_at_origin": true,
+  "local_public_archive_saved": false,
+  "verification_transport": "Public HTTPS download endpoint through trusted website origin"
+}
