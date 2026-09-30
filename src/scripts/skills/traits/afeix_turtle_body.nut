@@ -7,7 +7,7 @@ this.afeix_turtle_body <- this.inherit("scripts/skills/traits/character_trait", 
         this.m.Icon = "skills/afeix_member_turtle_shell.png";
         this.m.IconMini = this.m.Icon;
         this.m.IsSerialized = true;
-        this.m.Description = "小龟的头太大，无法装备头盔；入队自带钢头，不消耗技能点。厚壳使近防与远防各 +5，受到的直接武器伤害：头部减少 50%，躯干减少 20%。流血、毒等持续伤害不减免。\n铁匠：你这不是没穿甲，是出厂就焊上了。\n旧档头盔在行囊有空位时自动收回；仍戴着旧头盔时，头部减伤暂不生效。";
+        this.m.Description = "小龟的头太大，无法装备头盔；入队自带钢头，不消耗技能点。厚壳使近防与远防各 +5，受到的直接武器伤害：头部减少 50%，躯干减少 20%。流血、毒等持续伤害不减免。\n铁匠：你这不是没穿甲，是出厂就焊上了。";
     },
     function enabled() { return ::AfeixExpedition.isTurtle(this.getContainer().getActor()); },
     function onUpdate(p) { if (this.enabled()) { p.MeleeDefense += 5; p.RangedDefense += 5; } },
