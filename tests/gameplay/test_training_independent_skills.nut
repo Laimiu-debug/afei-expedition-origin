@@ -21,6 +21,11 @@ swing(a,s,enemy,false);check(a.fatigue==raw-4&&s.getFatigueCost()==raw,"miss use
 swing(a,s,enemy);check(s.getFatigueCost()==raw,"no second activation same round");
 ::state.round++;A.catalogTurnStart(a);swing(a,s,enemy);check(s.getFatigueCost()==raw-4,"next round reactivation");
 A.catalogTurnEnd(a);check(s.getFatigueCost()==raw,"unused discount expires at action end");
+// Specialized mastery changes the existing discount, never grants an attack.
+::state.round++;a.level=11;A.catalogTurnStart(a);swing(a,s,enemy);
+check(s.getFatigueCost()==::Math.max(::Math.ceil(raw*0.5).tointeger(),raw-5),"mastery discount5 keeps half-cost floor");
+swing(a,s,enemy,false);check(s.getFatigueCost()==raw,"mastery miss consumes discount");
+A.catalogTurnEnd(a);check(s.getFatigueCost()==raw,"mastery discount expires at turn end");
 fresh();a=trained("tongzhu","know_rules");enemy=makeActor("enemy",1,2);s=equip(enemy);
 check(active(a,"bear_strike")==null&&active(a,"cup_signal")==null,"other tongzhu choices absent");
 swing(enemy,s,a,false);check(a.props.MeleeSkill==60,"first observation no bonus");

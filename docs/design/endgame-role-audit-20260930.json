@@ -1,0 +1,1071 @@
+{
+  "date": "2026-09-30",
+  "version": "0.28.3",
+  "fields": [
+    "Hitpoints",
+    "Stamina",
+    "Bravery",
+    "Initiative",
+    "MeleeSkill",
+    "RangedSkill",
+    "MeleeDefense",
+    "RangedDefense"
+  ],
+  "assumptions": "Existing allocation, selected story growth; no perks/equipment/promotion/temporary effects; means, not guaranteed rolls.",
+  "main_build_counts": {
+    "front": 4,
+    "tank": 8,
+    "ranged": 4,
+    "throw": 3,
+    "agile": 6,
+    "heavy": 2,
+    "banner": 3,
+    "hybrid": 2,
+    "pole": 2
+  },
+  "people": [
+    {
+      "key": "afei",
+      "name": "阿飞",
+      "optional_dlc": false,
+      "current_build": "front",
+      "allocation": [
+        3,
+        6,
+        1,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        69.0,
+        124.0,
+        48.0,
+        90.0,
+        80.0,
+        24.0,
+        33.0,
+        2.0
+      ]
+    },
+    {
+      "key": "damou",
+      "name": "王大谋",
+      "optional_dlc": false,
+      "current_build": "tank",
+      "allocation": [
+        8,
+        5,
+        7,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        83.0,
+        120.5,
+        76.0,
+        96.0,
+        56.0,
+        32.0,
+        43.0,
+        2.0
+      ]
+    },
+    {
+      "key": "mocha",
+      "name": "午夜抹抹茶",
+      "optional_dlc": false,
+      "current_build": "ranged",
+      "allocation": [
+        7,
+        4,
+        5,
+        0,
+        0,
+        10,
+        0,
+        4
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        74.0,
+        116.0,
+        62.5,
+        100.0,
+        50.0,
+        92.0,
+        3.0,
+        17.0
+      ]
+    },
+    {
+      "key": "bottle",
+      "name": "小酒瓶",
+      "optional_dlc": false,
+      "current_build": "front",
+      "allocation": [
+        4,
+        4,
+        2,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        76.0,
+        127.0,
+        54.0,
+        93.0,
+        98.0,
+        26.0,
+        38.0,
+        2.0
+      ]
+    },
+    {
+      "key": "shuaizi",
+      "name": "白小帅子",
+      "optional_dlc": false,
+      "current_build": "tank",
+      "allocation": [
+        8,
+        5,
+        7,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        93.0,
+        117.0,
+        69.5,
+        96.0,
+        54.0,
+        30.0,
+        40.0,
+        3.0
+      ]
+    },
+    {
+      "key": "lili",
+      "name": "李李超欧",
+      "optional_dlc": false,
+      "current_build": "ranged",
+      "allocation": [
+        7,
+        4,
+        5,
+        0,
+        0,
+        10,
+        0,
+        4
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        73.0,
+        107.0,
+        55.5,
+        119.0,
+        46.0,
+        96.0,
+        1.0,
+        17.0
+      ]
+    },
+    {
+      "key": "xiaoyueya",
+      "name": "小月牙",
+      "optional_dlc": false,
+      "current_build": "throw",
+      "allocation": [
+        7,
+        3,
+        4,
+        0,
+        0,
+        10,
+        6,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        78.5,
+        108.0,
+        48.0,
+        119.0,
+        49.0,
+        93.0,
+        15.0,
+        5.0
+      ]
+    },
+    {
+      "key": "yuchujiu",
+      "name": "余初九",
+      "optional_dlc": false,
+      "current_build": "agile",
+      "allocation": [
+        5,
+        0,
+        3,
+        2,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        71.0,
+        99.0,
+        58.0,
+        127.0,
+        85.0,
+        36.0,
+        32.0,
+        5.0
+      ]
+    },
+    {
+      "key": "xiaoyubeike",
+      "name": "小鱼贝壳",
+      "optional_dlc": false,
+      "current_build": "heavy",
+      "allocation": [
+        4,
+        4,
+        2,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        84.0,
+        123.0,
+        46.0,
+        87.0,
+        85.0,
+        30.0,
+        30.0,
+        0.0
+      ]
+    },
+    {
+      "key": "wangduidui",
+      "name": "王怼怼",
+      "optional_dlc": false,
+      "current_build": "banner",
+      "allocation": [
+        8,
+        4,
+        10,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        83.0,
+        110.0,
+        100.0,
+        106.0,
+        68.0,
+        35.0,
+        4.0,
+        3.0
+      ]
+    },
+    {
+      "key": "laocai",
+      "name": "老蔡",
+      "optional_dlc": false,
+      "current_build": "tank",
+      "allocation": [
+        8,
+        5,
+        7,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        87.0,
+        119.0,
+        82.0,
+        92.0,
+        58.0,
+        32.0,
+        44.0,
+        3.0
+      ]
+    },
+    {
+      "key": "yanzi",
+      "name": "眼子",
+      "optional_dlc": false,
+      "current_build": "hybrid",
+      "allocation": [
+        6,
+        0,
+        2,
+        0,
+        10,
+        10,
+        2,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        78.0,
+        110.0,
+        56.0,
+        90.0,
+        85.0,
+        90.0,
+        12.0,
+        4.0
+      ]
+    },
+    {
+      "key": "tiantong",
+      "name": "小虎",
+      "optional_dlc": false,
+      "current_build": "ranged",
+      "allocation": [
+        7,
+        4,
+        5,
+        0,
+        0,
+        10,
+        0,
+        4
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        75.0,
+        110.0,
+        63.5,
+        107.0,
+        47.0,
+        98.0,
+        2.0,
+        17.0
+      ]
+    },
+    {
+      "key": "xiaoning",
+      "name": "小宁",
+      "optional_dlc": false,
+      "current_build": "ranged",
+      "allocation": [
+        7,
+        4,
+        5,
+        0,
+        0,
+        10,
+        0,
+        4
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        76.5,
+        107.0,
+        55.0,
+        104.0,
+        45.0,
+        99.0,
+        2.0,
+        20.0
+      ]
+    },
+    {
+      "key": "xiaopangxu",
+      "name": "小胖",
+      "optional_dlc": false,
+      "current_build": "tank",
+      "allocation": [
+        8,
+        5,
+        7,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        94.0,
+        132.0,
+        63.0,
+        93.0,
+        57.0,
+        30.0,
+        37.0,
+        1.0
+      ]
+    },
+    {
+      "key": "dae",
+      "name": "大鹅",
+      "optional_dlc": false,
+      "current_build": "tank",
+      "allocation": [
+        8,
+        5,
+        7,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        92.0,
+        117.0,
+        78.0,
+        90.0,
+        54.0,
+        31.0,
+        46.0,
+        2.0
+      ]
+    },
+    {
+      "key": "manyuemei",
+      "name": "蔓越莓",
+      "optional_dlc": false,
+      "current_build": "throw",
+      "allocation": [
+        7,
+        3,
+        4,
+        0,
+        0,
+        10,
+        6,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        73.0,
+        107.0,
+        62.0,
+        120.0,
+        46.0,
+        96.0,
+        14.0,
+        6.0
+      ]
+    },
+    {
+      "key": "xiaohani",
+      "name": "罗一可",
+      "optional_dlc": false,
+      "current_build": "agile",
+      "allocation": [
+        5,
+        0,
+        3,
+        2,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        70.0,
+        106.0,
+        52.0,
+        133.0,
+        83.0,
+        38.0,
+        30.0,
+        4.0
+      ]
+    },
+    {
+      "key": "keke",
+      "name": "可可",
+      "optional_dlc": false,
+      "current_build": "tank",
+      "allocation": [
+        8,
+        5,
+        7,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        81.0,
+        121.5,
+        82.0,
+        100.0,
+        51.0,
+        47.0,
+        41.0,
+        5.0
+      ]
+    },
+    {
+      "key": "yuxiang",
+      "name": "余想",
+      "optional_dlc": false,
+      "current_build": "pole",
+      "allocation": [
+        8,
+        4,
+        6,
+        0,
+        10,
+        0,
+        2,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        86.0,
+        127.0,
+        67.0,
+        94.0,
+        89.0,
+        31.0,
+        11.0,
+        2.0
+      ]
+    },
+    {
+      "key": "tongzhu",
+      "name": "童猪",
+      "optional_dlc": false,
+      "current_build": "banner",
+      "allocation": [
+        8,
+        4,
+        10,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        91.0,
+        110.0,
+        98.0,
+        102.0,
+        73.0,
+        35.0,
+        4.0,
+        3.0
+      ]
+    },
+    {
+      "key": "meiya",
+      "name": "美伢",
+      "optional_dlc": false,
+      "current_build": "agile",
+      "allocation": [
+        5,
+        0,
+        3,
+        2,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        73.0,
+        105.0,
+        52.0,
+        133.0,
+        86.0,
+        33.0,
+        26.0,
+        3.0
+      ]
+    },
+    {
+      "key": "wanshe",
+      "name": "玩蛇",
+      "optional_dlc": false,
+      "current_build": "front",
+      "allocation": [
+        4,
+        4,
+        2,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        69.0,
+        122.0,
+        48.0,
+        107.0,
+        92.0,
+        31.0,
+        30.0,
+        3.0
+      ]
+    },
+    {
+      "key": "tutu",
+      "name": "涂涂",
+      "optional_dlc": false,
+      "current_build": "banner",
+      "allocation": [
+        8,
+        4,
+        10,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        85.0,
+        118.0,
+        101.0,
+        100.0,
+        67.0,
+        36.0,
+        4.0,
+        3.0
+      ]
+    },
+    {
+      "key": "naigai",
+      "name": "奶盖",
+      "optional_dlc": false,
+      "current_build": "hybrid",
+      "allocation": [
+        7,
+        3,
+        4,
+        0,
+        0,
+        6,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        85.5,
+        111.0,
+        55.0,
+        104.0,
+        51.0,
+        70.0,
+        36.0,
+        3.0
+      ]
+    },
+    {
+      "key": "xiaojie",
+      "name": "小杰",
+      "optional_dlc": false,
+      "current_build": "agile",
+      "allocation": [
+        10,
+        0,
+        0,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        120.0,
+        88.0,
+        47.0,
+        99.0,
+        90.0,
+        32.0,
+        37.0,
+        2.0
+      ]
+    },
+    {
+      "key": "bula",
+      "name": "bula",
+      "optional_dlc": false,
+      "current_build": "throw",
+      "allocation": [
+        7,
+        3,
+        4,
+        0,
+        0,
+        10,
+        6,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        81.5,
+        112.0,
+        63.0,
+        102.0,
+        48.0,
+        93.0,
+        17.0,
+        5.0
+      ]
+    },
+    {
+      "key": "suwa",
+      "name": "苏袜",
+      "optional_dlc": false,
+      "current_build": "agile",
+      "allocation": [
+        5,
+        0,
+        3,
+        2,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        69.0,
+        102.0,
+        50.0,
+        143.0,
+        81.0,
+        42.0,
+        24.0,
+        5.0
+      ]
+    },
+    {
+      "key": "qianhan",
+      "name": "千涵",
+      "optional_dlc": false,
+      "current_build": "front",
+      "allocation": [
+        4,
+        4,
+        2,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        72.0,
+        122.0,
+        50.0,
+        114.0,
+        92.0,
+        32.0,
+        31.0,
+        3.0
+      ]
+    },
+    {
+      "key": "wangdazhi",
+      "name": "王大芷",
+      "optional_dlc": false,
+      "current_build": "tank",
+      "allocation": [
+        8,
+        5,
+        7,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        87.0,
+        125.5,
+        76.5,
+        97.0,
+        55.0,
+        30.0,
+        38.0,
+        3.0
+      ]
+    },
+    {
+      "key": "yaoyaoya",
+      "name": "瑶瑶牙",
+      "optional_dlc": false,
+      "current_build": "heavy",
+      "allocation": [
+        4,
+        4,
+        2,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        76.0,
+        129.0,
+        48.0,
+        84.0,
+        94.0,
+        28.0,
+        29.0,
+        0.0
+      ]
+    },
+    {
+      "key": "yangmiemie",
+      "name": "羊咩咩",
+      "optional_dlc": false,
+      "current_build": "pole",
+      "allocation": [
+        8,
+        4,
+        6,
+        0,
+        10,
+        0,
+        2,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        98.0,
+        117.0,
+        66.0,
+        105.0,
+        81.0,
+        35.0,
+        9.0,
+        5.0
+      ]
+    },
+    {
+      "key": "songnuanyang",
+      "name": "宋暖阳",
+      "optional_dlc": false,
+      "current_build": "agile",
+      "allocation": [
+        0,
+        4,
+        0,
+        6,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        66.0,
+        116.0,
+        54.0,
+        141.0,
+        85.0,
+        36.0,
+        36.0,
+        5.0
+      ]
+    },
+    {
+      "key": "xiaogui",
+      "name": "溺水小龟",
+      "optional_dlc": false,
+      "current_build": "tank",
+      "allocation": [
+        8,
+        5,
+        7,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        78.0,
+        125.5,
+        73.0,
+        93.0,
+        49.0,
+        40.0,
+        38.0,
+        5.0
+      ]
+    },
+    {
+      "key": "xiwen",
+      "name": "希文",
+      "optional_dlc": true,
+      "current_build": "agile",
+      "allocation": [
+        7,
+        3,
+        0,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "growth_pick": 0,
+      "level11_mean": [
+        73.0,
+        106.0,
+        24.0,
+        111.0,
+        81.0,
+        36.0,
+        30.0,
+        3.0
+      ]
+    }
+  ],
+  "native_sources": [
+    {
+      "entry": "scripts/skills/perks/perk_nimble.cnut",
+      "archive": "data_001.dat",
+      "sha256": "9687d7260bcff23b5c77f881fb58ee26d28a4b69c6f1020dd059dc449fff4a7c"
+    },
+    {
+      "entry": "scripts/skills/perks/perk_battle_forged.cnut",
+      "archive": "data_001.dat",
+      "sha256": "ad8614d8ab8b76cde3d664cf16a4aa2be9c830f3b8a66adadddf0d00b5d0d5aa"
+    },
+    {
+      "entry": "scripts/skills/perks/perk_brawny.cnut",
+      "archive": "data_001.dat",
+      "sha256": "c1ff5cf822ffab1888c2a3a6d4f8e990ae5997561dcf545c8b1533fc3d7515fb"
+    },
+    {
+      "entry": "scripts/skills/perks/perk_pathfinder.cnut",
+      "archive": "data_001.dat",
+      "sha256": "220158c386ec7cd5ec828dbae5760fd42f1cb92af4c4ad52560ffa3b798d0111"
+    },
+    {
+      "entry": "scripts/skills/perks/perk_colossus.cnut",
+      "archive": "data_001.dat",
+      "sha256": "b26cfd0e517b9a6cf7240db1b1d4d15cf462448e95a7541c284d7a7ddec1a234"
+    },
+    {
+      "entry": "scripts/skills/perks/perk_mastery_axe.cnut",
+      "archive": "data_001.dat",
+      "sha256": "fc78f28b0802ed29f2b4ee390517a760c133b2a186b210b241685cd2ee9048c2"
+    },
+    {
+      "entry": "scripts/skills/effects/dodge_effect.cnut",
+      "archive": "data_001.dat",
+      "sha256": "c75c66b615b8308fff04c072c8418b1d8f21a99bd7cbea3614006e85fe4a6e7a"
+    },
+    {
+      "entry": "scripts/skills/actives/recover_skill.cnut",
+      "archive": "data_001.dat",
+      "sha256": "a14272e61a7dbc6de3f1b015372dd906207e8c38100284ba4f46c19562c4e2b8"
+    },
+    {
+      "entry": "scripts/skills/actives/rally_the_troops.cnut",
+      "archive": "data_001.dat",
+      "sha256": "795a0060aa469eb179954979e53fe40a7f7fbba3a871d44ab7ba08923bb980e0"
+    },
+    {
+      "entry": "scripts/skills/actives/split_man.cnut",
+      "archive": "data_001.dat",
+      "sha256": "9b42fee0a2b7f34e4902ca844940b7f720cc6aa75739935308dae2d66bbe08a3"
+    },
+    {
+      "entry": "scripts/config/character.cnut",
+      "archive": "data_001.dat",
+      "sha256": "1517b6df18391acb7dfc2e6f40e104b778545d1c30db2f9dd97b6e1d0bd44bf1"
+    },
+    {
+      "entry": "scripts/skills/skill.cnut",
+      "archive": "data_001.dat",
+      "sha256": "8f39ff7ae8e03e53cc7bfd5f1f63679ddaedc77cb7fa38e690ca1f26ac426477"
+    },
+    {
+      "entry": "scripts/skills/racial/skeleton_racial.cnut",
+      "archive": "data_001.dat",
+      "sha256": "33735ab19ff6f00c3e6bba4819cc944b9681f7f58cd05e66c307304f12b83561"
+    },
+    {
+      "entry": "scripts/skills/actives/fire_handgonne_skill.cnut",
+      "archive": "data_001.dat",
+      "sha256": "d83ec03bb9b430da1f179cca44e4278b2be17a7c64ca93e872ce8f6c5bbdbe74"
+    },
+    {
+      "entry": "scripts/skills/actives/charm_skill.cnut",
+      "archive": "data_001.dat",
+      "sha256": "d5db44cd26190627c2e37efa7cd9b927e3bb0ce9d05a69e1c98bf800cd5d89ed"
+    },
+    {
+      "entry": "scripts/entity/tactical/enemies/orc_warrior.cnut",
+      "archive": "data_001.dat",
+      "sha256": "c5c741e4b55f8e45da38a0854d8d406c25ca4fc86f1e5415f360cd00e0241c02"
+    },
+    {
+      "entry": "scripts/entity/tactical/humans/barbarian_champion.cnut",
+      "archive": "data_001.dat",
+      "sha256": "5197c84af4616657e8c3f6d9913637078afe6c23453c7a771f8013017025bc1d"
+    },
+    {
+      "entry": "scripts/entity/tactical/actor.cnut",
+      "archive": "data_001.dat",
+      "sha256": "0edaa65cf3a1a798e32be290e3e1954167d6e78edc2323a1d1861687f518cef0"
+    }
+  ],
+  "source_hashes": {
+    "src/scripts/mods/afeix/balance_v26_data.nut": "c7b303fa9b968431f6e0aa1cdadb195a76719d51dce2c5b50a5bd2409ef2caf6",
+    "src/scripts/mods/afeix/story_progress.nut": "b9ea9edd7839e00138f304a850443cb2e57d5113f3cac556986f3e508ec19ae7",
+    "dlc/xiwen-regen/src/scripts/mods/afeix_dlc_xiwen_regen/content.nut": "2ffbe1ba8c9ac2ccbb357986a2c4fbf4a29290aaf82d286fa12331cf9dc94b84",
+    "docs/design/balance-v2/proposal.json": "8ab3159c5003fbc79dc14fdd9108480dafa0ceae869339e777fff977a4ab9552"
+  }
+}

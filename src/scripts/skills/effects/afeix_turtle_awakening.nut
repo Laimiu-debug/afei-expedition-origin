@@ -2,8 +2,8 @@ this.afeix_turtle_awakening <- this.inherit("scripts/skills/skill", {
     m = { NormalHitpointsMax = 1 },
     function create() {
         this.m.ID = "effects.afeix_turtle_awakening";
-        this.m.Name = "壳后的那一步";
-        this.m.Description = "沉下去的脚步没有变快，壳上的纹路却仿佛接住了整片深水。小龟没有回头，只把身后的路留得很稳。";
+        this.m.Name = "玄武血脉";
+        this.m.Description = "她壳上的旧纹接住了整片深水。本场生命上限 +400、疲劳上限 +120、决心 +100、近攻 +60、远攻 +40、双防 +100、近战伤害 ×1.5、疲劳恢复 +10，先攻最多 20；觉醒时回满生命、清空疲劳并变为自信。战后消失，生命降至不超过原上限；再次觉醒需完成 5 场未觉醒的参战胜利，待命和撤退不计。";
         this.m.Icon = "skills/afeix_member_turtle_shell.png";
         this.m.IconMini = this.m.Icon;
         this.m.Type = this.Const.SkillType.StatusEffect;

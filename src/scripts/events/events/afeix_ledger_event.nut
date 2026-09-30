@@ -1,5 +1,5 @@
 this.afeix_ledger_event <- this.inherit("scripts/events/event", {
-    m = { Notice = "", Selected = [], FormationPage = 0, AutoPage = "home" },
+    m = { Notice = "", Selected = [], FormationPage = 0, AutoPage = "home", TreatmentOffer = null },
     function create() {
         this.m.ID = "event.afeix_ledger";
         this.m.Title = "黑旗名册";
@@ -11,6 +11,7 @@ this.afeix_ledger_event <- this.inherit("scripts/events/event", {
         this.m.Score = 0;
     },
     function onPrepare() {
+        this.m.TreatmentOffer = null;
         this.m.Notice = "";
         this.m.Selected = [];
         this.m.FormationPage = 0;
@@ -20,6 +21,7 @@ this.afeix_ledger_event <- this.inherit("scripts/events/event", {
     function getScreen(id) { return ::AfeixExpedition.ledgerPage(this, id); },
     function buildText(text) { return text; },
     function onClear() {
+        this.m.TreatmentOffer = null;
         this.m.Notice = "";
         this.m.Selected = [];
         this.m.FormationPage = 0;

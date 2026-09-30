@@ -77,6 +77,6 @@
     "atlas_sha256": "4875a92cac7f07199d29654e6492fa272ef374d6c38b565e188acd5009add5c5",
     "pack_log": "Loading images...\nsprites\\icon_afeix_laoma_grip.png\nsprites\\icon_afeix_laoma_grip_bloodied.png\nPacking rectangles...\nWriting gfx/afeix_ideas_v19.png (256x128)...\n",
     "unpack_log": "Opening gfx/afeix_ideas_v19.png...\nsprites\\icon_afeix_laoma_grip.png\nsprites\\icon_afeix_laoma_grip_bloodied.png\n",
-    "roundtrip_directory": "build/roundtrip-fhlj80xe"
+    "roundtrip_directory": "build/roundtrip-3v5vy5vq"
   }
 }

@@ -56,7 +56,11 @@ local stashWrappers={};
 });
 ::mods_hookExactClass("states/world_state",function(o){
     local end=o.onCombatFinished;
-    o.onCombatFinished=function(){local r=end.bindenv(this)();::AfeixExpedition.finishIdeasBattle();return r;};
+    o.onCombatFinished=function(){local r=end.bindenv(this)();::AfeixExpedition.finishIdeasBattle();::AfeixExpedition.finishTurtleBattle();return r;};
+});
+::mods_hookExactClass("states/tactical_state",function(o){
+    local update=o.onUpdate;
+    o.onUpdate=function(){::AfeixExpedition.showTurtleAwakeningNotice(this);return update.bindenv(this)();};
 });
 ::mods_hookNewObject("states/world/asset_manager",function(o){
     local update=o.update;

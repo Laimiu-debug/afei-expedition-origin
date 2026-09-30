@@ -24,7 +24,7 @@ foreach(owner,keys in A.MemberSkills)foreach(key in keys){
     a.level=10;a.skills.update();eq(A.trainingRank(a,key),1,key+" rank at 10");
     a.level=11;::state.tactical=true;a.skills.update();eq(A.trainingRank(a,key),2,key+" auto rank at 11");
     if(d.active)eq(s.m.FatigueCost,::Math.max(0,d.fatigue-::Math.max(1,::Math.floor(d.fatigue*0.15).tointeger())),key+" upgraded cost");
-    else {a.level=10;a.skills.update();local before=a.props.FatigueRecoveryRate;a.level=11;a.skills.update();eq(a.props.FatigueRecoveryRate,before,key+" mastery keeps native recovery separate");a.fatigue=20;A.balanceAfterTurnStart(a);eq(a.fatigue,19,key+" mastery uses shared recovery budget");A.balanceAfterTurnStart(a);eq(a.fatigue,19,key+" once per round");}
+    else {a.level=10;a.skills.update();local before=a.props.FatigueRecoveryRate;a.level=11;a.skills.update();eq(a.props.FatigueRecoveryRate,before,key+" mastery keeps native recovery separate");a.fatigue=20;local expected="specialized_mastery" in d&&d.specialized_mastery?20:19;A.balanceAfterTurnStart(a);eq(a.fatigue,expected,key+" mastery uses shared recovery budget");A.balanceAfterTurnStart(a);eq(a.fatigue,expected,key+" once per round");}
     for(local i=0;i<3;i++){A.syncMemberSkills(a);a.skills.update();}
     eq(learnedCount(a),1,key+" no extra skill or stacking at 11");
     local path="scripts/skills/"+(d.active?("extended" in d?"actives/afeix_catalog_active":"actives/afeix_member_active"):("extended" in d?"traits/afeix_catalog_passive":"traits/afeix_member_passive"));

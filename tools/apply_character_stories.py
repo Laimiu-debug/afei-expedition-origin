@@ -41,10 +41,10 @@ def source_link(source):
     return source
 
 
-def render(stories):
+def render(stories, updated):
     lines = [
         '# 阿飞远征团｜34 人故事梗概修订', '',
-        '更新：2026-09-28。删除陈知含后共 34 人；宋暖阳、溺水小龟归为旅途来客，原九月联动、原旅途来客与奶盖统一归入 0.5DFW猪团。旧版侧写仅作历史提案；现行内容以本表 34 人为准，不保留陈知含的旧档兼容。', '',
+        f'更新：{updated}。删除陈知含后共 34 人；宋暖阳、溺水小龟归为旅途来客，原九月联动、原旅途来客与奶盖统一归入 0.5DFW猪团。旧版侧写仅作历史提案；现行内容以本表 34 人为准，不保留陈知含的旧档兼容。', '',
         '**这一版写什么：**用人物的熟悉称呼、说话方式、个人欲望与行动建立差异。有人好面子，有人爱抢拍，有人就想赢自己的比赛；并非每个人都来教阿飞同一堂课。人物之间也应有搭档、争执和笑点。', '',
         '**依据怎么读：**“用户确认”是你提供的特点；“旧稿母题”来自旧项目，未经真人事实核验；“标题线索”只表示页面可查；“原创提案”是为 Mod 新写的情节。所有身世、场景、对白和成长安排均为游戏改编，台词不是主播原话。2026-09-28 蓝队原第 17 位按用户更正由小哈尼换为罗一可；本轮已按用户补充的仓鼠称呼与照片重写罗一可，并补完她与眼子的个人剧情；老蔡的推演习惯等也不是已确认的真人梗。', '',
         '**落地范围：**34 人介绍与招募相遇文本已同步到试玩源码。3 名队长开局；31 人后续招募，各自满足隐藏条件后进入原版城镇招募队列。眼子恢复旧稿剑盾配置及原版技能树。罗一可与眼子均已补齐专属头像、两段后续和选择结局，见[完整个人剧情](blue-team-stories.md)。v0.3 新增每人的首段双选项成长及被动、阿飞转职、六根入口与自行车事件，详见[试玩说明](../playtest-0.3.md)。下列“后续故事方向”仍是完整长线提案，不等于所有情节都已实现。v0.4 已接入全员完整胸像；小龟采用小龟化身，宋暖阳采用人类鹌鹑纹兜帽。见[美术试玩说明](../playtest-0.4.md)。', '',
@@ -62,12 +62,13 @@ def render(stories):
         for basis in c['basis']:
             lines.append(f"- **{KINDS[basis['kind']]}：**{basis['note']}（{source_link(basis['source'])}）")
         if c['key'] in {'bottle', 'shuaizi'}:
-            lines.extend(['', '当前仍为首份任务后直接邀请；个人相遇文案只作为候选背景收录，不新增前置收费或解锁条件。'])
+            lines.extend(['', '相遇文案已收录于当前招募事件；实际解锁与刷新以现行招募配置为准，本轮润色不增加费用或门槛。'])
     DOCUMENT.write_text('\n'.join(lines).rstrip() + '\n', encoding='utf-8')
 
 
 def apply_stories():
-    stories = json.loads(SOURCE.read_text(encoding='utf-8'))['characters']
+    data = json.loads(SOURCE.read_text(encoding='utf-8'))
+    stories = data['characters']
     text = RUNTIME.read_text(encoding='utf-8-sig')
     order = json.loads(re.search(r'A\.CharacterOrder <- (\[[^\n]+\]);', text)[1])
     if [c['key'] for c in stories] != order or len(set(order)) != len(order):
@@ -113,7 +114,7 @@ def apply_stories():
     if seen != order:
         raise ValueError('Not every active character block was updated')
     RUNTIME.write_text(prefix + 'A.Characters <- {' + active + '\n};' + suffix, encoding='utf-8')
-    render(stories)
+    render(stories, data['updated'])
     return len(stories)
 
 

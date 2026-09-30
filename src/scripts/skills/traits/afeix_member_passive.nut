@@ -43,7 +43,7 @@ this.afeix_member_passive <- this.inherit("scripts/skills/skill", {
         if (!this.enabled() || !A.memberMeleeSkill(s)) return;
         local a = this.getContainer().getActor(), key = this.m.Key;
         if (key == "finals_moment" && A.memberRound() >= 5) p.MeleeDamageMult *= 1.1;
-        else if (key == "lvbu_weapon" && A.memberWeapon(a, true)) p.DamageArmorMult *= 1.1;
+        else if (key == "lvbu_weapon" && A.memberWeapon(a, true)) p.DamageArmorMult *= A.trainingRank(a,key)>=2?1.12:1.1;
         else if (key == "together_lift" && A.memberShield(a) && A.memberAllies(a, 2).len() >= 2) p.DamageArmorMult *= 1.1;
         else if (key == "goose_bully" && this.gooseReady()) A.balanceHit(p,"MeleeSkill",5);
     },
@@ -55,7 +55,7 @@ this.afeix_member_passive <- this.inherit("scripts/skills/skill", {
     function onProtectedMiss() {
         local A = ::AfeixExpedition;
         if (!this.enabled() || this.m.Key != "breathe_easy" || this.m.RecoveryRound == A.memberRound() || this.m.Recovered >= 20) return;
-        local a = this.getContainer().getActor(), amount = ::Math.min(4, ::Math.min(a.getFatigue(), 20 - this.m.Recovered));
+        local a = this.getContainer().getActor(), amount = ::Math.min(A.trainingRank(a,"breathe_easy")>=2?5:4, ::Math.min(a.getFatigue(), 20 - this.m.Recovered));
         if (amount <= 0) return;
         this.m.RecoveryRound = A.memberRound(); this.m.Recovered += amount;
         this.m.Recovered -= amount; this.m.Recovered += A.catalogRecover(a,amount);

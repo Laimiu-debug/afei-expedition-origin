@@ -16,14 +16,16 @@ def main():
     report = json.loads((BASE / 'build/report.json').read_text(encoding='utf-8'))
     font = ImageFont.truetype('C:/Windows/Fonts/msyh.ttc', 12)
 
-    def layer(canvas, identity):
+    def layer(canvas, identity, scale=1.0, alpha=255):
         meta = native[identity]
         im = Image.open(NATIVE / meta['img'].replace('\\', '/')).convert('RGBA')
-        w, h = round(float(meta['right'])-float(meta['left'])), round(float(meta['bottom'])-float(meta['top']))
+        w, h = round((float(meta['right'])-float(meta['left'])) * scale), round((float(meta['bottom'])-float(meta['top'])) * scale)
         im = im.resize((w, h), Image.Resampling.LANCZOS)
-        canvas.alpha_composite(im, (80+round(float(meta['left'])), 65-round(float(meta['bottom']))))
+        if alpha != 255:
+            im.putalpha(im.getchannel('A').point(lambda value: round(value * alpha / 255)))
+        canvas.alpha_composite(im, (80+round(float(meta['left']) * scale), 65-round(float(meta['bottom']) * scale)))
 
-    def frame(record, armor=True, helmet=False, flip=False, old=False):
+    def frame(record, armor=True, helmet=False, flip=False, old=False, blood=True):
         canvas = Image.new('RGBA', (160,150))
         if old:
             im = Image.open(BASE / 'sprites' / (record['brush'] + '_dead.png')).convert('RGBA')
@@ -32,18 +34,18 @@ def main():
         else:
             layer(canvas, 'bust_body_01_dead')
             if armor: layer(canvas, 'bust_body_14_dead')
-            im = Image.open(BASE / 'sprites' / (record['brush']+'_corpse_head.png')).convert('RGBA')
-            # Reproduce the packed neck pivot, not the alpha bounding centre.
-            pivot = record['corpse_neck_anchor']
-            head = Image.new('RGBA', (320,320))
-            head.alpha_composite(im, (160-pivot[0],160-pivot[1]))
-            head = head.resize((250,250), Image.Resampling.LANCZOS)
-            head = ImageEnhance.Color(head).enhance(.75).rotate(140, Image.Resampling.BICUBIC)
-            canvas.alpha_composite(head, (80-125,65+6-125))
+            wound_path = ROOT / 'art/runtime/corpse-injuries-v01/sprites' / (record['brush'] + '_corpse_head_injured_02.png')
+            im = Image.open(wound_path if blood is True else BASE / 'sprites' / (record['brush']+'_corpse_head.png')).convert('RGBA')
+            # Use shipped prone pixels and metadata, with no runtime rotation.
+            meta = record['corpse_head_geometry']
+            head = ImageEnhance.Color(im).enhance(.75)
+            canvas.alpha_composite(head, (80+meta['left'],65-meta['bottom']))
+            if blood == 'pool':
+                layer(canvas, 'bust_head_dead_bloodpool', scale=0.45, alpha=150)
             if helmet: layer(canvas, 'bust_helmet_03_dead')
         return ImageOps.mirror(canvas) if flip else canvas
 
-    records = [r for r in report['portraits'] if r['form'] != 'toad']
+    records = [r for r in report['portraits'] if r['key'] != 'afei' or r['form'] == 'normal']
     selected = [next(r for r in records if r['key']==key) for key in ['afei','damou','keke','naigai','lili','xiaogui']]
     headers = ['旧：完整胸像横放','新：素装倒地','新：护甲倒地','新：护甲＋头盔','新：镜像朝向']
     sheet = Image.new('RGB',(160*5,175*6+36),(60,60,47)); draw = ImageDraw.Draw(sheet)
@@ -75,7 +77,17 @@ def main():
             close.paste(tile,(col*160,row*175+20),tile)
             draw.text((col*160+5,row*175+4),record['name']+' · 已校正',font=font,fill='white')
     close.resize((1280,700),Image.Resampling.NEAREST).save(OUT/'corrected-neck-review.png')
-    (OUT/'README.md').write_text('# 战死图层离线检查\n\n实际头像像素、原版倒地护甲与头盔按锚点合成。新图按颈部锚点仰倒、使用原版躯干，不清除装备；专属头部仅改变画刷支点与运行时姿态，没有重绘闭眼表情。\n\n这不是实机截图。引擎光照、头盔变体、动态翻转与地形仍需实机确认。原版参考图只用于本地检查，不进入安装包。\n',encoding='utf-8')
+    blood_comparison = Image.new('RGB', (640, 350), (60,60,47))
+    labeler = ImageDraw.Draw(blood_comparison)
+    for row, record in enumerate(selected[:2]):
+        for col, (blood, helmet, label) in enumerate([
+                ('pool', False, '上版错误：脖子红斑'), (True, False, '修正：脸部伤痕随头倒下'),
+                (True, False, '结算：同姿势血迹'), (True, True, '血迹＋头盔')]):
+            im = frame(record, armor=True, helmet=helmet, blood=blood)
+            blood_comparison.paste(im, (col * 160, row * 175 + 20), im)
+            labeler.text((col * 160 + 4, row * 175 + 4), label, font=font, fill='white')
+    blood_comparison.resize((960,525),Image.Resampling.NEAREST).save(OUT/'death-blood-review.png')
+    (OUT/'README.md').write_text('# 战死图层离线检查\n\n实际头像像素、原版倒地护甲与头盔按锚点合成。新图按颈部锚点仰倒、使用原版躯干，不清除装备；倒地旋转已写入专属头部贴图，战场和结算共用，不再依赖运行时旋转。未重绘闭眼表情。\n\n这不是实机截图。引擎光照、头盔变体、动态翻转与地形仍需实机确认。原版参考图只用于本地检查，不进入安装包。\n',encoding='utf-8')
     print(OUT/'comparison.png')
 
 

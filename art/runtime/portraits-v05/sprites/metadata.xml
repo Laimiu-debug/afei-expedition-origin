@@ -2,145 +2,145 @@
   <sprite id="afeix_p04_afei_normal" img="afeix_p04_afei_normal.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_afei_normal_head" img="afeix_p04_afei_normal_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_afei_normal_dead" img="afeix_p04_afei_normal_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_afei_normal_corpse_head" img="afeix_p04_afei_normal_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_afei_normal_corpse_head" img="afeix_p04_afei_normal_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_afei_toad" img="afeix_p04_afei_toad.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_afei_toad_head" img="afeix_p04_afei_toad_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_afei_toad_dead" img="afeix_p04_afei_toad_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_afei_toad_corpse_head" img="afeix_p04_afei_toad_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_afei_toad_corpse_head" img="afeix_p04_afei_toad_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_afei_jiahao" img="afeix_p04_afei_jiahao.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_afei_jiahao_head" img="afeix_p04_afei_jiahao_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_afei_jiahao_dead" img="afeix_p04_afei_jiahao_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_afei_jiahao_corpse_head" img="afeix_p04_afei_jiahao_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_afei_jiahao_corpse_head" img="afeix_p04_afei_jiahao_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_damou" img="afeix_p04_damou.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_damou_head" img="afeix_p04_damou_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_damou_dead" img="afeix_p04_damou_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_damou_corpse_head" img="afeix_p04_damou_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_damou_corpse_head" img="afeix_p04_damou_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_mocha" img="afeix_p04_mocha.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_mocha_head" img="afeix_p04_mocha_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_mocha_dead" img="afeix_p04_mocha_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_mocha_corpse_head" img="afeix_p04_mocha_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_mocha_corpse_head" img="afeix_p04_mocha_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_bottle" img="afeix_p04_bottle.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_bottle_head" img="afeix_p04_bottle_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_bottle_dead" img="afeix_p04_bottle_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_bottle_corpse_head" img="afeix_p04_bottle_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_bottle_corpse_head" img="afeix_p04_bottle_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_shuaizi" img="afeix_p04_shuaizi.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_shuaizi_head" img="afeix_p04_shuaizi_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_shuaizi_dead" img="afeix_p04_shuaizi_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_shuaizi_corpse_head" img="afeix_p04_shuaizi_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_shuaizi_corpse_head" img="afeix_p04_shuaizi_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_lili" img="afeix_p04_lili.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_lili_head" img="afeix_p04_lili_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_lili_dead" img="afeix_p04_lili_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_lili_corpse_head" img="afeix_p04_lili_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_lili_corpse_head" img="afeix_p04_lili_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_xiaoyueya" img="afeix_p04_xiaoyueya.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaoyueya_head" img="afeix_p04_xiaoyueya_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaoyueya_dead" img="afeix_p04_xiaoyueya_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_xiaoyueya_corpse_head" img="afeix_p04_xiaoyueya_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_xiaoyueya_corpse_head" img="afeix_p04_xiaoyueya_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_yuchujiu" img="afeix_p04_yuchujiu.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_yuchujiu_head" img="afeix_p04_yuchujiu_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_yuchujiu_dead" img="afeix_p04_yuchujiu_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_yuchujiu_corpse_head" img="afeix_p04_yuchujiu_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_yuchujiu_corpse_head" img="afeix_p04_yuchujiu_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_xiaoyubeike" img="afeix_p04_xiaoyubeike.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaoyubeike_head" img="afeix_p04_xiaoyubeike_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaoyubeike_dead" img="afeix_p04_xiaoyubeike_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_xiaoyubeike_corpse_head" img="afeix_p04_xiaoyubeike_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_xiaoyubeike_corpse_head" img="afeix_p04_xiaoyubeike_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_wangduidui" img="afeix_p04_wangduidui.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_wangduidui_head" img="afeix_p04_wangduidui_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_wangduidui_dead" img="afeix_p04_wangduidui_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_wangduidui_corpse_head" img="afeix_p04_wangduidui_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_wangduidui_corpse_head" img="afeix_p04_wangduidui_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_laocai" img="afeix_p04_laocai.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_laocai_head" img="afeix_p04_laocai_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_laocai_dead" img="afeix_p04_laocai_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_laocai_corpse_head" img="afeix_p04_laocai_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_laocai_corpse_head" img="afeix_p04_laocai_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_yanzi" img="afeix_p04_yanzi.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_yanzi_head" img="afeix_p04_yanzi_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_yanzi_dead" img="afeix_p04_yanzi_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_yanzi_corpse_head" img="afeix_p04_yanzi_corpse_head.png" left="-63" right="51" top="-27" bottom="115" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_yanzi_corpse_head" img="afeix_p04_yanzi_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_tiantong" img="afeix_p04_tiantong.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_tiantong_head" img="afeix_p04_tiantong_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_tiantong_dead" img="afeix_p04_tiantong_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_tiantong_corpse_head" img="afeix_p04_tiantong_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_tiantong_corpse_head" img="afeix_p04_tiantong_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_xiaoning" img="afeix_p04_xiaoning.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaoning_head" img="afeix_p04_xiaoning_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaoning_dead" img="afeix_p04_xiaoning_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_xiaoning_corpse_head" img="afeix_p04_xiaoning_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_xiaoning_corpse_head" img="afeix_p04_xiaoning_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_xiaopangxu" img="afeix_p04_xiaopangxu.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaopangxu_head" img="afeix_p04_xiaopangxu_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaopangxu_dead" img="afeix_p04_xiaopangxu_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_xiaopangxu_corpse_head" img="afeix_p04_xiaopangxu_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_xiaopangxu_corpse_head" img="afeix_p04_xiaopangxu_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_dae" img="afeix_p04_dae.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_dae_head" img="afeix_p04_dae_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_dae_dead" img="afeix_p04_dae_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_dae_corpse_head" img="afeix_p04_dae_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_dae_corpse_head" img="afeix_p04_dae_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_manyuemei" img="afeix_p04_manyuemei.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_manyuemei_head" img="afeix_p04_manyuemei_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_manyuemei_dead" img="afeix_p04_manyuemei_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_manyuemei_corpse_head" img="afeix_p04_manyuemei_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_manyuemei_corpse_head" img="afeix_p04_manyuemei_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_xiaohani" img="afeix_p04_xiaohani.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaohani_head" img="afeix_p04_xiaohani_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaohani_dead" img="afeix_p04_xiaohani_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_xiaohani_corpse_head" img="afeix_p04_xiaohani_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_xiaohani_corpse_head" img="afeix_p04_xiaohani_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_keke" img="afeix_p04_keke.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_keke_head" img="afeix_p04_keke_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_keke_dead" img="afeix_p04_keke_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_keke_corpse_head" img="afeix_p04_keke_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_keke_corpse_head" img="afeix_p04_keke_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_yuxiang" img="afeix_p04_yuxiang.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_yuxiang_head" img="afeix_p04_yuxiang_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_yuxiang_dead" img="afeix_p04_yuxiang_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_yuxiang_corpse_head" img="afeix_p04_yuxiang_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_yuxiang_corpse_head" img="afeix_p04_yuxiang_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_tongzhu" img="afeix_p04_tongzhu.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_tongzhu_head" img="afeix_p04_tongzhu_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_tongzhu_dead" img="afeix_p04_tongzhu_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_tongzhu_corpse_head" img="afeix_p04_tongzhu_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_tongzhu_corpse_head" img="afeix_p04_tongzhu_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_meiya" img="afeix_p04_meiya.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_meiya_head" img="afeix_p04_meiya_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_meiya_dead" img="afeix_p04_meiya_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_meiya_corpse_head" img="afeix_p04_meiya_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_meiya_corpse_head" img="afeix_p04_meiya_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_wanshe" img="afeix_p04_wanshe.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_wanshe_head" img="afeix_p04_wanshe_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_wanshe_dead" img="afeix_p04_wanshe_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_wanshe_corpse_head" img="afeix_p04_wanshe_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_wanshe_corpse_head" img="afeix_p04_wanshe_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_tutu" img="afeix_p04_tutu.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_tutu_head" img="afeix_p04_tutu_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_tutu_dead" img="afeix_p04_tutu_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_tutu_corpse_head" img="afeix_p04_tutu_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_tutu_corpse_head" img="afeix_p04_tutu_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_naigai" img="afeix_p04_naigai.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_naigai_head" img="afeix_p04_naigai_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_naigai_dead" img="afeix_p04_naigai_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_naigai_corpse_head" img="afeix_p04_naigai_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_naigai_corpse_head" img="afeix_p04_naigai_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_xiaojie" img="afeix_p04_xiaojie.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaojie_head" img="afeix_p04_xiaojie_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaojie_dead" img="afeix_p04_xiaojie_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_xiaojie_corpse_head" img="afeix_p04_xiaojie_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_xiaojie_corpse_head" img="afeix_p04_xiaojie_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_bula" img="afeix_p04_bula.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_bula_head" img="afeix_p04_bula_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_bula_dead" img="afeix_p04_bula_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_bula_corpse_head" img="afeix_p04_bula_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_bula_corpse_head" img="afeix_p04_bula_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_suwa" img="afeix_p04_suwa.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_suwa_head" img="afeix_p04_suwa_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_suwa_dead" img="afeix_p04_suwa_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_suwa_corpse_head" img="afeix_p04_suwa_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_suwa_corpse_head" img="afeix_p04_suwa_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_qianhan" img="afeix_p04_qianhan.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_qianhan_head" img="afeix_p04_qianhan_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_qianhan_dead" img="afeix_p04_qianhan_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_qianhan_corpse_head" img="afeix_p04_qianhan_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_qianhan_corpse_head" img="afeix_p04_qianhan_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_wangdazhi" img="afeix_p04_wangdazhi.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_wangdazhi_head" img="afeix_p04_wangdazhi_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_wangdazhi_dead" img="afeix_p04_wangdazhi_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_wangdazhi_corpse_head" img="afeix_p04_wangdazhi_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_wangdazhi_corpse_head" img="afeix_p04_wangdazhi_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_yaoyaoya" img="afeix_p04_yaoyaoya.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_yaoyaoya_head" img="afeix_p04_yaoyaoya_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_yaoyaoya_dead" img="afeix_p04_yaoyaoya_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_yaoyaoya_corpse_head" img="afeix_p04_yaoyaoya_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_yaoyaoya_corpse_head" img="afeix_p04_yaoyaoya_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_yangmiemie" img="afeix_p04_yangmiemie.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_yangmiemie_head" img="afeix_p04_yangmiemie_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_yangmiemie_dead" img="afeix_p04_yangmiemie_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_yangmiemie_corpse_head" img="afeix_p04_yangmiemie_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_yangmiemie_corpse_head" img="afeix_p04_yangmiemie_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_songnuanyang" img="afeix_p04_songnuanyang.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_songnuanyang_head" img="afeix_p04_songnuanyang_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_songnuanyang_dead" img="afeix_p04_songnuanyang_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_songnuanyang_corpse_head" img="afeix_p04_songnuanyang_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_songnuanyang_corpse_head" img="afeix_p04_songnuanyang_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
   <sprite id="afeix_p04_xiaogui" img="afeix_p04_xiaogui.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaogui_head" img="afeix_p04_xiaogui_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
   <sprite id="afeix_p04_xiaogui_dead" img="afeix_p04_xiaogui_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
-  <sprite id="afeix_p04_xiaogui_corpse_head" img="afeix_p04_xiaogui_corpse_head.png" left="-68" right="46" top="-32" bottom="110" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_p04_xiaogui_corpse_head" img="afeix_p04_xiaogui_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
 </brush>

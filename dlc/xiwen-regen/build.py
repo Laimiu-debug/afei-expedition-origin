@@ -79,7 +79,7 @@ def build_art(base, kit, scratch):
         'key': 'xiwen', 'name': '希文', 'form': 'default', 'brush': 'afeix_p04_xiwen',
         'source': (DLC / 'art/sources/xiwen.png').relative_to(ROOT).as_posix(),
         'source_kind': 'generated_custom',
-        'head_seam': [[0, 111], [40, 111], [54, 117], [66, 123], [75, 114], [88, 111], [114, 111]],
+        'head_seam': [[0, 102], [40, 102], [54, 114], [66, 114], [75, 114], [88, 102], [114, 102]],
         'neck_guard': [62, 112],
         'review_note': 'Reference-photo likeness; intact jaw and neck; native armor and helmet overlays reviewed.'
     }
@@ -191,7 +191,7 @@ def main():
     files = sorted(p for p in (DLC / 'src').rglob('*') if p.is_file())
     if any(p.suffix not in {'.nut', '.png', '.brush'} for p in files):
         raise ValueError('Unexpected package file type')
-    destination = DLC / 'dist/mod_afeix_dlc_xiwen_regen v0.2.4.zip'
+    destination = DLC / 'dist/mod_afeix_dlc_xiwen_regen v0.2.5.zip'
     destination.parent.mkdir(exist_ok=True)
     with ZipFile(destination, 'w', compression=ZIP_DEFLATED) as archive:
         for p in files:
@@ -201,7 +201,7 @@ def main():
     with ZipFile(destination) as archive:
         if archive.testzip() or any(archive.read(p.relative_to(DLC / 'src').as_posix()) != p.read_bytes() for p in files):
             raise ValueError('DLC ZIP validation failed')
-    report = {'version': '0.2.4-dlc', 'minimum_base': '0.26.2 / internal 36',
+    report = {'version': '0.2.5-dlc', 'minimum_base': '0.26.2 / internal 36',
               'base_preload_sha256': sha(preload),
               'base_package_sha256': sha(base / ('dist/mod_afeix_expedition v'+(base/'VERSION').read_text().strip()+'.zip')),
               'package_sha256': sha(destination), 'crc_and_source_match': True,

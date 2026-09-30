@@ -1,0 +1,17 @@
+{
+  "name": "飞李不可",
+  "source_changes_are_string_literals_only": true,
+  "unchanged_package_entries_match": true,
+  "previous_full_suite_assertions": 32874,
+  "current_specialized_suite": {
+    "file": "tests/gameplay/test_attribute_treatment.nut",
+    "assertions": 406,
+    "log": "TESTS_PASSED=406\n"
+  },
+  "modified_scripts_sha256": {
+    "src/scripts/mods/afeix/attribute_treatment.nut": "ac319564917d8572dc2a72db41ecd6da4301ad5ab3bf1dce2d1d685f8e30a877",
+    "src/scripts/mods/afeix/banner_hooks.nut": "3c58986835a28fee0410494587f0784082d5f4f06411a5f4fc4f589c86dfbf1e",
+    "src/scripts/mods/afeix/ledger.nut": "dc8c235b7416fd83156572f1ca18067d56814b8797acc5eb6ce08c1af2d59bf9"
+  },
+  "in_game_tested": false
+}

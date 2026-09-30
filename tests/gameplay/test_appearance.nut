@@ -19,7 +19,7 @@ local A = ::AfeixExpedition, callbacks = {}, casualties = [], nextID = 10;
     object[key] = value;
 };
 dofile("src/scripts/mods/afeix/art_hooks.nut");
-::Const <- { Tactical = { DetailFlag = { Corpse = 4 } }, FatalityType = { None = "normal", Decapitated = "decapitated", Smashed = "smashed", Devoured = "devoured", Unconscious = "unconscious", Kraken = "kraken" }, Combat = { HumanCorpseOffset = { X = 0, Y = -12 } }, CorpsePart = ["part0", "part1"] };
+::Const <- { Tactical = { DetailFlag = { Corpse = 4 } }, FatalityType = { None = "normal", Decapitated = "decapitated", Smashed = "smashed", Devoured = "devoured", Unconscious = "unconscious", Kraken = "kraken" }, Combat = { HumanCorpseOffset = { X = 0, Y = -12 }, BloodiedBustCount = 4 }, CorpsePart = ["part0", "part1"] };
 ::Tactical <- { function getCasualtyRoster() { return { function getAll() { return casualties; } }; } };
 // These helpers belong to the engine root, not to actor instances. An actor-local
 // fake previously allowed production to call APIs absent on live entity tables.
@@ -37,7 +37,7 @@ local parts = ["background", "quiver", "tattoo_body", "scar_body", "injury_body"
 local status = ["socket", "arrow", "status_rooted_back", "status_rooted", "status_stunned", "status_hex", "status_sweat", "status_rage", "morale", "miniboss"];
 local makeSprite = function(name, available) { return {
     name = name, brush = "native_" + name, Visible = true, HasBrush = true,
-    Color = "native-color", Saturation = 0.8, Scale = 1.0, Rotation = 0, flipped = false,
+    Color = "native-color", Saturation = 0.8, Scale = 1.0, Rotation = 0, Alpha = 255, flipped = false,
     function setBrush(brush) {
         if (brush.find("afeix_") == 0 && (!(brush in available) || !available[brush])) throw "missing brush " + brush;
         this.brush = brush; this.HasBrush = true;
@@ -57,7 +57,7 @@ local makeTile = function() {
         },
         function spawnDetail(brush, flag, flip, unused = false, offset = null) {
             local sprite = { brush = brush, flag = flag, flip = flip, offset = offset,
-                Color = null, Saturation = 1.0, Rotation = 0, Scale = 1.0, function setBrightness(v) { this.Brightness <- v; } };
+                Color = null, Saturation = 1.0, Rotation = 0, Alpha = 255, Scale = 1.0, function setBrightness(v) { this.Brightness <- v; } };
             this.details.append(sprite); return sprite;
         }
     };
@@ -70,6 +70,11 @@ local makeBrother = function(key = "afei", zombie = false) {
         } else { foreach (suffix in ["", "_head", "_dead", "_corpse_head"]) available["afeix_p04_" + id + suffix] <- true; }
     }
     available.afeix_g03_feidie <- true;
+    foreach (id in A.CharacterOrder) {
+        local brush = "afeix_p04_" + (id == "afei" ? "afei_normal" : id);
+        foreach (suffix in ["_corpse_head_bloodied", "_corpse_head_injured_01", "_corpse_head_injured_02"])
+            available[brush + suffix] <- true;
+    }
     foreach (name in parts) sprites[name] <- makeSprite(name, available);
     foreach (name in status) sprites[name] <- makeSprite(name, available);
     sprites.body <- makeSprite("body", available); sprites.body.brush = "bust_native_body";
@@ -79,7 +84,7 @@ local makeBrother = function(key = "afei", zombie = false) {
     local items = { equipped = ["sword", "shield", "armor", "helmet"], armorPoints = 140,
         function getAppearance() { return app; } };
     local bro = {
-        m = { IsAlive = true, IsDying = false, IsCorpseFlipped = false, XP = 777, Level = 8, Hitpoints = 20, IsHidingHelmet = false },
+        m = { IsAlive = true, IsDying = false, IsCorpseFlipped = false, XP = 777, Level = 8, Hitpoints = 100, BloodiedCount = 0, IsHidingHelmet = false },
         sprites = sprites, savedFlags = flags, available = available, itemState = items, id = nextID++, added = 0,
         allied = true, dirty = 0, injuryCalls = 0, deathCalls = 0, lastDirty = null, nestedSave = false,
         lastArgs = null, flyingHeads = null, offsets = {}, loadedItems = null,
@@ -87,6 +92,7 @@ local makeBrother = function(key = "afei", zombie = false) {
         function hasSprite(name) { return name in this.sprites; }, function getSprite(name) { return this.sprites[name]; },
         function addSprite(name) { this.added++; this.sprites[name] <- makeSprite(name, available); return this.sprites[name]; },
         function getItems() { return this.itemState; }, function getID() { return this.id; },
+        function getHitpoints() { return this.m.Hitpoints; }, function getHitpointsMax() { return 100; },
         function setSpriteOffset(name, value) { this.offsets[name] <- value; }, function isAlliedWithPlayer() { return this.allied; },
         function setDirty(value) { if (value) this.dirty++; return "dirty_result"; },
         function onInit() { this.onAppearanceChanged(app); return "init_result"; },
@@ -210,24 +216,44 @@ try {
                 check(bro.sprites.head.Visible && bro.sprites.head.brush == expected + "_head", key + " custom head renders above armor");
                 continue;
             }
-            local hidden = A.Art.HiddenLayers.find(name) != null;
+            local hidden = A.Art.HiddenLayers.find(name) != null || name == "injury" || name == "body_blood";
             check(bro.sprites[name].Visible == !hidden && bro.sprites[name].brush == initialBrushes[name],
                 key + " retains equipment but hides native face/hair: " + name);
         }
         foreach (name in status) check(bro.sprites[name].Visible && bro.sprites[name].brush == "native_" + name, key + " retains battle marker: " + name);
         check(bro.getItems() == items && items.equipped.len() == 4 && items.armorPoints == 140 && bro.m.XP == 777 && bro.m.Level == 8, key + " equipment and progression unchanged");
-        bro.onUpdateInjuryLayer();
-        check(bro.injuryCalls == 0 && bro.sprites.body.brush == expected && !bro.sprites.injury.Visible, key + " injured actor keeps complete portrait without requesting missing injured suffix");
+        foreach (health in [100, 99, 68, 67, 34, 33, 20, 100]) {
+            bro.m.Hitpoints = health; bro.onUpdateInjuryLayer();
+            check(bro.injuryCalls == 0 && bro.sprites.body.brush == expected && !bro.sprites.injury_body.Visible,
+                key + " damage/healing never requests missing custom injured body");
+            check(bro.sprites.body_blood.Visible == (health < 100), key + " wound blood follows damage and healing");
+            check(bro.sprites.injury.Visible == (health <= 67), key + " native face injury threshold");
+            if (health <= 67) check(bro.sprites.injury.brush == (health > 33 ? "bust_head_injured_01" : "bust_head_injured_02"), key + " face injury severity");
+        }
+        bro.m.BloodiedCount = 4; A.syncCharacterArt(bro);
+        check(bro.sprites.body_blood.Visible, key + " native combat splashes survive full health");
+        bro.m.BloodiedCount = 0; A.syncCharacterArt(bro);
+        check(!bro.sprites.body_blood.Visible, key + " native blood reset clears healed blood");
+        bro.m.Hitpoints = 20; bro.itemState.getAppearance().HideHead = true; A.syncCharacterArt(bro);
+        check(!bro.sprites.injury.Visible && bro.sprites.body_blood.Visible, key + " closed helmet hides face wound while armor blood remains");
+        bro.m.IsHidingHelmet = true; A.syncCharacterArt(bro);
+        check(bro.sprites.injury.Visible, key + " hiding helmet exposes wounded custom face");
+        bro.allied = false; bro.onFactionChanged();
+        check(bro.sprites.injury.flipped && bro.sprites.body_blood.flipped, key + " charm mirrors blood with portrait");
+        bro.itemState.getAppearance().HideHead = false; bro.m.IsHidingHelmet = false;
+        A.syncCharacterArt(bro);
+        bro.onSerialize({}); bro.onDeserialize({});
+        check(bro.sprites.injury.Visible && bro.sprites.body_blood.Visible, key + " damaged portrait blood survives save/load");
     }
     local bro = makeBrother(); bro.onInit();
     foreach (form in ["normal", "toad", "jiahao"]) {
         currentRoute = form; A.syncCharacterArt(bro);
-        check(bro.sprites.body.brush == "afeix_p04_afei_" + (form == "toad" ? "normal" : form) && bro.added == 0, "toad promotion keeps human Afei appearance");
+        check(bro.sprites.body.brush == "afeix_p04_afei_normal" && bro.added == 0, "all promotions keep the single Afei portrait");
     }
     currentRoute = "feidie";
     foreach (form in ["normal", "toad", "jiahao"]) {
         baseRoute = form; A.syncCharacterArt(bro);
-        check(bro.sprites.body.brush == "afeix_p04_afei_" + (form == "toad" ? "normal" : form) && !bro.hasSprite(A.Art.DiscLayer) && bro.added == 0, "hidden route retains human form without adding a disc");
+        check(bro.sprites.body.brush == "afeix_p04_afei_normal" && !bro.hasSprite(A.Art.DiscLayer) && bro.added == 0, "hidden route keeps the same Afei portrait for every prior route");
         foreach (allied in [true, false, true]) {
             bro.allied = allied; bro.onFactionChanged();
             check(bro.sprites.body.flipped == !allied && !bro.hasSprite(A.Art.DiscLayer),
@@ -248,12 +274,12 @@ try {
     check(!bro.sprites.shield_icon.Visible && bro.sprites.armor.Visible && bro.sprites.helmet.Visible, "native unequipping visibility is not forced back on");
     bro.sprites.closed_eyes.Visible = true; bro.sprites.bandage_1.Visible = true; bro.sprites.body_blood.Visible = true;
     bro.sprites.status_stunned.brush = "bust_sleep"; bro.setDirty(true);
-    check(!bro.sprites.closed_eyes.Visible && !bro.sprites.bandage_1.Visible && !bro.sprites.body_blood.Visible
+    check(!bro.sprites.closed_eyes.Visible && !bro.sprites.bandage_1.Visible && bro.sprites.body_blood.Visible
         && bro.sprites.status_stunned.Visible && bro.sprites.status_stunned.brush == "bust_sleep", "direct skill layer writes are hidden while sleep marker survives");
     check(bro.onAppearanceChanged({ HideBody = true, HideHead = false, HideHair = false, HideBeard = false }, false) == "appearance_result"
         && bro.sprites.body.Visible && bro.sprites.head.Visible && bro.lastDirty == false, "equipment appearance changes retain custom face above armor");
     check(bro.onSerialize({ nested = true }) == "save_result" && !A.isCharacterArtSuspended(bro)
-        && bro.sprites.body.brush == "afeix_p04_afei_jiahao" && bro.sprites.head.brush == "afeix_p04_afei_jiahao_head", "normal and nested saves restore custom head and body");
+        && bro.sprites.body.brush == "afeix_p04_afei_normal" && bro.sprites.head.brush == "afeix_p04_afei_normal_head", "normal and nested saves restore the single Afei head and body");
     local caught = false;
     try { bro.onSerialize({ fail = true }); } catch (error) { caught = error == "native_save_error"; }
     check(caught && !A.isCharacterArtSuspended(bro) && !bro.getSprite(A.Art.DiscLayer).Visible, "save error restores art without retired saucer and rethrows original");
@@ -272,7 +298,8 @@ try {
         local hasCustom = fatality == "normal" || fatality == "unconscious";
         check(tile.cleared.len() == 0 && tile.details[0].brush == "old-corpse" && tile.details[1].brush == "fire-effect"
             && tile.details[2].brush == "bust_native_body_dead" && tile.details[3].brush == "native_armor_dead", "native body armor and pre-existing ground details retained: " + fatality);
-        if (hasCustom) check(tile.details[4].brush == "afeix_p04_xiaogui_corpse_head" && tile.details[4].Rotation == 140
+        local expectedHead = "afeix_p04_xiaogui_corpse_head" + (fatality == "normal" ? "_injured_02" : "");
+        if (hasCustom) check(tile.details[4].brush == expectedHead && tile.details[4].Rotation == 0 && tile.details[4].Scale == 0.9
             && tile.details[5].brush == "native_helmet_dead", "custom head rendered above body below helmet: " + fatality);
         else foreach (detail in tile.details) check(detail.brush != "afeix_p04_xiaogui_corpse_head", "fatality cannot regrow a head: " + fatality);
         local corpse = tile.Properties.get("Corpse");
@@ -282,7 +309,14 @@ try {
         local stub = casualties.top();
         check(stub.sprites.body.brush == "bust_native_body_dead" && stub.sprites.armor.Visible
             && stub.sprites.head.Visible == hasCustom && !stub.sprites.hair.Visible, "casualty keeps equipped native body and appropriate head: " + fatality);
-        if(hasCustom) check(stub.sprites.head.brush == "afeix_p04_xiaogui_corpse_head", "casualty receives custom identity");
+        if(hasCustom) check(stub.sprites.head.brush == expectedHead
+            && stub.sprites.head.Rotation == 0 && stub.sprites.head.Scale == 1.0
+            && stub.offset.X == 0 && stub.offset.Y == 0, "casualty uses baked prone pixels at the native equipment origin");
+        if (fatality == "normal") {
+            check(tile.details[4].brush == expectedHead && stub.sprites.head.brush == expectedHead,
+                "lethal hit uses bloodied prone head in tile and casualty");
+        }
+        check(!stub.hasSprite("afeix_corpse_blood"), "no ground blood pool pasted onto casualty neck");
         check(dead.getItems().getAppearance().HelmetCorpse == "native_helmet_dead" && !dead.getItems().getAppearance().HideCorpseHead, "death-only appearance fields restored: " + fatality);
         if (fatality == "unconscious") check(dead.onCombatFinished() == "combat_result" && dead.sprites.body.Visible
             && dead.sprites.body.brush == "afeix_p04_xiaogui" && dead.sprites.head.Visible, "unconscious survivor returns to its full portrait");
@@ -296,6 +330,38 @@ try {
             check(revived.flyingHeads.len() > 0 && again.details[2].brush == "bust_native_body_dead"
                 && again.Properties.get("Corpse").Items == revived.getItems(), "resurrected member decapitates with valid head layers and unchanged items");
         }
+    }
+    foreach (key in A.CharacterOrder) foreach (flip in [false, true]) {
+        local dead = makeBrother(key), tile = makeTile(); dead.onInit();
+        dead.m.IsCorpseFlipped = flip;
+        dead.onDeath("killer", "skill", tile, "normal");
+        local head = tile.details[4], stub = casualties.top();
+        local expected = "afeix_p04_" + (key == "afei" ? "afei_normal" : key) + "_corpse_head_injured_02";
+        check(head.brush == expected && head.flip == flip && head.Rotation == 0 && head.Scale == 0.9,
+            key + " full-health lethal hit uses wounded prone head for each facing");
+        check(stub.sprites.head.Visible && stub.sprites.head.brush == expected && stub.sprites.head.Rotation == 0,
+            key + " casualty shares tile wound state without upright overlays");
+        check(stub.sprites.blood_1.HasBrush && stub.sprites.blood_2.HasBrush,
+            key + " additional face blood preserves native blood pool and splatter layers");
+    }
+    local woundedSurvivor = makeBrother("damou"); woundedSurvivor.onInit();
+    woundedSurvivor.m.Hitpoints = 30;
+    woundedSurvivor.onDeath("killer", "skill", null, "unconscious");
+    check(casualties.top().sprites.head.brush == "afeix_p04_damou_corpse_head_injured_02", "wounded unplaced unconscious casualty retains wound blood");
+    foreach (health in [90, 50, 20]) {
+        local dead = makeBrother("damou"), tile = makeTile(); dead.onInit();
+        dead.m.Hitpoints = health; dead.onUpdateInjuryLayer();
+        dead.m.Hitpoints = 0; dead.onDeath("killer", "skill", tile, "normal");
+        local suffix = health > 67 ? "_bloodied" : (health > 33 ? "_injured_01" : "_injured_02");
+        check(tile.details[4].brush == "afeix_p04_damou_corpse_head" + suffix
+            && casualties.top().sprites.head.brush == tile.details[4].brush,
+            "zero-HP fatality preserves previous living wound severity " + health);
+    }
+    foreach (oldForm in ["normal", "toad", "jiahao"]) {
+        local revived = makeBrother("unknown", true);
+        revived.onResurrected({ Custom = { Body = "afeix_p04_afei_" + oldForm }, Items = revived.getItems() });
+        check(revived.sprites.body.brush == "afeix_p04_afei_normal"
+            && revived.sprites.head.brush == "afeix_p04_afei_normal_head", "legacy Afei corpse resurrects with the single portrait: " + oldForm);
     }
     // Live reproduction: netted enemy failed to break free, then decapitated an
     // unhelmeted member. The old portrait masks passed [] to spawnHeadEffect.
@@ -317,7 +383,7 @@ try {
         local fallen = makeBrother("bottle"), floor = makeTile(); fallen.onInit();
         fallen.m.IsCorpseFlipped = nativeFlip;
         fallen.onDeath("killer", "skill", floor, "normal");
-        check(floor.details[4].flip == nativeFlip && floor.details[4].Rotation == (nativeFlip ? -140 : 140), "corpse retains either native randomized facing");
+        check(floor.details[4].flip == nativeFlip && floor.details[4].Rotation == 0, "corpse mirrors baked pose once for either native randomized facing");
     }
     local missing = makeBrother("damou"); missing.onInit(); missing.available.afeix_p04_damou_dead = false;
     missing.onUpdateInjuryLayer();
@@ -338,7 +404,7 @@ try {
     check(A.ensureCharacterArtLayer(member) == null && member.added == 0, "even explicit decoration helper cannot add a disc to another member");
     local noTile = makeBrother("bottle"); noTile.onInit();
     check(noTile.onDeath("killer", "skill", null, "normal") == "death_result"
-        && casualties.top().sprites.body.brush == "bust_native_body_dead" && casualties.top().sprites.head.brush == "afeix_p04_bottle_corpse_head", "unplaced death still gives a complete casualty portrait");
+        && casualties.top().sprites.body.brush == "bust_native_body_dead" && casualties.top().sprites.head.brush == "afeix_p04_bottle_corpse_head_injured_02", "unplaced death still gives a complete casualty portrait");
     local missingDeath = makeBrother("damou"); missingDeath.onInit(); missingDeath.available.afeix_p04_damou_dead = false;
     local fallbackTile = makeTile(); missingDeath.onDeath("killer", "skill", fallbackTile, "normal");
     check(missingDeath.sprites.body.brush == "bust_native_body" && fallbackTile.cleared.len() == 0, "missing corpse brush restores native body before native death rather than crashing");

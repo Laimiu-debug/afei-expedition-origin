@@ -56,6 +56,9 @@ def render():
         people[p['key']]['old_attrs'] = p['current']['attrs']
         people[p['key']]['level_bonus_per_level'] = p['level_bonus_per_level']
         people[p['key']]['old_hire_cost'] = p['current']['hireCost']
+        people[p['key']]['role'] = p['role']
+        if 'endgame_previous_attrs' in p:
+            people[p['key']]['endgame_previous_attrs'] = p['endgame_previous_attrs']
     definitions = {}
     for s in proposal['skills']:
         definitions[s['key']] = {k:v for k,v in s.items() if k not in ['current_text','owner_name','change','v1']}

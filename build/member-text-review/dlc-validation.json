@@ -1,0 +1,53 @@
+{
+  "tests": [
+    {
+      "test": "test_native_recruitment",
+      "assertions": 130,
+      "log": "TESTS_PASSED=130\r\n"
+    },
+    {
+      "test": "test_roster_groups",
+      "assertions": 46,
+      "log": "TESTS_PASSED=46\r\n"
+    },
+    {
+      "test": "test_appearance",
+      "assertions": 4513,
+      "log": "ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=4513\r\n"
+    },
+    {
+      "test": "test_backgrounds",
+      "assertions": 1502,
+      "log": "TESTS_PASSED=1502\r\n"
+    },
+    {
+      "test": "test_endings",
+      "assertions": 202,
+      "log": "ALL_ENDING_CHECKS_PASS\r\nTESTS_PASSED=202\r\n"
+    },
+    {
+      "test": "dlc_native_background_persistence",
+      "assertions": 1546,
+      "log": "TESTS_PASSED=1546\r\n"
+    },
+    {
+      "test": "dlc_native_recruitment_and_start",
+      "assertions": 41,
+      "log": "TESTS_PASSED=41\r\n"
+    },
+    {
+      "test": "dlc_real_origin_with_electronic_cigarette",
+      "assertions": 25,
+      "log": "TESTS_PASSED=25\r\n"
+    },
+    {
+      "test": "dlc_native_pet_lifecycle",
+      "assertions": 13,
+      "log": "TESTS_PASSED=13\r\n"
+    }
+  ],
+  "scripts_compiled": 6,
+  "base_path_collisions": [],
+  "native_equipment_paths_passed": true,
+  "in_game_tested": false
+}

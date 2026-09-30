@@ -91,7 +91,7 @@ foreach(key,third in {yuchujiu="Initiative",xiaoyubeike="Hitpoints",yaoyaoya="St
     foreach(row in bro.m.Attributes)foreach(i,v in row)row[i]=i<2?4:1;
     local before=A.captureTalentState(bro),props=clone bro.props;
     A.restoreCharacterMetadata(bro);
-    expect(bro.getFlags().get("afeix_talent_revision")==3,"revision one saves migrate again "+key);
+    expect(bro.getFlags().get("afeix_talent_revision")==A.TalentRevision,"revision one saves migrate again "+key);
     expect(bro.talents[4]==2&&bro.talents[6]==1&&bro.talents[::Const.Attributes[third=="Stamina"?"Fatigue":third]]==2,"nine to five stars "+key);
     foreach(i,row in bro.m.Attributes){
         if(before.talents[i]==bro.talents[i])expect(equalTalentData(before.attributes[i],row),"unchanged queue preserved "+key+" / "+i);

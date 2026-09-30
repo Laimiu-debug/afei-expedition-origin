@@ -5,9 +5,9 @@ local A = ::AfeixExpedition;
 A.Art <- {
     Prefix = "afeix_p04_", DiscLayer = "afeix_gameplay_disc",
     HiddenLayers = ["tattoo_body", "scar_body", "injury_body", "body_injury",
-        "eye_rings", "closed_eyes", "tattoo_head", "scar_head", "injury", "injury_skin",
+        "eye_rings", "closed_eyes", "tattoo_head", "scar_head", "injury_skin",
         "beard", "hair", "beard_top",
-        "bandage_1", "bandage_2", "bandage_3", "body_blood", "dirt", "permanent_injury_1",
+        "bandage_1", "bandage_2", "bandage_3", "dirt", "permanent_injury_1",
         "permanent_injury_2", "permanent_injury_3", "permanent_injury_4"],
     CorpseLayers = ["tattoo_body", "tattoo_head", "armor", "surcoat", "upgrade_back", "upgrade_front",
         "accessory", "head", "beard", "beard_top", "hair", "helmet", "smashed", "guts", "arrows"]
@@ -16,18 +16,14 @@ A.isPortraitBrush <- function(name) { return typeof name == "string" && name.fin
 A.characterPortraitBrush <- function(bro) {
     if (bro == null || !this.isOrigin()) return null;
     if ("afeixResurrectedPortrait" in bro.m && this.isPortraitBrush(bro.m.afeixResurrectedPortrait))
-        return bro.m.afeixResurrectedPortrait == this.Art.Prefix + "afei_toad"
+        return bro.m.afeixResurrectedPortrait.find(this.Art.Prefix + "afei_") == 0
             ? this.Art.Prefix + "afei_normal" : bro.m.afeixResurrectedPortrait;
     if (!bro.getFlags().has("afeix_character")) return null;
     local key = bro.getFlags().get("afeix_character");
     if (!(key in this.Characters)) return null;
-    if (key == "afei") {
-        local route = this.route();
-        local form = route == "feidie" ? this.get("feidie_base_route", "normal") : route;
-        if (form != "normal" && form != "toad" && form != "jiahao") form = "normal";
-        if (form == "toad") form = "normal";
-        return this.Art.Prefix + "afei_" + form;
-    }
+    // Profession changes abilities, never Afei's portrait. Old corpse IDs map
+    // to this same portrait on resurrection as well.
+    if (key == "afei") return this.Art.Prefix + "afei_normal";
     return this.Art.Prefix + key;
 };
 A.isArtCharacter <- function(bro) { return this.characterPortraitBrush(bro) != null; };
@@ -93,6 +89,36 @@ A.suspendCharacterArt <- function(bro) {
     if (!this.isArtCharacter(bro)) return false;
     this.hideCharacterArt(bro); return this.restoreNativeCharacterBody(bro);
 };
+A.syncPortraitInjuries <- function(bro) {
+    // Use native overlays above the portrait/equipment, never request a
+    // custom body + "_injured" brush (that native body replacement is absent).
+    local maximum = bro.getHitpointsMax();
+    local ratio = maximum > 0 ? bro.getHitpoints() / (maximum * 1.0) : 1.0;
+    local flip = !bro.isAlliedWithPlayer();
+    // Keep the last living wound state when the lethal hit reaches zero HP
+    // before the injury callback. Death must not erase or replace those marks.
+    if (bro.getHitpoints() > 0) {
+        bro.m.afeixPortraitWoundLevel <- ratio > 0.67 ? 0 : (ratio > 0.33 ? 1 : 2);
+        bro.m.afeixPortraitBloodied <- ratio < 1.0 || ("BloodiedCount" in bro.m
+            && bro.m.BloodiedCount >= ::Const.Combat.BloodiedBustCount);
+    }
+    if (bro.hasSprite("injury")) {
+        local injury = bro.getSprite("injury"), head = bro.getSprite("head");
+        local brush = ratio > 0.33 ? "bust_head_injured_01" : "bust_head_injured_02";
+        injury.Visible = ratio <= 0.67 && head.Visible && ::doesBrushExist(brush);
+        if (injury.Visible) injury.setBrush(brush);
+        injury.Color = ::createColor("#ffffff"); injury.Saturation = 1.0;
+        injury.Scale = head.Scale; injury.setHorizontalFlipping(flip);
+    }
+    if (bro.hasSprite("body_blood")) {
+        local blood = bro.getSprite("body_blood");
+        // Retain native combat splashes as well as blood from own wounds.
+        local splashed = "BloodiedCount" in bro.m && bro.m.BloodiedCount >= ::Const.Combat.BloodiedBustCount;
+        blood.Visible = blood.HasBrush && (ratio < 1.0 || splashed);
+        blood.Color = ::createColor("#ffffff"); blood.Saturation = 1.0;
+        blood.Scale = bro.getSprite("body").Scale; blood.setHorizontalFlipping(flip);
+    }
+};
 A.syncCharacterArt <- function(bro) {
     local brush = this.characterPortraitBrush(bro);
     if (brush == null || this.isCharacterArtSuspended(bro) || !bro.hasSprite("body")) return false;
@@ -113,6 +139,7 @@ A.syncCharacterArt <- function(bro) {
     head.setHorizontalFlipping(!bro.isAlliedWithPlayer());
     bro.m.afeixPortraitActive <- true;
     this.hideOriginalPortraitParts(bro);
+    this.syncPortraitInjuries(bro);
     this.hideCharacterArt(bro);
     bro.setDirty(true); return true;
 };
@@ -150,9 +177,24 @@ A.endPortraitDeath <- function(bro, saved) {
 };
 A.stylePortraitCorpse <- function(sprite, scale = 1.0, flip = false) {
     sprite.Color = ::createColor("#ffffff"); sprite.Saturation = 0.75;
-    // Native corpses lie face-up: the crown points away from the torso, and
-    // the jaw/neck point back toward it. The brush pivot is the reviewed neck.
-    sprite.Scale = 0.78 * scale; sprite.Rotation = flip ? -140 : 140;
+    // Prone pose and neck offset are baked in the brush, including UI renders.
+    // Native horizontal flipping now mirrors the whole pose exactly once.
+    sprite.Scale = scale; sprite.Rotation = 0;
+};
+A.portraitCorpseBrush <- function(bro, brush, fatality) {
+    local level = "afeixPortraitWoundLevel" in bro.m ? bro.m.afeixPortraitWoundLevel : 0;
+    local bloodied = "afeixPortraitBloodied" in bro.m && bro.m.afeixPortraitBloodied;
+    bloodied = bloodied || ("BloodiedCount" in bro.m && bro.m.BloodiedCount >= ::Const.Combat.BloodiedBustCount);
+    if (bro.getHitpoints() > 0) {
+        local ratio = bro.getHitpoints() / (bro.getHitpointsMax() * 1.0);
+        level = ratio > 0.67 ? 0 : (ratio > 0.33 ? 1 : 2);
+        bloodied = bloodied || ratio < 1.0;
+    }
+    if (!bloodied && fatality != ::Const.FatalityType.Unconscious) {
+        bloodied = true; level = 2;
+    }
+    local suffix = level == 0 ? "_corpse_head_bloodied" : "_corpse_head_injured_0" + level;
+    return bloodied && ::doesBrushExist(brush + suffix) ? brush + suffix : brush + "_corpse_head";
 };
 A.replacePortraitCorpse <- function(bro, tile, brush, fatality) {
     local F = ::Const.FatalityType;
@@ -160,10 +202,13 @@ A.replacePortraitCorpse <- function(bro, tile, brush, fatality) {
     local appearance = bro.getItems().getAppearance();
     local helmet = "HelmetCorpse" in appearance ? appearance.HelmetCorpse : "";
     local flip = bro.m.IsCorpseFlipped;
+    // Wounds are composed with the living face before applying its exact
+    // prone transform. No ground blood pool is pasted onto the neck.
+    local headBrush = this.portraitCorpseBrush(bro, brush, fatality);
     if (tile != null) {
         local offset = ::Const.Combat.HumanCorpseOffset;
-        local head = tile.spawnDetail(brush + "_corpse_head", ::Const.Tactical.DetailFlag.Corpse,
-            flip, false, ::createVec(offset.X, offset.Y - 5.4));
+        local head = tile.spawnDetail(headBrush, ::Const.Tactical.DetailFlag.Corpse,
+            flip, false, offset);
         this.stylePortraitCorpse(head, 0.9, flip);
         if (helmet != "" && ::doesBrushExist(helmet)) {
             local cap = tile.spawnDetail(helmet, ::Const.Tactical.DetailFlag.Corpse, flip, false, offset);
@@ -173,9 +218,9 @@ A.replacePortraitCorpse <- function(bro, tile, brush, fatality) {
     foreach (stub in ::Tactical.getCasualtyRoster().getAll()) {
         if (stub.getOriginalID() != bro.getID()) continue;
         local head = stub.hasSprite("head") ? stub.getSprite("head") : stub.addSprite("head");
-        head.setBrush(brush + "_corpse_head"); head.Visible = true;
+        head.setBrush(headBrush); head.Visible = true;
         this.stylePortraitCorpse(head);
-        stub.setSpriteOffset("head", ::createVec(0, -6));
+        stub.setSpriteOffset("head", ::createVec(0, 0));
         if (helmet != "" && ::doesBrushExist(helmet)) {
             local cap = stub.hasSprite("helmet") ? stub.getSprite("helmet") : stub.addSprite("helmet");
             cap.setBrush(helmet); cap.Visible = true;

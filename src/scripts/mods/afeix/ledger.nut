@@ -59,9 +59,13 @@ A.ledgerPage <- function(event, page) {
     local screen = { ID = page, Text = "", Image = "", List = [], Characters = [], Options = [], function start(event) {} };
     local parts = split(page, ":");
     local kind = parts[0];
+    // Offers only live on their current confirmation screen; returning or
+    // rebuilding it invalidates callbacks captured from an earlier screen.
+    event.m.TreatmentOffer <- null;
     local extension = "storyLedgerPage" in A ? A.storyLedgerPage(event, page) : null;
     if (extension == null && "promotionLedgerPage" in A) extension = A.promotionLedgerPage(event, page);
     if (extension == null && "trainingLedgerPage" in A) extension = A.trainingLedgerPage(event, page);
+    if (extension == null && "treatmentLedgerPage" in A) extension = A.treatmentLedgerPage(event, page);
     if (extension == null && "ideasLedgerPage" in A) extension = A.ideasLedgerPage(event, page);
     if (extension == null && "bannerLedgerPage" in A) extension = A.bannerLedgerPage(event, page);
     if (extension != null) {
@@ -77,7 +81,7 @@ A.ledgerPage <- function(event, page) {
             e.m.Notice = "";
             return "formation:0";
         }));
-        if ("bannerLedgerPage" in A) screen.Options.push(A.ledgerNav("战团事务（技能／旗帜）", "company"));
+        if ("bannerLedgerPage" in A) screen.Options.push(A.ledgerNav("战团事务", "company"));
         else if ("trainingLedgerPage" in A) screen.Options.push(A.ledgerNav("研习专属技能", "training"));
         if (A.hasStoryRecords() || ("hasIdeaRecords" in A && A.hasIdeaRecords()))
             screen.Options.push(A.ledgerNav("翻看旅途旧事", "hasIdeaRecords" in A && A.hasIdeaRecords()?"journey_index":"growth"));

@@ -17,6 +17,8 @@ A.promotionLedgerPage <- function(event, page) {
         local check = A.promotionCheck(target), cost = A.promotionCost(target);
         screen.Text = descriptions[target] + "\n\n当前路线：" + A.routeName(A.route()) + "。\n" + check.text;
         screen.Text += "\n\n转职不改变天赋星数、不重掷升级属性。首次普通路线需要7级、亲自参战6次及个人成长选择；重修需要9级、12份履约、1500克朗，间隔7日。\n确认会替换原路线的专属能力，保留等级、装备、已选专长、伤势及已经留下的经历。请在安全的友好城镇附近办理。";
+        screen.Text += "\n阿飞始终保留同一种立绘，转职只改变路线能力。";
+        if (target == "feidie") screen.Text += "\n飞碟还需9级、亲自参战12次、完成个人成长和六根开篇。首次进入飞碟免费，不受付费重修的履约与7日间隔限制；之后再次进入按重修办理。";
         if (check.ok) {
             local chosen = target;
             screen.Options.push(A.ledgerAction(cost == 0 ? "确认免费转职" : "支付 1500 克朗，确认重修", function() { return A.promote(chosen); }, "promotion"));

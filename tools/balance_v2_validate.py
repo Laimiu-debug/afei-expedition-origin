@@ -18,7 +18,8 @@ def ck(condition,name):
 ck(sum(q['range_endpoints_matched'] for q in bg)==128,'8背景128个属性端点与Wiki一致')
 ck(len({s['key'] for s in p['skills']})==3*(len(p['people'])-1),'全部成员技能ID不重复且各有3项')
 ck(pr['afei']['base_means'][1]>=120,'阿飞11级裸疲劳上限120以上，尚未扣装备')
-ck(people['xiwen']['attrs'][2]==21 and pr['xiwen']['accessory_bonuses'][2]==20 and pr['xiwen']['base_means'][2]==24 and pr['xiwen']['with_accessory_means'][2]==44,'希文决心区分本体21与镜子20；剧情分支一后24/44，饰品未混入裸值')
+xi_resolve=33 if p.get('endgame_revision')==1 else 24
+ck(people['xiwen']['attrs'][2]==21 and pr['xiwen']['accessory_bonuses'][2]==20 and pr['xiwen']['base_means'][2]==xi_resolve and pr['xiwen']['with_accessory_means'][2]==xi_resolve+20,'希文决心区分本体、普通决心培养与镜子20；饰品未混入裸值')
 td=json.loads((OUT/'trait-design.json').read_text(encoding='utf-8'))
 ck(len(td['people'])==len(p['people']) and all(len(x['traits'])==2 for x in td['people']),'全员固定两特质')
 ck(all(all(b not in td['definitions'][a]['excluded'] for b in q['traits'] if b!=a) for q in td['people'] for a in q['traits']),'固定特质无原版互斥冲突')
@@ -33,7 +34,7 @@ mapping={'tank':'hedge_knight','front':'militia','heavy':'farmhand','agile':'mil
 for q in p['people']:
     b=bgby['hedge_knight' if q['key']=='bottle' else mapping[q['build']]]
     midpoint=[sum(a)/2 for a in b['attrs']]
-    mean=[midpoint[i]+q['allocation'][i]*((p['growth_roll_min'][i]+p['growth_roll_max'][i])/2+q['stars'].get(f,0)*.5) for i,f in enumerate(p['fields'])]
+    mean=[midpoint[i]+q['allocation'][i]*(p['growth_roll_min'][i]+(2 if q['stars'].get(f,0)==3 else q['stars'].get(f,0))+p['growth_roll_max'][i]+(1 if q['stars'].get(f,0)==3 else 0))/2 for i,f in enumerate(p['fields'])]
     bench.append({'key':q['key'],'name':q['name'],'background':b['key'],'background_name':b['name'],'native_midpoint':midpoint,'native_level11_same_selected_stars':mean,'mod_level11_with_story':pr[q['key']]['base_means'],'delta':[a-b for a,b in zip(pr[q['key']]['base_means'],mean)]})
 
 # Exhaustive elementary action budgets, with expected hits expressed in one normal hit units.
@@ -68,7 +69,9 @@ ck(people['xiaojie']['allocation']==[10,0,0,0,10,0,10,0] and jack['colossus_hp']
 yanzi=people['yanzi']
 ck(yanzi['attrs']==[60,110,48,90,55,50,6,4] and yanzi['stars']=={'MeleeSkill':2,'RangedSkill':2} and yanzi['fixed_traits']==['loyal','teamplayer'] and pr['yanzi']['base_means'][4:6]==[85,90],'眼子双攻2星，后排柄投培养达85近攻/90远攻；忠诚和团队协作，无跛足')
 song=people['songnuanyang']
-ck(song['attrs']==[63,104,50,108,55,36,6,5] and song['stars']=={'Initiative':3,'MeleeSkill':2,'MeleeDefense':2} and song['allocation']==[0,4,0,6,10,0,10,0] and song['fixed_traits']==['quick','ailing'] and song['runtime_base_before_traits'][3]==98 and pr['songnuanyang']['base_means']==[66,116,54,141,85,36,36,5],'宋暖阳先攻3星双近2星，快速只算一次；30次培养剧情前先攻141，分支一后66血116疲劳54决心85近攻36近防')
+song_allocation=[6,0,0,4,10,0,10,0] if p.get('endgame_revision')==1 else [0,4,0,6,10,0,10,0]
+song_means=[84,104,54,130,85,36,36,5] if p.get('endgame_revision')==1 else [66,116,54,141,85,36,36,5]
+ck(song['attrs']==[63,104,50,108,55,36,6,5] and song['stars']=={'Initiative':3,'MeleeSkill':2,'MeleeDefense':2} and song['allocation']==song_allocation and song['fixed_traits']==['quick','ailing'] and song['runtime_base_before_traits'][3]==98 and pr['songnuanyang']['base_means']==song_means,'宋暖阳先攻3星双近2星；快速只算一次，30次培养严格匹配当前批准修订')
 native=ROOT/'.cache/balance-v2/native'
 armor=(native/'scripts__items__armor__armor.nut').read_text(encoding='utf-8');helm=(native/'scripts__items__helmets__helmet.nut').read_text(encoding='utf-8');bag=(native/'scripts__skills__special__bag_fatigue.nut').read_text(encoding='utf-8')
 ck('this.Math.floor(this.m.StaminaModifier * staminaMult)' in armor and 'this.Math.ceil(this.m.StaminaModifier * staminaMult)' in helm and 'item.getStaminaModifier() / 2' in bag,'负重取整及包内半负重有本机脚本依据')

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "atlas_name": "afeix_portraits_v04",
   "manifest": "art/runtime/portraits-v05/manifest.json",
-  "manifest_sha256": "a077d4627b1c6f835d783d457905b1e7d1288ad94d04996e34ceb872eee702ad",
+  "manifest_sha256": "9115c133660fa7ccf1a3b48f5fa83f2cb3dab8710043e4bd618808dc33c1c2bf",
   "named_characters": 34,
   "required_forms": 36,
   "native_portrait_characters": [],
@@ -53,19 +53,19 @@
         0,
         255
       ],
-      "live_png_sha256": "ccfbc1e003f649c6965d6866371f50765e6d8bbb3373c964d7b29b20b32dd77a",
-      "head_png_sha256": "1d158b5e7d60512e376fdf3735e9315d0bd0b60a5199a015770096460477b789",
+      "live_png_sha256": "79e51364ff1b65d7ec6ad4f7e5e3462a0966b3c4759f4cb70c6f8f277aab5e93",
+      "head_png_sha256": "c7be012c3bfa258c5f41e8f15de4139d41da30230259b1a5b32430405ffe7dc4",
       "dead_png_sha256": "2216ed6b9d42992697dc78f7a90b50072e6b00f89a0b325111ca3dd879431990",
-      "corpse_head_png_sha256": "1d158b5e7d60512e376fdf3735e9315d0bd0b60a5199a015770096460477b789",
+      "corpse_head_png_sha256": "d4193059331751aef2cd565e3f001364ca6b10e667cac7f3e82f450facfc40ff",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -75,35 +75,35 @@
       "head_seam": [
         [
           0,
-          107
+          102
         ],
         [
-          35,
-          107
+          40,
+          102
         ],
         [
           48,
-          112
+          107
         ],
         [
           57,
-          119
+          114
         ],
         [
           73,
-          119
+          114
         ],
         [
           85,
-          112
+          107
         ],
         [
           95,
-          107
+          102
         ],
         [
           114,
-          107
+          102
         ]
       ],
       "neck_guard": [
@@ -111,7 +111,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_afei_normal",
@@ -150,14 +150,14 @@
         {
           "id": "afeix_p04_afei_normal_corpse_head",
           "img": "sprites\\afeix_p04_afei_normal_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -199,19 +199,19 @@
         0,
         255
       ],
-      "live_png_sha256": "ccfbc1e003f649c6965d6866371f50765e6d8bbb3373c964d7b29b20b32dd77a",
-      "head_png_sha256": "1d158b5e7d60512e376fdf3735e9315d0bd0b60a5199a015770096460477b789",
+      "live_png_sha256": "79e51364ff1b65d7ec6ad4f7e5e3462a0966b3c4759f4cb70c6f8f277aab5e93",
+      "head_png_sha256": "c7be012c3bfa258c5f41e8f15de4139d41da30230259b1a5b32430405ffe7dc4",
       "dead_png_sha256": "2216ed6b9d42992697dc78f7a90b50072e6b00f89a0b325111ca3dd879431990",
-      "corpse_head_png_sha256": "1d158b5e7d60512e376fdf3735e9315d0bd0b60a5199a015770096460477b789",
+      "corpse_head_png_sha256": "d4193059331751aef2cd565e3f001364ca6b10e667cac7f3e82f450facfc40ff",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -221,35 +221,35 @@
       "head_seam": [
         [
           0,
-          107
+          102
         ],
         [
-          35,
-          107
+          40,
+          102
         ],
         [
           48,
-          112
+          107
         ],
         [
           57,
-          119
+          114
         ],
         [
           73,
-          119
+          114
         ],
         [
           85,
-          112
+          107
         ],
         [
           95,
-          107
+          102
         ],
         [
           114,
-          107
+          102
         ]
       ],
       "neck_guard": [
@@ -257,7 +257,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_afei_toad",
@@ -296,43 +296,43 @@
         {
           "id": "afeix_p04_afei_toad_corpse_head",
           "img": "sprites\\afeix_p04_afei_toad_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
-      "review_note": "蛤蟆立绘已停用；旧画刷只作为正常阿飞外观的兼容别名，转职玩法保留。"
+      "review_note": "Same single Afei portrait; legacy brush ID retained for compatibility."
     },
     {
       "key": "afei",
       "name": "阿飞",
       "form": "jiahao",
       "brush": "afeix_p04_afei_jiahao",
-      "source": "art/runtime/portraits-v05/sources/facing/afei_jiahao.png",
+      "source": "art/runtime/portraits-v05/sources/facing/afei_normal.png",
       "source_kind": "generated_custom",
-      "source_sha256": "96358d2401b0a9d956547ac72186901894f5648d82cceff2012343ed3b252f62",
+      "source_sha256": "1f291f548b542473f3d66acc311ef579337199251545e3aff6aee5f330121f50",
       "source_size": [
-        1124,
-        1399
+        1188,
+        1324
       ],
       "source_box": null,
       "alpha_crop_box": [
-        35,
-        75,
-        1095,
-        1353
+        115,
+        93,
+        1089,
+        1250
       ],
       "alpha_threshold": 20,
       "resized_size": [
-        83,
+        84,
         100
       ],
-      "uniform_scale": 0.0782472613458529,
+      "uniform_scale": 0.08643042350907519,
       "placement": [
         15,
         42
@@ -345,19 +345,19 @@
         0,
         255
       ],
-      "live_png_sha256": "a967a2658f14afb9a9a69722bf8319f2b1f2d0d785c1eac583737b1fe92d32e7",
-      "head_png_sha256": "bcca70028c3cfaf5c630d1e5c8ab2ba736eda5511114dd641e3b95380dc94650",
-      "dead_png_sha256": "7e02799e9d228a2a0450a1e918ddd8801b2bbd77f706f369190e417a7709426b",
-      "corpse_head_png_sha256": "bcca70028c3cfaf5c630d1e5c8ab2ba736eda5511114dd641e3b95380dc94650",
+      "live_png_sha256": "79e51364ff1b65d7ec6ad4f7e5e3462a0966b3c4759f4cb70c6f8f277aab5e93",
+      "head_png_sha256": "c7be012c3bfa258c5f41e8f15de4139d41da30230259b1a5b32430405ffe7dc4",
+      "dead_png_sha256": "2216ed6b9d42992697dc78f7a90b50072e6b00f89a0b325111ca3dd879431990",
+      "corpse_head_png_sha256": "d4193059331751aef2cd565e3f001364ca6b10e667cac7f3e82f450facfc40ff",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -367,35 +367,35 @@
       "head_seam": [
         [
           0,
-          107
+          102
         ],
         [
-          35,
-          107
+          40,
+          102
         ],
         [
           48,
-          112
+          107
         ],
         [
           57,
-          119
+          114
         ],
         [
           73,
-          119
+          114
         ],
         [
           85,
-          112
+          107
         ],
         [
           95,
-          107
+          102
         ],
         [
           114,
-          107
+          102
         ]
       ],
       "neck_guard": [
@@ -403,7 +403,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_afei_jiahao",
@@ -442,17 +442,17 @@
         {
           "id": "afeix_p04_afei_jiahao_corpse_head",
           "img": "sprites\\afeix_p04_afei_jiahao_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
-      "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
+      "review_note": "Same single Afei portrait; legacy brush ID retained for compatibility."
     },
     {
       "key": "damou",
@@ -491,19 +491,19 @@
         0,
         255
       ],
-      "live_png_sha256": "14af340fe7081a0f5c787dcf1530c59f9d62e8404f99fc2dc28bc2f252f2f46e",
-      "head_png_sha256": "3ceb0247c305cafa66d7c686e69f1968e19c460983f0f4a5c91498188e2beb61",
+      "live_png_sha256": "a4073d9f6b5008e071d73c0a8c3f8a8493b24befa52bd52b1feb2a5a34eb1fd9",
+      "head_png_sha256": "00380a91fe5fe93cc7a03b613eac5ea7ebba7d978661ea625aed6e25913c986b",
       "dead_png_sha256": "de836cd4cdc21d662c28592d670a2a3f2933f5ec071984d5a905b62d0a84d22d",
-      "corpse_head_png_sha256": "3ceb0247c305cafa66d7c686e69f1968e19c460983f0f4a5c91498188e2beb61",
+      "corpse_head_png_sha256": "887c0d24ddf9cd95169f991c93cc9650a2ca733885406dd75f282f1ab441dd7d",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -513,35 +513,35 @@
       "head_seam": [
         [
           0,
-          109
+          102
         ],
         [
-          35,
-          109
+          40,
+          102
         ],
         [
           48,
-          114
+          109
         ],
         [
           57,
-          121
-        ],
-        [
-          73,
-          121
-        ],
-        [
-          85,
           114
         ],
         [
-          95,
+          73,
+          114
+        ],
+        [
+          85,
           109
         ],
         [
+          95,
+          102
+        ],
+        [
           114,
-          109
+          102
         ]
       ],
       "neck_guard": [
@@ -549,7 +549,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_damou",
@@ -588,14 +588,14 @@
         {
           "id": "afeix_p04_damou_corpse_head",
           "img": "sprites\\afeix_p04_damou_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -637,19 +637,19 @@
         0,
         255
       ],
-      "live_png_sha256": "77cb2ba59b12e019920d9a392eaeb7d4a9e207821176df6440adf015477b780e",
-      "head_png_sha256": "7b8f0155e4519511c2f48533d8426a47058ff00c3a7b86b7ca03afc3882da835",
+      "live_png_sha256": "a75b4e1c1eb52d7700e13cd10b17d2e6cb1bb00f87bba59f96822d196c162e73",
+      "head_png_sha256": "5a26647dcd1af7dab7a914477f2e41913cf7be276a2d8161a87bf7545611623e",
       "dead_png_sha256": "0ca2e1ddf35f78be4445ef7842136125d2e1ed14f40005e1f2c122fe71015231",
-      "corpse_head_png_sha256": "7b8f0155e4519511c2f48533d8426a47058ff00c3a7b86b7ca03afc3882da835",
+      "corpse_head_png_sha256": "f49fa41725f12bb3a13209b549336cdbd3d6990c665c3970446afe1afe192b94",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -659,35 +659,35 @@
       "head_seam": [
         [
           0,
-          109
+          102
         ],
         [
-          35,
-          109
+          40,
+          102
         ],
         [
           48,
-          114
+          109
         ],
         [
           57,
-          122
-        ],
-        [
-          73,
-          122
-        ],
-        [
-          85,
           114
         ],
         [
-          95,
+          73,
+          114
+        ],
+        [
+          85,
           109
         ],
         [
+          95,
+          102
+        ],
+        [
           114,
-          109
+          102
         ]
       ],
       "neck_guard": [
@@ -695,7 +695,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_mocha",
@@ -734,14 +734,14 @@
         {
           "id": "afeix_p04_mocha_corpse_head",
           "img": "sprites\\afeix_p04_mocha_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -783,19 +783,19 @@
         0,
         255
       ],
-      "live_png_sha256": "8a2a26fab9723af5e4c9775fa6ab4fcc95c37788f51c6bcd4ce7f7b61253ed45",
-      "head_png_sha256": "66521a8b2b172415ce5831b02b430c4da5527f59917e575bf602bc89e37651e9",
+      "live_png_sha256": "e60d4b6950d342326234a11f4f029c9284c6d65f5a9f3dc8fd5637935612589f",
+      "head_png_sha256": "771caf764c2e291c599a796de24f486baf67e1dee2ace8b2ebb0f74a174e1bb3",
       "dead_png_sha256": "701d9d3cb3984246e9c5bd814b80d14b1c13f3bcb4019538837a7c04523a06ef",
-      "corpse_head_png_sha256": "66521a8b2b172415ce5831b02b430c4da5527f59917e575bf602bc89e37651e9",
+      "corpse_head_png_sha256": "9c8554a41a64ec332fe8ed9d73a3e969ecd18d2367c70ddbce274216464f3dab",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -805,35 +805,35 @@
       "head_seam": [
         [
           0,
-          107
+          102
         ],
         [
-          35,
-          107
+          40,
+          102
         ],
         [
           48,
-          112
+          107
         ],
         [
           57,
-          119
+          114
         ],
         [
           73,
-          119
+          114
         ],
         [
           85,
-          112
+          107
         ],
         [
           95,
-          107
+          102
         ],
         [
           114,
-          107
+          102
         ]
       ],
       "neck_guard": [
@@ -841,7 +841,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_bottle",
@@ -880,14 +880,14 @@
         {
           "id": "afeix_p04_bottle_corpse_head",
           "img": "sprites\\afeix_p04_bottle_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -929,19 +929,19 @@
         0,
         255
       ],
-      "live_png_sha256": "a32496c01df2f0c4167037808d694bcf1cf1f9b3b87807e2ed5fa2353052ea76",
-      "head_png_sha256": "f6a24c6240c6f97458205c2954ed82bfc78de645ecfb8fac9dd0fe933b11663d",
+      "live_png_sha256": "a84546770682c1b96868718ba9a0fe179a2e03f7846f7f9075c9d2a6d7408746",
+      "head_png_sha256": "f68fafff13fbbc060dc240d6ee8c190a8d60a767cf0cfe5950784d53c68bbcd9",
       "dead_png_sha256": "d046835a5b0d53f44f261eda592231e51b2a04b66d070d96f190da9db6141df2",
-      "corpse_head_png_sha256": "f6a24c6240c6f97458205c2954ed82bfc78de645ecfb8fac9dd0fe933b11663d",
+      "corpse_head_png_sha256": "fa2972c117a5e197497d8314f2d0ed621c07dfa729c0da3660412e20fdde7bca",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -951,35 +951,35 @@
       "head_seam": [
         [
           0,
-          107
+          102
         ],
         [
-          35,
-          107
+          40,
+          102
         ],
         [
           48,
-          112
+          107
         ],
         [
           57,
-          119
+          114
         ],
         [
           73,
-          119
+          114
         ],
         [
           85,
-          112
+          107
         ],
         [
           95,
-          107
+          102
         ],
         [
           114,
-          107
+          102
         ]
       ],
       "neck_guard": [
@@ -987,7 +987,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_shuaizi",
@@ -1026,14 +1026,14 @@
         {
           "id": "afeix_p04_shuaizi_corpse_head",
           "img": "sprites\\afeix_p04_shuaizi_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -1075,19 +1075,19 @@
         0,
         255
       ],
-      "live_png_sha256": "6e8e77aad4d4da7767eb29b58bf6642895f1fbb18fc3481b727cb14ce89b190f",
-      "head_png_sha256": "0d77408f2d16a2ef0e7e5a7aea5e2362593f2953a3171a094e50d01327a03e42",
+      "live_png_sha256": "259f437286173a2f78869302c32d5db4b5762583162f378adcb9df6f5607ee19",
+      "head_png_sha256": "6777e37f2deed48f5c800f84137c3fce89c65e543ef83e119059d985093abb15",
       "dead_png_sha256": "f53657ee0dfb9457a0c7513f539a0de264fe486a68a8c16cdab97f0884d38cbb",
-      "corpse_head_png_sha256": "0d77408f2d16a2ef0e7e5a7aea5e2362593f2953a3171a094e50d01327a03e42",
+      "corpse_head_png_sha256": "656688295a6fd174c019b18429bfa8946492d928fda7ccbba6633c243b69f05f",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -1097,35 +1097,35 @@
       "head_seam": [
         [
           0,
-          109
+          102
         ],
         [
-          35,
-          109
+          40,
+          102
         ],
         [
           48,
-          114
+          109
         ],
         [
           57,
-          123
-        ],
-        [
-          73,
-          123
-        ],
-        [
-          85,
           114
         ],
         [
-          95,
+          73,
+          114
+        ],
+        [
+          85,
           109
         ],
         [
+          95,
+          102
+        ],
+        [
           114,
-          109
+          102
         ]
       ],
       "neck_guard": [
@@ -1133,7 +1133,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_lili",
@@ -1172,14 +1172,14 @@
         {
           "id": "afeix_p04_lili_corpse_head",
           "img": "sprites\\afeix_p04_lili_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "按用户指定李李参考重绘短棕发、温和眉眼与足球发卡；简洁素装，无固定弓箭。透明朝右胸像，已检查原尺寸及原版装备叠加，未实机验收。"
@@ -1221,19 +1221,19 @@
         0,
         255
       ],
-      "live_png_sha256": "92da1776e19844d8789de8307d2e85b16f29657e937de20ef316a8c3c780bfde",
-      "head_png_sha256": "3705a74af54fa5c18f76ffa71a0bf72613084daa16b513eef4f09fe1889e821a",
+      "live_png_sha256": "3520f5b24cd1d2ddbf8f23bc4ecccaed9a591bfb180bf33e56f68f95dd477c18",
+      "head_png_sha256": "6cf40dd3c2b4d4c7039429622e95fc5cf9db3fb84e7f6a97f9727812f8a19f44",
       "dead_png_sha256": "68e27a7899d1e1875d453ad9eb7c108ef75e7e0d2e4d84202284c1c8cb816462",
-      "corpse_head_png_sha256": "3705a74af54fa5c18f76ffa71a0bf72613084daa16b513eef4f09fe1889e821a",
+      "corpse_head_png_sha256": "94eecf4c9e36cd676c832b9a0bccde283c7198fb337e30d1e6ce453170902b45",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -1243,35 +1243,35 @@
       "head_seam": [
         [
           0,
-          108
+          102
         ],
         [
-          35,
-          108
+          40,
+          102
         ],
         [
           48,
-          113
+          108
         ],
         [
           57,
-          122
+          114
         ],
         [
           73,
-          122
+          114
         ],
         [
           85,
-          113
+          108
         ],
         [
           95,
-          108
+          102
         ],
         [
           114,
-          108
+          102
         ]
       ],
       "neck_guard": [
@@ -1279,7 +1279,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_xiaoyueya",
@@ -1318,14 +1318,14 @@
         {
           "id": "afeix_p04_xiaoyueya_corpse_head",
           "img": "sprites\\afeix_p04_xiaoyueya_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "按用户照片重绘黑色长发、清秀椭圆脸与自然眉眼，替换旧蓝发造型；朝右，完整颈部。"
@@ -1367,19 +1367,19 @@
         0,
         255
       ],
-      "live_png_sha256": "d08f3a6986e21d5864cfe4c7bf0204aa745aa67508760f946c980e10fcf5fac7",
-      "head_png_sha256": "6d271ac5070f59d5245d4198b4d46a615e0fc8a9ae80790b4e0cd9e9c49a2250",
+      "live_png_sha256": "2808e9ef07bac1257c1a741b9d6b0fed2cdcc9c027ab371cfda6d173ea1d93fb",
+      "head_png_sha256": "ff02b605d66eb2b930a26fdaa8504b4d46dc641c8f8d021091063eb659058bdd",
       "dead_png_sha256": "adc2de6175bf4c1533f1ae3478f27f2e5328dbf61f5e99fef7aa0676c45481ea",
-      "corpse_head_png_sha256": "6d271ac5070f59d5245d4198b4d46a615e0fc8a9ae80790b4e0cd9e9c49a2250",
+      "corpse_head_png_sha256": "567c6051234d4cc6db2e1061e7a5fb8c21bfc0634cf84b1658b51b577a43a4df",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -1389,35 +1389,35 @@
       "head_seam": [
         [
           0,
-          108
+          102
         ],
         [
-          35,
-          108
+          40,
+          102
         ],
         [
           48,
-          113
+          108
         ],
         [
           57,
-          120
+          114
         ],
         [
           73,
-          120
+          114
         ],
         [
           85,
-          113
+          108
         ],
         [
           95,
-          108
+          102
         ],
         [
           114,
-          108
+          102
         ]
       ],
       "neck_guard": [
@@ -1425,7 +1425,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_yuchujiu",
@@ -1464,14 +1464,14 @@
         {
           "id": "afeix_p04_yuchujiu_corpse_head",
           "img": "sprites\\afeix_p04_yuchujiu_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -1513,19 +1513,19 @@
         0,
         255
       ],
-      "live_png_sha256": "ee68b3325e3ddee92c88de8f12568901c0f62be5fece28000d1fe623bfa62ec5",
-      "head_png_sha256": "d14811d52e805d51e21a10c80f40f98dd878377b1c84edba6509571ce4d174d0",
+      "live_png_sha256": "4be6fae4f1b82f153bb5609dcc470609c746960012cb1d454c65f8f6cac448de",
+      "head_png_sha256": "8e0e48e0642e69873937eb3e676cd97c21af5709a28fc535230d254837b542eb",
       "dead_png_sha256": "ae8e3503de482c2730b21d927bd1cbe2fa008de65a945b8432c731dab1429fb8",
-      "corpse_head_png_sha256": "d14811d52e805d51e21a10c80f40f98dd878377b1c84edba6509571ce4d174d0",
+      "corpse_head_png_sha256": "6eeddb74e3c9973521ce0ebb098bd0f7ad6463b64aa69c117e6f1f13aa22575b",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -1535,35 +1535,35 @@
       "head_seam": [
         [
           0,
-          109
+          102
         ],
         [
-          35,
-          109
+          40,
+          102
         ],
         [
           48,
-          114
+          109
         ],
         [
           57,
-          122
-        ],
-        [
-          73,
-          122
-        ],
-        [
-          85,
           114
         ],
         [
-          95,
+          73,
+          114
+        ],
+        [
+          85,
           109
         ],
         [
+          95,
+          102
+        ],
+        [
           114,
-          109
+          102
         ]
       ],
       "neck_guard": [
@@ -1571,7 +1571,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_xiaoyubeike",
@@ -1610,14 +1610,14 @@
         {
           "id": "afeix_p04_xiaoyubeike_corpse_head",
           "img": "sprites\\afeix_p04_xiaoyubeike_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -1659,19 +1659,19 @@
         0,
         255
       ],
-      "live_png_sha256": "10c094a9b441e37fb5a9079b38a23fbd5c7f7cae68568a9449fe4fdfb626ab42",
-      "head_png_sha256": "fea1b42e1d34fa168f1f18a82e80be8fc8432a95296682bbfbf3674ffcbf1f6c",
+      "live_png_sha256": "c79840738803540fc0fece1515647fa5499cb6f6c1d0b1ae66e919c252de71de",
+      "head_png_sha256": "b44a267de03c8ceeb206fb3203bfbe4ad2063127231ae067a1fa19e63eb31132",
       "dead_png_sha256": "45a4585cc8717a1ac7e7b2fbe3b555da43e4f59c4430e814afb737bfea5dca0e",
-      "corpse_head_png_sha256": "fea1b42e1d34fa168f1f18a82e80be8fc8432a95296682bbfbf3674ffcbf1f6c",
+      "corpse_head_png_sha256": "74aa23cb3f603cc9094cfca8a2bc1105e25c8d8df48fe461fb5813ebd99a162b",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -1681,35 +1681,35 @@
       "head_seam": [
         [
           0,
-          107
+          102
         ],
         [
-          35,
-          107
+          40,
+          102
         ],
         [
           48,
-          112
+          107
         ],
         [
           57,
-          123
+          114
         ],
         [
           73,
-          123
+          114
         ],
         [
           85,
-          112
+          107
         ],
         [
           95,
-          107
+          102
         ],
         [
           114,
-          107
+          102
         ]
       ],
       "neck_guard": [
@@ -1717,7 +1717,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_wangduidui",
@@ -1756,14 +1756,14 @@
         {
           "id": "afeix_p04_wangduidui_corpse_head",
           "img": "sprites\\afeix_p04_wangduidui_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -1805,19 +1805,19 @@
         0,
         255
       ],
-      "live_png_sha256": "f5a8fb3325da06a41bf90a1e5f93c00446f5317f9e5d6471f0f310197fbc6b79",
-      "head_png_sha256": "0e07f756dc21ab4c3d3ad7f03b49453192369a9ace84e063085cf668b4893944",
+      "live_png_sha256": "55d1e5ecfb5740c3fea37a321a586b8b863b27b9ed4d7f071e95469fbb632a8d",
+      "head_png_sha256": "ec9ca6f583674304d303e8b542bde3324950fc4256325555f3d205e9a0a9703d",
       "dead_png_sha256": "8a5f7d110d85581480a2f86e1f87825fd230791d43c0928727973524435fccde",
-      "corpse_head_png_sha256": "0e07f756dc21ab4c3d3ad7f03b49453192369a9ace84e063085cf668b4893944",
+      "corpse_head_png_sha256": "1f77bd3b2bcfd42e2ad4e135c20a9f30a7ab8c5abc547702734fe46ac709b85f",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -1827,35 +1827,35 @@
       "head_seam": [
         [
           0,
-          109
+          102
         ],
         [
-          35,
-          109
+          40,
+          102
         ],
         [
           48,
-          114
+          109
         ],
         [
           57,
-          120
-        ],
-        [
-          73,
-          120
-        ],
-        [
-          85,
           114
         ],
         [
-          95,
+          73,
+          114
+        ],
+        [
+          85,
           109
         ],
         [
+          95,
+          102
+        ],
+        [
           114,
-          109
+          102
         ]
       ],
       "neck_guard": [
@@ -1863,7 +1863,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_laocai",
@@ -1902,14 +1902,14 @@
         {
           "id": "afeix_p04_laocai_corpse_head",
           "img": "sprites\\afeix_p04_laocai_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -1951,65 +1951,65 @@
         0,
         255
       ],
-      "live_png_sha256": "9930eed344ab81218f1a412907b2fb7c2e07e8369476fed72ed68b4d5030e35b",
-      "head_png_sha256": "63267905ba7410155d7837d52c4aac445e0495a4433b3a7b9d57a4f5008a1ef5",
+      "live_png_sha256": "dff3c7b89e04e8911ff430fddd988de7eaf5d60d38dc43021e1e3c2aa52d2683",
+      "head_png_sha256": "10c79171a18ca3c129a69c71fed31deb912fcb576da6fce83fe8cac5bbc2e3c0",
       "dead_png_sha256": "8c42397d5688be25063ea23d0b23e1c2fa2e1bae48113110a9da1a5a73893ca6",
-      "corpse_head_png_sha256": "63267905ba7410155d7837d52c4aac445e0495a4433b3a7b9d57a4f5008a1ef5",
+      "corpse_head_png_sha256": "44dd7a715c0d6ee88c0a9e07f52aa79ee60774487a82496f9693715d0a49341f",
       "corpse_head_geometry": {
-        "left": -63,
-        "right": 51,
-        "top": -27,
-        "bottom": 115,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         63,
-        115
+        110
       ],
       "partition": "reviewed_neck_contour",
       "head_seam": [
         [
           0,
-          110
+          102
         ],
         [
-          35,
-          110
+          40,
+          102
         ],
         [
           48,
-          121
-        ],
-        [
-          66,
-          122
-        ],
-        [
-          78,
-          120
-        ],
-        [
-          87,
-          112
-        ],
-        [
-          100,
           110
+        ],
+        [
+          57,
+          114
+        ],
+        [
+          73,
+          114
+        ],
+        [
+          85,
+          110
+        ],
+        [
+          95,
+          102
         ],
         [
           114,
-          110
+          102
         ]
       ],
       "neck_guard": [
         63,
-        115
+        110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_yanzi",
@@ -2048,14 +2048,14 @@
         {
           "id": "afeix_p04_yanzi_corpse_head",
           "img": "sprites\\afeix_p04_yanzi_corpse_head.png",
-          "left": "-63",
-          "right": "51",
-          "top": "-27",
-          "bottom": "115",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "内置 ImageGen 按仓库 Sylar 活动海报右侧人物绘制，黑短发与本人五官，短肩剑盾旅装。"
@@ -2097,19 +2097,19 @@
         0,
         255
       ],
-      "live_png_sha256": "74e7c0a01cf60ede43cc6078cf8624fb72ba1e684971d187e73b8219abd6e566",
-      "head_png_sha256": "fa8b1097122ad4067ada5a51ef33cbd34131da5a7f9250c3718d447a74433f70",
+      "live_png_sha256": "ebe2db4f47ad0dfbaa53f4630f2d9d19c142222d1f44039ee80cfe65c5f702b9",
+      "head_png_sha256": "6b1aa4a5660ca69676567959a8a91a14268adc3d0096394bb877956a8164cf7b",
       "dead_png_sha256": "698b64a386a19066118e8288f64199b298a909feaa7b991e1765fbdfbba98fb8",
-      "corpse_head_png_sha256": "fa8b1097122ad4067ada5a51ef33cbd34131da5a7f9250c3718d447a74433f70",
+      "corpse_head_png_sha256": "740e50c867232ae4822a6b3cf8ba4777743bc4f5682f8725652996cbc0666afb",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -2119,35 +2119,35 @@
       "head_seam": [
         [
           0,
-          110
+          102
         ],
         [
-          35,
-          110
+          40,
+          102
         ],
         [
           48,
-          115
+          110
         ],
         [
           57,
-          123
+          114
         ],
         [
           73,
-          123
+          114
         ],
         [
           85,
-          115
+          110
         ],
         [
           95,
-          110
+          102
         ],
         [
           114,
-          110
+          102
         ]
       ],
       "neck_guard": [
@@ -2155,7 +2155,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_tiantong",
@@ -2194,14 +2194,14 @@
         {
           "id": "afeix_p04_tiantong_corpse_head",
           "img": "sprites\\afeix_p04_tiantong_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "按用户照片中央人物重绘浅棕短波波头、圆润脸颊和眼睛；移除旧眼镜与深色长发。"
@@ -2243,19 +2243,19 @@
         0,
         255
       ],
-      "live_png_sha256": "3a0344a82e0686dba6706d2b36309047c55e390b7d4bacc2711a0fef21008b64",
-      "head_png_sha256": "758d9afb7939efd8d5500262dd524e83dcd682f55da54ef1450ec9c83bf57a63",
+      "live_png_sha256": "a519871d4facaf0236eac60ad095dd2110a37bbd83d337a7d347a97fc31e3fd8",
+      "head_png_sha256": "5900cc061dcbd965846c99639886311bca2b2d37c6f38fd359559b753ba1dcb0",
       "dead_png_sha256": "b9f1651086f8edabd995afee80651a3b46eae319712e1a03816b8be00ed9595b",
-      "corpse_head_png_sha256": "758d9afb7939efd8d5500262dd524e83dcd682f55da54ef1450ec9c83bf57a63",
+      "corpse_head_png_sha256": "b6243f7b433fdb60ca6376b5c35507833457dfef17a852c71fae9a6e24f6104f",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -2265,35 +2265,35 @@
       "head_seam": [
         [
           0,
-          107
+          102
         ],
         [
-          35,
-          107
+          40,
+          102
         ],
         [
           48,
-          112
+          107
         ],
         [
           57,
-          120
+          114
         ],
         [
           73,
-          120
+          114
         ],
         [
           85,
-          112
+          107
         ],
         [
           95,
-          107
+          102
         ],
         [
           114,
-          107
+          102
         ]
       ],
       "neck_guard": [
@@ -2301,7 +2301,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_xiaoning",
@@ -2340,14 +2340,14 @@
         {
           "id": "afeix_p04_xiaoning_corpse_head",
           "img": "sprites\\afeix_p04_xiaoning_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -2389,19 +2389,19 @@
         0,
         255
       ],
-      "live_png_sha256": "1eb917afe9114514f2cbaaeffc39796ea79f98896239ce068c395c89081ad1d4",
-      "head_png_sha256": "bd42252cca1b966ea6d4153075e649f209dceb847ebcd56230362573c8a1bd94",
+      "live_png_sha256": "db9a91859b00ec5959d2cab57d0649353d8643c12794ec88ac50d0557b9761a2",
+      "head_png_sha256": "012f4f37da9387599d8b33e78d97b1b467a594a9866e3e320ebaf1e5abedac34",
       "dead_png_sha256": "a45c097a3583d221ba0c9bdf9402332712faf19803108c4d5dc6c497da07cbd0",
-      "corpse_head_png_sha256": "bd42252cca1b966ea6d4153075e649f209dceb847ebcd56230362573c8a1bd94",
+      "corpse_head_png_sha256": "eef0bb2a02bcb7df2bdfa65c5f3fbda35ba998f1960e2a5f982af90239bd9ce2",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -2411,35 +2411,35 @@
       "head_seam": [
         [
           0,
-          108
+          102
         ],
         [
-          35,
-          108
+          40,
+          102
         ],
         [
           48,
-          113
+          108
         ],
         [
           57,
-          122
+          114
         ],
         [
           73,
-          122
+          114
         ],
         [
           85,
-          113
+          108
         ],
         [
           95,
-          108
+          102
         ],
         [
           114,
-          108
+          102
         ]
       ],
       "neck_guard": [
@@ -2447,7 +2447,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_xiaopangxu",
@@ -2486,14 +2486,14 @@
         {
           "id": "afeix_p04_xiaopangxu_corpse_head",
           "img": "sprites\\afeix_p04_xiaopangxu_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -2535,19 +2535,19 @@
         0,
         255
       ],
-      "live_png_sha256": "cad6cd91d0ea941c49f7d29c4c31053addbbd943a7e8f7e913914e15dd8deea7",
-      "head_png_sha256": "3e11ea5669b758c82a1bf94d4e22fc6ac265535a2ebaa1b004ab10190521aa4f",
+      "live_png_sha256": "c78f4932a02293eb96c9ddebeb90499ba8c73c825d2b289f00b1dc75bc611a8e",
+      "head_png_sha256": "08280434cc86282d22a185d072b3cca16aab80b9aaca6162eeddb63797c14bed",
       "dead_png_sha256": "01c220f7a1398d5534160aba80b2eaaa3636ac117ec0df20abb5550cda3999a1",
-      "corpse_head_png_sha256": "3e11ea5669b758c82a1bf94d4e22fc6ac265535a2ebaa1b004ab10190521aa4f",
+      "corpse_head_png_sha256": "84abd491b3a39120401c67d495af1b55b5fdc231c55e2ccebb0056f7c5742f41",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -2557,35 +2557,35 @@
       "head_seam": [
         [
           0,
-          108
+          102
         ],
         [
-          35,
-          108
+          40,
+          102
         ],
         [
           48,
-          113
+          108
         ],
         [
           57,
-          121
+          114
         ],
         [
           73,
-          121
+          114
         ],
         [
           85,
-          113
+          108
         ],
         [
           95,
-          108
+          102
         ],
         [
           114,
-          108
+          102
         ]
       ],
       "neck_guard": [
@@ -2593,7 +2593,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_dae",
@@ -2632,14 +2632,14 @@
         {
           "id": "afeix_p04_dae_corpse_head",
           "img": "sprites\\afeix_p04_dae_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -2681,19 +2681,19 @@
         0,
         255
       ],
-      "live_png_sha256": "4dd372671898495dbe311df0a93827fc5a88cc47e6d5b76c0cce0f1c1c523e26",
-      "head_png_sha256": "2c3a651ccbb3a20c8165fa6e1e706af1f13902dbac34582ba793673a88c0eadb",
+      "live_png_sha256": "a283d97fa01dd6b1024b57c7640c60689e7daafbbf1a9feb5f3032d988c5e60f",
+      "head_png_sha256": "39c2954d1c25f56aa87e76f939758356966779283f9b7a53e7ab825e8b028662",
       "dead_png_sha256": "9d83107cb409efd110da64c2696192d414b33fe66eb75477ee03b6da823fa6c7",
-      "corpse_head_png_sha256": "2c3a651ccbb3a20c8165fa6e1e706af1f13902dbac34582ba793673a88c0eadb",
+      "corpse_head_png_sha256": "0c4722565383146a132fd6d3086ce6545e100ac80e9729bc9678b72672d098ad",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -2703,35 +2703,35 @@
       "head_seam": [
         [
           0,
-          108
+          102
         ],
         [
-          35,
-          108
+          40,
+          102
         ],
         [
           48,
-          113
+          108
         ],
         [
           57,
-          120
+          114
         ],
         [
           73,
-          120
+          114
         ],
         [
           85,
-          113
+          108
         ],
         [
           95,
-          108
+          102
         ],
         [
           114,
-          108
+          102
         ]
       ],
       "neck_guard": [
@@ -2739,7 +2739,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_manyuemei",
@@ -2778,14 +2778,14 @@
         {
           "id": "afeix_p04_manyuemei_corpse_head",
           "img": "sprites\\afeix_p04_manyuemei_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -2827,19 +2827,19 @@
         0,
         255
       ],
-      "live_png_sha256": "208f31e9a8e759760f0553c5aa081137d5a2078eed8595b4be7f7500dbd7f932",
-      "head_png_sha256": "d46a3a850198034506c2f56fc8ce84df328632ca7030de40a0d9270ed983f10c",
+      "live_png_sha256": "cc2cafda119a421b1342a557828be51972b45a026536e26d4e93b4d7245d7e52",
+      "head_png_sha256": "66d709d483a7d4cdabe81cade2f5197a394040dab789b96a600e2efdd48d7ca2",
       "dead_png_sha256": "2471db13ec1b400b3ebfdd9bc3d5c47a9aa6ff32df825284b0cf13e9fa167f1e",
-      "corpse_head_png_sha256": "d46a3a850198034506c2f56fc8ce84df328632ca7030de40a0d9270ed983f10c",
+      "corpse_head_png_sha256": "47d7d14b37b8a5514bf8f228461815da10fe57d2e66b42078645f8b588e0e413",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -2849,35 +2849,35 @@
       "head_seam": [
         [
           0,
-          110
+          102
         ],
         [
-          35,
-          110
+          40,
+          102
         ],
         [
           48,
-          114
+          110
         ],
         [
           57,
-          118
-        ],
-        [
-          73,
-          118
-        ],
-        [
-          85,
           114
         ],
         [
-          95,
+          73,
+          114
+        ],
+        [
+          85,
           110
         ],
         [
+          95,
+          102
+        ],
+        [
           114,
-          110
+          102
         ]
       ],
       "neck_guard": [
@@ -2885,7 +2885,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_xiaohani",
@@ -2924,14 +2924,14 @@
         {
           "id": "afeix_p04_xiaohani_corpse_head",
           "img": "sprites\\afeix_p04_xiaohani_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "内置 ImageGen 按用户罗一可照片绘制，人类长发、侧刘海与软面颊，梅紫围巾和小粮袋。"
@@ -2973,19 +2973,19 @@
         0,
         255
       ],
-      "live_png_sha256": "e2aa1b06b91c10828fd36a1a0d312bdae5d5240e802b81a48e43af1381d0c288",
-      "head_png_sha256": "b9282210a36bd339f43d48010e38b154aa32c939061a38ad2401c672f1695c63",
+      "live_png_sha256": "1e22a4bf048bda3650c0f05d3686d4e3d1cb9e5c88f1cc87c68a8ba11c69cb2c",
+      "head_png_sha256": "c6bc22cd80c532cb0b70bf651320ca644653408c1319f040d87826ba524fceb8",
       "dead_png_sha256": "70e053d43253d82de113969aca3763ae72e571cdda0ef14ac49ef3ab0f10f9a3",
-      "corpse_head_png_sha256": "b9282210a36bd339f43d48010e38b154aa32c939061a38ad2401c672f1695c63",
+      "corpse_head_png_sha256": "63a991077c0338ac514b0c9ea06f2f5a8bb2905fb740f20e140c4f9edb5a9914",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -2995,35 +2995,35 @@
       "head_seam": [
         [
           0,
-          109
+          102
         ],
         [
-          35,
-          109
+          40,
+          102
         ],
         [
           48,
-          114
+          109
         ],
         [
           57,
-          121
-        ],
-        [
-          73,
-          121
-        ],
-        [
-          85,
           114
         ],
         [
-          95,
+          73,
+          114
+        ],
+        [
+          85,
           109
         ],
         [
+          95,
+          102
+        ],
+        [
           114,
-          109
+          102
         ]
       ],
       "neck_guard": [
@@ -3031,7 +3031,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_keke",
@@ -3070,14 +3070,14 @@
         {
           "id": "afeix_p04_keke_corpse_head",
           "img": "sprites\\afeix_p04_keke_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "根据用户提供的两张可可照片重绘圆润紧凑脸型、柔和眉眼、小巧鼻唇、薄刘海与低双马尾；保留红褐围巾、棕皮肩衣、月形搭扣、朝右姿态和完整下颌短颈。已检查游戏尺寸及装备叠加，尚未实机验收。"
@@ -3119,19 +3119,19 @@
         0,
         255
       ],
-      "live_png_sha256": "c9a29f8a018935960da3d5928a68a5bf29c7a15e352336341b66b2ea1bc096b3",
-      "head_png_sha256": "86e35eca6c7a809230ddbe64c1e25832d52850727348152a53249ff5af902ba7",
+      "live_png_sha256": "0622a22c2e507079ed940d84c5344162cc03efab487eacc84b61dcf808589ec2",
+      "head_png_sha256": "60aa300209abaac5df0bad83f3d334682b34e4a8cd4df88c0d41365eb26fe9a5",
       "dead_png_sha256": "f290fb692851fc995ff248b34459b16a86e0f65d889f4938e4dff38d9a7e97e8",
-      "corpse_head_png_sha256": "86e35eca6c7a809230ddbe64c1e25832d52850727348152a53249ff5af902ba7",
+      "corpse_head_png_sha256": "5276022fd45217ee498e2162b406a34a64530daf544dc154cf42b0d304332aeb",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -3141,35 +3141,35 @@
       "head_seam": [
         [
           0,
-          107
+          102
         ],
         [
-          35,
-          107
+          40,
+          102
         ],
         [
           48,
-          112
+          107
         ],
         [
           57,
-          120
+          114
         ],
         [
           73,
-          120
+          114
         ],
         [
           85,
-          112
+          107
         ],
         [
           95,
-          107
+          102
         ],
         [
           114,
-          107
+          102
         ]
       ],
       "neck_guard": [
@@ -3177,7 +3177,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_yuxiang",
@@ -3216,14 +3216,14 @@
         {
           "id": "afeix_p04_yuxiang_corpse_head",
           "img": "sprites\\afeix_p04_yuxiang_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -3265,19 +3265,19 @@
         0,
         255
       ],
-      "live_png_sha256": "d679da0c9119bb547c625ef3874fbcf32348905affd014371b757590285ea4a1",
-      "head_png_sha256": "12d0f0d8bbfe6fb1de10ca41f8f2793f850a267959ada1b55e32330778382f38",
+      "live_png_sha256": "7f56e7f1183f9cba430190724134c10cbe1c57c0855fa1ee111be618e37e6020",
+      "head_png_sha256": "1fb6d3e3cf5fbdefb6180d6cc6cd44394c4d9b75ff76d17028e1b7275e0a07c5",
       "dead_png_sha256": "3d04b81a9845cfb3ec07a4a0610a8e3689be371b7b8dc69118d2349fca64235f",
-      "corpse_head_png_sha256": "12d0f0d8bbfe6fb1de10ca41f8f2793f850a267959ada1b55e32330778382f38",
+      "corpse_head_png_sha256": "158b4b77be137fa816ef81e0574b24c93a8f9a3906d778eb2c305c722a639b0a",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -3287,35 +3287,35 @@
       "head_seam": [
         [
           0,
-          108
+          102
         ],
         [
-          35,
-          108
+          40,
+          102
         ],
         [
           48,
-          113
+          108
         ],
         [
           57,
-          121
+          114
         ],
         [
           73,
-          121
+          114
         ],
         [
           85,
-          113
+          108
         ],
         [
           95,
-          108
+          102
         ],
         [
           114,
-          108
+          102
         ]
       ],
       "neck_guard": [
@@ -3323,7 +3323,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_tongzhu",
@@ -3362,14 +3362,14 @@
         {
           "id": "afeix_p04_tongzhu_corpse_head",
           "img": "sprites\\afeix_p04_tongzhu_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -3411,19 +3411,19 @@
         0,
         255
       ],
-      "live_png_sha256": "e41e45e9bb39791a3d9684da8a2a9f7a6c4cc4376a30573dec3f028aa78c694f",
-      "head_png_sha256": "cc4f834a59c1def3ca1996b042ad5c2e6f977fa8d0ecb116590dacffe42222e2",
+      "live_png_sha256": "450af58c61e7c5b27557b03333bbb06925fca8979b9ae00f51f0c8c95a8a8636",
+      "head_png_sha256": "b426e710b4eeaaa8312e8b5d84b720843d36afe26b6e14f899ef69c0c1262a0f",
       "dead_png_sha256": "7354f31cc549fd0a6e0e9ce7b6206218767596bea45eedecffe2c00fa8c92605",
-      "corpse_head_png_sha256": "cc4f834a59c1def3ca1996b042ad5c2e6f977fa8d0ecb116590dacffe42222e2",
+      "corpse_head_png_sha256": "4397dc28ea2fb4296c7365a06801a01129633c7baf0806d64242f6dd939ac299",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -3433,35 +3433,35 @@
       "head_seam": [
         [
           0,
-          108
+          102
         ],
         [
-          35,
-          108
+          40,
+          102
         ],
         [
           48,
-          113
+          108
         ],
         [
           57,
-          122
+          114
         ],
         [
           73,
-          122
+          114
         ],
         [
           85,
-          113
+          108
         ],
         [
           95,
-          108
+          102
         ],
         [
           114,
-          108
+          102
         ]
       ],
       "neck_guard": [
@@ -3469,7 +3469,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_meiya",
@@ -3508,14 +3508,14 @@
         {
           "id": "afeix_p04_meiya_corpse_head",
           "img": "sprites\\afeix_p04_meiya_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "根据用户提供的四张美伢正侧面照片校准长椭圆脸、细弧眉、自然杏眼、鼻形与轻微笑意；收敛旧稿粗眉和噘嘴。保留近中分长黑发、朝右姿态、棕皮肩衣和完整下颌颈部；不将帽子画入基础层。"
@@ -3557,19 +3557,19 @@
         0,
         255
       ],
-      "live_png_sha256": "af3d858715dd742f438304c78adb60577e61460d13aac7168e8c2c1deb8f0cf5",
-      "head_png_sha256": "eb5ae45bcf5fda2d55ca77bb7b6273d598fa953c11abf75cb5fd3bda3355bb0d",
+      "live_png_sha256": "d960f19dae5d5d32d3d3fb1b50c8b41468ca2290f452d32ff1a2425e613938d4",
+      "head_png_sha256": "78ff1f88a36d1a99702a0be89260e824ba35fc30b5f58bd88776fdeadf4ff021",
       "dead_png_sha256": "458ceed1c76659efee4ae80550cdef97316a964de033cd0cf4a875ee73331d0b",
-      "corpse_head_png_sha256": "eb5ae45bcf5fda2d55ca77bb7b6273d598fa953c11abf75cb5fd3bda3355bb0d",
+      "corpse_head_png_sha256": "5d17ed1531b313ddf90cc46e0907668dde9d8dd5466d5a13773ea65241f35611",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -3579,35 +3579,35 @@
       "head_seam": [
         [
           0,
-          108
+          102
         ],
         [
-          35,
-          108
+          40,
+          102
         ],
         [
           48,
-          113
+          108
         ],
         [
           57,
-          122
+          114
         ],
         [
           73,
-          122
+          114
         ],
         [
           85,
-          113
+          108
         ],
         [
           95,
-          108
+          102
         ],
         [
           114,
-          108
+          102
         ]
       ],
       "neck_guard": [
@@ -3615,7 +3615,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_wanshe",
@@ -3654,14 +3654,14 @@
         {
           "id": "afeix_p04_wanshe_corpse_head",
           "img": "sprites\\afeix_p04_wanshe_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -3703,19 +3703,19 @@
         0,
         255
       ],
-      "live_png_sha256": "f51b76ec97fd77d166576e5a0d93fb4ad68435a8e273d666e23eaa53645faff8",
-      "head_png_sha256": "637fc0dbc5aa7c651eb5271ff1970034038b0678eb13b14b61101a7c45e7eb67",
+      "live_png_sha256": "46e0a8b3e7508c788bc9e5fbfa0b11df16861a09279f452857632b17ef74b967",
+      "head_png_sha256": "f816d46b719a3a1ed171982315fe86b36935cd30bec82cce2dcebec949512bf3",
       "dead_png_sha256": "842f92ba2596181aeca649aa45fbda8ad2a543286471391ac7cb992de1cbc723",
-      "corpse_head_png_sha256": "637fc0dbc5aa7c651eb5271ff1970034038b0678eb13b14b61101a7c45e7eb67",
+      "corpse_head_png_sha256": "6bfb2814cb8570c339f15027b4fff8eba1f0bd7625d83508d2691082b9c99aa8",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -3725,35 +3725,35 @@
       "head_seam": [
         [
           0,
-          109
+          102
         ],
         [
-          35,
-          109
+          40,
+          102
         ],
         [
           48,
-          114
+          109
         ],
         [
           57,
-          122
-        ],
-        [
-          73,
-          122
-        ],
-        [
-          85,
           114
         ],
         [
-          95,
+          73,
+          114
+        ],
+        [
+          85,
           109
         ],
         [
+          95,
+          102
+        ],
+        [
           114,
-          109
+          102
         ]
       ],
       "neck_guard": [
@@ -3761,7 +3761,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_tutu",
@@ -3800,14 +3800,14 @@
         {
           "id": "afeix_p04_tutu_corpse_head",
           "img": "sprites\\afeix_p04_tutu_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -3849,19 +3849,19 @@
         0,
         255
       ],
-      "live_png_sha256": "278fd64c87500c2ae1dfa1a3a4e264d4f033629205000a68d22fc6e578cf473a",
-      "head_png_sha256": "a5203c8ea9496298b8e95fb9f8d59cc1fa11a46c42f4b31aeb7ddfe44bc2cedf",
+      "live_png_sha256": "d1cc7045e66395b09022f86165bd9893618268187ff91bdf40e91acc48c43f00",
+      "head_png_sha256": "fdc54ac0abeb4bdd19a755eb1af866bf37277238a4fd80f1f993eea1fbaa4f25",
       "dead_png_sha256": "a150acacfaab01839cb97433251f812c3258c30b8b945ac02849f16940043c02",
-      "corpse_head_png_sha256": "a5203c8ea9496298b8e95fb9f8d59cc1fa11a46c42f4b31aeb7ddfe44bc2cedf",
+      "corpse_head_png_sha256": "741665ac7e87c82a4c359172ffe73058ae109fe28e14e36336c2d334177da621",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -3871,35 +3871,35 @@
       "head_seam": [
         [
           0,
-          110
+          102
         ],
         [
-          35,
-          110
+          40,
+          102
         ],
         [
           48,
-          115
+          110
         ],
         [
           57,
-          123
+          114
         ],
         [
           73,
-          123
+          114
         ],
         [
           85,
-          115
+          110
         ],
         [
           95,
-          110
+          102
         ],
         [
           114,
-          110
+          102
         ]
       ],
       "neck_guard": [
@@ -3907,7 +3907,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_naigai",
@@ -3946,14 +3946,14 @@
         {
           "id": "afeix_p04_naigai_corpse_head",
           "img": "sprites\\afeix_p04_naigai_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "按四张用户照片校正奶盖的齐下巴黑色短发、柔和脸型与眉眼唇形；保留棕色短披肩。透明朝右胸像，已检查原尺寸及原版装备叠加，未实机验收。"
@@ -3995,19 +3995,19 @@
         0,
         255
       ],
-      "live_png_sha256": "bf6aa53ea25c0c103c662a383bac21e51b6c25ae85b895b7136b6b94eeb06842",
-      "head_png_sha256": "e5e1625d53443ebacab9674dcba93faefe4aa5fde89a204a676bcf9a5c91d037",
+      "live_png_sha256": "f9aaffdae1628a9314cd8161193b871d8792e3913e87e2d3dfa85a77a6dafe6e",
+      "head_png_sha256": "c8104d5074d8526863bda83c46eb09ef277458f36a22d81a06b5f1caf22e5c1f",
       "dead_png_sha256": "fe1364196dec19cdb2c6624bb1b795315dcb7b69611a17754ea8507aa30f2dd1",
-      "corpse_head_png_sha256": "e5e1625d53443ebacab9674dcba93faefe4aa5fde89a204a676bcf9a5c91d037",
+      "corpse_head_png_sha256": "048278271b65d81d3247dc71c79bb3a643386d76d57c7b9b6df8b45a12d40995",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -4017,35 +4017,35 @@
       "head_seam": [
         [
           0,
-          110
+          102
         ],
         [
-          35,
-          110
+          40,
+          102
         ],
         [
           48,
-          115
+          110
         ],
         [
           57,
-          123
+          114
         ],
         [
           73,
-          123
+          114
         ],
         [
           85,
-          115
+          110
         ],
         [
           95,
-          110
+          102
         ],
         [
           114,
-          110
+          102
         ]
       ],
       "neck_guard": [
@@ -4053,7 +4053,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_xiaojie",
@@ -4092,14 +4092,14 @@
         {
           "id": "afeix_p04_xiaojie_corpse_head",
           "img": "sprites\\afeix_p04_xiaojie_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -4141,19 +4141,19 @@
         0,
         255
       ],
-      "live_png_sha256": "824906738e64bba50b33cb452447151940056815b99282731faff6292a9025f5",
-      "head_png_sha256": "6dce503ae975644c1036bba2cc67f7c47f8e0931137f55974af8b91c4ad6f4bd",
+      "live_png_sha256": "0b9abf97acfda33fc1853740d8ed1da6a8a61d2013a993cdee884916fe9b5665",
+      "head_png_sha256": "e6753b0c9e2cbb3c1bb42fdd8f3afe24eaa0bdbdb0c48580279c77d6f76e4816",
       "dead_png_sha256": "59d0216597465510078f3b8fc081ee4bd093e9628b3cc8454ae521b2886dfd47",
-      "corpse_head_png_sha256": "6dce503ae975644c1036bba2cc67f7c47f8e0931137f55974af8b91c4ad6f4bd",
+      "corpse_head_png_sha256": "fcf91aa03a5c1e906036de3f0ef0633b1a891eb2f932e9996521eefb46410b29",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -4163,35 +4163,35 @@
       "head_seam": [
         [
           0,
-          109
+          102
         ],
         [
-          35,
-          109
+          40,
+          102
         ],
         [
           48,
-          114
+          109
         ],
         [
           57,
-          122
-        ],
-        [
-          73,
-          122
-        ],
-        [
-          85,
           114
         ],
         [
-          95,
+          73,
+          114
+        ],
+        [
+          85,
           109
         ],
         [
+          95,
+          102
+        ],
+        [
           114,
-          109
+          102
         ]
       ],
       "neck_guard": [
@@ -4199,7 +4199,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_bula",
@@ -4238,14 +4238,14 @@
         {
           "id": "afeix_p04_bula_corpse_head",
           "img": "sprites\\afeix_p04_bula_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -4287,19 +4287,19 @@
         0,
         255
       ],
-      "live_png_sha256": "07e0594466dfe7df03a2bbbf57df272d57eec8fd8dc5e75701f2c582725d0ae2",
-      "head_png_sha256": "6b8bfab16db9894903c7839f7662e0aee62f3eb7fa96dbef966ed8511d14b48f",
+      "live_png_sha256": "6d16dc07d3de5d5626844b6749d4286961c0be925c54fe823f017f357ea82d48",
+      "head_png_sha256": "ef417f2c75c614694a894575613b49e0cddbeca22a91cbbe4db57734c924e5a0",
       "dead_png_sha256": "c1de8ddbf55d497cb0e772309ccc53f9dc80fda978c4478fbe785871ac0a1fb9",
-      "corpse_head_png_sha256": "6b8bfab16db9894903c7839f7662e0aee62f3eb7fa96dbef966ed8511d14b48f",
+      "corpse_head_png_sha256": "117bffa0545a81693d223abe95eb821f458c56a5fac2bea691a3fe0f0825d158",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -4309,35 +4309,35 @@
       "head_seam": [
         [
           0,
-          107
+          102
         ],
         [
-          35,
-          107
+          40,
+          102
         ],
         [
           48,
-          112
+          107
         ],
         [
           57,
-          120
+          114
         ],
         [
           73,
-          120
+          114
         ],
         [
           85,
-          112
+          107
         ],
         [
           95,
-          107
+          102
         ],
         [
           114,
-          107
+          102
         ]
       ],
       "neck_guard": [
@@ -4345,7 +4345,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_suwa",
@@ -4384,14 +4384,14 @@
         {
           "id": "afeix_p04_suwa_corpse_head",
           "img": "sprites\\afeix_p04_suwa_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -4433,19 +4433,19 @@
         0,
         255
       ],
-      "live_png_sha256": "e3bb0566416584bd1cbb64744337c7130f7a92a2522c1ba32f4b14a9442184a8",
-      "head_png_sha256": "d65aad4db1d003061341d76f0def82ed438c3cd72935fbae767441160dd8eecd",
+      "live_png_sha256": "502f1bdc40a88ddde64e1e532f67e777610f1e5668d8f832cb2516d00bada391",
+      "head_png_sha256": "802cb2b7cfdbefb13b2d81823eef45c0cb2ebb2597a77f4e950eac8b3d173db8",
       "dead_png_sha256": "abadf7ce03c28dd1688d16e651c1ab04db2e35638b1eee0fc0210984284a4441",
-      "corpse_head_png_sha256": "d65aad4db1d003061341d76f0def82ed438c3cd72935fbae767441160dd8eecd",
+      "corpse_head_png_sha256": "69feaccfa10a9814daad8a2cffd7340ad14061000cf3d5e907480bb880978d7d",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -4455,35 +4455,35 @@
       "head_seam": [
         [
           0,
-          109
+          102
         ],
         [
-          35,
-          109
+          40,
+          102
         ],
         [
           48,
-          114
+          109
         ],
         [
           57,
-          121
-        ],
-        [
-          73,
-          121
-        ],
-        [
-          85,
           114
         ],
         [
-          95,
+          73,
+          114
+        ],
+        [
+          85,
           109
         ],
         [
+          95,
+          102
+        ],
+        [
           114,
-          109
+          102
         ]
       ],
       "neck_guard": [
@@ -4491,7 +4491,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_qianhan",
@@ -4530,14 +4530,14 @@
         {
           "id": "afeix_p04_qianhan_corpse_head",
           "img": "sprites\\afeix_p04_qianhan_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -4579,19 +4579,19 @@
         0,
         255
       ],
-      "live_png_sha256": "e455b4be393d51aea08950fbf224a77962bd80321db28e3d4fb32f6c56ea071f",
-      "head_png_sha256": "16ed33a689d3b4250398021146432d464bbfac2c3b41b1b68945a23fc00989ca",
+      "live_png_sha256": "016925eddfdbbb2af0fa7d0c2cb76b652512f4e57010b139e4ceefede049570a",
+      "head_png_sha256": "12dcce1b57dfb309a2b5a8f6a7a8555ccc9edcad316da43f9bd2d4972f2a083a",
       "dead_png_sha256": "e64ff4562bd651363f191a28f2e6420207ff7ca7e0bc21828b17b63ad24b08ad",
-      "corpse_head_png_sha256": "16ed33a689d3b4250398021146432d464bbfac2c3b41b1b68945a23fc00989ca",
+      "corpse_head_png_sha256": "4d8a0364286be47adaf593cae6159936cd2906ab514747e85beb26f9c181e7a9",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -4601,35 +4601,35 @@
       "head_seam": [
         [
           0,
-          107
+          102
         ],
         [
-          35,
-          107
+          40,
+          102
         ],
         [
           48,
-          112
+          107
         ],
         [
           57,
-          121
+          114
         ],
         [
           73,
-          121
+          114
         ],
         [
           85,
-          112
+          107
         ],
         [
           95,
-          107
+          102
         ],
         [
           114,
-          107
+          102
         ]
       ],
       "neck_guard": [
@@ -4637,7 +4637,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_wangdazhi",
@@ -4676,14 +4676,14 @@
         {
           "id": "afeix_p04_wangdazhi_corpse_head",
           "img": "sprites\\afeix_p04_wangdazhi_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -4725,19 +4725,19 @@
         0,
         255
       ],
-      "live_png_sha256": "16069a0f318abb69eee06f1356ec09c6ca6cdd186a29f5e74f29b38551223fa8",
-      "head_png_sha256": "162127251165933d6164005fc6f39512104aa9e7f898de551df094323028327d",
+      "live_png_sha256": "efb596c6c4661b4d33405a04da0633e6298147c4a9962803445f99144e49e069",
+      "head_png_sha256": "eb04a9963d4183a1d3bbce43fa59d406f33f36768399501940b518310bbb24ea",
       "dead_png_sha256": "8ff3b5463ac203726876ee593d6ae69227988b4a961f1f50161e0b386a935a01",
-      "corpse_head_png_sha256": "162127251165933d6164005fc6f39512104aa9e7f898de551df094323028327d",
+      "corpse_head_png_sha256": "0375b8ae79810a016c15d36612604d0b629b744aa3e86e35539e20db087601fa",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -4747,35 +4747,35 @@
       "head_seam": [
         [
           0,
-          107
+          102
         ],
         [
-          35,
-          107
+          40,
+          102
         ],
         [
           48,
-          112
+          107
         ],
         [
           57,
-          118
+          114
         ],
         [
           73,
-          118
+          114
         ],
         [
           85,
-          112
+          107
         ],
         [
           95,
-          107
+          102
         ],
         [
           114,
-          107
+          102
         ]
       ],
       "neck_guard": [
@@ -4783,7 +4783,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_yaoyaoya",
@@ -4822,14 +4822,14 @@
         {
           "id": "afeix_p04_yaoyaoya_corpse_head",
           "img": "sprites\\afeix_p04_yaoyaoya_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "按用户要求将露肩裹胸改为遮住双肩、胸口和上臂的米白色素衣；保留黑长发、面容、朝右姿态及原画风。"
@@ -4871,19 +4871,19 @@
         0,
         255
       ],
-      "live_png_sha256": "1e296fb1051045261eea3b27acbc77e2c8c6e1dad7196cff161030bc21e98c01",
-      "head_png_sha256": "48216233b6ebe69c93d315232120b6a2de14a265115352664f7d4de260fce43a",
+      "live_png_sha256": "13128ef5fe2837328a2f860daa67b38ebda50c5b90138aca6fec8b748fd5f187",
+      "head_png_sha256": "b79cb6df75ffd52bf6fbca9ea18c892d37ea44f85a6879414a6295106721ea12",
       "dead_png_sha256": "fa05093ff5d8e9f6dc712414e57877d8c5f5bf80fded026d02d0aaffaeb4416f",
-      "corpse_head_png_sha256": "48216233b6ebe69c93d315232120b6a2de14a265115352664f7d4de260fce43a",
+      "corpse_head_png_sha256": "fefff7aeb05168888288eeadabf69833499c26749ecae2325c6404f13123672f",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -4893,35 +4893,35 @@
       "head_seam": [
         [
           0,
-          108
+          102
         ],
         [
-          35,
-          108
+          40,
+          102
         ],
         [
           48,
-          113
+          108
         ],
         [
           57,
-          121
+          114
         ],
         [
           73,
-          121
+          114
         ],
         [
           85,
-          113
+          108
         ],
         [
           95,
-          108
+          102
         ],
         [
           114,
-          108
+          102
         ]
       ],
       "neck_guard": [
@@ -4929,7 +4929,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_yangmiemie",
@@ -4968,14 +4968,14 @@
         {
           "id": "afeix_p04_yangmiemie_corpse_head",
           "img": "sprites\\afeix_p04_yangmiemie_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -5017,19 +5017,19 @@
         0,
         255
       ],
-      "live_png_sha256": "ee773bfa909c293859097391669d17443d47332f6614e89ebbbc562937d6f49d",
-      "head_png_sha256": "45adac94eccbdd5cff1c4cec3fc9ca9cb5959b0f476b045ea9499ed84e0f0dd5",
+      "live_png_sha256": "f6b13045375b4b4383e6a4d0bdccdc316c7c4ac4a9ca135d08d1c4b8dd461b7a",
+      "head_png_sha256": "60b481cb4bf48a737663511239982e2b2c244480fa4d37623d7f50dc538b235b",
       "dead_png_sha256": "7aff8793ea379a6e9e3d57067db0723ec053530b6db3e3342d6d7ac9f3f82ded",
-      "corpse_head_png_sha256": "45adac94eccbdd5cff1c4cec3fc9ca9cb5959b0f476b045ea9499ed84e0f0dd5",
+      "corpse_head_png_sha256": "10c17d19ef5684a997387824fff49de6f9e952510e5c8601e4f208ad8228d083",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -5039,35 +5039,35 @@
       "head_seam": [
         [
           0,
-          109
+          102
         ],
         [
-          35,
-          109
+          40,
+          102
         ],
         [
           48,
-          114
+          109
         ],
         [
           57,
-          121
-        ],
-        [
-          73,
-          121
-        ],
-        [
-          85,
           114
         ],
         [
-          95,
+          73,
+          114
+        ],
+        [
+          85,
           109
         ],
         [
+          95,
+          102
+        ],
+        [
           114,
-          109
+          102
         ]
       ],
       "neck_guard": [
@@ -5075,7 +5075,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_songnuanyang",
@@ -5114,14 +5114,14 @@
         {
           "id": "afeix_p04_songnuanyang_corpse_head",
           "img": "sprites\\afeix_p04_songnuanyang_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "保留既有脸型、发型与衣装，头部、胸肩和视线统一朝画面右侧；实机验收范围见朝向测试记录。"
@@ -5163,19 +5163,19 @@
         0,
         255
       ],
-      "live_png_sha256": "31172a1bef09b0c22370274e071da1f425538a090d491e0898394b437553bd34",
-      "head_png_sha256": "2c541709ff17f6e87de90001e70d2225c05bfed7ac4c793acdc1bf84db2fb4f2",
+      "live_png_sha256": "14bd44434b31c87801e0c397adb1ca9a96f1ca0cb34276d84d5f5bb759fa9738",
+      "head_png_sha256": "ffe20b7ced34358fa75793c6da6f8e760c5002692f09ea8fa61184a40a31ea23",
       "dead_png_sha256": "365b9e21fb716cf250198863f5e7a4395340f3181a1ed27ec72f994227e6124b",
-      "corpse_head_png_sha256": "2c541709ff17f6e87de90001e70d2225c05bfed7ac4c793acdc1bf84db2fb4f2",
+      "corpse_head_png_sha256": "705b384f1966634665c47de5d5bce384f8d84685bf21746c330b7ff260918db7",
       "corpse_head_geometry": {
-        "left": -68,
-        "right": 46,
-        "top": -32,
-        "bottom": 110,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         68,
@@ -5185,35 +5185,35 @@
       "head_seam": [
         [
           0,
-          108
+          102
         ],
         [
-          35,
-          108
+          40,
+          102
         ],
         [
           48,
-          113
+          108
         ],
         [
           57,
-          123
+          114
         ],
         [
           73,
-          123
+          114
         ],
         [
           85,
-          113
+          108
         ],
         [
           95,
-          108
+          102
         ],
         [
           114,
-          108
+          102
         ]
       ],
       "neck_guard": [
@@ -5221,7 +5221,7 @@
         110
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_xiaogui",
@@ -5260,14 +5260,14 @@
         {
           "id": "afeix_p04_xiaogui_corpse_head",
           "img": "sprites\\afeix_p04_xiaogui_corpse_head.png",
-          "left": "-68",
-          "right": "46",
-          "top": "-32",
-          "bottom": "110",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
       "review_note": "按两张用户吉祥物图及明确要求重绘：保留醒目亮粉蝴蝶结，提亮浅苹果绿皮肤和奶黄色腹甲，圆脸笑容、绿色斑纹、粉色爪印。朝右，保留龟壳和皮带；不加入直播设备与球队元素。蝴蝶结在游戏尺寸可辨认；全罩头盔右缘仍有龟脸外露，尚未实机验收。"
@@ -5999,9 +5999,9 @@
       }
     ],
     "brush": "package/brushes/afeix_portraits_v04.brush",
-    "brush_sha256": "e4d0c529354ee241d75a679f238be6df2405bd0161a2cc13bf85804247d1bc87",
+    "brush_sha256": "33ea703aa6f466ea7cf7a02c4ddb0244a92f0d4b8c3971d49ad0fa67895d8953",
     "atlas": "package/gfx/afeix_portraits_v04.png",
-    "atlas_sha256": "4a75c38dd8e5a64ae97f4f30b4237aabd2991e8e6ca3c8c6024fa687290dba97",
+    "atlas_sha256": "8d17a755383a288ca128f36eeac7343e147fd552c11feb13b6bf6707e838264c",
     "pack_log": "Loading images...\nsprites\\afeix_p04_afei_normal.png\nsprites\\afeix_p04_afei_normal_head.png\nsprites\\afeix_p04_afei_normal_dead.png\nsprites\\afeix_p04_afei_normal_corpse_head.png\nsprites\\afeix_p04_afei_toad.png\nsprites\\afeix_p04_afei_toad_head.png\nsprites\\afeix_p04_afei_toad_dead.png\nsprites\\afeix_p04_afei_toad_corpse_head.png\nsprites\\afeix_p04_afei_jiahao.png\nsprites\\afeix_p04_afei_jiahao_head.png\nsprites\\afeix_p04_afei_jiahao_dead.png\nsprites\\afeix_p04_afei_jiahao_corpse_head.png\nsprites\\afeix_p04_damou.png\nsprites\\afeix_p04_damou_head.png\nsprites\\afeix_p04_damou_dead.png\nsprites\\afeix_p04_damou_corpse_head.png\nsprites\\afeix_p04_mocha.png\nsprites\\afeix_p04_mocha_head.png\nsprites\\afeix_p04_mocha_dead.png\nsprites\\afeix_p04_mocha_corpse_head.png\nsprites\\afeix_p04_bottle.png\nsprites\\afeix_p04_bottle_head.png\nsprites\\afeix_p04_bottle_dead.png\nsprites\\afeix_p04_bottle_corpse_head.png\nsprites\\afeix_p04_shuaizi.png\nsprites\\afeix_p04_shuaizi_head.png\nsprites\\afeix_p04_shuaizi_dead.png\nsprites\\afeix_p04_shuaizi_corpse_head.png\nsprites\\afeix_p04_lili.png\nsprites\\afeix_p04_lili_head.png\nsprites\\afeix_p04_lili_dead.png\nsprites\\afeix_p04_lili_corpse_head.png\nsprites\\afeix_p04_xiaoyueya.png\nsprites\\afeix_p04_xiaoyueya_head.png\nsprites\\afeix_p04_xiaoyueya_dead.png\nsprites\\afeix_p04_xiaoyueya_corpse_head.png\nsprites\\afeix_p04_yuchujiu.png\nsprites\\afeix_p04_yuchujiu_head.png\nsprites\\afeix_p04_yuchujiu_dead.png\nsprites\\afeix_p04_yuchujiu_corpse_head.png\nsprites\\afeix_p04_xiaoyubeike.png\nsprites\\afeix_p04_xiaoyubeike_head.png\nsprites\\afeix_p04_xiaoyubeike_dead.png\nsprites\\afeix_p04_xiaoyubeike_corpse_head.png\nsprites\\afeix_p04_wangduidui.png\nsprites\\afeix_p04_wangduidui_head.png\nsprites\\afeix_p04_wangduidui_dead.png\nsprites\\afeix_p04_wangduidui_corpse_head.png\nsprites\\afeix_p04_laocai.png\nsprites\\afeix_p04_laocai_head.png\nsprites\\afeix_p04_laocai_dead.png\nsprites\\afeix_p04_laocai_corpse_head.png\nsprites\\afeix_p04_yanzi.png\nsprites\\afeix_p04_yanzi_head.png\nsprites\\afeix_p04_yanzi_dead.png\nsprites\\afeix_p04_yanzi_corpse_head.png\nsprites\\afeix_p04_tiantong.png\nsprites\\afeix_p04_tiantong_head.png\nsprites\\afeix_p04_tiantong_dead.png\nsprites\\afeix_p04_tiantong_corpse_head.png\nsprites\\afeix_p04_xiaoning.png\nsprites\\afeix_p04_xiaoning_head.png\nsprites\\afeix_p04_xiaoning_dead.png\nsprites\\afeix_p04_xiaoning_corpse_head.png\nsprites\\afeix_p04_xiaopangxu.png\nsprites\\afeix_p04_xiaopangxu_head.png\nsprites\\afeix_p04_xiaopangxu_dead.png\nsprites\\afeix_p04_xiaopangxu_corpse_head.png\nsprites\\afeix_p04_dae.png\nsprites\\afeix_p04_dae_head.png\nsprites\\afeix_p04_dae_dead.png\nsprites\\afeix_p04_dae_corpse_head.png\nsprites\\afeix_p04_manyuemei.png\nsprites\\afeix_p04_manyuemei_head.png\nsprites\\afeix_p04_manyuemei_dead.png\nsprites\\afeix_p04_manyuemei_corpse_head.png\nsprites\\afeix_p04_xiaohani.png\nsprites\\afeix_p04_xiaohani_head.png\nsprites\\afeix_p04_xiaohani_dead.png\nsprites\\afeix_p04_xiaohani_corpse_head.png\nsprites\\afeix_p04_keke.png\nsprites\\afeix_p04_keke_head.png\nsprites\\afeix_p04_keke_dead.png\nsprites\\afeix_p04_keke_corpse_head.png\nsprites\\afeix_p04_yuxiang.png\nsprites\\afeix_p04_yuxiang_head.png\nsprites\\afeix_p04_yuxiang_dead.png\nsprites\\afeix_p04_yuxiang_corpse_head.png\nsprites\\afeix_p04_tongzhu.png\nsprites\\afeix_p04_tongzhu_head.png\nsprites\\afeix_p04_tongzhu_dead.png\nsprites\\afeix_p04_tongzhu_corpse_head.png\nsprites\\afeix_p04_meiya.png\nsprites\\afeix_p04_meiya_head.png\nsprites\\afeix_p04_meiya_dead.png\nsprites\\afeix_p04_meiya_corpse_head.png\nsprites\\afeix_p04_wanshe.png\nsprites\\afeix_p04_wanshe_head.png\nsprites\\afeix_p04_wanshe_dead.png\nsprites\\afeix_p04_wanshe_corpse_head.png\nsprites\\afeix_p04_tutu.png\nsprites\\afeix_p04_tutu_head.png\nsprites\\afeix_p04_tutu_dead.png\nsprites\\afeix_p04_tutu_corpse_head.png\nsprites\\afeix_p04_naigai.png\nsprites\\afeix_p04_naigai_head.png\nsprites\\afeix_p04_naigai_dead.png\nsprites\\afeix_p04_naigai_corpse_head.png\nsprites\\afeix_p04_xiaojie.png\nsprites\\afeix_p04_xiaojie_head.png\nsprites\\afeix_p04_xiaojie_dead.png\nsprites\\afeix_p04_xiaojie_corpse_head.png\nsprites\\afeix_p04_bula.png\nsprites\\afeix_p04_bula_head.png\nsprites\\afeix_p04_bula_dead.png\nsprites\\afeix_p04_bula_corpse_head.png\nsprites\\afeix_p04_suwa.png\nsprites\\afeix_p04_suwa_head.png\nsprites\\afeix_p04_suwa_dead.png\nsprites\\afeix_p04_suwa_corpse_head.png\nsprites\\afeix_p04_qianhan.png\nsprites\\afeix_p04_qianhan_head.png\nsprites\\afeix_p04_qianhan_dead.png\nsprites\\afeix_p04_qianhan_corpse_head.png\nsprites\\afeix_p04_wangdazhi.png\nsprites\\afeix_p04_wangdazhi_head.png\nsprites\\afeix_p04_wangdazhi_dead.png\nsprites\\afeix_p04_wangdazhi_corpse_head.png\nsprites\\afeix_p04_yaoyaoya.png\nsprites\\afeix_p04_yaoyaoya_head.png\nsprites\\afeix_p04_yaoyaoya_dead.png\nsprites\\afeix_p04_yaoyaoya_corpse_head.png\nsprites\\afeix_p04_yangmiemie.png\nsprites\\afeix_p04_yangmiemie_head.png\nsprites\\afeix_p04_yangmiemie_dead.png\nsprites\\afeix_p04_yangmiemie_corpse_head.png\nsprites\\afeix_p04_songnuanyang.png\nsprites\\afeix_p04_songnuanyang_head.png\nsprites\\afeix_p04_songnuanyang_dead.png\nsprites\\afeix_p04_songnuanyang_corpse_head.png\nsprites\\afeix_p04_xiaogui.png\nsprites\\afeix_p04_xiaogui_head.png\nsprites\\afeix_p04_xiaogui_dead.png\nsprites\\afeix_p04_xiaogui_corpse_head.png\nPacking rectangles...\nWriting gfx/afeix_portraits_v04.png (2048x2048)...\n",
     "unpack_log": "Opening gfx/afeix_portraits_v04.png...\nsprites\\afeix_p04_afei_normal.png\nsprites\\afeix_p04_afei_normal_head.png\nsprites\\afeix_p04_afei_normal_dead.png\nsprites\\afeix_p04_afei_normal_corpse_head.png\nsprites\\afeix_p04_afei_toad.png\nsprites\\afeix_p04_afei_toad_head.png\nsprites\\afeix_p04_afei_toad_dead.png\nsprites\\afeix_p04_afei_toad_corpse_head.png\nsprites\\afeix_p04_afei_jiahao.png\nsprites\\afeix_p04_afei_jiahao_head.png\nsprites\\afeix_p04_afei_jiahao_dead.png\nsprites\\afeix_p04_afei_jiahao_corpse_head.png\nsprites\\afeix_p04_damou.png\nsprites\\afeix_p04_damou_head.png\nsprites\\afeix_p04_damou_dead.png\nsprites\\afeix_p04_damou_corpse_head.png\nsprites\\afeix_p04_mocha.png\nsprites\\afeix_p04_mocha_head.png\nsprites\\afeix_p04_mocha_dead.png\nsprites\\afeix_p04_mocha_corpse_head.png\nsprites\\afeix_p04_bottle.png\nsprites\\afeix_p04_bottle_head.png\nsprites\\afeix_p04_bottle_dead.png\nsprites\\afeix_p04_bottle_corpse_head.png\nsprites\\afeix_p04_shuaizi.png\nsprites\\afeix_p04_shuaizi_head.png\nsprites\\afeix_p04_shuaizi_dead.png\nsprites\\afeix_p04_shuaizi_corpse_head.png\nsprites\\afeix_p04_lili.png\nsprites\\afeix_p04_lili_head.png\nsprites\\afeix_p04_lili_dead.png\nsprites\\afeix_p04_lili_corpse_head.png\nsprites\\afeix_p04_xiaoyueya.png\nsprites\\afeix_p04_xiaoyueya_head.png\nsprites\\afeix_p04_xiaoyueya_dead.png\nsprites\\afeix_p04_xiaoyueya_corpse_head.png\nsprites\\afeix_p04_yuchujiu.png\nsprites\\afeix_p04_yuchujiu_head.png\nsprites\\afeix_p04_yuchujiu_dead.png\nsprites\\afeix_p04_yuchujiu_corpse_head.png\nsprites\\afeix_p04_xiaoyubeike.png\nsprites\\afeix_p04_xiaoyubeike_head.png\nsprites\\afeix_p04_xiaoyubeike_dead.png\nsprites\\afeix_p04_xiaoyubeike_corpse_head.png\nsprites\\afeix_p04_wangduidui.png\nsprites\\afeix_p04_wangduidui_head.png\nsprites\\afeix_p04_wangduidui_dead.png\nsprites\\afeix_p04_wangduidui_corpse_head.png\nsprites\\afeix_p04_laocai.png\nsprites\\afeix_p04_laocai_head.png\nsprites\\afeix_p04_laocai_dead.png\nsprites\\afeix_p04_laocai_corpse_head.png\nsprites\\afeix_p04_yanzi.png\nsprites\\afeix_p04_yanzi_head.png\nsprites\\afeix_p04_yanzi_dead.png\nsprites\\afeix_p04_yanzi_corpse_head.png\nsprites\\afeix_p04_tiantong.png\nsprites\\afeix_p04_tiantong_head.png\nsprites\\afeix_p04_tiantong_dead.png\nsprites\\afeix_p04_tiantong_corpse_head.png\nsprites\\afeix_p04_xiaoning.png\nsprites\\afeix_p04_xiaoning_head.png\nsprites\\afeix_p04_xiaoning_dead.png\nsprites\\afeix_p04_xiaoning_corpse_head.png\nsprites\\afeix_p04_xiaopangxu.png\nsprites\\afeix_p04_xiaopangxu_head.png\nsprites\\afeix_p04_xiaopangxu_dead.png\nsprites\\afeix_p04_xiaopangxu_corpse_head.png\nsprites\\afeix_p04_dae.png\nsprites\\afeix_p04_dae_head.png\nsprites\\afeix_p04_dae_dead.png\nsprites\\afeix_p04_dae_corpse_head.png\nsprites\\afeix_p04_manyuemei.png\nsprites\\afeix_p04_manyuemei_head.png\nsprites\\afeix_p04_manyuemei_dead.png\nsprites\\afeix_p04_manyuemei_corpse_head.png\nsprites\\afeix_p04_xiaohani.png\nsprites\\afeix_p04_xiaohani_head.png\nsprites\\afeix_p04_xiaohani_dead.png\nsprites\\afeix_p04_xiaohani_corpse_head.png\nsprites\\afeix_p04_keke.png\nsprites\\afeix_p04_keke_head.png\nsprites\\afeix_p04_keke_dead.png\nsprites\\afeix_p04_keke_corpse_head.png\nsprites\\afeix_p04_yuxiang.png\nsprites\\afeix_p04_yuxiang_head.png\nsprites\\afeix_p04_yuxiang_dead.png\nsprites\\afeix_p04_yuxiang_corpse_head.png\nsprites\\afeix_p04_tongzhu.png\nsprites\\afeix_p04_tongzhu_head.png\nsprites\\afeix_p04_tongzhu_dead.png\nsprites\\afeix_p04_tongzhu_corpse_head.png\nsprites\\afeix_p04_meiya.png\nsprites\\afeix_p04_meiya_head.png\nsprites\\afeix_p04_meiya_dead.png\nsprites\\afeix_p04_meiya_corpse_head.png\nsprites\\afeix_p04_wanshe.png\nsprites\\afeix_p04_wanshe_head.png\nsprites\\afeix_p04_wanshe_dead.png\nsprites\\afeix_p04_wanshe_corpse_head.png\nsprites\\afeix_p04_tutu.png\nsprites\\afeix_p04_tutu_head.png\nsprites\\afeix_p04_tutu_dead.png\nsprites\\afeix_p04_tutu_corpse_head.png\nsprites\\afeix_p04_naigai.png\nsprites\\afeix_p04_naigai_head.png\nsprites\\afeix_p04_naigai_dead.png\nsprites\\afeix_p04_naigai_corpse_head.png\nsprites\\afeix_p04_xiaojie.png\nsprites\\afeix_p04_xiaojie_head.png\nsprites\\afeix_p04_xiaojie_dead.png\nsprites\\afeix_p04_xiaojie_corpse_head.png\nsprites\\afeix_p04_bula.png\nsprites\\afeix_p04_bula_head.png\nsprites\\afeix_p04_bula_dead.png\nsprites\\afeix_p04_bula_corpse_head.png\nsprites\\afeix_p04_suwa.png\nsprites\\afeix_p04_suwa_head.png\nsprites\\afeix_p04_suwa_dead.png\nsprites\\afeix_p04_suwa_corpse_head.png\nsprites\\afeix_p04_qianhan.png\nsprites\\afeix_p04_qianhan_head.png\nsprites\\afeix_p04_qianhan_dead.png\nsprites\\afeix_p04_qianhan_corpse_head.png\nsprites\\afeix_p04_wangdazhi.png\nsprites\\afeix_p04_wangdazhi_head.png\nsprites\\afeix_p04_wangdazhi_dead.png\nsprites\\afeix_p04_wangdazhi_corpse_head.png\nsprites\\afeix_p04_yaoyaoya.png\nsprites\\afeix_p04_yaoyaoya_head.png\nsprites\\afeix_p04_yaoyaoya_dead.png\nsprites\\afeix_p04_yaoyaoya_corpse_head.png\nsprites\\afeix_p04_yangmiemie.png\nsprites\\afeix_p04_yangmiemie_head.png\nsprites\\afeix_p04_yangmiemie_dead.png\nsprites\\afeix_p04_yangmiemie_corpse_head.png\nsprites\\afeix_p04_songnuanyang.png\nsprites\\afeix_p04_songnuanyang_head.png\nsprites\\afeix_p04_songnuanyang_dead.png\nsprites\\afeix_p04_songnuanyang_corpse_head.png\nsprites\\afeix_p04_xiaogui.png\nsprites\\afeix_p04_xiaogui_head.png\nsprites\\afeix_p04_xiaogui_dead.png\nsprites\\afeix_p04_xiaogui_corpse_head.png\n",
     "temporary_files_retained": false
@@ -6012,6 +6012,7 @@
     "contact_2x": "build/contact-sheet-2x.png",
     "afei_forms": {
       "toad_appearance": "normal human alias",
+      "jiahao_appearance": "normal human alias",
       "feidie_decoration": "removed",
       "promotion_gameplay": "unchanged",
       "in_game_tested": false
@@ -6052,7 +6053,7 @@
   },
   "limitations": [
     "Custom busts fit 88x100; native armor, helmets, weapon and shield sprites overlay the base.",
-    "Body/head reconstruct the portrait; _dead is retained for compatibility and _corpse_head reuses exact head pixels with an anatomical neck pivot.",
+    "Body/head reconstruct the portrait; _dead is retained for compatibility and _corpse_head bakes a neck-pivoted prone pose for tile and UI rendering.",
     "There are no generated injury states, dismemberment drawings or native face/hair/armor pixels.",
     "Alpha bounds and atlas roundtrip are technical checks, not an assertion of style or likeness acceptance.",
     "Old source images may include props or earlier art direction; consult each review_note before acceptance."

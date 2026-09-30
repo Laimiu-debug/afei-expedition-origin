@@ -83,7 +83,7 @@ def verify_sprite(decoded, path, metadata):
 
 
 def validate_custom_art():
-    from build_portrait_art import read_manifest, LIVE_RECT, DEAD_RECT, BASE
+    from build_portrait_art import read_manifest, LIVE_RECT, DEAD_RECT, CORPSE_RECT, prone_head, BASE
     from build_keepsake_art import validate_icons
     from build_member_skill_art import validate_icons as validate_member_icons
     from build_ideas_art import validate_art as validate_ideas_art
@@ -111,6 +111,12 @@ def validate_custom_art():
         raise ValueError('Portrait report does not cover the 36 required visual forms')
     expected_ids = {entry['brush'] + suffix for entry in ready for suffix in ('', '_head', '_dead', '_corpse_head')}
     portrait = verify_custom_atlas(portrait_base, 'afeix_portraits_v04', report, expected_ids)
+    for form in ('toad', 'jiahao'):
+        for suffix in ('', '_head', '_dead', '_corpse_head'):
+            alias = portrait_base / 'sprites' / ('afeix_p04_afei_' + form + suffix + '.png')
+            normal = portrait_base / 'sprites' / ('afeix_p04_afei_normal' + suffix + '.png')
+            if file_hash(alias) != file_hash(normal):
+                raise ValueError('Legacy Afei brush aliases must use the single normal portrait: ' + alias.name)
     for entry in ready:
         record = by_brush[entry['brush']]
         if record.get('source') != entry['source'] or record.get('source_sha256') != entry['source_sha256']:
@@ -125,20 +131,56 @@ def validate_custom_art():
                 raise ValueError(f'Portrait export fingerprint differs: {identity}')
             verify_sprite(portrait['sprites'][identity], exported, geometry)
         corpse_head = portrait_base / 'sprites' / (entry['brush'] + '_corpse_head.png')
-        if file_hash(corpse_head) != record['head_png_sha256'] or record['corpse_head_png_sha256'] != file_hash(corpse_head):
-            raise ValueError('Corpse head must preserve the current reviewed head pixels')
+        if record['corpse_head_png_sha256'] != file_hash(corpse_head):
+            raise ValueError('Corpse head fingerprint differs')
         cx, cy = entry['neck_guard']
-        expected_pivot = {'left': -cx, 'right': 114-cx, 'top': cy-142, 'bottom': cy,
-                          'width': 114, 'height': 142, 'offsetX': 0, 'offsetY': 0}
+        expected_pivot = CORPSE_RECT
         if record.get('corpse_neck_anchor') != [cx, cy] or record['corpse_head_geometry'] != expected_pivot:
             raise ValueError('Corpse head must attach at the reviewed neck, not the alpha centre')
         verify_sprite(portrait['sprites'][entry['brush'] + '_corpse_head'], corpse_head, record['corpse_head_geometry'])
         with Image.open(portrait_base / 'sprites' / (entry['brush'] + '.png')) as body, Image.open(portrait_base / 'sprites' / (entry['brush'] + '_head.png')) as head, Image.open(portrait_base / 'sprites' / (entry['brush'] + '_dead.png')) as full:
+            with Image.open(corpse_head) as fallen:
+                if fallen.tobytes() != prone_head(head.convert('RGBA'), entry).tobytes():
+                    raise ValueError(f"Corpse pose does not match the reviewed head: {entry['brush']}")
             if Image.alpha_composite(body.convert('RGBA'), head.convert('RGBA')).tobytes() != full.convert('RGBA').tobytes():
                 raise ValueError(f"Body/head partition lost pixels: {entry['brush']}")
             point = tuple(entry['neck_guard'])
             if head.getpixel(point) != full.getpixel(point) or head.getpixel(point)[3] < 200:
                 raise ValueError(f"Armor would hide the reviewed neck: {entry['brush']}")
+
+    from build_corpse_injury_art import BASE as wound_base, ATLAS as wound_atlas, DLC_BASE as dlc_wound_base, DLC_ATLAS as dlc_wound_atlas, entries as wound_entries, native_layers, wounded_head, SUFFIXES
+    selected = wound_entries()
+    wound_ids = {entry['brush'] + suffix for entry, _ in selected for suffix in SUFFIXES}
+    overlays, native_sources = native_layers()
+    records, packed_sprites = {}, {}
+    for optional, base, atlas, root in [(False, wound_base, wound_atlas, ROOT),
+            (True, dlc_wound_base, dlc_wound_atlas, ROOT / 'dlc/xiwen-regen')]:
+        report = json.loads((base / 'build/report.json').read_text(encoding='utf-8'))
+        ids = {entry['brush'] + suffix for entry, _ in selected
+               if (entry['key'] == 'xiwen') == optional for suffix in SUFFIXES}
+        pack = verify_custom_atlas(base, atlas, report, ids, root=root,
+                                  bbrusher=ROOT / '.cache/afei-art/bbros-modkit-v9/bin/bbrusher.exe')
+        if report['native_sources'] != native_sources:
+            raise ValueError('Native wound brush inputs changed; rebuild corpse injuries')
+        records.update({r['id']: r for r in report['records']})
+        packed_sprites.update(pack['sprites'])
+    if set(records) != wound_ids or len(wound_ids) != 105:
+        raise ValueError('Corpse wound atlas must cover 35 heads and all three living wound states')
+    for entry, original in selected:
+        source = original / (entry['brush'] + '_head.png')
+        with Image.open(source) as image:
+            head = image.convert('RGBA')
+        for level, suffix in enumerate(SUFFIXES):
+            identity = entry['brush'] + suffix
+            base = dlc_wound_base if entry['key'] == 'xiwen' else wound_base
+            path = base / 'sprites' / (identity + '.png')
+            if records[identity]['head_source_sha256'] != file_hash(source) or records[identity]['png_sha256'] != file_hash(path):
+                raise ValueError('Stale corpse wound sprite: ' + identity)
+            verify_sprite(packed_sprites[identity], path, CORPSE_RECT)
+            with Image.open(path) as exported:
+                expected = prone_head(wounded_head(head, overlays, level), entry)
+                if exported.convert('RGBA').tobytes() != expected.tobytes():
+                    raise ValueError('Corpse wounds must move together with the original face: ' + identity)
 
     base = ROOT / 'art/runtime/gameplay-v03'
     gameplay = json.loads((base / 'build/report.json').read_text(encoding='utf-8'))
@@ -288,6 +330,7 @@ def validate(sq, game):
     kit = ROOT / '.cache/afei-art/bbros-modkit-v9/bin'
     with ZipFile(game / 'data/data_001.dat') as archive:
         for source in ['scripts/contracts/contract.cnut',
+                       'scripts/config/character.cnut',
                        'scripts/contracts/contract_manager.cnut',
                        'scripts/factions/faction.cnut',
                        'scripts/factions/settlement_faction.cnut',

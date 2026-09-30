@@ -86,7 +86,7 @@ local traceNetUse=function(original){return function(tile,free=false){
         local cost=original.bindenv(this)(),A=::AfeixExpedition;
         if(!A.isOrigin()||!::Tactical.isActive()||this.getContainer()==null)return cost;
         local a=this.getContainer().getActor(),cut=A.catalogDiscount(a,this);
-        if(A.catalogSingle(this)&&!this.isRanged()&&A.catalogHas(a,"next_path")&&A.catalogGet(a,"next_path_ready"))cut=::Math.max(cut,4);
+        if(A.catalogSingle(this)&&!this.isRanged()&&A.catalogHas(a,"next_path")&&A.catalogGet(a,"next_path_ready"))cut=::Math.max(cut,A.trainingRank(a,"next_path")>=2?5:4);
         return ::Math.max(::Math.ceil(cost*0.5).tointeger(),cost-cut);
     };});
     wrapOnce(o,"use",function(original){return traceNetUse(function(tile,free=false){

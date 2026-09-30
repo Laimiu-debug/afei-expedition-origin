@@ -106,6 +106,8 @@ expect(!A.revealDiscovery("promotion:feidie"),"hidden reveal needs twelve person
 brothers[0].battles=12;A.set("growth_done_afei",false);
 expect(!A.revealDiscovery("promotion:feidie"),"hidden reveal needs personal growth");A.set("growth_done_afei",true);
 expect(A.nextDiscovery()=="promotion:feidie"&&A.revealDiscovery("promotion:feidie")&&A.feidieKnown(),"hidden route discovered after actual openings");
+local hiddenRoute=A.ledgerPage(event,"promotion:feidie");
+expect(hiddenRoute.Text.find("亲自参战12次")!=null&&hiddenRoute.Text.find("首次进入飞碟免费")!=null,"revealed hidden route explains personal gates and first-entry fee exception");
 safe=false;expect(A.nextDiscovery()==null&&!A.revealDiscovery("bicycle"),"unsafe state cannot trigger stories");safe=true;
 origin=false;expect(!A.canMeetCharacter("lili")&&A.nextDiscovery()==null,"other origins unaffected");origin=true;
 // Real tavern hook: original drinks UI opens first; stale callbacks cannot open a meeting.

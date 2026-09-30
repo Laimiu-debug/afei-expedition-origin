@@ -69,6 +69,8 @@ A.restoreCharacterMetadata <- function(_bro)
         _bro.getFlags().set("afeix_balance_v18",true);
     }
     if("BalanceV26" in this && key in this.BalanceV26.people && !_bro.getFlags().has("afeix_balance_v26"))rebalanced=true;
+    if("BalanceV26" in this && key in this.BalanceV26.people && "endgame_previous_attrs" in this.BalanceV26.people[key]
+        && (!_bro.getFlags().has("afeix_endgame_revision") || _bro.getFlags().get("afeix_endgame_revision")<1))rebalanced=true;
     if ("syncCharacterFeatures" in this) this.syncCharacterFeatures(_bro);
     // Existing offers keep their legacy quote throughout their remaining lifetime.
     local flags=_bro.getFlags();

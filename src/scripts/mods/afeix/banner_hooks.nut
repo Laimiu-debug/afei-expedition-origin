@@ -36,8 +36,9 @@
     if (kind != "company" && kind != "banners") return null;
     local screen = {ID=page, Text="", Image="", List=[], Characters=[], Options=[], function start(event) {}};
     if (kind == "company") {
-        screen.Text = "战团事务\n\n安排伙伴研习技能、选择旗帜，或切换全队头盔外观。\n\n隐藏头盔只影响在队成员的外观，装备、防护、疲劳和技能效果保持不变。";
+        screen.Text = "战团事务\n\n安排伙伴研习技能，通过飞李不可调整属性，更换旗帜，或切换全队头盔外观。\n\n隐藏头盔只影响在队成员的外观，装备、防护、疲劳和技能效果保持不变。";
         if ("trainingLedgerPage" in this) screen.Options.push(this.ledgerNav("研习专属技能", "training"));
+        if ("treatmentLedgerPage" in this) screen.Options.push(this.ledgerNav("飞李不可", "treatment"));
         screen.Options.push(this.ledgerNav("更换旗帜", "banners"));
         if ("toggleCompanyHelmets" in this) screen.Options.push(this.ledgerAction(
             this.get("hide_helmets", false) ? "显示全队头盔" : "隐藏全队头盔",

@@ -51,7 +51,7 @@ A.catalogBoost <- function(a,s,target){
     if(this.catalogHas(a,"alien_eye")&&ranged&&!this.catalogGet(a,"turn_moved"))n+=5;
     if(this.catalogHas(a,"signal_delay")&&ranged&&this.catalogGet(a,"signal_until")>=r)n+=8;
     if(this.catalogHas(a,"berry_eye")&&ranged&&this.catalogNearbyPlayers(target,1).len()>0&&this.catalogGet(a,"berry_eye_round",-1)!=r)n+=5;
-    if(this.catalogHas(a,"half_step")&&a.getInitiative()>target.getInitiative()&&(this.catalogGet(a,"half_round",-1)!=r||this.catalogGet(a,"half_count")<1))n+=5;
+    if(this.catalogHas(a,"half_step")&&a.getInitiative()>target.getInitiative()&&(this.catalogGet(a,"half_round",-1)!=r||this.catalogGet(a,"half_count")<1))n+=this.trainingRank(a,"half_step")>=2?7:5;
     if(this.catalogHas(a,"read_beat")&&!ranged&&this.catalogGet(a,"beat_round",-1)==r&&this.catalogGet(a,"beat_target")==t)n+=6;
     if(this.catalogHas(a,"snake_read")&&!ranged&&this.catalogGet(a,"snake_target")==t)n+=6;
     if(this.catalogHas(a,"door_mine")&&!ranged&&this.catalogNearbyPlayers(target,1).len()>=2&&this.catalogGet(a,"door_mine_round",-1)!=r)n+=5;
@@ -138,7 +138,7 @@ A.catalogReceived <- function(a,attacker,s,hit){
         this.catalogSet(a,"snake_target",attacker.getID());this.catalogSet(a,"snake_until_turn",this.catalogGet(a,"turn_serial")+1);
     }
     if(hit){
-        if(this.catalogHas(a,"pang_breath")&&this.catalogOnce(a,"pang_recover_round"))this.catalogRecover(a,3);
+        if(this.catalogHas(a,"pang_breath")&&this.catalogOnce(a,"pang_recover_round"))this.catalogRecover(a,this.trainingRank(a,"pang_breath")>=2?4:3);
         if(this.catalogFindEffect(a,"long_watch")!=null&&this.catalogOnce(a,"watch_recover_round"))this.catalogRecover(a,4);
     }
     if(this.catalogHas(a,"abs_comeback")&&!hit&&this.catalogOnce(a,"comeback_round"))this.catalogSet(a,"comeback_until",r+1);
@@ -164,7 +164,7 @@ A.catalogTurnEnd <- function(a){
     if(this.catalogHas(a,"look_flag")&&this.catalogGet(a,"ordinary_turn_steps")>0)
         foreach(c in ::Tactical.Entities.getInstancesOfFaction(::Const.Faction.Player))
             if(this.memberPlayer(c)&&["afei","damou","mocha"].find(this.characterId(c))!=null&&c.getTile().getDistanceTo(a.getTile())<=3){this.catalogEffect(a,"look_flag",a);break;}
-    if(this.catalogHas(a,"bell_lead")&&this.catalogOnce(a,"bell_round")){local best=null;foreach(b in this.memberAllies(a,1))if(best==null||(b.getFatigue()>best.getFatigue()||(b.getFatigue()==best.getFatigue()&&b.getID()<best.getID())))best=b;if(best!=null)this.catalogRecover(best,3);}
+    if(this.catalogHas(a,"bell_lead")&&this.catalogOnce(a,"bell_round")){local best=null;foreach(b in this.memberAllies(a,1))if(best==null||(b.getFatigue()>best.getFatigue()||(b.getFatigue()==best.getFatigue()&&b.getID()<best.getID())))best=b;if(best!=null)this.catalogRecover(best,this.trainingRank(a,"bell_lead")>=2?4:3);}
     if(this.catalogGet(a,"snake_until_turn")<=this.catalogGet(a,"turn_serial"))this.catalogSet(a,"snake_target",0);
 };
 A.catalogMoved <- function(a,steps=0){

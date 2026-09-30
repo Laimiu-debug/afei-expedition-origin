@@ -2,7 +2,7 @@
 
 Alpha-bound cropping, uniform resizing, placement and reviewed neck contours are used.
 The _dead brush keeps the complete resized portrait with a centred anchor;
-The corpse-head alias preserves current head pixels with a separate runtime pivot.
+The corpse head bakes the prone pose around the reviewed neck attachment.
 """
 from __future__ import annotations
 
@@ -10,6 +10,7 @@ import argparse
 import hashlib
 import html
 import json
+import math
 import re
 from pathlib import Path
 import shutil
@@ -31,6 +32,24 @@ LIVE_RECT = {"left": -57, "right": 57, "top": -51, "bottom": 91,
              "width": 114, "height": 142, "offsetY": 35}
 DEAD_RECT = {"left": -57, "right": 57, "top": -71, "bottom": 71,
              "width": 114, "height": 142, "offsetX": 0, "offsetY": 0}
+CORPSE_RECT = {"left": -80, "right": 80, "top": -85, "bottom": 65,
+               "width": 160, "height": 150, "offsetX": 6, "offsetY": 10}
+
+
+def prone_head(head: Image.Image, entry: dict) -> Image.Image:
+    """Bake the neck-pivoted pose for both tile details and UI entity renders.
+
+    UI snapshots need actual prone pixels, rather than a live brush with a
+    sprite Rotation. All transforms use the same origin as native dead armor.
+    """
+    cx, cy = entry['neck_guard']
+    angle = math.radians(140)
+    c, s = math.cos(angle) / .78, math.sin(angle) / .78
+    # Inverse of the screen-space rotation; neck attaches six pixels below origin.
+    return head.transform((160, 150), Image.Transform.AFFINE,
+                          (c, -s, cx - c*80 + s*71,
+                           s, c, cy - s*80 - c*71),
+                          Image.Resampling.BICUBIC)
 
 
 def sha(path: Path) -> str:
@@ -72,6 +91,12 @@ def read_manifest(path: Path = MANIFEST) -> tuple[dict, list[dict], list[dict]]:
         expected_forms = ["normal", "toad", "jiahao"] if key == "afei" else ["default"]
         if [v.get("form") for v in person.get("forms", [])] != expected_forms:
             raise ValueError(f"{key}: expected forms {expected_forms}")
+        if key == "afei":
+            normal = person['forms'][0]
+            for variant in person['forms'][1:]:
+                if any(variant.get(field) != normal.get(field) for field in
+                       ('source', 'source_sha256', 'source_box', 'head_seam', 'neck_guard')):
+                    raise ValueError('Afei must have one portrait; legacy route brushes are identical aliases')
         for variant in person["forms"]:
             brush = "afeix_p04_" + key + ("_" + variant["form"] if key == "afei" else "")
             if variant.get("brush") != brush or brush in seen:
@@ -168,13 +193,12 @@ def export_portrait(entry: dict, destination: Path) -> tuple[list[dict], dict]:
     live.save(output)
     head_output = destination / f"{entry['brush']}_head.png"
     head.save(head_output)
-    # Same reviewed pixels, anatomical neck pivot for the runtime corpse head. This is
-    # an atlas alias, not a repainted or pre-rotated portrait.
+    # Bake the reviewed prone transform so casualty image rendering cannot
+    # fall back to the upright source head. Native helmets share this origin.
     corpse_head = destination / f"{entry['brush']}_corpse_head.png"
-    shutil.copyfile(head_output, corpse_head)
+    prone_head(head, entry).save(corpse_head)
     cx, cy = entry['neck_guard']
-    corpse_geometry = {'left': -cx, 'right': 114-cx, 'top': cy-142, 'bottom': cy,
-                       'width': 114, 'height': 142, 'offsetX': 0, 'offsetY': 0}
+    corpse_geometry = CORPSE_RECT
     attrs = []
     for suffix, geometry in (("", LIVE_RECT), ("_head", LIVE_RECT), ("_dead", DEAD_RECT), ("_corpse_head", corpse_geometry)):
         identity = entry["brush"] + suffix
@@ -191,18 +215,19 @@ def export_portrait(entry: dict, destination: Path) -> tuple[list[dict], dict]:
         "corpse_neck_anchor": [cx, cy],
         "partition": "reviewed_neck_contour", "head_seam": entry['head_seam'],
         "neck_guard": entry['neck_guard'], "split_reconstructs_complete_portrait": True,
-        "dead_mode": "native_equipped_body_with_pivoted_custom_head", "metadata": attrs,
+        "dead_mode": "native_equipped_body_with_baked_prone_head", "metadata": attrs,
         "review_note": entry.get("review_note", ""),
     }
     return attrs, report
 
 
 def make_afei_review() -> dict:
-    return {'toad_appearance': 'normal human alias', 'feidie_decoration': 'removed',
+    return {'toad_appearance': 'normal human alias', 'jiahao_appearance': 'normal human alias', 'feidie_decoration': 'removed',
             'promotion_gameplay': 'unchanged', 'in_game_tested': False}
 
 
 def make_review(records: list[dict]) -> dict:
+    records = [r for r in records if r['key'] != 'afei' or r['form'] == 'normal']
     """Diagnostic composition only: labels and backgrounds never enter the atlas."""
     rows = (len(records) + 5) // 6
     font_path = Path("C:/Windows/Fonts/msyh.ttc")
@@ -287,7 +312,7 @@ def build_art(*, require_complete: bool = True, publish_to_src: bool = True,
         "geometry": manifest["geometry"],
         "limitations": [
             "Custom busts fit 88x100; native armor, helmets, weapon and shield sprites overlay the base.",
-            "Body/head reconstruct the portrait; _dead is retained for compatibility and _corpse_head reuses exact head pixels with an anatomical neck pivot.",
+            "Body/head reconstruct the portrait; _dead is retained for compatibility and _corpse_head bakes a neck-pivoted prone pose for tile and UI rendering.",
             "There are no generated injury states, dismemberment drawings or native face/hair/armor pixels.",
             "Alpha bounds and atlas roundtrip are technical checks, not an assertion of style or likeness acceptance.",
             "Old source images may include props or earlier art direction; consult each review_note before acceptance.",
@@ -313,7 +338,7 @@ def main() -> None:
     _, report = build_art(require_complete=not args.allow_incomplete,
                           publish_to_src=not (args.allow_incomplete or args.no_publish), bbrusher=args.bbrusher)
     print(f"PORTRAIT_ART_EXPORTED={report['exported_forms']}/36; sprites={report['sprite_count']}; published={report['published_to_src']}")
-    print("Atlas pixels and coordinates roundtrip verified. Corpse head pivots packed; in-game acceptance remains unverified.")
+    print("Atlas pixels and coordinates roundtrip verified. Prone head pixels packed; in-game acceptance remains unverified.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,1810 @@
+{
+  "atlas_name": "afeix_corpse_injuries_v01",
+  "sprite_count": 102,
+  "records": [
+    {
+      "id": "afeix_p04_afei_normal_corpse_head_bloodied",
+      "key": "afei",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_afei_normal_head.png",
+      "head_source_sha256": "c7be012c3bfa258c5f41e8f15de4139d41da30230259b1a5b32430405ffe7dc4",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "7ad8acc1c8acc67af9fbef233cb0f28905467c403d59529652f6be24db056f6a"
+    },
+    {
+      "id": "afeix_p04_afei_normal_corpse_head_injured_01",
+      "key": "afei",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_afei_normal_head.png",
+      "head_source_sha256": "c7be012c3bfa258c5f41e8f15de4139d41da30230259b1a5b32430405ffe7dc4",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "b7b3551c4c556bf97db6ab18172c017d018a520a84edcf73ce8148c60495ab38"
+    },
+    {
+      "id": "afeix_p04_afei_normal_corpse_head_injured_02",
+      "key": "afei",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_afei_normal_head.png",
+      "head_source_sha256": "c7be012c3bfa258c5f41e8f15de4139d41da30230259b1a5b32430405ffe7dc4",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "3e41fb79d4ea338d1ac6bc270687986f46c120ffce98ce67f6f5a2fa1f3a335c"
+    },
+    {
+      "id": "afeix_p04_damou_corpse_head_bloodied",
+      "key": "damou",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_damou_head.png",
+      "head_source_sha256": "00380a91fe5fe93cc7a03b613eac5ea7ebba7d978661ea625aed6e25913c986b",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "ec4a99e7a3c66ee21d082ad341e201bfd1c41c6d5b35f64b4cd846341ccb39ce"
+    },
+    {
+      "id": "afeix_p04_damou_corpse_head_injured_01",
+      "key": "damou",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_damou_head.png",
+      "head_source_sha256": "00380a91fe5fe93cc7a03b613eac5ea7ebba7d978661ea625aed6e25913c986b",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "8097ce9afd6ada3b04d9a688ee7234561f2c8afa276d5a97c4b2f6814324e504"
+    },
+    {
+      "id": "afeix_p04_damou_corpse_head_injured_02",
+      "key": "damou",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_damou_head.png",
+      "head_source_sha256": "00380a91fe5fe93cc7a03b613eac5ea7ebba7d978661ea625aed6e25913c986b",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "b54bc5c3910aca25da88247a464068fbcfb53f67679fb5b1c2432524a185a7d9"
+    },
+    {
+      "id": "afeix_p04_mocha_corpse_head_bloodied",
+      "key": "mocha",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_mocha_head.png",
+      "head_source_sha256": "5a26647dcd1af7dab7a914477f2e41913cf7be276a2d8161a87bf7545611623e",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "b7a0117a013cbfe9f690885ed6490a5f7c108fc9974ff1d7ea29d69587318ff4"
+    },
+    {
+      "id": "afeix_p04_mocha_corpse_head_injured_01",
+      "key": "mocha",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_mocha_head.png",
+      "head_source_sha256": "5a26647dcd1af7dab7a914477f2e41913cf7be276a2d8161a87bf7545611623e",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "97aea390f8f7709ae8a8f05a92de4565630a1f94c28022bab12a346aef231a04"
+    },
+    {
+      "id": "afeix_p04_mocha_corpse_head_injured_02",
+      "key": "mocha",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_mocha_head.png",
+      "head_source_sha256": "5a26647dcd1af7dab7a914477f2e41913cf7be276a2d8161a87bf7545611623e",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "b34a11735c2b62e293dc3c4e64cd0036a9c854286cb4471b5e93c5b89c51ea0a"
+    },
+    {
+      "id": "afeix_p04_bottle_corpse_head_bloodied",
+      "key": "bottle",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_bottle_head.png",
+      "head_source_sha256": "771caf764c2e291c599a796de24f486baf67e1dee2ace8b2ebb0f74a174e1bb3",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "b29a03ea41e9ade7f95a6c8abf0ea28affb746e39e07d40d8eddc16226443ea2"
+    },
+    {
+      "id": "afeix_p04_bottle_corpse_head_injured_01",
+      "key": "bottle",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_bottle_head.png",
+      "head_source_sha256": "771caf764c2e291c599a796de24f486baf67e1dee2ace8b2ebb0f74a174e1bb3",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "62d297c255d9aaf5ad38d7ec983db854c83e4ce3756c77d8e61817328e39ead8"
+    },
+    {
+      "id": "afeix_p04_bottle_corpse_head_injured_02",
+      "key": "bottle",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_bottle_head.png",
+      "head_source_sha256": "771caf764c2e291c599a796de24f486baf67e1dee2ace8b2ebb0f74a174e1bb3",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "de20b5ac3a0cd20bec625940168fcd4f06ef2539de61736a6ff514ef7e74be08"
+    },
+    {
+      "id": "afeix_p04_shuaizi_corpse_head_bloodied",
+      "key": "shuaizi",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_shuaizi_head.png",
+      "head_source_sha256": "f68fafff13fbbc060dc240d6ee8c190a8d60a767cf0cfe5950784d53c68bbcd9",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "1cebc6f7313b66b814a27311767511b782aa8a291511c59b7d2f139517eabf0b"
+    },
+    {
+      "id": "afeix_p04_shuaizi_corpse_head_injured_01",
+      "key": "shuaizi",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_shuaizi_head.png",
+      "head_source_sha256": "f68fafff13fbbc060dc240d6ee8c190a8d60a767cf0cfe5950784d53c68bbcd9",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "e43c3a1c23ce09df11fe8fbaeae79dbb0e4cbb44ee7ba6693adb22c0cf3eb626"
+    },
+    {
+      "id": "afeix_p04_shuaizi_corpse_head_injured_02",
+      "key": "shuaizi",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_shuaizi_head.png",
+      "head_source_sha256": "f68fafff13fbbc060dc240d6ee8c190a8d60a767cf0cfe5950784d53c68bbcd9",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "05790edce06e4ae7f8a0faa81d65cc2938fc7886c5af02a98a4d9fdcadd7e56c"
+    },
+    {
+      "id": "afeix_p04_lili_corpse_head_bloodied",
+      "key": "lili",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_lili_head.png",
+      "head_source_sha256": "6777e37f2deed48f5c800f84137c3fce89c65e543ef83e119059d985093abb15",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "ac648b1d8646433513194d0a5ebdb0f5bfa33c11b511263093605aec5b1d4abf"
+    },
+    {
+      "id": "afeix_p04_lili_corpse_head_injured_01",
+      "key": "lili",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_lili_head.png",
+      "head_source_sha256": "6777e37f2deed48f5c800f84137c3fce89c65e543ef83e119059d985093abb15",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "6f591143b2224d956168bfde5274506b8dff874f833870d2898b8e882b092290"
+    },
+    {
+      "id": "afeix_p04_lili_corpse_head_injured_02",
+      "key": "lili",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_lili_head.png",
+      "head_source_sha256": "6777e37f2deed48f5c800f84137c3fce89c65e543ef83e119059d985093abb15",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "eb71eeb2fa8b683b49afac5087c9766be319704d1ab509746a3b9a171a8afb0c"
+    },
+    {
+      "id": "afeix_p04_xiaoyueya_corpse_head_bloodied",
+      "key": "xiaoyueya",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaoyueya_head.png",
+      "head_source_sha256": "6cf40dd3c2b4d4c7039429622e95fc5cf9db3fb84e7f6a97f9727812f8a19f44",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "26ba393784c35b84fb03297d32ac82c2dea450997e37724b75369c7c74814817"
+    },
+    {
+      "id": "afeix_p04_xiaoyueya_corpse_head_injured_01",
+      "key": "xiaoyueya",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaoyueya_head.png",
+      "head_source_sha256": "6cf40dd3c2b4d4c7039429622e95fc5cf9db3fb84e7f6a97f9727812f8a19f44",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "6736100a791c1a937789b08a8b7a27495ff4604665d8d68deab62e4833283715"
+    },
+    {
+      "id": "afeix_p04_xiaoyueya_corpse_head_injured_02",
+      "key": "xiaoyueya",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaoyueya_head.png",
+      "head_source_sha256": "6cf40dd3c2b4d4c7039429622e95fc5cf9db3fb84e7f6a97f9727812f8a19f44",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "a7cbc1defafd83c4aceedce7e9879b1bc59f6614fb0578a7ada1c45203f6bcca"
+    },
+    {
+      "id": "afeix_p04_yuchujiu_corpse_head_bloodied",
+      "key": "yuchujiu",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yuchujiu_head.png",
+      "head_source_sha256": "ff02b605d66eb2b930a26fdaa8504b4d46dc641c8f8d021091063eb659058bdd",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "6b49b55ee5c85788ef0a8f0603023af3baf739e2949e56d5c62c4032cf39af6e"
+    },
+    {
+      "id": "afeix_p04_yuchujiu_corpse_head_injured_01",
+      "key": "yuchujiu",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yuchujiu_head.png",
+      "head_source_sha256": "ff02b605d66eb2b930a26fdaa8504b4d46dc641c8f8d021091063eb659058bdd",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "7ed442504dcaf8de7b44250a83a45538f1201dac3ef0e00e35a96d570689cddf"
+    },
+    {
+      "id": "afeix_p04_yuchujiu_corpse_head_injured_02",
+      "key": "yuchujiu",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yuchujiu_head.png",
+      "head_source_sha256": "ff02b605d66eb2b930a26fdaa8504b4d46dc641c8f8d021091063eb659058bdd",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "5b5065a30cca70d877b65df148cc2612b4bef7a84b3f2f00a96e0aaaf7eb1eb6"
+    },
+    {
+      "id": "afeix_p04_xiaoyubeike_corpse_head_bloodied",
+      "key": "xiaoyubeike",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaoyubeike_head.png",
+      "head_source_sha256": "8e0e48e0642e69873937eb3e676cd97c21af5709a28fc535230d254837b542eb",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "e301429a5552a8ade65c69a1c3b35f01cff82b6f1bb23f302c76d805b7d637a7"
+    },
+    {
+      "id": "afeix_p04_xiaoyubeike_corpse_head_injured_01",
+      "key": "xiaoyubeike",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaoyubeike_head.png",
+      "head_source_sha256": "8e0e48e0642e69873937eb3e676cd97c21af5709a28fc535230d254837b542eb",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "c72205c21ff7d2009217b14a4cad2637f019e0b956fc468539e13a4b81155410"
+    },
+    {
+      "id": "afeix_p04_xiaoyubeike_corpse_head_injured_02",
+      "key": "xiaoyubeike",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaoyubeike_head.png",
+      "head_source_sha256": "8e0e48e0642e69873937eb3e676cd97c21af5709a28fc535230d254837b542eb",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "06d70aac1044386a255807a827dbcc9f01e09d1637f80b1bcfec6b74accc894d"
+    },
+    {
+      "id": "afeix_p04_wangduidui_corpse_head_bloodied",
+      "key": "wangduidui",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_wangduidui_head.png",
+      "head_source_sha256": "b44a267de03c8ceeb206fb3203bfbe4ad2063127231ae067a1fa19e63eb31132",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "221ada585441d6233f2d29ed36d9298455e72e52b3334adfdd9810c5636394cf"
+    },
+    {
+      "id": "afeix_p04_wangduidui_corpse_head_injured_01",
+      "key": "wangduidui",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_wangduidui_head.png",
+      "head_source_sha256": "b44a267de03c8ceeb206fb3203bfbe4ad2063127231ae067a1fa19e63eb31132",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "addd33aaae4c8c2ef814ce089d3711e4be76e64b1ab7be68c16db56108e92c79"
+    },
+    {
+      "id": "afeix_p04_wangduidui_corpse_head_injured_02",
+      "key": "wangduidui",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_wangduidui_head.png",
+      "head_source_sha256": "b44a267de03c8ceeb206fb3203bfbe4ad2063127231ae067a1fa19e63eb31132",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "6a972991283d6ea12054c159bc6645099db798b81256e0d2ad4ec2a794a3c920"
+    },
+    {
+      "id": "afeix_p04_laocai_corpse_head_bloodied",
+      "key": "laocai",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_laocai_head.png",
+      "head_source_sha256": "ec9ca6f583674304d303e8b542bde3324950fc4256325555f3d205e9a0a9703d",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "e53d829404723e03da496eaadb9496695766a9d3eb2ea573b9b4ff8d78a39d07"
+    },
+    {
+      "id": "afeix_p04_laocai_corpse_head_injured_01",
+      "key": "laocai",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_laocai_head.png",
+      "head_source_sha256": "ec9ca6f583674304d303e8b542bde3324950fc4256325555f3d205e9a0a9703d",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "439143f49f0cb03fb3e74a7829ab6f273a355a8bdca6de003e63d6a96b645010"
+    },
+    {
+      "id": "afeix_p04_laocai_corpse_head_injured_02",
+      "key": "laocai",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_laocai_head.png",
+      "head_source_sha256": "ec9ca6f583674304d303e8b542bde3324950fc4256325555f3d205e9a0a9703d",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "9c1132144309896a922312192ad181f365e81066bd6a0afa58c164da10b583c7"
+    },
+    {
+      "id": "afeix_p04_yanzi_corpse_head_bloodied",
+      "key": "yanzi",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yanzi_head.png",
+      "head_source_sha256": "10c79171a18ca3c129a69c71fed31deb912fcb576da6fce83fe8cac5bbc2e3c0",
+      "neck_guard": [
+        63,
+        110
+      ],
+      "png_sha256": "52c3babfb82d6bcb099fc24c8f6b1dfaa5bed02b2422970e00e04b2c93a685dc"
+    },
+    {
+      "id": "afeix_p04_yanzi_corpse_head_injured_01",
+      "key": "yanzi",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yanzi_head.png",
+      "head_source_sha256": "10c79171a18ca3c129a69c71fed31deb912fcb576da6fce83fe8cac5bbc2e3c0",
+      "neck_guard": [
+        63,
+        110
+      ],
+      "png_sha256": "fb69315b1bc3a71530ad580735b45acb7c2a3fcc707452dd9b8d73c22a107c3b"
+    },
+    {
+      "id": "afeix_p04_yanzi_corpse_head_injured_02",
+      "key": "yanzi",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yanzi_head.png",
+      "head_source_sha256": "10c79171a18ca3c129a69c71fed31deb912fcb576da6fce83fe8cac5bbc2e3c0",
+      "neck_guard": [
+        63,
+        110
+      ],
+      "png_sha256": "807d277086780be7176539240f7bb2aa73a525c6713c5a935e9ae42a904b82f0"
+    },
+    {
+      "id": "afeix_p04_tiantong_corpse_head_bloodied",
+      "key": "tiantong",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_tiantong_head.png",
+      "head_source_sha256": "6b1aa4a5660ca69676567959a8a91a14268adc3d0096394bb877956a8164cf7b",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "cf95f13286a2cd24b8ca79df023198c2e315ad304ac9a29fbb455af90b73b107"
+    },
+    {
+      "id": "afeix_p04_tiantong_corpse_head_injured_01",
+      "key": "tiantong",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_tiantong_head.png",
+      "head_source_sha256": "6b1aa4a5660ca69676567959a8a91a14268adc3d0096394bb877956a8164cf7b",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "7671e614b8f201e5019557934cc3a1289efab0bcdd690eefe03eec29da450c82"
+    },
+    {
+      "id": "afeix_p04_tiantong_corpse_head_injured_02",
+      "key": "tiantong",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_tiantong_head.png",
+      "head_source_sha256": "6b1aa4a5660ca69676567959a8a91a14268adc3d0096394bb877956a8164cf7b",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "f44a1df876c8639c3eea21aab9fd7c797d83e51e65ce52d3a34b49213c31348e"
+    },
+    {
+      "id": "afeix_p04_xiaoning_corpse_head_bloodied",
+      "key": "xiaoning",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaoning_head.png",
+      "head_source_sha256": "5900cc061dcbd965846c99639886311bca2b2d37c6f38fd359559b753ba1dcb0",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "26761c9e0c5b6def3062a96445a390bcdf370d6d28277cb2da3b3779fdac9a22"
+    },
+    {
+      "id": "afeix_p04_xiaoning_corpse_head_injured_01",
+      "key": "xiaoning",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaoning_head.png",
+      "head_source_sha256": "5900cc061dcbd965846c99639886311bca2b2d37c6f38fd359559b753ba1dcb0",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "f71312c738d4412fb0d07b8bab1f13330b9c760d3480dbae921ba6f30b7767a8"
+    },
+    {
+      "id": "afeix_p04_xiaoning_corpse_head_injured_02",
+      "key": "xiaoning",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaoning_head.png",
+      "head_source_sha256": "5900cc061dcbd965846c99639886311bca2b2d37c6f38fd359559b753ba1dcb0",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "fbd67c4a765c1b9f1d7c2833f81cd35bb90d0272bec4769555c6576d7084dd86"
+    },
+    {
+      "id": "afeix_p04_xiaopangxu_corpse_head_bloodied",
+      "key": "xiaopangxu",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaopangxu_head.png",
+      "head_source_sha256": "012f4f37da9387599d8b33e78d97b1b467a594a9866e3e320ebaf1e5abedac34",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "22cae959e7d69c841c242126e50a0bbd4d3ac8c1dc8d2035448138a79fbb0ff8"
+    },
+    {
+      "id": "afeix_p04_xiaopangxu_corpse_head_injured_01",
+      "key": "xiaopangxu",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaopangxu_head.png",
+      "head_source_sha256": "012f4f37da9387599d8b33e78d97b1b467a594a9866e3e320ebaf1e5abedac34",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "5234f38df96451ecaaad568be0a6631e5ed1b5531cec09ae82328bb8d91fecb9"
+    },
+    {
+      "id": "afeix_p04_xiaopangxu_corpse_head_injured_02",
+      "key": "xiaopangxu",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaopangxu_head.png",
+      "head_source_sha256": "012f4f37da9387599d8b33e78d97b1b467a594a9866e3e320ebaf1e5abedac34",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "35790806f33deb1db169e9df1fd3a1ab5735d83a4bf4cf751489eba218bc737e"
+    },
+    {
+      "id": "afeix_p04_dae_corpse_head_bloodied",
+      "key": "dae",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_dae_head.png",
+      "head_source_sha256": "08280434cc86282d22a185d072b3cca16aab80b9aaca6162eeddb63797c14bed",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "0bb27129ffdc4ba02bdc122de114613aa1befd144d5072d1c0cf423f7fc7da20"
+    },
+    {
+      "id": "afeix_p04_dae_corpse_head_injured_01",
+      "key": "dae",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_dae_head.png",
+      "head_source_sha256": "08280434cc86282d22a185d072b3cca16aab80b9aaca6162eeddb63797c14bed",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "ca8899acf0744432d07d50d775eed9ed5ef32888674cae5ef525bca265cd2844"
+    },
+    {
+      "id": "afeix_p04_dae_corpse_head_injured_02",
+      "key": "dae",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_dae_head.png",
+      "head_source_sha256": "08280434cc86282d22a185d072b3cca16aab80b9aaca6162eeddb63797c14bed",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "e820e45b6fa377fd64cafd3787a0aa949bc7df45ca869013fdedbc6ad253ec2d"
+    },
+    {
+      "id": "afeix_p04_manyuemei_corpse_head_bloodied",
+      "key": "manyuemei",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_manyuemei_head.png",
+      "head_source_sha256": "39c2954d1c25f56aa87e76f939758356966779283f9b7a53e7ab825e8b028662",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "6ddf426022367175b4744aef8555505d1931f0ee690d75a5dac71b44caf25f2c"
+    },
+    {
+      "id": "afeix_p04_manyuemei_corpse_head_injured_01",
+      "key": "manyuemei",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_manyuemei_head.png",
+      "head_source_sha256": "39c2954d1c25f56aa87e76f939758356966779283f9b7a53e7ab825e8b028662",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "c0cab32cc7df29e16a9462404acbfce275fa705a30f266cd9b23d702492f8319"
+    },
+    {
+      "id": "afeix_p04_manyuemei_corpse_head_injured_02",
+      "key": "manyuemei",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_manyuemei_head.png",
+      "head_source_sha256": "39c2954d1c25f56aa87e76f939758356966779283f9b7a53e7ab825e8b028662",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "a5429d1fee93cc006d35a9e640ab52f9178887d0b70b38a79e7d6ca64cae4545"
+    },
+    {
+      "id": "afeix_p04_xiaohani_corpse_head_bloodied",
+      "key": "xiaohani",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaohani_head.png",
+      "head_source_sha256": "66d709d483a7d4cdabe81cade2f5197a394040dab789b96a600e2efdd48d7ca2",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "708958b36010fb024173f99a7e079959b92317f5800f2dda3eef249bf4f70cfe"
+    },
+    {
+      "id": "afeix_p04_xiaohani_corpse_head_injured_01",
+      "key": "xiaohani",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaohani_head.png",
+      "head_source_sha256": "66d709d483a7d4cdabe81cade2f5197a394040dab789b96a600e2efdd48d7ca2",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "f1b76b434828d4264e864e6b7c0ec883aa12fb3cde42c11c39ec413be00770f7"
+    },
+    {
+      "id": "afeix_p04_xiaohani_corpse_head_injured_02",
+      "key": "xiaohani",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaohani_head.png",
+      "head_source_sha256": "66d709d483a7d4cdabe81cade2f5197a394040dab789b96a600e2efdd48d7ca2",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "1aa0a175eb80c8c822e3a3b41661550b1d899382a2d6c70815f75d17e0e474f1"
+    },
+    {
+      "id": "afeix_p04_keke_corpse_head_bloodied",
+      "key": "keke",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_keke_head.png",
+      "head_source_sha256": "c6bc22cd80c532cb0b70bf651320ca644653408c1319f040d87826ba524fceb8",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "dc47d1feadba1ee13294e70070adffc4a1b14c6e483fcb1bf1f3174ebdb0b112"
+    },
+    {
+      "id": "afeix_p04_keke_corpse_head_injured_01",
+      "key": "keke",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_keke_head.png",
+      "head_source_sha256": "c6bc22cd80c532cb0b70bf651320ca644653408c1319f040d87826ba524fceb8",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "e09688e30cf8b9d7ef27ff7c586b36060102769a97dd0537252ed0df7245918f"
+    },
+    {
+      "id": "afeix_p04_keke_corpse_head_injured_02",
+      "key": "keke",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_keke_head.png",
+      "head_source_sha256": "c6bc22cd80c532cb0b70bf651320ca644653408c1319f040d87826ba524fceb8",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "5676eec078c1e63cbb7a38707bcb63522585543f4ddae2c055162956a9c9f7bc"
+    },
+    {
+      "id": "afeix_p04_yuxiang_corpse_head_bloodied",
+      "key": "yuxiang",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yuxiang_head.png",
+      "head_source_sha256": "60aa300209abaac5df0bad83f3d334682b34e4a8cd4df88c0d41365eb26fe9a5",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "7993cf23d0bcacbcd7b619df300ca0935699dda31e10642b67a9748f54faae69"
+    },
+    {
+      "id": "afeix_p04_yuxiang_corpse_head_injured_01",
+      "key": "yuxiang",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yuxiang_head.png",
+      "head_source_sha256": "60aa300209abaac5df0bad83f3d334682b34e4a8cd4df88c0d41365eb26fe9a5",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "87c4e50c664e05291ba757f6dfb1af1eaa65e8ef28db55f15c4d363e45b34725"
+    },
+    {
+      "id": "afeix_p04_yuxiang_corpse_head_injured_02",
+      "key": "yuxiang",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yuxiang_head.png",
+      "head_source_sha256": "60aa300209abaac5df0bad83f3d334682b34e4a8cd4df88c0d41365eb26fe9a5",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "795f595bcaeb4e0c284ae2c8c149cc5bd2cc22c4e835f85ba18da1709c8fbf47"
+    },
+    {
+      "id": "afeix_p04_tongzhu_corpse_head_bloodied",
+      "key": "tongzhu",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_tongzhu_head.png",
+      "head_source_sha256": "1fb6d3e3cf5fbdefb6180d6cc6cd44394c4d9b75ff76d17028e1b7275e0a07c5",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "0d5eb24df13195db251044aba39e727cd7de6f0f3fd10e5baae184d2e3ae5227"
+    },
+    {
+      "id": "afeix_p04_tongzhu_corpse_head_injured_01",
+      "key": "tongzhu",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_tongzhu_head.png",
+      "head_source_sha256": "1fb6d3e3cf5fbdefb6180d6cc6cd44394c4d9b75ff76d17028e1b7275e0a07c5",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "a16b05d1c3459d3f714a71269ccf30b6a33dabacce5713bfe63e3acdf302d7bd"
+    },
+    {
+      "id": "afeix_p04_tongzhu_corpse_head_injured_02",
+      "key": "tongzhu",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_tongzhu_head.png",
+      "head_source_sha256": "1fb6d3e3cf5fbdefb6180d6cc6cd44394c4d9b75ff76d17028e1b7275e0a07c5",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "d40684a6a168113b75dee306fe204c4f3dfa2f6d86da2c3aa97115707b3b4a2a"
+    },
+    {
+      "id": "afeix_p04_meiya_corpse_head_bloodied",
+      "key": "meiya",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_meiya_head.png",
+      "head_source_sha256": "b426e710b4eeaaa8312e8b5d84b720843d36afe26b6e14f899ef69c0c1262a0f",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "17df6974c0dedd88ac1656073099576171f9177303d774a91228306ad569707c"
+    },
+    {
+      "id": "afeix_p04_meiya_corpse_head_injured_01",
+      "key": "meiya",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_meiya_head.png",
+      "head_source_sha256": "b426e710b4eeaaa8312e8b5d84b720843d36afe26b6e14f899ef69c0c1262a0f",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "54af476446b67a0ee0c6dbc80f3e732191ffc17b583f4186bfb3040ebe0421fa"
+    },
+    {
+      "id": "afeix_p04_meiya_corpse_head_injured_02",
+      "key": "meiya",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_meiya_head.png",
+      "head_source_sha256": "b426e710b4eeaaa8312e8b5d84b720843d36afe26b6e14f899ef69c0c1262a0f",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "107ac9c95a19d598cfae5769b01ba26f2d95cdca75140b8fc2a4667fc97774da"
+    },
+    {
+      "id": "afeix_p04_wanshe_corpse_head_bloodied",
+      "key": "wanshe",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_wanshe_head.png",
+      "head_source_sha256": "78ff1f88a36d1a99702a0be89260e824ba35fc30b5f58bd88776fdeadf4ff021",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "24316e49fb1faf77523b9fa6a8440f5042a973009c83462d96427f5f54ae6392"
+    },
+    {
+      "id": "afeix_p04_wanshe_corpse_head_injured_01",
+      "key": "wanshe",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_wanshe_head.png",
+      "head_source_sha256": "78ff1f88a36d1a99702a0be89260e824ba35fc30b5f58bd88776fdeadf4ff021",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "6e7a07cfb3227e53692a8cbc9a92421340c363b0546ed9dbde0e6ff4a522606f"
+    },
+    {
+      "id": "afeix_p04_wanshe_corpse_head_injured_02",
+      "key": "wanshe",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_wanshe_head.png",
+      "head_source_sha256": "78ff1f88a36d1a99702a0be89260e824ba35fc30b5f58bd88776fdeadf4ff021",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "6c4188c1d3032104ad2ce36fe98f4d8a0c1b6e0b8f6fe2600f6a44099166601e"
+    },
+    {
+      "id": "afeix_p04_tutu_corpse_head_bloodied",
+      "key": "tutu",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_tutu_head.png",
+      "head_source_sha256": "f816d46b719a3a1ed171982315fe86b36935cd30bec82cce2dcebec949512bf3",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "29901a8c7981f47ca9312d8358d369d45bb220b2f689b1740fed65be19b51847"
+    },
+    {
+      "id": "afeix_p04_tutu_corpse_head_injured_01",
+      "key": "tutu",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_tutu_head.png",
+      "head_source_sha256": "f816d46b719a3a1ed171982315fe86b36935cd30bec82cce2dcebec949512bf3",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "3008d1c4b60dc017438db4e5c91af776cfe6eeeb4b07ce814e2f2c214ae6ac18"
+    },
+    {
+      "id": "afeix_p04_tutu_corpse_head_injured_02",
+      "key": "tutu",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_tutu_head.png",
+      "head_source_sha256": "f816d46b719a3a1ed171982315fe86b36935cd30bec82cce2dcebec949512bf3",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "015e26b2ff9bc119d35a0db74b9bb4adde5d3f8827ba1a6e0e77bccac13236bd"
+    },
+    {
+      "id": "afeix_p04_naigai_corpse_head_bloodied",
+      "key": "naigai",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_naigai_head.png",
+      "head_source_sha256": "fdc54ac0abeb4bdd19a755eb1af866bf37277238a4fd80f1f993eea1fbaa4f25",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "41f59ad2a430ca104c85f18dbffbb26c83ad542b39580705c148441af432826f"
+    },
+    {
+      "id": "afeix_p04_naigai_corpse_head_injured_01",
+      "key": "naigai",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_naigai_head.png",
+      "head_source_sha256": "fdc54ac0abeb4bdd19a755eb1af866bf37277238a4fd80f1f993eea1fbaa4f25",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "d435ffa314b382b67a59a1d91dbbe73730d79c4c147ff4a66fa53a77755c4b99"
+    },
+    {
+      "id": "afeix_p04_naigai_corpse_head_injured_02",
+      "key": "naigai",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_naigai_head.png",
+      "head_source_sha256": "fdc54ac0abeb4bdd19a755eb1af866bf37277238a4fd80f1f993eea1fbaa4f25",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "2d19d5b18414c95f72578057d204bcb2b4fee04d22ce696ce60393e43b1c4a54"
+    },
+    {
+      "id": "afeix_p04_xiaojie_corpse_head_bloodied",
+      "key": "xiaojie",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaojie_head.png",
+      "head_source_sha256": "c8104d5074d8526863bda83c46eb09ef277458f36a22d81a06b5f1caf22e5c1f",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "6d2916909bbe23f56e900e7a74daf22a980180fe9f1f0feb076103ad5e5540bd"
+    },
+    {
+      "id": "afeix_p04_xiaojie_corpse_head_injured_01",
+      "key": "xiaojie",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaojie_head.png",
+      "head_source_sha256": "c8104d5074d8526863bda83c46eb09ef277458f36a22d81a06b5f1caf22e5c1f",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "1c1a05052f7483b72b8e755a15f482340a721454ab9ec6a0b044616cd3383efc"
+    },
+    {
+      "id": "afeix_p04_xiaojie_corpse_head_injured_02",
+      "key": "xiaojie",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaojie_head.png",
+      "head_source_sha256": "c8104d5074d8526863bda83c46eb09ef277458f36a22d81a06b5f1caf22e5c1f",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "8759444f4113aef8d1225f1d8743496e05245a639e2b80dbb47bdb7c1f829594"
+    },
+    {
+      "id": "afeix_p04_bula_corpse_head_bloodied",
+      "key": "bula",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_bula_head.png",
+      "head_source_sha256": "e6753b0c9e2cbb3c1bb42fdd8f3afe24eaa0bdbdb0c48580279c77d6f76e4816",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "3b2a359d02d238f6c5efa2ecc109dd72f1040e49e0838e3fbe298deb18129da3"
+    },
+    {
+      "id": "afeix_p04_bula_corpse_head_injured_01",
+      "key": "bula",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_bula_head.png",
+      "head_source_sha256": "e6753b0c9e2cbb3c1bb42fdd8f3afe24eaa0bdbdb0c48580279c77d6f76e4816",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "5c6df64c095444cdcfc86679e616b882a2d01f9ef4787b6063c74278faa6842f"
+    },
+    {
+      "id": "afeix_p04_bula_corpse_head_injured_02",
+      "key": "bula",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_bula_head.png",
+      "head_source_sha256": "e6753b0c9e2cbb3c1bb42fdd8f3afe24eaa0bdbdb0c48580279c77d6f76e4816",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "56f016418c8e95fda2d25e370ad74f0d0f66137972037463a00d5aa23767f2fc"
+    },
+    {
+      "id": "afeix_p04_suwa_corpse_head_bloodied",
+      "key": "suwa",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_suwa_head.png",
+      "head_source_sha256": "ef417f2c75c614694a894575613b49e0cddbeca22a91cbbe4db57734c924e5a0",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "7a42495da14acedf5f6fa20c44fb7782546e922afc393232b417be3e4016e159"
+    },
+    {
+      "id": "afeix_p04_suwa_corpse_head_injured_01",
+      "key": "suwa",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_suwa_head.png",
+      "head_source_sha256": "ef417f2c75c614694a894575613b49e0cddbeca22a91cbbe4db57734c924e5a0",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "01f69e3fd9d821c506d986b0f5038692290e5d1e58d01ec66405d8de3487d925"
+    },
+    {
+      "id": "afeix_p04_suwa_corpse_head_injured_02",
+      "key": "suwa",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_suwa_head.png",
+      "head_source_sha256": "ef417f2c75c614694a894575613b49e0cddbeca22a91cbbe4db57734c924e5a0",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "d1c1d95c61285bdb8d1643bb4ef8939a95d3600ef0e7302faa1e9cd3a3179faf"
+    },
+    {
+      "id": "afeix_p04_qianhan_corpse_head_bloodied",
+      "key": "qianhan",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_qianhan_head.png",
+      "head_source_sha256": "802cb2b7cfdbefb13b2d81823eef45c0cb2ebb2597a77f4e950eac8b3d173db8",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "426f1b55af45165a663a4b76cb5cd22ff9af7238767f3cf7a7dd3d2c580d27ef"
+    },
+    {
+      "id": "afeix_p04_qianhan_corpse_head_injured_01",
+      "key": "qianhan",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_qianhan_head.png",
+      "head_source_sha256": "802cb2b7cfdbefb13b2d81823eef45c0cb2ebb2597a77f4e950eac8b3d173db8",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "6066ca858992eacc464da1011a8fbf41276cc534660d6255d579f558f9bd92b5"
+    },
+    {
+      "id": "afeix_p04_qianhan_corpse_head_injured_02",
+      "key": "qianhan",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_qianhan_head.png",
+      "head_source_sha256": "802cb2b7cfdbefb13b2d81823eef45c0cb2ebb2597a77f4e950eac8b3d173db8",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "7f440f9675e7efc852ae011c8301e73dc5d72e9f1fd319140d360816e89e88a3"
+    },
+    {
+      "id": "afeix_p04_wangdazhi_corpse_head_bloodied",
+      "key": "wangdazhi",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_wangdazhi_head.png",
+      "head_source_sha256": "12dcce1b57dfb309a2b5a8f6a7a8555ccc9edcad316da43f9bd2d4972f2a083a",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "4435c53e1516e04ece3c425d54ca85e3b56df957a3b0b3ea33d961f8502fa587"
+    },
+    {
+      "id": "afeix_p04_wangdazhi_corpse_head_injured_01",
+      "key": "wangdazhi",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_wangdazhi_head.png",
+      "head_source_sha256": "12dcce1b57dfb309a2b5a8f6a7a8555ccc9edcad316da43f9bd2d4972f2a083a",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "5f91ba50f9b5ffa011df360bb4e26ce4a06a32d244a2c3bbe4eda14d8856b399"
+    },
+    {
+      "id": "afeix_p04_wangdazhi_corpse_head_injured_02",
+      "key": "wangdazhi",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_wangdazhi_head.png",
+      "head_source_sha256": "12dcce1b57dfb309a2b5a8f6a7a8555ccc9edcad316da43f9bd2d4972f2a083a",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "63df547f2325bbb77f0681c5b40f91aea28ce4b575ca861122d90939393bfa08"
+    },
+    {
+      "id": "afeix_p04_yaoyaoya_corpse_head_bloodied",
+      "key": "yaoyaoya",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yaoyaoya_head.png",
+      "head_source_sha256": "eb04a9963d4183a1d3bbce43fa59d406f33f36768399501940b518310bbb24ea",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "7416c06f76717f4b8428a97fcb6c60af036c4ffc23e9dbc457809e6c70a9becd"
+    },
+    {
+      "id": "afeix_p04_yaoyaoya_corpse_head_injured_01",
+      "key": "yaoyaoya",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yaoyaoya_head.png",
+      "head_source_sha256": "eb04a9963d4183a1d3bbce43fa59d406f33f36768399501940b518310bbb24ea",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "8494ed4c204e3f1f5b8184fb66899e8a55de48eb590e3b15e6c9cdbfce4d9cbb"
+    },
+    {
+      "id": "afeix_p04_yaoyaoya_corpse_head_injured_02",
+      "key": "yaoyaoya",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yaoyaoya_head.png",
+      "head_source_sha256": "eb04a9963d4183a1d3bbce43fa59d406f33f36768399501940b518310bbb24ea",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "8dc1ae49acea6b85156a9aa5174b95bf6b0ddaf313cb5a1960e830d2b5c371db"
+    },
+    {
+      "id": "afeix_p04_yangmiemie_corpse_head_bloodied",
+      "key": "yangmiemie",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yangmiemie_head.png",
+      "head_source_sha256": "b79cb6df75ffd52bf6fbca9ea18c892d37ea44f85a6879414a6295106721ea12",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "9d14767f6e04e9e63fd3da37bd9157df1de75a886260cb6d22f15f1023bf1989"
+    },
+    {
+      "id": "afeix_p04_yangmiemie_corpse_head_injured_01",
+      "key": "yangmiemie",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yangmiemie_head.png",
+      "head_source_sha256": "b79cb6df75ffd52bf6fbca9ea18c892d37ea44f85a6879414a6295106721ea12",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "d466d056bb234aeac77e49e225160676e7a5ce288984827396904ec3e951668b"
+    },
+    {
+      "id": "afeix_p04_yangmiemie_corpse_head_injured_02",
+      "key": "yangmiemie",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_yangmiemie_head.png",
+      "head_source_sha256": "b79cb6df75ffd52bf6fbca9ea18c892d37ea44f85a6879414a6295106721ea12",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "56a95bb0ed7d598b0ece2b80b06a529db4473de53bc3d214a30986af73bc6849"
+    },
+    {
+      "id": "afeix_p04_songnuanyang_corpse_head_bloodied",
+      "key": "songnuanyang",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_songnuanyang_head.png",
+      "head_source_sha256": "60b481cb4bf48a737663511239982e2b2c244480fa4d37623d7f50dc538b235b",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "6c28285ca309af11c11814823b8f708d4cc5c2f6a7ab199a3fe7b48870dd76e9"
+    },
+    {
+      "id": "afeix_p04_songnuanyang_corpse_head_injured_01",
+      "key": "songnuanyang",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_songnuanyang_head.png",
+      "head_source_sha256": "60b481cb4bf48a737663511239982e2b2c244480fa4d37623d7f50dc538b235b",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "737edb9115ce32ce97f0b27f48dd9ab08eed11c79140de5ec6c00554749e49a3"
+    },
+    {
+      "id": "afeix_p04_songnuanyang_corpse_head_injured_02",
+      "key": "songnuanyang",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_songnuanyang_head.png",
+      "head_source_sha256": "60b481cb4bf48a737663511239982e2b2c244480fa4d37623d7f50dc538b235b",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "9d5d04ca1247dd2043af4668f58de31a7e827d8e43ec3c189ec3658e86c72fb6"
+    },
+    {
+      "id": "afeix_p04_xiaogui_corpse_head_bloodied",
+      "key": "xiaogui",
+      "level": 0,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaogui_head.png",
+      "head_source_sha256": "ffe20b7ced34358fa75793c6da6f8e760c5002692f09ea8fa61184a40a31ea23",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "7ec358153b6d985ac312138ca773557a76b3c2076103ea2eb81d734a2c99dc5e"
+    },
+    {
+      "id": "afeix_p04_xiaogui_corpse_head_injured_01",
+      "key": "xiaogui",
+      "level": 1,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaogui_head.png",
+      "head_source_sha256": "ffe20b7ced34358fa75793c6da6f8e760c5002692f09ea8fa61184a40a31ea23",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "eb7f6be188ae8c70de70fdff223f65c595cdc1847793e9464f1db24c7dfba9e6"
+    },
+    {
+      "id": "afeix_p04_xiaogui_corpse_head_injured_02",
+      "key": "xiaogui",
+      "level": 2,
+      "head_source": "art/runtime/portraits-v05/sprites/afeix_p04_xiaogui_head.png",
+      "head_source_sha256": "ffe20b7ced34358fa75793c6da6f8e760c5002692f09ea8fa61184a40a31ea23",
+      "neck_guard": [
+        68,
+        110
+      ],
+      "png_sha256": "9bde92d8cb84d47503f82bcbdacd58af65a68f1d886b23ed9b5c678c4d74175d"
+    }
+  ],
+  "roundtrip": {
+    "passed": true,
+    "sprite_count": 102,
+    "sprites": [
+      {
+        "id": "afeix_p04_afei_normal_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_afei_normal_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_afei_normal_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_damou_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_damou_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_damou_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_mocha_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_mocha_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_mocha_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_bottle_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_bottle_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_bottle_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_shuaizi_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_shuaizi_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_shuaizi_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_lili_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_lili_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_lili_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoyueya_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoyueya_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoyueya_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yuchujiu_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yuchujiu_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yuchujiu_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoyubeike_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoyubeike_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoyubeike_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wangduidui_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wangduidui_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wangduidui_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_laocai_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_laocai_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_laocai_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yanzi_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yanzi_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yanzi_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tiantong_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tiantong_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tiantong_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoning_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoning_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaoning_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaopangxu_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaopangxu_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaopangxu_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_dae_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_dae_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_dae_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_manyuemei_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_manyuemei_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_manyuemei_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaohani_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaohani_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaohani_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_keke_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_keke_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_keke_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yuxiang_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yuxiang_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yuxiang_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tongzhu_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tongzhu_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tongzhu_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_meiya_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_meiya_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_meiya_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wanshe_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wanshe_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wanshe_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tutu_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tutu_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_tutu_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_naigai_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_naigai_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_naigai_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaojie_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaojie_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaojie_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_bula_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_bula_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_bula_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_suwa_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_suwa_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_suwa_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_qianhan_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_qianhan_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_qianhan_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wangdazhi_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wangdazhi_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_wangdazhi_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yaoyaoya_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yaoyaoya_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yaoyaoya_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yangmiemie_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yangmiemie_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_yangmiemie_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_songnuanyang_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_songnuanyang_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_songnuanyang_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaogui_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaogui_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiaogui_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "brush": "package/brushes/afeix_corpse_injuries_v01.brush",
+    "brush_sha256": "c03ec7f2c4d66ebbe27b7e7893566bdb1dbc06bb5b5f0fe41efbf708cafeee46",
+    "atlas": "package/gfx/afeix_corpse_injuries_v01.png",
+    "atlas_sha256": "c776ff58e0816b4b3019cf99fdd24fd73c98d1eb90395335b79457c469506e78",
+    "pack_log": "Loading images...\nsprites\\afeix_p04_afei_normal_corpse_head_bloodied.png\nsprites\\afeix_p04_afei_normal_corpse_head_injured_01.png\nsprites\\afeix_p04_afei_normal_corpse_head_injured_02.png\nsprites\\afeix_p04_damou_corpse_head_bloodied.png\nsprites\\afeix_p04_damou_corpse_head_injured_01.png\nsprites\\afeix_p04_damou_corpse_head_injured_02.png\nsprites\\afeix_p04_mocha_corpse_head_bloodied.png\nsprites\\afeix_p04_mocha_corpse_head_injured_01.png\nsprites\\afeix_p04_mocha_corpse_head_injured_02.png\nsprites\\afeix_p04_bottle_corpse_head_bloodied.png\nsprites\\afeix_p04_bottle_corpse_head_injured_01.png\nsprites\\afeix_p04_bottle_corpse_head_injured_02.png\nsprites\\afeix_p04_shuaizi_corpse_head_bloodied.png\nsprites\\afeix_p04_shuaizi_corpse_head_injured_01.png\nsprites\\afeix_p04_shuaizi_corpse_head_injured_02.png\nsprites\\afeix_p04_lili_corpse_head_bloodied.png\nsprites\\afeix_p04_lili_corpse_head_injured_01.png\nsprites\\afeix_p04_lili_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaoyueya_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaoyueya_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaoyueya_corpse_head_injured_02.png\nsprites\\afeix_p04_yuchujiu_corpse_head_bloodied.png\nsprites\\afeix_p04_yuchujiu_corpse_head_injured_01.png\nsprites\\afeix_p04_yuchujiu_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaoyubeike_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaoyubeike_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaoyubeike_corpse_head_injured_02.png\nsprites\\afeix_p04_wangduidui_corpse_head_bloodied.png\nsprites\\afeix_p04_wangduidui_corpse_head_injured_01.png\nsprites\\afeix_p04_wangduidui_corpse_head_injured_02.png\nsprites\\afeix_p04_laocai_corpse_head_bloodied.png\nsprites\\afeix_p04_laocai_corpse_head_injured_01.png\nsprites\\afeix_p04_laocai_corpse_head_injured_02.png\nsprites\\afeix_p04_yanzi_corpse_head_bloodied.png\nsprites\\afeix_p04_yanzi_corpse_head_injured_01.png\nsprites\\afeix_p04_yanzi_corpse_head_injured_02.png\nsprites\\afeix_p04_tiantong_corpse_head_bloodied.png\nsprites\\afeix_p04_tiantong_corpse_head_injured_01.png\nsprites\\afeix_p04_tiantong_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaoning_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaoning_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaoning_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaopangxu_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaopangxu_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaopangxu_corpse_head_injured_02.png\nsprites\\afeix_p04_dae_corpse_head_bloodied.png\nsprites\\afeix_p04_dae_corpse_head_injured_01.png\nsprites\\afeix_p04_dae_corpse_head_injured_02.png\nsprites\\afeix_p04_manyuemei_corpse_head_bloodied.png\nsprites\\afeix_p04_manyuemei_corpse_head_injured_01.png\nsprites\\afeix_p04_manyuemei_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaohani_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaohani_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaohani_corpse_head_injured_02.png\nsprites\\afeix_p04_keke_corpse_head_bloodied.png\nsprites\\afeix_p04_keke_corpse_head_injured_01.png\nsprites\\afeix_p04_keke_corpse_head_injured_02.png\nsprites\\afeix_p04_yuxiang_corpse_head_bloodied.png\nsprites\\afeix_p04_yuxiang_corpse_head_injured_01.png\nsprites\\afeix_p04_yuxiang_corpse_head_injured_02.png\nsprites\\afeix_p04_tongzhu_corpse_head_bloodied.png\nsprites\\afeix_p04_tongzhu_corpse_head_injured_01.png\nsprites\\afeix_p04_tongzhu_corpse_head_injured_02.png\nsprites\\afeix_p04_meiya_corpse_head_bloodied.png\nsprites\\afeix_p04_meiya_corpse_head_injured_01.png\nsprites\\afeix_p04_meiya_corpse_head_injured_02.png\nsprites\\afeix_p04_wanshe_corpse_head_bloodied.png\nsprites\\afeix_p04_wanshe_corpse_head_injured_01.png\nsprites\\afeix_p04_wanshe_corpse_head_injured_02.png\nsprites\\afeix_p04_tutu_corpse_head_bloodied.png\nsprites\\afeix_p04_tutu_corpse_head_injured_01.png\nsprites\\afeix_p04_tutu_corpse_head_injured_02.png\nsprites\\afeix_p04_naigai_corpse_head_bloodied.png\nsprites\\afeix_p04_naigai_corpse_head_injured_01.png\nsprites\\afeix_p04_naigai_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaojie_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaojie_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaojie_corpse_head_injured_02.png\nsprites\\afeix_p04_bula_corpse_head_bloodied.png\nsprites\\afeix_p04_bula_corpse_head_injured_01.png\nsprites\\afeix_p04_bula_corpse_head_injured_02.png\nsprites\\afeix_p04_suwa_corpse_head_bloodied.png\nsprites\\afeix_p04_suwa_corpse_head_injured_01.png\nsprites\\afeix_p04_suwa_corpse_head_injured_02.png\nsprites\\afeix_p04_qianhan_corpse_head_bloodied.png\nsprites\\afeix_p04_qianhan_corpse_head_injured_01.png\nsprites\\afeix_p04_qianhan_corpse_head_injured_02.png\nsprites\\afeix_p04_wangdazhi_corpse_head_bloodied.png\nsprites\\afeix_p04_wangdazhi_corpse_head_injured_01.png\nsprites\\afeix_p04_wangdazhi_corpse_head_injured_02.png\nsprites\\afeix_p04_yaoyaoya_corpse_head_bloodied.png\nsprites\\afeix_p04_yaoyaoya_corpse_head_injured_01.png\nsprites\\afeix_p04_yaoyaoya_corpse_head_injured_02.png\nsprites\\afeix_p04_yangmiemie_corpse_head_bloodied.png\nsprites\\afeix_p04_yangmiemie_corpse_head_injured_01.png\nsprites\\afeix_p04_yangmiemie_corpse_head_injured_02.png\nsprites\\afeix_p04_songnuanyang_corpse_head_bloodied.png\nsprites\\afeix_p04_songnuanyang_corpse_head_injured_01.png\nsprites\\afeix_p04_songnuanyang_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaogui_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaogui_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaogui_corpse_head_injured_02.png\nPacking rectangles...\nWriting gfx/afeix_corpse_injuries_v01.png (2048x2048)...\n",
+    "unpack_log": "Opening gfx/afeix_corpse_injuries_v01.png...\nsprites\\afeix_p04_afei_normal_corpse_head_bloodied.png\nsprites\\afeix_p04_afei_normal_corpse_head_injured_01.png\nsprites\\afeix_p04_afei_normal_corpse_head_injured_02.png\nsprites\\afeix_p04_damou_corpse_head_bloodied.png\nsprites\\afeix_p04_damou_corpse_head_injured_01.png\nsprites\\afeix_p04_damou_corpse_head_injured_02.png\nsprites\\afeix_p04_mocha_corpse_head_bloodied.png\nsprites\\afeix_p04_mocha_corpse_head_injured_01.png\nsprites\\afeix_p04_mocha_corpse_head_injured_02.png\nsprites\\afeix_p04_bottle_corpse_head_bloodied.png\nsprites\\afeix_p04_bottle_corpse_head_injured_01.png\nsprites\\afeix_p04_bottle_corpse_head_injured_02.png\nsprites\\afeix_p04_shuaizi_corpse_head_bloodied.png\nsprites\\afeix_p04_shuaizi_corpse_head_injured_01.png\nsprites\\afeix_p04_shuaizi_corpse_head_injured_02.png\nsprites\\afeix_p04_lili_corpse_head_bloodied.png\nsprites\\afeix_p04_lili_corpse_head_injured_01.png\nsprites\\afeix_p04_lili_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaoyueya_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaoyueya_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaoyueya_corpse_head_injured_02.png\nsprites\\afeix_p04_yuchujiu_corpse_head_bloodied.png\nsprites\\afeix_p04_yuchujiu_corpse_head_injured_01.png\nsprites\\afeix_p04_yuchujiu_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaoyubeike_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaoyubeike_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaoyubeike_corpse_head_injured_02.png\nsprites\\afeix_p04_wangduidui_corpse_head_bloodied.png\nsprites\\afeix_p04_wangduidui_corpse_head_injured_01.png\nsprites\\afeix_p04_wangduidui_corpse_head_injured_02.png\nsprites\\afeix_p04_laocai_corpse_head_bloodied.png\nsprites\\afeix_p04_laocai_corpse_head_injured_01.png\nsprites\\afeix_p04_laocai_corpse_head_injured_02.png\nsprites\\afeix_p04_yanzi_corpse_head_bloodied.png\nsprites\\afeix_p04_yanzi_corpse_head_injured_01.png\nsprites\\afeix_p04_yanzi_corpse_head_injured_02.png\nsprites\\afeix_p04_tiantong_corpse_head_bloodied.png\nsprites\\afeix_p04_tiantong_corpse_head_injured_01.png\nsprites\\afeix_p04_tiantong_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaoning_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaoning_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaoning_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaopangxu_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaopangxu_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaopangxu_corpse_head_injured_02.png\nsprites\\afeix_p04_dae_corpse_head_bloodied.png\nsprites\\afeix_p04_dae_corpse_head_injured_01.png\nsprites\\afeix_p04_dae_corpse_head_injured_02.png\nsprites\\afeix_p04_manyuemei_corpse_head_bloodied.png\nsprites\\afeix_p04_manyuemei_corpse_head_injured_01.png\nsprites\\afeix_p04_manyuemei_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaohani_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaohani_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaohani_corpse_head_injured_02.png\nsprites\\afeix_p04_keke_corpse_head_bloodied.png\nsprites\\afeix_p04_keke_corpse_head_injured_01.png\nsprites\\afeix_p04_keke_corpse_head_injured_02.png\nsprites\\afeix_p04_yuxiang_corpse_head_bloodied.png\nsprites\\afeix_p04_yuxiang_corpse_head_injured_01.png\nsprites\\afeix_p04_yuxiang_corpse_head_injured_02.png\nsprites\\afeix_p04_tongzhu_corpse_head_bloodied.png\nsprites\\afeix_p04_tongzhu_corpse_head_injured_01.png\nsprites\\afeix_p04_tongzhu_corpse_head_injured_02.png\nsprites\\afeix_p04_meiya_corpse_head_bloodied.png\nsprites\\afeix_p04_meiya_corpse_head_injured_01.png\nsprites\\afeix_p04_meiya_corpse_head_injured_02.png\nsprites\\afeix_p04_wanshe_corpse_head_bloodied.png\nsprites\\afeix_p04_wanshe_corpse_head_injured_01.png\nsprites\\afeix_p04_wanshe_corpse_head_injured_02.png\nsprites\\afeix_p04_tutu_corpse_head_bloodied.png\nsprites\\afeix_p04_tutu_corpse_head_injured_01.png\nsprites\\afeix_p04_tutu_corpse_head_injured_02.png\nsprites\\afeix_p04_naigai_corpse_head_bloodied.png\nsprites\\afeix_p04_naigai_corpse_head_injured_01.png\nsprites\\afeix_p04_naigai_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaojie_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaojie_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaojie_corpse_head_injured_02.png\nsprites\\afeix_p04_bula_corpse_head_bloodied.png\nsprites\\afeix_p04_bula_corpse_head_injured_01.png\nsprites\\afeix_p04_bula_corpse_head_injured_02.png\nsprites\\afeix_p04_suwa_corpse_head_bloodied.png\nsprites\\afeix_p04_suwa_corpse_head_injured_01.png\nsprites\\afeix_p04_suwa_corpse_head_injured_02.png\nsprites\\afeix_p04_qianhan_corpse_head_bloodied.png\nsprites\\afeix_p04_qianhan_corpse_head_injured_01.png\nsprites\\afeix_p04_qianhan_corpse_head_injured_02.png\nsprites\\afeix_p04_wangdazhi_corpse_head_bloodied.png\nsprites\\afeix_p04_wangdazhi_corpse_head_injured_01.png\nsprites\\afeix_p04_wangdazhi_corpse_head_injured_02.png\nsprites\\afeix_p04_yaoyaoya_corpse_head_bloodied.png\nsprites\\afeix_p04_yaoyaoya_corpse_head_injured_01.png\nsprites\\afeix_p04_yaoyaoya_corpse_head_injured_02.png\nsprites\\afeix_p04_yangmiemie_corpse_head_bloodied.png\nsprites\\afeix_p04_yangmiemie_corpse_head_injured_01.png\nsprites\\afeix_p04_yangmiemie_corpse_head_injured_02.png\nsprites\\afeix_p04_songnuanyang_corpse_head_bloodied.png\nsprites\\afeix_p04_songnuanyang_corpse_head_injured_01.png\nsprites\\afeix_p04_songnuanyang_corpse_head_injured_02.png\nsprites\\afeix_p04_xiaogui_corpse_head_bloodied.png\nsprites\\afeix_p04_xiaogui_corpse_head_injured_01.png\nsprites\\afeix_p04_xiaogui_corpse_head_injured_02.png\n",
+    "roundtrip_directory": "build/roundtrip-ot7e7skn"
+  },
+  "files": [
+    "brushes/afeix_corpse_injuries_v01.brush",
+    "gfx/afeix_corpse_injuries_v01.png"
+  ],
+  "native_sources": [
+    {
+      "brush": "bust_body_bloodied_02",
+      "metadata": {
+        "id": "bust_body_bloodied_02",
+        "offsetY": "30",
+        "ic": "FF00014C",
+        "width": "104",
+        "height": "142",
+        "img": "entity\\bust_body_bloodied_02.png",
+        "left": "-40",
+        "right": "32",
+        "top": "-49",
+        "bottom": "39"
+      },
+      "sha256": "33d49012645ca7f69db5f01f60757cbfcce62e7e2e3b0e3245888d4737009570"
+    },
+    {
+      "brush": "bust_head_injured_01",
+      "metadata": {
+        "id": "bust_head_injured_01",
+        "offsetY": "35",
+        "ic": "FF0C0D7A",
+        "width": "104",
+        "height": "142",
+        "img": "entity\\heads\\bust_head_injured_01.png",
+        "left": "-12",
+        "right": "52",
+        "top": "-32",
+        "bottom": "34"
+      },
+      "sha256": "793cfe0fce47b1a2b40386d084db62b67b04186efbcb4c5ef219a41e3111926c"
+    },
+    {
+      "brush": "bust_head_injured_02",
+      "metadata": {
+        "id": "bust_head_injured_02",
+        "offsetY": "35",
+        "ic": "FF0C0D79",
+        "width": "104",
+        "height": "142",
+        "img": "entity\\heads\\bust_head_injured_02.png",
+        "left": "-12",
+        "right": "52",
+        "top": "-32",
+        "bottom": "44"
+      },
+      "sha256": "8e326ea7a4cec26641814a9bd782780767feca9e83d4df334ccb964242ef1925"
+    }
+  ],
+  "uses_native_wound_pixels": true,
+  "portraits_repainted": false,
+  "in_game_tested": false
+}

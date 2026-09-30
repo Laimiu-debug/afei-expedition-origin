@@ -73,7 +73,7 @@ A.catalogTurnStart=function(a) {
 };
 A.balanceAfterTurnStart <- function(a) {
     if(!this.isOrigin()||!::Tactical.isActive()||!this.memberPlayer(a))return;
-    foreach(key,d in this.MemberSkillDefs)if(!d.active&&this.catalogHas(a,key)&&this.trainingRank(a,key)>=2&&key!="xiwen_read"&&key!="xiwen_travel")
+    foreach(key,d in this.MemberSkillDefs)if(!d.active&&this.catalogHas(a,key)&&this.trainingRank(a,key)>=2&&key!="xiwen_read"&&key!="xiwen_travel"&&!("specialized_mastery" in d && d.specialized_mastery))
         if(this.catalogOnce(a,"mastery_recovery_round"))this.catalogRecover(a,1);
     if(this.catalogHas(a,"turtle_bond")&&this.memberShield(a))foreach(b in this.memberAllies(a,3))if(this.characterId(b)=="afei"&&this.catalogOnce(a,"turtle_recovery_round"))this.catalogRecover(a,2);
     if(this.catalogHas(a,"xiwen_travel")&&this.catalogGet(a,"previous_walked")>0&&this.catalogGet(a,"turn_serial")>1){

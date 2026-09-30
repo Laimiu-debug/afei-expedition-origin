@@ -1,0 +1,5 @@
+<brush name="gfx/afeix_dlc_xiwen_corpse_injuries_v01.png" version="17">
+  <sprite id="afeix_p04_xiwen_corpse_head_bloodied" img="afeix_p04_xiwen_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiwen_corpse_head_injured_01" img="afeix_p04_xiwen_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiwen_corpse_head_injured_02" img="afeix_p04_xiwen_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+</brush>

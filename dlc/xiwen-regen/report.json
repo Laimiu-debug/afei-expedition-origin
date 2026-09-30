@@ -1,12 +1,14 @@
 {
-  "version": "0.2.4-dlc",
+  "version": "0.2.5-dlc",
   "minimum_base": "0.26.2 / internal 36",
-  "base_preload_sha256": "d8ee0718a5afe0f94bf21d0798a3a97db1ac1cde96c70d03ec4dd87a69b15ad2",
-  "base_package_sha256": "93dad4c4f7db75b552c5870bee90ad5856059d476e51b18c29e1f59fb785ed48",
-  "package_sha256": "906e9713acf65635fe546654bc7c3a228324c5c1e48b1031896d2c0580316ba4",
-  "crc_and_source_match": true,
+  "recommended_base": "0.28.4 / internal 54",
+  "base_preload_sha256": "d5c0fdcc655c2da22656d9c32bc770fc67ee4936172fafd4626998db755f5330",
+  "base_package_sha256": "233a6556721ddb202fbae07344098c83ee647bc46949e535c08985d5bdb5a5c2",
+  "package_sha256": "8b0d3afa56de63255caa323d1d0e4f76c0b3f9b464ed905c4da1aaed1164db43",
   "entries": [
+    "brushes/afeix_dlc_xiwen_corpse_injuries_v01.brush",
     "brushes/afeix_dlc_xiwen_regen.brush",
+    "gfx/afeix_dlc_xiwen_corpse_injuries_v01.png",
     "gfx/afeix_dlc_xiwen_regen.png",
     "scripts/!mods_preload/mod_afeix_dlc_xiwen_regen.nut",
     "scripts/items/accessory/afeix_regen_item.nut",
@@ -15,6 +17,7 @@
     "scripts/mods/afeix_dlc_xiwen_regen/pet.nut",
     "scripts/skills/backgrounds/afeix_xiwen_background.nut"
   ],
+  "crc_and_source_match": true,
   "art": {
     "export": {
       "key": "xiwen",
@@ -53,19 +56,19 @@
         0,
         255
       ],
-      "live_png_sha256": "67362b42ba00fdd20667927bee94c3caceb25e204f05551bcf091ff6ad0206f0",
-      "head_png_sha256": "fc3f95337a9c77c501bcb967043c81bad8607b87bf1715c856633469f809a71a",
+      "live_png_sha256": "6a05aa3c69316611ba3ab0d1779f792984f9c6d371b7e16863d92fa30495da8e",
+      "head_png_sha256": "6073a81561823ad5dcdf9ae065748a982ea9655091c05f14d1e3cb54e574fbaf",
       "dead_png_sha256": "99156e098ead4bfb6a8d788e2f0a8c20e4e3101ade9563a58a0238ed27ce7a13",
-      "corpse_head_png_sha256": "fc3f95337a9c77c501bcb967043c81bad8607b87bf1715c856633469f809a71a",
+      "corpse_head_png_sha256": "9a26d41199817012816374a35e45a8b54b385c4bec8881ec4791e075b4c02cae",
       "corpse_head_geometry": {
-        "left": -62,
-        "right": 52,
-        "top": -30,
-        "bottom": 112,
-        "width": 114,
-        "height": 142,
-        "offsetX": 0,
-        "offsetY": 0
+        "left": -80,
+        "right": 80,
+        "top": -85,
+        "bottom": 65,
+        "width": 160,
+        "height": 150,
+        "offsetX": 6,
+        "offsetY": 10
       },
       "corpse_neck_anchor": [
         62,
@@ -75,19 +78,19 @@
       "head_seam": [
         [
           0,
-          111
+          102
         ],
         [
           40,
-          111
+          102
         ],
         [
           54,
-          117
+          114
         ],
         [
           66,
-          123
+          114
         ],
         [
           75,
@@ -95,11 +98,11 @@
         ],
         [
           88,
-          111
+          102
         ],
         [
           114,
-          111
+          102
         ]
       ],
       "neck_guard": [
@@ -107,7 +110,7 @@
         112
       ],
       "split_reconstructs_complete_portrait": true,
-      "dead_mode": "native_equipped_body_with_pivoted_custom_head",
+      "dead_mode": "native_equipped_body_with_baked_prone_head",
       "metadata": [
         {
           "id": "afeix_p04_xiwen",
@@ -146,17 +149,17 @@
         {
           "id": "afeix_p04_xiwen_corpse_head",
           "img": "sprites\\afeix_p04_xiwen_corpse_head.png",
-          "left": "-62",
-          "right": "52",
-          "top": "-30",
-          "bottom": "112",
-          "width": "114",
-          "height": "142",
-          "offsetX": "0",
-          "offsetY": "0"
+          "left": "-80",
+          "right": "80",
+          "top": "-85",
+          "bottom": "65",
+          "width": "160",
+          "height": "150",
+          "offsetX": "6",
+          "offsetY": "10"
         }
       ],
-      "review_note": "Reference-photo likeness; intact jaw and neck; native armor and helmet overlays reviewed."
+      "review_note": ""
     },
     "roundtrip": {
       "passed": true,
@@ -183,13 +186,12 @@
           "pixels_identical": true
         }
       ],
-      "brush": "package/brushes/afeix_dlc_xiwen_regen.brush",
-      "brush_sha256": "f5175a27fa41d4898949cbb7cc8f7324f0d934977d455fa3a3908b9cd8060382",
-      "atlas": "package/gfx/afeix_dlc_xiwen_regen.png",
-      "atlas_sha256": "2ffa48ebc339eecdca46e0c3b877a5009c5358bfb9fb21e13c2426aed67352df",
-      "pack_log": "Loading images...\nsprites\\afeix_p04_xiwen.png\nsprites\\afeix_p04_xiwen_head.png\nsprites\\afeix_p04_xiwen_dead.png\nsprites\\afeix_p04_xiwen_corpse_head.png\nPacking rectangles...\nWriting gfx/afeix_dlc_xiwen_regen.png (512x256)...\n",
-      "unpack_log": "Opening gfx/afeix_dlc_xiwen_regen.png...\nsprites\\afeix_p04_xiwen.png\nsprites\\afeix_p04_xiwen_head.png\nsprites\\afeix_p04_xiwen_dead.png\nsprites\\afeix_p04_xiwen_corpse_head.png\n"
-    }
+      "brush_sha256": "529f5b471adfdef1e90e83042d587e8219cd225d29811bddd84c816e4867a8f6",
+      "atlas_sha256": "5c6d3f126612a83f37082c244f86663c3d4a1825e71d7673a1c81d005b60898a",
+      "method": "Unpack existing shipped atlas; compare pixels and coordinates with current exports without modifying source."
+    },
+    "corpse_injury_report": "dlc/xiwen-regen/art/corpse-injuries-v01/build/report.json",
+    "corpse_injury_verified_by": "build/gameplay-validation.json"
   },
   "validation": {
     "tests": [
@@ -205,8 +207,8 @@
       },
       {
         "test": "test_appearance",
-        "assertions": 2107,
-        "log": "ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=2107\r\n"
+        "assertions": 4513,
+        "log": "ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=4513\r\n"
       },
       {
         "test": "test_backgrounds",
@@ -243,5 +245,33 @@
     "base_path_collisions": [],
     "native_equipment_paths_passed": true,
     "in_game_tested": false
-  }
+  },
+  "scripts": [
+    {
+      "path": "dlc/xiwen-regen/src/scripts/!mods_preload/mod_afeix_dlc_xiwen_regen.nut",
+      "sha256": "2b220305978cdfff751524289b8fa261874dbfabb51b4c555963b2ca941c738e"
+    },
+    {
+      "path": "dlc/xiwen-regen/src/scripts/items/accessory/afeix_regen_item.nut",
+      "sha256": "ec34d3671fb374e470ca603926c7595fe0e395bd9896b52853c4674846949252"
+    },
+    {
+      "path": "dlc/xiwen-regen/src/scripts/mods/afeix_dlc_xiwen_regen/content.nut",
+      "sha256": "9367e0d40947bf281b03dc2928d969e53bf53ed50197981eb8d0962571031609"
+    },
+    {
+      "path": "dlc/xiwen-regen/src/scripts/mods/afeix_dlc_xiwen_regen/hooks.nut",
+      "sha256": "7607bde1ea8ede0ca3a12fe79555e448ec83f891f34d147c6717136a326715c4"
+    },
+    {
+      "path": "dlc/xiwen-regen/src/scripts/mods/afeix_dlc_xiwen_regen/pet.nut",
+      "sha256": "f1a48a5b13bc1b0ff601c1183dc1c93b4cb5bf3a277a349099a0e8fb380f22ce"
+    },
+    {
+      "path": "dlc/xiwen-regen/src/scripts/skills/backgrounds/afeix_xiwen_background.nut",
+      "sha256": "727dcf9f781e26f9fc4a83fe4e98e31b818d68c47e154aef4e4d5ffd6ead393d"
+    }
+  ],
+  "regen_source_unchanged": true,
+  "in_game_tested": false
 }

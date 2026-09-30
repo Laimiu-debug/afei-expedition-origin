@@ -41,13 +41,13 @@ local failed=false;try{A.balanceTraits(legacy);}catch(e){failed=true;}
 check(failed&&!legacy.flags.has("afeix_balance_v26")&&legacy.skills.m.Skills.len()==0,"trait failure is atomic");
 foreach(i,field in A.BalanceFields)eq(legacy.baseProps[field],A.BalanceV26.people.afei.old_attrs[i]+10,"trait failure preserves base");
 ::new=constructor;A.balanceTraits(legacy);check(legacy.flags.has("afeix_balance_v26"),"trait migration retry succeeds");
-fresh();local af=makeActor("afei");af.baseProps.Stamina<-106;af.flags.set("afeix_balance_v26",true);af.level=11;
+fresh();local af=makeActor("afei");af.baseProps.Stamina<-106;af.flags.set("afeix_balance_v26",true);af.flags.set("afeix_endgame_revision",1);af.level=11;
 ::productionSyncBalance.bindenv(A)(af);check(!af.skills.hasSkill("trait.afeix_endurance"),"Afei has no extra endurance");
 af.baseProps.Stamina+=18;af.skills.update();eq(af.props.Stamina,124,"Afei six ordinary fatigue upgrades reach expected target");
 ::productionSyncBalance.bindenv(A)(af);af.skills.update();eq(af.props.Stamina,124,"Afei sync adds no hidden stamina");
 
 // Both revised builds use ordinary, player-selected stamina growth only.
-fresh();local bottle=makeActor("bottle");bottle.baseProps.Stamina<-109;bottle.flags.set("afeix_balance_v26",true);
+fresh();local bottle=makeActor("bottle");bottle.baseProps.Stamina<-109;bottle.flags.set("afeix_balance_v26",true);bottle.flags.set("afeix_endgame_revision",1);
 foreach(level in [1,3,5,7,9,11,25]){
  bottle.level=level;::productionSyncBalance.bindenv(A)(bottle);bottle.skills.update();
  check(!bottle.skills.hasSkill("trait.afeix_endurance"),"bottle receives no special level bonus");

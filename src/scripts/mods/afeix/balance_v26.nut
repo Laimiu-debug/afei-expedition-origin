@@ -5,6 +5,7 @@ A.applyBalanceDefinition <- function(key) {
     if (!(key in this.Characters) || !(key in this.BalanceV26.people)) return;
     local p=this.BalanceV26.people[key], d=this.Characters[key];
     foreach(field in ["attrs","stars","wage","equipment","bag"]) d[field]=p[field];
+    if ("role" in p) d.role=p.role;
     d.hireCost=p.suggested_price;
     if(!d.isCaptain)this.EncounterRequirements[key]<-{days=p.day,battles=p.battles,jobs=p.contracts,towns=p.towns,level=p.highest_level};
     local keys=[];
@@ -24,7 +25,7 @@ A.applyBalanceDefinition <- function(key) {
 };
 foreach(key in A.CharacterOrder)A.applyBalanceDefinition(key);
 if ("recruitment" in A.BalanceV26) A.configureRecruitment(A.BalanceV26.recruitment);
-A.TalentRevision=3;
+A.TalentRevision=4;
 A.RebalancedTalentKeys=[];
 foreach(key,p in A.BalanceV26.people)A.RebalancedTalentKeys.push(key);
 
@@ -59,14 +60,34 @@ A.balanceTraits <- function(bro,fresh=false) {
         throw error;
     }
     f.set("afeix_balance_v26",true);
+    // New recruits and pre-V2 saves already received the current full profile.
+    f.set("afeix_endgame_revision",1);
     if(!fresh)f.set("afeix_v26_legacy_traits",true);
 };
 A.syncBalance <- function(bro) {
     local key=this.characterId(bro);
     if(!(key in this.BalanceV26.people))return;
     this.balanceTraits(bro);
+    this.syncEndgameBalance(bro);
     if(this.BalanceV26.people[key].level_bonus_per_level[1]>0 && !bro.getSkills().hasSkill("trait.afeix_endurance"))
         bro.getSkills().add(::new("scripts/skills/traits/afeix_endurance"));
+};
+A.syncEndgameBalance <- function(bro) {
+    local key=this.characterId(bro), f=bro.getFlags();
+    if (!(key in this.BalanceV26.people) || !f.has("afeix_balance_v26")) return;
+    if (f.has("afeix_endgame_revision") && f.get("afeix_endgame_revision")>=1) return;
+    local p=this.BalanceV26.people[key];
+    if (!("endgame_previous_attrs" in p)) return;
+    local properties=bro.getBaseProperties(), previous=[];
+    foreach(field in this.BalanceFields)previous.push(properties[field]);
+    try {
+        foreach(i,field in this.BalanceFields)
+            properties[field]+=p.attrs[i]-p.endgame_previous_attrs[i];
+        f.set("afeix_endgame_revision",1);
+    } catch(error) {
+        foreach(i,field in this.BalanceFields)properties[field]=previous[i];
+        throw error;
+    }
 };
 A.balanceJoinLevel <- function(key,freeze=false) {
     if(this.Characters[key].isCaptain)return 1;

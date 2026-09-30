@@ -1,0 +1,127 @@
+{
+  "atlas_name": "afeix_dlc_xiwen_corpse_injuries_v01",
+  "sprite_count": 3,
+  "records": [
+    {
+      "id": "afeix_p04_xiwen_corpse_head_bloodied",
+      "key": "xiwen",
+      "level": 0,
+      "head_source": "dlc/xiwen-regen/art/sprites/afeix_p04_xiwen_head.png",
+      "head_source_sha256": "6073a81561823ad5dcdf9ae065748a982ea9655091c05f14d1e3cb54e574fbaf",
+      "neck_guard": [
+        62,
+        112
+      ],
+      "png_sha256": "266c8def085ce0aa3e24a97791b9ed3409fd23ce4c3436305b2853ebda5d772f"
+    },
+    {
+      "id": "afeix_p04_xiwen_corpse_head_injured_01",
+      "key": "xiwen",
+      "level": 1,
+      "head_source": "dlc/xiwen-regen/art/sprites/afeix_p04_xiwen_head.png",
+      "head_source_sha256": "6073a81561823ad5dcdf9ae065748a982ea9655091c05f14d1e3cb54e574fbaf",
+      "neck_guard": [
+        62,
+        112
+      ],
+      "png_sha256": "70b164d71429941f9e7d2dadedb1f43438803f403bea200198985632c54b2a23"
+    },
+    {
+      "id": "afeix_p04_xiwen_corpse_head_injured_02",
+      "key": "xiwen",
+      "level": 2,
+      "head_source": "dlc/xiwen-regen/art/sprites/afeix_p04_xiwen_head.png",
+      "head_source_sha256": "6073a81561823ad5dcdf9ae065748a982ea9655091c05f14d1e3cb54e574fbaf",
+      "neck_guard": [
+        62,
+        112
+      ],
+      "png_sha256": "ee4722ba30a883e48a09c59e165114f22295139b15362d336be0a5048adc21bc"
+    }
+  ],
+  "roundtrip": {
+    "passed": true,
+    "sprite_count": 3,
+    "sprites": [
+      {
+        "id": "afeix_p04_xiwen_corpse_head_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiwen_corpse_head_injured_01",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_p04_xiwen_corpse_head_injured_02",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "brush": "package/brushes/afeix_dlc_xiwen_corpse_injuries_v01.brush",
+    "brush_sha256": "ed2c1b3070af31bfcba831279ec9d1a28038bfc7a75bbba265c85b407e8e7f46",
+    "atlas": "package/gfx/afeix_dlc_xiwen_corpse_injuries_v01.png",
+    "atlas_sha256": "eac22d5ded0992f39e3d172abfdf993ea8d8b3dc0afc62f3af9873e7fb486f8f",
+    "pack_log": "Loading images...\nsprites\\afeix_p04_xiwen_corpse_head_bloodied.png\nsprites\\afeix_p04_xiwen_corpse_head_injured_01.png\nsprites\\afeix_p04_xiwen_corpse_head_injured_02.png\nPacking rectangles...\nWriting gfx/afeix_dlc_xiwen_corpse_injuries_v01.png (512x256)...\n",
+    "unpack_log": "Opening gfx/afeix_dlc_xiwen_corpse_injuries_v01.png...\nsprites\\afeix_p04_xiwen_corpse_head_bloodied.png\nsprites\\afeix_p04_xiwen_corpse_head_injured_01.png\nsprites\\afeix_p04_xiwen_corpse_head_injured_02.png\n",
+    "roundtrip_directory": "build/roundtrip-92jq47cc"
+  },
+  "files": [
+    "brushes/afeix_dlc_xiwen_corpse_injuries_v01.brush",
+    "gfx/afeix_dlc_xiwen_corpse_injuries_v01.png"
+  ],
+  "native_sources": [
+    {
+      "brush": "bust_body_bloodied_02",
+      "metadata": {
+        "id": "bust_body_bloodied_02",
+        "offsetY": "30",
+        "ic": "FF00014C",
+        "width": "104",
+        "height": "142",
+        "img": "entity\\bust_body_bloodied_02.png",
+        "left": "-40",
+        "right": "32",
+        "top": "-49",
+        "bottom": "39"
+      },
+      "sha256": "33d49012645ca7f69db5f01f60757cbfcce62e7e2e3b0e3245888d4737009570"
+    },
+    {
+      "brush": "bust_head_injured_01",
+      "metadata": {
+        "id": "bust_head_injured_01",
+        "offsetY": "35",
+        "ic": "FF0C0D7A",
+        "width": "104",
+        "height": "142",
+        "img": "entity\\heads\\bust_head_injured_01.png",
+        "left": "-12",
+        "right": "52",
+        "top": "-32",
+        "bottom": "34"
+      },
+      "sha256": "793cfe0fce47b1a2b40386d084db62b67b04186efbcb4c5ef219a41e3111926c"
+    },
+    {
+      "brush": "bust_head_injured_02",
+      "metadata": {
+        "id": "bust_head_injured_02",
+        "offsetY": "35",
+        "ic": "FF0C0D79",
+        "width": "104",
+        "height": "142",
+        "img": "entity\\heads\\bust_head_injured_02.png",
+        "left": "-12",
+        "right": "52",
+        "top": "-32",
+        "bottom": "44"
+      },
+      "sha256": "8e326ea7a4cec26641814a9bd782780767feca9e83d4df334ccb964242ef1925"
+    }
+  ],
+  "uses_native_wound_pixels": true,
+  "portraits_repainted": false,
+  "in_game_tested": false
+}
