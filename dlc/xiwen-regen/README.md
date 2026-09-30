@@ -1,6 +1,6 @@
 # DLC：希文与里根儿 · 0.2.5
 
-2026-09-30，0.2.5 发布候选包已完成核验：优化希文的介绍、背景、相遇、成长与结局，修正颈部衔接和倒地头部，新增三种倒地伤痕图集。里根儿介绍、开局发放和战犬机制保持原样。推荐主包 v0.28.4，并新开战役；8,018条相关离线断言、6份脚本、4个头像画刷及10个包文件核验通过。宠物流程与美术尚未实机验收，见[本轮更新](../../docs/releases/v0.28.4.md)。
+2026-09-30，0.2.5 已发布至 BBMOD：优化希文的介绍、背景、相遇、成长与结局，修正颈部衔接和倒地头部，新增三种倒地伤痕图集。里根儿介绍、开局发放和战犬机制保持原样。推荐主包 v0.28.4，并新开战役；8,018条相关离线断言、6份脚本、4个头像画刷及10个包文件核验通过，公开下载与本地包及源码一致。宠物流程与美术尚未实机验收，见[本轮更新](../../docs/releases/v0.28.4.md)和[发布记录](../../docs/releases/publication-dlc-xiwen-regen-0.2.5.md)。
 
 0.2.4 已发布至 BBMOD：里根儿介绍中的“老动物园”改为“动物园”。仓库发放与其他玩法不变，5,612 条离线断言通过；已同步本机安装，DLC 宠物流程尚未实机验收。见[本轮处理与验证](../../docs/releases/v0.27.6.md)和[网站发布记录](../../docs/releases/publication-dlc-xiwen-regen-0.2.4.md)。
 
@@ -28,7 +28,7 @@
 - [完整头像源图](art/sources/xiwen.png)
 - [生图提示词与参考说明](art/PROMPT.md)
 - [本地 DLC 0.2.5 包](<dist/mod_afeix_dlc_xiwen_regen v0.2.5.zip>)
-- [网站下载 DLC](https://bbmod.site/files/15448fbf-9143-4b3f-910e-945ede087581/download/) · [主包下载页](https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [网站发布记录](../../docs/releases/publication-dlc-xiwen-regen-0.2.4.md)
+- [网站下载 DLC](https://bbmod.site/files/76341887-9c0c-4a58-aaf7-fd2ef7f478ac/download/) · [主包下载页](https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [网站发布记录](../../docs/releases/publication-dlc-xiwen-regen-0.2.5.md)
 - [构建、测试及校验报告](report.json)
 
 DLC 加载器最低依赖阿飞远征团 **v0.26.2（内部版本 36）**及主包使用的 Legacy Modding Script Hooks；当前安装推荐 **v0.28.4 或更新版**。准备试玩时，将主包 ZIP 与本 DLC ZIP 一起放入游戏 `data` 目录，保持 ZIP 原样、后缀小写 `.zip`，主包和 DLC 各只保留一个版本。DLC ZIP 只有十个新增文件，不覆盖主包文件；不能用它代替完整主包。

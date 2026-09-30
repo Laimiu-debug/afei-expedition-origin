@@ -2,7 +2,7 @@
 
 阿飞主题的《战场兄弟》独立公司起源项目，目标环境为 PC 原版与官方 DLC。
 
-**v0.28.4 发布候选包已完成核验**：优化全员文案、调整终局岗位平衡，新增“飞李不可”付费属性培养，修正颈部、尸体与受伤血迹，累计小龟觉醒冷却和说明弹窗。主包32,881条离线断言、287个包文件一致性校验通过；可选DLC 0.2.5同步希文文案和美术，里根儿介绍保持原样。[本地完整主包](<dist/mod_afeix_expedition v0.28.4.zip>) · [完整更新说明](docs/releases/v0.28.4.md)。新增玩法与美术尚未实机验收，请新开战役。
+**v0.28.4 已发布至 BBMOD**：优化全员文案、调整终局岗位平衡，新增“飞李不可”付费属性培养，修正颈部、尸体与受伤血迹，累计小龟觉醒冷却和说明弹窗。主包32,881条离线断言、287个包文件一致性校验通过；可选DLC 0.2.5同步希文文案和美术，里根儿介绍保持原样。公开下载与本地包及源码一致。[公开下载](https://bbmod.site/files/ded2ff8f-6009-4dd5-a511-e7b159458cae/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.4.zip>) · [完整更新说明](docs/releases/v0.28.4.md) · [发布记录](docs/releases/publication-0.28.4.md)。新增玩法与美术尚未实机验收，请新开战役。
 
 **飞李不可**：大地图 **F8 → 战团事务 → 飞李不可**，选择在队角色，每次支付 **100 克朗**，只为所选基础属性永久增加 **1 点**；八项属性均可选择，可重复付费参加。[玩家用法与验证](docs/design/attribute-treatment.md)。
 
@@ -54,13 +54,13 @@ v0.24.0 名单更正（2026-09-28）：删除陈知含后共 **34 人**；宋暖
 
 文案修订：[酒馆、信件与留言](docs/playtest-tavern-text.md)。六段相遇与回应已改用具体对话，保留现有触发顺序和奖励，已随 v0.22.0 发布。
 
-公开下载：[BBMOD v0.28.2 试玩版](https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [直接下载 ZIP](https://bbmod.site/files/b0d85f1f-88be-414e-99fd-d16017970516/download/) · [安装与更新说明](docs/releases/v0.28.2.md) · [网站发布记录](docs/releases/publication-0.28.2.md)。[GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.16.1) 暂仍为 v0.16.1。
+公开下载：[BBMOD v0.28.4 试玩版](https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [直接下载 ZIP](https://bbmod.site/files/ded2ff8f-6009-4dd5-a511-e7b159458cae/download/) · [安装与更新说明](docs/releases/v0.28.4.md) · [网站发布记录](docs/releases/publication-0.28.4.md)。[GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.16.1) 暂仍为 v0.16.1。
 
-独立扩展：[希文与里根儿 DLC 0.2.4](https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/) · [下载 DLC .zip](https://bbmod.site/files/15448fbf-9143-4b3f-910e-945ede087581/download/)。战犬里根儿随黑旗启程，怀念在环世界动物园与飞碟共度的日子。开局在队伍仓库查看，战前给一名队员装备即可释放。需与主包一起安装并新开战役；希文第35日起满足全部门槛后进入招募队列。见[DLC 安装说明](dlc/xiwen-regen/README.md)。
+独立扩展：[希文与里根儿 DLC 0.2.5](https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/) · [下载 DLC .zip](https://bbmod.site/files/76341887-9c0c-4a58-aaf7-fd2ef7f478ac/download/)。战犬里根儿随黑旗启程，怀念在环世界动物园与飞碟共度的日子。开局在队伍仓库查看，战前给一名队员装备即可释放。需与主包一起安装并新开战役；希文第35日起满足全部门槛后进入招募队列。见[DLC 安装说明](dlc/xiwen-regen/README.md)。
 
-打包命名：后续分发压缩包均带版本号，**主包、DLC 和素材包的文件后缀统一使用小写 `.zip`**。先更新根目录 `VERSION`，再执行 `python tools/build_gameplay.py`，生成 `dist/mod_afeix_expedition v<版本>.zip` 和同名 `.sha256`；安装时将带版本号的 ZIP 直接放入游戏 `data` 目录，并移走此前的本 Mod 旧包。五款旗帜已集成，世界地图按 F8 → 战团事务 → 更换旗帜。
+打包命名：后续分发压缩包均带版本号，**主包、DLC 和素材包的文件后缀统一使用小写 `.zip`**。保留已审阅美术直接打包时，先更新根目录 `VERSION`，运行 `python tools/check_gameplay.py`，通过后运行 `python tools/package_verified_gameplay.py`，生成 `dist/mod_afeix_expedition v<版本>.zip` 和同名 `.sha256`；`tools/build_gameplay.py` 用于需要重新生成资源的构建。安装时将带版本号的 ZIP 直接放入游戏 `data` 目录，并移走此前的本 Mod 旧包。五款旗帜已集成，世界地图按 F8 → 战团事务 → 更换旗帜。
 
-当前本地工作区为 **v0.28.4**，配套可选DLC为 **0.2.5**，发布准备与验证见[更新说明](docs/releases/v0.28.4.md)。保留此前候选轮换、握把穿甲修复与招募时间表。本版新增玩法和美术尚未实机战役验收；v0.27.6 的网后断头崩溃曾实机复现并复测至下一回合，完整战役与大地图帧耗时仍待验收。请按新建战役验收。保留 v0.23.2 的解网后技能回调修复：[修复与验证](docs/playtest-0.23.2.md)。
+当前本地工作区与BBMOD主包均为 **v0.28.4**，配套可选DLC为 **0.2.5**，验证见[更新说明](docs/releases/v0.28.4.md)及[发布记录](docs/releases/publication-0.28.4.md)。保留此前候选轮换、握把穿甲修复与招募时间表。本版新增玩法和美术尚未实机战役验收；v0.27.6 的网后断头崩溃曾实机复现并复测至下一回合，完整战役与大地图帧耗时仍待验收。请按新建战役验收。保留 v0.23.2 的解网后技能回调修复：[修复与验证](docs/playtest-0.23.2.md)。
 
 保留 v0.23.1 的招募属性显示 Mod（`mod_fox_043`）兼容修复，解决人物已解锁却不生成的问题，保留属性显示功能。当前主题招募有3个常规位置和2个独立随机来客位置；常规位置在雇佣后间隔1个游戏日补人，首次展示4日、重逢2日。普通中立村庄也能招募，入口为原版雇佣新兵的人物列表；修正空佣兵池隐藏招募入口，以及额外送信干扰普通契约供给的问题。[招募更新](docs/playtest-0.23.md) · [全部解锁条件](docs/design/recruit-unlocks.md)。
 

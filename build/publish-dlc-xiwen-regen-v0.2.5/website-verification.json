@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-09-30T03:30:55.699638+00:00",
+  "detail_url": "https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/",
+  "download_url": "https://bbmod.site/files/76341887-9c0c-4a58-aaf7-fd2ef7f478ac/download/",
+  "release_id": "76341887-9c0c-4a58-aaf7-fd2ef7f478ac",
+  "version": "0.2.5",
+  "sha256": "8b0d3afa56de63255caa323d1d0e4f76c0b3f9b464ed905c4da1aaed1164db43",
+  "size": 48217,
+  "entries": 10,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200,
+    "previous_download": 200
+  },
+  "source_bytes_match": true,
+  "catalog_and_notes_match": true,
+  "download_bytes_match": true,
+  "crc_passed": true,
+  "internal_version": 6,
+  "download_content_disposition": "attachment; filename=\"mod_afeix_dlc_xiwen_regen.zip\"",
+  "previous_version": "0.2.4",
+  "previous_sha256_unchanged": "906e9713acf65635fe546654bc7c3a228324c5c1e48b1031896d2c0580316ba4",
+  "backup": "/srv/data/backups/afeix-pre-v0.2.5-20260930T033017342033Z.sqlite3",
+  "in_game_tested": false,
+  "scope": "Public download and offline/package validation; new features and art have no campaign acceptance."
+}

@@ -1,0 +1,4 @@
+21 objects imported automatically (use -v 2 for details).
+
+{"validated": true, "version": "0.2.5", "sha256": "8b0d3afa56de63255caa323d1d0e4f76c0b3f9b464ed905c4da1aaed1164db43", "size": 48217, "owner": "laimiu", "package_filename": "mod_afeix_dlc_xiwen_regen v0.2.5.zip", "download_filename": "mod_afeix_dlc_xiwen_regen.zip"}
+{"published": true, "mod_id": "247b829d-8aa8-4898-a6dd-8b933c9ff1e9", "release_id": "76341887-9c0c-4a58-aaf7-fd2ef7f478ac", "detail_url": "https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/", "sha256": "8b0d3afa56de63255caa323d1d0e4f76c0b3f9b464ed905c4da1aaed1164db43", "size": 48217, "backup": "/srv/data/backups/afeix-pre-v0.2.5-20260930T033017342033Z.sqlite3", "superseded_release_id": null}
