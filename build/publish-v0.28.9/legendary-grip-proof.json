@@ -1,0 +1,33 @@
+{
+  "version": "0.28.9",
+  "prior_version": "0.28.8",
+  "changed_package_entries": [
+    "gfx/items/weapons/afeix_laoma_grip.png",
+    "gfx/items/weapons/afeix_laoma_grip_70x70.png",
+    "gfx/ui/items/weapons/afeix_laoma_grip.png",
+    "gfx/ui/items/weapons/afeix_laoma_grip_70x70.png",
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/items/weapons/afeix_laoma_grip.nut"
+  ],
+  "native_quality": "Legendary",
+  "named_flag_removed": true,
+  "blue_glow_rgb": [
+    69,
+    108,
+    160
+  ],
+  "opaque_weapon_pixels_preserved": true,
+  "icon_sizes_preserved": true,
+  "reviewed_source_and_equipped_atlas_unchanged": true,
+  "combat_stats_unchanged": true,
+  "behavior_assertions": 33468,
+  "native_weapon_assertions": 38,
+  "in_game_tested": false,
+  "published": true,
+  "website_release_id": "42daa26b-6587-4a1a-b442-a0080b11f994",
+  "installed": false,
+  "installation_pending_game_exit": true,
+  "prior_installed_version": "0.28.5",
+  "public_archive_downloaded": false,
+  "public_download_byte_comparison": false
+}

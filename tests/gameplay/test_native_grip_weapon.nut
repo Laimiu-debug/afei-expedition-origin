@@ -3,6 +3,7 @@ dofile("tests/gameplay/member_skill_fixture.nut");
 local checks=0,check=function(ok,label){if(!ok)throw "FAIL "+label;checks++;};
 ::Const.ItemSlot.Bag<-5;::Const.ItemSlot.None<-255;
 ::Const.Items.ItemType.None<-0;::Const.Items.ItemType.Weapon<-32;::Const.Items.ItemType.Named<-64;
+::Const.Items.ItemType.Legendary<-128;::Const.Items.ItemType.Quest<-256;
 ::Const.Items.Property<-{None=0};::Const.Sound<-{DefaultWeaponEquip=[]};
 ::Const.UI<-{Color={DamageValue="d",NegativeValue="n",PositiveValue="p"}};
 ::Const.Tactical.AttackEffectSplitShield<-0;
@@ -25,6 +26,9 @@ foreach(entry in [["item","scripts/items/item"],["weapon","scripts/items/weapons
  dofile(".cache/afei-art/native-contract-fixture/"+entry[0]+".nut");::definitions[entry[1]]<-getroottable()[entry[0]];
 }
 local grip=nativeWeapon("scripts/items/weapons/afeix_laoma_grip");
+check(grip.isItemType(::Const.Items.ItemType.Legendary)&&!grip.isItemType(::Const.Items.ItemType.Named),"native grip is Legendary without competing Named classification");
+check(grip.isItemType(::Const.Items.ItemType.Weapon)&&grip.isItemType(::Const.Items.ItemType.MeleeWeapon)&&grip.isItemType(::Const.Items.ItemType.TwoHanded),"legendary grip retains native weapon and equipment filters");
+check(grip.isUnique()&&grip.isPrecious(),"native item recognizes legendary grip as unique and precious");
 check(grip.getDamageMin()==84&&grip.getDamageMax()==120,"native getters expose requested fixed damage");
 check(abs(grip.m.DirectDamageMult+grip.m.DirectDamageAdd-0.7)<0.00001&&abs(grip.getArmorDamageMult()-2.35)<0.00001,"native item fields report seventy and 235 percent");
 check(grip.getShieldDamage()==52,"native shield getter is 52");
@@ -91,6 +95,7 @@ foreach(spec in [[grip,"smite_skill",0.7,98],[grip,"shatter_skill",0.6,72],
 grip.m.Condition=73.0;
 grip.m.DirectDamageMult=0.7;grip.m.DirectDamageAdd=0.0;
 local restored=roundtrip(grip,"scripts/items/weapons/afeix_laoma_grip");
+check(restored.isItemType(::Const.Items.ItemType.Legendary)&&!restored.isItemType(::Const.Items.ItemType.Named),"native save/load restores legendary quality on an existing grip");
 local restoredSmite=::new("scripts/skills/actives/smite_skill");
 local restoredProps=attackProperties(restored,restoredSmite);
 check(restored.m.Condition==73.0&&abs(restoredSmite.getDirectDamage()+restoredProps.DamageDirectAdd-0.7)<0.00001,

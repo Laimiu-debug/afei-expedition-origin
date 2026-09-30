@@ -1,0 +1,45 @@
+{
+  "version": "0.28.7",
+  "internal_version": 57,
+  "tavern_only": true,
+  "world_map_camping_other_town_modules_denied": true,
+  "native_visible_tavern_module_required": true,
+  "stale_tavern_token_cannot_enable_purchase": true,
+  "manual_F8_inside_tavern_supported": true,
+  "location_rechecked_before_payment": true,
+  "leaving_tavern_keeps_money_and_attributes": true,
+  "tavern_service_entry": true,
+  "tavern_visitors_per_page": 3,
+  "max_native_buttons": 6,
+  "attribute_click_buys_one_point_for_100": true,
+  "receipt_placement": "Above page content",
+  "tests": 53,
+  "gameplay_assertions": 33422,
+  "targeted_tests": [
+    {
+      "file": "tests/gameplay/test_attribute_treatment.nut",
+      "assertions": 772
+    },
+    {
+      "file": "tests/gameplay/test_ledger.nut",
+      "assertions": 425
+    }
+  ],
+  "scripts_compiled": 124,
+  "package": "dist/mod_afeix_expedition v0.28.7.zip",
+  "sha256": "98be1daa40fd861109d34286ca4a609c78cf3832a9dc5320be8aa154546e535d",
+  "entries": 287,
+  "crc_passed": true,
+  "source_bytes_match": true,
+  "installed": false,
+  "installation_pending_game_exit": true,
+  "prior_installed_package": "F:/SteamLibrary/steamapps/common/Battle Brothers/data/mod_afeix_expedition v0.28.5.zip",
+  "published": true,
+  "website_release_id": "d35a345e-78b0-4431-a5d3-1844ca5a4c38",
+  "website_detail_url": "https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "website_metadata_confirmed": true,
+  "public_archive_downloaded": false,
+  "public_download_byte_comparison": false,
+  "pushed": false,
+  "in_game_tested": false
+}

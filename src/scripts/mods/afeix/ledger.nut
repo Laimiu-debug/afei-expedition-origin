@@ -17,11 +17,11 @@ A.ledgerStatus <- function(status) {
     local labels = { locked = "尚无线索", encounter = "曾经相遇", waiting = "等待重逢", available = "可以招募", recruited = "已经入队", dead = "已经阵亡", departed = "已经离队" };
     return status in labels ? labels[status] : "尚无线索";
 };
-A.ledgerWindow <- function(total, offset) {
+A.ledgerWindow <- function(total, offset, limit = 4) {
     if (offset < 0 || offset >= total) offset = 0;
-    local count = ::Math.min(4, total - offset);
+    local count = ::Math.min(limit, total - offset);
     local next = offset + count;
-    return { offset = offset, count = count, more = total > 4, next = next >= total ? 0 : next };
+    return { offset = offset, count = count, more = total > limit, next = next >= total ? 0 : next };
 };
 A.ledgerToggle <- function(event, actorId) {
     local index = event.m.Selected.find(actorId);
@@ -72,7 +72,9 @@ A.ledgerPage <- function(event, page) {
         screen = extension;
     } else if (kind == "home") {
         screen.Text = "黑旗名册\n\n同行 " + A.roster().len() + " 人；当前出战 " + A.deployedIds().len() + " / " + A.CombatMax + " 人。\n\n这里可以查看委托、伙伴和旅途中的故事。想找新伙伴，请看城镇招募栏；去酒馆可以遇见熟人、聊聊近况。人物栏可以调整站位、装备和待命安排。\n世界地图按 F8 可重新打开名册。";
-        if (!A.canManage()) screen.Text += "\n\n现在可以查看记录；招募和确认编队，请到友好城镇附近或安全扎营处。";
+        if (!A.canManage()) screen.Text += "\n\n"
+            + ("treatmentLedgerPage" in A ? "飞李不可仅限酒馆内使用；" : "现在可以查看记录；")
+            + "招募和确认编队，请到友好城镇附近或安全扎营处。";
         screen.Options.push(A.ledgerNav("查看委托记录", "quest"));
         screen.Options.push(A.ledgerNav("已经认识的伙伴", "recruits"));
         screen.Options.push(A.ledgerOption("选择出战成员", function(e) {
@@ -96,7 +98,8 @@ A.ledgerPage <- function(event, page) {
             if (kind != "tavern" || status == "encounter" || status == "available") members.push(key);
         }
         local offset = parts.len() > 1 ? A.storyPageNumber(parts[1]) : 0;
-        local window = A.ledgerWindow(members.len(), offset);
+        local treatment = kind == "tavern" && "treatmentLedgerPage" in A;
+        local window = A.ledgerWindow(members.len(), offset, treatment ? 3 : 4);
         screen.Text = kind == "tavern" ? "酒馆里的熟面孔\n\n这里可以查看已认识的伙伴。想雇人加入队伍，请打开城镇招募栏。" : "已经认识的伙伴\n\n点名字查看介绍、招募地点和当前状态。";
         if (members.len() == 0) screen.Text += kind == "tavern" ? "\n\n暂时没有新的消息，先喝一杯吧。" : "\n\n还没有认识的伙伴。";
         for (local i = 0; i < window.count; i++) {
@@ -104,6 +107,7 @@ A.ledgerPage <- function(event, page) {
             screen.Options.push(A.ledgerNav(A.Characters[key].name + " · " + A.ledgerStatus(A.characterStatus(key)), "recruit:" + key));
         }
         if (window.more) screen.Options.push(A.ledgerNav(window.next == 0 ? "回到第一页" : "下一页", kind + ":" + window.next));
+        if (treatment) screen.Options.push(A.ledgerNav("飞李不可 · 100克朗加1点", "treatment"));
         screen.Options.push(kind == "tavern" ? A.ledgerOption("先喝一杯，改日再聊", function(e) { return 0; }) : A.ledgerNav("返回名册", "home"));
     } else if (kind == "recruit" && parts.len() > 1 && parts[1] in A.Characters && A.isCharacterKnown(parts[1])) {
         local key = parts[1];
@@ -175,7 +179,14 @@ A.ledgerPage <- function(event, page) {
         screen.Text = "这一页暂时没有内容，请返回名册。";
         screen.Options.push(A.ledgerNav("返回名册", "home"));
     }
-    if (event.m.Notice != "") screen.Text += "\n\n" + event.m.Notice;
+    if (event.m.Notice != "") {
+        // Keep treatment receipts and refusals above the eight-attribute list
+        // so a click's outcome stays visible without scrolling to the bottom.
+        if (["treatment", "treatment_actor", "treatment_preview"].find(kind) != null)
+            screen.Text = event.m.Notice + "\n\n" + screen.Text;
+        else screen.Text += "\n\n" + event.m.Notice;
+    }
+    screen.Text += "\n\n按 Esc 合上名册。";
     // Six is the native event window's usable button limit; never silently drop an action.
     if (screen.Options.len() > 6) throw "Afeix ledger page exceeds six options: " + page;
     if (kind != "banners") screen.Text = "[img]gfx/ui/events/event_80.png[/img]" + screen.Text;
@@ -185,6 +196,17 @@ A.ledgerPage <- function(event, page) {
 A.ledgerBlocked <- function(reason) {
     if ("logInfo" in getroottable()) ::logInfo("[AfeixExpedition] Ledger blocked: " + reason);
     return false;
+};
+A.closeLedger <- function(state) {
+    if (!this.isOrigin() || ::Tactical.isActive() || ::World.Events == null) return false;
+    local event = ::World.Events.m.ActiveEvent;
+    if (event == null || event.getID() != "event.afeix_ledger") return false;
+    // Consume Escape during the opening/closing animation as well. Finish
+    // through the native event manager, preserving the map/town backstep.
+    if (state.m.EventScreen == null || !state.m.EventScreen.isVisible()
+        || state.m.EventScreen.isAnimating()) return true;
+    ::World.Events.processInput(-1);
+    return true;
 };
 A.openLedger <- function(page = "home", tavernTown = 0) {
     if (!this.isOrigin()) return this.ledgerBlocked("not this origin");
@@ -203,12 +225,22 @@ A.openLedger <- function(page = "home", tavernTown = 0) {
     if (state.m.EventScreen == null || state.m.EventScreen.isVisible() || state.m.EventScreen.isAnimating()) return this.ledgerBlocked("event screen busy");
     local event = ::World.Events.getEvent("event.afeix_ledger");
     if (event == null) return this.ledgerBlocked("ledger event missing");
+    local fromTown = state.m.MenuStack.hasBacksteps();
+    if (fromTown) {
+        // The entered town is authoritative. Map proximity/hostile-party
+        // checks in canManage() must not block reading from inside its inn.
+        local screen = state.m.WorldTownScreen;
+        if (screen == null || !screen.isVisible() || screen.isAnimating()
+            || !state.m.MenuStack.isAllowingCancel()) return this.ledgerBlocked("another menu or town screen busy");
+        local town = screen.getTown();
+        if (town == null || !town.isAlive() || !town.isAlliedWithPlayer())
+            return this.ledgerBlocked("no entered friendly town");
+    }
     this.TavernTown = tavernTown;
     event.m.AutoPage = page;
-    if (state.m.MenuStack.hasBacksteps()) {
+    if (fromTown) {
         // Native canFireEvent rejects every menu stack, including towns. Use the
-        // town event path only for an already visible town screen at a safe node.
-        if (state.m.WorldTownScreen == null || !state.m.WorldTownScreen.isVisible() || !this.canManage()) return this.ledgerBlocked("another menu or unsafe town");
+        // town event path for its visible UI; each action keeps its own checks.
         try {
             ::World.Events.m.ActiveEvent = event;
             ::World.Events.m.IsEventShown = true;

@@ -1,0 +1,1898 @@
+{
+  "syntax_passed": true,
+  "native_resource_paths_passed": true,
+  "behavior_tests_passed": true,
+  "in_game_tested": false,
+  "custom_art": {
+    "passed": true,
+    "method": "manifest source hashes + build fingerprints + unpack actual src atlases + compare pixels/anchors",
+    "keepsake_icons": [
+      {
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/items/accessory/afei_bicycle.png",
+        "output": "src/gfx/items/accessory/afeix_bicycle.png",
+        "size": [
+          70,
+          70
+        ],
+        "sha256": "7252f6aa7f6e4cbdeb6c6c2f1c62cc061f8acbca24dfbc0177445dfb25ff6621"
+      },
+      {
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/items/accessory/afei_bicycle.png",
+        "output": "src/gfx/ui/items/accessory/afeix_bicycle.png",
+        "size": [
+          70,
+          70
+        ],
+        "sha256": "7252f6aa7f6e4cbdeb6c6c2f1c62cc061f8acbca24dfbc0177445dfb25ff6621"
+      },
+      {
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/items/accessory/afei_ecig.png",
+        "output": "src/gfx/items/accessory/afeix_ecig.png",
+        "size": [
+          70,
+          70
+        ],
+        "sha256": "19bf0b61d897c434cf46c144912d45ed71c834fbe7687d0aa3c3330e76cd2e34"
+      },
+      {
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/ui/items/accessory/afei_ecig.png",
+        "output": "src/gfx/ui/items/accessory/afeix_ecig.png",
+        "size": [
+          70,
+          70
+        ],
+        "sha256": "19bf0b61d897c434cf46c144912d45ed71c834fbe7687d0aa3c3330e76cd2e34"
+      },
+      {
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_ecig_puff.png",
+        "output": "src/gfx/skills/afeix_ecig_puff.png",
+        "size": [
+          56,
+          56
+        ],
+        "sha256": "29bdd18b0ee6977cdbb083c7174de09b1965cf51c53be801eb8df1dc2329650b"
+      },
+      {
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_ecig_puff_sw.png",
+        "output": "src/gfx/skills/afeix_ecig_puff_sw.png",
+        "size": [
+          56,
+          56
+        ],
+        "sha256": "293c2da6ac2743839813f3af4f2abf71a493e608a934506657f5ea75ccb773b9"
+      }
+    ],
+    "balance_v26_art": [
+      {
+        "source": "docs/design/balance-v2/icons/yanzi_watch.png",
+        "source_sha256": "c3f10e1346907dd35b17ff771e87761688062fa224009230413c8bc74e0e0971",
+        "output": "src/gfx/skills/afeix_member_yanzi_watch.png",
+        "sha256": "caca4da149719b3fc61063dd1e67e6b1a1a4ac8caf91b6c8fb21c024d2814241"
+      },
+      {
+        "source": "docs/design/balance-v2/icons/yanzi_cover.png",
+        "source_sha256": "8f1bd76b3253d69f01819be3400ae7d2dfb8bd0ecdee963234ad6c0afb1efd97",
+        "output": "src/gfx/skills/afeix_member_yanzi_cover.png",
+        "sha256": "17cfd5a4b1d61fc0b86e41ee7d999ba328da2877e2f1acedc2d6895c86d9108a"
+      },
+      {
+        "source": "docs/design/balance-v2/icons/yanzi_reply.png",
+        "source_sha256": "eec43e82b6d833fa277921b3cf8c3926ea9d2e7405e631944556423d8c10131d",
+        "output": "src/gfx/skills/afeix_member_yanzi_reply.png",
+        "sha256": "0536d85f1d97b681f6d1d22147dd6513c6261dc2992d553182a341999d6ae75d"
+      },
+      {
+        "source": "docs/design/balance-v2/icons/xiwen_read.png",
+        "source_sha256": "20d5dde0ca749067ec2f1ec124131bf3e60489d3195b5c13bf2a1f89250f255a",
+        "output": "src/gfx/skills/afeix_member_xiwen_read.png",
+        "sha256": "688300e02541fa192482c588351834d6578bc4429660c1041d10f6ef3e5fe626"
+      },
+      {
+        "source": "docs/design/balance-v2/icons/xiwen_cover.png",
+        "source_sha256": "d6fe4437e42578cb6f822882ba235cd63a5e114ba90d3b6c34dfd0d255875f05",
+        "output": "src/gfx/skills/afeix_member_xiwen_cover.png",
+        "sha256": "340c1f46689e058fc19f45a8b1fcb0320972efaf4bf6e58e66785d7a788ce86b"
+      },
+      {
+        "source": "docs/design/balance-v2/icons/xiwen_travel.png",
+        "source_sha256": "d1575da03969ec2461d3b3da50d47076dfdb1bf80d069388c77fedb963967a25",
+        "output": "src/gfx/skills/afeix_member_xiwen_travel.png",
+        "sha256": "047991d823b1397fd6fb631c7032baf31d9f8b7cfbcf524035d6463a91be00d0"
+      },
+      {
+        "source": "art/runtime/balance-v26/sources/xiwen-round-mirror.png",
+        "source_sha256": "037c2cc8305ae63c5c600b02249075072f9152d2690178956d605e1d4abdd2a4",
+        "output": "src/gfx/items/accessory/xiwen_round_mirror.png",
+        "sha256": "2dba48aa279559291566497da3fc3716911f0090d4e095b7cb5212fb20fdb20d"
+      },
+      {
+        "source": "art/runtime/balance-v26/sources/xiwen-round-mirror.png",
+        "source_sha256": "037c2cc8305ae63c5c600b02249075072f9152d2690178956d605e1d4abdd2a4",
+        "output": "src/gfx/ui/items/accessory/xiwen_round_mirror.png",
+        "sha256": "2dba48aa279559291566497da3fc3716911f0090d4e095b7cb5212fb20fdb20d"
+      }
+    ],
+    "member_skill_icons": [
+      {
+        "key": "bottle_breakthrough",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_bottle_breakthrough.png",
+        "output": "src/gfx/skills/afeix_member_bottle_breakthrough.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "cebbc4855d13160dde63cd485c97096f327c65b0f158105f44de2a7ba8ace36e"
+      },
+      {
+        "key": "finals_moment",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_finals_moment.png",
+        "output": "src/gfx/skills/afeix_member_finals_moment.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "3c6b1eebc347b1940376d77072ae64a5b432d972effcd7230ce0eb1120a7bf64"
+      },
+      {
+        "key": "dog_bark",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_dog_bark.png",
+        "output": "src/gfx/skills/afeix_member_dog_bark.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "29073f56d854d0bd5821ca781a9683fb8f7550afe3b776faa473e86374fba8a8"
+      },
+      {
+        "key": "loyalty",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_loyalty.png",
+        "output": "src/gfx/skills/afeix_member_loyalty.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "f07c56a5eb19ce9c340b61ea1949f70e0942371e40bd7ddbe35b75c83d7efc97"
+      },
+      {
+        "key": "nicotine",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_nicotine.png",
+        "output": "src/gfx/skills/afeix_member_nicotine.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "1baa811834c9fcb0c6aa086e2c2572e7269a2f1052b75973581f8a1f1d699a55"
+      },
+      {
+        "key": "only_man",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_only_man.png",
+        "output": "src/gfx/skills/afeix_member_only_man.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "8d2bc079b0576f9528c8e76dbec205bef7e8ee0445b48e2c463a4ad7b5a3a0e7"
+      },
+      {
+        "key": "breach_strike",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_breach_strike.png",
+        "output": "src/gfx/skills/afeix_member_breach_strike.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "cdbfb1cbfdc3595a9e0f0480fb63d6f399dd075003afe1177ad2597738e2cbc0"
+      },
+      {
+        "key": "lvbu_weapon",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_lvbu_weapon.png",
+        "output": "src/gfx/skills/afeix_member_lvbu_weapon.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "6f8012f33a11a194cd739e04200dd4bb7ffd6525ae2f9940c6bd4a0349aaf9f9"
+      },
+      {
+        "key": "borrow_strike",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_borrow_strike.png",
+        "output": "src/gfx/skills/afeix_member_borrow_strike.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "6548a4eb114ca963ef5f6803d93525f21697ea791170baf5968697024f26f6d8"
+      },
+      {
+        "key": "together_lift",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_together_lift.png",
+        "output": "src/gfx/skills/afeix_member_together_lift.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "9238ed818e0e9dd62ee303479813dd7a57b994e52959cb93f1d4c97b55875fb7"
+      },
+      {
+        "key": "steady_hand",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_steady_hand.png",
+        "output": "src/gfx/skills/afeix_member_steady_hand.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "2e4c661e2d427c78161ba596048e3e881bb971156d6907a154ae775408a2db23"
+      },
+      {
+        "key": "blue_form",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_blue_form.png",
+        "output": "src/gfx/skills/afeix_member_blue_form.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "428aff79e2fce47592e05a34bd8073cb67db552ef0522c1750bf50f30defa9d2"
+      },
+      {
+        "key": "guard_nest",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_guard_nest.png",
+        "output": "src/gfx/skills/afeix_member_guard_nest.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "190e3fc9b2d70c289f7825fd1be97bc2983fd3083b445c62d4c3f896ba225ff0"
+      },
+      {
+        "key": "goose_bully",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_goose_bully.png",
+        "output": "src/gfx/skills/afeix_member_goose_bully.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "e0c14da92390309dc7ff52ab978dce9ba2238ebd65651280aa520275809fcc4d"
+      },
+      {
+        "key": "pokemon",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_pokemon.png",
+        "output": "src/gfx/skills/afeix_member_pokemon.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "b2ba86a244d99dbdeaed9f4cf3ca15f54a308ca5090a07df6d840665cfabab32"
+      },
+      {
+        "key": "breathe_easy",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_breathe_easy.png",
+        "output": "src/gfx/skills/afeix_member_breathe_easy.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "8a5703c3e7dad5b2c2c761eae9ca1cd6b306d0fa581855e731b62e7d74274dea"
+      },
+      {
+        "key": "turtle_shell",
+        "source": "art/runtime/member-skills-v17/sources/turtle_shell.png",
+        "output": "src/gfx/skills/afeix_member_turtle_shell.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "9a0cd990b4820f4e821df83c0032052596b8f147d38715c1bac5173d93bf23a7"
+      },
+      {
+        "key": "turtle_bond",
+        "source": "art/runtime/member-skills-v17/sources/turtle_bond.png",
+        "output": "src/gfx/skills/afeix_member_turtle_bond.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "9c13b47da105877da4e586d9689d6ff1c83c99134bb3cc478e765ff7aef4319d"
+      },
+      {
+        "key": "scrap_parts",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_scrap_parts.png",
+        "output": "src/gfx/skills/afeix_member_scrap_parts.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "a4e66fbaafb73bbac731c8cb3aaaa6fab78ceb7409258024016083192256fc16"
+      },
+      {
+        "key": "abacus_mark",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_abacus_mark.png",
+        "output": "src/gfx/skills/afeix_member_abacus_mark.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "8fc70151ae8f01cb07520ad4477d4a7bcc776b503142f7f68c236ab56d784293"
+      },
+      {
+        "key": "shadow_captain",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_shadow_captain.png",
+        "output": "src/gfx/skills/afeix_member_shadow_captain.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "104339adbdba0e234d84fab5b0c07a1a6bbb2f9a29ba8e0bc22b603a9adefbe2"
+      },
+      {
+        "key": "steal_bro",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_steal_bro.png",
+        "output": "src/gfx/skills/afeix_member_steal_bro.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "92c038ad23db86d9c3119903420c8615bbe64c69bc37a089048dc9426f8e109a"
+      },
+      {
+        "key": "teammate_ball",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_teammate_ball.png",
+        "output": "src/gfx/skills/afeix_member_teammate_ball.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "2ed2b3ea9c32cb78181c3b16d75f3762c14f31a96b15f04355afb41d86664c88"
+      },
+      {
+        "key": "drum",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_drum.png",
+        "output": "src/gfx/skills/afeix_member_drum.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "4e12cd480933f4a40cccf27a0ff847bbf92b53808c7533b33e3aa7a1e0736a12"
+      },
+      {
+        "key": "small_heart",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_small_heart.png",
+        "output": "src/gfx/skills/afeix_member_small_heart.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "94eb85ac1ca6c82edf4f7860acfa1288588617555d175008eda477690954c8e5"
+      },
+      {
+        "key": "guard_gate",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_guard_gate.png",
+        "output": "src/gfx/skills/afeix_member_guard_gate.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "0cbe504ff1b508e798ba2535095d2620a4b152ea00ed53ddf1732eeeb5ae19a1"
+      },
+      {
+        "key": "unselectable",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_unselectable.png",
+        "output": "src/gfx/skills/afeix_member_unselectable.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "a8ba876b2539e36343b22339eccf01790072f0ab9c97223374b9b662d16a34f1"
+      },
+      {
+        "key": "chaoju",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_chaoju.png",
+        "output": "src/gfx/skills/afeix_member_chaoju.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "16a638519463507b7b2396b3073a1b5af90a80b0253a0fec5348f558afe14947"
+      },
+      {
+        "key": "ouqi",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_ouqi.png",
+        "output": "src/gfx/skills/afeix_member_ouqi.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "4124afdadd7e75dd428cc7b3ae1bfc8d1fcef6ab9e9f96125ee1edeed82d0e44"
+      },
+      {
+        "key": "supermarket",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_supermarket.png",
+        "output": "src/gfx/skills/afeix_member_supermarket.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "25d6e276eb926d0a31c3e779632ab6755546dbf3f9cf5df8b51cf7e09c3b9ff1"
+      },
+      {
+        "key": "biantai",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_biantai.png",
+        "output": "src/gfx/skills/afeix_member_biantai.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "3313277855f4a00e1023a5497bbab8d83e837307276ed0e37fdd988c41286dd5"
+      },
+      {
+        "key": "optimist",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_optimist.png",
+        "output": "src/gfx/skills/afeix_member_optimist.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "3a6ea74ba683a3a967eca21ff39fe6a57fdc6cf18483a283b72e652267c7037b"
+      },
+      {
+        "key": "guard_swap",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_guard_swap.png",
+        "output": "src/gfx/skills/afeix_member_guard_swap.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "2fd36cf5e0516a06a9c29287f919e479350b6148200c2ab66699d5a228b1039b"
+      },
+      {
+        "key": "cover_up",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_cover_up.png",
+        "output": "src/gfx/skills/afeix_member_cover_up.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "40bc7f865fb381a80c884e6deeaa01a615aab8255fc43a6c9a479de49627ffa1"
+      },
+      {
+        "key": "prince_order",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_prince_order.png",
+        "output": "src/gfx/skills/afeix_member_prince_order.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "a33c94bac94ce9eecfeac28ae1a5212f9d5436a49c510ee170ebdf7f49ac6cba"
+      },
+      {
+        "key": "fear_afei",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_fear_afei.png",
+        "output": "src/gfx/skills/afeix_member_fear_afei.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "04cd0975d48fde7693e0b160ebbf669438ed4ef7e47c0659ffc1392ceaa5ee77"
+      },
+      {
+        "key": "dui_sentence",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_dui_sentence.png",
+        "output": "src/gfx/skills/afeix_member_dui_sentence.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "239c0a4143d6b4e56f724bbc217b710028c0c47d81002c5c6131d910cbe09cf3"
+      },
+      {
+        "key": "good_card",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_good_card.png",
+        "output": "src/gfx/skills/afeix_member_good_card.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "4e171d82018eb4e9d285bf95b208eb2bd60ff16345868fd075da9c8575419963"
+      },
+      {
+        "key": "catch_rear",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_catch_rear.png",
+        "output": "src/gfx/skills/afeix_member_catch_rear.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "3b65b04cda97ef8f7b5ee2f9035bd07154a8585cef1500d052d4284366e28ce0"
+      },
+      {
+        "key": "return_arrow",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_return_arrow.png",
+        "output": "src/gfx/skills/afeix_member_return_arrow.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "e5a60068932f359a2fa4e56f98270db6c94232791e037f75fec737a4f3258a4c"
+      },
+      {
+        "key": "scout_path",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_scout_path.png",
+        "output": "src/gfx/skills/afeix_member_scout_path.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "63e588d98513a2c040c1629e9b98120fe3fd1c33499398dcd547da3754b75fbf"
+      },
+      {
+        "key": "drool",
+        "source": "art/runtime/member-skills-v17/sources/drool.png",
+        "output": "src/gfx/skills/afeix_member_drool.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "2460690d25942122863968f9138a81435a4216bfed040924f96eed530813a27c"
+      },
+      {
+        "key": "alien_eye",
+        "source": "art/runtime/member-skills-v17/sources/alien_eye.png",
+        "output": "src/gfx/skills/afeix_member_alien_eye.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "4403c731c57a023eebd90d89ec50a548c8da732de8bb095d96b2ec65fb8c23e4"
+      },
+      {
+        "key": "signal_delay",
+        "source": "art/runtime/member-skills-v17/sources/signal_delay.png",
+        "output": "src/gfx/skills/afeix_member_signal_delay.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "d6b80f91afc692a923636d736f22739a818954735229bbe7566652d886f35d71"
+      },
+      {
+        "key": "pang_share",
+        "source": "art/runtime/member-skills-v17/sources/pang_share.png",
+        "output": "src/gfx/skills/afeix_member_pang_share.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "9ab52d55a8d7a676ab8816d1414cd9fc38c0bee5ff382f3e86d2900ac7fefc0b"
+      },
+      {
+        "key": "pang_anchor",
+        "source": "art/runtime/member-skills-v17/sources/pang_anchor.png",
+        "output": "src/gfx/skills/afeix_member_pang_anchor.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "04033e06c16c6c8d7abb1f49a8c73f4a6e5a3eeb75181613b0d1ee04a15fb095"
+      },
+      {
+        "key": "pang_breath",
+        "source": "art/runtime/member-skills-v17/sources/pang_breath.png",
+        "output": "src/gfx/skills/afeix_member_pang_breath.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "19275db856f706c457d473716d40fd94da8d092048aeb5aa801ae5ab0cf8664a"
+      },
+      {
+        "key": "gaga_charge",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_gaga_charge.png",
+        "output": "src/gfx/skills/afeix_member_gaga_charge.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "de67299fa71818c2eaf9f7cc2c743f542ef8cb36685639a221374b3791bc16b2"
+      },
+      {
+        "key": "berry_mark",
+        "source": "art/runtime/member-skills-v17/sources/berry_mark.png",
+        "output": "src/gfx/skills/afeix_member_berry_mark.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "dbda2aadb7e82abeade32819660d34749baba3d9d489f387a0869ed68f817d07"
+      },
+      {
+        "key": "berry_eye",
+        "source": "art/runtime/member-skills-v17/sources/berry_eye.png",
+        "output": "src/gfx/skills/afeix_member_berry_eye.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "89d95ffc3cecbd6169c9bff03468e409f4d5740c4d166fb6763e63da44498450"
+      },
+      {
+        "key": "berry_reserve",
+        "source": "art/runtime/member-skills-v17/sources/berry_reserve.png",
+        "output": "src/gfx/skills/afeix_member_berry_reserve.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "adc7b88662e26b9d16deb1b949cc7e22685061b0b36cbf484b80296fa4b6d3a1"
+      },
+      {
+        "key": "gentle_note",
+        "source": "art/runtime/member-skills-v17/sources/gentle_note.png",
+        "output": "src/gfx/skills/afeix_member_gentle_note.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "89ecb7810a115654a16399ee5999824d990122e6c871f8a7a361b34b80c2ea3f"
+      },
+      {
+        "key": "companion",
+        "source": "art/runtime/member-skills-v17/sources/companion.png",
+        "output": "src/gfx/skills/afeix_member_companion.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "0b4c7ac1ebf6980f4187a51b6a5461c81c93940cb0ea92426b3d37d59ecbca09"
+      },
+      {
+        "key": "spare_breath",
+        "source": "art/runtime/member-skills-v17/sources/spare_breath.png",
+        "output": "src/gfx/skills/afeix_member_spare_breath.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "ea66e5c7d0cf5c716dc2a8af5a210514b689d586ec44caf9849cf2e5f407e450"
+      },
+      {
+        "key": "own_people",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_own_people.png",
+        "output": "src/gfx/skills/afeix_member_own_people.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "3f8b9519fecc73946f2cd300e4071e03f69a5bf0d0c7485f8c772ce7ad004441"
+      },
+      {
+        "key": "long_watch",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_long_watch.png",
+        "output": "src/gfx/skills/afeix_member_long_watch.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "f87dbd85865940080c4b4fe6830fcd74769507d9904661ff18d6a732938d3557"
+      },
+      {
+        "key": "five_elder",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_five_elder.png",
+        "output": "src/gfx/skills/afeix_member_five_elder.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "9da4b80db007d25eafb7905d82f79eb66e7212671bf179e552bfe9dc7d0caf0d"
+      },
+      {
+        "key": "shift_arrive",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_shift_arrive.png",
+        "output": "src/gfx/skills/afeix_member_shift_arrive.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "e224fd3d1c39c67e59db1eb7e797d5fbdd0755794e3d36ad5079aaf9e1140660"
+      },
+      {
+        "key": "bear_strike",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_bear_strike.png",
+        "output": "src/gfx/skills/afeix_member_bear_strike.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "4be2dfe96a1ef36ea377ad70fb3b8346a75b88335362317c9faf8e08469b0e66"
+      },
+      {
+        "key": "know_rules",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_know_rules.png",
+        "output": "src/gfx/skills/afeix_member_know_rules.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "d6a5777369e34715f8f1310d7d53509777ef04e74c7098bd8cba8dde55495946"
+      },
+      {
+        "key": "cup_signal",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_cup_signal.png",
+        "output": "src/gfx/skills/afeix_member_cup_signal.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "8edca20db4039fa3be828942f514f9870bbcb6a79fdad122e6443757e419478d"
+      },
+      {
+        "key": "king_dance",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_king_dance.png",
+        "output": "src/gfx/skills/afeix_member_king_dance.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "b172f6433575455d3908eee4e02b9dfed96014c3e86ec2c4e5523ebdea87e3f5"
+      },
+      {
+        "key": "read_beat",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_read_beat.png",
+        "output": "src/gfx/skills/afeix_member_read_beat.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "adcd907f4596136212e4480d807bcab456e0cc095a403c0524228fdbca9ab08a"
+      },
+      {
+        "key": "curtain_yield",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_curtain_yield.png",
+        "output": "src/gfx/skills/afeix_member_curtain_yield.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "3f73cf2957d6a8a75e535807fec176041bf733a8af01466f409efd3d391ed876"
+      },
+      {
+        "key": "snake_trial",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_snake_trial.png",
+        "output": "src/gfx/skills/afeix_member_snake_trial.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "33a3d9b8de71f01899ffd3d9084599e087465af7823e647ac18a06963157b7b1"
+      },
+      {
+        "key": "snake_read",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_snake_read.png",
+        "output": "src/gfx/skills/afeix_member_snake_read.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "a045f7d6bc15576a7c27fbadcfca94bc01a8774e73ff7ae6f4ae41acaa933675"
+      },
+      {
+        "key": "next_path",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_next_path.png",
+        "output": "src/gfx/skills/afeix_member_next_path.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "64941369eccf0851d00ddd518fe87f30f38dc9607ed34780f2559a1188a08f38"
+      },
+      {
+        "key": "return_road",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_return_road.png",
+        "output": "src/gfx/skills/afeix_member_return_road.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "40ffbb12d1f5a70ec49af386b6c6470325543ec3d8a89cdefbcc6889c28dc40c"
+      },
+      {
+        "key": "leave_not_gone",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_leave_not_gone.png",
+        "output": "src/gfx/skills/afeix_member_leave_not_gone.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "a6976b5f4caba05b359917f95a7c2cbd4e67898aafe147c4fd8142160eccab8e"
+      },
+      {
+        "key": "one_more_night",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_one_more_night.png",
+        "output": "src/gfx/skills/afeix_member_one_more_night.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "1f947f0e25bdccabe73e3b426879a8e6d1f0940a09de17da04e179606f5f2b9b"
+      },
+      {
+        "key": "quail_hide",
+        "source": "art/runtime/member-skills-v17/sources/quail_hide.png",
+        "output": "src/gfx/skills/afeix_member_quail_hide.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "7ec81d25196093061676533873e688d0ae04a345665b58f5ec354857e0a1fa2c"
+      },
+      {
+        "key": "quail_alarm",
+        "source": "art/runtime/member-skills-v17/sources/quail_alarm.png",
+        "output": "src/gfx/skills/afeix_member_quail_alarm.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "ed869439dc5ae664d184156fa46261d48c483ca6ac607a106a5d64059fc9da58"
+      },
+      {
+        "key": "quail_courage",
+        "source": "art/runtime/member-skills-v17/sources/quail_courage.png",
+        "output": "src/gfx/skills/afeix_member_quail_courage.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "ecdb74457c0010d6485e22054119018874bd1cc6ecc64bdb1bd859d2ffed8d08"
+      },
+      {
+        "key": "turtle_cover",
+        "source": "art/runtime/member-skills-v17/sources/turtle_cover.png",
+        "output": "src/gfx/skills/afeix_member_turtle_cover.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "6d7b4e98433855ae59fb5e53d017e39e46e05d4e77c19c24a2df1d7b2bd60993"
+      },
+      {
+        "key": "mouth_strong",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_mouth_strong.png",
+        "output": "src/gfx/skills/afeix_member_mouth_strong.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "7b7ec7bc63a6954281ef0de494d5675e48725ddd1c54e8320f4b2e6838b19cd7"
+      },
+      {
+        "key": "shrink_cover",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_shrink_cover.png",
+        "output": "src/gfx/skills/afeix_member_shrink_cover.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "118f0679ad5909253c1299e2dd1ae11167bfefbbe093972a6e4e263bcd867334"
+      },
+      {
+        "key": "abs_comeback",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_abs_comeback.png",
+        "output": "src/gfx/skills/afeix_member_abs_comeback.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "2d62b77e5a8f03949d9e992b3924e643f435eea66331ca94a032d70e554d7ba9"
+      },
+      {
+        "key": "spare_key",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_spare_key.png",
+        "output": "src/gfx/skills/afeix_member_spare_key.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "66bd95e70b49656a269c96977de035aad1e46f5832c05cc231c8a98b28ae9db0"
+      },
+      {
+        "key": "not_fooled",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_not_fooled.png",
+        "output": "src/gfx/skills/afeix_member_not_fooled.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "98bb791f3e371fd8244d8df057664ed9e1b50858681cb72538cccb6b8571a6bb"
+      },
+      {
+        "key": "lock_wagon",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_lock_wagon.png",
+        "output": "src/gfx/skills/afeix_member_lock_wagon.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "2fbfaa88ebfcfe7e2b11739869056ab795493dc892baf2d64f8c3521d077ee3c"
+      },
+      {
+        "key": "budget_share",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_budget_share.png",
+        "output": "src/gfx/skills/afeix_member_budget_share.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "77edd32ed681636fb81971bfd294fff58e6b410a73f1bbadd25417e16969f156"
+      },
+      {
+        "key": "purse_clear",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_purse_clear.png",
+        "output": "src/gfx/skills/afeix_member_purse_clear.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "0a1ada9cbe9d900fa0bb771cde1ef3f80333b56cbf96fb30e9c32ab04cdd117c"
+      },
+      {
+        "key": "no_last_throw",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_no_last_throw.png",
+        "output": "src/gfx/skills/afeix_member_no_last_throw.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "ee98606953fc004cd5f5a30ad4f36d9c1ef4c1878bc9b1e566ac087df70faa94"
+      },
+      {
+        "key": "foot_point",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_foot_point.png",
+        "output": "src/gfx/skills/afeix_member_foot_point.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "9bd441605de10a811bb36e659187c15093acd8a0ec03623869aff3f7255f5bd7"
+      },
+      {
+        "key": "half_step",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_half_step.png",
+        "output": "src/gfx/skills/afeix_member_half_step.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "20b43b851d3970b7571c0207b004ef88f174133cca7c24f77f5609297907d7bb"
+      },
+      {
+        "key": "hard_brake",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_hard_brake.png",
+        "output": "src/gfx/skills/afeix_member_hard_brake.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "111493e5a7aa168aead7a8c9349d105d72028d35e7f408e6d14458196d35dcc7"
+      },
+      {
+        "key": "short_sprint",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_short_sprint.png",
+        "output": "src/gfx/skills/afeix_member_short_sprint.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "9fce6a34ac214e5b7960ca90153ca2fb636b8b8e87cffcae7f81fd99cf1e51be"
+      },
+      {
+        "key": "start_run",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_start_run.png",
+        "output": "src/gfx/skills/afeix_member_start_run.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "1da17cc0749f6151b5e0a4e35dc09b4730e0a03ba82b80b54e3aed7fde0b0fff"
+      },
+      {
+        "key": "segment_breath",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_segment_breath.png",
+        "output": "src/gfx/skills/afeix_member_segment_breath.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "ca410ca41fbd32b4423aa5ae6366125bc4c6582ed1a3e0c6e037b9c6345101d6"
+      },
+      {
+        "key": "hold_curtain",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_hold_curtain.png",
+        "output": "src/gfx/skills/afeix_member_hold_curtain.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "4cb51504ff7ee94a9ab9e8bd2aa796d069a559617b2685df8f0581603fb79a07"
+      },
+      {
+        "key": "hold_ground",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_hold_ground.png",
+        "output": "src/gfx/skills/afeix_member_hold_ground.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "1edb80fdc65a689ced46285f2c22dd8cbe3040c8626e0e73e9545d1500a54895"
+      },
+      {
+        "key": "door_mine",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_door_mine.png",
+        "output": "src/gfx/skills/afeix_member_door_mine.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "bdf57ca1000544881751ece41cc0f2d1508819fb0cad8cce42b37a3ba92bb772"
+      },
+      {
+        "key": "look_flag",
+        "source": "art/runtime/member-skills-v17/sources/look_flag.png",
+        "output": "src/gfx/skills/afeix_member_look_flag.png",
+        "borrowed": false,
+        "generated": true,
+        "sha256": "a2ce8cfeb0bb931ffe7507acbd50b58fc413e7ba4af3fffb26a66212f4485a2b"
+      },
+      {
+        "key": "line_detour",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_line_detour.png",
+        "output": "src/gfx/skills/afeix_member_line_detour.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "dfd43d0b4c1fda84d25bebc5f998e300de4b8781ca51a0cd128ece90e5ada14d"
+      },
+      {
+        "key": "curve_force",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_curve_force.png",
+        "output": "src/gfx/skills/afeix_member_curve_force.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "aed7fc7c466e22dcceb22c93721d809e49a81c802f154c2cfde912bb174a7054"
+      },
+      {
+        "key": "bell_lead",
+        "source": "legacy/2026-09-25-afei-expedition/reference/src/gfx/skills/afei_bell_lead.png",
+        "output": "src/gfx/skills/afeix_member_bell_lead.png",
+        "borrowed": false,
+        "generated": false,
+        "sha256": "4ac5e31a6a478adf489ae6c45b8f4d0f87e5ce260ab00f8efaadd71f8905dd66"
+      }
+    ],
+    "ideas_art": {
+      "passed": true,
+      "files": 7,
+      "brushes": 2,
+      "npc_only": true
+    },
+    "world_art": {
+      "passed": true,
+      "brushes": 1,
+      "native_anchor_preserved": true,
+      "files": {
+        "brushes/afeix_world_v22.brush": "a48a90cfd809b0c25d789a458a3b3988ba988965682d0d08be670b3b367edd45",
+        "gfx/afeix_world_v22.png": "0ffb5c8d771448b1f5e69ece06678f360a9e58f30c7145f110b02d45b9999993"
+      }
+    },
+    "banner_art": {
+      "passed": true,
+      "brushes": 10,
+      "files": {
+        "gfx/ui/banners/banner_afeix_toad.png": "9ffd5a685afead0861fc4bf8eaeb28afe1e5ce3cfd99588ab3edc2e8a8b6b9fd",
+        "gfx/ui/banners/banner_afeix_toads.png": "93d7191d8058ef6ad238505304b04ef9bfe433b14a107982cc98cd88b1ec8845",
+        "gfx/items/weapons/afeix_toad_banner.png": "d46921d5cfd47f3b51cc5c30885cad8352ae77996bf72a511b346cd71e1ca4dd",
+        "gfx/items/weapons/afeix_toad_banner_70x70.png": "132ceb315add7409d88d784af02d07306f534c331f961f6e7dd302709eadaaf1",
+        "gfx/ui/items/weapons/afeix_toad_banner.png": "d46921d5cfd47f3b51cc5c30885cad8352ae77996bf72a511b346cd71e1ca4dd",
+        "gfx/ui/items/weapons/afeix_toad_banner_70x70.png": "132ceb315add7409d88d784af02d07306f534c331f961f6e7dd302709eadaaf1",
+        "gfx/ui/banners/banner_afeix_toad_front.png": "bb22c8a898421f03773e30a5db7b1c61925f45a477f68672b9185203ba840460",
+        "gfx/ui/banners/banner_afeix_toad_fronts.png": "01c67cb466b135de23313111a33d939ee892d1397780f48eef5265635702efed",
+        "gfx/items/weapons/afeix_toad_banner_front.png": "3e12168a0b6c7f8512793dacfc68b649291ffd239fb3a9e2cb16f9bf11ba5cb1",
+        "gfx/items/weapons/afeix_toad_banner_front_70x70.png": "ff5b0b5d7cfc72f7c11d63d8cda6c953ea860971a96626aa5085d3e91fe8397b",
+        "gfx/ui/items/weapons/afeix_toad_banner_front.png": "3e12168a0b6c7f8512793dacfc68b649291ffd239fb3a9e2cb16f9bf11ba5cb1",
+        "gfx/ui/items/weapons/afeix_toad_banner_front_70x70.png": "ff5b0b5d7cfc72f7c11d63d8cda6c953ea860971a96626aa5085d3e91fe8397b",
+        "gfx/ui/banners/banner_afeix_toad_profile.png": "6f4c465e2d3ac8a09db82e80770a9131ae8ca12fedad6a022c436b8046791a6a",
+        "gfx/ui/banners/banner_afeix_toad_profiles.png": "0bcbe3941d8adb4fc355a38bfb13507a8efda3ebad16007f6695d5d1effd97ea",
+        "gfx/items/weapons/afeix_toad_banner_profile.png": "1b885befdc790f6ed90a97b608818d628834e5f4fc54c807e613929d69e611fd",
+        "gfx/items/weapons/afeix_toad_banner_profile_70x70.png": "0bb7000e51706e3fedc4b309543d32c5dccf36260e5fc13d72fa18923148f858",
+        "gfx/ui/items/weapons/afeix_toad_banner_profile.png": "1b885befdc790f6ed90a97b608818d628834e5f4fc54c807e613929d69e611fd",
+        "gfx/ui/items/weapons/afeix_toad_banner_profile_70x70.png": "0bb7000e51706e3fedc4b309543d32c5dccf36260e5fc13d72fa18923148f858",
+        "gfx/ui/banners/banner_afeix_toad_medallion.png": "a1537373cff8051dd5cdadc4d9687965da0cf33b87efafa1d0926deac11d6686",
+        "gfx/ui/banners/banner_afeix_toad_medallions.png": "3c62f378b77997908c9d8db99ff447acef244bd3208b2370cd866f0b23f7b1e1",
+        "gfx/items/weapons/afeix_toad_banner_medallion.png": "70fef829da47682398e507d8d1f8c5f0ab468a2e01a0c645488c32fa2577bbc6",
+        "gfx/items/weapons/afeix_toad_banner_medallion_70x70.png": "ab587896042b6453874c2a08c8925e750592d57b3bcbb88bb66429ee41b4ebc5",
+        "gfx/ui/items/weapons/afeix_toad_banner_medallion.png": "70fef829da47682398e507d8d1f8c5f0ab468a2e01a0c645488c32fa2577bbc6",
+        "gfx/ui/items/weapons/afeix_toad_banner_medallion_70x70.png": "ab587896042b6453874c2a08c8925e750592d57b3bcbb88bb66429ee41b4ebc5",
+        "gfx/ui/banners/banner_afeix_toad_golden.png": "5b51575e2ac34267431873a6920d4e9ec3f6775a83d3772cc51bc07e3d028e98",
+        "gfx/ui/banners/banner_afeix_toad_goldens.png": "6f5811f25bca800f3abfcc558464e184c351816ca7e49584bd9c263fccb2a7e3",
+        "gfx/items/weapons/afeix_toad_banner_golden.png": "c46793d7c4222af1f3c3811e143683f7654045a2cfe6acd72896da9f2ba9a0ef",
+        "gfx/items/weapons/afeix_toad_banner_golden_70x70.png": "63a47f3d268ec17dfdd774e08e94b9c12619dc4ac0381bfec4f2ea1093197151",
+        "gfx/ui/items/weapons/afeix_toad_banner_golden.png": "c46793d7c4222af1f3c3811e143683f7654045a2cfe6acd72896da9f2ba9a0ef",
+        "gfx/ui/items/weapons/afeix_toad_banner_golden_70x70.png": "63a47f3d268ec17dfdd774e08e94b9c12619dc4ac0381bfec4f2ea1093197151",
+        "brushes/afeix_banner_v25.brush": "ac1b423c2c0164229199974eef00c6e16b95fee12566c86bacddd9f05966ab41",
+        "gfx/afeix_banner_v25.png": "9d4e652a7f1ccfe1be8c50fd2f3381eb4a8dc6bdabfb06a7034fb4f4208547af"
+      }
+    },
+    "portrait_forms": 36,
+    "portrait_brushes": 144,
+    "retired_disc_absent": true,
+    "skill_icons": 4,
+    "files": {
+      "brushes/afeix_portraits_v04.brush": "33ea703aa6f466ea7cf7a02c4ddb0244a92f0d4b8c3971d49ad0fa67895d8953",
+      "gfx/afeix_portraits_v04.png": "8d17a755383a288ca128f36eeac7343e147fd552c11feb13b6bf6707e838264c",
+      "brushes/afeix_gameplay_v03.brush": "92e8c194d56c3fc4214715cac6b44207cc3377df0091dcdb95970f8609e86527",
+      "gfx/afeix_gameplay_v03.png": "ac0964b49106d99cacf6e79feee4b4ec8e43f8f09e1b9ab385dee3dc67b2eb56",
+      "gfx/skills/afeix_wawa.png": "5e919d907623784d3cbf5225b011d4bc932c2fa1e4c49c18772476b291639f4f",
+      "gfx/skills/afeix_haoqi.png": "6fb564cf492de29a30147913920084765f86d742e1ec9ad1d973ffacc7a9c80e",
+      "gfx/skills/afeix_quanqian.png": "0b61da1f0e8a342e5774e2260eab526be6f80b9057abbf96c0d03902768e3bf7",
+      "gfx/skills/afeix_feidie.png": "d8999121bdf259634a217fa567587d5dc878b9db92a00a4aee6cb713d2bc649a"
+    }
+  },
+  "roster_matches_production_list": true,
+  "named_characters": 34,
+  "roster_capacity": 40,
+  "combat_capacity": 12,
+  "method": "Squirrel compile + isolated fake-engine behavior tests + native resource references + JavaScript tests",
+  "scripts": [
+    {
+      "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
+      "sha256": "d8b3aca703007248d6e1f53a54ec5dccfec7dc21604b84160bd37b62bbf8e7c9"
+    },
+    {
+      "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
+      "sha256": "0e393e3262e071dce9c5f050e55601cee1c50b0317cef31e97397464c9c4fb18"
+    },
+    {
+      "path": "src/scripts/events/events/afeix_discovery_event.nut",
+      "sha256": "fc37456c5521102ee59dddebdc969e8bee5dbe3218055bd99bff277edf39c11e"
+    },
+    {
+      "path": "src/scripts/events/events/afeix_factions_event.nut",
+      "sha256": "ccaa1e5d1e3bf36226be6e68b4f7f817e0917d67f722c0f07b0836052eb11f2a"
+    },
+    {
+      "path": "src/scripts/events/events/afeix_ledger_event.nut",
+      "sha256": "f1912bd8003ebd7605031f9828d21cc7b4c94e3c64fa0f8029d4ebe54223049a"
+    },
+    {
+      "path": "src/scripts/items/accessories/xiwen_round_mirror.nut",
+      "sha256": "b541ed1347509d2400e1fd38d3a7ebfdaf6ffb977eacbb54d3e2abafa8eaca91"
+    },
+    {
+      "path": "src/scripts/items/accessory/afeix_ecig_item.nut",
+      "sha256": "db461d2f4738e7f3e3cc5cd2c8ef66de6235e631784d5e2830438888c78699fd"
+    },
+    {
+      "path": "src/scripts/items/misc/afeix_bicycle_item.nut",
+      "sha256": "0ac97e0f0202cc761d249b4a748f2b41609d94cb33b44ee3819011bc64430d1d"
+    },
+    {
+      "path": "src/scripts/items/weapons/afeix_laoma_grip.nut",
+      "sha256": "9bc6c7e81821a4edb3465fe33b8b0896e0c90f887c72b7183fe741d7e2a3559f"
+    },
+    {
+      "path": "src/scripts/mods/afeix/appearance.nut",
+      "sha256": "6774b65d3b7ed5f98474624c873334c3e3e0f45d3dcfde81dd2012cf673f59e6"
+    },
+    {
+      "path": "src/scripts/mods/afeix/art_hooks.nut",
+      "sha256": "b1b5bad37bfbe5588e107e4a42d25fbec2afca42e420b9d1b81de5d63c035c84"
+    },
+    {
+      "path": "src/scripts/mods/afeix/attribute_treatment.nut",
+      "sha256": "95ab9c075b8b062750aeb79cecac9b0ef65a5ea75a57f104b2ecd2731aeef1ae"
+    },
+    {
+      "path": "src/scripts/mods/afeix/background_data.nut",
+      "sha256": "46abc6ab5052303791b85dcc7b4ea1e146e486c904f8f272e279491dc422ac2a"
+    },
+    {
+      "path": "src/scripts/mods/afeix/background_hooks.nut",
+      "sha256": "2aae265fc370e6dea05fccc0b6005e9ebc77ea6b3d7eff117adf89c8a16ef081"
+    },
+    {
+      "path": "src/scripts/mods/afeix/backgrounds.nut",
+      "sha256": "8378374a89bc92e01403b220b7ff4da0e036c25b7efc8be8d8bfbcf479f1372f"
+    },
+    {
+      "path": "src/scripts/mods/afeix/balance_v26.nut",
+      "sha256": "d72fbe38e52a6d628da3872d22ed57be4406b0d7dd353a20d5e40ab39f50e9fa"
+    },
+    {
+      "path": "src/scripts/mods/afeix/balance_v26_combat.nut",
+      "sha256": "aa5ecd8a3b50a90fd88e084ff95ade53e04d61620b0dc49cdfb979aca7375bdf"
+    },
+    {
+      "path": "src/scripts/mods/afeix/balance_v26_data.nut",
+      "sha256": "564cdf72089398ba1fb8f5c101bf30ec9b7063ceed2c11fef327c0864d4101e4"
+    },
+    {
+      "path": "src/scripts/mods/afeix/balance_v26_hooks.nut",
+      "sha256": "05aa38d068ed1a67437049656aeaa97c79102fba686d3289b80181646e959ab7"
+    },
+    {
+      "path": "src/scripts/mods/afeix/banner_hooks.nut",
+      "sha256": "3c58986835a28fee0410494587f0784082d5f4f06411a5f4fc4f589c86dfbf1e"
+    },
+    {
+      "path": "src/scripts/mods/afeix/barber_hooks.nut",
+      "sha256": "30753bee321bf59cbf35cef6a1dd28901276e0e676d9c4600a75c9bfb9321b59"
+    },
+    {
+      "path": "src/scripts/mods/afeix/blue_stories.nut",
+      "sha256": "f3f3aec0218cbe5fd048d84d426b177fd7ccc63223957fe68c1a77fe61727b13"
+    },
+    {
+      "path": "src/scripts/mods/afeix/blue_story_data.nut",
+      "sha256": "e28962e7fcab6ce8a923d9f18b1f9d58528ec94e326faba0e90bffb9b67feb6a"
+    },
+    {
+      "path": "src/scripts/mods/afeix/characters.nut",
+      "sha256": "060ff52708b6e4933c173efc37656f2677186ca36353daf72b8cf963543a5362"
+    },
+    {
+      "path": "src/scripts/mods/afeix/company_appearance_hooks.nut",
+      "sha256": "6f2157bc4883e8f45aa5fdac33e6d1847e55b85b35a8be8f03b3fd61260ecf83"
+    },
+    {
+      "path": "src/scripts/mods/afeix/contracts.nut",
+      "sha256": "a19c454c04acf833d657fdf6bdbe5162c74f811001ac24d6e750a7bd36461573"
+    },
+    {
+      "path": "src/scripts/mods/afeix/core.nut",
+      "sha256": "16d9cc81f9e65a26a809f3fb0f9f7d7e5a18acc9c3e734dd4794cb4ff362385f"
+    },
+    {
+      "path": "src/scripts/mods/afeix/discovery.nut",
+      "sha256": "21bf1ee9f2cb12e81349ac338c65cda4f0eb71a4ebced2ead8a0f81abb73f9c7"
+    },
+    {
+      "path": "src/scripts/mods/afeix/economy.nut",
+      "sha256": "1980aebfbc194cd319ea77a718d649f0e9158d337327756acdad05a14e65e897"
+    },
+    {
+      "path": "src/scripts/mods/afeix/encounters.nut",
+      "sha256": "a970f237b9b63c2ed5dde207b0578461b7f5d8464dfc365de2f2ca820ede7272"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ending_data.nut",
+      "sha256": "bf8104b704ffc4adfe6d797fe4c692b3128757378c1382adec47e12271404e17"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ending_hooks.nut",
+      "sha256": "c40767a7bb8711d7e8d90d10d17ded1ee52ca41374f56071812d8480c3a2f525"
+    },
+    {
+      "path": "src/scripts/mods/afeix/endings.nut",
+      "sha256": "2981daa97f4f6788a1a2802920370880785cfc1f02ef3653a72189738cf2cada"
+    },
+    {
+      "path": "src/scripts/mods/afeix/formation.nut",
+      "sha256": "af329bb5f3bdc6d12d53bd6575a7e761880c4cd54825d6066dba20a7d6bc30a2"
+    },
+    {
+      "path": "src/scripts/mods/afeix/hooks.nut",
+      "sha256": "fee705640586c1859d8bbf20ad24a950366610bc1c9588f5c597dabc0d5e0dfc"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_chronicles.nut",
+      "sha256": "6eb5321e4a6b9472df4268076a8cf65e8c3229db1c9010ddd83d774ce470a30b"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_combat.nut",
+      "sha256": "99c7ab8439c63dbc24742c1cbdd2f22eee786fa6f68c259892d8681c03d7015a"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_core.nut",
+      "sha256": "bcf96159dc03446f7fc2723014cd77ff045d457886cfd334a7576eb669872a06"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_events.nut",
+      "sha256": "999f474cfe14596273a3b5c14f240604cc28b7f3b363774d78c9885139214931"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_hooks.nut",
+      "sha256": "9479b44b13bea91c8d00b6209752ba862716d2ebe8fbd9ed1aa4a1f2883705a8"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ideas_random.nut",
+      "sha256": "b2ae936b73c0c609c27f93fe3ebf92166fa40f82e8aaa5f57572dfd918fddcdb"
+    },
+    {
+      "path": "src/scripts/mods/afeix/keepsakes.nut",
+      "sha256": "fb57d61ea17dc9124887291821a0bb4284e3e1a76f8fa1e81eade290a9b54267"
+    },
+    {
+      "path": "src/scripts/mods/afeix/ledger.nut",
+      "sha256": "b2986f9338c1c1e2df894fadad356331eee19f1bef6c17cb5217bf232a5660b4"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog.nut",
+      "sha256": "126c56244521bf5f406db1424f6912ffb3d9294dbad31b18dc0c73bd807d22a9"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog_combat.nut",
+      "sha256": "94e7c3da12a551d525ae51dfeb05f2920db9bf6ba75d32aedd9623de4f5b04d5"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog_data.nut",
+      "sha256": "d07cd6ba1a73927d10c831f326c81328426a0becd008855ef59aa6aade7cdc71"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog_economy.nut",
+      "sha256": "e1cb8ffb388ceced780d5cabef681707880420f55ef790a52fe46f7b28601019"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog_economy_hooks.nut",
+      "sha256": "c727a40e4eae7f33052792fbfc1218e078f71c5dab6a866e1cac1ac1cee22a8d"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_catalog_hooks.nut",
+      "sha256": "b432d0ec644fc4695a6e17ff1014ea77e12453aadb191b32bfeab364cccc55d7"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_skill_hooks.nut",
+      "sha256": "47b479c009e527e72a8ef7ea0ff256ef85f49456f2caf07afa1db13d243cde0d"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_skills.nut",
+      "sha256": "7d7deae132591c374c8f15105a8a3d32ea10702dc9a0e2594ba0069efb507c1d"
+    },
+    {
+      "path": "src/scripts/mods/afeix/member_training.nut",
+      "sha256": "004bc551bb052bc04a9a887db5a7897ee0b884afd64b9f66ccfa119c9ea07ac2"
+    },
+    {
+      "path": "src/scripts/mods/afeix/promotion_ledger.nut",
+      "sha256": "9ac934f1ecfdb1cf5e5b1adac147cb76c813dab110fccbeeb743834d1bdf7e20"
+    },
+    {
+      "path": "src/scripts/mods/afeix/promotions.nut",
+      "sha256": "197ae8e581f17e0ab7f7229df3dfaa8c19933f5b9f48cde34d16daa3ac2a59a0"
+    },
+    {
+      "path": "src/scripts/mods/afeix/quests.nut",
+      "sha256": "6d2ad1965d22e6900cea697af012f6eb644d39b992b08ba25b5d318083c2fc9d"
+    },
+    {
+      "path": "src/scripts/mods/afeix/recruitment.nut",
+      "sha256": "8e71b8af6229bc22f041ce70f7f1142d8afac9b8d2bdd02821e481bdc906c8ca"
+    },
+    {
+      "path": "src/scripts/mods/afeix/roster.nut",
+      "sha256": "3172efd8f66fad324c0504058f8e60c142a1ba3c9ea595d5050dc0e328a9ff5e"
+    },
+    {
+      "path": "src/scripts/mods/afeix/story_ledger.nut",
+      "sha256": "e61dc81ed9c90b4401dc81c776e78aa217381e03bf5d68bad8be9b46b86559a4"
+    },
+    {
+      "path": "src/scripts/mods/afeix/story_progress.nut",
+      "sha256": "b64cdd2994fdcc8c346dc1b47580f942e0bb41cd8cae27d38589d577076b5185"
+    },
+    {
+      "path": "src/scripts/mods/afeix/supporter_title_hooks.nut",
+      "sha256": "dfee2f64029e2b1ee2d77eeab55161e4b0354916b5c99a8bd1a8ddb9a5d5545a"
+    },
+    {
+      "path": "src/scripts/mods/afeix/talents.nut",
+      "sha256": "35b5a515c346221b1367ba6fb05c53559ef48e254a5543e3fd66ae8eab77cab6"
+    },
+    {
+      "path": "src/scripts/mods/afeix/turtle_secret.nut",
+      "sha256": "d8961e3c69fab3ca170b97d5ecd68cfcb885f5d7191bf924644edcfcb4d25ad8"
+    },
+    {
+      "path": "src/scripts/mods/afeix/world_art.nut",
+      "sha256": "8c76c5a6396c77342aec355e1f52ccff4e013fd708e387a25d8991a6517137e8"
+    },
+    {
+      "path": "src/scripts/mods/afeix/world_art_hooks.nut",
+      "sha256": "3916bd6ac0200c6f0222fc3db3cb5aabfcf5ae7593e17b1660c0c6a93df699b6"
+    },
+    {
+      "path": "src/scripts/scenarios/world/afeix_expedition_scenario.nut",
+      "sha256": "7c77ceeb71da7688057b535469b4d65085a62451e25f8536dcfb3f4ad04d3908"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_catalog_active.nut",
+      "sha256": "9acb6e343c8e281ee0c4e853307bfe00d4ff179596da354e6bffaf3608f7686b"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_ecig_puff.nut",
+      "sha256": "dbe7db7f85dc4223a835324e720c9624cdc14bb14cd43fe807f89efab99f7254"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_feidie.nut",
+      "sha256": "06f9a8b9853c9aa661f9d97ab85ad6221e7197dfc810e2ef9293bc2060809e6e"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_haoqi.nut",
+      "sha256": "8c3263bd0853ea5d3bed64365091b559851c5f22746cefd2fb1e464986e4851a"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_member_active.nut",
+      "sha256": "428618496d61d13b1695c067455053bc26886993de79b622230283e92013789c"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_promotion_active.nut",
+      "sha256": "394c86bf8ced148473ff74c59e80a67741e2dd41a2257dfa9ce76705b5592657"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_wawa.nut",
+      "sha256": "6a7fafeacfed230b4cd9de127e0d8806ff137f5003ad7a8f4af1d144572d52e2"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_afei_background.nut",
+      "sha256": "5ab6dd58fea8470adc70d81b5859febf68b391d95259c950d28f48d567b4713e"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_bottle_background.nut",
+      "sha256": "7b24ab172c661ede95c9e1d4c2974899db4370cc7a878984cf18a94dab513539"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_bula_background.nut",
+      "sha256": "6391a0a162b3f685d9d396691b36a5eaa97cfea71eada44adc6b2c93c3c27706"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_dae_background.nut",
+      "sha256": "cac25b6f5ee3be70adfa446e8bd583a4f24864e623db240c994556c238267593"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_damou_background.nut",
+      "sha256": "839ba39afdc1f22298a8b2453827e16875ea5b3cc51b5de1bd1096b8cfb8d719"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_keke_background.nut",
+      "sha256": "a4000c99b885f445ba606c2e386880d2c0d4b599697e6f11dbdfbf5ee0abb0ff"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_laocai_background.nut",
+      "sha256": "4020e3b6d9ac8d37d6aa2edb47264649e91882c498de6e7bac4cd347efde007b"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_lili_background.nut",
+      "sha256": "b8f7cb760d75267116b7654115866f1be6c1745868e98d4e0de0f98a45c75eb8"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_manyuemei_background.nut",
+      "sha256": "e810e766a38025ef99812e097ddd3fad8c5b7970dfc59756b0bb9ff7564012e3"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_meiya_background.nut",
+      "sha256": "7479cc0e40119979b13abe160b156aeac8f61c370edc90efd51074f5b68c721d"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_mocha_background.nut",
+      "sha256": "c4fe53960a88207f0ad7d575fb0546b0dff8d335fc1445b1d2af7e696221cd94"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_naigai_background.nut",
+      "sha256": "c22312b7bb045827a328615ded06f76bb7a0642ff422f77825ab058bcd1ad4c1"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_qianhan_background.nut",
+      "sha256": "4e66d52465c5d61d6d4d88207d8b04a1f415437ddb0997a0a139c79c14ab866c"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_shuaizi_background.nut",
+      "sha256": "a723c556314079f9a2924c8c61d5cef489bfb6837edaf2b9190be8eb7244ebfc"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_songnuanyang_background.nut",
+      "sha256": "aa0a9cf2b685dca792c13062d260c51ff313a764420e32d67f89925eec52b196"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_suwa_background.nut",
+      "sha256": "2b6f8766d557fc86df28f4e5ee89a783ae06aacccae1a14eedb1dfbae2c16ba9"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_tiantong_background.nut",
+      "sha256": "fd3fe2d90ba6bfda488be16a4aba9b7987cfde3ee11cf011b213112f8c7fb576"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_tongzhu_background.nut",
+      "sha256": "b8d8874d09ceff9a4fbbf7ccb73d2729afb9968c8a1baa0377274b0308c44a87"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_tutu_background.nut",
+      "sha256": "93758fcf7578a6549064bcef811fcafc3c130166053d22fb80038aae06ef72a7"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_wangdazhi_background.nut",
+      "sha256": "b2ca45025715e2762c640a9c58565cdbe90fa9548eb652e52b1679041b109b0a"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_wangduidui_background.nut",
+      "sha256": "3eccbe9fcd6449301ec72edbc7af19a4e35ef07f959319a8d3c0fab26ec41318"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_wanshe_background.nut",
+      "sha256": "4e7011a42b924a3538a54629252528ae836c5534abb5c0fcacd74d03997ef02e"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaogui_background.nut",
+      "sha256": "e30de155434e4e5da1b033525ad6cd543aa65314cd424ce443719b5131d7d96a"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaohani_background.nut",
+      "sha256": "a058b94a603dcaecb897cd55785bb8225dc2890041a372b14313150fe6ae3b86"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaojie_background.nut",
+      "sha256": "bd1ed6fd75010b089d1b76da3f92890c1e4a1761719e00b00ab4b1bbf44d3e26"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaoning_background.nut",
+      "sha256": "4daf816b4e26ea217bdc6902db125e62fd3fa9865f4124a0827173683829f7a4"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaopangxu_background.nut",
+      "sha256": "fb80ec371bbed65e45ce1bb81013999d5890d732c244abe2be900473dd1fb57a"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaoyubeike_background.nut",
+      "sha256": "aa6a613a8068b335129d641cd7512d369cd7ccf583f418886422e90f8c5e6c87"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_xiaoyueya_background.nut",
+      "sha256": "d9d9addf4c7697c334df5391c42cbdddedb867ba84a9af2bb7039351e1475fce"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_yangmiemie_background.nut",
+      "sha256": "5455f49e81ffc342a2ef4962db51b6fd4e4cf4d8242ff80c227270875e3814ae"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_yanzi_background.nut",
+      "sha256": "11f899452fe2beaa24f55504778da78609649eea9037f648b1ee37dbcc0a01fa"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_yaoyaoya_background.nut",
+      "sha256": "8f8bb3cedd167bc4b6c336ed15b16871a2d853990411128bc1cdf82f34b9c282"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_yuchujiu_background.nut",
+      "sha256": "83f404719f9c6b1e9b4ce1dcaf23c23759132d136e58b305d61209634d04bc6d"
+    },
+    {
+      "path": "src/scripts/skills/backgrounds/afeix_yuxiang_background.nut",
+      "sha256": "ad67d1bc1b7b1733f9f4b6e9f7d690ebe3d858f26abfc2e391c163e69ab2ec7b"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_cao_bleeding.nut",
+      "sha256": "a18cc8c48775870893d76146b795760c32c86dbc1c48e0479030585f29842930"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_cao_courage.nut",
+      "sha256": "912b4aa86e2c4f3b0db8edf37b565a1a92fb4ff0ec726576bc29d77c74ef446c"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_catalog_effect.nut",
+      "sha256": "af9ab2a61114699cf5b8b7403d4e6c640eed3f0ef93201fa087e3fa2fb248225"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_feidie_effect.nut",
+      "sha256": "ea34954d3934e2ddcfacea8ea95ea86d36e7fdd8eaa83b9e2a47f1514d6c7b65"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_feidie_guard_effect.nut",
+      "sha256": "7278ddc8fc19b69fa8c11e39203c4f9df62cddd9c07352b567757187f1a4daa1"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_haoqi_effect.nut",
+      "sha256": "e678a85afa9713a553ebca35de3ed9ebcc884a0515ee1474e7c5aba7973fe336"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_member_effect.nut",
+      "sha256": "9c5991aef8ae9b15104eb9b1889d9e8cbbadbf44846a723bf08a2905638e82cc"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_promotion_effect.nut",
+      "sha256": "ef8dd390a8dd72ca5a070694e0d3923a87792cf04a5191f2ae2a4a2063b382ba"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_turtle_awakening.nut",
+      "sha256": "6c7dcf335eb32ae21ea576aa3e69748f65a922e99aa856cf18e3e74b0a94a649"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_wawa_effect.nut",
+      "sha256": "4129eadac93501dabf2a72b7daa4f9a7489e63add662a758cf279fada109f88c"
+    },
+    {
+      "path": "src/scripts/skills/special/afeix_combat_memory.nut",
+      "sha256": "6dd9f01a1d6ebb33dba3ac068a0325679428fe11f8d40de5ad415cda3de45e0c"
+    },
+    {
+      "path": "src/scripts/skills/special/afeix_grip_breaker.nut",
+      "sha256": "16e94313831ded989f0f3d5a31d40fd0d06c0a37320aac9a3137d5eae0d21c0f"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_catalog_passive.nut",
+      "sha256": "16c6439797e2af3072932101fbafe634a85bea47ff88404c24b2274697e631c1"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_endurance.nut",
+      "sha256": "e24376c577c8e268dc8a0f255b35a91cca44c0e3de43b6236fa42507c529c5ae"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_member_passive.nut",
+      "sha256": "25533831888bdcbf3d9218754e6033dc1799c5128e130ec007258073c6c0f7fe"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_personal_trait.nut",
+      "sha256": "3c613a9107150abb0dbfd3cdfab11afbbba22a0c001eb9e334a50c94a237f77d"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_promotion_trait.nut",
+      "sha256": "d26612b49b6155530c918fe5f0c47077fa0a17b077b8a3c539dc8396eacb378b"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_turtle_body.nut",
+      "sha256": "1502f7841039515a47d3a735df5d0c32e5be7d9ceb1bc556daaea6a3218e521a"
+    }
+  ],
+  "ui_scripts": [
+    {
+      "path": "src/ui/mods/afeix/barber.js",
+      "sha256": "2add217564355f3ab8a256bacc47c6059f83bf1620df6002fec05f329a823a97"
+    },
+    {
+      "path": "src/ui/mods/afeix/formation.js",
+      "sha256": "8b9305fd7869794264530f0971fbad08f11760675f07f651643acb69252dcd77"
+    }
+  ],
+  "resource_references": [
+    "gfx/skills/afeix_ecig_puff.png",
+    "gfx/skills/afeix_ecig_puff_sw.png",
+    "gfx/skills/afeix_feidie.png",
+    "gfx/skills/afeix_haoqi.png",
+    "gfx/skills/afeix_member_turtle_shell.png",
+    "gfx/skills/afeix_quanqian.png",
+    "gfx/skills/afeix_wawa.png",
+    "gfx/ui/icons/armor_damage.png",
+    "gfx/ui/icons/bravery.png",
+    "gfx/ui/icons/fatigue.png",
+    "gfx/ui/icons/health.png",
+    "gfx/ui/icons/money.png",
+    "gfx/ui/icons/special.png",
+    "gfx/ui/icons/warning.png",
+    "gfx/ui/traits/trait_icon_37.png",
+    "scripts/contracts/contract.cnut",
+    "scripts/contracts/contract_manager.cnut",
+    "scripts/contracts/contracts/afeix_letter_contract.cnut",
+    "scripts/entity/tactical/actor.cnut",
+    "scripts/entity/tactical/enemies/zombie_player.cnut",
+    "scripts/entity/tactical/player.cnut",
+    "scripts/entity/world/player_party.cnut",
+    "scripts/entity/world/settlement.cnut",
+    "scripts/entity/world/settlements/buildings/building.cnut",
+    "scripts/entity/world/settlements/buildings/tavern_building.cnut",
+    "scripts/events/event.cnut",
+    "scripts/events/event_manager.cnut",
+    "scripts/items/accessory/accessory.cnut",
+    "scripts/items/accessory/afeix_ecig_item.cnut",
+    "scripts/items/ammo/quiver_of_arrows.cnut",
+    "scripts/items/ammo/quiver_of_bolts.cnut",
+    "scripts/items/armor/leather_lamellar.cnut",
+    "scripts/items/armor/padded_leather.cnut",
+    "scripts/items/armor/padded_surcoat.cnut",
+    "scripts/items/armor/ragged_dark_surcoat.cnut",
+    "scripts/items/armor/thick_tunic.cnut",
+    "scripts/items/helmets/aketon_cap.cnut",
+    "scripts/items/helmets/headscarf.cnut",
+    "scripts/items/helmets/hood.cnut",
+    "scripts/items/helmets/nasal_helmet.cnut",
+    "scripts/items/item.cnut",
+    "scripts/items/item_container.cnut",
+    "scripts/items/misc/afeix_bicycle_item.cnut",
+    "scripts/items/shields/buckler_shield.cnut",
+    "scripts/items/shields/wooden_shield.cnut",
+    "scripts/items/supplies/bread_item.cnut",
+    "scripts/items/supplies/cured_rations_item.cnut",
+    "scripts/items/supplies/ground_grains_item.cnut",
+    "scripts/items/tools/player_banner.cnut",
+    "scripts/items/weapons/afeix_laoma_grip.cnut",
+    "scripts/items/weapons/bludgeon.cnut",
+    "scripts/items/weapons/boar_spear.cnut",
+    "scripts/items/weapons/falchion.cnut",
+    "scripts/items/weapons/hand_axe.cnut",
+    "scripts/items/weapons/hunting_bow.cnut",
+    "scripts/items/weapons/javelin.cnut",
+    "scripts/items/weapons/knife.cnut",
+    "scripts/items/weapons/light_crossbow.cnut",
+    "scripts/items/weapons/lute.cnut",
+    "scripts/items/weapons/militia_spear.cnut",
+    "scripts/items/weapons/pickaxe.cnut",
+    "scripts/items/weapons/pitchfork.cnut",
+    "scripts/items/weapons/short_bow.cnut",
+    "scripts/items/weapons/shortsword.cnut",
+    "scripts/items/weapons/throwing_axe.cnut",
+    "scripts/items/weapons/two_handed_hammer.cnut",
+    "scripts/items/weapons/warfork.cnut",
+    "scripts/items/weapons/woodcutters_axe.cnut",
+    "scripts/items/weapons/wooden_flail.cnut",
+    "scripts/items/weapons/wooden_stick.cnut",
+    "scripts/mods/afeix/art_hooks.cnut",
+    "scripts/mods/afeix/background_hooks.cnut",
+    "scripts/mods/afeix/balance_v26_hooks.cnut",
+    "scripts/mods/afeix/banner_hooks.cnut",
+    "scripts/mods/afeix/barber_hooks.cnut",
+    "scripts/mods/afeix/company_appearance_hooks.cnut",
+    "scripts/mods/afeix/ending_hooks.cnut",
+    "scripts/mods/afeix/hooks.cnut",
+    "scripts/mods/afeix/ideas_hooks.cnut",
+    "scripts/mods/afeix/member_catalog_economy_hooks.cnut",
+    "scripts/mods/afeix/member_catalog_hooks.cnut",
+    "scripts/mods/afeix/member_skill_hooks.cnut",
+    "scripts/mods/afeix/supporter_title_hooks.cnut",
+    "scripts/mods/afeix/world_art_hooks.cnut",
+    "scripts/scenarios/world/starting_scenario.cnut",
+    "scripts/skills/actives/afeix_ecig_puff.cnut",
+    "scripts/skills/actives/afeix_feidie.cnut",
+    "scripts/skills/actives/afeix_haoqi.cnut",
+    "scripts/skills/actives/afeix_member_active.cnut",
+    "scripts/skills/actives/afeix_promotion_active.cnut",
+    "scripts/skills/actives/afeix_wawa.cnut",
+    "scripts/skills/actives/rotation.cnut",
+    "scripts/skills/actives/taunt.cnut",
+    "scripts/skills/backgrounds/converted_cultist_background.cnut",
+    "scripts/skills/backgrounds/daytaler_background.cnut",
+    "scripts/skills/backgrounds/militia_background.cnut",
+    "scripts/skills/backgrounds/poacher_background.cnut",
+    "scripts/skills/effects/afeix_cao_bleeding.cnut",
+    "scripts/skills/effects/afeix_cao_courage.cnut",
+    "scripts/skills/effects/afeix_catalog_effect.cnut",
+    "scripts/skills/effects/afeix_feidie_effect.cnut",
+    "scripts/skills/effects/afeix_feidie_guard_effect.cnut",
+    "scripts/skills/effects/afeix_haoqi_effect.cnut",
+    "scripts/skills/effects/afeix_member_effect.cnut",
+    "scripts/skills/effects/afeix_promotion_effect.cnut",
+    "scripts/skills/effects/afeix_turtle_awakening.cnut",
+    "scripts/skills/effects/afeix_wawa_effect.cnut",
+    "scripts/skills/effects/bleeding_effect.cnut",
+    "scripts/skills/perks/perk_steel_brow.cnut",
+    "scripts/skills/skill.cnut",
+    "scripts/skills/special/afeix_combat_memory.cnut",
+    "scripts/skills/special/afeix_grip_breaker.cnut",
+    "scripts/skills/traits/afeix_endurance.cnut",
+    "scripts/skills/traits/afeix_personal_trait.cnut",
+    "scripts/skills/traits/afeix_promotion_trait.cnut",
+    "scripts/skills/traits/afeix_turtle_body.cnut",
+    "scripts/skills/traits/ailing_trait.cnut",
+    "scripts/skills/traits/athletic_trait.cnut",
+    "scripts/skills/traits/brave_trait.cnut",
+    "scripts/skills/traits/bright_trait.cnut",
+    "scripts/skills/traits/brute_trait.cnut",
+    "scripts/skills/traits/character_trait.cnut",
+    "scripts/skills/traits/cocky_trait.cnut",
+    "scripts/skills/traits/determined_trait.cnut",
+    "scripts/skills/traits/dexterous_trait.cnut",
+    "scripts/skills/traits/drunkard_trait.cnut",
+    "scripts/skills/traits/eagle_eyes_trait.cnut",
+    "scripts/skills/traits/fat_trait.cnut",
+    "scripts/skills/traits/fearless_trait.cnut",
+    "scripts/skills/traits/gluttonous_trait.cnut",
+    "scripts/skills/traits/hesitant_trait.cnut",
+    "scripts/skills/traits/huge_trait.cnut",
+    "scripts/skills/traits/insecure_trait.cnut",
+    "scripts/skills/traits/iron_jaw_trait.cnut",
+    "scripts/skills/traits/iron_lungs_trait.cnut",
+    "scripts/skills/traits/loyal_trait.cnut",
+    "scripts/skills/traits/lucky_trait.cnut",
+    "scripts/skills/traits/night_owl_trait.cnut",
+    "scripts/skills/traits/optimist_trait.cnut",
+    "scripts/skills/traits/pessimist_trait.cnut",
+    "scripts/skills/traits/quick_trait.cnut",
+    "scripts/skills/traits/strong_trait.cnut",
+    "scripts/skills/traits/sure_footing_trait.cnut",
+    "scripts/skills/traits/survivor_trait.cnut",
+    "scripts/skills/traits/swift_trait.cnut",
+    "scripts/skills/traits/teamplayer_trait.cnut",
+    "scripts/skills/traits/tough_trait.cnut",
+    "scripts/states/tactical_state.cnut",
+    "scripts/states/world/asset_manager.cnut",
+    "scripts/states/world_state.cnut",
+    "scripts/ui/screens/character/character_screen.cnut",
+    "scripts/ui/screens/world/modules/world_town_screen/town_barber_dialog_module.cnut",
+    "scripts/ui/screens/world/modules/world_town_screen/town_hire_dialog_module.cnut",
+    "scripts/ui/screens/world/modules/world_town_screen/town_shop_dialog_module.cnut",
+    "scripts/ui/screens/world/world_town_screen.cnut",
+    "ui/mods/afeix/barber.js",
+    "ui/mods/afeix/formation.js"
+  ],
+  "tests": [
+    {
+      "file": "tests/gameplay/test_appearance.nut",
+      "assertions": 4513,
+      "log": "ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=4513\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_attribute_treatment.nut",
+      "assertions": 772,
+      "log": "TESTS_PASSED=772\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_backgrounds.nut",
+      "assertions": 1502,
+      "log": "TESTS_PASSED=1502\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_balance_v26.nut",
+      "assertions": 1624,
+      "log": "TESTS_PASSED=1624\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_barber.nut",
+      "assertions": 37,
+      "log": "TESTS_PASSED=37\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_blue_stories.nut",
+      "assertions": 130,
+      "log": "BLUE_PERSONAL_STORIES_PASS\r\nTESTS_PASSED=130\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_company_appearance.nut",
+      "assertions": 37,
+      "log": "TESTS_PASSED=37\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_contract_hooks.nut",
+      "assertions": 57,
+      "log": "PASS missing_world_is_not_the_afeix_origin\r\nPASS null_world_during_teardown_is_not_the_afeix_origin\r\nPASS standalone_tactical_world_without_assets_is_safe\r\nPASS uninitialized_campaign_assets_are_safe\r\nPASS assets_without_a_selected_origin_are_safe\r\nPASS loaded_afeix_campaign_still_matches_the_origin\r\nPASS native_bound_callback_is_rebound_to_actual_instance\r\nPASS successful_actual_payment_unlocks_and_preserves_return\r\nPASS receipt_records_actual_amount_and_deduplicates_id\r\nPASS successful_callback_clears_runtime_context\r\nPASS duplicate_finish_does_not_count_twice\r\nPASS advance_is_persisted_without_early_unlock\r\nPASS advance_followed_by_cancel_does_not_unlock\r\nPASS cancelled_terminal_state_cannot_be_replayed_as_success\r\nPASS advertised_count_maximum_without_real_payment_is_ignored\r\nPASS ordinary_sale_after_finish_is_not_contract_income\r\nPASS finish_before_final_payment_is_supported\r\nPASS actual_money_delta_beats_requested_amount\r\nPASS no_positive_balance_change_does_not_unlock\r\nPASS negative_and_zero_transactions_are_not_receipts\r\nPASS set_screen_start_preserves_default_arguments_and_context\r\nPASS state_update_and_combat_callbacks_capture_actual_payments\r\nPASS synchronous_event_reward_cannot_leak_into_contract_receipt\r\nPASS event_context_restores_contract_then_outer_context\r\nPASS exception_restores_nested_previous_context\r\nPASS exception_does_not_tag_later_external_payment\r\nPASS failed_native_finish_is_not_success_and_restores_context\r\nPASS native_manager_must_actually_close_contract\r\nPASS payment_inside_native_finish_is_captured\r\nPASS reload_retains_receipt_but_discards_runtime_context\r\nPASS pre_save_advance_and_post_load_success_count_once\r\nPASS other_origins_keep_native_payment_without_afeix_flags\r\nPASS won_paid_contract_awards_eight_percent\r\nPASS sponsorship_never_sponsors_itself_or_leaks_context\r\nPASS reopening_and_replaying_completion_cannot_duplicate_income\r\nPASS retraining_does_not_reprice_settled_sponsorship\r\nPASS advance_without_completion_has_no_sponsorship\r\nPASS split_final_reward_adds_only_the_unpaid_difference\r\nPASS reload_retains_paid_entitlement\r\nPASS per_contract_cap_limits_large_rewards\r\nPASS extra_payment_does_not_reset_contract_cap\r\nPASS feidie_rate_rounds_down_to_whole_crowns\r\nPASS peaceful_contract_has_no_battle_sponsorship\r\nPASS post_completion_victory_cannot_reopen_eligibility\r\nPASS cancelled_contract_never_gains_sponsorship\r\nPASS late_payment_cannot_gain_new_route_after_completion\r\nPASS fallen_afei_cannot_sign_new_sponsorship\r\nPASS absent_afei_cannot_sign_new_sponsorship\r\nPASS old_version_completed_contracts_are_not_retroactive_rewards\r\nPASS other_origins_do_not_gain_sponsorship_or_victory_flags\r\nPASS both_native_and_mod_couriers_are_excluded_from_unlocks\r\nPASS qualified_count_and_distinct_types_have_separate_accounting\r\nPASS repeated_completion_cannot_inflate_either_unlock_metric\r\nPASS rolling_week_cap_and_no_duplicate_payout\r\nPASS old_capped_receipt_cannot_be_claimed_next_week\r\nPASS new_contract_receives_fresh_week_budget\r\nPASS retraining_shares_weekly_history\r\nTESTS_PASSED=57\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_discovery.nut",
+      "assertions": 420,
+      "log": "TESTS_PASSED=420\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_endgame_balance.nut",
+      "assertions": 658,
+      "log": "TESTS_PASSED=658\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_endings.nut",
+      "assertions": 202,
+      "log": "ALL_ENDING_CHECKS_PASS\r\nTESTS_PASSED=202\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_formation_quests.nut",
+      "assertions": 281,
+      "log": "TESTS_PASSED=281\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_hook_registration.nut",
+      "assertions": 56,
+      "log": "TESTS_PASSED=56\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_ideas.nut",
+      "assertions": 71,
+      "log": "TESTS_PASSED=71\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_keepsakes.nut",
+      "assertions": 42,
+      "log": "[AfeixExpedition] Keepsake ecig: injected constructor error\r\n[AfeixExpedition] Bicycle trait refresh: trait failure\r\n[AfeixExpedition] Bicycle trait refresh: failure after remove\r\nTESTS_PASSED=42\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_large_roster.nut",
+      "assertions": 11241,
+      "log": "ALL_LARGE_ROSTER_CHECKS_PASS\r\nTESTS_PASSED=11241\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_ledger.nut",
+      "assertions": 425,
+      "log": "TESTS_PASSED=425\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_member_catalog.nut",
+      "assertions": 615,
+      "log": "TESTS_PASSED=615\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_member_economy.nut",
+      "assertions": 46,
+      "log": "TESTS_PASSED=46\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_member_skills.nut",
+      "assertions": 126,
+      "log": "TESTS_PASSED=126\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_member_training.nut",
+      "assertions": 2290,
+      "log": "TESTS_PASSED=2290\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_ambition_events.nut",
+      "assertions": 11,
+      "log": "TESTS_PASSED=11\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_break_free.nut",
+      "assertions": 195,
+      "log": "TESTS_PASSED=195\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_contract_supply.nut",
+      "assertions": 18,
+      "log": "TESTS_PASSED=18\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_cultist_conversion.nut",
+      "assertions": 227,
+      "log": "CONVERSION_ELIGIBLE=damou,bottle,lili,xiaoyueya,yuchujiu,xiaoyubeike,wangduidui,laocai,yanzi,tiantong,xiaoning,xiaopangxu,dae,manyuemei,xiaohani,keke,yuxiang,meiya,wanshe,tutu,naigai,xiaojie,bula,suwa,qianhan,wangdazhi,yaoyaoya,yangmiemie,songnuanyang,xiaogui\r\nCONVERSION_BRIGHT_BLOCKED=afei,mocha,shuaizi,tongzhu,xiwen\r\nTESTS_PASSED=227\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_fixed_traits.nut",
+      "assertions": 85,
+      "log": "TESTS_PASSED=85\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_grip_shops.nut",
+      "assertions": 17,
+      "log": "TESTS_PASSED=17\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_grip_weapon.nut",
+      "assertions": 34,
+      "log": "TESTS_PASSED=34\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_ledger.nut",
+      "assertions": 20,
+      "log": "TESTS_PASSED=20\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_ledger_ui.nut",
+      "assertions": 146,
+      "log": "TESTS_PASSED=146\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_letter.nut",
+      "assertions": 34,
+      "log": "TESTS_PASSED=34\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_recruitment.nut",
+      "assertions": 130,
+      "log": "TESTS_PASSED=130\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_training.nut",
+      "assertions": 1628,
+      "log": "TESTS_PASSED=1628\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_turtle_notice.nut",
+      "assertions": 27,
+      "log": "TESTS_PASSED=27\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_promotions.nut",
+      "assertions": 59,
+      "log": "TESTS_PASSED=59\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_random_events.nut",
+      "assertions": 356,
+      "log": "TESTS_PASSED=356\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_recruitment_pacing.nut",
+      "assertions": 104,
+      "log": "TESTS_PASSED=104\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_recruitment_queue.nut",
+      "assertions": 125,
+      "log": "QUEUE_SIMULATION first_delay=1 repeat_gap=30 late_repeat_gap=20 appearances=209\r\nTESTS_PASSED=125\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_roster.nut",
+      "assertions": 1058,
+      "log": "PASS quest_locked_no_creation_or_payment\r\nPASS insufficient_money_no_creation\r\nPASS full_roster_no_creation_or_payment\r\nPASS combat_blocks_recruitment\r\nPASS pending_battle_blocks_recruitment\r\nPASS camp_management_does_not_allow_town_recruitment\r\nPASS hostile_town_blocks_recruitment\r\nPASS other_origins_untouched\r\nPASS successful_delivery_unlocked_recruit\r\nPASS persistent_unique_character_identity\r\nPASS recruit_requests_formation_assignment\r\nPASS duplicate_click_does_not_charge_or_clone\r\nPASS existing_entity_preserves_experience_and_inventory\r\nPASS dead_character_never_respawns\r\nPASS paid_contract_backup_unlocks_bottle\r\nPASS dismissed_character_never_respawns\r\nPASS failed_creation_rolls_back_without_charge\r\nPASS only_three_captains_start\r\nPASS damou_starts_stronger_than_afei\r\nPASS female_recruits_are_not_initial_captains\r\nPASS world_load_preserves_native_return\r\nPASS late_load_restores_named_base_wages_after_origin_available\r\nPASS late_load_refreshes_visible_description\r\nPASS saved_wage_discount_is_preserved\r\nPASS metadata_restore_preserves_progress_damage_reserve_and_equipment\r\nPASS ordinary_mercenary_metadata_untouched\r\nPASS late_load_normalizes_formation_and_clears_transient_contract_context\r\nPASS loading_another_origin_does_not_apply_named_metadata_or_formation\r\nPASS exactly_thirty_four_unique_theme_characters\r\nPASS yanzi_returns_with_confirmed_name_and_alias\r\nPASS second_chapter_has_eight_active_members\r\nPASS unmet_name_stays_hidden_bottle\r\nPASS tavern_meeting_reveals_bottle\r\nPASS cannot_skip_personal_encounter_bottle\r\nPASS encounter_charges_exactly_once_bottle\r\nPASS choice_is_durable_bottle\r\nPASS quoted_discount_matches_choice_bottle\r\nPASS cannot_replay_or_switch_resolved_choice_bottle\r\nPASS reloading_logic_keeps_invitation_and_discount_bottle\r\nPASS each_person_can_be_hired_bottle\r\nPASS correct_entity_identity_bottle\r\nPASS individual_loadout_applied_bottle\r\nPASS repeat_invitation_neither_clones_nor_charges_bottle\r\nPASS unmet_name_stays_hidden_shuaizi\r\nPASS tavern_meeting_reveals_shuaizi\r\nPASS cannot_skip_personal_encounter_shuaizi\r\nPASS encounter_charges_exactly_once_shuaizi\r\nPASS choice_is_durable_shuaizi\r\nPASS quoted_discount_matches_choice_shuaizi\r\nPASS cannot_replay_or_switch_resolved_choice_shuaizi\r\nPASS reloading_logic_keeps_invitation_and_discount_shuaizi\r\nPASS each_person_can_be_hired_shuaizi\r\nPASS correct_entity_identity_shuaizi\r\nPASS individual_loadout_applied_shuaizi\r\nPASS repeat_invitation_neither_clones_nor_charges_shuaizi\r\nPASS unmet_name_stays_hidden_lili\r\nPASS tavern_meeting_reveals_lili\r\nPASS cannot_skip_personal_encounter_lili\r\nPASS encounter_charges_exactly_once_lili\r\nPASS choice_is_durable_lili\r\nPASS quoted_discount_matches_choice_lili\r\nPASS cannot_replay_or_switch_resolved_choice_lili\r\nPASS reloading_logic_keeps_invitation_and_discount_lili\r\nPASS each_person_can_be_hired_lili\r\nPASS correct_entity_identity_lili\r\nPASS individual_loadout_applied_lili\r\nPASS repeat_invitation_neither_clones_nor_charges_lili\r\nPASS unmet_name_stays_hidden_xiaoyueya\r\nPASS tavern_meeting_reveals_xiaoyueya\r\nPASS cannot_skip_personal_encounter_xiaoyueya\r\nPASS encounter_charges_exactly_once_xiaoyueya\r\nPASS choice_is_durable_xiaoyueya\r\nPASS quoted_discount_matches_choice_xiaoyueya\r\nPASS cannot_replay_or_switch_resolved_choice_xiaoyueya\r\nPASS reloading_logic_keeps_invitation_and_discount_xiaoyueya\r\nPASS each_person_can_be_hired_xiaoyueya\r\nPASS correct_entity_identity_xiaoyueya\r\nPASS individual_loadout_applied_xiaoyueya\r\nPASS repeat_invitation_neither_clones_nor_charges_xiaoyueya\r\nPASS unmet_name_stays_hidden_yuchujiu\r\nPASS tavern_meeting_reveals_yuchujiu\r\nPASS cannot_skip_personal_encounter_yuchujiu\r\nPASS encounter_charges_exactly_once_yuchujiu\r\nPASS choice_is_durable_yuchujiu\r\nPASS quoted_discount_matches_choice_yuchujiu\r\nPASS cannot_replay_or_switch_resolved_choice_yuchujiu\r\nPASS reloading_logic_keeps_invitation_and_discount_yuchujiu\r\nPASS each_person_can_be_hired_yuchujiu\r\nPASS correct_entity_identity_yuchujiu\r\nPASS individual_loadout_applied_yuchujiu\r\nPASS repeat_invitation_neither_clones_nor_charges_yuchujiu\r\nPASS unmet_name_stays_hidden_xiaoyubeike\r\nPASS tavern_meeting_reveals_xiaoyubeike\r\nPASS cannot_skip_personal_encounter_xiaoyubeike\r\nPASS encounter_charges_exactly_once_xiaoyubeike\r\nPASS choice_is_durable_xiaoyubeike\r\nPASS quoted_discount_matches_choice_xiaoyubeike\r\nPASS cannot_replay_or_switch_resolved_choice_xiaoyubeike\r\nPASS reloading_logic_keeps_invitation_and_discount_xiaoyubeike\r\nPASS each_person_can_be_hired_xiaoyubeike\r\nPASS correct_entity_identity_xiaoyubeike\r\nPASS individual_loadout_applied_xiaoyubeike\r\nPASS repeat_invitation_neither_clones_nor_charges_xiaoyubeike\r\nPASS unmet_name_stays_hidden_wangduidui\r\nPASS tavern_meeting_reveals_wangduidui\r\nPASS cannot_skip_personal_encounter_wangduidui\r\nPASS encounter_charges_exactly_once_wangduidui\r\nPASS choice_is_durable_wangduidui\r\nPASS quoted_discount_matches_choice_wangduidui\r\nPASS cannot_replay_or_switch_resolved_choice_wangduidui\r\nPASS reloading_logic_keeps_invitation_and_discount_wangduidui\r\nPASS each_person_can_be_hired_wangduidui\r\nPASS correct_entity_identity_wangduidui\r\nPASS individual_loadout_applied_wangduidui\r\nPASS repeat_invitation_neither_clones_nor_charges_wangduidui\r\nPASS unmet_name_stays_hidden_laocai\r\nPASS tavern_meeting_reveals_laocai\r\nPASS cannot_skip_personal_encounter_laocai\r\nPASS encounter_charges_exactly_once_laocai\r\nPASS choice_is_durable_laocai\r\nPASS quoted_discount_matches_choice_laocai\r\nPASS cannot_replay_or_switch_resolved_choice_laocai\r\nPASS reloading_logic_keeps_invitation_and_discount_laocai\r\nPASS each_person_can_be_hired_laocai\r\nPASS correct_entity_identity_laocai\r\nPASS individual_loadout_applied_laocai\r\nPASS repeat_invitation_neither_clones_nor_charges_laocai\r\nPASS unmet_name_stays_hidden_yanzi\r\nPASS tavern_meeting_reveals_yanzi\r\nPASS cannot_skip_personal_encounter_yanzi\r\nPASS encounter_charges_exactly_once_yanzi\r\nPASS choice_is_durable_yanzi\r\nPASS quoted_discount_matches_choice_yanzi\r\nPASS cannot_replay_or_switch_resolved_choice_yanzi\r\nPASS reloading_logic_keeps_invitation_and_discount_yanzi\r\nPASS each_person_can_be_hired_yanzi\r\nPASS correct_entity_identity_yanzi\r\nPASS individual_loadout_applied_yanzi\r\nPASS repeat_invitation_neither_clones_nor_charges_yanzi\r\nPASS unmet_name_stays_hidden_tiantong\r\nPASS tavern_meeting_reveals_tiantong\r\nPASS cannot_skip_personal_encounter_tiantong\r\nPASS encounter_charges_exactly_once_tiantong\r\nPASS choice_is_durable_tiantong\r\nPASS quoted_discount_matches_choice_tiantong\r\nPASS cannot_replay_or_switch_resolved_choice_tiantong\r\nPASS reloading_logic_keeps_invitation_and_discount_tiantong\r\nPASS each_person_can_be_hired_tiantong\r\nPASS correct_entity_identity_tiantong\r\nPASS individual_loadout_applied_tiantong\r\nPASS repeat_invitation_neither_clones_nor_charges_tiantong\r\nPASS unmet_name_stays_hidden_xiaoning\r\nPASS tavern_meeting_reveals_xiaoning\r\nPASS cannot_skip_personal_encounter_xiaoning\r\nPASS encounter_charges_exactly_once_xiaoning\r\nPASS choice_is_durable_xiaoning\r\nPASS quoted_discount_matches_choice_xiaoning\r\nPASS cannot_replay_or_switch_resolved_choice_xiaoning\r\nPASS reloading_logic_keeps_invitation_and_discount_xiaoning\r\nPASS each_person_can_be_hired_xiaoning\r\nPASS correct_entity_identity_xiaoning\r\nPASS individual_loadout_applied_xiaoning\r\nPASS repeat_invitation_neither_clones_nor_charges_xiaoning\r\nPASS unmet_name_stays_hidden_xiaopangxu\r\nPASS tavern_meeting_reveals_xiaopangxu\r\nPASS cannot_skip_personal_encounter_xiaopangxu\r\nPASS encounter_charges_exactly_once_xiaopangxu\r\nPASS choice_is_durable_xiaopangxu\r\nPASS quoted_discount_matches_choice_xiaopangxu\r\nPASS cannot_replay_or_switch_resolved_choice_xiaopangxu\r\nPASS reloading_logic_keeps_invitation_and_discount_xiaopangxu\r\nPASS each_person_can_be_hired_xiaopangxu\r\nPASS correct_entity_identity_xiaopangxu\r\nPASS individual_loadout_applied_xiaopangxu\r\nPASS repeat_invitation_neither_clones_nor_charges_xiaopangxu\r\nPASS unmet_name_stays_hidden_dae\r\nPASS tavern_meeting_reveals_dae\r\nPASS cannot_skip_personal_encounter_dae\r\nPASS encounter_charges_exactly_once_dae\r\nPASS choice_is_durable_dae\r\nPASS quoted_discount_matches_choice_dae\r\nPASS cannot_replay_or_switch_resolved_choice_dae\r\nPASS reloading_logic_keeps_invitation_and_discount_dae\r\nPASS each_person_can_be_hired_dae\r\nPASS correct_entity_identity_dae\r\nPASS individual_loadout_applied_dae\r\nPASS repeat_invitation_neither_clones_nor_charges_dae\r\nPASS unmet_name_stays_hidden_manyuemei\r\nPASS tavern_meeting_reveals_manyuemei\r\nPASS cannot_skip_personal_encounter_manyuemei\r\nPASS encounter_charges_exactly_once_manyuemei\r\nPASS choice_is_durable_manyuemei\r\nPASS quoted_discount_matches_choice_manyuemei\r\nPASS cannot_replay_or_switch_resolved_choice_manyuemei\r\nPASS reloading_logic_keeps_invitation_and_discount_manyuemei\r\nPASS each_person_can_be_hired_manyuemei\r\nPASS correct_entity_identity_manyuemei\r\nPASS individual_loadout_applied_manyuemei\r\nPASS repeat_invitation_neither_clones_nor_charges_manyuemei\r\nPASS unmet_name_stays_hidden_xiaohani\r\nPASS tavern_meeting_reveals_xiaohani\r\nPASS cannot_skip_personal_encounter_xiaohani\r\nPASS encounter_charges_exactly_once_xiaohani\r\nPASS choice_is_durable_xiaohani\r\nPASS quoted_discount_matches_choice_xiaohani\r\nPASS cannot_replay_or_switch_resolved_choice_xiaohani\r\nPASS reloading_logic_keeps_invitation_and_discount_xiaohani\r\nPASS each_person_can_be_hired_xiaohani\r\nPASS correct_entity_identity_xiaohani\r\nPASS individual_loadout_applied_xiaohani\r\nPASS repeat_invitation_neither_clones_nor_charges_xiaohani\r\nPASS unmet_name_stays_hidden_keke\r\nPASS tavern_meeting_reveals_keke\r\nPASS cannot_skip_personal_encounter_keke\r\nPASS encounter_charges_exactly_once_keke\r\nPASS choice_is_durable_keke\r\nPASS quoted_discount_matches_choice_keke\r\nPASS cannot_replay_or_switch_resolved_choice_keke\r\nPASS reloading_logic_keeps_invitation_and_discount_keke\r\nPASS each_person_can_be_hired_keke\r\nPASS correct_entity_identity_keke\r\nPASS individual_loadout_applied_keke\r\nPASS repeat_invitation_neither_clones_nor_charges_keke\r\nPASS unmet_name_stays_hidden_yuxiang\r\nPASS tavern_meeting_reveals_yuxiang\r\nPASS cannot_skip_personal_encounter_yuxiang\r\nPASS encounter_charges_exactly_once_yuxiang\r\nPASS choice_is_durable_yuxiang\r\nPASS quoted_discount_matches_choice_yuxiang\r\nPASS cannot_replay_or_switch_resolved_choice_yuxiang\r\nPASS reloading_logic_keeps_invitation_and_discount_yuxiang\r\nPASS each_person_can_be_hired_yuxiang\r\nPASS correct_entity_identity_yuxiang\r\nPASS individual_loadout_applied_yuxiang\r\nPASS repeat_invitation_neither_clones_nor_charges_yuxiang\r\nPASS unmet_name_stays_hidden_tongzhu\r\nPASS tavern_meeting_reveals_tongzhu\r\nPASS cannot_skip_personal_encounter_tongzhu\r\nPASS encounter_charges_exactly_once_tongzhu\r\nPASS choice_is_durable_tongzhu\r\nPASS quoted_discount_matches_choice_tongzhu\r\nPASS cannot_replay_or_switch_resolved_choice_tongzhu\r\nPASS reloading_logic_keeps_invitation_and_discount_tongzhu\r\nPASS each_person_can_be_hired_tongzhu\r\nPASS correct_entity_identity_tongzhu\r\nPASS individual_loadout_applied_tongzhu\r\nPASS repeat_invitation_neither_clones_nor_charges_tongzhu\r\nPASS unmet_name_stays_hidden_meiya\r\nPASS tavern_meeting_reveals_meiya\r\nPASS cannot_skip_personal_encounter_meiya\r\nPASS encounter_charges_exactly_once_meiya\r\nPASS choice_is_durable_meiya\r\nPASS quoted_discount_matches_choice_meiya\r\nPASS cannot_replay_or_switch_resolved_choice_meiya\r\nPASS reloading_logic_keeps_invitation_and_discount_meiya\r\nPASS each_person_can_be_hired_meiya\r\nPASS correct_entity_identity_meiya\r\nPASS individual_loadout_applied_meiya\r\nPASS repeat_invitation_neither_clones_nor_charges_meiya\r\nPASS unmet_name_stays_hidden_wanshe\r\nPASS tavern_meeting_reveals_wanshe\r\nPASS cannot_skip_personal_encounter_wanshe\r\nPASS encounter_charges_exactly_once_wanshe\r\nPASS choice_is_durable_wanshe\r\nPASS quoted_discount_matches_choice_wanshe\r\nPASS cannot_replay_or_switch_resolved_choice_wanshe\r\nPASS reloading_logic_keeps_invitation_and_discount_wanshe\r\nPASS each_person_can_be_hired_wanshe\r\nPASS correct_entity_identity_wanshe\r\nPASS individual_loadout_applied_wanshe\r\nPASS repeat_invitation_neither_clones_nor_charges_wanshe\r\nPASS unmet_name_stays_hidden_tutu\r\nPASS tavern_meeting_reveals_tutu\r\nPASS cannot_skip_personal_encounter_tutu\r\nPASS encounter_charges_exactly_once_tutu\r\nPASS choice_is_durable_tutu\r\nPASS quoted_discount_matches_choice_tutu\r\nPASS cannot_replay_or_switch_resolved_choice_tutu\r\nPASS reloading_logic_keeps_invitation_and_discount_tutu\r\nPASS each_person_can_be_hired_tutu\r\nPASS correct_entity_identity_tutu\r\nPASS individual_loadout_applied_tutu\r\nPASS repeat_invitation_neither_clones_nor_charges_tutu\r\nPASS unmet_name_stays_hidden_naigai\r\nPASS tavern_meeting_reveals_naigai\r\nPASS cannot_skip_personal_encounter_naigai\r\nPASS encounter_charges_exactly_once_naigai\r\nPASS choice_is_durable_naigai\r\nPASS quoted_discount_matches_choice_naigai\r\nPASS cannot_replay_or_switch_resolved_choice_naigai\r\nPASS reloading_logic_keeps_invitation_and_discount_naigai\r\nPASS each_person_can_be_hired_naigai\r\nPASS correct_entity_identity_naigai\r\nPASS individual_loadout_applied_naigai\r\nPASS repeat_invitation_neither_clones_nor_charges_naigai\r\nPASS unmet_name_stays_hidden_xiaojie\r\nPASS tavern_meeting_reveals_xiaojie\r\nPASS cannot_skip_personal_encounter_xiaojie\r\nPASS encounter_charges_exactly_once_xiaojie\r\nPASS choice_is_durable_xiaojie\r\nPASS quoted_discount_matches_choice_xiaojie\r\nPASS cannot_replay_or_switch_resolved_choice_xiaojie\r\nPASS reloading_logic_keeps_invitation_and_discount_xiaojie\r\nPASS each_person_can_be_hired_xiaojie\r\nPASS correct_entity_identity_xiaojie\r\nPASS individual_loadout_applied_xiaojie\r\nPASS repeat_invitation_neither_clones_nor_charges_xiaojie\r\nPASS unmet_name_stays_hidden_bula\r\nPASS tavern_meeting_reveals_bula\r\nPASS cannot_skip_personal_encounter_bula\r\nPASS encounter_charges_exactly_once_bula\r\nPASS choice_is_durable_bula\r\nPASS quoted_discount_matches_choice_bula\r\nPASS cannot_replay_or_switch_resolved_choice_bula\r\nPASS reloading_logic_keeps_invitation_and_discount_bula\r\nPASS each_person_can_be_hired_bula\r\nPASS correct_entity_identity_bula\r\nPASS individual_loadout_applied_bula\r\nPASS repeat_invitation_neither_clones_nor_charges_bula\r\nPASS unmet_name_stays_hidden_suwa\r\nPASS tavern_meeting_reveals_suwa\r\nPASS cannot_skip_personal_encounter_suwa\r\nPASS encounter_charges_exactly_once_suwa\r\nPASS choice_is_durable_suwa\r\nPASS quoted_discount_matches_choice_suwa\r\nPASS cannot_replay_or_switch_resolved_choice_suwa\r\nPASS reloading_logic_keeps_invitation_and_discount_suwa\r\nPASS each_person_can_be_hired_suwa\r\nPASS correct_entity_identity_suwa\r\nPASS individual_loadout_applied_suwa\r\nPASS repeat_invitation_neither_clones_nor_charges_suwa\r\nPASS unmet_name_stays_hidden_qianhan\r\nPASS tavern_meeting_reveals_qianhan\r\nPASS cannot_skip_personal_encounter_qianhan\r\nPASS encounter_charges_exactly_once_qianhan\r\nPASS choice_is_durable_qianhan\r\nPASS quoted_discount_matches_choice_qianhan\r\nPASS cannot_replay_or_switch_resolved_choice_qianhan\r\nPASS reloading_logic_keeps_invitation_and_discount_qianhan\r\nPASS each_person_can_be_hired_qianhan\r\nPASS correct_entity_identity_qianhan\r\nPASS individual_loadout_applied_qianhan\r\nPASS repeat_invitation_neither_clones_nor_charges_qianhan\r\nPASS unmet_name_stays_hidden_wangdazhi\r\nPASS tavern_meeting_reveals_wangdazhi\r\nPASS cannot_skip_personal_encounter_wangdazhi\r\nPASS encounter_charges_exactly_once_wangdazhi\r\nPASS choice_is_durable_wangdazhi\r\nPASS quoted_discount_matches_choice_wangdazhi\r\nPASS cannot_replay_or_switch_resolved_choice_wangdazhi\r\nPASS reloading_logic_keeps_invitation_and_discount_wangdazhi\r\nPASS each_person_can_be_hired_wangdazhi\r\nPASS correct_entity_identity_wangdazhi\r\nPASS individual_loadout_applied_wangdazhi\r\nPASS repeat_invitation_neither_clones_nor_charges_wangdazhi\r\nPASS unmet_name_stays_hidden_yaoyaoya\r\nPASS tavern_meeting_reveals_yaoyaoya\r\nPASS cannot_skip_personal_encounter_yaoyaoya\r\nPASS encounter_charges_exactly_once_yaoyaoya\r\nPASS choice_is_durable_yaoyaoya\r\nPASS quoted_discount_matches_choice_yaoyaoya\r\nPASS cannot_replay_or_switch_resolved_choice_yaoyaoya\r\nPASS reloading_logic_keeps_invitation_and_discount_yaoyaoya\r\nPASS each_person_can_be_hired_yaoyaoya\r\nPASS correct_entity_identity_yaoyaoya\r\nPASS individual_loadout_applied_yaoyaoya\r\nPASS repeat_invitation_neither_clones_nor_charges_yaoyaoya\r\nPASS unmet_name_stays_hidden_yangmiemie\r\nPASS tavern_meeting_reveals_yangmiemie\r\nPASS cannot_skip_personal_encounter_yangmiemie\r\nPASS encounter_charges_exactly_once_yangmiemie\r\nPASS choice_is_durable_yangmiemie\r\nPASS quoted_discount_matches_choice_yangmiemie\r\nPASS cannot_replay_or_switch_resolved_choice_yangmiemie\r\nPASS reloading_logic_keeps_invitation_and_discount_yangmiemie\r\nPASS each_person_can_be_hired_yangmiemie\r\nPASS correct_entity_identity_yangmiemie\r\nPASS individual_loadout_applied_yangmiemie\r\nPASS repeat_invitation_neither_clones_nor_charges_yangmiemie\r\nPASS unmet_name_stays_hidden_songnuanyang\r\nPASS tavern_meeting_reveals_songnuanyang\r\nPASS cannot_skip_personal_encounter_songnuanyang\r\nPASS encounter_charges_exactly_once_songnuanyang\r\nPASS choice_is_durable_songnuanyang\r\nPASS quoted_discount_matches_choice_songnuanyang\r\nPASS cannot_replay_or_switch_resolved_choice_songnuanyang\r\nPASS reloading_logic_keeps_invitation_and_discount_songnuanyang\r\nPASS each_person_can_be_hired_songnuanyang\r\nPASS correct_entity_identity_songnuanyang\r\nPASS individual_loadout_applied_songnuanyang\r\nPASS repeat_invitation_neither_clones_nor_charges_songnuanyang\r\nPASS unmet_name_stays_hidden_xiaogui\r\nPASS tavern_meeting_reveals_xiaogui\r\nPASS cannot_skip_personal_encounter_xiaogui\r\nPASS encounter_charges_exactly_once_xiaogui\r\nPASS choice_is_durable_xiaogui\r\nPASS quoted_discount_matches_choice_xiaogui\r\nPASS cannot_replay_or_switch_resolved_choice_xiaogui\r\nPASS reloading_logic_keeps_invitation_and_discount_xiaogui\r\nPASS each_person_can_be_hired_xiaogui\r\nPASS correct_entity_identity_xiaogui\r\nPASS individual_loadout_applied_xiaogui\r\nPASS repeat_invitation_neither_clones_nor_charges_xiaogui\r\nPASS all_named_members_can_coexist\r\nPASS forty_roster_places_include_ordinary_mercenaries\r\nPASS insufficient_encounter_money_keeps_story_pending\r\nPASS invalid_story_options_are_atomic_rejection\r\nPASS captain_or_unknown_has_no_recruitable_encounter\r\nPASS battle_blocks_story_mutation\r\nPASS camp_does_not_substitute_for_town_meeting\r\nPASS other_origin_cannot_resolve_story\r\nPASS must_meet_before_conversation\r\nPASS unlocked_story_remains_available_after_failures\r\nPASS insufficient_hire_money_keeps_resolved_discount\r\nPASS failed_equipment_creation_preserves_invitation_without_charge\r\nPASS full_roster_keeps_discount_and_money\r\nPASS freeing_one_place_allows_pending_hire\r\nPASS new_member_death_does_not_reopen_story_or_duplicate\r\nPASS upgrade_preserves_members_without_revealing_unmet_names\r\nPASS progress_migration_does_not_recreate_or_reset_existing_actor\r\nPASS old_work_count_does_not_discover_whole_groups\r\nPASS restored_member_keeps_original_yanzi_base_wage\r\nPASS retired_actor_remains_findable_by_persistent_identity\r\nPASS retired_actor_uses_the_normal_late_load_path\r\nPASS loading_retired_actor_preserves_same_entity_without_a_clone\r\nPASS retired_wage_restores_base_without_resetting_saved_multiplier\r\nPASS returning_member_receives_current_description\r\nPASS retired_actor_preserves_name_title_and_growth\r\nPASS retired_actor_preserves_health_reserve_slot_attributes_and_talents\r\nPASS retired_actor_preserves_equipped_and_bag_item_objects\r\nPASS returning_actor_is_recognized_as_recruited\r\nPASS returning_member_neither_duplicated_nor_charged\r\nPASS old_default_name_updates_without_resetting_stats\r\nPASS retired_deceased_actor_is_not_recreated\r\nPASS returning_member_does_not_revive_a_departed_actor\r\nPASS new_campaign_still_requires_discovery_before_recruitment\r\nPASS blue_team_slot_recruits_luoyike\r\nPASS old_default_name_corrected_on_world_load_without_replacing_actor\r\nPASS roster_correction_preserves_progress\r\nPASS roster_correction_preserves_player_chosen_name\r\nPASS background_level_two_cannot_leave_a_free_perk\r\nPASS new_damou_reduced_start\r\nPASS new_damou_not_deducted_twice\r\nPASS legacy_damou_crosses_both_balance_revisions_once\r\nPASS reduced_max_health_clamps_current_health\r\nPASS legacy_growth_and_spent_perks_preserved\r\nPASS new_hire_keeps_new_base_afei_Hitpoints\r\nPASS new_hire_keeps_new_base_afei_Stamina\r\nPASS new_hire_keeps_new_base_afei_Bravery\r\nPASS new_hire_keeps_new_base_afei_Initiative\r\nPASS new_hire_keeps_new_base_afei_MeleeSkill\r\nPASS new_hire_keeps_new_base_afei_RangedSkill\r\nPASS new_hire_keeps_new_base_afei_MeleeDefense\r\nPASS new_hire_keeps_new_base_afei_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_afei_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_afei_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_afei_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_afei_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_afei_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_afei_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_afei_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_afei_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_afei\r\nPASS migration_marked_afei\r\nPASS new_hire_keeps_new_base_damou_Hitpoints\r\nPASS new_hire_keeps_new_base_damou_Stamina\r\nPASS new_hire_keeps_new_base_damou_Bravery\r\nPASS new_hire_keeps_new_base_damou_Initiative\r\nPASS new_hire_keeps_new_base_damou_MeleeSkill\r\nPASS new_hire_keeps_new_base_damou_RangedSkill\r\nPASS new_hire_keeps_new_base_damou_MeleeDefense\r\nPASS new_hire_keeps_new_base_damou_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_damou_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_damou_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_damou_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_damou_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_damou_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_damou_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_damou_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_damou_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_damou\r\nPASS migration_marked_damou\r\nPASS new_hire_keeps_new_base_mocha_Hitpoints\r\nPASS new_hire_keeps_new_base_mocha_Stamina\r\nPASS new_hire_keeps_new_base_mocha_Bravery\r\nPASS new_hire_keeps_new_base_mocha_Initiative\r\nPASS new_hire_keeps_new_base_mocha_MeleeSkill\r\nPASS new_hire_keeps_new_base_mocha_RangedSkill\r\nPASS new_hire_keeps_new_base_mocha_MeleeDefense\r\nPASS new_hire_keeps_new_base_mocha_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_mocha_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_mocha_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_mocha_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_mocha_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_mocha_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_mocha_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_mocha_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_mocha_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_mocha\r\nPASS migration_marked_mocha\r\nPASS new_hire_keeps_new_base_bottle_Hitpoints\r\nPASS new_hire_keeps_new_base_bottle_Stamina\r\nPASS new_hire_keeps_new_base_bottle_Bravery\r\nPASS new_hire_keeps_new_base_bottle_Initiative\r\nPASS new_hire_keeps_new_base_bottle_MeleeSkill\r\nPASS new_hire_keeps_new_base_bottle_RangedSkill\r\nPASS new_hire_keeps_new_base_bottle_MeleeDefense\r\nPASS new_hire_keeps_new_base_bottle_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_bottle_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_bottle_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_bottle_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_bottle_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_bottle_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_bottle_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_bottle_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_bottle_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_bottle\r\nPASS migration_marked_bottle\r\nPASS new_hire_keeps_new_base_shuaizi_Hitpoints\r\nPASS new_hire_keeps_new_base_shuaizi_Stamina\r\nPASS new_hire_keeps_new_base_shuaizi_Bravery\r\nPASS new_hire_keeps_new_base_shuaizi_Initiative\r\nPASS new_hire_keeps_new_base_shuaizi_MeleeSkill\r\nPASS new_hire_keeps_new_base_shuaizi_RangedSkill\r\nPASS new_hire_keeps_new_base_shuaizi_MeleeDefense\r\nPASS new_hire_keeps_new_base_shuaizi_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_shuaizi_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_shuaizi_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_shuaizi_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_shuaizi_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_shuaizi_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_shuaizi_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_shuaizi_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_shuaizi_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_shuaizi\r\nPASS migration_marked_shuaizi\r\nPASS new_hire_keeps_new_base_lili_Hitpoints\r\nPASS new_hire_keeps_new_base_lili_Stamina\r\nPASS new_hire_keeps_new_base_lili_Bravery\r\nPASS new_hire_keeps_new_base_lili_Initiative\r\nPASS new_hire_keeps_new_base_lili_MeleeSkill\r\nPASS new_hire_keeps_new_base_lili_RangedSkill\r\nPASS new_hire_keeps_new_base_lili_MeleeDefense\r\nPASS new_hire_keeps_new_base_lili_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_lili_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_lili_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_lili_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_lili_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_lili_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_lili_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_lili_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_lili_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_lili\r\nPASS migration_marked_lili\r\nPASS new_hire_keeps_new_base_xiaoyueya_Hitpoints\r\nPASS new_hire_keeps_new_base_xiaoyueya_Stamina\r\nPASS new_hire_keeps_new_base_xiaoyueya_Bravery\r\nPASS new_hire_keeps_new_base_xiaoyueya_Initiative\r\nPASS new_hire_keeps_new_base_xiaoyueya_MeleeSkill\r\nPASS new_hire_keeps_new_base_xiaoyueya_RangedSkill\r\nPASS new_hire_keeps_new_base_xiaoyueya_MeleeDefense\r\nPASS new_hire_keeps_new_base_xiaoyueya_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyueya_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyueya_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyueya_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyueya_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyueya_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyueya_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyueya_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyueya_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_xiaoyueya\r\nPASS migration_marked_xiaoyueya\r\nPASS new_hire_keeps_new_base_yuchujiu_Hitpoints\r\nPASS new_hire_keeps_new_base_yuchujiu_Stamina\r\nPASS new_hire_keeps_new_base_yuchujiu_Bravery\r\nPASS new_hire_keeps_new_base_yuchujiu_Initiative\r\nPASS new_hire_keeps_new_base_yuchujiu_MeleeSkill\r\nPASS new_hire_keeps_new_base_yuchujiu_RangedSkill\r\nPASS new_hire_keeps_new_base_yuchujiu_MeleeDefense\r\nPASS new_hire_keeps_new_base_yuchujiu_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_yuchujiu_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_yuchujiu_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_yuchujiu_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_yuchujiu_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_yuchujiu_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_yuchujiu_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_yuchujiu_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_yuchujiu_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_yuchujiu\r\nPASS migration_marked_yuchujiu\r\nPASS new_hire_keeps_new_base_xiaoyubeike_Hitpoints\r\nPASS new_hire_keeps_new_base_xiaoyubeike_Stamina\r\nPASS new_hire_keeps_new_base_xiaoyubeike_Bravery\r\nPASS new_hire_keeps_new_base_xiaoyubeike_Initiative\r\nPASS new_hire_keeps_new_base_xiaoyubeike_MeleeSkill\r\nPASS new_hire_keeps_new_base_xiaoyubeike_RangedSkill\r\nPASS new_hire_keeps_new_base_xiaoyubeike_MeleeDefense\r\nPASS new_hire_keeps_new_base_xiaoyubeike_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyubeike_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyubeike_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyubeike_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyubeike_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyubeike_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyubeike_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyubeike_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoyubeike_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_xiaoyubeike\r\nPASS migration_marked_xiaoyubeike\r\nPASS new_hire_keeps_new_base_wangduidui_Hitpoints\r\nPASS new_hire_keeps_new_base_wangduidui_Stamina\r\nPASS new_hire_keeps_new_base_wangduidui_Bravery\r\nPASS new_hire_keeps_new_base_wangduidui_Initiative\r\nPASS new_hire_keeps_new_base_wangduidui_MeleeSkill\r\nPASS new_hire_keeps_new_base_wangduidui_RangedSkill\r\nPASS new_hire_keeps_new_base_wangduidui_MeleeDefense\r\nPASS new_hire_keeps_new_base_wangduidui_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_wangduidui_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_wangduidui_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_wangduidui_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_wangduidui_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_wangduidui_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_wangduidui_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_wangduidui_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_wangduidui_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_wangduidui\r\nPASS migration_marked_wangduidui\r\nPASS new_hire_keeps_new_base_laocai_Hitpoints\r\nPASS new_hire_keeps_new_base_laocai_Stamina\r\nPASS new_hire_keeps_new_base_laocai_Bravery\r\nPASS new_hire_keeps_new_base_laocai_Initiative\r\nPASS new_hire_keeps_new_base_laocai_MeleeSkill\r\nPASS new_hire_keeps_new_base_laocai_RangedSkill\r\nPASS new_hire_keeps_new_base_laocai_MeleeDefense\r\nPASS new_hire_keeps_new_base_laocai_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_laocai_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_laocai_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_laocai_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_laocai_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_laocai_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_laocai_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_laocai_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_laocai_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_laocai\r\nPASS migration_marked_laocai\r\nPASS new_hire_keeps_new_base_yanzi_Hitpoints\r\nPASS new_hire_keeps_new_base_yanzi_Stamina\r\nPASS new_hire_keeps_new_base_yanzi_Bravery\r\nPASS new_hire_keeps_new_base_yanzi_Initiative\r\nPASS new_hire_keeps_new_base_yanzi_MeleeSkill\r\nPASS new_hire_keeps_new_base_yanzi_RangedSkill\r\nPASS new_hire_keeps_new_base_yanzi_MeleeDefense\r\nPASS new_hire_keeps_new_base_yanzi_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_yanzi_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_yanzi_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_yanzi_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_yanzi_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_yanzi_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_yanzi_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_yanzi_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_yanzi_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_yanzi\r\nPASS migration_marked_yanzi\r\nPASS new_hire_keeps_new_base_tiantong_Hitpoints\r\nPASS new_hire_keeps_new_base_tiantong_Stamina\r\nPASS new_hire_keeps_new_base_tiantong_Bravery\r\nPASS new_hire_keeps_new_base_tiantong_Initiative\r\nPASS new_hire_keeps_new_base_tiantong_MeleeSkill\r\nPASS new_hire_keeps_new_base_tiantong_RangedSkill\r\nPASS new_hire_keeps_new_base_tiantong_MeleeDefense\r\nPASS new_hire_keeps_new_base_tiantong_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_tiantong_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_tiantong_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_tiantong_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_tiantong_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_tiantong_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_tiantong_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_tiantong_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_tiantong_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_tiantong\r\nPASS migration_marked_tiantong\r\nPASS new_hire_keeps_new_base_xiaoning_Hitpoints\r\nPASS new_hire_keeps_new_base_xiaoning_Stamina\r\nPASS new_hire_keeps_new_base_xiaoning_Bravery\r\nPASS new_hire_keeps_new_base_xiaoning_Initiative\r\nPASS new_hire_keeps_new_base_xiaoning_MeleeSkill\r\nPASS new_hire_keeps_new_base_xiaoning_RangedSkill\r\nPASS new_hire_keeps_new_base_xiaoning_MeleeDefense\r\nPASS new_hire_keeps_new_base_xiaoning_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoning_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoning_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoning_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoning_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoning_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoning_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoning_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaoning_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_xiaoning\r\nPASS migration_marked_xiaoning\r\nPASS new_hire_keeps_new_base_xiaopangxu_Hitpoints\r\nPASS new_hire_keeps_new_base_xiaopangxu_Stamina\r\nPASS new_hire_keeps_new_base_xiaopangxu_Bravery\r\nPASS new_hire_keeps_new_base_xiaopangxu_Initiative\r\nPASS new_hire_keeps_new_base_xiaopangxu_MeleeSkill\r\nPASS new_hire_keeps_new_base_xiaopangxu_RangedSkill\r\nPASS new_hire_keeps_new_base_xiaopangxu_MeleeDefense\r\nPASS new_hire_keeps_new_base_xiaopangxu_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaopangxu_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_xiaopangxu_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_xiaopangxu_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_xiaopangxu_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_xiaopangxu_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaopangxu_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaopangxu_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaopangxu_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_xiaopangxu\r\nPASS migration_marked_xiaopangxu\r\nPASS new_hire_keeps_new_base_dae_Hitpoints\r\nPASS new_hire_keeps_new_base_dae_Stamina\r\nPASS new_hire_keeps_new_base_dae_Bravery\r\nPASS new_hire_keeps_new_base_dae_Initiative\r\nPASS new_hire_keeps_new_base_dae_MeleeSkill\r\nPASS new_hire_keeps_new_base_dae_RangedSkill\r\nPASS new_hire_keeps_new_base_dae_MeleeDefense\r\nPASS new_hire_keeps_new_base_dae_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_dae_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_dae_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_dae_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_dae_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_dae_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_dae_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_dae_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_dae_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_dae\r\nPASS migration_marked_dae\r\nPASS new_hire_keeps_new_base_manyuemei_Hitpoints\r\nPASS new_hire_keeps_new_base_manyuemei_Stamina\r\nPASS new_hire_keeps_new_base_manyuemei_Bravery\r\nPASS new_hire_keeps_new_base_manyuemei_Initiative\r\nPASS new_hire_keeps_new_base_manyuemei_MeleeSkill\r\nPASS new_hire_keeps_new_base_manyuemei_RangedSkill\r\nPASS new_hire_keeps_new_base_manyuemei_MeleeDefense\r\nPASS new_hire_keeps_new_base_manyuemei_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_manyuemei_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_manyuemei_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_manyuemei_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_manyuemei_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_manyuemei_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_manyuemei_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_manyuemei_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_manyuemei_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_manyuemei\r\nPASS migration_marked_manyuemei\r\nPASS new_hire_keeps_new_base_xiaohani_Hitpoints\r\nPASS new_hire_keeps_new_base_xiaohani_Stamina\r\nPASS new_hire_keeps_new_base_xiaohani_Bravery\r\nPASS new_hire_keeps_new_base_xiaohani_Initiative\r\nPASS new_hire_keeps_new_base_xiaohani_MeleeSkill\r\nPASS new_hire_keeps_new_base_xiaohani_RangedSkill\r\nPASS new_hire_keeps_new_base_xiaohani_MeleeDefense\r\nPASS new_hire_keeps_new_base_xiaohani_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaohani_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_xiaohani_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_xiaohani_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_xiaohani_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_xiaohani_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaohani_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaohani_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaohani_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_xiaohani\r\nPASS migration_marked_xiaohani\r\nPASS new_hire_keeps_new_base_keke_Hitpoints\r\nPASS new_hire_keeps_new_base_keke_Stamina\r\nPASS new_hire_keeps_new_base_keke_Bravery\r\nPASS new_hire_keeps_new_base_keke_Initiative\r\nPASS new_hire_keeps_new_base_keke_MeleeSkill\r\nPASS new_hire_keeps_new_base_keke_RangedSkill\r\nPASS new_hire_keeps_new_base_keke_MeleeDefense\r\nPASS new_hire_keeps_new_base_keke_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_keke_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_keke_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_keke_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_keke_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_keke_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_keke_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_keke_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_keke_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_keke\r\nPASS migration_marked_keke\r\nPASS new_hire_keeps_new_base_yuxiang_Hitpoints\r\nPASS new_hire_keeps_new_base_yuxiang_Stamina\r\nPASS new_hire_keeps_new_base_yuxiang_Bravery\r\nPASS new_hire_keeps_new_base_yuxiang_Initiative\r\nPASS new_hire_keeps_new_base_yuxiang_MeleeSkill\r\nPASS new_hire_keeps_new_base_yuxiang_RangedSkill\r\nPASS new_hire_keeps_new_base_yuxiang_MeleeDefense\r\nPASS new_hire_keeps_new_base_yuxiang_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_yuxiang_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_yuxiang_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_yuxiang_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_yuxiang_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_yuxiang_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_yuxiang_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_yuxiang_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_yuxiang_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_yuxiang\r\nPASS migration_marked_yuxiang\r\nPASS new_hire_keeps_new_base_tongzhu_Hitpoints\r\nPASS new_hire_keeps_new_base_tongzhu_Stamina\r\nPASS new_hire_keeps_new_base_tongzhu_Bravery\r\nPASS new_hire_keeps_new_base_tongzhu_Initiative\r\nPASS new_hire_keeps_new_base_tongzhu_MeleeSkill\r\nPASS new_hire_keeps_new_base_tongzhu_RangedSkill\r\nPASS new_hire_keeps_new_base_tongzhu_MeleeDefense\r\nPASS new_hire_keeps_new_base_tongzhu_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_tongzhu_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_tongzhu_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_tongzhu_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_tongzhu_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_tongzhu_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_tongzhu_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_tongzhu_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_tongzhu_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_tongzhu\r\nPASS migration_marked_tongzhu\r\nPASS new_hire_keeps_new_base_meiya_Hitpoints\r\nPASS new_hire_keeps_new_base_meiya_Stamina\r\nPASS new_hire_keeps_new_base_meiya_Bravery\r\nPASS new_hire_keeps_new_base_meiya_Initiative\r\nPASS new_hire_keeps_new_base_meiya_MeleeSkill\r\nPASS new_hire_keeps_new_base_meiya_RangedSkill\r\nPASS new_hire_keeps_new_base_meiya_MeleeDefense\r\nPASS new_hire_keeps_new_base_meiya_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_meiya_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_meiya_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_meiya_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_meiya_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_meiya_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_meiya_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_meiya_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_meiya_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_meiya\r\nPASS migration_marked_meiya\r\nPASS new_hire_keeps_new_base_wanshe_Hitpoints\r\nPASS new_hire_keeps_new_base_wanshe_Stamina\r\nPASS new_hire_keeps_new_base_wanshe_Bravery\r\nPASS new_hire_keeps_new_base_wanshe_Initiative\r\nPASS new_hire_keeps_new_base_wanshe_MeleeSkill\r\nPASS new_hire_keeps_new_base_wanshe_RangedSkill\r\nPASS new_hire_keeps_new_base_wanshe_MeleeDefense\r\nPASS new_hire_keeps_new_base_wanshe_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_wanshe_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_wanshe_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_wanshe_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_wanshe_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_wanshe_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_wanshe_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_wanshe_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_wanshe_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_wanshe\r\nPASS migration_marked_wanshe\r\nPASS new_hire_keeps_new_base_tutu_Hitpoints\r\nPASS new_hire_keeps_new_base_tutu_Stamina\r\nPASS new_hire_keeps_new_base_tutu_Bravery\r\nPASS new_hire_keeps_new_base_tutu_Initiative\r\nPASS new_hire_keeps_new_base_tutu_MeleeSkill\r\nPASS new_hire_keeps_new_base_tutu_RangedSkill\r\nPASS new_hire_keeps_new_base_tutu_MeleeDefense\r\nPASS new_hire_keeps_new_base_tutu_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_tutu_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_tutu_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_tutu_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_tutu_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_tutu_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_tutu_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_tutu_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_tutu_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_tutu\r\nPASS migration_marked_tutu\r\nPASS new_hire_keeps_new_base_naigai_Hitpoints\r\nPASS new_hire_keeps_new_base_naigai_Stamina\r\nPASS new_hire_keeps_new_base_naigai_Bravery\r\nPASS new_hire_keeps_new_base_naigai_Initiative\r\nPASS new_hire_keeps_new_base_naigai_MeleeSkill\r\nPASS new_hire_keeps_new_base_naigai_RangedSkill\r\nPASS new_hire_keeps_new_base_naigai_MeleeDefense\r\nPASS new_hire_keeps_new_base_naigai_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_naigai_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_naigai_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_naigai_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_naigai_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_naigai_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_naigai_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_naigai_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_naigai_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_naigai\r\nPASS migration_marked_naigai\r\nPASS new_hire_keeps_new_base_xiaojie_Hitpoints\r\nPASS new_hire_keeps_new_base_xiaojie_Stamina\r\nPASS new_hire_keeps_new_base_xiaojie_Bravery\r\nPASS new_hire_keeps_new_base_xiaojie_Initiative\r\nPASS new_hire_keeps_new_base_xiaojie_MeleeSkill\r\nPASS new_hire_keeps_new_base_xiaojie_RangedSkill\r\nPASS new_hire_keeps_new_base_xiaojie_MeleeDefense\r\nPASS new_hire_keeps_new_base_xiaojie_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaojie_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_xiaojie_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_xiaojie_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_xiaojie_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_xiaojie_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaojie_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaojie_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaojie_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_xiaojie\r\nPASS migration_marked_xiaojie\r\nPASS new_hire_keeps_new_base_bula_Hitpoints\r\nPASS new_hire_keeps_new_base_bula_Stamina\r\nPASS new_hire_keeps_new_base_bula_Bravery\r\nPASS new_hire_keeps_new_base_bula_Initiative\r\nPASS new_hire_keeps_new_base_bula_MeleeSkill\r\nPASS new_hire_keeps_new_base_bula_RangedSkill\r\nPASS new_hire_keeps_new_base_bula_MeleeDefense\r\nPASS new_hire_keeps_new_base_bula_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_bula_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_bula_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_bula_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_bula_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_bula_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_bula_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_bula_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_bula_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_bula\r\nPASS migration_marked_bula\r\nPASS new_hire_keeps_new_base_suwa_Hitpoints\r\nPASS new_hire_keeps_new_base_suwa_Stamina\r\nPASS new_hire_keeps_new_base_suwa_Bravery\r\nPASS new_hire_keeps_new_base_suwa_Initiative\r\nPASS new_hire_keeps_new_base_suwa_MeleeSkill\r\nPASS new_hire_keeps_new_base_suwa_RangedSkill\r\nPASS new_hire_keeps_new_base_suwa_MeleeDefense\r\nPASS new_hire_keeps_new_base_suwa_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_suwa_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_suwa_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_suwa_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_suwa_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_suwa_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_suwa_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_suwa_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_suwa_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_suwa\r\nPASS migration_marked_suwa\r\nPASS new_hire_keeps_new_base_qianhan_Hitpoints\r\nPASS new_hire_keeps_new_base_qianhan_Stamina\r\nPASS new_hire_keeps_new_base_qianhan_Bravery\r\nPASS new_hire_keeps_new_base_qianhan_Initiative\r\nPASS new_hire_keeps_new_base_qianhan_MeleeSkill\r\nPASS new_hire_keeps_new_base_qianhan_RangedSkill\r\nPASS new_hire_keeps_new_base_qianhan_MeleeDefense\r\nPASS new_hire_keeps_new_base_qianhan_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_qianhan_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_qianhan_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_qianhan_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_qianhan_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_qianhan_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_qianhan_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_qianhan_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_qianhan_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_qianhan\r\nPASS migration_marked_qianhan\r\nPASS new_hire_keeps_new_base_wangdazhi_Hitpoints\r\nPASS new_hire_keeps_new_base_wangdazhi_Stamina\r\nPASS new_hire_keeps_new_base_wangdazhi_Bravery\r\nPASS new_hire_keeps_new_base_wangdazhi_Initiative\r\nPASS new_hire_keeps_new_base_wangdazhi_MeleeSkill\r\nPASS new_hire_keeps_new_base_wangdazhi_RangedSkill\r\nPASS new_hire_keeps_new_base_wangdazhi_MeleeDefense\r\nPASS new_hire_keeps_new_base_wangdazhi_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_wangdazhi_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_wangdazhi_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_wangdazhi_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_wangdazhi_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_wangdazhi_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_wangdazhi_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_wangdazhi_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_wangdazhi_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_wangdazhi\r\nPASS migration_marked_wangdazhi\r\nPASS new_hire_keeps_new_base_yaoyaoya_Hitpoints\r\nPASS new_hire_keeps_new_base_yaoyaoya_Stamina\r\nPASS new_hire_keeps_new_base_yaoyaoya_Bravery\r\nPASS new_hire_keeps_new_base_yaoyaoya_Initiative\r\nPASS new_hire_keeps_new_base_yaoyaoya_MeleeSkill\r\nPASS new_hire_keeps_new_base_yaoyaoya_RangedSkill\r\nPASS new_hire_keeps_new_base_yaoyaoya_MeleeDefense\r\nPASS new_hire_keeps_new_base_yaoyaoya_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_yaoyaoya_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_yaoyaoya_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_yaoyaoya_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_yaoyaoya_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_yaoyaoya_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_yaoyaoya_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_yaoyaoya_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_yaoyaoya_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_yaoyaoya\r\nPASS migration_marked_yaoyaoya\r\nPASS new_hire_keeps_new_base_yangmiemie_Hitpoints\r\nPASS new_hire_keeps_new_base_yangmiemie_Stamina\r\nPASS new_hire_keeps_new_base_yangmiemie_Bravery\r\nPASS new_hire_keeps_new_base_yangmiemie_Initiative\r\nPASS new_hire_keeps_new_base_yangmiemie_MeleeSkill\r\nPASS new_hire_keeps_new_base_yangmiemie_RangedSkill\r\nPASS new_hire_keeps_new_base_yangmiemie_MeleeDefense\r\nPASS new_hire_keeps_new_base_yangmiemie_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_yangmiemie_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_yangmiemie_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_yangmiemie_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_yangmiemie_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_yangmiemie_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_yangmiemie_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_yangmiemie_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_yangmiemie_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_yangmiemie\r\nPASS migration_marked_yangmiemie\r\nPASS new_hire_keeps_new_base_songnuanyang_Hitpoints\r\nPASS new_hire_keeps_new_base_songnuanyang_Stamina\r\nPASS new_hire_keeps_new_base_songnuanyang_Bravery\r\nPASS new_hire_keeps_new_base_songnuanyang_Initiative\r\nPASS new_hire_keeps_new_base_songnuanyang_MeleeSkill\r\nPASS new_hire_keeps_new_base_songnuanyang_RangedSkill\r\nPASS new_hire_keeps_new_base_songnuanyang_MeleeDefense\r\nPASS new_hire_keeps_new_base_songnuanyang_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_songnuanyang_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_songnuanyang_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_songnuanyang_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_songnuanyang_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_songnuanyang_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_songnuanyang_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_songnuanyang_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_songnuanyang_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_songnuanyang\r\nPASS migration_marked_songnuanyang\r\nPASS new_hire_keeps_new_base_xiaogui_Hitpoints\r\nPASS new_hire_keeps_new_base_xiaogui_Stamina\r\nPASS new_hire_keeps_new_base_xiaogui_Bravery\r\nPASS new_hire_keeps_new_base_xiaogui_Initiative\r\nPASS new_hire_keeps_new_base_xiaogui_MeleeSkill\r\nPASS new_hire_keeps_new_base_xiaogui_RangedSkill\r\nPASS new_hire_keeps_new_base_xiaogui_MeleeDefense\r\nPASS new_hire_keeps_new_base_xiaogui_RangedDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaogui_Hitpoints\r\nPASS earned_attributes_preserved_after_repeated_load_xiaogui_Stamina\r\nPASS earned_attributes_preserved_after_repeated_load_xiaogui_Bravery\r\nPASS earned_attributes_preserved_after_repeated_load_xiaogui_Initiative\r\nPASS earned_attributes_preserved_after_repeated_load_xiaogui_MeleeSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaogui_RangedSkill\r\nPASS earned_attributes_preserved_after_repeated_load_xiaogui_MeleeDefense\r\nPASS earned_attributes_preserved_after_repeated_load_xiaogui_RangedDefense\r\nPASS migration_preserves_progress_and_never_heals_xiaogui\r\nPASS migration_marked_xiaogui\r\nALL_ROSTER_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=1058\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_roster_groups.nut",
+      "assertions": 46,
+      "log": "TESTS_PASSED=46\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_starting_budget.nut",
+      "assertions": 27,
+      "log": "TESTS_PASSED=27\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_startup_pathfinding.nut",
+      "assertions": 154,
+      "log": "TESTS_PASSED=154\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_story_progress.nut",
+      "assertions": 2768,
+      "log": "ALL_STORY_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=2768\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_supporter_titles.nut",
+      "assertions": 35,
+      "log": "TESTS_PASSED=35\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_talents.nut",
+      "assertions": 275,
+      "log": "TESTS_PASSED=275\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_ten_person_balance.nut",
+      "assertions": 67,
+      "log": "BALANCE 1 members level 1: 30 -> 30; contract 0.75 -> 0.75\r\nBALANCE 1 members level 5: 38 -> 38; contract 0.75 -> 0.75\r\nBALANCE 1 members level 11: 50 -> 50; contract 0.75 -> 0.75\r\nBALANCE 3 members level 1: 30 -> 30; contract 0.75 -> 0.75\r\nBALANCE 3 members level 5: 54 -> 54; contract 0.75 -> 0.75\r\nBALANCE 3 members level 11: 90 -> 90; contract 0.855862 -> 0.855862\r\nBALANCE 6 members level 1: 60 -> 60; contract 0.75 -> 0.75\r\nBALANCE 6 members level 5: 108 -> 108; contract 1.00664 -> 1.00664\r\nBALANCE 6 members level 11: 180 -> 180; contract 1.58606 -> 1.58606\r\nBALANCE 10 members level 1: 100 -> 100; contract 0.94 -> 0.94\r\nBALANCE 10 members level 5: 180 -> 180; contract 1.58606 -> 1.58606\r\nBALANCE 10 members level 11: 300 -> 300; contract 2.499 -> 2.499\r\nBALANCE 12 members level 1: 120 -> 120; contract 1.1056 -> 1.1056\r\nBALANCE 12 members level 5: 216 -> 216; contract 1.86548 -> 1.86548\r\nBALANCE 12 members level 11: 360 -> 360; contract 2.93925 -> 2.93925\r\nBALANCE 35 members level 1: 120 -> 120; contract 1.1056 -> 1.1056\r\nBALANCE 35 members level 5: 216 -> 216; contract 1.86548 -> 1.86548\r\nBALANCE 35 members level 11: 360 -> 360; contract 2.93925 -> 2.93925\r\nBALANCE 40 members level 1: 120 -> 120; contract 1.1056 -> 1.1056\r\nBALANCE 40 members level 5: 216 -> 216; contract 1.86548 -> 1.86548\r\nBALANCE 40 members level 11: 360 -> 360; contract 2.93925 -> 2.93925\r\nTESTS_PASSED=67\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_toad_banner.nut",
+      "assertions": 71,
+      "log": "TESTS_PASSED=71\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_training_independent_skills.nut",
+      "assertions": 41,
+      "log": "TESTS_PASSED=41\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_turtle_secret.nut",
+      "assertions": 58,
+      "log": "TESTS_PASSED=58\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_world_art.nut",
+      "assertions": 31,
+      "log": "ALL_WORLD_ART_CHECKS_PASS\r\nTESTS_PASSED=31\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_barber_ui.js",
+      "assertions": 61,
+      "log": "TESTS_PASSED=61\n"
+    },
+    {
+      "file": "tests/gameplay/test_formation_ui.js",
+      "assertions": 361,
+      "log": "NATIVE_UI_DROP_CHECKS_PASSED\nTESTS_PASSED=361\n"
+    },
+    {
+      "file": "tests/gameplay/test_art_resources.py",
+      "assertions": 8,
+      "log": "ALL_ART_RESOURCE_CHECKS_PASS\nTESTS_PASSED=8\n"
+    }
+  ],
+  "syntax_log": "SYNTAX_PASSED\r\n",
+  "limits": [
+    "No game was launched",
+    "Native save/load and screen rendering require in-game checks",
+    "Twelve-person enemy balance is not validated"
+  ]
+}

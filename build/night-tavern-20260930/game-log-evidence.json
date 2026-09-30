@@ -1,0 +1,52 @@
+{
+  "log_sha256": "301cd0d20becd265842b6dd4c2bdac6ac083f1307c7867e941654f6eb70bb762",
+  "loaded_main_version": "0.28.5",
+  "loaded_internal_version": 55,
+  "ledger_rejections": [
+    {
+      "time": "13:05:51",
+      "reason": "loading screen"
+    },
+    {
+      "time": "13:30:28",
+      "reason": "loading screen"
+    },
+    {
+      "time": "13:37:01",
+      "reason": "another menu or unsafe town"
+    },
+    {
+      "time": "13:37:02",
+      "reason": "another menu or unsafe town"
+    },
+    {
+      "time": "13:37:22",
+      "reason": "another menu or unsafe town"
+    },
+    {
+      "time": "13:37:23",
+      "reason": "another menu or unsafe town"
+    },
+    {
+      "time": "13:37:23",
+      "reason": "another menu or unsafe town"
+    },
+    {
+      "time": "13:37:23",
+      "reason": "another menu or unsafe town"
+    },
+    {
+      "time": "13:37:23",
+      "reason": "another menu or unsafe town"
+    },
+    {
+      "time": "13:37:23",
+      "reason": "another menu or unsafe town"
+    },
+    {
+      "time": "13:38:25",
+      "reason": "another menu or unsafe town"
+    }
+  ],
+  "specific_unsafe_town_subcondition_logged": false
+}

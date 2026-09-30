@@ -1,0 +1,4 @@
+21 objects imported automatically (use -v 2 for details).
+
+{"validated": true, "version": "0.1.2", "sha256": "12aa12c3723591008888f8e60113d8aa538b3bd090e44c6f12ece4668176e7ab", "size": 297608, "owner": "laimiu", "package_filename": "mod_afeix_dlc_afei_voice v0.1.2.zip", "download_filename": "mod_afeix_dlc_afei_voice.zip"}
+{"published": true, "mod_id": "f8909336-43fa-4415-82f6-b6224a8e7340", "release_id": "be0dad8e-271f-4d5d-bee0-dd1c63975704", "detail_url": "https://bbmod.site/mods/f8909336-43fa-4415-82f6-b6224a8e7340/", "sha256": "12aa12c3723591008888f8e60113d8aa538b3bd090e44c6f12ece4668176e7ab", "size": 297608, "backup": "/srv/data/backups/afeix-pre-v0.1.2-20260930T060130612511Z.sqlite3", "superseded_release_id": null}

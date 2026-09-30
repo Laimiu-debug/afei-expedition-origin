@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-30T13:23:49.452143+08:00",
+  "scope": "Diagnosis only. This chat did not alter main source, main package, settings or saves.",
+  "user_trigger": "new campaign; first movement on world map; latest installed version",
+  "installed_main": {
+    "path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition v0.28.5.zip",
+    "sha256": "b2d3950c4c00381b4c1ab88508514b699c58587a440cc5c025b221105f88378b",
+    "entries": 287,
+    "internal_version": "55",
+    "source_equal_at_initial_check": true,
+    "current_source_version": "0.28.6",
+    "source_changed_during_investigation": [
+      "scripts/!mods_preload/mod_afeix_expedition.nut",
+      "scripts/mods/afeix/attribute_treatment.nut",
+      "scripts/mods/afeix/ledger.nut"
+    ],
+    "note": "Unrelated concurrent workspace edits were preserved; measured next launch must be checked against actual loaded version."
+  },
+  "current_game_log": {
+    "snapshot": "G:\\CODE\\afei-xcpedition\\build\\first-move-diagnostic-20260930\\before-diagnostic.html",
+    "sha256": "5ab8a857ff9caaa265edaf1fa51397522f7c5fa292ac441f54e4cdf08bb39085",
+    "error_rows": 0,
+    "contains_new_campaign": true,
+    "native_contracts_added_130551_to_130553": 28,
+    "first_movement_timestamp_known": false
+  },
+  "suspects": [
+    {
+      "path": "first command pathfinding and resumed world simulation",
+      "status": "plausible; needs measured callback durations"
+    },
+    {
+      "path": "BBMOD map-label collect and Canvas redraw on moving map",
+      "status": "actual installed render hook; no measured causal evidence"
+    },
+    {
+      "path": "Afei turtle per-frame roster lookup",
+      "status": "confirmed extra work, but startup roster only three; insufficient evidence for a long stall"
+    }
+  ],
+  "validation": {
+    "syntax_files": 2,
+    "profiler_assertions": 38,
+    "parser_assertions": 6,
+    "native_method_layout_verified": true,
+    "zip_crc_and_source_bytes": true
+  },
+  "diagnostic": {
+    "package": "G:\\CODE\\afei-xcpedition\\build\\first-move-diagnostic-20260930\\mod_afeix_first_move_diagnostic.zip",
+    "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_first_move_diagnostic.zip",
+    "sha256": "3c1f5efbb5d381fc04db2f6118c28c2ad8d7332cbef864cdd7ba7dd225914d42",
+    "window_seconds": 12,
+    "effective": "next game process startup",
+    "capture_complete": false
+  },
+  "limitations": [
+    "No measured engine capture yet",
+    "No timestamp for the original first movement",
+    "Exact clock tick units calibrated from real frame clock; nested timings cannot be added"
+  ],
+  "next_step": "Restart game, create a new Afei campaign, move once and keep world active at least 12 seconds, then parse log."
+}

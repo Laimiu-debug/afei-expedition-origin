@@ -1,0 +1,29 @@
+{
+  "version": "0.28.11",
+  "prior_version": "0.28.10",
+  "changed_package_entries": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/contracts.nut",
+    "scripts/mods/afeix/hooks.nut",
+    "scripts/mods/afeix/quests.nut"
+  ],
+  "cause": "Membership testing skips getType forwarded by native WeakTableRef.",
+  "native_reference_failure_reproduced": true,
+  "type_read_before_completion": true,
+  "distinct_types_deduplicated": true,
+  "native_and_mod_couriers_excluded": true,
+  "empty_type_does_not_erase_known_type": true,
+  "historical_completion_count_retained": true,
+  "historical_types_not_invented": true,
+  "missing_history_labeled": true,
+  "behavior_assertions": 33484,
+  "contract_hook_assertions": 73,
+  "in_game_tested": false,
+  "published": true,
+  "website_release_id": "dcf9ee57-3d77-4767-8bf4-8cdddfd1921a",
+  "installed": false,
+  "installation_pending_game_exit": true,
+  "prior_installed_version": "0.28.5",
+  "public_archive_downloaded": false,
+  "public_download_byte_comparison": false
+}

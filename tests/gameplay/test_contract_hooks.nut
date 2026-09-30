@@ -269,6 +269,37 @@ function runContractChecks(){
     c=contract(305);c.getType <- function(){return "contract.escort_caravan";};payAndFinish(c,500);
     require(A.get("qualified_contracts")==3 && A.get("qualified_types")==2,"qualified_count_and_distinct_types_have_separate_accounting");
     A.tryRecordPaidContract(305);require(A.get("qualified_contracts")==3 && A.get("qualified_types")==2,"repeated_completion_cannot_inflate_either_unlock_metric");
+    // Actual native WeakTableRef forwards getType but membership checks do not.
+    // Finish through the manager reference, including payment inside finish.
+    local contractFactory=::contract;
+    dofile(".cache/afei-art/native-contract-fixture/contract.nut");
+    local nativeGetType=::contract.getType;::contract=contractFactory;
+    dofile(".cache/afei-art/native-contract-fixture/weak_table_ref.nut");
+    reset();::contractTestState.finishIncome=100;
+    foreach(spec in [[501,"contract.destroy_bandit_camp"],[502,"contract.destroy_bandit_camp"],
+                    [503,"contract.escort_caravan"],[504,"contract.deliver_item"],[505,"contract.afeix_letter"]]) {
+        c=contract(spec[0]);c.m<-{Type=spec[1]};c.getType<-nativeGetType;
+        local reference=::WeakTableRef(c);
+        require(!("getType" in reference)&&reference.getType()==spec[1],"native_contract_reference_forwards_type_without_membership");
+        ::testContractManager.m.Active=reference;
+        ::testContractManager.finishActiveContract(false);
+        require(A.get("contract_type_"+spec[0],"")==spec[1],"native_manager_reference_records_type_before_contract_is_cleared");
+    }
+    require(A.get("qualified_contracts")==3&&A.get("qualified_types")==2&&A.get("courier_completed")==2,
+        "native_reference_contracts_count_distinct_types_and_exclude_both_couriers");
+    A.tryRecordPaidContract(503);
+    require(A.get("qualified_contracts")==3&&A.get("qualified_types")==2,"native_reference_completion_remains_idempotent");
+    c=contract(503);c.m<-{Type=""};c.getType<-nativeGetType;
+    A.noteContractType(::WeakTableRef(c));
+    require(A.get("contract_type_503","")=="contract.escort_caravan","cleared_native_type_cannot_erase_known_contract_history");
+    dofile("src/scripts/mods/afeix/contracts.nut");
+    require(A.get("qualified_types")==2&&A.get("qualified_type_contract.escort_caravan",false),"known_contract_types_survive_runtime_reload");
+    reset();A.set("qualified_contracts",11);A.set("paid_contracts",11);
+    require(A.questSummary().find("种类 0")==null&&A.questSummary().find("旧记录未保存种类")!=null,
+        "old_untyped_history_is_labeled_missing_instead_of_zero_variety");
+    c=contract(506);c.getType<-function(){return "contract.destroy_bandit_camp";};payAndFinish(c,500);
+    require(A.get("qualified_contracts")==12&&A.get("qualified_types")==1,
+        "old_completion_progress_is_retained_without_inventing_historical_types");
     reset();::circleDay=1;::circleTest.rate=0.08;
     for(local i=0;i<4;i++){c=contract(401+i);c.onCombatVictory(1);payAndFinish(c,10000);}
     require(::World.Assets.getMoney()==40360&&A.get("v26_circle_day_1")==360,"rolling_week_cap_and_no_duplicate_payout");

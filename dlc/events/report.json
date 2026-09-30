@@ -1,0 +1,93 @@
+{
+  "version": "0.1.0",
+  "status": "framework_only",
+  "content_count": 0,
+  "scene_ids": [],
+  "minimum_base_internal": 54,
+  "verified_base_internal": 61,
+  "base_preload_sha256": "f3f95eeb427827515ebb0c4b7acdd5080a3c6897afa29f45607cff7d53b607b7",
+  "base_hooks_sha256": "44dc352a5f651bdc752841af39cc84e77bcf0d7b02fefef8bfab4ad58b6ad89b",
+  "base_source_unchanged": true,
+  "path_collisions": [],
+  "compatibility": {
+    "project_mod_ids": [
+      "mod_afeix_dlc_afei_voice",
+      "mod_afeix_dlc_events",
+      "mod_afeix_dlc_xiwen_regen",
+      "mod_afeix_expedition"
+    ],
+    "runtime_ids": [
+      "event.afeix_dlc_events"
+    ],
+    "path_and_id_collisions": [],
+    "dependency_cycles": [],
+    "queue_declarations": [
+      {
+        "id": "mod_afeix_expedition",
+        "before": [],
+        "after": [],
+        "requires": []
+      },
+      {
+        "id": "mod_afeix_dlc_afei_voice",
+        "before": [],
+        "after": [
+          "mod_afeix_expedition"
+        ],
+        "requires": [
+          "mod_afeix_expedition"
+        ]
+      },
+      {
+        "id": "mod_afeix_dlc_events",
+        "before": [],
+        "after": [
+          "mod_afeix_expedition"
+        ],
+        "requires": [
+          "mod_afeix_expedition"
+        ]
+      },
+      {
+        "id": "mod_afeix_dlc_xiwen_regen",
+        "before": [],
+        "after": [
+          "mod_afeix_expedition"
+        ],
+        "requires": [
+          "mod_afeix_expedition"
+        ]
+      }
+    ],
+    "audit_regression_assertions": 7,
+    "native_hooks_graph_passed": true,
+    "native_hooks_graph_assertions": 3,
+    "native_hooks_package": "mod_fox_008.zip",
+    "native_hooks_graph_sha256": "18459b04e9467ee0198dad4794ddd91eb1a6543d2cafd8ff9df952541373c276"
+  },
+  "content_include_cycles": [],
+  "scripts_compiled": 5,
+  "template_scripts_compiled": 1,
+  "behavior_assertions": 129,
+  "test_output": "TESTS_PASSED=129\r\n",
+  "native_fixtures": {
+    "scripts/events/event.cnut": "43412918ac3af41cfc755a38e063a87be59d1e9d37e8eefda64b4bbd26166ff0",
+    "scripts/events/event_manager.cnut": "60a928867b8a3fce48ae72f09c255dc7ac2b89559f8e75b30947cf7123f51331",
+    "scripts/states/world_state.cnut": "718e751048e02e6767326b1fa417b634272442161c1852a3505fd71a4bb0fe1d",
+    "scripts/entity/world/settlements/buildings/tavern_building.cnut": "407cbd534a291281c279834c1e6f0cf47a76ccee9bd87bc35576125ecfa8375f"
+  },
+  "entries": [
+    "scripts/!mods_preload/mod_afeix_dlc_events.nut",
+    "scripts/events/events/afeix_dlc_events_event.nut",
+    "scripts/mods/afeix_dlc_events/content.nut",
+    "scripts/mods/afeix_dlc_events/core.nut",
+    "scripts/mods/afeix_dlc_events/hooks.nut"
+  ],
+  "in_game_tested": false,
+  "installed": false,
+  "published": false,
+  "package": "dlc/events/dist/mod_afeix_dlc_events v0.1.0.zip",
+  "package_sha256": "79b218ff5e20f1baf049570ac5ae991a3d71f7c501e57dd43c34e4608fb987f5",
+  "crc_passed": true,
+  "source_bytes_match": true
+}

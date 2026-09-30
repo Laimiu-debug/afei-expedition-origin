@@ -12,9 +12,19 @@ local expect = function(ok, label) { if (!ok) throw "FAIL " + label; checks++; }
 dofile(".cache/afei-art/native-contract-fixture/character.nut");
 dofile(".cache/afei-art/native-contract-fixture/weak_table_ref.nut");
 dofile(".cache/afei-art/native-contract-fixture/event.nut");
+dofile(".cache/afei-art/native-contract-fixture/world_town_screen.nut");
+local townScreen = clone ::world_town_screen;
+townScreen.m = clone ::world_town_screen.m;
+local tavernModule = {};
+local town = { alive = true, function isAlive() { return this.alive; } };
+townScreen.m.Visible = true;
+townScreen.m.TavernDialogModule = tavernModule;
+townScreen.m.LastActiveModule = tavernModule;
+townScreen.m.Town = ::WeakTableRef(town);
 ::inherit <- function(path, child) {
     local result = clone ::event;
     result.m = clone ::event.m;
+    result.event <- ::event;
     foreach (key, value in child) {
         if (key == "m") foreach (name, entry in value) result.m[name] <- entry;
         else result[key] <- value;
@@ -39,9 +49,10 @@ dofile(".cache/afei-art/native-contract-fixture/event.nut");
     },
     EntityManager = { function getSettlements() { return []; } },
     State = {
-        transition = 0, refreshes = 0, failRefresh = false,
+        m = { WorldTownScreen = townScreen },
+        transition = 0, refreshes = 0, failRefresh = false, player = { function getPos() { return {}; } },
         function getCombatStartTime() { return this.transition; },
-        function getPlayer() { return { function getPos() { return {}; } }; },
+        function getPlayer() { return this.player; },
         function isCampingAllowed() { return ::safe; },
         function updateTopbarAssets() { this.refreshes++; if (this.failRefresh) throw "display refresh failed"; }
     },
@@ -90,10 +101,11 @@ expect(e.m.ActiveScreen.Options[0].Text=="飞李不可", "company exposes treatm
 expect(e.processInput(0) && e.m.ActiveScreen.ID=="treatment", "company reaches treatment");
 local money = ::World.Assets.money;
 expect(e.processInput(0) && e.m.ActiveScreen.ID=="treatment_actor:1", "native cloned option captures actor ID");
-expect(e.processInput(0) && e.m.ActiveScreen.ID=="treatment_preview:1:Hitpoints", "selecting HP only previews");
 expect(::World.Assets.money==money && first.properties.Hitpoints==60, "browsing does not buy a point");
 local oldOption = e.m.ActiveScreen.Options[0], missingHP = first.getHitpointsMax()-first.hp;
-expect(e.processInput(0) && first.properties.Hitpoints==61 && ::World.Assets.money==money-100, "confirmation buys exactly one point for 100");
+expect(e.processInput(0) && first.properties.Hitpoints==61 && ::World.Assets.money==money-100, "one attribute click buys exactly one point for 100");
+expect(e.m.ActiveScreen.ID=="treatment_actor:1" && e.m.ActiveScreen.Options[0].Text.find("61")!=null,
+    "successful purchase stays on the attribute page with fresh button values");
 expect(first.getHitpointsMax()-first.hp==missingHP, "HP multiplier preserves existing wounds");
 oldOption.getResult(e);
 expect(first.properties.Hitpoints==61 && ::World.Assets.money==money-100, "same confirmation cannot charge twice");
@@ -112,9 +124,18 @@ for (local offset=0; offset<40; offset+=4) {
 }
 foreach (bro in [first,dlc,ordinary]) {
     foreach (offset in [0,4]) {
-        local screen=A.ledgerPage(e,"treatment_actor:"+bro.id+":"+offset);
+        local page="treatment_actor:"+bro.id+":"+offset;
+        local screen=A.ledgerPage(e,page);
         expect(screen.Options.len()==6,"attribute page fits six buttons");
-        for (local i=0;i<4;i++) expect(screen.Options[i].getResult(e)=="treatment_preview:"+bro.id+":"+A.TreatmentAttributes[offset+i].field,"attribute row captures its own field");
+        for (local i=0;i<4;i++) {
+            e.setScreen(e.getScreen(page));
+            local before=clone bro.properties,wallet=::World.Assets.money,field=A.TreatmentAttributes[offset+i].field;
+            expect(e.processInput(i)&&e.m.ActiveScreen.ID==page,"each cloned direct button stays on its attribute page");
+            foreach(attribute in A.TreatmentAttributes)
+                expect(bro.properties[attribute.field]==before[attribute.field]+(attribute.field==field?1:0),
+                    "each direct button changes only its captured attribute");
+            expect(::World.Assets.money==wallet-100,"each native button charges exactly once");
+        }
     }
     foreach (attribute in A.TreatmentAttributes) {
         local before=clone bro.properties, hpBefore=bro.hp, wallet=::World.Assets.money;
@@ -132,10 +153,76 @@ local deny = function(label) {
     expect(!A.treatAttribute(1,"MeleeSkill",value,100).ok,label);
     expect(first.properties.MeleeSkill==value && ::World.Assets.money==wallet,label+" leaves funds and attributes unchanged");
 };
-::safe=false; deny("unsafe location denied"); ::safe=true;
-::hostile=true; deny("nearby enemy denied"); ::hostile=false;
+// Actual native town-screen state is authoritative. Being on the world map,
+// camping or remembering a previously visited inn cannot enable a purchase.
+::safe=false;
+townScreen.m.Visible=false;
+A.TavernTown <- 51;
+expect(!A.canManage(),"ordinary camp/town management stays restricted in the field");
+expect(A.ledgerPage(e,"home").Text.find("飞李不可仅限酒馆内使用")!=null,"field home page explains the tavern rule");
+deny("uncamped world map denied despite remembered tavern");
+::safe=true;
+expect(A.canManage(),"safe camp still allows ordinary management");
+deny("camping does not enable treatment");
+foreach(page in ["treatment","treatment_actor:1","treatment_preview:1:MeleeSkill"]) {
+    local screen=A.ledgerPage(e,page);
+    expect(screen.Text.find("只能在酒馆内使用")!=null&&screen.Options.len()==1,
+        "field roster and stale actor/preview links have no purchase buttons");
+}
+::World.State.m.WorldTownScreen=null;deny("missing town screen denied");::World.State.m.WorldTownScreen=townScreen;
+townScreen.m.Visible=true;
+foreach(module in [null,{},{}]) {
+    townScreen.m.LastActiveModule=module;
+    deny("town main/shop/other module is not the tavern");
+}
+townScreen.m.LastActiveModule=tavernModule;
+townScreen.m.TavernDialogModule=null;deny("missing tavern module denied");
+townScreen.m.LastActiveModule=null;deny("two null modules do not count as a tavern");
+townScreen.m.TavernDialogModule=tavernModule;townScreen.m.LastActiveModule=tavernModule;
+townScreen.m.Town=null;deny("tavern without a live town denied");townScreen.m.Town=::WeakTableRef(town);
+town.alive=false;deny("destroyed tavern town denied");town.alive=true;
+A.TavernTown=0;
+expect(A.treatmentCheck(1,"MeleeSkill").ok,"manual F8 in the actual inn works without a remembered tavern token");
+e.setScreen(e.getScreen("treatment_actor:1:4"));
+local valueBeforeLeaving=first.properties.MeleeSkill,walletBeforeLeaving=::World.Assets.money;
+townScreen.m.Visible=false;
+expect(e.processInput(0)&&first.properties.MeleeSkill==valueBeforeLeaving&&::World.Assets.money==walletBeforeLeaving,
+    "leaving the inn invalidates an already displayed purchase before charging");
+expect(e.m.Notice.find("只能在酒馆内使用")!=null&&e.m.ActiveScreen.Options.len()==1,
+    "stale click explains the tavern requirement and removes purchase buttons");
+townScreen.m.Visible=true;
+::safe=false;
+foreach(offset in [0,4]) for(local i=0;i<4;i++) {
+    local page="treatment_actor:1:"+offset,field=A.TreatmentAttributes[offset+i].field;
+    e.setScreen(e.getScreen(page));
+    local before=clone first.properties,wallet=::World.Assets.money;
+    expect(e.processInput(i)&&e.m.ActiveScreen.ID==page,"tavern button stays on same attribute page");
+    foreach(attribute in A.TreatmentAttributes)
+        expect(first.properties[attribute.field]==before[attribute.field]+(attribute.field==field?1:0),
+            "tavern click increases only the selected attribute");
+    expect(::World.Assets.money==wallet-100,"tavern click charges exactly 100");
+    expect(e.m.Notice.find("本次花费 100")!=null
+        &&e.m.ActiveScreen.Text.find(e.m.Notice)<e.m.ActiveScreen.Text.find("当前基础属性"),
+        "payment receipt is visible above the attribute list");
+}
+expect(A.ledgerPage(e,"treatment").Text.find("仅限酒馆内参加")!=null,"tavern instructions explain the location rule");
+::World.Assets.money=99;
+e.setScreen(e.getScreen("treatment_actor:1:4"));
+local fieldValue=first.properties.MeleeSkill;
+e.processInput(0);
+expect(first.properties.MeleeSkill==fieldValue&&::World.Assets.money==99,"failed tavern click keeps attributes and funds");
+expect(e.m.Notice.find("克朗不足")!=null
+    &&e.m.ActiveScreen.Text.find(e.m.Notice)<e.m.ActiveScreen.Text.find("当前基础属性"),
+    "actual insufficient-funds reason appears above the attribute list inside the inn");
+::World.Assets.money=10000;::safe=true;
 ::Tactical.Active=true; deny("combat denied"); ::Tactical.Active=false;
 ::World.State.transition=1; deny("combat transition denied"); ::World.State.transition=0;
+::Tactical.State <- {};deny("tactical lifecycle still active denied");::Tactical.State=null;
+local worldState=::World.State;::World.State=null;deny("world state not ready denied");::World.State=worldState;
+local worldPlayer=::World.State.player;::World.State.player=null;deny("world player not ready denied");::World.State.player=worldPlayer;
+::LoadingScreen <- {visible=false,animating=false,isVisible=function(){return this.visible;},isAnimating=function(){return this.animating;}};
+::LoadingScreen.visible=true;deny("loading screen denied");::LoadingScreen.visible=false;
+::LoadingScreen.animating=true;deny("loading animation denied");::LoadingScreen.animating=false;
 ::World.Assets.origin="scenario.other"; deny("other origin denied"); ::World.Assets.origin="scenario.afeix_expedition";
 first.alive=false; deny("dead actor denied"); first.alive=true;
 first.dying=true; deny("dying actor denied"); first.dying=false;
@@ -171,6 +258,45 @@ foreach(attribute in A.TreatmentAttributes)expect(loaded[attribute.field]==first
 first.properties.MeleeSkill=32767; deny("native I16 save ceiling denied"); first.properties.MeleeSkill=loaded.MeleeSkill;
 foreach(page in ["treatment:-2","treatment:garbage","treatment_actor:1:garbage","treatment_actor:999","treatment_actor:1abc","treatment_preview:1:ActionPoints"])
     expect(A.ledgerPage(e,page).Options.len()<=6,"malformed/stale links stay navigable");
+
+// Native entity identifiers must round-trip as identifiers, independently of
+// the nonnegative offsets used to paginate people and attributes.
+foreach(id in [-2147483648,-12345,0,2147483647]) {
+    ordinary.id=id;
+    e.setScreen(e.getScreen("treatment_actor:"+id));
+    expect(e.m.ActiveScreen.Text.find("普通雇员")!=null,"signed entity ID reaches its actor page");
+    local value=ordinary.properties.MeleeSkill,wallet=::World.Assets.money;
+    e.setScreen(e.getScreen("treatment_actor:"+id+":4"));
+    expect(e.m.TreatmentOffer.actorId==id,"confirmation keeps native entity identifier");
+    e.processInput(0);
+    expect(ordinary.properties.MeleeSkill==value+1&&::World.Assets.money==wallet-100,
+        "signed entity ID can purchase exactly one point");
+    local stale=e.m.ActiveScreen.Options[0];
+    e.processInput(0);
+    expect(ordinary.properties.MeleeSkill==value+2&&::World.Assets.money==wallet-200,
+        "repeat offer can purchase the same attribute again");
+    stale.getResult(e);
+    expect(ordinary.properties.MeleeSkill==value+2&&::World.Assets.money==wallet-200,
+        "completed repeat offer cannot charge twice");
+}
+ordinary.id=40;
+expect(A.treatmentActor("-12345garbage")==null&&A.treatmentActor("")==null,
+    "malformed identifiers do not resolve to a different character");
+
+// Use the game's event manager to cancel: no purchase callback is evaluated,
+// the offer/draft are cleared, and exactly the event menu step is restored.
+dofile(".cache/afei-art/native-contract-fixture/event_manager.nut");
+local manager=::event_manager,pops=0;
+::World.Events <- manager;
+::World.State.getMenuStack <- function(){return {pop=function(force){expect(force,"cancel uses native forced event pop");pops++;}};};
+e.setScreen(e.getScreen("treatment_preview:1:MeleeSkill"));
+local cancelled=e.m.ActiveScreen.Options[0],before=first.properties.MeleeSkill,wallet=::World.Assets.money;
+e.m.Selected=[1,2];manager.m.ActiveEvent=e;manager.m.IsEventShown=true;
+manager.processInput(-1);
+cancelled.getResult(e);
+expect(manager.m.ActiveEvent==null&&!manager.m.IsEventShown&&pops==1,"cancel clears native manager and one menu step");
+expect(e.m.TreatmentOffer==null&&e.m.Selected.len()==0&&first.properties.MeleeSkill==before&&::World.Assets.money==wallet,
+    "Escape discards draft and confirmation without buying a point");
 e.setScreen(e.getScreen("treatment_preview:1:MeleeSkill")); oldOption=e.m.ActiveScreen.Options[0];
 e.clear(); oldOption.getResult(e);
 expect(first.properties.MeleeSkill==loaded.MeleeSkill && e.m.TreatmentOffer==null,"closing ledger invalidates unspent confirmation");

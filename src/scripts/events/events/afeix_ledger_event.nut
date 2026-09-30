@@ -18,6 +18,12 @@ this.afeix_ledger_event <- this.inherit("scripts/events/event", {
         if (this.m.AutoPage == "tavern") this.m.AutoPage = ::AfeixExpedition.prepareTavernMeeting();
     },
     function onDetermineStartScreen() { return this.m.AutoPage; },
+    function processInput(option) {
+        // Private cancel input used by Escape; native manager clears the
+        // offer/draft and restores exactly the event's map/town menu step.
+        if (option == -1) return false;
+        return this.event.processInput.bindenv(this)(option);
+    },
     function getScreen(id) { return ::AfeixExpedition.ledgerPage(this, id); },
     function buildText(text) { return text; },
     function onClear() {

@@ -65,6 +65,10 @@ function nativeObject(path, object, parent = null) {
     },
     set = function(key, value) { ::registrationState.flags[key] <- value; },
     noteContractIncome = function(id, amount) { ::registrationState.receipts.push([id, amount]); },
+    // These registration stubs carry no type metadata; production type
+    // accounting and native WeakTableRef reads run in test_contract_hooks.
+    contractType = function(contract) { return ""; },
+    isCourierContract = function(kind) { return false; },
     noteCircleVictory = function(id) { ::registrationState.victories.push(id); },
     finishContractPayment = function(id, cancelled) { ::registrationState.finished.push([id, cancelled]); },
     withPaymentContext = function(id, callback, args) {

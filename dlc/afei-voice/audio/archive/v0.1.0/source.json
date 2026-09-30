@@ -1,0 +1,88 @@
+{
+  "sources": {
+    "full": {
+      "filename": "【阿飞】游龙！冰牛无伤单刷12异教徒，主播究极破防零帧起手怒骂弹幕，太吓人了！.mp4",
+      "bytes": 774032248,
+      "sha256": "b6d0b3b0d05ea4995e0924495c6dca189c472cc9deaaef6a3abedd858f7eac43"
+    },
+    "short": {
+      "filename": "哇哇叫.mp4",
+      "bytes": 1160327,
+      "sha256": "0b8f903caa9b83054a3c3ff933e1d9b2bd476fd819580eceb5e433095e38375f"
+    }
+  },
+  "selection_method": "local ASR word timestamps for full video; isolated voice-band peaks for short video",
+  "asr_model": "Systran/faster-whisper-small",
+  "audio_sent_to_remote_service": false,
+  "filter": "highpass=f=100,lowpass=f=6500,afftdn=nr=8:nf=-35:tn=0",
+  "target_rms_dbfs": -18,
+  "peak_limit_dbfs": -4,
+  "fade_seconds": 0.015,
+  "sample_rate": 48000,
+  "channels": 1,
+  "pcm_bits": 16,
+  "auditory_reviewed": false,
+  "in_game_tested": false,
+  "clips": [
+    {
+      "path": "sounds/afeix_dlc_afei_voice/afei_hurt_01.wav",
+      "source_id": "short",
+      "source_start_seconds": 2.7,
+      "source_end_seconds": 3.55,
+      "candidate_utterance": "哇",
+      "duration_seconds": 0.85,
+      "gain_db": -2.5928135740818536,
+      "rms_dbfs": -18.00354672212759,
+      "peak_dbfs": -8.439864549222285,
+      "sha256": "482f79157df067f84abd5ae1319ae2ef2384d8bc63cf403559fccdc711d0a509"
+    },
+    {
+      "path": "sounds/afeix_dlc_afei_voice/afei_hurt_02.wav",
+      "source_id": "short",
+      "source_start_seconds": 13.85,
+      "source_end_seconds": 14.68,
+      "candidate_utterance": "哇",
+      "duration_seconds": 0.83,
+      "gain_db": -2.5043093426458163,
+      "rms_dbfs": -18.00186041553947,
+      "peak_dbfs": -8.309864014370705,
+      "sha256": "ba7401af8cb5091b4199b8b29747c79186d0cb9decf54cb13de17971e0ed9722"
+    },
+    {
+      "path": "sounds/afeix_dlc_afei_voice/afei_hurt_03.wav",
+      "source_id": "full",
+      "source_start_seconds": 86.67,
+      "source_end_seconds": 87.48,
+      "candidate_utterance": "哇",
+      "duration_seconds": 0.81,
+      "gain_db": -5.366760465140276,
+      "rms_dbfs": -18.00044502952123,
+      "peak_dbfs": -6.587962888668784,
+      "sha256": "9a7add7c663823c220a3a78b32477ef68750da4689b2f75909ccbf1ff192a9be"
+    },
+    {
+      "path": "sounds/afeix_dlc_afei_voice/afei_hurt_04.wav",
+      "source_id": "full",
+      "source_start_seconds": 188.03,
+      "source_end_seconds": 188.8,
+      "candidate_utterance": "哇",
+      "duration_seconds": 0.77,
+      "gain_db": -9.45795133437595,
+      "rms_dbfs": -18.080191695761677,
+      "peak_dbfs": -10.297714375886846,
+      "sha256": "777bf222a4923bf03dc9f34d1bb403195238295692f34c12cee8fde26f1d5808"
+    },
+    {
+      "path": "sounds/afeix_dlc_afei_voice/afei_hurt_05.wav",
+      "source_id": "full",
+      "source_start_seconds": 287.0,
+      "source_end_seconds": 287.89,
+      "candidate_utterance": "哇",
+      "duration_seconds": 0.89,
+      "gain_db": -5.46224541788643,
+      "rms_dbfs": -18.18910075611481,
+      "peak_dbfs": -6.2314862336476775,
+      "sha256": "5dd581c7ea9349d02b173fc4c0daaef8ce66ad8012d027c59a28783bbe7b7897"
+    }
+  ]
+}

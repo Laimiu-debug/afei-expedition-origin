@@ -28,8 +28,11 @@ local camera = { Zoom = 1.0, function zoomTo(value, speed) { this.Zoom = value; 
 ::World.getCamera <- function() { return camera; };
 S.m.WorldScreen = { function hide() {}, function show() {} };
 S.m.WorldTownScreen = {
-    visible = false, restored = 0,
+    visible = false, restored = 0, animating = false,
+    town = { function isAlive() { return true; }, function isAlliedWithPlayer() { return true; } },
     function isVisible() { return this.visible; },
+    function isAnimating() { return this.animating; },
+    function getTown() { return this.town; },
     function hideAllDialogs() {},
     function showLastActiveDialog() { this.restored++; }
 };
@@ -46,10 +49,11 @@ S.m.EventScreen = {
 C.show = function() { this.m.Visible = true; };
 C.hide = function() { this.m.Visible = false; };
 local event = {
-    m = { AutoPage = "home" }, fires = 0,
+    m = { AutoPage = "home", TreatmentOffer = null, Selected = [] }, fires = 0,
     function getID() { return "event.afeix_ledger"; },
     function fire() { this.fires++; },
-    function clear() {}
+    function processInput(option) { return option != -1; },
+    function clear() { this.m.TreatmentOffer=null;this.m.Selected=[];this.m.AutoPage="home"; }
 };
 E.m.Events = [event];
 ::mods_hookExactClass <- function(path, callback) { if (path == "states/world_state") callback(S); };
@@ -97,6 +101,31 @@ foreach (inTown in [true, false]) {
     }
 }
 
+// Escape closes any ledger subpage through the native event-manager cleanup,
+// without also popping the town or calling its ordinary menu toggle.
+foreach(inTown in [true,false]) foreach(page in ["home","treatment_preview:1:Hitpoints","formation_confirm","tavern"]) {
+    reset(inTown);
+    local depth=M.m.Stack.len(),restored=S.m.WorldTownScreen.restored;
+    expect(A.openLedger(page),"ledger subpage opens before Escape: "+page);
+    event.m.TreatmentOffer={actorId=1};event.m.Selected=[1,2];
+    S.onKeyInput(key(41,1));
+    expect(E.m.ActiveEvent==event,"Escape key-down does not close early");
+    S.m.EventScreen.animating=true;
+    expect(S.onKeyInput(key(41))&&E.m.ActiveEvent==event,"opening animation consumes Escape without another menu");
+    S.m.EventScreen.animating=false;
+    expect(S.onKeyInput(key(41)),"Escape key-up handled for ledger subpage");
+    expect(E.m.ActiveEvent==null&&!E.m.IsEventShown&&!S.m.EventScreen.isVisible(),"native manager and screen close");
+    expect(M.m.Stack.len()==depth&&S.m.WorldTownScreen.visible==inTown,"only event backstep removed");
+    expect(event.m.TreatmentOffer==null&&event.m.Selected.len()==0,"unconfirmed points and formation drafts discarded");
+    expect(S.m.WorldTownScreen.restored==restored+(inTown?1:0),"town dialog restored once");
+    expect(A.openLedger(),"F8 remains usable after Escape");
+}
+reset(false);
+local story={getID=function(){return "event.some_story";}};
+E.m.ActiveEvent=story;S.m.EventScreen.visible=true;
+expect(!A.closeLedger(S)&&E.m.ActiveEvent==story,"ordinary story event cannot be cancelled by ledger Escape");
+E.m.ActiveEvent=null;
+
 foreach (inTown in [true, false]) {
     foreach (status in ["Visible", "Animating", "PopupDialogVisible"]) {
         reset(inTown);
@@ -116,4 +145,55 @@ reset(false);
 C.m.Visible = true;
 S.m.CharacterScreen = null;
 expect(A.openLedger(), "native null character screen remains safe");
+
+// Reproduce the player's town rejection using production canManage(), with
+// nearby hostiles and the installed game's real F8/Escape/menu dispatch.
+dofile("src/scripts/mods/afeix/core.nut");
+S.m.CharacterScreen=C;
+local enteredTown={alive=true,allied=true,
+    function isAlive(){return this.alive;},function isMilitary(){return false;},
+    function isAlliedWithPlayer(){return this.allied;},
+    function getTile(){return {function getDistanceTo(tile){return 0;}};}};
+local enemy={function isAlive(){return true;},function isAlliedWithPlayer(){return false;},function getTroops(){return [1];}};
+local daylight=true,hostiles=false;
+S.m.Player={function getTile(){return {};},function getPos(){return {};}};
+S.m.WorldTownScreen.town=enteredTown;
+::World.Assets.getOrigin <- function(){return {function getID(){return "scenario.afeix_expedition";}};};
+::World.Assets.isCamping <- function(){return false;};
+::World.EntityManager <- {function getSettlements(){return [enteredTown];}};
+::World.getAllEntitiesAtPos <- function(pos,radius){return hostiles?[enemy]:[];};
+::World.getTime <- function(){return {IsDaytime=daylight};};
+foreach(isDay in [false,true])foreach(nearby in [true,false]) {
+    daylight=isDay;hostiles=nearby;
+    reset(true);
+    expect(A.canManage()==!nearby,"existing management still rejects nearby enemies, day="+isDay);
+    local depth=M.m.Stack.len(),restored=S.m.WorldTownScreen.restored;
+    S.onKeyInput(key(78,1));
+    expect(E.m.ActiveEvent==null,"F8 key-down does not fire early");
+    expect(S.onKeyInput(key(78))&&E.m.ActiveEvent==event&&S.m.EventScreen.isVisible(),
+        "native F8 opens entered tavern by day/night despite outside enemies");
+    expect(M.m.Stack.len()==depth+1,"tavern ledger adds exactly one event backstep");
+    expect(!A.openLedger(),"repeat F8 cannot stack town event");
+    expect(S.onKeyInput(key(41))&&E.m.ActiveEvent==null&&!S.m.EventScreen.isVisible(),
+        "Escape closes tavern ledger through native manager");
+    expect(M.m.Stack.len()==depth&&S.m.WorldTownScreen.visible
+        &&S.m.WorldTownScreen.restored==restored+1,"Escape restores the entered inn exactly once");
+    expect(A.openLedger("tavern",42),"delayed/manual tavern entry also works near hostiles");
+    S.onKeyInput(key(41));
+}
+foreach(reason in ["missing","dead","hostile","animating","locked menu"]) {
+    reset(true);
+    A.TavernTown=77;event.m.AutoPage="unchanged";
+    local depth=M.m.Stack.len(),fires=event.fires;
+    if(reason=="missing")S.m.WorldTownScreen.town=null;
+    if(reason=="dead")enteredTown.alive=false;
+    if(reason=="hostile")enteredTown.allied=false;
+    if(reason=="animating")S.m.WorldTownScreen.animating=true;
+    if(reason=="locked menu")M.m.Stack[0].allowCancel=false;
+    expect(!A.openLedger("tavern",42),"invalid town/animation/menu remains blocked: "+reason);
+    expect(E.m.ActiveEvent==null&&event.fires==fires&&M.m.Stack.len()==depth
+        &&A.TavernTown==77&&event.m.AutoPage=="unchanged","rejected town entry has no UI state side effects: "+reason);
+    S.m.WorldTownScreen.town=enteredTown;enteredTown.alive=true;enteredTown.allied=true;
+    S.m.WorldTownScreen.animating=false;
+}
 print("TESTS_PASSED=" + checks + "\n");

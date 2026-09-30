@@ -1,0 +1,27 @@
+TESTS_PASSED=38
+
+AN ERROR HAS OCCURED [native_failure]
+
+CALLSTACK
+*FUNCTION [unknown()] tests/engine/first_move/test_profiler.nut line [35]
+*FUNCTION [acall()] NATIVE line [-1]
+*FUNCTION [measure()] tests/engine/first_move/src/scripts/mods/afeix_first_move/profiler.nut line [45]
+*FUNCTION [main()] tests/engine/first_move/test_profiler.nut line [37]
+
+LOCALS
+[this] TABLE
+[result] NULL
+[start] 120
+[first] true
+[args] ARRAY
+[environment] TABLE
+[original] CLOSURE
+[name] "failure"
+[this] TABLE
+[threw] true
+[fail] CLOSURE
+[callback] CLOSURE
+[object] TABLE
+[P] TABLE
+[vargv] ARRAY
+[this] TABLE

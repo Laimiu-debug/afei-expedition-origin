@@ -3,9 +3,20 @@
 local A = ::AfeixExpedition;
 A.PaymentContext <- null;
 A.isCourierContract <- function(kind) { return kind == "contract.afeix_letter" || kind == "contract.deliver_item"; };
+A.contractType <- function(contract) {
+    if (contract == null) return "";
+    // Native WeakTableRef forwards reads via _get, but `in` cannot see them.
+    local getter = null;
+    try { getter = contract.getType; } catch (error) { return ""; }
+    if (typeof getter != "function") return "";
+    local kind = contract.getType();
+    return typeof kind == "string" ? kind : "";
+};
 A.noteContractType <- function(contract) {
-    if (this.isOrigin() && "getType" in contract)
-        this.set("contract_type_" + contract.getID(), contract.getType());
+    if (!this.isOrigin()) return;
+    local kind = this.contractType(contract);
+    // An unavailable/cleared type must never erase a previously known type.
+    if (kind != "") this.set("contract_type_" + contract.getID(), kind);
 };
 
 A.withPaymentContext <- function(id, callback, args) {

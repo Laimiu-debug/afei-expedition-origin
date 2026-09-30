@@ -146,6 +146,19 @@ foreach(key in A.CharacterOrder)if(!A.Characters[key].isCaptain) {
     }
 }
 expect(A.HireCalls.len()==0 && A.EncounterCalls.len()==0,"ledger never hires or charges an encounter fee");
+// The paid service has a direct inn entry without exceeding native's six
+// buttons, even when every known visitor is available on several pages.
+A.treatmentLedgerPage <- function(event,page){return null;};
+local visitors=[];
+foreach(key in A.CharacterOrder)if(A.characterStatus(key)=="available")visitors.push(key);
+for(local offset=0;offset<visitors.len();offset+=3) {
+    local inn=A.ledgerPage(e,"tavern:"+offset),rows=::Math.min(3,visitors.len()-offset);
+    expect(inn.Options.len()==rows+3&&inn.Options.len()<=6,"tavern visitors plus service, next and exit fit native buttons");
+    for(local i=0;i<rows;i++)expect(inn.Options[i].getResult(e)=="recruit:"+visitors[offset+i],"tavern visitor pagination preserves order");
+    expect(inn.Options[rows].getResult(e)=="tavern:"+(offset+rows>=visitors.len()?0:offset+rows),"tavern pagination wraps without skipping visitors");
+    expect(inn.Options[rows+1].getResult(e)=="treatment","tavern has a direct treatment entry on every page");
+    expect(inn.Options[rows+2].getResult(e)==0,"tavern exit remains reachable");
+}
 page = A.ledgerPage(e, "quest");
 expect(page.Options.len() == 1, "ledger quest page is read-only");
 expect(page.Options[0].getResult(e) == "home", "quest record returns to home");
@@ -160,8 +173,9 @@ expect(e.m.Selected.len() == 0 && e.m.Notice == "" && e.m.AutoPage == "home", "c
     State = {
         m = {
             EventScreen = { Visible = false, function isVisible() { return this.Visible; }, function isAnimating() { return false; } },
-            MenuStack = { Back = false, function hasBacksteps() { return this.Back; } },
-            WorldTownScreen = { Visible = false, function isVisible() { return this.Visible; } }
+            MenuStack = { Back = false, function hasBacksteps() { return this.Back; }, function isAllowingCancel() { return true; } },
+            WorldTownScreen = { Visible = false, function isVisible() { return this.Visible; }, function isAnimating() { return false; },
+                function getTown() { return { function isAlive() { return true; }, function isAlliedWithPlayer() { return true; } }; } }
         },
         TownOpens = 0,
         function getPlayer() { return {}; },

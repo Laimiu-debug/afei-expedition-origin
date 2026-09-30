@@ -1,0 +1,59 @@
+{
+  "version": "0.28.5",
+  "internal_version": 55,
+  "date": "2026-09-30",
+  "log_before_fix": {
+    "log": "C:\\Users\\25647\\OneDrive\\Documents\\Battle Brothers\\log.html",
+    "sha256": "2a1e70c732c08c9a5c828248998e58bfc13f48bc0c0df2bf50311bdaa8308061",
+    "error_rows": 6699,
+    "script_error_messages": [
+      "the index 'DialogScreen' does not exist"
+    ],
+    "test_markers": []
+  },
+  "cause": "External state.DialogScreen access does not resolve the native global DialogScreen; repeated errors prevent tactical onUpdate.",
+  "old_source_reproduced": true,
+  "new_native_state_test_passed": true,
+  "gameplay_assertions": 33221,
+  "scripts_compiled": 124,
+  "native_resource_paths_passed": true,
+  "targeted_tests": [
+    {
+      "file": "tests/gameplay/test_attribute_treatment.nut",
+      "assertions": 646,
+      "log": "TESTS_PASSED=646\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_ledger_ui.nut",
+      "assertions": 146,
+      "log": "TESTS_PASSED=146\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_turtle_notice.nut",
+      "assertions": 27,
+      "log": "TESTS_PASSED=27\r\n"
+    }
+  ],
+  "package": "dist\\mod_afeix_expedition v0.28.5.zip",
+  "sha256": "b2d3950c4c00381b4c1ab88508514b699c58587a440cc5c025b221105f88378b",
+  "entries": 287,
+  "crc_passed": true,
+  "source_bytes_match": true,
+  "installed": true,
+  "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "installed_sha256": "b2d3950c4c00381b4c1ab88508514b699c58587a440cc5c025b221105f88378b",
+  "backup": "build\\feedback-fixes-20260930\\before-mod_afeix_expedition.zip",
+  "backup_sha256": "233a6556721ddb202fbae07344098c83ee647bc46949e535c08985d5bdb5a5c2",
+  "voice_code_and_audio_unchanged": true,
+  "installed_voice_source_bytes_match": true,
+  "voice_assertions": 24,
+  "published": true,
+  "pushed": false,
+  "in_game_tested": false,
+  "local_original_log": "G:\\CODE\\afei-xcpedition\\.cache\\feedback-freeze-20260930.html",
+  "website_release_id": "d4306351-2d12-45b2-8dbf-89800cdbac9a",
+  "website_detail_url": "https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "website_metadata_confirmed": true,
+  "public_archive_downloaded": false,
+  "public_download_byte_comparison": false
+}

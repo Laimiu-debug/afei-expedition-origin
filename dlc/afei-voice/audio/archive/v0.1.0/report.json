@@ -1,0 +1,57 @@
+{
+  "version": "0.1.0",
+  "status": "ready_for_audio_review",
+  "minimum_base_internal": 36,
+  "verified_base_internal": 54,
+  "base_preload_sha256": "d5c0fdcc655c2da22656d9c32bc770fc67ee4936172fafd4626998db755f5330",
+  "base_source_unchanged": true,
+  "base_path_collisions": [],
+  "scripts_compiled": 3,
+  "behavior_assertions": 24,
+  "test_output": "TESTS_PASSED=24\r\n",
+  "clips": [
+    {
+      "path": "sounds/afeix_dlc_afei_voice/afei_hurt_01.wav",
+      "duration_seconds": 0.85,
+      "sha256": "482f79157df067f84abd5ae1319ae2ef2384d8bc63cf403559fccdc711d0a509"
+    },
+    {
+      "path": "sounds/afeix_dlc_afei_voice/afei_hurt_02.wav",
+      "duration_seconds": 0.83,
+      "sha256": "ba7401af8cb5091b4199b8b29747c79186d0cb9decf54cb13de17971e0ed9722"
+    },
+    {
+      "path": "sounds/afeix_dlc_afei_voice/afei_hurt_03.wav",
+      "duration_seconds": 0.81,
+      "sha256": "9a7add7c663823c220a3a78b32477ef68750da4689b2f75909ccbf1ff192a9be"
+    },
+    {
+      "path": "sounds/afeix_dlc_afei_voice/afei_hurt_04.wav",
+      "duration_seconds": 0.77,
+      "sha256": "777bf222a4923bf03dc9f34d1bb403195238295692f34c12cee8fde26f1d5808"
+    },
+    {
+      "path": "sounds/afeix_dlc_afei_voice/afei_hurt_05.wav",
+      "duration_seconds": 0.89,
+      "sha256": "5dd581c7ea9349d02b173fc4c0daaef8ce66ad8012d027c59a28783bbe7b7897"
+    }
+  ],
+  "entries": [
+    "scripts/!mods_preload/mod_afeix_dlc_afei_voice.nut",
+    "scripts/mods/afeix_dlc_afei_voice/config.nut",
+    "scripts/mods/afeix_dlc_afei_voice/hooks.nut",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_01.wav",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_02.wav",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_03.wav",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_04.wav",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_05.wav"
+  ],
+  "package_ready": true,
+  "in_game_tested": false,
+  "installed": false,
+  "published": false,
+  "package": "dlc/afei-voice/dist/mod_afeix_dlc_afei_voice v0.1.0.zip",
+  "package_sha256": "e5be48f4d9dfe9028c4363f0c96db291d986c6191d06875e50100aae5b000db2",
+  "crc_passed": true,
+  "source_bytes_match": true
+}

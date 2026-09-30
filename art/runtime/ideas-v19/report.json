@@ -3,7 +3,7 @@
   "exports": [
     {
       "path": "gfx/ui/items/weapons/afeix_laoma_grip.png",
-      "sha256": "4e1c5580a7f040143f206f580314c2586e9a62d942579c8ff7dbbea64c3a6672",
+      "sha256": "5ea78d6efb1183ac02a9863e134095c57058dde989c9b48f87cad8b1e73f7c18",
       "size": [
         70,
         140
@@ -11,7 +11,7 @@
     },
     {
       "path": "gfx/ui/items/weapons/afeix_laoma_grip_70x70.png",
-      "sha256": "0ffb087877eed37261f7d4429892828cdec122b9c6ca9045026f4d94fb768af6",
+      "sha256": "50edcdd5b9facdb7db7ee4f14df0f0d793a1bd4732cb512914704deded0de5b7",
       "size": [
         70,
         70
@@ -19,7 +19,7 @@
     },
     {
       "path": "gfx/items/weapons/afeix_laoma_grip.png",
-      "sha256": "4e1c5580a7f040143f206f580314c2586e9a62d942579c8ff7dbbea64c3a6672",
+      "sha256": "5ea78d6efb1183ac02a9863e134095c57058dde989c9b48f87cad8b1e73f7c18",
       "size": [
         70,
         140
@@ -27,7 +27,7 @@
     },
     {
       "path": "gfx/items/weapons/afeix_laoma_grip_70x70.png",
-      "sha256": "0ffb087877eed37261f7d4429892828cdec122b9c6ca9045026f4d94fb768af6",
+      "sha256": "50edcdd5b9facdb7db7ee4f14df0f0d793a1bd4732cb512914704deded0de5b7",
       "size": [
         70,
         70
@@ -41,6 +41,12 @@
         210
       ]
     }
+  ],
+  "inventory_quality": "Legendary",
+  "inventory_glow_rgb": [
+    69,
+    108,
+    160
   ],
   "equipped_scale": 1.5,
   "equipped_pivot": {
@@ -77,6 +83,6 @@
     "atlas_sha256": "4875a92cac7f07199d29654e6492fa272ef374d6c38b565e188acd5009add5c5",
     "pack_log": "Loading images...\nsprites\\icon_afeix_laoma_grip.png\nsprites\\icon_afeix_laoma_grip_bloodied.png\nPacking rectangles...\nWriting gfx/afeix_ideas_v19.png (256x128)...\n",
     "unpack_log": "Opening gfx/afeix_ideas_v19.png...\nsprites\\icon_afeix_laoma_grip.png\nsprites\\icon_afeix_laoma_grip_bloodied.png\n",
-    "roundtrip_directory": "build/roundtrip-3v5vy5vq"
+    "roundtrip_directory": "build/roundtrip-3sdtwtb6"
   }
 }

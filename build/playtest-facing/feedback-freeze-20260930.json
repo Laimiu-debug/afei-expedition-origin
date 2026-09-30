@@ -1,0 +1,9 @@
+{
+  "log": "C:\\Users\\25647\\OneDrive\\Documents\\Battle Brothers\\log.html",
+  "sha256": "2a1e70c732c08c9a5c828248998e58bfc13f48bc0c0df2bf50311bdaa8308061",
+  "error_rows": 6699,
+  "script_error_messages": [
+    "the index 'DialogScreen' does not exist"
+  ],
+  "test_markers": []
+}

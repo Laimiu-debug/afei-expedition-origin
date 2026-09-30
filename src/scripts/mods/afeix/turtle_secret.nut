@@ -14,7 +14,7 @@ A.turtleAwakeningText <- function(count) {
         "小龟长长吐出一口气，旧纹中的暗光重新连成一片。她望向前面的敌人：飞爹，这回换你看我打完。"
     ];
     local index = count <= 2 ? count - 1 : 2 + (count - 3) % 3;
-    return scenes[index] + "\n\n第 " + count + " 次觉醒。本场战斗：生命上限 +400、疲劳上限 +120、决心 +100、近攻 +60、远攻 +40、近防和远防各 +100、近战伤害 ×1.5、每回合疲劳恢复 +10，先攻最多 20。立即回满生命、清空疲劳，士气变为自信。\n\n战后强化消失，生命不超过原上限。此后她须完成 " + this.TurtleAwakeningCooldown + " 场未觉醒的参战胜利才能再次触发；待命和撤退不计。";
+    return scenes[index] + "\n\n此后她必须完成" + this.TurtleAwakeningCooldown + "场未觉醒的参战胜利，才能再次激发血脉。待命和撤退不计。";
 };
 // Actor flags survive combat-memory removal and ordinary save/load.
 A.finishTurtleBattle <- function() {
@@ -32,19 +32,24 @@ A.finishTurtleBattle <- function() {
 // Display from the state update, outside actor damage/death callbacks. Retain
 // the pending notice if another native modal is open, including across saves.
 A.showTurtleAwakeningNotice <- function(state) {
+    // Native `this.DialogScreen` falls back to the root table. An external
+    // `state.DialogScreen` lookup does not: tactical states do not own it.
+    local dialog = "DialogScreen" in getroottable() ? ::DialogScreen : null;
+    if (dialog == null || state.m.MenuStack == null || state.m.TacticalDialogScreen == null
+        || state.m.TacticalScreen == null) return false;
     // Native generic dialog does not pause tactical AI. Keep the pause until
     // its close animation and menu entry finish, including escape/cancel.
     if ("AfeixTurtleNoticePaused" in state.m && state.m.AfeixTurtleNoticePaused
-        && !state.DialogScreen.isVisible() && !state.DialogScreen.isAnimating() && !state.m.MenuStack.hasBacksteps()) {
+        && !dialog.isVisible() && !dialog.isAnimating() && !state.m.MenuStack.hasBacksteps()) {
         state.setPause(state.m.AfeixTurtlePreviousPause);
         state.m.IsAIPaused = state.m.AfeixTurtlePreviousAIPause;
         state.m.AfeixTurtleNoticePaused = false;
     }
     if (!this.isOrigin() || !::Tactical.isActive() || state.isBattleEnded() || state.isInLoadingScreen()
         || state.m.MenuStack.hasBacksteps()) return false;
-    foreach (screen in [state.DialogScreen, state.m.TacticalDialogScreen, state.m.CharacterScreen,
+    foreach (screen in [dialog, state.m.TacticalDialogScreen, state.m.CharacterScreen,
         state.m.TacticalMenuScreen, state.m.TacticalCombatResultScreen])
-        if (screen.isVisible() || screen.isAnimating()) return false;
+        if (screen != null && (screen.isVisible() || screen.isAnimating())) return false;
     foreach (faction in ::Tactical.Entities.getAllInstances()) foreach (actor in faction) {
         if (actor == null || this.characterId(actor) != "xiaogui") continue;
         local count = this.turtleFlag(actor, "notice");
@@ -97,6 +102,6 @@ A.tryTurtleAwakening <- function() {
     turtle.setFatigue(0);
     turtle.setMoraleState(::Const.MoraleState.Confident);
     turtle.setDirty(true);
-    ::Tactical.EventLog.log("玄武血脉第 " + count + " 次觉醒：小龟的属性临时强化，战后消失；再次觉醒需完成 " + this.TurtleAwakeningCooldown + " 场未觉醒的参战胜利。");
+    ::Tactical.EventLog.log("玄武血脉第 " + count + " 次觉醒：小龟激发了玄武血脉。此后她必须完成" + this.TurtleAwakeningCooldown + "场未觉醒的参战胜利，才能再次激发血脉。");
     return true;
 };

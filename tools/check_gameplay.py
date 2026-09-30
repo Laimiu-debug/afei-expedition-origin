@@ -355,6 +355,7 @@ def validate(sq, game):
                        'scripts/states/world/asset_manager.cnut',
                        'scripts/events/event_manager.cnut',
                        'scripts/states/world_state.cnut',
+                       'scripts/states/tactical_state.cnut',
                        'scripts/ui/global/menu_stack.cnut',
                        'scripts/ui/screens/character/character_screen.cnut',
                        'scripts/events/event.cnut',

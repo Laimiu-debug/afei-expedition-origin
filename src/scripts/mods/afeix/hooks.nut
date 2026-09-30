@@ -1,7 +1,8 @@
 ::mods_hookExactClass("states/world_state", function(o) {
     local onKeyInput = o.onKeyInput;
     o.onKeyInput = function(key) {
-        // Native key codes: F8 = 78, released = 0.
+        // Native key codes: Escape = 41, F8 = 78, released = 0.
+        if (key.getState() == 0 && key.getKey() == 41 && ::AfeixExpedition.closeLedger(this)) return true;
         if (key.getState() == 0 && key.getKey() == 78 && ::AfeixExpedition.openLedger()) return true;
         return onKeyInput.bindenv(this)(key);
     };
@@ -138,7 +139,7 @@ local contractWrappers = {};
             local onCombatVictory = callback;
             callback = function(combatID) {
                 local A = ::AfeixExpedition;
-                local isCourier = "getType" in this && (this.getType() == "contract.afeix_letter" || this.getType() == "contract.deliver_item");
+                local isCourier = A.isCourierContract(A.contractType(this));
                 if (!isCourier && "noteCircleVictory" in A) A.noteCircleVictory(this.getID());
                 return onCombatVictory.bindenv(this)(combatID);
             };

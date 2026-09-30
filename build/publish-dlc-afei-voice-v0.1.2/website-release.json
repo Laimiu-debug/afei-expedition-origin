@@ -1,0 +1,67 @@
+{
+  "owner": "laimiu",
+  "expected_mod_id": "f8909336-43fa-4415-82f6-b6224a8e7340",
+  "expected_metadata": {
+    "title": "阿飞远征团 DLC：阿飞哇哇叫",
+    "summary": "独立可选语音 DLC：阿飞受伤时随机播放 5 段实况原声叫声，保留原声音高。需搭配阿飞远征团主包；尚未实机验收。",
+    "description": "阿飞挨了一下，熟悉的“哇”也跟着响起来。\n\n“阿飞哇哇叫”是阿飞远征团的独立可选语音 DLC。阿飞角色受伤时，从 5 段实况原声短叫声中随机播放一段，相邻两次避免重复；改名后仍按角色身份识别。其他角色、护甲撞击、攻击与阵亡声音沿用原版。\n\n0.1.0 使用原声音高与语速，每段约 0.77～0.89 秒。音效经过轻度降噪、音量统一和短淡入淡出，没有升调处理。原声取自提供的阿飞实况视频，完整视频不进入安装包。\n\n本 DLC 只增加声音与独立加载脚本，不改变角色属性、装备或剧情，也不内置阿飞远征团主包。需要同时安装主包与 Legacy Modding Script Hooks（mod_hooks）；推荐主包 v0.28.4 或更新版，最低支持主包 v0.26.2（内部版本 36）。\n\n安装前完全退出游戏，将主包与本 DLC 的 ZIP 整包放入游戏 data 文件夹，不要解压。主包和本 DLC 各只保留一个版本。新开战役选择“阿飞远征团”，在战斗中让阿飞受伤即可按原有受伤音效规则触发。\n\n已通过 3 份脚本编译、24 条离线行为检查，以及 8 个包文件的完整集合、CRC 和源码字节一致性核验。尚未实机战斗验收；实际音量、底声与存读档仍需在游戏中确认。\n\n主包页面：https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "category": "其他",
+    "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+    "license": "DLC 脚本与打包允许在 BBMOD 分发；原声来自阿飞实况视频，原素材权利归原权利人。",
+    "game_version": "1.5.2.3",
+    "dlc": "随阿飞远征团主包要求：Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith",
+    "save_impact": "unknown",
+    "seed_impact": "unknown",
+    "compatibility_notes": "需阿飞远征团主包 v0.26.2（内部版本 36）或更新版，以及 Legacy Modding Script Hooks（mod_hooks）。推荐使用主包 v0.28.4 或更新版，并按新建战役验收。\n\n完全退出游戏后，将整份 mod_afeix_dlc_afei_voice.zip 与主包 ZIP 一起放进游戏 data 文件夹，不要解压；本 DLC 只保留一个版本。本扩展是可选语音包，不能代替主包。\n\n本版不新增存档技能、物品或背景类，仅为阿飞角色替换受伤叫声。旧档加载、撤下 DLC 后读档、其他语音 MOD 组合以及实机战斗效果尚未验收。主包原有存档要求继续适用。",
+    "mod_ids": [
+      "mod_afeix_dlc_afei_voice"
+    ],
+    "requires": [
+      "mod_afeix_expedition",
+      "mod_hooks"
+    ],
+    "conflicts": [],
+    "uploader": "laimiu",
+    "original_author": "Laimiu（DLC 制作）；阿飞（原声）",
+    "author": "Laimiu（DLC 制作）；阿飞（原声）"
+  },
+  "mod": {
+    "title": "阿飞远征团 DLC：阿飞哇哇叫",
+    "summary": "0.1.2 音量增强：阿飞受伤时随机播放5段实况原声叫声，音量比0.1.0增加约7dB，保留原声音高和语速。独立可选DLC，需搭配阿飞远征团主包。",
+    "description": "阿飞挨了一下，熟悉的“哇”也跟着响起来。\n\n“阿飞哇哇叫”是阿飞远征团的独立可选语音 DLC。阿飞角色受伤时，从 5 段实况原声短叫声中随机播放一段，相邻两次避免重复；改名后仍按角色身份识别。其他角色、护甲撞击、攻击与阵亡声音沿用原版。\n\n0.1.2 调大受伤叫声音量：在相同游戏设置下，比0.1.0增加约6.6～7.5dB；五段叫声分别提高响度，仍保留原声音高、语速、裁剪时长和淡入淡出，峰值保留余量。每段约0.77～0.89秒。原声取自提供的阿飞实况视频，完整视频不进入安装包。\n\n本 DLC 只增加声音与独立加载脚本，不改变角色属性、装备或剧情，也不内置阿飞远征团主包。需要同时安装主包与 Legacy Modding Script Hooks（mod_hooks）；推荐主包 v0.28.7 或更新版，最低支持主包 v0.26.2（内部版本 36）。\n\n安装前完全退出游戏，将主包与本 DLC 的 ZIP 整包放入游戏 data 文件夹，不要解压。主包和本 DLC 各只保留一个版本。新开战役选择“阿飞远征团”，在战斗中让阿飞受伤即可按原有受伤音效规则触发。\n\n已通过 3 份脚本编译、24 条离线行为检查，以及 8 个包文件的完整集合、CRC 和源码字节一致性核验。尚未实机战斗验收；实际音量、底声与存读档仍需在游戏中确认。\n\n主包页面：https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "category": "其他",
+    "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+    "original_author": "Laimiu（DLC 制作）；阿飞（原声）",
+    "license": "DLC 脚本与打包允许在 BBMOD 分发；原声来自阿飞实况视频，原素材权利归原权利人。",
+    "game_version": "1.5.2.3",
+    "dlc": "随阿飞远征团主包要求：Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith",
+    "save_impact": "unknown",
+    "seed_impact": "unknown",
+    "compatibility_notes": "需阿飞远征团主包 v0.26.2（内部版本 36）或更新版，以及 Legacy Modding Script Hooks（mod_hooks）。推荐使用主包 v0.28.7 或更新版，并按新建战役验收。\n\n完全退出游戏后，将整份 mod_afeix_dlc_afei_voice.zip 与主包 ZIP 一起放进游戏 data 文件夹，不要解压；本 DLC 只保留一个版本。本扩展是可选语音包，不能代替主包。\n\n本版不新增存档技能、物品或背景类，仅为阿飞角色替换受伤叫声。旧档加载、撤下 DLC 后读档、其他语音 MOD 组合以及实机战斗效果尚未验收。主包原有存档要求继续适用。\n\n0.1.2仅调整本语音DLC的响度，音高与语速保持原样。游戏的音效音量设置仍然生效。请退出游戏后替换旧语音DLC，仅保留一个阿飞哇哇叫DLC包。",
+    "mod_ids": "mod_afeix_dlc_afei_voice",
+    "requires": "mod_afeix_expedition\nmod_hooks",
+    "conflicts": "",
+    "install_name": "mod_afeix_dlc_afei_voice.zip"
+  },
+  "version": "0.1.2",
+  "notes": "提高阿飞哇哇叫受伤叫声音量：同一游戏音量设置下，比0.1.0增加约6.6～7.5dB，移除原有0.85播放衰减并提高五段音频响度。保留原声音高、语速、时长和淡入淡出，峰值留有余量；其他角色及其他声音仍沿用原版。3份脚本、24条离线检查和8个包文件核验通过；实机音量仍待复测。请退出游戏后替换旧语音DLC，只保留一个版本。",
+  "package_filename": "mod_afeix_dlc_afei_voice v0.1.2.zip",
+  "sha256": "12aa12c3723591008888f8e60113d8aa538b3bd090e44c6f12ece4668176e7ab",
+  "verification": {
+    "source_root": "dlc/afei-voice/src",
+    "mod_id": "mod_afeix_dlc_afei_voice",
+    "internal_version": 3,
+    "entries": 8,
+    "voice_clips": 5,
+    "behavior_assertions": 24,
+    "pitch_and_timing_preserved": true,
+    "effective_gain_db": [
+      7.415168207841737,
+      7.413481901253616,
+      6.99958437438293,
+      7.491813181475823,
+      6.643107719361823
+    ],
+    "public_download_byte_comparison": false
+  }
+}

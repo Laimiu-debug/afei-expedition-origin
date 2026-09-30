@@ -1,0 +1,22 @@
+{
+  "version": "0.28.10",
+  "prior_version": "0.28.9",
+  "changed_package_entries": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/turtle_secret.nut"
+  ],
+  "first_and_repeat_popup_attributes_removed": true,
+  "recovery_rule_retained": true,
+  "first_second_and_rotating_scenes_unchanged": true,
+  "combat_log_attributes_removed": true,
+  "actual_awakening_bonuses_cooldown_and_pause_code_unchanged": true,
+  "behavior_assertions": 33468,
+  "in_game_tested": false,
+  "published": true,
+  "website_release_id": "d3459cc4-6959-4a34-a4e3-2930c233d1b6",
+  "installed": false,
+  "installation_pending_game_exit": true,
+  "prior_installed_version": "0.28.5",
+  "public_archive_downloaded": false,
+  "public_download_byte_comparison": false
+}

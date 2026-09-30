@@ -1,4 +1,4 @@
-::AfeixExpedition <- { ID = "mod_afeix_expedition", Version = 54, Schema = 8, CombatMax = 12, RosterMax = 40 };
+::AfeixExpedition <- { ID = "mod_afeix_expedition", Version = 61, Schema = 8, CombatMax = 12, RosterMax = 40 };
 ::AfeixExpedition.setdelegate(getroottable());
 foreach (part in ["core", "formation", "characters", "background_data", "backgrounds", "talents", "quests", "contracts", "roster", "encounters",
     "promotions", "economy", "appearance", "story_progress", "discovery", "recruitment", "keepsakes", "member_skills",
@@ -8,7 +8,7 @@ foreach (part in ["core", "formation", "characters", "background_data", "backgro
 
 if (!("mods_registerMod" in getroottable()) || !("mods_queue" in getroottable()))
     throw "Afei Expedition requires Legacy Modding Script Hooks (mod_hooks).";
-::mods_registerMod("mod_afeix_expedition", 54, "阿飞远征团");
+::mods_registerMod("mod_afeix_expedition", 61, "阿飞远征团");
 ::mods_queue("mod_afeix_expedition", null, function() {
     ::include("scripts/mods/afeix/hooks");
     ::include("scripts/mods/afeix/member_skill_hooks");

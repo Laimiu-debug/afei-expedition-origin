@@ -5,8 +5,8 @@ this.afeix_laoma_grip <- this.inherit("scripts/items/weapons/two_handed_hammer",
         this.m.ID = "weapon.afeix_laoma_grip";
         this.m.Name = "老马的垂直握把";
         this.m.Description = "曹飞派领袖老马的化身，一身风骚尽在这根握把。马头一昂，蛤蟆低头；握把一挺，铁甲开口。阿飞嫌它不正经，老马笑得更灿烂：‘飞哥，站稳了——我这一下，专治嘴硬甲也硬。’铁匠叮嘱双手握紧，掌柜补了一句：盔甲可以再买，矜持就别带上战场了。\n\n单体重击命中后，对命中部位额外削减最多 30 点护甲；不溢出为生命伤害，横扫和反击不触发。";
-        this.m.Categories = "双手锤";
-        this.m.ItemType = this.m.ItemType | this.Const.Items.ItemType.Named;
+        this.m.Categories = "传奇双手锤";
+        this.m.ItemType = this.m.ItemType | this.Const.Items.ItemType.Legendary;
         this.m.IconLarge = "weapons/afeix_laoma_grip.png";
         this.m.Icon = "weapons/afeix_laoma_grip_70x70.png";
         this.m.ArmamentIcon = "icon_afeix_laoma_grip";

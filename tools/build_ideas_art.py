@@ -1,4 +1,4 @@
-"""Export reviewed generated art by alpha crop, uniform scale and rotation only."""
+"""Export reviewed art; render legendary blue backing only on inventory icons."""
 from pathlib import Path
 from PIL import Image
 import hashlib
@@ -37,11 +37,28 @@ def fit(image, size, padding=3):
     out.alpha_composite(image, ((size[0]-image.width)//2, (size[1]-image.height)//2))
     return out
 
+def legendary_inventory(image):
+    # Native legendary icons bake their blue backing into the PNG; ItemType
+    # controls gameplay classification but the UI does not render a halo.
+    # Match the native sword's blue (69,108,160), fading to transparent edges.
+    # Draw behind the reviewed item, never repaint the weapon or held sprites.
+    glow = Image.new('RGBA', image.size)
+    pixels = glow.load()
+    width, height = image.size
+    for y in range(height):
+        for x in range(width):
+            dx = (x - (width-1)/2) / (width/2)
+            dy = (y - (height-1)/2) / (height/2)
+            strength = max(0, 1 - dx*dx) * max(0, 1 - dy*dy)
+            pixels[x,y] = (69,108,160,round(175*strength))
+    glow.alpha_composite(image)
+    return glow
+
 def exports():
     grip = source('grip')
     for folder in ('gfx/ui/items/weapons', 'gfx/items/weapons'):
-        yield folder+'/afeix_laoma_grip.png', fit(grip, (70, 140))
-        yield folder+'/afeix_laoma_grip_70x70.png', fit(grip.rotate(35, expand=True, resample=Image.Resampling.BICUBIC), (70, 70))
+        yield folder+'/afeix_laoma_grip.png', legendary_inventory(fit(grip, (70, 140)))
+        yield folder+'/afeix_laoma_grip_70x70.png', legendary_inventory(fit(grip.rotate(35, expand=True, resample=Image.Resampling.BICUBIC), (70, 70)))
     yield 'gfx/ui/events/afeix_liu_qingsong.png', fit(source('liu'), (210, 210), 2)
 
 def build_art():
@@ -63,6 +80,7 @@ def build_art():
         attrs.append({'id':identity,'img':'sprites\\'+identity+'.png',
                       **{key: str(value) for key, value in GRIP_META.items()}})
     report={'manifest_sha256':sha(BASE/'manifest.json'),'exports':records,
+            'inventory_quality':'Legendary','inventory_glow_rgb':[69,108,160],
             'equipped_scale':1.5,'equipped_pivot':{'x':0,'y':-35},'equipped_metadata':GRIP_META,
             'roundtrip':pack_and_verify(BASE,ATLAS,pack,attrs,ROOT/'.cache/afei-art/bbros-modkit-v9/bin/bbrusher.exe')}
     files=[ROOT/'src'/r['path'] for r in records]

@@ -958,7 +958,7 @@
   "scripts": [
     {
       "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
-      "sha256": "d5c0fdcc655c2da22656d9c32bc770fc67ee4936172fafd4626998db755f5330"
+      "sha256": "f3f95eeb427827515ebb0c4b7acdd5080a3c6897afa29f45607cff7d53b607b7"
     },
     {
       "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
@@ -974,7 +974,7 @@
     },
     {
       "path": "src/scripts/events/events/afeix_ledger_event.nut",
-      "sha256": "718986c3663ea95f78c63517a7dd25a07167fdf2771b0cbb2299cc5d38b94e60"
+      "sha256": "f1912bd8003ebd7605031f9828d21cc7b4c94e3c64fa0f8029d4ebe54223049a"
     },
     {
       "path": "src/scripts/items/accessories/xiwen_round_mirror.nut",
@@ -990,7 +990,7 @@
     },
     {
       "path": "src/scripts/items/weapons/afeix_laoma_grip.nut",
-      "sha256": "9bc6c7e81821a4edb3465fe33b8b0896e0c90f887c72b7183fe741d7e2a3559f"
+      "sha256": "10cb3140fe701d120dd95a760419cd7d2605f8b2d3ca17125b874d1d726d1516"
     },
     {
       "path": "src/scripts/mods/afeix/appearance.nut",
@@ -1002,7 +1002,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/attribute_treatment.nut",
-      "sha256": "ac319564917d8572dc2a72db41ecd6da4301ad5ab3bf1dce2d1d685f8e30a877"
+      "sha256": "95ab9c075b8b062750aeb79cecac9b0ef65a5ea75a57f104b2ecd2731aeef1ae"
     },
     {
       "path": "src/scripts/mods/afeix/background_data.nut",
@@ -1058,7 +1058,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/contracts.nut",
-      "sha256": "a19c454c04acf833d657fdf6bdbe5162c74f811001ac24d6e750a7bd36461573"
+      "sha256": "a50dfc27643e8fa5d9bc887f3bf52084c48907a8406a77b02c379715c8e769b1"
     },
     {
       "path": "src/scripts/mods/afeix/core.nut",
@@ -1094,7 +1094,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/hooks.nut",
-      "sha256": "b36542db95b5af2b89887ff58efca0747b070e33a3dc1d5c8466df4705f50a0c"
+      "sha256": "44dc352a5f651bdc752841af39cc84e77bcf0d7b02fefef8bfab4ad58b6ad89b"
     },
     {
       "path": "src/scripts/mods/afeix/ideas_chronicles.nut",
@@ -1126,7 +1126,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/ledger.nut",
-      "sha256": "dc8c235b7416fd83156572f1ca18067d56814b8797acc5eb6ce08c1af2d59bf9"
+      "sha256": "b321b3111c56bfa1fff67cd1592f04335c3e2700cbb70768849382342aa05896"
     },
     {
       "path": "src/scripts/mods/afeix/member_catalog.nut",
@@ -1174,7 +1174,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/quests.nut",
-      "sha256": "6d2ad1965d22e6900cea697af012f6eb644d39b992b08ba25b5d318083c2fc9d"
+      "sha256": "7ea3e62d0be714790c5897cf43de222f807411af24ed8bbd30f8902405729c9f"
     },
     {
       "path": "src/scripts/mods/afeix/recruitment.nut",
@@ -1202,7 +1202,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/turtle_secret.nut",
-      "sha256": "0ac4c2ad668412eb5c4e0e18cb426f5b4840dda07d05af3749a08e7dc8bf332b"
+      "sha256": "c20caed4ab55447f5ace3382329eafaafe548bd1b08da93650ac965c63ce3d99"
     },
     {
       "path": "src/scripts/mods/afeix/world_art.nut",
@@ -1630,8 +1630,8 @@
     },
     {
       "file": "tests/gameplay/test_attribute_treatment.nut",
-      "assertions": 406,
-      "log": "TESTS_PASSED=406\r\n"
+      "assertions": 772,
+      "log": "TESTS_PASSED=772\r\n"
     },
     {
       "file": "tests/gameplay/test_backgrounds.nut",
@@ -1660,8 +1660,8 @@
     },
     {
       "file": "tests/gameplay/test_contract_hooks.nut",
-      "assertions": 57,
-      "log": "PASS missing_world_is_not_the_afeix_origin\r\nPASS null_world_during_teardown_is_not_the_afeix_origin\r\nPASS standalone_tactical_world_without_assets_is_safe\r\nPASS uninitialized_campaign_assets_are_safe\r\nPASS assets_without_a_selected_origin_are_safe\r\nPASS loaded_afeix_campaign_still_matches_the_origin\r\nPASS native_bound_callback_is_rebound_to_actual_instance\r\nPASS successful_actual_payment_unlocks_and_preserves_return\r\nPASS receipt_records_actual_amount_and_deduplicates_id\r\nPASS successful_callback_clears_runtime_context\r\nPASS duplicate_finish_does_not_count_twice\r\nPASS advance_is_persisted_without_early_unlock\r\nPASS advance_followed_by_cancel_does_not_unlock\r\nPASS cancelled_terminal_state_cannot_be_replayed_as_success\r\nPASS advertised_count_maximum_without_real_payment_is_ignored\r\nPASS ordinary_sale_after_finish_is_not_contract_income\r\nPASS finish_before_final_payment_is_supported\r\nPASS actual_money_delta_beats_requested_amount\r\nPASS no_positive_balance_change_does_not_unlock\r\nPASS negative_and_zero_transactions_are_not_receipts\r\nPASS set_screen_start_preserves_default_arguments_and_context\r\nPASS state_update_and_combat_callbacks_capture_actual_payments\r\nPASS synchronous_event_reward_cannot_leak_into_contract_receipt\r\nPASS event_context_restores_contract_then_outer_context\r\nPASS exception_restores_nested_previous_context\r\nPASS exception_does_not_tag_later_external_payment\r\nPASS failed_native_finish_is_not_success_and_restores_context\r\nPASS native_manager_must_actually_close_contract\r\nPASS payment_inside_native_finish_is_captured\r\nPASS reload_retains_receipt_but_discards_runtime_context\r\nPASS pre_save_advance_and_post_load_success_count_once\r\nPASS other_origins_keep_native_payment_without_afeix_flags\r\nPASS won_paid_contract_awards_eight_percent\r\nPASS sponsorship_never_sponsors_itself_or_leaks_context\r\nPASS reopening_and_replaying_completion_cannot_duplicate_income\r\nPASS retraining_does_not_reprice_settled_sponsorship\r\nPASS advance_without_completion_has_no_sponsorship\r\nPASS split_final_reward_adds_only_the_unpaid_difference\r\nPASS reload_retains_paid_entitlement\r\nPASS per_contract_cap_limits_large_rewards\r\nPASS extra_payment_does_not_reset_contract_cap\r\nPASS feidie_rate_rounds_down_to_whole_crowns\r\nPASS peaceful_contract_has_no_battle_sponsorship\r\nPASS post_completion_victory_cannot_reopen_eligibility\r\nPASS cancelled_contract_never_gains_sponsorship\r\nPASS late_payment_cannot_gain_new_route_after_completion\r\nPASS fallen_afei_cannot_sign_new_sponsorship\r\nPASS absent_afei_cannot_sign_new_sponsorship\r\nPASS old_version_completed_contracts_are_not_retroactive_rewards\r\nPASS other_origins_do_not_gain_sponsorship_or_victory_flags\r\nPASS both_native_and_mod_couriers_are_excluded_from_unlocks\r\nPASS qualified_count_and_distinct_types_have_separate_accounting\r\nPASS repeated_completion_cannot_inflate_either_unlock_metric\r\nPASS rolling_week_cap_and_no_duplicate_payout\r\nPASS old_capped_receipt_cannot_be_claimed_next_week\r\nPASS new_contract_receives_fresh_week_budget\r\nPASS retraining_shares_weekly_history\r\nTESTS_PASSED=57\r\n"
+      "assertions": 73,
+      "log": "PASS missing_world_is_not_the_afeix_origin\r\nPASS null_world_during_teardown_is_not_the_afeix_origin\r\nPASS standalone_tactical_world_without_assets_is_safe\r\nPASS uninitialized_campaign_assets_are_safe\r\nPASS assets_without_a_selected_origin_are_safe\r\nPASS loaded_afeix_campaign_still_matches_the_origin\r\nPASS native_bound_callback_is_rebound_to_actual_instance\r\nPASS successful_actual_payment_unlocks_and_preserves_return\r\nPASS receipt_records_actual_amount_and_deduplicates_id\r\nPASS successful_callback_clears_runtime_context\r\nPASS duplicate_finish_does_not_count_twice\r\nPASS advance_is_persisted_without_early_unlock\r\nPASS advance_followed_by_cancel_does_not_unlock\r\nPASS cancelled_terminal_state_cannot_be_replayed_as_success\r\nPASS advertised_count_maximum_without_real_payment_is_ignored\r\nPASS ordinary_sale_after_finish_is_not_contract_income\r\nPASS finish_before_final_payment_is_supported\r\nPASS actual_money_delta_beats_requested_amount\r\nPASS no_positive_balance_change_does_not_unlock\r\nPASS negative_and_zero_transactions_are_not_receipts\r\nPASS set_screen_start_preserves_default_arguments_and_context\r\nPASS state_update_and_combat_callbacks_capture_actual_payments\r\nPASS synchronous_event_reward_cannot_leak_into_contract_receipt\r\nPASS event_context_restores_contract_then_outer_context\r\nPASS exception_restores_nested_previous_context\r\nPASS exception_does_not_tag_later_external_payment\r\nPASS failed_native_finish_is_not_success_and_restores_context\r\nPASS native_manager_must_actually_close_contract\r\nPASS payment_inside_native_finish_is_captured\r\nPASS reload_retains_receipt_but_discards_runtime_context\r\nPASS pre_save_advance_and_post_load_success_count_once\r\nPASS other_origins_keep_native_payment_without_afeix_flags\r\nPASS won_paid_contract_awards_eight_percent\r\nPASS sponsorship_never_sponsors_itself_or_leaks_context\r\nPASS reopening_and_replaying_completion_cannot_duplicate_income\r\nPASS retraining_does_not_reprice_settled_sponsorship\r\nPASS advance_without_completion_has_no_sponsorship\r\nPASS split_final_reward_adds_only_the_unpaid_difference\r\nPASS reload_retains_paid_entitlement\r\nPASS per_contract_cap_limits_large_rewards\r\nPASS extra_payment_does_not_reset_contract_cap\r\nPASS feidie_rate_rounds_down_to_whole_crowns\r\nPASS peaceful_contract_has_no_battle_sponsorship\r\nPASS post_completion_victory_cannot_reopen_eligibility\r\nPASS cancelled_contract_never_gains_sponsorship\r\nPASS late_payment_cannot_gain_new_route_after_completion\r\nPASS fallen_afei_cannot_sign_new_sponsorship\r\nPASS absent_afei_cannot_sign_new_sponsorship\r\nPASS old_version_completed_contracts_are_not_retroactive_rewards\r\nPASS other_origins_do_not_gain_sponsorship_or_victory_flags\r\nPASS both_native_and_mod_couriers_are_excluded_from_unlocks\r\nPASS qualified_count_and_distinct_types_have_separate_accounting\r\nPASS repeated_completion_cannot_inflate_either_unlock_metric\r\nPASS native_contract_reference_forwards_type_without_membership\r\nPASS native_manager_reference_records_type_before_contract_is_cleared\r\nPASS native_contract_reference_forwards_type_without_membership\r\nPASS native_manager_reference_records_type_before_contract_is_cleared\r\nPASS native_contract_reference_forwards_type_without_membership\r\nPASS native_manager_reference_records_type_before_contract_is_cleared\r\nPASS native_contract_reference_forwards_type_without_membership\r\nPASS native_manager_reference_records_type_before_contract_is_cleared\r\nPASS native_contract_reference_forwards_type_without_membership\r\nPASS native_manager_reference_records_type_before_contract_is_cleared\r\nPASS native_reference_contracts_count_distinct_types_and_exclude_both_couriers\r\nPASS native_reference_completion_remains_idempotent\r\nPASS cleared_native_type_cannot_erase_known_contract_history\r\nPASS known_contract_types_survive_runtime_reload\r\nPASS old_untyped_history_is_labeled_missing_instead_of_zero_variety\r\nPASS old_completion_progress_is_retained_without_inventing_historical_types\r\nPASS rolling_week_cap_and_no_duplicate_payout\r\nPASS old_capped_receipt_cannot_be_claimed_next_week\r\nPASS new_contract_receives_fresh_week_budget\r\nPASS retraining_shares_weekly_history\r\nTESTS_PASSED=73\r\n"
     },
     {
       "file": "tests/gameplay/test_discovery.nut",
@@ -1705,8 +1705,8 @@
     },
     {
       "file": "tests/gameplay/test_ledger.nut",
-      "assertions": 350,
-      "log": "TESTS_PASSED=350\r\n"
+      "assertions": 425,
+      "log": "TESTS_PASSED=425\r\n"
     },
     {
       "file": "tests/gameplay/test_member_catalog.nut",
@@ -1760,8 +1760,8 @@
     },
     {
       "file": "tests/gameplay/test_native_grip_weapon.nut",
-      "assertions": 34,
-      "log": "TESTS_PASSED=34\r\n"
+      "assertions": 38,
+      "log": "TESTS_PASSED=38\r\n"
     },
     {
       "file": "tests/gameplay/test_native_ledger.nut",
@@ -1770,8 +1770,8 @@
     },
     {
       "file": "tests/gameplay/test_native_ledger_ui.nut",
-      "assertions": 73,
-      "log": "TESTS_PASSED=73\r\n"
+      "assertions": 188,
+      "log": "TESTS_PASSED=188\r\n"
     },
     {
       "file": "tests/gameplay/test_native_letter.nut",
@@ -1787,6 +1787,11 @@
       "file": "tests/gameplay/test_native_training.nut",
       "assertions": 1628,
       "log": "TESTS_PASSED=1628\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_native_turtle_notice.nut",
+      "assertions": 27,
+      "log": "TESTS_PASSED=27\r\n"
     },
     {
       "file": "tests/gameplay/test_promotions.nut",

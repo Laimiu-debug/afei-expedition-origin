@@ -1,0 +1,226 @@
+{
+  "owner": "laimiu",
+  "categories": [
+    [
+      "基础功能",
+      "基础功能"
+    ],
+    [
+      "战斗与平衡",
+      "战斗与平衡"
+    ],
+    [
+      "起源与事件",
+      "起源与事件"
+    ],
+    [
+      "装备与外观",
+      "装备与外观"
+    ],
+    [
+      "汉化",
+      "汉化"
+    ],
+    [
+      "框架",
+      "框架"
+    ],
+    [
+      "其他",
+      "其他"
+    ]
+  ],
+  "target": null,
+  "main": {
+    "id": "d64a00f6-1d60-4d8d-8d9b-de055fc0b748",
+    "owner": "laimiu",
+    "metadata": {
+      "title": "阿飞远征团",
+      "summary": "v0.28.4 优化全员背景、相遇与成长文案，调整终局岗位平衡，新增“飞李不可”付费属性培养，修正颈部、尸体与受伤血迹。34 人起源，最多 12 人出战、40 人在册；请新开战役。",
+      "description": "v0.28.4 累计更新：优化主包 34 名成员的介绍、背景、相遇、个人成长与阵亡纪念，并整理蓝队剧情。可选 DLC 0.2.5 同步希文文案；里根儿介绍保持原样。请新开战役。\n\n终局岗位平衡覆盖主包 34 人与可选希文：保留每人的基础八维总和与总天赋星数，调整培养分配，区分盾卫、旗手、长柄与远程职责；六项被动精通强化各自岗位效果。旧档差额同步不等于完整存档迁移验收。\n\n新增“飞李不可”：安全的世界地图按 F8 → 战团事务 → 飞李不可，选择在队角色与一项属性，每支付 100 克朗永久增加 1 点基础属性。八项属性均可选择，可重复参加；普通成员与 DLC 同行者也可使用。\n\n小龟的玄武血脉觉醒增加冷却：觉醒后须再完成 5 场未觉醒的参战胜利才可再次触发。新增暂停战斗的属性说明弹窗，区分首次、第二次及后续觉醒文字，人物介绍统一使用“她”。\n\n修正自定义人物颈部与倒地头部的衔接，受伤时显示原版身体、防具血迹和分档脸部伤痕，尸体保留生前伤痕。主包与希文分别使用各自图集；原版特殊死亡处理保留。离线美术校验通过，实际游戏显示仍待验收。\n\n阿飞、王大谋、午夜抹抹茶带着黑旗上路。主包共 34 人，最多 40 人在册，每战自选 1～12 人。世界地图 F8 黑旗名册用于查看伙伴、委托、故事和战团事务；原版人物栏可调整装备与站位。33 名伙伴各有 7 级专属技能三选一、11 级自动精通，共 99 项技能选项；阿飞使用独立晋升路线。\n\n保留此前招募轮换：刀一前十天分批开放，刀二与飞团整体提前六天。常规候选首次停留 4 日、重逢 2 日，新面孔优先并保护等待较久的回流成员。普通候选最多 3 位，每雇佣一人，该位置等待一个完整游戏日后补员；宋暖阳与小龟使用独立随机来客位置。希文使用相同的常规队列优先级。白天的非敌对普通村镇可招募，军事城堡与要塞不适用。\n\n保留老马的垂直握把实际穿甲修复、五款蛤蟆旗帜、头盔外观开关、研习与名册操作修复、普通人物四派称号，以及此前网后断头与解网回调修复。\n\n本页面提供主包；希文与里根儿为独立可选 DLC 0.2.5，需另行下载。公开开发试玩版，请按新建战役使用，不承诺旧存档迁移。本轮通过 32,881 条离线断言、124 份脚本检查，以及 287 个包文件的 CRC、完整文件集合和源码字节一致性校验。新增玩法与美术尚未实机战役验收；此前 v0.27.6 网后断头修复有独立战场实测记录，食尸鬼战斗闪退仍未确认修复。",
+      "category": "起源与事件",
+      "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+      "license": "作者授权在 BBMOD 网站分发；其他用途请联系作者。",
+      "game_version": "1.5.2.3",
+      "dlc": "目标环境：本体与官方 DLC（Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith）",
+      "save_impact": "yes",
+      "seed_impact": "unknown",
+      "compatibility_notes": "请新开战役，不承诺旧存档迁移。安装前完全退出游戏，将整份 mod_afeix_expedition.zip 放入游戏 data 文件夹，不要解压；替换同名旧包，并将带其他版本号的本 Mod 旧包移出 data，一次只保留一个主包。\n\n需要 Legacy Modding Script Hooks（mod_hooks）与中文字体／汉化环境。新建战役选择“阿飞远征团”。希文与里根儿为独立可选 DLC 0.2.5，使用时主包与 DLC 各保留一个版本。\n\n在安全的世界地图按 F8 打开黑旗名册。研习、“飞李不可”、旗帜与头盔外观开关位于“战团事务”；人物界面不打开 F8 菜单。“飞李不可”每次花费 100 克朗，仅永久增加所选基础属性 1 点。\n\n存档依赖本 MOD。不保证与 Legends、Reforged 或其他改动编队、人物图层的 MOD 兼容。保留 mod_fox_043 招募显示兼容。新增玩法与美术尚未实机战役验收，食尸鬼闪退尚未确认修复。",
+      "mod_ids": [
+        "mod_afeix_expedition"
+      ],
+      "requires": [
+        "mod_hooks"
+      ],
+      "conflicts": [],
+      "uploader": "laimiu",
+      "original_author": "Laimiu",
+      "author": "Laimiu"
+    },
+    "releases": [
+      {
+        "id": "ded2ff8f-6009-4dd5-a511-e7b159458cae",
+        "version": "0.28.4",
+        "sha256": "233a6556721ddb202fbae07344098c83ee647bc46949e535c08985d5bdb5a5c2",
+        "status": "published",
+        "size": 4495731
+      },
+      {
+        "id": "b0d85f1f-88be-414e-99fd-d16017970516",
+        "version": "0.28.2",
+        "sha256": "c325681e3a89a066c02a8a727973fc397fe1281eb89cb6682a9d2fde38eeaa9c",
+        "status": "published",
+        "size": 3678912
+      },
+      {
+        "id": "c6947252-4944-47ae-8a19-486a4ce4572d",
+        "version": "0.27.6",
+        "sha256": "93dad4c4f7db75b552c5870bee90ad5856059d476e51b18c29e1f59fb785ed48",
+        "status": "published",
+        "size": 3674880
+      },
+      {
+        "id": "553f6536-30b0-4671-938b-ce134c2a91dd",
+        "version": "0.27.5",
+        "sha256": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83",
+        "status": "published",
+        "size": 3674323
+      },
+      {
+        "id": "1fb0335a-8c51-4ca1-aa96-edc206bc1ec9",
+        "version": "0.27.4",
+        "sha256": "125c7284a03ca706d413ac9e5c4cfe180602183e401eb2f1db8fd04678be87df",
+        "status": "published",
+        "size": 3674260
+      },
+      {
+        "id": "7c1f8aed-e3f0-4ca3-9051-3487ca0cc870",
+        "version": "0.25.0",
+        "sha256": "b176802e479d93fa3ee90cc322c6f42477eea53b57158cd81cba96cc084ff257",
+        "status": "published",
+        "size": 3591927
+      },
+      {
+        "id": "97d51f33-c65c-42fd-96e3-df3c047cfbb1",
+        "version": "0.25.0-original-20260928",
+        "sha256": "ac879d85fd23d1a7164eecc733094354e5a086f63b72b78bf6f349e3e9fb2677",
+        "status": "published",
+        "size": 3590155
+      },
+      {
+        "id": "d04a3fd4-2005-4061-b3f8-0b129f3298c2",
+        "version": "0.24.0",
+        "sha256": "109dbe4d0df3c1de467d70e3853c768bea840b006631a0d6e2afaff3ccd89b8b",
+        "status": "published",
+        "size": 2230474
+      },
+      {
+        "id": "eb67fe28-797c-45d9-af1d-139fa0fb916c",
+        "version": "0.23.2",
+        "sha256": "3a521049f570f3a40318582d4a6d612f7199ac9504a345278aed427c1ba94a86",
+        "status": "published",
+        "size": 2253379
+      },
+      {
+        "id": "27400e31-07a7-4b67-834d-1f8d9c60d64e",
+        "version": "0.23.1",
+        "sha256": "0cc0b6bacc8eddf0321d690da5ca1a666e52c1df55ec631545ad96d3650fd0d8",
+        "status": "published",
+        "size": 2253277
+      },
+      {
+        "id": "ca83a7d7-c51d-4957-9fee-7ef7c14c7b1e",
+        "version": "0.22.0",
+        "sha256": "5bb5c7d4bee9e7d4c5acad4a5b63d06f4492eccee969c3892e5158894345e93f",
+        "status": "published",
+        "size": 2252081
+      },
+      {
+        "id": "bf3c226e-66f3-4cb0-9463-8d1e84cf22c2",
+        "version": "0.20.1",
+        "sha256": "51011ac5d92fb53254b9d19db6661a1b13106a9374e1ce2199df9f9947fd968b",
+        "status": "published",
+        "size": 2078053
+      },
+      {
+        "id": "253a7a69-675b-4b22-a85e-3a3175275eef",
+        "version": "0.20.0",
+        "sha256": "29971ed32faa1d6f9d1d8eeb77afbcb887fe0a2cdbff000964967cf31b0249cb",
+        "status": "published",
+        "size": 2054026
+      },
+      {
+        "id": "0b8cb9bf-8285-4f01-ac72-6840cc54ac44",
+        "version": "0.16.1",
+        "sha256": "9e20123f07536d9539c81f4629abd39a40f116f6ca0bb387b8a930c89b0dff58",
+        "status": "published",
+        "size": 1934945
+      }
+    ]
+  },
+  "xiwen": {
+    "id": "247b829d-8aa8-4898-a6dd-8b933c9ff1e9",
+    "owner": "laimiu",
+    "metadata": {
+      "title": "阿飞远征团 DLC：希文与里根儿",
+      "summary": "DLC 0.2.5 优化希文介绍、背景、相遇、成长与结局，更新颈部及倒地伤痕美术；里根儿介绍保持原样。独立可选扩展，推荐主包 v0.28.4，并新开战役。",
+      "description": "0.2.5：优化希文的介绍、背景、相遇、成长与结局文字，更新颈部衔接、倒地头部和伤痕图集。推荐搭配主包 v0.28.4，包含希文终局岗位培养调整。里根儿介绍与战犬机制保持原样。\n\n本扩展必须与阿飞远征团主包同时安装，请新开战役。\n\n【战犬里根儿】\n阿飞的战犬里根儿。赶路时爱绕着队伍撒欢，歇脚时总要挨着阿飞的靴子趴下。平日里一块肉干就能哄得尾巴打转，真有人冲向阿飞，它却比谁都先露出牙。他很怀念在环世界动物园中与飞碟一起度过的日子，一步一步，不忘来时路。\n\n新建“阿飞远征团”战役后，在队伍仓库查看里根儿。战前给任一队员装备到饰品栏，战斗中使用释放战犬技能，将他放到相邻空地，再由原版AI行动。放出后饰品显示“里根儿的项圈”，存活时战后返回。\n\n里根儿不需要购买或招募，不占佣兵名额，也不另加工资。沿用原版战犬外观、数值和生死规则；出售、遗失或阵亡后不会重新配发。请新开战役，旧战役不自动补发。\n\n【希文】\n三位队长还在城门边争路，希文已经看完告示，指住角落的日期：“桥昨天修好了。”沿途的桥梁、水源和守夜安排记在册上，浅蓝花饰与圆圆化妆镜也一并带着。\n\n第 35 日起，同时满足参战历史最高值至少 14、非送信付费履约至少 5、不同合格城镇至少 6、历史最高等级至少 5 后，进入主包三个普通候选位的招募队列，使用相同优先级与轮换保护。第 35 日是最早入池时间，不保证当天轮到。补级上限 2 级，基础报价 590 克朗，最终报价受城镇倍率影响。\n\n希文持短剑、小圆盾与轻装，携带仅本人装备时决心 +20 的圆圆化妆镜。固定特质为聪慧、健步如飞；7 级从《识隙札记》《同行守则》《长路笔记》中三选一，11 级精通，不占普通专长点。包含专属头像、背景、个人成长与结局；属性与培养由主包配置。\n\n本轮配合主包 v0.28.4，通过 8,018 条相关离线断言、6 份 DLC 脚本编译、4 个头像画刷的像素与坐标核验，以及 10 个包文件的 CRC、完整文件集合和源码字节一致性校验。新增 3 种倒地伤痕头部的图集另由主包美术检查覆盖；原版素材不进入压缩包。离线断言包含主包相关回归，不能与主包断言数直接相加。DLC 宠物流程与本次美术尚未实机验收。\n\n主包页面：https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+      "category": "起源与事件",
+      "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+      "license": "作者授权在 BBMOD 网站分发；其他用途请联系作者。",
+      "game_version": "1.5.2.3",
+      "dlc": "目标环境：本体与官方 DLC（Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith）",
+      "save_impact": "yes",
+      "seed_impact": "unknown",
+      "compatibility_notes": "完全退出游戏后更新DLC，重新启动并新建“阿飞远征团”战役。主包使用v0.28.4或更新版，并安装Legacy Modding Script Hooks（mod_hooks）与所需中文字体／汉化环境。\n\n主包和DLC各保留一个版本，两份.zip同时放入data，不要解压。DLC下载名为mod_afeix_dlc_xiwen_regen.zip，后缀小写；本扩展不能代替主包。\n\n开局在队伍仓库查看里根儿，战前装备到一名队员的饰品栏，战斗中即可释放。里根儿售出、遗失或阵亡后不补发。每次更新按新战役验收，旧战役不自动配发战犬。\n\n存档需要持续保留主包与本DLC。尚未实机验收。\n\n主包页面：https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+      "mod_ids": [
+        "mod_afeix_dlc_xiwen_regen"
+      ],
+      "requires": [
+        "mod_afeix_expedition",
+        "mod_hooks"
+      ],
+      "conflicts": [],
+      "uploader": "laimiu",
+      "original_author": "Laimiu",
+      "author": "Laimiu"
+    },
+    "releases": [
+      {
+        "id": "76341887-9c0c-4a58-aaf7-fd2ef7f478ac",
+        "version": "0.2.5",
+        "sha256": "8b0d3afa56de63255caa323d1d0e4f76c0b3f9b464ed905c4da1aaed1164db43",
+        "status": "published",
+        "size": 48217
+      },
+      {
+        "id": "15448fbf-9143-4b3f-910e-945ede087581",
+        "version": "0.2.4",
+        "sha256": "906e9713acf65635fe546654bc7c3a228324c5c1e48b1031896d2c0580316ba4",
+        "status": "published",
+        "size": 26882
+      },
+      {
+        "id": "36246621-72ec-4be7-a96b-f3a315968188",
+        "version": "0.2.3",
+        "sha256": "699715f87828a52f6679c1dc0ad09ec86ed7b2c26eb7da1ac66e4313cbdb75c3",
+        "status": "published",
+        "size": 26884
+      },
+      {
+        "id": "fdc0cfa3-878f-4058-8425-c610b9fcb6dd",
+        "version": "0.2.2",
+        "sha256": "465300550acb13352caebf3fd34f2f987c2cab49f0a1ae0f3119e824f7ba2bc1",
+        "status": "published",
+        "size": 26805
+      },
+      {
+        "id": "3c5c209a-08ea-4cff-9bda-fe6623b9a8ab",
+        "version": "0.2.1",
+        "sha256": "e6da8d4a66b5774dd7c76481d38b8e770fa07456cf0247f3658987fd198e211a",
+        "status": "published",
+        "size": 26568
+      }
+    ]
+  }
+}

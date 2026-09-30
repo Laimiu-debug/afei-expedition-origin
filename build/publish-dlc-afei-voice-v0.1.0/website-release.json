@@ -1,0 +1,34 @@
+{
+  "owner": "laimiu",
+  "mod": {
+    "title": "阿飞远征团 DLC：阿飞哇哇叫",
+    "summary": "独立可选语音 DLC：阿飞受伤时随机播放 5 段实况原声叫声，保留原声音高。需搭配阿飞远征团主包；尚未实机验收。",
+    "description": "阿飞挨了一下，熟悉的“哇”也跟着响起来。\n\n“阿飞哇哇叫”是阿飞远征团的独立可选语音 DLC。阿飞角色受伤时，从 5 段实况原声短叫声中随机播放一段，相邻两次避免重复；改名后仍按角色身份识别。其他角色、护甲撞击、攻击与阵亡声音沿用原版。\n\n0.1.0 使用原声音高与语速，每段约 0.77～0.89 秒。音效经过轻度降噪、音量统一和短淡入淡出，没有升调处理。原声取自提供的阿飞实况视频，完整视频不进入安装包。\n\n本 DLC 只增加声音与独立加载脚本，不改变角色属性、装备或剧情，也不内置阿飞远征团主包。需要同时安装主包与 Legacy Modding Script Hooks（mod_hooks）；推荐主包 v0.28.4 或更新版，最低支持主包 v0.26.2（内部版本 36）。\n\n安装前完全退出游戏，将主包与本 DLC 的 ZIP 整包放入游戏 data 文件夹，不要解压。主包和本 DLC 各只保留一个版本。新开战役选择“阿飞远征团”，在战斗中让阿飞受伤即可按原有受伤音效规则触发。\n\n已通过 3 份脚本编译、24 条离线行为检查，以及 8 个包文件的完整集合、CRC 和源码字节一致性核验。尚未实机战斗验收；实际音量、底声与存读档仍需在游戏中确认。\n\n主包页面：https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "category": "其他",
+    "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+    "original_author": "Laimiu（DLC 制作）；阿飞（原声）",
+    "license": "DLC 脚本与打包允许在 BBMOD 分发；原声来自阿飞实况视频，原素材权利归原权利人。",
+    "game_version": "1.5.2.3",
+    "dlc": "随阿飞远征团主包要求：Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith",
+    "save_impact": "unknown",
+    "seed_impact": "unknown",
+    "compatibility_notes": "需阿飞远征团主包 v0.26.2（内部版本 36）或更新版，以及 Legacy Modding Script Hooks（mod_hooks）。推荐使用主包 v0.28.4 或更新版，并按新建战役验收。\n\n完全退出游戏后，将整份 mod_afeix_dlc_afei_voice.zip 与主包 ZIP 一起放进游戏 data 文件夹，不要解压；本 DLC 只保留一个版本。本扩展是可选语音包，不能代替主包。\n\n本版不新增存档技能、物品或背景类，仅为阿飞角色替换受伤叫声。旧档加载、撤下 DLC 后读档、其他语音 MOD 组合以及实机战斗效果尚未验收。主包原有存档要求继续适用。",
+    "mod_ids": "mod_afeix_dlc_afei_voice",
+    "requires": "mod_afeix_expedition\nmod_hooks",
+    "conflicts": "",
+    "install_name": "mod_afeix_dlc_afei_voice.zip"
+  },
+  "version": "0.1.0",
+  "notes": "首版独立语音 DLC：阿飞受伤时随机播放 5 段实况原声短叫声，相邻两次避免重复。保留原声音高与语速，仅做轻度降噪、音量统一及淡入淡出；其他角色与其他声音沿用原版。需主包及 mod_hooks，推荐主包 v0.28.4、新开战役使用。3 份脚本、24 条离线检查和 8 个包文件核验通过，尚未实机验收。",
+  "package_filename": "mod_afeix_dlc_afei_voice v0.1.0.zip",
+  "sha256": "e5be48f4d9dfe9028c4363f0c96db291d986c6191d06875e50100aae5b000db2",
+  "verification": {
+    "source_root": "dlc/afei-voice/src",
+    "mod_id": "mod_afeix_dlc_afei_voice",
+    "internal_version": 1,
+    "entries": 8,
+    "voice_clips": 5,
+    "behavior_assertions": 24
+  },
+  "expected_absent": true
+}

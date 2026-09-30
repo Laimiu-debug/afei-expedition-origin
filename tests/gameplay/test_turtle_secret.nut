@@ -47,13 +47,16 @@ check(turtle.props.Initiative==20 && turtle.props.MeleeDamageMult==1.5,"slow but
 check(turtle.props.FatigueRecoveryRate==25,"endurance recovery");
 check(A.turtleFlag(turtle,"count")==1&&A.turtleFlag(turtle,"cooldown")==5,"persistent first awakening and cooldown");
 local modal={visible=false,isVisible=function(){return this.visible;},isAnimating=function(){return false;}};
-local popups=[],ui={DialogScreen=modal,m={IsGamePaused=false,IsAIPaused=false,TacticalDialogScreen=modal,CharacterScreen=modal,TacticalMenuScreen=modal,
+::DialogScreen <- modal;
+local popups=[],ui={m={IsGamePaused=false,IsAIPaused=false,TacticalScreen={},TacticalDialogScreen=modal,CharacterScreen=modal,TacticalMenuScreen=modal,
     TacticalCombatResultScreen=modal,MenuStack={hasBacksteps=function(){return false;}}},
     isBattleEnded=function(){return false;},isInLoadingScreen=function(){return false;},
     isPaused=function(){return this.m.IsGamePaused;},setPause=function(v){this.m.IsGamePaused=v;this.m.IsAIPaused=v;},
     showDialogPopup=function(title,text,ok,cancel){modal.visible=true;popups.push({title=title,text=text});}};
 modal.visible=true;check(!A.showTurtleAwakeningNotice(ui)&&A.turtleFlag(turtle,"notice")==1,"occupied modal keeps pending notice");
-modal.visible=false;check(A.showTurtleAwakeningNotice(ui)&&popups.len()==1&&popups[0].text.find("+400")!=null,"native popup explains actual bonuses");
+modal.visible=false;check(A.showTurtleAwakeningNotice(ui)&&popups.len()==1
+    &&popups[0].text.find("此后她必须完成5场未觉醒的参战胜利，才能再次激发血脉。")!=null
+    &&popups[0].text.find("本场战斗")==null&&popups[0].text.find("+400")==null,"first popup retains recovery rule without attribute-change explanation");
 check(ui.isPaused()&&ui.m.IsAIPaused,"notice pauses battle and AI before native update");
 check(!A.showTurtleAwakeningNotice(ui)&&popups.len()==1&&ui.isPaused(),"notice only once and remains paused while open");
 modal.visible=false;A.showTurtleAwakeningNotice(ui);check(!ui.isPaused()&&!ui.m.IsAIPaused,"closing or escaping restores battle pause");
@@ -91,7 +94,9 @@ for(local i=1;i<=5;++i){
 }
 check(A.tryTurtleAwakening()&&A.turtleFlag(turtle,"count")==2,"second activation after five intervening victories");
 ui.m.IsAIPaused=true;
-check(A.showTurtleAwakeningNotice(ui)&&popups[1].text.find("熟悉的暗光")!=null,"repeat popup uses second scene");
+check(A.showTurtleAwakeningNotice(ui)&&popups[1].text.find("熟悉的暗光")!=null
+    &&popups[1].text.find("5场未觉醒的参战胜利")!=null
+    &&popups[1].text.find("本场战斗")==null&&popups[1].text.find("+400")==null,"repeat popup uses second scene and recovery rule without attribute-change explanation");
 modal.visible=false;A.showTurtleAwakeningNotice(ui);check(!ui.isPaused()&&ui.m.IsAIPaused,"prior manual AI pause preserved on close");
 check(!A.tryTurtleAwakening(),"second battle still limited to one activation");
 // Each route may qualify in a later fresh battle.

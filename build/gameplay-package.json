@@ -1,6 +1,6 @@
 {
-  "package": "dist/mod_afeix_expedition v0.28.4.zip",
-  "sha256": "233a6556721ddb202fbae07344098c83ee647bc46949e535c08985d5bdb5a5c2",
+  "package": "dist/mod_afeix_expedition v0.28.11.zip",
+  "sha256": "5d19d31fb5f2fc0881557253b685d643d82ebfc9b681118c496a2055d7cbd54b",
   "entries": [
     "brushes/afeix_banner_v25.brush",
     "brushes/afeix_corpse_injuries_v01.brush",
@@ -459,15 +459,23 @@
   "portrait_characters": 34,
   "portrait_forms": 36,
   "member_skill_art_report": "art/runtime/member-skills-v15/report.json",
-  "version": "0.28.4",
-  "install_name": "mod_afeix_expedition v0.28.4.zip",
+  "version": "0.28.11",
+  "install_name": "mod_afeix_expedition v0.28.11.zip",
   "members_with_skills": 33,
   "member_skills": 99,
   "new_member_skills_this_version": 0,
-  "behavior_assertions": 32881,
+  "behavior_assertions": 33484,
   "in_game_tested": false,
   "named_characters": 34,
   "roster_capacity": 40,
   "combat_capacity": 12,
-  "scope": "Current working tree, including preceding art/documentation work; no install or publish."
+  "scope": "v0.28.11 published to BBMOD, metadata confirmed; installation awaits game exit and in-game testing remains pending.",
+  "published": true,
+  "installed": false,
+  "website_release_id": "dcf9ee57-3d77-4767-8bf4-8cdddfd1921a",
+  "website_detail_url": "https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "website_metadata_confirmed": true,
+  "public_archive_downloaded": false,
+  "public_download_byte_comparison": false,
+  "installation_pending_game_exit": true
 }

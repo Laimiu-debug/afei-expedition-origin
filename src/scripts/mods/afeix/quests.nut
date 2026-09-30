@@ -158,5 +158,7 @@ A.questSummary <- function() {
         if (active != null) text += "\n\n正在办理：" + active.getName() + "。";
     }
     if (this.get("legacy_letter_retired", false)) text += "\n\n旧版尚未交付的送信委托已免罚撤销，请在城镇重新接取委托。已完成的记录保留。";
-    return text + "\n\n已完成非送信契约：" + this.get("qualified_contracts") + " 份；种类 " + this.get("qualified_types") + " 种。送信不增加人物招募所需的履约次数。";
+    local jobs = this.get("qualified_contracts"), types = this.get("qualified_types");
+    local variety = jobs > 0 && types == 0 ? "暂无（旧记录未保存种类）" : types + " 种";
+    return text + "\n\n已完成非送信契约：" + jobs + " 份；已记录种类：" + variety + "。送信不增加人物招募所需的履约次数。";
 };

@@ -1,0 +1,33 @@
+{
+  "verified_at": "2026-09-30T04:22:37.974114+00:00",
+  "detail_url": "https://bbmod.site/mods/f8909336-43fa-4415-82f6-b6224a8e7340/",
+  "download_url": "https://bbmod.site/files/bfff3747-5ca2-4b5e-aadc-4fea58c1145b/download/",
+  "mod_id": "f8909336-43fa-4415-82f6-b6224a8e7340",
+  "release_id": "bfff3747-5ca2-4b5e-aadc-4fea58c1145b",
+  "version": "0.1.0",
+  "sha256": "e5be48f4d9dfe9028c4363f0c96db291d986c6191d06875e50100aae5b000db2",
+  "size": 289027,
+  "entries": 8,
+  "voice_clips": 5,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200,
+    "main_download": 200,
+    "xiwen_download": 200
+  },
+  "download_bytes_match": true,
+  "source_bytes_match": true,
+  "original_pitch_clip_hashes_match": true,
+  "crc_passed": true,
+  "catalog_and_notes_match": true,
+  "dependency_ids_match": true,
+  "main_work_unchanged": true,
+  "xiwen_work_unchanged": true,
+  "main_version": "0.28.4",
+  "xiwen_version": "0.2.5",
+  "download_content_disposition": "attachment; filename=\"mod_afeix_dlc_afei_voice.zip\"",
+  "backup": "/srv/data/backups/afeix-pre-v0.1.0-20260930T042146144206Z.sqlite3",
+  "in_game_tested": false,
+  "installed": false
+}
