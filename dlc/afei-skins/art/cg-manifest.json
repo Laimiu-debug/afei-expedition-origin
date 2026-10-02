@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source_kind": "user_supplied_artwork",
+  "export": "aspect_preserving_resize_without_crop",
+  "max_size": [450, 300],
+  "images": [
+    {
+      "source": "art/sources/afei-defeat-user-01.png",
+      "source_size": [1918, 820],
+      "source_sha256": "d89611a017731f6fa072e8ccfcb295c02bb50b3022427feb91b831e7c56fb67f",
+      "output": "gfx/ui/events/afeix_dlc_skins_afei_defeat_01.png"
+    },
+    {
+      "source": "art/sources/afei-defeat-user-02.png",
+      "source_size": [1915, 821],
+      "source_sha256": "0cc9ac9da9c7d62b742abc49edce67bfb8dfccf41c8cfee5446cfa6016cef78c",
+      "output": "gfx/ui/events/afeix_dlc_skins_afei_defeat_02.png"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minimum_base": "0.28.12 / internal 62",
   "art": {
     "exports": [
@@ -1185,9 +1185,41 @@
     "native_equipment_packaged": false,
     "sprite_count": 48,
     "cg_packaged": true,
-    "cg_size": [
-      450,
-      300
+    "cg_exports": [
+      {
+        "source": "art/sources/afei-defeat-user-01.png",
+        "source_sha256": "d89611a017731f6fa072e8ccfcb295c02bb50b3022427feb91b831e7c56fb67f",
+        "source_size": [
+          1918,
+          820
+        ],
+        "output": "gfx/ui/events/afeix_dlc_skins_afei_defeat_01.png",
+        "output_sha256": "d8c7be6bd86cf35307548000e3fd9e53a12099289a4c17fbfa3d3c0ac7a6d868",
+        "output_size": [
+          450,
+          192
+        ],
+        "aspect_preserved": true,
+        "cropped": false,
+        "repainted": false
+      },
+      {
+        "source": "art/sources/afei-defeat-user-02.png",
+        "source_sha256": "0cc9ac9da9c7d62b742abc49edce67bfb8dfccf41c8cfee5446cfa6016cef78c",
+        "source_size": [
+          1915,
+          821
+        ],
+        "output": "gfx/ui/events/afeix_dlc_skins_afei_defeat_02.png",
+        "output_sha256": "3cedd7e568515dd570c54144e6eb68440fef3a4d6ca9c66db46e065989db36b1",
+        "output_size": [
+          450,
+          193
+        ],
+        "aspect_preserved": true,
+        "cropped": false,
+        "repainted": false
+      }
     ]
   },
   "validation": {
@@ -1195,7 +1227,7 @@
     "tests": [
       {
         "test": "base_portraits_plus_dlc_runtime",
-        "assertions": 4800
+        "assertions": 4806
       },
       {
         "test": "tests/gameplay/test_company_appearance.nut",
@@ -1220,9 +1252,9 @@
     "in_game_tested": false
   },
   "package": {
-    "path": "dlc/afei-skins/dist/mod_afeix_dlc_afei_skins v0.1.0.zip",
-    "sha256": "aee56130ecc0694ca4c05947e59238999d05bbc7c140ead44e18ae80c492e20a",
-    "bytes": 688766,
+    "path": "dlc/afei-skins/dist/mod_afeix_dlc_afei_skins v0.1.1.zip",
+    "sha256": "61be154857af40647e3a3031b783c9d02e446dcccd004c3fdb283ab6b790d618",
+    "bytes": 765987,
     "entries": [
       "brushes/afeix_dlc_afei_skins_v01.brush",
       "gfx/afeix_dlc_afei_skins_v01.png",
@@ -1233,7 +1265,8 @@
       "gfx/ui/afeix_dlc_afei_skins/toad.png",
       "gfx/ui/afeix_dlc_afei_skins/veteran.png",
       "gfx/ui/afeix_dlc_afei_skins/wanderer.png",
-      "gfx/ui/events/afeix_dlc_skins_huxueer_defeat.png",
+      "gfx/ui/events/afeix_dlc_skins_afei_defeat_01.png",
+      "gfx/ui/events/afeix_dlc_skins_afei_defeat_02.png",
       "scripts/!mods_preload/mod_afeix_dlc_afei_skins.nut",
       "scripts/mods/afeix_dlc_afei_skins/content.nut",
       "scripts/mods/afeix_dlc_afei_skins/hooks.nut"
@@ -1531,6 +1564,8 @@
     "ui/mods/afeix/formation.js": "8b9305fd7869794264530f0971fbad08f11760675f07f651643acb69252dcd77"
   },
   "source_fingerprints": {
+    "afei-defeat-user-01.png": "d89611a017731f6fa072e8ccfcb295c02bb50b3022427feb91b831e7c56fb67f",
+    "afei-defeat-user-02.png": "0cc9ac9da9c7d62b742abc49edce67bfb8dfccf41c8cfee5446cfa6016cef78c",
     "bare.png": "333d1f2a4028923175ff3b1f6562303e3b9c04bd82f41d1a740b9ee391ab3137",
     "captain.png": "b6ec87a04ca92a6f7d3dae3ab9c85bf67c3dede835e80ea8e6fad52f458c3100",
     "huxueer-defeat-v2.png": "40ebef6d6c0acb36027d1810b0c5ea947eba7ff21fd686284c6fc6c635812f2e",

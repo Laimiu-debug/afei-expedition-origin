@@ -55,9 +55,19 @@
         page=screen.Options[count].getResult(event);
     }
     local cg=A.ledgerPage(event,D.Page+":cg");
-    check(cg.Text.find("afeix_dlc_skins_huxueer_defeat.png")!=null && cg.Text.find("event_80.png")==null,
+    check(cg.Text.find("afeix_dlc_skins_afei_defeat_01.png")!=null && cg.Text.find("event_80.png")==null,
         "gallery displays only its own CG");
-    check(cg.Options.len()==2 && cg.Options[0].getResult(event)==D.Page+":6", "gallery returns to last skin page");
+    check(cg.Options.len()==3 && cg.Options[1].getResult(event)==D.Page+":6", "gallery returns to last skin page");
+    local secondCGPage=cg.Options[0].getResult(event), secondCG=A.ledgerPage(event,secondCGPage);
+    check(secondCGPage==D.Page+":cg:1" && secondCG.Text.find("afeix_dlc_skins_afei_defeat_02.png")!=null,
+        "next CG reaches the second supplied image");
+    check(secondCG.Options[0].getResult(event)==D.Page+":cg:0", "previous CG returns to the first image");
+    check(secondCG.Options.len()<=6 && secondCG.Options[1].getResult(event)==D.Page+":6",
+        "second CG preserves button limit and return destination");
+    foreach(invalid in ["-1","999","bad"]) {
+        local fallback=A.ledgerPage(event,D.Page+":cg:"+invalid);
+        check(fallback.Text.find("afeix_dlc_skins_afei_defeat_01.png")!=null, "invalid CG index safely uses first image");
+    }
     check(reached.len()==7 && page==D.Page+":0", "all skins and original reached through UI pagination");
     local invalidPage=A.ledgerPage(event,D.Page+":999");
     check(invalidPage.Options.len()==6, "invalid offset safely returns first page");

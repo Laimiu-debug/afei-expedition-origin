@@ -15,6 +15,7 @@ from PIL import Image, ImageDraw, ImageFont
 DLC = Path(__file__).resolve().parent
 ROOT = DLC.parents[1]
 ATLAS = 'afeix_dlc_afei_skins_v01'
+VERSION = '0.1.1'
 KIT = ROOT / '.cache/afei-art/bbros-modkit-v9/bin'
 WORLD_RECT = {'left': -17, 'right': 23, 'top': -39, 'bottom': 7,
               'width': 68, 'height': 106, 'offsetY': 20}
@@ -98,6 +99,35 @@ def source_review(records):
     grid.save(DLC / 'art/neck-review.png')
 
 
+def export_cgs():
+    manifest = json.loads((DLC/'art/cg-manifest.json').read_text(encoding='utf-8'))
+    if manifest['schema_version'] != 1 or len(manifest['images']) != 2 or manifest['max_size'] != [450,300]:
+        raise ValueError('Expected two reviewed CGs and native event image dimensions')
+    runtime = (DLC/'src/scripts/mods/afeix_dlc_afei_skins/content.nut').read_text(encoding='utf-8')
+    exports = []
+    for entry in manifest['images']:
+        source = (DLC/entry['source']).resolve()
+        target = (DLC/'src'/entry['output']).resolve()
+        if not source.is_relative_to((DLC/'art/sources').resolve()) or not target.is_relative_to((DLC/'src/gfx/ui/events').resolve()):
+            raise ValueError('CG path escapes source or export directory')
+        if sha(source) != entry['source_sha256'] or entry['output'] not in runtime:
+            raise ValueError('CG source fingerprint or runtime reference differs')
+        with Image.open(source) as original:
+            if list(original.size) != entry['source_size']:
+                raise ValueError('CG original dimensions differ')
+            image = original.convert('RGB')
+        image.thumbnail(tuple(manifest['max_size']), Image.Resampling.LANCZOS)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        image.save(target)
+        with Image.open(target) as actual:
+            if actual.mode != 'RGB' or actual.size != image.size or actual.tobytes() != image.tobytes():
+                raise ValueError('Exported CG pixels differ')
+        exports.append(dict(source=entry['source'],source_sha256=sha(source),source_size=entry['source_size'],
+                            output=entry['output'],output_sha256=sha(target),output_size=list(image.size),
+                            aspect_preserved=True,cropped=False,repainted=False))
+    return exports
+
+
 def build_art(records, stage):
     portrait.ROOT = ROOT
     portrait.ALLOWED_SOURCE_ROOTS = (DLC / 'art/sources',)
@@ -128,11 +158,7 @@ def build_art(records, stage):
         ui.mkdir(parents=True, exist_ok=True)
         full.save(ui / (entry['key'] + '.png'))
     shutil.copy2(ROOT/'art/runtime/portraits-v05/sprites/afeix_p04_afei_normal_dead.png', ui/'native.png')
-    cg = Image.open(DLC/'art/sources/huxueer-defeat-v2.png').convert('RGB')
-    cg.thumbnail((450,300), Image.Resampling.LANCZOS)
-    cg_path = DLC/'src/gfx/ui/events/afeix_dlc_skins_huxueer_defeat.png'
-    cg_path.parent.mkdir(parents=True, exist_ok=True)
-    cg.save(cg_path)
+    cg_exports = export_cgs()
     pack_input = stage/'pack'
     shutil.copytree(sprites, pack_input/'sprites')
     packed = pack_and_verify(stage, ATLAS, pack_input, attrs, KIT/'bbrusher.exe')
@@ -143,7 +169,7 @@ def build_art(records, stage):
         shutil.copy2(stage/'package'/relative, target)
     shutil.copytree(sprites, DLC/'art/sprites', dirs_exist_ok=True)
     return dict(exports=exported, roundtrip=packed, wound_sources=native_sources,
-                native_equipment_packaged=False, sprite_count=len(attrs), cg_packaged=True, cg_size=list(cg.size))
+                native_equipment_packaged=False, sprite_count=len(attrs), cg_packaged=True, cg_exports=cg_exports)
 
 
 def equipment_review(records):
@@ -239,7 +265,7 @@ def package():
     paths=sorted(p for p in (DLC/'src').rglob('*') if p.is_file())
     if any(p.suffix not in {'.nut','.brush','.png'} for p in paths):
         raise ValueError('Unexpected install package file type')
-    target=DLC/'dist/mod_afeix_dlc_afei_skins v0.1.0.zip'
+    target=DLC/f'dist/mod_afeix_dlc_afei_skins v{VERSION}.zip'
     target.parent.mkdir(exist_ok=True)
     with ZipFile(target,'w',compression=ZIP_DEFLATED) as archive:
         for p in paths:
@@ -272,7 +298,7 @@ def main():
         validation=verify(stage)
     if before!=files_hash(ROOT/'src'): raise ValueError('Main src changed during DLC build')
     result=package()
-    save_json(DLC/'report.json',dict(version='0.1.0',minimum_base='0.28.12 / internal 62',
+    save_json(DLC/'report.json',dict(version=VERSION,minimum_base='0.28.12 / internal 62',
         art=art,validation=validation,package=result,main_src_unchanged=True,
         main_src_fingerprints=before,source_fingerprints=files_hash(DLC/'art/sources'),
         installed=False,published=False))
