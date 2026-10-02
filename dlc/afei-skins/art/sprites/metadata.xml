@@ -1,0 +1,50 @@
+<brush name="gfx/afeix_dlc_afei_skins_v01.png" version="17">
+  <sprite id="afeix_dlc_skins_captain" img="afeix_dlc_skins_captain.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_captain_head" img="afeix_dlc_skins_captain_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_captain_dead" img="afeix_dlc_skins_captain_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_dlc_skins_captain_corpse_head" img="afeix_dlc_skins_captain_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_captain_corpse_head_bloodied" img="afeix_dlc_skins_captain_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_captain_corpse_head_injured_01" img="afeix_dlc_skins_captain_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_captain_corpse_head_injured_02" img="afeix_dlc_skins_captain_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_captain_world" img="afeix_dlc_skins_captain_world.png" left="-17" right="23" top="-39" bottom="7" width="68" height="106" offsetY="20" />
+  <sprite id="afeix_dlc_skins_wanderer" img="afeix_dlc_skins_wanderer.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_wanderer_head" img="afeix_dlc_skins_wanderer_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_wanderer_dead" img="afeix_dlc_skins_wanderer_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_dlc_skins_wanderer_corpse_head" img="afeix_dlc_skins_wanderer_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_wanderer_corpse_head_bloodied" img="afeix_dlc_skins_wanderer_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_wanderer_corpse_head_injured_01" img="afeix_dlc_skins_wanderer_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_wanderer_corpse_head_injured_02" img="afeix_dlc_skins_wanderer_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_wanderer_world" img="afeix_dlc_skins_wanderer_world.png" left="-17" right="23" top="-39" bottom="7" width="68" height="106" offsetY="20" />
+  <sprite id="afeix_dlc_skins_veteran" img="afeix_dlc_skins_veteran.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_veteran_head" img="afeix_dlc_skins_veteran_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_veteran_dead" img="afeix_dlc_skins_veteran_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_dlc_skins_veteran_corpse_head" img="afeix_dlc_skins_veteran_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_veteran_corpse_head_bloodied" img="afeix_dlc_skins_veteran_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_veteran_corpse_head_injured_01" img="afeix_dlc_skins_veteran_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_veteran_corpse_head_injured_02" img="afeix_dlc_skins_veteran_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_veteran_world" img="afeix_dlc_skins_veteran_world.png" left="-17" right="23" top="-39" bottom="7" width="68" height="106" offsetY="20" />
+  <sprite id="afeix_dlc_skins_bare" img="afeix_dlc_skins_bare.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_bare_head" img="afeix_dlc_skins_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_bare_dead" img="afeix_dlc_skins_bare_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_dlc_skins_bare_corpse_head" img="afeix_dlc_skins_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_bare_corpse_head_bloodied" img="afeix_dlc_skins_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_bare_corpse_head_injured_01" img="afeix_dlc_skins_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_bare_corpse_head_injured_02" img="afeix_dlc_skins_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_bare_world" img="afeix_dlc_skins_bare_world.png" left="-17" right="23" top="-39" bottom="7" width="68" height="106" offsetY="20" />
+  <sprite id="afeix_dlc_skins_huxueer" img="afeix_dlc_skins_huxueer.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_huxueer_head" img="afeix_dlc_skins_huxueer_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_huxueer_dead" img="afeix_dlc_skins_huxueer_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_dlc_skins_huxueer_corpse_head" img="afeix_dlc_skins_huxueer_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_huxueer_corpse_head_bloodied" img="afeix_dlc_skins_huxueer_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_huxueer_corpse_head_injured_01" img="afeix_dlc_skins_huxueer_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_huxueer_corpse_head_injured_02" img="afeix_dlc_skins_huxueer_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_huxueer_world" img="afeix_dlc_skins_huxueer_world.png" left="-17" right="23" top="-39" bottom="7" width="68" height="106" offsetY="20" />
+  <sprite id="afeix_dlc_skins_toad" img="afeix_dlc_skins_toad.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_toad_head" img="afeix_dlc_skins_toad_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_dlc_skins_toad_dead" img="afeix_dlc_skins_toad_dead.png" left="-57" right="57" top="-71" bottom="71" width="114" height="142" offsetX="0" offsetY="0" />
+  <sprite id="afeix_dlc_skins_toad_corpse_head" img="afeix_dlc_skins_toad_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_toad_corpse_head_bloodied" img="afeix_dlc_skins_toad_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_toad_corpse_head_injured_01" img="afeix_dlc_skins_toad_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_toad_corpse_head_injured_02" img="afeix_dlc_skins_toad_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_dlc_skins_toad_world" img="afeix_dlc_skins_toad_world.png" left="-17" right="23" top="-39" bottom="7" width="68" height="106" offsetY="20" />
+</brush>
