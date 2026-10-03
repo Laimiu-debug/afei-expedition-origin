@@ -17,13 +17,13 @@ A.dreamPage <- function(event, id) {
         screen.PortraitKeys = ["afei", "damou"];
         screen.Text = this.get("dream_notice", "") + "夜色压住了道路，阿飞、抹茶与大谋在营火旁摊开地图。镇名一个挨着一个，三人能叫出名字的同行者却还不多。黑旗已经备好，旗下面的队伍仍要慢慢凑齐。\n\n阿飞用树枝点了点明天的路：‘一路走，一路找人。旗子先立起来，名字慢慢添。’\n\n抹茶合上账本：‘吃的、修甲的、发工钱的，都得算进去。人找到了，也得让大家走得下去。’大谋把盾靠在树旁：‘先去镇上看看。愿意同行的人，就一起带回来。’\n\n火光渐低，地图留在三人之间。谁也没有想到，这一夜，他们会走进同一个梦。";
         screen.Options.push(this.ledgerOption("看看他们梦见了什么。", function(e) { ::AfeixExpedition.set("dream_intro_page", "opening_dream"); return "opening_dream"; }));
-        screen.Options.push(this.ledgerOption("略过梦境战斗，直接启程。", function(e) { ::AfeixExpedition.skipDream(); return "departure"; }));
+        screen.Options.push(this.ledgerOption("略过梦境战斗。", function(e) { ::AfeixExpedition.skipDream(); return "wake"; }));
     } else if (id == "opening_dream") {
         screen.Image = "ui/events/afeix_douyu.png";
         screen.PortraitKeys = ["afei", "mocha"];
         screen.Text = this.get("dream_notice", "") + "营火的声音变成了水声。阿飞抬头，发现抹茶与大谋也站在黑旗下；再往两边看，刀一十人已经齐聚。熟悉的脸，熟悉的声音，握着的兵器却像陪他们走过了很长的路。\n\n全员11级，传奇装备各循自己的职责。前排已经站稳，盾卫留着接应的位置，远处有人搭好了弩。十人没有多说，便知道下一步该怎样互相照应。\n\n雾中先传来蜘蛛的窸窣声，随后是狼嚎与鳞甲拖过泥地的低响。更远处，一道橙色背鳍划开黑水，尖牙之上的笑脸正望着他们。\n\n先跟着这支成长后的队伍走一程。梦里的伤亡与装备不会带回现实；梦醒之后，三人还得亲自寻找自己的伙伴。";
         screen.Options.push(this.ledgerOption("走进这场梦。", function(e) { ::AfeixExpedition.set("dream_notice", ""); ::AfeixExpedition.queueDreamCombat(); return 0; }));
-        screen.Options.push(this.ledgerOption("略过梦境战斗，直接启程。", function(e) { ::AfeixExpedition.skipDream(); return "departure"; }));
+        screen.Options.push(this.ledgerOption("略过梦境战斗。", function(e) { ::AfeixExpedition.skipDream(); return "wake"; }));
     } else if (id == "stage") {
         local d = this.DreamStages[this.dreamStage()];
         screen.Title = d.name;
@@ -33,20 +33,18 @@ A.dreamPage <- function(event, id) {
             screen.Text = "[p=c][img]gfx/" + screen.Image + "[/img][/p]" + screen.Text;
         }
         screen.Options.push(this.ledgerOption("继续走向前方。", function(e) { ::AfeixExpedition.set("dream_notice", ""); ::AfeixExpedition.queueDreamCombat(); return 0; }));
-        screen.Options.push(this.ledgerOption("让梦停在这里，三人启程。", function(e) { ::AfeixExpedition.skipDream(); return "departure"; }));
+        screen.Options.push(this.ledgerOption("让梦停在这里。", function(e) { ::AfeixExpedition.skipDream(); return "wake"; }));
     } else if (id == "wake") {
         screen.Title = "黑旗初醒";
         screen.Image = "ui/events/event_33.png";
         screen.PortraitKeys = ["damou", "afei"];
-        screen.Text = this.get("dream_wake_reason", "") == "douyu"
-            ? "斗鱼的背鳍掀起最后一道梦潮。传奇护甲没有碎，黑旗却连同脚下的空地一起散开。十人的声音被水声吞没，三位队长同时睁开眼。\n\n营火只剩余烬。大谋先问：‘你们也看见了？’抹茶伸手摸向账本，阿飞望着尚未写满的黑旗，过了片刻才点头。\n\n地图仍在，路也仍在。这回他们得亲自找到愿意同行的人，慢慢长成自己的模样，再去面对斗鱼。"
-            : "梦中的队伍散进了晨雾。阿飞、抹茶与大谋先后醒来，发现彼此记得同样的黑旗、同样的伙伴，还有雾里的斗鱼。\n\n营火已经熄了，原来的装备与行囊仍在手边。梦只是一个开始；三人整理地图，准备在大陆上寻找愿意同行的人。";
+        screen.Text = "斗鱼的背鳍掀起最后一道梦潮。黑水没有随着战斗停下，反而漫过了脚下的空地。盾卫伸手去接同伴，旗手的喊声却消失在浪里。传奇兵器仍握在手中，黑旗下的十人已经一个接一个倒下。最后，连黑旗也沉了下去。\n\n阿飞猛地坐起。抹茶与大谋也在同一刻睁开眼，三人急促的呼吸盖过了余烬的轻响。大谋先问：‘你们也看见了？’抹茶摸向仍在手边的账本，阿飞望着尚未写满的黑旗，过了片刻才点头。\n\n原来的装备与行囊都还在。这场梦以全军覆没告终，现实的路却仍在脚下。他们得亲自找到愿意同行的人，慢慢长成自己的模样，再去面对斗鱼。";
         screen.Options.push(this.ledgerOption("再看一眼脚下的路。", function(e) { ::AfeixExpedition.set("dream_wake_pending", false); ::AfeixExpedition.set("dream_departure_pending", true); return "departure"; }));
     } else if (id == "departure") {
         screen.Title = "黑旗启程";
         screen.Image = "ui/events/event_16.png";
         screen.PortraitKeys = ["mocha", "afei"];
-        screen.Text = "天亮了，三人收起地图。梦里那支队伍仿佛已经走过许多场战斗，现实中的黑旗却才刚刚上路。抹茶把第一笔准备工作记进账本：进城补给，修整装备，再看看谁愿意同行。\n\n大陆上的伙伴各有自己的去处与打算。随着旅程推进，他们会留下线索，满足相遇与招募条件后才会出现在名单中。想带谁一起走，由你来选；黑旗下最多十二人出战，队伍可以长成不同的样子。\n\n在世界地图按 [color=#bcad8c]F8[/color] 打开黑旗名册，查看伙伴线索、招募条件与战团事务。入队的伙伴仍从城镇的招募名单雇佣。先让大家站稳脚步，再慢慢补齐装备和配合。\n\n梦里的斗鱼也在现实大陆留下了踪迹：[color=#bcad8c]梦潮祭场[/color]。名册里的‘再赴梦潮’提供地图方位，准备好后需要亲自行军前往。建议达到11级、配齐装备再挑战；这次的伤亡与消耗会留在旅程里，击杀后可取得鲨皮、鱼翅与鲨牙制成的三件传奇装备。";
+        screen.Text = "天亮了，三人收起地图。梦里那支队伍仿佛已经走过许多场战斗，现实中的黑旗却才刚刚上路。抹茶把第一笔准备工作记进账本：进城补给，修整装备，再看看谁愿意同行。\n\n大陆上的伙伴各有自己的去处与打算。随着旅程推进，他们会留下线索，满足相遇与招募条件后才会出现在名单中。想带谁一起走，由你来选；黑旗下最多十二人出战，队伍可以长成不同的样子。\n\n在世界地图按 [color=#bcad8c]F8[/color] 打开黑旗名册，查看伙伴线索、招募条件与战团事务。入队的伙伴仍从城镇的招募名单雇佣。先让大家站稳脚步，再慢慢补齐装备和配合。\n\n梦里的斗鱼也在现实大陆留下了踪迹：[color=#bcad8c]梦潮祭场[/color]。名册里的‘再赴梦潮’提供地图方位，准备好后需要亲自行军前往。建议达到11级、配齐装备再挑战；这次的伤亡与消耗会留在旅程里。梦里没走完的路，要由黑旗亲自走下去。";
         screen.Options.push(this.ledgerOption("收好地图，黑旗启程。", function(e) {
             if (e != null && e.m.StoryReview) return 0;
             ::AfeixExpedition.set("dream_departure_pending", false);
@@ -66,7 +64,7 @@ A.dreamPage <- function(event, id) {
         }
         else {
             screen.Image = "ui/events/afeix_douyu.png";
-            screen.Text = this.douyuWorldIntel() + "\n\n斗鱼在梦潮祭场等待黑旗。它会预告扑击、掀起弹幕浪潮，并点燃火箭礼炮；观察出招，留好撤路，再抓住失衡后的空隙。\n\n整理现实名册，带上自由选择的队员从大陆前往祭场，最多十二人出战。建议以11级、完备配装挑战；伤亡与消耗照常记入旅程，撤退或败战后可以再来。真正击杀斗鱼，将掉落三件传奇装备。";
+            screen.Text = this.douyuWorldIntel() + "\n\n斗鱼在梦潮祭场等待黑旗。它会预告扑击、掀起弹幕浪潮，并点燃火箭礼炮；观察出招，留好撤路，再抓住失衡后的空隙。\n\n整理现实名册，带上自由选择的队员从大陆前往祭场，最多十二人出战。建议以11级、完备配装挑战；伤亡与消耗照常记入旅程，撤退或败战后可以再来。潮声背后的秘密，仍藏在祭场深处。";
             screen.Text = "[p=c][img]gfx/" + screen.Image + "[/img][/p]" + screen.Text;
             screen.Options.push(this.ledgerOption("把祭场方位记在地图上。", function(e) { ::AfeixExpedition.queueDouyuMapFocus(); return 0; }));
         }

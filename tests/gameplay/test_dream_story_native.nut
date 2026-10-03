@@ -166,9 +166,11 @@ storyRealityUnchanged(before, "serialized intro resume");
 
 storyReset(); A.initializeDreamOpening(); A.openDreamIntro();
 ::World.Events.processInput(1);
-check(A.dreamStatus() == "skipped" && A.get("dream_departure_pending", false)
+check(A.dreamStatus() == "skipped" && A.get("dream_wake_pending", false)
     && !A.get("dream_story_seen", false) && A.DreamLaunchRequest == null,
-    "skipping dream retains unread real-company background");
+    "skipping dream retains unread scripted defeat and real-company background");
+storyView("wake", "黑旗初醒", "ui/events/event_33.png", "damou", "afei");
+::World.Events.processInput(0);
 storyView("departure", "黑旗启程", "ui/events/event_16.png", "mocha", "afei");
 before = storyRealitySnapshot();
 ::World.Events.processInput(-1); A.updateDreamWorld();
@@ -221,7 +223,8 @@ foreach (missing in ["afei", "damou", "mocha", "all"]) {
     ::World.Events.processInput(0);
     check(::World.Events.m.ActiveEvent.m.ActiveScreen.ID == "opening_dream", "missing " + missing + " still turns native page");
     ::World.Events.processInput(1);
-    check(::World.Events.m.ActiveEvent.m.ActiveScreen.ID == "departure", "missing " + missing + " still skips to departure");
+    check(::World.Events.m.ActiveEvent.m.ActiveScreen.ID == "wake", "missing " + missing + " still skips to scripted defeat");
+    ::World.Events.processInput(0);
     view = ::world_event_screen.convertEventToUIData(::World.Events.m.ActiveEvent);
     check(view.buttons.len() > 0 && (missing != "all" || (view.characterLeft == null && view.characterRight == null)),
         "missing " + missing + " never creates replacement portraits or actors");

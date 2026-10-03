@@ -10,7 +10,7 @@ this.douyu_ai <- this.inherit("scripts/ai/tactical/behavior", {
         this.m.TargetTile = null; this.m.Skill = null;
         local d = ::AfeixExpedition.Douyu, s = d.state(_entity);
         if(!_entity.getCurrentProperties().IsAbleToUseSkills || s.SpecialTurn == s.Turn
-            || s.Charging || s.MarkID != 0 || s.Turn < s.ExposedUntil) return 0;
+            || s.Charging || s.MarkID != 0 || s.Turn < s.ExposedUntil || s.Turn < s.SpecialRecoveryUntil) return 0;
         // Rotate specials rather than choosing the same highest-scored skill forever.
         local order = s.ComboPending || s.Turn % 4 == 1 ? ["rocket", "mark", "barrage"]
             : (s.Turn % 4 == 2 ? ["barrage", "mark", "rocket"] : ["mark", "barrage", "rocket"]);

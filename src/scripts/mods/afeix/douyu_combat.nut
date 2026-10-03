@@ -1,11 +1,19 @@
 // A single, beatable boss. Every warning survives until its next own turn;
 // callbacks retain IDs and tiles, never a dead actor reference or a timer.
 ::AfeixExpedition.Douyu <- {
-    // First-pass encounter tuning; actual game balance remains to be measured.
-    Stats = {Hitpoints=1800,ActionPoints=9,Stamina=400,FatigueRecoveryRate=30,Initiative=60,
-        MeleeSkill=80,RangedSkill=75,MeleeDefense=12,RangedDefense=8,Bravery=120,
-        Armor=[400.0,300.0],DamageRegularMin=75,DamageRegularMax=100,DamageArmorMult=1.0},
-    InterruptThreshold = 160,
+    // Fixed endgame target: 10-12 level-11, equipped members. No scaling,
+    // regeneration or repeated unavoidable damage to erase player progress.
+    Stats = {Hitpoints=4800,ActionPoints=9,Stamina=400,FatigueRecoveryRate=30,Initiative=60,
+        MeleeSkill=110,RangedSkill=85,MeleeDefense=22,RangedDefense=14,Bravery=120,
+        Armor=[600.0,450.0],DamageRegularMin=110,DamageRegularMax=135,DamageArmorMult=1.1},
+    Attacks = {
+        bite = { Min=110, Max=135, Armor=1.1, Direct=0.25 },
+        mark = { Min=110, Max=135, Armor=1.2, Direct=0.3 },
+        barrage = { Min=45, Max=65, Armor=0.9, Direct=0.15 },
+        rocket = { Min=125, Max=155, Armor=1.2, Direct=0.3 }
+    },
+    InterruptThreshold = 700,
+    Phase2DamageMult = 1.2,
     function state(_actor) { return _actor.getSkills().getSkillByID("effects.afeix_douyu_core").m; },
     function alive(_actor) { return _actor != null && _actor.isAlive() && !_actor.isDying() && _actor.isPlacedOnMap(); },
     function log(_text) { ::Tactical.EventLog.log(_text); },
@@ -52,10 +60,13 @@
         s.InterruptDamage += ::Math.max(0, _hp) + ::Math.max(0, _armor);
         if(s.InterruptDamage < this.InterruptThreshold) return;
         s.Charging = false;
+        // The next own turn uses native melee instead of charging again.
+        // Otherwise sustained focus fire can cancel every action forever.
+        s.SpecialRecoveryUntil = s.Turn + 2;
         this.clearWarning(_actor);
         this.removeMark(_actor);
         this.expose(_actor);
-        this.log((s.ChargeKind == "rocket" ? "超级火箭" : "弹幕洪流") + "被打断！近战或远程造成的 " + this.InterruptThreshold + " 点实际生命与护甲伤害打断了蓄力。");
+        this.log((s.ChargeKind == "rocket" ? "超级火箭" : "弹幕洪流") + "被打断！近战或远程造成的 " + this.InterruptThreshold + " 点实际生命与护甲伤害打断了蓄力。斗鱼下回合改用撕咬，随后才重新使用礼炮。");
     },
     function pressure(_target) {
         if(!this.alive(_target)) return;
@@ -69,7 +80,7 @@
     },
     function canSpecial(_actor, _kind) {
         local s = this.state(_actor);
-        if(s.SpecialTurn == s.Turn || s.Charging || s.MarkID != 0 || s.Turn < s.ExposedUntil) return false;
+        if(s.SpecialTurn == s.Turn || s.Charging || s.MarkID != 0 || s.Turn < s.ExposedUntil || s.Turn < s.SpecialRecoveryUntil) return false;
         if(_kind == "rocket") return s.ComboPending || s.Turn >= s.NextRocket;
         if(_kind == "mark") return s.Turn >= s.NextMark;
         return s.Turn >= s.NextBarrage;
@@ -81,7 +92,7 @@
         s.LastRound = round; ++s.Turn;
         if(!s.Phase2 && _actor.getHitpoints() <= _actor.getHitpointsMax() / 2) {
             s.Phase2 = true; s.ComboPending = true;
-            this.log("斗鱼沉入黑水，又举起礼炮。满屏开播即将开始——危险区与点名都留有一回合的应对时间！");
+            this.log("斗鱼沉入黑水，又举起礼炮。半血后攻击伤害提高 20%，满屏开播即将开始——危险区与点名都留有一回合的应对时间！");
         }
         local hitIDs = [];
         if(s.Charging && s.ChargeTurn < s.Turn) {

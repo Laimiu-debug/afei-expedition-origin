@@ -18,7 +18,7 @@ this.afeix_douyu_location <- this.inherit("scripts/entity/world/location", {
         this.m.CombatLocation.Fortification = this.Const.Tactical.FortificationType.None;
     },
     function getDescription() {
-        return "橙色的鳍影在梦沼上方游弋，旧石柱缠着被潮水打湿的旗绳。三位队长曾经在梦里抵达这里，深渊之主如今正等着现实中的黑旗。\n\n准备好队伍与补给，再从大陆前往挑战。伤亡和消耗都会留下，撤退后仍可回来；真正击杀斗鱼，才能取得它守着的三件传奇装备。";
+        return "橙色的鳍影在梦沼上方游弋，旧石柱缠着被潮水打湿的旗绳。三位队长曾经在梦里抵达这里，深渊之主如今正等着现实中的黑旗。\n\n准备好队伍与补给，再从大陆前往挑战。伤亡和消耗都会留下，撤退后仍可回来。潮声背后的秘密，还埋在祭场深处。";
     },
     function createDefenders() {
         if (this.m.Troops.len() != 0 || ::AfeixExpedition.douyuWorldDefeated()) return;

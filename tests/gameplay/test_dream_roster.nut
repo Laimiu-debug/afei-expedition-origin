@@ -11,6 +11,24 @@ function check(ok, text) { if (!ok) throw "Dream roster: " + text; ::checks++; }
 ::Time <- {getVirtualTimeF=function(){return 23.0;}};
 ::campaignRand <- function(low, high) { ::state.campaignRolls++; return low; };
 ::Math <- {rand=::campaignRand};
+::Const.BloodType <- {None=0};
+::Const.MoraleState <- {Steady=3,Confident=5};
+::Const.DefaultMovementAPCost <- [];
+::Const.DefaultMovementFatigueCost <- [];
+::Const.Movement <- {LevelDifferenceActionPointCost=0,LevelDifferenceFatigueCost=0};
+::Const.Tactical <- {MovementType={Default=0}};
+::Const.ShakeCharacterLayers <- [];
+::Const.MoraleCheckType <- {Default=0};
+::Const.FatalityType <- {None=0};
+::createColor <- function(value){return value;};
+::createVec <- function(x,y){return {X=x,Y=y};};
+// Keep the installed actor's setDirty implementation: native roster.create
+// invokes it during player.onInit, before any dream identity flag is set.
+::inherit <- function(path, object) { object.setdelegate(getroottable()); return object; };
+dofile(".cache/afei-art/native-contract-fixture/actor.nut");
+::nativeDirtyActor <- { m={IsAlive=true,IsDying=false,IsDirty=false,ContentID=0},
+    updateOverlay=function(){},isPlacedOnMap=function(){return false;} };
+::nativeDirtyActor.setdelegate(getroottable());
 ::AfeixExpedition <- {Schema=2,TalentRevision=4,characterBackgroundPath=function(key){return "afeix_"+key+"_background";},isOrigin=function(){return true;}};
 dofile("src/scripts/mods/afeix/characters.nut");
 dofile("src/scripts/mods/afeix/member_skills.nut");
@@ -48,7 +66,7 @@ function makeBrother() {
     return actor;
 }
 function roster() {
-    return {actors=[],create=function(path){::Math.rand(0,9);local a=makeBrother();this.actors.push(a);return a;},
+    return {actors=[],create=function(path){::actor.setDirty.bindenv(::nativeDirtyActor)(true);::Math.rand(0,9);local a=makeBrother();this.actors.push(a);return a;},
         getAll=function(){return this.actors;},remove=function(actor){local i=this.actors.find(actor);if(i!=null)this.actors.remove(i);}};
 }
 ::realRoster <- roster();
@@ -63,6 +81,11 @@ getroottable()["new"] <- function(path) {
     if(path==::state.rejectPath)throw "Injected constructor failure";
     local result={path=path,m={ID="",Name="",Condition=100,ConditionMax=100,StaminaModifier=0,IsDroppedAsLoot=true,IsApplied=false,GoldCost=20,Description=""},
         configure=function(key){local d=::AfeixExpedition.MemberSkillDefs[key];this.m.ID=(d.active?"actives.":"trait.")+"afeix_member_"+key;}};
+    // The engine's inherit exposes parent m slots through _get/_set. `in`
+    // cannot see them, even though ordinary property access can read/write.
+    local inherited={};
+    foreach(field in ["Condition","ConditionMax","StaminaModifier"]){inherited[field]<-result.m[field];delete result.m[field];}
+    result.m.setdelegate({_get=function(field){return inherited[field];},_set=function(field,value){inherited[field]=value;}});
     if(path.find("scripts/skills/perks/perk_")==0)result.m.ID="perk."+path.slice(26);
     if(path=="scripts/skills/actives/afeix_feidie")result.m.ID="actives.afeix_feidie";
     if(path=="scripts/skills/traits/afeix_promotion_trait")result.m.ID="trait.afeix_promotion";
@@ -76,6 +99,7 @@ check(actors.len()==10&&temporary.actors.len()==11&&temporary.actors[0]==unrelat
 check(::realRoster.actors.len()==1&&::realRoster.actors[0]==::realBrother&&::realBrother.m.XP==724&&::realBrother.fatigue==9,"real actor and roster unchanged");
 check(::World.Flags.values.len()==2&&::World.Flags.values.afeix_afei_route=="normal"&&::World.Assets.money==700,"real flags route and money unchanged");
 check(::state.campaignRolls==0&&::Math.rand==::campaignRand,"construction does not consume campaign RNG and restores function");
+check(::nativeDirtyActor.m.IsDirty&&::nativeDirtyActor.m.ContentID>=0,"native player initialization accepts both no-argument RNG calls");
 check(::state.giftedRows==0,"Gifted never grants a second unspent attribute row");
 local slots={};
 foreach(i,actor in actors) {
@@ -142,4 +166,13 @@ local sequenceA=A.withDreamConstructionRandom(57,function(){local result=[];for(
 local unique={},same=true;
 foreach(i,value in sequenceA){if(value!=sequenceB[i])same=false;unique[value]<-true;}
 check(same&&unique.len()>10&&::state.campaignRolls==0,"bounded construction RNG is deterministic and changes enough for native rejection loops");
+local raw=A.withDreamConstructionRandom(57,function(){local result=[];for(local i=0;i<20;i++)result.push(::Math.rand());return result;});
+foreach(value in raw)check(typeof value=="integer"&&value>=0&&value<65521,"no-argument native draw remains a nonnegative integer");
+check(A.withDreamConstructionRandom(57,function(){return ::Math.rand(-4,-4);})==-4,"two-argument draw preserves inclusive singleton ranges");
+threw=false;try{A.withDreamConstructionRandom(57,function(){::Math.rand();throw "native initialization failed";});}catch(error){threw=true;}
+check(threw&&::Math.rand==::campaignRand&&::state.campaignRolls==0,"no-argument callback failure restores campaign RNG");
+local armorItem=A.makeDreamItem(A.DreamRoster.people.afei.equipment[1]);
+check(!("Condition" in armorItem.m)&&armorItem.m.Condition==138&&armorItem.m.ConditionMax==138&&armorItem.m.StaminaModifier==-8,"inherited named armor fields accept exact dream rolls");
+threw=false;try{A.makeDreamItem({path="scripts/items/armor/named/black_leather_armor",name="",stats={TypoCondition=138}});}catch(error){threw=true;}
+check(threw,"unknown equipment fields still reject typos");
 print("TESTS_PASSED="+::checks+"\n");

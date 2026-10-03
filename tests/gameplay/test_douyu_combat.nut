@@ -30,8 +30,8 @@ function fixActor(a) {
 }
 function actor(key,pos=0,faction=1) {return fixActor(makeActor(key,pos,faction));}
 function boss() {
-    local a=actor("douyu",0,2); a.hp=1800;
-    a.getHitpointsMax=function(){return 1800;}; a.fatigueMax=400;
+    local a=actor("douyu",0,2); a.hp=4800;
+    a.getHitpointsMax=function(){return 4800;}; a.fatigueMax=400;
     foreach(path in ["effects/afeix_douyu_core_effect","actives/afeix_douyu_bite_skill","actives/afeix_douyu_mark_skill","actives/afeix_douyu_barrage_skill","actives/afeix_douyu_rocket_skill"])
         a.skills.add(::new("scripts/skills/"+path));
     foreach(skill in a.skills.m.Skills) skill.attackEntity=function(user,target,diversion=true) {
@@ -74,7 +74,7 @@ turn(b);eq(b.props.DamageReceivedTotalMult,1.0,"damage window expires at next ow
 reset();b=boss();t=actor("evader",2);turn(b);special(b,"rocket").use(t.tile);t.tile.IsOccupiedByActor=false;
 turn(b);eq(::state.attacks.len(),0,"empty marked tile is safe after moving");
 reset();b=boss();t=actor("reflector",2);flank=actor("second",3);t.neighbors=[flank];turn(b);
-b.hp=900;turn(b);special(b,"rocket").use(t.tile);
+b.hp=2400;turn(b);special(b,"rocket").use(t.tile);
 special(b,"rocket").attackEntity=function(user,target,diversion=true) {
     ::state.attacks.push({target=target.id}); user.alive=false;user.placed=false;
     user.skills.getSkillByID("effects.afeix_douyu_core").onDeath(0);return true;
@@ -82,25 +82,34 @@ special(b,"rocket").attackEntity=function(user,target,diversion=true) {
 turn(b);eq(::state.attacks.len(),1,"source death during first impact stops remaining attacks");
 check(!t.skills.hasSkill("effects.afeix_douyu_mark")&&!flank.tile.Properties.IsMarkedForImpact,"source death clears combo and remaining warning tiles");
 reset();b=boss();t=actor("archer",4);turn(b);special(b,"rocket").use(t.tile);
-D.interrupt(b,t,39,120);check(D.state(b).Charging,"159 damage insufficient");
-D.interrupt(b,t,1,0);check(!D.state(b).Charging,"160 combined actual damage interrupts");
+D.interrupt(b,t,399,300);check(D.state(b).Charging,"699 damage insufficient");
+D.interrupt(b,t,1,0);check(!D.state(b).Charging,"700 combined actual damage interrupts");
 eq(D.state(b).BlastTiles.len(),0,"interrupt clears queued blast");
 check(!t.tile.Properties.IsMarkedForImpact,"interrupt clears danger flag");
 turn(b);eq(::state.attacks.len(),0,"interrupted blast never fires");
+check(!special(b,"rocket").isUsable()&&!special(b,"barrage").isUsable()&&!special(b,"mark").isUsable(),"interruption reserves next own turn for melee");
+eq(b.props.DamageReceivedTotalMult,1.0,"interruption vulnerability still expires on next own turn");
+local recoveryAdjacent=actor("recoveryAdjacent",1);
+check(special(b,"bite").use(recoveryAdjacent.tile),"melee remains usable during interrupted-special recovery");
+eq(b.ap,5,"recovery bite spends normal AP");
+check(special(b,"bite").use(recoveryAdjacent.tile),"native AP allows second recovery bite");
+eq(b.ap,1,"recovery attacks do not grant extra AP");
+turn(b);check(special(b,"mark").isUsable(),"special recovery expires after one melee turn");
 reset();b=boss();t=actor("fighter",1);local ally=actor("bossAlly",2,2);turn(b);special(b,"rocket").use(t.tile);
 D.interrupt(b,ally,1000,1000);check(D.state(b).Charging,"allied damage cannot interrupt");
-D.interrupt(b,t,160,0);check(!D.state(b).Charging,"melee damage interrupts equally");
-reset();b=boss();t=actor("target",2);turn(b);b.hp=900;turn(b);
+D.interrupt(b,t,700,0);check(!D.state(b).Charging,"melee damage interrupts equally");
+reset();b=boss();t=actor("target",2);turn(b);b.hp=2400;turn(b);
 check(D.state(b).ComboPending&&D.state(b).Phase2,"half health unlocks one combo");
+eq(b.props.DamageTotalMult,1.2,"half health increases attack damage without extra actions");
 check(special(b,"rocket").use(t.tile),"combo rocket usable through cooldown");
 check(D.state(b).Charging&&D.state(b).MarkID==t.id,"combo preannounces blast and mark");
 turn(b);eq(::state.attacks.len(),1,"combo never double hits same actor");
 check(!D.state(b).ComboPending&&!t.skills.hasSkill("effects.afeix_douyu_mark"),"combo and warning consumed");
 turn(b);check(!D.state(b).ComboPending,"combo cannot repeatedly trigger at low health");
-reset();b=boss();t=actor("comboEvader",2);turn(b);b.hp=899;turn(b);special(b,"rocket").use(t.tile);
+reset();b=boss();t=actor("comboEvader",2);turn(b);b.hp=2399;turn(b);special(b,"rocket").use(t.tile);
 t.tile.IsOccupiedByActor=false;t.pos=4;turn(b);eq(::state.attacks.len(),0,"combo fully countered by movement");
-reset();b=boss();t=actor("comboMarked",2);turn(b);b.hp=899;turn(b);special(b,"rocket").use(t.tile);
-D.interrupt(b,t,0,160);check(!t.skills.hasSkill("effects.afeix_douyu_mark")&&D.state(b).MarkID==0,"interrupt also cancels combo mark");
+reset();b=boss();t=actor("comboMarked",2);turn(b);b.hp=2399;turn(b);special(b,"rocket").use(t.tile);
+D.interrupt(b,t,0,700);check(!t.skills.hasSkill("effects.afeix_douyu_mark")&&D.state(b).MarkID==0,"interrupt also cancels combo mark");
 reset();b=boss();t=actor("barrageTarget",2);local f1=actor("friend1",3),f2=actor("friend2",4),f3=actor("friend3",5);t.neighbors=[f1,f2,f3];turn(b);
 check(special(b,"barrage").use(t.tile),"barrage has working native skill");
 eq(::state.attacks.len(),0,"barrage has no unannounced immediate damage");
@@ -115,7 +124,7 @@ reset();b=boss();t=actor("barrageEvader",2);turn(b);special(b,"barrage").use(t.t
 t.tile.IsOccupiedByActor=false;turn(b);eq(::state.attacks.len(),0,"movement avoids delayed barrage");
 eq(t.fatigue,0,"avoided barrage also avoids fatigue pressure");
 reset();b=boss();t=actor("adjacent",1);turn(b);check(special(b,"bite").use(t.tile),"native melee bite connected");
-eq(::state.attacks[0].min,75,"bite damage follows native properties hook");eq(b.ap,5,"native four AP bite cost");
+eq(::state.attacks[0].min,110,"bite damage follows native properties hook");eq(b.ap,5,"native four AP bite cost");
 eq(b.fatigue,12,"native bite fatigue cost");
 check(!special(b,"bite").use(actor("distant",3).tile),"bite respects native melee range");
 // Production custom AI: evaluation does not attack; camera and execute do.
@@ -155,4 +164,7 @@ eq(enemy.m.AIAgent.m.Behaviors[3].m.PossibleSkills[0],"actives.afeix_douyu_bite"
 eq(enemy.m.AIAgent.m.Behaviors[4].m.ID,::Const.AI.Behavior.ID.AttackSpecial,"enemy registers custom special AI");
 ::combatID="afeix_dream_douyu";check(D.isDream(),"dream CombatID recognized");
 ::combatID="afeix_douyu_final";check(!D.isDream(),"real final combat distinct from dream");
+eq(D.Stats.Hitpoints,4800,"fixed endgame health budget");
+eq(D.Stats.Armor[0],600.0,"finite body armor");
+check(D.Stats.MeleeDefense<40&&D.Stats.RangedDefense<40,"ordinary level-eleven attacks retain a viable hit chance");
 print("TESTS_PASSED="+::checks+"\n");

@@ -1,0 +1,1163 @@
+{
+  "version": "0.29.0-preview.6",
+  "internal_version": 70,
+  "created_at": "2026-10-03T11:37:30.330302+08:00",
+  "scope": "Local installed-game dream ending tests and native AI boss samples; no website publication or full real-world campaign acceptance. Private raw logs and local save details are retained locally; not redistributed.",
+  "package": {
+    "path": "dist/mod_afeix_expedition v0.29.0-preview.6.zip",
+    "sha256": "0bba1c6f1ef4297cf42ed9da4ac25269a93c1ad4b15c48063112c5a8d3e8d7dc",
+    "entries": 326,
+    "installed_path": "Local installed Battle Brothers data/mod_afeix_expedition.zip",
+    "installed_sha256": "0bba1c6f1ef4297cf42ed9da4ac25269a93c1ad4b15c48063112c5a8d3e8d7dc",
+    "installed": true,
+    "published": true,
+    "website_release_id": "a0ef0043-bd1b-4c1e-8ec7-aa70513dc735",
+    "website_detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "public_download_url": "https://bbmod.com/files/a0ef0043-bd1b-4c1e-8ec7-aa70513dc735/download/",
+    "publication_report": "docs/releases/publication-0.29.0-preview.6.md"
+  },
+  "game": {
+    "version": "1.5.2.3",
+    "enabled_mod_archives": [
+      "mod_afeix_dlc_afei_bundle.zip",
+      "mod_afeix_dlc_xiwen_regen.zip",
+      "mod_afeix_expedition.zip",
+      "mod_bbmod_item_inspector.zip",
+      "mod_bbmod_zhcn.zip",
+      "mod_fox_008.zip",
+      "mod_fox_037.zip",
+      "mod_fox_043.zip",
+      "mod_fox_quickly_swap_items.zip",
+      "zzzz_bbmod_preload.zip"
+    ],
+    "temporary_test_mod": "tests/engine/douyu",
+    "main_package_contains_test_mod": false
+  },
+  "combat": {
+    "target": "10-12 level11 fully equipped members",
+    "hp": 4800,
+    "armor": [
+      600,
+      450
+    ],
+    "ap": 9,
+    "melee": 110,
+    "ranged": 85,
+    "melee_defense": 22,
+    "ranged_defense": 14,
+    "phase2_damage_multiplier": 1.2,
+    "interrupt_hp_plus_armor": 700,
+    "bite": {
+      "min": 110,
+      "max": 135,
+      "armor_mult": 1.1,
+      "direct_fraction": 0.25
+    },
+    "interrupt_followup": "Next own turn uses ordinary bites; specials resume on the following own turn.",
+    "counterplay": [
+      "one own-turn warning",
+      "leave marked tiles",
+      "700 actual damage interrupts area charge",
+      "ordinary hit rolls and defenses",
+      "poison and bleeding",
+      "35 percent exposure after rocket or interruption"
+    ],
+    "regen": false,
+    "infinite_reinforcements": false,
+    "extra_ap": false
+  },
+  "latest_live": {
+    "package_sha256": "0bba1c6f1ef4297cf42ed9da4ac25269a93c1ad4b15c48063112c5a8d3e8d7dc",
+    "ending_cases": [
+      {
+        "case": "forced_early_boss_death",
+        "start": "11:27:04",
+        "complete": true,
+        "snapshot_logs": [
+          "11:27:30 SQ AFEIX_DOUYU_TEST REALITY_RESTORED=true roster=3 status=complete"
+        ],
+        "error_rows": 0,
+        "turnbar_recoveries": 0,
+        "forced_death_is_boundary_probe": true,
+        "screenshot": "build/douyu-playtest/final/forced-victory-party-defeat.png",
+        "screenshot_sha256": "d1d095ca81c433f06dd989a64b23029f1f0721bf572a8c70bc7c0f1ca640e86f"
+      },
+      {
+        "case": "native_menu_retreat",
+        "start": "11:32:04",
+        "complete": true,
+        "snapshot_logs": [
+          "11:32:32 SQ AFEIX_DOUYU_TEST REALITY_RESTORED=true roster=3 status=complete"
+        ],
+        "error_rows": 0,
+        "turnbar_recoveries": 0,
+        "forced_death_is_boundary_probe": false,
+        "screenshot": "build/douyu-playtest/final/menu-retreat-wake.png",
+        "screenshot_sha256": "9367f883754c5d475650bbf9c26469b5d1835b74dfbb7ba0e60b02ecc9c8cfdd"
+      },
+      {
+        "case": "normal_round_four_wake",
+        "start": "11:32:54",
+        "complete": true,
+        "snapshot_logs": [
+          "11:33:42 SQ AFEIX_DOUYU_TEST REALITY_RESTORED=true roster=3 status=complete"
+        ],
+        "error_rows": 0,
+        "turnbar_recoveries": 0,
+        "forced_death_is_boundary_probe": false,
+        "screenshot": "build/douyu-playtest/final/round-four-wake.png",
+        "screenshot_sha256": "c57dc4224dd130b724a57358dd9275f44e4e7a85fcae74ae5f1775a5a2a29e31"
+      },
+      {
+        "case": "turn_start_death_probe",
+        "start": "11:34:09",
+        "complete": true,
+        "snapshot_logs": [
+          "11:35:13 SQ AFEIX_DOUYU_TEST REALITY_RESTORED=true roster=3 status=complete"
+        ],
+        "error_rows": 0,
+        "turnbar_recoveries": 3,
+        "forced_death_is_boundary_probe": true,
+        "screenshot": "build/douyu-playtest/final/turn-start-death-wake.png",
+        "screenshot_sha256": "e56e42ce1e68b3056e4e7113391dfe204651af179f5e245ebdf6bfc38928233d"
+      }
+    ],
+    "skip_intro": {
+      "passed": true,
+      "screenshot": "build/douyu-playtest/final/skip-wake.png"
+    },
+    "departure_no_equipment_reward_spoilers": {
+      "passed": true,
+      "screenshot": "build/douyu-playtest/final/departure-no-spoilers.png"
+    },
+    "full_native_ai_trials": [],
+    "combat_live_evidence": {
+      "package_sha256": "78596657aef5f9b55b96d3a63656a8ca8485b0fb498af38f5da61841164bc64d",
+      "trials": [
+        {
+          "start": "11:11:41",
+          "completed": true,
+          "rounds": [
+            {
+              "time": "11:11:41",
+              "round": 1,
+              "survivors": 10,
+              "boss_hp": 4800,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "11:12:05",
+              "round": 2,
+              "survivors": 10,
+              "boss_hp": 4800,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "11:12:32",
+              "round": 3,
+              "survivors": 10,
+              "boss_hp": 4786,
+              "party_hp": 1036,
+              "party_hp_max": 1075,
+              "party_armor": 4038
+            },
+            {
+              "time": "11:13:00",
+              "round": 4,
+              "survivors": 10,
+              "boss_hp": 4662,
+              "party_hp": 1036,
+              "party_hp_max": 1075,
+              "party_armor": 4038
+            },
+            {
+              "time": "11:13:29",
+              "round": 5,
+              "survivors": 10,
+              "boss_hp": 4336,
+              "party_hp": 1020,
+              "party_hp_max": 1075,
+              "party_armor": 3906
+            },
+            {
+              "time": "11:13:58",
+              "round": 6,
+              "survivors": 10,
+              "boss_hp": 3737,
+              "party_hp": 1020,
+              "party_hp_max": 1075,
+              "party_armor": 3793
+            },
+            {
+              "time": "11:14:29",
+              "round": 7,
+              "survivors": 9,
+              "boss_hp": 2923,
+              "party_hp": 929,
+              "party_hp_max": 1075,
+              "party_armor": 3637
+            },
+            {
+              "time": "11:14:55",
+              "round": 8,
+              "survivors": 9,
+              "boss_hp": 2461,
+              "party_hp": 929,
+              "party_hp_max": 1075,
+              "party_armor": 3637
+            },
+            {
+              "time": "11:15:23",
+              "round": 9,
+              "survivors": 9,
+              "boss_hp": 1980,
+              "party_hp": 929,
+              "party_hp_max": 1075,
+              "party_armor": 3637
+            },
+            {
+              "time": "11:15:52",
+              "round": 10,
+              "survivors": 7,
+              "boss_hp": 1445,
+              "party_hp": 642,
+              "party_hp_max": 1075,
+              "party_armor": 2894
+            },
+            {
+              "time": "11:16:13",
+              "round": 11,
+              "survivors": 7,
+              "boss_hp": 1128,
+              "party_hp": 642,
+              "party_hp_max": 1075,
+              "party_armor": 2894
+            },
+            {
+              "time": "11:16:36",
+              "round": 12,
+              "survivors": 7,
+              "boss_hp": 819,
+              "party_hp": 642,
+              "party_hp_max": 1075,
+              "party_armor": 2894
+            },
+            {
+              "time": "11:16:59",
+              "round": 13,
+              "survivors": 7,
+              "boss_hp": 429,
+              "party_hp": 626,
+              "party_hp_max": 1075,
+              "party_armor": 2756
+            },
+            {
+              "time": "11:17:22",
+              "round": 14,
+              "survivors": 5,
+              "boss_hp": 76,
+              "party_hp": 371,
+              "party_hp_max": 1075,
+              "party_armor": 2049
+            }
+          ],
+          "error_rows": 0,
+          "turnbar_recoveries": 15,
+          "forced_kill_used": false,
+          "reality_restoration": [
+            "11:17:26 SQ AFEIX_DOUYU_TEST REALITY_RESTORED=true roster=3 status=pending"
+          ],
+          "result_log": "11:17:25 SQ AFEIX_DOUYU_TEST TRIAL_RESULT result=2 survivors=5 round=14 party_hp=371/1075 party_armor=2049",
+          "outcome": "EnemyDestroyed"
+        }
+      ],
+      "combat_and_ai_bytes_identical_to_final_package": {
+        "scripts/mods/afeix/douyu_combat.nut": true,
+        "scripts/mods/afeix/douyu_ai.nut": true,
+        "scripts/entity/tactical/enemies/afeix_douyu.nut": true,
+        "scripts/skills/effects/afeix_douyu_core_effect.nut": true,
+        "scripts/skills/actives/afeix_douyu_bite_skill.nut": true,
+        "scripts/skills/actives/afeix_douyu_mark_skill.nut": true,
+        "scripts/skills/actives/afeix_douyu_barrage_skill.nut": true,
+        "scripts/skills/actives/afeix_douyu_rocket_skill.nut": true
+      },
+      "difference": "Final package adds first-slot async query invalidation only; combat stats, attacks, AI and boss entity are byte-identical to the completed hard-win sample."
+    },
+    "method": "Ten unchanged level11 legendary-equipped dream actors with native charmed-player AI vs production Douyu AI; only dream time limit disabled. F7/F12 never used in these trials.",
+    "log": {
+      "private_path": ".cache/douyu-balance-20261003/final-log.html",
+      "sha256": "8244dbbd67073d6ca8cbf731fe514f44b5c15cb0ed19676694549cd290270adc",
+      "error_rows": 0
+    }
+  },
+  "history_not_latest_acceptance": [
+    {
+      "package_sha256": "bbaaa3e514251fdc62d3e85d47f6087df8f87ae93d4f8bd8f37fb3fd159e2c72",
+      "note": "3000 HP, weaker baseline; superseded",
+      "private_log": ".cache/douyu-balance-20261003/trial-3000-log.html",
+      "log_sha256": "146b0989591ee4ccdd64cef10d0423ff4738513430518bfc13e1171eba852d78",
+      "log_error_rows": 0,
+      "trials": [
+        {
+          "start": "09:42:37",
+          "completed": true,
+          "rounds": [
+            {
+              "time": "09:42:37",
+              "round": 1,
+              "survivors": 10,
+              "boss_hp": 3000
+            },
+            {
+              "time": "09:43:04",
+              "round": 2,
+              "survivors": 10,
+              "boss_hp": 2999
+            },
+            {
+              "time": "09:43:33",
+              "round": 3,
+              "survivors": 10,
+              "boss_hp": 2982
+            },
+            {
+              "time": "09:43:58",
+              "round": 4,
+              "survivors": 10,
+              "boss_hp": 2982
+            },
+            {
+              "time": "09:44:26",
+              "round": 5,
+              "survivors": 10,
+              "boss_hp": 2944
+            },
+            {
+              "time": "09:44:55",
+              "round": 6,
+              "survivors": 10,
+              "boss_hp": 2746
+            },
+            {
+              "time": "09:45:26",
+              "round": 7,
+              "survivors": 10,
+              "boss_hp": 1920
+            },
+            {
+              "time": "09:45:57",
+              "round": 8,
+              "survivors": 10,
+              "boss_hp": 1190
+            },
+            {
+              "time": "09:46:26",
+              "round": 9,
+              "survivors": 10,
+              "boss_hp": 613
+            }
+          ],
+          "error_rows": 0,
+          "turnbar_recoveries": 0,
+          "forced_kill_used": false,
+          "reality_restoration": [
+            "09:46:44 SQ AFEIX_DOUYU_TEST REALITY_RESTORED=true roster=3 status=pending"
+          ],
+          "result_log": "09:46:43 SQ AFEIX_DOUYU_TEST TRIAL_RESULT result=2 survivors=10 round=9",
+          "outcome": "EnemyDestroyed"
+        }
+      ]
+    },
+    {
+      "package_sha256": "4fdb518024b5be6748bad4a99574a9206426dad8542cf8386fc81538c3f61293",
+      "note": "4200 HP, melee90, no special recovery; superseded",
+      "private_log": ".cache/douyu-balance-20261003/trial-4200-log.html",
+      "log_sha256": "78d729121d8fa3d6d3997d6a1fa85dbaee5dcb66f0d8ad702f8ba746251445ab",
+      "log_error_rows": 0,
+      "trials": [
+        {
+          "start": "09:59:11",
+          "completed": true,
+          "rounds": [
+            {
+              "time": "09:59:11",
+              "round": 1,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "09:59:36",
+              "round": 2,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "10:00:05",
+              "round": 3,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 968,
+              "party_hp_max": 1075,
+              "party_armor": 3888
+            },
+            {
+              "time": "10:00:33",
+              "round": 4,
+              "survivors": 10,
+              "boss_hp": 4155,
+              "party_hp": 968,
+              "party_hp_max": 1075,
+              "party_armor": 3888
+            },
+            {
+              "time": "10:01:02",
+              "round": 5,
+              "survivors": 10,
+              "boss_hp": 4050,
+              "party_hp": 968,
+              "party_hp_max": 1075,
+              "party_armor": 3888
+            },
+            {
+              "time": "10:01:30",
+              "round": 6,
+              "survivors": 10,
+              "boss_hp": 3677,
+              "party_hp": 968,
+              "party_hp_max": 1075,
+              "party_armor": 3888
+            },
+            {
+              "time": "10:01:59",
+              "round": 7,
+              "survivors": 10,
+              "boss_hp": 3089,
+              "party_hp": 968,
+              "party_hp_max": 1075,
+              "party_armor": 3888
+            },
+            {
+              "time": "10:02:29",
+              "round": 8,
+              "survivors": 10,
+              "boss_hp": 2376,
+              "party_hp": 968,
+              "party_hp_max": 1075,
+              "party_armor": 3888
+            },
+            {
+              "time": "10:02:58",
+              "round": 9,
+              "survivors": 10,
+              "boss_hp": 1833,
+              "party_hp": 968,
+              "party_hp_max": 1075,
+              "party_armor": 3888
+            },
+            {
+              "time": "10:03:28",
+              "round": 10,
+              "survivors": 10,
+              "boss_hp": 1302,
+              "party_hp": 968,
+              "party_hp_max": 1075,
+              "party_armor": 3888
+            },
+            {
+              "time": "10:03:58",
+              "round": 11,
+              "survivors": 10,
+              "boss_hp": 733,
+              "party_hp": 968,
+              "party_hp_max": 1075,
+              "party_armor": 3888
+            },
+            {
+              "time": "10:04:29",
+              "round": 12,
+              "survivors": 10,
+              "boss_hp": 254,
+              "party_hp": 968,
+              "party_hp_max": 1075,
+              "party_armor": 3774
+            }
+          ],
+          "error_rows": 0,
+          "turnbar_recoveries": 0,
+          "forced_kill_used": false,
+          "reality_restoration": [
+            "10:04:41 SQ AFEIX_DOUYU_TEST REALITY_RESTORED=true roster=3 status=pending"
+          ],
+          "result_log": "10:04:40 SQ AFEIX_DOUYU_TEST TRIAL_RESULT result=2 survivors=10 round=12 party_hp=968/1075 party_armor=3774",
+          "outcome": "EnemyDestroyed"
+        }
+      ]
+    },
+    {
+      "package_sha256": "4fdb518024b5be6748bad4a99574a9206426dad8542cf8386fc81538c3f61293",
+      "note": "Turn-start death lock reproduced; unfinished, not a victory",
+      "private_log": ".cache/douyu-balance-20261003/diagnostic-4200-log.html",
+      "log_sha256": "54aec11be18edc72775cf14931ddb2ad6ea5ada464d8b8cbc5a001cf9ec994d4",
+      "log_error_rows": 1,
+      "trials": [
+        {
+          "start": "10:10:25",
+          "completed": false,
+          "rounds": [
+            {
+              "time": "10:10:25",
+              "round": 1,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "10:10:52",
+              "round": 2,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "10:11:17",
+              "round": 3,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1034,
+              "party_hp_max": 1075,
+              "party_armor": 4038
+            },
+            {
+              "time": "10:11:41",
+              "round": 4,
+              "survivors": 10,
+              "boss_hp": 4186,
+              "party_hp": 1034,
+              "party_hp_max": 1075,
+              "party_armor": 4038
+            },
+            {
+              "time": "10:12:09",
+              "round": 5,
+              "survivors": 10,
+              "boss_hp": 4140,
+              "party_hp": 1018,
+              "party_hp_max": 1075,
+              "party_armor": 3900
+            },
+            {
+              "time": "10:12:37",
+              "round": 6,
+              "survivors": 10,
+              "boss_hp": 3814,
+              "party_hp": 1018,
+              "party_hp_max": 1075,
+              "party_armor": 3900
+            },
+            {
+              "time": "10:13:08",
+              "round": 7,
+              "survivors": 10,
+              "boss_hp": 3467,
+              "party_hp": 1018,
+              "party_hp_max": 1075,
+              "party_armor": 3900
+            },
+            {
+              "time": "10:13:38",
+              "round": 8,
+              "survivors": 10,
+              "boss_hp": 3110,
+              "party_hp": 1018,
+              "party_hp_max": 1075,
+              "party_armor": 3900
+            },
+            {
+              "time": "10:14:07",
+              "round": 9,
+              "survivors": 10,
+              "boss_hp": 2536,
+              "party_hp": 1018,
+              "party_hp_max": 1075,
+              "party_armor": 3900
+            },
+            {
+              "time": "10:14:37",
+              "round": 10,
+              "survivors": 10,
+              "boss_hp": 1763,
+              "party_hp": 1018,
+              "party_hp_max": 1075,
+              "party_armor": 3900
+            },
+            {
+              "time": "10:15:07",
+              "round": 11,
+              "survivors": 9,
+              "boss_hp": 1383,
+              "party_hp": 820,
+              "party_hp_max": 1075,
+              "party_armor": 3226
+            }
+          ],
+          "error_rows": 1,
+          "turnbar_recoveries": 0,
+          "forced_kill_used": false,
+          "reality_restoration": []
+        }
+      ]
+    },
+    {
+      "package_sha256": "a63a00cf0697a4999f9e900b1cb71a896f7289fa369c1e3032b8de807a168b5a",
+      "note": "4200 HP, melee110, recovery; before turnbar repair; unfinished, not a victory",
+      "private_log": ".cache/douyu-balance-20261003/trial-a63a-stalled-log.html",
+      "log_sha256": "169f43be85f26a7e86dbfd38f704477129cb3ec3d0eaedcc0fdc60d34d06800a",
+      "log_error_rows": 1,
+      "trials": [
+        {
+          "start": "10:25:13",
+          "completed": false,
+          "rounds": [
+            {
+              "time": "10:25:13",
+              "round": 1,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "10:25:39",
+              "round": 2,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "10:26:10",
+              "round": 3,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1010,
+              "party_hp_max": 1075,
+              "party_armor": 3814
+            },
+            {
+              "time": "10:26:37",
+              "round": 4,
+              "survivors": 10,
+              "boss_hp": 4118,
+              "party_hp": 1010,
+              "party_hp_max": 1075,
+              "party_armor": 3814
+            },
+            {
+              "time": "10:27:04",
+              "round": 5,
+              "survivors": 10,
+              "boss_hp": 4032,
+              "party_hp": 987,
+              "party_hp_max": 1075,
+              "party_armor": 3690
+            },
+            {
+              "time": "10:27:32",
+              "round": 6,
+              "survivors": 10,
+              "boss_hp": 3785,
+              "party_hp": 987,
+              "party_hp_max": 1075,
+              "party_armor": 3572
+            },
+            {
+              "time": "10:28:02",
+              "round": 7,
+              "survivors": 10,
+              "boss_hp": 3457,
+              "party_hp": 784,
+              "party_hp_max": 1075,
+              "party_armor": 2816
+            },
+            {
+              "time": "10:28:32",
+              "round": 8,
+              "survivors": 10,
+              "boss_hp": 2820,
+              "party_hp": 784,
+              "party_hp_max": 1075,
+              "party_armor": 2816
+            },
+            {
+              "time": "10:29:01",
+              "round": 9,
+              "survivors": 10,
+              "boss_hp": 2314,
+              "party_hp": 770,
+              "party_hp_max": 1075,
+              "party_armor": 2678
+            },
+            {
+              "time": "10:29:31",
+              "round": 10,
+              "survivors": 10,
+              "boss_hp": 1962,
+              "party_hp": 730,
+              "party_hp_max": 1075,
+              "party_armor": 2579
+            },
+            {
+              "time": "10:30:06",
+              "round": 11,
+              "survivors": 5,
+              "boss_hp": 1588,
+              "party_hp": 434,
+              "party_hp_max": 1075,
+              "party_armor": 1850
+            }
+          ],
+          "error_rows": 1,
+          "turnbar_recoveries": 0,
+          "forced_kill_used": false,
+          "reality_restoration": []
+        }
+      ]
+    },
+    {
+      "package_sha256": "ec2b5b58314b3a6e8910491e06ebb545e37c6050fddb97168fc079fd9eeaa8b4",
+      "note": "4200 HP, 500 interrupt, 85-110 bite: two full AI wins with ten survivors and little loss; increased pressure after these observations",
+      "private_log": ".cache/douyu-balance-20261003/trial-ec2b-two-wins-log.html",
+      "log_sha256": "040dab84716a124727eca36b2f2bc239474cee2f8d259be0f60c639fbb5a5813",
+      "log_error_rows": 0,
+      "trials": [
+        {
+          "start": "10:53:12",
+          "completed": true,
+          "rounds": [
+            {
+              "time": "10:53:12",
+              "round": 1,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "10:53:38",
+              "round": 2,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "10:54:05",
+              "round": 3,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1034,
+              "party_hp_max": 1075,
+              "party_armor": 4038
+            },
+            {
+              "time": "10:54:35",
+              "round": 4,
+              "survivors": 10,
+              "boss_hp": 4175,
+              "party_hp": 1034,
+              "party_hp_max": 1075,
+              "party_armor": 4038
+            },
+            {
+              "time": "10:55:01",
+              "round": 5,
+              "survivors": 10,
+              "boss_hp": 4066,
+              "party_hp": 1034,
+              "party_hp_max": 1075,
+              "party_armor": 4038
+            },
+            {
+              "time": "10:55:30",
+              "round": 6,
+              "survivors": 10,
+              "boss_hp": 3705,
+              "party_hp": 1024,
+              "party_hp_max": 1075,
+              "party_armor": 3900
+            },
+            {
+              "time": "10:56:01",
+              "round": 7,
+              "survivors": 10,
+              "boss_hp": 3016,
+              "party_hp": 1024,
+              "party_hp_max": 1075,
+              "party_armor": 3900
+            },
+            {
+              "time": "10:56:31",
+              "round": 8,
+              "survivors": 10,
+              "boss_hp": 2348,
+              "party_hp": 1024,
+              "party_hp_max": 1075,
+              "party_armor": 3900
+            },
+            {
+              "time": "10:57:01",
+              "round": 9,
+              "survivors": 10,
+              "boss_hp": 1602,
+              "party_hp": 969,
+              "party_hp_max": 1075,
+              "party_armor": 3772
+            },
+            {
+              "time": "10:57:30",
+              "round": 10,
+              "survivors": 10,
+              "boss_hp": 1022,
+              "party_hp": 969,
+              "party_hp_max": 1075,
+              "party_armor": 3772
+            },
+            {
+              "time": "10:58:00",
+              "round": 11,
+              "survivors": 10,
+              "boss_hp": 303,
+              "party_hp": 936,
+              "party_hp_max": 1075,
+              "party_armor": 3750
+            }
+          ],
+          "error_rows": 0,
+          "turnbar_recoveries": 0,
+          "forced_kill_used": false,
+          "reality_restoration": [
+            "10:58:16 SQ AFEIX_DOUYU_TEST REALITY_RESTORED=true roster=3 status=pending"
+          ],
+          "result_log": "10:58:15 SQ AFEIX_DOUYU_TEST TRIAL_RESULT result=2 survivors=10 round=11 party_hp=936/1075 party_armor=3750",
+          "outcome": "EnemyDestroyed"
+        },
+        {
+          "start": "10:59:50",
+          "completed": true,
+          "rounds": [
+            {
+              "time": "10:59:50",
+              "round": 1,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "11:00:13",
+              "round": 2,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "11:00:39",
+              "round": 3,
+              "survivors": 10,
+              "boss_hp": 4200,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "11:01:08",
+              "round": 4,
+              "survivors": 10,
+              "boss_hp": 4185,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "11:01:38",
+              "round": 5,
+              "survivors": 10,
+              "boss_hp": 3902,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "11:02:09",
+              "round": 6,
+              "survivors": 10,
+              "boss_hp": 3164,
+              "party_hp": 1072,
+              "party_hp_max": 1075,
+              "party_armor": 4082
+            },
+            {
+              "time": "11:02:40",
+              "round": 7,
+              "survivors": 10,
+              "boss_hp": 2556,
+              "party_hp": 1072,
+              "party_hp_max": 1075,
+              "party_armor": 4082
+            },
+            {
+              "time": "11:03:09",
+              "round": 8,
+              "survivors": 10,
+              "boss_hp": 2097,
+              "party_hp": 1060,
+              "party_hp_max": 1075,
+              "party_armor": 3984
+            },
+            {
+              "time": "11:03:40",
+              "round": 9,
+              "survivors": 10,
+              "boss_hp": 1589,
+              "party_hp": 1060,
+              "party_hp_max": 1075,
+              "party_armor": 3817
+            },
+            {
+              "time": "11:04:10",
+              "round": 10,
+              "survivors": 10,
+              "boss_hp": 878,
+              "party_hp": 1051,
+              "party_hp_max": 1075,
+              "party_armor": 3773
+            },
+            {
+              "time": "11:04:39",
+              "round": 11,
+              "survivors": 10,
+              "boss_hp": 301,
+              "party_hp": 1051,
+              "party_hp_max": 1075,
+              "party_armor": 3773
+            }
+          ],
+          "error_rows": 0,
+          "turnbar_recoveries": 0,
+          "forced_kill_used": false,
+          "reality_restoration": [
+            "11:04:52 SQ AFEIX_DOUYU_TEST REALITY_RESTORED=true roster=3 status=pending"
+          ],
+          "result_log": "11:04:51 SQ AFEIX_DOUYU_TEST TRIAL_RESULT result=2 survivors=10 round=11 party_hp=1051/1075 party_armor=3773",
+          "outcome": "EnemyDestroyed"
+        }
+      ]
+    },
+    {
+      "package_sha256": "78596657aef5f9b55b96d3a63656a8ca8485b0fb498af38f5da61841164bc64d",
+      "note": "Final combat stats and AI: normal victory with five survivors at round14, no fight errors. Subsequent forced-boss ending exposed one stale frontend query error, fixed in final package.",
+      "private_log": ".cache/douyu-balance-20261003/trial-7859-hard-win-log.html",
+      "log_sha256": "e93b247ff1295db5cd951dba3ae58984f4a2b3a8ef516774455228b3ac2bd61b",
+      "log_error_rows": 1,
+      "trials": [
+        {
+          "start": "11:11:41",
+          "completed": true,
+          "rounds": [
+            {
+              "time": "11:11:41",
+              "round": 1,
+              "survivors": 10,
+              "boss_hp": 4800,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "11:12:05",
+              "round": 2,
+              "survivors": 10,
+              "boss_hp": 4800,
+              "party_hp": 1075,
+              "party_hp_max": 1075,
+              "party_armor": 4176
+            },
+            {
+              "time": "11:12:32",
+              "round": 3,
+              "survivors": 10,
+              "boss_hp": 4786,
+              "party_hp": 1036,
+              "party_hp_max": 1075,
+              "party_armor": 4038
+            },
+            {
+              "time": "11:13:00",
+              "round": 4,
+              "survivors": 10,
+              "boss_hp": 4662,
+              "party_hp": 1036,
+              "party_hp_max": 1075,
+              "party_armor": 4038
+            },
+            {
+              "time": "11:13:29",
+              "round": 5,
+              "survivors": 10,
+              "boss_hp": 4336,
+              "party_hp": 1020,
+              "party_hp_max": 1075,
+              "party_armor": 3906
+            },
+            {
+              "time": "11:13:58",
+              "round": 6,
+              "survivors": 10,
+              "boss_hp": 3737,
+              "party_hp": 1020,
+              "party_hp_max": 1075,
+              "party_armor": 3793
+            },
+            {
+              "time": "11:14:29",
+              "round": 7,
+              "survivors": 9,
+              "boss_hp": 2923,
+              "party_hp": 929,
+              "party_hp_max": 1075,
+              "party_armor": 3637
+            },
+            {
+              "time": "11:14:55",
+              "round": 8,
+              "survivors": 9,
+              "boss_hp": 2461,
+              "party_hp": 929,
+              "party_hp_max": 1075,
+              "party_armor": 3637
+            },
+            {
+              "time": "11:15:23",
+              "round": 9,
+              "survivors": 9,
+              "boss_hp": 1980,
+              "party_hp": 929,
+              "party_hp_max": 1075,
+              "party_armor": 3637
+            },
+            {
+              "time": "11:15:52",
+              "round": 10,
+              "survivors": 7,
+              "boss_hp": 1445,
+              "party_hp": 642,
+              "party_hp_max": 1075,
+              "party_armor": 2894
+            },
+            {
+              "time": "11:16:13",
+              "round": 11,
+              "survivors": 7,
+              "boss_hp": 1128,
+              "party_hp": 642,
+              "party_hp_max": 1075,
+              "party_armor": 2894
+            },
+            {
+              "time": "11:16:36",
+              "round": 12,
+              "survivors": 7,
+              "boss_hp": 819,
+              "party_hp": 642,
+              "party_hp_max": 1075,
+              "party_armor": 2894
+            },
+            {
+              "time": "11:16:59",
+              "round": 13,
+              "survivors": 7,
+              "boss_hp": 429,
+              "party_hp": 626,
+              "party_hp_max": 1075,
+              "party_armor": 2756
+            },
+            {
+              "time": "11:17:22",
+              "round": 14,
+              "survivors": 5,
+              "boss_hp": 76,
+              "party_hp": 371,
+              "party_hp_max": 1075,
+              "party_armor": 2049
+            }
+          ],
+          "error_rows": 0,
+          "turnbar_recoveries": 15,
+          "forced_kill_used": false,
+          "reality_restoration": [
+            "11:17:26 SQ AFEIX_DOUYU_TEST REALITY_RESTORED=true roster=3 status=pending"
+          ],
+          "result_log": "11:17:25 SQ AFEIX_DOUYU_TEST TRIAL_RESULT result=2 survivors=5 round=14 party_hp=371/1075 party_armor=2049",
+          "outcome": "EnemyDestroyed"
+        }
+      ]
+    }
+  ],
+  "entrance_live_report": "build/dream-entry-0.29-preview.4.json",
+  "offline": {
+    "syntax_files": 148,
+    "behavior_assertions": 45956,
+    "package_crc_and_source_bytes_passed": true,
+    "report": "build/gameplay-validation.json",
+    "in_game_tested": false
+  },
+  "cleanup": {
+    "game_closed_before_restore": true,
+    "all_original_files_byte_equal": true,
+    "restored_files": "Original local save bytes verified; private filenames and hashes omitted.",
+    "test_mod_removed": true,
+    "steam_appid_file_absent": true,
+    "steam_shader_precache_restored": true,
+    "steam_shader_setting_original": true,
+    "steam_vulkan_background_original": false,
+    "steam_cloud_state_verified": false,
+    "private_log_sha256": "8244dbbd67073d6ca8cbf731fe514f44b5c15cb0ed19676694549cd290270adc",
+    "steam_shader_setting_observed_after_restore": true,
+    "steam_vulkan_background_observed_after_restore": false
+  },
+  "limits": [
+    "AI samples do not estimate human win rate; warning avoidance and all unique skills were not validated in the native charmed-player AI.",
+    "Full four-stage uninterrupted playthrough remains separate acceptance.",
+    "Real-world marching, arbitrary party composition and reward settlement remain separate acceptance.",
+    "Local original save bytes restored; no claim about remote Steam Cloud state."
+  ],
+  "source_hashes": {
+    "src/scripts/mods/afeix/dream_flow.nut": "8b75b1899bf4a7819eacb42030259a5493238ce5fb35a84b67a39e7389111643",
+    "src/scripts/mods/afeix/dream_hooks.nut": "a03adbe28616f692a233067fe9e4bcd49479d04415afc9a07862fd66c35ef9dc",
+    "src/scripts/mods/afeix/douyu_combat.nut": "f98c3cabf0106925cca4f56a1de84530c50e993862df0b79d393607dda397b8d",
+    "src/scripts/mods/afeix/douyu_turnbar_hooks.nut": "7758fad19bcab6e6acc4aa570d02052ed5602df47de74ec9892e8bbdeaeeef76",
+    "src/ui/mods/afeix/douyu_turnbar.js": "3dfe43e38737cbc296625b7bd937b2e3daffd50da0b637aa66c9d0b2a07e32d1",
+    "tests/engine/douyu/src/scripts/!mods_preload/mod_afeix_douyu_playtest.nut": "2145161ee09017c62b1ef5704fcf70c4321d1093ef81519a606d56d3926117ed"
+  }
+}

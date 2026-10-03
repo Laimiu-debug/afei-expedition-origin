@@ -2,7 +2,13 @@
 
 阿飞主题的《战场兄弟》独立公司起源项目，目标环境为 PC 原版与官方 DLC。
 
-**v0.29.0-preview.3 梦境与现实终局试玩版，已发布至BBMOD**：开局采用原版新战团教程式的分步故事弹窗，“黑旗未满 → 三人同梦 → 黑旗初醒 → 黑旗启程”，配夜营、道路插画与三位队长头像。刀一十人全员11级、传奇配装，依次挑战蜘蛛、恐狼、林德虫与“斗鱼·深渊之主”；梦醒接回三人黑旗，自由招募组队。略过梦境也介绍现实旅程，Esc可暂时收起，F8能继续或只读回看背景。现实大陆的唯一传奇据点“梦潮祭场”需正常行军抵达；击杀掉落鲨鱼皮重甲、鱼翅双手砍刀、鲨牙单手矛各一件。保留《战场兄弟》美术与原版装备动作。离线检查和包校验见[预览报告](build/dream-story-0.29-preview.3.json)；公开下载与本地完整主包、源码一致；尚未安装或完成实机验收。[本地预览包](<dist/mod_afeix_expedition v0.29.0-preview.3.zip>) · [序章设计与正文编辑入口](docs/design/dream-opening.md) · [现实据点与装备](docs/design/douyu-world-and-trophies.md) · [试玩验收](docs/playtest-dream-0.29.md)。 [官网下载](https://bbmod.com/files/11748b97-53c8-4052-acf9-39f7434306ef/download/) · [更新说明](docs/releases/v0.29.0-preview.3.md) · [发布记录](docs/releases/publication-0.29.0-preview.3.md)。
+**v0.29.0-preview.6 梦潮结局与斗鱼调整，已发布官网**：梦境无论撤退、败战或提前击败斗鱼，都由梦潮剧情杀收束，再接回现实三人。略过也先阅读梦醒；介绍保留祭场的神秘感。斗鱼加强，并修正持续集火使它不断取消蓄力、挤掉普通攻击的循环；走位、打断与盾防仍有效。本机已安装，定向实机结果与完整对战边界见[更新说明](docs/releases/v0.29.0-preview.6.md)和[测试报告](build/douyu-balance-0.29-preview.6.json)。本版已发布官网：[官网下载](https://bbmod.com/files/a0ef0043-bd1b-4c1e-8ec7-aa70513dc735/download/) · [发布记录](docs/releases/publication-0.29.0-preview.6.md)。[本地完整主包](<dist/mod_afeix_expedition v0.29.0-preview.6.zip>)。
+
+**v0.29.0-preview.5 历史文案调整，已累计至preview.6**：梦醒启程、F8“再赴梦潮”和祭场说明不再提前透露装备奖励，只保留背景、方位与挑战信息，让祭场的秘密留待探索。[本地完整主包](<dist/mod_afeix_expedition v0.29.0-preview.5.zip>) · [更新说明](docs/releases/v0.29.0-preview.5.md)。
+
+**v0.29.0-preview.4 梦境入口修复，已完成定向实机验证并包含于preview.5**：修复原版初始化随机调用、装备继承字段、敌方兵种布阵数据和战术阵营底座分配四处兼容错误。新开局及原失败存档的 F8 → 再赴梦潮均能进入第一幕，十人部署、移动、攻击和菜单撤退梦醒通过；45,818条离线断言、324个包文件校验通过。原存档已按字节还原，本版未发布官网，完整四幕与现实终局仍待实机验收。[本地修复包](<dist/mod_afeix_expedition v0.29.0-preview.4.zip>) · [更新说明](docs/releases/v0.29.0-preview.4.md) · [实机报告](build/dream-entry-0.29-preview.4.json) · [实战截图](build/dream-entry-preview.4/new-campaign-battle.png)。F8继续梦境须在友好城镇旁或安全扎营处。
+
+**v0.29.0-preview.3 梦境与现实终局试玩版，已发布至BBMOD**：开局采用原版新战团教程式的分步故事弹窗，“黑旗未满 → 三人同梦 → 黑旗初醒 → 黑旗启程”，配夜营、道路插画与三位队长头像。刀一十人全员11级、传奇配装，依次挑战蜘蛛、恐狼、林德虫与“斗鱼·深渊之主”；梦醒接回三人黑旗，自由招募组队。略过梦境也介绍现实旅程，Esc可暂时收起，F8能继续或只读回看背景。现实大陆的唯一传奇据点“梦潮祭场”需正常行军抵达，潮声背后的秘密留待亲自探索。保留《战场兄弟》美术与原版装备动作。离线检查和包校验见[预览报告](build/dream-story-0.29-preview.3.json)；公开下载与本地完整主包、源码一致；发布时仅完成离线与公开包验证，梦境入口修复见上方preview.4记录。[本地预览包](<dist/mod_afeix_expedition v0.29.0-preview.3.zip>) · [序章设计与正文编辑入口](docs/design/dream-opening.md) · [现实据点与装备](docs/design/douyu-world-and-trophies.md) · [试玩验收](docs/playtest-dream-0.29.md)。 [官网下载](https://bbmod.com/files/11748b97-53c8-4052-acf9-39f7434306ef/download/) · [更新说明](docs/releases/v0.29.0-preview.3.md) · [发布记录](docs/releases/publication-0.29.0-preview.3.md)。
 
 **v0.28.14 已发布至 BBMOD**：撤回脸与头发拆层，恢复完整头像，默认隐藏全队头盔；旧档首次升级同步隐藏，之后手动显示/隐藏选择随存档保留，头盔防护与装备效果正常生效。[官网下载](https://bbmod.com/files/8d447823-474c-4d2e-9daa-dfea80fb0075/download/) · [完整主包](<dist/mod_afeix_expedition v0.28.14.zip>) · [更新说明](docs/releases/v0.28.14.md) · [发布记录](docs/releases/publication-0.28.14.md)。33,715条离线断言与288个包文件校验通过，公开下载与源码一致；尚未安装或完成实机验收。本次外观回退无需重开战役。
 
@@ -78,7 +84,7 @@ v0.24.0 名单更正（2026-09-28）：删除陈知含后共 **34 人**；宋暖
 
 独立扩展：[希文与里根儿 DLC 0.2.5](https://bbmod.com/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/) · [下载 DLC .zip](https://bbmod.com/files/76341887-9c0c-4a58-aaf7-fd2ef7f478ac/download/)。战犬里根儿随黑旗启程，怀念在环世界动物园与飞碟共度的日子。开局在队伍仓库查看，战前给一名队员装备即可释放。需与主包一起安装并新开战役；希文第35日起满足全部门槛后进入招募队列。见[DLC 安装说明](dlc/xiwen-regen/README.md)。
 
-整合 DLC 已发布：[阿飞衣橱与哇哇叫 0.1.0](https://bbmod.com/mods/e554fc31-28b0-4b26-a8f5-295141ed79ef/) · [官网下载](https://bbmod.com/files/a0cec096-c0c4-4314-9f75-819dc445d629/download/)。一个 ZIP 同时包含六套外观、两张战败 CG 与五段音量增强版受伤原声。使用整合包时移走原独立皮肤和语音包；需要主包 v0.28.12 或更新版，已对 v0.28.14 两种加载顺序各通过5,108条离线组合断言。公开下载与本地包及组件资源一致，尚未实机验收。
+整合 DLC 已发布：[阿飞衣橱与哇哇叫 0.1.0](https://bbmod.com/mods/e554fc31-28b0-4b26-a8f5-295141ed79ef/) · [官网下载](https://bbmod.com/files/a0cec096-c0c4-4314-9f75-819dc445d629/download/) · [安装说明](dlc/afei-bundle/README.md) · [发布与下架记录](docs/releases/publication-dlc-afei-bundle-0.1.0.md)。一个 ZIP 同时包含六套外观、两张战败 CG 与五段音量增强版受伤原声。使用整合包时移走原独立皮肤和语音包；需要主包 v0.28.12 或更新版，已对 v0.28.14 两种加载顺序各通过5,108条离线组合断言。公开下载与本地包及组件资源一致，尚未实机验收。
 
 原独立语音 DLC 已于 2026-10-02 下架，其 0.1.0、0.1.2 公开页面与下载均已撤回；独立皮肤包从未上架。请使用上面的整合 DLC，旧语音源码和试听保留在[原声记录](dlc/afei-voice/README.md)。
 

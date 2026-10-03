@@ -10,13 +10,14 @@ this.afeix_douyu_bite_skill <- this.inherit("scripts/skills/skill", {
         this.m.Type = this.Const.SkillType.Active; this.m.Order = this.Const.SkillOrder.OffensiveTargeted;
         this.m.IsSerialized = false; this.m.IsActive = true; this.m.IsTargeted = true; this.m.IsAttack = true;
         this.m.ActionPointCost = 4; this.m.FatigueCost = 12; this.m.MinRange = 1; this.m.MaxRange = 1;
-        this.m.DirectDamageMult = 0.2;
+        this.m.DirectDamageMult = ::AfeixExpedition.Douyu.Attacks.bite.Direct;
         this.m.InjuriesOnBody = this.Const.Injury.CuttingAndPiercingBody;
         this.m.InjuriesOnHead = this.Const.Injury.CuttingAndPiercingHead;
     },
     function onAnySkillUsed(_skill, _targetEntity, _properties) {
         if(_skill != this) return;
-        _properties.DamageRegularMin = 75; _properties.DamageRegularMax = 100; _properties.DamageArmorMult = 1.0;
+        local tuning = ::AfeixExpedition.Douyu.Attacks.bite;
+        _properties.DamageRegularMin = tuning.Min; _properties.DamageRegularMax = tuning.Max; _properties.DamageArmorMult = tuning.Armor;
     },
     function onUse(_user, _targetTile) { return this.attackEntity(_user, _targetTile.getEntity()); }
 });

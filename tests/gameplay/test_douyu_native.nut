@@ -47,18 +47,21 @@ check(D.state(b.skills.getActor())==core.m,"core state resolves through native w
 check(b.props.IsImmuneToFearAndPanic,"boss defines missing native mental-target compatibility property");
 check(!::AfeixExpedition.memberMentalTarget(b.skills.getActor()),"production origin mental targeting safely rejects boss through native reference");
 local properties=b.skills.buildPropertiesForUse(rocket,::WeakTableRef(t));
-check(properties.DamageRegularMin==90&&properties.DamageRegularMax==120,"native properties dispatches rocket damage hook");
-check(properties.DamageArmorMult==1.1,"native properties dispatches rocket armor damage");
+check(properties.DamageRegularMin==125&&properties.DamageRegularMax==155,"native properties dispatches rocket damage hook");
+check(properties.DamageArmorMult==1.2,"native properties dispatches rocket armor damage");
 b.skills.onTurnStart();check(core.m.Turn==1,"native container dispatches one boss turn");
 check(rocket.use(t.tile),"native container rocket use succeeds");
 check(core.m.Charging&&t.tile.Properties.IsMarkedForImpact,"native container keeps warning between turns");
 // Container sets IsUpdating=true around callbacks: interrupt/update must defer.
-b.skills.onDamageReceived(::WeakTableRef(t),0,160);
+b.skills.onDamageReceived(::WeakTableRef(t),0,700);
 check(!core.m.Charging&&core.m.BlastTiles.len()==0,"native damage callback interrupts and clears warning");
 check(!b.skills.m.IsUpdating,"native callback releases update lock");
 check(b.props.DamageReceivedTotalMult>1.34,"deferred update applies exposed multiplier");
 ::state.round++;b.ap=9;b.skills.onTurnStart();
 check(core.m.Turn==2&&b.props.DamageReceivedTotalMult==1.0,"exposure expires through native turn update");
+check(!b.skills.getSkillByID("actives.afeix_douyu_mark").isUsable(),"native container keeps interrupted special recovery for next own turn");
+::state.round++;b.ap=9;b.skills.onTurnStart();
+check(core.m.SpecialRecoveryUntil==core.m.Turn,"native recovery ends after one own turn");
 check(b.skills.getSkillByID("actives.afeix_douyu_mark").use(t.tile),"native mark use succeeds");
 local mark=t.skills.getSkillByID("effects.afeix_douyu_mark");
 check(mark!=null&&!mark.getContainer().isNull(),"native target mark has valid weak container");

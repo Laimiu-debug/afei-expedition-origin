@@ -24,7 +24,7 @@ A.DreamStages <- [
     { id = "spiders", name = "蛛网之间", text = "火光照出了蛛网。十个熟悉又陌生的身影各自站定，传奇兵器握在手中，像已经同行了很久。先撕开蛛网，看看这支队伍怎样互相接应。", script = "scripts/entity/tactical/enemies/spider", count = 5 },
     { id = "wolves", name = "狼影逼近", text = "蛛网散了，梦沼中的空地又完整地浮现出来，爪声随后响起。恐狼从两侧绕来，前排需要守住缺口，后排也得找好下一步的退路。", script = "scripts/entity/tactical/enemies/direwolf", count = 4 },
     { id = "lindwurm", name = "梦中的长鳞", text = "地面忽然鼓起。林德虫盘住前路，头尾同时逼近。十人的传奇装备仍然明亮，这一次，站位与轮换比追着伤害跑更重要。", script = "scripts/entity/tactical/enemies/lindwurm", count = 1 },
-    { id = "douyu", name = "斗鱼·深渊之主", text = "林德虫倒下后，水声从梦沼四周涌来。橙色背鳍从雾中抬起，礼炮映着火光。\n\n斗鱼在等黑旗。这一幕重新以完整队伍开始；第三轮结束，梦潮便会吞没空地，让三位队长醒来。", script = "scripts/entity/tactical/enemies/afeix_douyu", count = 1 }
+    { id = "douyu", name = "斗鱼·深渊之主", text = "林德虫倒下后，水声从梦沼四周涌来。橙色背鳍从雾中抬起，礼炮映着火光。\n\n斗鱼在等黑旗。十人重新站定，雾后的潮声却越来越近。", script = "scripts/entity/tactical/enemies/afeix_douyu", count = 1 }
 ];
 A.isDreamCombat <- function() { return this.DreamSession != null; };
 A.dreamStage <- function() { return this.get("dream_stage", 0); };
@@ -64,8 +64,9 @@ A.skipDream <- function() {
     this.set("dream_status", "skipped");
     this.set("dream_stage", 0);
     this.set("douyu_final_unlocked", true);
-    this.set("dream_wake_pending", false);
-    this.set("dream_departure_pending", true);
+    this.set("dream_wake_reason", "douyu");
+    this.set("dream_wake_pending", true);
+    this.set("dream_departure_pending", false);
     this.DreamLaunchRequest = null;
     this.DreamOpeningQueued = false;
     this.DreamStoryDismissed = false;
@@ -123,9 +124,21 @@ A.dreamCombatProperties <- function(stage, dream) {
     p.IsWithoutAmbience = true;
     p.IsFogOfWarVisible = true;
     p.IsUsingSetPlayers = dream;
+    // Scenario safety allocates 32 tactical faction slots; the campaign may
+    // have fewer factions. Native arena encounters disable this same pass.
+    p.IsAutoAssigningBases = !dream;
     local faction = ::World.FactionManager.getFactionOfType(::Const.FactionType.Beasts).getID();
-    for (local i = 0; i < d.count; ++i)
-        p.Entities.push({ Script = d.script, Faction = faction, Variant = 0, Strength = 0, Party = null });
+    local troopKeys = ["Spider", "Direwolf", "Lindwurm", "Unhold"];
+    for (local i = 0; i < d.count; ++i) {
+        // Native formation reads Row and ID, and setup/death retain the world
+        // troop. Clone the complete native definition for every enemy.
+        local troop = clone ::Const.World.Spawn.Troops[troopKeys[stage]];
+        troop.Script = d.script;
+        troop.Faction <- faction;
+        troop.Party <- null;
+        troop.Variant = 0;
+        p.Entities.push(troop);
+    }
     return p;
 };
 A.startDreamCombat <- function(stage) {
@@ -133,7 +146,7 @@ A.startDreamCombat <- function(stage) {
     local p = this.dreamCombatProperties(stage, true), temporary = ::World.getTemporaryRoster();
     local session = {
         stage = stage, actors = [], flags = {}, statistics = ::World.Statistics,
-        dreamStatistics = null, ending = false, victory = false, wake = "",
+        dreamStatistics = null, ending = false, victory = false, wake = "", exitStarted = false, exitAt = 0.0,
         startClock = ::Time.getVirtualTimeF(), startSeed = ::World.State.m.CombatSeed,
         lastWorldSpeed = ::World.State.m.LastWorldSpeedMult,
         resources = { Money = ::World.Assets.m.Money, ArmorParts = ::World.Assets.m.ArmorParts,
@@ -195,10 +208,30 @@ A.endDreamTactical <- function(state, victory) {
     local s = this.DreamSession;
     s.ending = true;
     s.victory = victory && s.stage < 3 && s.wake == "";
-    if (s.stage == 3) s.wake = "douyu";
-    if (!s.victory && s.wake == "") s.wake = "lost";
     state.m.IsExitingToMenu = false;
-    state.exitTactical();
+    if (s.victory) {
+        s.exitStarted = true;
+        state.exitTactical();
+    } else {
+        // Every dream ending has the same scripted defeat, even if the boss
+        // died first or the player chose to leave. Only temporary actors die.
+        // Set ending before native death callbacks can re-enter onBattleEnded.
+        s.wake = "douyu";
+        state.m.IsBattleEnded = true;
+        state.m.IsAIPaused = true;
+        if (state.m.TacticalScreen != null) state.m.TacticalScreen.hide();
+        // Clear the native UI selection timer before mass death. Otherwise
+        // removing the active actor selects the next actor while it also dies.
+        ::Tactical.TurnSequenceBar.removeEntities();
+        ::Tactical.EventLog.log("黑水越过礼炮，吞没了整个梦沼。黑旗下的身影接连倒下……");
+        foreach (actor in clone s.actors) {
+            if (actor.getFlags().get("afeix_dream_actor") == true && actor.isAlive() && !actor.isDying() && actor.isPlacedOnMap())
+                actor.kill(null, null, ::Const.FatalityType.None);
+        }
+        // Give the native death effects time to finish. World settlement is
+        // still suppressed; the real roster, gear and statistics stay intact.
+        s.exitAt = ::Time.getVirtualTimeF() + 1.5;
+    }
     return true;
 };
 A.finishDreamWorld <- function(state) {

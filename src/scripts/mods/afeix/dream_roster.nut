@@ -10,10 +10,12 @@ A.withDreamConstructionRandom <- function(seed, callback) {
     // A small bounded local generator avoids advancing the campaign RNG and
     // still gives native rejection loops a changing sequence. Never set a seed.
     local original = ::Math.rand, state = (seed % 65521).tointeger();
-    ::Math.rand = function(low, high) {
-        if (high < low) throw "Invalid dream random range";
+    ::Math.rand = function(low = null, high = null) {
+        // Native actor.setDirty calls rand() while roster.create initializes
+        // the player. Those draws need a nonnegative local value too.
+        if ((low == null) != (high == null) || (low != null && high < low)) throw "Invalid dream random range";
         state = (state * 251 + 67) % 65521;
-        return low + state % (high - low + 1);
+        return low == null ? state : low + state % (high - low + 1);
     };
     try {
         local result = callback();
@@ -29,7 +31,10 @@ A.makeDreamItem <- function(definition) {
     local item = ::new(definition.path);
     if (definition.name != "") item.m.Name = definition.name;
     foreach (field, value in definition.stats) {
-        if (!(field in item.m)) throw "Unknown dream item property: " + field;
+        // Native inherit resolves parent m slots through _get/_set; `in`
+        // only checks local slots and rejects valid armor/helmet properties.
+        try { local nativeValue = item.m[field]; }
+        catch (error) { throw "Unknown dream item property: " + field; }
         item.m[field] = value;
     }
     // Every temporary dream item stays inside its owning temporary actor.

@@ -100,6 +100,15 @@ A.syncCharacterFeatures = function(actor) {
     local update = o.onUpdate;
     o.onUpdate = function() {
         local A = ::AfeixExpedition;
+        if (A.isDreamCombat() && A.DreamSession.ending) {
+            if (!A.DreamSession.exitStarted && ::Time.getVirtualTimeF() >= A.DreamSession.exitAt) {
+                A.DreamSession.exitStarted = true;
+                this.exitTactical();
+            }
+            // Native update advances/selects the next actor. During the short
+            // death tableau that would query IDs which have just left the map.
+            return;
+        }
         if (A.isDreamCombat() && !A.DreamSession.ending && !this.isInLoadingScreen()) {
             if (A.DreamSession.stage == 3 && ::Time.getRound() >= 4) A.requestDreamWake("douyu");
             if (A.DreamSession.wake != "") { A.endDreamTactical(this, false); return; }

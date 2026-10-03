@@ -72,6 +72,7 @@ check(::AfeixExpedition.startDreamCombat(0), "failed native allocation is retrya
 completeLoading();
 ::LoadingScreen.hide();
 ::Tactical.State.flee();
+::dreamTest.virtualTime += 1.5; ::Tactical.State.onUpdate();
 completeLoading();
 assertReadyAgain("retry then retreat", 24680);
 
@@ -170,6 +171,34 @@ manager.placePlayersInFormation(players);
 check(::nativeDreamReview.placements.len() == 18, "all native ordinary seats fit in the chosen map");
 foreach (placement in ::nativeDreamReview.placements)
     check(grid[placement.x][placement.y].IsEmpty, "ordinary player seat is clear after native swamp generation");
+
+// Run native enemy formation and setup too; troop metadata is read during
+// tactical UI initialization, after the loading-screen callback has returned.
+::Const.FactionType.Barbarians <- 5;
+::Const.FactionType.OrientalBandits <- 6;
+::World.FactionManager.isAlliedWithPlayer <- function(faction){return false;};
+::World.getTime <- function(){return {IsDaytime=true};};
+::nativeDreamReview.enemies <- [];
+::Tactical.spawnEntity <- function(script,x,y){
+    local tile=::Tactical.getTileSquare(x,y);
+    check(tile.IsEmpty,"native enemy placement selects an empty tile");
+    tile.IsEmpty=false;
+    local actor={script=script,tile=tile,troop=null,faction=0,equipped=false,m={IsGeneratingKillName=true},
+        setWorldTroop=function(troop){this.troop=troop;},setFaction=function(faction){this.faction=faction;},
+        assignRandomEquipment=function(){this.equipped=true;}};
+    ::nativeDreamReview.enemies.push(actor);
+    return actor;
+};
+for(local stage=0;stage<4;++stage){
+    ::nativeDreamReview.enemies=[];
+    local properties=::AfeixExpedition.dreamCombatProperties(stage,true);
+    manager.spawnEntitiesInFormation(properties.Entities,1);
+    check(::nativeDreamReview.enemies.len()==::AfeixExpedition.DreamStages[stage].count,"native enemy wave fully deploys stage "+stage);
+    foreach(i,enemy in ::nativeDreamReview.enemies){
+        check(enemy.script==properties.Entities[i].Script&&enemy.troop==properties.Entities[i]&&enemy.faction==8&&enemy.equipped,"native troop setup keeps script faction metadata and equipment");
+        enemy.tile.IsEmpty=true;
+    }
+}
 
 print("NATIVE_REVIEW_PASSED=" + (::checks-baseline) + "\n");
 print("TESTS_PASSED=" + (::checks-baseline) + "\n");
