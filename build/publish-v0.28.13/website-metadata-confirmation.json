@@ -1,0 +1,19 @@
+{
+  "confirmed_at": "2026-10-02T08:23:41.302728+00:00",
+  "version": "0.28.13",
+  "detail_url": "https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "download_url": "https://bbmod.site/files/836c50e6-dc27-4b3a-8450-dfce74584d20/download/",
+  "release_id": "836c50e6-dc27-4b3a-8450-dfce74584d20",
+  "http_status": {
+    "catalog": 200,
+    "detail": 200
+  },
+  "catalog_version_confirmed": true,
+  "description_and_notes_confirmed": true,
+  "download_link_present": true,
+  "public_archive_downloaded": false,
+  "public_download_byte_comparison": false,
+  "in_game_tested": false,
+  "verification_transport": "HTTPS served by website origin via trusted server",
+  "scope": "Public version, release notes and download-link confirmation; archive integrity is verified separately."
+}

@@ -1,0 +1,12 @@
+{
+  "confirmed_at": "2026-10-03T00:00:29.695609+00:00",
+  "version": "0.29.0-preview.3",
+  "download_url": "https://bbmod.com/files/11748b97-53c8-4052-acf9-39f7434306ef/download/",
+  "head_http_status": 200,
+  "range_http_status": 206,
+  "range_bytes_match": true,
+  "size": 4858322,
+  "prior_release_records_unchanged": true,
+  "prior_release_record_count": 24,
+  "verification_transport": "Public HTTPS from local machine"
+}

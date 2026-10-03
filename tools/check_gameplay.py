@@ -89,6 +89,8 @@ def validate_custom_art():
     from build_ideas_art import validate_art as validate_ideas_art
     from build_world_art import validate_art as validate_world_art
     from build_banner_art import validate_art as validate_banner_art
+    from build_douyu_art import validate_art as validate_douyu_art
+    from build_douyu_trophy_art import validate_art as validate_douyu_trophy_art
 
     portrait_base = BASE
     manifest_path = portrait_base / 'manifest.json'
@@ -206,13 +208,19 @@ def validate_custom_art():
         small['files'][exported.relative_to(ROOT / 'src').as_posix()] = icon['sha256']
     from build_balance_v26_art import validate_art as validate_balance_art
     balance_art=validate_balance_art()
+    for retired in ('src/brushes/afeix_helmet_layers_v01.brush', 'src/gfx/afeix_helmet_layers_v01.png'):
+        if (ROOT / retired).exists():
+            raise ValueError('Retired face/hair atlas must not enter the main package: ' + retired)
     keepsakes = validate_icons()
     return {'passed': True, 'method': 'manifest source hashes + build fingerprints + unpack actual src atlases + compare pixels/anchors',
             'keepsake_icons': keepsakes, 'balance_v26_art': balance_art,
+            'split_face_hair_atlas_absent': True,
             'member_skill_icons': validate_member_icons(),
             'ideas_art': validate_ideas_art(),
             'world_art': validate_world_art(),
             'banner_art': validate_banner_art(),
+            'douyu_art': validate_douyu_art(),
+            'douyu_trophy_art': validate_douyu_trophy_art(),
             'portrait_forms': 36, 'portrait_brushes': 144, 'retired_disc_absent': True, 'skill_icons': 4,
             'files': {**portrait['files'], **small['files']}}
 
@@ -228,6 +236,7 @@ def run_sq(sq, path, marker):
 def validate(sq, game):
     art_validation = validate_custom_art()
     subprocess.run([sys.executable, str(ROOT / 'tools/render_member_growth.py'), '--check'], check=True)
+    subprocess.run([sys.executable, str(ROOT / 'tools/render_dream_roster.py'), '--check'], check=True)
     scripts = sorted((ROOT / 'src/scripts').rglob('*.nut'))
     if not scripts:
         raise ValueError('No gameplay scripts found')
@@ -297,7 +306,9 @@ def validate(sq, game):
     references = set()
     for path in scripts:
         source = path.read_text(encoding='utf-8-sig')
-        for reference in re.findall(r'"((?:scripts|gfx)/[A-Za-z0-9_/!.]+)"', source):
+        # Concatenated prefixes are not complete paths; generated dream perk
+        # paths are expanded and checked by test_dream_roster_resources.py.
+        for reference in re.findall(r'"((?:scripts|gfx)/[A-Za-z0-9_/!.]+)"(?!\s*\+)', source):
             if reference.endswith('/'):
                 continue
             if reference.startswith('scripts/') and not reference.endswith(('.nut', '.cnut')):
@@ -377,6 +388,16 @@ def validate(sq, game):
                        'scripts/skills/actives/taunt.cnut',
                        'scripts/items/item.cnut',
                        'scripts/items/weapons/weapon.cnut',
+                       'scripts/items/armor/armor.cnut',
+                       'scripts/items/weapons/ancient/crypt_cleaver.cnut',
+                       'scripts/items/weapons/fighting_spear.cnut',
+                       'scripts/skills/items/generic_item.cnut',
+                       'scripts/skills/actives/cleave.cnut',
+                       'scripts/skills/actives/decapitate.cnut',
+                       'scripts/skills/actives/thrust.cnut',
+                       'scripts/skills/actives/spearwall.cnut',
+                       'scripts/skills/perks/perk_mastery_cleaver.cnut',
+                       'scripts/skills/perks/perk_mastery_spear.cnut',
                        'scripts/items/weapons/two_handed_hammer.cnut',
                        'scripts/skills/actives/smite_skill.cnut',
                        'scripts/skills/actives/shatter_skill.cnut',
@@ -401,10 +422,14 @@ def validate(sq, game):
                 archive.read('scripts/!mods_preload/mod_sr_alternative_standard.nut'))
     else:
         compat_fixture.write_text('::AFEIX_InstalledRecruitDisplay <- false;\n', encoding='utf-8')
+    from prepare_dream_test_native import prepare_dream_test_native
+    prepare_dream_test_native(game)
+    from prepare_douyu_world_native import prepare_douyu_world_native
+    prepare_douyu_world_native(game)
     tests = []
     for path in sorted((ROOT / 'tests/gameplay').glob('test_*.nut')):
         log = run_sq(sq, path, 'TESTS_PASSED=')
-        count = int(re.search(r'TESTS_PASSED=(\d+)', log).group(1))
+        count = int(re.findall(r'TESTS_PASSED=(\d+)', log)[-1])
         tests.append({'file': path.relative_to(ROOT).as_posix(), 'assertions': count, 'log': log})
     if not tests:
         raise ValueError('Gameplay behavioral tests are missing')

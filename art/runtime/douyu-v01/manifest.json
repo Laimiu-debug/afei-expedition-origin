@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "generator": "built-in image_gen",
+  "sources": {
+    "body": {
+      "source": "sources/douyu-body.png",
+      "sha256": "c32638874211d35f2d0399511f7c6b01f8bef75bfc15456f8c9af9b6840b1009",
+      "reviewed_for_export": true
+    },
+    "dead": {
+      "source": "sources/douyu-dead.png",
+      "sha256": "1717574cbe7c053ce0f937200a5eb1d33fa60d4da70a72dbf2bb23bc18c53ea2",
+      "reviewed_for_export": true
+    },
+    "mark": {
+      "source": "sources/douyu-mark.png",
+      "sha256": "7feed7fd7fc88a601d5bc6f669038ac7beeea2a2d314d48769a821a9ac0f80bf",
+      "reviewed_for_export": true
+    },
+    "barrage": {
+      "source": "sources/douyu-barrage.png",
+      "sha256": "82ea97ab63a18a63ee9a3678862eab84998edeec30f3890beed4a4fd057626af",
+      "reviewed_for_export": true
+    },
+    "rocket": {
+      "source": "sources/douyu-rocket.png",
+      "sha256": "d59c5f6c08b76c6e6ff5a8f01796df0eea5c36cea6a7c481f59a74f4886838d9",
+      "reviewed_for_export": true
+    }
+  },
+  "source_art_reviewed": true,
+  "engine_visual_reviewed": false
+}

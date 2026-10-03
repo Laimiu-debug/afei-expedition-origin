@@ -68,6 +68,7 @@ A.ledgerPage <- function(event, page) {
     if (extension == null && "treatmentLedgerPage" in A) extension = A.treatmentLedgerPage(event, page);
     if (extension == null && "ideasLedgerPage" in A) extension = A.ideasLedgerPage(event, page);
     if (extension == null && "bannerLedgerPage" in A) extension = A.bannerLedgerPage(event, page);
+    if (extension == null && kind == "dream_final" && "dreamPage" in A) extension = A.dreamPage(event, page);
     if (extension != null) {
         screen = extension;
     } else if (kind == "home") {
@@ -85,7 +86,10 @@ A.ledgerPage <- function(event, page) {
         }));
         if ("bannerLedgerPage" in A) screen.Options.push(A.ledgerNav("战团事务", "company"));
         else if ("trainingLedgerPage" in A) screen.Options.push(A.ledgerNav("研习专属技能", "training"));
-        if (A.hasStoryRecords() || ("hasIdeaRecords" in A && A.hasIdeaRecords()))
+        if ("dreamPage" in A) screen.Options.push(A.ledgerNav("再赴梦潮", "dream_final"));
+        // With the dream shortcut present, history moves into company affairs
+        // so the native home screen still fits its six option buttons.
+        if (!("dreamPage" in A && "bannerLedgerPage" in A) && (A.hasStoryRecords() || ("hasIdeaRecords" in A && A.hasIdeaRecords())))
             screen.Options.push(A.ledgerNav("翻看旅途旧事", "hasIdeaRecords" in A && A.hasIdeaRecords()?"journey_index":"growth"));
         screen.Options.push(A.ledgerOption("合上名册，继续上路", function(e) { return 0; }));
     } else if (kind == "quest" || kind == "quest_cancel") {

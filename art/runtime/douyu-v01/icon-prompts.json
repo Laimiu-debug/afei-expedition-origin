@@ -1,0 +1,18 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-03",
+  "icons": [
+    {
+      "key": "mark",
+      "prompt": "Use case: stylized-concept. Asset type: one square skill icon for Battle Brothers, to be downsampled to 56x56. Hand-painted old tactical-game icon, a thin battered dark bronze square border, dark reddish-brown interior, muted ochre-gold central symbol with crisp irregular contours and simple broad highlights. Match the restrained parchment/medieval painted UI of Battle Brothers. Large simple readable motif, very little fine detail. No words, letters, numerals, text, UI labels, neon, glossy gradients, 3D rendering, modern technology, or watermark. Transparent alpha outside the square frame. Central motif: a looming SHARK HEAD in side profile with one large eye, its teeth aimed at a small human head silhouette, a small ochre target ring encircling the human. This signifies a shark boss announcing its chosen target. Keep composition simple, two silhouettes, clear diagonal threat."
+    },
+    {
+      "key": "barrage",
+      "prompt": "Use case: stylized-concept. Asset type: one square skill icon for Battle Brothers, to be downsampled to 56x56. Hand-painted old tactical-game icon, a thin battered dark bronze square border, dark reddish-brown interior, muted ochre-gold central symbol with crisp irregular contours and simple broad highlights. Match the restrained parchment/medieval painted UI of Battle Brothers. Large simple readable motif, very little fine detail. No words, letters, numerals, text, UI labels, neon, glossy gradients, 3D rendering, modern technology, or watermark. Transparent alpha outside the square frame. Central motif: three thick horizontal glowing ochre rune slips sweeping sideways into a small round wooden shield silhouette. The symbols on slips must be abstract scratch marks, not legible text. This signifies a magical barrage of streamer bullet-chat tokens. An archaic medieval magic attack, not computer windows."
+    },
+    {
+      "key": "rocket",
+      "prompt": "Use case: stylized-concept. Asset type: one square skill icon for Battle Brothers, to be downsampled to 56x56. Hand-painted old tactical-game icon, a thin battered dark bronze square border, dark reddish-brown interior, muted ochre-gold central symbol with crisp irregular contours and simple broad highlights. Match the restrained parchment/medieval painted UI of Battle Brothers. Large simple readable motif, very little fine detail. No words, letters, numerals, text, UI labels, neon, glossy gradients, 3D rendering, modern technology, or watermark. Transparent alpha outside the square frame. Central motif: one chunky medieval ALCHEMICAL ROCKET with a riveted yellow brass conical nose, worn orange-red wooden casing, black iron straps, a short ochre fire trail, diagonally flying upward. Recognizable as a streaming-platform rocket gift translated to a medieval game weapon. No missile electronics or modern metal fins."
+    }
+  ]
+}

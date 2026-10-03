@@ -1,0 +1,246 @@
+{
+  "schema": 1,
+  "atlas": "afeix_douyu_trophies_v01",
+  "manifest_sha256": "ff1e6a7b63e055c64799dcab6982f1d7ceae9bb42dcff70ca60f9564e4292dcf",
+  "exports": [
+    {
+      "path": "gfx/ui/items/armor/afeix_douyu_sharkskin.png",
+      "sha256": "f3a255f0e43583570965397680e8f4fd42f93414bf93a1e5ff63a7b61b0f9d94",
+      "size": [
+        70,
+        140
+      ]
+    },
+    {
+      "path": "gfx/ui/items/armor/afeix_douyu_sharkskin_70x70.png",
+      "sha256": "3fe54d8bed2d5aedbe6d1ec5c966c9f811f689164acc03598e371679c320e6ed",
+      "size": [
+        70,
+        70
+      ]
+    },
+    {
+      "path": "gfx/ui/items/weapons/melee/afeix_douyu_fin_cleaver.png",
+      "sha256": "c65ded4b714609a83f4baa4fccf0923294e4b0fc0cd9f6e28622a7ff481b82fe",
+      "size": [
+        70,
+        140
+      ]
+    },
+    {
+      "path": "gfx/ui/items/weapons/melee/afeix_douyu_fin_cleaver_70x70.png",
+      "sha256": "69ce7224b4ce25f9c6c784d8d83a441f84930e56fcd428b9c7e2643a7336559a",
+      "size": [
+        70,
+        70
+      ]
+    },
+    {
+      "path": "gfx/ui/items/weapons/melee/afeix_douyu_tooth_spear.png",
+      "sha256": "6140d292e74e43e01a756894a78ade976ed86c1e11661dfd8e07c0d4670ed9f6",
+      "size": [
+        70,
+        140
+      ]
+    },
+    {
+      "path": "gfx/ui/items/weapons/melee/afeix_douyu_tooth_spear_70x70.png",
+      "sha256": "d41ac82d5ade62e14bd2a9f8dabeb0943f9ddc1bf8ddd39524d6bf496778645c",
+      "size": [
+        70,
+        70
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "afeix_douyu_sharkskin",
+      "source_key": "sharkskin-live",
+      "sha256": "78d24a92267367210d782b608c50e37e47be6ac8661c35a2006808d506153716",
+      "size": [
+        94,
+        66
+      ]
+    },
+    {
+      "id": "afeix_douyu_sharkskin_damaged",
+      "source_key": "sharkskin-damaged",
+      "sha256": "8b749e142fc4ef18c4650c9de3620f66967ebefe3df3e5fe41c9ef9df4e5cc9c",
+      "size": [
+        100,
+        74
+      ]
+    },
+    {
+      "id": "afeix_douyu_sharkskin_dead",
+      "source_key": "sharkskin-dead",
+      "sha256": "2c665caffe3218e28cf59755a4f2e43c42bd801d86b44ccde153b9f9c6b4b8f9",
+      "size": [
+        116,
+        108
+      ]
+    },
+    {
+      "id": "afeix_douyu_fin_cleaver",
+      "source_key": "fin-cleaver",
+      "sha256": "18d0b5763e25c106c38b7a019cb8fbe57076c1c93d006309d31e928d6a7ccac7",
+      "size": [
+        78,
+        108
+      ]
+    },
+    {
+      "id": "afeix_douyu_fin_cleaver_bloodied",
+      "source_key": "fin-cleaver-bloodied",
+      "sha256": "246c4c78d22f3fa458ac369f2d1f0ce1dfbedf2c9d78e327cdd2c318c1789133",
+      "size": [
+        78,
+        108
+      ]
+    },
+    {
+      "id": "afeix_douyu_tooth_spear",
+      "source_key": "tooth-spear",
+      "sha256": "148b068e2cbe6be009aef42afc9c70d02c92a3a5f4542ec906143d44f983bb2f",
+      "size": [
+        60,
+        80
+      ]
+    },
+    {
+      "id": "afeix_douyu_tooth_spear_bloodied",
+      "source_key": "tooth-spear-bloodied",
+      "sha256": "f2a453732b443e38ef561cf9db61585e16aeb4aaf37b2c16b85219b6493aa944",
+      "size": [
+        60,
+        80
+      ]
+    }
+  ],
+  "geometry": {
+    "afeix_douyu_sharkskin": {
+      "left": -48,
+      "right": 46,
+      "top": -52,
+      "bottom": 14,
+      "width": 104,
+      "height": 142,
+      "offsetY": 35
+    },
+    "afeix_douyu_sharkskin_damaged": {
+      "left": -52,
+      "right": 48,
+      "top": -52,
+      "bottom": 22,
+      "width": 104,
+      "height": 142,
+      "offsetY": 35
+    },
+    "afeix_douyu_sharkskin_dead": {
+      "left": -57,
+      "right": 59,
+      "top": -53,
+      "bottom": 55,
+      "width": 131,
+      "height": 125,
+      "offsetX": 6,
+      "offsetY": 10,
+      "f": "64FE"
+    },
+    "afeix_douyu_fin_cleaver": {
+      "left": -65,
+      "right": 13,
+      "top": -56,
+      "bottom": 52,
+      "width": 130,
+      "height": 142,
+      "offsetY": 35
+    },
+    "afeix_douyu_fin_cleaver_bloodied": {
+      "left": -65,
+      "right": 13,
+      "top": -56,
+      "bottom": 52,
+      "width": 130,
+      "height": 142,
+      "offsetY": 35
+    },
+    "afeix_douyu_tooth_spear": {
+      "left": -3,
+      "right": 57,
+      "top": -59,
+      "bottom": 21,
+      "width": 130,
+      "height": 142,
+      "offsetY": 35,
+      "f1": "20",
+      "f2": "-45"
+    },
+    "afeix_douyu_tooth_spear_bloodied": {
+      "left": -3,
+      "right": 57,
+      "top": -59,
+      "bottom": 21,
+      "width": 130,
+      "height": 142,
+      "offsetY": 35,
+      "f1": "20",
+      "f2": "-45"
+    }
+  },
+  "source_art_reviewed": true,
+  "native_reference_pixels_packaged": false,
+  "in_game_tested": false,
+  "inventory_reflection": {
+    "fin_cleaver": true,
+    "tooth_spear": false
+  },
+  "roundtrip": {
+    "passed": true,
+    "sprite_count": 7,
+    "sprites": [
+      {
+        "id": "afeix_douyu_sharkskin",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_douyu_sharkskin_damaged",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_douyu_sharkskin_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_douyu_fin_cleaver",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_douyu_fin_cleaver_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_douyu_tooth_spear",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_douyu_tooth_spear_bloodied",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "brush": "package/brushes/afeix_douyu_trophies_v01.brush",
+    "brush_sha256": "976dfacb0b4bb91d458f77dad030296a30dfed6fc6fcc538d930563376650a79",
+    "atlas": "package/gfx/afeix_douyu_trophies_v01.png",
+    "atlas_sha256": "fafa53d8adfca98a5427fd6e89594ecdf50c92ec3d37beaf81f1593ff3fa380e",
+    "pack_log": "Loading images...\nsprites\\afeix_douyu_sharkskin.png\nsprites\\afeix_douyu_sharkskin_damaged.png\nsprites\\afeix_douyu_sharkskin_dead.png\nsprites\\afeix_douyu_fin_cleaver.png\nsprites\\afeix_douyu_fin_cleaver_bloodied.png\nsprites\\afeix_douyu_tooth_spear.png\nsprites\\afeix_douyu_tooth_spear_bloodied.png\nPacking rectangles...\nWriting gfx/afeix_douyu_trophies_v01.png (512x256)...\n",
+    "unpack_log": "Opening gfx/afeix_douyu_trophies_v01.png...\nsprites\\afeix_douyu_sharkskin.png\nsprites\\afeix_douyu_sharkskin_damaged.png\nsprites\\afeix_douyu_sharkskin_dead.png\nsprites\\afeix_douyu_fin_cleaver.png\nsprites\\afeix_douyu_fin_cleaver_bloodied.png\nsprites\\afeix_douyu_tooth_spear.png\nsprites\\afeix_douyu_tooth_spear_bloodied.png\n",
+    "roundtrip_directory": "build/roundtrip-epxczuj_"
+  }
+}

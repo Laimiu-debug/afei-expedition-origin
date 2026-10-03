@@ -418,7 +418,7 @@ try {
     check(missingHead.sprites.body.brush == "bust_native_body" && missingTile.cleared.len() == 0, "missing new corpse resource uses native fallback");
     // Compose the new preference hook with the actual portrait wrappers.
     local helmetBro = makeBrother("keke"); helmetBro.onInit();
-    local helmetFlags = {}, oldGet = A.get;
+    local helmetFlags = {afeix_full_portrait_helmet_default=true,afeix_hide_helmets=false,hide_helmets=false}, oldGet = A.get;
     ::World <- {Flags={has=function(k){return k in helmetFlags;}},
         State={getCombatStartTime=function(){return 0;},getPlayer=function(){return {};}}};
     ::Tactical.isActive <- function(){return false;};
@@ -426,6 +426,7 @@ try {
     A.get = function(k,fallback=0){return k=="hide_helmets"?(k in helmetFlags?helmetFlags[k]:fallback):oldGet(k,fallback);};
     A.set <- function(k,v){helmetFlags[k]<-v;helmetFlags["afeix_"+k]<-v;return v;};
     A.result <- function(ok,text){return {ok=ok,text=text};};
+    local portraitCallback = callbacks["entity/tactical/player"];
     dofile("src/scripts/mods/afeix/company_appearance_hooks.nut");
     callbacks["entity/tactical/player"](helmetBro);
     helmetBro.getItems().getAppearance().HideHead=true;
@@ -433,5 +434,21 @@ try {
     check(helmetBro.sprites.head.Visible&&helmetBro.sprites.head.brush=="afeix_p04_keke_head"&&!helmetBro.sprites.hair.Visible,"closed helmet removal reveals custom head without native hair");
     check(helmetBro.onDeserialize({})=="load_result"&&!helmetBro.sprites.helmet.Visible&&helmetBro.sprites.head.Visible,"both portrait and preference survive actor load");
     check(A.toggleCompanyHelmets().ok&&helmetBro.sprites.helmet.Visible&&!helmetBro.sprites.head.Visible,"showing closed helmet reapplies normal custom head occlusion");
+    local companyCallback = callbacks["entity/tactical/player"];
+    callbacks["entity/tactical/player"] = function(o) { portraitCallback(o); companyCallback(o); };
+    // Retired split brushes must never change the complete portrait, even if
+    // another old package exposes them. Native hair remains hidden, while the
+    // original head brush includes the character's entire hairstyle.
+    foreach (key in A.CharacterOrder) {
+        local prefix="afeix_p04_"+(key=="afei"?"afei_normal":key);
+        foreach(suffix in ["_bare_body","_bare_head","_hair","_bare_corpse_head"])
+            ::artAvailableBrushes[prefix+suffix] <- true;
+        local full=makeBrother(key);full.onInit();
+        check(full.sprites.body.brush==prefix&&full.sprites.head.brush==prefix+"_head"
+            &&!full.sprites.hair.Visible,key+" keeps the original complete face and hairstyle despite retired brushes");
+        full.getItems().getAppearance().HideHair=true;A.syncCharacterArt(full);
+        check(full.sprites.head.brush==prefix+"_head"&&!full.sprites.hair.Visible,
+            key+" native HideHair never cuts the combined portrait");
+    }
     print("ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\nTESTS_PASSED=" + passed + "\n");
 } catch (error) { print(error + "\n"); if ("exit" in getroottable()) exit(1); throw error; }

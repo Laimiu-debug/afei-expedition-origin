@@ -1,15 +1,25 @@
 // Campaign preference uses the native display flag, never unequips helmets or
 // changes the shared item appearance table, protection or corpse/drop handling.
 local A = ::AfeixExpedition;
+A.ensureCompanyHelmetDefault <- function() {
+    if (!this.isOrigin() || !("World" in getroottable()) || ::World == null
+        || !("Flags" in ::World) || ::World.Flags == null) return false;
+    // One migration for older campaigns; subsequent explicit choices persist.
+    if (!::World.Flags.has("afeix_full_portrait_helmet_default")) {
+        this.set("hide_helmets", true);
+        this.set("full_portrait_helmet_default", true);
+    } else if (!::World.Flags.has("afeix_hide_helmets")) this.set("hide_helmets", true);
+    return true;
+};
 A.managesCompanyHelmet <- function(bro) {
     return this.isOrigin() && bro != null && bro.m.IsAlive && !bro.m.IsDying
         && "World" in getroottable() && ::World != null
-        && "Flags" in ::World && ::World.Flags != null && ::World.Flags.has("afeix_hide_helmets")
+        && "Flags" in ::World && ::World.Flags != null
         && this.roster().find(bro) != null;
 };
 A.applyCompanyHelmetState <- function(bro) {
-    if (!this.managesCompanyHelmet(bro)) return false;
-    bro.m.IsHidingHelmet = this.get("hide_helmets", false);
+    if (!this.managesCompanyHelmet(bro) || !this.ensureCompanyHelmetDefault()) return false;
+    bro.m.IsHidingHelmet = this.get("hide_helmets", true);
     return true;
 };
 A.syncCompanyHelmet <- function(bro) {
@@ -17,14 +27,15 @@ A.syncCompanyHelmet <- function(bro) {
     bro.onAppearanceChanged(bro.getItems().getAppearance());
 };
 A.syncCompanyHelmets <- function() {
-    if (!this.isOrigin()) return;
+    if (!this.ensureCompanyHelmetDefault()) return;
     foreach (bro in this.roster()) this.syncCompanyHelmet(bro);
 };
 A.toggleCompanyHelmets <- function() {
     if (!this.isOrigin() || ::Tactical.isActive() || ::World.State == null
         || ::World.State.getCombatStartTime() != 0 || ::World.State.getPlayer() == null)
         return this.result(false, "请回到大地图后切换头盔外观。");
-    local hidden = !this.get("hide_helmets", false);
+    if (!this.ensureCompanyHelmetDefault()) return this.result(false, "当前战役尚未就绪。");
+    local hidden = !this.get("hide_helmets", true);
     this.set("hide_helmets", hidden);
     this.syncCompanyHelmets();
     return this.result(true, hidden ? "已隐藏全队头盔外观，防护和装备效果保持不变。" : "已恢复显示全队头盔。");

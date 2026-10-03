@@ -3699,7 +3699,7 @@
       "background": "afeix_xiaogui_background",
       "role": "无头盔特殊盾坦与阿飞近侧护卫",
       "attrs": [
-        54,
+        69,
         108,
         45,
         88,
@@ -4901,7 +4901,7 @@
     "Bravery": 3,
     "MeleeDefense": 3
   },
-  "version": 62,
+  "version": 67,
   "recruitment": {
     "totalSlots": 5,
     "hireCooldownDays": 1,

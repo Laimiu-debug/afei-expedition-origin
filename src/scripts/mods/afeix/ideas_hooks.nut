@@ -48,11 +48,39 @@ local stashWrappers={};
         return result;
     };
     o.onDamageReceived=function(attacker,skill,info){
+        if (::AfeixExpedition.prepareTurtleHeadHit(this, skill, info)) return 0;
         local A=::AfeixExpedition,track=A.isOrigin()&&::Tactical.isActive()&&A.characterId(this)=="afei",hp=track?this.getHitpoints():0;
         local r=damage.bindenv(this)(attacker,skill,info);
         if(track&&this.getHitpoints()<hp)A.set("ideas_afei_hurt",true);
         return r;
     };
+});
+// Preserve the attack's already-built body multiplier, including skill bonuses,
+// without rerunning attacker callbacks or consuming an extra RNG roll. Scoped
+// restoration also handles nested attacks and native exceptions.
+local turtleHitWrappers = {};
+::mods_hookBaseClass("skills/skill", function(o) {
+    local old = ::mods_getMember(o, "onScheduledTargetHit");
+    if (old in turtleHitWrappers) return;
+    local wrapped = function(info) {
+        local target = info.TargetEntity;
+        if (!::AfeixExpedition.isTurtle(target)) return old.bindenv(this)(info);
+        local existed = "afeixTurtleBodyHitMult" in target.m;
+        local previous = existed ? target.m.afeixTurtleBodyHitMult : null;
+        target.m.afeixTurtleBodyHitMult <- info.Properties.DamageAgainstMult[::Const.BodyPart.Body];
+        local result = null;
+        try { result = old.bindenv(this)(info); }
+        catch (error) {
+            if (existed) target.m.afeixTurtleBodyHitMult = previous;
+            else delete target.m.afeixTurtleBodyHitMult;
+            throw error;
+        }
+        if (existed) target.m.afeixTurtleBodyHitMult = previous;
+        else delete target.m.afeixTurtleBodyHitMult;
+        return result;
+    };
+    turtleHitWrappers[wrapped] <- true;
+    ::mods_override(o, "onScheduledTargetHit", wrapped);
 });
 ::mods_hookExactClass("states/world_state",function(o){
     local end=o.onCombatFinished;

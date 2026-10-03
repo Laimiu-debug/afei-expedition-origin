@@ -18,7 +18,7 @@ if len(people) != 34 or len({p['key'] for p in people}) != 34 or any(len(p['attr
 fields = ['Hitpoints','Stamina','Bravery','Initiative','MeleeSkill','RangedSkill','MeleeDefense','RangedDefense']
 source = ROOT / 'src/scripts/mods/afeix/balance_v26_data.nut'
 lines = ['# 34 人基础属性表｜当前代码', '',
-         f"导出日期：2026-09-30，v{(ROOT / 'VERSION').read_text().strip()}。此表从实际 Squirrel 预加载入口执行导出，依据[全人物数值与招募总表](balance-v2/全人物数值与招募总表.xlsx)及[终局岗位修订](endgame-balance-20260930.md)。希文在可选 DLC 中另行注册。", '',
+         f"当前版本：v{(ROOT / 'VERSION').read_text().strip()}。此表从实际 Squirrel 预加载入口执行导出，依据[全人物数值与招募总表](balance-v2/全人物数值与招募总表.xlsx)及[终局岗位修订](endgame-balance-20260930.md)。希文在可选 DLC 中另行注册。", '',
          '**口径：**1级表列属性已包含固定原版特质的八维增减，实际创建时反推基础，避免重复加算。不含装备负重、盾牌、个人成长、阿飞转职、临时效果和原版专长。更新以新建战役验收。', '',
          '**★ 表示该项升级天赋星数，不是已经增加的属性点。**无星表示 0 星；疲劳列表示基础疲劳上限（代码字段 Stamina）。', '',
          '|成员|生命|疲劳上限|决心|先攻|近战命中|远程命中|近战防御|远程防御|',

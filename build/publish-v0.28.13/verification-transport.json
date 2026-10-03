@@ -1,0 +1,11 @@
+{
+  "version": "0.28.13",
+  "local_public_catalog_status": 200,
+  "local_detail_attempts": 3,
+  "local_detail_result": "curl timeout after 25 seconds on each attempt",
+  "origin_public_catalog_status": 200,
+  "origin_public_detail_status": 200,
+  "origin_public_download_status": 200,
+  "origin_transport": "Public HTTPS endpoints via existing trusted my-server alias",
+  "archive_hash_and_all_source_bytes_match": true
+}

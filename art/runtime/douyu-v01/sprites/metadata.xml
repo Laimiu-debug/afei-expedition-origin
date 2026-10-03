@@ -1,0 +1,4 @@
+<brush name="gfx/afeix_douyu_v01.png" version="17">
+  <sprite id="afeix_douyu_body" img="afeix_douyu_body.png" left="-90" right="90" top="-60" bottom="130" width="200" height="240" offsetY="35" />
+  <sprite id="afeix_douyu_dead" img="afeix_douyu_dead.png" left="-90" right="90" top="-38" bottom="78" width="200" height="150" offsetY="10" />
+</brush>

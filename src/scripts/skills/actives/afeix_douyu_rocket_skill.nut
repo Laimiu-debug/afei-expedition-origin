@@ -1,0 +1,33 @@
+this.afeix_douyu_rocket_skill <- this.inherit("scripts/skills/skill", {
+    m = {},
+    function create() {
+        this.m.ID = "actives.afeix_douyu_rocket"; this.m.Name = "超级火箭";
+        this.m.Description = "预告七格轰炸区域，下一次斗鱼回合才引爆。离开红圈或累计造成 160 点实际生命与护甲伤害可以化解。发射或被打断后，斗鱼露出一回合的破绽。";
+        this.m.KilledString = "被超级火箭炸倒";
+        this.m.Icon = "skills/afeix_douyu_rocket.png"; this.m.IconDisabled = this.m.Icon;
+        this.m.ImpactSprite = "mortar_target_02";
+        this.m.Type = this.Const.SkillType.Active; this.m.Order = this.Const.SkillOrder.OffensiveTargeted;
+        this.m.IsSerialized = false; this.m.IsActive = true; this.m.IsTargeted = true;
+        this.m.IsTargetingActor = false; this.m.IsAttack = true; this.m.IsRanged = true; this.m.IsAOE = true;
+        this.m.IsUsingHitchance = false; this.m.IsIgnoredAsAOO = true;
+        this.m.IsVisibleTileNeeded = false; this.m.IsDoingForwardMove = false;
+        this.m.ActionPointCost = 9; this.m.FatigueCost = 25; this.m.MinRange = 1; this.m.MaxRange = 8;
+        this.m.MaxRangeBonus = 0; this.m.MaxLevelDifference = 2; this.m.DirectDamageMult = 0.25;
+    },
+    function isUsable() { return this.skill.isUsable() && ::AfeixExpedition.Douyu.canSpecial(this.getContainer().getActor(), "rocket"); },
+    function onAnySkillUsed(_skill, _targetEntity, _properties) {
+        if(_skill != this) return;
+        _properties.DamageRegularMin = 90; _properties.DamageRegularMax = 120; _properties.DamageArmorMult = 1.1;
+    },
+    function onUse(_user, _targetTile) {
+        local d = ::AfeixExpedition.Douyu, s = d.state(_user);
+        s.SpecialTurn = s.Turn; s.NextRocket = s.Turn + 4;
+        d.beginArea(_user, _targetTile, "rocket");
+        if(s.ComboPending && _targetTile.IsOccupiedByActor && !_user.isAlliedWith(_targetTile.getEntity())) {
+            s.ComboPending = false; d.beginMark(_user, _targetTile.getEntity());
+            d.log("满屏开播：火箭与点名同时预告。每名队员最多承受其中一次重击；离开红圈并远离斗鱼可全部化解。");
+        }
+        else d.log("斗鱼高举橙红礼炮！下次斗鱼回合轰炸红圈七格。走开，或在它再次行动前造成 160 点实际生命与护甲伤害打断。");
+        return true;
+    }
+});

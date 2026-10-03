@@ -1,0 +1,46 @@
+{
+  "version": "0.28.14",
+  "outcome": "Complete original face and hair restored; helmets hidden by default; explicit player choices persist",
+  "sha256": "318d0b3100d5a10e73e57bd93eb2eb5e6866cda376e8815772856ff1a7824504",
+  "removed_entries_from_0_28_13": [
+    "brushes/afeix_helmet_layers_v01.brush",
+    "gfx/afeix_helmet_layers_v01.png"
+  ],
+  "changed_entries_from_0_28_13": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/appearance.nut",
+    "scripts/mods/afeix/banner_hooks.nut",
+    "scripts/mods/afeix/company_appearance_hooks.nut"
+  ],
+  "entries": 288,
+  "scripts_compiled": 125,
+  "behavior_assertions": 33715,
+  "bundle_combination": [
+    {
+      "order": "skins_then_voice",
+      "assertions": 5108
+    },
+    {
+      "order": "voice_then_skins",
+      "assertions": 5108
+    }
+  ],
+  "installed": false,
+  "published": true,
+  "in_game_tested": false,
+  "prior_version": "0.28.13",
+  "added_package_entries": [],
+  "removed_package_entries": [
+    "brushes/afeix_helmet_layers_v01.brush",
+    "gfx/afeix_helmet_layers_v01.png"
+  ],
+  "changed_package_entries": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/appearance.nut",
+    "scripts/mods/afeix/banner_hooks.nut",
+    "scripts/mods/afeix/company_appearance_hooks.nut"
+  ],
+  "public_download_byte_comparison": true,
+  "website_release_id": "8d447823-474c-4d2e-9daa-dfea80fb0075",
+  "prior_release_unchanged": true
+}

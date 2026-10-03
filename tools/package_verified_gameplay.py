@@ -9,6 +9,8 @@ def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def main():
     validation=json.loads((ROOT/'build/gameplay-validation.json').read_text(encoding='utf-8'))
     assert validation['syntax_passed'] and validation['behavior_tests_passed'] and validation['native_resource_paths_passed']
+    assert validation['custom_art']['passed']
+    assert validation['custom_art']['split_face_hair_atlas_absent']
     for row in validation['scripts']+validation['ui_scripts']:
         assert sha(ROOT/row['path'])==row['sha256'],row['path']
     root=ROOT/'src';files=sorted(p for p in root.rglob('*') if p.is_file())
@@ -36,6 +38,16 @@ def main():
     manifest.update(report)
     manifest['install_name']=package.name
     manifest['new_member_skills_this_version']=0
+    manifest['custom_art_files']=[p.relative_to(root).as_posix() for p in files if p.suffix in {'.png','.brush'}]
+    for key in ('helmet_layers_report', 'helmet_layers'):
+        manifest.pop(key, None)
+    # This command produces a local archive; old release publication and install
+    # evidence must not be attributed to these newly packaged bytes.
+    manifest['published']=False
+    manifest['installed']=False
+    for key in list(manifest):
+        if key.startswith(('website_', 'public_', 'installation_')):
+            del manifest[key]
     manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'Packaged v{version}: {len(files)} entries; CRC, complete entry set and source bytes verified.')
 if __name__=='__main__':main()

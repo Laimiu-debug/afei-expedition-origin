@@ -11,8 +11,15 @@ A.syncIdeasCharacter <- function(a) {
     if (!this.isOrigin() || a == null || !a.isAlive()) return;
     if (this.isTurtle(a)) {
         local skills = a.getSkills();
+        local flags = a.getFlags();
+        if (!flags.has("afeix_turtle_retract_revision")) {
+            // Previous versions granted Steel Brow automatically. Remove that
+            // gift once; a later player-selected Steel Brow remains learned.
+            skills.removeAllByID("perk.steel_brow");
+            flags.set("afeix_turtle_retract_revision", 1);
+        }
         if (!skills.hasSkill("trait.afeix_turtle_body")) skills.add(::new("scripts/skills/traits/afeix_turtle_body"));
-        if (!skills.hasSkill("perk.steel_brow")) skills.add(::new("scripts/skills/perks/perk_steel_brow"));
+        if (!skills.hasSkill("trait.afeix_turtle_retract")) skills.add(::new("scripts/skills/traits/afeix_turtle_retract"));
         // Retain an old helmet until there is room. Never destroy a saved item.
         if (!::Tactical.isActive()) {
             local items = a.getItems(), helmet = items.getItemAtSlot(::Const.ItemSlot.Head);
@@ -30,6 +37,14 @@ A.syncIdeasCharacter <- function(a) {
     }
 };
 A.IdeasRestoringHelmet <- false;
+A.prepareTurtleHeadHit <- function(actor, skill, hit) {
+    if (!this.isTurtle(actor) || !actor.isAlive() || !actor.isPlacedOnMap()
+        || hit.BodyPart != ::Const.BodyPart.Head || (hit.DamageRegular == 0 && hit.DamageArmor == 0)) return false;
+    local trait = actor.getSkills().getSkillByID("trait.afeix_turtle_retract");
+    if (trait == null) return false;
+    local multiplier = "afeixTurtleBodyHitMult" in actor.m ? actor.m.afeixTurtleBodyHitMult : 1.0;
+    return trait.onHeadHit(skill, hit, multiplier);
+};
 A.GripID <- "weapon.afeix_laoma_grip";
 A.gripBreakArmor <- function(actor, skill, target, part) {
     if (!this.isOrigin() || skill == null || skill.getID() != "actives.smite" || target == null || !target.isAlive() || target.isDying()) return 0;

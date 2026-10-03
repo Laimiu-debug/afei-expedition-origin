@@ -1,0 +1,82 @@
+{
+  "manifest_sha256": "d7e0120d56d2874564d02f5a1007b3392efaa6e3dca49d196a0989ddd478815e",
+  "exports": [
+    {
+      "path": "gfx/skills/afeix_douyu_mark.png",
+      "sha256": "659805a58197351001ec286e125f3baf30a75e24e4c6faa1b11127578c9ddaea",
+      "size": [
+        56,
+        56
+      ]
+    },
+    {
+      "path": "gfx/skills/afeix_douyu_barrage.png",
+      "sha256": "54f6cf40db4f97009e7b9e2164fd8450975b92c09e6743d687e173390471c3c7",
+      "size": [
+        56,
+        56
+      ]
+    },
+    {
+      "path": "gfx/skills/afeix_douyu_rocket.png",
+      "sha256": "a4919bea0087c3c274b6f42b2c91900878fedb261a7534098217661585d32e76",
+      "size": [
+        56,
+        56
+      ]
+    },
+    {
+      "path": "gfx/ui/events/afeix_douyu.png",
+      "sha256": "1f95a627c45483124215cbee88b2714a9b66188107b2a8bbb1ec66dbe521bc87",
+      "size": [
+        210,
+        210
+      ]
+    }
+  ],
+  "geometry": {
+    "afeix_douyu_body": {
+      "left": -90,
+      "right": 90,
+      "top": -60,
+      "bottom": 130,
+      "width": 200,
+      "height": 240,
+      "offsetY": 35
+    },
+    "afeix_douyu_dead": {
+      "left": -90,
+      "right": 90,
+      "top": -38,
+      "bottom": 78,
+      "width": 200,
+      "height": 150,
+      "offsetY": 10
+    }
+  },
+  "source_art_reviewed": true,
+  "in_game_tested": false,
+  "roundtrip": {
+    "passed": true,
+    "sprite_count": 2,
+    "sprites": [
+      {
+        "id": "afeix_douyu_body",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "id": "afeix_douyu_dead",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "brush": "package/brushes/afeix_douyu_v01.brush",
+    "brush_sha256": "67f02963290c431046e77dcc399d1b162b286dbdd0f629e9940853b19ca00b5e",
+    "atlas": "package/gfx/afeix_douyu_v01.png",
+    "atlas_sha256": "8e7caad1c2f192ddaea00e2b5e8418f595dec635611835a66f307d2bee62dfab",
+    "pack_log": "Loading images...\nsprites\\afeix_douyu_body.png\nsprites\\afeix_douyu_dead.png\nPacking rectangles...\nWriting gfx/afeix_douyu_v01.png (512x256)...\n",
+    "unpack_log": "Opening gfx/afeix_douyu_v01.png...\nsprites\\afeix_douyu_body.png\nsprites\\afeix_douyu_dead.png\n",
+    "roundtrip_directory": "build/roundtrip-fwd4slto"
+  }
+}

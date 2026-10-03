@@ -13,6 +13,12 @@ art/runtime/afei/v1/build/preview/native/
 art/runtime/portraits-v05/build/pack-*/
 art/runtime/portraits-v05/build/roundtrip-*/
 art/runtime/corpse-injuries-v01/build/roundtrip-*/
+art/runtime/helmet-layers-v01/build/roundtrip-*/
+art/runtime/helmet-layers-v01/pack/
+art/runtime/douyu-v01/pack/
+art/runtime/douyu-v01/build/roundtrip-*/
+art/runtime/douyu-trophies-v01/pack/
+art/runtime/douyu-trophies-v01/build/roundtrip-*/
 dlc/xiwen-regen/art/corpse-injuries-v01/build/roundtrip-*/
 art/runtime/afei/v1/build/pack-input-*/
 art/runtime/afei/v1/build/roundtrip-*/

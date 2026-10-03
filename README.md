@@ -2,27 +2,33 @@
 
 阿飞主题的《战场兄弟》独立公司起源项目，目标环境为 PC 原版与官方 DLC。
 
-**v0.28.12 已发布至 BBMOD**：精简小龟体质提示，删除旧存档说明，保留体质效果与铁匠台词。完整主包包含此前全部更新。[官网下载](https://bbmod.site/files/b6ab75df-1515-4a08-a7d3-887a7c9ff85f/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.12.zip>) · [更新说明](docs/releases/v0.28.12.md) · [发布记录](docs/releases/publication-0.28.12.md)。33,484条离线断言和287个包文件校验通过，公开下载与源码一致。
+**v0.29.0-preview.3 梦境与现实终局试玩版，已发布至BBMOD**：开局采用原版新战团教程式的分步故事弹窗，“黑旗未满 → 三人同梦 → 黑旗初醒 → 黑旗启程”，配夜营、道路插画与三位队长头像。刀一十人全员11级、传奇配装，依次挑战蜘蛛、恐狼、林德虫与“斗鱼·深渊之主”；梦醒接回三人黑旗，自由招募组队。略过梦境也介绍现实旅程，Esc可暂时收起，F8能继续或只读回看背景。现实大陆的唯一传奇据点“梦潮祭场”需正常行军抵达；击杀掉落鲨鱼皮重甲、鱼翅双手砍刀、鲨牙单手矛各一件。保留《战场兄弟》美术与原版装备动作。离线检查和包校验见[预览报告](build/dream-story-0.29-preview.3.json)；公开下载与本地完整主包、源码一致；尚未安装或完成实机验收。[本地预览包](<dist/mod_afeix_expedition v0.29.0-preview.3.zip>) · [序章设计与正文编辑入口](docs/design/dream-opening.md) · [现实据点与装备](docs/design/douyu-world-and-trophies.md) · [试玩验收](docs/playtest-dream-0.29.md)。 [官网下载](https://bbmod.com/files/11748b97-53c8-4052-acf9-39f7434306ef/download/) · [更新说明](docs/releases/v0.29.0-preview.3.md) · [发布记录](docs/releases/publication-0.29.0-preview.3.md)。
 
-**v0.28.11 已发布至 BBMOD**：修复委托种类一直为0。后续完成并收款的非送信契约按实际类型去重累计，保留已有履约次数，旧记录缺失种类时明确提示。包含此前觉醒文案、传奇蓝光握把与酒馆交互修复。[官网下载](https://bbmod.site/files/dcf9ee57-3d77-4767-8bf4-8cdddfd1921a/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.11.zip>) · [更新说明](docs/releases/v0.28.11.md) · [发布记录](docs/releases/publication-0.28.11.md)。33,484条离线断言通过，类型统计仍待实机复测。
+**v0.28.14 已发布至 BBMOD**：撤回脸与头发拆层，恢复完整头像，默认隐藏全队头盔；旧档首次升级同步隐藏，之后手动显示/隐藏选择随存档保留，头盔防护与装备效果正常生效。[官网下载](https://bbmod.com/files/8d447823-474c-4d2e-9daa-dfea80fb0075/download/) · [完整主包](<dist/mod_afeix_expedition v0.28.14.zip>) · [更新说明](docs/releases/v0.28.14.md) · [发布记录](docs/releases/publication-0.28.14.md)。33,715条离线断言与288个包文件校验通过，公开下载与源码一致；尚未安装或完成实机验收。本次外观回退无需重开战役。
 
-**v0.28.10 已发布至 BBMOD**：玄武血脉首次与后续觉醒弹窗删除属性变化介绍，保留剧情和“此后她必须完成5场未觉醒的参战胜利，才能再次激发血脉”的说明。实际强化与冷却规则保持原样。[官网下载](https://bbmod.site/files/d3459cc4-6959-4a34-a4e3-2930c233d1b6/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.10.zip>) · [更新说明](docs/releases/v0.28.10.md) · [发布记录](docs/releases/publication-0.28.10.md)。33,468条离线断言通过，弹窗仍待实机复测。
+**v0.28.13 历史版本**：小龟基础生命54→69，取消赠送钢头；“缩头乌龟”25%免疫头部伤害，其余转为身体结算。当时的头发拆层已由v0.28.14撤回。[官网下载](https://bbmod.com/files/836c50e6-dc27-4b3a-8450-dfce74584d20/download/) · [完整主包](<dist/mod_afeix_expedition v0.28.13.zip>) · [更新说明](docs/releases/v0.28.13.md) · [发布记录](docs/releases/publication-0.28.13.md) · [离线戴盔对照](build/helmet-layers-20261002/review-1.png)。35,249条离线断言与290个包文件校验通过，公开下载与源码一致；尚未实机验收，首次移动停顿仍待计时定位。
 
-**v0.28.9 已发布至 BBMOD**：老马的垂直握把升级为**传奇双手锤**，物品图标新增蓝色底光，保留固定属性与商店5%自然补货。包含夜间酒馆F8、飞李不可仅限酒馆、Esc退出与接战卡死修复。[官网下载](https://bbmod.site/files/42daa26b-6587-4a1a-b442-a0080b11f994/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.9.zip>) · [更新说明](docs/releases/v0.28.9.md) · [发布记录](docs/releases/publication-0.28.9.md)。33,468条离线断言通过，蓝光及传奇装备仍待实机复测。
+**v0.28.12 已发布至 BBMOD**：精简小龟体质提示，删除旧存档说明，保留体质效果与铁匠台词。完整主包包含此前全部更新。[官网下载](https://bbmod.com/files/b6ab75df-1515-4a08-a7d3-887a7c9ff85f/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.12.zip>) · [更新说明](docs/releases/v0.28.12.md) · [发布记录](docs/releases/publication-0.28.12.md)。33,484条离线断言和287个包文件校验通过，公开下载与源码一致。
 
-**v0.28.8 已发布至 BBMOD**：修复夜间酒馆按F8打不开名册，已进入友好城镇时使用当前界面判断，解除城外敌情对开界面的误拦截。保留Esc返回酒馆、人物栏防重叠和飞李不可仅限酒馆的规则。[官网下载](https://bbmod.site/files/a5f4f9a4-1cfa-4d3a-a620-222e96e3c038/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.8.zip>) · [更新说明](docs/releases/v0.28.8.md) · [发布记录](docs/releases/publication-0.28.8.md)。33,464条离线断言通过，夜间酒馆实机仍待复测。
+**v0.28.11 已发布至 BBMOD**：修复委托种类一直为0。后续完成并收款的非送信契约按实际类型去重累计，保留已有履约次数，旧记录缺失种类时明确提示。包含此前觉醒文案、传奇蓝光握把与酒馆交互修复。[官网下载](https://bbmod.com/files/dcf9ee57-3d77-4767-8bf4-8cdddfd1921a/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.11.zip>) · [更新说明](docs/releases/v0.28.11.md) · [发布记录](docs/releases/publication-0.28.11.md)。33,484条离线断言通过，类型统计仍待实机复测。
 
-**v0.28.7 已发布至 BBMOD**：飞李不可**只能在酒馆内使用**，野外、扎营与城镇其他界面均不可加点；酒馆黑旗页面新增直接入口，仍可在同页连续点击加点。保留Esc退出与接战卡死修复。[官网下载](https://bbmod.site/files/d35a345e-78b0-4431-a5d3-1844ca5a4c38/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.7.zip>) · [更新说明](docs/releases/v0.28.7.md) · [发布记录](docs/releases/publication-0.28.7.md)。酒馆交互实机验收仍待复测。
+**v0.28.10 已发布至 BBMOD**：玄武血脉首次与后续觉醒弹窗删除属性变化介绍，保留剧情和“此后她必须完成5场未觉醒的参战胜利，才能再次激发血脉”的说明。实际强化与冷却规则保持原样。[官网下载](https://bbmod.com/files/d3459cc4-6959-4a34-a4e3-2930c233d1b6/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.10.zip>) · [更新说明](docs/releases/v0.28.10.md) · [发布记录](docs/releases/publication-0.28.10.md)。33,468条离线断言通过，弹窗仍待实机复测。
 
-**v0.28.5 已发布至 BBMOD**：修复接战后小龟弹窗检查反复抛错、阻断战斗更新的问题；黑旗名册各页支持 **Esc 直接关闭**；飞李不可选定角色后，点击属性按钮立即花费100克朗加1点，留在当前页连续操作。[官网下载](https://bbmod.site/files/d4306351-2d12-45b2-8dbf-89800cdbac9a/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.5.zip>) · [修复说明](docs/releases/v0.28.5.md) · [发布记录](docs/releases/publication-0.28.5.md)。本机已安装；实机接战及语音仍待复测。
+**v0.28.9 已发布至 BBMOD**：老马的垂直握把升级为**传奇双手锤**，物品图标新增蓝色底光，保留固定属性与商店5%自然补货。包含夜间酒馆F8、飞李不可仅限酒馆、Esc退出与接战卡死修复。[官网下载](https://bbmod.com/files/42daa26b-6587-4a1a-b442-a0080b11f994/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.9.zip>) · [更新说明](docs/releases/v0.28.9.md) · [发布记录](docs/releases/publication-0.28.9.md)。33,468条离线断言通过，蓝光及传奇装备仍待实机复测。
 
-**v0.28.4 已发布至 BBMOD**：优化全员文案、调整终局岗位平衡，新增“飞李不可”付费属性培养，修正颈部、尸体与受伤血迹，累计小龟觉醒冷却和说明弹窗。主包32,881条离线断言、287个包文件一致性校验通过；可选DLC 0.2.5同步希文文案和美术，里根儿介绍保持原样。公开下载与本地包及源码一致。[公开下载](https://bbmod.site/files/ded2ff8f-6009-4dd5-a511-e7b159458cae/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.4.zip>) · [完整更新说明](docs/releases/v0.28.4.md) · [发布记录](docs/releases/publication-0.28.4.md)。新增玩法与美术尚未实机验收，请新开战役。
+**v0.28.8 已发布至 BBMOD**：修复夜间酒馆按F8打不开名册，已进入友好城镇时使用当前界面判断，解除城外敌情对开界面的误拦截。保留Esc返回酒馆、人物栏防重叠和飞李不可仅限酒馆的规则。[官网下载](https://bbmod.com/files/a5f4f9a4-1cfa-4d3a-a620-222e96e3c038/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.8.zip>) · [更新说明](docs/releases/v0.28.8.md) · [发布记录](docs/releases/publication-0.28.8.md)。33,464条离线断言通过，夜间酒馆实机仍待复测。
+
+**v0.28.7 已发布至 BBMOD**：飞李不可**只能在酒馆内使用**，野外、扎营与城镇其他界面均不可加点；酒馆黑旗页面新增直接入口，仍可在同页连续点击加点。保留Esc退出与接战卡死修复。[官网下载](https://bbmod.com/files/d35a345e-78b0-4431-a5d3-1844ca5a4c38/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.7.zip>) · [更新说明](docs/releases/v0.28.7.md) · [发布记录](docs/releases/publication-0.28.7.md)。酒馆交互实机验收仍待复测。
+
+**v0.28.5 已发布至 BBMOD**：修复接战后小龟弹窗检查反复抛错、阻断战斗更新的问题；黑旗名册各页支持 **Esc 直接关闭**；飞李不可选定角色后，点击属性按钮立即花费100克朗加1点，留在当前页连续操作。[官网下载](https://bbmod.com/files/d4306351-2d12-45b2-8dbf-89800cdbac9a/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.5.zip>) · [修复说明](docs/releases/v0.28.5.md) · [发布记录](docs/releases/publication-0.28.5.md)。本机已安装；实机接战及语音仍待复测。
+
+**v0.28.4 已发布至 BBMOD**：优化全员文案、调整终局岗位平衡，新增“飞李不可”付费属性培养，修正颈部、尸体与受伤血迹，累计小龟觉醒冷却和说明弹窗。主包32,881条离线断言、287个包文件一致性校验通过；可选DLC 0.2.5同步希文文案和美术，里根儿介绍保持原样。公开下载与本地包及源码一致。[公开下载](https://bbmod.com/files/ded2ff8f-6009-4dd5-a511-e7b159458cae/download/) · [本地完整主包](<dist/mod_afeix_expedition v0.28.4.zip>) · [完整更新说明](docs/releases/v0.28.4.md) · [发布记录](docs/releases/publication-0.28.4.md)。新增玩法与美术尚未实机验收，请新开战役。
 
 **飞李不可**：先进入城镇的**酒馆**，在酒馆黑旗页面选择“飞李不可”；也可在酒馆内 **F8 → 战团事务 → 飞李不可**。选择在队角色，点击属性按钮立即支付 **100 克朗**并永久增加 **1 点基础属性**。页面显示余额和属性变化，可在同页连续加点；双攻、双防在后四项属性，按 Esc 退出。野外和扎营均不可用。[玩家用法与验证](docs/design/attribute-treatment.md)。
 
 v0.28.3 更新（已累计至 v0.28.4）：**玄武血脉觉醒后，小龟须再完成5场未觉醒的参战胜利才能再次触发**；新增暂停战斗的属性说明弹窗，首次、第二次及后续觉醒使用不同文案，背景介绍统一使用“她”。[本地历史安装包](<dist/mod_afeix_expedition v0.28.3.zip>) · [规则与验证](docs/releases/v0.28.3.md)。尚未实机验收。
 
-v0.28.2 已发布至 BBMOD：**候选首次停留4日、重逢2日，新面孔优先并照顾等待较久的回流成员**。同批达标按解锁日期排序，单个人物生成失败不再挡住后续候选；包含网站 v0.27.6 之后的招募日期、独立随机来客、握把穿甲与美术、四派称号全部更新。30,038 条离线断言通过，公开下载与本地包及 284 个源码文件一致。[公开下载](https://bbmod.site/files/b0d85f1f-88be-414e-99fd-d16017970516/download/) · [本地安装包](<dist/mod_afeix_expedition v0.28.2.zip>) · [队列规则与验证](docs/releases/v0.28.2.md) · [发布记录](docs/releases/publication-0.28.2.md)。
+v0.28.2 已发布至 BBMOD：**候选首次停留4日、重逢2日，新面孔优先并照顾等待较久的回流成员**。同批达标按解锁日期排序，单个人物生成失败不再挡住后续候选；包含网站 v0.27.6 之后的招募日期、独立随机来客、握把穿甲与美术、四派称号全部更新。30,038 条离线断言通过，公开下载与本地包及 284 个源码文件一致。[公开下载](https://bbmod.com/files/b0d85f1f-88be-414e-99fd-d16017970516/download/) · [本地安装包](<dist/mod_afeix_expedition v0.28.2.zip>) · [队列规则与验证](docs/releases/v0.28.2.md) · [发布记录](docs/releases/publication-0.28.2.md)。
 
 v0.28.1 本地修复：**老马的垂直握把70%穿甲接入实际攻击**。猛击使用70%，无额外修正时提示最多98点无视护甲；横扫保留原版低10个百分点的区别，使用60%。[本地安装包](<dist/mod_afeix_expedition v0.28.1.zip>) · [修复说明](docs/releases/v0.28.1.md)。
 
@@ -36,11 +42,11 @@ v0.27.8 本地更新：**小酒瓶第5日起、基准850克朗；李李超欧第
 
 v0.27.7 本地更新：阿飞起源中新生成且没有称号的普通人物，随机冠名 **保飞派／倒飞派／儿飞派／曹飞派**，各 25%。已有称号及专属人物称号保留。[本地安装包](<dist/mod_afeix_expedition v0.27.7.zip>) · [规则与验证](docs/releases/v0.27.7.md)。
 
-v0.27.6 已发布至 BBMOD：实机复现并修复“被网敌人挣脱失败后，断头击杀未戴头盔伙伴导致崩溃”；修复后死亡、掉落、AI 解网和第 2 回合均正常。减少开局出生点重复寻路，配套 DLC 0.2.4 将里根儿介绍中的“老动物园”改为“动物园”。主包 29,739 条、DLC 5,612 条离线断言通过；大地图停顿尚无实机耗时对照。[主包下载](https://bbmod.site/files/c6947252-4944-47ae-8a19-486a4ce4572d/download/) · [处理与验证](docs/releases/v0.27.6.md) · [发布记录](docs/releases/publication-0.27.6.md)。
+v0.27.6 已发布至 BBMOD：实机复现并修复“被网敌人挣脱失败后，断头击杀未戴头盔伙伴导致崩溃”；修复后死亡、掉落、AI 解网和第 2 回合均正常。减少开局出生点重复寻路，配套 DLC 0.2.4 将里根儿介绍中的“老动物园”改为“动物园”。主包 29,739 条、DLC 5,612 条离线断言通过；大地图停顿尚无实机耗时对照。[主包下载](https://bbmod.com/files/c6947252-4944-47ae-8a19-486a4ce4572d/download/) · [处理与验证](docs/releases/v0.27.6.md) · [发布记录](docs/releases/publication-0.27.6.md)。
 
-v0.27.5 已发布至 BBMOD：修复清理随机特质时误删人物背景，恢复背景图标、身份介绍与正常背景工资计算。固定特质和表格数值保持既定设置，**请替换主包并新开战役**。[主包下载](https://bbmod.site/files/553f6536-30b0-4671-938b-ce134c2a91dd/download/) · [更新说明](docs/releases/v0.27.5.md)。
+v0.27.5 已发布至 BBMOD：修复清理随机特质时误删人物背景，恢复背景图标、身份介绍与正常背景工资计算。固定特质和表格数值保持既定设置，**请替换主包并新开战役**。[主包下载](https://bbmod.com/files/553f6536-30b0-4671-938b-ce134c2a91dd/download/) · [更新说明](docs/releases/v0.27.5.md)。
 
-v0.27.4 已发布至 BBMOD：**老马的垂直握把**按指定固定为84～120伤害、70%穿甲、235%破甲、52破盾；保留单体追加削甲30和曹飞派领袖化身介绍。包含网站 v0.25.0 之后的人物平衡、特质、招募、技能与事件更新，**请新开战役**。[主包下载](https://bbmod.site/files/1fb0335a-8c51-4ca1-aa96-edc206bc1ec9/download/) · [本地包](<dist/mod_afeix_expedition v0.27.4.ZIP>) · [更新说明](docs/releases/v0.27.4.md)。
+v0.27.4 已发布至 BBMOD：**老马的垂直握把**按指定固定为84～120伤害、70%穿甲、235%破甲、52破盾；保留单体追加削甲30和曹飞派领袖化身介绍。包含网站 v0.25.0 之后的人物平衡、特质、招募、技能与事件更新，**请新开战役**。[主包下载](https://bbmod.com/files/1fb0335a-8c51-4ca1-aa96-edc206bc1ec9/download/) · [本地包](<dist/mod_afeix_expedition v0.27.4.ZIP>) · [更新说明](docs/releases/v0.27.4.md)。
 
 v0.27.3 本地更新：**老马的垂直握把**加强至75～95伤害、210%破甲、单体追加削甲30，介绍改为曹飞派领袖老马的化身；原版异教徒转化已逐人核查。[主包下载](<dist/mod_afeix_expedition v0.27.3.ZIP>) · [更新说明](docs/releases/v0.27.3.md)。
 
@@ -68,15 +74,17 @@ v0.24.0 名单更正（2026-09-28）：删除陈知含后共 **34 人**；宋暖
 
 文案修订：[酒馆、信件与留言](docs/playtest-tavern-text.md)。六段相遇与回应已改用具体对话，保留现有触发顺序和奖励，已随 v0.22.0 发布。
 
-公开下载：[BBMOD v0.28.12 试玩版](https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [直接下载 ZIP](https://bbmod.site/files/b6ab75df-1515-4a08-a7d3-887a7c9ff85f/download/) · [安装与更新说明](docs/releases/v0.28.12.md) · [网站发布记录](docs/releases/publication-0.28.12.md)。[GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.16.1) 暂仍为 v0.16.1。
+公开下载：[BBMOD v0.29.0-preview.3 试玩版](https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/) · [直接下载ZIP](https://bbmod.com/files/11748b97-53c8-4052-acf9-39f7434306ef/download/) · [安装与更新说明](docs/releases/v0.29.0-preview.3.md) · [网站发布记录](docs/releases/publication-0.29.0-preview.3.md)。[GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.16.1) 暂仍为v0.16.1。
 
-独立扩展：[希文与里根儿 DLC 0.2.5](https://bbmod.site/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/) · [下载 DLC .zip](https://bbmod.site/files/76341887-9c0c-4a58-aaf7-fd2ef7f478ac/download/)。战犬里根儿随黑旗启程，怀念在环世界动物园与飞碟共度的日子。开局在队伍仓库查看，战前给一名队员装备即可释放。需与主包一起安装并新开战役；希文第35日起满足全部门槛后进入招募队列。见[DLC 安装说明](dlc/xiwen-regen/README.md)。
+独立扩展：[希文与里根儿 DLC 0.2.5](https://bbmod.com/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/) · [下载 DLC .zip](https://bbmod.com/files/76341887-9c0c-4a58-aaf7-fd2ef7f478ac/download/)。战犬里根儿随黑旗启程，怀念在环世界动物园与飞碟共度的日子。开局在队伍仓库查看，战前给一名队员装备即可释放。需与主包一起安装并新开战役；希文第35日起满足全部门槛后进入招募队列。见[DLC 安装说明](dlc/xiwen-regen/README.md)。
 
-独立语音：[阿飞哇哇叫 DLC 0.1.2](https://bbmod.site/mods/f8909336-43fa-4415-82f6-b6224a8e7340/) · [下载语音 DLC](https://bbmod.site/files/be0dad8e-271f-4d5d-bee0-dd1c63975704/download/)。阿飞受伤时随机播放5段实况原声，音量比0.1.0增加约7dB，保留音高和语速；其他角色与其他声音沿用原版。退出游戏后替换旧语音DLC，保留一个版本。见[安装与试听](dlc/afei-voice/README.md)。
+整合 DLC 已发布：[阿飞衣橱与哇哇叫 0.1.0](https://bbmod.com/mods/e554fc31-28b0-4b26-a8f5-295141ed79ef/) · [官网下载](https://bbmod.com/files/a0cec096-c0c4-4314-9f75-819dc445d629/download/)。一个 ZIP 同时包含六套外观、两张战败 CG 与五段音量增强版受伤原声。使用整合包时移走原独立皮肤和语音包；需要主包 v0.28.12 或更新版，已对 v0.28.14 两种加载顺序各通过5,108条离线组合断言。公开下载与本地包及组件资源一致，尚未实机验收。
+
+原独立语音 DLC 已于 2026-10-02 下架，其 0.1.0、0.1.2 公开页面与下载均已撤回；独立皮肤包从未上架。请使用上面的整合 DLC，旧语音源码和试听保留在[原声记录](dlc/afei-voice/README.md)。
 
 打包命名：后续分发压缩包均带版本号，**主包、DLC 和素材包的文件后缀统一使用小写 `.zip`**。保留已审阅美术直接打包时，先更新根目录 `VERSION`，运行 `python tools/check_gameplay.py`，通过后运行 `python tools/package_verified_gameplay.py`，生成 `dist/mod_afeix_expedition v<版本>.zip` 和同名 `.sha256`；`tools/build_gameplay.py` 用于需要重新生成资源的构建。安装时将带版本号的 ZIP 直接放入游戏 `data` 目录，并移走此前的本 Mod 旧包。五款旗帜已集成，世界地图按 F8 → 战团事务 → 更换旗帜。
 
-当前本地工作区与BBMOD主包均为 **v0.28.12**，配套可选DLC为 **0.2.5**。小龟提示精简及发布见[v0.28.12说明](docs/releases/v0.28.12.md)和[发布记录](docs/releases/publication-0.28.12.md)。退出游戏后再安装新版主包。保留此前候选轮换、握把穿甲修复与招募时间表。本版新增玩法和美术尚未实机战役验收；v0.27.6 的网后断头崩溃曾实机复现并复测至下一回合，完整战役与大地图帧耗时仍待验收。请按新建战役验收。保留 v0.23.2 的解网后技能回调修复：[修复与验证](docs/playtest-0.23.2.md)。
+当前本地工作区与BBMOD主包均为 **v0.29.0-preview.3**，配套可选DLC为 **0.2.5**。梦境开局按新建战役验收；旧档可主动回看，并在安全世界更新时生成或复用现实祭场。完整头像回退与默认隐藏头盔见[v0.28.14说明](docs/releases/v0.28.14.md)和[发布记录](docs/releases/publication-0.28.14.md)。退出游戏后再安装新版主包。保留此前候选轮换、握把穿甲修复与招募时间表。本版新增玩法和美术尚未实机战役验收；v0.27.6 的网后断头崩溃曾实机复现并复测至下一回合，完整战役与大地图帧耗时仍待验收。保留 v0.23.2 的解网后技能回调修复：[修复与验证](docs/playtest-0.23.2.md)。
 
 保留 v0.23.1 的招募属性显示 Mod（`mod_fox_043`）兼容修复，解决人物已解锁却不生成的问题，保留属性显示功能。当前主题招募有3个常规位置和2个独立随机来客位置；常规位置在雇佣后间隔1个游戏日补人，首次展示4日、重逢2日。普通中立村庄也能招募，入口为原版雇佣新兵的人物列表；修正空佣兵池隐藏招募入口，以及额外送信干扰普通契约供给的问题。[招募更新](docs/playtest-0.23.md) · [全部解锁条件](docs/design/recruit-unlocks.md)。
 

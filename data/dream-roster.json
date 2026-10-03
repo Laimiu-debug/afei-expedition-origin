@@ -1,0 +1,2747 @@
+{
+  "schema": 1,
+  "level": 11,
+  "order": [
+    "afei",
+    "damou",
+    "mocha",
+    "bottle",
+    "shuaizi",
+    "lili",
+    "xiaoyueya",
+    "yuchujiu",
+    "xiaoyubeike",
+    "wangduidui"
+  ],
+  "fields": [
+    "Hitpoints",
+    "Stamina",
+    "Bravery",
+    "Initiative",
+    "MeleeSkill",
+    "RangedSkill",
+    "MeleeDefense",
+    "RangedDefense"
+  ],
+  "people": {
+    "afei": {
+      "name": "阿飞",
+      "role": "可换路线的队长前排",
+      "place": 4,
+      "level": 11,
+      "stars": {
+        "MeleeSkill": 2,
+        "MeleeDefense": 2,
+        "Bravery": 2
+      },
+      "starting_attrs": [
+        69,
+        106,
+        46,
+        79,
+        51,
+        19,
+        3,
+        2
+      ],
+      "trait_delta": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        -5,
+        -5
+      ],
+      "allocation": [
+        3,
+        6,
+        1,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "level_rows": [
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            2,
+            4,
+            6
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        }
+      ],
+      "growth_gain": [
+        9,
+        18,
+        4,
+        0,
+        30,
+        0,
+        30,
+        0
+      ],
+      "personal_choice": 0,
+      "personal_bonus": [
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "gifted_fields": [
+        0,
+        4,
+        6
+      ],
+      "gifted_bonus": [
+        4,
+        0,
+        0,
+        0,
+        3,
+        0,
+        3,
+        0
+      ],
+      "base_attrs": [
+        82,
+        124,
+        47,
+        79,
+        86,
+        19,
+        41,
+        7
+      ],
+      "fixed_traits": [
+        "cocky",
+        "bright"
+      ],
+      "perks": [
+        "colossus",
+        "gifted",
+        "fast_adaption",
+        "mastery_sword",
+        "rotation",
+        "underdog",
+        "nimble",
+        "berserk",
+        "killing_frenzy",
+        "duelist"
+      ],
+      "training": "",
+      "route": "feidie",
+      "equipment": [
+        {
+          "path": "scripts/items/weapons/named/named_sword",
+          "name": "黑旗·归途",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/armor/named/black_leather_armor",
+          "name": "阿飞·夜行衣",
+          "stats": {
+            "Condition": 138,
+            "ConditionMax": 138,
+            "StaminaModifier": -8
+          }
+        },
+        {
+          "path": "scripts/items/helmets/named/norse_helmet",
+          "name": "阿飞·行旅盔",
+          "stats": {
+            "Condition": 150,
+            "ConditionMax": 150,
+            "StaminaModifier": -5
+          }
+        }
+      ],
+      "bag": [],
+      "level_bonus": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "heavy": false
+    },
+    "damou": {
+      "name": "王大谋",
+      "role": "相邻核心的单点护卫盾坦",
+      "place": 3,
+      "level": 11,
+      "stars": {
+        "MeleeDefense": 3,
+        "Bravery": 2,
+        "Stamina": 1
+      },
+      "starting_attrs": [
+        59,
+        100,
+        48,
+        96,
+        56,
+        32,
+        6,
+        2
+      ],
+      "trait_delta": [
+        10,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "allocation": [
+        9,
+        5,
+        6,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "level_rows": [
+        {
+          "fields": [
+            6,
+            0,
+            2
+          ],
+          "gains": [
+            3,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            2
+          ],
+          "gains": [
+            3,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            2
+          ],
+          "gains": [
+            3,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            2
+          ],
+          "gains": [
+            3,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            2,
+            6,
+            0
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            1,
+            2,
+            6
+          ],
+          "gains": [
+            3,
+            4,
+            4
+          ]
+        }
+      ],
+      "growth_gain": [
+        27,
+        17,
+        24,
+        0,
+        0,
+        0,
+        35,
+        0
+      ],
+      "personal_choice": 0,
+      "personal_bonus": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "gifted_fields": [
+        0,
+        1,
+        6
+      ],
+      "gifted_bonus": [
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "base_attrs": [
+        80,
+        114,
+        72,
+        96,
+        56,
+        32,
+        46,
+        2
+      ],
+      "fixed_traits": [
+        "strong",
+        "tough"
+      ],
+      "perks": [
+        "colossus",
+        "gifted",
+        "shield_expert",
+        "taunt",
+        "rotation",
+        "steel_brow",
+        "underdog",
+        "battle_forged",
+        "indomitable",
+        "recover"
+      ],
+      "training": "borrow_strike",
+      "route": "normal",
+      "equipment": [
+        {
+          "path": "scripts/items/weapons/named/named_spear",
+          "name": "大谋·守夜",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/shields/named/named_golden_round_shield",
+          "name": "王大谋·不退之盾",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/armor/named/brown_coat_of_plates_armor",
+          "name": "王大谋·守阵甲",
+          "stats": {
+            "Condition": 360,
+            "ConditionMax": 360,
+            "StaminaModifier": -27
+          }
+        },
+        {
+          "path": "scripts/items/helmets/named/named_metal_bull_helmet",
+          "name": "王大谋·铁角盔",
+          "stats": {
+            "Condition": 360,
+            "ConditionMax": 360,
+            "StaminaModifier": -18
+          }
+        }
+      ],
+      "bag": [],
+      "level_bonus": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "heavy": true
+    },
+    "mocha": {
+      "name": "午夜抹抹茶",
+      "role": "远程支援队长与军需账房",
+      "place": 12,
+      "level": 11,
+      "stars": {
+        "RangedSkill": 2,
+        "Bravery": 1,
+        "Stamina": 1
+      },
+      "starting_attrs": [
+        53,
+        98,
+        43,
+        100,
+        50,
+        52,
+        3,
+        5
+      ],
+      "trait_delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "allocation": [
+        8,
+        5,
+        5,
+        0,
+        0,
+        10,
+        0,
+        2
+      ],
+      "level_rows": [
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            2
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            2
+          ],
+          "gains": [
+            4,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            2
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            5,
+            2,
+            7
+          ],
+          "gains": [
+            4,
+            4,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            2,
+            5,
+            7
+          ],
+          "gains": [
+            3,
+            4,
+            3
+          ]
+        }
+      ],
+      "growth_gain": [
+        24,
+        17,
+        17,
+        0,
+        0,
+        40,
+        0,
+        6
+      ],
+      "personal_choice": 0,
+      "personal_bonus": [
+        0,
+        4,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gifted_fields": [
+        0,
+        1,
+        5
+      ],
+      "gifted_bonus": [
+        4,
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      "base_attrs": [
+        81,
+        123,
+        62,
+        100,
+        50,
+        96,
+        3,
+        11
+      ],
+      "fixed_traits": [
+        "bright",
+        "ailing"
+      ],
+      "perks": [
+        "colossus",
+        "gifted",
+        "quick_hands",
+        "mastery_crossbow",
+        "bullseye",
+        "footwork",
+        "nimble",
+        "berserk",
+        "killing_frenzy",
+        "overwhelm"
+      ],
+      "training": "abacus_mark",
+      "route": "normal",
+      "equipment": [
+        {
+          "path": "scripts/items/weapons/named/named_crossbow",
+          "name": "抹茶·算无遗箭",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/ammo/quiver_of_bolts",
+          "name": "",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/armor/named/black_leather_armor",
+          "name": "午夜抹抹茶·夜行衣",
+          "stats": {
+            "Condition": 138,
+            "ConditionMax": 138,
+            "StaminaModifier": -8
+          }
+        },
+        {
+          "path": "scripts/items/helmets/named/norse_helmet",
+          "name": "午夜抹抹茶·行旅盔",
+          "stats": {
+            "Condition": 150,
+            "ConditionMax": 150,
+            "StaminaModifier": -5
+          }
+        }
+      ],
+      "bag": [
+        {
+          "path": "scripts/items/weapons/named/named_dagger",
+          "name": "抹茶·备用零件",
+          "stats": {}
+        }
+      ],
+      "level_bonus": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "heavy": false
+    },
+    "bottle": {
+      "name": "小酒瓶",
+      "role": "高命中单手决斗主力",
+      "place": 5,
+      "level": 11,
+      "stars": {
+        "MeleeSkill": 3,
+        "MeleeDefense": 3,
+        "Stamina": 3
+      },
+      "starting_attrs": [
+        67,
+        109,
+        51,
+        86,
+        60,
+        24,
+        3,
+        2
+      ],
+      "trait_delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "allocation": [
+        5,
+        4,
+        1,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "level_rows": [
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            4,
+            4,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            4,
+            4,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            5
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            4,
+            4,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            4,
+            4,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            5
+          ]
+        },
+        {
+          "fields": [
+            2,
+            4,
+            6
+          ],
+          "gains": [
+            3,
+            4,
+            4
+          ]
+        }
+      ],
+      "growth_gain": [
+        15,
+        18,
+        3,
+        0,
+        35,
+        0,
+        35,
+        0
+      ],
+      "personal_choice": 0,
+      "personal_bonus": [
+        0,
+        0,
+        0,
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      "gifted_fields": [
+        0,
+        4,
+        6
+      ],
+      "gifted_bonus": [
+        4,
+        0,
+        0,
+        0,
+        3,
+        0,
+        3,
+        0
+      ],
+      "base_attrs": [
+        86,
+        127,
+        54,
+        89,
+        101,
+        24,
+        36,
+        2
+      ],
+      "fixed_traits": [
+        "sure_footing",
+        "determined"
+      ],
+      "perks": [
+        "colossus",
+        "gifted",
+        "fast_adaption",
+        "mastery_sword",
+        "rotation",
+        "underdog",
+        "nimble",
+        "berserk",
+        "killing_frenzy",
+        "duelist"
+      ],
+      "training": "bottle_breakthrough",
+      "route": "normal",
+      "equipment": [
+        {
+          "path": "scripts/items/weapons/named/named_sword",
+          "name": "瓶队·决赛之刃",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/armor/named/black_leather_armor",
+          "name": "小酒瓶·夜行衣",
+          "stats": {
+            "Condition": 138,
+            "ConditionMax": 138,
+            "StaminaModifier": -8
+          }
+        },
+        {
+          "path": "scripts/items/helmets/named/norse_helmet",
+          "name": "小酒瓶·行旅盔",
+          "stats": {
+            "Condition": 150,
+            "ConditionMax": 150,
+            "StaminaModifier": -5
+          }
+        }
+      ],
+      "bag": [
+        {
+          "path": "scripts/items/weapons/named/named_dagger",
+          "name": "瓶队·后手",
+          "stats": {}
+        }
+      ],
+      "level_bonus": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "heavy": false
+    },
+    "shuaizi": {
+      "name": "白小帅子",
+      "role": "局部疲劳支援与卡口盾卫",
+      "place": 2,
+      "level": 11,
+      "stars": {
+        "MeleeDefense": 2,
+        "Bravery": 1,
+        "Hitpoints": 1
+      },
+      "starting_attrs": [
+        62,
+        102,
+        45,
+        96,
+        54,
+        30,
+        7,
+        3
+      ],
+      "trait_delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "allocation": [
+        8,
+        5,
+        7,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      "level_rows": [
+        {
+          "fields": [
+            6,
+            0,
+            2
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            2
+          ],
+          "gains": [
+            3,
+            4,
+            4
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            2
+          ],
+          "gains": [
+            3,
+            4,
+            3
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            6,
+            2,
+            0
+          ],
+          "gains": [
+            3,
+            4,
+            4
+          ]
+        },
+        {
+          "fields": [
+            6,
+            1,
+            2
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            6,
+            0,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            2,
+            6,
+            0
+          ],
+          "gains": [
+            4,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            1,
+            2,
+            6
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        }
+      ],
+      "growth_gain": [
+        28,
+        15,
+        24,
+        0,
+        0,
+        0,
+        30,
+        0
+      ],
+      "personal_choice": 0,
+      "personal_bonus": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "gifted_fields": [
+        0,
+        1,
+        6
+      ],
+      "gifted_bonus": [
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "base_attrs": [
+        97,
+        121,
+        69,
+        96,
+        54,
+        30,
+        43,
+        3
+      ],
+      "fixed_traits": [
+        "bright",
+        "insecure"
+      ],
+      "perks": [
+        "colossus",
+        "gifted",
+        "shield_expert",
+        "taunt",
+        "rotation",
+        "steel_brow",
+        "underdog",
+        "battle_forged",
+        "indomitable",
+        "recover"
+      ],
+      "training": "drum",
+      "route": "normal",
+      "equipment": [
+        {
+          "path": "scripts/items/weapons/named/named_mace",
+          "name": "帅仔·定音锤",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/shields/named/named_golden_round_shield",
+          "name": "白小帅子·不退之盾",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/armor/named/brown_coat_of_plates_armor",
+          "name": "白小帅子·守阵甲",
+          "stats": {
+            "Condition": 360,
+            "ConditionMax": 360,
+            "StaminaModifier": -27
+          }
+        },
+        {
+          "path": "scripts/items/helmets/named/named_metal_bull_helmet",
+          "name": "白小帅子·铁角盔",
+          "stats": {
+            "Condition": 360,
+            "ConditionMax": 360,
+            "StaminaModifier": -18
+          }
+        }
+      ],
+      "bag": [],
+      "level_bonus": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "heavy": true
+    },
+    "lili": {
+      "name": "李李超欧",
+      "role": "弓手连续点杀",
+      "place": 13,
+      "level": 11,
+      "stars": {
+        "RangedSkill": 2,
+        "Initiative": 1,
+        "Bravery": 1
+      },
+      "starting_attrs": [
+        52,
+        95,
+        38,
+        116,
+        46,
+        53,
+        1,
+        5
+      ],
+      "trait_delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "allocation": [
+        8,
+        5,
+        5,
+        0,
+        0,
+        10,
+        0,
+        2
+      ],
+      "level_rows": [
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            2
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            2
+          ],
+          "gains": [
+            4,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            2
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            2,
+            7
+          ],
+          "gains": [
+            4,
+            4,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            2,
+            5,
+            7
+          ],
+          "gains": [
+            3,
+            4,
+            3
+          ]
+        }
+      ],
+      "growth_gain": [
+        24,
+        15,
+        17,
+        0,
+        0,
+        40,
+        0,
+        6
+      ],
+      "personal_choice": 0,
+      "personal_bonus": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        3,
+        0,
+        0
+      ],
+      "gifted_fields": [
+        0,
+        1,
+        5
+      ],
+      "gifted_bonus": [
+        4,
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      "base_attrs": [
+        80,
+        114,
+        55,
+        119,
+        46,
+        100,
+        1,
+        11
+      ],
+      "fixed_traits": [
+        "lucky",
+        "optimist"
+      ],
+      "perks": [
+        "colossus",
+        "gifted",
+        "quick_hands",
+        "mastery_bow",
+        "bullseye",
+        "footwork",
+        "nimble",
+        "berserk",
+        "killing_frenzy",
+        "overwhelm"
+      ],
+      "training": "chaoju",
+      "route": "normal",
+      "equipment": [
+        {
+          "path": "scripts/items/weapons/named/named_warbow",
+          "name": "李李·风中远声",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/ammo/quiver_of_arrows",
+          "name": "",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/armor/named/black_leather_armor",
+          "name": "李李超欧·夜行衣",
+          "stats": {
+            "Condition": 138,
+            "ConditionMax": 138,
+            "StaminaModifier": -8
+          }
+        },
+        {
+          "path": "scripts/items/helmets/named/norse_helmet",
+          "name": "李李超欧·行旅盔",
+          "stats": {
+            "Condition": 150,
+            "ConditionMax": 150,
+            "StaminaModifier": -5
+          }
+        }
+      ],
+      "bag": [
+        {
+          "path": "scripts/items/weapons/named/named_dagger",
+          "name": "李李·脱困",
+          "stats": {}
+        }
+      ],
+      "level_bonus": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "heavy": false
+    },
+    "xiaoyueya": {
+      "name": "小月牙",
+      "role": "近距投掷转火手",
+      "place": 15,
+      "level": 11,
+      "stars": {
+        "RangedSkill": 2,
+        "Initiative": 2,
+        "Hitpoints": 1
+      },
+      "starting_attrs": [
+        54,
+        99,
+        36,
+        115,
+        49,
+        51,
+        3,
+        5
+      ],
+      "trait_delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "allocation": [
+        7,
+        3,
+        4,
+        0,
+        0,
+        10,
+        6,
+        0
+      ],
+      "level_rows": [
+        {
+          "fields": [
+            5,
+            0,
+            6
+          ],
+          "gains": [
+            4,
+            3,
+            2
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            6
+          ],
+          "gains": [
+            4,
+            4,
+            2
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            2
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            6
+          ],
+          "gains": [
+            4,
+            4,
+            2
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            2,
+            6
+          ],
+          "gains": [
+            4,
+            3,
+            2
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            4,
+            3
+          ]
+        },
+        {
+          "fields": [
+            5,
+            2,
+            6
+          ],
+          "gains": [
+            4,
+            3,
+            2
+          ]
+        },
+        {
+          "fields": [
+            5,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            2,
+            5,
+            6
+          ],
+          "gains": [
+            3,
+            4,
+            2
+          ]
+        }
+      ],
+      "growth_gain": [
+        24,
+        9,
+        12,
+        0,
+        0,
+        40,
+        12,
+        0
+      ],
+      "personal_choice": 0,
+      "personal_bonus": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        2,
+        0,
+        0
+      ],
+      "gifted_fields": [
+        0,
+        5,
+        6
+      ],
+      "gifted_bonus": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        4,
+        3,
+        0
+      ],
+      "base_attrs": [
+        82,
+        108,
+        48,
+        119,
+        49,
+        97,
+        18,
+        5
+      ],
+      "fixed_traits": [
+        "gluttonous",
+        "optimist"
+      ],
+      "perks": [
+        "colossus",
+        "gifted",
+        "quick_hands",
+        "mastery_throwing",
+        "bags_and_belts",
+        "footwork",
+        "nimble",
+        "berserk",
+        "killing_frenzy",
+        "duelist"
+      ],
+      "training": "supermarket",
+      "route": "normal",
+      "equipment": [
+        {
+          "path": "scripts/items/weapons/named/named_javelin",
+          "name": "小月牙·超市飞签",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/armor/named/black_leather_armor",
+          "name": "小月牙·夜行衣",
+          "stats": {
+            "Condition": 138,
+            "ConditionMax": 138,
+            "StaminaModifier": -8
+          }
+        },
+        {
+          "path": "scripts/items/helmets/named/norse_helmet",
+          "name": "小月牙·行旅盔",
+          "stats": {
+            "Condition": 150,
+            "ConditionMax": 150,
+            "StaminaModifier": -5
+          }
+        }
+      ],
+      "bag": [
+        {
+          "path": "scripts/items/weapons/named/named_javelin",
+          "name": "小月牙·备用飞签",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/weapons/named/named_throwing_axe",
+          "name": "小月牙·拆货斧",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/weapons/named/named_dagger",
+          "name": "小月牙·开箱刀",
+          "stats": {}
+        }
+      ],
+      "level_bonus": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "heavy": false
+    },
+    "yuchujiu": {
+      "name": "余初九",
+      "role": "贴前排的换位救场接应",
+      "place": 6,
+      "level": 11,
+      "stars": {
+        "MeleeSkill": 2,
+        "MeleeDefense": 1,
+        "Initiative": 2
+      },
+      "starting_attrs": [
+        61,
+        99,
+        45,
+        117,
+        55,
+        31,
+        5,
+        5
+      ],
+      "trait_delta": [
+        0,
+        0,
+        0,
+        -10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "allocation": [
+        7,
+        0,
+        3,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "level_rows": [
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            2,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            2,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            2,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            2
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            2,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            2
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            2,
+            3
+          ]
+        },
+        {
+          "fields": [
+            2,
+            4,
+            6
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        }
+      ],
+      "growth_gain": [
+        21,
+        0,
+        9,
+        0,
+        30,
+        0,
+        25,
+        0
+      ],
+      "personal_choice": 0,
+      "personal_bonus": [
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "gifted_fields": [
+        0,
+        4,
+        6
+      ],
+      "gifted_bonus": [
+        4,
+        0,
+        0,
+        0,
+        3,
+        0,
+        3,
+        0
+      ],
+      "base_attrs": [
+        86,
+        99,
+        58,
+        127,
+        88,
+        31,
+        35,
+        5
+      ],
+      "fixed_traits": [
+        "loyal",
+        "hesitant"
+      ],
+      "perks": [
+        "colossus",
+        "gifted",
+        "dodge",
+        "relentless",
+        "mastery_sword",
+        "underdog",
+        "nimble",
+        "berserk",
+        "killing_frenzy",
+        "duelist"
+      ],
+      "training": "guard_swap",
+      "route": "normal",
+      "equipment": [
+        {
+          "path": "scripts/items/weapons/named/named_sword",
+          "name": "初九·叫停之刃",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/armor/named/black_leather_armor",
+          "name": "余初九·夜行衣",
+          "stats": {
+            "Condition": 138,
+            "ConditionMax": 138,
+            "StaminaModifier": -8
+          }
+        },
+        {
+          "path": "scripts/items/helmets/named/norse_helmet",
+          "name": "余初九·行旅盔",
+          "stats": {
+            "Condition": 150,
+            "ConditionMax": 150,
+            "StaminaModifier": -5
+          }
+        }
+      ],
+      "bag": [
+        {
+          "path": "scripts/items/weapons/named/named_dagger",
+          "name": "初九·归队",
+          "stats": {}
+        }
+      ],
+      "level_bonus": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "heavy": false
+    },
+    "xiaoyubeike": {
+      "name": "小鱼贝壳",
+      "role": "稳健重甲双手低耗前排",
+      "place": 7,
+      "level": 11,
+      "stars": {
+        "MeleeSkill": 2,
+        "Hitpoints": 2,
+        "MeleeDefense": 1
+      },
+      "starting_attrs": [
+        65,
+        108,
+        48,
+        77,
+        55,
+        30,
+        5,
+        0
+      ],
+      "trait_delta": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "allocation": [
+        5,
+        3,
+        2,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "level_rows": [
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            2,
+            4
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            2,
+            4
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            2,
+            4
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            2
+          ],
+          "gains": [
+            3,
+            2,
+            3
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            0
+          ],
+          "gains": [
+            3,
+            3,
+            4
+          ]
+        },
+        {
+          "fields": [
+            4,
+            6,
+            1
+          ],
+          "gains": [
+            3,
+            2,
+            3
+          ]
+        },
+        {
+          "fields": [
+            2,
+            4,
+            6
+          ],
+          "gains": [
+            3,
+            3,
+            3
+          ]
+        }
+      ],
+      "growth_gain": [
+        20,
+        9,
+        6,
+        0,
+        30,
+        0,
+        25,
+        0
+      ],
+      "personal_choice": 0,
+      "personal_bonus": [
+        3,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gifted_fields": [
+        0,
+        1,
+        6
+      ],
+      "gifted_bonus": [
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "base_attrs": [
+        92,
+        126,
+        54,
+        77,
+        85,
+        30,
+        33,
+        0
+      ],
+      "fixed_traits": [
+        "determined",
+        "loyal"
+      ],
+      "perks": [
+        "colossus",
+        "gifted",
+        "pathfinder",
+        "mastery_axe",
+        "steel_brow",
+        "underdog",
+        "battle_forged",
+        "brawny",
+        "quick_hands",
+        "fortified_mind"
+      ],
+      "training": "nicotine",
+      "route": "normal",
+      "equipment": [
+        {
+          "path": "scripts/items/weapons/named/named_greataxe",
+          "name": "小鱼·踏浪巨斧",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/armor/named/brown_coat_of_plates_armor",
+          "name": "小鱼贝壳·守阵甲",
+          "stats": {
+            "Condition": 360,
+            "ConditionMax": 360,
+            "StaminaModifier": -27
+          }
+        },
+        {
+          "path": "scripts/items/helmets/named/named_metal_bull_helmet",
+          "name": "小鱼贝壳·铁角盔",
+          "stats": {
+            "Condition": 360,
+            "ConditionMax": 360,
+            "StaminaModifier": -18
+          }
+        }
+      ],
+      "bag": [
+        {
+          "path": "scripts/items/weapons/named/named_dagger",
+          "name": "小鱼·余力",
+          "stats": {}
+        }
+      ],
+      "level_bonus": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "heavy": true
+    },
+    "wangduidui": {
+      "name": "王怼怼",
+      "role": "副旗手与接班指挥",
+      "place": 14,
+      "level": 11,
+      "stars": {
+        "Bravery": 2,
+        "Initiative": 1,
+        "Hitpoints": 1
+      },
+      "starting_attrs": [
+        55,
+        98,
+        55,
+        106,
+        52,
+        35,
+        4,
+        3
+      ],
+      "trait_delta": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "allocation": [
+        8,
+        6,
+        10,
+        0,
+        6,
+        0,
+        0,
+        0
+      ],
+      "level_rows": [
+        {
+          "fields": [
+            2,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            2,
+            0,
+            4
+          ],
+          "gains": [
+            4,
+            4,
+            2
+          ]
+        },
+        {
+          "fields": [
+            2,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            2,
+            0,
+            4
+          ],
+          "gains": [
+            4,
+            4,
+            2
+          ]
+        },
+        {
+          "fields": [
+            2,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            2,
+            4,
+            0
+          ],
+          "gains": [
+            4,
+            2,
+            4
+          ]
+        },
+        {
+          "fields": [
+            2,
+            1,
+            4
+          ],
+          "gains": [
+            4,
+            3,
+            2
+          ]
+        },
+        {
+          "fields": [
+            2,
+            0,
+            1
+          ],
+          "gains": [
+            4,
+            3,
+            3
+          ]
+        },
+        {
+          "fields": [
+            2,
+            4,
+            0
+          ],
+          "gains": [
+            4,
+            2,
+            4
+          ]
+        },
+        {
+          "fields": [
+            1,
+            2,
+            4
+          ],
+          "gains": [
+            3,
+            4,
+            2
+          ]
+        }
+      ],
+      "growth_gain": [
+        28,
+        18,
+        40,
+        0,
+        12,
+        0,
+        0,
+        0
+      ],
+      "personal_choice": 0,
+      "personal_bonus": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gifted_fields": [
+        0,
+        1,
+        2
+      ],
+      "gifted_bonus": [
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "base_attrs": [
+        87,
+        120,
+        99,
+        106,
+        64,
+        35,
+        4,
+        3
+      ],
+      "fixed_traits": [
+        "brave",
+        "loyal"
+      ],
+      "perks": [
+        "colossus",
+        "rally_the_troops",
+        "gifted",
+        "fortified_mind",
+        "mastery_polearm",
+        "rotation",
+        "nimble",
+        "fearsome",
+        "recover",
+        "bags_and_belts"
+      ],
+      "training": "dui_sentence",
+      "route": "normal",
+      "equipment": [
+        {
+          "path": "scripts/items/weapons/afeix_dream_warbanner",
+          "name": "黑旗·梦中誓言",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/armor/named/black_leather_armor",
+          "name": "王怼怼·夜行衣",
+          "stats": {
+            "Condition": 138,
+            "ConditionMax": 138,
+            "StaminaModifier": -8
+          }
+        },
+        {
+          "path": "scripts/items/helmets/named/norse_helmet",
+          "name": "王怼怼·行旅盔",
+          "stats": {
+            "Condition": 150,
+            "ConditionMax": 150,
+            "StaminaModifier": -5
+          }
+        }
+      ],
+      "bag": [
+        {
+          "path": "scripts/items/weapons/named/named_battle_whip",
+          "name": "怼怼·传令鞭",
+          "stats": {}
+        },
+        {
+          "path": "scripts/items/tools/reinforced_throwing_net",
+          "name": "怼怼·救场网",
+          "stats": {}
+        }
+      ],
+      "level_bonus": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "heavy": false
+    }
+  },
+  "accounting": "Ten native level-ups, 30 selections; Gifted separately spends 3 unstarred maximum rolls. Starting values include fixed traits; base_attrs subtract their delta once. Personal choice is a frozen dream example. Promotion and level bonuses remain native skills. Named weapons, armor, helmets and shields use native art; ammunition and utility tools keep their native type.",
+  "source": "docs/design/balance-v2/proposal.json"
+}
