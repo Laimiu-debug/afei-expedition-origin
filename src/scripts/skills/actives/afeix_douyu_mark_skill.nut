@@ -6,6 +6,7 @@ this.afeix_douyu_mark_skill <- this.inherit("scripts/skills/skill", {
         this.m.KilledString = "被斗鱼扑咬";
         this.m.Icon = "skills/afeix_douyu_mark.png"; this.m.IconDisabled = this.m.Icon;
         this.m.Overlay = "status_effect_34";
+        this.m.SoundOnUse = ["sounds/combat/taunt_01.wav"];
         this.m.Type = this.Const.SkillType.Active; this.m.Order = this.Const.SkillOrder.OffensiveTargeted;
         this.m.IsSerialized = false; this.m.IsActive = true; this.m.IsTargeted = true;
         this.m.IsAttack = true; this.m.IsIgnoredAsAOO = true; this.m.IsVisibleTileNeeded = false;

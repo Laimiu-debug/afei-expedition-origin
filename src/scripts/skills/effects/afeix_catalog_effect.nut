@@ -4,6 +4,7 @@ this.afeix_catalog_effect <- this.inherit("scripts/skills/skill",{
     function configure(key,source=null){
         local A=::AfeixExpedition,d=A.MemberSkillDefs[key],e=A.CatalogEffects[key];
         this.m.Key=key;this.m.ID="effects.afeix_catalog_"+key;this.m.Name=d.name;this.m.Description=d.text;this.m.Icon="skills/afeix_member_"+key+".png"; this.m.IconMini = this.m.Icon;
+        A.configureStatusFeedback(this, key, d.active);
         this.m.Source=source==null?0:source.getID();this.m.SourceTile=source==null?0:source.getTile().ID;
         this.m.SourceTurn=source==null?0:A.catalogGet(source,"turn_serial");this.m.SourceMove=source==null?0:A.catalogGet(source,"move_serial");
         this.m.Turns="turns" in e?e.turns:1;this.m.Charges="charges" in e?e.charges:1;

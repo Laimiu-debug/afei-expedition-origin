@@ -207,6 +207,7 @@ def validate_custom_art():
                 raise ValueError(f"Skill icon format/alpha differs: {icon['key']}")
         small['files'][exported.relative_to(ROOT / 'src').as_posix()] = icon['sha256']
     from build_balance_v26_art import validate_art as validate_balance_art
+    from build_douyu_rocket_art import validate_art as validate_rocket_art
     balance_art=validate_balance_art()
     for retired in ('src/brushes/afeix_helmet_layers_v01.brush', 'src/gfx/afeix_helmet_layers_v01.png'):
         if (ROOT / retired).exists():
@@ -220,6 +221,7 @@ def validate_custom_art():
             'world_art': validate_world_art(),
             'banner_art': validate_banner_art(),
             'douyu_art': validate_douyu_art(),
+            'douyu_rocket_art': validate_rocket_art(),
             'douyu_trophy_art': validate_douyu_trophy_art(),
             'portrait_forms': 36, 'portrait_brushes': 144, 'retired_disc_absent': True, 'skill_icons': 4,
             'files': {**portrait['files'], **small['files']}}

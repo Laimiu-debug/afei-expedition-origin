@@ -101,19 +101,31 @@ A.syncCharacterFeatures = function(actor) {
     o.onUpdate = function() {
         local A = ::AfeixExpedition;
         if (A.isDreamCombat() && A.DreamSession.ending) {
-            if (!A.DreamSession.exitStarted && ::Time.getVirtualTimeF() >= A.DreamSession.exitAt) {
-                A.DreamSession.exitStarted = true;
-                this.exitTactical();
-            }
-            // Native update advances/selects the next actor. During the short
-            // death tableau that would query IDs which have just left the map.
+            if (A.DreamSession.narrationPending) A.showDreamEnding(this);
+            if(A.DreamSession.collapseStarted) A.updateDreamTideAnimation(this);
+            // Native update advances/selects the next actor. During the water
+            // tableau that would query IDs which are falling out of the map.
             return;
         }
         if (A.isDreamCombat() && !A.DreamSession.ending && !this.isInLoadingScreen()) {
-            if (A.DreamSession.stage == 3 && ::Time.getRound() >= 4) A.requestDreamWake("douyu");
+            A.updateDreamTide();
             if (A.DreamSession.wake != "") { A.endDreamTactical(this, false); return; }
         }
         return update.bindenv(this)();
+    };
+    local processAI = o.onProcessAI;
+    o.onProcessAI = function() {
+        if(::AfeixExpedition.isDreamCombat() && ::AfeixExpedition.DreamSession.ending) return;
+        return processAI.bindenv(this)();
+    };
+    local keyInput = o.onKeyInput;
+    o.onKeyInput = function(key) {
+        if (::AfeixExpedition.isDreamCombat() && ::AfeixExpedition.DreamSession.ending) {
+            if (key.getState() == 0 && key.getKey() == 41 && !::AfeixExpedition.DreamSession.narrationPending
+                && ::DialogScreen.isVisible() && !::DialogScreen.isAnimating()) ::DialogScreen.hide();
+            return true;
+        }
+        return keyInput.bindenv(this)(key);
     };
     local flee = o.flee;
     o.flee = function(tag = null) {
@@ -130,5 +142,10 @@ A.syncCharacterFeatures = function(actor) {
             return ::AfeixExpedition.endDreamTactical(this, false);
         }
         return quit.bindenv(this)();
+    };
+    local finish = o.onFinish;
+    o.onFinish = function() {
+        if(::AfeixExpedition.isDreamCombat()) ::AfeixExpedition.clearDreamTide();
+        return finish.bindenv(this)();
     };
 });

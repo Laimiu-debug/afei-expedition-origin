@@ -150,7 +150,7 @@ local properties={CombatID="afeix_douyu_final",IsArenaMode=false},dream=false,A=
 ::Tactical.State.isScenarioMode=function(){return dream;};A.isDreamCombat=function(){return dream;};
 ::World<-{Assets={m={IsBlacksmithed=false},getOrigin=function(){return {isDroppedAsLoot=function(item){return false;}};}}};
 function lootTile(){return {Items=[],IsContainingItems=false,IsContainingItemsFlipped=true,Properties={values={},set=function(k,v){this.values[k]<-v;}},
-    spawnDetail=function(...){return {setBrightness=function(value){}};}};}
+    spawnDetail=function(...){return {Scale=1.0,setBrightness=function(value){}};}};}
 function dyingBoss(tile){
     local b={m={AfeixDouyuLootDropped=false},alive=true,dying=true,placed=true,tile=tile,
         isAlive=function(){return this.alive;},isDying=function(){return this.dying;},isPlacedOnMap=function(){return this.placed;},

@@ -1,0 +1,9 @@
+{
+  "head_status": 200,
+  "range_status": 206,
+  "range_bytes_match": true,
+  "history_records_unchanged": 27,
+  "backup_integrity": "ok",
+  "backup_contains_prior_not_new": true,
+  "backup": "/srv/data/backups/afeix-pre-v0.29.0-preview.12-20261003T093414911877Z.sqlite3"
+}

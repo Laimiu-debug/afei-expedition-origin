@@ -50,7 +50,7 @@ A.catalogSingle <- function(s) {return s!=null && s.isAttack() && s.m.IsWeaponSk
 A.catalogEffect <- function(target,key,source=null) {
     local id="effects.afeix_catalog_"+key,s=target.getSkills().getSkillByID(id);
     if(s==null){s=::new("scripts/skills/effects/afeix_catalog_effect");s.configure(key,source);target.getSkills().add(s);}
-    else {s.configure(key,source);target.getSkills().update();}
+    else {s.configure(key,source);target.getSkills().update();if(s.m.Overlay!="")s.spawnIcon(s.m.Overlay,target.getTile());}
     return s;
 };
 A.catalogFindEffect <- function(a,key) {return a.getSkills().getSkillByID("effects.afeix_catalog_"+key);};

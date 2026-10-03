@@ -1,0 +1,68 @@
+{
+  "version": "0.29.0-preview.11",
+  "internal_version": 75,
+  "completed_at": "2026-10-03T17:12:36.261137+08:00",
+  "scope": "Dream ending black tide animation, staggered temporary actor deaths and fade-to-wake; includes previous rocket, helmet and loadout fixes. Other dirty work preserved.",
+  "changes": {
+    "sequence": "After native monologue closes: 2.4 seconds of advancing navy/green water and wavelets; ten dream actors fall at 0.1 second intervals, Afei last; fade from 3.4 to 4.6 seconds then native exit.",
+    "clock": "Real-time backend progress; virtual menu pause cannot stall the animation. Frontend has no animation timer.",
+    "safety": "Freeze input, native actor queue and parallel AI during ending; clear tableau at tactical finish, restoration, load/new-campaign boundaries. Frontend per-tableau token fence rejects stale messages.",
+    "render": "Code-native Canvas overlay outside hidden tactical HUD; real Canvas pixel snapshots reviewed. No extra raster game assets."
+  },
+  "offline": {
+    "scripts": 153,
+    "assertions": 46649,
+    "syntax_passed": true,
+    "behavior_tests_passed": true,
+    "native_resource_paths_passed": true,
+    "report": "build/gameplay-validation.json",
+    "targeted_tests": [
+      {
+        "file": "tests/gameplay/test_dream_tide.nut",
+        "assertions": 201
+      },
+      {
+        "file": "tests/gameplay/test_dream_tide.js",
+        "assertions": 24
+      }
+    ]
+  },
+  "visual_preview": {
+    "report": "build/dream-tide-preview.11/render-report.json",
+    "html": "build/dream-tide-preview.11/preview.html",
+    "frames": 5,
+    "method": "Skia-backed @napi-rs/canvas executes shipped production JS with real Canvas 2D drawing",
+    "final_frame_black": true,
+    "manually_reviewed": [
+      1.2,
+      2.4
+    ],
+    "browser_tested": false,
+    "in_game_tested": false
+  },
+  "package": {
+    "path": "G:\\CODE\\afei-xcpedition\\dist\\mod_afeix_expedition v0.29.0-preview.11.zip",
+    "sha256": "ab28c2daa479319e1afc31d5d7e22b04fec14df59173ecac12074d3e19e9b6df",
+    "size": 4891041,
+    "entries": 334,
+    "crc_passed": true,
+    "source_bytes_match": true
+  },
+  "installation": {
+    "path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+    "sha256": "ab28c2daa479319e1afc31d5d7e22b04fec14df59173ecac12074d3e19e9b6df",
+    "bytes_match": true,
+    "backup": "G:\\CODE\\afei-xcpedition\\build\\dream-tide-preview.11\\installed-before.zip",
+    "backup_sha256": "de4fd62259dbfd08ff84de259ec6268d997c8f50fa62487705865c6db10d71fa",
+    "game_closed_at_install": true,
+    "saves_modified": false
+  },
+  "published": false,
+  "in_game_tested": false,
+  "limits": [
+    "No game was launched for this revision.",
+    "Browser UI automation kernel failed to initialize; headless Edge produced no screenshots. Real Canvas renderer used for pixel review.",
+    "Preview uses a historical static battle screenshot, not a game recording.",
+    "Native CEF canvas visibility, actual staggered deaths, loading-to-wake transition, scaling and full campaign acceptance remain pending."
+  ]
+}

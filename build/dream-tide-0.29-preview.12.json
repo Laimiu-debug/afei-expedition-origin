@@ -1,0 +1,82 @@
+{
+  "version": "0.29.0-preview.12",
+  "internal_version": 76,
+  "completed_at": "2026-10-03T17:26:40.566564+08:00",
+  "scope": "Horizontal black tide animation; includes prior rocket, helmet and loadout fixes. Other dirty work preserved.",
+  "changes": {
+    "sequence": "After native monologue closes: black wave and horizontal wake sweep right to left in 2.4 seconds; surviving dream actors fall at 0.1 second intervals, Afei last; fade from 3.4 to 4.6 seconds then native exit.",
+    "direction": "Default right-to-left; backend also supports mirrored left-to-right. No rising waterline remains behind the wave.",
+    "clock": "Real-time backend progress; virtual menu pause cannot stall the animation. Frontend has no animation timer.",
+    "safety": "Freeze input, native actor queue and parallel AI during ending; clear layer at tactical finish, restoration, load/new-campaign boundaries. Frontend token fence rejects stale messages.",
+    "render": "Code-native Canvas overlay outside hidden tactical HUD; real Canvas pixel snapshots reviewed. No extra raster game assets."
+  },
+  "offline": {
+    "scripts": 153,
+    "assertions": 46659,
+    "syntax_passed": true,
+    "behavior_tests_passed": true,
+    "native_resource_paths_passed": true,
+    "report": "build/gameplay-validation.json",
+    "targeted_tests": [
+      {
+        "file": "tests/gameplay/test_dream_tide.nut",
+        "assertions": 205
+      },
+      {
+        "file": "tests/gameplay/test_dream_tide.js",
+        "assertions": 30
+      }
+    ]
+  },
+  "visual_preview": {
+    "report": "build/dream-tide-preview.12/render-report.json",
+    "html": "build/dream-tide-preview.12/preview.html",
+    "frames": 7,
+    "method": "Skia-backed @napi-rs/canvas executes shipped production JS with real Canvas 2D drawing",
+    "direction": "right-to-left",
+    "directional_pixels_passed": true,
+    "mirrored_direction_pixels_passed": true,
+    "wave_tail_clears_viewport": true,
+    "final_frame_black": true,
+    "manually_reviewed": [
+      0.6,
+      1.2
+    ],
+    "browser_tested": false,
+    "in_game_tested": false
+  },
+  "package": {
+    "path": "G:\\CODE\\afei-xcpedition\\dist\\mod_afeix_expedition v0.29.0-preview.12.zip",
+    "sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa",
+    "size": 4891374,
+    "entries": 334,
+    "crc_passed": true,
+    "source_bytes_match": true
+  },
+  "installation": {
+    "path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+    "sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa",
+    "bytes_match": true,
+    "backup": "G:\\CODE\\afei-xcpedition\\build\\dream-tide-preview.12\\installed-before.zip",
+    "backup_sha256": "ab28c2daa479319e1afc31d5d7e22b04fec14df59173ecac12074d3e19e9b6df",
+    "game_closed_at_install": true,
+    "saves_modified": false
+  },
+  "published": true,
+  "in_game_tested": false,
+  "limits": [
+    "No game was launched for this revision.",
+    "Canvas pixel preview uses a historical static battle screenshot, not a game recording.",
+    "Native CEF canvas visibility, actual staggered deaths, loading-to-wake transition, scaling and full campaign acceptance remain pending."
+  ],
+  "website": {
+    "release_id": "9b7812c0-1789-410a-a5e9-37451fe8a4cf",
+    "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "download_url": "https://bbmod.com/files/9b7812c0-1789-410a-a5e9-37451fe8a4cf/download/",
+    "verification_report": "build/publish-v0.29.0-preview.12/website-verification.json",
+    "additional_proof": "build/publish-v0.29.0-preview.12/release-proof.json",
+    "public_bytes_match": true,
+    "backup_integrity": "ok",
+    "historical_releases_unchanged": 27
+  }
+}

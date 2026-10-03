@@ -14,7 +14,9 @@ this.afeix_catalog_active <- this.inherit("scripts/skills/actives/afeix_member_a
         if(user!=this.getContainer().getActor()||!this.isUsable()||!this.onVerifyTarget(user.getTile(),tile))return false;
         local A=::AfeixExpedition,d=A.MemberSkillDefs[this.m.Key];
         this.m.ReadyRound=A.memberRound()+d.cd;this.m.Used=true;
-        return A.catalogAction(this,user,tile);
+        local result=A.catalogAction(this,user,tile);
+        if(result)A.logCustomSkill(this,user,tile);
+        return result;
     },
     function onAnySkillUsed(s,target,p){
         if(s==null||s!=this.m.ExecutingNative)return;

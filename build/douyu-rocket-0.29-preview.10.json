@@ -1,0 +1,73 @@
+{
+  "version": "0.29.0-preview.10",
+  "internal_version": 74,
+  "completed_at": "2026-10-03T16:40:25.189982+08:00",
+  "scope": "Visible falling rocket and synchronized landing; prior dream, helmet and individual equipment fixes included. Existing unrelated work preserved.",
+  "changes": {
+    "rocket": "One transparent nose-down orange/brass rocket. Focus visible center, fall for 750 ms, then resolve sound, explosion, shake and seven-tile damage.",
+    "rules": "Full response turn, 700 actual HP+armor interruption, movement evasion, 35 percent exposure and single heavy hit per combo actor retained.",
+    "lifecycle": "Cancel at native death, battle end, tactical finish and dream ending; scene identity, actor ID and per-flight token guard callbacks.",
+    "action_gate": "Suspend actor/parallel AI while falling, keep native frame camera and particles updating; release before impact reactions."
+  },
+  "offline": {
+    "scripts": 152,
+    "assertions": 46419,
+    "syntax_passed": true,
+    "behavior_tests_passed": true,
+    "native_resource_paths_passed": true,
+    "custom_rocket_art": {
+      "passed": true,
+      "brushes": 1,
+      "particle_size": [
+        64,
+        180
+      ],
+      "nose_anchor": "ground",
+      "in_game_tested": false
+    },
+    "report": "build/gameplay-validation.json",
+    "targeted_tests": [
+      {
+        "file": "tests/gameplay/test_douyu_native.nut",
+        "assertions": 31
+      },
+      {
+        "file": "tests/gameplay/test_douyu_rocket.nut",
+        "assertions": 114
+      }
+    ]
+  },
+  "art": {
+    "generator": "built-in image_gen",
+    "source": "art/runtime/douyu-rocket-v01/sources/falling-rocket.png",
+    "prompt": "art/runtime/douyu-rocket-v01/manifest.json",
+    "report": "art/runtime/douyu-rocket-v01/report.json",
+    "export": [
+      64,
+      180
+    ]
+  },
+  "package": {
+    "path": "G:\\CODE\\afei-xcpedition\\dist\\mod_afeix_expedition v0.29.0-preview.10.zip",
+    "sha256": "de4fd62259dbfd08ff84de259ec6268d997c8f50fa62487705865c6db10d71fa",
+    "size": 4887509,
+    "entries": 332,
+    "crc_passed": true,
+    "source_bytes_match": true
+  },
+  "installation": {
+    "path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+    "sha256": "de4fd62259dbfd08ff84de259ec6268d997c8f50fa62487705865c6db10d71fa",
+    "bytes_match": true,
+    "backup": "G:\\CODE\\afei-xcpedition\\build\\douyu-rocket-preview.10\\installed-before.zip",
+    "backup_sha256": "9875602f5135822ed500e2d70a855aec12d38b5f22e5bc6782f5ebf77bb2f8bf",
+    "game_closed_at_install": true,
+    "saves_modified": false
+  },
+  "published": false,
+  "in_game_tested": false,
+  "limits": [
+    "No game was launched for this revision.",
+    "Particle trajectory, scale, camera focus, pause/resume and full dream or real campaign acceptance remain pending."
+  ]
+}

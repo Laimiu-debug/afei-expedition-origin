@@ -72,7 +72,9 @@ check(::AfeixExpedition.startDreamCombat(0), "failed native allocation is retrya
 completeLoading();
 ::LoadingScreen.hide();
 ::Tactical.State.flee();
-::dreamTest.virtualTime += 1.5; ::Tactical.State.onUpdate();
+check(::DialogScreen.isVisible() && !::AfeixExpedition.DreamSession.collapseStarted, "retreat awaits native monologue continuation");
+::DialogScreen.onOkPressed();
+::dreamTest.realTime += 4.61; ::Tactical.State.onUpdate();
 completeLoading();
 assertReadyAgain("retry then retreat", 24680);
 

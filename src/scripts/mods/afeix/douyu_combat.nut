@@ -1,5 +1,5 @@
 // A single, beatable boss. Every warning survives until its next own turn;
-// callbacks retain IDs and tiles, never a dead actor reference or a timer.
+// Rocket flight callbacks retain IDs and tiles and verify the exact battle.
 ::AfeixExpedition.Douyu <- {
     // Fixed endgame target: 10-12 level-11, equipped members. No scaling,
     // regeneration or repeated unavoidable damage to erase player progress.
@@ -80,7 +80,7 @@
     },
     function canSpecial(_actor, _kind) {
         local s = this.state(_actor);
-        if(s.SpecialTurn == s.Turn || s.Charging || s.MarkID != 0 || s.Turn < s.ExposedUntil || s.Turn < s.SpecialRecoveryUntil) return false;
+        if(s.SpecialTurn == s.Turn || s.Charging || s.RocketFlight != null || s.MarkID != 0 || s.Turn < s.ExposedUntil || s.Turn < s.SpecialRecoveryUntil) return false;
         if(_kind == "rocket") return s.ComboPending || s.Turn >= s.NextRocket;
         if(_kind == "mark") return s.Turn >= s.NextMark;
         return s.Turn >= s.NextBarrage;
@@ -99,28 +99,43 @@
             // Snapshot first: a kill can change turn-sequence and skill containers.
             local tiles = clone s.BlastTiles;
             s.Charging = false;
-            this.clearWarning(_actor);
-            local attack = _actor.getSkills().getSkillByID("actives.afeix_douyu_" + s.ChargeKind), count = 0;
-            foreach(tile in tiles) {
-                // Native on-hit reactions may kill and unplace the attacker.
-                if(!this.alive(_actor)) return;
-                if(!tile.IsOccupiedByActor) continue;
-                local target = tile.getEntity();
-                if(!this.alive(target) || _actor.isAlliedWith(target)) continue;
-                hitIDs.push(target.getID());
-                attack.attackEntity(_actor, target, false);
-                if(!this.alive(_actor)) return;
-                if(s.ChargeKind == "barrage") {
-                    this.pressure(target);
-                    if(++count >= 3) break;
-                }
-            }
             if(s.ChargeKind == "rocket") {
-                this.log("超级火箭砸向预告的七格。离开危险区的队员避开了轰炸。");
-                this.expose(_actor);
+                // Keep the danger markers throughout the fall. The landing
+                // callback resolves both area damage and any combo mark.
+                this.beginRocketFlight(_actor, tiles);
+                return;
             }
-            else this.log("弹幕洪流袭向预告区域！离开红圈或提前散开可以减少波及人数，旗手能安定受压的队员。");
+            this.clearWarning(_actor);
+            hitIDs = this.resolveArea(_actor, tiles, "barrage");
         }
+        if(this.alive(_actor)) this.resolveMark(_actor, hitIDs);
+    },
+    function resolveArea(_actor, _tiles, _kind) {
+        local hitIDs = [], count = 0, attack = _actor.getSkills().getSkillByID("actives.afeix_douyu_" + _kind);
+        if(_tiles.len() > 0) ::AfeixExpedition.feedbackImpactSound(_tiles[0]);
+        foreach(tile in _tiles) {
+            ::AfeixExpedition.feedbackParticles(tile, "MortarImpactParticles", _kind == "rocket" ? 0.4 : 0.15);
+            if(!this.alive(_actor)) return hitIDs;
+            if(!tile.IsOccupiedByActor) continue;
+            local target = tile.getEntity();
+            if(!this.alive(target) || _actor.isAlliedWith(target)) continue;
+            hitIDs.push(target.getID());
+            attack.attackEntity(_actor, target, false);
+            if(!this.alive(_actor)) return hitIDs;
+            if(_kind == "barrage") {
+                this.pressure(target);
+                if(++count >= 3) break;
+            }
+        }
+        if(_kind == "rocket") {
+            this.log("超级火箭落地，炸开预告的七格！离开危险区的队员避开了轰炸。");
+            this.expose(_actor);
+        }
+        else this.log("弹幕洪流袭向预告区域！离开红圈或提前散开可以减少波及人数，旗手能安定受压的队员。");
+        return hitIDs;
+    },
+    function resolveMark(_actor, hitIDs) {
+        local s = this.state(_actor);
         if(s.MarkID != 0 && s.MarkTurn < s.Turn) {
             local markID = s.MarkID, target = ::Tactical.getEntityByID(markID);
             this.removeMark(_actor);

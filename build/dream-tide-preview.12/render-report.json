@@ -1,0 +1,53 @@
+{
+  "method": "Skia-backed @napi-rs/canvas executes shipped production JS with real Canvas 2D drawing",
+  "in_game_tested": false,
+  "browser_tested": false,
+  "production_js_sha256": "8406db20396c55a85a3a0f4ecae02364b5bce4953b272bc4e719b15462d95bc2",
+  "direction": "right-to-left",
+  "directional_pixels_passed": true,
+  "mirrored_direction_pixels_passed": true,
+  "wave_tail_clears_viewport": true,
+  "historical_static_background": "build/douyu-playtest/native-barrage-warning.png",
+  "preview": "build/dream-tide-preview.12/preview.html",
+  "frames": [
+    {
+      "elapsed": 0,
+      "file": "build/dream-tide-preview.12/frame-0-0.0s.png",
+      "sha256": "9cda06bfb6dc2930a1100695e314abdd2083b22d330b0340555d8553424b5a4a"
+    },
+    {
+      "elapsed": 0.6,
+      "file": "build/dream-tide-preview.12/frame-1-0.6s.png",
+      "sha256": "2908279d137899781435dfd7ce1620d9310d5cae79de3190aed3ab64c311535c"
+    },
+    {
+      "elapsed": 1.2,
+      "file": "build/dream-tide-preview.12/frame-2-1.2s.png",
+      "sha256": "6720965e71f2fbab86eec15b6c076ebafe95f501152e91d89149e7609d6c531a"
+    },
+    {
+      "elapsed": 1.8,
+      "file": "build/dream-tide-preview.12/frame-3-1.8s.png",
+      "sha256": "f049a26a7a087e2fa15e4dab45166a6c1c0f86d9c90a183b0178f1493d0e2d0c"
+    },
+    {
+      "elapsed": 2.4,
+      "file": "build/dream-tide-preview.12/frame-4-2.4s.png",
+      "sha256": "0e8b2d297dedfb00ee4adaf89a68e208bad4b8551ec35b15c136b9a5e6fc9ecd"
+    },
+    {
+      "elapsed": 3.4,
+      "file": "build/dream-tide-preview.12/frame-5-3.4s.png",
+      "sha256": "fb7ef091d9d238159f4fd21a08cf788befc132b04155535931dd8d1043ea47b4"
+    },
+    {
+      "elapsed": 4.6,
+      "file": "build/dream-tide-preview.12/frame-6-4.6s.png",
+      "sha256": "08580fa4a2cde1281a439fda315b577fe77188b9ba24795bb206d749cbbadf08"
+    }
+  ],
+  "limits": [
+    "Browser preview runtime unavailable; Canvas pixel preview is not native CEF or game acceptance.",
+    "No native actor deaths or UI bridge exercised by this preview."
+  ]
+}

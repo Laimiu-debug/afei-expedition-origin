@@ -1,0 +1,39 @@
+{
+  "method": "Skia-backed @napi-rs/canvas executes shipped production JS with real Canvas 2D drawing",
+  "in_game_tested": false,
+  "browser_tested": false,
+  "production_js_sha256": "714d47a3130dd8da62bea6ee5a249b74a9b62dd7406004d4217033c606e5acca",
+  "historical_static_background": "build/douyu-playtest/native-barrage-warning.png",
+  "preview": "build/dream-tide-preview.11/preview.html",
+  "frames": [
+    {
+      "elapsed": 0,
+      "file": "build/dream-tide-preview.11/frame-0-0.0s.png",
+      "sha256": "8c5b188ed65b984c9e6376913c843d983079bf98c88bea8592fe4a1c23c93709"
+    },
+    {
+      "elapsed": 1.2,
+      "file": "build/dream-tide-preview.11/frame-1-1.2s.png",
+      "sha256": "fc420eef8e5dde315ad431295e41e25524687bef5e6f442904b99f88c2100c5e"
+    },
+    {
+      "elapsed": 2.4,
+      "file": "build/dream-tide-preview.11/frame-2-2.4s.png",
+      "sha256": "dd5347b5ae11cda44f2325dc4d9c00f3c143e3b036aa76ec69669961b43f40bb"
+    },
+    {
+      "elapsed": 3.4,
+      "file": "build/dream-tide-preview.11/frame-3-3.4s.png",
+      "sha256": "a67b172a11bea498a6e6651507286d69cdcdd9727a288efcd7b218f82ecfe2eb"
+    },
+    {
+      "elapsed": 4.6,
+      "file": "build/dream-tide-preview.11/frame-4-4.6s.png",
+      "sha256": "e9f384c0ef074cd2e2663753cce756a4c461c02f8042184c06a7ae613103c77e"
+    }
+  ],
+  "limits": [
+    "Browser preview runtime unavailable; Canvas pixel preview is not native CEF or game acceptance.",
+    "No native actor deaths or UI bridge exercised by this preview."
+  ]
+}

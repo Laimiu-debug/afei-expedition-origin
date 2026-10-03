@@ -47,6 +47,7 @@ this.afeix_ecig_puff <- this.inherit("scripts/skills/skill", {
         ::AfeixExpedition.catalogSet(user,"ecig_ready",this.Time.getRound()+2);
         user.setHitpoints(after);
         user.setDirty(true);
+        ::AfeixExpedition.feedbackParticles(user.getTile(), "SmokeParticles", 0.15);
         this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(user) + " 抽了一口，恢复 " + (after - before) + " 点生命");
         return true;
     }

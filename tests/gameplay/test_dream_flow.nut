@@ -4,10 +4,12 @@
 ::checks <- 0;
 function check(v, label) { if (!v) throw "FAIL dream flow: " + label; ++::checks; }
 ::dreamTest <- { flags = {}, realActors = [], tempActors = [], origin = true, tactical = false, safe = true,
-    virtualTime = 43210.0, round = 1, saves = 0, nativeFinishes = 0, nativeBattleEnds = 0, nativeUpdates = 0,
-    equipmentSaves = 0, syncs = 0, errors = [], kills = 0, turnBarClears = 0, failBuild = false, failLaunch = false, lastDialog = null, finalFlagAtNativeFinish = false };
+    virtualTime = 43210.0, realTime = 0.0, round = 1, saves = 0, nativeFinishes = 0, nativeBattleEnds = 0, nativeUpdates = 0, nativeAIUpdates = 0,
+    equipmentSaves = 0, syncs = 0, errors = [], kills = 0, turnBarClears = 0, notices = [], monologues = 0,
+    failBuild = false, failLaunch = false, lastDialog = null, finalFlagAtNativeFinish = false, tideCalls = [], killOrder = [] };
 ::Math <- { rand = function(...) { return 13579; } };
 ::Time <- { getVirtualTimeF = function() { return ::dreamTest.virtualTime; }, setVirtualTime = function(t) { ::dreamTest.virtualTime = t; },
+    getRealTimeF = function() { return ::dreamTest.realTime; },
     getRound = function() { return ::dreamTest.round; } };
 ::Sound <- { stopAmbience = function() {}, setAmbience = function(...) {}, play = function(...) {} };
 ::Tooltip <- { hide = function() {} };
@@ -36,7 +38,7 @@ function check(v, label) { if (!v) throw "FAIL dream flow: " + label; ++::checks
 ::Const.Strings <- {};
 ::Const.Strings.setdelegate({_get=function(key){return [];}});
 dofile(".cache/afei-art/dream-native/spawnlist_master.nut");
-::Tactical <- { State = null, EventLog = { log = function(text) {} }, isActive = function() { return ::dreamTest.tactical; }, setActive = function(v) { ::dreamTest.tactical = v; },
+::Tactical <- { State = null, EventLog = { log = function(text) { ::dreamTest.notices.push(text); } }, isActive = function() { return ::dreamTest.tactical; }, setActive = function(v) { ::dreamTest.tactical = v; },
     TurnSequenceBar = { removeEntities = function() { ++::dreamTest.turnBarClears; } },
     Entities = { result = 1, getCombatResult = function() { return this.result; } } };
 ::logError <- function(text) { ::dreamTest.errors.push(text); };
@@ -57,6 +59,18 @@ dofile(".cache/afei-art/native-contract-fixture/world_state.nut");
 dofile(".cache/afei-art/native-contract-fixture/tactical_state.nut");
 dofile(".cache/afei-art/native-contract-fixture/event.nut");
 dofile(".cache/afei-art/native-contract-fixture/event_manager.nut");
+dofile(".cache/afei-art/dream-native/dialog_screen.nut");
+dofile(".cache/afei-art/dream-native/tactical_screen.nut");
+::DialogScreen <- clone ::dialog_screen;
+::DialogScreen.m = clone ::dialog_screen.m;
+::DialogScreen.setdelegate(getroottable());
+::DialogScreen.m.Visible = false; ::DialogScreen.m.Animating = false;
+::DialogScreen.m.JSHandle = { asyncCall = function(method, data) {
+    if (method == "show") {
+        check(data.IsMonologue && data.Text.find("黑水") != null, "native single-button ending monologue");
+        ++::dreamTest.monologues; ::DialogScreen.onScreenShown();
+    } else if (method == "hide") ::DialogScreen.onScreenHidden();
+} };
 ::hooks <- { exact = {}, instance = {} };
 ::mods_hookExactClass <- function(path, callback) { ::hooks.exact[path] <- callback; };
 ::mods_hookNewObject <- function(path, callback) { ::hooks.instance[path] <- callback; };
@@ -86,7 +100,7 @@ dofile(".cache/afei-art/native-contract-fixture/event_manager.nut");
         foreach (key in ["afei", "damou", "mocha", "bottle", "shuaizi", "lili", "xiaoyueya", "yuchujiu", "xiaoyubeike", "wangduidui"]) {
             local actor = { key = key, alive = true,
                 isAlive = function() { return this.alive; }, isDying = function() { return false; }, isPlacedOnMap = function() { return this.alive; },
-                kill = function(...) { check(::dreamTest.turnBarClears > 0, "native selection cleared before death callback"); this.alive = false; ++::dreamTest.kills; ::Tactical.State.onBattleEnded(); },
+                kill = function(...) { check(::dreamTest.turnBarClears > 0, "native selection cleared before death callback"); this.alive = false; ++::dreamTest.kills; ::dreamTest.killOrder.push(this.key); ::Tactical.State.onBattleEnded(); },
                 getFlags = function() { return { get = function(k) { return k == "afeix_dream_actor"; } }; } };
             actors.push(actor); ::dreamTest.tempActors.push(actor);
         }
@@ -94,6 +108,7 @@ dofile(".cache/afei-art/native-contract-fixture/event_manager.nut");
     }
 };
 dofile("src/scripts/mods/afeix/dream_flow.nut");
+dofile("src/scripts/mods/afeix/dream_tide.nut");
 dofile("src/scripts/mods/afeix/dream_ledger.nut");
 dofile("src/scripts/mods/afeix/dream_hooks.nut");
 dofile("src/scripts/events/events/afeix_dream_event.nut");
@@ -110,8 +125,15 @@ dofile("src/scripts/events/events/afeix_dream_event.nut");
     local t = clone ::tactical_state; t.m = clone ::tactical_state.m; t.setdelegate(getroottable());
     t.onBattleEnded = function() { ++::dreamTest.nativeBattleEnds; };
     t.onUpdate = function() { ++::dreamTest.nativeUpdates; };
+    t.onProcessAI = function() { ++::dreamTest.nativeAIUpdates; };
     t.isInLoadingScreen = function() { return false; };
     t.m.MenuStack = { popAll = function() {} };
+    local screen = clone ::tactical_screen; screen.m = clone ::tactical_screen.m; screen.setdelegate(getroottable());
+    screen.m.JSHandle = { asyncCall = function(method, data) {
+        if(method.find("afeix") == 0) ::dreamTest.tideCalls.push({method=method,data=data});
+    } };
+    t.m.TacticalScreen = screen;
+    t.m.TacticalDialogScreen = { isVisible = function() { return false; }, isAnimating = function() { return false; } };
     ::hooks.exact["states/tactical_state"](t);
     ::Tactical.State = t; ::dreamTest.tactical = true;
     return t;
@@ -120,9 +142,10 @@ function resetDream() {
     local d = ::dreamTest, A = ::AfeixExpedition;
     if (A.isDreamCombat()) A.restoreDreamSession();
     d.flags = { afei_route = "jiahao", progress_contracts = 2, dead_afei = false };
-    d.origin = true; d.tactical = false; d.safe = true; d.virtualTime = 43210.0; d.round = 1;
-    d.saves = 0; d.nativeFinishes = 0; d.nativeBattleEnds = 0; d.nativeUpdates = 0; d.equipmentSaves = 0;
+    d.origin = true; d.tactical = false; d.safe = true; d.virtualTime = 43210.0; d.realTime = 0.0; d.round = 1;
+    d.saves = 0; d.nativeFinishes = 0; d.nativeBattleEnds = 0; d.nativeUpdates = 0; d.nativeAIUpdates = 0; d.equipmentSaves = 0;
     d.failBuild = false; d.failLaunch = false; d.lastDialog = null; d.tempActors = []; d.kills = 0; d.turnBarClears = 0; d.finalFlagAtNativeFinish = false;
+    d.notices = []; d.monologues = 0; d.tideCalls = []; d.killOrder = []; ::DialogScreen.m.Visible = false; ::DialogScreen.m.Animating = false;
     d.realActors = [];
     foreach (key in ["afei", "damou", "mocha"]) d.realActors.push({ key = key, level = 1, hp = 50, xp = 0, battles = 0, equipment = ["original"],
         isAlive = function() { return true; }, isDying = function() { return false; }, getPlaceInFormation = function() { return 3; },
@@ -210,12 +233,24 @@ for (local stage = 0; stage < 4; ++stage) {
     ::World.State.autosave(); check(::dreamTest.saves == stage + 1 && ::World.State.saveCampaign("bad") == false, "save entry blocked before file open " + stage);
     local rejected = false; try { ::World.State.onSerialize({}); } catch (e) { rejected = true; } check(rejected, "direct serialization fails closed " + stage);
     if (stage == 3) {
-        ::dreamTest.round = 4; t.onUpdate();
-        check(A.DreamSession.ending && !A.DreamSession.victory && A.DreamSession.wake == "douyu", "boss fixed dream defeat after three rounds");
+        foreach (round in [1,3,5]) {
+            ::dreamTest.round = round; t.onUpdate();
+            local count = ::dreamTest.notices.len(); t.onUpdate();
+            check(!A.DreamSession.ending && ::dreamTest.notices.len() == count, "tide forecast is once per phase and still allows play " + round);
+        }
+        check(::dreamTest.notices.len() == 3 && ::dreamTest.kills == 0, "three increasing tide forecasts before any scripted death");
+        ::dreamTest.round = 6; t.onUpdate();
+        check(A.DreamSession.ending && !A.DreamSession.victory && A.DreamSession.wake == "douyu", "boss dream ends after five playable rounds");
+        check(::dreamTest.kills == 0 && ::DialogScreen.isVisible() && ::dreamTest.monologues == 1, "narration precedes mass death");
+        ::dreamTest.virtualTime += 30; t.onUpdate(); t.onBattleEnded();
+        check(!A.DreamSession.exitStarted && ::dreamTest.kills == 0 && ::dreamTest.monologues == 1, "reading time and native reentry cannot bypass or duplicate narration");
+        ::DialogScreen.onOkPressed();
+        check(::dreamTest.kills == 0 && A.DreamSession.tide != null,"water animation starts before any scripted deaths");
+        ::dreamTest.realTime += 3.41; t.onUpdate();
         check(::dreamTest.kills == 10 && !A.DreamSession.exitStarted,"all temporary actors fall before returning");
         foreach (actor in A.DreamSession.actors) check(!actor.isAlive(),"scripted defeat leaves no dream survivor");
         t.onBattleEnded(); check(::dreamTest.kills == 10,"native death reentry cannot repeat scripted defeat");
-        ::dreamTest.virtualTime += 1.5; t.onUpdate();
+        ::dreamTest.realTime += 1.2; t.onUpdate();
     } else {
         ::Tactical.Entities.result = ::Const.Tactical.CombatResult.EnemyDestroyed; t.onBattleEnded();
         check(A.DreamSession.victory, "non-boss victory advances");
@@ -241,8 +276,15 @@ foreach (cause in ["retreat", "skip", "early loss", "boss victory"]) {
     else if (cause == "skip") t.main_menu_module_onQuitPressed();
     else { ::Tactical.Entities.result = cause == "boss victory" ? 1 : 3; t.onBattleEnded(); }
     check(A.DreamSession.ending && !A.DreamSession.victory, "cancellation/defeat cannot grant dream victory " + cause);
+    check(::dreamTest.kills == 0 && ::DialogScreen.isVisible(), "every alternate ending receives a narrative bridge " + cause);
+    if (cause == "boss victory") check(A.dreamEndingText(A.DreamSession.endingCause).find("斗鱼终于倒下") != null, "early boss kill acknowledges victory before the rising water");
+    if (cause == "retreat") {
+        check(t.onKeyInput({getState=function(){return 0;},getKey=function(){return 41;}}), "Escape safely continues ending monologue");
+    } else ::DialogScreen.onOkPressed();
+    check(::dreamTest.kills == 0 && A.DreamSession.tide != null,"alternate ending starts water tableau before deaths " + cause);
+    ::dreamTest.realTime += 3.41; t.onUpdate();
     check(::dreamTest.kills == 10 && A.DreamSession.wake == "douyu", "every exit is the same scripted party defeat " + cause);
-    ::dreamTest.virtualTime += 1.5; t.onUpdate();
+    ::dreamTest.realTime += 1.2; t.onUpdate();
     check(A.DreamSession.exitStarted,"death presentation completes safely " + cause);
     ::World.State.onReturnedFromTactical(); assertReality(cause);
     check(A.dreamStatus() == "complete", "returns to playable campaign " + cause);

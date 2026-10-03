@@ -257,22 +257,27 @@
           "stats": {}
         },
         {
-          "path": "scripts/items/armor/named/black_leather_armor",
-          "name": "阿飞·夜行衣",
+          "path": "scripts/items/armor/named/named_noble_mail_armor",
+          "name": "阿飞·黑旗行装",
           "stats": {
-            "Condition": 138,
-            "ConditionMax": 138,
+            "Condition": 192,
+            "ConditionMax": 192,
             "StaminaModifier": -8
           }
         },
         {
           "path": "scripts/items/helmets/named/norse_helmet",
-          "name": "阿飞·行旅盔",
+          "name": "阿飞·归途盔",
           "stats": {
             "Condition": 150,
             "ConditionMax": 150,
             "StaminaModifier": -5
           }
+        },
+        {
+          "path": "scripts/items/accessory/afeix_ecig_item",
+          "name": "",
+          "stats": {}
         }
       ],
       "bag": [],
@@ -521,13 +526,13 @@
           "stats": {}
         },
         {
-          "path": "scripts/items/shields/named/named_golden_round_shield",
-          "name": "王大谋·不退之盾",
+          "path": "scripts/items/shields/named/named_full_metal_heater_shield",
+          "name": "大谋·不退壁盾",
           "stats": {}
         },
         {
           "path": "scripts/items/armor/named/brown_coat_of_plates_armor",
-          "name": "王大谋·守阵甲",
+          "name": "大谋·不退壁垒",
           "stats": {
             "Condition": 360,
             "ConditionMax": 360,
@@ -536,7 +541,7 @@
         },
         {
           "path": "scripts/items/helmets/named/named_metal_bull_helmet",
-          "name": "王大谋·铁角盔",
+          "name": "大谋·铁角守夜",
           "stats": {
             "Condition": 360,
             "ConditionMax": 360,
@@ -795,21 +800,21 @@
           "stats": {}
         },
         {
-          "path": "scripts/items/armor/named/black_leather_armor",
-          "name": "午夜抹抹茶·夜行衣",
+          "path": "scripts/items/armor/named/blue_studded_mail_armor",
+          "name": "抹茶·蓝墨账衣",
           "stats": {
-            "Condition": 138,
-            "ConditionMax": 138,
+            "Condition": 168,
+            "ConditionMax": 168,
             "StaminaModifier": -8
           }
         },
         {
-          "path": "scripts/items/helmets/named/norse_helmet",
-          "name": "午夜抹抹茶·行旅盔",
+          "path": "scripts/items/helmets/named/wolf_helmet",
+          "name": "抹茶·夜哨",
           "stats": {
-            "Condition": 150,
-            "ConditionMax": 150,
-            "StaminaModifier": -5
+            "Condition": 168,
+            "ConditionMax": 168,
+            "StaminaModifier": -4
           }
         }
       ],
@@ -834,7 +839,7 @@
     },
     "bottle": {
       "name": "小酒瓶",
-      "role": "高命中单手决斗主力",
+      "role": "高命中斩刀决斗与破阵",
       "place": 5,
       "level": 11,
       "stars": {
@@ -1048,7 +1053,7 @@
         "colossus",
         "gifted",
         "fast_adaption",
-        "mastery_sword",
+        "mastery_cleaver",
         "rotation",
         "underdog",
         "nimble",
@@ -1060,13 +1065,13 @@
       "route": "normal",
       "equipment": [
         {
-          "path": "scripts/items/weapons/named/named_sword",
-          "name": "瓶队·决赛之刃",
+          "path": "scripts/items/weapons/named/named_cleaver",
+          "name": "瓶队·破阵斩刀",
           "stats": {}
         },
         {
           "path": "scripts/items/armor/named/black_leather_armor",
-          "name": "小酒瓶·夜行衣",
+          "name": "瓶队·决赛战衣",
           "stats": {
             "Condition": 138,
             "ConditionMax": 138,
@@ -1074,12 +1079,12 @@
           }
         },
         {
-          "path": "scripts/items/helmets/named/norse_helmet",
-          "name": "小酒瓶·行旅盔",
+          "path": "scripts/items/helmets/named/wolf_helmet",
+          "name": "瓶队·追猎盔",
           "stats": {
-            "Condition": 150,
-            "ConditionMax": 150,
-            "StaminaModifier": -5
+            "Condition": 168,
+            "ConditionMax": 168,
+            "StaminaModifier": -4
           }
         }
       ],
@@ -1336,25 +1341,25 @@
         },
         {
           "path": "scripts/items/shields/named/named_golden_round_shield",
-          "name": "白小帅子·不退之盾",
+          "name": "帅仔·鼓阵圆盾",
           "stats": {}
         },
         {
-          "path": "scripts/items/armor/named/brown_coat_of_plates_armor",
-          "name": "白小帅子·守阵甲",
+          "path": "scripts/items/armor/named/green_coat_of_plates_armor",
+          "name": "帅仔·鼓阵重甲",
           "stats": {
-            "Condition": 360,
-            "ConditionMax": 360,
-            "StaminaModifier": -27
+            "Condition": 384,
+            "ConditionMax": 384,
+            "StaminaModifier": -33
           }
         },
         {
-          "path": "scripts/items/helmets/named/named_metal_bull_helmet",
-          "name": "白小帅子·铁角盔",
+          "path": "scripts/items/helmets/named/heraldic_mail_helmet",
+          "name": "帅仔·旌纹盔",
           "stats": {
-            "Condition": 360,
-            "ConditionMax": 360,
-            "StaminaModifier": -18
+            "Condition": 336,
+            "ConditionMax": 336,
+            "StaminaModifier": -15
           }
         }
       ],
@@ -1373,7 +1378,7 @@
     },
     "lili": {
       "name": "李李超欧",
-      "role": "弓手连续点杀",
+      "role": "轻甲长弓与超距支援",
       "place": 13,
       "level": 11,
       "stars": {
@@ -1610,7 +1615,7 @@
         },
         {
           "path": "scripts/items/armor/named/black_leather_armor",
-          "name": "李李超欧·夜行衣",
+          "name": "李李·风中斗篷",
           "stats": {
             "Condition": 138,
             "ConditionMax": 138,
@@ -1619,7 +1624,7 @@
         },
         {
           "path": "scripts/items/helmets/named/norse_helmet",
-          "name": "李李超欧·行旅盔",
+          "name": "李李·听风盔",
           "stats": {
             "Condition": 150,
             "ConditionMax": 150,
@@ -1879,17 +1884,17 @@
           "stats": {}
         },
         {
-          "path": "scripts/items/armor/named/black_leather_armor",
-          "name": "小月牙·夜行衣",
+          "path": "scripts/items/armor/named/named_plated_fur_armor",
+          "name": "小月牙·百货行囊",
           "stats": {
-            "Condition": 138,
-            "ConditionMax": 138,
+            "Condition": 156,
+            "ConditionMax": 156,
             "StaminaModifier": -8
           }
         },
         {
           "path": "scripts/items/helmets/named/norse_helmet",
-          "name": "小月牙·行旅盔",
+          "name": "小月牙·远行盔",
           "stats": {
             "Condition": 150,
             "ConditionMax": 150,
@@ -1928,7 +1933,7 @@
     },
     "yuchujiu": {
       "name": "余初九",
-      "role": "贴前排的换位救场接应",
+      "role": "轻甲控场与换位救场",
       "place": 6,
       "level": 11,
       "stars": {
@@ -2143,7 +2148,7 @@
         "gifted",
         "dodge",
         "relentless",
-        "mastery_sword",
+        "mastery_mace",
         "underdog",
         "nimble",
         "berserk",
@@ -2154,22 +2159,22 @@
       "route": "normal",
       "equipment": [
         {
-          "path": "scripts/items/weapons/named/named_sword",
-          "name": "初九·叫停之刃",
+          "path": "scripts/items/weapons/named/named_mace",
+          "name": "初九·叫停之锤",
           "stats": {}
         },
         {
-          "path": "scripts/items/armor/named/black_leather_armor",
-          "name": "余初九·夜行衣",
+          "path": "scripts/items/armor/named/blue_studded_mail_armor",
+          "name": "初九·接应锁衣",
           "stats": {
-            "Condition": 138,
-            "ConditionMax": 138,
+            "Condition": 168,
+            "ConditionMax": 168,
             "StaminaModifier": -8
           }
         },
         {
           "path": "scripts/items/helmets/named/norse_helmet",
-          "name": "余初九·行旅盔",
+          "name": "初九·归队盔",
           "stats": {
             "Condition": 150,
             "ConditionMax": 150,
@@ -2429,21 +2434,21 @@
           "stats": {}
         },
         {
-          "path": "scripts/items/armor/named/brown_coat_of_plates_armor",
-          "name": "小鱼贝壳·守阵甲",
+          "path": "scripts/items/armor/named/leopard_armor",
+          "name": "小鱼·踏浪兽甲",
           "stats": {
-            "Condition": 360,
-            "ConditionMax": 360,
-            "StaminaModifier": -27
+            "Condition": 348,
+            "ConditionMax": 348,
+            "StaminaModifier": -26
           }
         },
         {
-          "path": "scripts/items/helmets/named/named_metal_bull_helmet",
-          "name": "小鱼贝壳·铁角盔",
+          "path": "scripts/items/helmets/named/golden_feathers_helmet",
+          "name": "小鱼·潮羽盔",
           "stats": {
-            "Condition": 360,
-            "ConditionMax": 360,
-            "StaminaModifier": -18
+            "Condition": 288,
+            "ConditionMax": 288,
+            "StaminaModifier": -12
           }
         }
       ],
@@ -2699,21 +2704,21 @@
           "stats": {}
         },
         {
-          "path": "scripts/items/armor/named/black_leather_armor",
-          "name": "王怼怼·夜行衣",
+          "path": "scripts/items/armor/named/named_noble_mail_armor",
+          "name": "怼怼·传令旗衣",
           "stats": {
-            "Condition": 138,
-            "ConditionMax": 138,
+            "Condition": 192,
+            "ConditionMax": 192,
             "StaminaModifier": -8
           }
         },
         {
-          "path": "scripts/items/helmets/named/norse_helmet",
-          "name": "王怼怼·行旅盔",
+          "path": "scripts/items/helmets/named/wolf_helmet",
+          "name": "怼怼·号令盔",
           "stats": {
-            "Condition": 150,
-            "ConditionMax": 150,
-            "StaminaModifier": -5
+            "Condition": 168,
+            "ConditionMax": 168,
+            "StaminaModifier": -4
           }
         }
       ],

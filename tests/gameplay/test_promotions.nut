@@ -21,10 +21,11 @@ dofile("tests/gameplay/talent_fixture.nut");
     syncCharacterArt = function(actor) { ::state.art++; if (::state.failArt) { ::state.failArt = false; throw "appearance failed"; } }
 };
 
+dofile("src/scripts/mods/afeix/combat_feedback.nut");
 ::definitions <- {};
 ::nativeSkill <- {
     m = { ID = "", Name = "", Description = "", Icon = "", IconMini = "", IconDisabled = "", IsNew = true, Container = null, IsUsable = true, IsRemovedAfterBattle = false, IsSerialized = true,
-        Type = 0, Order = 0, IsActive = false, IsTargeted = false, IsStacking = false, IsAttack = false, IsVisibleTileNeeded = true,
+        Type = 0, Order = 0, Overlay = "", IsActive = false, IsTargeted = false, IsStacking = false, IsAttack = false, IsVisibleTileNeeded = true,
         ActionPointCost = 0, FatigueCost = 0, MinRange = 0, MaxRange = 0, IsGarbage = false },
     getContainer = function() { return this.m.Container; },
     getID = function() { return this.m.ID; },

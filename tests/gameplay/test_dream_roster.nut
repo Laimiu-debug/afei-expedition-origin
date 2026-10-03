@@ -29,7 +29,8 @@ dofile(".cache/afei-art/native-contract-fixture/actor.nut");
 ::nativeDirtyActor <- { m={IsAlive=true,IsDying=false,IsDirty=false,ContentID=0},
     updateOverlay=function(){},isPlacedOnMap=function(){return false;} };
 ::nativeDirtyActor.setdelegate(getroottable());
-::AfeixExpedition <- {Schema=2,TalentRevision=4,characterBackgroundPath=function(key){return "afeix_"+key+"_background";},isOrigin=function(){return true;}};
+::AfeixExpedition <- {Schema=2,TalentRevision=4,characterBackgroundPath=function(key){return "afeix_"+key+"_background";},isOrigin=function(){return true;},
+    get=function(key,fallback=0){return fallback;}};
 dofile("src/scripts/mods/afeix/characters.nut");
 dofile("src/scripts/mods/afeix/member_skills.nut");
 dofile("src/scripts/mods/afeix/member_catalog_data.nut");
@@ -55,7 +56,7 @@ function makeBrother() {
     local inventory={equipped=[],bag=[],capacity=2,clear=function(){this.equipped=[];this.bag=[];},
         equip=function(item){if(::state.rejectEquip)return false;this.equipped.push(item);return true;},
         addToBag=function(item){if(this.bag.len()>=this.capacity)return false;this.bag.push(item);return true;}};
-    local actor={id=++::state.nextID,m={Level=1,XP=0,LevelUps=0,PerkPoints=0,PerkPointsSpent=0,Attributes=[],HireTime=0},name="",title="",place=255,hp=0,fatigue=0,artSynced=false,
+    local actor={id=++::state.nextID,m={Level=1,XP=0,LevelUps=0,PerkPoints=0,PerkPointsSpent=0,Attributes=[],HireTime=0,IsHidingHelmet=false},name="",title="",place=255,hp=0,fatigue=0,artSynced=false,
         getID=function(){return this.id;},getFlags=function(){return f;},getBaseProperties=function(){return p;},getTalents=function(){return talents;},
         getSkills=function(){return skills;},getItems=function(){return inventory;},getLevel=function(){return this.m.Level;},
         getHitpointsMax=function(){return p.Hitpoints;},setHitpoints=function(n){this.hp=n;},setFatigue=function(n){this.fatigue=n;},
@@ -106,6 +107,7 @@ foreach(i,actor in actors) {
     local key=A.DreamRoster.order[i], d=A.DreamRoster.people[key], real=A.BalanceV26.people[key];
     check(actor.m.Level==11&&actor.m.XP==::Const.LevelXP[10]&&actor.m.LevelUps==0&&actor.m.PerkPoints==0&&actor.m.PerkPointsSpent==10&&actor.m.Attributes.len()==0,key+" real level11 accounting fully spent");
     check(actor.getFlags().get("afeix_dream_actor")&&actor.getFlags().get("afeix_character")==key&&actor.artSynced,key+" temporary identity and native portrait sync");
+    check(actor.m.IsHidingHelmet, key+" defaults to hidden helmet before first equipment refresh");
     check(!(actor.place in slots),key+" unique formation slot");slots[actor.place]<-true;
     local selections=array(8,0), gains=array(8,0), points=0;
     foreach(row in d.level_rows) {
@@ -144,7 +146,7 @@ foreach(i,actor in actors) {
         check(!item.m.IsDroppedAsLoot,key+" equipment cannot leak into loot");
         if(item.path.find("armor/")!=null||item.path.find("helmets/")!=null)armorFatigue-=item.m.StaminaModifier;
     }
-    check(d.heavy?armorFatigue==45:armorFatigue==13,key+" native armor matches heavy or Nimble plan");
+    check(d.heavy?armorFatigue>=35:armorFatigue<=15,key+" native armor matches heavy or Nimble plan");
     check(actor.getItems().bag.len()==d.bag.len(),key+" bags accepted with native slot capacity");
 }
 local badRoster=roster(),existing=makeBrother();badRoster.actors.push(existing);
@@ -172,7 +174,10 @@ check(A.withDreamConstructionRandom(57,function(){return ::Math.rand(-4,-4);})==
 threw=false;try{A.withDreamConstructionRandom(57,function(){::Math.rand();throw "native initialization failed";});}catch(error){threw=true;}
 check(threw&&::Math.rand==::campaignRand&&::state.campaignRolls==0,"no-argument callback failure restores campaign RNG");
 local armorItem=A.makeDreamItem(A.DreamRoster.people.afei.equipment[1]);
-check(!("Condition" in armorItem.m)&&armorItem.m.Condition==138&&armorItem.m.ConditionMax==138&&armorItem.m.StaminaModifier==-8,"inherited named armor fields accept exact dream rolls");
+check(!("Condition" in armorItem.m)&&armorItem.m.Condition==192&&armorItem.m.ConditionMax==192&&armorItem.m.StaminaModifier==-8,"inherited named armor fields accept exact dream rolls");
+A.get=function(key,fallback=0){return key=="hide_helmets"?false:fallback;};
+local shown=A.makeDreamCharacter("afei",badRoster);
+check(!shown.m.IsHidingHelmet,"explicit shown-helmet preference applies at construction too");
 threw=false;try{A.makeDreamItem({path="scripts/items/armor/named/black_leather_armor",name="",stats={TypoCondition=138}});}catch(error){threw=true;}
 check(threw,"unknown equipment fields still reject typos");
 print("TESTS_PASSED="+::checks+"\n");

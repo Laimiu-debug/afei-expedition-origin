@@ -21,7 +21,7 @@ A.dreamPage <- function(event, id) {
     } else if (id == "opening_dream") {
         screen.Image = "ui/events/afeix_douyu.png";
         screen.PortraitKeys = ["afei", "mocha"];
-        screen.Text = this.get("dream_notice", "") + "营火的声音变成了水声。阿飞抬头，发现抹茶与大谋也站在黑旗下；再往两边看，刀一十人已经齐聚。熟悉的脸，熟悉的声音，握着的兵器却像陪他们走过了很长的路。\n\n全员11级，传奇装备各循自己的职责。前排已经站稳，盾卫留着接应的位置，远处有人搭好了弩。十人没有多说，便知道下一步该怎样互相照应。\n\n雾中先传来蜘蛛的窸窣声，随后是狼嚎与鳞甲拖过泥地的低响。更远处，一道橙色背鳍划开黑水，尖牙之上的笑脸正望着他们。\n\n先跟着这支成长后的队伍走一程。梦里的伤亡与装备不会带回现实；梦醒之后，三人还得亲自寻找自己的伙伴。";
+        screen.Text = this.get("dream_notice", "") + "营火的声音变成了水声。阿飞抬头，发现抹茶与大谋也站在黑旗下；再往两边看，刀一十人已经齐聚。熟悉的脸，熟悉的声音，握着的兵器却像陪他们走过了很长的路。\n\n大谋的铁角盔与壁盾守在最前，帅仔披着绿甲站住另一处缺口。抹茶在蓝色锁衣下搭好弩，李李从黑色斗篷里取出长弓。瓶队试了试斩刀的刃口，初九提着钉锤，留在随时能接应同伴的位置。小月牙摸过行囊里的飞签，小鱼肩上的兽甲映着巨斧，怼怼则接过了另一面黑旗。十人没有多说，便知道下一步该怎样互相照应。\n\n雾中先传来蜘蛛的窸窣声，随后是狼嚎与鳞甲拖过泥地的低响。更远处，一道橙色背鳍划开黑水，尖牙之上的笑脸正望着他们。\n\n先跟着这支成长后的队伍走一程。梦里的伤亡与装备不会带回现实；梦醒之后，三人还得亲自寻找自己的伙伴。";
         screen.Options.push(this.ledgerOption("走进这场梦。", function(e) { ::AfeixExpedition.set("dream_notice", ""); ::AfeixExpedition.queueDreamCombat(); return 0; }));
         screen.Options.push(this.ledgerOption("略过梦境战斗。", function(e) { ::AfeixExpedition.skipDream(); return "wake"; }));
     } else if (id == "stage") {
@@ -38,7 +38,7 @@ A.dreamPage <- function(event, id) {
         screen.Title = "黑旗初醒";
         screen.Image = "ui/events/event_33.png";
         screen.PortraitKeys = ["damou", "afei"];
-        screen.Text = "斗鱼的背鳍掀起最后一道梦潮。黑水没有随着战斗停下，反而漫过了脚下的空地。盾卫伸手去接同伴，旗手的喊声却消失在浪里。传奇兵器仍握在手中，黑旗下的十人已经一个接一个倒下。最后，连黑旗也沉了下去。\n\n阿飞猛地坐起。抹茶与大谋也在同一刻睁开眼，三人急促的呼吸盖过了余烬的轻响。大谋先问：‘你们也看见了？’抹茶摸向仍在手边的账本，阿飞望着尚未写满的黑旗，过了片刻才点头。\n\n原来的装备与行囊都还在。这场梦以全军覆没告终，现实的路却仍在脚下。他们得亲自找到愿意同行的人，慢慢长成自己的模样，再去面对斗鱼。";
+        screen.Text = "最后一道梦潮越过了盾沿。传奇兵器仍握在手中，十人却已经找不到可以落脚的土地。黑旗没有丢下谁，连同旗旁最后的身影一起沉入了水中。\n\n阿飞猛地坐起。抹茶与大谋也在同一刻睁开眼，三人急促的呼吸盖过了余烬的轻响。大谋先问：‘你们也看见了？’抹茶摸向仍在手边的账本，阿飞望着尚未写满的黑旗，过了片刻才点头。\n\n抹茶缓过气来：‘从狼群那时，水就在涨。我们只顾着看前面的东西……’大谋低头握了握自己的手：‘最后也没松开。’阿飞把黑旗重新卷好：‘那就记着。真走到那一天，找好退路，也把人带回来。’\n\n原来的装备与行囊都还在。这场梦以全军覆没告终，现实的路却仍在脚下。他们得亲自找到愿意同行的人，慢慢长成自己的模样，再去面对斗鱼。";
         screen.Options.push(this.ledgerOption("再看一眼脚下的路。", function(e) { ::AfeixExpedition.set("dream_wake_pending", false); ::AfeixExpedition.set("dream_departure_pending", true); return "departure"; }));
     } else if (id == "departure") {
         screen.Title = "黑旗启程";

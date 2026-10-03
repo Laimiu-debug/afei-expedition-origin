@@ -10,6 +10,8 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = (
+    "scripts/ui/screens/tactical/tactical_screen.cnut",
+    "scripts/ui/screens/dialog_screen.cnut",
     "scripts/ui/screens/tactical/modules/turn_sequence_bar/turn_sequence_bar.cnut",
     "scripts/config/spawnlist_master.cnut",
     "scripts/entity/tactical/tactical_entity_manager.cnut",

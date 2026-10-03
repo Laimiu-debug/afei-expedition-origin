@@ -18,6 +18,8 @@ art/runtime/helmet-layers-v01/pack/
 art/runtime/douyu-v01/pack/
 art/runtime/douyu-v01/build/roundtrip-*/
 art/runtime/douyu-trophies-v01/pack/
+art/runtime/douyu-rocket-v01/pack/
+art/runtime/douyu-rocket-v01/build/roundtrip-*/
 art/runtime/douyu-trophies-v01/build/roundtrip-*/
 dlc/xiwen-regen/art/corpse-injuries-v01/build/roundtrip-*/
 art/runtime/afei/v1/build/pack-input-*/
@@ -31,6 +33,7 @@ art/runtime/portraits-v04/build/roundtrip-*/
 # Reproducible art scratch space and local publication/installation copies.
 art/runtime/ideas-v19/build/roundtrip-*/
 build/**/installed-before-*.zip
+build/**/installed-before.zip
 build/**/before-mod_*.zip
 build/**/removed-installed-*.zip
 build/publish-*/*.zip

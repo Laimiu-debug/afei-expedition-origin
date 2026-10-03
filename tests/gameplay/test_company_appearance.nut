@@ -82,6 +82,27 @@ flags=clone chosen;A.syncCompanyHelmets();
 check(!recruit.m.IsHidingHelmet,"later appearance sync keeps the user's shown-helmet choice");
 flags=clone saved;
 check(world.onDeserialize(null)==44&&recruit.m.IsHidingHelmet,"world load restores setting after campaign flags");
+// Reproduce the construction boundary: the actor is not in session.actors yet.
+local dreamActor=makeBrother(),dreamChoice=true,realFlags=clone flags;
+dreamActor.getFlags<-function(){return {has=function(k){return k=="afeix_dream_actor";},get=function(k){return true;}};};
+A.isDreamCombat<-function(){return true;};
+local realGet=A.get;
+A.get=function(k,fallback=0){return k=="hide_helmets"?dreamChoice:realGet.bindenv(this)(k,fallback);};
+dreamActor.onAppearanceChanged(dreamActor.getItems().getAppearance());
+check(dreamActor.m.IsHidingHelmet&&!dreamActor.sprites.helmet.Visible,"dream helmet hidden on the first equip while session roster is incomplete");
+roster.push(dreamActor);
+foreach(refresh in ["weapon swap","damage appearance","equipment swap"]) {
+    dreamActor.onAppearanceChanged(dreamActor.getItems().getAppearance());
+    check(dreamActor.m.IsHidingHelmet&&!dreamActor.sprites.helmet.Visible,"hidden dream preference remains stable: "+refresh);
+}
+dreamChoice=false;
+dreamActor.onAppearanceChanged(dreamActor.getItems().getAppearance());
+check(!dreamActor.m.IsHidingHelmet&&dreamActor.sprites.helmet.Visible,"shown dream preference uses the same renderer");
+roster.remove(roster.find(dreamActor));
+dreamActor.onAppearanceChanged(dreamActor.getItems().getAppearance());
+check(dreamActor.sprites.helmet.Visible,"shown helmet also remains stable before dream roster assignment");
+foreach(k,v in realFlags)check(flags[k]==v,"dream appearance never migrates or changes real flags: "+k);
+A.get=realGet; A.isDreamCombat=function(){return false;};
 outsider.onAppearanceChanged(outsider.getItems().getAppearance());
 check(!outsider.m.IsHidingHelmet&&outsider.sprites.helmet.Visible,"enemy ally and recruit outside company unaffected");
 first.m.IsAlive=false;first.m.IsHidingHelmet=false;

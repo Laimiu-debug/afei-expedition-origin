@@ -6,6 +6,7 @@ this.afeix_douyu_barrage_skill <- this.inherit("scripts/skills/skill", {
         this.m.KilledString = "被弹幕击倒";
         this.m.Icon = "skills/afeix_douyu_barrage.png"; this.m.IconDisabled = this.m.Icon;
         this.m.Overlay = "active_71";
+        this.m.SoundOnUse = ["sounds/combat/dlc6/fire_mortar_02.wav"];
         this.m.Type = this.Const.SkillType.Active; this.m.Order = this.Const.SkillOrder.OffensiveTargeted;
         this.m.IsSerialized = false; this.m.IsActive = true; this.m.IsTargeted = true;
         this.m.IsAttack = true; this.m.IsRanged = true; this.m.IsAOE = true; this.m.IsIgnoredAsAOO = true;
@@ -14,6 +15,10 @@ this.afeix_douyu_barrage_skill <- this.inherit("scripts/skills/skill", {
         this.m.MaxRangeBonus = 0; this.m.MaxLevelDifference = 2; this.m.DirectDamageMult = ::AfeixExpedition.Douyu.Attacks.barrage.Direct;
     },
     function isUsable() { return this.skill.isUsable() && ::AfeixExpedition.Douyu.canSpecial(this.getContainer().getActor(), "barrage"); },
+    function addResources() {
+        this.skill.addResources();
+        this.Tactical.addResource("sounds/combat/dlc6/fire_mortar_impact_01.wav");
+    },
     function onAnySkillUsed(_skill, _targetEntity, _properties) {
         if(_skill != this) return;
         local tuning = ::AfeixExpedition.Douyu.Attacks.barrage;

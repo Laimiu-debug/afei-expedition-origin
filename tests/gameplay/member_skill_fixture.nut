@@ -12,6 +12,8 @@
     ceil=function(v){return ::ceil(v);},floor=function(v){return ::floor(v);},round=function(v){return ::floor(v+0.5);},rand=function(a,b){return a;} };
 ::state <- {origin=true,tactical=false,round=1,actors=[],serial=0,hit=true,attacks=[],flags={}};
 ::Time <- {getRound=function(){return ::state.round;}};
+::Const.Sound <- {Volume={Skill=1.0}};
+::Sound <- {play=function(...) {}};
 ::Tactical <- {isActive=function(){return ::state.tactical;},
     worldToTile=function(v){return v;},getTile=function(v){return {Level=0};},
     Entities={getInstancesOfFaction=function(f){local r=[];foreach(a in ::state.actors)if(a.faction==f)r.push(a);return r;}},
@@ -56,7 +58,7 @@ getroottable()["new"] <- function(path) {
     foreach(k,v in definition)if(typeof v=="table"&&k!="m"){
         local baseProps={};foreach(bk,bv in v)if(typeof bv=="function")baseProps[bk]<-bv.bindenv(o);o[k]=baseProps;
     }
-    o.spawnOverlay=function(...){};o.spawnAttackEffect=function(...){};
+    o.spawnOverlay=function(...){};o.spawnAttackEffect=function(...){};o.spawnIcon<-function(...){};
     o.create();o.m.SoundOnUse=[];
     return o;
 };
@@ -91,6 +93,8 @@ function makeActor(key,pos=0,faction=1) {
         onDamageReceived=function(user,s,hit){this.received.push(clone hit);}
     };
     a.level<-1;a.flags<-{values={},has=function(k){return k in this.values;},get=function(k){return this.values[k];},set=function(k,v){this.values[k]<-v;}};
+    a.getPos <- function(){return this.tile.Pos;};
+    a.playAttackSound <- function(){};
     a.getLevel<-function(){return this.level;};a.getBaseProperties<-function(){return this.baseProps;};a.getFlags<-function(){return this.flags;};
     a.tile<-{owner=a,ID=100+a.id,Level=0,Pos={X=pos,Y=0},IsOccupiedByActor=true,IsEmpty=false,IsVisibleForEntity=true,IsVisibleForPlayer=true,
         getEntity=function(){return this.owner;},getDistanceTo=function(t){return abs(this.owner.pos-t.owner.pos);},

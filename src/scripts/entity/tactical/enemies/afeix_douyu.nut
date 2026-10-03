@@ -1,5 +1,13 @@
 this.afeix_douyu <- this.inherit("scripts/entity/tactical/actor", {
-    m = { AfeixDouyuLootDropped = false },
+    m = { AfeixDouyuLootDropped = false, AfeixBarSprites = [], AfeixBarIcons = [] },
+    // Suppress only this boss's fixed engine bars; native actor.updateOverlay
+    // still supplies the real HP, armor and status values to the sprites below.
+    function createOverlay() {},
+    function setOverlayValues(head, body, hp) { ::AfeixExpedition.DouyuOverlay.values(this, head, body, hp); },
+    function setOverlayIcons(icons) { ::AfeixExpedition.DouyuOverlay.icons(this, icons); },
+    function getImagePath() { return ::AfeixExpedition.DouyuOverlay.image(this); },
+    function onRender() { this.actor.onRender(); ::AfeixExpedition.DouyuOverlay.visibility(this); },
+    function resetRenderEffects() { this.actor.resetRenderEffects(); this.setRenderCallbackEnabled(true); },
     function create() {
         this.m.Type = this.Const.EntityType.Unhold;
         this.m.Name = "斗鱼·深渊之主";
@@ -32,7 +40,9 @@ this.afeix_douyu <- this.inherit("scripts/entity/tactical/actor", {
         this.m.ActionPointCosts = this.Const.DefaultMovementAPCost; this.m.FatigueCosts = this.Const.DefaultMovementFatigueCost;
         this.m.Items.getAppearance().Body = "afeix_douyu_body";
         this.addSprite("socket").setBrush("bust_base_beasts");
-        this.addSprite("body").setBrush("afeix_douyu_body");
+        local body = this.addSprite("body");
+        body.setBrush("afeix_douyu_body");
+        body.Scale = 1.0;
         this.addSprite("injury").Visible = false;
         this.addSprite("armor"); this.addSprite("head"); this.addSprite("helmet");
         this.addDefaultStatusSprites();
@@ -46,6 +56,7 @@ this.afeix_douyu <- this.inherit("scripts/entity/tactical/actor", {
         this.m.Skills.add(this.new("scripts/skills/perks/perk_pathfinder"));
         this.m.Skills.add(this.new("scripts/skills/perks/perk_steel_brow"));
         this.m.Skills.add(this.new("scripts/skills/perks/perk_hold_out"));
+        ::AfeixExpedition.DouyuOverlay.init(this);
     },
     function onFactionChanged() {
         this.actor.onFactionChanged(); this.getSprite("body").setHorizontalFlipping(this.isAlliedWithPlayer());
@@ -55,6 +66,7 @@ this.afeix_douyu <- this.inherit("scripts/entity/tactical/actor", {
         // death adds exactly the three fixed trophies through native tile loot.
         if(_tile != null) {
             local decal = _tile.spawnDetail("afeix_douyu_dead", this.Const.Tactical.DetailFlag.Corpse, false);
+            decal.Scale = 1.0;
             decal.setBrightness(0.9);
             this.spawnBloodPool(_tile, 1);
             local corpse = clone this.Const.Corpse;

@@ -15,6 +15,7 @@ this.afeix_member_effect <- this.inherit("scripts/skills/skill", {
         else if (kind == "breakthrough_exposed") { this.m.Name = "突破后的空门"; this.m.Description = "近战防御 -5，直到自己下次回合开始。"; icon = "bottle_breakthrough"; }
         else { this.m.Name = A.MemberSkillDefs[kind].name; this.m.Description = A.MemberSkillDefs[kind].text; }
         this.m.Icon = "skills/afeix_member_" + icon + ".png"; this.m.IconMini = this.m.Icon;
+        A.configureStatusFeedback(this, kind, kind != "blue_form");
         this.m.Source = source == null ? 0 : source.getID();
         this.m.SourceTile = source == null ? 0 : source.getTile().ID;
         this.m.SourceTurn = 0;

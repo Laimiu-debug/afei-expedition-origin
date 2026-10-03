@@ -4,6 +4,9 @@ local A = ::AfeixExpedition;
 A.ensureCompanyHelmetDefault <- function() {
     if (!this.isOrigin() || !("World" in getroottable()) || ::World == null
         || !("Flags" in ::World) || ::World.Flags == null) return false;
+    // The dream snapshots this choice before construction; never run a world
+    // flag migration against the dream's isolated get/set namespace.
+    if ("isDreamCombat" in this && this.isDreamCombat()) return true;
     // One migration for older campaigns; subsequent explicit choices persist.
     if (!::World.Flags.has("afeix_full_portrait_helmet_default")) {
         this.set("hide_helmets", true);
@@ -15,7 +18,9 @@ A.managesCompanyHelmet <- function(bro) {
     return this.isOrigin() && bro != null && bro.m.IsAlive && !bro.m.IsDying
         && "World" in getroottable() && ::World != null
         && "Flags" in ::World && ::World.Flags != null
-        && this.roster().find(bro) != null;
+        && (this.roster().find(bro) != null
+            || ("isDreamCombat" in this && this.isDreamCombat()
+                && bro.getFlags().has("afeix_dream_actor") && bro.getFlags().get("afeix_dream_actor") == true));
 };
 A.applyCompanyHelmetState <- function(bro) {
     if (!this.managesCompanyHelmet(bro) || !this.ensureCompanyHelmetDefault()) return false;
