@@ -14,3 +14,5 @@
 153份脚本、46,659条离线断言及资源检查通过。黑潮生产代码的7帧Canvas预览验证两个横扫方向、尾流离场和最终淡黑。本次没有启动游戏，新增黑潮、火箭、五轮收尾及配装的实机验收仍待完成；历史包的实机结果不替代新功能验收。
 
 证据位于`build/publish-v0.29.0-preview.12/`。GitHub提交仅包含主Mod和相关制作、验证资料，可选DLC保持独立。
+
+GitHub主源码提交及版本标签指向`b3c008eeefe47f4cc90fc48f7c7156c40c72153d`，发布为公开预览版。附件采用`mod_afeix_expedition.zip`和对应SHA-256文件，两份公开附件已下载核对；ZIP与官网、本机安装包一致，334个源码条目和CRC通过。源码提交按Git的换行转换保存，发布ZIP保留原始已测试字节。完整证据见`build/publish-v0.29.0-preview.12/github-verification.json`。

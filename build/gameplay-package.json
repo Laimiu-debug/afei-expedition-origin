@@ -534,7 +534,7 @@
   "named_characters": 34,
   "roster_capacity": 40,
   "combat_capacity": 12,
-  "scope": "Current working tree main Mod; locally installed and publicly verified on BBMOD. No in-game acceptance for the added animation.",
+  "scope": "Current main Mod; locally installed, BBMOD and GitHub prerelease public downloads verified. Added animation has no in-game acceptance.",
   "published": true,
   "installed": true,
   "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
@@ -565,5 +565,13 @@
   "public_download_url": "https://bbmod.com/files/9b7812c0-1789-410a-a5e9-37451fe8a4cf/download/",
   "public_download_sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa",
   "public_download_verified": true,
-  "website_publication_report": "build/publish-v0.29.0-preview.12/website-verification.json"
+  "website_publication_report": "build/publish-v0.29.0-preview.12/website-verification.json",
+  "github": {
+    "commit": "b3c008eeefe47f4cc90fc48f7c7156c40c72153d",
+    "tag": "v0.29.0-preview.12",
+    "release_url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.0-preview.12",
+    "public_zip_sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa",
+    "public_assets_verified": true,
+    "verification_report": "build/publish-v0.29.0-preview.12/github-verification.json"
+  }
 }
