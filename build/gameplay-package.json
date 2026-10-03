@@ -568,5 +568,13 @@
     "verification_report": "build/publish-v0.29.0-preview.13/website-verification.json",
     "backup_integrity": "ok",
     "historical_releases_unchanged": 28
+  },
+  "github": {
+    "commit": "85bae130e29968c7dc07512007a9bb64663652e2",
+    "tag": "v0.29.0-preview.13",
+    "release_url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.0-preview.13",
+    "public_zip_sha256": "1220b7dae474327c569fbcaf46de509c73e0d1343525458754a28b210059b8de",
+    "public_assets_verified": true,
+    "verification_report": "build/publish-v0.29.0-preview.13/github-verification.json"
   }
 }

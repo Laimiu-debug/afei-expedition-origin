@@ -13,3 +13,5 @@
 153份脚本、46,664条离线断言通过。20组真实浏览器分辨率与缩放均覆盖四边和四角，演出中改尺寸也适配；截图最终帧各边和中心全黑。游戏原生CEF全屏与加载衔接复测尚待完成，不能将浏览器检查当作实机验收。
 
 证据：`build/publish-v0.29.0-preview.13/`与`build/dream-tide-preview.13/viewport-report.json`。
+
+GitHub主源码提交与预览版标签指向`85bae130e29968c7dc07512007a9bb64663652e2`。完整ZIP与SHA-256附件均已公开下载核对，ZIP和官网、本机安装包完全一致；校验报告见`build/publish-v0.29.0-preview.13/github-verification.json`。
