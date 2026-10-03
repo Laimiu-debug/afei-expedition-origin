@@ -33,7 +33,9 @@ def gh(*args, required=True):
     return result
 
 remote_main = json.loads(gh('api', f'repos/{repo}/git/ref/heads/main').stdout)['object']['sha']
-assert remote_main == commit, 'Remote main changed before release'
+if remote_main != commit:
+    comparison = json.loads(gh('api', f'repos/{repo}/compare/{commit}...{remote_main}').stdout)
+    assert comparison['merge_base_commit']['sha'] == commit, 'Release source is absent from remote main'
 remote_tag = json.loads(gh('api', f'repos/{repo}/git/ref/tags/{tag}').stdout)['object']
 if remote_tag['type'] == 'tag':
     remote_tag = json.loads(gh('api', f'repos/{repo}/git/tags/{remote_tag["sha"]}').stdout)['object']
