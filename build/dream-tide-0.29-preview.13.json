@@ -1,0 +1,62 @@
+{
+  "version": "0.29.0-preview.13",
+  "internal_version": 77,
+  "completed_at": "2026-10-03T19:52:56.837446+08:00",
+  "scope": "Fullscreen tide viewport correction; horizontal sweep and all gameplay remain as preview.12.",
+  "changes": {
+    "canvas_parent": "document.documentElement outside body zoom/clipping",
+    "sizing": "Cancel computed root zoom; explicit viewport pixel size plus 2px edge margin; displayed bounds recalibrate older embedded-browser zoom handling. Resize adapts every frame.",
+    "raster_work": "Keep 1280-pixel rendering-width cap; expand CSS display to full viewport."
+  },
+  "offline": {
+    "scripts": 153,
+    "assertions": 46664,
+    "syntax_passed": true,
+    "behavior_tests_passed": true,
+    "native_resource_paths_passed": true,
+    "report": "build/gameplay-validation.json",
+    "frontend_assertions": 35
+  },
+  "visual_preview": {
+    "browser_tested": true,
+    "browser_version": "154.0.4258.53",
+    "viewport_cases": 20,
+    "all_edges_corners_and_resizes_passed": true,
+    "viewport_report": "build/dream-tide-preview.13/viewport-report.json",
+    "canvas_report": "build/dream-tide-preview.13/render-report.json",
+    "html": "build/dream-tide-preview.13/preview.html",
+    "in_game_tested": false
+  },
+  "package": {
+    "path": "G:\\CODE\\afei-xcpedition\\dist\\mod_afeix_expedition v0.29.0-preview.13.zip",
+    "sha256": "1220b7dae474327c569fbcaf46de509c73e0d1343525458754a28b210059b8de",
+    "size": 4891868,
+    "entries": 334,
+    "crc_passed": true,
+    "source_bytes_match": true
+  },
+  "installation": {
+    "path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+    "sha256": "1220b7dae474327c569fbcaf46de509c73e0d1343525458754a28b210059b8de",
+    "bytes_match": true,
+    "backup": "G:\\CODE\\afei-xcpedition\\build\\dream-tide-preview.13\\installed-before.zip",
+    "backup_sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa",
+    "game_closed_at_install": true,
+    "saves_modified": false
+  },
+  "published": true,
+  "in_game_tested": false,
+  "limits": [
+    "No game was launched for this revision.",
+    "Real browser native-CSS layout is not acceptance of the game embedded CEF, actual deaths or loading-to-wake transition."
+  ],
+  "website": {
+    "release_id": "f3bd9a09-c0c4-47ff-a902-cafcbae2dd65",
+    "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "download_url": "https://bbmod.com/files/f3bd9a09-c0c4-47ff-a902-cafcbae2dd65/download/",
+    "public_bytes_match": true,
+    "verification_report": "build/publish-v0.29.0-preview.13/website-verification.json",
+    "backup_integrity": "ok",
+    "historical_releases_unchanged": 28
+  }
+}

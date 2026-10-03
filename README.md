@@ -2,6 +2,8 @@
 
 阿飞主题的《战场兄弟》独立公司起源项目，目标环境为 PC 原版与官方 DLC。
 
+**v0.29.0-preview.13 已发布官网，已安装本机**：修正黑潮只显示在左上角的全屏尺寸问题。黑潮层移到文档根层，抵消原版UI缩放，按实际屏幕像素定尺寸并校准显示边界；不同窗口和UI比例下横扫与淡黑均覆盖屏幕四边。真实浏览器下4种分辨率、5种缩放共20组画面及实时改尺寸检查通过，新增原生CEF实机复测仍待完成。保持preview.12的横扫方向和全部玩法。153份脚本、46,664条离线断言和334个包条目检查通过。[官网下载](https://bbmod.com/files/f3bd9a09-c0c4-47ff-a902-cafcbae2dd65/download/) · [GitHub版本](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.0-preview.13)。[更新说明](docs/releases/v0.29.0-preview.13.md) · [代码预览](build/dream-tide-preview.13/preview.html)。
+
 **v0.29.0-preview.12 已发布官网与GitHub，已安装本机**：最后独白读完后，黑色浪墙带着横向潮雾从右往左刮过战场，浪头与尾流在2.4秒内扫出画面；随后梦中队员逐个倒下，阿飞最后倒下，再淡黑接入梦醒。整段约4.6秒，暂停菜单退出也能完成；输入、回合和并行AI在收尾期间暂停。包含此前火箭动画、头盔修复和分别配装。153份脚本、46,659条离线断言及Canvas方向和画面帧检查通过，新增演出仍待实机验收。[官网下载](https://bbmod.com/files/9b7812c0-1789-410a-a5e9-37451fe8a4cf/download/) · [GitHub版本](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.0-preview.12) · [本地完整包](<dist/mod_afeix_expedition v0.29.0-preview.12.zip>) · [更新说明](docs/releases/v0.29.0-preview.12.md) · [横扫动画代码预览](build/dream-tide-preview.12/preview.html)。
 
 **v0.29.0-preview.10 本地修订版，已安装本机**：斗鱼“超级火箭”增加橙红筒身、黄铜尖头与尾焰的实际下落动画。红圈预告一回合后，镜头先聚焦落点，一枚火箭从上方落下，约0.75秒后落地，爆炸、音效与七格伤害同步。走位规避、700点实际生命与护甲伤害打断和组合技不重复重击保持原规则。包含preview.9的剧情铺垫、头盔修复和人物配装；152份脚本、46,419条离线断言和332个包文件校验通过，新增动画尚待实机验收，未发布官网。[本地完整包](<dist/mod_afeix_expedition v0.29.0-preview.10.zip>) · [更新说明](docs/releases/v0.29.0-preview.10.md)。

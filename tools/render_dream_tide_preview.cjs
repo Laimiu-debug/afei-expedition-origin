@@ -2,14 +2,14 @@
 // separate acceptance boundaries. The bitmap reference is never edited.
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),crypto=require('node:crypto');
 const {createCanvas,loadImage}=require(process.argv[2]||'@napi-rs/canvas');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'build/dream-tide-preview.12');
+const root=path.resolve(__dirname,'..'),out=path.join(root,'build/dream-tide-preview.13');
 const source=path.join(root,'src/ui/mods/afeix/dream_tide.js');
 const background=path.join(root,'build/douyu-playtest/native-barrage-warning.png');
 function hash(p){return crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');}
 function Screen(){this.mSQHandle={};}
 Screen.prototype.onDisconnection=function(){};Screen.prototype.destroyDIV=function(){};
 const body={appendChild(c){c.parentNode=this;},removeChild(c){c.parentNode=null;}};
-const context={TacticalScreen:Screen,window:{innerWidth:1280,innerHeight:720},document:{body,createElement(){
+const context={TacticalScreen:Screen,window:{innerWidth:1280,innerHeight:720},document:{body,documentElement:body,createElement(){
     const c=createCanvas(1,1);c.style={};return c;
 }}};
 vm.runInNewContext(fs.readFileSync(source,'utf8'),context);
@@ -47,7 +47,7 @@ vm.runInNewContext(fs.readFileSync(source,'utf8'),context);
         in_game_tested:false,browser_tested:false,production_js_sha256:hash(source),
         direction:'right-to-left',directional_pixels_passed:true,mirrored_direction_pixels_passed:true,wave_tail_clears_viewport:true,
         historical_static_background:'build/douyu-playtest/native-barrage-warning.png',
-        preview:'build/dream-tide-preview.12/preview.html',frames,
+        preview:'build/dream-tide-preview.13/preview.html',frames,
         limits:['Browser preview runtime unavailable; Canvas pixel preview is not native CEF or game acceptance.','No native actor deaths or UI bridge exercised by this preview.']};
     fs.writeFileSync(path.join(out,'render-report.json'),JSON.stringify(report,null,2)+'\n');
     console.log('CANVAS_PREVIEW_RENDERED='+frames.length+'; final frame black; not in-game tested');

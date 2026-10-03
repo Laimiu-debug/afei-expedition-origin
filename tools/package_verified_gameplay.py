@@ -39,7 +39,7 @@ def main():
     manifest['install_name']=package.name
     manifest['new_member_skills_this_version']=0
     manifest['custom_art_files']=[p.relative_to(root).as_posix() for p in files if p.suffix in {'.png','.brush'}]
-    for key in ('helmet_layers_report', 'helmet_layers'):
+    for key in ('helmet_layers_report', 'helmet_layers', 'github'):
         manifest.pop(key, None)
     # This command produces a local archive; old release publication and install
     # evidence must not be attributed to these newly packaged bytes.

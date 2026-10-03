@@ -983,7 +983,7 @@
   "scripts": [
     {
       "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
-      "sha256": "77c1d31aaf1934ec6d3b866e36d1d8dc906fc12f5a094cc0318c797fd84826fb"
+      "sha256": "e642a6fffc5965e3f27ac416c81f9e6a33b8919db26d77d94af7e37d61af1ef1"
     },
     {
       "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
@@ -1605,7 +1605,7 @@
     },
     {
       "path": "src/ui/mods/afeix/dream_tide.js",
-      "sha256": "8406db20396c55a85a3a0f4ecae02364b5bce4953b272bc4e719b15462d95bc2"
+      "sha256": "4f282dcf6b01ca656ab628913db4dd6f2585bdb5deb6a51cef86ee3c338b07df"
     },
     {
       "path": "src/ui/mods/afeix/formation.js",
@@ -2173,8 +2173,8 @@
     },
     {
       "file": "tests/gameplay/test_dream_tide.js",
-      "assertions": 30,
-      "log": "TESTS_PASSED=30\n"
+      "assertions": 35,
+      "log": "TESTS_PASSED=35\n"
     },
     {
       "file": "tests/gameplay/test_formation_ui.js",

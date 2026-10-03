@@ -10,7 +10,7 @@ import json
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "build/dream-tide-preview.12"
+OUT = ROOT / "build/dream-tide-preview.13"
 SOURCE = ROOT / "src/ui/mods/afeix/dream_tide.js"
 BACKGROUND = ROOT / "build/douyu-playtest/native-barrage-warning.png"
 

@@ -1,6 +1,6 @@
 {
-  "package": "dist/mod_afeix_expedition v0.29.0-preview.12.zip",
-  "sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa",
+  "package": "dist/mod_afeix_expedition v0.29.0-preview.13.zip",
+  "sha256": "1220b7dae474327c569fbcaf46de509c73e0d1343525458754a28b210059b8de",
   "entries": [
     "brushes/afeix_banner_v25.brush",
     "brushes/afeix_corpse_injuries_v01.brush",
@@ -524,17 +524,17 @@
   "portrait_characters": 34,
   "portrait_forms": 36,
   "member_skill_art_report": "art/runtime/member-skills-v15/report.json",
-  "version": "0.29.0-preview.12",
-  "install_name": "mod_afeix_expedition v0.29.0-preview.12.zip",
+  "version": "0.29.0-preview.13",
+  "install_name": "mod_afeix_expedition v0.29.0-preview.13.zip",
   "members_with_skills": 33,
   "member_skills": 99,
   "new_member_skills_this_version": 0,
-  "behavior_assertions": 46659,
+  "behavior_assertions": 46664,
   "in_game_tested": false,
   "named_characters": 34,
   "roster_capacity": 40,
   "combat_capacity": 12,
-  "scope": "Current main Mod; locally installed, BBMOD and GitHub prerelease public downloads verified. Added animation has no in-game acceptance.",
+  "scope": "Current working tree, including preceding art/documentation work; no install or publish.",
   "published": true,
   "installed": true,
   "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
@@ -558,20 +558,15 @@
     "saves_modified": false
   },
   "installation_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
-  "installation_sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa",
-  "installation_report": "build/dream-tide-0.29-preview.12.json",
-  "website_release_id": "9b7812c0-1789-410a-a5e9-37451fe8a4cf",
-  "website_detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
-  "public_download_url": "https://bbmod.com/files/9b7812c0-1789-410a-a5e9-37451fe8a4cf/download/",
-  "public_download_sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa",
-  "public_download_verified": true,
-  "website_publication_report": "build/publish-v0.29.0-preview.12/website-verification.json",
-  "github": {
-    "commit": "b3c008eeefe47f4cc90fc48f7c7156c40c72153d",
-    "tag": "v0.29.0-preview.12",
-    "release_url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.0-preview.12",
-    "public_zip_sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa",
-    "public_assets_verified": true,
-    "verification_report": "build/publish-v0.29.0-preview.12/github-verification.json"
+  "installation_sha256": "1220b7dae474327c569fbcaf46de509c73e0d1343525458754a28b210059b8de",
+  "installation_report": "build/dream-tide-0.29-preview.13.json",
+  "website": {
+    "release_id": "f3bd9a09-c0c4-47ff-a902-cafcbae2dd65",
+    "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "download_url": "https://bbmod.com/files/f3bd9a09-c0c4-47ff-a902-cafcbae2dd65/download/",
+    "public_bytes_match": true,
+    "verification_report": "build/publish-v0.29.0-preview.13/website-verification.json",
+    "backup_integrity": "ok",
+    "historical_releases_unchanged": 28
   }
 }

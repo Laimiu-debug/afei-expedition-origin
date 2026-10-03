@@ -1,0 +1,275 @@
+{
+  "browser_tested": true,
+  "in_game_tested": false,
+  "browser_version": "154.0.4258.53",
+  "production_js_sha256": "4f282dcf6b01ca656ab628913db4dd6f2585bdb5deb6a51cef86ee3c338b07df",
+  "native_main_css_sha256": "2bc64bb311caf4110203b986b8e8a1ada5787ef746d66a1dd57217c88234ac7b",
+  "cases": [
+    {
+      "width": 1280,
+      "height": 720,
+      "zoom": 0.5,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1282,
+        "bottom": 722,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "zoom": 0.7071068,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1281.984375,
+        "bottom": 721.984375,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "zoom": 1,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1282,
+        "bottom": 722,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "zoom": 1.5,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1282,
+        "bottom": 722,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "zoom": 2,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1282,
+        "bottom": 722,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 0.5,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1922,
+        "bottom": 1082,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 0.7071068,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1921.984375,
+        "bottom": 1081.984375,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1922,
+        "bottom": 1082,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 1.5,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1922,
+        "bottom": 1082,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "zoom": 2,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1922,
+        "bottom": 1082,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 2560,
+      "height": 1080,
+      "zoom": 0.5,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 2562,
+        "bottom": 1082,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 2560,
+      "height": 1080,
+      "zoom": 0.7071068,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 2561.984375,
+        "bottom": 1081.984375,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 2560,
+      "height": 1080,
+      "zoom": 1,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 2562,
+        "bottom": 1082,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 2560,
+      "height": 1080,
+      "zoom": 1.5,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 2562,
+        "bottom": 1082,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 2560,
+      "height": 1080,
+      "zoom": 2,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 2562,
+        "bottom": 1082,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "zoom": 0.5,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 3842,
+        "bottom": 2162,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "zoom": 0.7071068,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 3841.984375,
+        "bottom": 2161.984375,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "zoom": 1,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 3842,
+        "bottom": 2162,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "zoom": 1.5,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 3842,
+        "bottom": 2162,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "zoom": 2,
+      "bounds": {
+        "left": 0,
+        "top": 0,
+        "right": 3842,
+        "bottom": 2162,
+        "rootParent": true
+      },
+      "all_four_edges_and_corners_black": true
+    }
+  ],
+  "snapshots": [
+    "build/dream-tide-preview.13/viewport-1920x1080-zoom-0.5.png",
+    "build/dream-tide-preview.13/viewport-1920x1080-zoom-1.5.png"
+  ],
+  "resize_passed": true,
+  "scope": "Real browser DOM layout and screenshot pixels; game native CEF and death-to-wake acceptance remain separate."
+}
