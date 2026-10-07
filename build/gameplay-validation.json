@@ -983,7 +983,7 @@
   "scripts": [
     {
       "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
-      "sha256": "7d0bf65e02e2cd682df17bbf888dc29067f18055b4b1eef625010cb45af36632"
+      "sha256": "84326931c23707fdc389145d96019bcd0f6bc470880d797704050465333f5a7b"
     },
     {
       "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
