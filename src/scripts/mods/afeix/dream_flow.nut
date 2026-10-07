@@ -25,7 +25,7 @@ A.DreamStages <- [
     { id = "spiders", name = "蛛网之间", text = "火光一照，满眼蛛网。十个熟面孔各就各位，传奇兵器在手，配合熟得像一起打过上百仗。先把蛛网撕了，看看这队人的刀口够不够快。", script = "scripts/entity/tactical/enemies/spider", count = 5 },
     { id = "wolves", name = "狼影逼近", text = "蛛网清干净了，空地露出来，紧跟着就是爪子刨地的声音。恐狼从两边包过来，前排把口子堵住，后排想好下一步往哪退。\n\n抹茶低头看了眼靴子：刚才还是干地，这会儿已经泡上一层水了。远处有潮声，比狼嚎还低，拖得还长。", script = "scripts/entity/tactical/enemies/direwolf", count = 4 },
     { id = "lindwurm", name = "梦中的长鳞", text = "地面忽然拱起来，林德虫盘在路中间，头和尾巴一起压过来。兵器再好也别一窝蜂往上砍，这一仗靠的是站位和轮换。\n\n大谋回头看了一眼：刚才狼跑过来的那条泥路已经没在水里了，远处的树也在往下沉。‘打完往高处走。’他把盾又抬高了一点。", script = "scripts/entity/tactical/enemies/lindwurm", count = 1 },
-    { id = "douyu", name = "斗鱼·深渊之主", text = "林德虫一倒，四面八方全是水声。橙色背鳍从雾里冒出来，礼炮映着火光，雾里的嘈杂人声快把潮声都盖过去了。\n\n抹茶蹲下摸了摸水：‘水在涨。不是它掀的浪，是整片沼泽都在涨。’大谋往回看，刚才走过的浅滩已经没了。\n\n阿飞把黑旗往地里一插：‘都站一块。路没了就没了，别让谁一个人掉队。三、二、一，放轻松。’十个人重新站好。斗鱼打得动，可脚下这场梦正在往下沉。", script = "scripts/entity/tactical/enemies/afeix_douyu", count = 1 }
+    { id = "douyu", name = "斗鱼·深渊之主", text = "林德虫一倒，四面八方全是水声。橙色背鳍从雾里冒出来，礼炮映着火光，雾里的嘈杂人声快把潮声都盖过去了。\n\n抹茶蹲下摸了摸水：‘水在涨。不是它掀的浪，是整片沼泽都在涨。’大谋往回看，刚才走过的浅滩已经没了。\n\n阿飞把黑旗往地里一插：‘都站一块。路没了就没了，别让谁一个人掉队。’十个人重新站好。斗鱼打得动，可脚下这场梦正在往下沉。", script = "scripts/entity/tactical/enemies/afeix_douyu", count = 1 }
 ];
 A.isDreamCombat <- function() { return this.DreamSession != null; };
 A.dreamStage <- function() { return this.get("dream_stage", 0); };

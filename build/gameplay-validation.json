@@ -983,7 +983,7 @@
   "scripts": [
     {
       "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
-      "sha256": "84326931c23707fdc389145d96019bcd0f6bc470880d797704050465333f5a7b"
+      "sha256": "3794ea2903346798108d34e39c85a65af9cf15da6ab585f533cbe8be82a62f74"
     },
     {
       "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
@@ -1115,7 +1115,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/discovery.nut",
-      "sha256": "21bf1ee9f2cb12e81349ac338c65cda4f0eb71a4ebced2ead8a0f81abb73f9c7"
+      "sha256": "d0313fd9086dca1edb93a7876374bbb13edcce46b3f7e03ba019ad7ecc19df7b"
     },
     {
       "path": "src/scripts/mods/afeix/douyu_ai.nut",
@@ -1151,7 +1151,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/dream_flow.nut",
-      "sha256": "e12cca1082d38e0a020a67e75e4e8c42a1b7c31070a1bfa99184f66b9c83fe00"
+      "sha256": "0e3129f915a6a6de539eff528a8b4f6e9382f6dcc1070dce5391b8820f2d2ead"
     },
     {
       "path": "src/scripts/mods/afeix/dream_hooks.nut",
@@ -1159,7 +1159,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/dream_ledger.nut",
-      "sha256": "fd2ea6b800eda4a40a3e14a6356f41604b4b6aba63bd0f0308eaa183c85e4a9d"
+      "sha256": "231acb15e240d413b8643a879e52e7c48f77eca7c2f31576bee853f4c4bcd6cf"
     },
     {
       "path": "src/scripts/mods/afeix/dream_roster.nut",
@@ -1195,7 +1195,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/hooks.nut",
-      "sha256": "0f42e5ac2671680f64272e915910dfaee5bf8bb3229aa80a7274c94b7a801bc9"
+      "sha256": "a919f8e0827c2da97c3eaa802ea93f81503bcb3765ab1a59323949e670b43e30"
     },
     {
       "path": "src/scripts/mods/afeix/ideas_chronicles.nut",
@@ -1227,7 +1227,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/ledger.nut",
-      "sha256": "09089310545508c6ddb86cd63c598c7fc853102a2efc7a88a99c701f45d499d4"
+      "sha256": "444c816c2e37f87b619196f84b901fae7b83751e570fbfca48f8bdabecde966e"
     },
     {
       "path": "src/scripts/mods/afeix/member_catalog.nut",
@@ -1291,7 +1291,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/story_progress.nut",
-      "sha256": "8dd60343999c6097c1e1c7fcb0ac928aafd2694cb3b7d009435bc547a0aaef13"
+      "sha256": "926de30f1841a80ecdec6eefb894dedf590ca573549c4ebe4c13323ad376ece8"
     },
     {
       "path": "src/scripts/mods/afeix/supporter_title_hooks.nut",
@@ -2122,6 +2122,11 @@
       "file": "tests/gameplay/test_talents.nut",
       "assertions": 275,
       "log": "TESTS_PASSED=275\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_tavern_story_native.nut",
+      "assertions": 201,
+      "log": "TESTS_PASSED=201\r\n"
     },
     {
       "file": "tests/gameplay/test_ten_person_balance.nut",

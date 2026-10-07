@@ -14,6 +14,7 @@
         // The completed world load is the first reliable point for this check.
         A.PaymentContext = null;
         A.TavernTown <- 0;
+        A.PendingTavernMeeting <- null;
         if (A.isOrigin()) {
             if ("migrateProgress" in A) A.migrateProgress();
             foreach (bro in A.roster()) A.restoreCharacterMetadata(bro);
@@ -95,15 +96,7 @@ foreach (path in ["factions/settlement_faction", "factions/city_state_faction"])
         local result = onClicked.bindenv(this)(townScreen);
         local A = ::AfeixExpedition;
         if (!A.isOrigin()) return result;
-        local townID = this.getSettlement().getID();
-        ::Time.scheduleEvent(::TimeUnit.Real, 350, function(tag) {
-            if (!::AfeixExpedition.isOrigin() || ::World.State == null) return;
-            local screen = ::World.State.m.WorldTownScreen;
-            local town = ::AfeixExpedition.currentTown();
-            if (town == null || town.getID() != tag || screen == null || !screen.isVisible()
-                || screen.m.LastActiveModule != screen.getTavernDialogModule()) return;
-            ::AfeixExpedition.openLedger("tavern", tag);
-        }, townID);
+        A.queueTavernMeeting(this.getSettlement().getID());
         return result;
     };
 });

@@ -19,6 +19,7 @@ A.EncounterRequirements <- {
     yaoyaoya = { towns = 7, types = 3 }, yangmiemie = { jobs = 6, level = 5 },
 };
 A.TavernTown <- 0;
+A.PendingTavernMeeting <- null;
 A.isCharacterKnown <- function(key) {
     return key in this.Characters && (this.findCharacter(key) != null || this.get("met_" + key, false)
         || this.get("encounter_done_" + key, false) || this.get("ever_" + key, false)
@@ -47,12 +48,53 @@ A.canMeetCharacter <- function(key, metrics = null) {
     foreach (field, threshold in this.EncounterRequirements[key]) if (metrics[field] < threshold) return false;
     return true;
 };
-A.isAtTavern <- function() {
-    if (!this.isOrigin() || this.TavernTown == 0 || !this.canManage()) return false;
-    local town = this.currentTown();
-    if (town == null || town.getID() != this.TavernTown) return false;
-    local screen = ::World.State.m.WorldTownScreen;
-    return screen != null && screen.m.LastActiveModule == screen.getTavernDialogModule();
+A.tavernStoryTown <- function() {
+    if (!this.isOrigin() || ::World.State == null) return null;
+    local state = ::World.State;
+    if (!("m" in state) || !("WorldTownScreen" in state.m)) return null;
+    local screen = state.m.WorldTownScreen;
+    if (screen == null || !screen.isVisible()) return null;
+    if (::Tactical.isActive() || state.getCombatStartTime() != 0 || state.getPlayer() == null
+        || ("State" in ::Tactical && ::Tactical.State != null)) return null;
+    if ("LoadingScreen" in getroottable() && ::LoadingScreen != null
+        && (::LoadingScreen.isVisible() || ::LoadingScreen.isAnimating())) return null;
+    local tavern = screen.getTavernDialogModule(), town = screen.getTown();
+    if (tavern == null || screen.m.LastActiveModule != tavern || town == null
+        || !town.isAlive() || !town.isAlliedWithPlayer()) return null;
+    return town;
+};
+A.isAtTavern <- function() { return this.tavernStoryTown() != null; };
+A.canDiscussStory <- function() {
+    // An entered inn is safe for conversations even with enemies outside.
+    // Keep the existing world-map rules for camps and other locations.
+    return this.canManage() || this.isAtTavern();
+};
+A.queueTavernMeeting <- function(townID) {
+    local tag = { townID = townID, screen = ::World.State.m.WorldTownScreen, attempts = 0 };
+    this.PendingTavernMeeting = tag;
+    ::Time.scheduleEvent(::TimeUnit.Real, 350, function(tag) { ::AfeixExpedition.tryTavernMeeting(tag); }, tag);
+};
+A.tryTavernMeeting <- function(tag) {
+    if (this.PendingTavernMeeting != tag) return;
+    local town = this.tavernStoryTown();
+    if (town == null || town.getID() != tag.townID || ::World.State.m.WorldTownScreen != tag.screen) {
+        this.PendingTavernMeeting = null; return;
+    }
+    local state = ::World.State;
+    if (::World.Events == null || ::World.Events.hasActiveEvent() || state.isInCharacterScreen()) {
+        this.PendingTavernMeeting = null; return;
+    }
+    // Native dialog animation is asynchronous. A single 350ms attempt can be
+    // rejected before it finishes; wait briefly without stacking stale visits.
+    if (tag.screen.isAnimating() || tag.screen.getTavernDialogModule().isAnimating()
+        || state.m.EventScreen.isAnimating() || !state.m.MenuStack.isAllowingCancel()) {
+        if (++tag.attempts < 25)
+            ::Time.scheduleEvent(::TimeUnit.Real, 200, function(tag) { ::AfeixExpedition.tryTavernMeeting(tag); }, tag);
+        else this.PendingTavernMeeting = null;
+        return;
+    }
+    this.PendingTavernMeeting = null;
+    this.openLedger("tavern", tag.townID);
 };
 A.visitTavern <- function(town) {
     if (town == null || !town.isAlive() || !town.isAlliedWithPlayer()) return false;
@@ -65,7 +107,7 @@ A.visitTavern <- function(town) {
 };
 A.prepareTavernMeeting <- function() {
     if (!this.isAtTavern()) return "home";
-    local town = this.currentTown();
+    local town = this.tavernStoryTown();
     this.visitTavern(town);
     // New people appear in the native hiring screen; taverns retain only stories
     // and legacy conversations, never bypass the global recruitment pacing.
@@ -93,7 +135,7 @@ A.hasStoryRecords <- function() {
     return this.promotionKnown() || this.feidieKnown() || this.bicycleKnown() || this.knownRoots().len() > 0 || this.knownGrowth().len() > 0;
 };
 A.nextDiscovery <- function(inTavern = false) {
-    if (!this.isOrigin() || !this.canManage()) return null;
+    if (!this.isOrigin() || !this.canDiscussStory()) return null;
     foreach (key in this.CharacterOrder)
         if (this.growthStatus(key) == "ready" && !this.growthKnown(key)) return "member_growth:" + key;
     local afei = this.findCharacter("afei");
@@ -108,7 +150,7 @@ A.nextDiscovery <- function(inTavern = false) {
     return null;
 };
 A.revealDiscovery <- function(page) {
-    if (!this.isOrigin() || !this.canManage()) return false;
+    if (!this.isOrigin() || !this.canDiscussStory()) return false;
     local parts = split(page, ":");
     if (parts[0] == "member_growth" && parts.len() > 1 && this.growthStatus(parts[1]) == "ready") {
         this.set("growth_seen_" + parts[1], true); return true;

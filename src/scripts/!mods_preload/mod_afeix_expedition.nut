@@ -1,4 +1,4 @@
-::AfeixExpedition <- { ID = "mod_afeix_expedition", Version = 79, Schema = 8, CombatMax = 12, RosterMax = 40 };
+::AfeixExpedition <- { ID = "mod_afeix_expedition", Version = 80, Schema = 8, CombatMax = 12, RosterMax = 40 };
 ::AfeixExpedition.setdelegate(getroottable());
 foreach (part in ["core", "formation", "characters", "background_data", "backgrounds", "talents", "quests", "contracts", "roster", "encounters",
     "promotions", "economy", "appearance", "story_progress", "discovery", "recruitment", "keepsakes", "combat_feedback", "member_skills",

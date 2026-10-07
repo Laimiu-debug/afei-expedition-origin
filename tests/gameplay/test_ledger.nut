@@ -15,6 +15,8 @@ local expect = function(ok, message) { checks++; check(ok, message); };
     function isCharacterKnown(key) { return key in this.Known; },
     function knownMembers() { local result=[];foreach(key in this.CharacterOrder)if(this.isCharacterKnown(key))result.push(key);return result; },
     function isAtTavern() { return this.Tavern; },
+    function prepareTavernMeeting() { return "tavern"; },
+    function nextDiscovery(inTavern = false) { return null; },
     function hasStoryRecords() { return false; },
     function storyPageNumber(text) { try { return text.tointeger(); } catch(e) { return 0; } },
     function progressCount() { return this.Progress; },
@@ -175,7 +177,8 @@ expect(e.m.Selected.len() == 0 && e.m.Notice == "" && e.m.AutoPage == "home", "c
             EventScreen = { Visible = false, function isVisible() { return this.Visible; }, function isAnimating() { return false; } },
             MenuStack = { Back = false, function hasBacksteps() { return this.Back; }, function isAllowingCancel() { return true; } },
             WorldTownScreen = { Visible = false, function isVisible() { return this.Visible; }, function isAnimating() { return false; },
-                function getTown() { return { function isAlive() { return true; }, function isAlliedWithPlayer() { return true; } }; } }
+                function getTavernDialogModule() { return { function isAnimating() { return false; } }; },
+                function getTown() { return { function getID() { return 51; }, function isAlive() { return true; }, function isAlliedWithPlayer() { return true; } }; } }
         },
         TownOpens = 0,
         function getPlayer() { return {}; },

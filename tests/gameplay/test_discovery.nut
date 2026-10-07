@@ -7,11 +7,15 @@ local expect = function(value, message) { checks++; check(value, message); };
 ::Math <- { function max(a,b) { return a>b?a:b; }, function min(a,b) { return a<b?a:b; }, function rand(a,b) { return a; } };
 dofile("src/scripts/!mods_preload/mod_afeix_expedition.nut");
 local A=::AfeixExpedition, flags={}, brothers=[], safe=true, origin=true, day=1;
-local tavern={}, town={ function getID(){return 51;}, function getNameOnly(){return "Test Inn";}, function isAlive(){return true;}, function isAlliedWithPlayer(){return true;} };
+local tavern={function isAnimating(){return false;}}, town={ function getID(){return 51;}, function getNameOnly(){return "Test Inn";}, function isAlive(){return true;}, function isAlliedWithPlayer(){return true;} };
+::Tactical <- {function isActive(){return false;}};
 ::World <- {
     Assets={function getMoney(){return 2000;}},
     Flags={ function has(k){return k in flags;},function get(k){return flags[k];},function set(k,v){flags[k]<-v;} },
-    State={m={WorldTownScreen={m={LastActiveModule=tavern},function getTavernDialogModule(){return tavern;},function isVisible(){return true;}}}},
+    State={m={WorldTownScreen={m={LastActiveModule=tavern},function getTavernDialogModule(){return tavern;},function getTown(){return town;},function isVisible(){return true;},function isAnimating(){return false;}},
+        EventScreen={function isAnimating(){return false;}},MenuStack={function isAllowingCancel(){return true;}}},
+        function getPlayer(){return {};},function getCombatStartTime(){return 0;},function isInCharacterScreen(){return false;}},
+    Events={function hasActiveEvent(){return false;}},
     function getTime(){return {Days=day};}
 };
 A.isOrigin=function(){return origin;}; A.canManage=function(){return safe&&origin;}; A.currentTown=function(){return town;};
@@ -75,6 +79,7 @@ expect(A.knownMembers().len()==before,"same town/day cannot reroll more members"
 day++;A.prepareTavernMeeting();expect(A.knownMembers().len()==before,"waiting in tavern cannot generate people");
 expect(A.get("tavern_towns")==1,"repeated visits do not inflate explored towns");
 A.TavernTown=0;before=A.knownMembers().len();
+::World.State.m.WorldTownScreen.m.LastActiveModule=null;
 expect(A.prepareTavernMeeting()=="home"&&A.knownMembers().len()==before,"F8 outside tavern cannot discover members");
 A.set("met_bottle",true);A.set("encounter_done_bottle",true);
 expect(A.isRecruitUnlocked("bottle"),"durable invitation uses completed encounter");
@@ -111,6 +116,7 @@ expect(hiddenRoute.Text.find("亲自参战12次")!=null&&hiddenRoute.Text.find("
 safe=false;expect(A.nextDiscovery()==null&&!A.revealDiscovery("bicycle"),"unsafe state cannot trigger stories");safe=true;
 origin=false;expect(!A.canMeetCharacter("lili")&&A.nextDiscovery()==null,"other origins unaffected");origin=true;
 // Real tavern hook: original drinks UI opens first; stale callbacks cannot open a meeting.
+::World.State.m.WorldTownScreen.m.LastActiveModule=tavern;
 local hook=null, nativeClicks=0, scheduled=null, opens=0;
 ::mods_hookExactClass <- function(path,callback){if(path=="entity/world/settlements/buildings/tavern_building")hook=callback;};
 ::mods_hookNewObject <- function(...){};::mods_hookBaseClass <- function(...){};

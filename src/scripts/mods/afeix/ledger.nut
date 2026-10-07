@@ -239,6 +239,15 @@ A.openLedger <- function(page = "home", tavernTown = 0) {
         local town = screen.getTown();
         if (town == null || !town.isAlive() || !town.isAlliedWithPlayer())
             return this.ledgerBlocked("no entered friendly town");
+        local inTavern = this.isAtTavern();
+        // The native town predicate omits the tavern module's own animation.
+        if (inTavern && screen.getTavernDialogModule().isAnimating())
+            return this.ledgerBlocked("tavern dialog animating");
+        // F8 can recover an interrupted story; without one, keep the full menu.
+        if (page == "home" && inTavern && this.nextDiscovery(true) != null) {
+            page = "tavern";
+            tavernTown = town.getID();
+        }
     }
     this.TavernTown = tavernTown;
     event.m.AutoPage = page;

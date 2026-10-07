@@ -876,7 +876,7 @@ A.syncPersonalGrowth <- function(bro) {
 A.resolveGrowth <- function(key, choice) {
     if (!this.isOrigin() || typeof key != "string" || !(key in this.MemberGrowth) || !(key in this.Characters)
         || typeof choice != "integer" || choice < 0 || choice >= 2) return this.result(false, "没有这项个人成长选择。");
-    if (!this.canManage()) return this.result(false, "请到友好城镇或安全扎营处再作个人成长选择。");
+    if (!this.canDiscussStory()) return this.result(false, "请到友好城镇或安全扎营处再作个人成长选择。");
     if (this.growthStatus(key) != "ready") return this.result(false, this.growthRequirementText(key));
     local bro = this.findCharacter(key), data = this.MemberGrowth[key].choices[choice];
     // World flags are the source of truth. No base attributes, XP or inventory are rewritten.
@@ -965,9 +965,9 @@ A.rootsUnlocked <- function() {
 };
 A.triggerRoot <- function(id) {
     if (!this.isOrigin() || typeof id != "string" || !(id in this.RootStories)) return this.result(false, "没有找到这段交谈记录。");
-    if (!this.canManage()) return this.result(false, "请到友好城镇或安全扎营后再看。");
+    if (!this.canDiscussStory()) return this.result(false, "请到友好城镇或安全扎营后再看。");
     local data = this.RootStories[id];
-    if (data.member == "" && this.currentTown() == null) return this.result(false, "对方在城镇里，请到友好城镇见面。");
+    if (data.member == "" && this.tavernStoryTown() == null && this.currentTown() == null) return this.result(false, "对方在城镇里，请到友好城镇见面。");
     if (this.rootStatus(id) == "locked") return this.result(false, "还没有收到对方的消息。");
     // Triggering the opening is deliberately independent of completing its follow-up.
     this.set("root_triggered_" + id, true);
@@ -993,7 +993,7 @@ A.grantStoryReward <- function(reward) {
 A.resolveRoot <- function(id, choice) {
     if (!this.isOrigin() || typeof id != "string" || !(id in this.RootStories) || typeof choice != "integer" || choice < 0 || choice >= 2)
         return this.result(false, "没有这个选项，请返回后重新选择。");
-    if (!this.canManage()) return this.result(false, "请到安全地点再回应。");
+    if (!this.canDiscussStory()) return this.result(false, "请到安全地点再回应。");
     if (this.rootStatus(id) != "opened") return this.result(false, "请先读完对方的话；已经领取的补给不能再领。");
     local data = this.RootStories[id].choices[choice];
     try { this.grantStoryReward(data.reward); }

@@ -9,7 +9,7 @@ local expect = function(ok, label) { if (!ok) throw "FAIL " + label; checks++; }
 ::Tactical <- { State = null, function isActive() { return false; } };
 ::LoadingScreen <- null;
 ::Cursor <- { function setCursor(value) {} };
-::AfeixExpedition <- { TavernTown = 0, function isOrigin() { return true; }, function canManage() { return true; } };
+::AfeixExpedition <- { TavernTown = 0, function isOrigin() { return true; }, function canManage() { return true; }, function isAtTavern() { return false; } };
 ::World <- { Assets = { function updateFormation() {}, function refillAmmo() {} } };
 dofile(".cache/afei-art/native-contract-fixture/world_state.nut");
 dofile(".cache/afei-art/native-contract-fixture/menu_stack.nut");

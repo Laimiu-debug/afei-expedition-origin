@@ -15,7 +15,7 @@ A.dreamPage <- function(event, id) {
         screen.Title = "黑旗未满";
         screen.Image = "ui/events/event_33.png";
         screen.PortraitKeys = ["afei", "damou"];
-        screen.Text = this.get("dream_notice", "") + "天黑了，三个人围着营火摊开地图。上面的镇子一个挨一个，叫得出名字的队友却没几个。黑旗倒是做好了，旗底下就站着他们仨。\n\n阿飞拿树枝戳了戳明天要走的路：‘一路走一路招人，旗先立起来，名字慢慢往上添。三、二、一，放轻松。’\n\n抹茶啪地合上账本：‘轻松？饭钱、修甲钱、工钱，哪样轻松得了。人招来了，还得养得起。’大谋把盾往树上一靠：‘先进城转转，看得上咱们的，就一起带回来。’\n\n火慢慢小了。谁也没想到，这一晚他们仨会做同一个梦。";
+        screen.Text = this.get("dream_notice", "") + "天黑了，三个人围着营火摊开地图。上面的镇子一个挨一个，叫得出名字的队友却没几个。黑旗倒是做好了，旗底下就站着他们仨。\n\n阿飞拿树枝戳了戳明天要走的路：‘一路走一路招人，旗先立起来，名字慢慢往上添。’\n\n抹茶啪地合上账本：‘说得轻巧。饭钱、修甲钱、工钱，哪样不要钱。人招来了，还得养得起。’大谋把盾往树上一靠：‘先进城转转，看得上咱们的，就一起带回来。’\n\n火慢慢小了。谁也没想到，这一晚他们仨会做同一个梦。";
         screen.Options.push(this.ledgerOption("看看他们梦到了啥。", function(e) { ::AfeixExpedition.set("dream_intro_page", "opening_dream"); return "opening_dream"; }));
         screen.Options.push(this.ledgerOption("略过梦境战斗。", function(e) { ::AfeixExpedition.skipDream(); return "wake"; }));
     } else if (id == "opening_dream") {
