@@ -1,0 +1,64 @@
+{
+  "version": "0.29.0-preview.14",
+  "internal_version": 78,
+  "completed_at": "2026-10-05T21:56:53.853268+08:00",
+  "scope": "Fix Coherent GT fullscreen tide backing store, preserving sweep/death/wake timing.",
+  "root_cause": "Native renderer displays canvas backing pixels rather than stretching the CSS box. 1280x720 occupies one quarter of a 2560x1440 viewport. Native UI scale also reduces innerWidth.",
+  "changes": {
+    "resolution_source": "Settings.getVideoMode() Width/Height in start and frame messages",
+    "canvas_backing": "Physical game resolution plus 2px edges; geometry scaled via setTransform",
+    "layer": "Root child with zIndex 10000; existing token fences and cleanup preserved"
+  },
+  "offline": {
+    "scripts": 153,
+    "assertions": 46665,
+    "passed": true,
+    "report": "build/gameplay-validation.json"
+  },
+  "browser": {
+    "cases": 40,
+    "passed": true,
+    "report": "build/dream-tide-preview.14/viewport-report.json"
+  },
+  "native_ui": {
+    "passed": true,
+    "renderer": "Coherent GT",
+    "resolutions": [
+      [
+        1920,
+        1080
+      ],
+      [
+        2560,
+        1440
+      ]
+    ],
+    "ui_scale": 1.4,
+    "report": "build/dream-tide-native-probe/native-report.json",
+    "full_dream_combat_tested": false
+  },
+  "package": {
+    "version": "0.29.0-preview.14",
+    "path": "dist\\mod_afeix_expedition v0.29.0-preview.14.zip",
+    "sha256": "38d8d18fcb19dddf59054e7697912f0cdf9b691a9034a238d726f85b0bdff3a6",
+    "entries": 334,
+    "crc_passed": true,
+    "source_bytes_match": true
+  },
+  "installation": {
+    "path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+    "sha256": "38d8d18fcb19dddf59054e7697912f0cdf9b691a9034a238d726f85b0bdff3a6",
+    "source_bytes_match": true,
+    "backup": "build/dream-tide-native-probe/installed-before.zip",
+    "backup_sha256": "1220b7dae474327c569fbcaf46de509c73e0d1343525458754a28b210059b8de",
+    "test_mod_removed": true,
+    "config_restored_byte_for_byte": true,
+    "saves_modified": false,
+    "game_closed_at_install": true
+  },
+  "published": false,
+  "limits": [
+    "Native UI verification invoked production tide in the main menu; complete actor-death and wake transition was not replayed in a campaign.",
+    "Native UI scale tested at 140%; other scales covered by browser regression only."
+  ]
+}

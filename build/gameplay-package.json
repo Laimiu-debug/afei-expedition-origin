@@ -1,6 +1,6 @@
 {
-  "package": "dist/mod_afeix_expedition v0.29.0-preview.13.zip",
-  "sha256": "1220b7dae474327c569fbcaf46de509c73e0d1343525458754a28b210059b8de",
+  "package": "dist/mod_afeix_expedition v0.29.0-preview.14.zip",
+  "sha256": "9439a437748d0e66e9a94982ad5952904b5447f9ef90ce0abba30af598400a08",
   "entries": [
     "brushes/afeix_banner_v25.brush",
     "brushes/afeix_corpse_injuries_v01.brush",
@@ -207,8 +207,6 @@
     "scripts/mods/afeix/balance_v26_hooks.nut",
     "scripts/mods/afeix/banner_hooks.nut",
     "scripts/mods/afeix/barber_hooks.nut",
-    "scripts/mods/afeix/blue_stories.nut",
-    "scripts/mods/afeix/blue_story_data.nut",
     "scripts/mods/afeix/characters.nut",
     "scripts/mods/afeix/combat_feedback.nut",
     "scripts/mods/afeix/company_appearance_hooks.nut",
@@ -524,19 +522,19 @@
   "portrait_characters": 34,
   "portrait_forms": 36,
   "member_skill_art_report": "art/runtime/member-skills-v15/report.json",
-  "version": "0.29.0-preview.13",
-  "install_name": "mod_afeix_expedition v0.29.0-preview.13.zip",
+  "version": "0.29.0-preview.14",
+  "install_name": "mod_afeix_expedition v0.29.0-preview.14.zip",
   "members_with_skills": 33,
   "member_skills": 99,
   "new_member_skills_this_version": 0,
-  "behavior_assertions": 46664,
+  "behavior_assertions": 46535,
   "in_game_tested": false,
   "named_characters": 34,
   "roster_capacity": 40,
   "combat_capacity": 12,
   "scope": "Current working tree, including preceding art/documentation work; no install or publish.",
-  "published": true,
-  "installed": true,
+  "published": false,
+  "installed": false,
   "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
   "installed_sha256": "0bba1c6f1ef4297cf42ed9da4ac25269a93c1ad4b15c48063112c5a8d3e8d7dc",
   "content_update_report": "build/douyu-balance-0.29-preview.6.json",
@@ -557,24 +555,6 @@
     "game_closed_at_install": true,
     "saves_modified": false
   },
-  "installation_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
-  "installation_sha256": "1220b7dae474327c569fbcaf46de509c73e0d1343525458754a28b210059b8de",
-  "installation_report": "build/dream-tide-0.29-preview.13.json",
-  "website": {
-    "release_id": "f3bd9a09-c0c4-47ff-a902-cafcbae2dd65",
-    "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
-    "download_url": "https://bbmod.com/files/f3bd9a09-c0c4-47ff-a902-cafcbae2dd65/download/",
-    "public_bytes_match": true,
-    "verification_report": "build/publish-v0.29.0-preview.13/website-verification.json",
-    "backup_integrity": "ok",
-    "historical_releases_unchanged": 28
-  },
-  "github": {
-    "commit": "85bae130e29968c7dc07512007a9bb64663652e2",
-    "tag": "v0.29.0-preview.13",
-    "release_url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.0-preview.13",
-    "public_zip_sha256": "1220b7dae474327c569fbcaf46de509c73e0d1343525458754a28b210059b8de",
-    "public_assets_verified": true,
-    "verification_report": "build/publish-v0.29.0-preview.13/github-verification.json"
-  }
+  "native_ui_tested": true,
+  "native_ui_report": "build/dream-tide-native-probe/native-report.json"
 }

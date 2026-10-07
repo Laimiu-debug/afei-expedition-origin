@@ -5,7 +5,7 @@ let checks=0;
 function check(value){assert.ok(value);checks++;}
 const draws=[],gradients=[],transforms=[];
 function context2d(){return {clearRect(...args){draws.push(['clear',...args]);},
-    fillRect(...args){draws.push(['fill',this.fillStyle,...args]);},
+    fillRect(...args){draws.push(['fill',this.fillStyle,...args]);},setTransform(...args){transforms.push(['setTransform',...args]);},
     beginPath(){},moveTo(){},lineTo(){},closePath(){},save(){},restore(){},clip(){},stroke(){},fill(){},translate(...v){transforms.push(['translate',...v]);},scale(...v){transforms.push(['scale',...v]);},
     createLinearGradient(...v){gradients.push(v);return {addColorStop(){}};}};}
 const body={children:[],appendChild(canvas){this.children.push(canvas);canvas.parentNode=this;},
@@ -22,7 +22,8 @@ function frame(screen,token,time){screen.afeixDreamTideFrame({Token:token,Elapse
 const screen=new Screen();
 start(screen,1);check(root.children.length===1);
 const canvas=root.children[0];check(canvas.style.pointerEvents==='none'&&canvas.style.position==='fixed');
-check(canvas.width===1280&&canvas.height===720);
+check(canvas.width===1922&&canvas.height===1082);
+check(transforms.some(v=>v[0]==='setTransform'&&v[1]===1922/1280));
 check(canvas.parentNode===root&&body.children.length===0); // body zoom and hidden controls cannot shrink the layer
 check(canvas.style.width==='1922px'&&canvas.style.height==='1082px');
 root.zoom=0.5;frame(screen,1,0.1);check(Number(canvas.style.zoom)===2);
@@ -41,8 +42,18 @@ check(!draws.some(d=>d[1]==='rgba(0,0,0,1)')); // no early full-black wipe
 const count=draws.length;frame(screen,1,0.5);frame(screen,99,2.0);frame(screen,1,NaN);
 check(draws.length===count&&screen._afeixDreamTide.elapsed===1.2);
 window.innerWidth=2560;window.innerHeight=1080;frame(screen,1,2.4);
-check(canvas.width===1280&&canvas.height===540); // viewport resize keeps bounded work
-frame(screen,1,4.6);check(draws.some(d=>d[0]==='fill'&&d[1]==='rgba(0,0,0,1)'&&d[4]===1280&&d[5]===540));
+check(canvas.width===2562&&canvas.height===1082); // full backing store, bounded drawing coordinates
+frame(screen,1,4.6);check(draws.some(d=>d[0]==='fill'&&d[1]==='rgba(0,0,0,1)'&&d[4]===1280&&Math.abs(d[5]-1280*1082/2562)<1e-9));
+// Coherent GT ignores CSS stretching and reports innerWidth after native UI
+// scaling. Its raster must still cover all 2560x1440 physical pixels.
+screen.afeixDreamTideFrame({Token:1,Elapsed:4.6,ViewportWidth:2560,ViewportHeight:1440});
+check(canvas.width===2562&&canvas.height===1442);
+window.innerWidth=1280;window.innerHeight=720;frame(screen,1,4.6);
+check(canvas.width===2562&&canvas.height===1442);
+screen.afeixDreamTideFrame({Token:1,Elapsed:4.6,ViewportWidth:1920,ViewportHeight:1080});
+check(canvas.width===1922&&canvas.height===1082);
+screen.afeixDreamTideFrame({Token:1,Elapsed:4.6,ViewportWidth:NaN,ViewportHeight:Infinity});
+check(canvas.width===1922&&canvas.height===1082);
 screen.afeixStopDreamTide({Token:1});check(root.children.length===0&&screen._afeixDreamTide===null);
 frame(screen,1,5);start(screen,1);check(root.children.length===0); // late frame/start rejected after cleanup
 start(screen,3);check(root.children.length===1);

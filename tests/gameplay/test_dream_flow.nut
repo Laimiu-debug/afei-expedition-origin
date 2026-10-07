@@ -26,7 +26,9 @@ function check(v, label) { if (!v) throw "FAIL dream flow: " + label; ++::checks
             IsAttackingLocation = false, IsLootingProhibited = false, IsFleeingProhibited = false, IsWithoutAmbience = false,
             IsFogOfWarVisible = true, IsUsingSetPlayers = false, IsPlayerInitiated = false, IsAutoAssigningBases = true, Entities = [], Players = [], Parties = [],
             Ambience = [[], []], AmbienceMinDelay = [0, 0] }; } } } };
-::Settings <- { getGameplaySettings = function() { return { RestoreEquipment = true }; } };
+::dreamTest.video <- { Width = 2560, Height = 1440 };
+::Settings <- { getVideoMode = function() { return ::dreamTest.video; },
+    getGameplaySettings = function() { return { RestoreEquipment = true }; } };
 // Load the installed native troop definitions; engine entity IDs are an opaque
 // boundary, while Row, Variant, Cost, Strength and Script stay native data.
 ::nativeTroopIDs <- {};

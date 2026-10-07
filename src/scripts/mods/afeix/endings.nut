@@ -14,7 +14,6 @@ A.endingSnapshot <- function(retired) {
             : (this.get("departed_" + key, false) || this.get("ever_" + key, false) ? "departed" : "unknown"));
     }
     foreach (id in this.RootOrder) if (this.get("root_done_" + id, false)) snapshot.rootCount++;
-    if ("blueEndingChoices" in this) snapshot.blueChoices <- this.blueEndingChoices();
     return snapshot;
 };
 A.companyEndingKey <- function(s) {
@@ -48,13 +47,9 @@ A.companyEndingText <- function(s) {
         if (state == "dead") story = data.members[key].memorial;
         else if (state == "departed") story = key == "bottle" && s.bicycle >= 2
             ? data.callbacks.bottle_departed
-            : "这位伙伴在最后一页之前已离开队伍。名册记着曾经同行的一程，离队以后的生活没有确切消息，也没有被擅自写成阵亡。";
-        else if (!retired) story = "最后的在册记录中，这位伙伴仍然生还。远征团的败亡不等于这个名字已经阵亡；此后的去向尚无定论，名册没有替活人写下墓志。";
+            : "这位伙伴在最后一页之前就离开了队伍。名册里记着一起走过的那一程，之后去了哪儿，没人知道确切的消息。";
+        else if (!retired) story = "黑旗最后一次点名时，这位伙伴仍然生还。远征团散了，人还活着，往后去了哪儿，暂时没人说得准。";
         else story = data.members[key][s.renown >= 3000 || s.crises > 0 ? "good" : "lean"];
-        if ("blueEndingText" in this) {
-            local personal = this.blueEndingText(s,key);
-            if (personal != null) story = personal;
-        }
         text += "\n\n[color=#bcad8c]" + this.Characters[key].name + "[/color]\n" + story;
     }
     return text + "\n\n";

@@ -30,9 +30,11 @@ A.startDreamTide <- function(state) {
         StartedAt = now, Actors = actors, NextActor = 0, LastFrameAt = -1.0 };
     s.tide = tide;
     s.exitAt = now + this.DreamTideDuration;
+    local video = ::Settings.getVideoMode();
     this.dreamTideUI(state, "afeixStartDreamTide", { Token = tide.Token, SweepSeconds = this.DreamTideSweepSeconds, Direction = this.DreamTideDirection,
-        FadeAt = this.DreamTideFadeAt, Duration = this.DreamTideDuration });
-    ::Tactical.EventLog.log(this.DreamTideDirection == "left-to-right" ? "黑潮从左向右横扫战场，卷过黑旗下的十人……" : "黑潮从右向左横扫战场，卷过黑旗下的十人……");
+        FadeAt = this.DreamTideFadeAt, Duration = this.DreamTideDuration,
+        ViewportWidth = video.Width, ViewportHeight = video.Height });
+    ::Tactical.EventLog.log(this.DreamTideDirection == "left-to-right" ? "黑潮从左往右扫过来，把黑旗底下十个人全卷了进去……" : "黑潮从右往左扫过来，把黑旗底下十个人全卷了进去……");
     return true;
 };
 A.updateDreamTideAnimation <- function(state) {
@@ -45,7 +47,9 @@ A.updateDreamTideAnimation <- function(state) {
     // Bound UI traffic to 30 fps. Send the final black frame before exit.
     if(elapsed - tide.LastFrameAt >= 1.0 / 30.0 || elapsed >= this.DreamTideDuration) {
         tide.LastFrameAt = elapsed;
-        this.dreamTideUI(state, "afeixDreamTideFrame", { Token = tide.Token, Elapsed = elapsed });
+        local video = ::Settings.getVideoMode();
+        this.dreamTideUI(state, "afeixDreamTideFrame", { Token = tide.Token, Elapsed = elapsed,
+            ViewportWidth = video.Width, ViewportHeight = video.Height });
     }
     while(tide.NextActor < tide.Actors.len()
         && elapsed >= this.DreamTideSweepSeconds + tide.NextActor * this.DreamTideFallStep) {

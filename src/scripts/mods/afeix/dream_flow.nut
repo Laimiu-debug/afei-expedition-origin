@@ -22,10 +22,10 @@ A.resetDreamRuntime <- function() {
     if ("DouyuMapFocusQueued" in this) this.DouyuMapFocusQueued = false;
 };
 A.DreamStages <- [
-    { id = "spiders", name = "蛛网之间", text = "火光照出了蛛网。十个熟悉又陌生的身影各自站定，传奇兵器握在手中，像已经同行了很久。先撕开蛛网，看看这支队伍怎样互相接应。", script = "scripts/entity/tactical/enemies/spider", count = 5 },
-    { id = "wolves", name = "狼影逼近", text = "蛛网散了，梦沼中的空地又完整地浮现出来，爪声随后响起。恐狼从两侧绕来，前排需要守住缺口，后排也得找好下一步的退路。\n\n抹茶低头看了一眼靴边：方才还是干地的地方，已经覆上了一层薄水。远处响起的潮声，比狼嚎更低，也更久。", script = "scripts/entity/tactical/enemies/direwolf", count = 4 },
-    { id = "lindwurm", name = "梦中的长鳞", text = "地面忽然鼓起。林德虫盘住前路，头尾同时逼近。十人的传奇装备仍然明亮，这一次，站位与轮换比追着伤害跑更重要。\n\n大谋往身后看去。狼群跑来的泥路已经消失在水里，远处的树像在慢慢下沉。‘打完就往高处走。’他把盾举得更稳了一些。", script = "scripts/entity/tactical/enemies/lindwurm", count = 1 },
-    { id = "douyu", name = "斗鱼·深渊之主", text = "林德虫倒下后，水声从梦沼四周涌来。橙色背鳍从雾中抬起，礼炮映着火光。\n\n抹茶蹲下摸了摸水面：‘水在往上走。不是它打出来的浪，整片沼泽都在涨。’大谋望向来路，方才走过的浅滩已经不见了。\n\n阿飞把黑旗插稳：‘先站在一起。就算路没了，也别让谁一个人落在后面。’十人重新站定。斗鱼可以被伤到，脚下这场梦却正在一点点沉下去。", script = "scripts/entity/tactical/enemies/afeix_douyu", count = 1 }
+    { id = "spiders", name = "蛛网之间", text = "火光一照，满眼蛛网。十个熟面孔各就各位，传奇兵器在手，配合熟得像一起打过上百仗。先把蛛网撕了，看看这队人的刀口够不够快。", script = "scripts/entity/tactical/enemies/spider", count = 5 },
+    { id = "wolves", name = "狼影逼近", text = "蛛网清干净了，空地露出来，紧跟着就是爪子刨地的声音。恐狼从两边包过来，前排把口子堵住，后排想好下一步往哪退。\n\n抹茶低头看了眼靴子：刚才还是干地，这会儿已经泡上一层水了。远处有潮声，比狼嚎还低，拖得还长。", script = "scripts/entity/tactical/enemies/direwolf", count = 4 },
+    { id = "lindwurm", name = "梦中的长鳞", text = "地面忽然拱起来，林德虫盘在路中间，头和尾巴一起压过来。兵器再好也别一窝蜂往上砍，这一仗靠的是站位和轮换。\n\n大谋回头看了一眼：刚才狼跑过来的那条泥路已经没在水里了，远处的树也在往下沉。‘打完往高处走。’他把盾又抬高了一点。", script = "scripts/entity/tactical/enemies/lindwurm", count = 1 },
+    { id = "douyu", name = "斗鱼·深渊之主", text = "林德虫一倒，四面八方全是水声。橙色背鳍从雾里冒出来，礼炮映着火光，雾里的嘈杂人声快把潮声都盖过去了。\n\n抹茶蹲下摸了摸水：‘水在涨。不是它掀的浪，是整片沼泽都在涨。’大谋往回看，刚才走过的浅滩已经没了。\n\n阿飞把黑旗往地里一插：‘都站一块。路没了就没了，别让谁一个人掉队。三、二、一，放轻松。’十个人重新站好。斗鱼打得动，可脚下这场梦正在往下沉。", script = "scripts/entity/tactical/enemies/afeix_douyu", count = 1 }
 ];
 A.isDreamCombat <- function() { return this.DreamSession != null; };
 A.dreamStage <- function() { return this.get("dream_stage", 0); };
@@ -187,7 +187,7 @@ A.failDreamCombat <- function(error, session = null) {
     ::World.State.show();
     ::World.State.setPause(true);
     ::logError("[AfeixExpedition] Dream launch failed safely: " + error);
-    this.set("dream_notice", "梦境没能展开。三人的现实状态已经保留，可以重试或跳过。\n\n" );
+    this.set("dream_notice", "梦境没能展开，出了点岔子。三人现实里的状态都没动，可以再试一次，或者直接跳过。\n\n" );
     this.DreamOpeningQueued = true;
     return false;
 };
@@ -210,9 +210,9 @@ A.updateDreamTide <- function() {
     if (!this.isDreamCombat() || this.DreamSession.ending || this.DreamSession.stage != 3) return;
     local s = this.DreamSession, round = ::Time.getRound();
     local notices = [
-        { round = 1, text = "抹茶：‘水还在涨。大家留在黑旗附近，别落单。’" },
-        { round = 3, text = "大谋：‘来路淹了！向黑旗收拢，我接着你们。’黑水漫过浅滩，远处的树影正在消失。" },
-        { round = 5, text = "阿飞：‘最后一程，站在一起！’水已漫到旗杆，梦沼只剩黑旗下的一小片落脚处。" }
+        { round = 1, text = "抹茶：‘水还在涨！都别离黑旗太远，别落单。’" },
+        { round = 3, text = "大谋：‘来路淹了！往黑旗这边靠，我接着你们！’黑水漫过浅滩，远处的树影一棵棵没了。" },
+        { round = 5, text = "阿飞：‘最后一波了，都站一块！’水已经淹到旗杆，整片沼泽就剩黑旗底下巴掌大一块地。" }
     ];
     foreach (i, notice in notices) if (round >= notice.round && i > s.lastTideNotice) {
         s.lastTideNotice = i;
@@ -221,11 +221,11 @@ A.updateDreamTide <- function() {
     if (round >= 6) this.requestDreamWake("douyu");
 };
 A.dreamEndingText <- function(cause) {
-    local lead = cause == "victory" ? "斗鱼终于倒下，十人刚要喘息，水却仍在上涨。那道背鳍不再动了，雾后的海潮没有停。"
-        : (cause == "retreat" || cause == "skip" ? "黑旗开始向来路退去，大谋留在最后接应。可是来时的浅滩已经沉入黑水，梦里再也找不到岸。"
-        : (cause == "defeat" ? "战线被撕开，大谋仍伸手去接倒下的同伴。黑水却越过缺口，连退后的落脚处也一起吞没。"
-        : "第五次交锋过去，水已经漫过旗杆。礼炮还在雾中发亮，十人脚下的最后一片土地却缓缓碎开。"));
-    return lead + "\n\n抹茶把账本塞回怀里：‘不是兵器不够好……这场梦，没有留给我们回去的路。’\n\n大谋撑住盾：‘靠过来。谁都别一个人沉下去。’阿飞攥紧黑旗，把还能站住的人拉到身旁。熟悉的名字在潮声里一个接一个响起，最后只剩彼此的手。\n\n黑水终于越过盾沿。十人守到了最后，梦也走到了尽头。";
+    local lead = cause == "victory" ? "斗鱼终于倒下了，十个人刚想喘口气，水还在往上涨。背鳍不动了，雾后面的潮一点没停。"
+        : (cause == "retreat" || cause == "skip" ? "黑旗往来路撤，大谋断后。可来时那片浅滩早就沉进黑水里，梦里已经找不到岸了。"
+        : (cause == "defeat" ? "阵线被撕开了，大谋还伸手去捞倒下的人。黑水从缺口涌进来，连退的地方都没了。"
+        : "第五轮打完，水已经没过旗杆。礼炮还在雾里一闪一闪，十个人脚下最后那块地开始碎了。"));
+    return lead + "\n\n抹茶把账本往怀里一塞：‘不是装备不行……这梦压根没给咱们留回去的路。’\n\n大谋把盾撑住：‘都靠过来！谁也别一个人沉下去。’阿飞攥着黑旗，把还站得住的人一个个往身边拽。潮声里大家互相喊名字，喊到最后，只剩一只只抓在一起的手。\n\n黑水终于漫过了盾沿。十个人扛到了最后一秒，梦就到这儿了。";
 };
 A.showDreamEnding <- function(state) {
     if (!this.isDreamCombat() || !this.DreamSession.narrationPending) return false;

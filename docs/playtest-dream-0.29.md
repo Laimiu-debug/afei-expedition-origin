@@ -1,6 +1,6 @@
 # 梦境开局预览版试玩验收
 
-当前本地版本：`0.29.0-preview.13`，最后独白之后的黑潮改为从右往左横扫战场，再逐个倒下和淡黑梦醒，包含超级火箭下落动画、渐进梦潮、五轮交锋后的独白过渡、稳定头盔显示与人物分别配装。离线与安装校验见[本次报告](../build/dream-tide-0.29-preview.13.json)，新增动画、流程和外观尚未实机验收。以下preview.6/preview.4实机记录属于历史包，不能证明本版的新行为；preview.6定向记录见[剧情杀与斗鱼测试报告](../build/douyu-balance-0.29-preview.6.json)。各报告分别记录具体包指纹与验证范围。历史公开版本见[preview.8发布记录](releases/publication-0.29.0-preview.8.md)，本次已发布官网。目标环境为原版与本项目所需官方DLC、Legacy Modding Script Hooks；其他第三方Mod组合需分别验证。
+当前本地版本：`0.29.0-preview.14`。本次修正 Coherent GT 的实际画布位图尺寸，已在游戏原生界面的 1920×1080、2560×1440、140% UI 比例下检查全屏淡黑和浪头全高度；临时演出在主菜单触发，没有加载战役，完整倒下与梦醒仍待战役验收。[本次补丁与安装报告](../build/dream-tide-0.29-preview.14.json) · [原生界面验收](../build/dream-tide-native-probe/native-report.json) · [更新说明](releases/v0.29.0-preview.14.md)。本机已安装，尚未发布官网或 GitHub。以下 preview.13 与更早的记录属于历史验证范围。
 
 ## preview.13全屏横扫黑潮实机验收
 

@@ -12,7 +12,6 @@ from render_member_catalog import render_catalog
 from apply_character_stories import apply_stories
 from build_backgrounds import build_backgrounds
 from build_endings import build_endings
-from build_blue_team_stories import build as build_blue_team_stories
 from build_gameplay_art import build_art
 from build_portrait_art import build_art as build_portrait_art
 from render_portrait_prompts import render_prompts
@@ -42,7 +41,6 @@ def main():
     apply_stories()
     build_backgrounds()
     build_endings()
-    build_blue_team_stories()
     subprocess.run([sys.executable, str(ROOT / 'tools/render_member_growth.py')], check=True)
     art_files, art_report = build_art()
     portrait_files, portrait_report = build_portrait_art()

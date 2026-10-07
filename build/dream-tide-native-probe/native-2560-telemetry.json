@@ -1,0 +1,167 @@
+[
+  {
+    "label": "F9-final-zoom-0",
+    "video": {
+      "Height": 1440,
+      "Width": 2560,
+      "UIScale": 1.399999976158142
+    },
+    "ua": "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.86 Safari/537.36",
+    "inner": [
+      1828,
+      1028
+    ],
+    "outer": [
+      0,
+      0
+    ],
+    "screen": [
+      2560,
+      1600
+    ],
+    "dpr": 1,
+    "rootZoom": "1",
+    "bodyZoom": "1",
+    "inline": [
+      "",
+      ""
+    ],
+    "client": [
+      1829,
+      1029,
+      1829,
+      1029
+    ],
+    "rootRect": [
+      1828.571533203125,
+      1028.5714111328125
+    ],
+    "rect": [
+      0,
+      0,
+      1830,
+      1030,
+      1830,
+      1030
+    ],
+    "css": [
+      "1830px",
+      "1030px",
+      "1"
+    ],
+    "raster": [
+      2562,
+      1442
+    ]
+  },
+  {
+    "label": "F9-final-zoom-0",
+    "video": {
+      "Height": 1440,
+      "Width": 2560,
+      "UIScale": 1.399999976158142
+    },
+    "ua": "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.86 Safari/537.36",
+    "inner": [
+      1828,
+      1028
+    ],
+    "outer": [
+      0,
+      0
+    ],
+    "screen": [
+      2560,
+      1600
+    ],
+    "dpr": 1,
+    "rootZoom": "1",
+    "bodyZoom": "1",
+    "inline": [
+      "",
+      ""
+    ],
+    "client": [
+      1829,
+      1029,
+      1829,
+      1029
+    ],
+    "rootRect": [
+      1828.571533203125,
+      1028.5714111328125
+    ],
+    "rect": [
+      0,
+      0,
+      1830,
+      1030,
+      1830,
+      1030
+    ],
+    "css": [
+      "1830px",
+      "1030px",
+      "1"
+    ],
+    "raster": [
+      2562,
+      1442
+    ]
+  },
+  {
+    "label": "wave-0.6",
+    "video": {
+      "Height": 1440,
+      "Width": 2560,
+      "UIScale": 1.399999976158142
+    },
+    "ua": "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.86 Safari/537.36",
+    "inner": [
+      1828,
+      1028
+    ],
+    "outer": [
+      0,
+      0
+    ],
+    "screen": [
+      2560,
+      1600
+    ],
+    "dpr": 1,
+    "rootZoom": "1",
+    "bodyZoom": "1",
+    "inline": [
+      "",
+      ""
+    ],
+    "client": [
+      1829,
+      1029,
+      1829,
+      1029
+    ],
+    "rootRect": [
+      1828.571533203125,
+      1028.5714111328125
+    ],
+    "rect": [
+      0,
+      0,
+      1830,
+      1030,
+      1830,
+      1030
+    ],
+    "css": [
+      "1830px",
+      "1030px",
+      "1"
+    ],
+    "raster": [
+      2562,
+      1442
+    ]
+  }
+]

@@ -6,7 +6,7 @@ A.configureCharacterBackground <- function(background, key, converted = false) {
     background.m.BackgroundDescription = story.description;
     background.m.RawDescription = story.description + "\n\n" + data.description;
     if (converted) {
-        local text = "此后，" + data.name + "接受了达库尔的信仰，成为皈依者。信仰改变了，来到黑旗之前的经历并未消失，与伙伴的约定和未完成的个人旅程仍将继续。";
+        local text = "后来，" + data.name + "皈依了达库尔。夜里祷告时念的已经是另一套词，可第二天集合，照样站在原来的位置上。";
         background.m.BackgroundDescription += "\n\n" + text;
         background.m.RawDescription += "\n\n" + text;
     }

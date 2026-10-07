@@ -20,4 +20,4 @@
 
 > 阿飞的手刚伸到棋盘边，小龟便轻轻挡住：“飞爹先坐那边。”
 
-完整内容见[成员介绍与相遇](member-implementation.md)、[专属背景](character-backgrounds.md)、[成长数据](../../data/member-growth.json)、[罗一可与眼子的个人剧情](blue-team-stories.md)、[成员结局](company-endings.md)和[希文源码](../../dlc/xiwen-regen/src/scripts/mods/afeix_dlc_xiwen_regen/content.nut)。人物故事的长线提案仍按原来的实现状态标注，本轮不把提案接入游戏。
+完整内容见[成员介绍与相遇](member-implementation.md)、[专属背景](character-backgrounds.md)、[成长数据](../../data/member-growth.json)、[成员结局](company-endings.md)和[希文源码](../../dlc/xiwen-regen/src/scripts/mods/afeix_dlc_xiwen_regen/content.nut)。人物故事的长线提案仍按原来的实现状态标注，本轮不把提案接入游戏。

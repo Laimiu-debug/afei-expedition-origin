@@ -96,12 +96,20 @@
             if (bounds.height > 0 && Math.abs(bounds.height - cssHeight) > 1)
                 tide.canvas.style.height = Math.ceil(cssHeight * cssHeight / bounds.height) + "px";
         }
-        var width = Math.min(1280, vw), height = Math.round(width * vh / vw);
-        if (tide.canvas.width !== width || tide.canvas.height !== height) {
-            tide.canvas.width = width; tide.canvas.height = height;
+        // Coherent GT paints a canvas at its backing-store size even when its
+        // CSS box is larger. The game also reports a UI-scaled innerWidth, so
+        // the native video resolution is the authority for that backing store.
+        var pixelWidth = Math.ceil((tide.viewportWidth || vw) + 2);
+        var pixelHeight = Math.ceil((tide.viewportHeight || vh) + 2);
+        if (tide.canvas.width !== pixelWidth || tide.canvas.height !== pixelHeight) {
+            tide.canvas.width = pixelWidth; tide.canvas.height = pixelHeight;
         }
         var ctx = tide.ctx;
-        ctx.clearRect(0, 0, width, height);
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.clearRect(0, 0, pixelWidth, pixelHeight);
+        // Keep procedural geometry bounded while painting the full-size bitmap.
+        var width = Math.min(1280, pixelWidth), height = width * pixelHeight / pixelWidth;
+        ctx.setTransform(pixelWidth / width, 0, 0, pixelHeight / height, 0, 0);
         var sweep = clamp(elapsed / tide.sweepSeconds);
         paintSweep(ctx, width, height, sweep, elapsed, tide.direction);
         var black = ease((elapsed - tide.fadeAt) / (tide.duration - tide.fadeAt));
@@ -129,11 +137,13 @@
         canvas.style.position = "fixed"; canvas.style.left = "0"; canvas.style.top = "0";
         canvas.style.display = "block"; canvas.style.margin = "0"; canvas.style.padding = "0"; canvas.style.border = "0";
         canvas.style.maxWidth = "none"; canvas.style.maxHeight = "none";
-        canvas.style.zIndex = "5"; canvas.style.pointerEvents = "none";
+        canvas.style.zIndex = "10000"; canvas.style.pointerEvents = "none";
         // Root sibling of body: neither scaled/clipped body nor hidden controls
         // can reduce the screen area covered by this canvas.
         document.documentElement.appendChild(canvas);
         this._afeixDreamTide = { token: data.Token, canvas: canvas, ctx: ctx, elapsed: -1,
+            viewportWidth: data.ViewportWidth > 0 && isFinite(data.ViewportWidth) ? data.ViewportWidth : 0,
+            viewportHeight: data.ViewportHeight > 0 && isFinite(data.ViewportHeight) ? data.ViewportHeight : 0,
             sweepSeconds: data.SweepSeconds, direction: data.Direction === "left-to-right" ? "left-to-right" : "right-to-left", fadeAt: data.FadeAt, duration: data.Duration };
         paint(this, 0);
     };
@@ -142,6 +152,8 @@
         if (!tide || !data || data.Token !== tide.token || typeof data.Elapsed !== "number"
             || !isFinite(data.Elapsed) || data.Elapsed < tide.elapsed) return;
         tide.elapsed = Math.max(0, data.Elapsed);
+        if (data.ViewportWidth > 0 && isFinite(data.ViewportWidth)) tide.viewportWidth = data.ViewportWidth;
+        if (data.ViewportHeight > 0 && isFinite(data.ViewportHeight)) tide.viewportHeight = data.ViewportHeight;
         paint(this, tide.elapsed);
     };
     var disconnect = proto.onDisconnection;

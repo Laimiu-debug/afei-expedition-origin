@@ -1,0 +1,241 @@
+{
+  "renderer": "Battle Brothers 1.5.2.3 / Coherent GT",
+  "production_js_sha256": "84f265242fd679e11f42711c1ec2f75c80d8cbbeb130c8176139ac30093df010",
+  "native_ui_tested": true,
+  "full_dream_combat_tested": false,
+  "native_ui_scale": 1.4,
+  "physical_resolutions": [
+    [
+      1920,
+      1080
+    ],
+    [
+      2560,
+      1440
+    ]
+  ],
+  "final_frame_cases": [
+    {
+      "screenshot": "native-1920x1080-final.png",
+      "size": [
+        1283,
+        746
+      ],
+      "client_edge_corner_insets_black": true,
+      "samples": [
+        {
+          "xy": [
+            10,
+            34
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            10,
+            383
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            10,
+            732
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            641,
+            34
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            641,
+            383
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            641,
+            732
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            1272,
+            34
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            1272,
+            383
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            1272,
+            732
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "screenshot": "native-2560x1440-final.png",
+      "size": [
+        1706,
+        986
+      ],
+      "client_edge_corner_insets_black": true,
+      "samples": [
+        {
+          "xy": [
+            10,
+            34
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            10,
+            503
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            10,
+            972
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            853,
+            34
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            853,
+            503
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            853,
+            972
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            1695,
+            34
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            1695,
+            503
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            1695,
+            972
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "pixel_scope": "Client-area edge/corner samples inset 10 logical pixels to exclude Windows rounded borders; toolbar and cursor excluded. Full coverage also visually inspected.",
+  "wave_full_height_visually_verified": true,
+  "wave_screenshot": "native-2560x1440-wave-0.6.png",
+  "scope": "Production tide methods and native video mode bridge in the game main-menu renderer; no campaign loaded and no actor/death/wake sequence exercised."
+}
