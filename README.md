@@ -6,9 +6,9 @@
 
 ## 下载
 
-最新公开版是 **v0.29.0-preview.13**（试玩版）。
+最新公开版是 **v0.29.0-preview.14**（试玩版）。
 
-- [BBMOD 下载](https://bbmod.com/files/f3bd9a09-c0c4-47ff-a902-cafcbae2dd65/download/) · [GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.0-preview.13) · [这一版改了什么](docs/releases/v0.29.0-preview.13.md)
+- [BBMOD 下载](https://bbmod.com/files/9e0c2459-f8c6-4149-9a52-4abbecb41bfc/download/) · [GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.0-preview.14) · [这一版改了什么](docs/releases/v0.29.0-preview.14.md)
 - 可选 DLC：[希文与里根儿 0.2.5](https://bbmod.com/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/)，加一名队员希文和战犬里根儿，[说明](dlc/xiwen-regen/README.md)
 - 可选 DLC：[阿飞衣橱与哇哇叫 0.1.0](https://bbmod.com/mods/e554fc31-28b0-4b26-a8f5-295141ed79ef/)，六套外观、两张战败 CG 和五段受伤语音，需要主包 v0.28.12 以上
 
@@ -33,7 +33,7 @@
 
 ## 开发中
 
-本地是 v0.29.0-preview.14，还没发布，修的是 2560×1440 下黑潮只盖住四分之一屏幕的问题，见[更新说明](docs/releases/v0.29.0-preview.14.md)。完整梦境流程和战役结局还没在游戏里从头到尾打过一遍，试玩清单在[这里](docs/playtest-dream-0.29.md)。
+新文本和黑潮的完整战役流程还没在游戏里从头到尾打过一遍，试玩清单在[这里](docs/playtest-dream-0.29.md)。
 
 历代版本的改动记录见 [CHANGELOG](docs/CHANGELOG.md)，每版的详细说明在 [docs/releases](docs/releases/)。
 

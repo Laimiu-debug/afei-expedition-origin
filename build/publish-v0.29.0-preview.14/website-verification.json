@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-10-07T06:46:24.565859+00:00",
+  "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "download_url": "https://bbmod.com/files/9e0c2459-f8c6-4149-9a52-4abbecb41bfc/download/",
+  "release_id": "9e0c2459-f8c6-4149-9a52-4abbecb41bfc",
+  "version": "0.29.0-preview.14",
+  "sha256": "9439a437748d0e66e9a94982ad5952904b5447f9ef90ce0abba30af598400a08",
+  "size": 4885011,
+  "entries": 332,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200,
+    "previous_download": 200
+  },
+  "source_bytes_match": true,
+  "catalog_and_notes_match": true,
+  "download_bytes_match": true,
+  "crc_passed": true,
+  "internal_version": 78,
+  "download_content_disposition": "attachment; filename=\"mod_afeix_expedition.zip\"",
+  "previous_version": "0.29.0-preview.13",
+  "previous_sha256_unchanged": "1220b7dae474327c569fbcaf46de509c73e0d1343525458754a28b210059b8de",
+  "backup": "/srv/data/backups/afeix-pre-v0.29.0-preview.14-20261007T064545747776Z.sqlite3",
+  "in_game_tested": false,
+  "scope": "Public download and offline/package validation; new features and art have no campaign acceptance."
+}

@@ -1,6 +1,6 @@
 # 梦境开局预览版试玩验收
 
-当前本地版本：`0.29.0-preview.14`。本次修正 Coherent GT 的实际画布位图尺寸，已在游戏原生界面的 1920×1080、2560×1440、140% UI 比例下检查全屏淡黑和浪头全高度；临时演出在主菜单触发，没有加载战役，完整倒下与梦醒仍待战役验收。[本次补丁与安装报告](../build/dream-tide-0.29-preview.14.json) · [原生界面验收](../build/dream-tide-native-probe/native-report.json) · [更新说明](releases/v0.29.0-preview.14.md)。本机已安装，尚未发布官网或 GitHub。以下 preview.13 与更早的记录属于历史验证范围。
+当前本地版本：`0.29.0-preview.14`。本次修正 Coherent GT 的实际画布位图尺寸，已在游戏原生界面的 1920×1080、2560×1440、140% UI 比例下检查全屏淡黑和浪头全高度；临时演出在主菜单触发，没有加载战役，完整倒下与梦醒仍待战役验收。[本次补丁与安装报告](../build/dream-tide-0.29-preview.14.json) · [原生界面验收](../build/dream-tide-native-probe/native-report.json) · [更新说明](releases/v0.29.0-preview.14.md)。已发布官网和 GitHub，见[发布记录](releases/publication-0.29.0-preview.14.md)；发布包还包含全游戏文本重写，新文本尚未在游戏里逐段验收。以下 preview.13 与更早的记录属于历史验证范围。
 
 ## preview.13全屏横扫黑潮实机验收
 
