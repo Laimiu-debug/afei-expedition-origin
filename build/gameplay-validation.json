@@ -983,7 +983,7 @@
   "scripts": [
     {
       "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
-      "sha256": "3794ea2903346798108d34e39c85a65af9cf15da6ab585f533cbe8be82a62f74"
+      "sha256": "59f1e8e14fb47299396e4619dd52a73cb3b9685180924be61af12f324ed797fa"
     },
     {
       "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
@@ -991,7 +991,7 @@
     },
     {
       "path": "src/scripts/entity/tactical/enemies/afeix_douyu.nut",
-      "sha256": "3fe06c7156e13b64ac5555877c6233be56ff460e415b1c9d33767d1bcba2f159"
+      "sha256": "927e6b501416ea7ddb1782bb02f978ca2532608081e2148bcb6c3d450914895e"
     },
     {
       "path": "src/scripts/entity/world/locations/afeix_douyu_location.nut",
@@ -1877,6 +1877,11 @@
       "file": "tests/gameplay/test_discovery.nut",
       "assertions": 420,
       "log": "TESTS_PASSED=420\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_douyu_ai_compat.nut",
+      "assertions": 98,
+      "log": "TESTS_PASSED=98\r\n"
     },
     {
       "file": "tests/gameplay/test_douyu_combat.nut",

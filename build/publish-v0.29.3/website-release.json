@@ -1,0 +1,59 @@
+{
+  "owner": "laimiu",
+  "expected_mod_id": "d64a00f6-1d60-4d8d-8d9b-de055fc0b748",
+  "expected_metadata": {
+    "title": "阿飞远征团",
+    "summary": "v0.29.2：酒馆剧情弹窗等动画放完再弹，友好酒馆城外有敌人也能谈剧情，F8 回到被打断的剧情。",
+    "description": "阿飞、王大谋、午夜抹抹茶三个人扛着一面黑旗起家，路上陆续招人，名册里一共 34 个熟面孔。最多 40 人在册，一场仗最多上 12 个。\n\n开局先做一场梦：刀一十人 11 级、一身传奇装备，连打蜘蛛、恐狼、林德虫，最后对上斗鱼·深渊之主。梦醒以后只剩三个人和一面旗，招人、补给、修装备都得从头来。不想打梦境可以跳过，之后在世界地图按 F8 → 再赴梦潮还能回去。斗鱼在现实大陆上也留了个窝，梦潮祭场得自己行军过去。\n\n34 个人各有出场时间和招募条件，会在城镇的招募列表里陆续出现。每人有自己的出身、招募相遇、3 级成长事件、7 级三选一的专属技能和 11 级精通。阿飞可以转职蛤蟆人或嘉豪，凑齐六根还能解锁飞碟。另外还有水友四派的随机事件、传奇武器“老马的垂直握把”、酒馆里花钱加属性的“飞李不可”、8 种战团结局，以及每个人的退隐和阵亡后续。\n\n世界地图按 F8 打开黑旗名册：伙伴线索、招募条件、布阵、换旗、隐藏头盔、回看剧情都在这里，Esc 关闭。\n\nv0.29.2：进酒馆后的剧情相遇等对话框动画放完再弹，不再漏掉或叠出旧弹窗；友好城镇酒馆里城外有敌人也能看交谈、做个人成长和根脉选择；剧情被打断后在酒馆按 F8 直接回到那段剧情；梦里删掉“三、二、一，放轻松”。0.29.1 起游戏里的剧情、人物、事件、结局和出身背景已全部重写；剧情走向、数值和触发条件不变。",
+    "category": "起源与事件",
+    "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+    "license": "作者授权在 BBMOD 网站分发；其他用途请联系作者。",
+    "game_version": "1.5.2.3",
+    "dlc": "目标环境：本体与官方 DLC（Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith）",
+    "save_impact": "yes",
+    "seed_impact": "unknown",
+    "compatibility_notes": "v0.29.2 是完整主包，包含此前所有版本的修订；装了 0.29.1 的直接替换，存档兼容。完整的梦境开局请新开战役；旧阿飞存档可以在安全地点按 F8 → 再赴梦潮回看梦境。\n\n安装：完全退出游戏，把整份 mod_afeix_expedition.zip 放进 data，不要解压。替换同名旧包，移走其他版本的主包，一次只留一份。需要 Legacy Modding Script Hooks（mod_hooks）、中文字体或汉化，以及上面列出的官方 DLC。可选 DLC 另外安装，主包里不含。\n\n梦境期间不能保存临时队伍，进幕前的自动存档保留原战役状态；梦醒后现实里的人物、装备和主要资源都会恢复。存档依赖本 Mod，不保证和 Legends、Reforged 或其他改动编队、图层、战斗流程的 Mod 兼容。",
+    "mod_ids": [
+      "mod_afeix_expedition"
+    ],
+    "requires": [
+      "mod_hooks"
+    ],
+    "conflicts": [],
+    "uploader": "laimiu",
+    "original_author": "Laimiu",
+    "author": "Laimiu"
+  },
+  "mod": {
+    "title": "阿飞远征团",
+    "summary": "v0.29.3：修复 MSU 1.9.0 环境下梦境斗鱼回合卡住，恢复移动、挣脱和待机；现实祭场同步修复。",
+    "description": "阿飞、王大谋、午夜抹抹茶三个人扛着一面黑旗起家，路上陆续招人，名册里一共 34 个熟面孔。最多 40 人在册，一场仗最多上 12 个。\n\n开局先做一场梦：刀一十人 11 级、一身传奇装备，连打蜘蛛、恐狼、林德虫，最后对上斗鱼·深渊之主。梦醒以后只剩三个人和一面旗，招人、补给、修装备都得从头来。不想打梦境可以跳过，之后在世界地图按 F8 → 再赴梦潮还能回去。斗鱼在现实大陆上也留了个窝，梦潮祭场得自己行军过去。\n\n34 个人各有出场时间和招募条件，会在城镇的招募列表里陆续出现。每人有自己的出身、招募相遇、3 级成长事件、7 级三选一的专属技能和 11 级精通。阿飞可以转职蛤蟆人或嘉豪，凑齐六根还能解锁飞碟。另外还有水友四派的随机事件、传奇武器“老马的垂直握把”、酒馆里花钱加属性的“飞李不可”、8 种战团结局，以及每个人的退隐和阵亡后续。\n\n世界地图按 F8 打开黑旗名册：伙伴线索、招募条件、布阵、换旗、隐藏头盔、回看剧情都在这里，Esc 关闭。\n\nv0.29.2：进酒馆后的剧情相遇等对话框动画放完再弹，不再漏掉或叠出旧弹窗；友好城镇酒馆里城外有敌人也能看交谈、做个人成长和根脉选择；剧情被打断后在酒馆按 F8 直接回到那段剧情；梦里删掉“三、二、一，放轻松”。0.29.1 起游戏里的剧情、人物、事件、结局和出身背景已全部重写；剧情走向、数值和触发条件不变。\n\nv0.29.3：修复同时安装 MSU 1.9.0 时斗鱼回合卡住并报 onBeforeExecute 不存在的问题。Boss 初始化时同步清理 AI 行为登记，恢复完整的移动、挣脱、待机和攻击；梦境战和现实祭场都适用。斗鱼数值、技能费用和梦境剧情时限不变。新增 98 条兼容回归断言，全部 46,834 条离线断言通过；尚未完成群友整套模组组合的实机复测。",
+    "category": "起源与事件",
+    "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+    "license": "作者授权在 BBMOD 网站分发；其他用途请联系作者。",
+    "game_version": "1.5.2.3",
+    "dlc": "目标环境：本体与官方 DLC（Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith）",
+    "save_impact": "yes",
+    "seed_impact": "unknown",
+    "compatibility_notes": "v0.29.3 是完整主包，包含此前所有版本的修订，修复 MSU 1.9.0 环境下的斗鱼 AI 行为登记。本次未改存档格式；完全退出游戏后替换主包，已经卡住的战斗请读取战前存档重新进入。完整的梦境开局请新开战役；旧阿飞存档可以在安全地点按 F8 → 再赴梦潮回看梦境。\n\n安装：完全退出游戏，把整份 mod_afeix_expedition.zip 放进 data，不要解压。替换同名旧包，移走其他版本的主包，一次只留一份。需要 Legacy Modding Script Hooks（mod_hooks）、中文字体或汉化，以及上面列出的官方 DLC。可选 DLC 另外安装，主包里不含。\n\n梦境期间不能保存临时队伍，进幕前的自动存档保留原战役状态；梦醒后现实里的人物、装备和主要资源都会恢复。存档依赖本 Mod，不保证和 Legends、Reforged 或其他改动编队、图层、战斗流程的 Mod 兼容。",
+    "mod_ids": "mod_afeix_expedition",
+    "requires": "mod_hooks",
+    "conflicts": "",
+    "uploader": "laimiu",
+    "original_author": "Laimiu",
+    "author": "Laimiu",
+    "install_name": "mod_afeix_expedition.zip",
+    "rights": true
+  },
+  "version": "0.29.3",
+  "notes": "修复同时安装 MSU 1.9.0 时，轮到“斗鱼·深渊之主”出现 onBeforeExecute 不存在并卡住的问题。Boss 初始化通过原版接口逐个移除旧 AI 行为，使 MSU 同步清理登记，恢复移动、挣脱、待机和攻击。梦境战与现实梦潮祭场同步修复；斗鱼数值、技能费用和梦境剧情时限不变。\n\n新增 98 条 AI 兼容回归断言，覆盖装有和未装 MSU、远处目标、特殊攻击及行动点耗尽后的待机。151 份 Squirrel 脚本、46,834 条离线断言、原生资源、美术、JavaScript 与 332 个包条目检查通过；尚未完成群友整套模组组合的实机复测。\n\n退出游戏后替换完整的 mod_afeix_expedition.zip，不用解压，只保留一份主包；可选 DLC 另装。本次未改存档格式；已经卡住的战斗请读取战前存档重新进入。完整梦境开局请新开战役，旧阿飞存档可在安全地点按 F8 → 再赴梦潮回看。\n\nSHA-256：`329cf557753a9e19f15a05564ab4c6487a33a522a3521b8102390884ccdcb705`",
+  "package_filename": "mod_afeix_expedition v0.29.3.zip",
+  "verification": {
+    "prior_version": "0.29.2",
+    "source_root": "src",
+    "entries": 332,
+    "internal_version": 81,
+    "behavior_assertions": 46834
+  },
+  "sha256": "329cf557753a9e19f15a05564ab4c6487a33a522a3521b8102390884ccdcb705"
+}

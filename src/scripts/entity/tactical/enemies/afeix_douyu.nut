@@ -21,7 +21,11 @@ this.afeix_douyu <- this.inherit("scripts/entity/tactical/actor", {
         this.m.Sound[this.Const.Sound.ActorEvent.Idle] = ["sounds/enemies/unhold_idle_01.wav"];
         this.m.SoundPitch = 0.8; this.m.SoundVolumeOverall = 1.2;
         local agent = this.new("scripts/ai/tactical/agents/unhold_agent");
-        agent.clearBehaviors();
+        // MSU tracks behavior IDs through add/removeBehavior. clearBehaviors
+        // leaves that registry populated and suppresses idle, movement and
+        // break-free when they are added again, stranding the boss's turn.
+        foreach (behavior in clone agent.m.Behaviors)
+            agent.removeBehavior(behavior.getID());
         agent.addBehavior(this.new("scripts/ai/tactical/behaviors/ai_idle"));
         agent.addBehavior(this.new("scripts/ai/tactical/behaviors/ai_engage_melee"));
         agent.addBehavior(this.new("scripts/ai/tactical/behaviors/ai_break_free"));

@@ -109,7 +109,7 @@ check(ai.m.Skill.getID()!="actives.afeix_douyu_rocket","AI rotates specials thro
 ::Const.EntityType.Unhold <- 25;::Const.BloodType <- {Red=1};
 ::Const.Sound <- {ActorEvent={Death=0,DamageReceived=1,Idle=2}};
 ::definitions["scripts/ai/tactical/agents/unhold_agent"] <- {m={Behaviors=[],SoundOnUse=[]},spawnOverlay=function(...){},spawnAttackEffect=function(...){},create=function(){this.m.Behaviors=[];},
-    clearBehaviors=function(){this.m.Behaviors=[];},addBehavior=function(b){this.m.Behaviors.push(b);},
+    clearBehaviors=function(){this.m.Behaviors=[];},removeBehavior=function(id){},addBehavior=function(b){this.m.Behaviors.push(b);},
     finalizeBehaviors=function(){},setActor=function(a){this.m.Actor<-a;}};
 foreach(path in ["ai_idle","ai_engage_melee","ai_break_free","ai_attack_default"])
     ::definitions["scripts/ai/tactical/behaviors/"+path] <- {m={PossibleSkills=[],SoundOnUse=[]},spawnOverlay=function(...){},spawnAttackEffect=function(...){},create=function(){}};
