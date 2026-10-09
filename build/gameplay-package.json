@@ -532,8 +532,8 @@
   "named_characters": 34,
   "roster_capacity": 40,
   "combat_capacity": 12,
-  "scope": "Current working tree, including preceding art/documentation work; no install or publish.",
-  "published": false,
+  "scope": "v0.29.3: offline validation and public BBMOD/GitHub downloads verified; no new in-game acceptance or local installation.",
+  "published": true,
   "installed": false,
   "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
   "installed_sha256": "0bba1c6f1ef4297cf42ed9da4ac25269a93c1ad4b15c48063112c5a8d3e8d7dc",
@@ -556,5 +556,64 @@
     "saves_modified": false
   },
   "native_ui_tested": true,
-  "native_ui_report": "build/dream-tide-native-probe/native-report.json"
+  "native_ui_report": "build/dream-tide-native-probe/native-report.json",
+  "website": {
+    "verified_at": "2026-10-09T03:18:10.296092+00:00",
+    "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "download_url": "https://bbmod.com/files/95a91e04-cbc0-4dfa-b173-d066e2758943/download/",
+    "release_id": "95a91e04-cbc0-4dfa-b173-d066e2758943",
+    "version": "0.29.3",
+    "sha256": "329cf557753a9e19f15a05564ab4c6487a33a522a3521b8102390884ccdcb705",
+    "size": 4885856,
+    "entries": 332,
+    "http_status": {
+      "catalog": 200,
+      "detail": 200,
+      "download": 200,
+      "previous_download": 200
+    },
+    "source_bytes_match": true,
+    "catalog_and_notes_match": true,
+    "download_bytes_match": true,
+    "crc_passed": true,
+    "internal_version": 81,
+    "download_content_disposition": "attachment; filename=\"mod_afeix_expedition.zip\"",
+    "previous_version": "0.29.2",
+    "previous_sha256_unchanged": "4a4fdf21852ce40c7ef26c5a4cb987cec91af2ba297edc5a079656840cf9e71f",
+    "backup": "/srv/data/backups/afeix-pre-v0.29.3-20261009T031714288024Z.sqlite3",
+    "in_game_tested": false,
+    "scope": "Public download and offline/package validation; new features and art have no campaign acceptance."
+  },
+  "github": {
+    "repository": "Laimiu-debug/afei-expedition-origin",
+    "commit": "5e73babe8842869f2a11752ee02a1a95e65ecfc6",
+    "remote_main_at_publication": "5e73babe8842869f2a11752ee02a1a95e65ecfc6",
+    "tag": "v0.29.3",
+    "tag_commit_matches": true,
+    "release_id": 407464529,
+    "url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.3",
+    "prerelease": false,
+    "draft": false,
+    "notes_match": true,
+    "entries": 332,
+    "source_bytes_match": true,
+    "crc_passed": true,
+    "assets": [
+      {
+        "name": "mod_afeix_expedition.zip",
+        "size": 4885856,
+        "sha256": "329cf557753a9e19f15a05564ab4c6487a33a522a3521b8102390884ccdcb705",
+        "url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/download/v0.29.3/mod_afeix_expedition.zip",
+        "public_bytes_match": true
+      },
+      {
+        "name": "mod_afeix_expedition.sha256",
+        "size": 92,
+        "sha256": "524d53871cee6027c27bdf2b5271e914285df4fe9123d584ce34cb53e5ca55ab",
+        "url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/download/v0.29.3/mod_afeix_expedition.sha256",
+        "public_bytes_match": true
+      }
+    ],
+    "in_game_tested": false
+  }
 }

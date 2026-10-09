@@ -1,0 +1,13 @@
+{
+  "server_upload_removed": true,
+  "container_upload_removed": true,
+  "local_temporary_copies_removed": [
+    "mod_afeix_expedition v0.29.3.zip",
+    "mod_afeix_expedition.zip",
+    "github-download.zip",
+    "download.response",
+    "previous_download.response"
+  ],
+  "dist_release_preserved": true,
+  "website_archives_and_database_backup_preserved": true
+}
