@@ -532,8 +532,8 @@
   "named_characters": 34,
   "roster_capacity": 40,
   "combat_capacity": 12,
-  "scope": "Local v0.29.7 root fix installed in G drive; scoped engine test completed; unpublished.",
-  "published": false,
+  "scope": "v0.29.7 root fix installed on G drive and published on BBMOD and GitHub; scoped engine acceptance and public downloads verified.",
+  "published": true,
   "installed": true,
   "content_update_report": "build/douyu-balance-0.29-preview.6.json",
   "feedback_report": "build/combat-feedback-0.29-preview.7.json",
@@ -552,6 +552,21 @@
   "installation_report": "build/geist-turnbar-fix-20261013/g-install-v0.29.7/installation.json",
   "startup_verified": true,
   "native_ui_tested": true,
-  "native_ui_report": "build/geist-turnbar-fix-20261013/root-fix-v0.29.7.json",
-  "in_game_scope": "Actual engine, actual autosave copy and original enemy party; automatic normal player turn endings. Manual user play acceptance pending."
+  "native_ui_report": "build/publish-v0.29.7/gameplay-acceptance.json",
+  "in_game_scope": "Two actual-engine automatic runs of the original autosave ghost encounter, each round 6 and nine screams; user observed and confirmed the second run. Full campaign acceptance remains outside scope.",
+  "published_version": "0.29.7",
+  "download_url": "https://bbmod.com/files/0709064c-deaa-4ae7-9328-d57e65a15fd6/download/",
+  "publication_report": "docs/releases/publication-0.29.7.md",
+  "publication_evidence": "build/publish-v0.29.7/website-verification.json",
+  "website": {
+    "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "release_id": "0709064c-deaa-4ae7-9328-d57e65a15fd6",
+    "download_bytes_match": true
+  },
+  "github": {
+    "url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.7",
+    "tag": "v0.29.7",
+    "commit": "abb152a006952debf9ede0658e8212f7d907357d",
+    "public_assets_verified": true
+  }
 }

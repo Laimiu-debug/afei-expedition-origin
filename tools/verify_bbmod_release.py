@@ -7,6 +7,7 @@ from zipfile import ZipFile
 import hashlib
 import io
 import json
+import os
 import re
 import subprocess
 import sys
@@ -25,8 +26,11 @@ urls = {'catalog':'https://bbmod.com/api/v1/catalog/','detail':published['detail
 def fetch(item):
     name,url = item
     headers,body = stage/(name+'.headers'),stage/(name+'.response')
-    subprocess.run(['curl','--noproxy','*','--ipv4','--fail','--silent','--show-error',
-                    '--connect-timeout','8','--max-time','25','--retry','2','--retry-delay','1',
+    proxy = os.environ.get('AFEIX_DOWNLOAD_PROXY')
+    route = ['--proxy', proxy] if proxy else ['--noproxy','*']
+    subprocess.run(['curl',*route,'--ipv4','--fail','--silent','--show-error',
+                    '--connect-timeout','8','--max-time',str(int(os.environ.get('AFEIX_DOWNLOAD_TIMEOUT','25'))),
+                    '--retry','2','--retry-delay','1',
                     '--dump-header',str(headers),'--output',str(body),url],check=True)
     raw = headers.read_text(encoding='iso-8859-1').strip().split('\n\n')[-1]
     return name,{'status':int(re.match(r'HTTP/\S+ (\d+)',raw).group(1)),
@@ -87,7 +91,8 @@ verified = {'verified_at':datetime.now(timezone.utc).isoformat(),'detail_url':ur
     'catalog_and_notes_match':True,'download_bytes_match':True,'crc_passed':True,
     'internal_version':internal,'download_content_disposition':disposition,
     'previous_version':prior['version'],'previous_sha256_unchanged':prior['sha256'],
+    'download_route':'configured proxy' if os.environ.get('AFEIX_DOWNLOAD_PROXY') else 'direct',
     'backup':published['backup'],'in_game_tested':False,
-    'scope':'Public download and offline/package validation; new features and art have no campaign acceptance.'}
+    'scope':'Public catalog, downloads and package/source validation; gameplay acceptance is recorded separately.'}
 (stage/'website-verification.json').write_text(json.dumps(verified,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(verified,ensure_ascii=False,indent=2))

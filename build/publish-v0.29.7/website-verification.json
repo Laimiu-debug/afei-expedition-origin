@@ -1,0 +1,28 @@
+{
+  "verified_at": "2026-10-13T14:10:31.332263+00:00",
+  "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "download_url": "https://bbmod.com/files/0709064c-deaa-4ae7-9328-d57e65a15fd6/download/",
+  "release_id": "0709064c-deaa-4ae7-9328-d57e65a15fd6",
+  "version": "0.29.7",
+  "sha256": "ecc2c797c228be779d8f5081b31be28b0689fa9d85c5b4d5c48c980e1146b953",
+  "size": 4885957,
+  "entries": 332,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200,
+    "previous_download": 200
+  },
+  "source_bytes_match": true,
+  "catalog_and_notes_match": true,
+  "download_bytes_match": true,
+  "crc_passed": true,
+  "internal_version": 85,
+  "download_content_disposition": "attachment; filename=\"mod_afeix_expedition.zip\"",
+  "previous_version": "0.29.3",
+  "previous_sha256_unchanged": "329cf557753a9e19f15a05564ab4c6487a33a522a3521b8102390884ccdcb705",
+  "download_route": "configured proxy",
+  "backup": "/srv/data/backups/afeix-pre-v0.29.7-20261013T135753160061Z.sqlite3",
+  "in_game_tested": false,
+  "scope": "Public catalog, downloads and package/source validation; gameplay acceptance is recorded separately."
+}
