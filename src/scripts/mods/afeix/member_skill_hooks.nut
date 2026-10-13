@@ -1,10 +1,11 @@
-// Refresh conditional resolve before an actual morale check, and recovery before
-// vanilla consumes it. Never replace attackEntity or the engine's damage rules.
+// getBravery is also read by threaded AI evaluation. Keep that native getter
+// pure: skills.update can change HP, rebuild art and call the UI bridge.
+// Refresh only before an actual morale check and main-thread combat events.
 ::mods_hookExactClass("entity/tactical/actor", function(o) {
-    local getBravery = o.getBravery;
-    o.getBravery = function() {
+    local checkMorale = o.checkMorale;
+    o.checkMorale = function(change, difficulty, type = ::Const.MoraleCheckType.Default, icon = "", noNewLine = false) {
         ::AfeixExpedition.refreshMemberAura(this);
-        return getBravery.bindenv(this)();
+        return checkMorale.bindenv(this)(change, difficulty, type, icon, noNewLine);
     };
     local onTurnStart = o.onTurnStart;
     o.onTurnStart = function() {

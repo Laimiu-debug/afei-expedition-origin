@@ -4823,7 +4823,7 @@
     "Bravery": 3,
     "MeleeDefense": 3
   },
-  "version": 81,
+  "version": 85,
   "recruitment": {
     "totalSlots": 5,
     "hireCooldownDays": 1,

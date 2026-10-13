@@ -45,6 +45,10 @@ def main():
     # evidence must not be attributed to these newly packaged bytes.
     manifest['published']=False
     manifest['installed']=False
+    for key in ('installation', 'installed_path', 'installed_sha256', 'startup_verified',
+                'live_test_report', 'in_game_scope', 'native_ui_tested', 'native_ui_report',
+                'published_version', 'download_url', 'publication_evidence', 'publication_report'):
+        manifest.pop(key, None)
     for key in list(manifest):
         if key.startswith(('website_', 'public_', 'installation_')):
             del manifest[key]

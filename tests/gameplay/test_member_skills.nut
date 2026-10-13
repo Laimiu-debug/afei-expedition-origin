@@ -108,11 +108,22 @@ g.shield=null;g.skills.update();expect(ga.skills.defense(ge,gs).RangedDefense==8
 ::memberActorHook <- null;
 ::mods_hookExactClass <- function(path,callback){::memberActorHook=callback;};
 dofile("src/scripts/mods/afeix/member_skill_hooks.nut");
-local methods={getBravery=function(){return this.props.Bravery;},onTurnStart=function(){this.fatigue-=this.props.FatigueRecoveryRate;event(this,"onTurnStart");return "native-start";},
+::Const.MoraleCheckType.Default <- 0;
+local methods={getBravery=function(){return this.props.Bravery;},
+    checkMorale=function(change,difficulty,type=::Const.MoraleCheckType.Default,icon="",noNewLine=false){this.MoraleArgs <- [change,difficulty,type,icon,noNewLine];return this.props.Bravery;},
+    onTurnStart=function(){this.fatigue-=this.props.FatigueRecoveryRate;event(this,"onTurnStart");return "native-start";},
     onMovementFinish=function(tile){event(this,"onMovementFinished");return "native-movement";}};
-::memberActorHook(methods);
+local nativeGetter=methods.getBravery;::memberActorHook(methods);
+expect(methods.getBravery==nativeGetter,"threaded AI keeps the unmodified native resolve getter");
 fresh();local j2=makeActor("yuchujiu"),af=makeActor("afei",1);A.syncMemberSkills(j2);expect(j2.props.Bravery==60,"initial captain proximity");
-af.pos=5;expect(methods.getBravery.bindenv(j2)()==50,"morale calculation immediately drops departed captain bonus");
+local auraUpdates=0,updateSkills=j2.skills.update;
+j2.skills.update=function(){++auraUpdates;return updateSkills.bindenv(j2.skills)();};
+af.pos=5;
+for(local i=0;i<120;++i)expect(methods.getBravery.bindenv(j2)()==60,"AI target scoring reads cached properties without recomputing skills");
+expect(auraUpdates==0,"resolve reads never write HP, art or turn-bar state through skills.update");
+expect(methods.checkMorale.bindenv(j2)(-1,10,2,"probe",true)==50,"actual morale check refreshes the departed captain bonus");
+expect(auraUpdates==1&&j2.MoraleArgs[0]==-1&&j2.MoraleArgs[1]==10&&j2.MoraleArgs[2]==2&&j2.MoraleArgs[3]=="probe"&&j2.MoraleArgs[4],"morale hook refreshes once and preserves all five native arguments");
+expect(methods.checkMorale.bindenv(j2)(1,4)==50&&j2.MoraleArgs[2]==0&&j2.MoraleArgs[3]==""&&!j2.MoraleArgs[4],"morale hook keeps native optional argument defaults");
 af.pos=1;expect(methods.onMovementFinish.bindenv(af)(af.tile)=="native-movement"&&j2.props.Bravery==60,"captain movement refreshes nearby members and preserves native callback");
 local t2=makeActor("xiaogui",2);equip(t2,false,true);A.syncMemberSkills(t2);t2.fatigue=50;af.placed=false;
 expect(methods.onTurnStart.bindenv(t2)()=="native-start"&&t2.fatigue==35,"turn-start recovery uses current deployed captain state");

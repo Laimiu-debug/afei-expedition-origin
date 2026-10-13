@@ -1,0 +1,29 @@
+{
+  "version": "0.29.7",
+  "internal_version": 85,
+  "game_version": "1.5.2.3",
+  "package_sha256": "ecc2c797c228be779d8f5081b31be28b0689fa9d85c5b4d5c48c980e1146b953",
+  "source_scripts": 151,
+  "behavior_assertions": 46958,
+  "engine_runs": [
+    {
+      "max_round": 6,
+      "terror_uses": 9,
+      "battle_exceptions": [],
+      "selector_discrepancies": 0
+    },
+    {
+      "max_round": 6,
+      "terror_uses": 9,
+      "battle_exceptions": [],
+      "selector_discrepancies": 0
+    }
+  ],
+  "user_confirmed_visible_retest": true,
+  "original_saves_unchanged": true,
+  "temporary_probe_removed": true,
+  "root_cause": "getBravery called skills.update and UI updates during threaded terror target evaluation",
+  "fix": "Keep the native getter pure; refresh conditional resolve before actual morale checks and existing main-thread combat events",
+  "known_issue": "World-map tooltip empty cursor coordinates, before combat, remain unfixed",
+  "scope": "Two automated runs of the original saved ghost encounter; complete campaign and every mod combination remain outside this acceptance."
+}

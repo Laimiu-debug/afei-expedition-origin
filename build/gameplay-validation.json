@@ -983,7 +983,7 @@
   "scripts": [
     {
       "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
-      "sha256": "59f1e8e14fb47299396e4619dd52a73cb3b9685180924be61af12f324ed797fa"
+      "sha256": "b301e44b8c6b4320eaba288c31fedd81fce792ca12e0e1bfa4aa804ee38a1b85"
     },
     {
       "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
@@ -1255,7 +1255,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/member_skill_hooks.nut",
-      "sha256": "af4446d66756b72a885e84321e82128939a3e5dc303edd58194191159c2a0ef9"
+      "sha256": "666aaebd23660a8c06666778a850a19fdc54137e2ce4d4fa61e662fd21b35646"
     },
     {
       "path": "src/scripts/mods/afeix/member_skills.nut",
@@ -1995,8 +1995,8 @@
     },
     {
       "file": "tests/gameplay/test_member_skills.nut",
-      "assertions": 126,
-      "log": "TESTS_PASSED=126\r\n"
+      "assertions": 250,
+      "log": "TESTS_PASSED=250\r\n"
     },
     {
       "file": "tests/gameplay/test_member_training.nut",
