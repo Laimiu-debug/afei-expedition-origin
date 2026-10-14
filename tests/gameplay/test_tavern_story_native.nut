@@ -54,6 +54,7 @@ dofile(".cache/afei-art/native-contract-fixture/event_manager.nut");
 dofile(".cache/afei-art/native-contract-fixture/world_state.nut");
 dofile(".cache/afei-art/native-contract-fixture/menu_stack.nut");
 dofile(".cache/afei-art/native-contract-fixture/world_event_screen.nut");
+dofile(".cache/afei-art/native-contract-fixture/weak_table_ref.nut");
 ::AfeixExpedition <- { CombatMax = 12, RosterMax = 40 };
 foreach (part in ["core", "formation", "characters", "roster", "quests", "promotions", "story_progress", "discovery", "ledger", "story_ledger"])
     dofile("src/scripts/mods/afeix/" + part + ".nut");
@@ -147,6 +148,12 @@ local close = function() {
 local open = function() { expect(building.onClicked(T) == 72, "native drink click return preserved"); drainTimers(); };
 local f8 = function() { return S.onKeyInput({ getKey = function() { return 78; }, getState = function() { return 0; } }); };
 
+// The actual engine publishes World.State through WeakTableRef. Its _get
+// forwards member reads, while `in` only sees the wrapper's own class slots.
+::World.State = ::WeakTableRef(S);
+expect(!("m" in ::World.State) && ::World.State.m == S.m, "native world reference forwards reads without forwarding membership");
+expect(A.isAtTavern(), "entered tavern is detected through the engine's actual world reference");
+
 // Reproduce animation lasting beyond the former single 350ms callback.
 reset(); local bro = makeActor("afei"); T.animating = true; ::test.hostile = false; ::test.distance = 0;
 expect(building.onClicked(T) == 72 && ::test.clicks == 1, "drink dialog opens before asynchronous story");
@@ -234,4 +241,6 @@ expect(!A.resolveRoot("er_xiaoyuan", 0).ok && !A.triggerRoot("er_keke").ok && ::
     "unsafe field cannot open or reply to roots");
 reset(); ::test.origin = false; building.onClicked(T);
 expect(::test.timers.len() == 0 && !A.isAtTavern(), "other origins preserve only the native drinks UI");
+::test.origin = true; ::World.State = ::WeakTableRef(null);
+expect(!A.isAtTavern(), "expired world reference does not expose a tavern");
 print("TESTS_PASSED=" + ::checks + "\n");

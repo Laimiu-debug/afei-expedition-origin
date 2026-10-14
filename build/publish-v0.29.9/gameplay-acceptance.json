@@ -1,0 +1,130 @@
+{
+  "version": "0.29.9",
+  "internal_version": 87,
+  "package_sha256": "22eaa60063ae251b1624944d7cdccaa451a167c4aea5f213caac9ab2696bdbf1",
+  "syntax_files": 151,
+  "behavior_assertions": 47065,
+  "menu_native_checks": 79,
+  "menu_tested_version": "0.29.8",
+  "menu_code_unchanged_in_release": true,
+  "death_callback_runs": {
+    "baseline-v86": {
+      "samples": [
+        {
+          "sample": 1,
+          "killer": "afei",
+          "victim": "怨魂",
+          "next_frame_gap_ms": 87.1925,
+          "counts": {
+            "skills_update": 43,
+            "hasPortraitArt": 80,
+            "refreshMemberAura": 32,
+            "characterId": 438,
+            "battle_scans": 34,
+            "syncCharacterArt": 20,
+            "hideOriginalPortraitParts": 42,
+            "tryTurtleAwakening": 32
+          }
+        },
+        {
+          "sample": 2,
+          "killer": "damou",
+          "victim": "怨魂",
+          "next_frame_gap_ms": 50.9472,
+          "counts": {
+            "skills_update": 42,
+            "hasPortraitArt": 80,
+            "refreshMemberAura": 31,
+            "characterId": 425,
+            "battle_scans": 33,
+            "syncCharacterArt": 20,
+            "hideOriginalPortraitParts": 42,
+            "tryTurtleAwakening": 31
+          }
+        },
+        {
+          "sample": 3,
+          "killer": "afei",
+          "victim": "行尸",
+          "next_frame_gap_ms": 46.3543,
+          "counts": {
+            "skills_update": 44,
+            "hasPortraitArt": 80,
+            "refreshMemberAura": 30,
+            "characterId": 412,
+            "battle_scans": 32,
+            "syncCharacterArt": 20,
+            "hideOriginalPortraitParts": 42,
+            "tryTurtleAwakening": 30
+          }
+        }
+      ],
+      "median_next_frame_gap_ms": 50.9472,
+      "mean_next_frame_gap_ms": 61.498,
+      "log": "build/kill-hitch-20261014/baseline-v86/game-log.html",
+      "script_errors": 0,
+      "critical_errors": 0
+    },
+    "fixed-v87": {
+      "samples": [
+        {
+          "sample": 1,
+          "killer": "afei",
+          "victim": "怨魂",
+          "next_frame_gap_ms": 57.8499,
+          "counts": {
+            "skills_update": 41,
+            "hasPortraitArt": 72,
+            "refreshMemberAura": 10,
+            "characterId": 74,
+            "battle_scans": 3,
+            "syncCharacterArt": 18,
+            "hideOriginalPortraitParts": 38,
+            "tryTurtleAwakening": 1
+          }
+        },
+        {
+          "sample": 2,
+          "killer": "damou",
+          "victim": "怨魂",
+          "next_frame_gap_ms": 47.0257,
+          "counts": {
+            "skills_update": 40,
+            "hasPortraitArt": 72,
+            "refreshMemberAura": 10,
+            "characterId": 73,
+            "battle_scans": 3,
+            "syncCharacterArt": 18,
+            "hideOriginalPortraitParts": 38,
+            "tryTurtleAwakening": 1
+          }
+        },
+        {
+          "sample": 3,
+          "killer": "afei",
+          "victim": "行尸",
+          "next_frame_gap_ms": 38.578,
+          "counts": {
+            "skills_update": 42,
+            "hasPortraitArt": 72,
+            "refreshMemberAura": 10,
+            "characterId": 72,
+            "battle_scans": 3,
+            "syncCharacterArt": 18,
+            "hideOriginalPortraitParts": 38,
+            "tryTurtleAwakening": 1
+          }
+        }
+      ],
+      "median_next_frame_gap_ms": 47.0257,
+      "mean_next_frame_gap_ms": 47.81786666666667,
+      "log": "build/kill-hitch-20261014/fixed-v87/game-log.html",
+      "script_errors": 0,
+      "critical_errors": 0
+    }
+  },
+  "original_campaign_files_unchanged": true,
+  "temporary_game_probes_removed": true,
+  "scope": "Actual G-drive engine and installed DLC/MSU, byte-identical autosave copy, same 21-enemy encounter. AI paused; three native actor.kill calls with alternating Afei/Damou, covering two ghosts and one zombie. Campaign saving disabled. No human mouse-input acceptance.",
+  "timing_limit": "Time.getRealTimeF is constant inside the synchronous kill callback and reported zero. Report uses elapsed time until next tactical update; includes ordinary rendering, scheduling, sound and CPU variation. Three samples demonstrate reduced work and observed frame gaps, not exact kill CPU time or guaranteed latency for every battle. Instrumentation wrappers contribute overhead; timings are diagnostic samples rather than normal-play latency promises."
+}

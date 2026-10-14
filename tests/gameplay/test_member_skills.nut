@@ -109,6 +109,8 @@ g.shield=null;g.skills.update();expect(ga.skills.defense(ge,gs).RangedDefense==8
 ::mods_hookExactClass <- function(path,callback){::memberActorHook=callback;};
 dofile("src/scripts/mods/afeix/member_skill_hooks.nut");
 ::Const.MoraleCheckType.Default <- 0;
+::Const.MoraleState.Ignore <- -1;
+::Const.MoraleState.Confident <- 5;
 local methods={getBravery=function(){return this.props.Bravery;},
     checkMorale=function(change,difficulty,type=::Const.MoraleCheckType.Default,icon="",noNewLine=false){this.MoraleArgs <- [change,difficulty,type,icon,noNewLine];return this.props.Bravery;},
     onTurnStart=function(){this.fatigue-=this.props.FatigueRecoveryRate;event(this,"onTurnStart");return "native-start";},
@@ -124,6 +126,15 @@ expect(auraUpdates==0,"resolve reads never write HP, art or turn-bar state throu
 expect(methods.checkMorale.bindenv(j2)(-1,10,2,"probe",true)==50,"actual morale check refreshes the departed captain bonus");
 expect(auraUpdates==1&&j2.MoraleArgs[0]==-1&&j2.MoraleArgs[1]==10&&j2.MoraleArgs[2]==2&&j2.MoraleArgs[3]=="probe"&&j2.MoraleArgs[4],"morale hook refreshes once and preserves all five native arguments");
 expect(methods.checkMorale.bindenv(j2)(1,4)==50&&j2.MoraleArgs[2]==0&&j2.MoraleArgs[3]==""&&!j2.MoraleArgs[4],"morale hook keeps native optional argument defaults");
+local previousUpdates=auraUpdates;
+foreach(pair in [[5,1],[-1,-1],[0,-1],[0,1]]){
+    j2.morale=pair[0];methods.checkMorale.bindenv(j2)(pair[1],8,2,"skip",true);
+    expect(auraUpdates==previousUpdates&&j2.MoraleArgs[0]==pair[1]&&j2.MoraleArgs[2]==2&&j2.MoraleArgs[3]=="skip"&&j2.MoraleArgs[4],
+        "native early-out state delegates all arguments without rebuilding skills");
+}
+j2.morale=0;methods.checkMorale.bindenv(j2)(2,8);
+expect(auraUpdates==previousUpdates+1,"rally-style positive change still refreshes fleeing actors when the native check can run");
+j2.morale=4;
 af.pos=1;expect(methods.onMovementFinish.bindenv(af)(af.tile)=="native-movement"&&j2.props.Bravery==60,"captain movement refreshes nearby members and preserves native callback");
 local t2=makeActor("xiaogui",2);equip(t2,false,true);A.syncMemberSkills(t2);t2.fatigue=50;af.placed=false;
 expect(methods.onTurnStart.bindenv(t2)()=="native-start"&&t2.fatigue==35,"turn-start recovery uses current deployed captain state");

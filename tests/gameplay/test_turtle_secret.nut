@@ -111,10 +111,31 @@ local hooks={};
 dofile("src/scripts/mods/afeix/ideas_hooks.nut");
 local order=[];
 A.ideaBattleTurn=function(){};
-local wrapper={onTurnStart=function(){order.push("native_turn");},onDamageReceived=function(...) {},onOtherActorDeath=function(...) {order.push("native_death");}};
+local wrapper={key="xiaogui",onTurnStart=function(){order.push("native_turn");},onDamageReceived=function(...) {},
+    onOtherActorDeath=function(killer,victim,skill){order.push("native_death");this.DeathArgs<-[killer,victim,skill];return "native-death-result";}};
 hooks["entity/tactical/actor"](wrapper);
 local real=A.tryTurtleAwakening;A.tryTurtleAwakening=function(){order.push("detect");return false;};
 wrapper.onTurnStart();check(order[0]=="detect" && order[1]=="native_turn","before enemy action");
-order=[];wrapper.onOtherActorDeath(null,null,null);check(order[0]=="native_death" && order[1]=="detect","death callback detects immediately");
+order=[];check(wrapper.onOtherActorDeath(null,null,null)=="native-death-result"&&order[0]=="native_death" && order[1]=="detect","turtle death notification detects immediately after native handling");
+// Same fanout as the installed 33-actor battle: every survivor retains native
+// handling, but there is one whole-map awakening scan per death.
+local recipients=[];
+for(local i=0;i<32;++i){local r=clone wrapper;r.key=i==5?"xiaogui":"other";recipients.push(r);}
+local killer={},victim={},attack={};
+foreach(death in [1,2]){
+    order=[];local nativeCalls=0;
+    foreach(r in recipients){
+        if(r.onOtherActorDeath(killer,victim,attack)=="native-death-result")++nativeCalls;
+        check(r.DeathArgs[0]==killer&&r.DeathArgs[1]==victim&&r.DeathArgs[2]==attack,"native recipient arguments retained");
+    }
+    local scans=0;foreach(step in order)if(step=="detect")++scans;
+    check(scans==1&&nativeCalls==32,"each death broadcasts normally and scans the battle once");
+}
+order=[];foreach(r in recipients)if(r.key!="xiaogui")r.onOtherActorDeath(killer,victim,attack);
+check(order.find("detect")==null,"without a living placed turtle recipient no awakening scan is needed");
 A.tryTurtleAwakening=real;
+fresh();afei=secretActor("afei");turtle=secretActor("xiaogui");enemy=secretActor("enemy",2);
+local lastAlly=secretActor("last_ally");lastAlly.dying=true;
+check(wrapper.onOtherActorDeath.bindenv(turtle)(enemy,lastAlly,attack)=="native-death-result"
+    &&A.catalogGet(turtle,"turtle_awakened")==1&&turtle.hp==500,"last ally death still immediately awakens the surviving turtle");
 print("TESTS_PASSED="+checks+"\n");

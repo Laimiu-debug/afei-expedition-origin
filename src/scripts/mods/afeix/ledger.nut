@@ -67,7 +67,9 @@ A.ledgerPage <- function(event, page) {
     if (extension == null && "trainingLedgerPage" in A) extension = A.trainingLedgerPage(event, page);
     if (extension == null && "treatmentLedgerPage" in A) extension = A.treatmentLedgerPage(event, page);
     if (extension == null && "ideasLedgerPage" in A) extension = A.ideasLedgerPage(event, page);
-    if (extension == null && "bannerLedgerPage" in A) extension = A.bannerLedgerPage(event, page);
+    // Wardrobe providers recognize the canonical company ID. Collect their
+    // complete action list before paging, including on subsequent pages.
+    if (extension == null && "bannerLedgerPage" in A) extension = A.bannerLedgerPage(event, kind == "company" ? "company" : page);
     if (extension == null && kind == "dream_final" && "dreamPage" in A) extension = A.dreamPage(event, page);
     if (extension != null) {
         screen = extension;
@@ -182,6 +184,21 @@ A.ledgerPage <- function(event, page) {
     } else {
         screen.Text = "这一页暂时没有内容，请返回名册。";
         screen.Options.push(A.ledgerNav("返回名册", "home"));
+    }
+    if (kind == "company") {
+        screen.ID = page;
+        if (screen.Options.len() > 6) {
+            local options = screen.Options, offset = 0;
+            if (parts.len() > 1) try { offset = parts[1].tointeger(); } catch(error) {}
+            // The company builder and DLC insert actions before the existing
+            // return footer. Reserve a slot for paging and retain that footer.
+            local total = options.len() - 1, window = A.ledgerWindow(total, offset);
+            screen.Options = [];
+            for (local i = 0; i < window.count; ++i) screen.Options.push(options[window.offset + i]);
+            screen.Options.push(A.ledgerNav(window.next == 0 ? "回到第一页" : "下一页", "company:" + window.next));
+            screen.Options.push(options[options.len() - 1]);
+            screen.Text += "\n\n第 " + (window.offset / 4 + 1) + " 页，共 " + ((total + 3) / 4) + " 页。";
+        }
     }
     if (event.m.Notice != "") {
         // Keep treatment receipts and refusals above the eight-attribute list

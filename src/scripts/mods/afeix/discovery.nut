@@ -51,6 +51,10 @@ A.canMeetCharacter <- function(key, metrics = null) {
 A.tavernStoryTown <- function() {
     if (!this.isOrigin() || ::World.State == null) return null;
     local state = ::World.State;
+    // Native World.State is a WeakTableRef. Member reads are forwarded by
+    // _get, but `in` checks the wrapper itself rather than the live state.
+    if ("WeakTableRef" in getroottable() && state instanceof ::WeakTableRef) state = state.get();
+    if (state == null) return null;
     if (!("m" in state) || !("WorldTownScreen" in state.m)) return null;
     local screen = state.m.WorldTownScreen;
     if (screen == null || !screen.isVisible()) return null;

@@ -44,7 +44,10 @@ local stashWrappers={};
     o.onTurnStart=function(){::AfeixExpedition.ideaBattleTurn();::AfeixExpedition.tryTurtleAwakening();return turn.bindenv(this)();};
     o.onOtherActorDeath=function(killer,victim,skill){
         local result=otherDeath.bindenv(this)(killer,victim,skill);
-        ::AfeixExpedition.tryTurtleAwakening();
+        // Native kill broadcasts to every placed survivor. Only Xiaogui can
+        // awaken, so her notification performs the whole-battle scan once.
+        // Preserve native morale/skill handling for all other recipients.
+        if(::AfeixExpedition.isTurtle(this))::AfeixExpedition.tryTurtleAwakening();
         return result;
     };
     o.onDamageReceived=function(attacker,skill,info){

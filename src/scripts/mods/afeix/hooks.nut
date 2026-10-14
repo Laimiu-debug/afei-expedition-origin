@@ -6,6 +6,15 @@
         if (key.getState() == 0 && key.getKey() == 78 && ::AfeixExpedition.openLedger()) return true;
         return onKeyInput.bindenv(this)(key);
     };
+    // MSU handles its Escape keybind before the legacy key hook and invokes
+    // toggleMenuScreen directly. Finish our event through that same entry too.
+    if ("toggleMenuScreen" in o) {
+        local toggleMenu = o.toggleMenuScreen;
+        o.toggleMenuScreen = function() {
+            if (::AfeixExpedition.closeLedger(this)) return true;
+            return toggleMenu.bindenv(this)();
+        };
+    }
     local onDeserialize = o.onDeserialize;
     o.onDeserialize = function(input) {
         local result = onDeserialize.bindenv(this)(input);

@@ -983,7 +983,7 @@
   "scripts": [
     {
       "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
-      "sha256": "b301e44b8c6b4320eaba288c31fedd81fce792ca12e0e1bfa4aa804ee38a1b85"
+      "sha256": "73f1c6fb71c72778d9e0ce073af78fad4206bf61f6cf6e9eb3119f6db1ac188d"
     },
     {
       "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
@@ -1115,7 +1115,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/discovery.nut",
-      "sha256": "d0313fd9086dca1edb93a7876374bbb13edcce46b3f7e03ba019ad7ecc19df7b"
+      "sha256": "ec4c618c718b83c37707dbdb7769126f620923958641f1bb6e808515d750c4cc"
     },
     {
       "path": "src/scripts/mods/afeix/douyu_ai.nut",
@@ -1195,7 +1195,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/hooks.nut",
-      "sha256": "a919f8e0827c2da97c3eaa802ea93f81503bcb3765ab1a59323949e670b43e30"
+      "sha256": "56a6099a98b5253bde3ff962e40d22f99f8c644e1c51e223159327295c00cad6"
     },
     {
       "path": "src/scripts/mods/afeix/ideas_chronicles.nut",
@@ -1215,7 +1215,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/ideas_hooks.nut",
-      "sha256": "13a1de4151de1b2b30494df19b41cee97dad755d1958dae8c1d70b3c2e8490de"
+      "sha256": "0b8d8442a44fa576564f40a7c4f15e2f14d7c963ee01e740839a27bba6b97f9b"
     },
     {
       "path": "src/scripts/mods/afeix/ideas_random.nut",
@@ -1227,7 +1227,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/ledger.nut",
-      "sha256": "444c816c2e37f87b619196f84b901fae7b83751e570fbfca48f8bdabecde966e"
+      "sha256": "656620e1c4731f0f4d58c70cfd136efc2ed81a2971eae577f738e77fac475f4b"
     },
     {
       "path": "src/scripts/mods/afeix/member_catalog.nut",
@@ -1255,7 +1255,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/member_skill_hooks.nut",
-      "sha256": "666aaebd23660a8c06666778a850a19fdc54137e2ce4d4fa61e662fd21b35646"
+      "sha256": "ec7fce06e4196a1f8f0254d8bff9c08609dc106a2bd8677b40207f0334bce1cc"
     },
     {
       "path": "src/scripts/mods/afeix/member_skills.nut",
@@ -1869,6 +1869,11 @@
       "log": "TESTS_PASSED=51\r\n"
     },
     {
+      "file": "tests/gameplay/test_company_ledger_pagination.nut",
+      "assertions": 22,
+      "log": "TESTS_PASSED=22\r\n"
+    },
+    {
       "file": "tests/gameplay/test_contract_hooks.nut",
       "assertions": 73,
       "log": "PASS missing_world_is_not_the_afeix_origin\r\nPASS null_world_during_teardown_is_not_the_afeix_origin\r\nPASS standalone_tactical_world_without_assets_is_safe\r\nPASS uninitialized_campaign_assets_are_safe\r\nPASS assets_without_a_selected_origin_are_safe\r\nPASS loaded_afeix_campaign_still_matches_the_origin\r\nPASS native_bound_callback_is_rebound_to_actual_instance\r\nPASS successful_actual_payment_unlocks_and_preserves_return\r\nPASS receipt_records_actual_amount_and_deduplicates_id\r\nPASS successful_callback_clears_runtime_context\r\nPASS duplicate_finish_does_not_count_twice\r\nPASS advance_is_persisted_without_early_unlock\r\nPASS advance_followed_by_cancel_does_not_unlock\r\nPASS cancelled_terminal_state_cannot_be_replayed_as_success\r\nPASS advertised_count_maximum_without_real_payment_is_ignored\r\nPASS ordinary_sale_after_finish_is_not_contract_income\r\nPASS finish_before_final_payment_is_supported\r\nPASS actual_money_delta_beats_requested_amount\r\nPASS no_positive_balance_change_does_not_unlock\r\nPASS negative_and_zero_transactions_are_not_receipts\r\nPASS set_screen_start_preserves_default_arguments_and_context\r\nPASS state_update_and_combat_callbacks_capture_actual_payments\r\nPASS synchronous_event_reward_cannot_leak_into_contract_receipt\r\nPASS event_context_restores_contract_then_outer_context\r\nPASS exception_restores_nested_previous_context\r\nPASS exception_does_not_tag_later_external_payment\r\nPASS failed_native_finish_is_not_success_and_restores_context\r\nPASS native_manager_must_actually_close_contract\r\nPASS payment_inside_native_finish_is_captured\r\nPASS reload_retains_receipt_but_discards_runtime_context\r\nPASS pre_save_advance_and_post_load_success_count_once\r\nPASS other_origins_keep_native_payment_without_afeix_flags\r\nPASS won_paid_contract_awards_eight_percent\r\nPASS sponsorship_never_sponsors_itself_or_leaks_context\r\nPASS reopening_and_replaying_completion_cannot_duplicate_income\r\nPASS retraining_does_not_reprice_settled_sponsorship\r\nPASS advance_without_completion_has_no_sponsorship\r\nPASS split_final_reward_adds_only_the_unpaid_difference\r\nPASS reload_retains_paid_entitlement\r\nPASS per_contract_cap_limits_large_rewards\r\nPASS extra_payment_does_not_reset_contract_cap\r\nPASS feidie_rate_rounds_down_to_whole_crowns\r\nPASS peaceful_contract_has_no_battle_sponsorship\r\nPASS post_completion_victory_cannot_reopen_eligibility\r\nPASS cancelled_contract_never_gains_sponsorship\r\nPASS late_payment_cannot_gain_new_route_after_completion\r\nPASS fallen_afei_cannot_sign_new_sponsorship\r\nPASS absent_afei_cannot_sign_new_sponsorship\r\nPASS old_version_completed_contracts_are_not_retroactive_rewards\r\nPASS other_origins_do_not_gain_sponsorship_or_victory_flags\r\nPASS both_native_and_mod_couriers_are_excluded_from_unlocks\r\nPASS qualified_count_and_distinct_types_have_separate_accounting\r\nPASS repeated_completion_cannot_inflate_either_unlock_metric\r\nPASS native_contract_reference_forwards_type_without_membership\r\nPASS native_manager_reference_records_type_before_contract_is_cleared\r\nPASS native_contract_reference_forwards_type_without_membership\r\nPASS native_manager_reference_records_type_before_contract_is_cleared\r\nPASS native_contract_reference_forwards_type_without_membership\r\nPASS native_manager_reference_records_type_before_contract_is_cleared\r\nPASS native_contract_reference_forwards_type_without_membership\r\nPASS native_manager_reference_records_type_before_contract_is_cleared\r\nPASS native_contract_reference_forwards_type_without_membership\r\nPASS native_manager_reference_records_type_before_contract_is_cleared\r\nPASS native_reference_contracts_count_distinct_types_and_exclude_both_couriers\r\nPASS native_reference_completion_remains_idempotent\r\nPASS cleared_native_type_cannot_erase_known_contract_history\r\nPASS known_contract_types_survive_runtime_reload\r\nPASS old_untyped_history_is_labeled_missing_instead_of_zero_variety\r\nPASS old_completion_progress_is_retained_without_inventing_historical_types\r\nPASS rolling_week_cap_and_no_duplicate_payout\r\nPASS old_capped_receipt_cannot_be_claimed_next_week\r\nPASS new_contract_receives_fresh_week_budget\r\nPASS retraining_shares_weekly_history\r\nTESTS_PASSED=73\r\n"
@@ -1995,8 +2000,8 @@
     },
     {
       "file": "tests/gameplay/test_member_skills.nut",
-      "assertions": 250,
-      "log": "TESTS_PASSED=250\r\n"
+      "assertions": 255,
+      "log": "TESTS_PASSED=255\r\n"
     },
     {
       "file": "tests/gameplay/test_member_training.nut",
@@ -2045,8 +2050,8 @@
     },
     {
       "file": "tests/gameplay/test_native_ledger_ui.nut",
-      "assertions": 188,
-      "log": "TESTS_PASSED=188\r\n"
+      "assertions": 197,
+      "log": "TESTS_PASSED=197\r\n"
     },
     {
       "file": "tests/gameplay/test_native_letter.nut",
@@ -2130,8 +2135,8 @@
     },
     {
       "file": "tests/gameplay/test_tavern_story_native.nut",
-      "assertions": 201,
-      "log": "TESTS_PASSED=201\r\n"
+      "assertions": 204,
+      "log": "TESTS_PASSED=204\r\n"
     },
     {
       "file": "tests/gameplay/test_ten_person_balance.nut",
@@ -2150,8 +2155,8 @@
     },
     {
       "file": "tests/gameplay/test_turtle_secret.nut",
-      "assertions": 58,
-      "log": "TESTS_PASSED=58\r\n"
+      "assertions": 126,
+      "log": "TESTS_PASSED=126\r\n"
     },
     {
       "file": "tests/gameplay/test_world_art.nut",

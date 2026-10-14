@@ -126,6 +126,16 @@ E.m.ActiveEvent=story;S.m.EventScreen.visible=true;
 expect(!A.closeLedger(S)&&E.m.ActiveEvent==story,"ordinary story event cannot be cancelled by ledger Escape");
 E.m.ActiveEvent=null;
 
+// Installed MSU's Escape keybind invokes toggleMenuScreen and consumes the
+// key before legacy onKeyInput. Exercise that native entry with a live ledger.
+foreach(page in ["company", "company:4", "afeix_dlc_skins:0"]) {
+    reset(true);
+    expect(A.openLedger(page),"ledger opens before MSU menu dispatch: "+page);
+    expect(S.toggleMenuScreen(),"MSU menu entry handles the ledger close");
+    expect(E.m.ActiveEvent==null&&!S.m.EventScreen.isVisible()&&M.m.Stack.len()==1&&S.m.WorldTownScreen.visible,
+        "MSU Escape removes only the ledger and preserves town");
+}
+
 foreach (inTown in [true, false]) {
     foreach (status in ["Visible", "Animating", "PopupDialogVisible"]) {
         reset(inTown);

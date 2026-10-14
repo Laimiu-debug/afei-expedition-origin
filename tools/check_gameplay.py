@@ -429,6 +429,22 @@ def validate(sq, game):
                 archive.read('scripts/!mods_preload/mod_sr_alternative_standard.nut'))
     else:
         compat_fixture.write_text('::AFEIX_InstalledRecruitDisplay <- false;\n', encoding='utf-8')
+    # Exercise the installed optional wardrobe's actual menu hooks. Keep its
+    # source in ignored local fixtures, outside the main package/repository.
+    skins_entry = 'scripts/mods/afeix_dlc_afei_skins/'
+    skins_found = False
+    for candidate in sorted((game / 'data').glob('*.zip')):
+        with ZipFile(candidate) as archive:
+            if skins_entry + 'hooks.nut' not in archive.namelist():
+                continue
+            native_dir.joinpath('installed_skins_hooks.nut').write_bytes(archive.read(skins_entry + 'hooks.nut'))
+            native_dir.joinpath('installed_skins_content.nut').write_bytes(
+                b'::AFEIX_InstalledSkinsDLC <- true;\n' + archive.read(skins_entry + 'content.nut'))
+            skins_found = True
+            break
+    if not skins_found:
+        native_dir.joinpath('installed_skins_content.nut').write_text('::AFEIX_InstalledSkinsDLC <- false;\n', encoding='utf-8')
+        native_dir.joinpath('installed_skins_hooks.nut').write_text('', encoding='utf-8')
     from prepare_dream_test_native import prepare_dream_test_native
     prepare_dream_test_native(game)
     from prepare_douyu_world_native import prepare_douyu_world_native

@@ -1,7 +1,7 @@
 {
-  "version": "0.29.7",
-  "package": "dist/mod_afeix_expedition v0.29.7.zip",
-  "sha256": "ecc2c797c228be779d8f5081b31be28b0689fa9d85c5b4d5c48c980e1146b953",
+  "version": "0.29.9",
+  "package": "dist/mod_afeix_expedition v0.29.9.zip",
+  "sha256": "22eaa60063ae251b1624944d7cdccaa451a167c4aea5f213caac9ab2696bdbf1",
   "entries": [
     "brushes/afeix_banner_v25.brush",
     "brushes/afeix_corpse_injuries_v01.brush",
@@ -338,7 +338,12 @@
   ],
   "crc_passed": true,
   "source_bytes_match": true,
-  "behavior_assertions": 46958,
-  "in_game_tested": false,
-  "scope": "Current working tree, including preceding art/documentation work; no install or publish."
+  "behavior_assertions": 47065,
+  "in_game_tested": true,
+  "scope": "Local v0.29.9 package; backup and G-drive installation verified; three native death callback samples passed; not published.",
+  "installed": true,
+  "installed_path": "G:\\杂项\\Battle Brothers1.5.2.3傻瓜包解压即玩\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "installed_sha256": "22eaa60063ae251b1624944d7cdccaa451a167c4aea5f213caac9ab2696bdbf1",
+  "live_test_report": "build/kill-hitch-20261014/verified-kill-hitch-v0.29.9.json",
+  "in_game_scope": "Actual G-drive engine and installed DLC/MSU, byte-identical autosave copy, same 21-enemy encounter. AI paused; three native actor.kill calls with alternating Afei/Damou, covering two ghosts and one zombie. Campaign saving disabled. No human mouse-input acceptance."
 }

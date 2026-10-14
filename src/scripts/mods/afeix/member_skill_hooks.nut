@@ -4,7 +4,15 @@
 ::mods_hookExactClass("entity/tactical/actor", function(o) {
     local checkMorale = o.checkMorale;
     o.checkMorale = function(change, difficulty, type = ::Const.MoraleCheckType.Default, icon = "", noNewLine = false) {
-        ::AfeixExpedition.refreshMemberAura(this);
+        // Native checkMorale returns before reading resolve for these states.
+        // Death broadcasts often include already-confident players; refreshing
+        // their skills here rebuilds HP/portraits for a check that cannot run.
+        local morale = this.getMoraleState();
+        if (morale != ::Const.MoraleState.Ignore
+            && !(change > 0 && morale == ::Const.MoraleState.Confident)
+            && !(change < 0 && morale == ::Const.MoraleState.Fleeing)
+            && !(change == 1 && morale == ::Const.MoraleState.Fleeing))
+            ::AfeixExpedition.refreshMemberAura(this);
         return checkMorale.bindenv(this)(change, difficulty, type, icon, noNewLine);
     };
     local onTurnStart = o.onTurnStart;
