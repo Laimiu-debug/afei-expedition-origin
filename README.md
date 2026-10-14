@@ -6,9 +6,9 @@
 
 ## 下载
 
-最新版是 **v0.29.7**。
+最新版是 **v0.29.9**。
 
-- [BBMOD 下载](https://bbmod.com/files/0709064c-deaa-4ae7-9328-d57e65a15fd6/download/) · [GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.7) · [这一版改了什么](docs/releases/v0.29.7.md)
+- [BBMOD 下载](https://bbmod.com/files/0890233f-ee4d-467d-9a72-2d5b9d9ba5f8/download/) · [GitHub Release](https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.9) · [这一版改了什么](docs/releases/v0.29.9.md)
 - 可选 DLC：[希文与里根儿 0.2.5](https://bbmod.com/mods/247b829d-8aa8-4898-a6dd-8b933c9ff1e9/)，加一名队员希文和战犬里根儿，[说明](dlc/xiwen-regen/README.md)
 - 可选 DLC：[阿飞衣橱与哇哇叫 0.1.0](https://bbmod.com/mods/e554fc31-28b0-4b26-a8f5-295141ed79ef/)，六套外观、两张战败 CG 和五段受伤语音，需要主包 v0.28.12 以上
 
