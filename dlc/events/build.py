@@ -76,9 +76,11 @@ def main():
         native.mkdir()
         shutil.copytree(DLC / "src", scratch / "src")
         shutil.copy2(DLC / "tests/events.nut", scratch / "events.nut")
+        shutil.copy2(DLC / "tests/stories.nut", scratch / "stories.nut")
         (scratch / "base_version.nut").write_text("::TestBaseInternal <- " + version[1] + ";\n", encoding="utf-8")
         shutil.copy2(base / "src/scripts/mods/afeix/hooks.nut", scratch / "base_hooks.nut")
         shutil.copy2(base / "src/scripts/mods/afeix/characters.nut", scratch / "base_characters.nut")
+        shutil.copy2(base / "src/scripts/mods/afeix/contracts.nut", scratch / "base_contracts.nut")
         native_hashes = {}
         graph_source = "modern_hooks/queue/mod_hooks_queue_graph.nut"
         graph_packages = []
@@ -101,6 +103,10 @@ def main():
             "event_manager": "scripts/events/event_manager.cnut",
             "world_state": "scripts/states/world_state.cnut",
             "tavern_building": "scripts/entity/world/settlements/buildings/tavern_building.cnut",
+            "player": "scripts/entity/tactical/player.cnut",
+            "assets": "scripts/states/world/asset_manager.cnut",
+            "contract": "scripts/contracts/contract.cnut",
+            "contract_manager": "scripts/contracts/contract_manager.cnut",
         }
         with ZipFile(args.game.resolve() / "data/data_001.dat") as archive:
             for name, path in sources.items():
@@ -115,6 +121,14 @@ def main():
         (native / "ui.nut").write_text("::nativeUI <- {\n" +
             method(world, "showEventScreen") + "\n" + method(world, "showEventScreenFromTown") + "\n};\n" +
             "::nativeTavern <- {\n" + method(tavern, "onClicked") + "\n};\n", encoding="utf-8")
+        apis = {"nativeMood": ("player", ["getMood", "improveMood", "worsenMood"]),
+                "nativeMoney": ("assets", ["getMoney", "setMoney", "addMoney"]),
+                "nativeContract": ("contract", ["getType"]),
+                "nativeContractManager": ("contract_manager", ["getActiveContract"])}
+        (native / "story_api.nut").write_text("\n".join(
+            "::" + name + " <- {\n" + "\n".join(method(
+                (native / (source + ".nut")).read_text(encoding="utf-8"), entry) for entry in methods) + "\n};"
+            for name, (source, methods) in apis.items()), encoding="utf-8")
         for path in files + list((DLC / "templates").glob("*.nut")):
             run([kit / "sq.exe", "-c", "-o", scratch / "compile.cnut", path], scratch)
         # Inspect actual production content through the real preload, before test

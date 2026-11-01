@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "generator": "built-in image_gen",
+  "source": "sources/falling-rocket.png",
+  "sha256": "6dfde3c8e2d1dda1c2d4732fcaa43636a90999425edeb1c6927a9fe32e865d6c",
+  "reviewed_for_export": true,
+  "direction": "nose down, exhaust up",
+  "export": "64x180, nose near ground anchor",
+  "prompt": "Create one production-ready transparent game particle sprite, illustrated hand-painted dark medieval tactical RPG style matching Battle Brothers: an orange-red riveted cylindrical firework rocket with a worn mustard-brass pointed nose and three small dark iron fins. The rocket points STRAIGHT DOWN, centered upright on its long axis, nose at bottom, exhaust flame and short wispy smoke extending UP above the tail. Clearly readable broad silhouette at small size. Rough dark ink contour, muted orange lacquer, scratched aged metal, painterly shaded facets, no futuristic spacecraft, no cartoon face, no text, no logo, no UI button frame, no ground, no shadow on ground, no explosion, only this single isolated falling rocket with flame attached. Two-dimensional front/side icon-like view, not isometric foreshortening. The entire rocket and short flame are contained with generous transparent margins. True transparent background. This asset will be about 50 pixels wide and 140 pixels tall in a game's animated downward fall, so prioritize bold clarity and not intricate detail.",
+  "in_game_tested": false
+}

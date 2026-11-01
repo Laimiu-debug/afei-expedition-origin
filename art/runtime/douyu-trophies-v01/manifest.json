@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "generator": "built-in image_gen",
+  "status": "eight generated sources reviewed; native brush export ready",
+  "sources": {
+    "sharkskin-inventory": {
+      "source": "sources/sharkskin-inventory.png",
+      "sha256": "d5da94fcbeff00e33c391ebfd08b0673f037cc888a48780ed1c98b3c027b42f3",
+      "reviewed_for_export": true
+    },
+    "sharkskin-live": {
+      "source": "sources/sharkskin-live.png",
+      "sha256": "bcf773fa2e6542de5ccccd19238a3268c0e9f79df27095c5c595b4127c6745b9",
+      "reviewed_for_export": true
+    },
+    "sharkskin-damaged": {
+      "source": "sources/sharkskin-damaged.png",
+      "sha256": "1294a1d02bbdbc665db06008ab16ea04f1dcc1a03b9c50174f512238faa863d2",
+      "reviewed_for_export": true
+    },
+    "sharkskin-dead": {
+      "source": "sources/sharkskin-dead-v2.png",
+      "sha256": "cd8f0f583b163f7da8d94ea97804eb1b512552e9520f43a888a86db6e640afc7",
+      "reviewed_for_export": true,
+      "rejected_source": "archive/sharkskin-dead-v1-rejected.png",
+      "review_note": "v2 使用左下颈口、右上胸腰的斜卧姿态；按原版尸体 left/bottom 坐标叠加核验通过。首版保留为拒用来源。"
+    },
+    "fin-cleaver": {
+      "source": "sources/fin-cleaver.png",
+      "sha256": "a4170c7534e9c15084f934936239d18410697b91f5a7db004809b229cc37e7dd",
+      "reviewed_for_export": true
+    },
+    "fin-cleaver-bloodied": {
+      "source": "sources/fin-cleaver-bloodied.png",
+      "sha256": "b6b7a38c0bc2e99b60ab5c0e3aeb217aab476a47f1c654ba8f2886c77305847c",
+      "reviewed_for_export": true
+    },
+    "tooth-spear": {
+      "source": "sources/tooth-spear.png",
+      "sha256": "63eb154ad304b08564668f834afbc1ea508c8fcf59debb8a459a4fe75ae676e1",
+      "reviewed_for_export": true
+    },
+    "tooth-spear-bloodied": {
+      "source": "sources/tooth-spear-bloodied.png",
+      "sha256": "96da2831d017cf59a103c2d5815173efe84797b1b9b228bf9aa2ab11685ef42d",
+      "reviewed_for_export": true
+    }
+  },
+  "source_art_reviewed": true,
+  "engine_visual_reviewed": false
+}

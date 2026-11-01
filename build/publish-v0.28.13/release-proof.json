@@ -1,0 +1,27 @@
+{
+  "version": "0.28.13",
+  "prior_version": "0.28.12",
+  "added_package_entries": [
+    "brushes/afeix_helmet_layers_v01.brush",
+    "gfx/afeix_helmet_layers_v01.png",
+    "scripts/skills/traits/afeix_turtle_retract.nut"
+  ],
+  "changed_package_entries": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/mods/afeix/appearance.nut",
+    "scripts/mods/afeix/balance_v26_data.nut",
+    "scripts/mods/afeix/ideas_core.nut",
+    "scripts/mods/afeix/ideas_hooks.nut",
+    "scripts/skills/traits/afeix_turtle_body.nut"
+  ],
+  "turtle_start_hp": 69,
+  "turtle_head_immunity_percent": 25,
+  "helmet_portraits": 33,
+  "helmet_brushes": 231,
+  "behavior_assertions": 35249,
+  "in_game_tested": false,
+  "published": true,
+  "website_release_id": "836c50e6-dc27-4b3a-8450-dfce74584d20",
+  "installed": false,
+  "public_download_byte_comparison": true
+}

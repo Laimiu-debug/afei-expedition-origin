@@ -40,6 +40,7 @@ function actor(key){
     bro.getFlags <- function(){return f;};bro.getLevel <- function(){return 8;};bro.isAlive <- function(){return this.alive;};
     bro.getHitpoints <- function(){return this.hp;};bro.getHitpointsMax <- function(){return this.hpmax;};bro.setHitpoints <- function(n){this.hp=n;};
     bro.setDirty <- function(v){};bro.getItems <- function(){return this.inv;};
+    bro.getTile <- function(){return {IsVisibleForPlayer=false};};
     bro.inv={owner=bro,accessory=null,getActor=function(){return this.owner;},
         function getAllItems(){return this.accessory==null?[]:[this.accessory];},function getItemAtSlot(slot){return this.accessory;},
         function equip(item){if(this.accessory!=null)return false;this.accessory=item;item.owner=this.owner;item.onEquip();return true;},
@@ -54,6 +55,7 @@ local brothers=[],stash={items=[],capacity=3,
 ::World <- {Flags=flags(),Assets={function getStash(){return stash;}},function getPlayerRoster(){return {function getAll(){return brothers;}};}};
 ::AfeixExpedition <- {};
 dofile("src/scripts/mods/afeix/core.nut");dofile("src/scripts/mods/afeix/keepsakes.nut");
+dofile("src/scripts/mods/afeix/combat_feedback.nut");
 local A=::AfeixExpedition;A.isOrigin=function(){return origin;};
 A.findCharacter <- function(key){foreach(b in brothers)if(b.key==key)return b;return null;};
 A.characterId <- function(b){return b.key;};

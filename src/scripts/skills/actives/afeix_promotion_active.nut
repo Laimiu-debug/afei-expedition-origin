@@ -13,6 +13,7 @@ this.afeix_promotion_active <- this.inherit("scripts/skills/skill", {
         this.m.FatigueCost = 20;
         this.m.MinRange = 0;
         this.m.MaxRange = 0;
+        ::AfeixExpedition.configureActiveFeedback(this, "promotion");
     },
     function getTooltip() {
         local result = this.getDefaultUtilityTooltip();
@@ -46,6 +47,7 @@ this.afeix_promotion_active <- this.inherit("scripts/skills/skill", {
             foreach (actor in A.promotionTargets(user, this.m.Radius)) A.promotionEffect(actor, path, id);
             if (this.m.Route == "feidie") A.promotionEffect(user, "scripts/skills/effects/afeix_feidie_guard_effect", "effects.afeix_feidie_guard");
         }
+        A.logCustomSkill(this, user);
         return true;
     },
     function onCombatStarted() { this.m.Used = false; },

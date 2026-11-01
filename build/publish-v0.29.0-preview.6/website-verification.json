@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-10-03T03:50:03.529608+00:00",
+  "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "download_url": "https://bbmod.com/files/a0ef0043-bd1b-4c1e-8ec7-aa70513dc735/download/",
+  "release_id": "a0ef0043-bd1b-4c1e-8ec7-aa70513dc735",
+  "version": "0.29.0-preview.6",
+  "sha256": "0bba1c6f1ef4297cf42ed9da4ac25269a93c1ad4b15c48063112c5a8d3e8d7dc",
+  "size": 4861536,
+  "entries": 326,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200,
+    "previous_download": 200
+  },
+  "source_bytes_match": true,
+  "catalog_and_notes_match": true,
+  "download_bytes_match": true,
+  "crc_passed": true,
+  "internal_version": 70,
+  "download_content_disposition": "attachment; filename=\"mod_afeix_expedition.zip\"",
+  "previous_version": "0.29.0-preview.3",
+  "previous_sha256_unchanged": "aa13a6e0fbb890fd91b7b983c230d92634992269f3da344ba3b4cd92569fee29",
+  "backup": "/srv/data/backups/afeix-pre-v0.29.0-preview.6-20261003T034927366736Z.sqlite3",
+  "in_game_tested": false,
+  "scope": "Public catalog/download/archive verification only. Targeted installed-game acceptance is recorded separately in build/douyu-balance-0.29-preview.6.json."
+}

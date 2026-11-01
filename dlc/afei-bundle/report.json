@@ -1,0 +1,172 @@
+{
+  "version": "0.1.0",
+  "minimum_base": "0.28.12 / internal 62",
+  "components": [
+    {
+      "name": "afei-skins",
+      "version": "0.1.1",
+      "package": "dlc/afei-skins/dist/mod_afeix_dlc_afei_skins v0.1.1.zip",
+      "sha256": "61be154857af40647e3a3031b783c9d02e446dcccd004c3fdb283ab6b790d618",
+      "entries": 14,
+      "assertions": 6593,
+      "scripts_compiled": 3
+    },
+    {
+      "name": "afei-voice",
+      "version": "0.1.2",
+      "package": "dlc/afei-voice/dist/mod_afeix_dlc_afei_voice v0.1.2.zip",
+      "sha256": "12aa12c3723591008888f8e60113d8aa538b3bd090e44c6f12ece4668176e7ab",
+      "entries": 8,
+      "assertions": 24,
+      "scripts_compiled": 3
+    }
+  ],
+  "validation": {
+    "component_assertions": 6617,
+    "combined_tests": [
+      {
+        "order": "skins_then_voice",
+        "assertions": 6661,
+        "output": "BUNDLE_COMBINED_CHECKS_PASS\r\nDLC_SKINS_RUNTIME_CHECKS_PASS\r\nALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=6661"
+      },
+      {
+        "order": "voice_then_skins",
+        "assertions": 6661,
+        "output": "BUNDLE_COMBINED_CHECKS_PASS\r\nDLC_SKINS_RUNTIME_CHECKS_PASS\r\nALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=6661"
+      }
+    ],
+    "scripts_compiled": 6,
+    "compatibility": {
+      "project_mod_ids": [
+        "mod_afeix_dlc_afei_skins",
+        "mod_afeix_dlc_afei_voice",
+        "mod_afeix_dlc_events",
+        "mod_afeix_dlc_xiwen_regen",
+        "mod_afeix_expedition"
+      ],
+      "runtime_ids": [
+        "event.afeix_dlc_events"
+      ],
+      "path_and_id_collisions": [],
+      "dependency_cycles": [],
+      "queue_declarations": [
+        {
+          "id": "mod_afeix_expedition",
+          "before": [],
+          "after": [],
+          "requires": []
+        },
+        {
+          "id": "mod_afeix_dlc_afei_skins",
+          "before": [],
+          "after": [
+            "mod_afeix_expedition"
+          ],
+          "requires": [
+            "mod_afeix_expedition"
+          ]
+        },
+        {
+          "id": "mod_afeix_dlc_afei_voice",
+          "before": [],
+          "after": [
+            "mod_afeix_expedition"
+          ],
+          "requires": [
+            "mod_afeix_expedition"
+          ]
+        },
+        {
+          "id": "mod_afeix_dlc_events",
+          "before": [],
+          "after": [
+            "mod_afeix_expedition"
+          ],
+          "requires": [
+            "mod_afeix_expedition"
+          ]
+        },
+        {
+          "id": "mod_afeix_dlc_xiwen_regen",
+          "before": [],
+          "after": [
+            "mod_afeix_expedition"
+          ],
+          "requires": [
+            "mod_afeix_expedition"
+          ]
+        }
+      ]
+    }
+  },
+  "entries": [
+    "brushes/afeix_dlc_afei_skins_v01.brush",
+    "gfx/afeix_dlc_afei_skins_v01.png",
+    "gfx/ui/afeix_dlc_afei_skins/bare.png",
+    "gfx/ui/afeix_dlc_afei_skins/captain.png",
+    "gfx/ui/afeix_dlc_afei_skins/huxueer.png",
+    "gfx/ui/afeix_dlc_afei_skins/native.png",
+    "gfx/ui/afeix_dlc_afei_skins/toad.png",
+    "gfx/ui/afeix_dlc_afei_skins/veteran.png",
+    "gfx/ui/afeix_dlc_afei_skins/wanderer.png",
+    "gfx/ui/events/afeix_dlc_skins_afei_defeat_01.png",
+    "gfx/ui/events/afeix_dlc_skins_afei_defeat_02.png",
+    "scripts/!mods_preload/mod_afeix_dlc_afei_skins.nut",
+    "scripts/!mods_preload/mod_afeix_dlc_afei_voice.nut",
+    "scripts/mods/afeix_dlc_afei_skins/content.nut",
+    "scripts/mods/afeix_dlc_afei_skins/hooks.nut",
+    "scripts/mods/afeix_dlc_afei_voice/config.nut",
+    "scripts/mods/afeix_dlc_afei_voice/hooks.nut",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_01.wav",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_02.wav",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_03.wav",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_04.wav",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_05.wav"
+  ],
+  "entry_sha256": {
+    "brushes/afeix_dlc_afei_skins_v01.brush": "4ff7131c80003578498422b0d7e952f4acc330745fd359ab2a32ba880a8bda0e",
+    "gfx/afeix_dlc_afei_skins_v01.png": "a251e23c30dd6aa15d9b8d05f72ff70925f9b6e7b1310bf15b5d719cb84820c3",
+    "gfx/ui/afeix_dlc_afei_skins/bare.png": "6a7c0d3205dd1c69f136647e8c0aebc29247ed4e4c61c6f1c1c3a3a25e09f388",
+    "gfx/ui/afeix_dlc_afei_skins/captain.png": "96a6f6ace59dd529a7f1034c1232fba0c20a81464a3e23669c09e2228426613f",
+    "gfx/ui/afeix_dlc_afei_skins/huxueer.png": "aca4a08a1f2856777eae6564febdd2ecc30020760b48cac559a9aca7049ef530",
+    "gfx/ui/afeix_dlc_afei_skins/native.png": "2216ed6b9d42992697dc78f7a90b50072e6b00f89a0b325111ca3dd879431990",
+    "gfx/ui/afeix_dlc_afei_skins/toad.png": "91c210a6b91f4cb695f8994da7afe7c9aab896b85753843cb15c88f83a2cba0f",
+    "gfx/ui/afeix_dlc_afei_skins/veteran.png": "733891cf71558c869ea8a48d286a3fb9010ebef7916b3bc1cea21daf5f0863ac",
+    "gfx/ui/afeix_dlc_afei_skins/wanderer.png": "0720f0911a2b18e6470f2aa82fe460a76456a4dbaadba61fd5abcb1a63846757",
+    "gfx/ui/events/afeix_dlc_skins_afei_defeat_01.png": "d8c7be6bd86cf35307548000e3fd9e53a12099289a4c17fbfa3d3c0ac7a6d868",
+    "gfx/ui/events/afeix_dlc_skins_afei_defeat_02.png": "3cedd7e568515dd570c54144e6eb68440fef3a4d6ca9c66db46e065989db36b1",
+    "scripts/!mods_preload/mod_afeix_dlc_afei_skins.nut": "debcf012bec5bcc7359616effe9bfc262b36ea746d8cd0ef82f9623f4e57f928",
+    "scripts/!mods_preload/mod_afeix_dlc_afei_voice.nut": "fb2b75ebd96d03ad79bcd1b9672b8716f4a47795422be2bacdca311040dea205",
+    "scripts/mods/afeix_dlc_afei_skins/content.nut": "aa87b29c080aeb47f40fe479e62f383ac93da55c38311afd3176b13ec79915f8",
+    "scripts/mods/afeix_dlc_afei_skins/hooks.nut": "93273f0e14826964519d7a896cda7b6b50bc05f2b5ce4562770548ddc6a870cb",
+    "scripts/mods/afeix_dlc_afei_voice/config.nut": "5617530b16d13858bcbdfce7f3c48280e6017d35fcece9c4f3bd35b688802582",
+    "scripts/mods/afeix_dlc_afei_voice/hooks.nut": "17c4714999076921371bd2d9e4b5fe19967d90a9f2beb8deaf705ec5a89a9daa",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_01.wav": "eb45d3bb5541295aa79f05c71823b1d82d615b7dc90c7195008c0d47f2605339",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_02.wav": "d2a40952a930f5f5a6178ce489e6b97e5cb370246c151597f1b1f2832aed5af0",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_03.wav": "a1be63c97dc0d55c5bfcddfea91c4a855f7cf6b5633b16aba8bc2437377a5157",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_04.wav": "84fab088dba8a5ed3257f34b09165a5e2c0e11fa72bed8d8d0abdfe302b60876",
+    "sounds/afeix_dlc_afei_voice/afei_hurt_05.wav": "d6ff82370c09e947674979e2242755d8d30355cae9a05572b99a44761c86c2a9"
+  },
+  "package_bytes": 1063573,
+  "package_sha256": "47326fde8d722b7efedc79af111a25364751daa3b61ecc9d862c14d74e7d6a17",
+  "crc_passed": true,
+  "component_bytes_unchanged": true,
+  "main_src_unchanged": true,
+  "in_game_tested": false,
+  "installed": false,
+  "published": true,
+  "package": "dlc/afei-bundle/dist/mod_afeix_dlc_afei_bundle v0.1.0.zip",
+  "website_mod_id": "e554fc31-28b0-4b26-a8f5-295141ed79ef",
+  "website_release_id": "a0cec096-c0c4-4314-9f75-819dc445d629",
+  "website_detail_url": "https://bbmod.site/mods/e554fc31-28b0-4b26-a8f5-295141ed79ef/",
+  "website_download_url": "https://bbmod.site/files/a0cec096-c0c4-4314-9f75-819dc445d629/download/",
+  "website_verified_at": "2026-10-02T08:38:06.944377+00:00",
+  "website_download_bytes_match": true,
+  "publication_backup": "/srv/data/backups/afeix-pre-v0.1.0-20261002T083739252339Z.sqlite3",
+  "withdrawn_old_release_ids": [
+    "be0dad8e-271f-4d5d-bee0-dd1c63975704",
+    "bfff3747-5ca2-4b5e-aadc-4fea58c1145b"
+  ],
+  "withdrawal_backup": "/srv/data/backups/afeix-pre-bundle-withdraw-20261002T083803990674Z.sqlite3",
+  "old_skin_separate_work_absent": true
+}

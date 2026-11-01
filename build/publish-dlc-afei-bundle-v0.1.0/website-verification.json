@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-10-02T08:38:06.944377+00:00",
+  "version": "0.1.0",
+  "detail_url": "https://bbmod.site/mods/e554fc31-28b0-4b26-a8f5-295141ed79ef/",
+  "download_url": "https://bbmod.site/files/a0cec096-c0c4-4314-9f75-819dc445d629/download/",
+  "sha256": "47326fde8d722b7efedc79af111a25364751daa3b61ecc9d862c14d74e7d6a17",
+  "size": 1063573,
+  "entries": 22,
+  "http_status": {
+    "catalog": 200,
+    "detail": 200,
+    "download": 200
+  },
+  "catalog_metadata_match": true,
+  "download_bytes_match": true,
+  "crc_passed": true,
+  "source_bytes_match": true,
+  "old_works_withdrawn": true,
+  "old_status": [
+    {
+      "mod_id": "f8909336-43fa-4415-82f6-b6224a8e7340",
+      "install_name": "mod_afeix_dlc_afei_voice.zip",
+      "detail_status": 404,
+      "downloads": [
+        {
+          "release_id": "be0dad8e-271f-4d5d-bee0-dd1c63975704",
+          "version": "0.1.2",
+          "http_status": 404
+        },
+        {
+          "release_id": "bfff3747-5ca2-4b5e-aadc-4fea58c1145b",
+          "version": "0.1.0",
+          "http_status": 404
+        }
+      ]
+    }
+  ],
+  "skin_separate_work_absent": true,
+  "public_archive_downloaded_at_origin": true,
+  "local_public_archive_saved": false,
+  "in_game_tested": false,
+  "verification_transport": "Anonymous public HTTPS endpoint through the trusted site origin",
+  "local_external_https_probe": {
+    "new_detail": "timeout_after_15_seconds",
+    "old_detail": "timeout_after_15_seconds"
+  }
+}

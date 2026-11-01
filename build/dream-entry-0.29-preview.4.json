@@ -1,0 +1,154 @@
+{
+  "version": "0.29.0-preview.4",
+  "internal_version": 68,
+  "created_at": "2026-10-03T08:46:28+08:00",
+  "scope": "Dream entrance, first-stage basic actions and battle-menu retreat; full four-stage/final-boss acceptance remains pending.",
+  "resolved_blockers": [
+    {
+      "error": "wrong number of parameters",
+      "cause": "Native actor.setDirty calls Math.rand() without arguments during temporary player construction.",
+      "fix": "Dream-local random supports native no-argument and two-argument calls and restores the campaign function."
+    },
+    {
+      "error": "Unknown dream item property: Condition",
+      "cause": "The in operator omits inherited native item.m properties resolved through _get/_set.",
+      "fix": "Validate with native property access, then assign; unknown properties still fail."
+    },
+    {
+      "error": "the index 'Row' does not exist",
+      "cause": "Partial dream enemy troop records omit fields required by native formation and setup.",
+      "fix": "Clone full native Spider/Direwolf/Lindwurm/Unhold troop definitions and substitute stage script."
+    },
+    {
+      "error": "the index '31' does not exist",
+      "cause": "Scenario mode allocates 32 tactical faction slots; native base assignment indexes a shorter campaign faction list.",
+      "fix": "Disable dream auto base assignment like native arena; keep it enabled for the real final encounter."
+    }
+  ],
+  "offline": {
+    "report": "build/gameplay-validation.json",
+    "syntax_files": 147,
+    "behavior_assertions": 45818,
+    "passed": true,
+    "native_regressions": [
+      "Installed native actor.setDirty during player construction",
+      "Inherited equipment properties via _get/_set",
+      "Native enemy spawnEntitiesInFormation/setupEntity for all four stage definitions",
+      "Dream auto base assignment disabled; real final enabled"
+    ]
+  },
+  "package": {
+    "path": "dist/mod_afeix_expedition v0.29.0-preview.4.zip",
+    "sha256": "29e6d1b1f8a12391086f67e7709fe3439f8ed06b165983aa84d6e60dd975c93d",
+    "entry_count": 324,
+    "crc_passed": true,
+    "source_bytes_match": true,
+    "installed": true,
+    "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+    "installed_sha256": "29e6d1b1f8a12391086f67e7709fe3439f8ed06b165983aa84d6e60dd975c93d",
+    "published": false
+  },
+  "live_game": {
+    "version": "1.5.2.3",
+    "date": "2026-10-03",
+    "enabled_mod_archives": [
+      "mod_afeix_dlc_afei_bundle.zip",
+      "mod_afeix_dlc_xiwen_regen.zip",
+      "mod_afeix_expedition.zip",
+      "mod_bbmod_item_inspector.zip",
+      "mod_bbmod_zhcn.zip",
+      "mod_fox_008.zip",
+      "mod_fox_037.zip",
+      "mod_fox_043.zip",
+      "mod_fox_quickly_swap_items.zip",
+      "zzzz_bbmod_preload.zip"
+    ],
+    "entry_tests": [
+      {
+        "route": "original_failed_save_f8",
+        "steps": [
+          "Load original blocked autosave",
+          "Escape closes pending dream story",
+          "Open F8 dream page away from town: safety explanation shown",
+          "Close ledger and camp in place",
+          "F8 -> 再赴梦潮 -> 继续梦境序章 -> 走进这场梦"
+        ],
+        "battle_started": true,
+        "players_deployed": 10,
+        "spiders_deployed": 5,
+        "actual_movement": true,
+        "actual_attack": true,
+        "attack_result": "Quick shot completed and missed; native combat log recorded roll 82 vs threshold 53.",
+        "screenshot": "build/dream-entry-preview.4/f8-battle.png"
+      },
+      {
+        "route": "fresh_new_campaign",
+        "seed": "SDVJMHVXXO",
+        "origin": "scenario.afeix_expedition",
+        "combat_difficulty": "beginner",
+        "economic_difficulty": "beginner",
+        "starting_funds": "high",
+        "ironman": false,
+        "steps": [
+          "New campaign",
+          "黑旗未满 -> 三人同梦 -> 走进这场梦"
+        ],
+        "battle_started": true,
+        "players_deployed": 10,
+        "spiders_deployed": 5,
+        "actual_attack": true,
+        "attack_result": "Quick shot hit; spider lost health and received a pierced-leg injury.",
+        "screenshot": "build/dream-entry-preview.4/new-campaign-battle.png"
+      }
+    ],
+    "wake_test": {
+      "route": "Escape battle menu -> 撤退",
+      "passed": true,
+      "story_pages": [
+        "黑旗初醒",
+        "黑旗启程"
+      ],
+      "real_roster_restored": 3,
+      "world_day": 1,
+      "time_of_day": "dawn",
+      "world_paused": true,
+      "resources_before_and_after": {
+        "crowns": 2250,
+        "food": 50,
+        "tools": 60,
+        "ammo": 50,
+        "medicine": 22
+      },
+      "screenshot": "build/dream-entry-preview.4/wake-world.png"
+    },
+    "final_log": {
+      "private_local_path": ".cache/dream-entry-20261003/final-passed-log.html",
+      "sha256": "e3d51e66da40627abca28c3bb165b17496bfd1112f0ed7f75eff47cc1e79326f",
+      "script_error_rows": 0,
+      "resolved_blockers_repeated": false,
+      "spider_spawn_rows": 10,
+      "nonblocking_warnings": [
+        "39 Unknown Brush requested warnings for old injured portraits during original-save loading; not addressed by this entrance fix.",
+        "Expected modified-game and steam_autocloud.vdf metadata warnings."
+      ]
+    },
+    "full_four_stage_playthrough_tested": false,
+    "real_final_encounter_tested": false,
+    "other_third_party_mod_combinations_tested": false
+  },
+  "save_protection": {
+    "backup_directory": ".cache/dream-entry-20261003/savegames-before",
+    "game_closed_before_restore": true,
+    "original_autosave_restored": true,
+    "original_save_count": 2,
+    "all_original_save_bytes_match_backup": true
+  },
+  "source_hashes": {
+    "src\\scripts\\mods\\afeix\\dream_roster.nut": "87ce75fcb47669675b439330155ac71a339550c3f60dd41cd7bf1a70252506a5",
+    "src\\scripts\\mods\\afeix\\dream_flow.nut": "81068191ef36c7c4a23c61cc220875ce146dbb0cd901834329145e453bb39e45",
+    "tests\\gameplay\\test_dream_roster.nut": "a244225f072b2638360166c114c55623b706e548cd23fe3c257533d262cc92f9",
+    "tests\\gameplay\\test_dream_flow.nut": "b4aae070d3b9293ab7f3a511cc11189740a3b4210b8e1fec95a289841620f84a",
+    "tests\\gameplay\\test_dream_native_review.nut": "75fb55b2ba1a8371d803ad35bfbd358b8a058e7fd6f0e23d9736a872816002a8",
+    "tools\\prepare_dream_test_native.py": "6d59570388dbac4f8aa42b1842f39f5248817d9c5c4b7c1c507abf275df66c36"
+  }
+}

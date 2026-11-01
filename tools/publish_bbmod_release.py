@@ -92,7 +92,7 @@ def publish():
                     row['version'] = spec['supersedes']['history_version']
                 assert model.objects.filter(pk=row['id']).values().get() == row, 'Existing catalog row changed'
     print(json.dumps({'published': True, 'mod_id': str(mod.pk), 'release_id': str(release.pk),
-                      'detail_url': 'https://bbmod.site/mods/' + str(mod.pk) + '/',
+                      'detail_url': 'https://bbmod.com/mods/' + str(mod.pk) + '/',
                       'sha256': release.sha256, 'size': release.size, 'backup': str(backup),
                       'superseded_release_id': str(superseded.pk) if superseded else None}, ensure_ascii=False))
 

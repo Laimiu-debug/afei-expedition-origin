@@ -1,0 +1,32 @@
+{
+  "repository": "Laimiu-debug/afei-expedition-origin",
+  "commit": "b3c008eeefe47f4cc90fc48f7c7156c40c72153d",
+  "remote_main_at_publication": "b3c008eeefe47f4cc90fc48f7c7156c40c72153d",
+  "tag": "v0.29.0-preview.12",
+  "tag_commit_matches": true,
+  "release_id": 402440238,
+  "url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.0-preview.12",
+  "prerelease": true,
+  "draft": false,
+  "notes_match": true,
+  "entries": 334,
+  "source_bytes_match": true,
+  "crc_passed": true,
+  "assets": [
+    {
+      "name": "mod_afeix_expedition.zip",
+      "size": 4891374,
+      "sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa",
+      "url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/download/v0.29.0-preview.12/mod_afeix_expedition.zip",
+      "public_bytes_match": true
+    },
+    {
+      "name": "mod_afeix_expedition.sha256",
+      "size": 92,
+      "sha256": "7f5937f631a86ee5c3e30e3d1c625a2cbee5a29ffc317c230e51844670ae5009",
+      "url": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/download/v0.29.0-preview.12/mod_afeix_expedition.sha256",
+      "public_bytes_match": true
+    }
+  ],
+  "in_game_tested": false
+}

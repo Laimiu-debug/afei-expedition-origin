@@ -1,0 +1,43 @@
+{
+  "version": "0.29.0-preview.5",
+  "internal_version": 69,
+  "created_at": "2026-10-03T08:51:18+08:00",
+  "scope": "Player-visible introduction wording only, plus release version; full archive diff proves combat/reward/item sources unchanged.",
+  "changed_introductions": [
+    "黑旗启程",
+    "F8 再赴梦潮",
+    "梦潮祭场说明",
+    "README玩家介绍"
+  ],
+  "spoiler_copy_removed": true,
+  "changed_package_entries": [
+    "scripts/!mods_preload/mod_afeix_expedition.nut",
+    "scripts/entity/world/locations/afeix_douyu_location.nut",
+    "scripts/mods/afeix/dream_ledger.nut"
+  ],
+  "offline": {
+    "report": "build/gameplay-validation.json",
+    "syntax_files": 147,
+    "behavior_assertions": 45818,
+    "passed": true
+  },
+  "package": {
+    "path": "dist/mod_afeix_expedition v0.29.0-preview.5.zip",
+    "sha256": "66cf679e012c58029317882096c3fb0b8ddb018bb1bc0ea689cdd1371893afbc",
+    "entry_count": 324,
+    "crc_passed": true,
+    "source_bytes_match": true,
+    "installed": true,
+    "installed_path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+    "installed_sha256": "66cf679e012c58029317882096c3fb0b8ddb018bb1bc0ea689cdd1371893afbc",
+    "installed_backup": ".cache/dream-entry-20261003/mod_afeix_expedition-preview.4-before-intro.zip",
+    "published": false
+  },
+  "in_game_tested": false,
+  "previous_runtime_test": {
+    "version": "0.29.0-preview.4",
+    "report": "build/dream-entry-0.29-preview.4.json",
+    "scope": "Both dream entrances, first-stage movement/attack, battle-menu retreat and reality restoration."
+  },
+  "save_files_modified": false
+}

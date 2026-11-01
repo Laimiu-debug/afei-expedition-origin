@@ -1,0 +1,34 @@
+{
+  "manifest_sha256": "89a9886ac850bbd6ad8d3e78950021b9c39d27915d9db1549f5723cafda5bef5",
+  "source_sha256": "6dfde3c8e2d1dda1c2d4732fcaa43636a90999425edeb1c6927a9fe32e865d6c",
+  "sprite_sha256": "c8a76530de21cead1db09aa179d5d8d10812a1cb5b6da748e399a4baa23bf325",
+  "geometry": {
+    "left": -32,
+    "right": 32,
+    "top": -180,
+    "bottom": 0,
+    "width": 64,
+    "height": 180,
+    "offsetX": 0,
+    "offsetY": 0
+  },
+  "in_game_tested": false,
+  "roundtrip": {
+    "passed": true,
+    "sprite_count": 1,
+    "sprites": [
+      {
+        "id": "afeix_douyu_rocket_falling",
+        "coordinates_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "brush": "package/brushes/afeix_douyu_rocket_v01.brush",
+    "brush_sha256": "1dee763bf7beffaa868e17f1b9ca51552dc4c5a34579d4e6800e2e01b92488d6",
+    "atlas": "package/gfx/afeix_douyu_rocket_v01.png",
+    "atlas_sha256": "919f15750889d31234a31b953ddfd40fb798abce6bdbf42544976463c7f9f9e5",
+    "pack_log": "Loading images...\nsprites\\afeix_douyu_rocket_falling.png\nPacking rectangles...\nWriting gfx/afeix_douyu_rocket_v01.png (256x256)...\n",
+    "unpack_log": "Opening gfx/afeix_douyu_rocket_v01.png...\nsprites\\afeix_douyu_rocket_falling.png\n",
+    "roundtrip_directory": "build/roundtrip-geveh40b"
+  }
+}

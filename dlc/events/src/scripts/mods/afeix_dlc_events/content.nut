@@ -1,4 +1,3 @@
-// Register future scenes here. Files live beside this file and are DLC-only.
-// Copy templates/event.nut, change its stable ID and dialogue, then list it below.
-// No placeholder story is included in the production event pool.
-foreach (part in []) ::include("scripts/mods/afeix_dlc_events/" + part);
+// Helpers do not register stories. Keep authored content in this DLC only.
+foreach (part in ["story_helpers", "mocha_river_song", "damou_benz"])
+    ::include("scripts/mods/afeix_dlc_events/" + part);

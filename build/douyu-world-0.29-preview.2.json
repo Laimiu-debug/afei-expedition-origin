@@ -1,0 +1,138 @@
+{
+  "version": "0.29.0-preview.2",
+  "date": "2026-10-03",
+  "package": "dist/mod_afeix_expedition v0.29.0-preview.2.zip",
+  "package_sha256": "fa9fb0573992daaf37f4fddf140e5cde834feebbfb6403c8e001c96105203d5d",
+  "package_entries": 324,
+  "syntax_files": 147,
+  "behavior_test_files": 63,
+  "behavior_assertions": 45498,
+  "feature_tests": [
+    {
+      "file": "tests/gameplay/test_douyu_combat.nut",
+      "assertions": 78
+    },
+    {
+      "file": "tests/gameplay/test_douyu_gear.nut",
+      "assertions": 66
+    },
+    {
+      "file": "tests/gameplay/test_douyu_native.nut",
+      "assertions": 22
+    },
+    {
+      "file": "tests/gameplay/test_douyu_world_native.nut",
+      "assertions": 93
+    },
+    {
+      "file": "tests/gameplay/test_dream_flow.nut",
+      "assertions": 219
+    },
+    {
+      "file": "tests/gameplay/test_dream_native_review.nut",
+      "assertions": 9889
+    },
+    {
+      "file": "tests/gameplay/test_dream_roster.nut",
+      "assertions": 1111
+    },
+    {
+      "file": "tests/gameplay/test_starting_budget.nut",
+      "assertions": 30
+    },
+    {
+      "file": "tests/gameplay/test_startup_pathfinding.nut",
+      "assertions": 159
+    },
+    {
+      "file": "tests/gameplay/test_douyu_trophy_art.py",
+      "assertions": 14
+    },
+    {
+      "file": "tests/gameplay/test_dream_roster_resources.py",
+      "assertions": 280
+    }
+  ],
+  "douyu_art": {
+    "passed": true,
+    "files": 6,
+    "brushes": 2,
+    "generated_source_art": true,
+    "in_game_tested": false
+  },
+  "douyu_trophy_art": {
+    "passed": true,
+    "files": 8,
+    "brushes": 7,
+    "generated_source_art": true,
+    "in_game_tested": false
+  },
+  "world_location": "location.afeix_douyu",
+  "world_location_name": "梦潮祭场",
+  "world_placement": {
+    "sampled_tile_limit": 4096,
+    "native_path_limit": 48,
+    "unique": true,
+    "remote_ledger_combat": false
+  },
+  "trophies": [
+    {
+      "name": "深渊鲨衣",
+      "type": "body armor",
+      "armor": 460,
+      "maximum_fatigue_modifier": -26
+    },
+    {
+      "name": "断潮鱼翅",
+      "type": "two-handed cleaver",
+      "damage": [
+        90,
+        120
+      ],
+      "armor_damage_percent": 165,
+      "direct_damage_percent": 55,
+      "maximum_fatigue_modifier": -7,
+      "skill_fatigue_modifier": -5
+    },
+    {
+      "name": "破浪鲨牙",
+      "type": "one-handed spear",
+      "damage": [
+        54,
+        62
+      ],
+      "armor_damage_percent": 145,
+      "direct_damage_percent": 45,
+      "maximum_fatigue_modifier": -1,
+      "skill_fatigue_modifier": -4
+    }
+  ],
+  "native_contract_coverage": [
+    "world_entity and location troop ScriptHash save/load",
+    "entity_manager location registration and occupancy release",
+    "world_state location arrival/combat/retreat/consumables/Ironman autosave",
+    "native persistent tag_collection and runtime isolation across new campaigns",
+    "native weapon skills, masteries, damage, equipment save/load, death dropLoot"
+  ],
+  "engine_acceptance_pending": [
+    "C++ world spawn and navigator",
+    "actual new/old campaign gameplay",
+    "rendering and equipment layers",
+    "Boss encounter balance"
+  ],
+  "source_art_preview": "art/runtime/douyu-trophies-v01/preview.png",
+  "source_art_manifest": "art/runtime/douyu-trophies-v01/manifest.json",
+  "prompt_sets": [
+    "art/runtime/douyu-trophies-v01/prompts.json",
+    "art/runtime/douyu-trophies-v01/variant-prompts.json",
+    "art/runtime/douyu-trophies-v01/dead-revision-prompt.json"
+  ],
+  "image_generation": "built-in image_gen generation and referenced-image editing",
+  "design": "docs/design/douyu-world-and-trophies.md",
+  "crc_passed": true,
+  "source_bytes_match": true,
+  "installed": false,
+  "published": false,
+  "in_game_tested": false,
+  "scope": "Full current main-mod working tree, preserving preceding changes; source art and native fixtures excluded from Mod ZIP."
+}

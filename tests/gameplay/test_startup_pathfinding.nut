@@ -6,7 +6,7 @@ function check(value, message) { if (!value) throw "FAIL " + message; ::checks++
 ::Const <- { World = { Settings = { SizeX = 100, SizeY = 100 }, TerrainType = { Ocean = 0, Shore = 1 }, TerrainTypeNavCost_Flat = [] } };
 ::TimeUnit <- { Real = 0 };
 ::Time <- { scheduleEvent = function(...) {} };
-::spawnState <- { towns = [], calls = 0, blocked = false, rejectFirst = false, flags = {}, spawned = null };
+::spawnState <- { towns = [], calls = 0, blocked = false, rejectFirst = false, flags = {}, spawned = null, dreamStarts = 0, runtimeResets = 0 };
 function tile(x,y) {
     return { SquareCoords = { X=x, Y=y }, Coords = { X=x, Y=y }, Type = 2, IsOccupied = false,
         getDistanceTo = function(other) { return ::Math.max(abs(this.Coords.X-other.Coords.X),abs(this.Coords.Y-other.Coords.Y)); } };
@@ -17,7 +17,14 @@ function town(id,x,y,allied=true,military=false,isolated=false) {
         isAlliedWithPlayer=function(){return this.allied;}, getTile=function(){return this.center;},
         getID=function(){return this.id;}, getNameOnly=function(){return "town"+this.id;} };
 }
-::AfeixExpedition <- { set=function(k,v){::spawnState.flags[k]<-v;} };
+::AfeixExpedition <- {
+    resetDreamRuntime=function(){::spawnState.runtimeResets++;},
+    set=function(k,v){::spawnState.flags[k]<-v;},
+    initializeDreamOpening=function(){
+        check(::World.State.m.Player!=null,"dream queues only after the real world party exists");
+        ::spawnState.dreamStarts++;
+    }
+};
 ::World <- {
     State = { m = { Player = null } },
     Assets = { updateLook = function(value) {} },
@@ -56,4 +63,6 @@ check(::spawnState.calls==1&&::spawnState.flags.home_id==4,"hostile military and
 local failed=false;
 try {scenario.onSpawnPlayer();} catch(error){failed=error.find("no reachable free starting tile")!=null;}
 check(failed&&::spawnState.calls<=81,"no reachable tile gives bounded explicit failure");
+check(::spawnState.dreamStarts==3,"failed spawn never queues a dream");
+check(::spawnState.runtimeResets==4,"every new world clears previous campaign runtime before spawning");
 print("TESTS_PASSED="+::checks+"\n");

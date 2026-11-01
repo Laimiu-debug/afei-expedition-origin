@@ -1,0 +1,60 @@
+{
+  "version": "0.29.0-preview.7",
+  "internal_version": 71,
+  "scope": "Current working-tree full main package, installed locally. Offline gameplay/resource checks and clean startup; combat rendering/audio acceptance pending.",
+  "changes": {
+    "douyu_body_and_corpse_scale": 0.6,
+    "dream_afei_ecig_equipped": true,
+    "status_minis": "Native circular status brush IDs; original custom main icons retained",
+    "member_active_skills_with_sound_and_animation": 44,
+    "active_feedback": "Native sound, sprite overlays, recipient status icons and successful-use logs",
+    "particles": "Small nicotine/ecig smoke bursts; finite boss charge/impact particles"
+  },
+  "validation": {
+    "scripts": 149,
+    "assertions": 46178,
+    "new_feedback_tests": [
+      {
+        "file": "tests/gameplay/test_combat_feedback.nut",
+        "assertions": 163
+      },
+      {
+        "file": "tests/gameplay/test_combat_feedback_resources.py",
+        "assertions": 55
+      }
+    ],
+    "syntax_passed": true,
+    "behavior_tests_passed": true,
+    "resources_passed": true
+  },
+  "package": {
+    "path": "dist/mod_afeix_expedition v0.29.0-preview.7.zip",
+    "sha256": "df05e142243f49a61b816ef5ba9e796cdbc11b37c0460ac4f8b4e908b80be9bd",
+    "entries": 327,
+    "crc_passed": true,
+    "source_bytes_match": true
+  },
+  "installation": {
+    "backup_sha256": "0bba1c6f1ef4297cf42ed9da4ac25269a93c1ad4b15c48063112c5a8d3e8d7dc",
+    "installed": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+    "sha256": "df05e142243f49a61b816ef5ba9e796cdbc11b37c0460ac4f8b4e908b80be9bd",
+    "backup": "G:\\CODE\\afei-xcpedition\\build\\combat-feedback-preview.7\\install-backup\\mod_afeix_expedition-preview.6.zip"
+  },
+  "startup": {
+    "passed": true,
+    "script_errors": 0,
+    "version_lines": [
+      "info\"> 12:42:52 SQ Modern Hooks registered 阿飞远征团 (mod_afeix_expedition) version 71",
+      "info\"> 12:42:52 SQ Executing queued function 1 for 阿飞远征团 (mod_afeix_expedition) version 71."
+    ],
+    "log": "build/combat-feedback-preview.7/startup-log.html",
+    "log_sha256": "176f7b8c403e06809a4cdb74619e9423afad73f7af6a4f1ae2cfeea6708e4eb7"
+  },
+  "in_game_feedback_tested": false,
+  "published": false,
+  "pending": [
+    "Boss/bar separation at combat camera zooms",
+    "Dream Afei hurt/full-health ecig feedback and usage limits in game",
+    "Skill sounds, recipient icons and VFX visibility in battle"
+  ]
+}

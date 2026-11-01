@@ -1,0 +1,13 @@
+{
+  "withdrawn": true,
+  "release_ids": [
+    "be0dad8e-271f-4d5d-bee0-dd1c63975704",
+    "bfff3747-5ca2-4b5e-aadc-4fea58c1145b"
+  ],
+  "backup": "/srv/data/backups/afeix-pre-bundle-withdraw-20261002T083803990674Z.sqlite3",
+  "retained_archives": true,
+  "other_catalog_records_unchanged": true,
+  "absent_old_install_names": [
+    "mod_afeix_dlc_afei_skins.zip"
+  ]
+}

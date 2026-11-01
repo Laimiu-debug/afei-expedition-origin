@@ -1,0 +1,4 @@
+21 objects imported automatically (use -v 2 for details).
+
+{"validated": true, "version": "0.1.0", "sha256": "47326fde8d722b7efedc79af111a25364751daa3b61ecc9d862c14d74e7d6a17", "size": 1063573, "owner": "laimiu", "package_filename": "mod_afeix_dlc_afei_bundle v0.1.0.zip", "download_filename": "mod_afeix_dlc_afei_bundle.zip"}
+{"published": true, "mod_id": "e554fc31-28b0-4b26-a8f5-295141ed79ef", "release_id": "a0cec096-c0c4-4314-9f75-819dc445d629", "detail_url": "https://bbmod.site/mods/e554fc31-28b0-4b26-a8f5-295141ed79ef/", "sha256": "47326fde8d722b7efedc79af111a25364751daa3b61ecc9d862c14d74e7d6a17", "size": 1063573, "backup": "/srv/data/backups/afeix-pre-v0.1.0-20261002T083739252339Z.sqlite3", "superseded_release_id": null}

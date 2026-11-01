@@ -1,0 +1,4 @@
+21 objects imported automatically (use -v 2 for details).
+
+{"validated": true, "version": "0.29.0-preview.12", "sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa", "size": 4891374, "owner": "laimiu", "package_filename": "mod_afeix_expedition v0.29.0-preview.12.zip", "download_filename": "mod_afeix_expedition.zip"}
+{"published": true, "mod_id": "d64a00f6-1d60-4d8d-8d9b-de055fc0b748", "release_id": "9b7812c0-1789-410a-a5e9-37451fe8a4cf", "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/", "sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa", "size": 4891374, "backup": "/srv/data/backups/afeix-pre-v0.29.0-preview.12-20261003T093414911877Z.sqlite3", "superseded_release_id": null}

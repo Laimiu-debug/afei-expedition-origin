@@ -1,0 +1,11 @@
+{
+  "version": "0.29.0-preview.12",
+  "website_download": "https://bbmod.com/files/9b7812c0-1789-410a-a5e9-37451fe8a4cf/download/",
+  "github_release": "https://github.com/Laimiu-debug/afei-expedition-origin/releases/tag/v0.29.0-preview.12",
+  "release_source_commit": "b3c008eeefe47f4cc90fc48f7c7156c40c72153d",
+  "final_remote_main": "cc62517",
+  "all_four_zip_hashes_match": true,
+  "sha256": "faf03c103d646264e5ce5252becb4c6ae9e25ca2670123713eb6ac1b278265aa",
+  "historical_releases_preserved": 27,
+  "in_game_tested": false
+}

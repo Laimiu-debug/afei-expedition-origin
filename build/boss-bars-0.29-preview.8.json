@@ -1,0 +1,62 @@
+{
+  "version": "0.29.0-preview.8",
+  "internal_version": 72,
+  "completed_at": "2026-10-03T05:42:04.490065+00:00",
+  "boss_scale": 1.0,
+  "corpse_scale": 1.0,
+  "bar_height": 165,
+  "native_brushes": true,
+  "scripts": 150,
+  "offline_assertions": 46218,
+  "entries": 328,
+  "package": "G:\\CODE\\afei-xcpedition\\dist\\mod_afeix_expedition v0.29.0-preview.8.zip",
+  "installed": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+  "sha256": "a4de9a7953f0f5f25c9a5577fc89034dfa2f6d01de4940ca59d963b13631ec94",
+  "size": 4865571,
+  "installed_bytes_match": true,
+  "installation_backup": "G:\\CODE\\afei-xcpedition\\build\\boss-bars-preview.8\\installed-before.zip",
+  "saves_restored_byte_for_byte": true,
+  "bar_scene_verified": [
+    "original boss size",
+    "full/half HP",
+    "zoom",
+    "stats toggle",
+    "hover",
+    "portrait excludes bars"
+  ],
+  "final_scene_log": "G:\\CODE\\afei-xcpedition\\build\\boss-bars-preview.8\\final-scene-log.html",
+  "scene_runtime_errors": 0,
+  "limits": [
+    "All custom skills have offline feedback checks; per-skill battle and audio acceptance is incomplete.",
+    "Blood-bar scene is a controlled tactical scenario, not a campaign or balance acceptance.",
+    "An old save failed class registration under current mod set; its bytes were preserved."
+  ],
+  "published": true,
+  "public_verification": {
+    "verified_at": "2026-10-03T05:38:11.976051+00:00",
+    "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "download_url": "https://bbmod.com/files/6d807943-1c25-4a52-bea4-34cd52c4ceb4/download/",
+    "release_id": "6d807943-1c25-4a52-bea4-34cd52c4ceb4",
+    "version": "0.29.0-preview.8",
+    "sha256": "a4de9a7953f0f5f25c9a5577fc89034dfa2f6d01de4940ca59d963b13631ec94",
+    "size": 4865571,
+    "entries": 328,
+    "http_status": {
+      "catalog": 200,
+      "detail": 200,
+      "download": 200,
+      "previous_download": 200
+    },
+    "source_bytes_match": true,
+    "catalog_and_notes_match": true,
+    "download_bytes_match": true,
+    "crc_passed": true,
+    "internal_version": 72,
+    "download_content_disposition": "attachment; filename=\"mod_afeix_expedition.zip\"",
+    "previous_version": "0.29.0-preview.6",
+    "previous_sha256_unchanged": "0bba1c6f1ef4297cf42ed9da4ac25269a93c1ad4b15c48063112c5a8d3e8d7dc",
+    "backup": "/srv/data/backups/afeix-pre-v0.29.0-preview.8-20261003T053628080529Z.sqlite3",
+    "in_game_tested": false,
+    "scope": "Public download and offline/package validation; new features and art have no campaign acceptance."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/Laimiu-debug/afei-expedition-origin",
+  "branch": "main",
+  "commit": "5184b1d3016f297d4b2dc38eed668237778033d5",
+  "remote_commit": "5184b1d3016f297d4b2dc38eed668237778033d5",
+  "verified": true,
+  "commit_url": "https://github.com/Laimiu-debug/afei-expedition-origin/commit/5184b1d3016f297d4b2dc38eed668237778033d5",
+  "package_in_repository": "dist/mod_afeix_expedition v0.29.0-preview.6.zip",
+  "scope": "Fast-forward main push from the prior main release; independent DLC branches were not merged.",
+  "public_archive_url": "https://raw.githubusercontent.com/Laimiu-debug/afei-expedition-origin/5184b1d3016f297d4b2dc38eed668237778033d5/dist/mod_afeix_expedition%20v0.29.0-preview.6.zip",
+  "public_archive_download_matches": true,
+  "public_archive_sha256": "0bba1c6f1ef4297cf42ed9da4ac25269a93c1ad4b15c48063112c5a8d3e8d7dc"
+}

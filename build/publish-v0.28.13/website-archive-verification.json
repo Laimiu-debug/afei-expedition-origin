@@ -1,0 +1,18 @@
+{
+  "http_status": 200,
+  "sha256": "c9227c64ef612af3cff3c085e8ffcd1215c1a60dd3ebb755544d589fe20e1b09",
+  "size": 5583595,
+  "entries": 290,
+  "crc_passed": true,
+  "entry_set_match": true,
+  "source_bytes_match": true,
+  "turtle_and_helmet_resources_present": true,
+  "version": "0.28.13",
+  "release_id": "836c50e6-dc27-4b3a-8450-dfce74584d20",
+  "download_url": "https://bbmod.site/files/836c50e6-dc27-4b3a-8450-dfce74584d20/download/",
+  "confirmed_at": "2026-10-02T08:21:23.933873+00:00",
+  "in_game_tested": false,
+  "public_archive_downloaded_at_origin": true,
+  "local_public_archive_saved": false,
+  "verification_transport": "Public HTTPS download endpoint through trusted website origin"
+}

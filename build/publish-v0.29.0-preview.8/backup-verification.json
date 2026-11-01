@@ -1,0 +1,8 @@
+{
+  "backup": "/srv/data/backups/afeix-pre-v0.29.0-preview.8-20261003T053628080529Z.sqlite3",
+  "size": 1499136,
+  "sha256": "79d7d6ce8b1b553f20ba3dc24137084db01ac346885ba4f67f5bccc46c70ee44",
+  "integrity_check": "ok",
+  "contains_prior_release": true,
+  "predates_new_release": true
+}

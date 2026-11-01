@@ -2,8 +2,8 @@
   "version": "0.1.2",
   "status": "ready_for_audio_review",
   "minimum_base_internal": 36,
-  "verified_base_internal": 61,
-  "base_preload_sha256": "f3f95eeb427827515ebb0c4b7acdd5080a3c6897afa29f45607cff7d53b607b7",
+  "verified_base_internal": 63,
+  "base_preload_sha256": "10f914d94360314ff725bff2c92c6581cd4335debcb67b47fb7db244693404c8",
   "base_source_unchanged": true,
   "base_path_collisions": [],
   "scripts_compiled": 3,
@@ -49,7 +49,7 @@
   "package_ready": true,
   "in_game_tested": false,
   "installed": false,
-  "published": true,
+  "published": false,
   "package": "dlc/afei-voice/dist/mod_afeix_dlc_afei_voice v0.1.2.zip",
   "package_sha256": "12aa12c3723591008888f8e60113d8aa538b3bd090e44c6f12ece4668176e7ab",
   "crc_passed": true,
@@ -70,5 +70,10 @@
   "peak_ceiling_dbfs": -1,
   "pitch_and_timing_preserved": true,
   "clipped_samples": 0,
-  "audio_verification": "Every output sample is the original-pitch 0.1.0 sample times a constant per-clip gain, within 1 PCM unit."
+  "audio_verification": "Every output sample is the original-pitch 0.1.0 sample times a constant per-clip gain, within 1 PCM unit.",
+  "withdrawn": true,
+  "website_withdrawn_at": "2026-10-02T08:38:06.944377+00:00",
+  "replacement_mod_id": "e554fc31-28b0-4b26-a8f5-295141ed79ef",
+  "replacement_url": "https://bbmod.site/mods/e554fc31-28b0-4b26-a8f5-295141ed79ef/",
+  "old_archives_retained": true
 }

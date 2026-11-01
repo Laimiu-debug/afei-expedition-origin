@@ -1,0 +1,10 @@
+{
+  "version": "0.29.0-preview.13",
+  "final_remote_main": "c9a5140252c338c427a28c82fefc1c2a0376028c",
+  "release_source_commit": "85bae130e29968c7dc07512007a9bb64663652e2",
+  "all_four_zip_hashes_match": true,
+  "viewport_cases_passed": 20,
+  "assertions": 46664,
+  "sha256": "1220b7dae474327c569fbcaf46de509c73e0d1343525458754a28b210059b8de",
+  "in_game_tested": false
+}

@@ -1,0 +1,10 @@
+{
+  "published": true,
+  "mod_id": "d64a00f6-1d60-4d8d-8d9b-de055fc0b748",
+  "release_id": "a0ef0043-bd1b-4c1e-8ec7-aa70513dc735",
+  "detail_url": "https://bbmod.com/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+  "sha256": "0bba1c6f1ef4297cf42ed9da4ac25269a93c1ad4b15c48063112c5a8d3e8d7dc",
+  "size": 4861536,
+  "backup": "/srv/data/backups/afeix-pre-v0.29.0-preview.6-20261003T034927366736Z.sqlite3",
+  "superseded_release_id": null
+}

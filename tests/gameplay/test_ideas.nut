@@ -89,11 +89,27 @@ afei.hp=100;::ideaTest.now+=86400;expect(A.ideaEligible("recover"),"healed respo
 ::ideaTest.items=[];::ideaTest.limit=10;turtle.head={getSlotType=function(){return 2;}};local oldHelmet=turtle.head;
 A.syncIdeasCharacter(turtle);A.syncIdeasCharacter(turtle);
 expect(turtle.head==null&&::ideaTest.items.len()==1&&::ideaTest.items[0]==oldHelmet,"old helmet moved as original object exactly once");
-expect(turtle.skills.hasSkill("perk.steel_brow")&&turtle.props.IsImmuneToCriticals,"real native Steel Brow attached");
+expect(!turtle.skills.hasSkill("perk.steel_brow")&&!turtle.props.IsImmuneToCriticals,"no innate Steel Brow");
+local legacyTurtle=ideaActor("xiaogui");legacyTurtle.skills.add(::new("scripts/skills/perks/perk_steel_brow"));
+A.syncIdeasCharacter(legacyTurtle);
+expect(!legacyTurtle.skills.hasSkill("perk.steel_brow"),"previous free Steel Brow removed once");
+legacyTurtle.skills.add(::new("scripts/skills/perks/perk_steel_brow"));A.syncIdeasCharacter(legacyTurtle);
+expect(legacyTurtle.skills.hasSkill("perk.steel_brow"),"a later manually selected Steel Brow remains learned");
+expect(turtle.skills.hasSkill("trait.afeix_turtle_retract"),"intrinsic head injury protection attached");
+local retract=turtle.skills.getSkillByID("trait.afeix_turtle_retract");
+local injuryList=[{ID="injury.split_ear"}], bodyInjuries=[{ID="injury.deep_cut"}];
+local headHit={BodyPart=1,Injuries=injuryList,DamageRegular=60,DamageArmor=80,BodyDamageMult=2.0,DamageInflictedHitpoints=99,DamageInflictedArmor=99};
+::Math.rand=function(a,b){return 25;};
+expect(retract.onHeadHit(null,headHit,1.0)&&headHit.DamageInflictedHitpoints==0&&headHit.DamageInflictedArmor==0,"inclusive25 percent prevents both health and armor damage");
+::Math.rand=function(a,b){return 26;};
+expect(!retract.onHeadHit({m={InjuriesOnBody=bodyInjuries}},headHit,1.2)
+    &&headHit.BodyPart==0&&headHit.BodyDamageMult==1.2&&headHit.Injuries==bodyInjuries,"failed immunity redirects to body multiplier and body injuries");
+local savedRetract=roundtrip(retract,"scripts/skills/traits/afeix_turtle_retract");
+expect(savedRetract.getID()=="trait.afeix_turtle_retract","intrinsic trait persists through native skill serialization");
 local trait=turtle.skills.getSkillByID("trait.afeix_turtle_body"),baseDefense=turtle.baseProps.MeleeDefense;
 expect(turtle.props.MeleeDefense==baseDefense+5,"intrinsic stats do not accumulate on sync");
 local weapon=equip(afei),damage=function(part,s){local p=properties();trait.onBeforeDamageReceived(afei,s,{BodyPart=part},p);return p.DamageReceivedTotalMult;};
-expect(damage(1,weapon)==0.5&&abs(damage(0,weapon)-0.8)<0.001,"head and body weapon reduction");expect(damage(0,natural)==1.0,"damage over time excluded");
+expect(damage(1,weapon)==1.0&&abs(damage(0,weapon)-0.8)<0.001,"only body weapon reduction remains");expect(damage(0,natural)==1.0,"damage over time excluded");
 turtle.head=oldHelmet;::ideaTest.limit=1;A.syncIdeasCharacter(turtle);expect(turtle.head==oldHelmet&&damage(1,weapon)==1.0,"full stash retains old helmet and disables natural head armor");
 ::ideaTest.limit=10;::ideaTest.failAdd=true;A.syncIdeasCharacter(turtle);expect(turtle.head==oldHelmet&&!A.IdeasRestoringHelmet,"failed transfer rolls back original helmet");::ideaTest.failAdd=false;
 // Exercise actual hook's user-equip/load distinction without a game renderer.

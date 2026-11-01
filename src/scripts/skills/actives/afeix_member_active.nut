@@ -22,6 +22,7 @@ this.afeix_member_active <- this.inherit("scripts/skills/skill", {
         this.m.IsWeaponSkill = this.m.IsAttack;
         this.m.MinRange = this.m.IsTargeted ? 1 : 0;
         this.m.MaxRange = d.range;
+        ::AfeixExpedition.configureActiveFeedback(this, key);
     },
     function getDescription() { return ::AfeixExpedition.trainingDescription(this.getContainer()==null?null:this.getContainer().getActor(),this.m.Key); },
     function nativeAttack() { return ::AfeixExpedition.memberBasicAttack(this.getContainer().getActor(), this.m.Key == "breach_strike"); },
@@ -110,6 +111,7 @@ this.afeix_member_active <- this.inherit("scripts/skills/skill", {
         } else if (key == "nicotine") {
             user.setFatigue(::Math.max(0, user.getFatigue() - (A.trainingRank(user,key)>=2?18:15)));
             A.memberEffect(user, "nicotine_debt", null, 2);
+            A.feedbackParticles(user.getTile(), "SmokeParticles", 0.15);
         } else if (key == "dog_bark") A.memberEffect(tile.getEntity(), "dog_bark");
         else if (key == "borrow_strike") {
             A.memberEffect(user, key); A.memberEffect(tile.getEntity(), key);
@@ -120,6 +122,7 @@ this.afeix_member_active <- this.inherit("scripts/skills/skill", {
             foreach (ally in A.balanceTargets(user,user,1,3)) if(ally!=user) A.memberEffect(ally, key, key == "guard_nest" ? user : null);
         }
         user.getSkills().update();
+        A.logCustomSkill(this, user, tile);
         return true;
     },
     function onAnySkillUsed(s, target, properties) {

@@ -1,0 +1,5 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-03",
+  "prompt": "Use case: precise-object-edit. Asset type: transparent defeated-monster corpse sprite for Battle Brothers. Edit the reference boss into its DEFEATED state. Preserve exactly the same shark identity, gray-white skin, broad snout, huge eye socket, fins, scars, bone necklace, rusted iron bands, and orange-red medieval rocket cannon. Same Battle Brothers flat hand-painted dirty muted gray/brown palette, coarse irregular contours and brush shadows. The whole upper-body shark monster lies collapsed sideways on the ground in a compact HORIZONTAL prone silhouette, head on the LEFT, eye closed, jaw slack, the same cannon fallen across its belly, fins limp; no action, no upright live pose. No legs. Mild wounds are fine, no dramatic gore or big blood pool. No additional objects. All body and cannon parts fully visible, comfortable transparent margins, clean isolated sprite. Transparent alpha background, no scenery, lettering, logo, UI, aura, 3D, shiny mobile-game style, anime or photorealism. Keep details simple enough to read around 170px wide."
+}

@@ -1,0 +1,13 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-03",
+  "body": "Use case: style-transfer / stylized-concept. Asset type: transparent tactical enemy sprite for the 2D game Battle Brothers. Image 1 is ONLY the Douyu shark mascot identity reference. Images 2 and 3 are original Battle Brothers monster sprites and are ONLY style / production references. Transform the smiling big-eyed gray-white Douyu shark mascot into one intimidating legendary shark boss named Douyu, keeping its recognizable triangular forward snout, a large expressive eye, broad toothed grin, pale gray upper body and off-white belly. Render a complete squat upper-body monster bust, three-quarter view facing LEFT, as a flat hand-painted game sprite: coarse irregular dark contours, muted dirty earthy palette, simple hard-edged painted shadows, visibly brush-painted surfaces, small crisp texture details rather than airbrush. Match the original Battle Brothers monsters' grounded, worn 2D oil/gouache illustration. Gray shark skin, a few old scars, restrained rusty iron bands / bone ornaments, massive fins gripping an orange-red ALCHEMICAL ROCKET CANNON with a yellow riveted nose, aged medieval handmade brass and wood, clearly recognizable as the mascot's hugged rocket. Keep the cannon integrated close against the belly and the silhouette compact. The boss rises from a tiny dark shadow at the base; the image must be a clean isolated single whole game unit, no scenery, no water scene, no stand, no other characters, no lettering, no UI, no logo text. Full visible silhouette with comfortable transparent margin on every side. No legs or feet below the monster bust. NO 3D rendering, anime, glossy mobile-game art, photorealism, bright magical aura, gradients, modern electronics, photoreal shark, robotic technology, or poster illustration. Use genuine transparent alpha background. The recognizable shark face and warm orange cannon should remain legible at about 160-190px sprite height.",
+  "reference": {
+    "brand": "art/references/2026-10-03-douyu/douyu-brand-202512.jpg",
+    "article": "https://dj.sina.com.cn/article/nheqixk7164641.shtml",
+    "native_style_only": [
+      "bust_kraken_body_01",
+      "bust_lindwurm_head_01"
+    ]
+  }
+}

@@ -112,6 +112,7 @@
         "sha256": "2dba48aa279559291566497da3fc3716911f0090d4e095b7cb5212fb20fdb20d"
       }
     ],
+    "split_face_hair_atlas_absent": true,
     "member_skill_icons": [
       {
         "key": "bottle_breakthrough",
@@ -935,6 +936,30 @@
         "gfx/afeix_banner_v25.png": "9d4e652a7f1ccfe1be8c50fd2f3381eb4a8dc6bdabfb06a7034fb4f4208547af"
       }
     },
+    "douyu_art": {
+      "passed": true,
+      "files": 6,
+      "brushes": 2,
+      "generated_source_art": true,
+      "in_game_tested": false
+    },
+    "douyu_rocket_art": {
+      "passed": true,
+      "brushes": 1,
+      "particle_size": [
+        64,
+        180
+      ],
+      "nose_anchor": "ground",
+      "in_game_tested": false
+    },
+    "douyu_trophy_art": {
+      "passed": true,
+      "files": 8,
+      "brushes": 7,
+      "generated_source_art": true,
+      "in_game_tested": false
+    },
     "portrait_forms": 36,
     "portrait_brushes": 144,
     "retired_disc_absent": true,
@@ -958,15 +983,27 @@
   "scripts": [
     {
       "path": "src/scripts/!mods_preload/mod_afeix_expedition.nut",
-      "sha256": "511a068eccb3f569e185706f77a246a5f19cbd4bd3d6de674e0c29078e3b8daa"
+      "sha256": "e642a6fffc5965e3f27ac416c81f9e6a33b8919db26d77d94af7e37d61af1ef1"
     },
     {
       "path": "src/scripts/contracts/contracts/afeix_letter_contract.nut",
       "sha256": "0e393e3262e071dce9c5f050e55601cee1c50b0317cef31e97397464c9c4fb18"
     },
     {
+      "path": "src/scripts/entity/tactical/enemies/afeix_douyu.nut",
+      "sha256": "35259c8c3a57e2a5fb5b5268148a53d2cd9e321d75b8222d4ec4d4140fd25128"
+    },
+    {
+      "path": "src/scripts/entity/world/locations/afeix_douyu_location.nut",
+      "sha256": "83f8fa865df5ae57c3109fcdbcdc3912212a4f8108537314e3cb064784e6df5b"
+    },
+    {
       "path": "src/scripts/events/events/afeix_discovery_event.nut",
       "sha256": "fc37456c5521102ee59dddebdc969e8bee5dbe3218055bd99bff277edf39c11e"
+    },
+    {
+      "path": "src/scripts/events/events/afeix_dream_event.nut",
+      "sha256": "f2c0069e515423ab3379cdc8cd7702b70e9c4e28dcc75ca9842cc77ae26d886f"
     },
     {
       "path": "src/scripts/events/events/afeix_factions_event.nut",
@@ -985,16 +1022,32 @@
       "sha256": "db461d2f4738e7f3e3cc5cd2c8ef66de6235e631784d5e2830438888c78699fd"
     },
     {
+      "path": "src/scripts/items/armor/legendary/afeix_douyu_sharkskin.nut",
+      "sha256": "1999e6f3cfb366cff40a2a2276558e49eb4baaf4aa25eb4c22b751b3b61aa8cb"
+    },
+    {
       "path": "src/scripts/items/misc/afeix_bicycle_item.nut",
       "sha256": "0ac97e0f0202cc761d249b4a748f2b41609d94cb33b44ee3819011bc64430d1d"
+    },
+    {
+      "path": "src/scripts/items/weapons/afeix_dream_warbanner.nut",
+      "sha256": "a8060e120e7eb4bb63e75ca9e1d963516920be0cf34629f111a058c14017e48a"
     },
     {
       "path": "src/scripts/items/weapons/afeix_laoma_grip.nut",
       "sha256": "10cb3140fe701d120dd95a760419cd7d2605f8b2d3ca17125b874d1d726d1516"
     },
     {
+      "path": "src/scripts/items/weapons/legendary/afeix_douyu_fin_cleaver.nut",
+      "sha256": "918d6415d6880c4e59854c4a36765ba49dd0efece9ad5d0a28079513b84ef2df"
+    },
+    {
+      "path": "src/scripts/items/weapons/legendary/afeix_douyu_tooth_spear.nut",
+      "sha256": "e3b4ad4d8062bc5c735530189ae1ed005177b2d2d66f6e778ca9727dce4a5469"
+    },
+    {
       "path": "src/scripts/mods/afeix/appearance.nut",
-      "sha256": "6774b65d3b7ed5f98474624c873334c3e3e0f45d3dcfde81dd2012cf673f59e6"
+      "sha256": "6472c6c719baef0d964f0a2047291c0341093d655a1ef25c0ca686b1f0087add"
     },
     {
       "path": "src/scripts/mods/afeix/art_hooks.nut",
@@ -1026,7 +1079,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/balance_v26_data.nut",
-      "sha256": "564cdf72089398ba1fb8f5c101bf30ec9b7063ceed2c11fef327c0864d4101e4"
+      "sha256": "ab4dbbbdb052d3a2be5e10c92ffe863743a07bfe139464767c9479b2467cb945"
     },
     {
       "path": "src/scripts/mods/afeix/balance_v26_hooks.nut",
@@ -1034,7 +1087,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/banner_hooks.nut",
-      "sha256": "3c58986835a28fee0410494587f0784082d5f4f06411a5f4fc4f589c86dfbf1e"
+      "sha256": "286715fa99591c01db8b1be47b75b82221b5cda86c519050f0f0e222d15513e6"
     },
     {
       "path": "src/scripts/mods/afeix/barber_hooks.nut",
@@ -1053,8 +1106,12 @@
       "sha256": "060ff52708b6e4933c173efc37656f2677186ca36353daf72b8cf963543a5362"
     },
     {
+      "path": "src/scripts/mods/afeix/combat_feedback.nut",
+      "sha256": "d5ef4211c3aec51648741bc2d94513584f6efdc437189d0c7cabf1d6b06603ff"
+    },
+    {
       "path": "src/scripts/mods/afeix/company_appearance_hooks.nut",
-      "sha256": "6f2157bc4883e8f45aa5fdac33e6d1847e55b85b35a8be8f03b3fd61260ecf83"
+      "sha256": "697183201c5eda4794ea553ce50f7ba828dd5947b1731898c1ff7c45e0bc4344"
     },
     {
       "path": "src/scripts/mods/afeix/contracts.nut",
@@ -1067,6 +1124,58 @@
     {
       "path": "src/scripts/mods/afeix/discovery.nut",
       "sha256": "21bf1ee9f2cb12e81349ac338c65cda4f0eb71a4ebced2ead8a0f81abb73f9c7"
+    },
+    {
+      "path": "src/scripts/mods/afeix/douyu_ai.nut",
+      "sha256": "26539d766992ec46e85f5dbbed301089da4362255374ea6c280b005e88bd7117"
+    },
+    {
+      "path": "src/scripts/mods/afeix/douyu_combat.nut",
+      "sha256": "24aa78d7cb31266836b64c8d1b2855622db910233738f4febb9277dc8d8e1cb1"
+    },
+    {
+      "path": "src/scripts/mods/afeix/douyu_gear.nut",
+      "sha256": "c6e5f67dcdbd36741e7cc19e13099248af1c9298d70ea0d2ae1a70a2306c96b5"
+    },
+    {
+      "path": "src/scripts/mods/afeix/douyu_overlay.nut",
+      "sha256": "a4cb6049a73fe7d00b43b51dfc8352a60d1c47b0e3233eacc3d899b07f6c097b"
+    },
+    {
+      "path": "src/scripts/mods/afeix/douyu_rocket.nut",
+      "sha256": "746b5bf0c8ab0f8369938171478ca13d6c5946ec59774c770dc2ae2974cdf653"
+    },
+    {
+      "path": "src/scripts/mods/afeix/douyu_rocket_hooks.nut",
+      "sha256": "b403873482bb2c627071c8edf892e002f42702f44fae933af9ec55a269bb5f70"
+    },
+    {
+      "path": "src/scripts/mods/afeix/douyu_turnbar_hooks.nut",
+      "sha256": "7758fad19bcab6e6acc4aa570d02052ed5602df47de74ec9892e8bbdeaeeef76"
+    },
+    {
+      "path": "src/scripts/mods/afeix/douyu_world.nut",
+      "sha256": "169042aac6576b9a6074b06263efe05c6e8c7bb3ab854da96c133fe61293b0ab"
+    },
+    {
+      "path": "src/scripts/mods/afeix/dream_flow.nut",
+      "sha256": "8ff8b8ae5501ef6a721b3d9a7b1990d0d4c88aefd12d77dbcc38ff22279f5301"
+    },
+    {
+      "path": "src/scripts/mods/afeix/dream_hooks.nut",
+      "sha256": "554e3c7dc05416e2e67cf2262e9a101efb12cac80afe6e7318268943df6d5b9e"
+    },
+    {
+      "path": "src/scripts/mods/afeix/dream_ledger.nut",
+      "sha256": "79ef34bbbea806a1391f58ba7bdf3b9f4c81b8c52c1346aaf426a8b57bc322be"
+    },
+    {
+      "path": "src/scripts/mods/afeix/dream_roster.nut",
+      "sha256": "db515251d1233b8755bcff0209375bcac3d3f3205e38de0f7ebbcd685b653272"
+    },
+    {
+      "path": "src/scripts/mods/afeix/dream_tide.nut",
+      "sha256": "89630b9485af26cf614ed8b69d35245191c1793625a8f7e689107a834b08d558"
     },
     {
       "path": "src/scripts/mods/afeix/economy.nut",
@@ -1106,7 +1215,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/ideas_core.nut",
-      "sha256": "bcf96159dc03446f7fc2723014cd77ff045d457886cfd334a7576eb669872a06"
+      "sha256": "7db5fc0b50bdba474169b460abd649679761b522c60fcef811ae9e98b4303d54"
     },
     {
       "path": "src/scripts/mods/afeix/ideas_events.nut",
@@ -1114,7 +1223,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/ideas_hooks.nut",
-      "sha256": "9479b44b13bea91c8d00b6209752ba862716d2ebe8fbd9ed1aa4a1f2883705a8"
+      "sha256": "ba49edae20280ae149bdfad145dc28d09bc355c9397d143f3af385f2c66c1c46"
     },
     {
       "path": "src/scripts/mods/afeix/ideas_random.nut",
@@ -1126,11 +1235,11 @@
     },
     {
       "path": "src/scripts/mods/afeix/ledger.nut",
-      "sha256": "b321b3111c56bfa1fff67cd1592f04335c3e2700cbb70768849382342aa05896"
+      "sha256": "09089310545508c6ddb86cd63c598c7fc853102a2efc7a88a99c701f45d499d4"
     },
     {
       "path": "src/scripts/mods/afeix/member_catalog.nut",
-      "sha256": "126c56244521bf5f406db1424f6912ffb3d9294dbad31b18dc0c73bd807d22a9"
+      "sha256": "cb392ae121fc66422fbdc10b2db2674f55fb72aed23f63a1cb928f2e01c43644"
     },
     {
       "path": "src/scripts/mods/afeix/member_catalog_combat.nut",
@@ -1158,7 +1267,7 @@
     },
     {
       "path": "src/scripts/mods/afeix/member_skills.nut",
-      "sha256": "7d7deae132591c374c8f15105a8a3d32ea10702dc9a0e2594ba0069efb507c1d"
+      "sha256": "76ab0e192683d075935d958cf055036ac810781c9b29d20fef0e5c668934e76b"
     },
     {
       "path": "src/scripts/mods/afeix/member_training.nut",
@@ -1214,15 +1323,31 @@
     },
     {
       "path": "src/scripts/scenarios/world/afeix_expedition_scenario.nut",
-      "sha256": "7c77ceeb71da7688057b535469b4d65085a62451e25f8536dcfb3f4ad04d3908"
+      "sha256": "87a596e690d3d62c75db28f0f8df273ab7de4051ad13457b8c87f36872dd14d8"
     },
     {
       "path": "src/scripts/skills/actives/afeix_catalog_active.nut",
-      "sha256": "9acb6e343c8e281ee0c4e853307bfe00d4ff179596da354e6bffaf3608f7686b"
+      "sha256": "d7b7d05595b5b28c1f21122084f09d6e394667bd38ffeb925987c8977ce228ce"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_douyu_barrage_skill.nut",
+      "sha256": "50ef3483e8bbeff78531cceb059e697d20dd4a20497ea464e8ae466e7973f53e"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_douyu_bite_skill.nut",
+      "sha256": "bce8f28829c00ceee2a76af5c3d398522e7eb3b71f88321264fa48ff95f94960"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_douyu_mark_skill.nut",
+      "sha256": "fa9e9f6752f19be184a39f07710ec5e89fea334cbc56214cb6159676261a8169"
+    },
+    {
+      "path": "src/scripts/skills/actives/afeix_douyu_rocket_skill.nut",
+      "sha256": "1213e197efb0a21ea7f260ab930a25494d1bbdcedd60b9dc057cb9ac2e8865c5"
     },
     {
       "path": "src/scripts/skills/actives/afeix_ecig_puff.nut",
-      "sha256": "dbe7db7f85dc4223a835324e720c9624cdc14bb14cd43fe807f89efab99f7254"
+      "sha256": "52c329449cc5b8e79e16eafcf0f0684c7c01be0a584886e12aa70b49c11624a0"
     },
     {
       "path": "src/scripts/skills/actives/afeix_feidie.nut",
@@ -1234,15 +1359,15 @@
     },
     {
       "path": "src/scripts/skills/actives/afeix_member_active.nut",
-      "sha256": "428618496d61d13b1695c067455053bc26886993de79b622230283e92013789c"
+      "sha256": "1a241b94645f29cb8007086d02d8d7bdc0612f9405bc412ce43723e9fb0df777"
     },
     {
       "path": "src/scripts/skills/actives/afeix_promotion_active.nut",
-      "sha256": "394c86bf8ced148473ff74c59e80a67741e2dd41a2257dfa9ce76705b5592657"
+      "sha256": "d6cb4e924f9828548661ebbe62d1054928c739d69b1c508da43dab8b49e604f7"
     },
     {
       "path": "src/scripts/skills/actives/afeix_wawa.nut",
-      "sha256": "6a7fafeacfed230b4cd9de127e0d8806ff137f5003ad7a8f4af1d144572d52e2"
+      "sha256": "db66a77b18cb5bc0025e468407fb0ca6f627374e9ee8f8e8d34fc7db5f34b628"
     },
     {
       "path": "src/scripts/skills/backgrounds/afeix_afei_background.nut",
@@ -1386,27 +1511,39 @@
     },
     {
       "path": "src/scripts/skills/effects/afeix_cao_courage.nut",
-      "sha256": "912b4aa86e2c4f3b0db8edf37b565a1a92fb4ff0ec726576bc29d77c74ef446c"
+      "sha256": "1fd4655227e4b9cccec20c912655be281feb1c9a9e0dd62beb03a56d7e3bca55"
     },
     {
       "path": "src/scripts/skills/effects/afeix_catalog_effect.nut",
-      "sha256": "af9ab2a61114699cf5b8b7403d4e6c640eed3f0ef93201fa087e3fa2fb248225"
+      "sha256": "b9a1aa71b22e72c23d646091a545ea33adf8e1411a1e04fd25ec2cfedd749770"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_douyu_core_effect.nut",
+      "sha256": "dd6d8254d14adbcbf3077022a039044b72d421807e6c632b432a3eccc35c6f6d"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_douyu_mark_effect.nut",
+      "sha256": "4224b9cf3852e3334a5982deb1fee46a8eb0ec4b998f8a0e3248b4ea9658513e"
+    },
+    {
+      "path": "src/scripts/skills/effects/afeix_douyu_pressure_effect.nut",
+      "sha256": "ab34a8c7f95deda2fe1294e662ffd8433c4f2dd85b3204a04dc7c03f22e83cfb"
     },
     {
       "path": "src/scripts/skills/effects/afeix_feidie_effect.nut",
-      "sha256": "ea34954d3934e2ddcfacea8ea95ea86d36e7fdd8eaa83b9e2a47f1514d6c7b65"
+      "sha256": "5316537577c710a6e6ff5b0e02a75b7b0a641ad90ab7116476a600e3c98682fc"
     },
     {
       "path": "src/scripts/skills/effects/afeix_feidie_guard_effect.nut",
-      "sha256": "7278ddc8fc19b69fa8c11e39203c4f9df62cddd9c07352b567757187f1a4daa1"
+      "sha256": "b4c8937fd1ec977606ca6bea233468571562582d0afdda25c1b1eb066cab09af"
     },
     {
       "path": "src/scripts/skills/effects/afeix_haoqi_effect.nut",
-      "sha256": "e678a85afa9713a553ebca35de3ed9ebcc884a0515ee1474e7c5aba7973fe336"
+      "sha256": "a52ac00fdb80da2fe3a1c6ec635e19e953e217272914b820e8add7b7b4de0be8"
     },
     {
       "path": "src/scripts/skills/effects/afeix_member_effect.nut",
-      "sha256": "9c5991aef8ae9b15104eb9b1889d9e8cbbadbf44846a723bf08a2905638e82cc"
+      "sha256": "7f7783888411d0df0ff2dddeef799a5e84c4c2160cba00c436b0ae6e9d6cec17"
     },
     {
       "path": "src/scripts/skills/effects/afeix_promotion_effect.nut",
@@ -1414,11 +1551,11 @@
     },
     {
       "path": "src/scripts/skills/effects/afeix_turtle_awakening.nut",
-      "sha256": "6c7dcf335eb32ae21ea576aa3e69748f65a922e99aa856cf18e3e74b0a94a649"
+      "sha256": "00e588261f194e3d7468be7f5d6c85d7f9d447205736ebc6a3e10b2aa4327cd1"
     },
     {
       "path": "src/scripts/skills/effects/afeix_wawa_effect.nut",
-      "sha256": "4129eadac93501dabf2a72b7daa4f9a7489e63add662a758cf279fada109f88c"
+      "sha256": "a27b0c319b755750326d3a0035350883374eff4e2ae5f7c64dfd234f4247f6a2"
     },
     {
       "path": "src/scripts/skills/special/afeix_combat_memory.nut",
@@ -1450,7 +1587,11 @@
     },
     {
       "path": "src/scripts/skills/traits/afeix_turtle_body.nut",
-      "sha256": "b3349db12d0cf1d6b5f84a18e57201302ec228e559fbd53cacfcf45583cae1ae"
+      "sha256": "70240cad1d07d3c2cce05f2cc26ef8757bdbd1909145d5330d23e99a55ed3fc0"
+    },
+    {
+      "path": "src/scripts/skills/traits/afeix_turtle_retract.nut",
+      "sha256": "4aa402ee8c902d5a7247cafbcf18ac79eb758e3b5f628da8f2fd79932b17500d"
     }
   ],
   "ui_scripts": [
@@ -1459,32 +1600,58 @@
       "sha256": "2add217564355f3ab8a256bacc47c6059f83bf1620df6002fec05f329a823a97"
     },
     {
+      "path": "src/ui/mods/afeix/douyu_turnbar.js",
+      "sha256": "3dfe43e38737cbc296625b7bd937b2e3daffd50da0b637aa66c9d0b2a07e32d1"
+    },
+    {
+      "path": "src/ui/mods/afeix/dream_tide.js",
+      "sha256": "4f282dcf6b01ca656ab628913db4dd6f2585bdb5deb6a51cef86ee3c338b07df"
+    },
+    {
       "path": "src/ui/mods/afeix/formation.js",
       "sha256": "8b9305fd7869794264530f0971fbad08f11760675f07f651643acb69252dcd77"
     }
   ],
   "resource_references": [
+    "gfx/afeix_douyu_rocket_v01.png",
+    "gfx/skills/afeix_douyu_barrage.png",
+    "gfx/skills/afeix_douyu_mark.png",
+    "gfx/skills/afeix_douyu_rocket.png",
     "gfx/skills/afeix_ecig_puff.png",
     "gfx/skills/afeix_ecig_puff_sw.png",
     "gfx/skills/afeix_feidie.png",
     "gfx/skills/afeix_haoqi.png",
+    "gfx/skills/afeix_member_turtle_cover.png",
     "gfx/skills/afeix_member_turtle_shell.png",
     "gfx/skills/afeix_quanqian.png",
     "gfx/skills/afeix_wawa.png",
     "gfx/ui/icons/armor_damage.png",
     "gfx/ui/icons/bravery.png",
+    "gfx/ui/icons/direct_damage.png",
     "gfx/ui/icons/fatigue.png",
     "gfx/ui/icons/health.png",
     "gfx/ui/icons/money.png",
     "gfx/ui/icons/special.png",
     "gfx/ui/icons/warning.png",
     "gfx/ui/traits/trait_icon_37.png",
+    "scripts/ai/tactical/agents/unhold_agent.cnut",
+    "scripts/ai/tactical/behavior.cnut",
+    "scripts/ai/tactical/behaviors/ai_attack_default.cnut",
+    "scripts/ai/tactical/behaviors/ai_break_free.cnut",
+    "scripts/ai/tactical/behaviors/ai_engage_melee.cnut",
+    "scripts/ai/tactical/behaviors/ai_idle.cnut",
     "scripts/contracts/contract.cnut",
     "scripts/contracts/contract_manager.cnut",
     "scripts/contracts/contracts/afeix_letter_contract.cnut",
     "scripts/entity/tactical/actor.cnut",
+    "scripts/entity/tactical/enemies/afeix_douyu.cnut",
+    "scripts/entity/tactical/enemies/direwolf.cnut",
+    "scripts/entity/tactical/enemies/lindwurm.cnut",
+    "scripts/entity/tactical/enemies/spider.cnut",
     "scripts/entity/tactical/enemies/zombie_player.cnut",
     "scripts/entity/tactical/player.cnut",
+    "scripts/entity/world/location.cnut",
+    "scripts/entity/world/locations/afeix_douyu_location.cnut",
     "scripts/entity/world/player_party.cnut",
     "scripts/entity/world/settlement.cnut",
     "scripts/entity/world/settlements/buildings/building.cnut",
@@ -1495,7 +1662,16 @@
     "scripts/items/accessory/afeix_ecig_item.cnut",
     "scripts/items/ammo/quiver_of_arrows.cnut",
     "scripts/items/ammo/quiver_of_bolts.cnut",
+    "scripts/items/armor/armor.cnut",
     "scripts/items/armor/leather_lamellar.cnut",
+    "scripts/items/armor/legendary/afeix_douyu_sharkskin.cnut",
+    "scripts/items/armor/named/black_leather_armor.cnut",
+    "scripts/items/armor/named/blue_studded_mail_armor.cnut",
+    "scripts/items/armor/named/brown_coat_of_plates_armor.cnut",
+    "scripts/items/armor/named/green_coat_of_plates_armor.cnut",
+    "scripts/items/armor/named/leopard_armor.cnut",
+    "scripts/items/armor/named/named_noble_mail_armor.cnut",
+    "scripts/items/armor/named/named_plated_fur_armor.cnut",
     "scripts/items/armor/padded_leather.cnut",
     "scripts/items/armor/padded_surcoat.cnut",
     "scripts/items/armor/ragged_dark_surcoat.cnut",
@@ -1503,27 +1679,51 @@
     "scripts/items/helmets/aketon_cap.cnut",
     "scripts/items/helmets/headscarf.cnut",
     "scripts/items/helmets/hood.cnut",
+    "scripts/items/helmets/named/golden_feathers_helmet.cnut",
+    "scripts/items/helmets/named/heraldic_mail_helmet.cnut",
+    "scripts/items/helmets/named/named_metal_bull_helmet.cnut",
+    "scripts/items/helmets/named/norse_helmet.cnut",
+    "scripts/items/helmets/named/wolf_helmet.cnut",
     "scripts/items/helmets/nasal_helmet.cnut",
     "scripts/items/item.cnut",
     "scripts/items/item_container.cnut",
     "scripts/items/misc/afeix_bicycle_item.cnut",
     "scripts/items/shields/buckler_shield.cnut",
+    "scripts/items/shields/named/named_full_metal_heater_shield.cnut",
+    "scripts/items/shields/named/named_golden_round_shield.cnut",
     "scripts/items/shields/wooden_shield.cnut",
     "scripts/items/supplies/bread_item.cnut",
     "scripts/items/supplies/cured_rations_item.cnut",
     "scripts/items/supplies/ground_grains_item.cnut",
     "scripts/items/tools/player_banner.cnut",
+    "scripts/items/tools/reinforced_throwing_net.cnut",
+    "scripts/items/weapons/afeix_dream_warbanner.cnut",
     "scripts/items/weapons/afeix_laoma_grip.cnut",
+    "scripts/items/weapons/ancient/crypt_cleaver.cnut",
     "scripts/items/weapons/bludgeon.cnut",
     "scripts/items/weapons/boar_spear.cnut",
     "scripts/items/weapons/falchion.cnut",
+    "scripts/items/weapons/fighting_spear.cnut",
     "scripts/items/weapons/hand_axe.cnut",
     "scripts/items/weapons/hunting_bow.cnut",
     "scripts/items/weapons/javelin.cnut",
     "scripts/items/weapons/knife.cnut",
+    "scripts/items/weapons/legendary/afeix_douyu_fin_cleaver.cnut",
+    "scripts/items/weapons/legendary/afeix_douyu_tooth_spear.cnut",
     "scripts/items/weapons/light_crossbow.cnut",
     "scripts/items/weapons/lute.cnut",
     "scripts/items/weapons/militia_spear.cnut",
+    "scripts/items/weapons/named/named_battle_whip.cnut",
+    "scripts/items/weapons/named/named_cleaver.cnut",
+    "scripts/items/weapons/named/named_crossbow.cnut",
+    "scripts/items/weapons/named/named_dagger.cnut",
+    "scripts/items/weapons/named/named_greataxe.cnut",
+    "scripts/items/weapons/named/named_javelin.cnut",
+    "scripts/items/weapons/named/named_mace.cnut",
+    "scripts/items/weapons/named/named_spear.cnut",
+    "scripts/items/weapons/named/named_sword.cnut",
+    "scripts/items/weapons/named/named_throwing_axe.cnut",
+    "scripts/items/weapons/named/named_warbow.cnut",
     "scripts/items/weapons/pickaxe.cnut",
     "scripts/items/weapons/pitchfork.cnut",
     "scripts/items/weapons/short_bow.cnut",
@@ -1540,6 +1740,10 @@
     "scripts/mods/afeix/banner_hooks.cnut",
     "scripts/mods/afeix/barber_hooks.cnut",
     "scripts/mods/afeix/company_appearance_hooks.cnut",
+    "scripts/mods/afeix/douyu_ai.cnut",
+    "scripts/mods/afeix/douyu_rocket_hooks.cnut",
+    "scripts/mods/afeix/douyu_turnbar_hooks.cnut",
+    "scripts/mods/afeix/dream_hooks.cnut",
     "scripts/mods/afeix/ending_hooks.cnut",
     "scripts/mods/afeix/hooks.cnut",
     "scripts/mods/afeix/ideas_hooks.cnut",
@@ -1549,6 +1753,10 @@
     "scripts/mods/afeix/supporter_title_hooks.cnut",
     "scripts/mods/afeix/world_art_hooks.cnut",
     "scripts/scenarios/world/starting_scenario.cnut",
+    "scripts/skills/actives/afeix_douyu_barrage_skill.cnut",
+    "scripts/skills/actives/afeix_douyu_bite_skill.cnut",
+    "scripts/skills/actives/afeix_douyu_mark_skill.cnut",
+    "scripts/skills/actives/afeix_douyu_rocket_skill.cnut",
     "scripts/skills/actives/afeix_ecig_puff.cnut",
     "scripts/skills/actives/afeix_feidie.cnut",
     "scripts/skills/actives/afeix_haoqi.cnut",
@@ -1564,6 +1772,9 @@
     "scripts/skills/effects/afeix_cao_bleeding.cnut",
     "scripts/skills/effects/afeix_cao_courage.cnut",
     "scripts/skills/effects/afeix_catalog_effect.cnut",
+    "scripts/skills/effects/afeix_douyu_core_effect.cnut",
+    "scripts/skills/effects/afeix_douyu_mark_effect.cnut",
+    "scripts/skills/effects/afeix_douyu_pressure_effect.cnut",
     "scripts/skills/effects/afeix_feidie_effect.cnut",
     "scripts/skills/effects/afeix_feidie_guard_effect.cnut",
     "scripts/skills/effects/afeix_haoqi_effect.cnut",
@@ -1572,6 +1783,8 @@
     "scripts/skills/effects/afeix_turtle_awakening.cnut",
     "scripts/skills/effects/afeix_wawa_effect.cnut",
     "scripts/skills/effects/bleeding_effect.cnut",
+    "scripts/skills/perks/perk_hold_out.cnut",
+    "scripts/skills/perks/perk_pathfinder.cnut",
     "scripts/skills/perks/perk_steel_brow.cnut",
     "scripts/skills/skill.cnut",
     "scripts/skills/special/afeix_combat_memory.cnut",
@@ -1580,6 +1793,7 @@
     "scripts/skills/traits/afeix_personal_trait.cnut",
     "scripts/skills/traits/afeix_promotion_trait.cnut",
     "scripts/skills/traits/afeix_turtle_body.cnut",
+    "scripts/skills/traits/afeix_turtle_retract.cnut",
     "scripts/skills/traits/ailing_trait.cnut",
     "scripts/skills/traits/athletic_trait.cnut",
     "scripts/skills/traits/brave_trait.cnut",
@@ -1614,19 +1828,23 @@
     "scripts/states/tactical_state.cnut",
     "scripts/states/world/asset_manager.cnut",
     "scripts/states/world_state.cnut",
+    "scripts/statistics/statistics_manager.cnut",
     "scripts/ui/screens/character/character_screen.cnut",
+    "scripts/ui/screens/tactical/modules/turn_sequence_bar/turn_sequence_bar.cnut",
     "scripts/ui/screens/world/modules/world_town_screen/town_barber_dialog_module.cnut",
     "scripts/ui/screens/world/modules/world_town_screen/town_hire_dialog_module.cnut",
     "scripts/ui/screens/world/modules/world_town_screen/town_shop_dialog_module.cnut",
     "scripts/ui/screens/world/world_town_screen.cnut",
     "ui/mods/afeix/barber.js",
+    "ui/mods/afeix/douyu_turnbar.js",
+    "ui/mods/afeix/dream_tide.js",
     "ui/mods/afeix/formation.js"
   ],
   "tests": [
     {
       "file": "tests/gameplay/test_appearance.nut",
-      "assertions": 4513,
-      "log": "ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=4513\r\n"
+      "assertions": 4717,
+      "log": "ALL_APPEARANCE_BEHAVIOR_CHECKS_PASS\r\nTESTS_PASSED=4717\r\n"
     },
     {
       "file": "tests/gameplay/test_attribute_treatment.nut",
@@ -1654,9 +1872,14 @@
       "log": "BLUE_PERSONAL_STORIES_PASS\r\nTESTS_PASSED=130\r\n"
     },
     {
+      "file": "tests/gameplay/test_combat_feedback.nut",
+      "assertions": 163,
+      "log": "TESTS_PASSED=163\r\n"
+    },
+    {
       "file": "tests/gameplay/test_company_appearance.nut",
-      "assertions": 37,
-      "log": "TESTS_PASSED=37\r\n"
+      "assertions": 51,
+      "log": "TESTS_PASSED=51\r\n"
     },
     {
       "file": "tests/gameplay/test_contract_hooks.nut",
@@ -1667,6 +1890,66 @@
       "file": "tests/gameplay/test_discovery.nut",
       "assertions": 420,
       "log": "TESTS_PASSED=420\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_douyu_combat.nut",
+      "assertions": 89,
+      "log": "TESTS_PASSED=89\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_douyu_gear.nut",
+      "assertions": 66,
+      "log": "TESTS_PASSED=66\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_douyu_native.nut",
+      "assertions": 31,
+      "log": "TESTS_PASSED=31\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_douyu_overlay.nut",
+      "assertions": 40,
+      "log": "TESTS_PASSED=40\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_douyu_rocket.nut",
+      "assertions": 114,
+      "log": "TESTS_PASSED=114\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_douyu_turnbar.nut",
+      "assertions": 25,
+      "log": "TESTS_PASSED=25\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_douyu_world_native.nut",
+      "assertions": 93,
+      "log": "TESTS_PASSED=93\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_dream_flow.nut",
+      "assertions": 322,
+      "log": "TESTS_PASSED=322\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_dream_native_review.nut",
+      "assertions": 9998,
+      "log": "TESTS_PASSED=322\r\nNATIVE_REVIEW_PASSED=9998\r\nTESTS_PASSED=9998\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_dream_roster.nut",
+      "assertions": 1149,
+      "log": "TESTS_PASSED=1149\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_dream_story_native.nut",
+      "assertions": 198,
+      "log": "TESTS_PASSED=322\r\nDREAM_STORY_NATIVE_PASSED=198\r\nTESTS_PASSED=198\r\n"
+    },
+    {
+      "file": "tests/gameplay/test_dream_tide.nut",
+      "assertions": 205,
+      "log": "TESTS_PASSED=322\r\nTESTS_PASSED=205\r\n"
     },
     {
       "file": "tests/gameplay/test_endgame_balance.nut",
@@ -1690,8 +1973,8 @@
     },
     {
       "file": "tests/gameplay/test_ideas.nut",
-      "assertions": 71,
-      "log": "TESTS_PASSED=71\r\n"
+      "assertions": 77,
+      "log": "TESTS_PASSED=77\r\n"
     },
     {
       "file": "tests/gameplay/test_keepsakes.nut",
@@ -1789,6 +2072,11 @@
       "log": "TESTS_PASSED=1628\r\n"
     },
     {
+      "file": "tests/gameplay/test_native_turtle_head_hit.nut",
+      "assertions": 16,
+      "log": "TESTS_PASSED=16\r\n"
+    },
+    {
       "file": "tests/gameplay/test_native_turtle_notice.nut",
       "assertions": 27,
       "log": "TESTS_PASSED=27\r\n"
@@ -1825,13 +2113,13 @@
     },
     {
       "file": "tests/gameplay/test_starting_budget.nut",
-      "assertions": 27,
-      "log": "TESTS_PASSED=27\r\n"
+      "assertions": 30,
+      "log": "TESTS_PASSED=30\r\n"
     },
     {
       "file": "tests/gameplay/test_startup_pathfinding.nut",
-      "assertions": 154,
-      "log": "TESTS_PASSED=154\r\n"
+      "assertions": 159,
+      "log": "TESTS_PASSED=159\r\n"
     },
     {
       "file": "tests/gameplay/test_story_progress.nut",
@@ -1855,8 +2143,8 @@
     },
     {
       "file": "tests/gameplay/test_toad_banner.nut",
-      "assertions": 71,
-      "log": "TESTS_PASSED=71\r\n"
+      "assertions": 74,
+      "log": "TESTS_PASSED=74\r\n"
     },
     {
       "file": "tests/gameplay/test_training_independent_skills.nut",
@@ -1879,6 +2167,16 @@
       "log": "TESTS_PASSED=61\n"
     },
     {
+      "file": "tests/gameplay/test_douyu_turnbar.js",
+      "assertions": 9,
+      "log": "TESTS_PASSED=9\n"
+    },
+    {
+      "file": "tests/gameplay/test_dream_tide.js",
+      "assertions": 35,
+      "log": "TESTS_PASSED=35\n"
+    },
+    {
       "file": "tests/gameplay/test_formation_ui.js",
       "assertions": 361,
       "log": "NATIVE_UI_DROP_CHECKS_PASSED\nTESTS_PASSED=361\n"
@@ -1887,6 +2185,21 @@
       "file": "tests/gameplay/test_art_resources.py",
       "assertions": 8,
       "log": "ALL_ART_RESOURCE_CHECKS_PASS\nTESTS_PASSED=8\n"
+    },
+    {
+      "file": "tests/gameplay/test_combat_feedback_resources.py",
+      "assertions": 55,
+      "log": "TESTS_PASSED=55\n"
+    },
+    {
+      "file": "tests/gameplay/test_douyu_trophy_art.py",
+      "assertions": 14,
+      "log": "TESTS_PASSED=14\n"
+    },
+    {
+      "file": "tests/gameplay/test_dream_roster_resources.py",
+      "assertions": 323,
+      "log": "Dream roster: ten level-11 builds; 300 native selections plus 30 Gifted selections verified\nTESTS_PASSED=323\n"
     }
   ],
   "syntax_log": "SYNTAX_PASSED\r\n",

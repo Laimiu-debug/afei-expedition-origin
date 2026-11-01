@@ -1227,7 +1227,7 @@
     "tests": [
       {
         "test": "base_portraits_plus_dlc_runtime",
-        "assertions": 4806
+        "assertions": 6556
       },
       {
         "test": "tests/gameplay/test_company_appearance.nut",
@@ -1278,12 +1278,14 @@
     "brushes/afeix_banner_v25.brush": "ac1b423c2c0164229199974eef00c6e16b95fee12566c86bacddd9f05966ab41",
     "brushes/afeix_corpse_injuries_v01.brush": "c03ec7f2c4d66ebbe27b7e7893566bdb1dbc06bb5b5f0fe41efbf708cafeee46",
     "brushes/afeix_gameplay_v03.brush": "92e8c194d56c3fc4214715cac6b44207cc3377df0091dcdb95970f8609e86527",
+    "brushes/afeix_helmet_layers_v01.brush": "448979867821d3df668f03267ba9f412de85a86b964c1bacda5f77d47ed5f2c2",
     "brushes/afeix_ideas_v19.brush": "3c43b0581aeeb8cdbd7335cb246e2c4f7625e125ffb6ba95e0ed000bdb24fc19",
     "brushes/afeix_portraits_v04.brush": "33ea703aa6f466ea7cf7a02c4ddb0244a92f0d4b8c3971d49ad0fa67895d8953",
     "brushes/afeix_world_v22.brush": "a48a90cfd809b0c25d789a458a3b3988ba988965682d0d08be670b3b367edd45",
     "gfx/afeix_banner_v25.png": "9d4e652a7f1ccfe1be8c50fd2f3381eb4a8dc6bdabfb06a7034fb4f4208547af",
     "gfx/afeix_corpse_injuries_v01.png": "c776ff58e0816b4b3019cf99fdd24fd73c98d1eb90395335b79457c469506e78",
     "gfx/afeix_gameplay_v03.png": "ac0964b49106d99cacf6e79feee4b4ec8e43f8f09e1b9ab385dee3dc67b2eb56",
+    "gfx/afeix_helmet_layers_v01.png": "2b93c39278d0ac51b4cdbe71e3ec0cdc7aebd07e888a2125de447587dde5f3dc",
     "gfx/afeix_ideas_v19.png": "4875a92cac7f07199d29654e6492fa272ef374d6c38b565e188acd5009add5c5",
     "gfx/afeix_portraits_v04.png": "8d17a755383a288ca128f36eeac7343e147fd552c11feb13b6bf6707e838264c",
     "gfx/afeix_world_v22.png": "0ffb5c8d771448b1f5e69ece06678f360a9e58f30c7145f110b02d45b9999993",
@@ -1436,7 +1438,7 @@
     "gfx/ui/items/weapons/afeix_toad_banner_medallion_70x70.png": "ab587896042b6453874c2a08c8925e750592d57b3bcbb88bb66429ee41b4ebc5",
     "gfx/ui/items/weapons/afeix_toad_banner_profile.png": "1b885befdc790f6ed90a97b608818d628834e5f4fc54c807e613929d69e611fd",
     "gfx/ui/items/weapons/afeix_toad_banner_profile_70x70.png": "0bb7000e51706e3fedc4b309543d32c5dccf36260e5fc13d72fa18923148f858",
-    "scripts/!mods_preload/mod_afeix_expedition.nut": "511a068eccb3f569e185706f77a246a5f19cbd4bd3d6de674e0c29078e3b8daa",
+    "scripts/!mods_preload/mod_afeix_expedition.nut": "10f914d94360314ff725bff2c92c6581cd4335debcb67b47fb7db244693404c8",
     "scripts/contracts/contracts/afeix_letter_contract.nut": "0e393e3262e071dce9c5f050e55601cee1c50b0317cef31e97397464c9c4fb18",
     "scripts/events/events/afeix_discovery_event.nut": "fc37456c5521102ee59dddebdc969e8bee5dbe3218055bd99bff277edf39c11e",
     "scripts/events/events/afeix_factions_event.nut": "ccaa1e5d1e3bf36226be6e68b4f7f817e0917d67f722c0f07b0836052eb11f2a",
@@ -1445,7 +1447,7 @@
     "scripts/items/accessory/afeix_ecig_item.nut": "db461d2f4738e7f3e3cc5cd2c8ef66de6235e631784d5e2830438888c78699fd",
     "scripts/items/misc/afeix_bicycle_item.nut": "0ac97e0f0202cc761d249b4a748f2b41609d94cb33b44ee3819011bc64430d1d",
     "scripts/items/weapons/afeix_laoma_grip.nut": "10cb3140fe701d120dd95a760419cd7d2605f8b2d3ca17125b874d1d726d1516",
-    "scripts/mods/afeix/appearance.nut": "6774b65d3b7ed5f98474624c873334c3e3e0f45d3dcfde81dd2012cf673f59e6",
+    "scripts/mods/afeix/appearance.nut": "86a16b52fb74b7232ae5223be9eaaa3e890187f52e09500ee8e38d1c2eee4d3d",
     "scripts/mods/afeix/art_hooks.nut": "b1b5bad37bfbe5588e107e4a42d25fbec2afca42e420b9d1b81de5d63c035c84",
     "scripts/mods/afeix/attribute_treatment.nut": "95ab9c075b8b062750aeb79cecac9b0ef65a5ea75a57f104b2ecd2731aeef1ae",
     "scripts/mods/afeix/background_data.nut": "46abc6ab5052303791b85dcc7b4ea1e146e486c904f8f272e279491dc422ac2a",
@@ -1453,7 +1455,7 @@
     "scripts/mods/afeix/backgrounds.nut": "8378374a89bc92e01403b220b7ff4da0e036c25b7efc8be8d8bfbcf479f1372f",
     "scripts/mods/afeix/balance_v26.nut": "d72fbe38e52a6d628da3872d22ed57be4406b0d7dd353a20d5e40ab39f50e9fa",
     "scripts/mods/afeix/balance_v26_combat.nut": "aa5ecd8a3b50a90fd88e084ff95ade53e04d61620b0dc49cdfb979aca7375bdf",
-    "scripts/mods/afeix/balance_v26_data.nut": "564cdf72089398ba1fb8f5c101bf30ec9b7063ceed2c11fef327c0864d4101e4",
+    "scripts/mods/afeix/balance_v26_data.nut": "ab4dbbbdb052d3a2be5e10c92ffe863743a07bfe139464767c9479b2467cb945",
     "scripts/mods/afeix/balance_v26_hooks.nut": "05aa38d068ed1a67437049656aeaa97c79102fba686d3289b80181646e959ab7",
     "scripts/mods/afeix/banner_hooks.nut": "3c58986835a28fee0410494587f0784082d5f4f06411a5f4fc4f589c86dfbf1e",
     "scripts/mods/afeix/barber_hooks.nut": "30753bee321bf59cbf35cef6a1dd28901276e0e676d9c4600a75c9bfb9321b59",
@@ -1473,9 +1475,9 @@
     "scripts/mods/afeix/hooks.nut": "44dc352a5f651bdc752841af39cc84e77bcf0d7b02fefef8bfab4ad58b6ad89b",
     "scripts/mods/afeix/ideas_chronicles.nut": "6eb5321e4a6b9472df4268076a8cf65e8c3229db1c9010ddd83d774ce470a30b",
     "scripts/mods/afeix/ideas_combat.nut": "99c7ab8439c63dbc24742c1cbdd2f22eee786fa6f68c259892d8681c03d7015a",
-    "scripts/mods/afeix/ideas_core.nut": "bcf96159dc03446f7fc2723014cd77ff045d457886cfd334a7576eb669872a06",
+    "scripts/mods/afeix/ideas_core.nut": "7db5fc0b50bdba474169b460abd649679761b522c60fcef811ae9e98b4303d54",
     "scripts/mods/afeix/ideas_events.nut": "999f474cfe14596273a3b5c14f240604cc28b7f3b363774d78c9885139214931",
-    "scripts/mods/afeix/ideas_hooks.nut": "9479b44b13bea91c8d00b6209752ba862716d2ebe8fbd9ed1aa4a1f2883705a8",
+    "scripts/mods/afeix/ideas_hooks.nut": "ba49edae20280ae149bdfad145dc28d09bc355c9397d143f3af385f2c66c1c46",
     "scripts/mods/afeix/ideas_random.nut": "b2ae936b73c0c609c27f93fe3ebf92166fa40f82e8aaa5f57572dfd918fddcdb",
     "scripts/mods/afeix/keepsakes.nut": "fb57d61ea17dc9124887291821a0bb4284e3e1a76f8fa1e81eade290a9b54267",
     "scripts/mods/afeix/ledger.nut": "b321b3111c56bfa1fff67cd1592f04335c3e2700cbb70768849382342aa05896",
@@ -1559,7 +1561,8 @@
     "scripts/skills/traits/afeix_member_passive.nut": "25533831888bdcbf3d9218754e6033dc1799c5128e130ec007258073c6c0f7fe",
     "scripts/skills/traits/afeix_personal_trait.nut": "3c613a9107150abb0dbfd3cdfab11afbbba22a0c001eb9e334a50c94a237f77d",
     "scripts/skills/traits/afeix_promotion_trait.nut": "d26612b49b6155530c918fe5f0c47077fa0a17b077b8a3c539dc8396eacb378b",
-    "scripts/skills/traits/afeix_turtle_body.nut": "b3349db12d0cf1d6b5f84a18e57201302ec228e559fbd53cacfcf45583cae1ae",
+    "scripts/skills/traits/afeix_turtle_body.nut": "70240cad1d07d3c2cce05f2cc26ef8757bdbd1909145d5330d23e99a55ed3fc0",
+    "scripts/skills/traits/afeix_turtle_retract.nut": "4aa402ee8c902d5a7247cafbcf18ac79eb758e3b5f628da8f2fd79932b17500d",
     "ui/mods/afeix/barber.js": "2add217564355f3ab8a256bacc47c6059f83bf1620df6002fec05f329a823a97",
     "ui/mods/afeix/formation.js": "8b9305fd7869794264530f0971fbad08f11760675f07f651643acb69252dcd77"
   },
@@ -1576,5 +1579,9 @@
     "wanderer.png": "78a06adf1ee1c1b73f374fc4a3a85e5bfad32822bd0d5ab8b4cc812a39f0d99a"
   },
   "installed": false,
-  "published": false
+  "published": false,
+  "bundle_published": true,
+  "bundle_mod_id": "e554fc31-28b0-4b26-a8f5-295141ed79ef",
+  "bundle_release_id": "a0cec096-c0c4-4314-9f75-819dc445d629",
+  "bundle_url": "https://bbmod.site/mods/e554fc31-28b0-4b26-a8f5-295141ed79ef/"
 }

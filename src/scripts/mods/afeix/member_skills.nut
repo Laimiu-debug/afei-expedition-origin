@@ -118,7 +118,7 @@ A.memberEffect <- function(target, kind, source = null, turns = 1) {
     // Same-kind effects refresh rather than stack. No current skill has multiple owners.
     local effect = target.getSkills().getSkillByID(id);
     if (effect == null) { effect = ::new("scripts/skills/effects/afeix_member_effect"); effect.configure(kind, source, turns); target.getSkills().add(effect); }
-    else { effect.configure(kind, source, turns); target.getSkills().update(); }
+    else { effect.configure(kind, source, turns); target.getSkills().update(); if(effect.m.Overlay!="")effect.spawnIcon(effect.m.Overlay,target.getTile()); }
     return effect;
 };
 A.RefreshingMemberAuras <- false;

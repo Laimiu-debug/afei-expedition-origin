@@ -1,0 +1,43 @@
+{
+  "version": "0.29.0-preview.9",
+  "internal_version": 73,
+  "completed_at": "2026-10-03T16:10:22.626897+08:00",
+  "scope": "Dream story pacing, stable helmet display and individual exhibition loadouts. Existing working tree changes are retained.",
+  "changes": {
+    "ending": "Five playable rounds; round 1/3/5 tide warnings; native monologue before scripted deaths; distinct victory/retreat/defeat bridges.",
+    "helmet_cause": "Constructing dream actors were outside the session roster and received the hidden-helmet preference only on later appearance refresh.",
+    "helmet_fix": "Snapshot choice before dream construction and apply it before the first equip callback, including incomplete-roster actors. Default hidden; F8 selection preserved.",
+    "outfits": "Ten distinct armor/helmet pairs; different tank shields; Bottle cleaver mastery and Chujiu mace mastery; light armor fatigue 12-13."
+  },
+  "offline": {
+    "scripts": 150,
+    "assertions": 46298,
+    "syntax_passed": true,
+    "behavior_tests_passed": true,
+    "native_resource_paths_passed": true,
+    "report": "build/gameplay-validation.json"
+  },
+  "package": {
+    "path": "G:\\CODE\\afei-xcpedition\\dist\\mod_afeix_expedition v0.29.0-preview.9.zip",
+    "sha256": "9875602f5135822ed500e2d70a855aec12d38b5f22e5bc6782f5ebf77bb2f8bf",
+    "size": 4867960,
+    "entries": 328,
+    "crc_passed": true,
+    "source_bytes_match": true
+  },
+  "installation": {
+    "path": "F:\\SteamLibrary\\steamapps\\common\\Battle Brothers\\data\\mod_afeix_expedition.zip",
+    "sha256": "9875602f5135822ed500e2d70a855aec12d38b5f22e5bc6782f5ebf77bb2f8bf",
+    "bytes_match": true,
+    "backup": "G:\\CODE\\afei-xcpedition\\build\\dream-polish-preview.9\\installed-before.zip",
+    "backup_sha256": "a4de9a7953f0f5f25c9a5577fc89034dfa2f6d01de4940ca59d963b13631ec94",
+    "game_closed_at_install": true,
+    "saves_modified": false
+  },
+  "published": false,
+  "in_game_tested": false,
+  "limits": [
+    "No game was launched for this revision.",
+    "Native monologue layout, five-round battle transition, actual equipment rendering and full campaign acceptance remain pending."
+  ]
+}

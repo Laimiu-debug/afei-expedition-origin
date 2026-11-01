@@ -1,0 +1,50 @@
+{
+  "version": "0.29.0-preview.1",
+  "date": "2026-10-03",
+  "package": "dist/mod_afeix_expedition v0.29.0-preview.1.zip",
+  "package_sha256": "6f144554899208f89a9b4328c7c4974f542b2878e5e54207c049e42827c125ad",
+  "package_entries": 310,
+  "syntax_files": 141,
+  "behavior_assertions": 45321,
+  "new_feature_tests": [
+    {
+      "file": "tests/gameplay/test_douyu_combat.nut",
+      "assertions": 78
+    },
+    {
+      "file": "tests/gameplay/test_douyu_native.nut",
+      "assertions": 22
+    },
+    {
+      "file": "tests/gameplay/test_dream_flow.nut",
+      "assertions": 219
+    },
+    {
+      "file": "tests/gameplay/test_dream_native_review.nut",
+      "assertions": 9889
+    },
+    {
+      "file": "tests/gameplay/test_dream_roster.nut",
+      "assertions": 1111
+    },
+    {
+      "file": "tests/gameplay/test_dream_roster_resources.py",
+      "assertions": 280
+    }
+  ],
+  "douyu_art": {
+    "passed": true,
+    "files": 6,
+    "brushes": 2,
+    "generated_source_art": true,
+    "in_game_tested": false
+  },
+  "source_art_preview": "art/runtime/douyu-v01/preview.png",
+  "dream_roster_source": "data/dream-roster.json",
+  "design": "docs/design/dream-opening.md",
+  "crc_passed": true,
+  "source_bytes_match": true,
+  "installed": false,
+  "published": false,
+  "in_game_tested": false
+}

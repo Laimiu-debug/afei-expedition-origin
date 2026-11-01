@@ -1,0 +1,233 @@
+<brush name="gfx/afeix_helmet_layers_v01.png" version="17">
+  <sprite id="afeix_p04_afei_normal_bare_body" img="afeix_p04_afei_normal_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_afei_normal_bare_head" img="afeix_p04_afei_normal_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_afei_normal_hair" img="afeix_p04_afei_normal_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_afei_normal_bare_corpse_head" img="afeix_p04_afei_normal_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_afei_normal_bare_corpse_head_bloodied" img="afeix_p04_afei_normal_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_afei_normal_bare_corpse_head_injured_01" img="afeix_p04_afei_normal_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_afei_normal_bare_corpse_head_injured_02" img="afeix_p04_afei_normal_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_damou_bare_body" img="afeix_p04_damou_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_damou_bare_head" img="afeix_p04_damou_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_damou_hair" img="afeix_p04_damou_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_damou_bare_corpse_head" img="afeix_p04_damou_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_damou_bare_corpse_head_bloodied" img="afeix_p04_damou_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_damou_bare_corpse_head_injured_01" img="afeix_p04_damou_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_damou_bare_corpse_head_injured_02" img="afeix_p04_damou_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_mocha_bare_body" img="afeix_p04_mocha_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_mocha_bare_head" img="afeix_p04_mocha_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_mocha_hair" img="afeix_p04_mocha_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_mocha_bare_corpse_head" img="afeix_p04_mocha_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_mocha_bare_corpse_head_bloodied" img="afeix_p04_mocha_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_mocha_bare_corpse_head_injured_01" img="afeix_p04_mocha_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_mocha_bare_corpse_head_injured_02" img="afeix_p04_mocha_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_bottle_bare_body" img="afeix_p04_bottle_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_bottle_bare_head" img="afeix_p04_bottle_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_bottle_hair" img="afeix_p04_bottle_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_bottle_bare_corpse_head" img="afeix_p04_bottle_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_bottle_bare_corpse_head_bloodied" img="afeix_p04_bottle_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_bottle_bare_corpse_head_injured_01" img="afeix_p04_bottle_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_bottle_bare_corpse_head_injured_02" img="afeix_p04_bottle_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_shuaizi_bare_body" img="afeix_p04_shuaizi_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_shuaizi_bare_head" img="afeix_p04_shuaizi_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_shuaizi_hair" img="afeix_p04_shuaizi_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_shuaizi_bare_corpse_head" img="afeix_p04_shuaizi_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_shuaizi_bare_corpse_head_bloodied" img="afeix_p04_shuaizi_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_shuaizi_bare_corpse_head_injured_01" img="afeix_p04_shuaizi_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_shuaizi_bare_corpse_head_injured_02" img="afeix_p04_shuaizi_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_lili_bare_body" img="afeix_p04_lili_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_lili_bare_head" img="afeix_p04_lili_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_lili_hair" img="afeix_p04_lili_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_lili_bare_corpse_head" img="afeix_p04_lili_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_lili_bare_corpse_head_bloodied" img="afeix_p04_lili_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_lili_bare_corpse_head_injured_01" img="afeix_p04_lili_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_lili_bare_corpse_head_injured_02" img="afeix_p04_lili_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoyueya_bare_body" img="afeix_p04_xiaoyueya_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaoyueya_bare_head" img="afeix_p04_xiaoyueya_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaoyueya_hair" img="afeix_p04_xiaoyueya_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaoyueya_bare_corpse_head" img="afeix_p04_xiaoyueya_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoyueya_bare_corpse_head_bloodied" img="afeix_p04_xiaoyueya_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoyueya_bare_corpse_head_injured_01" img="afeix_p04_xiaoyueya_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoyueya_bare_corpse_head_injured_02" img="afeix_p04_xiaoyueya_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yuchujiu_bare_body" img="afeix_p04_yuchujiu_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yuchujiu_bare_head" img="afeix_p04_yuchujiu_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yuchujiu_hair" img="afeix_p04_yuchujiu_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yuchujiu_bare_corpse_head" img="afeix_p04_yuchujiu_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yuchujiu_bare_corpse_head_bloodied" img="afeix_p04_yuchujiu_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yuchujiu_bare_corpse_head_injured_01" img="afeix_p04_yuchujiu_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yuchujiu_bare_corpse_head_injured_02" img="afeix_p04_yuchujiu_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoyubeike_bare_body" img="afeix_p04_xiaoyubeike_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaoyubeike_bare_head" img="afeix_p04_xiaoyubeike_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaoyubeike_hair" img="afeix_p04_xiaoyubeike_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaoyubeike_bare_corpse_head" img="afeix_p04_xiaoyubeike_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoyubeike_bare_corpse_head_bloodied" img="afeix_p04_xiaoyubeike_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoyubeike_bare_corpse_head_injured_01" img="afeix_p04_xiaoyubeike_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoyubeike_bare_corpse_head_injured_02" img="afeix_p04_xiaoyubeike_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wangduidui_bare_body" img="afeix_p04_wangduidui_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_wangduidui_bare_head" img="afeix_p04_wangduidui_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_wangduidui_hair" img="afeix_p04_wangduidui_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_wangduidui_bare_corpse_head" img="afeix_p04_wangduidui_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wangduidui_bare_corpse_head_bloodied" img="afeix_p04_wangduidui_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wangduidui_bare_corpse_head_injured_01" img="afeix_p04_wangduidui_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wangduidui_bare_corpse_head_injured_02" img="afeix_p04_wangduidui_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_laocai_bare_body" img="afeix_p04_laocai_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_laocai_bare_head" img="afeix_p04_laocai_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_laocai_hair" img="afeix_p04_laocai_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_laocai_bare_corpse_head" img="afeix_p04_laocai_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_laocai_bare_corpse_head_bloodied" img="afeix_p04_laocai_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_laocai_bare_corpse_head_injured_01" img="afeix_p04_laocai_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_laocai_bare_corpse_head_injured_02" img="afeix_p04_laocai_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yanzi_bare_body" img="afeix_p04_yanzi_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yanzi_bare_head" img="afeix_p04_yanzi_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yanzi_hair" img="afeix_p04_yanzi_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yanzi_bare_corpse_head" img="afeix_p04_yanzi_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yanzi_bare_corpse_head_bloodied" img="afeix_p04_yanzi_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yanzi_bare_corpse_head_injured_01" img="afeix_p04_yanzi_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yanzi_bare_corpse_head_injured_02" img="afeix_p04_yanzi_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tiantong_bare_body" img="afeix_p04_tiantong_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_tiantong_bare_head" img="afeix_p04_tiantong_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_tiantong_hair" img="afeix_p04_tiantong_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_tiantong_bare_corpse_head" img="afeix_p04_tiantong_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tiantong_bare_corpse_head_bloodied" img="afeix_p04_tiantong_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tiantong_bare_corpse_head_injured_01" img="afeix_p04_tiantong_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tiantong_bare_corpse_head_injured_02" img="afeix_p04_tiantong_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoning_bare_body" img="afeix_p04_xiaoning_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaoning_bare_head" img="afeix_p04_xiaoning_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaoning_hair" img="afeix_p04_xiaoning_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaoning_bare_corpse_head" img="afeix_p04_xiaoning_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoning_bare_corpse_head_bloodied" img="afeix_p04_xiaoning_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoning_bare_corpse_head_injured_01" img="afeix_p04_xiaoning_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaoning_bare_corpse_head_injured_02" img="afeix_p04_xiaoning_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaopangxu_bare_body" img="afeix_p04_xiaopangxu_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaopangxu_bare_head" img="afeix_p04_xiaopangxu_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaopangxu_hair" img="afeix_p04_xiaopangxu_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaopangxu_bare_corpse_head" img="afeix_p04_xiaopangxu_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaopangxu_bare_corpse_head_bloodied" img="afeix_p04_xiaopangxu_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaopangxu_bare_corpse_head_injured_01" img="afeix_p04_xiaopangxu_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaopangxu_bare_corpse_head_injured_02" img="afeix_p04_xiaopangxu_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_dae_bare_body" img="afeix_p04_dae_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_dae_bare_head" img="afeix_p04_dae_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_dae_hair" img="afeix_p04_dae_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_dae_bare_corpse_head" img="afeix_p04_dae_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_dae_bare_corpse_head_bloodied" img="afeix_p04_dae_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_dae_bare_corpse_head_injured_01" img="afeix_p04_dae_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_dae_bare_corpse_head_injured_02" img="afeix_p04_dae_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_manyuemei_bare_body" img="afeix_p04_manyuemei_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_manyuemei_bare_head" img="afeix_p04_manyuemei_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_manyuemei_hair" img="afeix_p04_manyuemei_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_manyuemei_bare_corpse_head" img="afeix_p04_manyuemei_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_manyuemei_bare_corpse_head_bloodied" img="afeix_p04_manyuemei_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_manyuemei_bare_corpse_head_injured_01" img="afeix_p04_manyuemei_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_manyuemei_bare_corpse_head_injured_02" img="afeix_p04_manyuemei_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaohani_bare_body" img="afeix_p04_xiaohani_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaohani_bare_head" img="afeix_p04_xiaohani_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaohani_hair" img="afeix_p04_xiaohani_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaohani_bare_corpse_head" img="afeix_p04_xiaohani_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaohani_bare_corpse_head_bloodied" img="afeix_p04_xiaohani_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaohani_bare_corpse_head_injured_01" img="afeix_p04_xiaohani_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaohani_bare_corpse_head_injured_02" img="afeix_p04_xiaohani_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_keke_bare_body" img="afeix_p04_keke_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_keke_bare_head" img="afeix_p04_keke_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_keke_hair" img="afeix_p04_keke_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_keke_bare_corpse_head" img="afeix_p04_keke_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_keke_bare_corpse_head_bloodied" img="afeix_p04_keke_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_keke_bare_corpse_head_injured_01" img="afeix_p04_keke_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_keke_bare_corpse_head_injured_02" img="afeix_p04_keke_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yuxiang_bare_body" img="afeix_p04_yuxiang_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yuxiang_bare_head" img="afeix_p04_yuxiang_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yuxiang_hair" img="afeix_p04_yuxiang_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yuxiang_bare_corpse_head" img="afeix_p04_yuxiang_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yuxiang_bare_corpse_head_bloodied" img="afeix_p04_yuxiang_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yuxiang_bare_corpse_head_injured_01" img="afeix_p04_yuxiang_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yuxiang_bare_corpse_head_injured_02" img="afeix_p04_yuxiang_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tongzhu_bare_body" img="afeix_p04_tongzhu_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_tongzhu_bare_head" img="afeix_p04_tongzhu_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_tongzhu_hair" img="afeix_p04_tongzhu_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_tongzhu_bare_corpse_head" img="afeix_p04_tongzhu_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tongzhu_bare_corpse_head_bloodied" img="afeix_p04_tongzhu_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tongzhu_bare_corpse_head_injured_01" img="afeix_p04_tongzhu_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tongzhu_bare_corpse_head_injured_02" img="afeix_p04_tongzhu_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_meiya_bare_body" img="afeix_p04_meiya_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_meiya_bare_head" img="afeix_p04_meiya_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_meiya_hair" img="afeix_p04_meiya_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_meiya_bare_corpse_head" img="afeix_p04_meiya_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_meiya_bare_corpse_head_bloodied" img="afeix_p04_meiya_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_meiya_bare_corpse_head_injured_01" img="afeix_p04_meiya_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_meiya_bare_corpse_head_injured_02" img="afeix_p04_meiya_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wanshe_bare_body" img="afeix_p04_wanshe_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_wanshe_bare_head" img="afeix_p04_wanshe_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_wanshe_hair" img="afeix_p04_wanshe_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_wanshe_bare_corpse_head" img="afeix_p04_wanshe_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wanshe_bare_corpse_head_bloodied" img="afeix_p04_wanshe_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wanshe_bare_corpse_head_injured_01" img="afeix_p04_wanshe_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wanshe_bare_corpse_head_injured_02" img="afeix_p04_wanshe_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tutu_bare_body" img="afeix_p04_tutu_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_tutu_bare_head" img="afeix_p04_tutu_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_tutu_hair" img="afeix_p04_tutu_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_tutu_bare_corpse_head" img="afeix_p04_tutu_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tutu_bare_corpse_head_bloodied" img="afeix_p04_tutu_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tutu_bare_corpse_head_injured_01" img="afeix_p04_tutu_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_tutu_bare_corpse_head_injured_02" img="afeix_p04_tutu_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_naigai_bare_body" img="afeix_p04_naigai_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_naigai_bare_head" img="afeix_p04_naigai_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_naigai_hair" img="afeix_p04_naigai_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_naigai_bare_corpse_head" img="afeix_p04_naigai_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_naigai_bare_corpse_head_bloodied" img="afeix_p04_naigai_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_naigai_bare_corpse_head_injured_01" img="afeix_p04_naigai_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_naigai_bare_corpse_head_injured_02" img="afeix_p04_naigai_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaojie_bare_body" img="afeix_p04_xiaojie_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaojie_bare_head" img="afeix_p04_xiaojie_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaojie_hair" img="afeix_p04_xiaojie_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_xiaojie_bare_corpse_head" img="afeix_p04_xiaojie_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaojie_bare_corpse_head_bloodied" img="afeix_p04_xiaojie_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaojie_bare_corpse_head_injured_01" img="afeix_p04_xiaojie_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_xiaojie_bare_corpse_head_injured_02" img="afeix_p04_xiaojie_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_bula_bare_body" img="afeix_p04_bula_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_bula_bare_head" img="afeix_p04_bula_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_bula_hair" img="afeix_p04_bula_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_bula_bare_corpse_head" img="afeix_p04_bula_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_bula_bare_corpse_head_bloodied" img="afeix_p04_bula_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_bula_bare_corpse_head_injured_01" img="afeix_p04_bula_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_bula_bare_corpse_head_injured_02" img="afeix_p04_bula_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_suwa_bare_body" img="afeix_p04_suwa_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_suwa_bare_head" img="afeix_p04_suwa_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_suwa_hair" img="afeix_p04_suwa_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_suwa_bare_corpse_head" img="afeix_p04_suwa_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_suwa_bare_corpse_head_bloodied" img="afeix_p04_suwa_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_suwa_bare_corpse_head_injured_01" img="afeix_p04_suwa_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_suwa_bare_corpse_head_injured_02" img="afeix_p04_suwa_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_qianhan_bare_body" img="afeix_p04_qianhan_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_qianhan_bare_head" img="afeix_p04_qianhan_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_qianhan_hair" img="afeix_p04_qianhan_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_qianhan_bare_corpse_head" img="afeix_p04_qianhan_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_qianhan_bare_corpse_head_bloodied" img="afeix_p04_qianhan_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_qianhan_bare_corpse_head_injured_01" img="afeix_p04_qianhan_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_qianhan_bare_corpse_head_injured_02" img="afeix_p04_qianhan_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wangdazhi_bare_body" img="afeix_p04_wangdazhi_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_wangdazhi_bare_head" img="afeix_p04_wangdazhi_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_wangdazhi_hair" img="afeix_p04_wangdazhi_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_wangdazhi_bare_corpse_head" img="afeix_p04_wangdazhi_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wangdazhi_bare_corpse_head_bloodied" img="afeix_p04_wangdazhi_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wangdazhi_bare_corpse_head_injured_01" img="afeix_p04_wangdazhi_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_wangdazhi_bare_corpse_head_injured_02" img="afeix_p04_wangdazhi_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yaoyaoya_bare_body" img="afeix_p04_yaoyaoya_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yaoyaoya_bare_head" img="afeix_p04_yaoyaoya_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yaoyaoya_hair" img="afeix_p04_yaoyaoya_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yaoyaoya_bare_corpse_head" img="afeix_p04_yaoyaoya_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yaoyaoya_bare_corpse_head_bloodied" img="afeix_p04_yaoyaoya_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yaoyaoya_bare_corpse_head_injured_01" img="afeix_p04_yaoyaoya_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yaoyaoya_bare_corpse_head_injured_02" img="afeix_p04_yaoyaoya_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yangmiemie_bare_body" img="afeix_p04_yangmiemie_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yangmiemie_bare_head" img="afeix_p04_yangmiemie_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yangmiemie_hair" img="afeix_p04_yangmiemie_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_yangmiemie_bare_corpse_head" img="afeix_p04_yangmiemie_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yangmiemie_bare_corpse_head_bloodied" img="afeix_p04_yangmiemie_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yangmiemie_bare_corpse_head_injured_01" img="afeix_p04_yangmiemie_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_yangmiemie_bare_corpse_head_injured_02" img="afeix_p04_yangmiemie_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_songnuanyang_bare_body" img="afeix_p04_songnuanyang_bare_body.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_songnuanyang_bare_head" img="afeix_p04_songnuanyang_bare_head.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_songnuanyang_hair" img="afeix_p04_songnuanyang_hair.png" left="-57" right="57" top="-51" bottom="91" width="114" height="142" offsetY="35" />
+  <sprite id="afeix_p04_songnuanyang_bare_corpse_head" img="afeix_p04_songnuanyang_bare_corpse_head.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_songnuanyang_bare_corpse_head_bloodied" img="afeix_p04_songnuanyang_bare_corpse_head_bloodied.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_songnuanyang_bare_corpse_head_injured_01" img="afeix_p04_songnuanyang_bare_corpse_head_injured_01.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+  <sprite id="afeix_p04_songnuanyang_bare_corpse_head_injured_02" img="afeix_p04_songnuanyang_bare_corpse_head_injured_02.png" left="-80" right="80" top="-85" bottom="65" width="160" height="150" offsetX="6" offsetY="10" />
+</brush>

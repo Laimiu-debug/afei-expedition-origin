@@ -36,6 +36,8 @@
     }
     ::artAvailableBrushes.afeix_world_afei <- true;
     local afei = makeBrother("afei"), other = makeBrother("keke");
+    local nativeBody = "afeix_p04_afei_normal", nativeHead = nativeBody + "_head";
+    local otherBody = "afeix_p04_keke";
     roster = [afei, other];
     afei.onInit(); other.onInit();
     check(writes==0 && D.selected().key=="native", "install leaves existing campaigns unchanged");
@@ -79,15 +81,16 @@
     foreach(style in D.Styles) {
         check(D.choose(style.key).ok, "style selectable: "+style.key);
         local brush=style.brush==null?"afeix_p04_afei_normal":style.brush;
-        check(afei.sprites.body.brush==brush && afei.sprites.head.brush==brush+"_head", "body/head update immediately: "+style.key);
-        check(other.sprites.body.brush=="afeix_p04_keke", "other member unchanged: "+style.key);
+        local expectedBody=style.brush==null?nativeBody:brush, expectedHead=style.brush==null?nativeHead:brush+"_head";
+        check(afei.sprites.body.brush==expectedBody && afei.sprites.head.brush==expectedHead, "body/head update immediately: "+style.key);
+        check(other.sprites.body.brush==otherBody, "other member unchanged: "+style.key);
         check(party.body.brush==(style.brush==null?"afeix_world_afei":brush+"_world"), "map avatar follows selected skin: "+style.key);
         foreach(route in ["normal","toad","jiahao","feidie"]) {
             currentRoute=route; A.syncCharacterArt(afei);
-            check(afei.sprites.body.brush==brush, "profession does not override chosen cosmetic: "+route);
+            check(afei.sprites.body.brush==expectedBody, "profession does not override chosen cosmetic: "+route);
         }
         afei.onSerialize({}); afei.onDeserialize({});
-        check(afei.sprites.body.brush==brush && D.selected().key==style.key, "native save/load retains skin: "+style.key);
+        check(afei.sprites.body.brush==expectedBody && D.selected().key==style.key, "native save/load retains skin: "+style.key);
         check(afei.m.XP==initialStats[0] && afei.m.Level==initialStats[1] && afei.m.Hitpoints==initialStats[2]
             && items.armorPoints==initialStats[3] && items==afei.getItems(), "cosmetic preserves gameplay/equipment: "+style.key);
         afei.itemState.getAppearance().HideHead=true; afei.m.IsHidingHelmet=false;A.syncCharacterArt(afei);

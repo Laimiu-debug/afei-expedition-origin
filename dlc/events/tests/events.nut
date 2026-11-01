@@ -51,6 +51,8 @@ dofile("src/scripts/!mods_preload/mod_afeix_dlc_events.nut");
 local D = ::AfeixEventsDLC, A = ::AfeixExpedition;
 expect(::registered.len() == 1 && ::registered[0][0] == D.ID, "standalone registration");
 local authoredCount = D.Order.len();
+::authoredScenes <- D.Scenes;
+::authoredOrder <- D.Order;
 expect(authoredCount == D.Scenes.len(), "production registration covers every authored scene");
 if (authoredCount == 0) expect(::test.hookCalls == 0, "empty framework adds no tavern/UI hook");
 local old = A.openLedger;
@@ -80,7 +82,7 @@ M.m.Events = [E];
 dofile("native/ui.nut");
 local menu = { stack = [], hasBacksteps = function() { return this.stack.len() > 0; },
     push = function(close, allowed = null) { this.stack.push(close); },
-    pop = function() { local close = this.stack.remove(this.stack.len() - 1); close.bindenv(::World.State)(); } };
+    pop = function(restore = false) { local close = this.stack.remove(this.stack.len() - 1); close.bindenv(::World.State)(); } };
 local tavernModule = { setTavern = function(building) {} };
 local townScreen = { visible = false, animating = false, restored = 0, m = { LastActiveModule = tavernModule },
     getTavernDialogModule = function() { return tavernModule; }, isVisible = function() { return this.visible; },
@@ -279,4 +281,5 @@ M.onDeserialize(io); expect(E.m.CooldownUntil == 1234 && pos == values.len(), "n
 pos = 0; M.m.Events = []; M.onDeserialize(io);
 expect(pos == values.len(), "native loader skips absent framework event cleanly"); M.m.Events = [E];
 expect(A.openLedger("home") == "base_ledger", "F8/base pages keep original entry point");
+dofile("stories.nut");
 print("TESTS_PASSED=" + checks + "\n");

@@ -1,0 +1,110 @@
+{
+  "owner": "laimiu",
+  "mod": {
+    "title": "阿飞远征团 DLC：阿飞衣橱与哇哇叫",
+    "summary": "六套阿飞外观、两张战败CG和五段音量增强版受伤原声，一个ZIP同时安装。替换原独立皮肤和语音包；需搭配阿飞远征团主包。",
+    "description": "阿飞换上新造型，挨打时熟悉的“哇”也一起带来。\n\n本整合DLC把阿飞衣橱0.1.1与阿飞哇哇叫0.1.2放进同一个可直接安装的ZIP，包含六套外观、两张战败CG和五段音量增强版实况原声。\n\n六套外观：黑旗团长、荒野行者、赤巾老兵、裸上身、胡雪儿、蛤蟆形态，另可随时恢复原有阿飞。在阿飞远征团战役中打开F8→战团事务→阿飞外观，点击立即换装并留在当前页，免费、不再确认。人物栏、战斗胸像和行走时的地图头像随选择切换；扎营仍显示原版帐篷。护甲、头盔和武器照常覆盖胸像，可使用战团事务里的隐藏头盔按钮。\n\n在阿飞外观页选择“欣赏阿飞战败CG”，可前后切换两张图并返回原来的皮肤页，Esc沿用主包安全关闭。CG仅供手动查看，不自动触发战败剧情，也不改变战斗结算、死亡或奖励。\n\n阿飞受伤时随机播放五段实况原声，相邻两次避开同一段。沿用哇哇叫0.1.2的音量增强效果，比0.1.0提高约6.6～7.5dB，保留原声音高、语速和时长，游戏音效设置继续生效。六套皮肤下均可播放；改名与转职仍按阿飞身份识别。其他角色、护甲受击与阵亡声音沿用原有处理。\n\n安装前完全退出游戏，移走data目录中所有旧的阿飞哇哇叫、阿飞衣橱和旧整合包ZIP，再把本整合ZIP整包放入data，不要解压。主包与整合包各只保留一个版本。整合包不能与两个原独立包并装，也不能代替主包。\n\n需要阿飞远征团v0.28.12（内部版本62）或更新版，以及Legacy Modding Script Hooks（mod_hooks）；当前已对主包v0.28.13做离线组合回归。请按新开战役验收。原皮肤存档选择旗标保留，无需转换；实际旧档、卸载读档与未知第三方Mod组合仍待实机确认。\n\n六份运行脚本编译、6,617条组件离线断言通过；皮肤先加载与语音先加载分别通过6,661条组合断言，包含复用的主包回归，不相加作为独立用例总数。验证覆盖重复初始化、全部外观下的叫声、存读档、其他角色及起源、菜单与双CG；组件回归另覆盖装备、尸体、复活、断头和资源回退。22个包文件的完整集合、CRC及组件资源逐字节一致性通过。尚未实机战斗、音量与完整战役验收。\n\n主包页面：https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+    "category": "装备与外观",
+    "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+    "original_author": "Laimiu（DLC制作）；阿飞（原声）",
+    "license": "作者授权在BBMOD分发DLC脚本与安装包；原声与参考美术的权利归各原权利人。",
+    "game_version": "1.5.2.3",
+    "dlc": "目标环境：本体与官方 DLC（Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith）",
+    "save_impact": "unknown",
+    "seed_impact": "unknown",
+    "compatibility_notes": "需要阿飞远征团主包v0.28.12（内部版本62）或更新版，以及Legacy Modding Script Hooks（mod_hooks），推荐当前主包v0.28.13并新开战役。\n\n完全退出游戏，移走mod_afeix_dlc_afei_voice*.zip、mod_afeix_dlc_afei_skins*.zip及旧的mod_afeix_dlc_afei_bundle*.zip。再将mod_afeix_dlc_afei_bundle.zip整包放入data，不解压；主包和整合包各保留一个版本。整合包不能与任何原独立皮肤或语音包并装，避免组件重复加载。\n\n保留两个组件原有Mod ID和阿飞皮肤选择旗标，选择随战役保存；没有新建存档类，不改变角色属性、装备、费用与转职条件。原有阿飞在主包0.28.13中沿用主包的发型分层，六套独立皮肤保留衣橱的完整贴图。换装、实机音量、旧档、尸体及复活、卸载读档和未知第三方Mod组合仍需实机验收。",
+    "mod_ids": "mod_afeix_dlc_afei_skins\nmod_afeix_dlc_afei_voice",
+    "requires": "mod_afeix_expedition\nmod_hooks",
+    "conflicts": "",
+    "install_name": "mod_afeix_dlc_afei_bundle.zip"
+  },
+  "version": "0.1.0",
+  "package_filename": "mod_afeix_dlc_afei_bundle v0.1.0.zip",
+  "sha256": "47326fde8d722b7efedc79af111a25364751daa3b61ecc9d862c14d74e7d6a17",
+  "expected_absent": true,
+  "notes": "首版整合DLC：合并阿飞衣橱0.1.1与阿飞哇哇叫0.1.2，一个ZIP包含六套皮肤、双CG和五段增强版受伤原声。保留皮肤选择与组件身份。对主包0.28.13复测通过；6份运行脚本、6,617条组件断言、两种顺序各6,661条组合断言及22个包文件核验通过。请移走原独立语音和皮肤包，再安装整合包，不解压；新开战役验收。尚未实机验收。",
+  "verification": {
+    "entries": 22,
+    "source_sha256": {
+      "brushes/afeix_dlc_afei_skins_v01.brush": "4ff7131c80003578498422b0d7e952f4acc330745fd359ab2a32ba880a8bda0e",
+      "gfx/afeix_dlc_afei_skins_v01.png": "a251e23c30dd6aa15d9b8d05f72ff70925f9b6e7b1310bf15b5d719cb84820c3",
+      "gfx/ui/afeix_dlc_afei_skins/bare.png": "6a7c0d3205dd1c69f136647e8c0aebc29247ed4e4c61c6f1c1c3a3a25e09f388",
+      "gfx/ui/afeix_dlc_afei_skins/captain.png": "96a6f6ace59dd529a7f1034c1232fba0c20a81464a3e23669c09e2228426613f",
+      "gfx/ui/afeix_dlc_afei_skins/huxueer.png": "aca4a08a1f2856777eae6564febdd2ecc30020760b48cac559a9aca7049ef530",
+      "gfx/ui/afeix_dlc_afei_skins/native.png": "2216ed6b9d42992697dc78f7a90b50072e6b00f89a0b325111ca3dd879431990",
+      "gfx/ui/afeix_dlc_afei_skins/toad.png": "91c210a6b91f4cb695f8994da7afe7c9aab896b85753843cb15c88f83a2cba0f",
+      "gfx/ui/afeix_dlc_afei_skins/veteran.png": "733891cf71558c869ea8a48d286a3fb9010ebef7916b3bc1cea21daf5f0863ac",
+      "gfx/ui/afeix_dlc_afei_skins/wanderer.png": "0720f0911a2b18e6470f2aa82fe460a76456a4dbaadba61fd5abcb1a63846757",
+      "gfx/ui/events/afeix_dlc_skins_afei_defeat_01.png": "d8c7be6bd86cf35307548000e3fd9e53a12099289a4c17fbfa3d3c0ac7a6d868",
+      "gfx/ui/events/afeix_dlc_skins_afei_defeat_02.png": "3cedd7e568515dd570c54144e6eb68440fef3a4d6ca9c66db46e065989db36b1",
+      "scripts/!mods_preload/mod_afeix_dlc_afei_skins.nut": "debcf012bec5bcc7359616effe9bfc262b36ea746d8cd0ef82f9623f4e57f928",
+      "scripts/!mods_preload/mod_afeix_dlc_afei_voice.nut": "fb2b75ebd96d03ad79bcd1b9672b8716f4a47795422be2bacdca311040dea205",
+      "scripts/mods/afeix_dlc_afei_skins/content.nut": "aa87b29c080aeb47f40fe479e62f383ac93da55c38311afd3176b13ec79915f8",
+      "scripts/mods/afeix_dlc_afei_skins/hooks.nut": "93273f0e14826964519d7a896cda7b6b50bc05f2b5ce4562770548ddc6a870cb",
+      "scripts/mods/afeix_dlc_afei_voice/config.nut": "5617530b16d13858bcbdfce7f3c48280e6017d35fcece9c4f3bd35b688802582",
+      "scripts/mods/afeix_dlc_afei_voice/hooks.nut": "17c4714999076921371bd2d9e4b5fe19967d90a9f2beb8deaf705ec5a89a9daa",
+      "sounds/afeix_dlc_afei_voice/afei_hurt_01.wav": "eb45d3bb5541295aa79f05c71823b1d82d615b7dc90c7195008c0d47f2605339",
+      "sounds/afeix_dlc_afei_voice/afei_hurt_02.wav": "d2a40952a930f5f5a6178ce489e6b97e5cb370246c151597f1b1f2832aed5af0",
+      "sounds/afeix_dlc_afei_voice/afei_hurt_03.wav": "a1be63c97dc0d55c5bfcddfea91c4a855f7cf6b5633b16aba8bc2437377a5157",
+      "sounds/afeix_dlc_afei_voice/afei_hurt_04.wav": "84fab088dba8a5ed3257f34b09165a5e2c0e11fa72bed8d8d0abdfe302b60876",
+      "sounds/afeix_dlc_afei_voice/afei_hurt_05.wav": "d6ff82370c09e947674979e2242755d8d30355cae9a05572b99a44761c86c2a9"
+    },
+    "component_assertions": 6617,
+    "combined_assertions": [
+      6661,
+      6661
+    ],
+    "in_game_tested": false
+  },
+  "withdraw_works": [
+    {
+      "id": "f8909336-43fa-4415-82f6-b6224a8e7340",
+      "install_name": "mod_afeix_dlc_afei_voice.zip",
+      "owner": "laimiu",
+      "blocked": false,
+      "metadata": {
+        "title": "阿飞远征团 DLC：阿飞哇哇叫",
+        "summary": "0.1.2 音量增强：阿飞受伤时随机播放5段实况原声叫声，音量比0.1.0增加约7dB，保留原声音高和语速。独立可选DLC，需搭配阿飞远征团主包。",
+        "description": "阿飞挨了一下，熟悉的“哇”也跟着响起来。\n\n“阿飞哇哇叫”是阿飞远征团的独立可选语音 DLC。阿飞角色受伤时，从 5 段实况原声短叫声中随机播放一段，相邻两次避免重复；改名后仍按角色身份识别。其他角色、护甲撞击、攻击与阵亡声音沿用原版。\n\n0.1.2 调大受伤叫声音量：在相同游戏设置下，比0.1.0增加约6.6～7.5dB；五段叫声分别提高响度，仍保留原声音高、语速、裁剪时长和淡入淡出，峰值保留余量。每段约0.77～0.89秒。原声取自提供的阿飞实况视频，完整视频不进入安装包。\n\n本 DLC 只增加声音与独立加载脚本，不改变角色属性、装备或剧情，也不内置阿飞远征团主包。需要同时安装主包与 Legacy Modding Script Hooks（mod_hooks）；推荐主包 v0.28.7 或更新版，最低支持主包 v0.26.2（内部版本 36）。\n\n安装前完全退出游戏，将主包与本 DLC 的 ZIP 整包放入游戏 data 文件夹，不要解压。主包和本 DLC 各只保留一个版本。新开战役选择“阿飞远征团”，在战斗中让阿飞受伤即可按原有受伤音效规则触发。\n\n已通过 3 份脚本编译、24 条离线行为检查，以及 8 个包文件的完整集合、CRC 和源码字节一致性核验。尚未实机战斗验收；实际音量、底声与存读档仍需在游戏中确认。\n\n主包页面：https://bbmod.site/mods/d64a00f6-1d60-4d8d-8d9b-de055fc0b748/",
+        "category": "其他",
+        "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+        "license": "DLC 脚本与打包允许在 BBMOD 分发；原声来自阿飞实况视频，原素材权利归原权利人。",
+        "game_version": "1.5.2.3",
+        "dlc": "随阿飞远征团主包要求：Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith",
+        "save_impact": "unknown",
+        "seed_impact": "unknown",
+        "compatibility_notes": "需阿飞远征团主包 v0.26.2（内部版本 36）或更新版，以及 Legacy Modding Script Hooks（mod_hooks）。推荐使用主包 v0.28.7 或更新版，并按新建战役验收。\n\n完全退出游戏后，将整份 mod_afeix_dlc_afei_voice.zip 与主包 ZIP 一起放进游戏 data 文件夹，不要解压；本 DLC 只保留一个版本。本扩展是可选语音包，不能代替主包。\n\n本版不新增存档技能、物品或背景类，仅为阿飞角色替换受伤叫声。旧档加载、撤下 DLC 后读档、其他语音 MOD 组合以及实机战斗效果尚未验收。主包原有存档要求继续适用。\n\n0.1.2仅调整本语音DLC的响度，音高与语速保持原样。游戏的音效音量设置仍然生效。请退出游戏后替换旧语音DLC，仅保留一个阿飞哇哇叫DLC包。",
+        "mod_ids": [
+          "mod_afeix_dlc_afei_voice"
+        ],
+        "requires": [
+          "mod_afeix_expedition",
+          "mod_hooks"
+        ],
+        "conflicts": [],
+        "uploader": "laimiu",
+        "original_author": "Laimiu（DLC 制作）；阿飞（原声）",
+        "author": "Laimiu（DLC 制作）；阿飞（原声）"
+      },
+      "releases": [
+        {
+          "id": "be0dad8e-271f-4d5d-bee0-dd1c63975704",
+          "version": "0.1.2",
+          "sha256": "12aa12c3723591008888f8e60113d8aa538b3bd090e44c6f12ece4668176e7ab",
+          "status": "published",
+          "size": 297608
+        },
+        {
+          "id": "bfff3747-5ca2-4b5e-aadc-4fea58c1145b",
+          "version": "0.1.0",
+          "sha256": "e5be48f4d9dfe9028c4363f0c96db291d986c6191d06875e50100aae5b000db2",
+          "status": "published",
+          "size": 289027
+        }
+      ]
+    }
+  ],
+  "absent_old_install_names": [
+    "mod_afeix_dlc_afei_skins.zip"
+  ]
+}

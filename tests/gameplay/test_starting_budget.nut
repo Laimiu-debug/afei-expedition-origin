@@ -4,7 +4,10 @@
 ::inherit <- function(path,members){return members;};
 ::removeFromBeginningOfText <- function(prefix,text){return text;};
 ::created <- [];::items <- [];::storyItems <- 0;
-::AfeixExpedition <- {Schema=8,RosterMax=40,CombatMax=12,set=function(...) {},
+::runtimePending <- true;
+::AfeixExpedition <- {Schema=8,RosterMax=40,CombatMax=12,
+    resetDreamRuntime=function(){::runtimePending=false;},
+    set=function(...) {if(::runtimePending)throw "Previous dream runtime reached new campaign flags";},
     makeCharacter=function(key,slot){::created.push({key=key,slot=slot});return {};},
     ensureStoryItems=function(){::storyItems++;},enforceFormation=function(){}};
 ::new <- function(path){return {amount=0,setAmount=function(n){this.amount=n;}};};
@@ -23,8 +26,9 @@ local settings={Name="Budget test",Banner="banner_01",Difficulty=1,EconomicDiffi
 local checks=0;local check=function(ok,label){if(!ok)throw "FAIL "+label;checks++;};
 local expected=[[2250,60,22,50],[1800,30,15,25],[1350,15,7,12]];
 foreach(budget,values in expected){
-    ::created=[];::storyItems=0;settings.BudgetDifficulty=budget;
+    ::created=[];::storyItems=0;::runtimePending=true;settings.BudgetDifficulty=budget;
     assets.setCampaignSettings(settings);
+    check(!::runtimePending,"native new assets clear prior dream runtime before flags and captains");
     check(assets.m.Money==values[0],"native selected money "+budget);
     check(assets.m.ArmorParts==values[1],"native selected tools "+budget);
     check(assets.m.Medicine==values[2],"native selected medicine "+budget);

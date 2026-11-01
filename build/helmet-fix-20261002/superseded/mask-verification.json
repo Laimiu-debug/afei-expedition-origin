@@ -1,0 +1,25 @@
+{
+  "version": "0.28.14",
+  "main_package": "G:\\CODE\\afei-xcpedition\\dist\\mod_afeix_expedition v0.28.14.zip",
+  "sha256": "a67e4ab062da4a1d56b13b40ae1ddb660300b027f1850c8176bf892bf3d6adf4",
+  "changed_entries_from_0_28_13": [
+    "gfx/afeix_helmet_layers_v01.png",
+    "scripts/!mods_preload/mod_afeix_expedition.nut"
+  ],
+  "native_anchor_metadata_unchanged": true,
+  "anatomy_and_hair_landmarks": 205,
+  "behavior_assertions": 35249,
+  "bundle_combination": [
+    {
+      "order": "skins_then_voice",
+      "assertions": 6661
+    },
+    {
+      "order": "voice_then_skins",
+      "assertions": 6661
+    }
+  ],
+  "installed": false,
+  "published": false,
+  "in_game_tested": false
+}

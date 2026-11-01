@@ -1,0 +1,211 @@
+{
+  "id": "d64a00f6-1d60-4d8d-8d9b-de055fc0b748",
+  "owner": "laimiu",
+  "metadata": {
+    "title": "阿飞远征团",
+    "summary": "v0.29.0-preview.6 修复新开局与F8梦境入口、梦境收尾和回合条卡死，调整斗鱼挑战强度。介绍保留悬念；已完成入口与结局的定向实机测试。",
+    "description": "阿飞、王大谋、午夜抹抹茶带着黑旗上路。主包共34名伙伴，最多40人在册，每战自选1～12人。世界地图按F8打开黑旗名册，查看伙伴线索、招募条件、委托、故事与战团事务。\n\n新开局从夜营故事开始，三人同梦。你将短暂带领刀一十名11级伙伴，经历蜘蛛、恐狼、林德虫与斗鱼的梦潮。梦醒后，现实中的黑旗才刚刚启程：找人、招募、补给、修整装备，组建属于你的队伍。梦潮在大陆上留下的痕迹，等待你亲自行军探索。\n\nv0.29.0-preview.6修复新开局和F8“再赴梦潮”无法进入战斗的问题，统一梦境结局的剧情收束，修复死亡回调引起的回合条卡死及梦醒时的异步头像错误。斗鱼的强度与可应对窗口重新调整，保留预告、走位、打断与破绽。梦中临时人物的状态不会带入现实，梦醒恢复原人物、装备和主要资源。\n\n已实机验证新开局及原失败存档的F8入口、第一幕基本操作，以及斗鱼幕的菜单撤退、定时结束、提前击杀和回合开始死亡后继续推进；相关现实快照一致，最终收尾测试没有脚本或界面错误。相同战斗数值与AI的完整原生AI样本在第十四轮取胜，十名11级传奇配装角色剩五人。该样本不能换算为玩家胜率；四幕连续游玩、现实祭场行军与结算、多阵容平衡仍需独立验收。\n\n保留此前人物成长、7级专属技能三选一、11级精通、阿飞晋升、招募轮换、委托、研习、飞李不可、旗帜与头盔显示等玩法。飞李不可仅在酒馆内使用，选人后点击属性即付款加点，每次100克朗，可连续操作；黑旗名册按Esc关闭。头像默认完整显示并隐藏头盔外观，装备防护正常。\n\n完整主包已通过148份Squirrel脚本、45,956条离线行为断言、原生资源及JavaScript检查；326个包文件的CRC、清单与源码字节校验通过。体验完整新开局请新开战役。",
+    "category": "起源与事件",
+    "source_url": "https://github.com/Laimiu-debug/afei-expedition-origin",
+    "license": "作者授权在 BBMOD 网站分发；其他用途请联系作者。",
+    "game_version": "1.5.2.3",
+    "dlc": "目标环境：本体与官方 DLC（Lindwurm、Beasts & Exploration、Warriors of the North、Blazing Deserts、Of Flesh and Faith）",
+    "save_impact": "yes",
+    "seed_impact": "unknown",
+    "compatibility_notes": "v0.29.0-preview.6：完整梦境开局请新开战役；旧阿飞存档可在安全地点通过F8“再赴梦潮”主动进入。已经实测入口及定向结局，完整四幕连续游玩、现实终局结算和其他Mod组合仍需分别验证。\n\n完全退出游戏后，把整份mod_afeix_expedition.zip放入data，不要解压；替换同名旧包，移走其他版本主包，一次只保留一份。需要Legacy Modding Script Hooks（mod_hooks）、中文字体／汉化及上述官方DLC环境。独立可选DLC仍另行安装，本主包不包含它们。\n\n梦境期间不能保存临时队伍，幕前自动存档保留原战役状态；梦醒恢复现实人物、装备与主要资源。存档依赖本Mod，不保证与Legends、Reforged或其他改动编队、图层、战斗流程的Mod兼容。",
+    "mod_ids": [
+      "mod_afeix_expedition"
+    ],
+    "requires": [
+      "mod_hooks"
+    ],
+    "conflicts": [],
+    "uploader": "laimiu",
+    "original_author": "Laimiu",
+    "author": "Laimiu"
+  },
+  "releases": [
+    {
+      "id": "a0ef0043-bd1b-4c1e-8ec7-aa70513dc735",
+      "version": "0.29.0-preview.6",
+      "sha256": "0bba1c6f1ef4297cf42ed9da4ac25269a93c1ad4b15c48063112c5a8d3e8d7dc",
+      "status": "published",
+      "size": 4861536
+    },
+    {
+      "id": "11748b97-53c8-4052-acf9-39f7434306ef",
+      "version": "0.29.0-preview.3",
+      "sha256": "aa13a6e0fbb890fd91b7b983c230d92634992269f3da344ba3b4cd92569fee29",
+      "status": "published",
+      "size": 4858322
+    },
+    {
+      "id": "8d447823-474c-4d2e-9daa-dfea80fb0075",
+      "version": "0.28.14",
+      "sha256": "318d0b3100d5a10e73e57bd93eb2eb5e6866cda376e8815772856ff1a7824504",
+      "status": "published",
+      "size": 4507594
+    },
+    {
+      "id": "836c50e6-dc27-4b3a-8450-dfce74584d20",
+      "version": "0.28.13",
+      "sha256": "c9227c64ef612af3cff3c085e8ffcd1215c1a60dd3ebb755544d589fe20e1b09",
+      "status": "published",
+      "size": 5583595
+    },
+    {
+      "id": "b6ab75df-1515-4a08-a7d3-887a7c9ff85f",
+      "version": "0.28.12",
+      "sha256": "4c07029b35b5e7a2d6a3e4da77db6d52445ec296df0be3e05671a6e81454bdd2",
+      "status": "published",
+      "size": 4505869
+    },
+    {
+      "id": "dcf9ee57-3d77-4767-8bf4-8cdddfd1921a",
+      "version": "0.28.11",
+      "sha256": "5d19d31fb5f2fc0881557253b685d643d82ebfc9b681118c496a2055d7cbd54b",
+      "status": "published",
+      "size": 4505945
+    },
+    {
+      "id": "d3459cc4-6959-4a34-a4e3-2930c233d1b6",
+      "version": "0.28.10",
+      "sha256": "930ee70d35cb7a0b05573ab069ee501bad1a71e5bbc7b40997711a7e928e3f89",
+      "status": "published",
+      "size": 4505747
+    },
+    {
+      "id": "42daa26b-6587-4a1a-b442-a0080b11f994",
+      "version": "0.28.9",
+      "sha256": "010d789517b04b0beabba9469a6604237ac603944423d16363d8386ff77be344",
+      "status": "published",
+      "size": 4505968
+    },
+    {
+      "id": "a5f4f9a4-1cfa-4d3a-a620-222e96e3c038",
+      "version": "0.28.8",
+      "sha256": "139390b5e325038ce52eff8204ddcdeab752b25929420420d367bec45c9214b1",
+      "status": "published",
+      "size": 4497383
+    },
+    {
+      "id": "d35a345e-78b0-4431-a5d3-1844ca5a4c38",
+      "version": "0.28.7",
+      "sha256": "98be1daa40fd861109d34286ca4a609c78cf3832a9dc5320be8aa154546e535d",
+      "status": "published",
+      "size": 4497222
+    },
+    {
+      "id": "79e4f7f1-aabd-436c-a83e-341d14b8b6c5",
+      "version": "0.28.6",
+      "sha256": "1fd95bc6d0cd13d6c683b1305bab7886eb768991c13dc2db655be806473b1ccc",
+      "status": "published",
+      "size": 4497022
+    },
+    {
+      "id": "d4306351-2d12-45b2-8dbf-89800cdbac9a",
+      "version": "0.28.5",
+      "sha256": "b2d3950c4c00381b4c1ab88508514b699c58587a440cc5c025b221105f88378b",
+      "status": "published",
+      "size": 4496506
+    },
+    {
+      "id": "ded2ff8f-6009-4dd5-a511-e7b159458cae",
+      "version": "0.28.4",
+      "sha256": "233a6556721ddb202fbae07344098c83ee647bc46949e535c08985d5bdb5a5c2",
+      "status": "published",
+      "size": 4495731
+    },
+    {
+      "id": "b0d85f1f-88be-414e-99fd-d16017970516",
+      "version": "0.28.2",
+      "sha256": "c325681e3a89a066c02a8a727973fc397fe1281eb89cb6682a9d2fde38eeaa9c",
+      "status": "published",
+      "size": 3678912
+    },
+    {
+      "id": "c6947252-4944-47ae-8a19-486a4ce4572d",
+      "version": "0.27.6",
+      "sha256": "93dad4c4f7db75b552c5870bee90ad5856059d476e51b18c29e1f59fb785ed48",
+      "status": "published",
+      "size": 3674880
+    },
+    {
+      "id": "553f6536-30b0-4671-938b-ce134c2a91dd",
+      "version": "0.27.5",
+      "sha256": "27d9bee4f7998eaac79d341e92ba436f6373927a1c2b5ab988af50a76dca9e83",
+      "status": "published",
+      "size": 3674323
+    },
+    {
+      "id": "1fb0335a-8c51-4ca1-aa96-edc206bc1ec9",
+      "version": "0.27.4",
+      "sha256": "125c7284a03ca706d413ac9e5c4cfe180602183e401eb2f1db8fd04678be87df",
+      "status": "published",
+      "size": 3674260
+    },
+    {
+      "id": "7c1f8aed-e3f0-4ca3-9051-3487ca0cc870",
+      "version": "0.25.0",
+      "sha256": "b176802e479d93fa3ee90cc322c6f42477eea53b57158cd81cba96cc084ff257",
+      "status": "published",
+      "size": 3591927
+    },
+    {
+      "id": "97d51f33-c65c-42fd-96e3-df3c047cfbb1",
+      "version": "0.25.0-original-20260928",
+      "sha256": "ac879d85fd23d1a7164eecc733094354e5a086f63b72b78bf6f349e3e9fb2677",
+      "status": "published",
+      "size": 3590155
+    },
+    {
+      "id": "d04a3fd4-2005-4061-b3f8-0b129f3298c2",
+      "version": "0.24.0",
+      "sha256": "109dbe4d0df3c1de467d70e3853c768bea840b006631a0d6e2afaff3ccd89b8b",
+      "status": "published",
+      "size": 2230474
+    },
+    {
+      "id": "eb67fe28-797c-45d9-af1d-139fa0fb916c",
+      "version": "0.23.2",
+      "sha256": "3a521049f570f3a40318582d4a6d612f7199ac9504a345278aed427c1ba94a86",
+      "status": "published",
+      "size": 2253379
+    },
+    {
+      "id": "27400e31-07a7-4b67-834d-1f8d9c60d64e",
+      "version": "0.23.1",
+      "sha256": "0cc0b6bacc8eddf0321d690da5ca1a666e52c1df55ec631545ad96d3650fd0d8",
+      "status": "published",
+      "size": 2253277
+    },
+    {
+      "id": "ca83a7d7-c51d-4957-9fee-7ef7c14c7b1e",
+      "version": "0.22.0",
+      "sha256": "5bb5c7d4bee9e7d4c5acad4a5b63d06f4492eccee969c3892e5158894345e93f",
+      "status": "published",
+      "size": 2252081
+    },
+    {
+      "id": "bf3c226e-66f3-4cb0-9463-8d1e84cf22c2",
+      "version": "0.20.1",
+      "sha256": "51011ac5d92fb53254b9d19db6661a1b13106a9374e1ce2199df9f9947fd968b",
+      "status": "published",
+      "size": 2078053
+    },
+    {
+      "id": "253a7a69-675b-4b22-a85e-3a3175275eef",
+      "version": "0.20.0",
+      "sha256": "29971ed32faa1d6f9d1d8eeb77afbcb887fe0a2cdbff000964967cf31b0249cb",
+      "status": "published",
+      "size": 2054026
+    },
+    {
+      "id": "0b8cb9bf-8285-4f01-ac72-6840cc54ac44",
+      "version": "0.16.1",
+      "sha256": "9e20123f07536d9539c81f4629abd39a40f116f6ca0bb387b8a930c89b0dff58",
+      "status": "published",
+      "size": 1934945
+    }
+  ]
+}

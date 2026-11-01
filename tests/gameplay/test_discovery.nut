@@ -24,7 +24,7 @@ local makeBro=function(key){return {
 foreach(key in ["afei","damou","mocha"]){brothers.push(makeBro(key));A.set("ever_"+key,true);}
 local event={m={Notice="",Selected=[],FormationPage=0}};
 local freshHome=A.ledgerPage(event,"home"), freshMembers=A.ledgerPage(event,"recruits");
-expect(freshHome.Options.len()==5 && freshMembers.Options.len()==4,"basic controls, training and three captains on fresh start");
+expect(freshHome.Options.len()==6 && freshMembers.Options.len()==4,"basic controls, training, dream entry and three captains on fresh start");
 foreach(page in ["home","quest","recruits","growth","roots:0","promotion","promotion:feidie","bicycle","bicycle_release_confirm"]){
     local screen=A.ledgerPage(event,page), text=screen.Text;
     foreach(option in screen.Options)text+=option.Text;

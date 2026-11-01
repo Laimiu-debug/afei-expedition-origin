@@ -18,9 +18,9 @@ published = json.loads((stage/'website-published.json').read_text(encoding='utf-
 before = json.loads((stage/'website-before.json').read_text(encoding='utf-8'))
 expected = spec['verification']
 prior = next(r for r in before['releases'] if r['version'] == expected['prior_version'])
-urls = {'catalog':'https://bbmod.site/api/v1/catalog/','detail':published['detail_url'],
-        'download':f'https://bbmod.site/files/{published["release_id"]}/download/',
-        'previous_download':f'https://bbmod.site/files/{prior["id"]}/download/'}
+urls = {'catalog':'https://bbmod.com/api/v1/catalog/','detail':published['detail_url'],
+        'download':f'https://bbmod.com/files/{published["release_id"]}/download/',
+        'previous_download':f'https://bbmod.com/files/{prior["id"]}/download/'}
 
 def fetch(item):
     name,url = item

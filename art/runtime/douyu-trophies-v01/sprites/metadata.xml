@@ -1,0 +1,9 @@
+<brush name="gfx/afeix_douyu_trophies_v01.png" version="17">
+  <sprite id="afeix_douyu_sharkskin" img="afeix_douyu_sharkskin.png" left="-48" right="46" top="-52" bottom="14" width="104" height="142" offsetY="35" />
+  <sprite id="afeix_douyu_sharkskin_damaged" img="afeix_douyu_sharkskin_damaged.png" left="-52" right="48" top="-52" bottom="22" width="104" height="142" offsetY="35" />
+  <sprite id="afeix_douyu_sharkskin_dead" img="afeix_douyu_sharkskin_dead.png" left="-57" right="59" top="-53" bottom="55" width="131" height="125" offsetX="6" offsetY="10" f="64FE" />
+  <sprite id="afeix_douyu_fin_cleaver" img="afeix_douyu_fin_cleaver.png" left="-65" right="13" top="-56" bottom="52" width="130" height="142" offsetY="35" />
+  <sprite id="afeix_douyu_fin_cleaver_bloodied" img="afeix_douyu_fin_cleaver_bloodied.png" left="-65" right="13" top="-56" bottom="52" width="130" height="142" offsetY="35" />
+  <sprite id="afeix_douyu_tooth_spear" img="afeix_douyu_tooth_spear.png" left="-3" right="57" top="-59" bottom="21" width="130" height="142" offsetY="35" f1="20" f2="-45" />
+  <sprite id="afeix_douyu_tooth_spear_bloodied" img="afeix_douyu_tooth_spear_bloodied.png" left="-3" right="57" top="-59" bottom="21" width="130" height="142" offsetY="35" f1="20" f2="-45" />
+</brush>
